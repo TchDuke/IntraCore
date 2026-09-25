@@ -1,0 +1,12 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ETHSW
+Version=v2_3_MP2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+IOSemaphoreAssignement|IO Semaphore Assignement|||||
+
+[Values]
+# параметр|значение|подпись

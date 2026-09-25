@@ -1,0 +1,45 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SAES
+Version=aes3_v3_0_MP13_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Algorithm|Data encryption algorithm|Algorithm||||AES/TDES Data encryption types list
+DataType|Data type|Parameters||||AES/TDES Data Type selection: 32-bit data, 16-bit data, 8-bit data or 1-bit string. This parameter can be a value of @ref CRYP_Data_Type. Possible values are: CRYP_DATATYPE_32B: 32-bit data type (no swapping) CRYP_DATATYPE_16B: 16-bit data type (half-word swapping) CRYP_DATATYPE_8B: 8-bit data type (byte swapping) CRYP_DATATYPE_1B: 1-bit data type (bit swapping)
+KeySize|Key size|Parameters||||Used only in AES mode: 128 or 256 bit key length. This parameter can be a value of @ref CRYP_Key_Size. Possible values are: CRYP_KEYSIZE_128B CRYP_KEYSIZE_256B
+pKey|Encryption/Decryption key|Parameters||||pKey is the key used for Encryption/Decryption
+pInitVect|Initial Counter Block (ICB)|Parameters||||A 16-byte Initial Counter Block (ICB), composed of two distinct fields: – The initialization vector (IV): a 96-bit value that must be unique for each execution of the mode under a given key. Note that the GCM standard supports IV that are shorter than 96-bit, but in this case strict rules apply. – The counter: a 32-bit big-endian integer that is incremented each time a block has been processed. According to NIST specification, the counter value is 0x2 when processing the first block of payload.
+Header|Header|Parameters||||The header also known as Additional Authentication Data is used for authentication
+HeaderInput|Header|Parameters||||The header, also known as Additional Authentication Data in GCM mode is used as first part of the message just after the Initial Counter Block (ICB), and precede the plain text message. Input format: hexadecimal (ex: 0123456789abcdef)
+HeaderSize|Header size|Parameters||4|4294967295|Header size in bytes
+B0|B0|Parameters||||One 16-byte first authentication block
+DataWidthUnit|Data width unit|Parameters||||Data With Unit.By default, size unit is word
+KeySelect|Key selection|Parameters||||CRYP key selection: This parameter can be a value of @ref CRYP_Key_Select. Possible values are: CRYP_KEYSEL_NORMAL: Normal key, key registers SAES_KEYx or CRYP_KEYx CRYP_KEYSEL_HW: Hardware key, derived hardware unique key (DHUK 256-bit) CRYP_KEYSEL_SW: Software key, boot hardware key BHK (256-bit) CRYP_KEYSEL_HSW: DHUK XOR BHK Hardware unique key XOR software key CRYP_KEYSEL_AHK: Software key : application hardware key AHK (128- or 256-bit) CRYP_KEYSEL_DUK_AHK: DHUK XOR AHK CRYP_KEYSEL_TEST_KEY: Test mode key (256-bit hardware constant key 0xA5A5...A5A5)*/
+KeyProtection|Key protection|Parameters||||AES key protection: This parameter can be a value of @ref AES_Key_Protection. Possible values are: CRYP_KEYPROT_ENABLE: Key protection between two applications with different security contexts CRYP_KEYPROT_DISABLE: Key not protected between two applications with different security contexts
+
+[Values]
+# параметр|значение|подпись
+Algorithm|CRYP_AES_ECB|SAES ECB
+Algorithm|CRYP_AES_CBC|SAES CBC
+Algorithm|CRYP_AES_CTR|SAES CTR
+Algorithm|CRYP_AES_GCM|SAES GCM
+Algorithm|CRYP_AES_CCM|SAES CCM
+DataType|CRYP_DATATYPE_32B|No swapping
+DataType|CRYP_DATATYPE_16B|Half-word (16-bit) swapping
+DataType|CRYP_DATATYPE_8B|Byte (8-bit) swapping
+DataType|CRYP_DATATYPE_1B|Bit swapping
+KeySize|CRYP_KEYSIZE_128B|128b
+KeySize|CRYP_KEYSIZE_256B|256b
+DataWidthUnit|CRYP_DATAWIDTHUNIT_WORD|Word
+DataWidthUnit|CRYP_DATAWIDTHUNIT_BYTE|Byte
+KeySelect|CRYP_KEYSEL_NORMAL|Normal key
+KeySelect|CRYP_KEYSEL_HW|Hardware key
+KeySelect|CRYP_KEYSEL_SW|Software key
+KeySelect|CRYP_KEYSEL_HSW|Hardware XOR software key
+KeySelect|CRYP_KEYSEL_AHK|Hardware key AHK
+KeySelect|CRYP_KEYSEL_DUK_AHK|DHUK XOR AHK
+KeySelect|CRYP_KEYSEL_TEST_KEY|Test mode key
+KeyProtection|CRYP_KEYPROT_ENABLE|Enabled
+KeyProtection|CRYP_KEYPROT_DISABLE|Disabled

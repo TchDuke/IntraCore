@@ -1,0 +1,30 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RAMCFG
+Version=v1_0_N6_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+SYSCFG_ITCM_size|Config I-TCM|||||
+SYSCFG_DTCM_size|Config D-TCM|||||
+ErrorCodeCorrection|Error code correction (ECC)|||||
+WriteProtection|Write Protection|||||
+StartPage|Start Page|||||
+PageNb|Page Number|||||
+HardwareErase|Software Erase|||||
+
+[Values]
+# параметр|значение|подпись
+SYSCFG_ITCM_size|SYSCFG_ITCM_64K|SYSCFG_ITCM_64K
+SYSCFG_ITCM_size|SYSCFG_ITCM_128K|SYSCFG_ITCM_128K
+SYSCFG_ITCM_size|SYSCFG_ITCM_256K|SYSCFG_ITCM_256K
+SYSCFG_DTCM_size|SYSCFG_DTCM_128K|SYSCFG_DTCM_128K
+SYSCFG_DTCM_size|SYSCFG_DTCM_256K|SYSCFG_DTCM_256K
+ErrorCodeCorrection|ECC_DISABLE|Disable
+ErrorCodeCorrection|START_ECC|StartECC
+ErrorCodeCorrection|STOP_ECC|StopECC
+WriteProtection|WP_DISABLE|Disable
+WriteProtection|WP_ENABLE|Enable
+HardwareErase|HE_DISABLE|Disable
+HardwareErase|HE_ENABLE|Enable

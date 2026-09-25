@@ -1,0 +1,82 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FSMC
+Version=normux_fsmc7_v4_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+NORSRAM_Instance|Device|||||
+Extended|Extended Device|||||
+NSCoherentPinout1|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank1|Bank|NOR/PSRAM control||||
+DataAddressMux1|Data address multiplexing|NOR/PSRAM control||||
+MemoryType1|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth1|Data size|NOR/PSRAM control||||
+BurstAccessMode1|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity1|Wait signal polarity|NOR/PSRAM control||||
+WrapMode1|Wrap mode|NOR/PSRAM control||||
+WaitSignalActive1|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation1|Write operation|NOR/PSRAM control||||
+WaitSignal1|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode1|Extended mode|NOR/PSRAM control||||
+AsynchronousWait1|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst1|Burst write|NOR/PSRAM control||||
+AddressSetupTime1|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime1|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime1|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration1|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision1|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency1|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode1|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime1|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime1|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime1|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration1|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision1|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency1|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode1|Extended access mode|NOR/PSRAM timing for write accesses||||
+
+[Values]
+# параметр|значение|подпись
+NORSRAM_Instance|FSMC_NORSRAM_DEVICE|NOR/SRAM Device
+Extended|FSMC_NORSRAM_EXTENDED_DEVICE|NOR/SRAM Extended Device
+NSCoherentPinout1|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+NSBank1|FSMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank1|FSMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank1|FSMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank1|FSMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux1|FSMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux1|FSMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType1|FSMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType1|FSMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType1|FSMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth1|FSMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth1|FSMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+BurstAccessMode1|FSMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode1|FSMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity1|FSMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity1|FSMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WrapMode1|FSMC_WRAP_MODE_DISABLE|Disabled
+WaitSignalActive1|FSMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive1|FSMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation1|FSMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation1|FSMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal1|FSMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal1|FSMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode1|FSMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode1|FSMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait1|FSMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait1|FSMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst1|FSMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst1|FSMC_WRITE_BURST_DISABLE|Disabled
+AccessMode1|FSMC_ACCESS_MODE_A|A
+AccessMode1|FSMC_ACCESS_MODE_B|B
+AccessMode1|FSMC_ACCESS_MODE_C|C
+AccessMode1|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FSMC_ACCESS_MODE_B|B
+ExtendedAccessMode1|FSMC_ACCESS_MODE_C|C
+ExtendedAccessMode1|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FSMC_ACCESS_MODE_A|A

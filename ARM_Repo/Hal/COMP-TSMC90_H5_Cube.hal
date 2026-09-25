@@ -1,0 +1,55 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMP
+Version=TSMC90_H5_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InvertingInput|Inverting Input|Pinout Parameters||||
+NonInvertingInput|Non Inverting Input|Pinout Parameters||||
+Mode|Speed / Power Mode|Basic Parameters||||
+TriggerMode|Trigger Mode|Basic Parameters||||
+Hysteresis|Hysteresis Level|Basic Parameters||||
+BlankingSrce|Blanking Source|Output Configuration||||
+OutputPol|Output Pol|Output Configuration||||
+
+[Values]
+# параметр|значение|подпись
+InvertingInput|COMP_INPUT_MINUS_IO2|I/O2 (PB1)
+InvertingInput|COMP_INPUT_MINUS_IO1|I/O1 (PC4)
+InvertingInput|COMP_INPUT_MINUS_IO3|I/O3 PA5 )
+InvertingInput|COMP_INPUT_MINUS_DAC1_CH1|DAC Channel1
+InvertingInput|COMP_INPUT_MINUS_DAC1_CH2|DAC Channel2
+InvertingInput|COMP_INPUT_MINUS_1_4VREFINT|1/4 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_1_2VREFINT|1/2 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_3_4VREFINT|3/4 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_VREFINT|VREFINT connected to comparator1 inverting input
+InvertingInput|COMP_INPUT_MINUS_VBAT|1/4 VBAT
+InvertingInput|COMP_INPUT_MINUS_VDDCORE|VDDCORE
+InvertingInput|COMP_INPUT_MINUS_TEMPSENSOR|Temperature Sensor
+NonInvertingInput|COMP_INPUT_PLUS_IO1|
+NonInvertingInput|COMP_INPUT_PLUS_IO2|
+NonInvertingInput|COMP_INPUT_PLUS_DAC1_CH1|DAC1 Channel1
+NonInvertingInput|COMP_INPUT_PLUS_DAC1_CH2|DAC1 Channel2
+Mode|COMP_POWERMODE_HIGHSPEED|High Speed
+Mode|COMP_POWERMODE_MEDIUMSPEED|Medium Speed
+Mode|COMP_POWERMODE_ULTRALOWPOWER|Ultra-low power mode
+TriggerMode|COMP_TRIGGERMODE_NONE|None
+TriggerMode|COMP_TRIGGERMODE_IT_RISING_FALLING|Rising/Falling Edge Interrupt
+Hysteresis|COMP_HYSTERESIS_NONE|None
+Hysteresis|COMP_HYSTERESIS_LOW|Low
+Hysteresis|COMP_HYSTERESIS_MEDIUM|Medium
+Hysteresis|COMP_HYSTERESIS_HIGH|High
+BlankingSrce|COMP_BLANKINGSRC_NONE|None
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM2_OC3|Timer 2 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC3|Timer 3 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC4|Timer 3 Output Compare 4
+BlankingSrce|COMP_BLANKINGSRC_LPTIM1_OC2|LPTimer 1 Output Compare 2
+BlankingSrce|COMP_BLANKINGSRC_LPTIM2_OC2|LPTimer 2 Output Compare 2
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC6|Timer 1 Output Compare 6
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM15_OC2|Timer 15 Output Compare 2
+OutputPol|COMP_OUTPUTPOL_NONINVERTED|COMP output on GPIO isn't inverted
+OutputPol|COMP_OUTPUTPOL_INVERTED|COMP output on GPIO is inverted

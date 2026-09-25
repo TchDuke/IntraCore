@@ -1,0 +1,202 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ADC
+Version=aditf4_v2_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+CommonClock|Common Clock|ADCgroup||||
+FadcConstraint|Fadc Constraint|||140000|4000000|
+ClockPrescaler|Clock Prescaler|ADCgroup||||frequency of the clock to the ADC. The clock is common for all the ADCs.
+EnableClockSemaphore|Clock Prescaler|ADCgroup||||
+Resolution|Resolution|ADCgroup||||Resolution of the ADC conversion
+DataAlign|Data Alignment|ADCgroup||||Select the alignment of the data stored after conversion.
+ContinuousConvMode|Continuous Conversion Mode|ADCgroup||||Enable or Disable the Continuous Conversion Mode
+DiscontinuousConvMode|Discontinuous Conversion Mode|||||Enable or Disable the Discontinuous Conversion Mode
+DMAContinuousRequestsForConfigFile|DMA Continuous Requests|ADCgroup||||Enable/Disable DMA Continuous Requests
+DMAContinuousRequests|DMA Continuous Requests|ADCgroup||||This parameter is used only when a DMA Request is configured. Else it is not relevant. When the DMA Request for this ADC instance this parameter specifies whether the DMA requests are performed in one shot mode (DMA transfer stops when number of conversions is reached) or are performed in continuous mode (DMA transfer unlimited, whatever number of conversions). Note: In continuous mode, DMA must be configured in circular mode. Otherwise an overrun will be triggered when DMA buffer maximum pointer is reached.
+EOCSelection|End Of Conversion Selection|ADCgroup||||Regular channel end of conversion selection
+Overrun|Overrun behaviour|ADCgroup||||Select the behaviour in case of overrun
+LowPowerAutoWait|Low Power Auto Wait|||||Specifies the usage of dynamic low power Auto Delay: New conversion start only when the previous conversion (for regular channel) is completed.
+LowPowerFrequencyMode|Low Frequency Mode|||||When selecting an analog ADC clock frequency lower than 3.5MHz, the Low Frequency Mode is forced to enable.
+LowPowerAutoPowerOff|Auto Off|||||The ADC is always powered off when not converting and automatically wakes-up when a conversion is started
+OversamplingMode|Oversampling Mode|ADCgroup||||Enable/Disable the over sampling mode
+RightBitShift|Right Bit Shift|ADCgroup||||Configures the division coefficient for the Oversampler
+Ratio|Ratio|ADCgroup||||Configure the Oversampling ratio
+TriggeredMode|Triggered Mode|ADCgroup||||The regular triggered Oversampling mode
+SamplingTime|Sampling Time|ADCChannel||||Regular Channel x sampling time selection
+ExternalTrigConv|External Trigger Conversion Source|ADCgroup||||Select the external event used to trigger the start of conversion of a regular group
+ExternalTrigConvEdge|External Trigger Conversion Edge|ADCgroup||||Select the external trigger polarity and enable the trigger of a regular group: When an external trigger is selected for ADC regular conversion, only the rising edge of the signal can start the conversion.
+Channel|Channel|ADCChannel||||
+Rank|Rank|ADCChannel||||
+ScanConvMode|Scan Direction|ADCChannel||||Parameter Description: Configurable scan direction (Forward from channel 0 to 18 or Backward from channel 18 to channel 0)
+EnableAnalogWatchDog|Enable Analog WatchDog Mode|ADCgroup||||Enable/Disable Analog WatchDog Mode
+WatchdogMode|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+WatchdogChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+HighThreshold|High Threshold|ADCgroup||=AWD1LowThreshold|4095|Configures the ADC analog watchdog High threshold value.
+LowThreshold|Low Threshold|ADCgroup||0|=HighThreshold|Configures the ADC analog watchdog Low threshold value.
+ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured in interrupt mode or in polling mode.
+master|Master Flag|||0|1|
+AllChannels|Channel|ADCChannel||||
+Available_Channel|Available Channel|ADCChannel||||
+AnalogWDChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+ChannelForWatchDog|Channel type for WatchDog|||||
+
+[Values]
+# параметр|значение|подпись
+ClockPrescaler|ADC_CLOCK_SYNC_PCLK_DIV1|Synchronous clock mode divided by 1
+ClockPrescaler|ADC_CLOCK_SYNC_PCLK_DIV2|Synchronous clock mode divided by 2
+ClockPrescaler|ADC_CLOCK_SYNC_PCLK_DIV4|Synchronous clock mode divided by 4
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV1|Asynchronous clock mode divided by 1
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV2|Asynchronous clock mode divided by 2
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV4|Asynchronous clock mode divided by 4
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV6|Asynchronous clock mode divided by 6
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV8|Asynchronous clock mode divided by 8
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV10|Asynchronous clock mode divided by 10
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV12|Asynchronous clock mode divided by 12
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV16|Asynchronous clock mode divided by 16
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV32|Asynchronous clock mode divided by 32
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV64|Asynchronous clock mode divided by 64
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV128|Asynchronous clock mode divided by 128
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV256|Asynchronous clock mode divided by 256
+Resolution|ADC_RESOLUTION_12B|ADC 12-bit resolution
+Resolution|ADC_RESOLUTION_10B|ADC 10-bit resolution
+Resolution|ADC_RESOLUTION_8B|ADC 8-bit resolution
+Resolution|ADC_RESOLUTION_6B|ADC 6-bit resolution
+DataAlign|ADC_DATAALIGN_RIGHT|Right alignment
+DataAlign|ADC_DATAALIGN_LEFT|Left alignment
+EOCSelection|ADC_EOC_SINGLE_CONV|End of single conversion
+EOCSelection|ADC_EOC_SEQ_CONV|End of sequence of conversion
+Overrun|ADC_OVR_DATA_PRESERVED|Overrun data preserved
+Overrun|ADC_OVR_DATA_OVERWRITTEN|Overrun data overwritten
+RightBitShift|ADC_RIGHTBITSHIFT_NONE|No bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_1|1 bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_2|2 bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_3|3 bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_4|4 bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_5|5 bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_6|6 bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_7|7 bit shift
+RightBitShift|ADC_RIGHTBITSHIFT_8|8 bit shift
+Ratio|ADC_OVERSAMPLING_RATIO_2|Oversampling ratio 2x
+Ratio|ADC_OVERSAMPLING_RATIO_4|Oversampling ratio 4x
+Ratio|ADC_OVERSAMPLING_RATIO_8|Oversampling ratio 8x
+Ratio|ADC_OVERSAMPLING_RATIO_16|Oversampling ratio 16x
+Ratio|ADC_OVERSAMPLING_RATIO_32|Oversampling ratio 32x
+Ratio|ADC_OVERSAMPLING_RATIO_64|Oversampling ratio 64x
+Ratio|ADC_OVERSAMPLING_RATIO_128|Oversampling ratio 128x
+Ratio|ADC_OVERSAMPLING_RATIO_256|Oversampling ratio 256x
+TriggeredMode|ADC_TRIGGEREDMODE_SINGLE_TRIGGER|Single trigger
+TriggeredMode|ADC_TRIGGEREDMODE_MULTI_TRIGGER|Multi trigger
+SamplingTime|ADC_SAMPLETIME_1CYCLE_5|1.5 Cycles
+SamplingTime|ADC_SAMPLETIME_3CYCLES_5|3.5 Cycles
+SamplingTime|ADC_SAMPLETIME_7CYCLES_5|7.5 Cycles
+SamplingTime|ADC_SAMPLETIME_12CYCLES_5|12.5 Cycles
+SamplingTime|ADC_SAMPLETIME_19CYCLES_5|19.5 Cycles
+SamplingTime|ADC_SAMPLETIME_39CYCLES_5|39.5 Cycles
+SamplingTime|ADC_SAMPLETIME_79CYCLES_5|79.5 Cycles
+SamplingTime|ADC_SAMPLETIME_160CYCLES_5|160.5 Cycles
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_EXT_IT11|EXTI Line11
+ExternalTrigConv|ADC_SOFTWARE_START|Regular Conversion launched by software
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T6_TRGO|Timer 6 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T21_CC2|Timer 21 Capture Compare 2 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T2_TRGO|Timer 2 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T2_CC4|Timer 2 Capture Compare 4 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T22_TRGO|Timer 22 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T3_TRGO|Timer 3 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T21_TRGO|Timer 21 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T2_CC3|Timer 2 Capture Compare 3 event
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_NONE|None
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_RISING|Trigger detection on the rising edge
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_FALLING|Trigger detection on the falling edge
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_RISINGFALLING|Trigger detection on the falling and rising edge
+Channel|ADC_CHANNEL_0|Channel 0
+Channel|ADC_CHANNEL_1|Channel 1
+Channel|ADC_CHANNEL_2|Channel 2
+Channel|ADC_CHANNEL_3|Channel 3
+Channel|ADC_CHANNEL_4|Channel 4
+Channel|ADC_CHANNEL_5|Channel 5
+Channel|ADC_CHANNEL_6|Channel 6
+Channel|ADC_CHANNEL_7|Channel 7
+Channel|ADC_CHANNEL_8|Channel 8
+Channel|ADC_CHANNEL_9|Channel 9
+Channel|ADC_CHANNEL_10|Channel 10
+Channel|ADC_CHANNEL_11|Channel 11
+Channel|ADC_CHANNEL_12|Channel 12
+Channel|ADC_CHANNEL_13|Channel 13
+Channel|ADC_CHANNEL_14|Channel 14
+Channel|ADC_CHANNEL_15|Channel 15
+Channel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+Channel|ADC_CHANNEL_VREFINT|Channel Vrefint
+Channel|ADC_CHANNEL_VLCD|Channel Vlcd
+ScanConvMode|ADC_SCAN_DIRECTION_FORWARD|Forward
+ScanConvMode|ADC_SCAN_DIRECTION_BACKWARD|Backward
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_REG|Single regular channel
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+WatchdogChannel|ADC_CHANNEL_0|Channel 0
+WatchdogChannel|ADC_CHANNEL_1|Channel 1
+WatchdogChannel|ADC_CHANNEL_2|Channel 2
+WatchdogChannel|ADC_CHANNEL_3|Channel 3
+WatchdogChannel|ADC_CHANNEL_4|Channel 4
+WatchdogChannel|ADC_CHANNEL_5|Channel 5
+WatchdogChannel|ADC_CHANNEL_6|Channel 6
+WatchdogChannel|ADC_CHANNEL_7|Channel 7
+WatchdogChannel|ADC_CHANNEL_8|Channel 8
+WatchdogChannel|ADC_CHANNEL_9|Channel 9
+WatchdogChannel|ADC_CHANNEL_10|Channel 10
+WatchdogChannel|ADC_CHANNEL_11|Channel 11
+WatchdogChannel|ADC_CHANNEL_12|Channel 12
+WatchdogChannel|ADC_CHANNEL_13|Channel 13
+WatchdogChannel|ADC_CHANNEL_14|Channel 14
+WatchdogChannel|ADC_CHANNEL_15|Channel 15
+WatchdogChannel|ADC_CHANNEL_16|Channel 16
+WatchdogChannel|ADC_CHANNEL_17|Channel 17
+WatchdogChannel|ADC_CHANNEL_18|Channel 18
+WatchdogChannel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature sensor
+WatchdogChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+WatchdogChannel|ADC_CHANNEL_VLCD|Channel Vlcd
+AllChannels|ADC_CHANNEL_0|Channel 0
+AllChannels|ADC_CHANNEL_1|Channel 1
+AllChannels|ADC_CHANNEL_2|Channel 2
+AllChannels|ADC_CHANNEL_3|Channel 3
+AllChannels|ADC_CHANNEL_4|Channel 4
+AllChannels|ADC_CHANNEL_5|Channel 5
+AllChannels|ADC_CHANNEL_6|Channel 6
+AllChannels|ADC_CHANNEL_7|Channel 7
+AllChannels|ADC_CHANNEL_8|Channel 8
+AllChannels|ADC_CHANNEL_9|Channel 9
+AllChannels|ADC_CHANNEL_10|Channel 10
+AllChannels|ADC_CHANNEL_11|Channel 11
+AllChannels|ADC_CHANNEL_12|Channel 12
+AllChannels|ADC_CHANNEL_13|Channel 13
+AllChannels|ADC_CHANNEL_14|Channel 14
+AllChannels|ADC_CHANNEL_15|Channel 15
+AllChannels|ADC_CHANNEL_16|Channel 16
+AllChannels|ADC_CHANNEL_17|Channel 17
+AllChannels|ADC_CHANNEL_18|Channel 18
+AllChannels|ADC_CHANNEL_TEMPSENSOR|Channel Temperature sensor
+AllChannels|ADC_CHANNEL_VREFINT|Channel Vrefint
+AllChannels|ADC_CHANNEL_VLCD|Channel Vlcd
+Available_Channel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+Available_Channel|ADC_CHANNEL_VREFINT|Channel Vrefint
+Available_Channel|ADC_CHANNEL_VLCD|Channel Vlcd
+AnalogWDChannel|ADC_CHANNEL_0|Channel 0
+AnalogWDChannel|ADC_CHANNEL_1|Channel 1
+AnalogWDChannel|ADC_CHANNEL_2|Channel 2
+AnalogWDChannel|ADC_CHANNEL_3|Channel 3
+AnalogWDChannel|ADC_CHANNEL_4|Channel 4
+AnalogWDChannel|ADC_CHANNEL_5|Channel 5
+AnalogWDChannel|ADC_CHANNEL_6|Channel 6
+AnalogWDChannel|ADC_CHANNEL_7|Channel 7
+AnalogWDChannel|ADC_CHANNEL_8|Channel 8
+AnalogWDChannel|ADC_CHANNEL_9|Channel 9
+AnalogWDChannel|ADC_CHANNEL_10|Channel 10
+AnalogWDChannel|ADC_CHANNEL_11|Channel 11
+AnalogWDChannel|ADC_CHANNEL_12|Channel 12
+AnalogWDChannel|ADC_CHANNEL_13|Channel 13
+AnalogWDChannel|ADC_CHANNEL_14|Channel 14
+AnalogWDChannel|ADC_CHANNEL_15|Channel 15
+AnalogWDChannel|ADC_CHANNEL_16|Channel 16
+AnalogWDChannel|ADC_CHANNEL_17|Channel 17
+AnalogWDChannel|ADC_CHANNEL_18|Channel 18

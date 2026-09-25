@@ -1,0 +1,303 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RCC
+Version=STM32F105_rcc_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+OscillatorType|Oscillator Type|||||
+HSE_Timout|HSE Startup Timout Value (ms)|RCC Parameters||1|4294967295|
+LSE_Timout|LSE Startup Timout Value (ms)|RCC Parameters||1|4294967295|
+PLLMUL|PLL Mul|||||
+PLL2Mul|PLL2 Mul|||||
+PLL3Mul|PLL3 Mul|||||
+APB1TimCLKDivider|APB1 Timer Clock Divider|||1|1|
+APB2TimCLKDivider|APB2 Timer Clock Divider|||1|1|
+PLL2VCOMul2|PLL2 Mul for PLL2_VCO|||2|2|
+PLL3VCOMul2|PLL3 Mul for PLL3CLK|||2|2|
+PLLVCOMul2|PLL Mul for PLLCLK|||2|2|
+RCC_MCOMult_Clock_Source_FROM_PLL3MUL|PLL Divider for MCO|||||
+RCC_MCOMult_Clock_Source_FROM_PLLMUL|PLL Divider for MCO|||2|2|
+HSIDivPLL|HSIRC Divider for PLL|||2|2|
+USBPrescaler|USB clock Divider|||||
+HSEDivPLL|HSE Prediv Value|||||
+PLLSourceLL|PLLSourceLL|||||
+Prediv2|HSE Prediv2 Value|||||
+RCC_RTC_Clock_Source_FROM_HSE|HSE RTC Divider|||128|128|
+AHBCLKDivider|AHBCLK Divider|||||
+ADCPresc|ADC1 Clock Divider|||||
+TimSys_Div|Cortex timer system Div|||||
+Cortex_DivARG|Cortex_DivARG|||||
+APB1CLKDivider|APB1 Clock Divider|||||
+APB2CLKDivider|APB2 Clock Divider|||||
+Prediv1Source|Prediv1 Source|||||
+PLLSourceVirtual|PLL Source|||||
+PLLSourceVirtualString|PLL Source|||||
+PLLSource|PLL Source|||||
+SYSCLKSource|SYSCLK Source|||||
+RTCClockSelection|RTC Clock Selection|||||
+RCC_RTC_Clock_SourceLL|RTC Clock Source|||||
+I2S2ClockSelection|I2S2 Clock Selection|||||
+I2S3ClockSelection|I2S3 Clock Selection|||||
+RCC_MCOSource|MCO Clock Source|||||
+EnbaleCSS|Clock Security System: available only when HSE is used directly or undirectly as System Clock|||||
+HSI_VALUE|HSI Source||MHz|||
+LSI_VALUE|LSI Source||KHz|40000|40000|
+HSE_VALUE|HSE OSC||MHz|1000000|50000000|
+LSE_VALUE|LSE OSC||KHz|32768|32768|
+VCOOutput2Freq_Value|VCOInput||MHz|3000000|12000000|
+HSIPLLFreq_Value|HSI diviseur output to PLL||MHz|||
+HSEPLLFreq_Value|HSE diviseur output to PLL||MHz|||
+PLLCLKFreq_Value|PLL clock||MHz|18000000|72000000|
+Prediv2FreqValue|VCOInput2||MHz|3000000|5000000|
+PLL2CLKoutputFreqValue|PLL2CLK||MHz|40000000|74000000|
+PLL2VCOoutputFreqValue|PLL2_VCO||MHz|80000000|148000000|
+PLL3VCOoutputFreqValue|PLL3_VCO||MHz|80000000|148000000|
+PLL3CLKoutputFreqValue|PLL3CLK||MHz|40000000|74000000|
+SYSCLKFreq_VALUE|System clock||MHz||72000000|
+AHBFreq_Value|HCLK||MHz|||
+HCLKFreq_Value|HCLK||MHz|25000000|72000000|
+RTCFreq_Value|RTC||KHz||1000000|
+I2S3Freq_Value|I2S3 clock||MHz|||
+I2S2Freq_Value|I2S2 clock||MHz|||
+WatchDogFreq_Value|IWDG clock||KHz|||
+TimSysFreq_Value|Timer System||MHz|||
+FCLKCortexFreq_Value|FCLK Cortex clock||MHz|||
+USBFreq_Value|USB ORG clock||MHz|47880000|48120000|
+APB1Freq_Value|APB1 peripheral clocks||MHz||36000000|
+APB2Freq_Value|APB2 peripheral clocks||MHz||72000000|
+APB1TimFreq_Value|APB1 timers clocks||MHz|||
+APB2TimFreq_Value|APB2 timers clocks||MHz|||
+PLLMCOFreq_Value|PLL MCO DIV output||MHz|||
+MCOFreq_Value|MCO Output||MHz||50000000|
+FLITFCLKFreq_Value|FLITF clock||MHz|||
+ADCFreqValue|ADC clock||MHz||14000000|
+synchADCFreq_Value|ADC synchr||MHz|||
+asynchADCFreq_Value|ADC asynchr||MHz|||
+EnableHSE|HSE OSC|||||
+EnableHSERTCDevisor|RTC and HSE Oscillator|||||
+EnableHSEMCODevisor|MCO and HSE Oscillator|||||
+RTCEnable|RTC|||||
+EnableLSERTC|EnableLSERTC|||||
+EnableLSE|LSE OSC|||||
+IWDGEnable|IWDG|||||
+MCOEnable|Master Clock Output|||||
+ADCEnable|ADC Clock Output|||||
+I2S2Enable|I2S2 instance|||||
+I2S3Enable|I2S3 instance|||||
+USBEnable|OTG_FS|||||
+HSEUsed|HSE used flag|||1|1|
+OscillatorTypeHSE|Clock Type HSE|||||
+HSEState|Hse State|||||
+LSEUsed|LSE Is Used|||1||
+OscillatorTypeLSE|Clock Type LSE|||||
+LSEState|Lse State|||||
+OscillatorTypeLSI|Clock Type LSI|||||
+LSIUsed|LSI used flag|||1|1|
+LSIState|Lsi State|||||
+OscillatorTypeHSI|Clock Type HSI|||||
+HSIUsed|HSI Is Used|||1||
+HSIState|Hsi State|||||
+PLLUsed|MainPLL Is Used|||1||
+PLLState|Pll State|||||
+PLLUsedForSys|MainPLL Is Used|||1|1|
+PLLUsedForPll2|MainPLL2 Is Used|||1|1|
+PLLUsedForPlli2s|PLL I2S Is Used|||1|1|
+PLL2Used|MainPLL2 Is Used|||1||
+PLL2State|Pll State|||||
+PLL3Used|MainPLL3 Is Used|||1||
+PeriphClockSelectionARG|Periph Clock Selection|||||
+PeriphClockSelection|Periph Clock Selection|||||
+RCC_PERIPHCLK_RTCVar|RCC_PERIPHCLK_RTCVar|||||
+RCC_PERIPHCLK_ADCVar|RCC_PERIPHCLK_ADCVar|||||
+RCC_PERIPHCLK_I2S2Var|RCC_PERIPHCLK_I2S2Var|||||
+RCC_PERIPHCLK_I2S3Var|RCC_PERIPHCLK_I2S3Var|||||
+RCC_PERIPHCLK_USBOTGVar|RCC_PERIPHCLK_USBOTGVar|||||
+RTCClockSelectionARG|RTCClockSelectionARG|||||
+ADCClockSelectionARG|ADCClockSelectionARG|||||
+I2S2ClockSelectionARG|I2S2ClockSelectionARG|||||
+I2S3ClockSelectionARG|I2S3ClockSelectionARG|||||
+USBClockSelectionARG|USBClockSelectionARG|||||
+HSEPredivValueARG|HSEPredivValueARG|||||
+HSEPrediv2ValueARG|HSEPrediv2ValueARG|||||
+HSEPrediv2ValueARG_forPLLI2S|HSEPrediv2ValueARG_forPLLI2S|||||
+HSEStateARG|Lse StateARG|||||
+LSEStateARG|Lse StateARG|||||
+HSIStateARG|HSI StateARG|||||
+HSICalibrationValueARG|HSICalibrationValueARG|||||
+HSICalibrationValue|HSI Calibration Value|RCC Parameters||0|31|
+LSIStateARG|LSI StateARG|||||
+PLLI2SARG|PLLI2SARG|||||
+PLLStateARG|PLLStateARG|||||
+PLLSourceARG|PLLSourceARG|||||
+PLLMULARG|PLLMULARG|||||
+PLL2StateARG|PLL2StateARG|||||
+PLL2SourceARG|PLL2SourceARG|||||
+PLL2MULARG|PLL2MULARG|||||
+ClockTypeARG|Clock TypeARG|||||
+SYSCLKSourceARG|SysClock SourceARG|||||
+AHBCLKDividerARG|AHBCLKDividerARG|||||
+APB1CLKDividerARG|APB1CLKDividerARG|||||
+APB2CLKDividerARG|APB2CLKDividerARG|||||
+ClockType|Clock Type|||||
+ClockTypeSysClk|Clock Type SysClk|||||
+ClockTypeHCLK|Clock Type AHB|||||
+ClockTypePCLK1|Clock Type HCLK1|||||
+ClockTypePCLK2|Clock Type HCLK2|||||
+VDD_VALUE|VDD voltage (V)|System Parameters|V|2|3.6|
+FLatency|Flash Latency(WS)|System Parameters||||
+INSTRUCTION_CACHE_ENABLE|Instruction Cache|System Parameters||||
+PREFETCH_ENABLE|Prefetch Buffer|System Parameters||||
+DATA_CACHE_ENABLE|Data Cache|System Parameters||||
+RCC_MCO|Clock Output|||||
+RCC_MCODiv|MCO Prescaler|||||
+PLL3ARG|PLL3ARG|||||
+PLLI2SARG2|PLLI2SARG2|||||
+
+[Values]
+# параметр|значение|подпись
+PLLMUL|RCC_PLL_MUL4|4
+PLLMUL|RCC_PLL_MUL5|5
+PLLMUL|RCC_PLL_MUL6|6
+PLLMUL|RCC_PLL_MUL6_5|6.5
+PLLMUL|RCC_PLL_MUL7|7
+PLLMUL|RCC_PLL_MUL8|8
+PLLMUL|RCC_PLL_MUL9|9
+PLL2Mul|RCC_PLL2_MUL8|8
+PLL2Mul|RCC_PLL2_MUL9|9
+PLL2Mul|RCC_PLL2_MUL10|10
+PLL2Mul|RCC_PLL2_MUL11|11
+PLL2Mul|RCC_PLL2_MUL12|12
+PLL2Mul|RCC_PLL2_MUL13|13
+PLL2Mul|RCC_PLL2_MUL14|14
+PLL2Mul|RCC_PLL2_MUL16|16
+PLL2Mul|RCC_PLL2_MUL20|20
+PLL3Mul|RCC_PLLI2S_MUL8|8
+PLL3Mul|RCC_PLLI2S_MUL9|9
+PLL3Mul|RCC_PLLI2S_MUL10|10
+PLL3Mul|RCC_PLLI2S_MUL11|11
+PLL3Mul|RCC_PLLI2S_MUL12|12
+PLL3Mul|RCC_PLLI2S_MUL13|13
+PLL3Mul|RCC_PLLI2S_MUL14|14
+PLL3Mul|RCC_PLLI2S_MUL16|16
+PLL3Mul|RCC_PLLI2S_MUL20|20
+RCC_MCOMult_Clock_Source_FROM_PLL3MUL|RCC_MCO1SOURCE_PLL3CLK|1
+RCC_MCOMult_Clock_Source_FROM_PLL3MUL|RCC_MCO1SOURCE_PLL3CLK_DIV2|2
+USBPrescaler|RCC_USBCLKSOURCE_PLL_DIV2|2
+USBPrescaler|RCC_USBCLKSOURCE_PLL_DIV3|3
+HSEDivPLL|RCC_HSE_PREDIV_DIV1|1
+HSEDivPLL|RCC_HSE_PREDIV_DIV2|2
+HSEDivPLL|RCC_HSE_PREDIV_DIV3|3
+HSEDivPLL|RCC_HSE_PREDIV_DIV4|4
+HSEDivPLL|RCC_HSE_PREDIV_DIV5|5
+HSEDivPLL|RCC_HSE_PREDIV_DIV6|6
+HSEDivPLL|RCC_HSE_PREDIV_DIV7|7
+HSEDivPLL|RCC_HSE_PREDIV_DIV8|8
+HSEDivPLL|RCC_HSE_PREDIV_DIV9|9
+HSEDivPLL|RCC_HSE_PREDIV_DIV10|10
+HSEDivPLL|RCC_HSE_PREDIV_DIV11|11
+HSEDivPLL|RCC_HSE_PREDIV_DIV12|12
+HSEDivPLL|RCC_HSE_PREDIV_DIV13|13
+HSEDivPLL|RCC_HSE_PREDIV_DIV14|14
+HSEDivPLL|RCC_HSE_PREDIV_DIV15|15
+HSEDivPLL|RCC_HSE_PREDIV_DIV16|16
+Prediv2|RCC_HSE_PREDIV2_DIV1|1
+Prediv2|RCC_HSE_PREDIV2_DIV2|2
+Prediv2|RCC_HSE_PREDIV2_DIV3|3
+Prediv2|RCC_HSE_PREDIV2_DIV4|4
+Prediv2|RCC_HSE_PREDIV2_DIV5|5
+Prediv2|RCC_HSE_PREDIV2_DIV6|6
+Prediv2|RCC_HSE_PREDIV2_DIV7|7
+Prediv2|RCC_HSE_PREDIV2_DIV8|8
+Prediv2|RCC_HSE_PREDIV2_DIV9|9
+Prediv2|RCC_HSE_PREDIV2_DIV10|10
+Prediv2|RCC_HSE_PREDIV2_DIV11|11
+Prediv2|RCC_HSE_PREDIV2_DIV12|12
+Prediv2|RCC_HSE_PREDIV2_DIV13|13
+Prediv2|RCC_HSE_PREDIV2_DIV14|14
+Prediv2|RCC_HSE_PREDIV2_DIV15|15
+Prediv2|RCC_HSE_PREDIV2_DIV16|16
+AHBCLKDivider|RCC_SYSCLK_DIV1|1
+AHBCLKDivider|RCC_SYSCLK_DIV2|2
+AHBCLKDivider|RCC_SYSCLK_DIV4|4
+AHBCLKDivider|RCC_SYSCLK_DIV8|8
+AHBCLKDivider|RCC_SYSCLK_DIV16|16
+AHBCLKDivider|RCC_SYSCLK_DIV64|64
+AHBCLKDivider|RCC_SYSCLK_DIV128|128
+AHBCLKDivider|RCC_SYSCLK_DIV256|256
+AHBCLKDivider|RCC_SYSCLK_DIV512|512
+ADCPresc|RCC_ADCPCLK2_DIV2|2
+ADCPresc|RCC_ADCPCLK2_DIV4|4
+ADCPresc|RCC_ADCPCLK2_DIV6|6
+ADCPresc|RCC_ADCPCLK2_DIV8|8
+TimSys_Div|SYSTICK_CLKSOURCE_HCLK|1
+TimSys_Div|SYSTICK_CLKSOURCE_HCLK_DIV8|8
+APB1CLKDivider|RCC_HCLK_DIV1|1
+APB1CLKDivider|RCC_HCLK_DIV2|2
+APB1CLKDivider|RCC_HCLK_DIV4|4
+APB1CLKDivider|RCC_HCLK_DIV8|8
+APB1CLKDivider|RCC_HCLK_DIV16|16
+APB2CLKDivider|RCC_HCLK_DIV1|1
+APB2CLKDivider|RCC_HCLK_DIV2|2
+APB2CLKDivider|RCC_HCLK_DIV4|4
+APB2CLKDivider|RCC_HCLK_DIV8|8
+APB2CLKDivider|RCC_HCLK_DIV16|16
+Prediv1Source|RCC_PREDIV1_SOURCE_PLL2|Prediv1 Source Hsi
+Prediv1Source|RCC_PREDIV1_SOURCE_HSE|Prediv1 Source Hse
+PLLSourceVirtual|RCC_PLLSOURCE_HSE|Pllsource Hse
+PLLSourceVirtual|RCC_PLLSOURCE_HSI_DIV2|Pllsource Hsi
+PLLSource|RCC_PLLSOURCE_HSI_DIV2|Pllsource Hsi
+PLLSource|RCC_PLLSOURCE_HSE|Pllsource Hse
+SYSCLKSource|RCC_SYSCLKSOURCE_HSI|Sysclksource Hsi
+SYSCLKSource|RCC_SYSCLKSOURCE_HSE|Sysclksource Hse
+SYSCLKSource|RCC_SYSCLKSOURCE_PLLCLK|Sysclksource Pllclk
+RTCClockSelection|RCC_RTCCLKSOURCE_LSE|Rtcclksource Lse
+RTCClockSelection|RCC_RTCCLKSOURCE_LSI|Rtcclksource Lsi
+RTCClockSelection|RCC_RTCCLKSOURCE_HSE_DIV128|Rtcclksource Hse Div32
+RCC_RTC_Clock_SourceLL|RCC_RTCCLKSOURCE_LSE|LSE
+RCC_RTC_Clock_SourceLL|RCC_RTCCLKSOURCE_LSI|LSI
+RCC_RTC_Clock_SourceLL|RCC_RTCCLKSOURCE_HSE|HSE
+I2S2ClockSelection|RCC_I2S2CLKSOURCE_SYSCLK|Sysclock
+I2S2ClockSelection|RCC_I2S2CLKSOURCE_PLLI2S_VCO|PLLI2S_VCO
+I2S3ClockSelection|RCC_I2S3CLKSOURCE_SYSCLK|Sysclock
+I2S3ClockSelection|RCC_I2S3CLKSOURCE_PLLI2S_VCO|PLLI2S_VCO
+RCC_MCOSource|RCC_MCO1SOURCE_SYSCLK|MCO1SRC SYSCLK
+RCC_MCOSource|RCC_MCO1SOURCE_HSI|MCO1SRC HSI
+RCC_MCOSource|RCC_MCO1SOURCE_HSE|MCO1SRC HSE
+RCC_MCOSource|RCC_MCO1SOURCE_PLLCLK|MCO1SRC PLLCLK
+RCC_MCOSource|RCC_MCO1SOURCE_PLL2CLK|MCO1SRC PLL2CLK
+RCC_MCOSource|RCC_MCO1SOURCE_PLL3CLK_DIV2|MCO1SRC PLL3CLK div2
+RCC_MCOSource|RCC_MCO1SOURCE_EXT_HSE|MCO1SRC HSE Ext
+RCC_MCOSource|RCC_MCO1SOURCE_PLL3CLK|MCO1SRC PLL3CLK
+OscillatorTypeHSE|RCC_OSCILLATORTYPE_HSE|HSE
+HSEState|RCC_HSE_BYPASS|Hse Bypass
+HSEState|RCC_HSE_ON|Hse ON
+HSEState|RCC_HSE_OFF|Hse Off
+OscillatorTypeLSE|RCC_OSCILLATORTYPE_LSE|LSE
+LSEState|RCC_LSE_BYPASS|Lse Bypass
+LSEState|RCC_LSE_ON|Lse ON
+LSEState|RCC_LSE_OFF|Lse Off
+OscillatorTypeLSI|RCC_OSCILLATORTYPE_LSI|LSI
+LSIState|RCC_LSI_OFF|Lsi Off
+LSIState|RCC_LSI_ON|Lsi ON
+OscillatorTypeHSI|RCC_OSCILLATORTYPE_HSI|HSI
+HSIState|RCC_HSI_ON|Hsi On
+PLLState|RCC_PLL_OFF|Pll Off
+PLLState|RCC_PLL_ON|Pll ON
+PLL2State|RCC_PLL2_OFF|Pll2 Off
+PLL2State|RCC_PLL2_ON|Pll2 ON
+RCC_PERIPHCLK_RTCVar|RCC_PERIPHCLK_RTC|Periphclk RTC
+RCC_PERIPHCLK_ADCVar|RCC_PERIPHCLK_ADC|Periphclk ADC
+RCC_PERIPHCLK_I2S2Var|RCC_PERIPHCLK_I2S2|Periphclk ADC
+RCC_PERIPHCLK_I2S3Var|RCC_PERIPHCLK_I2S3|Periphclk I2S3
+RCC_PERIPHCLK_USBOTGVar|RCC_PERIPHCLK_USB|Periphclk I2S3
+ClockTypeSysClk|RCC_CLOCKTYPE_SYSCLK|Sysclk
+ClockTypeHCLK|RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_HCLK
+ClockTypePCLK1|RCC_CLOCKTYPE_PCLK1|PCLK1
+ClockTypePCLK2|RCC_CLOCKTYPE_PCLK2|PCLK2
+FLatency|FLASH_LATENCY_0|0 WS (1 CPU cycle)
+FLatency|FLASH_LATENCY_1|1 WS (2 CPU cycle)
+FLatency|FLASH_LATENCY_2|2 WS (3 CPU cycle)
+RCC_MCO|RCC_MCO|Clock Output
+RCC_MCODiv|RCC_MCODIV_1|1

@@ -1,0 +1,30 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LVDS
+Version=v1.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DataMapping|Data Mapping|Display||0|1|
+ColorCoding|Color Coding|Display||0|1|
+NumberOfLinks|Number Of Links|Settings||||
+NumberOfDisplays|Number Of Displays|Settings||0|1|
+HSPolarity|HSPolarity|Settings||||
+VSPolarity|VSPolarity|Settings||||
+DEPolarity|DEPolarity|Settings||||
+LinkPhase|LinkPhase|Settings||0|1|
+ISMASTER|ISMASTER|PLL||||
+PLLMODE|PLLMODE|PLL||||
+PLLBDIV|PLLBDIV|PLL||0|2|
+PLLMDIV|PLLMDIV|PLL||||
+PLLNDIV|PLL Input Division Factor|PLL||1|1023|
+PLLFREF|PLL Frequency (MHz)|PLL||0|25|
+TESTDIV|TESTDIV|PLL||||
+MODDEP|MODDEP|PLL||||
+MODFREQ|MODFREQ|PLL||||
+FRACIN|FRACIN|PLL||||
+DOWN_SPREAD|DOWN_SPREAD|PLL||||
+
+[Values]
+# параметр|значение|подпись

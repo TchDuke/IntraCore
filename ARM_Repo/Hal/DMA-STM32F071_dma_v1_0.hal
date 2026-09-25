@@ -1,0 +1,56 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DMA
+Version=STM32F071_dma_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+ClockEnableMode|Clock Enable Mode|||||
+DMA_Handle|DMA Handle|||||
+IpInstance|IP Instance|||||
+DMA_Remap|DMA Remap|||||
+
+[Values]
+# параметр|значение|подпись
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+ClockEnableMode|__HAL_RCC_DMA1_CLK_ENABLE|DMA1 clock enable
+DMA_Remap|DMA_REMAP_ADC_DMA_CH2|ADC DMA remap
+DMA_Remap|DMA_REMAP_I2C1_DMA_CH76|I2C1 RX/TX DMA CH7 CH6 remap
+DMA_Remap|DMA_REMAP_SPI2_DMA_CH67|SPI2 RX/TX DMA CH6 CH7 remap
+DMA_Remap|DMA_REMAP_TIM1_DMA_CH6|TIM1 CH1/CH2/CH3 DMA CH6 remap
+DMA_Remap|DMA_REMAP_TIM2_DMA_CH7|TIM2 CH2/CH4 DMA CH7 remap
+DMA_Remap|DMA_REMAP_TIM3_DMA_CH6|TIM3 CH1/TRIG DMA CH6 remap
+DMA_Remap|DMA_REMAP_TIM16_DMA_CH4|TIM16 CH1/UP DMA CH4 remap
+DMA_Remap|DMA_REMAP_TIM16_DMA_CH6|TIM16 CH1/UP DMA CH6 remap
+DMA_Remap|DMA_REMAP_TIM17_DMA_CH2|TIM17 CH1/UP DMA CH2 remap
+DMA_Remap|DMA_REMAP_TIM17_DMA_CH7|TIM17 CH1/UP DMA CH7 remap
+DMA_Remap|DMA_REMAP_USART1_RX_DMA_CH5|USART1 RX DMA remap
+DMA_Remap|DMA_REMAP_USART1_TX_DMA_CH4|USART1 TX DMA remap
+DMA_Remap|DMA_REMAP_USART2_DMA_CH67|USART2 RX/TX DMA CH6 CH7 remap
+DMA_Remap|DMA_REMAP_USART3_DMA_CH32|USART3 RX/TX DMA CH3 CH2 remap

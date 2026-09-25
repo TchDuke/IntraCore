@@ -1,0 +1,51 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=BDMA1
+Version=STM32H7Ax3Bx3_dma_v1_1
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Request|Request number|||||
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+ClockEnableMode|Clock enable mode|||||
+DMA_Handle|DMA_Handle|||||
+IpInstance|IpInstance|||||
+NoTestForDmaSupport|NoTestForDmaSupport|||||
+
+[Values]
+# параметр|значение|подпись
+Request|BDMA1_REQUEST_DFSDM_FLT0|BDMA1 REQUEST DFSDM FLT0
+Request|BDMA1_REQUEST_DFSDM_FLT1|BDMA1 REQUEST DFSDM FLT1
+Request|BDMA1_REQUEST_DFSDM_FLT2|BDMA1 REQUEST DFSDM FLT2
+Request|BDMA1_REQUEST_DFSDM_FLT3|BDMA1 REQUEST DFSDM FLT3
+Request|BDMA1_REQUEST_DFSDM_FLT4|BDMA1 REQUEST DFSDM FLT4
+Request|BDMA1_REQUEST_DFSDM_FLT5|BDMA1 REQUEST DFSDM FLT5
+Request|BDMA1_REQUEST_DFSDM_FLT6|BDMA1 REQUEST DFSDM FLT6
+Request|BDMA1_REQUEST_DFSDM_FLT7|BDMA1 REQUEST DFSDM FLT7
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+ClockEnableMode|__HAL_RCC_BDMA_CLK_ENABLE|BDMA clock enable

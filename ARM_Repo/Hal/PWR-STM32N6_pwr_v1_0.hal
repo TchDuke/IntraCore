@@ -1,0 +1,105 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=PWR
+Version=STM32N6_pwr_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PVDLevel|PVD detection Level|||||
+Mode|PWR PVD Mode|||||Mode: Specifies the PVD trigger mode.
+AVDLevel|AVD detection Level|||||
+AVDMode|PWR AVD Mode|||||Mode: Specifies the PVD trigger mode.
+pwrPrivilegeSecure|Privilege of PWR Secure Items|Privilege PWR||||
+pwrPrivilegeNSecure|Privilege of PWR Non-Secure Items|Privilege PWR||||
+pwrPrivilege|PWR Privilege|Privilege PWR||||
+pwrSecureFull|PWR full secure|Secure PWR||||
+PWR_WKUP1|Wake-Up 1 secure protection|Secure PWR||||
+PWR_WKUP2|Wake-Up 2 secure protection|Secure PWR||||
+PWR_WKUP3|Wake-Up 3 secure protection|Secure PWR||||
+PWR_WKUP4|Wake-Up 4 secure protection|Secure PWR||||
+PWR_VDM|Voltage detection and monitoring secure protection|Secure PWR||||
+PWR_LPM|Low power modes secure protection|Secure PWR||||
+PWR_VB|Backup domain secure protection|Secure PWR||||
+PWR_IO|Retention secure protection|Secure PWR||||
+PWR_SCM|Supply configuration and monitoring secure protection|Secure PWR||||
+PWR_VUSB|Voltage USB Secure Protection|Secure PWR||||
+PWR_APC|Pull-up/pull-down secure protection|Secure PWR||||
+HighImpedanceMode|High impedance mode|||||
+VoltageScaling|Internal Voltage reference scale|||||
+TrimmingMode|Trimming Mode|||||
+DisableDeadBatterySignalsConfig|UCPD Disable Dead Battery Signals|||||
+TrimmingValue|Trimming Value|||0|63|
+PowerDomain2|VDDIO2||V|||To activate the VDDIO2 domain, try using PO[5:0] or PP[15:0].
+PowerDomain3|VDDIO3||V|||To activate the VDDIO3 domain, try using PN[12:0].
+PowerDomain4|VDDIO4||V|||To activate the VDDIO4 domain, try using PC[1], PC[12:6] or PH[9,2].
+PowerDomain5|VDDIO5||V|||To activate the VDDIO5 domain, try using PC[0], PC[5:2] or PE[4].
+
+[Values]
+# параметр|значение|подпись
+PVDLevel|PWR_PVDLEVEL_7|PWR PVD LEVEL 7
+PVDLevel|PWR_PVDLEVEL_0|PWR PVD LEVEL 0 (2.0 V)
+PVDLevel|PWR_PVDLEVEL_1|PWR PVD LEVEL 1 (2.2 V)
+PVDLevel|PWR_PVDLEVEL_2|PWR PVD LEVEL 2 (2.4 V)
+PVDLevel|PWR_PVDLEVEL_3|PWR PVD LEVEL 3 (2.5 V)
+PVDLevel|PWR_PVDLEVEL_4|PWR PVD LEVEL 4 (2.6 V)
+PVDLevel|PWR_PVDLEVEL_5|PWR PVD LEVEL 5 (2.8 V)
+PVDLevel|PWR_PVDLEVEL_6|PWR PVD LEVEL 6 (2.9 V)
+Mode|PWR_PVD_MODE_NORMAL|basic mode is used
+Mode|PWR_PVD_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING|Event Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_FALLING|Event Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING_FALLING|Event Mode with Rising/Falling edge trigger detection
+AVDLevel|PWR_AVDLEVEL_0|PWR AVD LEVEL 0 (1.7 V)
+AVDLevel|PWR_AVDLEVEL_1|PWR AVD LEVEL 1 (2.1 V)
+AVDLevel|PWR_AVDLEVEL_2|PWR AVD LEVEL 2 (2.5 V)
+AVDLevel|PWR_AVDLEVEL_3|AWR AVD LEVEL 3 (2.8 V)
+AVDMode|PWR_AVD_MODE_NORMAL|basic mode is used
+AVDMode|PWR_AVD_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+AVDMode|PWR_AVD_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+AVDMode|PWR_AVD_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+AVDMode|PWR_AVD_MODE_EVENT_RISING|Event Mode with Rising edge trigger detection
+AVDMode|PWR_AVD_MODE_EVENT_FALLING|Event Mode with Falling edge trigger detection
+AVDMode|PWR_AVD_MODE_EVENT_RISING_FALLING|Event Mode with Rising/Falling edge trigger detection
+pwrPrivilegeSecure|PWR_PRIVILEGE_SECURE_YES|Enable
+pwrPrivilegeSecure|PWR_PRIVILEGE_SECURE_NO|Disable
+pwrPrivilegeNSecure|PWR_PRIVILEGE_NSECURE_YES|Enable
+pwrPrivilegeNSecure|PWR_PRIVILEGE_NSECURE_NO|Disable
+pwrPrivilege|PWR_PRIVILEGE_YES|Enable
+pwrPrivilege|PWR_PRIVILEGE_NO|Disable
+pwrSecureFull|PWR_SECURE_FULL_YES|Enable
+pwrSecureFull|PWR_SECURE_FULL_NO|Disable
+PWR_WKUP1|WKUP1_SECURE_YES|Enable
+PWR_WKUP1|WKUP1_SECURE_NO|Disable
+PWR_WKUP2|WKUP2_SECURE_YES|Enable
+PWR_WKUP2|WKUP2_SECURE_NO|Disable
+PWR_WKUP3|WKUP3_SECURE_YES|Enable
+PWR_WKUP3|WKUP3_SECURE_NO|Disable
+PWR_WKUP4|WKUP4_SECURE_YES|Enable
+PWR_WKUP4|WKUP4_SECURE_NO|Disable
+PWR_VDM|VDM_SECURE_YES|Enable
+PWR_VDM|VDM_SECURE_NO|Disable
+PWR_LPM|LPM_SECURE_YES|Enable
+PWR_LPM|LPM_SECURE_NO|Disable
+PWR_VB|VB_SECURE_YES|Enable
+PWR_VB|VB_SECURE_NO|Disable
+PWR_IO|IO_SECURE_YES|Enable
+PWR_IO|IO_SECURE_NO|Disable
+PWR_SCM|SCM_SECURE_YES|Enable
+PWR_SCM|SCM_SECURE_NO|Disable
+PWR_VUSB|VUSB_SECURE_YES|Enable
+PWR_VUSB|VUSB_SECURE_NO|Disable
+PWR_APC|APC_SECURE_YES|Enable
+PWR_APC|APC_SECURE_NO|Disable
+TrimmingMode|__NULL|Factory Trimming
+TrimmingMode|USER_TRIMMING|User Trimming
+PowerDomain2|PWR_VDDIO_RANGE_3V3|(3.3)
+PowerDomain2|PWR_VDDIO_RANGE_1V8|(1.8)
+PowerDomain3|PWR_VDDIO_RANGE_3V3|(3.3)
+PowerDomain3|PWR_VDDIO_RANGE_1V8|(1.8)
+PowerDomain4|PWR_VDDIO_RANGE_3V3|(3.3)
+PowerDomain4|PWR_VDDIO_RANGE_1V8|(1.8)
+PowerDomain5|PWR_VDDIO_RANGE_3V3|(3.3)
+PowerDomain5|PWR_VDDIO_RANGE_1V8|(1.8)

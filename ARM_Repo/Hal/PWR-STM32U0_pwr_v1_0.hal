@@ -1,0 +1,61 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=PWR
+Version=STM32U0_pwr_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PVDLevel|PVD detection Level|||||
+Mode|PWR PVD Mode|||||Mode: Specifies the PVD trigger mode.
+pwrSecureFull|PWR full secure|Secure PWR||||
+PWR_WKUP1|Wake-Up 1 secure protection|Secure PWR||||
+PWR_WKUP2|Wake-Up 2 secure protection|Secure PWR||||
+PWR_WKUP3|Wake-Up 3 secure protection|Secure PWR||||
+PWR_WKUP4|Wake-Up 4 secure protection|Secure PWR||||
+PWR_WKUP5|Wake-Up 5 secure protection|Secure PWR||||
+PWR_WKUP6|Wake-Up 6 secure protection|Secure PWR||||
+PWR_WKUP7|Wake-Up 7 secure protection|Secure PWR||||
+PWR_WKUP8|Wake-Up 8 secure protection|Secure PWR||||
+HighImpedanceMode|High impedance mode|||||
+VoltageScaling|Internal Voltage reference scale|||||
+smartCodegenSys|Smart run domain in Run mode Call in MX_SystemPower_Config()|RAM||||
+PowerMode|Power Regulator|System power supply||||
+
+[Values]
+# параметр|значение|подпись
+PVDLevel|PWR_PVDLEVEL_7|PWR PVD LEVEL 7
+PVDLevel|PWR_PVDLEVEL_0|PWR PVD LEVEL 0 (2.0 V)
+PVDLevel|PWR_PVDLEVEL_1|PWR PVD LEVEL 1 (2.2 V)
+PVDLevel|PWR_PVDLEVEL_2|PWR PVD LEVEL 2 (2.4 V)
+PVDLevel|PWR_PVDLEVEL_3|PWR PVD LEVEL 3 (2.5 V)
+PVDLevel|PWR_PVDLEVEL_4|PWR PVD LEVEL 4 (2.6 V)
+PVDLevel|PWR_PVDLEVEL_5|PWR PVD LEVEL 5 (2.8 V)
+PVDLevel|PWR_PVDLEVEL_6|PWR PVD LEVEL 6 (2.9 V)
+Mode|PWR_PVD_MODE_NORMAL|basic mode is used
+Mode|PWR_PVD_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING|Event Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_FALLING|Event Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING_FALLING|Event Mode with Rising/Falling edge trigger detection
+pwrSecureFull|PWR_SECURE_FULL_YES|Enable
+pwrSecureFull|PWR_SECURE_FULL_NO|Disable
+PWR_WKUP1|WKUP1_SECURE_YES|Enable
+PWR_WKUP1|WKUP1_SECURE_NO|Disable
+PWR_WKUP2|WKUP2_SECURE_YES|Enable
+PWR_WKUP2|WKUP2_SECURE_NO|Disable
+PWR_WKUP3|WKUP3_SECURE_YES|Enable
+PWR_WKUP3|WKUP3_SECURE_NO|Disable
+PWR_WKUP4|WKUP4_SECURE_YES|Enable
+PWR_WKUP4|WKUP4_SECURE_NO|Disable
+PWR_WKUP5|WKUP5_SECURE_YES|Enable
+PWR_WKUP5|WKUP5_SECURE_NO|Disable
+PWR_WKUP6|WKUP6_SECURE_YES|Enable
+PWR_WKUP6|WKUP6_SECURE_NO|Disable
+PWR_WKUP7|WKUP7_SECURE_YES|Enable
+PWR_WKUP7|WKUP7_SECURE_NO|Disable
+PWR_WKUP8|WKUP8_SECURE_YES|Enable
+PWR_WKUP8|WKUP8_SECURE_NO|Disable
+PowerMode|PWR_LDO_SUPPLY|LDO
+PowerMode|PWR_SMPS_SUPPLY|SMPS

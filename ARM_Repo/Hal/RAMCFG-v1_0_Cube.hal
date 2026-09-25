@@ -1,0 +1,37 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RAMCFG
+Version=v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ErrorCodeCorrection|Error code correction (ECC)|||||
+ErrorCodeCorrectionSRAM1|Error code correction (ECC)|||||
+WriteProtection|Write Protection|||||
+StartPage|Start Page|||||
+PageNb|Page Number|||||
+WaitState|Wait State|||||
+HardwareErase|Hardware Erase|||||
+
+[Values]
+# параметр|значение|подпись
+ErrorCodeCorrection|ECC_DISABLE|Disable
+ErrorCodeCorrection|START_ECC|StartECC
+ErrorCodeCorrection|STOP_ECC|StopECC
+ErrorCodeCorrectionSRAM1|ECC_DISABLE|Disable
+ErrorCodeCorrectionSRAM1|START_ECC|StartECC
+ErrorCodeCorrectionSRAM1|STOP_ECC|StopECC
+WriteProtection|WP_DISABLE|Disable
+WriteProtection|WP_ENABLE|Enable
+WaitState|WS_DISABLE|Disable
+WaitState|RAMCFG_WAITSTATE_0|0
+WaitState|RAMCFG_WAITSTATE_1|1
+WaitState|RAMCFG_WAITSTATE_2|2
+WaitState|RAMCFG_WAITSTATE_3|3
+WaitState|RAMCFG_WAITSTATE_4|4
+WaitState|RAMCFG_WAITSTATE_5|5
+WaitState|RAMCFG_WAITSTATE_6|6
+WaitState|RAMCFG_WAITSTATE_7|7
+HardwareErase|HE_DISABLE|Disable
+HardwareErase|HE_ENABLE|Enable

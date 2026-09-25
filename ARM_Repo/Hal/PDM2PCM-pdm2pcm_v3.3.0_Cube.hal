@@ -1,0 +1,35 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=PDM2PCM
+Version=pdm2pcm_v3.3.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PDM2PCM_Version|PDM2PCM version|Version||||
+NbCHANNEL|How many channel do you use ?|PDM2PCM||1|64|
+CHANNEL1_initialisation|Initialisation|CHANNEL1||||
+CHANNEL1_bit_order|bit_order (define the bit order)|CHANNEL1||||Specifies the bit order for input. - 0x0000 : Least Signficant Bit - 0x0001 : Most Significant Bit
+CHANNEL1_endianness|endianness (define the byte order)|CHANNEL1||||Specifies if byte inversion is required. - 0x0000 : Little Endian - 0x0001 : Big Endian
+CHANNEL1_high_pass_tap|high_pass_tap (the high pass filter alpha)|CHANNEL1||0|2147483647|Specifies the HP filter tap value. -0 : filter not used
+CHANNEL1_in_ptr_channels|in_ptr_channels (the channels number in the input PDM stream)|CHANNEL1||1|65535|Specifies the number of channels in the input PDM Stream.
+CHANNEL1_out_ptr_channels|out_ptr_channels (the channels number in the output PCM stream)|CHANNEL1||1|65535|Specifies the number of channels in the output PCM stream.
+CHANNEL1_initial_configuration|Initial Configuration|CHANNEL1||||
+CHANNEL1_decimation_factor|decimation_factor (the factor to adapt PDM frequency to PCM frequency)|CHANNEL1||||Specifies the decimation factor.
+CHANNEL1_output_samples_number|output_samples_number (the number of samples by request)|CHANNEL1||1|65535|Specifies the number of PCM samples to be generated at each call to PDM_filter() function.
+CHANNEL1_mic_gain|mic_gain (the microphone gain in dB)|CHANNEL1||-12|51|Specifies the microphone gain in dB.
+CHANNEL1_gState|gState|CHANNEL1||Init|NoInit|
+
+[Values]
+# параметр|значение|подпись
+CHANNEL1_bit_order|PDM_FILTER_BIT_ORDER_LSB|PDM_FILTER_BIT_ORDER_LSB
+CHANNEL1_bit_order|PDM_FILTER_BIT_ORDER_MSB|PDM_FILTER_BIT_ORDER_MSB
+CHANNEL1_endianness|PDM_FILTER_ENDIANNESS_LE|PDM_FILTER_ENDIANNESS_LE
+CHANNEL1_endianness|PDM_FILTER_ENDIANNESS_BE|PDM_FILTER_ENDIANNESS_BE
+CHANNEL1_decimation_factor|PDM_FILTER_DEC_FACTOR_16|PDM_FILTER_DEC_FACTOR_16
+CHANNEL1_decimation_factor|PDM_FILTER_DEC_FACTOR_24|PDM_FILTER_DEC_FACTOR_24
+CHANNEL1_decimation_factor|PDM_FILTER_DEC_FACTOR_32|PDM_FILTER_DEC_FACTOR_32
+CHANNEL1_decimation_factor|PDM_FILTER_DEC_FACTOR_48|PDM_FILTER_DEC_FACTOR_48
+CHANNEL1_decimation_factor|PDM_FILTER_DEC_FACTOR_64|PDM_FILTER_DEC_FACTOR_64
+CHANNEL1_decimation_factor|PDM_FILTER_DEC_FACTOR_80|PDM_FILTER_DEC_FACTOR_80
+CHANNEL1_decimation_factor|PDM_FILTER_DEC_FACTOR_128|PDM_FILTER_DEC_FACTOR_128

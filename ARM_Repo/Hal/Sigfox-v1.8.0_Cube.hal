@@ -1,0 +1,84 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=Sigfox
+Version=v1.8.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+STM32WL5MXX|Module|Application selection||||
+SUBGHZ_APPLICATION|Application|Application selection||||List of available applications
+DISPLAY_APPLICATION|Application|Application selection||||List of available applications, some available starting the new project from EXAMPLE SELECTOR other from MCU or BOARD SELECTOR
+DEBUGGER_ON|Serial Wires or JTAG enabled|Application selection||||
+UTIL_SEQ_EN_M4|Use Sequencer kernel on CM4|Application selection||||
+UTIL_SEQ_EN_M0|Use Sequencer kernel on CM0|Application selection||||
+UTIL_TIMER_EN|Enable/Disable TIMER utility|Application selection||||
+SIGFOX_APP_MEM_POOL_SIZE|ThreadX SIGFOX_APP_MEM_POOL_SIZE|Application selection||512|20480|Default AzRTOS ThreadX memory pool size for the Sigfox application.
+SIGFOX_KMS|Use KMS for Sigfox|Application selection||||enable KMS for Sigfox code, forbidden
+DEBUG_SUBGHZSPI_MONITORING|Sub-GHz radio SPI interface|Application selection||||
+DEBUG_RF_NRESET|Sub-GHz radio NRESET|Application selection||||
+DEBUG_RF_HSE32RDY|Sub-GHz radio HSE32 CLOCK monitoring|Application selection||||
+DEBUG_RF_SMPSRDY|Sub-GHz radio SMPS ready monitoring|Application selection||||
+DEBUG_RF_LDORDY|Sub-GHz radio LDO ready monitoring|Application selection||||
+DEBUG_RF_DTB1|Sub-GHz radio Internal Signal monitoring|Application selection||||
+DEBUG_RF_BUSY|Sub-GHz radio Busy monitoring|Application selection||||
+FILL_UCS|Fill User Code Sections|Application selection||||
+USE_LPM|Configure Low Power Mode|Application selection||||Allow pre-fill of stm32_lpm_if.c file.
+USE_ADC|Use ADC for T° and battery management|Application selection||||<font color="blue"><b>ADC:</b> Proposed solution to manage radio settings depending on Vrefint and device internal T°.</font>    • For Dual Core operation Runtime Context is Cortex-M4 <b>Modes:</b> Temperature Sensor Channel and Vrefint Channel <b>Configuration:</b> - Parameters Settings:    • Clock Prescaler: Synchronous clock mode divided by 4    • Overrun behaviour: Overrun data overwritten    • SamplingTime Common 1 and 2: 160.5 Cycles <font color="blue"><b>Sigfox - Platform Settings panel:</b> Platform proposals</font>    • Ensure that ADC is selected in Found Solutions
+USE_RTC|Use RTC for Timer|Application selection||||<font color="blue"><b>RTC:</b> Proposed solution to manage timer in Low Power mode.</font>    • For Dual Core operation Runtime Contexts are both Cortex-M4 and Cortex-M0+ and initializer is Cortex-M0+ <b>Modes:</b> Activate Clock Source, Activate Calendar and activate Alarm A (and B for Dual Core) (Internal Alarm A (and B for Dual Core)) <b>User Constants:</b> Add the following Constants    • Constant Name: <b>RTC_N_PREDIV_S</b> Value: 10    • Constant Name: <b>RTC_PREDIV_S</b> Value: ((1 &lt;&lt; RTC_N_PREDIV_S)-1)    • Constant Name: <b>RTC_PREDIV_A</b> Value: ((1 &lt;&lt; (15-RTC_N_PREDIV_S))-1) <b>Configuration</b> - Parameters Settings:    • Asynchronous Predivider value: Set value to RTC_PREDIV_A    • Bin Mode: Free running Binary mode    • Alarm A Binary AutoControl: RTC_ALARMSUBSECONDBIN_AUTOCLR_NO <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <font color="blue"><b>Sigfox - Platform Settings panel:</b> Platform proposals</font>    • Ensure that RTC is selected in Found Solutions
+USE_LPTIM|Use LPTIM for Monarch|Application selection||||<font color="blue"><b>LPTIM:</b> Proposed solution to manage Monarch.</font>    • For Dual Core operation Runtime Context is Cortex-M0+ <b>Modes:</b> Counts internal clock events <b>Configuration</b> - NVIC settings:    • Enable Interrupt <font color="blue"><b>Sigfox - Platform Settings panel:</b> Platform proposals</font>    • Ensure that chosen LPTIM is selected in Found Solutions
+USE_UART|Use UART for Trace|Application selection||||<font color="blue"><b>USART/LPUART:</b> Proposed solution to manage trace.</font>    • For Dual Core operation Runtime Context is Cortex-M4 <b>Modes:</b> Asynchronous <b>Configuration</b> - Parameters Settings:    • If LPUART is selected then set Baud Rate: 9600 Bits/s <b>Configuration</b> - DMA Settings:    • Add USARTx_TX DMA Request with Channel configured with DMA1 Channel 5 <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <b>Clock Configuration panel</b>    • If LPUART is selected then set Clock Mux to LSE <b>NVIC Mode and Configuration panel</b> - Preemption priority management    • Set preemption Priority for DMA and UART Interrupt to 2 <font color="blue"><b>Sigfox - Platform Settings panel:</b> Platform proposals</font>    • Ensure that chosen UART is selected in Found Solutions
+USER_GUIDANCE_UTIL|none|Application selection||||<> If you see this message it means some Utilities are disabled. <> In this case only "User Defined Skeleton" Application is allowed. <> Please, enable all Utilities if you wish additional Application choices.
+USER_GUIDANCE|Platform configuration recommandations|Application selection||||<font color="blue"><b>KMS:</b> To set Sigfox using the KMS Middleware,</font><> <> User Code Sections in following files in the DualCore example project must be filled manually after generation:    • CM0PLUS/Core/Inc/kms_platf_objects_config.h : Add all Sigfox keys as kms_object_keyhead_32_t structures    • CM0PLUS/Core/Inc/kms_platf_objects_interface.h : Add all Sigfox key indexes    • CM0PLUS/Core/Inc/nvms_low_level.h : Enable the NVMS (Non Volatile Memory) to store the session keys    • CM0PLUS/Core/Src/nvms_low_level.c : Implement the Flash read/write functions to manage the NVMS items <> Example can be found in the RF projects in the STM32CubeWL MCU package : <> <font color="purple"> www.st.com/stm32cubewl</font> <font color="blue"><b>ADC:</b> Proposed solution to manage radio settings for internal T° measurement in conjunction with batterie level.</font>    • For Dual Core operation: Runtime Contexts is Cortex-M4 <b>Modes:</b> Temperature Sensor Channel and Vrefint Channel <b>Configuration:</b> - Parameters Settings:    • Clock Prescaler: Synchronous clock mode divided by 4    • Overrun behaviour: Overrun data overwritten    • SamplingTime Common 1 and 2: 160.5 Cycles <font color="blue"><b>RTC:</b> Proposed solution to manage timer in Low Power mode.</font>    • For Dual Core operation Runtime Contexts are both Cortex-M4 and Cortex-M0+ and initializer is Cortex-M0+ <b>Modes:</b> Activate Clock Source, Activate Calendar and activate Alarm A (and B for Dual Core) (Internal Alarm A (and B for Dual Core)) <b>User Constants:</b> Add the following Constants    • Constant Name: <b>RTC_N_PREDIV_S</b> Value: 10    • Constant Name: <b>RTC_PREDIV_S</b> Value: ((1 &lt;&lt; RTC_N_PREDIV_S)-1)    • Constant Name: <b>RTC_PREDIV_A</b> Value: ((1 &lt;&lt; (15-RTC_N_PREDIV_S))-1) <b>Configuration</b> - Parameters Settings:    • Asynchronous Predivider value: Set value to RTC_PREDIV_A    • Bin Mode: Free running Binary mode    • Alarm A Binary AutoControl: RTC_ALARMSUBSECONDBIN_AUTOCLR_NO <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <font color="blue"><b>RCC:</b> Proposed solution to manage RCC.</font> <b>Modes:</b> Low Speed Clock (LSE): Set value to Crystal Ceramic Resonator <b>Configuration</b> - Parameters Settings:    • Flash Latency(WS): 2 WS (3 CPU cycle)    • Power Regulator Voltage Scale: Scale 1 <b>Clock Configuration panel</b>    • Set MSI RC to 32MHz    • Set RTC Clock Mux to LSE <font color="blue"><b>USART/LPUART:</b> Proposed solution to manage trace.</font>    • For Dual Core operation: Runtime Contexts is Cortex-M4 <b>Modes:</b> Asynchronous <b>Configuration</b> - Parameters Settings:    • If LPUART is selected then set Baud Rate: 9600 Bits/s <b>Configuration</b> - DMA Settings:    • Add USARTx_TX DMA Request with Channel configured with DMA1 Channel 5 <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <b>Clock Configuration panel</b>    • If LPUART is selected then set Clock Mux to LSE <b>NVIC Mode and Configuration panel</b> - Preemption priority management    • Set preemption Priority for DMA and UART Interrupt to 2 <font color="blue"><b>LPTIM:</b> Proposed solution to manage Monarch.</font> <b>Modes:</b> Counts internal clock events <b>Configuration</b> - NVIC settings:    • Enable Interrupt <font color="blue"><b>Sigfox - Platform Settings panel:</b> Platform proposals</font>    • Ensure that relevant solutions are properly selected <font color="blue"><b>Project Manager- Advanced Settings panel:</b> Generated Function Calls management</font>    • Untick "Generate Code" for RTC on CortexM4 and DMA on CortexM0PLUS for Dual Core    • Tick "Do Not Generate Function Call" for DMA, ADC, RTC, SUBGHZ, LPTIM, UART and IPCC(for Dual Core)    • Untick Visibility for all Function Calls on both cores
+VERBOSE_LEVEL|Trace verbose level|sys_conf||||
+VERBOSE_LEVEL_CM4|Trace verbose level|sys_conf CM4||||
+VERBOSE_LEVEL_CM0PLUS|Trace verbose level|sys_conf CM0PLUS||||
+APP_LOG_ENABLED|Enable Application Logging|sys_conf||||
+APP_LOG_ENABLED_CM4|Enable Application Logging|sys_conf CM4||||
+APP_LOG_ENABLED_CM0PLUS|Enable Application Logging|sys_conf CM0PLUS||||
+DEBUGGER_ON_CM4|Activate Debugger|sys_conf CM4||||
+DEBUGGER_ON_CM0PLUS|Activate Debugger|sys_conf CM0PLUS||||
+LOW_POWER_DISABLE|Disable Low Power Mode|sys_conf||||It goes only to SLEEP but not to STOP mode
+LOW_POWER_DISABLE_CM4|Disable Low Power Mode|sys_conf CM4||||It goes only to SLEEP but not to STOP mode
+LOW_POWER_DISABLE_CM0PLUS|Disable Low Power Mode|sys_conf CM0PLUS||||It goes only to SLEEP but not to STOP mode
+SENSOR_ENABLED|Enable Sensor|sys_conf||||
+SENSOR_ENABLED_CM4|Enable Sensor|sys_conf CM4||||
+DEFAULT_RC|Default RC|sigfox_app||||
+MW_LOG_ENABLED|Enable Middleware log|mw_log_conf||||
+RF_WAKEUP_TIME|Radio maximum wakeup time (in ms)|radio_conf||||Radio maximum wakeup time (in ms)
+Activate_RADIO_BOARD_INTERFACE|Select radio Driver|radio_board_if||||UserBoard: user to complete; Bsp: need to be included in the IDE; NucleoPseudo: just x backward compatibility.
+IS_TCXO_SUPPORTED|TCXO support|radio_board_if||||Indicates whether or not TCXO is supported by the board. TCXO needs to be selected in RCC panel (HSE clock)
+IS_DCDC_SUPPORTED|DCDC support|radio_board_if||||Indicates whether or not DCDC is supported by the board
+TX_RFO_CONFIG|Tx Rfo Config|radio_board_if||||Indicates the config
+Activate_DEBUG_LINE|Probes Lines in Platform Settings|board settings||||Enable Probes Line using GPIO under Plaform Settings panel
+Activate_BOARD_RESOURCES|Board Resources|board settings||||Enable LEDs and BUTTONs settings using GPIO under Plaform Settings panel or via .extSettings file
+
+[Values]
+# параметр|значение|подпись
+SUBGHZ_APPLICATION|SIGFOX_AT_SLAVE|AT Slave skeleton
+SUBGHZ_APPLICATION|SIGFOX_PUSHBUTTON|PushButton skeleton
+SUBGHZ_APPLICATION|SIGFOX_USER_APPLICATION|User defined skeleton
+DISPLAY_APPLICATION|SIGFOX_AT_SLAVE|AT_Slave (accessible from EXAMPLE selector)
+DISPLAY_APPLICATION|SIGFOX_PUSHBUTTON|PushButton (accessible from EXAMPLE selector)
+DISPLAY_APPLICATION|SIGFOX_USER_APPLICATION|User defined (accessible from WL MCU selector)
+VERBOSE_LEVEL|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL|VLEVEL_L|VLEVEL_L
+VERBOSE_LEVEL_CM4|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL_CM4|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL_CM4|VLEVEL_L|VLEVEL_L
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_L|VLEVEL_L
+DEFAULT_RC|SFX_RC1|SFX_RC1
+DEFAULT_RC|SFX_RC2|SFX_RC2
+DEFAULT_RC|SFX_RC3A|SFX_RC3A
+DEFAULT_RC|SFX_RC3C|SFX_RC3C
+DEFAULT_RC|SFX_RC4|SFX_RC4
+DEFAULT_RC|SFX_RC5|SFX_RC5
+DEFAULT_RC|SFX_RC6|SFX_RC6
+DEFAULT_RC|SFX_RC7|SFX_RC7
+DEFAULT_RC|SFX_RC101|SFX_RC101
+TX_RFO_CONFIG|RBI_CONF_RFO_LP_HP|CONF_RFO_LP_HP
+TX_RFO_CONFIG|RBI_CONF_RFO_LP|CONF_RFO_LP
+TX_RFO_CONFIG|RBI_CONF_RFO_HP|CONF_RFO_HP

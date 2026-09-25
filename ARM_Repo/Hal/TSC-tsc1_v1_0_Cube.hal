@@ -1,0 +1,93 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=TSC
+Version=tsc1_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+CTPulseHighLength|Charge Transfer High Pulse Length|TSC Settings||||Charge Transfer High Pulse Length
+CTPulseLowLength|Charge Transfer Low Pulse Length|TSC Settings||||Charge Transfer Low Pulse Length
+SpreadSpectrum|Spread Spectrum|TSC Settings||||Spread Spectrum activation
+SpreadSpectrumDeviation|Spread Spectrum Deviation|TSC Settings||1|128|
+SpreadSpectrumPrescaler|Spread Spectrum Prescaler|TSC Settings||||
+PulseGeneratorPrescaler|Pulse Generator Prescaler|TSC Settings||||Pulse Generator Prescaler
+MaxCountValue|Maximum Count Value|TSC Settings||||Maximum Count Value
+IODefaultMode|IO Default Mode|TSC Settings||||IO Default Mode describe if the IO are forced to output pushpull low or are in input floating
+SynchroPinPolarity|Synchro Pin Polarity|TSC Settings||||
+AcquisitionMode|Acquisition Mode|TSC Settings||||Aquisition mode can be : Normal acquisition mode (acquisition starts as soon as START bit is set) or Synchronized acquisition mode (acquisition starts if START bit is set and when the selected signal is detected on the SYNC input pin
+MaxCountInterrupt|Maximum Count Interrupt|TSC Settings||||Maximum Count Interrupt activation
+ChannelIOs|Channel IOs|TSC Settings||||
+ShieldIOs|Shield IOs|TSC Settings||||
+SamplingIOs|Sampling IOs|TSC Settings||||
+Gx_IOx-Sampling|Gx_IOx-Sampling|TSC Settings||0|8|
+Gx_IOx-Channel|Gx_IOx-Channel|TSC Settings||0|24|
+Gx_IOx-Shield|Gx_IOx-Shield|TSC Settings||0|8|
+TSC_G4_IO1|TSC G4 IO1|||||
+TSC_G6_IO1|TSC G6 IO1|||||
+TSC_G7_IO2|TSC G7 IO2|||||
+TSC_G2_IO1|TSC G2 IO1|||||
+TSC_G2_IO3|TSC G2 IO3|||||
+
+[Values]
+# параметр|значение|подпись
+CTPulseHighLength|TSC_CTPH_1CYCLE|1 Cycle
+CTPulseHighLength|TSC_CTPH_2CYCLES|2 Cycles
+CTPulseHighLength|TSC_CTPH_3CYCLES|3 Cycles
+CTPulseHighLength|TSC_CTPH_4CYCLES|4 Cycles
+CTPulseHighLength|TSC_CTPH_5CYCLES|5 Cycles
+CTPulseHighLength|TSC_CTPH_6CYCLES|6 Cycles
+CTPulseHighLength|TSC_CTPH_7CYCLES|7 Cycles
+CTPulseHighLength|TSC_CTPH_8CYCLES|8 Cycles
+CTPulseHighLength|TSC_CTPH_9CYCLES|9 Cycles
+CTPulseHighLength|TSC_CTPH_10CYCLES|10 Cycles
+CTPulseHighLength|TSC_CTPH_11CYCLES|11 Cycles
+CTPulseHighLength|TSC_CTPH_12CYCLES|12 Cycles
+CTPulseHighLength|TSC_CTPH_13CYCLES|13 Cycles
+CTPulseHighLength|TSC_CTPH_14CYCLES|14 Cycles
+CTPulseHighLength|TSC_CTPH_15CYCLES|15 Cycles
+CTPulseHighLength|TSC_CTPH_16CYCLES|16 Cycles
+CTPulseLowLength|TSC_CTPL_1CYCLE|1 Cycle
+CTPulseLowLength|TSC_CTPL_2CYCLES|2 Cycles
+CTPulseLowLength|TSC_CTPL_3CYCLES|3 Cycles
+CTPulseLowLength|TSC_CTPL_4CYCLES|4 Cycles
+CTPulseLowLength|TSC_CTPL_5CYCLES|5 Cycles
+CTPulseLowLength|TSC_CTPL_6CYCLES|6 Cycles
+CTPulseLowLength|TSC_CTPL_7CYCLES|7 Cycles
+CTPulseLowLength|TSC_CTPL_8CYCLES|8 Cycles
+CTPulseLowLength|TSC_CTPL_9CYCLES|9 Cycles
+CTPulseLowLength|TSC_CTPL_10CYCLES|10 Cycles
+CTPulseLowLength|TSC_CTPL_11CYCLES|11 Cycles
+CTPulseLowLength|TSC_CTPL_12CYCLES|12 Cycles
+CTPulseLowLength|TSC_CTPL_13CYCLES|13 Cycles
+CTPulseLowLength|TSC_CTPL_14CYCLES|14 Cycles
+CTPulseLowLength|TSC_CTPL_15CYCLES|15 Cycles
+CTPulseLowLength|TSC_CTPL_16CYCLES|16 Cycles
+SpreadSpectrumPrescaler|TSC_SS_PRESC_DIV1|Synchronous clock mode
+SpreadSpectrumPrescaler|TSC_SS_PRESC_DIV2|Synchronous clock mode divided by 2
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV1|Synchronous clock mode
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV2|Synchronous clock mode divided by 2
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV4|Synchronous clock mode divided by 4
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV8|Synchronous clock mode divided by 8
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV16|Synchronous clock mode divided by 16
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV32|Synchronous clock mode divided by 32
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV64|Synchronous clock mode divided by 64
+PulseGeneratorPrescaler|TSC_PG_PRESC_DIV128|Synchronous clock mode divided by 128
+MaxCountValue|TSC_MCV_255|255 charge transfer cycles
+MaxCountValue|TSC_MCV_511|511 charge transfer cycles
+MaxCountValue|TSC_MCV_1023|1023 charge transfer cycles
+MaxCountValue|TSC_MCV_2047|2047 charge transfer cycles
+MaxCountValue|TSC_MCV_4095|4095 charge transfer cycles
+MaxCountValue|TSC_MCV_8191|8191 charge transfer cycles
+MaxCountValue|TSC_MCV_16383|16383 charge transfer cycles
+IODefaultMode|TSC_IODEF_OUT_PP_LOW|Output push-pull low
+IODefaultMode|TSC_IODEF_IN_FLOAT|Input floating
+SynchroPinPolarity|TSC_SYNC_POLARITY_FALLING|Falling edge only
+SynchroPinPolarity|TSC_SYNC_POLARITY_RISING|Rising edge and high level
+AcquisitionMode|TSC_ACQ_MODE_NORMAL|Normal acquisition mode
+AcquisitionMode|TSC_ACQ_MODE_SYNCHRO|Synchronized acquisition mode
+TSC_G4_IO1|SYSCFG_COMP_MODE_GRP4_IO1|
+TSC_G6_IO1|SYSCFG_COMP_MODE_GRP6_IO1|
+TSC_G7_IO2|SYSCFG_COMP_MODE_GRP7_IO2|
+TSC_G2_IO1|SYSCFG_COMP_MODE_GRP2_IO1|
+TSC_G2_IO3|SYSCFG_COMP_MODE_GRP2_IO3|

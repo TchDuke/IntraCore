@@ -1,0 +1,75 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMP
+Version=advsmu_v3_4_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InvertingInput|Inverting Input|Pinout Parameters||||Selects the Inverting Input of the Comparator.
+NonInvertingInput|Non-Inverting Input|Pinout Parameters||||Selects the Non-Inverting Input of the Comparator.
+WindowMode|Window Mode|Pinout Parameters||||
+Mode|Speed Mode|Basic Parameters||||Selects the operating Consumption Mode of the Comparator to adjust the Speed/Consumption.
+TriggerMode|Interrupt Trigger Mode|Basic Parameters||||Selects the Trigger Mode of the Comparator when using Interruption on EXTI line (Interrupt Mode).
+NonInvertingInputPull|Non-Inverting Internal Resistor|Basic Parameters||||Selects the internal pulling resistor connected on Non-Inverting Input.
+Output|Output Internal Selection|Output Parameters||||Selects the output redirection of the comparator.
+
+[Values]
+# параметр|значение|подпись
+InvertingInput|COMP_INVERTINGINPUT_IO|External I/O (COMP1 : Internal Connection to VREFINT)
+InvertingInput|COMP_INVERTINGINPUT_VREFINT|VREFINT connected to comparator 2 inverting input
+InvertingInput|COMP_INVERTINGINPUT_3_4VREFINT|3/4 VREFINT connected to comparator 2 inverting input
+InvertingInput|COMP_INVERTINGINPUT_1_2VREFINT|1/2 VREFINT connected to comparator 2 inverting input
+InvertingInput|COMP_INVERTINGINPUT_1_4VREFINT|1/4 VREFINT connected to comparator 2 inverting input
+InvertingInput|COMP_INVERTINGINPUT_DAC1|DAC_OUT1 (PA4) connected to comparator 2 inverting input
+InvertingInput|COMP_INVERTINGINPUT_DAC2|DAC2_OUT (PA5) connected to comparator 2 inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA0|I/O pin PA0 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA1|I/O pin PA1 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA2|I/O pin PA2 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA3|I/O pin PA3 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA4|I/O pin PA4 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA5|I/O pin PA5 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA6|I/O pin PA6 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PA7|I/O pin PA7 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB0|I/O pin PB0 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB1|I/O pin PB1 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB12|I/O pin PB12 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB13|I/O pin PB13 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB14|I/O pin PB14 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB15|I/O pin PB15 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PC0|I/O pin PC0 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PC1|I/O pin PC1 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PC2|I/O pin PC2 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PC3|I/O pin PC3 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PC4|I/O pin PC4 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PC5|I/O pin PC5 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PE7|I/O pin PE7 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PE8|I/O pin PE8 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PE9|I/O pin PE9 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PE10|I/O pin PE10 connection to COMP1 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB4|I/O pin PB4 connection to COMP2 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB5|I/O pin PB5 connection to COMP2 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB6|I/O pin PB6 connection to COMP2 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_PB7|I/O pin PB7 connection to COMP2 non-inverting input
+NonInvertingInput|COMP_NONINVERTINGINPUT_NONE|In case of window mode: No I/O pin connection to COMP1 non-inverting input. Instead, connection to COMP2 non-inverting input.
+WindowMode|COMP_WINDOWMODE_DISABLE|Disabled
+WindowMode|COMP_WINDOWMODE_ENABLE|Enabled
+Mode|COMP_MODE_HIGHSPEED|High Speed
+Mode|COMP_MODE_LOWSPEED|Low Speed
+TriggerMode|COMP_TRIGGERMODE_NONE|None
+TriggerMode|COMP_TRIGGERMODE_IT_RISING|Rising Edge
+TriggerMode|COMP_TRIGGERMODE_IT_FALLING|Falling Edge
+TriggerMode|COMP_TRIGGERMODE_IT_RISING_FALLING|Rising/Falling Edge
+NonInvertingInputPull|COMP_NONINVERTINGINPUT_NOPULL|None
+NonInvertingInputPull|COMP_NONINVERTINGINPUT_10KPU|10 kOhm Pull-Up
+NonInvertingInputPull|COMP_NONINVERTINGINPUT_10KPD|10 kOhm Pull-Down
+NonInvertingInputPull|COMP_NONINVERTINGINPUT_400KPU|400 kOhm Pull-Up
+NonInvertingInputPull|COMP_NONINVERTINGINPUT_400KPD|400 kOhm Pull-Down
+Output|COMP_OUTPUT_NONE|None
+Output|COMP_OUTPUT_TIM2IC4|Timer 2 Input Capture 4
+Output|COMP_OUTPUT_TIM2OCREFCLR|Timer 2 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM3IC4|Timer 3 Input Capture 4
+Output|COMP_OUTPUT_TIM3OCREFCLR|Timer 3 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM4IC4|Timer 4 Input Capture 4
+Output|COMP_OUTPUT_TIM4OCREFCLR|Timer 4 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM10IC1|Timer 10 Input Capture 1

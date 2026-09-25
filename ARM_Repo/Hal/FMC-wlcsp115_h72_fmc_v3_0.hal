@@ -1,0 +1,56 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FMC
+Version=wlcsp115_h72_fmc_v3_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+NAND_Instance|Device|||||
+BankMapConfig|FMC bank mapping|Mapping parameters||||
+NandCoherentPinout1|Nand Coherent Pinout|NAND control||||
+NandBank1|Bank|NAND control||||
+NandMemoryDataWidth1|Data size|NAND control||||
+EccComputation1|ECC computation|NAND control||||
+ECCPageSize1|ECC page size|NAND control||||
+NandPageSize1|Page size|NAND characteristic information||0|4294967295|NAND memory page size (without spare area) measured in bytes for 8-bit addressing or words for 16-bit addressing.
+NandSpareAreaSize1|Spare area size|NAND characteristic information||0|4294967295|NAND memory spare area size measured in bytes for 8-bit addressing or words for 16-bit addressing.
+NandBlockSize1|Block size|NAND characteristic information||0|4294967295|NAND memory block size expressed in number of pages.
+NandBlockNbr1|Block number|NAND characteristic information||0|4294967295|NAND memory number of blocks.
+NandPlaneNbr1|Plane number|NAND characteristic information||0|4294967295|NAND memory number of planes.
+NandPlaneSize1|Plane size|NAND characteristic information||0|4294967295|NAND memory plane size measured in number of blocks.
+NandExtraCommandEnable1|Extra command enable|NAND characteristic information||||NAND extra command needed for page reading mode. This parameter is mandatory for some NAND memories. Please check the read mode sequence in the NAND device datasheet.
+Waitfeature1|Wait feature|NAND control||||
+TCLRSetupTime1|CLE low to RE low delay in HCLK cycles|NAND control||0|15|
+TARSetupTime1|ALE low to RE low delay in HCLK cycles|NAND control||0|15|
+CommonSpaceSetupTime1|Common space setup time|NAND common space timing in HCLK cycles||0|254|
+CommonSpaceWaitSetupTime1|Common space wait time|NAND common space timing in HCLK cycles||1|254|
+CommonSpaceHoldSetupTime1|Common space hold time|NAND common space timing in HCLK cycles||1|254|
+CommonSpaceHiZSetupTime1|Common space Hi-Z time|NAND common space timing in HCLK cycles||0|254|
+AttributeSpaceSetupTime1|Attribute space setup time|NAND attribute space timing in HCLK cycles||0|254|
+AttributeSpaceWaitSetupTime1|Attribute space wait time|NAND attribute space timing in HCLK cycles||1|254|
+AttributeSpaceHoldSetupTime1|Attribute space hold time|NAND attribute space timing in HCLK cycles||1|254|
+AttributeSpaceHiZSetupTime1|Attribute space Hi-Z time|NAND attribute space timing in HCLK cycles||0|254|
+
+[Values]
+# параметр|значение|подпись
+NAND_Instance|FMC_NAND_DEVICE|NAND Device
+BankMapConfig|FMC_SWAPBMAP_DISABLE|Default mapping
+BankMapConfig|FMC_SWAPBMAP_SDRAM_SRAM|NOR/PSRAM bank and SDRAM bank 1/bank2 are swapped
+NandCoherentPinout1|MEMORY_WAIT_KO|PINOUT KO
+NandCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+NandCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+NandBank1|FMC_NAND_BANK2|NAND bank 2
+NandBank1|FMC_NAND_BANK3|NAND bank 3
+NandMemoryDataWidth1|FMC_NAND_MEM_BUS_WIDTH_8|8 bits
+NandMemoryDataWidth1|FMC_NAND_MEM_BUS_WIDTH_16|16 bits
+EccComputation1|FMC_NAND_ECC_DISABLE|Disabled
+EccComputation1|FMC_NAND_ECC_ENABLE|Enabled
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_256BYTE|256 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_512BYTE|512 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_1024BYTE|1024 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_2048BYTE|2048 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_4096BYTE|4096 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_8192BYTE|8192 bytes
+Waitfeature1|FMC_NAND_WAIT_FEATURE_ENABLE|Enabled
+Waitfeature1|FMC_NAND_WAIT_FEATURE_DISABLE|Disabled

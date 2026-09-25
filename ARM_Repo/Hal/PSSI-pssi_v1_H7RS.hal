@@ -1,0 +1,39 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=PSSI
+Version=pssi_v1_H7RS
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DataWidth|Data Width|||||Bits size of the word If the Bus Width is smaller than the Data Width, then the least-significant bits of the Data is sent first.
+BusWidth|Bus Width|||||
+CLKSource|Clock Source|||||
+ControlSignal|Control Signals|||||<u>No control signal used: </u> <i>Neither DE nor RDY are enabled</i>: control signals are not used <u>Both control signals used: </u> <i>Both RDY and DE alternate functions enabled </i>: Ready and Data Enable control signals are used on their proper pins <i>Bi-directional on RDY pin</i>: Data Enable and Ready control signal are used on the Ready pin <i>Bi-directional on DE pin</i>: Data Enable and Ready control signal are used on the Data Enable pin <u>Only one control signal used: </u> <i>Only RDY enabled</i>: only Ready control signal is used on Ready pin <i>Only DE enabled</i>: only Data Enable control signal is used Data Enable pin <i>Only RDY enabled, mapped to DE pin</i>: only Ready control signal is used on Data Enable pin <i>Only DE enabled, mapped to RDY pin</i>: only Data Enable control signal is used Ready pin When PSSI module is receiving: DE: PSSI samples Data Enable signal which is enabled by the transmitter to indicate when the data is valid. RDY: PSSI drives Ready to indicate when PSSI is ready to sample the data. When PSSI module is transmitting: RDY: PSSI samples Ready updated by the transmitter when the transmitter is ready to get data. DE: PSSI drives Data Enable to indicate the receiver as soon as the data are ready.
+ClockPolarity|Clock Polarity|||||This parameter configures the capture edge of the parallel clock or the edge used for driving outputs 0: Falling edge active for inputs or rising edge active for outputs 1: Rising edge active for inputs or falling edge active for outputs.
+DataEnablePolarity|Data Enable Polarity|||||When DE (Data Enable) is inactive, it means that the data must not be sampled by the receiver at the next clock edge. This parameter specifies if DE is active when this signal is 0 (Low) or when it is 1 (High)
+ReadyPolarity|Ready Polarity|||||When RDY (Ready) is inactive, it means that the data are not transmitted by the transmitter at the next clock edge. This parameter specifies if RDY is active when this signal is 0 (Low) or when it is 1 (High)
+
+[Values]
+# параметр|значение|подпись
+DataWidth|HAL_PSSI_8BITS|8 Bits
+DataWidth|HAL_PSSI_16BITS|16 Bits
+DataWidth|HAL_PSSI_32BITS|32 Bits
+BusWidth|HAL_PSSI_8LINES|8 lines
+BusWidth|HAL_PSSI_16LINES|16 lines
+CLKSource|HAL_PSSI_CLOCK_INT|Internal Clock
+CLKSource|HAL_PSSI_CLOCK_EXT|External Clock
+ControlSignal|HAL_PSSI_DE_RDY_DISABLE|Neither DE nor RDY are enabled
+ControlSignal|HAL_PSSI_DE_RDY_ALT_ENABLE|Both RDY and DE alternate functions enabled
+ControlSignal|HAL_PSSI_MAP_RDY_BIDIR_ENABLE|Bi-directional on RDY pin
+ControlSignal|HAL_PSSI_MAP_DE_BIDIR_ENABLE|Bi-directional on DE pin
+ControlSignal|HAL_PSSI_RDY_ENABLE|Only RDY enabled
+ControlSignal|HAL_PSSI_RDY_MAP_ENABLE|Only RDY enabled, mapped to DE pin
+ControlSignal|HAL_PSSI_DE_ENABLE|Only DE enabled
+ControlSignal|HAL_PSSI_DE_MAP_ENABLE|Only DE enabled, mapped to RDY pin
+ClockPolarity|HAL_PSSI_FALLING_EDGE|Falling Edge
+ClockPolarity|HAL_PSSI_RISING_EDGE|Rising Edge
+DataEnablePolarity|HAL_PSSI_DEPOL_ACTIVE_LOW|Active Low
+DataEnablePolarity|HAL_PSSI_DEPOL_ACTIVE_HIGH|Active High
+ReadyPolarity|HAL_PSSI_RDYPOL_ACTIVE_LOW|Active Low
+ReadyPolarity|HAL_PSSI_RDYPOL_ACTIVE_HIGH|Active High

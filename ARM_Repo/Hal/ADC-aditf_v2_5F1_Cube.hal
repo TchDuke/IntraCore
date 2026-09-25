@@ -1,0 +1,197 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ADC
+Version=aditf_v2_5F1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FadcConstraint|Fadc Constraint|||600000|12000000|
+Mode|Mode|ADCsgroup||||Multi ADC mode selection: Configures the ADC to operate in independent or multi mode
+DMAAccessMode_ADC1|DMA Access Mode|ADCsgroup||||
+DMAAccessMode_ADC2|DMA Access Mode|ADCsgroup||||
+DMAAccessMode_ADC3|DMA Access Mode|ADCsgroup||||
+DataAlign|Data Alignment|ADCgroup||||Select the alignment of the data stored after conversion.
+ScanConvMode|Scan Conversion Mode|ADCgroup||||Enable or Disable the Scan Conversion Mode
+ContinuousConvMode|Continuous Conversion Mode|ADCgroup||||Enable or Disable the Continuous Conversion Mode
+DiscontinuousConvMode|Discontinuous Conversion Mode|ADCgroup||||Enable or Disable the Discontinuous Conversion Mode
+NbrOfDiscConversion|Number Of Discontinuous Conversions|||1|8|
+EnableRegularConversion|Enable Regular Conversions|ADC_Regular_ConversionMode||||Enable/Disable Regular Conversion
+NbrOfConversionFlag|Number Of Conversion Flag|ADCgroup||0|1|
+NbrOfConversion|Number Of Conversion|ADCgroup||1|16|Number of regular channels to be converted
+ExternalTrigConv|External Trigger Conversion Source|ADCgroup||||Select the external event used to trigger the start of conversion of a regular group
+InjNumberOfConversion|Number Of Conversions|ADCgroup||0|4|Number of injected channels to be converted
+ExternalTrigInjecConv|External Trigger Source|ADCgroup||||EXTI Line15 is used for External-Trigger-for-Injected-conversion mode
+InjectedConvMode|Injected Conversion Mode|ADCgroup||||Injected Conversion Mode selection
+InjectedDiscontinuousConvMode|Injected Discontinuous Conversion Mode|||||
+AutoInjectedConv|Automatic Injected Conversion|||||
+Rank|Rank|ADCgroup||1|16|The rank in the regular group sequencer
+InjectedRank|Rank|ADCChannel||1|4|The rank in the injected group sequencer
+Channel|Channel|ADCChannel||||
+SamplingTime|Sampling Time|ADCChannel||||Regular Channel x sampling time selection
+InjectedOffset|Injected Offset|||0|4095|Data offset for injected channel
+EnableAnalogWatchDog|Enable Analog WatchDog Mode|ADCgroup||||Enable/Disable Analog WatchDog Mode
+WatchdogMode|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+WatchdogChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+AWD1HighThreshold|High Threshold|ADCgroup||=AWD1LowThreshold|4095|Configures the ADC analog watchdog High threshold value.
+AWD1LowThreshold|Low Threshold|ADCgroup||0|=AWD1HighThreshold|Configures the ADC analog watchdog Low threshold value.
+EnableInjectedConversion|Enable Injected Conversions|ADCgroup||||<html> <font color="red"><b>*</b>In case of usage of channels on injected group, ADC frequency should be low than AHB clock frequency /4 for resolution 12 or 10 bits, AHB clock frequency /3 for resolution 8 bits, AHB clock frequency /2 for resolution 6 bits.</font></br></html>
+AWD1ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured in interrupt mode or in polling mode.
+master|Master Flag|||0|1|
+UnUsedParameter|UnUsedParameter|||||
+AllChannels|Channel|ADCChannel||||
+Available_Channel|Available Channel|ADCChannel||||
+AnalogWDChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+ChannelForWatchDog|Channel type for WatchDog|||||
+
+[Values]
+# параметр|значение|подпись
+Mode|__NULL|Independent mode
+Mode|ADC_DUALMODE_REGSIMULT_ALTERTRIG|Dual regular simultaneous + alternate trigger mode
+Mode|ADC_DUALMODE_REGSIMULT|Dual regular simultaneous mode only
+Mode|ADC_DUALMODE_INTERL|Dual interleaved mode only
+Mode|ADC_DUALMODE_ALTERTRIG|Dual alternate trigger mode only
+Mode|ADC_DUALMODE_REGSIMULT_INJECSIMULT|Dual combined regular simultaneous + injected simultaneous mode
+Mode|ADC_DUALMODE_INJECSIMULT_INTERLFAST|Dual combined injected simultaneous + fast interleaved mode (delay between ADC sampling phases: 7 ADC clock cycles)
+Mode|ADC_DUALMODE_INJECSIMULT_INTERLSLOW|Dual combined injected simultaneous + slow interleaved mode (delay between ADC sampling phases: 14 ADC clock cycles)
+Mode|ADC_DUALMODE_INJECSIMULT|Dual injected simultaneous mode only
+Mode|ADC_DUALMODE_INTERLFAST|Dual fast interleaved mode only (delay between ADC sampling phases: 7 ADC clock cycles)
+Mode|ADC_DUALMODE_INTERLSLOW|Dual slow interleaved mode only (delay between ADC sampling phases: 14 ADC clock cycles)
+DMAAccessMode_ADC1|ADC_DMAACCESSMODE_ENABLED|DMA access mode enabled
+DMAAccessMode_ADC1|ADC_DMAACCESSMODE_DISABLED|DMA access mode disabled
+DMAAccessMode_ADC2|ADC_DMAACCESSMODE_ENABLED|DMA access mode enabled
+DMAAccessMode_ADC2|ADC_DMAACCESSMODE_DISABLED|DMA access mode disabled
+DMAAccessMode_ADC3|ADC_DMAACCESSMODE_ENABLED|DMA access mode enabled
+DMAAccessMode_ADC3|ADC_DMAACCESSMODE_DISABLED|DMA access mode disabled
+DataAlign|ADC_DATAALIGN_RIGHT|Right alignment
+DataAlign|ADC_DATAALIGN_LEFT|Left alignment
+ExternalTrigConv|ADC_SOFTWARE_START|Regular Conversion launched by software
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_EXT_IT11|EXTI Line11
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T1_CC1|Timer 1 Capture Compare 1 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T1_CC2|Timer 1 Capture Compare 2 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T1_CC3|Timer 1 Capture Compare 3 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T2_CC2|Timer 2 Capture Compare 2 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T3_TRGO|Timer 3 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T4_CC4|Timer 4 Capture Compare 4 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T8_TRGO|Timer 8 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T2_CC3|Timer 2 Capture Compare 3 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T3_CC1|Timer 3 Capture Compare 1 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T5_CC1|Timer 5 Capture Compare 1 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T5_CC3|Timer 5 Capture Compare 3 event
+ExternalTrigConv|ADC_EXTERNALTRIGCONV_T8_CC1|Timer 8 Capture Compare 1 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_EXT_IT15|EXTI line15
+ExternalTrigInjecConv|ADC_INJECTED_SOFTWARE_START|External Trigger on injected channels are disabled (Auto-injection mode selected)
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T1_TRGO|Timer 1 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T1_CC4|Timer 1 Capture Compare 4 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T2_TRGO|Timer 2 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T2_CC1|Timer 2 Capture Compare 1 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T3_CC4|Timer 3 Capture Compare 4 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T4_TRGO|Timer 4 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T8_CC4|Timer 8 Capture Compare 4 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T4_CC3|Timer 4 Capture Compare 3 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T8_CC2|Timer 8 Capture Compare 2 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T5_TRGO|Timer 5 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJECCONV_T5_CC4|Timer 5 Capture Compare 4 event
+Channel|ADC_CHANNEL_0|Channel 0
+Channel|ADC_CHANNEL_1|Channel 1
+Channel|ADC_CHANNEL_2|Channel 2
+Channel|ADC_CHANNEL_3|Channel 3
+Channel|ADC_CHANNEL_4|Channel 4
+Channel|ADC_CHANNEL_5|Channel 5
+Channel|ADC_CHANNEL_6|Channel 6
+Channel|ADC_CHANNEL_7|Channel 7
+Channel|ADC_CHANNEL_8|Channel 8
+Channel|ADC_CHANNEL_9|Channel 9
+Channel|ADC_CHANNEL_10|Channel 10
+Channel|ADC_CHANNEL_11|Channel 11
+Channel|ADC_CHANNEL_12|Channel 12
+Channel|ADC_CHANNEL_13|Channel 13
+Channel|ADC_CHANNEL_14|Channel 14
+Channel|ADC_CHANNEL_15|Channel 15
+Channel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+Channel|ADC_CHANNEL_VREFINT|Channel Vrefint
+Channel|ADC_CHANNEL_VBAT|Channel Vbat
+SamplingTime|ADC_SAMPLETIME_1CYCLE_5|1.5 Cycles
+SamplingTime|ADC_SAMPLETIME_7CYCLES_5|7.5 Cycles
+SamplingTime|ADC_SAMPLETIME_13CYCLES_5|13.5 Cycles
+SamplingTime|ADC_SAMPLETIME_28CYCLES_5|28.5 Cycles
+SamplingTime|ADC_SAMPLETIME_41CYCLES_5|41.5 Cycles
+SamplingTime|ADC_SAMPLETIME_55CYCLES_5|55.5 Cycles
+SamplingTime|ADC_SAMPLETIME_71CYCLES_5|71.5 Cycles
+SamplingTime|ADC_SAMPLETIME_239CYCLES_5|239.5 Cycles
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_REG|Single regular channel
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_REGINJEC|Single regular or injected channel
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_REGINJEC|All regular and injected channels
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_INJEC|Single injected channel
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_INJEC|All injected channels
+WatchdogChannel|ADC_CHANNEL_0|Channel 0
+WatchdogChannel|ADC_CHANNEL_1|Channel 1
+WatchdogChannel|ADC_CHANNEL_2|Channel 2
+WatchdogChannel|ADC_CHANNEL_3|Channel 3
+WatchdogChannel|ADC_CHANNEL_4|Channel 4
+WatchdogChannel|ADC_CHANNEL_5|Channel 5
+WatchdogChannel|ADC_CHANNEL_6|Channel 6
+WatchdogChannel|ADC_CHANNEL_7|Channel 7
+WatchdogChannel|ADC_CHANNEL_8|Channel 8
+WatchdogChannel|ADC_CHANNEL_9|Channel 9
+WatchdogChannel|ADC_CHANNEL_10|Channel 10
+WatchdogChannel|ADC_CHANNEL_11|Channel 11
+WatchdogChannel|ADC_CHANNEL_12|Channel 12
+WatchdogChannel|ADC_CHANNEL_13|Channel 13
+WatchdogChannel|ADC_CHANNEL_14|Channel 14
+WatchdogChannel|ADC_CHANNEL_15|Channel 15
+WatchdogChannel|ADC_CHANNEL_16|Channel 16
+WatchdogChannel|ADC_CHANNEL_17|Channel 17
+WatchdogChannel|ADC_CHANNEL_18|Channel 18
+WatchdogChannel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature sensor
+WatchdogChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+WatchdogChannel|ADC_CHANNEL_VBAT|Channel Vbat
+AllChannels|ADC_CHANNEL_0|Channel 0
+AllChannels|ADC_CHANNEL_1|Channel 1
+AllChannels|ADC_CHANNEL_2|Channel 2
+AllChannels|ADC_CHANNEL_3|Channel 3
+AllChannels|ADC_CHANNEL_4|Channel 4
+AllChannels|ADC_CHANNEL_5|Channel 5
+AllChannels|ADC_CHANNEL_6|Channel 6
+AllChannels|ADC_CHANNEL_7|Channel 7
+AllChannels|ADC_CHANNEL_8|Channel 8
+AllChannels|ADC_CHANNEL_9|Channel 9
+AllChannels|ADC_CHANNEL_10|Channel 10
+AllChannels|ADC_CHANNEL_11|Channel 11
+AllChannels|ADC_CHANNEL_12|Channel 12
+AllChannels|ADC_CHANNEL_13|Channel 13
+AllChannels|ADC_CHANNEL_14|Channel 14
+AllChannels|ADC_CHANNEL_15|Channel 15
+AllChannels|ADC_CHANNEL_16|Channel 16
+AllChannels|ADC_CHANNEL_17|Channel 17
+AllChannels|ADC_CHANNEL_18|Channel 18
+AllChannels|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+AllChannels|ADC_CHANNEL_VREFINT|Channel Vrefint
+AllChannels|ADC_CHANNEL_VBAT|Channel Vbat
+Available_Channel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+Available_Channel|ADC_CHANNEL_VREFINT|Channel Vrefint
+Available_Channel|ADC_CHANNEL_VBAT|Channel Vbat
+Available_Channel|ADC_CHANNEL_0|Channel 0
+AnalogWDChannel|ADC_CHANNEL_0|Channel 0
+AnalogWDChannel|ADC_CHANNEL_1|Channel 1
+AnalogWDChannel|ADC_CHANNEL_2|Channel 2
+AnalogWDChannel|ADC_CHANNEL_3|Channel 3
+AnalogWDChannel|ADC_CHANNEL_4|Channel 4
+AnalogWDChannel|ADC_CHANNEL_5|Channel 5
+AnalogWDChannel|ADC_CHANNEL_6|Channel 6
+AnalogWDChannel|ADC_CHANNEL_7|Channel 7
+AnalogWDChannel|ADC_CHANNEL_8|Channel 8
+AnalogWDChannel|ADC_CHANNEL_9|Channel 9
+AnalogWDChannel|ADC_CHANNEL_10|Channel 10
+AnalogWDChannel|ADC_CHANNEL_11|Channel 11
+AnalogWDChannel|ADC_CHANNEL_12|Channel 12
+AnalogWDChannel|ADC_CHANNEL_13|Channel 13
+AnalogWDChannel|ADC_CHANNEL_14|Channel 14
+AnalogWDChannel|ADC_CHANNEL_15|Channel 15
+AnalogWDChannel|ADC_CHANNEL_16|Channel 16
+AnalogWDChannel|ADC_CHANNEL_17|Channel 17
+AnalogWDChannel|ADC_CHANNEL_18|Channel 18
+AnalogWDChannel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+AnalogWDChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+AnalogWDChannel|ADC_CHANNEL_VBAT|Channel Vbat

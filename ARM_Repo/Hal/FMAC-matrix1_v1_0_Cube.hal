@@ -1,0 +1,64 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FMAC
+Version=matrix1_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InputAccess_Init|InputAccess_Init|||||
+OutputAccess_Init|OutputAccess_Init|||||
+InputBaseAddress|Input Base Address|Input Buffer||0|0|Base address of the input buffer (X1) within the internal memory (0x00 to 0xFF).
+InputBufferSize_FIR|Input Buffer Size|Input Buffer||0|255|Number of 16-bit addresses allocated to the input buffer (including the optional "headroom").
+InputBufferSize_IIR|Input Buffer Size|Input Buffer||0|255|Number of 16-bit addresses allocated to the input buffer (including the optional "headroom").
+InputThreshold|Input Threshold|Input Buffer||||Input threshold: the buffer full flag will be set if the number of free spaces in the buffer is inferior to this threshold.
+d_input|Input Buffer HeadRoom Size|Input Buffer||=input_d_min|255|HeadRoom value of Input Buffer.
+CoeffBaseAddress_FIR|Coeff Base Address|Coeff Buffer||0|255|Base address of the coefficient buffer (X2) within the internal memory (0x00 to 0xFF).
+CoeffBaseAddress_IIR|Coeff Base Address|Coeff Buffer||0|255|Base address of the coefficient buffer (X2) within the internal memory (0x00 to 0xFF).
+CoeffBufferSize_FIR|Coeff Buffer Size|Coeff Buffer||0|255|Number of 16-bit addresses allocated to the coefficient buffer.
+CoeffBufferSize_IIR|Coeff Buffer Size|Coeff Buffer||0|255|Number of 16-bit addresses allocated to the coefficient buffer.
+OutputBaseAddress_FIR|Output Base Address|Output Buffer||0|255|Base address of the output buffer (Y) within the internal memory (0x00 to 0xFF).
+OutputBaseAddress_IIR|Output Base Address|Output Buffer||0|255|Base address of the output buffer (Y) within the internal memory (0x00 to 0xFF).
+OutputBufferSize_FIR|Output Buffer Size|Output Buffer||0|255|Number of 16-bit addresses allocated to the output buffer (including the optional "headroom").
+OutputBufferSize_IIR|Output Buffer Size|Output Buffer||0|255|Number of 16-bit addresses allocated to the output buffer (including the optional "headroom").
+OutputThreshold|Output Threshold|Output Buffer||||Output threshold: the buffer empty flag will be set if the number of unread values in the buffer is inferior to this threshold.
+d_output|Output buffer HeadRoom Size|Output Buffer||=output_d_min|255|HeadRoom value of output buffer.
+pCoeffA_IIR|Coeff A|Coeff Buffer||||[IIR only] Coefficient vector A.
+pCoeffB_FIR|Coeff B|Coeff Buffer||||Coefficient vector B.
+pCoeffB_IIR|Coeff B|Coeff Buffer||||Coefficient vector B.
+pCoeffA|Coeff A buffer address|Coeff Buffer||||
+CoeffASize|Coeff A Size|Coeff Buffer||0|255|Size of the coefficient vector A.
+pCoeffB|P Coeffb|Coeff Buffer||0|0|Initialization of the coefficient vector B.
+CoeffBSize_FIR|Coeff B Size|Coeff Buffer||0|255|Size of the coefficient vector B.
+CoeffBSize_IIR|Coeff B Size|Coeff Buffer||0|255|Size of the coefficient vector B.
+InputAccess|Input Access|Input Buffer||||Access to the input buffer (internal memory area): DMT, IT, Polling, None.
+OutputAccess|Output Access|Output Buffer||||Access to the output buffer (internal memory area): DMA, IT, Polling, None.
+Clip|Clip|General||||Enable or disable the clipping feature (wrapping when the q1.
+Filter|Filter|||||Filter type.
+P_FIR|Coeff B Length|Coeff Buffer||2|127|Length of the coefficient vector B.
+Q|Coeff A Length|Coeff Buffer||1|63|Length of the coefficient vector A.
+R|Gain|General||0|7|The gain to be applied to the accumulator output. The value output to the Y buffer is multiplied by 2^R
+P_IIR|Coeff B Length|Coeff Buffer||2|64|Length of the coefficient vector B.
+
+[Values]
+# параметр|значение|подпись
+InputThreshold|FMAC_THRESHOLD_1|Input: Buffer full flag set if the number of free spaces in the buffer is less than 1. Output: Buffer empty flag set if the number of unread values in the buffer is less than 1.
+InputThreshold|FMAC_THRESHOLD_2|Input: Buffer full flag set if the number of free spaces in the buffer is less than 2. Output: Buffer empty flag set if the number of unread values in the buffer is less than 2.
+InputThreshold|FMAC_THRESHOLD_4|Input: Buffer full flag set if the number of free spaces in the buffer is less than 4. Output: Buffer empty flag set if the number of unread values in the buffer is less than 4.
+InputThreshold|FMAC_THRESHOLD_8|Input: Buffer full flag set if the number of free spaces in the buffer is less than 8. Output: Buffer empty flag set if the number of unread values in the buffer is less than 8.
+OutputThreshold|FMAC_THRESHOLD_1|Input: Buffer full flag set if the number of free spaces in the buffer is less than 1. Output: Buffer empty flag set if the number of unread values in the buffer is less than 1.
+OutputThreshold|FMAC_THRESHOLD_2|Input: Buffer full flag set if the number of free spaces in the buffer is less than 2. Output: Buffer empty flag set if the number of unread values in the buffer is less than 2.
+OutputThreshold|FMAC_THRESHOLD_4|Input: Buffer full flag set if the number of free spaces in the buffer is less than 4. Output: Buffer empty flag set if the number of unread values in the buffer is less than 4.
+OutputThreshold|FMAC_THRESHOLD_8|Input: Buffer full flag set if the number of free spaces in the buffer is less than 8. Output: Buffer empty flag set if the number of unread values in the buffer is less than 8.
+InputAccess|FMAC_BUFFER_ACCESS_NONE|Buffer handled by an external IP (ADC for instance)
+InputAccess|FMAC_BUFFER_ACCESS_DMA|Buffer accessed through the FMAC DMA
+InputAccess|FMAC_BUFFER_ACCESS_POLLING|Buffer accessed through polling
+InputAccess|FMAC_BUFFER_ACCESS_IT|Buffer accessed through interruptions
+OutputAccess|FMAC_BUFFER_ACCESS_NONE|Buffer handled by an external IP (ADC for instance)
+OutputAccess|FMAC_BUFFER_ACCESS_DMA|Buffer accessed through the FMAC DMA
+OutputAccess|FMAC_BUFFER_ACCESS_POLLING|Buffer accessed through polling
+OutputAccess|FMAC_BUFFER_ACCESS_IT|Buffer accessed through interruptions
+Clip|FMAC_CLIP_DISABLED|Clipping disabled
+Clip|FMAC_CLIP_ENABLED|Clipping enabled
+Filter|FMAC_FUNC_CONVO_FIR|Convolution (FIR filter)
+Filter|FMAC_FUNC_IIR_DIRECT_FORM_1|IIR filter (direct form 1)

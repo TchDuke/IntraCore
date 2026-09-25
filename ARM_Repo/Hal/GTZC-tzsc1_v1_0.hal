@@ -1,0 +1,175 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=GTZC
+Version=tzsc1_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+TZSC_Lock|Lock the configuration of TZSC (Peripherals & MPCWM) until next reset|||||Lock TZSC and TZSC-MPCWM configuration.
+TZSC_Secure_IP_Choice|Configure Secure Peripheral|Secureable Peripherals||||Secure/Unsecure all the Peripherals in one time until individuals are modified.
+Securable_Peripheral|Securable Peripheral|Secureable Peripherals||||
+IP_Secure||Secureable Peripherals||||
+AES_Secure|AES|Secureable Peripherals||||
+PKA_Secure|PKA|Secureable Peripherals||||
+OTFDEC1_Secure|OTFDEC1|Secureable Peripherals||||
+UART5_Secure|UART5|Secureable Peripherals||||
+FMC_Secure|FMC|Secureable Peripherals||||
+SDMMC1_Secure|SDMMC1|Secureable Peripherals||||
+CRS_Secure|CRS|Secureable Peripherals||||
+ICACHE_Secure|ICACHE|Secureable Peripherals||||
+CRS_Privilege_Status|(!($IpInstance=GTZC_S) & (+GTZC_S:CRS_Secure=GTZC_TZSC_PERIPH_NSEC))|Secureable Peripherals||||
+ICACHE_Privilege_Status|(!($IpInstance=GTZC_S) & (+GTZC_S:ICACHE_Secure=GTZC_TZSC_PERIPH_NSEC))|Secureable Peripherals||||
+TZSC_Privilege_IP_Choice|Configure Privilege Peripheral|Privilegeable Peripherals||||
+Privilegeable_Peripheral|Privilegeable Peripheral|Privilegeable Peripherals||||
+IP_Privilege||Privilegeable Peripherals||||
+AES_Privilege|AES|Privilegeable Peripherals||||
+PKA_Privilege|PKA|Privilegeable Peripherals||||
+OTFDEC1_Privilege|OTFDEC1|Privilegeable Peripherals||||
+FMC_Privilege|FMC|Privilegeable Peripherals||||
+UART5_Privilege|UART5|Privilegeable Peripherals||||
+SDMMC1_Privilege|SDMMC1|Privilegeable Peripherals||||
+MPCWM1_NonSecureArea_Choice|Configure Memory|||||Secure/Unsecure all the memory range in one time until sizes are modified.
+MPCWM1_NonSecureArea_OCTOSPI1_BASE|Non Secure Area Start OCTOSPI1_BASE|||0x90000000|0x90000000|
+MPCWM1_NonSecureArea1_Desc|Non Secure Area 1 Descriptor|||||
+MPCWM1_NonSecureArea1_Max|Non Secure Area 1 Max|||0x10000000|0x10000000|
+MPCWM1_NonSecureArea1_Start_Address|Non Secure Area 1 Start Address|||=(MPCWM1_NonSecureArea_OCTOSPI1_BASE)|=(MPCWM1_NonSecureArea1_Max + MPCWM1_NonSecureArea_OCTOSPI1_BASE - MPCWM1_NonSecureArea1_BlockSize)|
+MPCWM1_NonSecureArea1_Start|Non Secure Area 1 Start Offset|||=(MPCWM1_NonSecureArea1_Start_Address - MPCWM1_NonSecureArea_OCTOSPI1_BASE)|=(MPCWM1_NonSecureArea1_Start_Address - MPCWM1_NonSecureArea_OCTOSPI1_BASE)|
+MPCWM1_NonSecureArea1_Size|Non Secure Area 1 Size|||0x0|=(MPCWM1_NonSecureArea1_Max - MPCWM1_NonSecureArea1_Start)|
+MPCWM1_NonSecureArea1_BlockSize|Non Secure Area 1 Block Size|||0x20000|0x20000|
+MPCWM1_NonSecureArea1_Attribute|Non Secure Area 1 Attribute|||||
+MPCWM1_NonSecureArea2_Desc|Non Secure Area 2 Descriptor|||||
+MPCWM1_NonSecureArea2_Max|Non Secure Area 2 Max|||0x10000000|0x10000000|
+MPCWM1_NonSecureArea2_Start_Address|Non Secure Area 2 Start Address|||=(MPCWM1_NonSecureArea_OCTOSPI1_BASE)|=(MPCWM1_NonSecureArea2_Max + MPCWM1_NonSecureArea_OCTOSPI1_BASE - MPCWM1_NonSecureArea2_BlockSize)|
+MPCWM1_NonSecureArea2_Start|Non Secure Area 2 Start Offset|||=(MPCWM1_NonSecureArea2_Start_Address - MPCWM1_NonSecureArea_OCTOSPI1_BASE)|=(MPCWM1_NonSecureArea2_Start_Address - MPCWM1_NonSecureArea_OCTOSPI1_BASE)|
+MPCWM1_NonSecureArea2_Size|Non Secure Area 2 Size|||0x0|=(MPCWM1_NonSecureArea2_Max - MPCWM1_NonSecureArea2_Start)|
+MPCWM1_NonSecureArea2_BlockSize|Non Secure Area 2 Block Size|||0x20000|0x20000|
+MPCWM1_NonSecureArea2_Attribute|Non Secure Area 2 Attribute|||||
+MPCWM2_NonSecureArea_Choice|Configure Memory|||||Secure/Unsecure all the memory range in one time until sizes are modified.
+MPCWM2_NonSecureArea_FMC_BANK1|Non Secure Area Start FMC_BANK1|||0x60000000|0x60000000|
+MPCWM2_NonSecureArea1_Desc|Non Secure Area 1 Descriptor|||||
+MPCWM2_NonSecureArea1_Max|Non Secure Area 1 Max|||0x10000000|0x10000000|
+MPCWM2_NonSecureArea1_Start_Address|Non Secure Area 1 Start Address|||=(MPCWM2_NonSecureArea_FMC_BANK1)|=(MPCWM2_NonSecureArea1_Max + MPCWM2_NonSecureArea_FMC_BANK1 - MPCWM2_NonSecureArea1_BlockSize)|
+MPCWM2_NonSecureArea1_Start|Non Secure Area 1 Start Offset|||=(MPCWM2_NonSecureArea1_Start_Address - MPCWM2_NonSecureArea_FMC_BANK1)|=(MPCWM2_NonSecureArea1_Start_Address - MPCWM2_NonSecureArea_FMC_BANK1)|
+MPCWM2_NonSecureArea1_Size|Non Secure Area 1 Size|||0x0|=(MPCWM2_NonSecureArea1_Max - MPCWM2_NonSecureArea1_Start)|
+MPCWM2_NonSecureArea1_BlockSize|Non Secure Area 1 Block Size|||0x20000|0x20000|
+MPCWM2_NonSecureArea1_Attribute|Non Secure Area 1 Attribute|||||
+MPCWM2_NonSecureArea2_Desc|Non Secure Area 2 Descriptor|||||
+MPCWM2_NonSecureArea2_Max|Non Secure Area 2 Max|||0x10000000|0x10000000|
+MPCWM2_NonSecureArea2_Start_Address|Non Secure Area 2 Start Address|||=(MPCWM2_NonSecureArea_FMC_BANK1)|=(MPCWM2_NonSecureArea2_Max + MPCWM2_NonSecureArea_FMC_BANK1 - MPCWM2_NonSecureArea2_BlockSize)|
+MPCWM2_NonSecureArea2_Start|Non Secure Area 2 Start Offset|||=(MPCWM2_NonSecureArea2_Start_Address - MPCWM2_NonSecureArea_FMC_BANK1)|=(MPCWM2_NonSecureArea2_Start_Address - MPCWM2_NonSecureArea_FMC_BANK1)|
+MPCWM2_NonSecureArea2_Size|Non Secure Area 2 Size|||0x0|=(MPCWM2_NonSecureArea2_Max - MPCWM2_NonSecureArea2_Start)|
+MPCWM2_NonSecureArea2_BlockSize|Non Secure Area 2 Block Size|||0x20000|0x20000|
+MPCWM2_NonSecureArea2_Attribute|Non Secure Area 2 Attribute|||||
+MPCWM3_NonSecureArea_Choice|Configure Memory|||||Secure/Unsecure all the memory range in one time until sizes are modified.
+MPCWM3_NonSecureArea_FMC_BANK3|Non Secure Area Start FMC_BANK3|||0x80000000|0x80000000|
+MPCWM3_NonSecureArea_Desc|Non Secure Area Descriptor|||||
+MPCWM3_NonSecureArea_Max|Non Secure Area Max|||0x10000000|0x10000000|
+MPCWM3_NonSecureArea_Start_Address|Non Secure Area Start Address|||=(MPCWM3_NonSecureArea_FMC_BANK3)|=(MPCWM3_NonSecureArea_Max + MPCWM3_NonSecureArea_FMC_BANK3 - MPCWM3_NonSecureArea_BlockSize)|
+MPCWM3_NonSecureArea_Start|Non Secure Area Start Offset|||=(MPCWM3_NonSecureArea_Start_Address - MPCWM3_NonSecureArea_FMC_BANK3)|=(MPCWM3_NonSecureArea_Start_Address - MPCWM3_NonSecureArea_FMC_BANK3)|
+MPCWM3_NonSecureArea_Size|Non Secure Area Size|||0x0|=(MPCWM3_NonSecureArea_Max - MPCWM3_NonSecureArea_Start)|
+MPCWM3_NonSecureArea_BlockSize|Non Secure Area Block Size|||0x20000|0x20000|
+MPCWM3_NonSecureArea_Attribute|Non Secure Area Attribute|||||
+MPCBB_ConfigSettings|Configuration Settings|||||
+MPCBB_SRWILADIS|Authorize Secure Read/Write on Non-secure area|||||
+MPCBB_INVSECSTATE|Default security state|||||
+MPCBB_Lock|Settings Lock|||||
+MPCBB_MemorySettings|Memory Attributes Settings|||||
+MPCBB_LockConfig|Attributes Lock|||||
+MPCBB1_NonSecureArea_Choice|Configure Memory|||||Secure/Unsecure all the memory range in one time until sizes are modified.
+MPCBB1_NonSecureArea_SRAM1_BASE_NS|Non Secure Area Start SRAM1_BASE_NS|||0x20000000|0x20000000|
+MPCBB1_NonSecureArea_Max|Non Secure Area Max|||0x30000|0x30000|
+MPCBB1_NonSecureArea_Start_Address|Non Secure Area Start Address|||=(MPCBB1_NonSecureArea_SRAM1_BASE_NS)|=(MPCBB1_NonSecureArea_Max + MPCBB1_NonSecureArea_SRAM1_BASE_NS - MPCBB1_NonSecureArea_BlockSize)|
+MPCBB1_NonSecureArea_Start|Non Secure Area Start Offset|||=(MPCBB1_NonSecureArea_Start_Address - MPCBB1_NonSecureArea_SRAM1_BASE_NS)|=(MPCBB1_NonSecureArea_Start_Address - MPCBB1_NonSecureArea_SRAM1_BASE_NS)|
+MPCBB1_NonSecureArea_Size|Non Secure Area Size|||0x0|=(MPCBB1_NonSecureArea_Max - MPCBB1_NonSecureArea_Start)|
+MPCBB1_NonSecureArea_BlockSize|Non Secure Area Block Size|||0x100|0x100|
+MPCBB1_NonSecureArea_NbBlock|Nb Block|||=(MPCBB1_NonSecureArea_Max / MPCBB1_NonSecureArea_BlockSize)|=(MPCBB1_NonSecureArea_Max / MPCBB1_NonSecureArea_BlockSize)|
+MPCBB1_NonSecureArea_SuperBlockSize|Non Secure Area Super-Block Size|||0x2000|0x2000|
+MPCBB1_NonSecureArea_NbSuperBlock|Non Secure Area Nb Super-Block Size|||=(MPCBB1_NonSecureArea_Max / MPCBB1_NonSecureArea_SuperBlockSize)|=(MPCBB1_NonSecureArea_Max / MPCBB1_NonSecureArea_SuperBlockSize)|
+MPCBB1_NonSecureArea_Secure_Start|Non Secure Area Start Offset|||0|=(MPCBB1_NonSecureArea_Max)|
+MPCBB1_NonSecureArea_Secure_Size|Non Secure Area Size|||0x0|=(MPCBB1_NonSecureArea_Max)|
+MPCBB1_NonSecureArea_Secure_BlockSize|Non Secure Area Block Size|||0x100|0x100|
+MPCBB1_NonSecureArea_Secure_SuperBlockSize|Non Secure Area Super-Block Size|||0x2000|0x2000|
+MPCBB1_NonSecureArea_Secure|Area Secure Attribute|||||
+MPCBB1_SecConfig_array|Secure configuration array|||||
+MPCBB1_LockConfig_array|Lock configuration array|||00000000|0x00FFFFFF|
+MPCBB2_NonSecureArea_Choice|Configure Memory|||||
+MPCBB2_NonSecureArea_SRAM2_BASE_NS|Non Secure Area Start SRAM2_BASE_NS|||0x20030000|0x20030000|
+MPCBB2_NonSecureArea_Max|Non Secure Area Max|||0x10000|0x10000|
+MPCBB2_NonSecureArea_Start_Address|Non Secure Area Start Address|||=(MPCBB2_NonSecureArea_SRAM2_BASE_NS)|=(MPCBB2_NonSecureArea_Max + MPCBB2_NonSecureArea_SRAM2_BASE_NS - MPCBB2_NonSecureArea_BlockSize)|
+MPCBB2_NonSecureArea_Start|Non Secure Area Start Offset|||=(MPCBB2_NonSecureArea_Start_Address - MPCBB2_NonSecureArea_SRAM2_BASE_NS)|=(MPCBB2_NonSecureArea_Start_Address - MPCBB2_NonSecureArea_SRAM2_BASE_NS)|
+MPCBB2_NonSecureArea_Size|Non Secure Area Size|||0x0|=(MPCBB2_NonSecureArea_Max - MPCBB2_NonSecureArea_Start)|
+MPCBB2_NonSecureArea_BlockSize|Non Secure Area Block Size|||0x100|0x100|
+MPCBB2_NonSecureArea_NbBlock|Nb Block|||=(MPCBB2_NonSecureArea_Max / MPCBB2_NonSecureArea_BlockSize)|=(MPCBB2_NonSecureArea_Max / MPCBB2_NonSecureArea_BlockSize)|
+MPCBB2_NonSecureArea_SuperBlockSize|Non Secure Area Super-Block Size|||0x2000|0x2000|
+MPCBB2_NonSecureArea_NbSuperBlock|Non Secure Area Nb Super-Block Size|||=(MPCBB2_NonSecureArea_Max / MPCBB2_NonSecureArea_SuperBlockSize)|=(MPCBB2_NonSecureArea_Max / MPCBB2_NonSecureArea_SuperBlockSize)|
+MPCBB2_NonSecureArea_Secure_Start|Non Secure Area Start Offset|||0|=(MPCBB2_NonSecureArea_Max)|
+MPCBB2_NonSecureArea_Secure_Size|Non Secure Area Size|||0x0|=(MPCBB2_NonSecureArea_Max)|
+MPCBB2_NonSecureArea_Secure_BlockSize|Non Secure Area Block Size|||0x100|0x100|
+MPCBB2_NonSecureArea_Secure_SuperBlockSize|Non Secure Area Super-Block Size|||0x2000|0x2000|
+MPCBB2_NonSecureArea_Secure|Area Secure Attribute|||||
+MPCBB2_SecConfig_array|Secure configuration array|||||
+MPCBB2_LockConfig_array|Lock configuration array|||00000000|0x000000FF|
+TZIC_Configure_IT_Choice|Configure Illegal access IT|Illegal Access ITs for securable & TZ-Aware Peripherals||||Enable/Disable all the Interrupts in one time until individuals are modified.
+Full_IT_Disabled|Full_IT_Disabled|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+Full_IT_Enabled|Full_IT_Enabled|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+Full_IT_Default|Full_IT_Default|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+Illegal_Access_Interrupt_Peripheral|Illegal Access Interrupt Peripheral|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+AES_Illegal_Access_Interrupt|AES|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+PKA_Illegal_Access_Interrupt|PKA|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+OTFDEC1_Illegal_Access_Interrupt|OTFDEC1|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+FMC_REG_Illegal_Access_Interrupt|FMC_REG|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+FMC_MEM_Illegal_Access_Interrupt|FMC_MEM|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+SDMMC1_Illegal_Access_Interrupt|SDMMC1|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+UART5_Illegal_Access_Interrupt|UART5|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+
+[Values]
+# параметр|значение|подпись
+IP_Secure|GTZC_TZSC_PERIPH_SEC|secured
+IP_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+AES_Secure|GTZC_TZSC_PERIPH_SEC|secured
+AES_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+PKA_Secure|GTZC_TZSC_PERIPH_SEC|secured
+PKA_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+OTFDEC1_Secure|GTZC_TZSC_PERIPH_SEC|secured
+OTFDEC1_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+UART5_Secure|GTZC_TZSC_PERIPH_SEC|secured
+UART5_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+FMC_Secure|GTZC_TZSC_PERIPH_SEC|secured
+FMC_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+SDMMC1_Secure|GTZC_TZSC_PERIPH_SEC|secured
+SDMMC1_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+CRS_Secure|GTZC_TZSC_PERIPH_SEC|secured
+CRS_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+ICACHE_Secure|GTZC_TZSC_PERIPH_SEC|secured
+ICACHE_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+IP_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+IP_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+AES_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+AES_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+PKA_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+PKA_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+OTFDEC1_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+OTFDEC1_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+FMC_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+FMC_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+UART5_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+UART5_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+SDMMC1_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+SDMMC1_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+MPCWM1_NonSecureArea1_Attribute|GTZC_TZSC_MPCWM_REGION_SEC|region secured
+MPCWM1_NonSecureArea1_Attribute|GTZC_TZSC_MPCWM_REGION_NSEC|region not secured
+MPCWM1_NonSecureArea2_Attribute|GTZC_TZSC_MPCWM_REGION_SEC|region secured
+MPCWM1_NonSecureArea2_Attribute|GTZC_TZSC_MPCWM_REGION_NSEC|region not secured
+MPCWM2_NonSecureArea1_Attribute|GTZC_TZSC_MPCWM_REGION_SEC|region secured
+MPCWM2_NonSecureArea1_Attribute|GTZC_TZSC_MPCWM_REGION_NSEC|region not secured
+MPCWM2_NonSecureArea2_Attribute|GTZC_TZSC_MPCWM_REGION_SEC|region secured
+MPCWM2_NonSecureArea2_Attribute|GTZC_TZSC_MPCWM_REGION_NSEC|region not secured
+MPCWM3_NonSecureArea_Attribute|GTZC_TZSC_MPCWM_REGION_SEC|region secured
+MPCWM3_NonSecureArea_Attribute|GTZC_TZSC_MPCWM_REGION_NSEC|region not secured
+MPCBB_SRWILADIS|GTZC_MPCBB_SRWILADIS_ENABLE|Secure Read/Write access not allowed on non-secure SRAM block
+MPCBB_SRWILADIS|GTZC_MPCBB_SRWILADIS_DISABLE|Secure Read/Write access allowed on non-secure SRAM block
+MPCBB_INVSECSTATE|GTZC_MPCBB_INVSECSTATE_NOT_INVERTED|Default state (source clock secured if a secure area exists in the MPCBB and vice-versa)
+MPCBB_INVSECSTATE|GTZC_MPCBB_INVSECSTATE_INVERTED|Invert the state, source clock remains secure even if no secure block is set in the MPCBB
+MPCBB1_NonSecureArea_Secure|GTZC_MPCBB_REGION_NSEC|not secured
+MPCBB2_NonSecureArea_Secure|GTZC_MPCBB_REGION_NSEC|not secured

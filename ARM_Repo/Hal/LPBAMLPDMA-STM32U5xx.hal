@@ -1,0 +1,75 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPBAMLPDMA
+Version=STM32U5xx
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InstanceHAL|HAL IP Instance|||||
+QUEUE_NAME|Define the name of your Queue|||||
+DESCRIPTOR_NAME_START|name of the descriptor|||||
+DESCRIPTOR_NAME_STOP|name of the descriptor|||||
+CircularNode_START|Circular Node for START|Start||||description
+CircularNode_STOP|Circular Node for STOP|Stop||||description
+OriginOfQueue|Queue to start|Start Parameters - Queue Configuration||||description
+HeadQAddress_LIST|Queue Name|Start Parameters - Queue Configuration||||description
+HeadQAddress_RW|Queue Name|Start Parameters - Queue Configuration||||description
+HeadQAddressArg|Queue to start Arg|||||only replace MYQUEUENAME in the proposed string
+Interrupt1|Transfer Complete|Start Parameters - WakeUp Interrupts Configuration||||description
+Interrupt2|Half Transfer Complete|Start Parameters - WakeUp Interrupts Configuration||||description
+InstanceIPStop|DMA channel to be stopped|Stop Parameters - Queue Configuration||||description
+InstanceIP|DMA channel to be started|Start Parameters - Queue Configuration||||description
+WakeupIT|Wake Up sources|Start Parameters - WakeUp Interrupts Configuration||||
+TriggerPolarity|The Function execution is|Trigger Configuration||||description
+TriggerSelection|Trigger Hardware Signal is|Trigger Configuration||||description
+TriggerMode_CONFIG|Trigger Mode|Trigger Configuration||||description
+NodeLevel|Node on which the trigger is applied (not visible)|Trigger Configuration||||description
+
+[Values]
+# параметр|значение|подпись
+CircularNode_START|__NULL|DISABLE
+CircularNode_START|LPBAM_DMA_START_FULLQ_CONFIG_NODE|Configuration Node
+CircularNode_STOP|__NULL|DISABLE
+CircularNode_STOP|LPBAM_DMA_STOP_FULLQ_CONFIG_NODE|Configuration Node
+HeadQAddress_LIST|Unknown_QName1|Unknown QName1
+Interrupt1|LPBAM_DMA_IT_TC|Enable
+Interrupt1|LPBAM_DMA_IT_NONE|Disable
+Interrupt2|LPBAM_DMA_IT_HT|Enable
+Interrupt2|LPBAM_DMA_IT_NONE|Disable
+InstanceIPStop|LPDMA1_Channel0|LPDMA1 Channel0
+InstanceIPStop|LPDMA1_Channel1|LPDMA1 Channel1
+InstanceIPStop|LPDMA1_Channel2|LPDMA1 Channel2
+InstanceIPStop|LPDMA1_Channel3|LPDMA1 Channel3
+InstanceIP|LPDMA1_Channel0|LPDMA1 Channel0
+InstanceIP|LPDMA1_Channel1|LPDMA1 Channel1
+InstanceIP|LPDMA1_Channel2|LPDMA1 Channel2
+InstanceIP|LPDMA1_Channel3|LPDMA1 Channel3
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_MASKED|not conditionned by a Trigger
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_RISING|trigged on the Rising Edge of the Hardware Signal
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_FALLING|trigged on the Falling Edge of the Hardware Signal
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE0|EXTI Line 0
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE1|EXTI Line 1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE2|EXTI Line 2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE3|EXTI Line 3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE4|EXTI Line 4
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG1|TAMP TRG1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG2|TAMP TRG2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG3|TAMP TRG3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM4_OUT|LPTIM4 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP1_OUT|COMP1 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP2_OUT|COMP2 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_ADC4_AWD1|ADC4 AWD1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH0_TCF|LPDMA1 CH0 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH1_TCF|LPDMA1 CH1 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH2_TCF|LPDMA1 CH2 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH3_TCF|LPDMA1 CH3 TCF
+TriggerMode_CONFIG|LPBAM_DMA_TRIGM_BLOCK_TRANSFER|A LLI link transfer is conditioned by (at least) one hit trigger
+NodeLevel|LPBAM_DMA_START_FULLQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_DMA_STOP_FULLQ_CONFIG_NODE|Config Node

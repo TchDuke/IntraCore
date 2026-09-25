@@ -1,0 +1,2339 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=flash
+Version=v1.0.0_H5_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+advanced_settings|Activate|Advanced settings||||<font color="red"><b>By enabling this feature, you have access to risky settings that could be harmful for your device.</b></font>
+OB_Product_State_active|Activate|Product State||||Product states to protect memory content from debug access. Open: User Flash open (TZ secure and non-secure open) External access (debug) N and NS enabled (~RDP0). Provisioning: Provisioning - immutable root of trust is being installed. nv-Open if TZEN is disabled. iROT-provisioned: The immutable root of trust is installed. (~RDP 0.5). TZ-Closed: State for debugging the NS application. Debug is restrained to non-secure areas. Closed: State for running a secure application. Debug disabled, regression is possible. Locked: Transition to other state, policy change or debug is not permitted. Regression: The temporary state initiated by the debug authentication system in transition to nv-Open. NS-Regression: The temporary state initiated by the debug authentication system in transition to nv-Closed_secure.
+OB_ProductState|Product state|Product State||||
+ProductState|Product state|Product State||||
+OB_BOR_Level_active|Activate|BOR Level||||
+OB_BOR_level|BOR Level|BOR Level||||<font color="green">Bits 1:0 </font> <b>BOR_LEV[1:0]: </b>Brownout level option status bit These bits reflects the power level that generates a system reset. 00: BOR OFF, POR/PDR reset threshold level is applied 01: BOR Level 1, the threshold level is low (around 2.1 V) 10: BOR Level 2, the threshold level is medium (around 2.4 V) 11: BOR Level 3, the threshold level is high (around 2.7 V)
+OB_BORH|BORH_EN|BOR Level||||<font color="green">Bit 2 </font> <b>BORH_EN:</b> Brownout high enable 0: disable 1: enable
+OB_User_Configuration_active|Activate|User Configuration||||
+USERConfig|USERConfig1|||||
+OB_IO_VDD_HSLV_UI|IO_VDD_HSLV|User Configuration||||<font color="green">Bit 16</font> <b> IO_VDD_HSLV:</b> High-speed IO at low VDD voltage configuration bit. This bit can be set only with VDD below 2.7 V. 0: High-speed IO at low VDD voltage feature disabled (VDD can exceed 2.7 V). 1: High-speed IO at low VDD voltage feature enabled (VDD remains below 2.7 V).
+OB_IO_VDD_HSLV|IO_VDD_HSLV|User Configuration||||
+OB_IO_VDDIO2_HSLV_UI|IO_VDDIO2_HSLV|User Configuration||||<font color="green">Bit 17</font> <b> IO_VDDIO2_HSLV:</b> High-speed IO at low VDDIO2 voltage configuration bit. This bit can be set only with VDDIO2 below 2.7 V. 0: High-speed IO at low VDDIO2 voltage feature disabled (VDDIO2 can exceed 2.7 V). 1: High-speed IO at low VDDIO2 voltage feature enabled (VDDIO2 remains below 2.7 V).
+OB_IO_VDDIO2_HSLV|IO_VDDIO2_HSLV|User Configuration||||
+OB_IWDG_STOP_UI|IWDG_STOP|User Configuration||||<font color="green">Bit 20 </font> <b>IWDG_STOP:</b> IWDG Stop mode freeze option configuration bit. When set the independent watchdog IWDG is in system Stop mode. Disable: Independent watchdog frozen in system Stop mode. Enable: Independent watchdog keep running in system Stop mode.
+OB_IWDG_STOP|IWDG_STOP|User Configuration||||
+OB_IWDG_STDBY_UI|IWDG_STDBY|User Configuration||||<font color="green">Bit 21 </font> <b>IWDG_STDBY:</b> IWDG Standby mode freeze option configuration bit. When set the independent watchdog IWDG is frozen in system Standby mode. Disable: Independent watchdog frozen in Standby mode. Enable: Independent watchdog keep running in Standby mode.
+OB_IWDG_STDBY|IWDG_STDBY|User Configuration||||
+OB_BOOT_UBE_UI|BOOT_UBE|User Configuration||||<font color="green">Bit 29:22 </font> <b>SWAP_BANK [7:0]:</b>Unique boot entry control, selects either ST or OEM iRoT for secure boot. This information is also used by RSS to boot through ST-iROT when in Open PRODUCT_STATE. <font color="red">Can only be changed in product states open for debug like Open and also in Provisioning. SECBOOT_LOCK must be disabled to change.</font> OEM-iRoT: User Flash selected. ST-iRoT: System Flash selected.
+OB_BOOT_UBE|BOOT_UBE|User Configuration||||
+OB_SWAP_BANK_UI|SWAP_BANK|User Configuration||||<font color="red">Bit 2Unchecked </font> <b>SWAP_BANK:</b> Swap banks. SWAP_BANK option bit is used to configure whether the Bank1 and Bank2 are swapped or not. This bit is loaded with the SWAP_BANK bit of FLASH_OPTSR_CUR register after a reset. Disable: Bank1 and Bank2 not swapped. Enable: Bank 1 and bank 2 swapped.
+OB_SWAP_BANK|SWAP_BANK|User Configuration||||
+OB_IWDG_SW_UI|IWDG_SW|User Configuration||||<font color="green">Bit 3 </font> <b>IWDG_SW: </b>: IWDG control mode option configuration bit. Disable: IWDG watchdog is controlled by hardware. Enable: IWDG watchdog is controlled by software.
+OB_IWDGSW|IWDG_SW|User Configuration||||
+OB_WWDG_SW_UI|WWDG_SW|User Configuration||||<font color="green">Bit 4 </font> <b>WWDG_SW:</b> WWDG control mode option configuraton bit. Disable: WWDG watchdog is controlled by hardware. Enable: WWDG watchdog is controlled by software.
+OB_WWDGSW|WWDG_SW|User Configuration||||
+OB_NRST_STOP_UI|nRST_STOP|User Configuration||||<font color="green">Bit 6 </font> <b>nRST_STOP:</b> Core domain Stop entry reset option configuration bit. Disable: A reset is generated when entering Stop mode on core domain. Enable: No reset generated when entering Stop mode on core domain.
+OB_nRST_STOP|nRST_STOP|User Configuration||||
+OB_NRST_STDBY_UI|nRST_STDBY|User Configuration||||<font color="green">Bit 7 </font> <b>nRST_STDBY:</b> Core domain Standby entry reset option configuration bit. Disable: A reset is generated when entering Standby mode on core domain. Enable: No reset generated when entering Standby mode on core domain.
+OB_nRST_STDBY|nRST_STDBY|User Configuration||||
+USERConfig2|USERConfig2|||||
+OB_User_Configuration2_active|Activate|User Configuration 2||||
+OB_TZEN|TZEN|User Configuration 2||||<font color="green">Bit 31:24</font> <b> TZEN[7:0]:</b> Trust Zone enable configuration bits. This bit enables the device is in trust zone mode during an option byte change. OB_TZEN_DISABLE:0xC3: Trust zone disabled. OB_TZEN_ENABLE:0xB4: Trust zone enabled. <font color="red">This Option byte cannot be set throught CubeMX</font>
+OB_SRAM1_ECC_UI|SRAM1_ECC|User Configuration 2||||<font color="green">Bit 10 </font> <b>SRAM2_ECC: </b> SRAM1 ECC detection and correction disable. Enable: SRAM2 ECC check enabled. Disable: SRAM2 ECC check disabled.
+OB_SRAM1_ECC|SRAM1_ECC|User Configuration 2||||
+OB_SRAM1_RST_UI|SRAM1_RST|User Configuration 2||||<font color="green">Bit 9 </font> <b>SRAM1_RST: </b> SRAM1 erase upon system reset. Disable: SRAM1 erased when a system reset occurs. Enable: SRAM1 not erased when a system reset occurs.
+OB_SRAM1_RST|SRAM1_RST|User Configuration2||||
+OB_SRAM2_ECC_UI|SRAM2_ECC|User Configuration 2||||<font color="green">Bit 6 </font> <b>SRAM2_ECC: </b> SRAM2 ECC detection and correction disable. Enable: SRAM2 ECC check enabled. Disable: SRAM2 ECC check disabled.
+OB_SRAM2_ECC|SRAM2_ECC|User Configuration 2||||
+OB_SRAM2_RST_UI|SRAM2_RST|User Configuration 2||||<font color="green">Bit 3 </font> <b>SRAM2_RST: </b> SRAM2 erase when system reset. Disable: SRAM2 erased when a system reset occurs. Enable: SRAM2 not erased when a system reset occurs.
+OB_SRAM2_RST|SRAM2_RST|User Configuration2||||
+OB_SRAM3_ECC_UI|SRAM3_ECC|User Configuration 2||||<font color="green">Bit 5 </font> <b>SRAM3_ECC: </b> SRAM3 ECC detection and correction disable. Enable: SRAM3 ECC check enabled. Disable: SRAM3 ECC check disabled.
+OB_SRAM3_ECC|SRAM3_ECC|User Configuration 2||||
+OB_SRAM13_RST_UI|SRAM13_RST|User Configuration 2||||<font color="green">Bit 2 </font> <b>SRAM13_RST: </b> SRAM1 and SRAM3 erase upon system reset. Disable: SRAM1 and SRAM3 erased when a system reset occurs. Enable: SRAM1 and SRAM3 not erased when a system reset occurs.
+OB_SRAM13_RST|SRAM13_RST|User Configuration2||||
+OB_SRAM1345_RST_UI|SRAM1345_RST|User Configuration 2||||<font color="green">Bit 2 </font> <b>SRAM13_RST: </b> SRAM1, SRAM3, SRAM4 and SRAM5 erase upon system reset. Disable: SRAM1, SRAM3, SRAM4 and SRAM5 erased when a system reset occurs. Enable: SRAM1, SRAM3, SRAM4 and SRAM5 not erased when a system reset occurs.
+OB_SRAM1345_RST|SRAM1345_RST|User Configuration2||||
+OB_BKPRAM_ECC_UI|BKPRAM_ECC|User Configuration 2||||<font color="green">Bit 4 </font> <b>BKPRAM_ECC: </b> Backup RAM ECC detection and correction disable. Enable: BKPRAM ECC check enabled. Disable: BKPRAM ECC check disabled.
+OB_BKPRAM_ECC|BKPRAM_ECC|User Configuration 2||||
+UserConfigCondition|UserConfig_Condition|||||
+IO_VDD_HSLV|IO_VDDHSLV|||||
+IO_VDDIO2_HSLV|IO_VDDIO2HSLV|||||
+IWDG_STOP|IWDGSTOP|||||
+IWDG_STDBY|IWDGSTDBY|||||
+BOOT_UBE|BOOTUBE|||||
+SWAP_BANK|SWAPBANK|||||
+IWDGSW|IWDG_SW|||||
+WWDGSW|WWDG_SW|||||
+nRST_STOP|nRSTSTOP|||||
+nRST_STDBY|nRSTSTDBY|||||
+SRAM1_ECC|SRAM1ECC|||||
+SRAM1_RST|SRAM1RST|||||
+SRAM2_ECC|SRAM2ECC|||||
+SRAM2_RST|SRAM2RST|||||
+SRAM3_ECC|SRAM3ECC|||||
+SRAM13_RST|SRAM13RST|||||
+SRAM1345_RST|SRAM1345RST|||||
+BKPRAM_ECC|BKPRAMECC|||||
+OB_Boot_Configuration_active_NS_ADDR|Activate NS BOOT ADDRESS|Boot Configuration||||
+OB_NSBOOTADD_Address|Address|Boot Configuration||0x00|0xFFFFFF00|<font color="green">Bit 31:8</font> <b> NSBOOTADD[23:0]:</b>Unique boot entry address. These bits reflect the Secure UBE address.
+OB_Boot_Configuration_active_NS_BOOTLOCK|Activate NS BOOT LOCK|Boot Configuration||||
+OB_NSBootLock|NSBOOT_LOCK|Boot Configuration||||<font color="green">Bit 7:0</font> <b> NSBOOT_LOCK[7:0]:</b> Non secure Boot lock. A field locking the values of SWAP_BANK, and NSBOOTADD settings. Disable: The SWAP_BANK and NSBOOTADD can still be modified following their individual rules. Enable: The NSBOOTADD and SWAP_BANK are frozen.
+OB_Boot_Configuration_active_SEC_ADDR|Activate SEC BOOT ADDRESS|Boot Configuration||||
+OB_SECBOOTADD_Address|Address|Boot Configuration||0x00|0xFFFFFF00|<font color="green">Bit 31:8</font> <b> SECBOOTADD[23:0]:</b>Unique boot entry address. These bits reflect the Secure UBE address.
+OB_Boot_Configuration_active_SEC_BOOTLOCK|Activate SEC BOOT LOCK|Boot Configuration||||
+OB_SECBootLock|SECBOOT_LOCK|Boot Configuration||||<font color="green">Bit 7:0</font> <b> NSBOOT_LOCK[7:0]:</b> Non secure Boot lock. A field locking the values of SWAP_BANK, and NSBOOTADD settings. Disable: The SWAP_BANK and NSBOOTADD can still be modified following their individual rules. Enable: The NSBOOTADD and SWAP_BANK are frozen.
+OB_Bank1_WM_active|Activate Bank1 WM|Flash watermark area definition||||
+WMSecStartSector_Bank1|WMSEC Start sector|Flash watermark area definition||0|=numberOfSectors-1|<font color="green">Bit 6:0</font> <b> SECWM1_STRT[6:0]:</b> Bank1 security WM area 1 start sector.
+WMSecEndSector_Bank1|WMSEC End sector|Flash watermark area definition||0|=numberOfSectors-1|<font color="green">Bit 22:16</font> <b> SECWM1_END[6:0]:</b> Bank1 security WM area 1 end sector
+OB_WMSEC_BOTHBANKS|same WMSEC1 and WMSEC1 for both banks|Flash watermark area definition||||
+OB_Bank2_WM_active|Activate Bank2 WM|Flash watermark area definition||||
+WMSecStartSector_Bank2|WMSEC Start sector|Flash watermark area definition||0|=numberOfSectors-1|<font color="green">Bit 6:0</font> <b> SECWM1_END[6:0]:</b> This field contains the first page of the secure area in bank 2.
+WMSecEndSector_Bank2|WMSEC End sector|Flash watermark area definition||0|=numberOfSectors-1|<font color="green">Bit 22:16</font> <b> SECWM1_END[6:0]:</b> This field contains the first page of the secure area in bank 2.
+OB_WRP1_active|Activate Bank 1 WRP|Write sector group Protection||||<font color="green">Bits 7:0 </font> <b>WRPSG1[7:0]: </b> Bank1 sector protection option status byte Setting WRPSG1 bits to 0 write protects the corresponding sectors in bank 1 (0: write protected; 1: not write protected)
+OB_B1_S0_0TO3|Sector 0|Write sector group Protection||||Sector 0 to be write protected.
+OB_B1_S1_4TO7|Sector 1|Write sector group Protection||||Sector 1 to be write protected.
+OB_B1_S2_8TO11|Sector 2|Write sector group Protection||||Sector 2 to be write protected.
+OB_B1_S3_12TO15|Sector 3|Write sector group Protection||||Sector 3 to be write protected.
+OB_B1_S4_16TO19|Sector 4|Write sector group Protection||||Sector 4 to be write protected.
+OB_B1_S5_20TO23|Sector 5|Write sector group Protection||||Sector 5 to be write protected.
+OB_B1_S6_24TO27|Sector 6|Write sector group Protection||||Sector 6 to be write protected.
+OB_B1_S7_28TO31|Sector 7|Write sector group Protection||||Sector 7 to be write protected.
+OB_B1_S32TO35|Sector [32:35]|Write sector group Protection||||Sector 32 to 35 to be write protected.
+OB_B1_S36TO39|Sector [36:39]|Write sector group Protection||||Sector 36 to 39 to be write protected.
+OB_B1_S40TO43|Sector [40:43]|Write sector group Protection||||Sector 40 to 43 to be write protected.
+OB_B1_S44TO47|Sector [44:47]|Write sector group Protection||||Sector 44 to 47 to be write protected.
+OB_B1_S48TO51|Sector [48:51]|Write sector group Protection||||Sector 48 to 51 to be write protected.
+OB_B1_S52TO55|Sector [52:55]|Write sector group Protection||||Sector 52 to 55 to be write protected.
+OB_B1_S56TO59|Sector [56:59]|Write sector group Protection||||Sector 56 to 59 to be write protected.
+OB_B1_S60TO63|Sector [60:63]|Write sector group Protection||||Sector 60 to 63 to be write protected.
+OB_B1_S64TO67|Sector [64:67]|Write sector group Protection||||Sector 64 to 67 to be write protected.
+OB_B1_S68TO71|Sector [68:71]|Write sector group Protection||||Sector 68 to 71 to be write protected.
+OB_B1_S72TO75|Sector [72:75]|Write sector group Protection||||Sector 72 to 75 to be write protected.
+OB_B1_S76TO79|Sector [76:79]|Write sector group Protection||||Sector 76 to 79 to be write protected.
+OB_B1_S80TO83|Sector [80:83]|Write sector group Protection||||Sector 80 to 83 to be write protected.
+OB_B1_S84TO87|Sector [84:87]|Write sector group Protection||||Sector 84 to 87 to be write protected.
+OB_B1_S88TO91|Sector [88:91]|Write sector group Protection||||Sector 88 to 91 to be write protected.
+OB_B1_S92TO95|Sector [92:95]|Write sector group Protection||||Sector 92 to 95 to be write protected.
+OB_B1_S96TO99|Sector [96:99]|Write sector group Protection||||Sector 96 to 99 to be write protected.
+OB_B1_S100TO103|Sector [100:103]|Write sector group Protection||||Sector 100 to 103 to be write protected.
+OB_B1_S104TO107|Sector [104:107]|Write sector group Protection||||Sector 104 to 107 to be write protected.
+OB_B1_S108TO111|Sector [108:111]|Write sector group Protection||||Sector 108 to 111 to be write protected.
+OB_B1_S112TO115|Sector [112:115]|Write sector group Protection||||Sector 112 to 115 to be write protected.
+OB_B1_S116TO119|Sector [116:119]|Write sector group Protection||||Sector 116 to 119 to be write protected.
+OB_B1_S120TO123|Sector [120:123]|Write sector group Protection||||Sector 120 to 123 to be write protected.
+OB_B1_S124TO127|Sector [124:127]|Write sector group Protection||||Sector 124 to 127 to be write protected.
+OB_B1_S128TO131|Sector [128:131]|Write sector group Protection||||Sector 128 to 131 to be write protected.
+OB_B1_S132TO135|Sector [132:135]|Write sector group Protection||||Sector 132 to 135 to be write protected.
+OB_B1_S136TO139|Sector [136:139]|Write sector group Protection||||Sector 136 to 139 to be write protected.
+OB_B1_S140TO143|Sector [140:143]|Write sector group Protection||||Sector 140 to 143 to be write protected.
+OB_B1_S144TO147|Sector [144:147]|Write sector group Protection||||Sector 144 to 147 to be write protected.
+OB_B1_S148TO151|Sector [148:151]|Write sector group Protection||||Sector 148 to 151 to be write protected.
+OB_B1_S152TO155|Sector [152:155]|Write sector group Protection||||Sector 152 to 155 to be write protected.
+OB_B1_S156TO159|Sector [156:159]|Write sector group Protection||||Sector 156 to 159 to be write protected.
+OB_B1_S160TO163|Sector [160:163]|Write sector group Protection||||Sector 160 to 163 to be write protected.
+OB_B1_S164TO167|Sector [164:167]|Write sector group Protection||||Sector 164 to 167 to be write protected.
+OB_B1_S168TO171|Sector [168:171]|Write sector group Protection||||Sector 168 to 171 to be write protected.
+OB_B1_S172TO175|Sector [172:175]|Write sector group Protection||||Sector 172 to 175 to be write protected.
+OB_B1_S176TO179|Sector [176:179]|Write sector group Protection||||Sector 176 to 179 to be write protected.
+OB_B1_S180TO183|Sector [180:183]|Write sector group Protection||||Sector 180 to 183 to be write protected.
+OB_B1_S184TO187|Sector [184:187]|Write sector group Protection||||Sector 184 to 187 to be write protected.
+OB_B1_S188TO191|Sector [188:191]|Write sector group Protection||||Sector 188 to 191 to be write protected.
+OB_B1_S192TO195|Sector [192:195]|Write sector group Protection||||Sector 192 to 195 to be write protected.
+OB_B1_S196TO199|Sector [196:199]|Write sector group Protection||||Sector 196 to 199 to be write protected.
+OB_B1_S200TO203|Sector [200:203]|Write sector group Protection||||Sector 200 to 203 to be write protected.
+OB_B1_S204TO207|Sector [204:207]|Write sector group Protection||||Sector 204 to 207 to be write protected.
+OB_B1_S208TO211|Sector [208:211]|Write sector group Protection||||Sector 208 to 211 to be write protected.
+OB_B1_S212TO215|Sector [212:215]|Write sector group Protection||||Sector 212 to 215 to be write protected.
+OB_B1_S216TO219|Sector [216:219]|Write sector group Protection||||Sector 216 to 219 to be write protected.
+OB_B1_S220TO223|Sector [220:223]|Write sector group Protection||||Sector 220 to 223 to be write protected.
+OB_B1_S224TO227|Sector [224:227]|Write sector group Protection||||Sector 224 to 227 to be write protected.
+OB_B1_S228TO231|Sector [228:231]|Write sector group Protection||||Sector 228 to 231 to be write protected.
+OB_B1_S232TO235|Sector [232:235]|Write sector group Protection||||Sector 232 to 235 to be write protected.
+OB_B1_S236TO239|Sector [236:239]|Write sector group Protection||||Sector 236 to 239 to be write protected.
+OB_B1_S240TO243|Sector [240:243]|Write sector group Protection||||Sector 240 to 243 to be write protected.
+OB_B1_S244TO247|Sector [244:247]|Write sector group Protection||||Sector 244 to 247 to be write protected.
+OB_B1_S248TO251|Sector [248:251]|Write sector group Protection||||Sector 248 to 251 to be write protected.
+OB_B1_S252TO255|Sector [252:255]|Write sector group Protection||||Sector 252 to 255 to be write protected.
+OB_WRP1_Enabled_Sector0_0TO3|enable0|Write Protection||||
+OB_WRP1_Disabled_Sector0_0TO3|disable0|Write Protection||||
+OB_WRP1_Enabled_Sector1_4TO7|enable1|Write Protection||||
+OB_WRP1_Disabled_Sector1_4TO7|disable1|Write Protection||||
+OB_WRP1_Enabled_Sector2_8TO11|enable2|Write Protection||||
+OB_WRP1_Disabled_Sector2_8TO11|disable2|Write Protection||||
+OB_WRP1_Enabled_Sector3_12TO15|enable3|Write Protection||||
+OB_WRP1_Disabled_Sector3_12TO15|disable3|Write Protection||||
+OB_WRP1_Enabled_Sector4_16TO19|enable4|Write Protection||||
+OB_WRP1_Disabled_Sector4_16TO19|disable4|Write Protection||||
+OB_WRP1_Enabled_Sector5_20TO23|enable5|Write Protection||||
+OB_WRP1_Disabled_Sector5_20TO23|disable5|Write Protection||||
+OB_WRP1_Enabled_Sector6_24TO27|enable6|Write Protection||||
+OB_WRP1_Disabled_Sector6_24TO27|disable6|Write Protection||||
+OB_WRP1_Enabled_Sector7_28TO31|enable7|Write Protection||||
+OB_WRP1_Disabled_Sector7_28TO31|disable7|Write Protection||||
+OB_WRP1_Enabled_Sector32TO35|enable32TO35|Write Protection||||
+OB_WRP1_Disabled_Sector32TO35|disable32TO35|Write Protection||||
+OB_WRP1_Enabled_Sector36TO39|enable36TO39|Write Protection||||
+OB_WRP1_Disabled_Sector36TO39|disable36TO39|Write Protection||||
+OB_WRP1_Enabled_Sector40TO43|enable40TO43|Write Protection||||
+OB_WRP1_Disabled_Sector40TO43|disable40TO43|Write Protection||||
+OB_WRP1_Enabled_Sector44TO47|enable44TO47|Write Protection||||
+OB_WRP1_Disabled_Sector44TO47|disable44TO47|Write Protection||||
+OB_WRP1_Enabled_Sector48TO51|enable48TO51|Write Protection||||
+OB_WRP1_Disabled_Sector48TO51|disable48TO51|Write Protection||||
+OB_WRP1_Enabled_Sector52TO55|enable52TO55|Write Protection||||
+OB_WRP1_Disabled_Sector52TO55|disable52TO55|Write Protection||||
+OB_WRP1_Enabled_Sector56TO59|enable56TO59|Write Protection||||
+OB_WRP1_Disabled_Sector56TO59|disable56TO59|Write Protection||||
+OB_WRP1_Enabled_Sector60TO63|enable60TO63|Write Protection||||
+OB_WRP1_Disabled_Sector60TO63|disable60TO63|Write Protection||||
+OB_WRP1_Enabled_Sector64TO67|enable64TO67|Write Protection||||
+OB_WRP1_Disabled_Sector64TO67|disable64TO67|Write Protection||||
+OB_WRP1_Enabled_Sector68TO71|enable68TO71|Write Protection||||
+OB_WRP1_Disabled_Sector68TO71|disable68TO71|Write Protection||||
+OB_WRP1_Enabled_Sector72TO75|enable72TO75|Write Protection||||
+OB_WRP1_Disabled_Sector72TO75|disable72TO75|Write Protection||||
+OB_WRP1_Enabled_Sector76TO79|enable76TO79|Write Protection||||
+OB_WRP1_Disabled_Sector76TO79|disable76TO79|Write Protection||||
+OB_WRP1_Enabled_Sector80TO83|enable80TO83|Write Protection||||
+OB_WRP1_Disabled_Sector80TO83|disable80TO83|Write Protection||||
+OB_WRP1_Enabled_Sector84TO87|enable84TO87|Write Protection||||
+OB_WRP1_Disabled_Sector84TO87|disable84TO87|Write Protection||||
+OB_WRP1_Enabled_Sector88TO91|enable88TO91|Write Protection||||
+OB_WRP1_Disabled_Sector88TO91|disable88TO91|Write Protection||||
+OB_WRP1_Enabled_Sector92TO95|enable92TO95|Write Protection||||
+OB_WRP1_Disabled_Sector92TO95|disable92TO95|Write Protection||||
+OB_WRP1_Enabled_Sector96TO99|enable96TO99|Write Protection||||
+OB_WRP1_Disabled_Sector96TO99|disable96TO99|Write Protection||||
+OB_WRP1_Enabled_Sector100TO103|enable100TO103|Write Protection||||
+OB_WRP1_Disabled_Sector100TO103|disable100TO103|Write Protection||||
+OB_WRP1_Enabled_Sector104TO107|enable104TO107|Write Protection||||
+OB_WRP1_Disabled_Sector104TO107|disable104TO107|Write Protection||||
+OB_WRP1_Enabled_Sector108TO111|enable108TO111|Write Protection||||
+OB_WRP1_Disabled_Sector108TO111|disable108TO111|Write Protection||||
+OB_WRP1_Enabled_Sector112TO115|enable112TO115|Write Protection||||
+OB_WRP1_Disabled_Sector112TO115|disable112TO115|Write Protection||||
+OB_WRP1_Enabled_Sector116TO119|enable116TO119|Write Protection||||
+OB_WRP1_Disabled_Sector116TO119|disable116TO119|Write Protection||||
+OB_WRP1_Enabled_Sector120TO123|enable120TO123|Write Protection||||
+OB_WRP1_Disabled_Sector120TO123|disable120TO123|Write Protection||||
+OB_WRP1_Enabled_Sector124TO127|enable124TO127|Write Protection||||
+OB_WRP1_Disabled_Sector124TO127|disable124TO127|Write Protection||||
+OB_WRP1_Enabled_Sector128TO131|enable128TO131|Write Protection||||
+OB_WRP1_Disabled_Sector128TO131|disable128TO131|Write Protection||||
+OB_WRP1_Enabled_Sector132TO135|enable132TO135|Write Protection||||
+OB_WRP1_Disabled_Sector132TO135|disable132TO135|Write Protection||||
+OB_WRP1_Enabled_Sector136TO139|enable136TO139|Write Protection||||
+OB_WRP1_Disabled_Sector136TO139|disable136TO139|Write Protection||||
+OB_WRP1_Enabled_Sector140TO143|enable140TO143|Write Protection||||
+OB_WRP1_Disabled_Sector140TO143|disable140TO143|Write Protection||||
+OB_WRP1_Enabled_Sector144TO147|enable144TO147|Write Protection||||
+OB_WRP1_Disabled_Sector144TO147|disable144TO147|Write Protection||||
+OB_WRP1_Enabled_Sector148TO151|enable148TO151|Write Protection||||
+OB_WRP1_Disabled_Sector148TO151|disable148TO151|Write Protection||||
+OB_WRP1_Enabled_Sector152TO155|enable152TO155|Write Protection||||
+OB_WRP1_Disabled_Sector152TO155|disable152TO155|Write Protection||||
+OB_WRP1_Enabled_Sector156TO159|enable156TO159|Write Protection||||
+OB_WRP1_Disabled_Sector156TO159|disable156TO159|Write Protection||||
+OB_WRP1_Enabled_Sector160TO163|enable160TO163|Write Protection||||
+OB_WRP1_Disabled_Sector160TO163|disable160TO163|Write Protection||||
+OB_WRP1_Enabled_Sector164TO167|enable164TO167|Write Protection||||
+OB_WRP1_Disabled_Sector164TO167|disable164TO167|Write Protection||||
+OB_WRP1_Enabled_Sector168TO171|enable168TO171|Write Protection||||
+OB_WRP1_Disabled_Sector168TO171|disable168TO171|Write Protection||||
+OB_WRP1_Enabled_Sector172TO175|enable172TO175|Write Protection||||
+OB_WRP1_Disabled_Sector172TO175|disable172TO175|Write Protection||||
+OB_WRP1_Enabled_Sector176TO179|enable176TO179|Write Protection||||
+OB_WRP1_Disabled_Sector176TO179|disable176TO179|Write Protection||||
+OB_WRP1_Enabled_Sector180TO183|enable180TO183|Write Protection||||
+OB_WRP1_Disabled_Sector180TO183|disable180TO183|Write Protection||||
+OB_WRP1_Enabled_Sector184TO187|enable184TO187|Write Protection||||
+OB_WRP1_Disabled_Sector184TO187|disable184TO187|Write Protection||||
+OB_WRP1_Enabled_Sector188TO191|enable188TO191|Write Protection||||
+OB_WRP1_Disabled_Sector188TO191|disable188TO191|Write Protection||||
+OB_WRP1_Enabled_Sector192TO195|enable192TO195|Write Protection||||
+OB_WRP1_Disabled_Sector192TO195|disable192TO195|Write Protection||||
+OB_WRP1_Enabled_Sector196TO199|enable196TO199|Write Protection||||
+OB_WRP1_Disabled_Sector196TO199|disable196TO199|Write Protection||||
+OB_WRP1_Enabled_Sector200TO203|enable200TO203|Write Protection||||
+OB_WRP1_Disabled_Sector200TO203|disable200TO203|Write Protection||||
+OB_WRP1_Enabled_Sector204TO207|enable204TO207|Write Protection||||
+OB_WRP1_Disabled_Sector204TO207|disable204TO207|Write Protection||||
+OB_WRP1_Enabled_Sector208TO211|enable208TO211|Write Protection||||
+OB_WRP1_Disabled_Sector208TO211|disable208TO211|Write Protection||||
+OB_WRP1_Enabled_Sector212TO215|enable212TO215|Write Protection||||
+OB_WRP1_Disabled_Sector212TO215|disable212TO215|Write Protection||||
+OB_WRP1_Enabled_Sector216TO219|enable216TO219|Write Protection||||
+OB_WRP1_Disabled_Sector216TO219|disable216TO219|Write Protection||||
+OB_WRP1_Enabled_Sector220TO223|enable220TO223|Write Protection||||
+OB_WRP1_Disabled_Sector220TO223|disable220TO223|Write Protection||||
+OB_WRP1_Enabled_Sector224TO227|enable224TO227|Write Protection||||
+OB_WRP1_Disabled_Sector224TO227|disable224TO227|Write Protection||||
+OB_WRP1_Enabled_Sector228TO231|enable228TO231|Write Protection||||
+OB_WRP1_Disabled_Sector228TO231|disable228TO231|Write Protection||||
+OB_WRP1_Enabled_Sector232TO235|enable232TO235|Write Protection||||
+OB_WRP1_Disabled_Sector232TO235|disable232TO235|Write Protection||||
+OB_WRP1_Enabled_Sector236TO239|enable236TO239|Write Protection||||
+OB_WRP1_Disabled_Sector236TO239|disable236TO239|Write Protection||||
+OB_WRP1_Enabled_Sector240TO243|enable240TO243|Write Protection||||
+OB_WRP1_Disabled_Sector240TO243|disable240TO243|Write Protection||||
+OB_WRP1_Enabled_Sector244TO247|enable244TO247|Write Protection||||
+OB_WRP1_Disabled_Sector244TO247|disable244TO247|Write Protection||||
+OB_WRP1_Enabled_Sector248TO251|enable248TO251|Write Protection||||
+OB_WRP1_Disabled_Sector248TO251|disable248TO251|Write Protection||||
+OB_WRP1_Enabled_Sector252TO255|enable252TO255|Write Protection||||
+OB_WRP1_Disabled_Sector252TO255|disable252TO255|Write Protection||||
+WRP1Sector|All Sectors1|Write Protection||||
+WRP1State|WRPState1|Write Protection||||
+OB_WRP1_Enabled_Sectors|WRP1_Enabled_Sectors|Write Protection||||
+OB_WRP1_Disabled_Sectors|WRP1_Disabled_Sectors|Write Protection||||
+OB_WRP2_active|Activate Bank 2 WRP|Write sector group Protection||||<font color="green">Bits 7:0 </font> <b>WRPSG1[7:0]: </b> Bank1 sector protection option status byte Setting WRPSG1 bits to 0 write protects the corresponding sectors in bank 1 (0: write protected; 1: not write protected)
+OB_B2_S0_0TO3|Sector 0|Write sector group Protection||||Sector 0 to be write protected.
+OB_B2_S1_4TO7|Sector 1|Write sector group Protection||||Sector 1 to be write protected.
+OB_B2_S2_8TO11|Sector 2|Write sector group Protection||||Sector 2 to be write protected.
+OB_B2_S3_12TO15|Sector 3|Write sector group Protection||||Sector 3 to be write protected.
+OB_B2_S4_16TO19|Sector 4|Write sector group Protection||||Sector 4 to be write protected.
+OB_B2_S5_20TO23|Sector 5|Write sector group Protection||||Sector 5 to be write protected.
+OB_B2_S6_24TO27|Sector 6|Write sector group Protection||||Sector 6 to be write protected.
+OB_B2_S7_28TO31|Sector 7|Write sector group Protection||||Sector 7 to be write protected.
+OB_B2_S32TO35|Sector [32:35]|Write sector group Protection||||Sector 32 to 35 to be write protected.
+OB_B2_S36TO39|Sector [36:39]|Write sector group Protection||||Sector 36 to 39 to be write protected.
+OB_B2_S40TO43|Sector [40:43]|Write sector group Protection||||Sector 40 to 43 to be write protected.
+OB_B2_S44TO47|Sector [44:47]|Write sector group Protection||||Sector 44 to 47 to be write protected.
+OB_B2_S48TO51|Sector [48:51]|Write sector group Protection||||Sector 48 to 51 to be write protected.
+OB_B2_S52TO55|Sector [52:55]|Write sector group Protection||||Sector 52 to 55 to be write protected.
+OB_B2_S56TO59|Sector [56:59]|Write sector group Protection||||Sector 56 to 59 to be write protected.
+OB_B2_S60TO63|Sector [60:63]|Write sector group Protection||||Sector 60 to 63 to be write protected.
+OB_B2_S64TO67|Sector [64:67]|Write sector group Protection||||Sector 64 to 67 to be write protected.
+OB_B2_S68TO71|Sector [68:71]|Write sector group Protection||||Sector 68 to 71 to be write protected.
+OB_B2_S72TO75|Sector [72:75]|Write sector group Protection||||Sector 72 to 75 to be write protected.
+OB_B2_S76TO79|Sector [76:79]|Write sector group Protection||||Sector 76 to 79 to be write protected.
+OB_B2_S80TO83|Sector [80:83]|Write sector group Protection||||Sector 80 to 83 to be write protected.
+OB_B2_S84TO87|Sector [84:87]|Write sector group Protection||||Sector 84 to 87 to be write protected.
+OB_B2_S88TO91|Sector [88:91]|Write sector group Protection||||Sector 88 to 91 to be write protected.
+OB_B2_S92TO95|Sector [92:95]|Write sector group Protection||||Sector 92 to 95 to be write protected.
+OB_B2_S96TO99|Sector [96:99]|Write sector group Protection||||Sector 96 to 99 to be write protected.
+OB_B2_S100TO103|Sector [100:103]|Write sector group Protection||||Sector 100 to 103 to be write protected.
+OB_B2_S104TO107|Sector [104:107]|Write sector group Protection||||Sector 104 to 107 to be write protected.
+OB_B2_S108TO111|Sector [108:111]|Write sector group Protection||||Sector 108 to 111 to be write protected.
+OB_B2_S112TO115|Sector [112:115]|Write sector group Protection||||Sector 112 to 115 to be write protected.
+OB_B2_S116TO119|Sector [116:119]|Write sector group Protection||||Sector 116 to 119 to be write protected.
+OB_B2_S120TO123|Sector [120:123]|Write sector group Protection||||Sector 120 to 123 to be write protected.
+OB_B2_S124TO127|Sector [124:127]|Write sector group Protection||||Sector 124 to 127 to be write protected.
+OB_B2_S128TO131|Sector [128:131]|Write sector group Protection||||Sector 128 to 131 to be write protected.
+OB_B2_S132TO135|Sector [132:135]|Write sector group Protection||||Sector 132 to 135 to be write protected.
+OB_B2_S136TO139|Sector [136:139]|Write sector group Protection||||Sector 136 to 139 to be write protected.
+OB_B2_S140TO143|Sector [140:143]|Write sector group Protection||||Sector 140 to 143 to be write protected.
+OB_B2_S144TO147|Sector [144:147]|Write sector group Protection||||Sector 144 to 147 to be write protected.
+OB_B2_S148TO151|Sector [148:151]|Write sector group Protection||||Sector 148 to 151 to be write protected.
+OB_B2_S152TO155|Sector [152:155]|Write sector group Protection||||Sector 152 to 155 to be write protected.
+OB_B2_S156TO159|Sector [156:159]|Write sector group Protection||||Sector 156 to 159 to be write protected.
+OB_B2_S160TO163|Sector [160:163]|Write sector group Protection||||Sector 160 to 163 to be write protected.
+OB_B2_S164TO167|Sector [164:167]|Write sector group Protection||||Sector 164 to 167 to be write protected.
+OB_B2_S168TO171|Sector [168:171]|Write sector group Protection||||Sector 168 to 171 to be write protected.
+OB_B2_S172TO175|Sector [172:175]|Write sector group Protection||||Sector 172 to 175 to be write protected.
+OB_B2_S176TO179|Sector [176:179]|Write sector group Protection||||Sector 176 to 179 to be write protected.
+OB_B2_S180TO183|Sector [180:183]|Write sector group Protection||||Sector 180 to 183 to be write protected.
+OB_B2_S184TO187|Sector [184:187]|Write sector group Protection||||Sector 184 to 187 to be write protected.
+OB_B2_S188TO191|Sector [188:191]|Write sector group Protection||||Sector 188 to 191 to be write protected.
+OB_B2_S192TO195|Sector [192:195]|Write sector group Protection||||Sector 192 to 195 to be write protected.
+OB_B2_S196TO199|Sector [196:199]|Write sector group Protection||||Sector 196 to 199 to be write protected.
+OB_B2_S200TO203|Sector [200:203]|Write sector group Protection||||Sector 200 to 203 to be write protected.
+OB_B2_S204TO207|Sector [204:207]|Write sector group Protection||||Sector 204 to 207 to be write protected.
+OB_B2_S208TO211|Sector [208:211]|Write sector group Protection||||Sector 208 to 211 to be write protected.
+OB_B2_S212TO215|Sector [212:215]|Write sector group Protection||||Sector 212 to 215 to be write protected.
+OB_B2_S216TO219|Sector [216:219]|Write sector group Protection||||Sector 216 to 219 to be write protected.
+OB_B2_S220TO223|Sector [220:223]|Write sector group Protection||||Sector 220 to 223 to be write protected.
+OB_B2_S224TO227|Sector [224:227]|Write sector group Protection||||Sector 224 to 227 to be write protected.
+OB_B2_S228TO231|Sector [228:231]|Write sector group Protection||||Sector 228 to 231 to be write protected.
+OB_B2_S232TO235|Sector [232:235]|Write sector group Protection||||Sector 232 to 235 to be write protected.
+OB_B2_S236TO239|Sector [236:239]|Write sector group Protection||||Sector 236 to 239 to be write protected.
+OB_B2_S240TO243|Sector [240:243]|Write sector group Protection||||Sector 240 to 243 to be write protected.
+OB_B2_S244TO247|Sector [244:247]|Write sector group Protection||||Sector 244 to 247 to be write protected.
+OB_B2_S248TO251|Sector [248:251]|Write sector group Protection||||Sector 248 to 251 to be write protected.
+OB_B2_S252TO255|Sector [252:255]|Write sector group Protection||||Sector 252 to 255 to be write protected.
+OB_WRP2_Enabled_Sector0_0TO3|enable0|Write Protection||||
+OB_WRP2_Disabled_Sector0_0TO3|disable0|Write Protection||||
+OB_WRP2_Enabled_Sector1_4TO7|enable1|Write Protection||||
+OB_WRP2_Disabled_Sector1_4TO7|disable1|Write Protection||||
+OB_WRP2_Enabled_Sector2_8TO11|enable2|Write Protection||||
+OB_WRP2_Disabled_Sector2_8TO11|disable2|Write Protection||||
+OB_WRP2_Enabled_Sector3_12TO15|enable3|Write Protection||||
+OB_WRP2_Disabled_Sector3_12TO15|disable3|Write Protection||||
+OB_WRP2_Enabled_Sector4_16TO19|enable4|Write Protection||||
+OB_WRP2_Disabled_Sector4_16TO19|disable4|Write Protection||||
+OB_WRP2_Enabled_Sector5_20TO23|enable5|Write Protection||||
+OB_WRP2_Disabled_Sector5_20TO23|disable5|Write Protection||||
+OB_WRP2_Enabled_Sector6_24TO27|enable6|Write Protection||||
+OB_WRP2_Disabled_Sector6_24TO27|disable6|Write Protection||||
+OB_WRP2_Enabled_Sector7_28TO31|enable7|Write Protection||||
+OB_WRP2_Disabled_Sector7_28TO31|disable7|Write Protection||||
+OB_WRP2_Enabled_Sector32TO35|enable32TO35|Write Protection||||
+OB_WRP2_Disabled_Sector32TO35|disable32TO35|Write Protection||||
+OB_WRP2_Enabled_Sector36TO39|enable36TO39|Write Protection||||
+OB_WRP2_Disabled_Sector36TO39|disable36TO39|Write Protection||||
+OB_WRP2_Enabled_Sector40TO43|enable40TO43|Write Protection||||
+OB_WRP2_Disabled_Sector40TO43|disable40TO43|Write Protection||||
+OB_WRP2_Enabled_Sector44TO47|enable44TO47|Write Protection||||
+OB_WRP2_Disabled_Sector44TO47|disable44TO47|Write Protection||||
+OB_WRP2_Enabled_Sector48TO51|enable48TO51|Write Protection||||
+OB_WRP2_Disabled_Sector48TO51|disable48TO51|Write Protection||||
+OB_WRP2_Enabled_Sector52TO55|enable52TO55|Write Protection||||
+OB_WRP2_Disabled_Sector52TO55|disable52TO55|Write Protection||||
+OB_WRP2_Enabled_Sector56TO59|enable56TO59|Write Protection||||
+OB_WRP2_Disabled_Sector56TO59|disable56TO59|Write Protection||||
+OB_WRP2_Enabled_Sector60TO63|enable60TO63|Write Protection||||
+OB_WRP2_Disabled_Sector60TO63|disable60TO63|Write Protection||||
+OB_WRP2_Enabled_Sector64TO67|enable64TO67|Write Protection||||
+OB_WRP2_Disabled_Sector64TO67|disable64TO67|Write Protection||||
+OB_WRP2_Enabled_Sector68TO71|enable68TO71|Write Protection||||
+OB_WRP2_Disabled_Sector68TO71|disable68TO71|Write Protection||||
+OB_WRP2_Enabled_Sector72TO75|enable72TO75|Write Protection||||
+OB_WRP2_Disabled_Sector72TO75|disable72TO75|Write Protection||||
+OB_WRP2_Enabled_Sector76TO79|enable76TO79|Write Protection||||
+OB_WRP2_Disabled_Sector76TO79|disable76TO79|Write Protection||||
+OB_WRP2_Enabled_Sector80TO83|enable80TO83|Write Protection||||
+OB_WRP2_Disabled_Sector80TO83|disable80TO83|Write Protection||||
+OB_WRP2_Enabled_Sector84TO87|enable84TO87|Write Protection||||
+OB_WRP2_Disabled_Sector84TO87|disable84TO87|Write Protection||||
+OB_WRP2_Enabled_Sector88TO91|enable88TO91|Write Protection||||
+OB_WRP2_Disabled_Sector88TO91|disable88TO91|Write Protection||||
+OB_WRP2_Enabled_Sector92TO95|enable92TO95|Write Protection||||
+OB_WRP2_Disabled_Sector92TO95|disable92TO95|Write Protection||||
+OB_WRP2_Enabled_Sector96TO99|enable96TO99|Write Protection||||
+OB_WRP2_Disabled_Sector96TO99|disable96TO99|Write Protection||||
+OB_WRP2_Enabled_Sector100TO103|enable100TO103|Write Protection||||
+OB_WRP2_Disabled_Sector100TO103|disable100TO103|Write Protection||||
+OB_WRP2_Enabled_Sector104TO107|enable104TO107|Write Protection||||
+OB_WRP2_Disabled_Sector104TO107|disable104TO107|Write Protection||||
+OB_WRP2_Enabled_Sector108TO111|enable108TO111|Write Protection||||
+OB_WRP2_Disabled_Sector108TO111|disable108TO111|Write Protection||||
+OB_WRP2_Enabled_Sector112TO115|enable112TO115|Write Protection||||
+OB_WRP2_Disabled_Sector112TO115|disable112TO115|Write Protection||||
+OB_WRP2_Enabled_Sector116TO119|enable116TO119|Write Protection||||
+OB_WRP2_Disabled_Sector116TO119|disable116TO119|Write Protection||||
+OB_WRP2_Enabled_Sector120TO123|enable120TO123|Write Protection||||
+OB_WRP2_Disabled_Sector120TO123|disable120TO123|Write Protection||||
+OB_WRP2_Enabled_Sector124TO127|enable124TO127|Write Protection||||
+OB_WRP2_Disabled_Sector124TO127|disable124TO127|Write Protection||||
+OB_WRP2_Enabled_Sector128TO131|enable128TO131|Write Protection||||
+OB_WRP2_Disabled_Sector128TO131|disable128TO131|Write Protection||||
+OB_WRP2_Enabled_Sector132TO135|enable132TO135|Write Protection||||
+OB_WRP2_Disabled_Sector132TO135|disable132TO135|Write Protection||||
+OB_WRP2_Enabled_Sector136TO139|enable136TO139|Write Protection||||
+OB_WRP2_Disabled_Sector136TO139|disable136TO139|Write Protection||||
+OB_WRP2_Enabled_Sector140TO143|enable140TO143|Write Protection||||
+OB_WRP2_Disabled_Sector140TO143|disable140TO143|Write Protection||||
+OB_WRP2_Enabled_Sector144TO147|enable144TO147|Write Protection||||
+OB_WRP2_Disabled_Sector144TO147|disable144TO147|Write Protection||||
+OB_WRP2_Enabled_Sector148TO151|enable148TO151|Write Protection||||
+OB_WRP2_Disabled_Sector148TO151|disable148TO151|Write Protection||||
+OB_WRP2_Enabled_Sector152TO155|enable152TO155|Write Protection||||
+OB_WRP2_Disabled_Sector152TO155|disable152TO155|Write Protection||||
+OB_WRP2_Enabled_Sector156TO159|enable156TO159|Write Protection||||
+OB_WRP2_Disabled_Sector156TO159|disable156TO159|Write Protection||||
+OB_WRP2_Enabled_Sector160TO163|enable160TO163|Write Protection||||
+OB_WRP2_Disabled_Sector160TO163|disable160TO163|Write Protection||||
+OB_WRP2_Enabled_Sector164TO167|enable164TO167|Write Protection||||
+OB_WRP2_Disabled_Sector164TO167|disable164TO167|Write Protection||||
+OB_WRP2_Enabled_Sector168TO171|enable168TO171|Write Protection||||
+OB_WRP2_Disabled_Sector168TO171|disable168TO171|Write Protection||||
+OB_WRP2_Enabled_Sector172TO175|enable172TO175|Write Protection||||
+OB_WRP2_Disabled_Sector172TO175|disable172TO175|Write Protection||||
+OB_WRP2_Enabled_Sector176TO179|enable176TO179|Write Protection||||
+OB_WRP2_Disabled_Sector176TO179|disable176TO179|Write Protection||||
+OB_WRP2_Enabled_Sector180TO183|enable180TO183|Write Protection||||
+OB_WRP2_Disabled_Sector180TO183|disable180TO183|Write Protection||||
+OB_WRP2_Enabled_Sector184TO187|enable184TO187|Write Protection||||
+OB_WRP2_Disabled_Sector184TO187|disable184TO187|Write Protection||||
+OB_WRP2_Enabled_Sector188TO191|enable188TO191|Write Protection||||
+OB_WRP2_Disabled_Sector188TO191|disable188TO191|Write Protection||||
+OB_WRP2_Enabled_Sector192TO195|enable192TO195|Write Protection||||
+OB_WRP2_Disabled_Sector192TO195|disable192TO195|Write Protection||||
+OB_WRP2_Enabled_Sector196TO199|enable196TO199|Write Protection||||
+OB_WRP2_Disabled_Sector196TO199|disable196TO199|Write Protection||||
+OB_WRP2_Enabled_Sector200TO203|enable200TO203|Write Protection||||
+OB_WRP2_Disabled_Sector200TO203|disable200TO203|Write Protection||||
+OB_WRP2_Enabled_Sector204TO207|enable204TO207|Write Protection||||
+OB_WRP2_Disabled_Sector204TO207|disable204TO207|Write Protection||||
+OB_WRP2_Enabled_Sector208TO211|enable208TO211|Write Protection||||
+OB_WRP2_Disabled_Sector208TO211|disable208TO211|Write Protection||||
+OB_WRP2_Enabled_Sector212TO215|enable212TO215|Write Protection||||
+OB_WRP2_Disabled_Sector212TO215|disable212TO215|Write Protection||||
+OB_WRP2_Enabled_Sector216TO219|enable216TO219|Write Protection||||
+OB_WRP2_Disabled_Sector216TO219|disable216TO219|Write Protection||||
+OB_WRP2_Enabled_Sector220TO223|enable220TO223|Write Protection||||
+OB_WRP2_Disabled_Sector220TO223|disable220TO223|Write Protection||||
+OB_WRP2_Enabled_Sector224TO227|enable224TO227|Write Protection||||
+OB_WRP2_Disabled_Sector224TO227|disable224TO227|Write Protection||||
+OB_WRP2_Enabled_Sector228TO231|enable228TO231|Write Protection||||
+OB_WRP2_Disabled_Sector228TO231|disable228TO231|Write Protection||||
+OB_WRP2_Enabled_Sector232TO235|enable232TO235|Write Protection||||
+OB_WRP2_Disabled_Sector232TO235|disable232TO235|Write Protection||||
+OB_WRP2_Enabled_Sector236TO239|enable236TO239|Write Protection||||
+OB_WRP2_Disabled_Sector236TO239|disable236TO239|Write Protection||||
+OB_WRP2_Enabled_Sector240TO243|enable240TO243|Write Protection||||
+OB_WRP2_Disabled_Sector240TO243|disable240TO243|Write Protection||||
+OB_WRP2_Enabled_Sector244TO247|enable244TO247|Write Protection||||
+OB_WRP2_Disabled_Sector244TO247|disable244TO247|Write Protection||||
+OB_WRP2_Enabled_Sector248TO251|enable248TO251|Write Protection||||
+OB_WRP2_Disabled_Sector248TO251|disable248TO251|Write Protection||||
+OB_WRP2_Enabled_Sector252TO255|enable252TO255|Write Protection||||
+OB_WRP2_Disabled_Sector252TO255|disable252TO255|Write Protection||||
+WRP2Sector|All Sectors2|Write Protection||||
+WRP2State|WRPState2|Write Protection||||
+OB_WRP2_Enabled_Sectors|WRP2_Enabled_Sectors|Write Protection||||
+OB_WRP2_Disabled_Sectors|WRP2_Disabled_Sectors|Write Protection||||
+OB_OTP_LOCK_active|Activate|OTP write protection||||<font color="green">Bits 31:0 </font> <b>LOCKBL[31:0]: </b> OTP block lock. Block n corresponds to OTP 16-bit word 32 x n to 32 x n + 31. LOCKBL[n] = 1 indicates that all OTP 16-bit words in OTP Block n are locked and attempt to program them results in WRPERR. LOCKBL[n] = 0 indicates that all OTP 16-bit words in OTP Block n are not locked. When one block is locked, it is not possible to remove the write protection. LOCKBL bits can be set if the corresponding bit in FLASH_OTPBLR_CUR is cleared
+OB_OTP_Block0|Block 0|OTP write protection||||OTP BLOCK 0.
+OB_OTP_Block1|Block 1|OTP write protection||||OTP BLOCK 1.
+OB_OTP_Block2|Block 2|OTP write protection||||OTP BLOCK 2.
+OB_OTP_Block3|Block 3|OTP write protection||||OTP BLOCK 3.
+OB_OTP_Block4|Block 4|OTP write protection||||OTP BLOCK 4.
+OB_OTP_Block5|Block 5|OTP write protection||||OTP BLOCK 5.
+OB_OTP_Block6|Block 6|OTP write protection||||OTP BLOCK 6.
+OB_OTP_Block7|Block 7|OTP write protection||||OTP BLOCK 7.
+OB_OTP_Block8|Block 8|OTP write protection||||OTP BLOCK 8.
+OB_OTP_Block9|Block 9|OTP write protection||||OTP BLOCK 9.
+OB_OTP_Block10|Block 10|OTP write protection||||OTP BLOCK 10.
+OB_OTP_Block11|Block 11|OTP write protection||||OTP BLOCK 11.
+OB_OTP_Block12|Block 12|OTP write protection||||OTP BLOCK 12.
+OB_OTP_Block13|Block 13|OTP write protection||||OTP BLOCK 13.
+OB_OTP_Block14|Block 14|OTP write protection||||OTP BLOCK 14.
+OB_OTP_Block15|Block 15|OTP write protection||||OTP BLOCK 15.
+OB_OTP_Block16|Block 16|OTP write protection||||OTP BLOCK 16.
+OB_OTP_Block17|Block 17|OTP write protection||||OTP BLOCK 17.
+OB_OTP_Block18|Block 18|OTP write protection||||OTP BLOCK 18.
+OB_OTP_Block19|Block 19|OTP write protection||||OTP BLOCK 19.
+OB_OTP_Block20|Block 20|OTP write protection||||OTP BLOCK 20.
+OB_OTP_Block21|Block 21|OTP write protection||||OTP BLOCK 21.
+OB_OTP_Block22|Block 22|OTP write protection||||OTP BLOCK 22.
+OB_OTP_Block23|Block 23|OTP write protection||||OTP BLOCK 23.
+OB_OTP_Block24|Block 24|OTP write protection||||OTP BLOCK 24.
+OB_OTP_Block25|Block 25|OTP write protection||||OTP BLOCK 25.
+OB_OTP_Block26|Block 26|OTP write protection||||OTP BLOCK 26.
+OB_OTP_Block27|Block 27|OTP write protection||||OTP BLOCK 27.
+OB_OTP_Block28|Block 28|OTP write protection||||OTP BLOCK 28.
+OB_OTP_Block29|Block 29|OTP write protection||||OTP BLOCK 29.
+OB_OTP_Block30|Block 30|OTP write protection||||OTP BLOCK 30.
+OB_OTP_Block31|Block 31|OTP write protection||||OTP BLOCK 31.
+OTP_B0|block0|OTP Write Protection||||
+OTP_B1|block1|OTP Write Protection||||
+OTP_B2|block2|OTP Write Protection||||
+OTP_B3|block3|OTP Write Protection||||
+OTP_B4|block4|OTP Write Protection||||
+OTP_B5|block5|OTP Write Protection||||
+OTP_B6|block6|OTP Write Protection||||
+OTP_B7|block7|OTP Write Protection||||
+OTP_B8|block8|OTP Write Protection||||
+OTP_B9|block9|OTP Write Protection||||
+OTP_B10|block10|OTP Write Protection||||
+OTP_B11|block11|OTP Write Protection||||
+OTP_B12|block12|OTP Write Protection||||
+OTP_B13|block13|OTP Write Protection||||
+OTP_B14|block14|OTP Write Protection||||
+OTP_B15|block15|OTP Write Protection||||
+OTP_B16|block16|OTP Write Protection||||
+OTP_B17|block17|OTP Write Protection||||
+OTP_B18|block18|OTP Write Protection||||
+OTP_B19|block19|OTP Write Protection||||
+OTP_B20|block20|OTP Write Protection||||
+OTP_B21|block21|OTP Write Protection||||
+OTP_B22|block22|OTP Write Protection||||
+OTP_B23|block23|OTP Write Protection||||
+OTP_B24|block24|OTP Write Protection||||
+OTP_B25|block25|OTP Write Protection||||
+OTP_B26|block26|OTP Write Protection||||
+OTP_B27|block27|OTP Write Protection||||
+OTP_B28|block28|OTP Write Protection||||
+OTP_B29|block29|OTP Write Protection||||
+OTP_B30|block30|OTP Write Protection||||
+OTP_B31|block31|OTP Write Protection||||
+OTPBlockLock|OTPBlockLock|Write Protection||||
+OB_EDATA1_active|Activate Bank1 EDATA|Flash data sectors||||
+EDATA1size|Size|Flash data sectors||0|8|<font color="green">Bit 2:0</font> <b> EDATA1_STRT[2:0]:</b> EDATA1_STRT contains the start sectors of the Flash high-cycle data area in Bank 1. There is no hardware effect to those bits. They shall be managed by ST tools in Flasher. 0:000: The last sector of the Bank 1 is reserved for Flash high-cycle data 1:001: The two last sectors of the Bank 1 are reserved for Flash high-cycle data 2:010: The three last sectors of the Bank 1 are reserved for Flash high-cycle data ... 7:111: The eight last sectors of the Bank 1 are reserved for Flash high-cycle data Note: Bit 2 is reserved on 512-Kbyte product configuration
+OB_EDATA_BOTHBANKS|same EDATA1 and EDATA2 for both banks|Write sector group Protection||||
+OB_EDATA2_active|Activate Bank2 EDATA|Flash data sectors||||
+EDATA2size|Size|Flash data sectors||0|8|<font color="green">Bit 2:0</font> <b> EDATA2_STRT[2:0]:</b> EDATA1_STRT contains the start sectors of the Flash high-cycle data area in Bank 1. There is no hardware effect to those bits. They shall be managed by ST tools in Flasher. 0:000: The last sector of the Bank 1 is reserved for Flash high-cycle data 1:001: The two last sectors of the Bank 1 are reserved for Flash high-cycle data 2:010: The three last sectors of the Bank 1 are reserved for Flash high-cycle data ... 7:111: The eight last sectors of the Bank 1 are reserved for Flash high-cycle data Note: Bit 2 is reserved on 512-Kbyte product configuration
+OB_HDP1_active|Activate Bank1 HDP|Flash HDP||||
+HDP1start|Start sector|Flash HDP||0|=numberOfSectors-1|<font color="green">Bit 6:0</font> <b> HDP1_STRT[6:0]:</b> HDPL barrier start set in number of 8-Kbyte sectors in bank1. Must not be set to overlap with Flash high-cycle data area.
+HDP1end|End sector|Flash HDP||0|=numberOfSectors-1|<font color="green">Bit 22:16</font> <b> HDP1_END[6:0]:</b>HDPL barrier end set in number of 8-Kbyte sectors in Bank 1. Must not be set to overlap with Flash high-cycle data area.
+OB_HDP_BOTHBANKS|same HDP1 and HDP2 for both banks|Write sector group Protection||||
+OB_HDP2_active|Activate Bank2 HDP|Flash HDP||||
+HDP2start|Start sector|Flash HDP||0|=numberOfSectors-1|<font color="green">Bit 6:0</font> <b> HDP1_STRT[6:0]:</b> HDPL barrier start set in number of 8-Kbyte sectors in bank 2. Must not be set to overlap with Flash high-cycle data area.
+HDP2end|End sector|Flash HDP||0|=numberOfSectors-1|<font color="green">Bit 22:16</font> <b> HDP1_END[6:0]:</b>HDPL barrier end set in number of 8-Kbyte sectors in Bank 2. Must not be set to overlap with Flash high-cycle data area.
+OptionType|Option Type|Option Type||||
+OptionType_PROD_STATE|OptionType_PROD_STATE|Option Bytes||||
+OptionType_USER|OptionType_USER|Option Bytes||||
+OptionType_BOOTADDR|OptionType_BOOTADDR|Option Bytes||||
+OptionType_BOOT_LOCK|OptionType_BOOT_LOCK|Option Bytes||||
+OptionType_WMSEC|OptionType_WMSEC|Option Bytes||||
+OptionType_WRP|OptionType_WRP|Option Bytes||||
+OptionType_OTP_LOCK|OptionType_OTP_LOCK|Option Bytes||||
+OptionType_EDATA|OptionType_EDATA|Option Bytes||||
+OptionType_HDP|OptionType_HDP|Option Bytes||||
+USERType|User Type|||||
+USERType_BOR|User Type|||||
+USERType_Config1|User Type|||||
+OB_USER_IWDG_SW|IWDG_SW|User Configuration||||
+OB_USER_WWDG_SW|WWDG_SW|User Configuration||||
+OB_USER_NRST_STOP|nRST_STOP|User Configuration||||
+OB_USER_NRST_STDBY|nRST_STDBY|User Configuration||||
+OB_USER_IO_VDD_HSLV|IO_VDD_HSLV|User Configuration||||
+OB_USER_IO_VDDIO2_HSLV|IO_VDDIO2_HSLV|User Configuration||||
+OB_USER_IWDG_STOP|IWDG_STOP|User Configuration||||
+OB_USER_IWDG_STDBY|IWDG_STDBY|User Configuration||||
+OB_USER_BOOT_UBE|BOOT_UBE|User Configuration||||
+OB_USER_SWAP_BANK|SWAP_BANK|||||
+USERType_Config2|User Type|||||
+OB_USER_SRAM1_ECC|SRAM1_ECC|||||
+OB_USER_SRAM1_RST|SRAM1_RST|User Configuration 2||||
+OB_USER_SRAM2_ECC|SRAM2_ECC|User Configuration 2||||
+OB_USER_SRAM2_RST|SRAM2_RST|User Configuration 2||||
+OB_USER_SRAM3_ECC|SRAM3_ECC|User Configuration 2||||
+OB_USER_SRAM1_3_RST|SRAM13_RST|User Configuration2||||
+OB_USER_SRAM1_3_4_5_RST|SRAM1345_RST|User Configuration2||||
+OB_USER_BKPRAM_ECC|BKPRAM_ECC|User Configuration 2||||
+numberOfSectors|numberOfSectors|REGISTERS||||
+numberOfRegisters|numberOfRegisters|REGISTERS||||
+FlashSize|FlashSize|REGISTERS||||
+B1_BLOCK_active|Activate AREA 1|AREA1||||
+B1_Bank|Bank|AREA1||||FLASH Bank
+B1_startSector|Start page|AREA1||0|=numberOfSectors-1|Start page of Block Based page protection
+B1_endSector|End page|AREA1||0|=numberOfSectors-1|End page of Block Based page protection
+B1_AttributesArray|B1_AttributesArray|AREA1||||
+B1_AttributesType|Type|AREA1||||
+B1_AttributesType_privilege|Attribute privilege|AREA1||||Block Based page protection type: security/privilege
+B1_AttributesType_security|Attribute security|AREA1||||Block Based page protection type: security/privilege
+B1_reg0|B1_reg0|REGISTERS||||
+B1_reg0_1Decimal|B1_reg0_1Decimal|REGISTERS||||
+B1_reg0_1|B1_reg0_1|REGISTERS||||
+B1_reg0_2Decimal|B1_reg0_2Decimal|REGISTERS||||
+B1_reg0_2|B1_reg0_2|REGISTERS||||
+B1_reg0_3Decimal|B1_reg0_3Decimal|REGISTERS||||
+B1_reg0_3|B1_reg0_3|REGISTERS||||
+B1_reg0_4Decimal|B1_reg0_4Decimal|REGISTERS||||
+B1_reg0_4|B1_reg0_4|REGISTERS||||
+B1_reg0_5Decimal|B1_reg0_5Decimal|REGISTERS||||
+B1_reg0_5|B1_reg0_5|REGISTERS||||
+B1_reg0_6Decimal|B1_reg0_6Decimal|REGISTERS||||
+B1_reg0_6|B1_reg0_6|REGISTERS||||
+B1_reg0_7Decimal|B1_reg0_7Decimal|REGISTERS||||
+B1_reg0_7|B1_reg0_7|REGISTERS||||
+B1_reg0_8Decimal|B1_reg0_8Decimal|REGISTERS||||
+B1_reg0_8|B1_reg0_8|REGISTERS||||
+B1_reg1|B1_reg1|REGISTERS||||
+B1_reg1_1Decimal|B1_reg1_1Decimal|REGISTERS||||
+B1_reg1_1|B1_reg1_1|REGISTERS||||
+B1_reg1_2Decimal|B1_reg1_2Decimal|REGISTERS||||
+B1_reg1_2|B1_reg1_2|REGISTERS||||
+B1_reg1_3Decimal|B1_reg1_3Decimal|REGISTERS||||
+B1_reg1_3|B1_reg1_3|REGISTERS||||
+B1_reg1_4Decimal|B1_reg1_4Decimal|REGISTERS||||
+B1_reg1_4|B1_reg1_4|REGISTERS||||
+B1_reg1_5Decimal|B1_reg1_5Decimal|REGISTERS||||
+B1_reg1_5|B1_reg1_5|REGISTERS||||
+B1_reg1_6Decimal|B1_reg1_6Decimal|REGISTERS||||
+B1_reg1_6|B1_reg1_6|REGISTERS||||
+B1_reg1_7Decimal|B1_reg1_7Decimal|REGISTERS||||
+B1_reg1_7|B1_reg1_7|REGISTERS||||
+B1_reg1_8Decimal|B1_reg1_8Decimal|REGISTERS||||
+B1_reg1_8|B1_reg1_8|REGISTERS||||
+B1_reg2|B1_reg2|REGISTERS||||
+B1_reg2_1Decimal|B1_reg2_1Decimal|REGISTERS||||
+B1_reg2_1|B1_reg2_1|REGISTERS||||
+B1_reg2_2Decimal|B1_reg2_2Decimal|REGISTERS||||
+B1_reg2_2|B1_reg2_2|REGISTERS||||
+B1_reg2_3Decimal|B1_reg2_3Decimal|REGISTERS||||
+B1_reg2_3|B1_reg2_3|REGISTERS||||
+B1_reg2_4Decimal|B1_reg2_4Decimal|REGISTERS||||
+B1_reg2_4|B1_reg2_4|REGISTERS||||
+B1_reg2_5Decimal|B1_reg2_5Decimal|REGISTERS||||
+B1_reg2_5|B1_reg2_5|REGISTERS||||
+B1_reg2_6Decimal|B1_reg2_6Decimal|REGISTERS||||
+B1_reg2_6|B1_reg2_6|REGISTERS||||
+B1_reg2_7Decimal|B1_reg2_7Decimal|REGISTERS||||
+B1_reg2_7|B1_reg2_7|REGISTERS||||
+B1_reg2_8Decimal|B1_reg2_8Decimal|REGISTERS||||
+B1_reg2_8|B1_reg2_8|REGISTERS||||
+B1_reg3|B1_reg3|REGISTERS||||
+B1_reg3_1Decimal|B1_reg3_1Decimal|REGISTERS||||
+B1_reg3_1|B1_reg3_1|REGISTERS||||
+B1_reg3_2Decimal|B1_reg3_2Decimal|REGISTERS||||
+B1_reg3_2|B1_reg3_2|REGISTERS||||
+B1_reg3_3Decimal|B1_reg3_3Decimal|REGISTERS||||
+B1_reg3_3|B1_reg3_3|REGISTERS||||
+B1_reg3_4Decimal|B1_reg3_4Decimal|REGISTERS||||
+B1_reg3_4|B1_reg3_4|REGISTERS||||
+B1_reg3_5Decimal|B1_reg3_5Decimal|REGISTERS||||
+B1_reg3_5|B1_reg3_5|REGISTERS||||
+B1_reg3_6Decimal|B1_reg3_6Decimal|REGISTERS||||
+B1_reg3_6|B1_reg3_6|REGISTERS||||
+B1_reg3_7Decimal|B1_reg3_7Decimal|REGISTERS||||
+B1_reg3_7|B1_reg3_7|REGISTERS||||
+B1_reg3_8Decimal|B1_reg3_8Decimal|REGISTERS||||
+B1_reg3_8|B1_reg3_8|REGISTERS||||
+B2_BLOCK_active|Activate AREA 2|AREA2||||
+B2_Bank|Bank|AREA2||||FLASH Bank
+B2_startSector|Start page|AREA2||0|=numberOfSectors-1|Start page of Block Based page protection
+B2_endSector|End page|AREA2||0|=numberOfSectors-1|End page of Block Based page protection
+B2_AttributesArray|B2_AttributesArray|AREA2||||
+B2_AttributesType|Type|AREA2||||
+B2_AttributesType_privilege|Attribute privilege|AREA2||||Block Based page protection type: security/privilege
+B2_AttributesType_security|Attribute security|AREA2||||Block Based page protection type: security/privilege
+B2_reg0|B2_reg0|REGISTERS||||
+B2_reg0_1Decimal|B2_reg0_1Decimal|REGISTERS||||
+B2_reg0_1|B2_reg0_1|REGISTERS||||
+B2_reg0_2Decimal|B2_reg0_2Decimal|REGISTERS||||
+B2_reg0_2|B2_reg0_2|REGISTERS||||
+B2_reg0_3Decimal|B2_reg0_3Decimal|REGISTERS||||
+B2_reg0_3|B2_reg0_3|REGISTERS||||
+B2_reg0_4Decimal|B2_reg0_4Decimal|REGISTERS||||
+B2_reg0_4|B2_reg0_4|REGISTERS||||
+B2_reg0_5Decimal|B2_reg0_5Decimal|REGISTERS||||
+B2_reg0_5|B2_reg0_5|REGISTERS||||
+B2_reg0_6Decimal|B2_reg0_6Decimal|REGISTERS||||
+B2_reg0_6|B2_reg0_6|REGISTERS||||
+B2_reg0_7Decimal|B2_reg0_7Decimal|REGISTERS||||
+B2_reg0_7|B2_reg0_7|REGISTERS||||
+B2_reg0_8Decimal|B2_reg0_8Decimal|REGISTERS||||
+B2_reg0_8|B2_reg0_8|REGISTERS||||
+B2_reg1|B2_reg1|REGISTERS||||
+B2_reg1_1Decimal|B2_reg1_1Decimal|REGISTERS||||
+B2_reg1_1|B2_reg1_1|REGISTERS||||
+B2_reg1_2Decimal|B2_reg1_2Decimal|REGISTERS||||
+B2_reg1_2|B2_reg1_2|REGISTERS||||
+B2_reg1_3Decimal|B2_reg1_3Decimal|REGISTERS||||
+B2_reg1_3|B2_reg1_3|REGISTERS||||
+B2_reg1_4Decimal|B2_reg1_4Decimal|REGISTERS||||
+B2_reg1_4|B2_reg1_4|REGISTERS||||
+B2_reg1_5Decimal|B2_reg1_5Decimal|REGISTERS||||
+B2_reg1_5|B2_reg1_5|REGISTERS||||
+B2_reg1_6Decimal|B2_reg1_6Decimal|REGISTERS||||
+B2_reg1_6|B2_reg1_6|REGISTERS||||
+B2_reg1_7Decimal|B2_reg1_7Decimal|REGISTERS||||
+B2_reg1_7|B2_reg1_7|REGISTERS||||
+B2_reg1_8Decimal|B2_reg1_8Decimal|REGISTERS||||
+B2_reg1_8|B2_reg1_8|REGISTERS||||
+B2_reg2|B2_reg2|REGISTERS||||
+B2_reg2_1Decimal|B2_reg2_1Decimal|REGISTERS||||
+B2_reg2_1|B2_reg2_1|REGISTERS||||
+B2_reg2_2Decimal|B2_reg2_2Decimal|REGISTERS||||
+B2_reg2_2|B2_reg2_2|REGISTERS||||
+B2_reg2_3Decimal|B2_reg2_3Decimal|REGISTERS||||
+B2_reg2_3|B2_reg2_3|REGISTERS||||
+B2_reg2_4Decimal|B2_reg2_4Decimal|REGISTERS||||
+B2_reg2_4|B2_reg2_4|REGISTERS||||
+B2_reg2_5Decimal|B2_reg2_5Decimal|REGISTERS||||
+B2_reg2_5|B2_reg2_5|REGISTERS||||
+B2_reg2_6Decimal|B2_reg2_6Decimal|REGISTERS||||
+B2_reg2_6|B2_reg2_6|REGISTERS||||
+B2_reg2_7Decimal|B2_reg2_7Decimal|REGISTERS||||
+B2_reg2_7|B2_reg2_7|REGISTERS||||
+B2_reg2_8Decimal|B2_reg2_8Decimal|REGISTERS||||
+B2_reg2_8|B2_reg2_8|REGISTERS||||
+B2_reg3|B2_reg3|REGISTERS||||
+B2_reg3_1Decimal|B2_reg3_1Decimal|REGISTERS||||
+B2_reg3_1|B2_reg3_1|REGISTERS||||
+B2_reg3_2Decimal|B2_reg3_2Decimal|REGISTERS||||
+B2_reg3_2|B2_reg3_2|REGISTERS||||
+B2_reg3_3Decimal|B2_reg3_3Decimal|REGISTERS||||
+B2_reg3_3|B2_reg3_3|REGISTERS||||
+B2_reg3_4Decimal|B2_reg3_4Decimal|REGISTERS||||
+B2_reg3_4|B2_reg3_4|REGISTERS||||
+B2_reg3_5Decimal|B2_reg3_5Decimal|REGISTERS||||
+B2_reg3_5|B2_reg3_5|REGISTERS||||
+B2_reg3_6Decimal|B2_reg3_6Decimal|REGISTERS||||
+B2_reg3_6|B2_reg3_6|REGISTERS||||
+B2_reg3_7Decimal|B2_reg3_7Decimal|REGISTERS||||
+B2_reg3_7|B2_reg3_7|REGISTERS||||
+B2_reg3_8Decimal|B2_reg3_8Decimal|REGISTERS||||
+B2_reg3_8|B2_reg3_8|REGISTERS||||
+B3_BLOCK_active|Activate AREA 3|AREA3||||
+B3_Bank|Bank|AREA3||||FLASH Bank
+B3_startSector|Start page|AREA3||0|=numberOfSectors-1|Start page of Block Based page protection
+B3_endSector|End page|AREA3||0|=numberOfSectors-1|End page of Block Based page protection
+B3_AttributesArray|B3_AttributesArray|AREA3||||
+B3_AttributesType|Type|AREA3||||
+B3_AttributesType_privilege|Attribute privilege|AREA3||||Block Based page protection type: security/privilege
+B3_AttributesType_security|Attribute security|AREA3||||Block Based page protection type: security/privilege
+B3_reg0|B3_reg0|REGISTERS||||
+B3_reg0_1Decimal|B3_reg0_1Decimal|REGISTERS||||
+B3_reg0_1|B3_reg0_1|REGISTERS||||
+B3_reg0_2Decimal|B3_reg0_2Decimal|REGISTERS||||
+B3_reg0_2|B3_reg0_2|REGISTERS||||
+B3_reg0_3Decimal|B3_reg0_3Decimal|REGISTERS||||
+B3_reg0_3|B3_reg0_3|REGISTERS||||
+B3_reg0_4Decimal|B3_reg0_4Decimal|REGISTERS||||
+B3_reg0_4|B3_reg0_4|REGISTERS||||
+B3_reg0_5Decimal|B3_reg0_5Decimal|REGISTERS||||
+B3_reg0_5|B3_reg0_5|REGISTERS||||
+B3_reg0_6Decimal|B3_reg0_6Decimal|REGISTERS||||
+B3_reg0_6|B3_reg0_6|REGISTERS||||
+B3_reg0_7Decimal|B3_reg0_7Decimal|REGISTERS||||
+B3_reg0_7|B3_reg0_7|REGISTERS||||
+B3_reg0_8Decimal|B3_reg0_8Decimal|REGISTERS||||
+B3_reg0_8|B3_reg0_8|REGISTERS||||
+B3_reg1|B3_reg1|REGISTERS||||
+B3_reg1_1Decimal|B3_reg1_1Decimal|REGISTERS||||
+B3_reg1_1|B3_reg1_1|REGISTERS||||
+B3_reg1_2Decimal|B3_reg1_2Decimal|REGISTERS||||
+B3_reg1_2|B3_reg1_2|REGISTERS||||
+B3_reg1_3Decimal|B3_reg1_3Decimal|REGISTERS||||
+B3_reg1_3|B3_reg1_3|REGISTERS||||
+B3_reg1_4Decimal|B3_reg1_4Decimal|REGISTERS||||
+B3_reg1_4|B3_reg1_4|REGISTERS||||
+B3_reg1_5Decimal|B3_reg1_5Decimal|REGISTERS||||
+B3_reg1_5|B3_reg1_5|REGISTERS||||
+B3_reg1_6Decimal|B3_reg1_6Decimal|REGISTERS||||
+B3_reg1_6|B3_reg1_6|REGISTERS||||
+B3_reg1_7Decimal|B3_reg1_7Decimal|REGISTERS||||
+B3_reg1_7|B3_reg1_7|REGISTERS||||
+B3_reg1_8Decimal|B3_reg1_8Decimal|REGISTERS||||
+B3_reg1_8|B3_reg1_8|REGISTERS||||
+B3_reg2|B3_reg2|REGISTERS||||
+B3_reg2_1Decimal|B3_reg2_1Decimal|REGISTERS||||
+B3_reg2_1|B3_reg2_1|REGISTERS||||
+B3_reg2_2Decimal|B3_reg2_2Decimal|REGISTERS||||
+B3_reg2_2|B3_reg2_2|REGISTERS||||
+B3_reg2_3Decimal|B3_reg2_3Decimal|REGISTERS||||
+B3_reg2_3|B3_reg2_3|REGISTERS||||
+B3_reg2_4Decimal|B3_reg2_4Decimal|REGISTERS||||
+B3_reg2_4|B3_reg2_4|REGISTERS||||
+B3_reg2_5Decimal|B3_reg2_5Decimal|REGISTERS||||
+B3_reg2_5|B3_reg2_5|REGISTERS||||
+B3_reg2_6Decimal|B3_reg2_6Decimal|REGISTERS||||
+B3_reg2_6|B3_reg2_6|REGISTERS||||
+B3_reg2_7Decimal|B3_reg2_7Decimal|REGISTERS||||
+B3_reg2_7|B3_reg2_7|REGISTERS||||
+B3_reg2_8Decimal|B3_reg2_8Decimal|REGISTERS||||
+B3_reg2_8|B3_reg2_8|REGISTERS||||
+B3_reg3|B3_reg3|REGISTERS||||
+B3_reg3_1Decimal|B3_reg3_1Decimal|REGISTERS||||
+B3_reg3_1|B3_reg3_1|REGISTERS||||
+B3_reg3_2Decimal|B3_reg3_2Decimal|REGISTERS||||
+B3_reg3_2|B3_reg3_2|REGISTERS||||
+B3_reg3_3Decimal|B3_reg3_3Decimal|REGISTERS||||
+B3_reg3_3|B3_reg3_3|REGISTERS||||
+B3_reg3_4Decimal|B3_reg3_4Decimal|REGISTERS||||
+B3_reg3_4|B3_reg3_4|REGISTERS||||
+B3_reg3_5Decimal|B3_reg3_5Decimal|REGISTERS||||
+B3_reg3_5|B3_reg3_5|REGISTERS||||
+B3_reg3_6Decimal|B3_reg3_6Decimal|REGISTERS||||
+B3_reg3_6|B3_reg3_6|REGISTERS||||
+B3_reg3_7Decimal|B3_reg3_7Decimal|REGISTERS||||
+B3_reg3_7|B3_reg3_7|REGISTERS||||
+B3_reg3_8Decimal|B3_reg3_8Decimal|REGISTERS||||
+B3_reg3_8|B3_reg3_8|REGISTERS||||
+B4_BLOCK_active|Activate AREA 4|AREA4||||
+B4_Bank|Bank|AREA4||||FLASH Bank
+B4_startSector|Start page|AREA4||0|=numberOfSectors-1|Start page of Block Based page protection
+B4_endSector|End page|AREA4||0|=numberOfSectors-1|End page of Block Based page protection
+B4_AttributesArray|B4_AttributesArray|AREA4||||
+B4_AttributesType|Type|AREA4||||
+B4_AttributesType_privilege|Attribute privilege|AREA4||||Block Based page protection type: security/privilege
+B4_AttributesType_security|Attribute security|AREA4||||Block Based page protection type: security/privilege
+B4_reg0|B4_reg0|REGISTERS||||
+B4_reg0_1Decimal|B4_reg0_1Decimal|REGISTERS||||
+B4_reg0_1|B4_reg0_1|REGISTERS||||
+B4_reg0_2Decimal|B4_reg0_2Decimal|REGISTERS||||
+B4_reg0_2|B4_reg0_2|REGISTERS||||
+B4_reg0_3Decimal|B4_reg0_3Decimal|REGISTERS||||
+B4_reg0_3|B4_reg0_3|REGISTERS||||
+B4_reg0_4Decimal|B4_reg0_4Decimal|REGISTERS||||
+B4_reg0_4|B4_reg0_4|REGISTERS||||
+B4_reg0_5Decimal|B4_reg0_5Decimal|REGISTERS||||
+B4_reg0_5|B4_reg0_5|REGISTERS||||
+B4_reg0_6Decimal|B4_reg0_6Decimal|REGISTERS||||
+B4_reg0_6|B4_reg0_6|REGISTERS||||
+B4_reg0_7Decimal|B4_reg0_7Decimal|REGISTERS||||
+B4_reg0_7|B4_reg0_7|REGISTERS||||
+B4_reg0_8Decimal|B4_reg0_8Decimal|REGISTERS||||
+B4_reg0_8|B4_reg0_8|REGISTERS||||
+B4_reg1|B4_reg1|REGISTERS||||
+B4_reg1_1Decimal|B4_reg1_1Decimal|REGISTERS||||
+B4_reg1_1|B4_reg1_1|REGISTERS||||
+B4_reg1_2Decimal|B4_reg1_2Decimal|REGISTERS||||
+B4_reg1_2|B4_reg1_2|REGISTERS||||
+B4_reg1_3Decimal|B4_reg1_3Decimal|REGISTERS||||
+B4_reg1_3|B4_reg1_3|REGISTERS||||
+B4_reg1_4Decimal|B4_reg1_4Decimal|REGISTERS||||
+B4_reg1_4|B4_reg1_4|REGISTERS||||
+B4_reg1_5Decimal|B4_reg1_5Decimal|REGISTERS||||
+B4_reg1_5|B4_reg1_5|REGISTERS||||
+B4_reg1_6Decimal|B4_reg1_6Decimal|REGISTERS||||
+B4_reg1_6|B4_reg1_6|REGISTERS||||
+B4_reg1_7Decimal|B4_reg1_7Decimal|REGISTERS||||
+B4_reg1_7|B4_reg1_7|REGISTERS||||
+B4_reg1_8Decimal|B4_reg1_8Decimal|REGISTERS||||
+B4_reg1_8|B4_reg1_8|REGISTERS||||
+B4_reg2|B4_reg2|REGISTERS||||
+B4_reg2_1Decimal|B4_reg2_1Decimal|REGISTERS||||
+B4_reg2_1|B4_reg2_1|REGISTERS||||
+B4_reg2_2Decimal|B4_reg2_2Decimal|REGISTERS||||
+B4_reg2_2|B4_reg2_2|REGISTERS||||
+B4_reg2_3Decimal|B4_reg2_3Decimal|REGISTERS||||
+B4_reg2_3|B4_reg2_3|REGISTERS||||
+B4_reg2_4Decimal|B4_reg2_4Decimal|REGISTERS||||
+B4_reg2_4|B4_reg2_4|REGISTERS||||
+B4_reg2_5Decimal|B4_reg2_5Decimal|REGISTERS||||
+B4_reg2_5|B4_reg2_5|REGISTERS||||
+B4_reg2_6Decimal|B4_reg2_6Decimal|REGISTERS||||
+B4_reg2_6|B4_reg2_6|REGISTERS||||
+B4_reg2_7Decimal|B4_reg2_7Decimal|REGISTERS||||
+B4_reg2_7|B4_reg2_7|REGISTERS||||
+B4_reg2_8Decimal|B4_reg2_8Decimal|REGISTERS||||
+B4_reg2_8|B4_reg2_8|REGISTERS||||
+B4_reg3|B4_reg3|REGISTERS||||
+B4_reg3_1Decimal|B4_reg3_1Decimal|REGISTERS||||
+B4_reg3_1|B4_reg3_1|REGISTERS||||
+B4_reg3_2Decimal|B4_reg3_2Decimal|REGISTERS||||
+B4_reg3_2|B4_reg3_2|REGISTERS||||
+B4_reg3_3Decimal|B4_reg3_3Decimal|REGISTERS||||
+B4_reg3_3|B4_reg3_3|REGISTERS||||
+B4_reg3_4Decimal|B4_reg3_4Decimal|REGISTERS||||
+B4_reg3_4|B4_reg3_4|REGISTERS||||
+B4_reg3_5Decimal|B4_reg3_5Decimal|REGISTERS||||
+B4_reg3_5|B4_reg3_5|REGISTERS||||
+B4_reg3_6Decimal|B4_reg3_6Decimal|REGISTERS||||
+B4_reg3_6|B4_reg3_6|REGISTERS||||
+B4_reg3_7Decimal|B4_reg3_7Decimal|REGISTERS||||
+B4_reg3_7|B4_reg3_7|REGISTERS||||
+B4_reg3_8Decimal|B4_reg3_8Decimal|REGISTERS||||
+B4_reg3_8|B4_reg3_8|REGISTERS||||
+B5_BLOCK_active|Activate AREA 5|AREA5||||
+B5_Bank|Bank|AREA5||||FLASH Bank
+B5_startSector|Start page|AREA5||0|=numberOfSectors-1|Start page of Block Based page protection
+B5_endSector|End page|AREA5||0|=numberOfSectors-1|End page of Block Based page protection
+B5_AttributesArray|B5_AttributesArray|AREA5||||
+B5_AttributesType|Type|AREA5||||
+B5_AttributesType_privilege|Attribute privilege|AREA5||||Block Based page protection type: security/privilege
+B5_AttributesType_security|Attribute security|AREA5||||Block Based page protection type: security/privilege
+B5_reg0|B5_reg0|REGISTERS||||
+B5_reg0_1Decimal|B5_reg0_1Decimal|REGISTERS||||
+B5_reg0_1|B5_reg0_1|REGISTERS||||
+B5_reg0_2Decimal|B5_reg0_2Decimal|REGISTERS||||
+B5_reg0_2|B5_reg0_2|REGISTERS||||
+B5_reg0_3Decimal|B5_reg0_3Decimal|REGISTERS||||
+B5_reg0_3|B5_reg0_3|REGISTERS||||
+B5_reg0_4Decimal|B5_reg0_4Decimal|REGISTERS||||
+B5_reg0_4|B5_reg0_4|REGISTERS||||
+B5_reg0_5Decimal|B5_reg0_5Decimal|REGISTERS||||
+B5_reg0_5|B5_reg0_5|REGISTERS||||
+B5_reg0_6Decimal|B5_reg0_6Decimal|REGISTERS||||
+B5_reg0_6|B5_reg0_6|REGISTERS||||
+B5_reg0_7Decimal|B5_reg0_7Decimal|REGISTERS||||
+B5_reg0_7|B5_reg0_7|REGISTERS||||
+B5_reg0_8Decimal|B5_reg0_8Decimal|REGISTERS||||
+B5_reg0_8|B5_reg0_8|REGISTERS||||
+B5_reg1|B5_reg1|REGISTERS||||
+B5_reg1_1Decimal|B5_reg1_1Decimal|REGISTERS||||
+B5_reg1_1|B5_reg1_1|REGISTERS||||
+B5_reg1_2Decimal|B5_reg1_2Decimal|REGISTERS||||
+B5_reg1_2|B5_reg1_2|REGISTERS||||
+B5_reg1_3Decimal|B5_reg1_3Decimal|REGISTERS||||
+B5_reg1_3|B5_reg1_3|REGISTERS||||
+B5_reg1_4Decimal|B5_reg1_4Decimal|REGISTERS||||
+B5_reg1_4|B5_reg1_4|REGISTERS||||
+B5_reg1_5Decimal|B5_reg1_5Decimal|REGISTERS||||
+B5_reg1_5|B5_reg1_5|REGISTERS||||
+B5_reg1_6Decimal|B5_reg1_6Decimal|REGISTERS||||
+B5_reg1_6|B5_reg1_6|REGISTERS||||
+B5_reg1_7Decimal|B5_reg1_7Decimal|REGISTERS||||
+B5_reg1_7|B5_reg1_7|REGISTERS||||
+B5_reg1_8Decimal|B5_reg1_8Decimal|REGISTERS||||
+B5_reg1_8|B5_reg1_8|REGISTERS||||
+B5_reg2|B5_reg2|REGISTERS||||
+B5_reg2_1Decimal|B5_reg2_1Decimal|REGISTERS||||
+B5_reg2_1|B5_reg2_1|REGISTERS||||
+B5_reg2_2Decimal|B5_reg2_2Decimal|REGISTERS||||
+B5_reg2_2|B5_reg2_2|REGISTERS||||
+B5_reg2_3Decimal|B5_reg2_3Decimal|REGISTERS||||
+B5_reg2_3|B5_reg2_3|REGISTERS||||
+B5_reg2_4Decimal|B5_reg2_4Decimal|REGISTERS||||
+B5_reg2_4|B5_reg2_4|REGISTERS||||
+B5_reg2_5Decimal|B5_reg2_5Decimal|REGISTERS||||
+B5_reg2_5|B5_reg2_5|REGISTERS||||
+B5_reg2_6Decimal|B5_reg2_6Decimal|REGISTERS||||
+B5_reg2_6|B5_reg2_6|REGISTERS||||
+B5_reg2_7Decimal|B5_reg2_7Decimal|REGISTERS||||
+B5_reg2_7|B5_reg2_7|REGISTERS||||
+B5_reg2_8Decimal|B5_reg2_8Decimal|REGISTERS||||
+B5_reg2_8|B5_reg2_8|REGISTERS||||
+B5_reg3|B5_reg3|REGISTERS||||
+B5_reg3_1Decimal|B5_reg3_1Decimal|REGISTERS||||
+B5_reg3_1|B5_reg3_1|REGISTERS||||
+B5_reg3_2Decimal|B5_reg3_2Decimal|REGISTERS||||
+B5_reg3_2|B5_reg3_2|REGISTERS||||
+B5_reg3_3Decimal|B5_reg3_3Decimal|REGISTERS||||
+B5_reg3_3|B5_reg3_3|REGISTERS||||
+B5_reg3_4Decimal|B5_reg3_4Decimal|REGISTERS||||
+B5_reg3_4|B5_reg3_4|REGISTERS||||
+B5_reg3_5Decimal|B5_reg3_5Decimal|REGISTERS||||
+B5_reg3_5|B5_reg3_5|REGISTERS||||
+B5_reg3_6Decimal|B5_reg3_6Decimal|REGISTERS||||
+B5_reg3_6|B5_reg3_6|REGISTERS||||
+B5_reg3_7Decimal|B5_reg3_7Decimal|REGISTERS||||
+B5_reg3_7|B5_reg3_7|REGISTERS||||
+B5_reg3_8Decimal|B5_reg3_8Decimal|REGISTERS||||
+B5_reg3_8|B5_reg3_8|REGISTERS||||
+B6_BLOCK_active|Activate AREA 6|AREA6||||
+B6_Bank|Bank|AREA6||||FLASH Bank
+B6_startSector|Start page|AREA6||0|=numberOfSectors-1|Start page of Block Based page protection
+B6_endSector|End page|AREA6||0|=numberOfSectors-1|End page of Block Based page protection
+B6_AttributesArray|B6_AttributesArray|AREA6||||
+B6_AttributesType|Type|AREA6||||
+B6_AttributesType_privilege|Attribute privilege|AREA6||||Block Based page protection type: security/privilege
+B6_AttributesType_security|Attribute security|AREA6||||Block Based page protection type: security/privilege
+B6_reg0|B6_reg0|REGISTERS||||
+B6_reg0_1Decimal|B6_reg0_1Decimal|REGISTERS||||
+B6_reg0_1|B6_reg0_1|REGISTERS||||
+B6_reg0_2Decimal|B6_reg0_2Decimal|REGISTERS||||
+B6_reg0_2|B6_reg0_2|REGISTERS||||
+B6_reg0_3Decimal|B6_reg0_3Decimal|REGISTERS||||
+B6_reg0_3|B6_reg0_3|REGISTERS||||
+B6_reg0_4Decimal|B6_reg0_4Decimal|REGISTERS||||
+B6_reg0_4|B6_reg0_4|REGISTERS||||
+B6_reg0_5Decimal|B6_reg0_5Decimal|REGISTERS||||
+B6_reg0_5|B6_reg0_5|REGISTERS||||
+B6_reg0_6Decimal|B6_reg0_6Decimal|REGISTERS||||
+B6_reg0_6|B6_reg0_6|REGISTERS||||
+B6_reg0_7Decimal|B6_reg0_7Decimal|REGISTERS||||
+B6_reg0_7|B6_reg0_7|REGISTERS||||
+B6_reg0_8Decimal|B6_reg0_8Decimal|REGISTERS||||
+B6_reg0_8|B6_reg0_8|REGISTERS||||
+B6_reg1|B6_reg1|REGISTERS||||
+B6_reg1_1Decimal|B6_reg1_1Decimal|REGISTERS||||
+B6_reg1_1|B6_reg1_1|REGISTERS||||
+B6_reg1_2Decimal|B6_reg1_2Decimal|REGISTERS||||
+B6_reg1_2|B6_reg1_2|REGISTERS||||
+B6_reg1_3Decimal|B6_reg1_3Decimal|REGISTERS||||
+B6_reg1_3|B6_reg1_3|REGISTERS||||
+B6_reg1_4Decimal|B6_reg1_4Decimal|REGISTERS||||
+B6_reg1_4|B6_reg1_4|REGISTERS||||
+B6_reg1_5Decimal|B6_reg1_5Decimal|REGISTERS||||
+B6_reg1_5|B6_reg1_5|REGISTERS||||
+B6_reg1_6Decimal|B6_reg1_6Decimal|REGISTERS||||
+B6_reg1_6|B6_reg1_6|REGISTERS||||
+B6_reg1_7Decimal|B6_reg1_7Decimal|REGISTERS||||
+B6_reg1_7|B6_reg1_7|REGISTERS||||
+B6_reg1_8Decimal|B6_reg1_8Decimal|REGISTERS||||
+B6_reg1_8|B6_reg1_8|REGISTERS||||
+B6_reg2|B6_reg2|REGISTERS||||
+B6_reg2_1Decimal|B6_reg2_1Decimal|REGISTERS||||
+B6_reg2_1|B6_reg2_1|REGISTERS||||
+B6_reg2_2Decimal|B6_reg2_2Decimal|REGISTERS||||
+B6_reg2_2|B6_reg2_2|REGISTERS||||
+B6_reg2_3Decimal|B6_reg2_3Decimal|REGISTERS||||
+B6_reg2_3|B6_reg2_3|REGISTERS||||
+B6_reg2_4Decimal|B6_reg2_4Decimal|REGISTERS||||
+B6_reg2_4|B6_reg2_4|REGISTERS||||
+B6_reg2_5Decimal|B6_reg2_5Decimal|REGISTERS||||
+B6_reg2_5|B6_reg2_5|REGISTERS||||
+B6_reg2_6Decimal|B6_reg2_6Decimal|REGISTERS||||
+B6_reg2_6|B6_reg2_6|REGISTERS||||
+B6_reg2_7Decimal|B6_reg2_7Decimal|REGISTERS||||
+B6_reg2_7|B6_reg2_7|REGISTERS||||
+B6_reg2_8Decimal|B6_reg2_8Decimal|REGISTERS||||
+B6_reg2_8|B6_reg2_8|REGISTERS||||
+B6_reg3|B6_reg3|REGISTERS||||
+B6_reg3_1Decimal|B6_reg3_1Decimal|REGISTERS||||
+B6_reg3_1|B6_reg3_1|REGISTERS||||
+B6_reg3_2Decimal|B6_reg3_2Decimal|REGISTERS||||
+B6_reg3_2|B6_reg3_2|REGISTERS||||
+B6_reg3_3Decimal|B6_reg3_3Decimal|REGISTERS||||
+B6_reg3_3|B6_reg3_3|REGISTERS||||
+B6_reg3_4Decimal|B6_reg3_4Decimal|REGISTERS||||
+B6_reg3_4|B6_reg3_4|REGISTERS||||
+B6_reg3_5Decimal|B6_reg3_5Decimal|REGISTERS||||
+B6_reg3_5|B6_reg3_5|REGISTERS||||
+B6_reg3_6Decimal|B6_reg3_6Decimal|REGISTERS||||
+B6_reg3_6|B6_reg3_6|REGISTERS||||
+B6_reg3_7Decimal|B6_reg3_7Decimal|REGISTERS||||
+B6_reg3_7|B6_reg3_7|REGISTERS||||
+B6_reg3_8Decimal|B6_reg3_8Decimal|REGISTERS||||
+B6_reg3_8|B6_reg3_8|REGISTERS||||
+B7_BLOCK_active|Activate AREA 7|AREA7||||
+B7_Bank|Bank|AREA7||||FLASH Bank
+B7_startSector|Start page|AREA7||0|=numberOfSectors-1|Start page of Block Based page protection
+B7_endSector|End page|AREA7||0|=numberOfSectors-1|End page of Block Based page protection
+B7_AttributesArray|B7_AttributesArray|AREA7||||
+B7_AttributesType|Type|AREA7||||
+B7_AttributesType_privilege|Attribute privilege|AREA7||||Block Based page protection type: security/privilege
+B7_AttributesType_security|Attribute security|AREA7||||Block Based page protection type: security/privilege
+B7_reg0|B7_reg0|REGISTERS||||
+B7_reg0_1Decimal|B7_reg0_1Decimal|REGISTERS||||
+B7_reg0_1|B7_reg0_1|REGISTERS||||
+B7_reg0_2Decimal|B7_reg0_2Decimal|REGISTERS||||
+B7_reg0_2|B7_reg0_2|REGISTERS||||
+B7_reg0_3Decimal|B7_reg0_3Decimal|REGISTERS||||
+B7_reg0_3|B7_reg0_3|REGISTERS||||
+B7_reg0_4Decimal|B7_reg0_4Decimal|REGISTERS||||
+B7_reg0_4|B7_reg0_4|REGISTERS||||
+B7_reg0_5Decimal|B7_reg0_5Decimal|REGISTERS||||
+B7_reg0_5|B7_reg0_5|REGISTERS||||
+B7_reg0_6Decimal|B7_reg0_6Decimal|REGISTERS||||
+B7_reg0_6|B7_reg0_6|REGISTERS||||
+B7_reg0_7Decimal|B7_reg0_7Decimal|REGISTERS||||
+B7_reg0_7|B7_reg0_7|REGISTERS||||
+B7_reg0_8Decimal|B7_reg0_8Decimal|REGISTERS||||
+B7_reg0_8|B7_reg0_8|REGISTERS||||
+B7_reg1|B7_reg1|REGISTERS||||
+B7_reg1_1Decimal|B7_reg1_1Decimal|REGISTERS||||
+B7_reg1_1|B7_reg1_1|REGISTERS||||
+B7_reg1_2Decimal|B7_reg1_2Decimal|REGISTERS||||
+B7_reg1_2|B7_reg1_2|REGISTERS||||
+B7_reg1_3Decimal|B7_reg1_3Decimal|REGISTERS||||
+B7_reg1_3|B7_reg1_3|REGISTERS||||
+B7_reg1_4Decimal|B7_reg1_4Decimal|REGISTERS||||
+B7_reg1_4|B7_reg1_4|REGISTERS||||
+B7_reg1_5Decimal|B7_reg1_5Decimal|REGISTERS||||
+B7_reg1_5|B7_reg1_5|REGISTERS||||
+B7_reg1_6Decimal|B7_reg1_6Decimal|REGISTERS||||
+B7_reg1_6|B7_reg1_6|REGISTERS||||
+B7_reg1_7Decimal|B7_reg1_7Decimal|REGISTERS||||
+B7_reg1_7|B7_reg1_7|REGISTERS||||
+B7_reg1_8Decimal|B7_reg1_8Decimal|REGISTERS||||
+B7_reg1_8|B7_reg1_8|REGISTERS||||
+B7_reg2|B7_reg2|REGISTERS||||
+B7_reg2_1Decimal|B7_reg2_1Decimal|REGISTERS||||
+B7_reg2_1|B7_reg2_1|REGISTERS||||
+B7_reg2_2Decimal|B7_reg2_2Decimal|REGISTERS||||
+B7_reg2_2|B7_reg2_2|REGISTERS||||
+B7_reg2_3Decimal|B7_reg2_3Decimal|REGISTERS||||
+B7_reg2_3|B7_reg2_3|REGISTERS||||
+B7_reg2_4Decimal|B7_reg2_4Decimal|REGISTERS||||
+B7_reg2_4|B7_reg2_4|REGISTERS||||
+B7_reg2_5Decimal|B7_reg2_5Decimal|REGISTERS||||
+B7_reg2_5|B7_reg2_5|REGISTERS||||
+B7_reg2_6Decimal|B7_reg2_6Decimal|REGISTERS||||
+B7_reg2_6|B7_reg2_6|REGISTERS||||
+B7_reg2_7Decimal|B7_reg2_7Decimal|REGISTERS||||
+B7_reg2_7|B7_reg2_7|REGISTERS||||
+B7_reg2_8Decimal|B7_reg2_8Decimal|REGISTERS||||
+B7_reg2_8|B7_reg2_8|REGISTERS||||
+B7_reg3|B7_reg3|REGISTERS||||
+B7_reg3_1Decimal|B7_reg3_1Decimal|REGISTERS||||
+B7_reg3_1|B7_reg3_1|REGISTERS||||
+B7_reg3_2Decimal|B7_reg3_2Decimal|REGISTERS||||
+B7_reg3_2|B7_reg3_2|REGISTERS||||
+B7_reg3_3Decimal|B7_reg3_3Decimal|REGISTERS||||
+B7_reg3_3|B7_reg3_3|REGISTERS||||
+B7_reg3_4Decimal|B7_reg3_4Decimal|REGISTERS||||
+B7_reg3_4|B7_reg3_4|REGISTERS||||
+B7_reg3_5Decimal|B7_reg3_5Decimal|REGISTERS||||
+B7_reg3_5|B7_reg3_5|REGISTERS||||
+B7_reg3_6Decimal|B7_reg3_6Decimal|REGISTERS||||
+B7_reg3_6|B7_reg3_6|REGISTERS||||
+B7_reg3_7Decimal|B7_reg3_7Decimal|REGISTERS||||
+B7_reg3_7|B7_reg3_7|REGISTERS||||
+B7_reg3_8Decimal|B7_reg3_8Decimal|REGISTERS||||
+B7_reg3_8|B7_reg3_8|REGISTERS||||
+B8_BLOCK_active|Activate AREA 8|AREA8||||
+B8_Bank|Bank|AREA8||||FLASH Bank
+B8_startSector|Start page|AREA8||0|=numberOfSectors-1|Start page of Block Based page protection
+B8_endSector|End page|AREA8||0|=numberOfSectors-1|End page of Block Based page protection
+B8_AttributesArray|B8_AttributesArray|AREA8||||
+B8_AttributesType|Type|AREA8||||
+B8_AttributesType_privilege|Attribute privilege|AREA8||||Block Based page protection type: security/privilege
+B8_AttributesType_security|Attribute security|AREA8||||Block Based page protection type: security/privilege
+B8_reg0|B8_reg0|REGISTERS||||
+B8_reg0_1Decimal|B8_reg0_1Decimal|REGISTERS||||
+B8_reg0_1|B8_reg0_1|REGISTERS||||
+B8_reg0_2Decimal|B8_reg0_2Decimal|REGISTERS||||
+B8_reg0_2|B8_reg0_2|REGISTERS||||
+B8_reg0_3Decimal|B8_reg0_3Decimal|REGISTERS||||
+B8_reg0_3|B8_reg0_3|REGISTERS||||
+B8_reg0_4Decimal|B8_reg0_4Decimal|REGISTERS||||
+B8_reg0_4|B8_reg0_4|REGISTERS||||
+B8_reg0_5Decimal|B8_reg0_5Decimal|REGISTERS||||
+B8_reg0_5|B8_reg0_5|REGISTERS||||
+B8_reg0_6Decimal|B8_reg0_6Decimal|REGISTERS||||
+B8_reg0_6|B8_reg0_6|REGISTERS||||
+B8_reg0_7Decimal|B8_reg0_7Decimal|REGISTERS||||
+B8_reg0_7|B8_reg0_7|REGISTERS||||
+B8_reg0_8Decimal|B8_reg0_8Decimal|REGISTERS||||
+B8_reg0_8|B8_reg0_8|REGISTERS||||
+B8_reg1|B8_reg1|REGISTERS||||
+B8_reg1_1Decimal|B8_reg1_1Decimal|REGISTERS||||
+B8_reg1_1|B8_reg1_1|REGISTERS||||
+B8_reg1_2Decimal|B8_reg1_2Decimal|REGISTERS||||
+B8_reg1_2|B8_reg1_2|REGISTERS||||
+B8_reg1_3Decimal|B8_reg1_3Decimal|REGISTERS||||
+B8_reg1_3|B8_reg1_3|REGISTERS||||
+B8_reg1_4Decimal|B8_reg1_4Decimal|REGISTERS||||
+B8_reg1_4|B8_reg1_4|REGISTERS||||
+B8_reg1_5Decimal|B8_reg1_5Decimal|REGISTERS||||
+B8_reg1_5|B8_reg1_5|REGISTERS||||
+B8_reg1_6Decimal|B8_reg1_6Decimal|REGISTERS||||
+B8_reg1_6|B8_reg1_6|REGISTERS||||
+B8_reg1_7Decimal|B8_reg1_7Decimal|REGISTERS||||
+B8_reg1_7|B8_reg1_7|REGISTERS||||
+B8_reg1_8Decimal|B8_reg1_8Decimal|REGISTERS||||
+B8_reg1_8|B8_reg1_8|REGISTERS||||
+B8_reg2|B8_reg2|REGISTERS||||
+B8_reg2_1Decimal|B8_reg2_1Decimal|REGISTERS||||
+B8_reg2_1|B8_reg2_1|REGISTERS||||
+B8_reg2_2Decimal|B8_reg2_2Decimal|REGISTERS||||
+B8_reg2_2|B8_reg2_2|REGISTERS||||
+B8_reg2_3Decimal|B8_reg2_3Decimal|REGISTERS||||
+B8_reg2_3|B8_reg2_3|REGISTERS||||
+B8_reg2_4Decimal|B8_reg2_4Decimal|REGISTERS||||
+B8_reg2_4|B8_reg2_4|REGISTERS||||
+B8_reg2_5Decimal|B8_reg2_5Decimal|REGISTERS||||
+B8_reg2_5|B8_reg2_5|REGISTERS||||
+B8_reg2_6Decimal|B8_reg2_6Decimal|REGISTERS||||
+B8_reg2_6|B8_reg2_6|REGISTERS||||
+B8_reg2_7Decimal|B8_reg2_7Decimal|REGISTERS||||
+B8_reg2_7|B8_reg2_7|REGISTERS||||
+B8_reg2_8Decimal|B8_reg2_8Decimal|REGISTERS||||
+B8_reg2_8|B8_reg2_8|REGISTERS||||
+B8_reg3|B8_reg3|REGISTERS||||
+B8_reg3_1Decimal|B8_reg3_1Decimal|REGISTERS||||
+B8_reg3_1|B8_reg3_1|REGISTERS||||
+B8_reg3_2Decimal|B8_reg3_2Decimal|REGISTERS||||
+B8_reg3_2|B8_reg3_2|REGISTERS||||
+B8_reg3_3Decimal|B8_reg3_3Decimal|REGISTERS||||
+B8_reg3_3|B8_reg3_3|REGISTERS||||
+B8_reg3_4Decimal|B8_reg3_4Decimal|REGISTERS||||
+B8_reg3_4|B8_reg3_4|REGISTERS||||
+B8_reg3_5Decimal|B8_reg3_5Decimal|REGISTERS||||
+B8_reg3_5|B8_reg3_5|REGISTERS||||
+B8_reg3_6Decimal|B8_reg3_6Decimal|REGISTERS||||
+B8_reg3_6|B8_reg3_6|REGISTERS||||
+B8_reg3_7Decimal|B8_reg3_7Decimal|REGISTERS||||
+B8_reg3_7|B8_reg3_7|REGISTERS||||
+B8_reg3_8Decimal|B8_reg3_8Decimal|REGISTERS||||
+B8_reg3_8|B8_reg3_8|REGISTERS||||
+B1_S0|B1_S0|||||
+B1_S1|B1_S1|||||
+B1_S2|B1_S2|||||
+B1_S3|B1_S3|||||
+B1_S4|B1_S4|||||
+B1_S5|B1_S5|||||
+B1_S6|B1_S6|||||
+B1_S7|B1_S7|||||
+B1_S8|B1_S8|||||
+B1_S9|B1_S9|||||
+B1_S10|B1_S10|||||
+B1_S11|B1_S11|||||
+B1_S12|B1_S12|||||
+B1_S13|B1_S13|||||
+B1_S14|B1_S14|||||
+B1_S15|B1_S15|||||
+B1_S16|B1_S16|||||
+B1_S17|B1_S17|||||
+B1_S18|B1_S18|||||
+B1_S19|B1_S19|||||
+B1_S20|B1_S20|||||
+B1_S21|B1_S21|||||
+B1_S22|B1_S22|||||
+B1_S23|B1_S23|||||
+B1_S24|B1_S24|||||
+B1_S25|B1_S25|||||
+B1_S26|B1_S26|||||
+B1_S27|B1_S27|||||
+B1_S28|B1_S28|||||
+B1_S29|B1_S29|||||
+B1_S30|B1_S30|||||
+B1_S31|B1_S31|||||
+B1_S32|B1_S32|||||
+B1_S33|B1_S33|||||
+B1_S34|B1_S34|||||
+B1_S35|B1_S35|||||
+B1_S36|B1_S36|||||
+B1_S37|B1_S37|||||
+B1_S38|B1_S38|||||
+B1_S39|B1_S39|||||
+B1_S40|B1_S40|||||
+B1_S41|B1_S41|||||
+B1_S42|B1_S42|||||
+B1_S43|B1_S43|||||
+B1_S44|B1_S44|||||
+B1_S45|B1_S45|||||
+B1_S46|B1_S46|||||
+B1_S47|B1_S47|||||
+B1_S48|B1_S48|||||
+B1_S49|B1_S49|||||
+B1_S50|B1_S50|||||
+B1_S51|B1_S51|||||
+B1_S52|B1_S52|||||
+B1_S53|B1_S53|||||
+B1_S54|B1_S54|||||
+B1_S55|B1_S55|||||
+B1_S56|B1_S56|||||
+B1_S57|B1_S57|||||
+B1_S58|B1_S58|||||
+B1_S59|B1_S59|||||
+B1_S60|B1_S60|||||
+B1_S61|B1_S61|||||
+B1_S62|B1_S62|||||
+B1_S63|B1_S63|||||
+B1_S64|B1_S64|||||
+B1_S65|B1_S65|||||
+B1_S66|B1_S66|||||
+B1_S67|B1_S67|||||
+B1_S68|B1_S68|||||
+B1_S69|B1_S69|||||
+B1_S70|B1_S70|||||
+B1_S71|B1_S71|||||
+B1_S72|B1_S72|||||
+B1_S73|B1_S73|||||
+B1_S74|B1_S74|||||
+B1_S75|B1_S75|||||
+B1_S76|B1_S76|||||
+B1_S77|B1_S77|||||
+B1_S78|B1_S78|||||
+B1_S79|B1_S79|||||
+B1_S80|B1_S80|||||
+B1_S81|B1_S81|||||
+B1_S82|B1_S82|||||
+B1_S83|B1_S83|||||
+B1_S84|B1_S84|||||
+B1_S85|B1_S85|||||
+B1_S86|B1_S86|||||
+B1_S87|B1_S87|||||
+B1_S88|B1_S88|||||
+B1_S89|B1_S89|||||
+B1_S90|B1_S90|||||
+B1_S91|B1_S91|||||
+B1_S92|B1_S92|||||
+B1_S93|B1_S93|||||
+B1_S94|B1_S94|||||
+B1_S95|B1_S95|||||
+B1_S96|B1_S96|||||
+B1_S97|B1_S97|||||
+B1_S98|B1_S98|||||
+B1_S99|B1_S99|||||
+B1_S100|B1_S100|||||
+B1_S101|B1_S101|||||
+B1_S102|B1_S102|||||
+B1_S103|B1_S103|||||
+B1_S104|B1_S104|||||
+B1_S105|B1_S105|||||
+B1_S106|B1_S106|||||
+B1_S107|B1_S107|||||
+B1_S108|B1_S108|||||
+B1_S109|B1_S109|||||
+B1_S110|B1_S110|||||
+B1_S111|B1_S111|||||
+B1_S112|B1_S112|||||
+B1_S113|B1_S113|||||
+B1_S114|B1_S114|||||
+B1_S115|B1_S115|||||
+B1_S116|B1_S116|||||
+B1_S117|B1_S117|||||
+B1_S118|B1_S118|||||
+B1_S119|B1_S119|||||
+B1_S120|B1_S120|||||
+B1_S121|B1_S121|||||
+B1_S122|B1_S122|||||
+B1_S123|B1_S123|||||
+B1_S124|B1_S124|||||
+B1_S125|B1_S125|||||
+B1_S126|B1_S126|||||
+B1_S127|B1_S127|||||
+B2_S0|B2_S0|||||
+B2_S1|B2_S1|||||
+B2_S2|B2_S2|||||
+B2_S3|B2_S3|||||
+B2_S4|B2_S4|||||
+B2_S5|B2_S5|||||
+B2_S6|B2_S6|||||
+B2_S7|B2_S7|||||
+B2_S8|B2_S8|||||
+B2_S9|B2_S9|||||
+B2_S10|B2_S10|||||
+B2_S11|B2_S11|||||
+B2_S12|B2_S12|||||
+B2_S13|B2_S13|||||
+B2_S14|B2_S14|||||
+B2_S15|B2_S15|||||
+B2_S16|B2_S16|||||
+B2_S17|B2_S17|||||
+B2_S18|B2_S18|||||
+B2_S19|B2_S19|||||
+B2_S20|B2_S20|||||
+B2_S21|B2_S21|||||
+B2_S22|B2_S22|||||
+B2_S23|B2_S23|||||
+B2_S24|B2_S24|||||
+B2_S25|B2_S25|||||
+B2_S26|B2_S26|||||
+B2_S27|B2_S27|||||
+B2_S28|B2_S28|||||
+B2_S29|B2_S29|||||
+B2_S30|B2_S30|||||
+B2_S31|B2_S31|||||
+B2_S32|B2_S32|||||
+B2_S33|B2_S33|||||
+B2_S34|B2_S34|||||
+B2_S35|B2_S35|||||
+B2_S36|B2_S36|||||
+B2_S37|B2_S37|||||
+B2_S38|B2_S38|||||
+B2_S39|B2_S39|||||
+B2_S40|B2_S40|||||
+B2_S41|B2_S41|||||
+B2_S42|B2_S42|||||
+B2_S43|B2_S43|||||
+B2_S44|B2_S44|||||
+B2_S45|B2_S45|||||
+B2_S46|B2_S46|||||
+B2_S47|B2_S47|||||
+B2_S48|B2_S48|||||
+B2_S49|B2_S49|||||
+B2_S50|B2_S50|||||
+B2_S51|B2_S51|||||
+B2_S52|B2_S52|||||
+B2_S53|B2_S53|||||
+B2_S54|B2_S54|||||
+B2_S55|B2_S55|||||
+B2_S56|B2_S56|||||
+B2_S57|B2_S57|||||
+B2_S58|B2_S58|||||
+B2_S59|B2_S59|||||
+B2_S60|B2_S60|||||
+B2_S61|B2_S61|||||
+B2_S62|B2_S62|||||
+B2_S63|B2_S63|||||
+B2_S64|B2_S64|||||
+B2_S65|B2_S65|||||
+B2_S66|B2_S66|||||
+B2_S67|B2_S67|||||
+B2_S68|B2_S68|||||
+B2_S69|B2_S69|||||
+B2_S70|B2_S70|||||
+B2_S71|B2_S71|||||
+B2_S72|B2_S72|||||
+B2_S73|B2_S73|||||
+B2_S74|B2_S74|||||
+B2_S75|B2_S75|||||
+B2_S76|B2_S76|||||
+B2_S77|B2_S77|||||
+B2_S78|B2_S78|||||
+B2_S79|B2_S79|||||
+B2_S80|B2_S80|||||
+B2_S81|B2_S81|||||
+B2_S82|B2_S82|||||
+B2_S83|B2_S83|||||
+B2_S84|B2_S84|||||
+B2_S85|B2_S85|||||
+B2_S86|B2_S86|||||
+B2_S87|B2_S87|||||
+B2_S88|B2_S88|||||
+B2_S89|B2_S89|||||
+B2_S90|B2_S90|||||
+B2_S91|B2_S91|||||
+B2_S92|B2_S92|||||
+B2_S93|B2_S93|||||
+B2_S94|B2_S94|||||
+B2_S95|B2_S95|||||
+B2_S96|B2_S96|||||
+B2_S97|B2_S97|||||
+B2_S98|B2_S98|||||
+B2_S99|B2_S99|||||
+B2_S100|B2_S100|||||
+B2_S101|B2_S101|||||
+B2_S102|B2_S102|||||
+B2_S103|B2_S103|||||
+B2_S104|B2_S104|||||
+B2_S105|B2_S105|||||
+B2_S106|B2_S106|||||
+B2_S107|B2_S107|||||
+B2_S108|B2_S108|||||
+B2_S109|B2_S109|||||
+B2_S110|B2_S110|||||
+B2_S111|B2_S111|||||
+B2_S112|B2_S112|||||
+B2_S113|B2_S113|||||
+B2_S114|B2_S114|||||
+B2_S115|B2_S115|||||
+B2_S116|B2_S116|||||
+B2_S117|B2_S117|||||
+B2_S118|B2_S118|||||
+B2_S119|B2_S119|||||
+B2_S120|B2_S120|||||
+B2_S121|B2_S121|||||
+B2_S122|B2_S122|||||
+B2_S123|B2_S123|||||
+B2_S124|B2_S124|||||
+B2_S125|B2_S125|||||
+B2_S126|B2_S126|||||
+B2_S127|B2_S127|||||
+B3_S0|B3_S0|||||
+B3_S1|B3_S1|||||
+B3_S2|B3_S2|||||
+B3_S3|B3_S3|||||
+B3_S4|B3_S4|||||
+B3_S5|B3_S5|||||
+B3_S6|B3_S6|||||
+B3_S7|B3_S7|||||
+B3_S8|B3_S8|||||
+B3_S9|B3_S9|||||
+B3_S10|B3_S10|||||
+B3_S11|B3_S11|||||
+B3_S12|B3_S12|||||
+B3_S13|B3_S13|||||
+B3_S14|B3_S14|||||
+B3_S15|B3_S15|||||
+B3_S16|B3_S16|||||
+B3_S17|B3_S17|||||
+B3_S18|B3_S18|||||
+B3_S19|B3_S19|||||
+B3_S20|B3_S20|||||
+B3_S21|B3_S21|||||
+B3_S22|B3_S22|||||
+B3_S23|B3_S23|||||
+B3_S24|B3_S24|||||
+B3_S25|B3_S25|||||
+B3_S26|B3_S26|||||
+B3_S27|B3_S27|||||
+B3_S28|B3_S28|||||
+B3_S29|B3_S29|||||
+B3_S30|B3_S30|||||
+B3_S31|B3_S31|||||
+B3_S32|B3_S32|||||
+B3_S33|B3_S33|||||
+B3_S34|B3_S34|||||
+B3_S35|B3_S35|||||
+B3_S36|B3_S36|||||
+B3_S37|B3_S37|||||
+B3_S38|B3_S38|||||
+B3_S39|B3_S39|||||
+B3_S40|B3_S40|||||
+B3_S41|B3_S41|||||
+B3_S42|B3_S42|||||
+B3_S43|B3_S43|||||
+B3_S44|B3_S44|||||
+B3_S45|B3_S45|||||
+B3_S46|B3_S46|||||
+B3_S47|B3_S47|||||
+B3_S48|B3_S48|||||
+B3_S49|B3_S49|||||
+B3_S50|B3_S50|||||
+B3_S51|B3_S51|||||
+B3_S52|B3_S52|||||
+B3_S53|B3_S53|||||
+B3_S54|B3_S54|||||
+B3_S55|B3_S55|||||
+B3_S56|B3_S56|||||
+B3_S57|B3_S57|||||
+B3_S58|B3_S58|||||
+B3_S59|B3_S59|||||
+B3_S60|B3_S60|||||
+B3_S61|B3_S61|||||
+B3_S62|B3_S62|||||
+B3_S63|B3_S63|||||
+B3_S64|B3_S64|||||
+B3_S65|B3_S65|||||
+B3_S66|B3_S66|||||
+B3_S67|B3_S67|||||
+B3_S68|B3_S68|||||
+B3_S69|B3_S69|||||
+B3_S70|B3_S70|||||
+B3_S71|B3_S71|||||
+B3_S72|B3_S72|||||
+B3_S73|B3_S73|||||
+B3_S74|B3_S74|||||
+B3_S75|B3_S75|||||
+B3_S76|B3_S76|||||
+B3_S77|B3_S77|||||
+B3_S78|B3_S78|||||
+B3_S79|B3_S79|||||
+B3_S80|B3_S80|||||
+B3_S81|B3_S81|||||
+B3_S82|B3_S82|||||
+B3_S83|B3_S83|||||
+B3_S84|B3_S84|||||
+B3_S85|B3_S85|||||
+B3_S86|B3_S86|||||
+B3_S87|B3_S87|||||
+B3_S88|B3_S88|||||
+B3_S89|B3_S89|||||
+B3_S90|B3_S90|||||
+B3_S91|B3_S91|||||
+B3_S92|B3_S92|||||
+B3_S93|B3_S93|||||
+B3_S94|B3_S94|||||
+B3_S95|B3_S95|||||
+B3_S96|B3_S96|||||
+B3_S97|B3_S97|||||
+B3_S98|B3_S98|||||
+B3_S99|B3_S99|||||
+B3_S100|B3_S100|||||
+B3_S101|B3_S101|||||
+B3_S102|B3_S102|||||
+B3_S103|B3_S103|||||
+B3_S104|B3_S104|||||
+B3_S105|B3_S105|||||
+B3_S106|B3_S106|||||
+B3_S107|B3_S107|||||
+B3_S108|B3_S108|||||
+B3_S109|B3_S109|||||
+B3_S110|B3_S110|||||
+B3_S111|B3_S111|||||
+B3_S112|B3_S112|||||
+B3_S113|B3_S113|||||
+B3_S114|B3_S114|||||
+B3_S115|B3_S115|||||
+B3_S116|B3_S116|||||
+B3_S117|B3_S117|||||
+B3_S118|B3_S118|||||
+B3_S119|B3_S119|||||
+B3_S120|B3_S120|||||
+B3_S121|B3_S121|||||
+B3_S122|B3_S122|||||
+B3_S123|B3_S123|||||
+B3_S124|B3_S124|||||
+B3_S125|B3_S125|||||
+B3_S126|B3_S126|||||
+B3_S127|B3_S127|||||
+B4_S0|B4_S0|||||
+B4_S1|B4_S1|||||
+B4_S2|B4_S2|||||
+B4_S3|B4_S3|||||
+B4_S4|B4_S4|||||
+B4_S5|B4_S5|||||
+B4_S6|B4_S6|||||
+B4_S7|B4_S7|||||
+B4_S8|B4_S8|||||
+B4_S9|B4_S9|||||
+B4_S10|B4_S10|||||
+B4_S11|B4_S11|||||
+B4_S12|B4_S12|||||
+B4_S13|B4_S13|||||
+B4_S14|B4_S14|||||
+B4_S15|B4_S15|||||
+B4_S16|B4_S16|||||
+B4_S17|B4_S17|||||
+B4_S18|B4_S18|||||
+B4_S19|B4_S19|||||
+B4_S20|B4_S20|||||
+B4_S21|B4_S21|||||
+B4_S22|B4_S22|||||
+B4_S23|B4_S23|||||
+B4_S24|B4_S24|||||
+B4_S25|B4_S25|||||
+B4_S26|B4_S26|||||
+B4_S27|B4_S27|||||
+B4_S28|B4_S28|||||
+B4_S29|B4_S29|||||
+B4_S30|B4_S30|||||
+B4_S31|B4_S31|||||
+B4_S32|B4_S32|||||
+B4_S33|B4_S33|||||
+B4_S34|B4_S34|||||
+B4_S35|B4_S35|||||
+B4_S36|B4_S36|||||
+B4_S37|B4_S37|||||
+B4_S38|B4_S38|||||
+B4_S39|B4_S39|||||
+B4_S40|B4_S40|||||
+B4_S41|B4_S41|||||
+B4_S42|B4_S42|||||
+B4_S43|B4_S43|||||
+B4_S44|B4_S44|||||
+B4_S45|B4_S45|||||
+B4_S46|B4_S46|||||
+B4_S47|B4_S47|||||
+B4_S48|B4_S48|||||
+B4_S49|B4_S49|||||
+B4_S50|B4_S50|||||
+B4_S51|B4_S51|||||
+B4_S52|B4_S52|||||
+B4_S53|B4_S53|||||
+B4_S54|B4_S54|||||
+B4_S55|B4_S55|||||
+B4_S56|B4_S56|||||
+B4_S57|B4_S57|||||
+B4_S58|B4_S58|||||
+B4_S59|B4_S59|||||
+B4_S60|B4_S60|||||
+B4_S61|B4_S61|||||
+B4_S62|B4_S62|||||
+B4_S63|B4_S63|||||
+B4_S64|B4_S64|||||
+B4_S65|B4_S65|||||
+B4_S66|B4_S66|||||
+B4_S67|B4_S67|||||
+B4_S68|B4_S68|||||
+B4_S69|B4_S69|||||
+B4_S70|B4_S70|||||
+B4_S71|B4_S71|||||
+B4_S72|B4_S72|||||
+B4_S73|B4_S73|||||
+B4_S74|B4_S74|||||
+B4_S75|B4_S75|||||
+B4_S76|B4_S76|||||
+B4_S77|B4_S77|||||
+B4_S78|B4_S78|||||
+B4_S79|B4_S79|||||
+B4_S80|B4_S80|||||
+B4_S81|B4_S81|||||
+B4_S82|B4_S82|||||
+B4_S83|B4_S83|||||
+B4_S84|B4_S84|||||
+B4_S85|B4_S85|||||
+B4_S86|B4_S86|||||
+B4_S87|B4_S87|||||
+B4_S88|B4_S88|||||
+B4_S89|B4_S89|||||
+B4_S90|B4_S90|||||
+B4_S91|B4_S91|||||
+B4_S92|B4_S92|||||
+B4_S93|B4_S93|||||
+B4_S94|B4_S94|||||
+B4_S95|B4_S95|||||
+B4_S96|B4_S96|||||
+B4_S97|B4_S97|||||
+B4_S98|B4_S98|||||
+B4_S99|B4_S99|||||
+B4_S100|B4_S100|||||
+B4_S101|B4_S101|||||
+B4_S102|B4_S102|||||
+B4_S103|B4_S103|||||
+B4_S104|B4_S104|||||
+B4_S105|B4_S105|||||
+B4_S106|B4_S106|||||
+B4_S107|B4_S107|||||
+B4_S108|B4_S108|||||
+B4_S109|B4_S109|||||
+B4_S110|B4_S110|||||
+B4_S111|B4_S111|||||
+B4_S112|B4_S112|||||
+B4_S113|B4_S113|||||
+B4_S114|B4_S114|||||
+B4_S115|B4_S115|||||
+B4_S116|B4_S116|||||
+B4_S117|B4_S117|||||
+B4_S118|B4_S118|||||
+B4_S119|B4_S119|||||
+B4_S120|B4_S120|||||
+B4_S121|B4_S121|||||
+B4_S122|B4_S122|||||
+B4_S123|B4_S123|||||
+B4_S124|B4_S124|||||
+B4_S125|B4_S125|||||
+B4_S126|B4_S126|||||
+B4_S127|B4_S127|||||
+B5_S0|B5_S0|||||
+B5_S1|B5_S1|||||
+B5_S2|B5_S2|||||
+B5_S3|B5_S3|||||
+B5_S4|B5_S4|||||
+B5_S5|B5_S5|||||
+B5_S6|B5_S6|||||
+B5_S7|B5_S7|||||
+B5_S8|B5_S8|||||
+B5_S9|B5_S9|||||
+B5_S10|B5_S10|||||
+B5_S11|B5_S11|||||
+B5_S12|B5_S12|||||
+B5_S13|B5_S13|||||
+B5_S14|B5_S14|||||
+B5_S15|B5_S15|||||
+B5_S16|B5_S16|||||
+B5_S17|B5_S17|||||
+B5_S18|B5_S18|||||
+B5_S19|B5_S19|||||
+B5_S20|B5_S20|||||
+B5_S21|B5_S21|||||
+B5_S22|B5_S22|||||
+B5_S23|B5_S23|||||
+B5_S24|B5_S24|||||
+B5_S25|B5_S25|||||
+B5_S26|B5_S26|||||
+B5_S27|B5_S27|||||
+B5_S28|B5_S28|||||
+B5_S29|B5_S29|||||
+B5_S30|B5_S30|||||
+B5_S31|B5_S31|||||
+B5_S32|B5_S32|||||
+B5_S33|B5_S33|||||
+B5_S34|B5_S34|||||
+B5_S35|B5_S35|||||
+B5_S36|B5_S36|||||
+B5_S37|B5_S37|||||
+B5_S38|B5_S38|||||
+B5_S39|B5_S39|||||
+B5_S40|B5_S40|||||
+B5_S41|B5_S41|||||
+B5_S42|B5_S42|||||
+B5_S43|B5_S43|||||
+B5_S44|B5_S44|||||
+B5_S45|B5_S45|||||
+B5_S46|B5_S46|||||
+B5_S47|B5_S47|||||
+B5_S48|B5_S48|||||
+B5_S49|B5_S49|||||
+B5_S50|B5_S50|||||
+B5_S51|B5_S51|||||
+B5_S52|B5_S52|||||
+B5_S53|B5_S53|||||
+B5_S54|B5_S54|||||
+B5_S55|B5_S55|||||
+B5_S56|B5_S56|||||
+B5_S57|B5_S57|||||
+B5_S58|B5_S58|||||
+B5_S59|B5_S59|||||
+B5_S60|B5_S60|||||
+B5_S61|B5_S61|||||
+B5_S62|B5_S62|||||
+B5_S63|B5_S63|||||
+B5_S64|B5_S64|||||
+B5_S65|B5_S65|||||
+B5_S66|B5_S66|||||
+B5_S67|B5_S67|||||
+B5_S68|B5_S68|||||
+B5_S69|B5_S69|||||
+B5_S70|B5_S70|||||
+B5_S71|B5_S71|||||
+B5_S72|B5_S72|||||
+B5_S73|B5_S73|||||
+B5_S74|B5_S74|||||
+B5_S75|B5_S75|||||
+B5_S76|B5_S76|||||
+B5_S77|B5_S77|||||
+B5_S78|B5_S78|||||
+B5_S79|B5_S79|||||
+B5_S80|B5_S80|||||
+B5_S81|B5_S81|||||
+B5_S82|B5_S82|||||
+B5_S83|B5_S83|||||
+B5_S84|B5_S84|||||
+B5_S85|B5_S85|||||
+B5_S86|B5_S86|||||
+B5_S87|B5_S87|||||
+B5_S88|B5_S88|||||
+B5_S89|B5_S89|||||
+B5_S90|B5_S90|||||
+B5_S91|B5_S91|||||
+B5_S92|B5_S92|||||
+B5_S93|B5_S93|||||
+B5_S94|B5_S94|||||
+B5_S95|B5_S95|||||
+B5_S96|B5_S96|||||
+B5_S97|B5_S97|||||
+B5_S98|B5_S98|||||
+B5_S99|B5_S99|||||
+B5_S100|B5_S100|||||
+B5_S101|B5_S101|||||
+B5_S102|B5_S102|||||
+B5_S103|B5_S103|||||
+B5_S104|B5_S104|||||
+B5_S105|B5_S105|||||
+B5_S106|B5_S106|||||
+B5_S107|B5_S107|||||
+B5_S108|B5_S108|||||
+B5_S109|B5_S109|||||
+B5_S110|B5_S110|||||
+B5_S111|B5_S111|||||
+B5_S112|B5_S112|||||
+B5_S113|B5_S113|||||
+B5_S114|B5_S114|||||
+B5_S115|B5_S115|||||
+B5_S116|B5_S116|||||
+B5_S117|B5_S117|||||
+B5_S118|B5_S118|||||
+B5_S119|B5_S119|||||
+B5_S120|B5_S120|||||
+B5_S121|B5_S121|||||
+B5_S122|B5_S122|||||
+B5_S123|B5_S123|||||
+B5_S124|B5_S124|||||
+B5_S125|B5_S125|||||
+B5_S126|B5_S126|||||
+B5_S127|B5_S127|||||
+B6_S0|B6_S0|||||
+B6_S1|B6_S1|||||
+B6_S2|B6_S2|||||
+B6_S3|B6_S3|||||
+B6_S4|B6_S4|||||
+B6_S5|B6_S5|||||
+B6_S6|B6_S6|||||
+B6_S7|B6_S7|||||
+B6_S8|B6_S8|||||
+B6_S9|B6_S9|||||
+B6_S10|B6_S10|||||
+B6_S11|B6_S11|||||
+B6_S12|B6_S12|||||
+B6_S13|B6_S13|||||
+B6_S14|B6_S14|||||
+B6_S15|B6_S15|||||
+B6_S16|B6_S16|||||
+B6_S17|B6_S17|||||
+B6_S18|B6_S18|||||
+B6_S19|B6_S19|||||
+B6_S20|B6_S20|||||
+B6_S21|B6_S21|||||
+B6_S22|B6_S22|||||
+B6_S23|B6_S23|||||
+B6_S24|B6_S24|||||
+B6_S25|B6_S25|||||
+B6_S26|B6_S26|||||
+B6_S27|B6_S27|||||
+B6_S28|B6_S28|||||
+B6_S29|B6_S29|||||
+B6_S30|B6_S30|||||
+B6_S31|B6_S31|||||
+B6_S32|B6_S32|||||
+B6_S33|B6_S33|||||
+B6_S34|B6_S34|||||
+B6_S35|B6_S35|||||
+B6_S36|B6_S36|||||
+B6_S37|B6_S37|||||
+B6_S38|B6_S38|||||
+B6_S39|B6_S39|||||
+B6_S40|B6_S40|||||
+B6_S41|B6_S41|||||
+B6_S42|B6_S42|||||
+B6_S43|B6_S43|||||
+B6_S44|B6_S44|||||
+B6_S45|B6_S45|||||
+B6_S46|B6_S46|||||
+B6_S47|B6_S47|||||
+B6_S48|B6_S48|||||
+B6_S49|B6_S49|||||
+B6_S50|B6_S50|||||
+B6_S51|B6_S51|||||
+B6_S52|B6_S52|||||
+B6_S53|B6_S53|||||
+B6_S54|B6_S54|||||
+B6_S55|B6_S55|||||
+B6_S56|B6_S56|||||
+B6_S57|B6_S57|||||
+B6_S58|B6_S58|||||
+B6_S59|B6_S59|||||
+B6_S60|B6_S60|||||
+B6_S61|B6_S61|||||
+B6_S62|B6_S62|||||
+B6_S63|B6_S63|||||
+B6_S64|B6_S64|||||
+B6_S65|B6_S65|||||
+B6_S66|B6_S66|||||
+B6_S67|B6_S67|||||
+B6_S68|B6_S68|||||
+B6_S69|B6_S69|||||
+B6_S70|B6_S70|||||
+B6_S71|B6_S71|||||
+B6_S72|B6_S72|||||
+B6_S73|B6_S73|||||
+B6_S74|B6_S74|||||
+B6_S75|B6_S75|||||
+B6_S76|B6_S76|||||
+B6_S77|B6_S77|||||
+B6_S78|B6_S78|||||
+B6_S79|B6_S79|||||
+B6_S80|B6_S80|||||
+B6_S81|B6_S81|||||
+B6_S82|B6_S82|||||
+B6_S83|B6_S83|||||
+B6_S84|B6_S84|||||
+B6_S85|B6_S85|||||
+B6_S86|B6_S86|||||
+B6_S87|B6_S87|||||
+B6_S88|B6_S88|||||
+B6_S89|B6_S89|||||
+B6_S90|B6_S90|||||
+B6_S91|B6_S91|||||
+B6_S92|B6_S92|||||
+B6_S93|B6_S93|||||
+B6_S94|B6_S94|||||
+B6_S95|B6_S95|||||
+B6_S96|B6_S96|||||
+B6_S97|B6_S97|||||
+B6_S98|B6_S98|||||
+B6_S99|B6_S99|||||
+B6_S100|B6_S100|||||
+B6_S101|B6_S101|||||
+B6_S102|B6_S102|||||
+B6_S103|B6_S103|||||
+B6_S104|B6_S104|||||
+B6_S105|B6_S105|||||
+B6_S106|B6_S106|||||
+B6_S107|B6_S107|||||
+B6_S108|B6_S108|||||
+B6_S109|B6_S109|||||
+B6_S110|B6_S110|||||
+B6_S111|B6_S111|||||
+B6_S112|B6_S112|||||
+B6_S113|B6_S113|||||
+B6_S114|B6_S114|||||
+B6_S115|B6_S115|||||
+B6_S116|B6_S116|||||
+B6_S117|B6_S117|||||
+B6_S118|B6_S118|||||
+B6_S119|B6_S119|||||
+B6_S120|B6_S120|||||
+B6_S121|B6_S121|||||
+B6_S122|B6_S122|||||
+B6_S123|B6_S123|||||
+B6_S124|B6_S124|||||
+B6_S125|B6_S125|||||
+B6_S126|B6_S126|||||
+B6_S127|B6_S127|||||
+B7_S0|B7_S0|||||
+B7_S1|B7_S1|||||
+B7_S2|B7_S2|||||
+B7_S3|B7_S3|||||
+B7_S4|B7_S4|||||
+B7_S5|B7_S5|||||
+B7_S6|B7_S6|||||
+B7_S7|B7_S7|||||
+B7_S8|B7_S8|||||
+B7_S9|B7_S9|||||
+B7_S10|B7_S10|||||
+B7_S11|B7_S11|||||
+B7_S12|B7_S12|||||
+B7_S13|B7_S13|||||
+B7_S14|B7_S14|||||
+B7_S15|B7_S15|||||
+B7_S16|B7_S16|||||
+B7_S17|B7_S17|||||
+B7_S18|B7_S18|||||
+B7_S19|B7_S19|||||
+B7_S20|B7_S20|||||
+B7_S21|B7_S21|||||
+B7_S22|B7_S22|||||
+B7_S23|B7_S23|||||
+B7_S24|B7_S24|||||
+B7_S25|B7_S25|||||
+B7_S26|B7_S26|||||
+B7_S27|B7_S27|||||
+B7_S28|B7_S28|||||
+B7_S29|B7_S29|||||
+B7_S30|B7_S30|||||
+B7_S31|B7_S31|||||
+B7_S32|B7_S32|||||
+B7_S33|B7_S33|||||
+B7_S34|B7_S34|||||
+B7_S35|B7_S35|||||
+B7_S36|B7_S36|||||
+B7_S37|B7_S37|||||
+B7_S38|B7_S38|||||
+B7_S39|B7_S39|||||
+B7_S40|B7_S40|||||
+B7_S41|B7_S41|||||
+B7_S42|B7_S42|||||
+B7_S43|B7_S43|||||
+B7_S44|B7_S44|||||
+B7_S45|B7_S45|||||
+B7_S46|B7_S46|||||
+B7_S47|B7_S47|||||
+B7_S48|B7_S48|||||
+B7_S49|B7_S49|||||
+B7_S50|B7_S50|||||
+B7_S51|B7_S51|||||
+B7_S52|B7_S52|||||
+B7_S53|B7_S53|||||
+B7_S54|B7_S54|||||
+B7_S55|B7_S55|||||
+B7_S56|B7_S56|||||
+B7_S57|B7_S57|||||
+B7_S58|B7_S58|||||
+B7_S59|B7_S59|||||
+B7_S60|B7_S60|||||
+B7_S61|B7_S61|||||
+B7_S62|B7_S62|||||
+B7_S63|B7_S63|||||
+B7_S64|B7_S64|||||
+B7_S65|B7_S65|||||
+B7_S66|B7_S66|||||
+B7_S67|B7_S67|||||
+B7_S68|B7_S68|||||
+B7_S69|B7_S69|||||
+B7_S70|B7_S70|||||
+B7_S71|B7_S71|||||
+B7_S72|B7_S72|||||
+B7_S73|B7_S73|||||
+B7_S74|B7_S74|||||
+B7_S75|B7_S75|||||
+B7_S76|B7_S76|||||
+B7_S77|B7_S77|||||
+B7_S78|B7_S78|||||
+B7_S79|B7_S79|||||
+B7_S80|B7_S80|||||
+B7_S81|B7_S81|||||
+B7_S82|B7_S82|||||
+B7_S83|B7_S83|||||
+B7_S84|B7_S84|||||
+B7_S85|B7_S85|||||
+B7_S86|B7_S86|||||
+B7_S87|B7_S87|||||
+B7_S88|B7_S88|||||
+B7_S89|B7_S89|||||
+B7_S90|B7_S90|||||
+B7_S91|B7_S91|||||
+B7_S92|B7_S92|||||
+B7_S93|B7_S93|||||
+B7_S94|B7_S94|||||
+B7_S95|B7_S95|||||
+B7_S96|B7_S96|||||
+B7_S97|B7_S97|||||
+B7_S98|B7_S98|||||
+B7_S99|B7_S99|||||
+B7_S100|B7_S100|||||
+B7_S101|B7_S101|||||
+B7_S102|B7_S102|||||
+B7_S103|B7_S103|||||
+B7_S104|B7_S104|||||
+B7_S105|B7_S105|||||
+B7_S106|B7_S106|||||
+B7_S107|B7_S107|||||
+B7_S108|B7_S108|||||
+B7_S109|B7_S109|||||
+B7_S110|B7_S110|||||
+B7_S111|B7_S111|||||
+B7_S112|B7_S112|||||
+B7_S113|B7_S113|||||
+B7_S114|B7_S114|||||
+B7_S115|B7_S115|||||
+B7_S116|B7_S116|||||
+B7_S117|B7_S117|||||
+B7_S118|B7_S118|||||
+B7_S119|B7_S119|||||
+B7_S120|B7_S120|||||
+B7_S121|B7_S121|||||
+B7_S122|B7_S122|||||
+B7_S123|B7_S123|||||
+B7_S124|B7_S124|||||
+B7_S125|B7_S125|||||
+B7_S126|B7_S126|||||
+B7_S127|B7_S127|||||
+B8_S0|B8_S0|||||
+B8_S1|B8_S1|||||
+B8_S2|B8_S2|||||
+B8_S3|B8_S3|||||
+B8_S4|B8_S4|||||
+B8_S5|B8_S5|||||
+B8_S6|B8_S6|||||
+B8_S7|B8_S7|||||
+B8_S8|B8_S8|||||
+B8_S9|B8_S9|||||
+B8_S10|B8_S10|||||
+B8_S11|B8_S11|||||
+B8_S12|B8_S12|||||
+B8_S13|B8_S13|||||
+B8_S14|B8_S14|||||
+B8_S15|B8_S15|||||
+B8_S16|B8_S16|||||
+B8_S17|B8_S17|||||
+B8_S18|B8_S18|||||
+B8_S19|B8_S19|||||
+B8_S20|B8_S20|||||
+B8_S21|B8_S21|||||
+B8_S22|B8_S22|||||
+B8_S23|B8_S23|||||
+B8_S24|B8_S24|||||
+B8_S25|B8_S25|||||
+B8_S26|B8_S26|||||
+B8_S27|B8_S27|||||
+B8_S28|B8_S28|||||
+B8_S29|B8_S29|||||
+B8_S30|B8_S30|||||
+B8_S31|B8_S31|||||
+B8_S32|B8_S32|||||
+B8_S33|B8_S33|||||
+B8_S34|B8_S34|||||
+B8_S35|B8_S35|||||
+B8_S36|B8_S36|||||
+B8_S37|B8_S37|||||
+B8_S38|B8_S38|||||
+B8_S39|B8_S39|||||
+B8_S40|B8_S40|||||
+B8_S41|B8_S41|||||
+B8_S42|B8_S42|||||
+B8_S43|B8_S43|||||
+B8_S44|B8_S44|||||
+B8_S45|B8_S45|||||
+B8_S46|B8_S46|||||
+B8_S47|B8_S47|||||
+B8_S48|B8_S48|||||
+B8_S49|B8_S49|||||
+B8_S50|B8_S50|||||
+B8_S51|B8_S51|||||
+B8_S52|B8_S52|||||
+B8_S53|B8_S53|||||
+B8_S54|B8_S54|||||
+B8_S55|B8_S55|||||
+B8_S56|B8_S56|||||
+B8_S57|B8_S57|||||
+B8_S58|B8_S58|||||
+B8_S59|B8_S59|||||
+B8_S60|B8_S60|||||
+B8_S61|B8_S61|||||
+B8_S62|B8_S62|||||
+B8_S63|B8_S63|||||
+B8_S64|B8_S64|||||
+B8_S65|B8_S65|||||
+B8_S66|B8_S66|||||
+B8_S67|B8_S67|||||
+B8_S68|B8_S68|||||
+B8_S69|B8_S69|||||
+B8_S70|B8_S70|||||
+B8_S71|B8_S71|||||
+B8_S72|B8_S72|||||
+B8_S73|B8_S73|||||
+B8_S74|B8_S74|||||
+B8_S75|B8_S75|||||
+B8_S76|B8_S76|||||
+B8_S77|B8_S77|||||
+B8_S78|B8_S78|||||
+B8_S79|B8_S79|||||
+B8_S80|B8_S80|||||
+B8_S81|B8_S81|||||
+B8_S82|B8_S82|||||
+B8_S83|B8_S83|||||
+B8_S84|B8_S84|||||
+B8_S85|B8_S85|||||
+B8_S86|B8_S86|||||
+B8_S87|B8_S87|||||
+B8_S88|B8_S88|||||
+B8_S89|B8_S89|||||
+B8_S90|B8_S90|||||
+B8_S91|B8_S91|||||
+B8_S92|B8_S92|||||
+B8_S93|B8_S93|||||
+B8_S94|B8_S94|||||
+B8_S95|B8_S95|||||
+B8_S96|B8_S96|||||
+B8_S97|B8_S97|||||
+B8_S98|B8_S98|||||
+B8_S99|B8_S99|||||
+B8_S100|B8_S100|||||
+B8_S101|B8_S101|||||
+B8_S102|B8_S102|||||
+B8_S103|B8_S103|||||
+B8_S104|B8_S104|||||
+B8_S105|B8_S105|||||
+B8_S106|B8_S106|||||
+B8_S107|B8_S107|||||
+B8_S108|B8_S108|||||
+B8_S109|B8_S109|||||
+B8_S110|B8_S110|||||
+B8_S111|B8_S111|||||
+B8_S112|B8_S112|||||
+B8_S113|B8_S113|||||
+B8_S114|B8_S114|||||
+B8_S115|B8_S115|||||
+B8_S116|B8_S116|||||
+B8_S117|B8_S117|||||
+B8_S118|B8_S118|||||
+B8_S119|B8_S119|||||
+B8_S120|B8_S120|||||
+B8_S121|B8_S121|||||
+B8_S122|B8_S122|||||
+B8_S123|B8_S123|||||
+B8_S124|B8_S124|||||
+B8_S125|B8_S125|||||
+B8_S126|B8_S126|||||
+B8_S127|B8_S127|||||
+
+[Values]
+# параметр|значение|подпись
+OB_ProductState|OB_PROD_STATE_OPEN|Open
+OB_ProductState|OB_PROD_STATE_PROVISIONING|Provisioning
+OB_ProductState|OB_PROD_STATE_IROT_PROVISIONED|iROT-provisioned
+OB_ProductState|OB_PROD_STATE_TZ_CLOSED|TZ-Closed
+OB_ProductState|OB_PROD_STATE_CLOSED|Closed
+OB_ProductState|OB_PROD_STATE_LOCKED|Locked
+OB_ProductState|OB_PROD_STATE_REGRESSION|Regression
+OB_ProductState|OB_PROD_STATE_NS_REGRESSION|NS-Regression
+OB_BOR_level|OB_BOR_LEVEL_1|1
+OB_BOR_level|OB_BOR_LEVEL_2|2
+OB_BOR_level|OB_BOR_LEVEL_3|3
+OB_BORH|OB_BORH_DISABLE|disable
+OB_BORH|OB_BORH_ENABLE|enable
+OB_IO_VDD_HSLV_UI|OB_IO_VDD_HSLV_NOUPD|no update
+OB_IO_VDD_HSLV_UI|OB_IO_VDD_HSLV_ENABLE|enable
+OB_IO_VDD_HSLV_UI|OB_IO_VDD_HSLV_DISABLE|disable
+OB_IO_VDDIO2_HSLV_UI|OB_IO_VDDIO2_HSLV_NOUPD|no update
+OB_IO_VDDIO2_HSLV_UI|OB_IO_VDDIO2_HSLV_ENABLE|enable
+OB_IO_VDDIO2_HSLV_UI|OB_IO_VDDIO2_HSLV_DISABLE|disable
+OB_IWDG_STOP_UI|OB_IWDG_STOP_NOUPD|no update
+OB_IWDG_STOP_UI|OB_IWDG_STOP_ACTIVE|enable
+OB_IWDG_STOP_UI|OB_IWDG_STOP_FREEZE|disable
+OB_IWDG_STDBY_UI|OB_IWDG_STDBY_NOUPD|no update
+OB_IWDG_STDBY_UI|OB_IWDG_STDBY_ACTIVE|enable
+OB_IWDG_STDBY_UI|OB_IWDG_STDBY_FREEZE|disable
+OB_BOOT_UBE_UI|OB_UBE_ST_NOUPD|no update
+OB_BOOT_UBE_UI|OB_UBE_OEM_IROT|OEM-iROT
+OB_BOOT_UBE_UI|OB_UBE_ST_IROT|ST-iROT
+OB_SWAP_BANK_UI|OB_SWAP_BANK_NOUPD|no update
+OB_SWAP_BANK_UI|OB_SWAP_BANK_ENABLE|enable
+OB_SWAP_BANK_UI|OB_SWAP_BANK_DISABLE|disable
+OB_IWDG_SW_UI|OB_IWDG_NOUPD|no update
+OB_IWDG_SW_UI|OB_IWDG_SW|enable
+OB_IWDG_SW_UI|OB_IWDG_HW|disable
+OB_WWDG_SW_UI|OB_WWDG_NOUPD|no update
+OB_WWDG_SW_UI|OB_WWDG_SW|enable
+OB_WWDG_SW_UI|OB_WWDG_HW|disable
+OB_NRST_STOP_UI|OB_STOP_NOUPD|no update
+OB_NRST_STOP_UI|OB_STOP_NORST|enable
+OB_NRST_STOP_UI|OB_STOP_RST|disable
+OB_NRST_STDBY_UI|OB_STANDBY_NOUPD|no update
+OB_NRST_STDBY_UI|OB_STANDBY_NORST|enable
+OB_NRST_STDBY_UI|OB_STANDBY_RST|disable
+OB_SRAM1_ECC_UI|OB_SRAM1_ECC_NOUPD|no update
+OB_SRAM1_ECC_UI|OB_SRAM1_ECC_ENABLE|enable
+OB_SRAM1_ECC_UI|OB_SRAM1_ECC_DISABLE|disable
+OB_SRAM1_RST_UI|OB_SRAM1_RST_NOUPD|no update
+OB_SRAM1_RST_UI|OB_SRAM1_RST_NOT_ERASE|enable
+OB_SRAM1_RST_UI|OB_SRAM1_RST_ERASE|disable
+OB_SRAM2_ECC_UI|OB_SRAM2_ECC_NOUPD|no update
+OB_SRAM2_ECC_UI|OB_SRAM2_ECC_ENABLE|enable
+OB_SRAM2_ECC_UI|OB_SRAM2_ECC_DISABLE|disable
+OB_SRAM2_RST_UI|OB_SRAM2_RST_NOUPD|no update
+OB_SRAM2_RST_UI|OB_SRAM2_RST_NOT_ERASE|enable
+OB_SRAM2_RST_UI|OB_SRAM2_RST_ERASE|disable
+OB_SRAM3_ECC_UI|OB_SRAM3_ECC_NOUPD|no update
+OB_SRAM3_ECC_UI|OB_SRAM3_ECC_ENABLE|enable
+OB_SRAM3_ECC_UI|OB_SRAM3_ECC_DISABLE|disable
+OB_SRAM13_RST_UI|OB_SRAM1_3_RST_NOUPD|no update
+OB_SRAM13_RST_UI|OB_SRAM1_3_RST_NOT_ERASE|enable
+OB_SRAM13_RST_UI|OB_SRAM1_3_RST_ERASE|disable
+OB_SRAM1345_RST_UI|OB_SRAM1_3_4_5_RST_NOUPD|no update
+OB_SRAM1345_RST_UI|OB_SRAM1_3_4_5_RST_NOT_ERASE|enable
+OB_SRAM1345_RST_UI|OB_SRAM1_3_4_5_RST_ERASE|disable
+OB_BKPRAM_ECC_UI|OB_BKPRAM_ECC_NOUPD|no update
+OB_BKPRAM_ECC_UI|OB_BKPRAM_ECC_ENABLE|enable
+OB_BKPRAM_ECC_UI|OB_BKPRAM_ECC_DISABLE|disable
+OB_NSBootLock|OB_BOOT_LOCK_ENABLE|enable
+OB_NSBootLock|OB_BOOT_LOCK_DISABLE|disable
+OB_SECBootLock|OB_BOOT_LOCK_ENABLE|enable
+OB_SECBootLock|OB_BOOT_LOCK_DISABLE|disable
+WRP1State|OB_WRPSTATE_DISABLE|OB_WRPSTATE_DISABLE
+WRP1State|OB_WRPSTATE_ENABLE|OB_WRPSTATE_ENABLE
+WRP2State|OB_WRPSTATE_ENABLE|OB_WRPSTATE_ENABLE
+WRP2State|OB_WRPSTATE_DISABLE|OB_WRPSTATE_DISABLE
+B1_Bank|FLASH_BANK_1|FLASH BANK 1
+B1_Bank|FLASH_BANK_2|FLASH BANK 2
+B1_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B1_AttributesType_security|FLASH_BB_SEC|Secure
+B2_Bank|FLASH_BANK_1|FLASH BANK 1
+B2_Bank|FLASH_BANK_2|FLASH BANK 2
+B2_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B2_AttributesType_security|FLASH_BB_SEC|Secure
+B3_Bank|FLASH_BANK_1|FLASH BANK 1
+B3_Bank|FLASH_BANK_2|FLASH BANK 2
+B3_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B3_AttributesType_security|FLASH_BB_SEC|Secure
+B4_Bank|FLASH_BANK_1|FLASH BANK 1
+B4_Bank|FLASH_BANK_2|FLASH BANK 2
+B4_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B4_AttributesType_security|FLASH_BB_SEC|Secure
+B5_Bank|FLASH_BANK_1|FLASH BANK 1
+B5_Bank|FLASH_BANK_2|FLASH BANK 2
+B5_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B5_AttributesType_security|FLASH_BB_SEC|Secure
+B6_Bank|FLASH_BANK_1|FLASH BANK 1
+B6_Bank|FLASH_BANK_2|FLASH BANK 2
+B6_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B6_AttributesType_security|FLASH_BB_SEC|Secure
+B7_Bank|FLASH_BANK_1|FLASH BANK 1
+B7_Bank|FLASH_BANK_2|FLASH BANK 2
+B7_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B7_AttributesType_security|FLASH_BB_SEC|Secure
+B8_Bank|FLASH_BANK_1|FLASH BANK 1
+B8_Bank|FLASH_BANK_2|FLASH BANK 2
+B8_AttributesType_privilege|FLASH_BB_PRIV|Privileged
+B8_AttributesType_security|FLASH_BB_SEC|Secure

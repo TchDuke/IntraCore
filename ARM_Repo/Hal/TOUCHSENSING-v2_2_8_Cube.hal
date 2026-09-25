@@ -1,0 +1,546 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=TOUCHSENSING
+Version=v2_2_8_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+TOUCHSENSING_VERSION|TouchSensing version|Version and modes||||
+TOUCHSENSING_APP_MEM_POOL_SIZE|TouchSensing memory pool size|Memory Configuration||512|262144|Default memory pool size for the TouchSensing application.
+TOUCHSENSING_MODE|TouchSensing acquisition mode|Version and modes||||Software or hardware acquisition
+TSLPRM_TOTAL_CHANNELS_DEFAULT|TSLPRM_TOTAL_CHANNELS_DEFAULT|Summary||1|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_TOTAL_CHANNELS default value.
+TSLPRM_TOTAL_CHANNELS|TSLPRM_TOTAL_CHANNELS|Summary||1|255|Total number of channels in application (range=1..24) One TouchKey: one channel One LinRot: 3, 4, 5 or 6 channels depending of selected one Be aware that if your TSC is not correctly configured, i.e. not enough channels activated then you will get error message because of this.
+TSLPRM_TOTAL_ALL_TOUCHKEYS|TSLPRM_TOTAL_ALL_TOUCHKEYS|Summary||0|=TSC_ACTIVE_CHANNELS|Total number of touchkeys, maximum being nbr of activated channels in TSC IP
+TSLPRM_TOTAL_ALL_LINROTS|TSLPRM_TOTAL_ALL_LINROTS|Summary||0|24|Total number of touchkeys, maximum 24
+TSC_ACTIVE_CHANNELS|TSC_ACTIVE_CHANNELS = max(TSLPRM_TOTAL_CHANNELS)|Summary||||USER INFORMATION: Total number of channels in application activated on TSC IP TSLPRM_TOTAL_CHANNELS cannot be higher
+TSLPRM_TOTAL_BANKS|TSLPRM_TOTAL_BANKS|Summary||0|255|Total number of banks in application (range=1..255) 3 channels per bank
+TSLPRM_TOTAL_TOUCHKEYS_ACTIVE_CHANNELS|TSLPRM_TOTAL_TOUCHKEYS_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_TOTAL_TOUCHKEYS_ACTIVE_CHANNELS default value.
+TSLPRM_TOTAL_TOUCHKEYS_MAX|TSLPRM_TOTAL_TOUCHKEYS_MAX|Summary||0|0|Formula calculation for TSLPRM_TOTAL_TOUCHKEYS_MAX default value.
+TSLPRM_TOTAL_TOUCHKEYS_B_ACTIVE_CHANNELS|TSLPRM_TOTAL_TOUCHKEYS_B_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_TOTAL_TOUCHKEYS_B_ACTIVE_CHANNELS default value.
+TSLPRM_TOTAL_TOUCHKEYS_B_MAX|TSLPRM_TOTAL_TOUCHKEYS_B_MAX|Summary||0|0|Formula calculation for TSLPRM_TOTAL_TOUCHKEYS_B_MAX default value.
+TSLPRM_TOTAL_TOUCHKEYS|TSLPRM_TOTAL_TOUCHKEYS|TouchKey sensors||0|255|Total number of "Extended" TouchKeys in application
+IO_TOUCHKEY1|IO_TOUCHKEY1|TouchKey sensors||||TouchKey IO n°1
+TSLPRM_TOTAL_TOUCHKEYS_B|TSLPRM_TOTAL_TOUCHKEYS_B|TouchKey sensors||0|255|Total number of "Basic" TouchKeys in application
+IO_TOUCHKEY_B1|IO_TOUCHKEY_B1|TouchKey sensors||||TouchKey B IO n°1
+TSLPRM_USE_3CH_LIN_M1|TSLPRM_USE_3CH_LIN_M1|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 3 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M1 = Mono electrodes design with 0/255 position at extremities of the sensor
+TSLPRM_USE_3CH_LIN_M1_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_LIN_M1_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_LIN_M1_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_LIN_M1_NBR|TSLPRM_USE_3CH_LIN_M1_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_M1_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_3CH_LIN_M1_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_LIN_M1 Extended type
+TSLPRM_USE_3CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_LIN_M1_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_LIN_M1_B_NBR|TSLPRM_USE_3CH_LIN_M1_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_M1_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_M1_B_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_LIN_M1 Basic type
+TSLPRM_USE_3CH_LIN_M2|TSLPRM_USE_3CH_LIN_M2|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 3 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M2 = Mono electrodes design
+TSLPRM_USE_3CH_LIN_M2_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_LIN_M2_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_LIN_M2_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_LIN_M2_NBR|TSLPRM_USE_3CH_LIN_M2_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_M2_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_M2_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_LIN_M2 Extended type
+TSLPRM_USE_3CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_LIN_M2_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_LIN_M2_B_NBR|TSLPRM_USE_3CH_LIN_M2_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_M2_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_M2_B_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_LIN_M2 Basic type
+TSLPRM_USE_3CH_LIN_H|TSLPRM_USE_3CH_LIN_H|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 3 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor H = Half-ended electrodes design
+TSLPRM_USE_3CH_LIN_H_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_LIN_H_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_LIN_H_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_LIN_H_NBR|TSLPRM_USE_3CH_LIN_H_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_H_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_H_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_LIN_H Extended type
+TSLPRM_USE_3CH_LIN_H_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_LIN_H_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_LIN_H_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_LIN_H_B_NBR|TSLPRM_USE_3CH_LIN_H_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_H_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_LIN_H_B_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_LIN_H Basic type
+TSLPRM_USE_3CH_ROT_M|TSLPRM_USE_3CH_ROT_M|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 3 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used ROT = Rotary sensor
+TSLPRM_USE_3CH_ROT_M_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_ROT_M_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_ROT_M_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_ROT_M_NBR|TSLPRM_USE_3CH_ROT_M_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_ROT_M_NBR_ACTIVE_CHANNELS) >-1, FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_ROT_M_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_ROT_M Extended type
+TSLPRM_USE_3CH_ROT_M_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_3CH_ROT_M_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_3CH_ROT_M_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_3CH_ROT_M_B_NBR|TSLPRM_USE_3CH_ROT_M_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_ROT_M_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_3CH_ROT_M_B_NBR_ACTIVE_CHANNELS)/3),0)|Number of TSLPRM_USE_3CH_ROT_M Basic type
+TSLPRM_USE_4CH_LIN_M1|TSLPRM_USE_4CH_LIN_M1|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 4 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M1 = Mono electrodes design with 0/255 position at extremities of the sensor
+TSLPRM_USE_4CH_LIN_M1_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_LIN_M1_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_LIN_M1_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_LIN_M1_NBR|TSLPRM_USE_4CH_LIN_M1_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M1_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M1_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_LIN_M1 Extended type
+TSLPRM_USE_4CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_LIN_M1_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_LIN_M1_B_NBR|TSLPRM_USE_4CH_LIN_M1_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M1_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M1_B_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_LIN_M1 Basic type
+TSLPRM_USE_4CH_LIN_M2|TSLPRM_USE_4CH_LIN_M2|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 4 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M2 = Mono electrodes design
+TSLPRM_USE_4CH_LIN_M2_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_LIN_M2_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_LIN_M2_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_LIN_M2_NBR|TSLPRM_USE_4CH_LIN_M2_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M2_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M2_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_LIN_M2 Extended type
+TSLPRM_USE_4CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_LIN_M2_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_LIN_M2_B_NBR|TSLPRM_USE_4CH_LIN_M2_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M2_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_M2_B_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_LIN_M2 Basic type
+TSLPRM_USE_4CH_LIN_H|TSLPRM_USE_4CH_LIN_H|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 4 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor H = Half-ended electrodes design
+TSLPRM_USE_4CH_LIN_H_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_LIN_H_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_LIN_H_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_LIN_H_NBR|TSLPRM_USE_4CH_LIN_H_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_H_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_H_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_LIN_H Extended type
+TSLPRM_USE_4CH_LIN_H_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_LIN_H_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_LIN_H_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_LIN_H_B_NBR|TSLPRM_USE_4CH_LIN_H_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_H_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_LIN_H_B_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_LIN_H Basic type
+TSLPRM_USE_4CH_ROT_M|TSLPRM_USE_4CH_ROT_M|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 4 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used ROT = Rotary sensor
+TSLPRM_USE_4CH_ROT_M_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_ROT_M_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_ROT_M_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_ROT_M_NBR|TSLPRM_USE_4CH_ROT_M_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_ROT_M_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_ROT_M_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_ROT_M Extended type
+TSLPRM_USE_4CH_ROT_M_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_4CH_ROT_M_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_4CH_ROT_M_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_4CH_ROT_M_B_NBR|TSLPRM_USE_4CH_ROT_M_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_ROT_M_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS -TSLPRM_USE_4CH_ROT_M_B_NBR_ACTIVE_CHANNELS)/4),0)|Number of TSLPRM_USE_4CH_ROT_M Basic type
+TSLPRM_USE_5CH_LIN_M1|TSLPRM_USE_5CH_LIN_M1|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 5 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M1 = Mono electrodes design with 0/255 position at extremities of the sensor
+TSLPRM_USE_5CH_LIN_M1_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_LIN_M1_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_LIN_M1_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_LIN_M1_NBR|TSLPRM_USE_5CH_LIN_M1_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M1_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M1_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_LIN_M1 Extended type
+TSLPRM_USE_5CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_LIN_M1_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_LIN_M1_B_NBR|TSLPRM_USE_5CH_LIN_M1_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M1_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M1_B_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_LIN_M1 Basic type
+TSLPRM_USE_5CH_LIN_M2|TSLPRM_USE_5CH_LIN_M2|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 5 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M2 = Mono electrodes design
+TSLPRM_USE_5CH_LIN_M2_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_LIN_M2_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_LIN_M2_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_LIN_M2_NBR|TSLPRM_USE_5CH_LIN_M2_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M2_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M2_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_LIN_M2 Extended type
+TSLPRM_USE_5CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_LIN_M2_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_LIN_M2_B_NBR|TSLPRM_USE_5CH_LIN_M2_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M2_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_M2_B_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_LIN_M2 Basic type
+TSLPRM_USE_5CH_LIN_H|TSLPRM_USE_5CH_LIN_H|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 5 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor H = Half-ended electrodes design
+TSLPRM_USE_5CH_LIN_H_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_LIN_H_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_LIN_H_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_LIN_H_NBR|TSLPRM_USE_5CH_LIN_H_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_H_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_H_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_LIN_H Extended type
+TSLPRM_USE_5CH_LIN_H_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_LIN_H_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_LIN_H_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_LIN_H_B_NBR|TSLPRM_USE_5CH_LIN_H_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_H_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_LIN_H_B_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_LIN_H Basic type
+TSLPRM_USE_5CH_ROT_M|TSLPRM_USE_5CH_ROT_M|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 5 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used ROT = Rotary sensor
+TSLPRM_USE_5CH_ROT_M_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_ROT_M_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_ROT_M_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_ROT_M_NBR|TSLPRM_USE_5CH_ROT_M_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_M_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_M_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_ROT_M Extended type
+TSLPRM_USE_5CH_ROT_M_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_ROT_M_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_ROT_M_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_ROT_M_B_NBR|TSLPRM_USE_5CH_ROT_M_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_M_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_M_B_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_ROT_M Basic type
+TSLPRM_USE_5CH_ROT_D|TSLPRM_USE_5CH_ROT_D|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 5 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used ROT = Rotary sensor D = Dual electrodes design
+TSLPRM_USE_5CH_ROT_D_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_ROT_D_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_ROT_D_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_ROT_D_NBR|TSLPRM_USE_5CH_ROT_D_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_D_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_D_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_ROT_D Extended type
+TSLPRM_USE_5CH_ROT_D_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_5CH_ROT_D_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_5CH_ROT_D_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_5CH_ROT_D_B_NBR|TSLPRM_USE_5CH_ROT_D_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_D_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_5CH_ROT_D_B_NBR_ACTIVE_CHANNELS)/5),0)|Number of TSLPRM_USE_5CH_ROT_D Basic type
+TSLPRM_USE_6CH_LIN_M1|TSLPRM_USE_6CH_LIN_M1|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 6 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M1 = Mono electrodes design with 0/255 position at extremities of the sensor
+TSLPRM_USE_6CH_LIN_M1_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_LIN_M1_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_LIN_M1_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_LIN_M1_NBR|TSLPRM_USE_6CH_LIN_M1_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M1_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M1_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_LIN_M1 Extended type
+TSLPRM_USE_6CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_LIN_M1_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_LIN_M1_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_LIN_M1_B_NBR|TSLPRM_USE_6CH_LIN_M1_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M1_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M1_B_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_LIN_M1 Basic type
+TSLPRM_USE_6CH_LIN_M2|TSLPRM_USE_6CH_LIN_M2|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 6 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor M2 = Mono electrodes design
+TSLPRM_USE_6CH_LIN_M2_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_LIN_M2_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_LIN_M2_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_LIN_M2_NBR|TSLPRM_USE_6CH_LIN_M2_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M2_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M2_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_LIN_M2 Extended type
+TSLPRM_USE_6CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_LIN_M2_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_LIN_M2_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_LIN_M2_B_NBR|TSLPRM_USE_6CH_LIN_M2_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M2_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_M2_B_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_LIN_M2 Basic type
+TSLPRM_USE_6CH_LIN_H|TSLPRM_USE_6CH_LIN_H|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 6 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used LIN = Linear sensor H = Half-ended electrodes design
+TSLPRM_USE_6CH_LIN_H_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_LIN_H_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_LIN_H_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_LIN_H_NBR|TSLPRM_USE_6CH_LIN_H_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_H_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_H_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_LIN_H Extended type
+TSLPRM_USE_6CH_LIN_H_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_LIN_H_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_LIN_H_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_LIN_H_B_NBR|TSLPRM_USE_6CH_LIN_H_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_H_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_LIN_H_B_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_LIN_H Basic type
+TSLPRM_USE_6CH_ROT_M|TSLPRM_USE_6CH_ROT_M|Linear/Rotary sensors used||||Select which Linear and Rotary sensors you use in your application. <font color="red"> <b>Warning</b>: it is recommended to activate IO's in 6 groups of TS/TSC peripheral for optimized performances </font> - 0 = Not Used - 1 = Used ROT = Rotary sensor
+TSLPRM_USE_6CH_ROT_M_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_ROT_M_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_ROT_M_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_ROT_M_NBR|TSLPRM_USE_6CH_ROT_M_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_ROT_M_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_ROT_M_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_ROT_M Extended type
+TSLPRM_USE_6CH_ROT_M_B_NBR_ACTIVE_CHANNELS|TSLPRM_USE_6CH_ROT_M_B_NBR_ACTIVE_CHANNELS|Summary||0|+TSC:Gx_IOx-Channel|Formula calculation for TSLPRM_USE_6CH_ROT_M_B_NBR_ACTIVE_CHANNELS default value.
+TSLPRM_USE_6CH_ROT_M_B_NBR|TSLPRM_USE_6CH_ROT_M_B_NBR|Linear/Rotary sensors used||0|=IF((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_ROT_M_B_NBR_ACTIVE_CHANNELS) > -1,FLOOR((TSC_ACTIVE_CHANNELS - TSLPRM_USE_6CH_ROT_M_B_NBR_ACTIVE_CHANNELS)/6),0)|Number of TSLPRM_USE_6CH_ROT_M Basic type
+IO_3CH_LIN_M1_NBR1_CH1|IO_3CH_LIN_M1_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_M1 n°1 channel 1
+IO_3CH_LIN_M1_NBR1_CH2|IO_3CH_LIN_M1_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_M1 n°1 channel 2
+IO_3CH_LIN_M1_NBR1_CH3|IO_3CH_LIN_M1_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_M1 n°1 channel 3
+IO_3CH_LIN_M1_B_NBR1_CH1|IO_3CH_LIN_M1_B_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_M1_B n°1 channel 1
+IO_3CH_LIN_M1_B_NBR1_CH2|IO_3CH_LIN_M1_B_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_M1_B n°1 channel 2
+IO_3CH_LIN_M1_B_NBR1_CH3|IO_3CH_LIN_M1_B_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_M1_B n°1 channel 3
+IO_3CH_LIN_M2_NBR1_CH1|IO_3CH_LIN_M2_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_M2 n°1 channel 1
+IO_3CH_LIN_M2_NBR1_CH2|IO_3CH_LIN_M2_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_M2 n°1 channel 2
+IO_3CH_LIN_M2_NBR1_CH3|IO_3CH_LIN_M2_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_M2 n°1 channel 3
+IO_3CH_LIN_M2_B_NBR1_CH1|IO_3CH_LIN_M2_B_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_M2_B n°1 channel 1
+IO_3CH_LIN_M2_B_NBR1_CH2|IO_3CH_LIN_M2_B_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_M2_B n°1 channel 2
+IO_3CH_LIN_M2_B_NBR1_CH3|IO_3CH_LIN_M2_B_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_M2_B n°1 channel 3
+IO_3CH_LIN_H_NBR1_CH1|IO_3CH_LIN_H_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_H n°1 channel 1
+IO_3CH_LIN_H_NBR1_CH2|IO_3CH_LIN_H_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_H n°1 channel 2
+IO_3CH_LIN_H_NBR1_CH3|IO_3CH_LIN_H_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_H n°1 channel 3
+IO_3CH_LIN_H_B_NBR1_CH1|IO_3CH_LIN_H_B_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_H_B n°1 channel 1
+IO_3CH_LIN_H_B_NBR1_CH2|IO_3CH_LIN_H_B_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_H_B n°1 channel 2
+IO_3CH_LIN_H_B_NBR1_CH3|IO_3CH_LIN_H_B_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_H_B n°1 channel 3
+IO_3CH_ROT_M_NBR1_CH1|IO_3CH_ROT_M_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_ROT_M n°1 channel 1
+IO_3CH_ROT_M_NBR1_CH2|IO_3CH_ROT_M_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_ROT_M n°1 channel 2
+IO_3CH_ROT_M_NBR1_CH3|IO_3CH_ROT_M_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_ROT_M n°1 channel 3
+IO_3CH_ROT_M_B_NBR1_CH1|IO_3CH_ROT_M_B_NBR1_CH1|Linear/Rotary sensors used||||3CH_LIN_ROT_M_B n°1 channel 1
+IO_3CH_ROT_M_B_NBR1_CH2|IO_3CH_ROT_M_B_NBR1_CH2|Linear/Rotary sensors used||||3CH_LIN_ROT_M_B n°1 channel 2
+IO_3CH_ROT_M_B_NBR1_CH3|IO_3CH_ROT_M_B_NBR1_CH3|Linear/Rotary sensors used||||3CH_LIN_ROT_M_B n°1 channel 3
+IO_4CH_LIN_M1_NBR1_CH1|IO_4CH_LIN_M1_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_M1 n°1 channel 1
+IO_4CH_LIN_M1_NBR1_CH2|IO_4CH_LIN_M1_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_M1 n°1 channel 2
+IO_4CH_LIN_M1_NBR1_CH3|IO_4CH_LIN_M1_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_M1 n°1 channel 3
+IO_4CH_LIN_M1_NBR1_CH4|IO_4CH_LIN_M1_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_M1 n°1 channel 4
+IO_4CH_LIN_M1_B_NBR1_CH1|IO_4CH_LIN_M1_B_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_M1_B n°1 channel 1
+IO_4CH_LIN_M1_B_NBR1_CH2|IO_4CH_LIN_M1_B_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_M1_B n°1 channel 2
+IO_4CH_LIN_M1_B_NBR1_CH3|IO_4CH_LIN_M1_B_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_M1_B n°1 channel 3
+IO_4CH_LIN_M1_B_NBR1_CH4|IO_4CH_LIN_M1_B_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_M1_B n°1 channel 4
+IO_4CH_LIN_M2_NBR1_CH1|IO_4CH_LIN_M2_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_M2 n°1 channel 1
+IO_4CH_LIN_M2_NBR1_CH2|IO_4CH_LIN_M2_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_M2 n°1 channel 2
+IO_4CH_LIN_M2_NBR1_CH3|IO_4CH_LIN_M2_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_M2 n°1 channel 3
+IO_4CH_LIN_M2_NBR1_CH4|IO_4CH_LIN_M2_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_M2 n°1 channel 4
+IO_4CH_LIN_M2_B_NBR1_CH1|IO_4CH_LIN_M2_B_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_M2_B n°1 channel 1
+IO_4CH_LIN_M2_B_NBR1_CH2|IO_4CH_LIN_M2_B_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_M2_B n°1 channel 2
+IO_4CH_LIN_M2_B_NBR1_CH3|IO_4CH_LIN_M2_B_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_M2_B n°1 channel 3
+IO_4CH_LIN_M2_B_NBR1_CH4|IO_4CH_LIN_M2_B_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_M2_B n°1 channel 4
+IO_4CH_LIN_H_NBR1_CH1|IO_4CH_LIN_H_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_H n°1 channel 1
+IO_4CH_LIN_H_NBR1_CH2|IO_4CH_LIN_H_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_H n°1 channel 2
+IO_4CH_LIN_H_NBR1_CH3|IO_4CH_LIN_H_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_H n°1 channel 3
+IO_4CH_LIN_H_NBR1_CH4|IO_4CH_LIN_H_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_H n°1 channel 4
+IO_4CH_LIN_H_B_NBR1_CH1|IO_4CH_LIN_H_B_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_H_B n°1 channel 1
+IO_4CH_LIN_H_B_NBR1_CH2|IO_4CH_LIN_H_B_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_H_B n°1 channel 2
+IO_4CH_LIN_H_B_NBR1_CH3|IO_4CH_LIN_H_B_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_H_B n°1 channel 3
+IO_4CH_LIN_H_B_NBR1_CH4|IO_4CH_LIN_H_B_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_H_B n°1 channel 4
+IO_4CH_ROT_M_NBR1_CH1|IO_4CH_ROT_M_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_ROT_M n°1 channel 1
+IO_4CH_ROT_M_NBR1_CH2|IO_4CH_ROT_M_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_ROT_M n°1 channel 2
+IO_4CH_ROT_M_NBR1_CH3|IO_4CH_ROT_M_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_ROT_M n°1 channel 3
+IO_4CH_ROT_M_NBR1_CH4|IO_4CH_ROT_M_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_ROT_M n°1 channel 4
+IO_4CH_ROT_M_B_NBR1_CH1|IO_4CH_ROT_M_B_NBR1_CH1|Linear/Rotary sensors used||||4CH_LIN_ROT_M_B n°1 channel 1
+IO_4CH_ROT_M_B_NBR1_CH2|IO_4CH_ROT_M_B_NBR1_CH2|Linear/Rotary sensors used||||4CH_LIN_ROT_M_B n°1 channel 2
+IO_4CH_ROT_M_B_NBR1_CH3|IO_4CH_ROT_M_B_NBR1_CH3|Linear/Rotary sensors used||||4CH_LIN_ROT_M_B n°1 channel 3
+IO_4CH_ROT_M_B_NBR1_CH4|IO_4CH_ROT_M_B_NBR1_CH4|Linear/Rotary sensors used||||4CH_LIN_ROT_M_B n°1 channel 4
+IO_5CH_LIN_M1_NBR1_CH1|IO_5CH_LIN_M1_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_M1 n°1 channel 1
+IO_5CH_LIN_M1_NBR1_CH2|IO_5CH_LIN_M1_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_M1 n°1 channel 2
+IO_5CH_LIN_M1_NBR1_CH3|IO_5CH_LIN_M1_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_M1 n°1 channel 3
+IO_5CH_LIN_M1_NBR1_CH4|IO_5CH_LIN_M1_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_M1 n°1 channel 4
+IO_5CH_LIN_M1_NBR1_CH5|IO_5CH_LIN_M1_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_M1 n°1 channel 5
+IO_5CH_LIN_M1_B_NBR1_CH1|IO_5CH_LIN_M1_B_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_M1_B n°1 channel 1
+IO_5CH_LIN_M1_B_NBR1_CH2|IO_5CH_LIN_M1_B_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_M1_B n°1 channel 2
+IO_5CH_LIN_M1_B_NBR1_CH3|IO_5CH_LIN_M1_B_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_M1_B n°1 channel 3
+IO_5CH_LIN_M1_B_NBR1_CH4|IO_5CH_LIN_M1_B_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_M1_B n°1 channel 4
+IO_5CH_LIN_M1_B_NBR1_CH5|IO_5CH_LIN_M1_B_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_M1_B n°1 channel 5
+IO_5CH_LIN_M2_NBR1_CH1|IO_5CH_LIN_M2_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_M2 n°1 channel 1
+IO_5CH_LIN_M2_NBR1_CH2|IO_5CH_LIN_M2_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_M2 n°1 channel 2
+IO_5CH_LIN_M2_NBR1_CH3|IO_5CH_LIN_M2_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_M2 n°1 channel 3
+IO_5CH_LIN_M2_NBR1_CH4|IO_5CH_LIN_M2_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_M2 n°1 channel 4
+IO_5CH_LIN_M2_NBR1_CH5|IO_5CH_LIN_M2_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_M2 n°1 channel 5
+IO_5CH_LIN_M2_B_NBR1_CH1|IO_5CH_LIN_M2_B_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_M2_B n°1 channel 1
+IO_5CH_LIN_M2_B_NBR1_CH2|IO_5CH_LIN_M2_B_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_M2_B n°1 channel 2
+IO_5CH_LIN_M2_B_NBR1_CH3|IO_5CH_LIN_M2_B_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_M2_B n°1 channel 3
+IO_5CH_LIN_M2_B_NBR1_CH4|IO_5CH_LIN_M2_B_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_M2_B n°1 channel 4
+IO_5CH_LIN_M2_B_NBR1_CH5|IO_5CH_LIN_M2_B_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_M2_B n°1 channel 5
+IO_5CH_LIN_H_NBR1_CH1|IO_5CH_LIN_H_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_H n°1 channel 1
+IO_5CH_LIN_H_NBR1_CH2|IO_5CH_LIN_H_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_H n°1 channel 2
+IO_5CH_LIN_H_NBR1_CH3|IO_5CH_LIN_H_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_H n°1 channel 3
+IO_5CH_LIN_H_NBR1_CH4|IO_5CH_LIN_H_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_H n°1 channel 4
+IO_5CH_LIN_H_NBR1_CH5|IO_5CH_LIN_H_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_H n°1 channel 5
+IO_5CH_LIN_H_B_NBR1_CH1|IO_5CH_LIN_H_B_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_H_B n°1 channel 1
+IO_5CH_LIN_H_B_NBR1_CH2|IO_5CH_LIN_H_B_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_H_B n°1 channel 2
+IO_5CH_LIN_H_B_NBR1_CH3|IO_5CH_LIN_H_B_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_H_B n°1 channel 3
+IO_5CH_LIN_H_B_NBR1_CH4|IO_5CH_LIN_H_B_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_H_B n°1 channel 4
+IO_5CH_LIN_H_B_NBR1_CH5|IO_5CH_LIN_H_B_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_H_B n°1 channel 5
+IO_5CH_ROT_M_NBR1_CH1|IO_5CH_ROT_M_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_ROT_M n°1 channel 1
+IO_5CH_ROT_M_NBR1_CH2|IO_5CH_ROT_M_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_ROT_M n°1 channel 2
+IO_5CH_ROT_M_NBR1_CH3|IO_5CH_ROT_M_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_ROT_M n°1 channel 3
+IO_5CH_ROT_M_NBR1_CH4|IO_5CH_ROT_M_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_ROT_M n°1 channel 4
+IO_5CH_ROT_M_NBR1_CH5|IO_5CH_ROT_M_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_ROT_M n°1 channel 5
+IO_5CH_ROT_M_B_NBR1_CH1|IO_5CH_ROT_M_B_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_ROT_M_B n°1 channel 1
+IO_5CH_ROT_M_B_NBR1_CH2|IO_5CH_ROT_M_B_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_ROT_M_B n°1 channel 2
+IO_5CH_ROT_M_B_NBR1_CH3|IO_5CH_ROT_M_B_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_ROT_M_B n°1 channel 3
+IO_5CH_ROT_M_B_NBR1_CH4|IO_5CH_ROT_M_B_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_ROT_M_B n°1 channel 4
+IO_5CH_ROT_M_B_NBR1_CH5|IO_5CH_ROT_M_B_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_ROT_M_B n°1 channel 5
+IO_5CH_ROT_D_NBR1_CH1|IO_5CH_ROT_D_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_ROT_D n°1 channel 1
+IO_5CH_ROT_D_NBR1_CH2|IO_5CH_ROT_D_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_ROT_D n°1 channel 2
+IO_5CH_ROT_D_NBR1_CH3|IO_5CH_ROT_D_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_ROT_D n°1 channel 3
+IO_5CH_ROT_D_NBR1_CH4|IO_5CH_ROT_D_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_ROT_D n°1 channel 4
+IO_5CH_ROT_D_NBR1_CH5|IO_5CH_ROT_D_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_ROT_D n°1 channel 5
+IO_5CH_ROT_D_B_NBR1_CH1|IO_5CH_ROT_D_B_NBR1_CH1|Linear/Rotary sensors used||||5CH_LIN_ROT_D_M n°1 channel 1
+IO_5CH_ROT_D_B_NBR1_CH2|IO_5CH_ROT_D_B_NBR1_CH2|Linear/Rotary sensors used||||5CH_LIN_ROT_D_M n°1 channel 2
+IO_5CH_ROT_D_B_NBR1_CH3|IO_5CH_ROT_D_B_NBR1_CH3|Linear/Rotary sensors used||||5CH_LIN_ROT_D_M n°1 channel 3
+IO_5CH_ROT_D_B_NBR1_CH4|IO_5CH_ROT_D_B_NBR1_CH4|Linear/Rotary sensors used||||5CH_LIN_ROT_D_M n°1 channel 4
+IO_5CH_ROT_D_B_NBR1_CH5|IO_5CH_ROT_D_B_NBR1_CH5|Linear/Rotary sensors used||||5CH_LIN_ROT_D_M n°1 channel 5
+IO_6CH_LIN_M1_NBR1_CH1|IO_6CH_LIN_M1_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_M1 n°1 channel 1
+IO_6CH_LIN_M1_NBR1_CH2|IO_6CH_LIN_M1_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_M1 n°1 channel 2
+IO_6CH_LIN_M1_NBR1_CH3|IO_6CH_LIN_M1_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_M1 n°1 channel 3
+IO_6CH_LIN_M1_NBR1_CH4|IO_6CH_LIN_M1_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_M1 n°1 channel 4
+IO_6CH_LIN_M1_NBR1_CH5|IO_6CH_LIN_M1_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_M1 n°1 channel 5
+IO_6CH_LIN_M1_NBR1_CH6|IO_6CH_LIN_M1_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_M1 n°1 channel 6
+IO_6CH_LIN_M1_B_NBR1_CH1|IO_6CH_LIN_M1_B_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_M1_B n°1 channel 1
+IO_6CH_LIN_M1_B_NBR1_CH2|IO_6CH_LIN_M1_B_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_M1_B n°1 channel 2
+IO_6CH_LIN_M1_B_NBR1_CH3|IO_6CH_LIN_M1_B_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_M1_B n°1 channel 3
+IO_6CH_LIN_M1_B_NBR1_CH4|IO_6CH_LIN_M1_B_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_M1_B n°1 channel 4
+IO_6CH_LIN_M1_B_NBR1_CH5|IO_6CH_LIN_M1_B_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_M1_B n°1 channel 5
+IO_6CH_LIN_M1_B_NBR1_CH6|IO_6CH_LIN_M1_B_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_M1_B n°1 channel 6
+IO_6CH_LIN_M2_NBR1_CH1|IO_6CH_LIN_M2_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_M2 n°1 channel 1
+IO_6CH_LIN_M2_NBR1_CH2|IO_6CH_LIN_M2_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_M2 n°1 channel 2
+IO_6CH_LIN_M2_NBR1_CH3|IO_6CH_LIN_M2_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_M2 n°1 channel 3
+IO_6CH_LIN_M2_NBR1_CH4|IO_6CH_LIN_M2_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_M2 n°1 channel 4
+IO_6CH_LIN_M2_NBR1_CH5|IO_6CH_LIN_M2_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_M2 n°1 channel 5
+IO_6CH_LIN_M2_NBR1_CH6|IO_6CH_LIN_M2_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_M2 n°1 channel 6
+IO_6CH_LIN_M2_B_NBR1_CH1|IO_6CH_LIN_M2_B_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_M2_B n°1 channel 1
+IO_6CH_LIN_M2_B_NBR1_CH2|IO_6CH_LIN_M2_B_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_M2_B n°1 channel 2
+IO_6CH_LIN_M2_B_NBR1_CH3|IO_6CH_LIN_M2_B_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_M2_B n°1 channel 3
+IO_6CH_LIN_M2_B_NBR1_CH4|IO_6CH_LIN_M2_B_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_M2_B n°1 channel 4
+IO_6CH_LIN_M2_B_NBR1_CH5|IO_6CH_LIN_M2_B_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_M2_B n°1 channel 5
+IO_6CH_LIN_M2_B_NBR1_CH6|IO_6CH_LIN_M2_B_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_M2_B n°1 channel 6
+IO_6CH_LIN_H_NBR1_CH1|IO_6CH_LIN_H_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_H n°1 channel 1
+IO_6CH_LIN_H_NBR1_CH2|IO_6CH_LIN_H_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_H n°1 channel 2
+IO_6CH_LIN_H_NBR1_CH3|IO_6CH_LIN_H_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_H n°1 channel 3
+IO_6CH_LIN_H_NBR1_CH4|IO_6CH_LIN_H_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_H n°1 channel 4
+IO_6CH_LIN_H_NBR1_CH5|IO_6CH_LIN_H_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_H n°1 channel 5
+IO_6CH_LIN_H_NBR1_CH6|IO_6CH_LIN_H_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_H n°1 channel 6
+IO_6CH_LIN_H_B_NBR1_CH1|IO_6CH_LIN_H_B_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_H_B n°1 channel 1
+IO_6CH_LIN_H_B_NBR1_CH2|IO_6CH_LIN_H_B_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_H_B n°1 channel 2
+IO_6CH_LIN_H_B_NBR1_CH3|IO_6CH_LIN_H_B_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_H_B n°1 channel 3
+IO_6CH_LIN_H_B_NBR1_CH4|IO_6CH_LIN_H_B_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_H_B n°1 channel 4
+IO_6CH_LIN_H_B_NBR1_CH5|IO_6CH_LIN_H_B_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_H_B n°1 channel 5
+IO_6CH_LIN_H_B_NBR1_CH6|IO_6CH_LIN_H_B_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_H_B n°1 channel 6
+IO_6CH_ROT_M_NBR1_CH1|IO_6CH_ROT_M_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_ROT_M n°1 channel 1
+IO_6CH_ROT_M_NBR1_CH2|IO_6CH_ROT_M_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_ROT_M n°1 channel 2
+IO_6CH_ROT_M_NBR1_CH3|IO_6CH_ROT_M_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_ROT_M n°1 channel 3
+IO_6CH_ROT_M_NBR1_CH4|IO_6CH_ROT_M_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_ROT_M n°1 channel 4
+IO_6CH_ROT_M_NBR1_CH5|IO_6CH_ROT_M_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_ROT_M n°1 channel 5
+IO_6CH_ROT_M_NBR1_CH6|IO_6CH_ROT_M_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_ROT_M n°1 channel 6
+IO_6CH_ROT_M_B_NBR1_CH1|IO_6CH_ROT_M_B_NBR1_CH1|Linear/Rotary sensors used||||6CH_LIN_ROT_M_B n°1 channel 1
+IO_6CH_ROT_M_B_NBR1_CH2|IO_6CH_ROT_M_B_NBR1_CH2|Linear/Rotary sensors used||||6CH_LIN_ROT_M_B n°1 channel 2
+IO_6CH_ROT_M_B_NBR1_CH3|IO_6CH_ROT_M_B_NBR1_CH3|Linear/Rotary sensors used||||6CH_LIN_ROT_M_B n°1 channel 3
+IO_6CH_ROT_M_B_NBR1_CH4|IO_6CH_ROT_M_B_NBR1_CH4|Linear/Rotary sensors used||||6CH_LIN_ROT_M_B n°1 channel 4
+IO_6CH_ROT_M_B_NBR1_CH5|IO_6CH_ROT_M_B_NBR1_CH5|Linear/Rotary sensors used||||6CH_LIN_ROT_M_B n°1 channel 5
+IO_6CH_ROT_M_B_NBR1_CH6|IO_6CH_ROT_M_B_NBR1_CH6|Linear/Rotary sensors used||||6CH_LIN_ROT_M_B n°1 channel 6
+TSC_SHIELDIOs|TSC_SHIELDIOs|Summary||||USER INFORMATION: Refparameter defined by TSC IP
+TSC_SAMPLINGIOs|TSC_SAMPLINGIOs|Summary||||USER INFORMATION: Refparameter defined by TSC IP
+TSC_ACTIVE_SHIELDS|TSC_ACTIVE_SHIELDS|Summary||||USER INFORMATION: Total number of shields in application activated on TSC IP
+TSC_ACTIVE_SAMPLING|TSC_ACTIVE_SAMPLING|Summary||||USER INFORMATION: Total number of sampling in application activated on TSC IP
+TSLPRM_TOTAL_LINS|TSLPRM_TOTAL_LINS|Linear/Rotary sensors used||||Total number of "Extended" Linear and Rotary sensors in application Count also the 1-channel linear sensor used as TouchKey
+TSLPRM_TOTAL_ROTS|TSLPRM_TOTAL_ROTS|Linear/Rotary sensors used||||Total number of "Extended" Linear and Rotary sensors in application Count also the 1-channel linear sensor used as TouchKey
+TSLPRM_TOTAL_LINROTS|TSLPRM_TOTAL_LINROTS|Linear/Rotary sensors used||||Total number of "Extended" Linear and Rotary sensors in application Count also the 1-channel linear sensor used as TouchKey
+TSLPRM_TOTAL_LINS_B|TSLPRM_TOTAL_LINS_B|Linear/Rotary sensors used||||Total number of "Basic" Linear and Rotary sensors in application Count also the 1-channel linear sensor used as TouchKey
+TSLPRM_TOTAL_ROTS_B|TSLPRM_TOTAL_ROTS_B|Linear/Rotary sensors used||||Total number of "Basic" Linear and Rotary sensors in application Count also the 1-channel linear sensor used as TouchKey
+TSLPRM_TOTAL_LINROTS_B|TSLPRM_TOTAL_LINROTS_B|Linear/Rotary sensors used||||Total number of "Basic" Linear and Rotary sensors in application Count also the 1-channel linear sensor used as TouchKey
+TSLPRM_TOTAL_OBJECTS|TSLPRM_TOTAL_OBJECTS|Summary||1|24|Total number of sensors/objects in application Count all TouchKeys, Linear and Rotary sensors
+TSLPRM_TOTAL_3CH_LINROTS|TSLPRM_TOTAL_3CH_LINROTS|Summary||0|8|Total number of linrots 3CH
+TSLPRM_TOTAL_3CH_LINROTS_LIN_M1|TSLPRM_TOTAL_3CH_LINROTS_LIN_M1|Summary||0|8|Total number of lin M1 3CH
+TSLPRM_TOTAL_3CH_LINROTS_LIN_M2|TSLPRM_TOTAL_3CH_LINROTS_LIN_M2|Summary||0|8|Total number of lin M2 3CH
+TSLPRM_TOTAL_3CH_LINROTS_LIN_H|TSLPRM_TOTAL_3CH_LINROTS_LIN_H|Summary||0|8|Total number of lin H 3CH
+TSLPRM_TOTAL_3CH_LINROTS_ROT_M|TSLPRM_TOTAL_3CH_LINROTS_ROT_M|Summary||0|8|Total number of rot 3CH
+TSLPRM_TOTAL_4CH_LINROTS|TSLPRM_TOTAL_4CH_LINROTS|Summary||0|6|Total number of linrots 4CH
+TSLPRM_TOTAL_4CH_LINROTS_LIN_M1|TSLPRM_TOTAL_4CH_LINROTS_LIN_M1|Summary||0|6|Total number of lin M1 4CH
+TSLPRM_TOTAL_4CH_LINROTS_LIN_M2|TSLPRM_TOTAL_4CH_LINROTS_LIN_M2|Summary||0|6|Total number of lin M2 4CH
+TSLPRM_TOTAL_4CH_LINROTS_LIN_H|TSLPRM_TOTAL_4CH_LINROTS_LIN_H|Summary||0|6|Total number of lin H 4CH
+TSLPRM_TOTAL_4CH_LINROTS_ROT_M|TSLPRM_TOTAL_4CH_LINROTS_ROT_M|Summary||0|6|Total number of rot M 4CH
+TSLPRM_TOTAL_5CH_LINROTS|TSLPRM_TOTAL_5CH_LINROTS|Summary||0|4|Total number of linrots 5CH
+TSLPRM_TOTAL_5CH_LINROTS_LIN_M1|TSLPRM_TOTAL_5CH_LINROTS_LIN_M1|Summary||0|4|Total number of lin M1 5CH
+TSLPRM_TOTAL_5CH_LINROTS_LIN_M2|TSLPRM_TOTAL_5CH_LINROTS_LIN_M2|Summary||0|4|Total number of lin M2 5CH
+TSLPRM_TOTAL_5CH_LINROTS_LIN_H|TSLPRM_TOTAL_5CH_LINROTS_LIN_M2|Summary||0|4|Total number of lin H 5CH
+TSLPRM_TOTAL_5CH_LINROTS_ROT_M|TSLPRM_TOTAL_5CH_LINROTS_LIN_M2|Summary||0|4|Total number of rot M 5CH
+TSLPRM_TOTAL_5CH_LINROTS_ROT_D|TSLPRM_TOTAL_5CH_LINROTS_LIN_M2|Summary||0|4|Total number of rot D 5CH
+TSLPRM_TOTAL_6CH_LINROTS|TSLPRM_TOTAL_6CH_LINROTS|Summary||0|4|Total number of linrots 6CH
+TSLPRM_TOTAL_6CH_LINROTS_LIN_M1|TSLPRM_TOTAL_6CH_LINROTS_LIN_M1|Summary||0|4|Total number of lin M1 6CH
+TSLPRM_TOTAL_6CH_LINROTS_LIN_M2|TSLPRM_TOTAL_6CH_LINROTS_LIN_M2|Summary||0|4|Total number of lin M2 6CH
+TSLPRM_TOTAL_6CH_LINROTS_LIN_H|TSLPRM_TOTAL_6CH_LINROTS_LIN_H|Summary||0|4|Total number of lin H 6CH
+TSLPRM_TOTAL_6CH_LINROTS_ROT_M|TSLPRM_TOTAL_6CH_LINROTS_ROT_M|Summary||0|4|Total number of rot M 6CH
+TSC_CTPulseHighLength|TSC_CTPulseHighLength|Summary||||
+TSC_CTPulseLowLength|TSC_CTPulseLowLength|Summary||||
+TSC_SpreadSpectrum|TSC_SpreadSpectrum|Summary||||
+TSC_SpreadSpectrumDeviation|TSC_SpreadSpectrumDeviation|Summary||||
+TSC_SpreadSpectrumPrescaler|TSC_SpreadSpectrumPrescaler|Summary||||
+TSC_PulseGeneratorPrescaler|TSC_PulseGeneratorPrescaler|Summary||||
+TSC_MaxCountValue|TSC_MaxCountValue|Summary||||
+TSC_IODefaultMode|TSC_IODefaultMode|Summary||||
+TSC_SynchroPinPolarity|TSC_SynchroPinPolarity|Summary||||
+TSC_AcquisitionMode|TSC_AcquisitionMode|Summary||||
+TSC_MaxCountInterrupt|TSC_MaxCountInterrupt|Summary||||
+TSLPRM_USE_MEAS|TSLPRM_USE_MEAS|Optional features||0|1|Record the last measure (0=No, 1=Yes) If No the measure is recalculated using the Reference and Delta
+TSLPRM_USE_PROX|TSLPRM_USE_PROX|Optional features||0|1|Proximity detection usage (0=No, 1=Yes)
+TSLPRM_USE_ZONE|TSLPRM_USE_ZONE|Optional features||0|1|Zone management usage (0=No, 1=Yes)
+TSLPRM_ACQ_MIN|TSLPRM_ACQ_MIN|Acquisition limits||0|65535|Minimum acquisition measurement (range=0..65535) This is the minimum acceptable value for the acquisition measure. The acquisition will be in error IF the measure is below this value.
+TSLPRM_ACQ_MAX|TSLPRM_ACQ_MAX|Acquisition limits||0|65535|Maximum acquisition measurement (range=0...65535) This is the maximum acceptable value for the acquisition measure. The acquisition will be in error IF the measure is above this value.
+TSLPRM_CALIB_SAMPLES|TSLPRM_CALIB_SAMPLES|Calibration||Max=|Group=|Number of calibration samples (range=4, 8, 16) Low value = faster calibration but less precision. High value = slower calibration but more precision.
+TSLPRM_CALIB_DELAY|TSLPRM_CALIB_DELAY|Calibration||0|40|Delay in measurement samples before starting the calibration (range=0..40) - This is useful IF a noise filter is used. - Write 0 to disable the delay.
+TSLPRM_TKEY_PROX_IN_TH|TSLPRM_TKEY_PROX_IN_TH|Thresholds for TouchKey sensors||0|255|TouchKeys Proximity state input threshold (range=0..255) Enter Proximity state IF delta is above
+TSLPRM_TKEY_PROX_OUT_TH|TSLPRM_TKEY_PROX_OUT_TH|Thresholds for TouchKey sensors||0|255|TouchKeys Proximity state output threshold (range=0..255) Exit Proximity state IF delta is below
+TSLPRM_TKEY_DETECT_IN_TH|TSLPRM_TKEY_DETECT_IN_TH|Thresholds for TouchKey sensors||0|255|TouchKeys Detect state input threshold (range=0..255) Enter Detect state IF delta is above
+TSLPRM_TKEY_DETECT_OUT_TH|TSLPRM_TKEY_DETECT_OUT_TH|Thresholds for TouchKey sensors||0|255|TouchKeys Detect state output threshold (range=0..255) Exit Detect state IF delta is below
+TSLPRM_TKEY_CALIB_TH|TSLPRM_TKEY_CALIB_TH|Thresholds for TouchKey sensors||0|255|TouchKeys re-Calibration threshold (range=0..255) @warning The value is inverted in the sensor state machine Enter Calibration state IF delta is below
+TSLPRM_COEFF_TH|TSLPRM_COEFF_TH|Thresholds for TouchKey sensors||0|4|TouchKey, Linear and Rotary sensors thresholds coefficient (range=0..4) This multiplier coefficient is applied on Detect and Re-Calibration thresholds only. 0: feature disabled 1: thresholds x 2 2: thresholds x 4 3: thresholds x 8 4: thresholds x 16
+TSLPRM_LINROT_PROX_IN_TH|TSLPRM_LINROT_PROX_IN_TH|Thresholds for Linear and Rotary sensors||0|255|Linear/Rotary Proximity state input threshold (range=0..255) Enter Proximity state IF delta is above
+TSLPRM_LINROT_PROX_OUT_TH|TSLPRM_LINROT_PROX_OUT_TH|Thresholds for Linear and Rotary sensors||0|255|Linear/Rotary Proximity state output threshold (range=0..255) Exit Proximity state IF delta is below
+TSLPRM_LINROT_DETECT_IN_TH|TSLPRM_LINROT_DETECT_IN_TH|Thresholds for Linear and Rotary sensors||0|255|Linear/Rotary Detect state input threshold (range=0..255) Enter Detect state IF delta is above
+TSLPRM_LINROT_DETECT_OUT_TH|TSLPRM_LINROT_DETECT_OUT_TH|Thresholds for Linear and Rotary sensors||0|255|Linear/Rotary Detect state output threshold (range=0..255) Exit Detect state IF delta is below
+TSLPRM_LINROT_CALIB_TH|TSLPRM_LINROT_CALIB_TH|Thresholds for Linear and Rotary sensors||0|255|Linear/Rotary re-Calibration threshold (range=0..255) @warning The value is inverted in the sensor state machine Enter Calibration state IF delta is below A low absolute value will result in a higher sensitivity and thus some spurious, recalibration may be issued.
+TSLPRM_LINROT_USE_NORMDELTA|TSLPRM_LINROT_USE_NORMDELTA|Thresholds for Linear and Rotary sensors||0|1|Linear/Rotary Delta normalization (0=No, 1=Yes) - When this parameter is set, a coefficient is applied on all Delta of all sensors in order to normalize them and to improve the position calculation. - These coefficients must be defined in a constant table in the application (see Library examples). - The MSB is the coefficient integer part, the LSB is the coefficient real part. - Examples: - To apply a factor 1.10: 0x01 to the MSB 0x1A to the LSB (0.10 x 256 = 25.6 -> rounded to 26 = 0x1A) - To apply a factor 0.90: 0x00 to the MSB 0xE6 to the LSB (0.90 x 256 = 230.4 -> rounded to 230 = 0xE6) - To apply no factor: 0x01 to the MSB 0x00 to the LSB
+TSLPRM_LINROT_RESOLUTION|TSLPRM_LINROT_RESOLUTION|Linear/Rotary sensors position||1|8|Position resolution in number of bits (range=1..8) - A Low value will result in a low resolution and will be less subject to noise. - A High value will result in a high resolution and will be more subject to noise.
+TSLPRM_LINROT_DIR_CHG_POS|TSLPRM_LINROT_DIR_CHG_POS|Linear/Rotary sensors position||0|255|Direction change threshold in position unit (range=0..255) - Defines the default threshold used during the change direction process. - A Low value will result in a faster direction change. - A High value will result in a slower direction change.
+TSLPRM_LINROT_DIR_CHG_DEB|TSLPRM_LINROT_DIR_CHG_DEB|Linear/Rotary sensors position||0|63|Direction change debounce (range=0..63) - Defines the default integrator counter used during the change direction process. - This counter is decremented when the same change in the position is detected and the direction will change after this counter reaches zero. - A Low value will result in a faster direction change. - A High value will result in a slower direction change.
+TSLPRM_DEBOUNCE_PROX|TSLPRM_DEBOUNCE_PROX|Debounce counters||0|63|Proximity state debounce in samples unit (range=0..63) - A Low value will result in a higher sensitivity during the Proximity detection but with less noise filtering. - A High value will result in improving the system noise immunity but will increase the system response time.
+TSLPRM_DEBOUNCE_DETECT|TSLPRM_DEBOUNCE_DETECT|Debounce counters||0|63|Detect state debounce in samples unit (range=0..63) - A Low value will result in a higher sensitivity during the detection but with less noise filtering. - A High value will result in improving the system noise immunity but will increase the system response time.
+TSLPRM_DEBOUNCE_RELEASE|TSLPRM_DEBOUNCE_RELEASE|Debounce counters||0|63|Release state debounce in samples unit (range=0..63) - A Low value will result in a higher sensitivity during the end-detection but with less noise filtering. - A High value will result in a lower sensitivity during the end-detection but with more noise filtering.
+TSLPRM_DEBOUNCE_CALIB|TSLPRM_DEBOUNCE_CALIB|Debounce counters||0|63|Re-calibration state debounce in samples unit (range=0..63) - A Low value will result in a higher sensitivity during the recalibration but with less noise filtering. - A High value will result in a lower sensitivity during the recalibration but with more noise filtering.
+TSLPRM_DEBOUNCE_ERROR|TSLPRM_DEBOUNCE_ERROR|Debounce counters||0|63|Error state debounce in samples unit (range=0..63) - A Low value will result in a higher sensitivity to enter in error state. - A High value will result in a lower sensitivity to enter in error state.
+TSLPRM_ECS_K_SLOW|TSLPRM_ECS_K_SLOW|Environment Change System (ECS)||0|255|Environment Change System Slow K factor (range=0..255) - The higher value is K, the faster is the response time.
+TSLPRM_ECS_K_FAST|TSLPRM_ECS_K_FAST|Environment Change System (ECS)||0|255|Environment Change System Fast K factor (range=0..255) - The higher value is K, the faster is the response time.
+TSLPRM_ECS_DELAY|TSLPRM_ECS_DELAY|Environment Change System (ECS)||0|5000|Environment Change System delay in msec (range=0..5000) - The ECS will be started after this delay and when all sensors are in Release state.
+TSLPRM_DTO|TSLPRM_DTO|Detection Time Out (DTO)||0|63|Detection Time Out delay in seconds (range=0..63) - Value 0: DTO processing not compiled in the code (to gain size IF not used). - Value 1: Default time out infinite. - Value between 2 and 63: Default time out between value n-1 and n. - Examples: - With a DTO equal to 2, the time out is between 1s and 2s. - With a DTO equal to 63, the time out is between 62s and 63s. @note The DTO can be changed in run-time by the application only IF the default value is between 1 and 63.
+TSLPRM_USE_DXS|TSLPRM_USE_DXS|Detection Exclusion System (DXS)||0|1|Detection Exclusion System (0=No, 1=Yes)
+TSLPRM_TICK_FREQ|TSLPRM_TICK_FREQ|Miscellaneous parameters||||Timing tick frequency in Hz (range=125, 250, 500, 1000, 2000) - Result to a timing interrupt respectively every 8ms, 4ms, 2ms, 1ms, 0.5ms
+TSLPRM_DELAY_DISCHARGE_ALL|TSLPRM_DELAY_DISCHARGE_ALL|Miscellaneous parameters||0|65535|Delay for discharging Cx and Cs capacitors (range=0..65535) - The value corresponds to the Softdelay function parameter. - 500 gives around 63 µs delay whatever HCLK - 1000 gives around 125 µs delay whatever HCLK - 2000 gives around 250 µs delay whatever HCLK
+TSLPRM_IODEF|TSLPRM_IODEF|Miscellaneous parameters||0|1|IOs default mode when no on-going acquisition (range=0..1) - 0: Output push-pull low - 1: Input floating @note To ensure a correct operation in noisy environment, this parameter should be configured to output push-pull low (excepted for Linear sensors).
+TSLPRM_USE_SHIELD|TSLPRM_USE_SHIELD|MCU parameters||0|1|Shield with a channel (0=No, 1=Yes)
+TSLPRM_CT_PERIOD|TSLPRM_CT_PERIOD|MCU parameters||0||Charge/transfer Period (in µs) (= high pulse + low pulse) @note For HW acquisition only
+TSLPRM_TIMER_FREQ|TSLPRM_TIMER_FREQ|MCU parameters||0||Timer frequency (in MHz) - This is used to calculate the Timer reload value. @note For HW acquisition only
+TSLPRM_DELAY_TRANSFER|TSLPRM_DELAY_TRANSFER|MCU parameters||0|65535|Delay for transfering charges from Cx to Cs capacitor and then discharge Cx (range=0..65535) - 0: no delay (it takes about 2.8µs for a CT cycle) - (1..65535): delay (in µs) = 0.75 * TSLPRM_DELAY_TRANSFER + 1 @note for SW acquisition only
+TSLPRM_USE_SPREAD_SPECTRUM|TSLPRM_USE_SPREAD_SPECTRUM|MCU parameters||0|1|Use Spread Spectrum (0=No, 1=Yes) @note for SW acquisition only
+TSLPRM_SPREAD_MIN|TSLPRM_SPREAD_MIN|MCU parameters||0|=(TSLPRM_SPREAD_MAX-1)|Spread min value (range=0..(TSLPRM_SPREAD_MAX-1)) @note for SW acquisition only
+TSLPRM_SPREAD_MAX|TSLPRM_SPREAD_MAX|MCU parameters||2|255|Spread max value (range=2..255) @note for SW acquisition only
+TSLPRM_PROTECT_IO_ACCESS|TSLPRM_PROTECT_IO_ACCESS|MCU parameters||0|1|IT disabling for IO protection (range=0..1) - 0: IO not protected - 1: IO protected @note for SW acquisition only
+TSLPRM_USE_GPIOA|TSLPRM_USE_GPIOA|MCU parameters||0|1|GPIO to be used (range=0..1) - 0: Not used - 1: Used @note for SW acquisition only
+TSLPRM_USE_GPIOB|TSLPRM_USE_GPIOB|MCU parameters||0|1|GPIO to be used (range=0..1) - 0: Not used - 1: Used @note for SW acquisition only
+TSLPRM_USE_GPIOC|TSLPRM_USE_GPIOC|MCU parameters||0|1|GPIO to be used (range=0..1) - 0: Not used - 1: Used @note for SW acquisition only
+TSLPRM_USE_GPIOF|TSLPRM_USE_GPIOF|MCU parameters||0|1|GPIO to be used (range=0..1) - 0: Not used - 1: Used @note for SW acquisition only
+TSLPRM_USE_GPIOG|TSLPRM_USE_GPIOG|MCU parameters||0|1|GPIO to be used (range=0..1) - 0: Not used - 1: Used @note for SW acquisition only
+G1_IO1-Channel|Channel_GROUP1_IO1|TSC Settings||||
+G1_IO2-Channel|Channel_GROUP1_IO2|TSC Settings||||
+G1_IO-Channel2|Channel_GROUP1_IO2|TSC Settings||||
+G1_IO3-Channel|Channel_GROUP1_IO3|TSC Settings||||
+G1_IO4-Channel|Channel_GROUP1_IO4|TSC Settings||||
+G2_IO1-Channel|Channel_GROUP2_IO1|TSC Settings||||
+G2_IO2-Channel|Channel_GROUP2_IO2|TSC Settings||||
+G2_IO-Channel2|Channel_GROUP2_IO2|TSC Settings||||
+G2_IO3-Channel|Channel_GROUP2_IO3|TSC Settings||||
+G2_IO4-Channel|Channel_GROUP2_IO4|TSC Settings||||
+G3_IO1-Channel|Channel_GROUP3_IO1|TSC Settings||||
+G3_IO2-Channel|Channel_GROUP3_IO2|TSC Settings||||
+G3_IO-Channel2|Channel_GROUP3_IO2|TSC Settings||||
+G3_IO3-Channel|Channel_GROUP3_IO3|TSC Settings||||
+G3_IO4-Channel|Channel_GROUP3_IO4|TSC Settings||||
+G4_IO1-Channel|Channel_GROUP4_IO1|TSC Settings||||
+G4_IO2-Channel|Channel_GROUP4_IO2|TSC Settings||||
+G4_IO-Channel2|Channel_GROUP4_IO2|TSC Settings||||
+G4_IO3-Channel|Channel_GROUP4_IO3|TSC Settings||||
+G4_IO4-Channel|Channel_GROUP4_IO4|TSC Settings||||
+G5_IO1-Channel|Channel_GROUP5_IO1|TSC Settings||||
+G5_IO2-Channel|Channel_GROUP5_IO2|TSC Settings||||
+G5_IO-Channel2|Channel_GROUP5_IO2|TSC Settings||||
+G5_IO3-Channel|Channel_GROUP5_IO3|TSC Settings||||
+G5_IO4-Channel|Channel_GROUP5_IO4|TSC Settings||||
+G6_IO1-Channel|Channel_GROUP6_IO1|TSC Settings||||
+G6_IO2-Channel|Channel_GROUP6_IO2|TSC Settings||||
+G6_IO-Channel2|Channel_GROUP6_IO2|TSC Settings||||
+G6_IO3-Channel|Channel_GROUP6_IO3|TSC Settings||||
+G6_IO4-Channel|Channel_GROUP6_IO4|TSC Settings||||
+G7_IO1-Channel|Channel_GROUP7_IO1|TSC Settings||||
+G7_IO2-Channel|Channel_GROUP7_IO2|TSC Settings||||
+G7_IO-Channel2|Channel_GROUP7_IO2|TSC Settings||||
+G7_IO3-Channel|Channel_GROUP7_IO3|TSC Settings||||
+G7_IO4-Channel|Channel_GROUP7_IO4|TSC Settings||||
+G8_IO1-Channel|Channel_GROUP8_IO1|TSC Settings||||
+G8_IO2-Channel|Channel_GROUP8_IO2|TSC Settings||||
+G8_IO-Channel2|Channel_GROUP8_IO2|TSC Settings||||
+G8_IO3-Channel|Channel_GROUP8_IO3|TSC Settings||||
+G8_IO4-Channel|Channel_GROUP8_IO4|TSC Settings||||
+G9_IO1-Channel|Channel_GROUP9_IO1|TSC Settings||||
+G9_IO2-Channel|Channel_GROUP9_IO2|TSC Settings||||
+G9_IO-Channel2|Channel_GROUP9_IO2|TSC Settings||||
+G9_IO3-Channel|Channel_GROUP9_IO3|TSC Settings||||
+G9_IO4-Channel|Channel_GROUP9_IO4|TSC Settings||||
+G10_IO1-Channel|Channel_GROUP10_IO1|TSC Settings||||
+G10_IO2-Channel|Channel_GROUP10_IO2|TSC Settings||||
+G10_IO-Channel2|Channel_GROUP10_IO2|TSC Settings||||
+G10_IO3-Channel|Channel_GROUP10_IO3|TSC Settings||||
+G10_IO4-Channel|Channel_GROUP10_IO4|TSC Settings||||
+G11_IO1-Channel|Channel_GROUP11_IO1|TSC Settings||||
+G11_IO2-Channel|Channel_GROUP11_IO2|TSC Settings||||
+G11_IO-Channel|Channel_GROUP11_IO2|TSC Settings||||
+G11_IO3-Channel|Channel_GROUP11_IO3|TSC Settings||||
+G11_IO4-Channel|Channel_GROUP11_IO4|TSC Settings||||
+G1_IO1-Sampling|Sampling_GROUP1_IO1|TSC Settings||||
+G1_IO2-Sampling|Sampling_GROUP1_IO2|TSC Settings||||
+G1_IO3-Sampling|Sampling_GROUP1_IO3|TSC Settings||||
+G1_IO4-Sampling|Sampling_GROUP1_IO4|TSC Settings||||
+G2_IO1-Sampling|Sampling_GROUP2_IO1|TSC Settings||||
+G2_IO2-Sampling|Sampling_GROUP2_IO2|TSC Settings||||
+G2_IO3-Sampling|Sampling_GROUP2_IO3|TSC Settings||||
+G2_IO4-Sampling|Sampling_GROUP2_IO4|TSC Settings||||
+G3_IO1-Sampling|Sampling_GROUP3_IO1|TSC Settings||||
+G3_IO2-Sampling|Sampling_GROUP3_IO2|TSC Settings||||
+G3_IO3-Sampling|Sampling_GROUP3_IO3|TSC Settings||||
+G3_IO4-Sampling|Sampling_GROUP3_IO4|TSC Settings||||
+G4_IO1-Sampling|Sampling_GROUP4_IO1|TSC Settings||||
+G4_IO2-Sampling|Sampling_GROUP4_IO2|TSC Settings||||
+G4_IO3-Sampling|Sampling_GROUP4_IO3|TSC Settings||||
+G4_IO4-Sampling|Sampling_GROUP4_IO4|TSC Settings||||
+G5_IO1-Sampling|Sampling_GROUP5_IO1|TSC Settings||||
+G5_IO2-Sampling|Sampling_GROUP5_IO2|TSC Settings||||
+G5_IO3-Sampling|Sampling_GROUP5_IO3|TSC Settings||||
+G5_IO4-Sampling|Sampling_GROUP5_IO4|TSC Settings||||
+G6_IO1-Sampling|Sampling_GROUP6_IO1|TSC Settings||||
+G6_IO2-Sampling|Sampling_GROUP6_IO2|TSC Settings||||
+G6_IO3-Sampling|Sampling_GROUP6_IO3|TSC Settings||||
+G6_IO4-Sampling|Sampling_GROUP6_IO4|TSC Settings||||
+G7_IO1-Sampling|Sampling_GROUP7_IO1|TSC Settings||||
+G7_IO2-Sampling|Sampling_GROUP7_IO2|TSC Settings||||
+G7_IO3-Sampling|Sampling_GROUP7_IO3|TSC Settings||||
+G7_IO4-Sampling|Sampling_GROUP7_IO4|TSC Settings||||
+G8_IO1-Sampling|Sampling_GROUP8_IO1|TSC Settings||||
+G8_IO2-Sampling|Sampling_GROUP8_IO2|TSC Settings||||
+G8_IO3-Sampling|Sampling_GROUP8_IO3|TSC Settings||||
+G8_IO4-Sampling|Sampling_GROUP8_IO4|TSC Settings||||
+G9_IO1-Sampling|Sampling_GROUP9_IO1|TSC Settings||||
+G9_IO2-Sampling|Sampling_GROUP9_IO2|TSC Settings||||
+G9_IO3-Sampling|Sampling_GROUP9_IO3|TSC Settings||||
+G9_IO4-Sampling|Sampling_GROUP9_IO4|TSC Settings||||
+G10_IO1-Sampling|Sampling_GROUP10_IO1|TSC Settings||||
+G10_IO2-Sampling|Sampling_GROUP10_IO2|TSC Settings||||
+G10_IO3-Sampling|Sampling_GROUP10_IO3|TSC Settings||||
+G10_IO4-Sampling|Sampling_GROUP10_IO4|TSC Settings||||
+G11_IO1-Sampling|Sampling_GROUP11_IO1|TSC Settings||||
+G11_IO2-Sampling|Sampling_GROUP11_IO2|TSC Settings||||
+G11_IO3-Sampling|Sampling_GROUP11_IO3|TSC Settings||||
+G11_IO4-Sampling|Sampling_GROUP11_IO4|TSC Settings||||
+TSLPRM_SENSORS_DATAS||Sensors selection||||"N/A"
+
+[Values]
+# параметр|значение|подпись
+G1_IO1-Channel|TSC_GROUP1_IO1|tbd
+G1_IO2-Channel|TSC_GROUP1_IO2|tbd
+G1_IO3-Channel|TSC_GROUP1_IO3|tbd
+G1_IO4-Channel|TSC_GROUP1_IO4|tbd
+G2_IO1-Channel|TSC_GROUP2_IO1|tbd
+G2_IO2-Channel|TSC_GROUP2_IO2|tbd
+G2_IO3-Channel|TSC_GROUP2_IO3|tbd
+G2_IO4-Channel|TSC_GROUP2_IO4|tbd
+G3_IO1-Channel|TSC_GROUP3_IO1|tbd
+G3_IO2-Channel|TSC_GROUP3_IO2|tbd
+G3_IO3-Channel|TSC_GROUP3_IO3|tbd
+G3_IO4-Channel|TSC_GROUP3_IO4|tbd
+G4_IO1-Channel|TSC_GROUP4_IO1|tbd
+G4_IO2-Channel|TSC_GROUP4_IO2|tbd
+G4_IO3-Channel|TSC_GROUP4_IO3|tbd
+G4_IO4-Channel|TSC_GROUP4_IO4|tbd
+G5_IO1-Channel|TSC_GROUP5_IO1|tbd
+G5_IO2-Channel|TSC_GROUP5_IO2|tbd
+G5_IO3-Channel|TSC_GROUP5_IO3|tbd
+G5_IO4-Channel|TSC_GROUP5_IO4|tbd
+G6_IO1-Channel|TSC_GROUP6_IO1|tbd
+G6_IO2-Channel|TSC_GROUP6_IO2|tbd
+G6_IO3-Channel|TSC_GROUP6_IO3|tbd
+G6_IO4-Channel|TSC_GROUP6_IO4|tbd
+G7_IO1-Channel|TSC_GROUP7_IO1|tbd
+G7_IO2-Channel|TSC_GROUP7_IO2|tbd
+G7_IO3-Channel|TSC_GROUP7_IO3|tbd
+G7_IO4-Channel|TSC_GROUP7_IO4|tbd
+G8_IO1-Channel|TSC_GROUP8_IO1|tbd
+G8_IO2-Channel|TSC_GROUP8_IO2|tbd
+G8_IO3-Channel|TSC_GROUP8_IO3|tbd
+G8_IO4-Channel|TSC_GROUP8_IO4|tbd
+G9_IO1-Channel|TSC_GROUP9_IO1|tbd
+G9_IO2-Channel|TSC_GROUP9_IO2|tbd
+G9_IO3-Channel|TSC_GROUP9_IO3|tbd
+G9_IO4-Channel|TSC_GROUP9_IO4|tbd
+G10_IO1-Channel|TSC_GROUP10_IO1|tbd
+G10_IO2-Channel|TSC_GROUP10_IO2|tbd
+G10_IO3-Channel|TSC_GROUP10_IO3|tbd
+G10_IO4-Channel|TSC_GROUP10_IO4|tbd
+G11_IO1-Channel|TSC_GROUP11_IO1|tbd
+G11_IO2-Channel|TSC_GROUP11_IO2|tbd
+G11_IO3-Channel|TSC_GROUP11_IO3|tbd
+G11_IO4-Channel|TSC_GROUP11_IO4|tbd
+G1_IO1-Sampling|TSC_GROUP1_IO1|tbd
+G1_IO2-Sampling|TSC_GROUP1_IO2|tbd
+G1_IO3-Sampling|TSC_GROUP1_IO3|tbd
+G1_IO4-Sampling|TSC_GROUP1_IO4|tbd
+G2_IO1-Sampling|TSC_GROUP2_IO1|tbd
+G2_IO2-Sampling|TSC_GROUP2_IO2|tbd
+G2_IO3-Sampling|TSC_GROUP2_IO3|tbd
+G2_IO4-Sampling|TSC_GROUP2_IO4|tbd
+G3_IO1-Sampling|TSC_GROUP3_IO1|tbd
+G3_IO2-Sampling|TSC_GROUP3_IO2|tbd
+G3_IO3-Sampling|TSC_GROUP3_IO3|tbd
+G3_IO4-Sampling|TSC_GROUP3_IO4|tbd
+G4_IO1-Sampling|TSC_GROUP4_IO1|tbd
+G4_IO2-Sampling|TSC_GROUP4_IO2|tbd
+G4_IO3-Sampling|TSC_GROUP4_IO3|tbd
+G4_IO4-Sampling|TSC_GROUP4_IO4|tbd
+G5_IO1-Sampling|TSC_GROUP5_IO1|tbd
+G5_IO2-Sampling|TSC_GROUP5_IO2|tbd
+G5_IO3-Sampling|TSC_GROUP5_IO3|tbd
+G5_IO4-Sampling|TSC_GROUP5_IO4|tbd
+G6_IO1-Sampling|TSC_GROUP6_IO1|tbd
+G6_IO2-Sampling|TSC_GROUP6_IO2|tbd
+G6_IO3-Sampling|TSC_GROUP6_IO3|tbd
+G6_IO4-Sampling|TSC_GROUP6_IO4|tbd
+G7_IO1-Sampling|TSC_GROUP7_IO1|tbd
+G7_IO2-Sampling|TSC_GROUP7_IO2|tbd
+G7_IO3-Sampling|TSC_GROUP7_IO3|tbd
+G7_IO4-Sampling|TSC_GROUP7_IO4|tbd
+G8_IO1-Sampling|TSC_GROUP8_IO1|tbd
+G8_IO2-Sampling|TSC_GROUP8_IO2|tbd
+G8_IO3-Sampling|TSC_GROUP8_IO3|tbd
+G8_IO4-Sampling|TSC_GROUP8_IO4|tbd
+G9_IO1-Sampling|TSC_GROUP9_IO1|tbd
+G9_IO2-Sampling|TSC_GROUP9_IO2|tbd
+G9_IO3-Sampling|TSC_GROUP9_IO3|tbd
+G9_IO4-Sampling|TSC_GROUP9_IO4|tbd
+G10_IO1-Sampling|TSC_GROUP10_IO1|tbd
+G10_IO2-Sampling|TSC_GROUP10_IO2|tbd
+G10_IO3-Sampling|TSC_GROUP10_IO3|tbd
+G10_IO4-Sampling|TSC_GROUP10_IO4|tbd
+G11_IO1-Sampling|TSC_GROUP11_IO1|tbd
+G11_IO2-Sampling|TSC_GROUP11_IO2|tbd
+G11_IO3-Sampling|TSC_GROUP11_IO3|tbd
+G11_IO4-Sampling|TSC_GROUP11_IO4|tbd

@@ -1,0 +1,30 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USB_OTG_HS1
+Version=v1.0.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Host_channels|Host Channels|Internal_Phy_Host||1|16|
+speed|Speed_Host|Internal_Phy_Host||||
+dma_enable|Enable internal IP DMA Host|Internal_Phy_Host||||
+use_external_vbus|Use external vbus|Internal_Phy_Host||||
+Sof_enable|Signal start of frame|Internal_Phy||||
+RefClockSelection|Ref Clock Selection|Internal_Phy_Host||||
+phy_itface|Physical interface|||||
+
+[Values]
+# параметр|значение|подпись
+speed|HCD_SPEED_HIGH|High Speed 480MBit/s
+speed|HCD_SPEED_FULL|Host Full Speed 12MBit/s
+speed|HCD_SPEED_LOW|Host Low Speed 1.5MBit/s
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_1|16 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_2|19.2 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_3|20 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_4|24 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_5|26 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_6|32 Mhz
+phy_itface|USB_OTG_ULPI_PHY|External Phy
+phy_itface|USB_OTG_EMBEDDED_PHY|Internal Phy
+phy_itface|USB_OTG_HS_EMBEDDED_PHY|Internal HS Phy

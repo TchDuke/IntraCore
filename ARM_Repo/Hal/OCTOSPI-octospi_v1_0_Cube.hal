@@ -1,0 +1,150 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=OCTOSPI
+Version=octospi_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockPrescaler|Clock Prescaler|Generic||1|256|
+FifoThreshold|Fifo Threshold|Generic||1|32|
+DualQuad|Dual Mode|Generic||||
+MemoryType|Memory Type|Generic||||
+DeviceSize|Device Size|Generic||1|32|
+SampleShifting|Sample Shifting|Generic||||
+ChipSelectHighTime|Chip Select High Time|Generic||1|8|
+FreeRunningClock|Free Running Clock|Generic||||
+ClockMode|Clock Mode|Generic||||
+DelayHoldQuarterCycle|Delay Hold Quarter Cycle|Generic||||
+ChipSelectBoundary|Chip Select Boundary|Generic||0|31|
+DelayBlockBypass|Delay Block|Generic||||
+MaxTran|Maximum Transfer|Generic||0|255|
+Refresh|Refresh Rate|Generic||0|0xFFFFFFFF|
+TimeOutActivation|Time Out Activation|Operation Type||||
+TimeOutPeriod|Time Out Period|Operation Type||1|4294967295|
+Match|Match Value|Operation Type||0|4294967295|
+Mask|Mask Value|Operation Type||0|4294967295|
+MatchMode|MatchMode Parameter|Operation Type||||
+AutomaticStop|Automatic Stop Value|Operation Type||||
+Interval|Interval Value|Operation Type||0|65535|
+OperationType|operating type|Operation Type||||
+RWRecoveryTime|RW Recovery Time|Hyperbus(TM)||0|255|
+AccessTime|Access Time|Hyperbus(TM)||0|255|
+WriteZeroLatency|Write Zero Latency|Hyperbus(TM)||||
+LatencyMode|Latency Mode|Hyperbus(TM)||||
+Req2AckTime|Switching Duration Clock Number|Multiplexed||1|256|
+FlashId|Flash Id|Regular Command||||
+Instruction|Instruction|Regular Command||0|4294967295|
+InstructionMode|Instruction Mode|Regular Command||||
+InstructionSize|Instruction Size|Regular Command||||
+InstructionDtrMode|Instruction Dtr Mode|Regular Command||||
+Address|Address|Regular Command||0|4294967295|
+AddressMode|Address Mode|Regular Command||||
+AddressSize|Address Size|Regular Command||||
+AddressDtrMode|Address Dtr Mode|Regular Command||||
+AlternateBytes|Alternate Bytes|Regular Command||0|4294967295|
+AlternateBytesMode|Alternate Bytes Mode|Regular Command||||
+AlternateBytesSize|Alternate Bytes Size|Regular Command||||
+AlternateBytesDtrMode|Alternate Bytes Dtr Mode|Regular Command||||
+DataMode|Data Mode|Regular Command||||
+NbData|Data Number|Regular Command||1|4294967295|
+DataDtrMode|Data Dtr Mode|Regular Command||||
+DummyCycles|Dummy Cycles|Regular Command||0|31|
+DQSMode|DQS Mode|Regular Command||||
+SIOOMode|SIOO Mode|Regular Command||||
+AddressSpace|Address Space|Regular Command||||
+ClkPort|Clk Port|||1|1|
+DQSPort|DQS Port|||1|1|
+NCSPort|NCS Port|||1|1|
+IOHighPort|Io High port|||||
+IOLowPort|Io High port|||||
+Timeout|Timeout|||||
+
+[Values]
+# параметр|значение|подпись
+DualQuad|HAL_OSPI_DUALQUAD_ENABLE|Enable
+DualQuad|HAL_OSPI_DUALQUAD_DISABLE|Disable
+MemoryType|HAL_OSPI_MEMTYPE_MICRON|Micron
+MemoryType|HAL_OSPI_MEMTYPE_MACRONIX|Macronix
+MemoryType|HAL_OSPI_MEMTYPE_APMEMORY|AP Memory
+MemoryType|HAL_OSPI_MEMTYPE_MACRONIX_RAM|Macronix RAM
+MemoryType|HAL_OSPI_MEMTYPE_HYPERBUS|HyperBus(TM)
+SampleShifting|HAL_OSPI_SAMPLE_SHIFTING_NONE|No Sample Shifting
+SampleShifting|HAL_OSPI_SAMPLE_SHIFTING_HALFCYCLE|Sample Shifting Half Cycle
+FreeRunningClock|HAL_OSPI_FREERUNCLK_DISABLE|Disable
+FreeRunningClock|HAL_OSPI_FREERUNCLK_ENABLE|Enable
+ClockMode|HAL_OSPI_CLOCK_MODE_0|Low
+ClockMode|HAL_OSPI_CLOCK_MODE_3|High
+DelayHoldQuarterCycle|HAL_OSPI_DHQC_DISABLE|Disable
+DelayHoldQuarterCycle|HAL_OSPI_DHQC_ENABLE|Enable
+DelayBlockBypass|HAL_OSPI_DELAY_BLOCK_BYPASSED|Disable
+DelayBlockBypass|HAL_OSPI_DELAY_BLOCK_USED|Enable
+TimeOutActivation|HAL_OSPI_TIMEOUT_COUNTER_DISABLE|Disable
+TimeOutActivation|HAL_OSPI_TIMEOUT_COUNTER_ENABLE|Enable
+MatchMode|HAL_OSPI_MATCH_MODE_AND|AND match mode
+MatchMode|HAL_OSPI_MATCH_MODE_OR|OR match mode
+AutomaticStop|HAL_OSPI_AUTOMATIC_STOP_DISABLE|Disable
+AutomaticStop|HAL_OSPI_AUTOMATIC_STOP_ENABLE|Enable
+OperationType|HAL_OSPI_OPTYPE_COMMON_CFG|auto-polling mode
+OperationType|HAL_OSPI_OPTYPE_READ_CFG|memory-mapped mode (Read)
+OperationType|HAL_OSPI_OPTYPE_WRITE_CFG|memory-mapped mode (Write)
+WriteZeroLatency|HAL_OSPI_NO_LATENCY_ON_WRITE|Disable
+WriteZeroLatency|HAL_OSPI_LATENCY_ON_WRITE|Enable
+LatencyMode|HAL_OSPI_VARIABLE_LATENCY|Variable
+LatencyMode|HAL_OSPI_FIXED_LATENCY|Fixed
+FlashId|HAL_OSPI_FLASH_ID_1|Flash Id 1
+FlashId|HAL_OSPI_FLASH_ID_2|Flash Id 2
+InstructionMode|HAL_OSPI_INSTRUCTION_NONE|Instruction None
+InstructionMode|HAL_OSPI_INSTRUCTION_1_LINE|Instruction 1 line
+InstructionMode|HAL_OSPI_INSTRUCTION_2_LINES|Instruction 2 line
+InstructionMode|HAL_OSPI_INSTRUCTION_4_LINES|Instruction 4 line
+InstructionMode|HAL_OSPI_INSTRUCTION_8_LINES|Instruction 8 line
+InstructionSize|HAL_OSPI_INSTRUCTION_8_BITS|Instruction 8 bits
+InstructionSize|HAL_OSPI_INSTRUCTION_16_BITS|Instruction 16 bits
+InstructionSize|HAL_OSPI_INSTRUCTION_24_BITS|Instruction 24 bits
+InstructionSize|HAL_OSPI_INSTRUCTION_32_BITS|Instruction 32 bits
+InstructionDtrMode|HAL_OSPI_INSTRUCTION_DTR_DISABLE|Disable
+InstructionDtrMode|HAL_OSPI_INSTRUCTION_DTR_ENABLE|Enable
+AddressMode|HAL_OSPI_ADDRESS_NONE|Address None
+AddressMode|HAL_OSPI_ADDRESS_1_LINE|Address 1 Line
+AddressMode|HAL_OSPI_ADDRESS_2_LINES|Address 2 Line
+AddressMode|HAL_OSPI_ADDRESS_4_LINES|Address 4 Line
+AddressMode|HAL_OSPI_ADDRESS_8_LINES|Address 8 Line
+AddressSize|HAL_OSPI_ADDRESS_8_BITS|Address 8 bits
+AddressSize|HAL_OSPI_ADDRESS_16_BITS|Address 16 bits
+AddressSize|HAL_OSPI_ADDRESS_24_BITS|Address 24 bits
+AddressSize|HAL_OSPI_ADDRESS_32_BITS|Address 32 bits
+AddressDtrMode|HAL_OSPI_ADDRESS_DTR_DISABLE|Disable
+AddressDtrMode|HAL_OSPI_ADDRESS_DTR_ENABLE|Enable
+AlternateBytesMode|HAL_OSPI_ALTERNATE_BYTES_NONE|Alternate Byte None
+AlternateBytesMode|HAL_OSPI_ALTERNATE_BYTES_1_LINE|Alternate Byte 1 Line
+AlternateBytesMode|HAL_OSPI_ALTERNATE_BYTES_2_LINES|Alternate Byte 2 Line
+AlternateBytesMode|HAL_OSPI_ALTERNATE_BYTES_4_LINES|Alternate Byte 4 Line
+AlternateBytesMode|HAL_OSPI_ALTERNATE_BYTES_8_LINES|Alternate Byte 8 Line
+AlternateBytesSize|HAL_OSPI_ALTERNATE_BYTES_8_BITS|Alternate Byte 8 bits
+AlternateBytesSize|HAL_OSPI_ALTERNATE_BYTES_16_BITS|Alternate Byte 16 bits
+AlternateBytesSize|HAL_OSPI_ALTERNATE_BYTES_24_BITS|Alternate Byte 24 bits
+AlternateBytesSize|HAL_OSPI_ALTERNATE_BYTES_32_BITS|Alternate Byte 32 bits
+AlternateBytesDtrMode|HAL_OSPI_ALTERNATE_BYTES_DTR_DISABLE|Disable
+AlternateBytesDtrMode|HAL_OSPI_ALTERNATE_BYTES_DTR_ENABLE|Enable
+DataMode|HAL_OSPI_DATA_NONE|Data None
+DataMode|HAL_OSPI_DATA_1_LINE|Data1 Line
+DataMode|HAL_OSPI_DATA_2_LINES|Data 2 Line
+DataMode|HAL_OSPI_DATA_4_LINES|Data 4 Line
+DataMode|HAL_OSPI_DATA_8_LINES|Data 8 Line
+DataDtrMode|HAL_OSPI_DATA_DTR_DISABLE|Disable
+DataDtrMode|HAL_OSPI_DATA_DTR_ENABLE|Enable
+DQSMode|HAL_OSPI_DQS_DISABLE|Disable
+DQSMode|HAL_OSPI_DQS_ENABLE|Enable
+SIOOMode|HAL_OSPI_SIOO_INST_EVERY_CMD|SIOO inst every Cmd
+SIOOMode|HAL_OSPI_SIOO_INST_ONLY_FIRST_CMD|SIOO inst Only First Cmd
+AddressSpace|HAL_OSPI_MEMORY_ADDRESS_SPACE|Memory Register Space
+AddressSpace|HAL_OSPI_REGISTER_ADDRESS_SPACE|Register Address Space
+IOHighPort|HAL_OSPIM_IOPORT_1_HIGH|HAL_OSPIM_IOPORT_1_HIGH
+IOHighPort|HAL_OSPIM_IOPORT_1_LOW|HAL_OSPIM_IOPORT_1_LOW
+IOHighPort|HAL_OSPIM_IOPORT_2_HIGH|HAL_OSPIM_IOPORT_2_HIGH
+IOHighPort|HAL_OSPIM_IOPORT_2_LOW|HAL_OSPIM_IOPORT_2_LOW
+IOLowPort|HAL_OSPIM_IOPORT_1_HIGH|HAL_OSPIM_IOPORT_1_HIGH
+IOLowPort|HAL_OSPIM_IOPORT_1_LOW|HAL_OSPIM_IOPORT_1_LOW
+IOLowPort|HAL_OSPIM_IOPORT_2_HIGH|HAL_OSPIM_IOPORT_2_HIGH
+IOLowPort|HAL_OSPIM_IOPORT_2_LOW|HAL_OSPIM_IOPORT_2_LOW

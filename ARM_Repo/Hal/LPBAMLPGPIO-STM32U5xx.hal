@@ -1,0 +1,223 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPBAMLPGPIO
+Version=STM32U5xx
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InstanceHAL|HAL IP Instance|||||
+QUEUE_NAME|Define the name of your Queue|||||
+DESCRIPTOR_NAME_WRITEPIN|name of the descriptor|||||
+DESCRIPTOR_NAME_WRITEPINSEQUENCE|name of the descriptor|||||
+DESCRIPTOR_NAME_READPINSEQUENCE|name of the descriptor|||||
+CircularNode_WRITEPIN|Circular Node for WRITEPIN|WRITE PIN||||description
+CircularNode_WRITEPINSEQUENCE|Circular Node for WRITE PIN SEQUENCE|WRITE PINSEQUENCE - Pin States Configuration||||description
+CircularNode_READPINSEQUENCE|Circular Node for READ PIN SEQUENCE|READ PINSEQUENCE - Pin States Configuration||||description
+Pin_WRITEPIN|Pin Name|Write Pin||||
+PinState_WRITEPIN|Pin State|Write Pin||||
+Size_WRITEPINSEQUENCE|Number of Pin States|Write Pin Sequence - Pin States Configuration||||description
+BufferName_WRITEPINSEQUENCE|Pin States Buffer Name|Write Pin Sequence - Pin States Configuration||||uint32 buffer address
+BufferAddress_WRITEPINSEQUENCE|Pin States Buffer Addresss|Write Pin Sequence - Pin States Configuration||||uint32 buffer address
+BufferOffset_WRITEPINSEQUENCE|Pin States Buffer Offset|Write Pin Sequence - Pin States Configuration||||uint32 buffer address
+Pin_WRITEPINSEQUENCE|Pin Name|Write Pin Sequence - Pin States Configuration||||
+MYPARAMREADPINSEQUENCE|My param|Read Pin Sequence - Pin States Configuration||||
+Size_READPINSEQUENCE|Number of Pin States|Read Pin Sequence - Pin States Configuration||||description
+BufferName_READPINSEQUENCE|Pin States Buffer Name|Read Pin Sequence - Pin States Configuration||||uint32 buffer address
+BufferAddress_READPINSEQUENCE|Pin States Buffer Addresss|Read Pin Sequence - Pin States Configuration||||uint32 buffer address
+BufferOffset_READPINSEQUENCE|Pin States Buffer Offset|Read Pin Sequence - Pin States Configuration||||uint32 buffer address
+Pin_READPINSEQUENCE|Pin Name|Read Pin Sequence - Pin States Configuration||||
+SrcInc_WRITEPIN|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_WRITEPIN|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_WRITEPIN|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_WRITEPIN|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_WRITEPIN|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_WRITEPIN|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_WRITEPIN|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_WRITEPIN|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_WRITEPIN|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_WRITEPIN|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_WRITEPIN|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_WRITEPIN|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_WRITEPIN|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_WRITEPIN|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_WRITEPIN|Node on whWRITEPINh the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcInc_WRITEPINSEQUENCE|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_WRITEPINSEQUENCE|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_WRITEPINSEQUENCE|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_WRITEPINSEQUENCE|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_WRITEPINSEQUENCE|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_WRITEPINSEQUENCE|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_WRITEPINSEQUENCE|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_WRITEPINSEQUENCE|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_WRITEPINSEQUENCE|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_WRITEPINSEQUENCE|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_WRITEPINSEQUENCE|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_WRITEPINSEQUENCE|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_WRITEPINSEQUENCE|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_WRITEPINSEQUENCE|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_WRITEPINSEQUENCE|Node on whWRITEPINSEQUENCEh the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcInc_READPINSEQUENCE|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_READPINSEQUENCE|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_READPINSEQUENCE|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_READPINSEQUENCE|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_READPINSEQUENCE|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_READPINSEQUENCE|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_READPINSEQUENCE|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_READPINSEQUENCE|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_READPINSEQUENCE|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_READPINSEQUENCE|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_READPINSEQUENCE|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_READPINSEQUENCE|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_READPINSEQUENCE|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_READPINSEQUENCE|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_READPINSEQUENCE|Node on whREADPINSEQUENCEh the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TriggerPolarity|The Function execution is|Trigger Configuration||||description
+TriggerSelection|Trigger Hardware Signal is|Trigger Configuration||||description
+TriggerMode|Trigger Mode|Trigger Configuration||||description
+NodeLevel|Node on which the trigger is applied (not visible)|Trigger Configuration||||description
+
+[Values]
+# параметр|значение|подпись
+CircularNode_WRITEPIN|__NULL|DISABLE
+CircularNode_WRITEPIN|LPBAM_GPIO_WRITEPIN_FULLQ_DATA_NODE|Data Node
+CircularNode_WRITEPINSEQUENCE|__NULL|DISABLE
+CircularNode_WRITEPINSEQUENCE|LPBAM_GPIO_WRITEPINSEQ_FULLQ_DATA_NODE|Data Node
+CircularNode_READPINSEQUENCE|__NULL|DISABLE
+CircularNode_READPINSEQUENCE|LPBAM_GPIO_READPINSEQ_FULLQ_DATA_NODE|Data Node
+Pin_WRITEPIN|LPBAM_GPIO_PIN_0|PA1
+Pin_WRITEPIN|LPBAM_GPIO_PIN_1|PA3
+Pin_WRITEPIN|LPBAM_GPIO_PIN_2|PA6
+Pin_WRITEPIN|LPBAM_GPIO_PIN_3|PB1
+Pin_WRITEPIN|LPBAM_GPIO_PIN_4|PB10
+Pin_WRITEPIN|LPBAM_GPIO_PIN_5|PC2
+Pin_WRITEPIN|LPBAM_GPIO_PIN_6|PD13
+Pin_WRITEPIN|LPBAM_GPIO_PIN_7|PD2
+Pin_WRITEPIN|LPBAM_GPIO_PIN_8|PC10
+Pin_WRITEPIN|LPBAM_GPIO_PIN_9|PB0
+Pin_WRITEPIN|LPBAM_GPIO_PIN_10|PC12
+Pin_WRITEPIN|LPBAM_GPIO_PIN_11|PB3
+Pin_WRITEPIN|LPBAM_GPIO_PIN_12|PB4
+Pin_WRITEPIN|LPBAM_GPIO_PIN_13|PE0
+Pin_WRITEPIN|LPBAM_GPIO_PIN_14|PE2
+Pin_WRITEPIN|LPBAM_GPIO_PIN_15|PE3
+PinState_WRITEPIN|LPBAM_GPIO_PIN_RESET|Reset
+PinState_WRITEPIN|LPBAM_GPIO_PIN_SET|Set
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_0|PA1
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_1|PA3
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_2|PA6
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_3|PB1
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_4|PB10
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_5|PC2
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_6|PD13
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_7|PD2
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_8|PC10
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_9|PB0
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_10|PC12
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_11|PB3
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_12|PB4
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_13|PE0
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_14|PE2
+Pin_WRITEPINSEQUENCE|LPBAM_GPIO_PIN_15|PE3
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_0|PA1
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_1|PA3
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_2|PA6
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_3|PB1
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_4|PB10
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_5|PC2
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_6|PD13
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_7|PD2
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_8|PC10
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_9|PB0
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_10|PC12
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_11|PB3
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_12|PB4
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_13|PE0
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_14|PE2
+Pin_READPINSEQUENCE|LPBAM_GPIO_PIN_15|PE3
+SrcInc_WRITEPIN|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_WRITEPIN|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_WRITEPIN|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_WRITEPIN|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_WRITEPIN|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_WRITEPIN|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_WRITEPIN|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_WRITEPIN|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_WRITEPIN|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_WRITEPIN|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_WRITEPIN|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_WRITEPIN|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_WRITEPIN|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_WRITEPIN|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_WRITEPIN|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_WRITEPIN|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_WRITEPIN|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_WRITEPIN|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_WRITEPIN|LPBAM_GPIO_WRITEPIN_FULLQ_DATA_NODE|Data Node
+SrcInc_WRITEPINSEQUENCE|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_WRITEPINSEQUENCE|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_WRITEPINSEQUENCE|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_WRITEPINSEQUENCE|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_WRITEPINSEQUENCE|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_WRITEPINSEQUENCE|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_WRITEPINSEQUENCE|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_WRITEPINSEQUENCE|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_WRITEPINSEQUENCE|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_WRITEPINSEQUENCE|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_WRITEPINSEQUENCE|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_WRITEPINSEQUENCE|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_WRITEPINSEQUENCE|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_WRITEPINSEQUENCE|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_WRITEPINSEQUENCE|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_WRITEPINSEQUENCE|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_WRITEPINSEQUENCE|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_WRITEPINSEQUENCE|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_WRITEPINSEQUENCE|LPBAM_GPIO_WRITEPINSEQ_FULLQ_DATA_NODE|Data Node
+SrcInc_READPINSEQUENCE|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_READPINSEQUENCE|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_READPINSEQUENCE|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_READPINSEQUENCE|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_READPINSEQUENCE|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_READPINSEQUENCE|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_READPINSEQUENCE|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_READPINSEQUENCE|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_READPINSEQUENCE|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_READPINSEQUENCE|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_READPINSEQUENCE|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_READPINSEQUENCE|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_READPINSEQUENCE|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_READPINSEQUENCE|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_READPINSEQUENCE|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_READPINSEQUENCE|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_READPINSEQUENCE|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_READPINSEQUENCE|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_READPINSEQUENCE|LPBAM_GPIO_READPINSEQ_FULLQ_DATA_NODE|Data Node
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_MASKED|not conditionned by a Trigger
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_RISING|trigged on the Rising Edge of the Hardware Signal
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_FALLING|trigged on the Falling Edge of the Hardware Signal
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE0|EXTI Line 0
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE1|EXTI Line 1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE2|EXTI Line 2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE3|EXTI Line 3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE4|EXTI Line 4
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG1|TAMP TRG1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG2|TAMP TRG2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG3|TAMP TRG3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM4_OUT|LPTIM4 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP1_OUT|COMP1 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP2_OUT|COMP2 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_ADC4_AWD1|ADC4 AWD1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH0_TCF|LPDMA1 CH0 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH1_TCF|LPDMA1 CH1 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH2_TCF|LPDMA1 CH2 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH3_TCF|LPDMA1 CH3 TCF
+TriggerMode|LPBAM_DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+NodeLevel|LPBAM_GPIO_WRITEPIN_FULLQ_DATA_NODE|Data Node
+NodeLevel|LPBAM_GPIO_WRITEPINSEQ_FULLQ_DATA_NODE|Data Node
+NodeLevel|LPBAM_GPIO_READPINSEQ_FULLQ_DATA_NODE|Data Node

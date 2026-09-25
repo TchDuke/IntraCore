@@ -1,0 +1,107 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LCD
+Version=lcdc1_v1_2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Prescaler|Clock Prescaler|Clock Parameters||||
+Divider|Clock Divider|Clock Parameters||||
+Duty|Duty Selection|Basic Parameters||||
+Bias|Bias Selector|Basic Parameters||||
+VoltageSource|Voltage Source Selection|Advanced Parameters||||
+Contrast|Contrast Control|Advanced Parameters||||
+DeadTime|Dead Time Duration|Advanced Parameters||||
+PulseOnDuration|Pulse ON Duration|Advanced Parameters||||
+HighDrive|High Drive|Advanced Parameters||||
+MuxSegment|Multiplex mode|Basic Parameters||||
+BlinkMode|Blink Mode|Advanced Parameters||||
+BlinkFrequency|Blink Frequency|Advanced Parameters||||
+
+[Values]
+# параметр|значение|подпись
+Prescaler|LCD_PRESCALER_1|1
+Prescaler|LCD_PRESCALER_2|2
+Prescaler|LCD_PRESCALER_4|4
+Prescaler|LCD_PRESCALER_8|8
+Prescaler|LCD_PRESCALER_16|16
+Prescaler|LCD_PRESCALER_32|32
+Prescaler|LCD_PRESCALER_64|64
+Prescaler|LCD_PRESCALER_128|128
+Prescaler|LCD_PRESCALER_256|256
+Prescaler|LCD_PRESCALER_512|512
+Prescaler|LCD_PRESCALER_1024|1024
+Prescaler|LCD_PRESCALER_2048|2048
+Prescaler|LCD_PRESCALER_4096|4096
+Prescaler|LCD_PRESCALER_8192|8192
+Prescaler|LCD_PRESCALER_16384|16384
+Prescaler|LCD_PRESCALER_32768|32768
+Divider|LCD_DIVIDER_16|16
+Divider|LCD_DIVIDER_17|17
+Divider|LCD_DIVIDER_18|18
+Divider|LCD_DIVIDER_19|19
+Divider|LCD_DIVIDER_20|20
+Divider|LCD_DIVIDER_21|21
+Divider|LCD_DIVIDER_22|22
+Divider|LCD_DIVIDER_23|23
+Divider|LCD_DIVIDER_24|24
+Divider|LCD_DIVIDER_25|25
+Divider|LCD_DIVIDER_26|26
+Divider|LCD_DIVIDER_27|27
+Divider|LCD_DIVIDER_28|28
+Divider|LCD_DIVIDER_29|29
+Divider|LCD_DIVIDER_30|30
+Divider|LCD_DIVIDER_31|31
+Duty|LCD_DUTY_STATIC|Static
+Duty|LCD_DUTY_1_2|1/2
+Duty|LCD_DUTY_1_3|1/3
+Duty|LCD_DUTY_1_4|1/4
+Duty|LCD_DUTY_1_8|1/8
+Bias|LCD_BIAS_1_4|1/4
+Bias|LCD_BIAS_1_2|1/2
+Bias|LCD_BIAS_1_3|1/3
+VoltageSource|LCD_VOLTAGESOURCE_INTERNAL|Internal
+VoltageSource|LCD_VOLTAGESOURCE_EXTERNAL|External
+Contrast|LCD_CONTRASTLEVEL_0|2.60V
+Contrast|LCD_CONTRASTLEVEL_1|2.73V
+Contrast|LCD_CONTRASTLEVEL_2|2.86V
+Contrast|LCD_CONTRASTLEVEL_3|2.99V
+Contrast|LCD_CONTRASTLEVEL_4|3.12V
+Contrast|LCD_CONTRASTLEVEL_5|3.26V
+Contrast|LCD_CONTRASTLEVEL_6|3.40V
+Contrast|LCD_CONTRASTLEVEL_7|3.55V
+DeadTime|LCD_DEADTIME_0|No dead Time
+DeadTime|LCD_DEADTIME_1|One Phase
+DeadTime|LCD_DEADTIME_2|Two Phase
+DeadTime|LCD_DEADTIME_3|Three Phase
+DeadTime|LCD_DEADTIME_4|Four Phase
+DeadTime|LCD_DEADTIME_5|Five Phase
+DeadTime|LCD_DEADTIME_6|Six Phase
+DeadTime|LCD_DEADTIME_7|Seven Phase
+PulseOnDuration|LCD_PULSEONDURATION_0|0 pulse
+PulseOnDuration|LCD_PULSEONDURATION_1|1/CK_PS
+PulseOnDuration|LCD_PULSEONDURATION_2|2/CK_PS
+PulseOnDuration|LCD_PULSEONDURATION_3|3/CK_PS
+PulseOnDuration|LCD_PULSEONDURATION_4|4/CK_PS
+PulseOnDuration|LCD_PULSEONDURATION_5|5/CK_PS
+PulseOnDuration|LCD_PULSEONDURATION_6|6/CK_PS
+PulseOnDuration|LCD_PULSEONDURATION_7|7/CK_PS
+HighDrive|LCD_HIGHDRIVE_DISABLE|Disable
+HighDrive|LCD_HIGHDRIVE_ENABLE|Enable
+HighDrive|LCD_HIGHDRIVE_0|Disable
+HighDrive|LCD_HIGHDRIVE_1|Enable
+MuxSegment|LCD_MUXSEGMENT_ENABLE|Enable
+MuxSegment|LCD_MUXSEGMENT_DISABLE|Disable
+BlinkMode|LCD_BLINKMODE_OFF|Disabled
+BlinkMode|LCD_BLINKMODE_SEG0_COM0|Enabled on SEG[0], COM[0]
+BlinkMode|LCD_BLINKMODE_SEG0_ALLCOM|Enabled on SEG[0], all COM
+BlinkMode|LCD_BLINKMODE_ALLSEG_ALLCOM|Enabled on all pixels
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV8|fLCD/8
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV16|fLCD/16
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV32|fLCD/32
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV64|fLCD/64
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV128|fLCD/128
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV256|fLCD/256
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV512|fLCD/512
+BlinkFrequency|LCD_BLINKFREQUENCY_DIV1024|fLCD/1024

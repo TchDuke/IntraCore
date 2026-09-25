@@ -1,0 +1,53 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DCMI
+Version=cci_v2_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+SynchroMode|Synchronization Mode|||||
+PCKPolarity|Pixel clock polarity|Mode Config||||
+VSPolarity|Vertical synchronization polarity|Mode Config||||
+HSPolarity|Horizontal synchronization polarity|Mode Config||||
+CaptureRate|Frequency of frame capture|Mode Config||||
+ExtendedDataMode|Data width set to 14 bits|||||
+FrameStartCode|Frame Start Code|Synchro Config||0|255|
+FrameEndCode|Frame End Code|Synchro Config||0|255|
+LineEndCode|Line End Code|Synchro Config||0|255|
+LineStartCode|Line Start Code|Synchro Config||0|255|
+JPEGMode|JPEG mode|Mode Config||||
+ByteSelectMode|Byte Select Mode|Interface Capture Config||||Specifies the data to be captured by the interface.
+ByteSelectStart|Byte Select Start|Interface Capture Config||||Specifies if the data to be captured by the interface is even or odd.
+LineSelectMode|Line Select Mode|Interface Capture Config||||Specifies the lines of data to be captured by the interface.
+LineSelectStart|Line Select Start|Interface Capture Config||||Specifies if the line of data to be first captured by the interface is even or odd.
+
+[Values]
+# параметр|значение|подпись
+SynchroMode|DCMI_SYNCHRO_EMBEDDED|Embedded synchronization data capture is synchronized with synchronization codes embedded in the data flow
+SynchroMode|DCMI_SYNCHRO_HARDWARE|Hardware synchronization data capture (frame/line start/stop) is synchronized with the HSYNC/VSYNC signals
+PCKPolarity|DCMI_PCKPOLARITY_FALLING|Active on Falling edge
+PCKPolarity|DCMI_PCKPOLARITY_RISING|Active on Rising edge
+VSPolarity|DCMI_VSPOLARITY_HIGH|Active High
+VSPolarity|DCMI_VSPOLARITY_LOW|Active Low
+HSPolarity|DCMI_HSPOLARITY_HIGH|Active High
+HSPolarity|DCMI_HSPOLARITY_LOW|Active Low
+CaptureRate|DCMI_CR_ALTERNATE_4_FRAME|One frame in 4 frames captured
+CaptureRate|DCMI_CR_ALTERNATE_2_FRAME|Every alternate frame captured
+CaptureRate|DCMI_CR_ALL_FRAME|All frames are captured
+ExtendedDataMode|DCMI_EXTEND_DATA_14B|14-bit data on every pixel clock
+ExtendedDataMode|DCMI_EXTEND_DATA_12B|12-bit data on every pixel clock
+ExtendedDataMode|DCMI_EXTEND_DATA_10B|10-bit data on every pixel clock
+ExtendedDataMode|DCMI_EXTEND_DATA_8B|8-bit data on every pixel clock
+JPEGMode|DCMI_JPEG_ENABLE|Enabled
+JPEGMode|DCMI_JPEG_DISABLE|Disabled
+ByteSelectMode|DCMI_BSM_ALL|Interface captures all received bytes
+ByteSelectMode|DCMI_BSM_OTHER|Interface captures every other byte from the received data
+ByteSelectMode|DCMI_BSM_ALTERNATE_4|Interface captures one byte out of four
+ByteSelectMode|DCMI_BSM_ALTERNATE_2|Interface captures two bytes out of four
+ByteSelectStart|DCMI_OEBS_ODD|Interface captures first data from the frame/line start, second one being dropped
+ByteSelectStart|DCMI_OEBS_EVEN|Interface captures second data from the frame/line start, first one being dropped
+LineSelectMode|DCMI_LSM_ALL|Interface captures all received lines
+LineSelectMode|DCMI_LSM_ALTERNATE_2|Interface captures one line out of two
+LineSelectStart|DCMI_OELS_ODD|Interface captures first line from the frame start, second one being dropped
+LineSelectStart|DCMI_OELS_EVEN|Interface captures second line from the frame start, first one being dropped

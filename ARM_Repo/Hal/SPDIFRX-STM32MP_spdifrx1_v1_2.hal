@@ -1,0 +1,48 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SPDIFRX
+Version=STM32MP_spdifrx1_v1_2
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+MaxAudioRate|Max Frequency Supported for Incoming Audio Stream|IP Clocking and Limitation|Hz|||
+frequenceIP|SPDIF Clock|IP Clocking and Limitation|Hz|||
+InputSelection|Selected Input|Pinout Selection||||Specifies the SPDIF input selection
+Retries|Retries|Synchronization Configuration||||Specifies the Maximum allowed re-tries during synchronization phase
+WaitForActivity|Wait For Activity|Synchronization Configuration||||Specifies the wait for activity on SPDIF selected input.
+ChannelSelection|Channel Selection|Channel Status Register Formatting||||Specifies whether the control flow will take the channel status from channel A or B.
+DataFormat|Data Format|Data Register Formatting : Data Format||||Specifies the Data samples format (LSB, MSB,32 bits)
+StereoMode|Stereo Mode (used in case of overrun to handle misalignement)|Data Register Formatting : Data Format||||Specifies whether the peripheral is in stereo or mono mode
+PreambleTypeMask|Preamble Type Mask|Data Register Formatting : Mixing Data and Control||||Specifies whether The preamble type bits are copied or not into the received frame
+ChannelStatusMask|Channel Status Mask|Data Register Formatting : Mixing Data and Control||||Specifies whether the channel status and user bits are copied or not into the received frame
+ValidityBitMask|Validity Bit Mask|Data Register Formatting : Mixing Data and Control||||Specifies whether the validity bit is copied or not into the received frame
+ParityErrorMask|Parity Error Mask|Data Register Formatting : Mixing Data and Control||||Specifies whether the parity error bit is copied or not into the received frame
+
+[Values]
+# параметр|значение|подпись
+InputSelection|SPDIFRX_INPUT_IN0|IN0
+InputSelection|SPDIFRX_INPUT_IN1|IN1
+InputSelection|SPDIFRX_INPUT_IN2|IN2
+InputSelection|SPDIFRX_INPUT_IN3|IN3
+Retries|SPDIFRX_MAXRETRIES_NONE|No re-try is allowed (only one attempt)
+Retries|SPDIFRX_MAXRETRIES_3|3 re-tries allowed
+Retries|SPDIFRX_MAXRETRIES_15|15 re-tries allowed
+Retries|SPDIFRX_MAXRETRIES_63|63 re-tries allowed
+WaitForActivity|SPDIFRX_WAITFORACTIVITY_OFF|The SPDIF-RX does not wait for activity on SPDIF_IN line before performing the synchronization
+WaitForActivity|SPDIFRX_WAITFORACTIVITY_ON|The SPDIF-RX waits for activity on SPDIF_IN line before performing the synchronization
+ChannelSelection|SPDIFRX_CHANNEL_A|The control flow will take the channel status from channel A
+ChannelSelection|SPDIFRX_CHANNEL_B|The control flow will take the channel status from channel B
+DataFormat|SPDIFRX_DATAFORMAT_LSB|Data samples are aligned in the right (LSB)
+DataFormat|SPDIFRX_DATAFORMAT_MSB|Data samples are aligned in the left (MSB)
+DataFormat|SPDIFRX_DATAFORMAT_32BITS|Data sample are packed by setting two 16-bit sample into a 32-bit word
+StereoMode|SPDIFRX_STEREOMODE_DISABLE|The peripheral is in MONO mode
+StereoMode|SPDIFRX_STEREOMODE_ENABLE|The peripheral is in STEREO mode
+PreambleTypeMask|SPDIFRX_PREAMBLETYPEMASK_OFF|The preamble type bits are copied into the SPDIF_DR
+PreambleTypeMask|SPDIFRX_PREAMBLETYPEMASK_ON|The preamble type bits are not copied into the SPDIF_DR, zeros are written instead
+ChannelStatusMask|SPDIFRX_CHANNELSTATUS_OFF|The channel status and user bits are copied into the SPDIF_DR
+ChannelStatusMask|SPDIFRX_CHANNELSTATUS_ON|The channel status and user bits are not copied into the SPDIF_DR, zeros are written instead
+ValidityBitMask|SPDIFRX_VALIDITYMASK_OFF|The validity bit is copied into the SPDIF_DR
+ValidityBitMask|SPDIFRX_VALIDITYMASK_ON|The validity bit is not copied into the SPDIF_DR, a zero is written instead
+ParityErrorMask|SPDIFRX_PARITYERRORMASK_OFF|The parity error bit is copied into the SPDIF_DR
+ParityErrorMask|SPDIFRX_PARITYERRORMASK_ON|The parity error bit is not copied into the SPDIF_DR, a zero is written instead

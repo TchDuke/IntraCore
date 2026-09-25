@@ -1,0 +1,57 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DTS
+Version=dts_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+RefClock|Reference Clock Selection|Basic parameters||||The clock selection allows to select two kind of clock - Low Speed External oscillator (<b>LSE</b>) which allows also to realize Quick Measurement (without sensor calibration beore to take the measure) - Peripheral Clock (<b>PCLK</b>) which has a higher speed
+QuickMeasure|Quick Measurement|Basic parameters||||Quick Measurement is possible only when the LSE reference clock is selected
+TriggerInput|Input Trigger Selection|Basic parameters||||The temperature measurement can be triggered either by software or by an external event which can be a Low Power Timer (LPTIM) or the EXTernal Interrupt (EXTI13)
+SamplingTime|Sampling Time|Basic parameters||||To increase the measurement accuracy, the sampling time could by incremented - In LSE reference clock : the sampling time is based on LSE clock cycles (from 1 to 15) - In PCLK refernce clock : the sampling time is based on the measured frequency cycles (from 1 to 15)
+Divider|Divider|Basic parameters||1|127|The divider is used to divide PCLK reference clock for calibration phase When the LSE reference clock is selected, the divider is not used and has to be set to 0
+HighThreshold|High Threshold|Basic parameters||0x0|0xFFFF|
+LowThreshold|Low Threshold|Basic parameters||0x0|0xFFFF|
+HighInterruptThreshold|High Interrupt Threshold|Basic parameters||0x0|0xFFFF|
+LowInterruptThreshold|Low Interrupt Threshold|Basic parameters||0x0|0xFFFF|
+InterruptSource|Interrupt Source|Basic parameters||||the interrupt source of the DTS sensor.
+WakeupTarget|Wakeup Target|Basic parameters||||the Wakeup Target.
+
+[Values]
+# параметр|значение|подпись
+RefClock|DTS_REFCLKSEL_LSE|Low speed reference clock (LSE)
+RefClock|DTS_REFCLKSEL_PCLK|High speed reference clock (PCLK)
+QuickMeasure|DTS_QUICKMEAS_DISABLE|Disable the Quick Measurement (Measure with calibration)
+QuickMeasure|DTS_QUICKMEAS_ENABLE|Enable the Quick Measurement (Measure without calibration)
+TriggerInput|DTS_TRIGGER_HW_NONE|No Hardware trigger detection
+TriggerInput|DTS_TRIGGER_LPTIMER1|External Interrupt Mode with LPTIMER1 trigger detection
+TriggerInput|DTS_TRIGGER_LPTIMER2|External Interrupt Mode with LPTIMER2 trigger detection
+TriggerInput|DTS_TRIGGER_EXTI13|External Interrupt Mode with EXTI13 trigger detection
+TriggerInput|DTS_TRIGGER_LPTIMER3|External Interrupt Mode with LPTIMER3 trigger detection
+TriggerInput|DTS_TRIGGER_HW_NONE_CONT|No Hardware trigger detection on continuous mode
+TriggerInput|DTS_TRIGGER_LPTIMER4|External Interrupt Mode with LPTIMER4 trigger detection
+TriggerInput|DTS_TRIGGER_PLAY_OUT13|External Interrupt Mode with PLAY_OUT13 trigger detection
+SamplingTime|DTS_SMP_TIME_1_CYCLE|1 cycle for the sampling time
+SamplingTime|DTS_SMP_TIME_2_CYCLE|2 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_3_CYCLE|3 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_4_CYCLE|4 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_5_CYCLE|5 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_6_CYCLE|6 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_7_CYCLE|7 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_8_CYCLE|8 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_9_CYCLE|9 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_10_CYCLE|10 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_11_CYCLE|11 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_12_CYCLE|12 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_13_CYCLE|13 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_14_CYCLE|14 cycles for the sampling time
+SamplingTime|DTS_SMP_TIME_15_CYCLE|15 cycles for the sampling time
+InterruptSource|DTS_ITSRC_HIGH|DTS_ITENR_TS1_ITHEN
+InterruptSource|DTS_ITSRC_LOW|DTS_ITENR_TS1_ITLEN
+InterruptSource|DTS_ITSRC_END|DTS_ITENR_TS1_ITEEN
+InterruptSource|DTS_ITSRC_ASYN_HIGH|DTS_ITENR_TS1_AITHEN
+InterruptSource|DTS_ITSRC_ASYN_LOW|DTS_ITENR_TS1_AITLEN
+InterruptSource|DTS_ITSRC_ASYN_END|DTS_ITENR_TS1_AITEEN
+WakeupTarget|DTS_WAKEUPTARGET_CPU1|CPU1
+WakeupTarget|DTS_WAKEUPTARGET_CPU2|CPU2

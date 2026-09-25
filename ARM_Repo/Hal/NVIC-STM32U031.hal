@@ -1,0 +1,16 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=NVIC
+Version=STM32U031
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PriorityGroup|Priority Group|||||
+PreemptionPriority|Preemption Priority|||0|3|
+SubPriority|Sub Priority|||0|0|
+IRQn|Interrupt Table|||||
+
+[Values]
+# параметр|значение|подпись
+PriorityGroup|NVIC_PRIORITYGROUP_2|2 bits for pre-emption priority 0 bits for subpriority

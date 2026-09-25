@@ -1,0 +1,69 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=UART
+Version=sci2_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+BaudRate|Baud Rate|Basic Parameters|Bits/s|110|5250000|
+WordLength|Word Length|Basic Parameters||||
+IrdaWordLength|Word Length|Basic Parameters||||
+UartWordLength|Word Length|Basic Parameters||||
+StopBits|Stop Bits|Basic Parameters||||
+UartStopBits|Stop Bits|Basic Parameters||||
+Parity|Parity|Basic Parameters||||
+IrdaParity|Parity|Basic Parameters||||
+UartParity|Parity|Basic Parameters||||
+Mode|Data Direction|Advanced Parameters||||
+IrdaMode|Data Direction|Advanced Parameters||||
+UartMode|Data Direction|Advanced Parameters||||
+HwFlowCtl|Hardware Flow Control|Basic Parameters||||
+OverSampling|Over Sampling|Advanced Parameters||||
+IrDAMode|IrDa Mode|Advanced Parameters||||
+Prescaler|Prescaler|Advanced Parameters||1|255|
+WakeUpMethode|Wake-Up Method|Advanced Parameters||||
+Address|Wake-Up Address|Advanced Parameters||0|15|
+BreakDetectLength|Break Detect Length|Advanced Parameters||||
+
+[Values]
+# параметр|значение|подпись
+WordLength|WORDLENGTH_8B|8 Bits (including Parity)
+WordLength|WORDLENGTH_9B|9 Bits (including Parity)
+IrdaWordLength|IRDA_WORDLENGTH_8B|8 Bits (including Parity)
+IrdaWordLength|IRDA_WORDLENGTH_9B|9 Bits (including Parity)
+UartWordLength|UART_WORDLENGTH_8B|8 Bits (including Parity)
+UartWordLength|UART_WORDLENGTH_9B|9 Bits (including Parity)
+StopBits|UART_STOPBITS_1|1
+StopBits|UART_STOPBITS_2|2
+UartStopBits|UART_STOPBITS_1|1
+UartStopBits|UART_STOPBITS_2|2
+Parity|PARITY_NONE|None
+Parity|PARITY_EVEN|Even
+Parity|PARITY_ODD|Odd
+IrdaParity|IRDA_PARITY_NONE|None
+IrdaParity|IRDA_PARITY_EVEN|Even
+IrdaParity|IRDA_PARITY_ODD|Odd
+UartParity|UART_PARITY_NONE|None
+UartParity|UART_PARITY_EVEN|Even
+UartParity|UART_PARITY_ODD|Odd
+Mode|MODE_TX_RX|Receive and Transmit
+Mode|MODE_RX|Receive Only
+Mode|MODE_TX|Transmit Only
+IrdaMode|IRDA_MODE_TX_RX|Receive and Transmit
+IrdaMode|IRDA_MODE_TX|Transmit Only
+IrdaMode|IRDA_MODE_RX|Receive Only
+UartMode|UART_MODE_TX_RX|Receive and Transmit
+UartMode|UART_MODE_TX|Transmit Only
+UartMode|UART_MODE_RX|Receive Only
+HwFlowCtl|UART_HWCONTROL_NONE|None
+HwFlowCtl|UART_HWCONTROL_RTS|RTS Only
+HwFlowCtl|UART_HWCONTROL_CTS|CTS Only
+HwFlowCtl|UART_HWCONTROL_RTS_CTS|RTS/CTS
+OverSampling|UART_OVERSAMPLING_16|16 Samples
+IrDAMode|IRDA_POWERMODE_LOWPOWER|Low Power
+IrDAMode|IRDA_POWERMODE_NORMAL|Normal Power
+WakeUpMethode|UART_WAKEUPMETHOD_IDLELINE|Idle Line
+WakeUpMethode|UART_WAKEUPMETHOD_ADDRESSMARK|Address Mark
+BreakDetectLength|UART_LINBREAKDETECTLENGTH_10B|10 Bits
+BreakDetectLength|UART_LINBREAKDETECTLENGTH_11B|11 Bits

@@ -1,0 +1,69 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMP
+Version=fastcomp_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InvertingInput|Inverting Input|Pinout Parameters||||
+NonInvertingInput|Non Inverting Input|Pinout Parameters||||
+WindowMode|Window Mode|Pinout Parameters||||
+Mode|Speed Mode|Basic Parameters||||
+TriggerMode|Interrupt Trigger Mode|Basic Parameters||||
+Hysteresis|Hysteresis Level|Basic Parameters||||
+BlankingSrce|Blanking Source|Basic Parameters||||
+OutputPol|Output Polarity|Output Parameters||||
+Output|Output Internal Selection|Output Parameters||||
+
+[Values]
+# параметр|значение|подпись
+InvertingInput|COMP_INVERTINGINPUT_IO1|I/O1 (PA2/PB2/PB15)
+InvertingInput|COMP_INVERTINGINPUT_DAC1_CH1|DAC1_OUT (PA4)
+InvertingInput|COMP_INVERTINGINPUT_VREFINT|VREFINT
+InvertingInput|COMP_INVERTINGINPUT_DAC1_CH2|DAC1_OUT2
+InvertingInput|COMP_INVERTINGINPUT_DAC2_CH1|DAC2_OUT1
+InvertingInput|COMP_INVERTINGINPUT_1_4VREFINT|1/4 VREFINT
+InvertingInput|COMP_INVERTINGINPUT_1_2VREFINT|1/2 VREFINT
+InvertingInput|COMP_INVERTINGINPUT_3_4VREFINT|3/4 VREFINT
+NonInvertingInput|COMP_NONINVERTINGINPUT_IO1|I/O1 (PA7/PB0/PB11)
+WindowMode|COMP_WINDOWMODE_DISABLED|Disabled
+WindowMode|COMP_WINDOWMODE_ENABLED|Enabled
+Mode|COMP_MODE_HIGHSPEED|High Speed
+Mode|COMP_MODE_MEDIUMSPEED|Medium Speed
+Mode|COMP_MODE_LOWPOWER|Low Power
+Mode|COMP_MODE_ULTRALOWPOWER|Ultra-Low Power
+TriggerMode|COMP_TRIGGERMODE_NONE|None
+TriggerMode|COMP_TRIGGERMODE_IT_RISING|Rising Edge
+TriggerMode|COMP_TRIGGERMODE_IT_FALLING|Falling Edge
+TriggerMode|COMP_TRIGGERMODE_IT_RISING_FALLING|Rising/Falling Edge
+Hysteresis|COMP_HYSTERESIS_NONE|None
+Hysteresis|COMP_HYSTERESIS_LOW|Low
+Hysteresis|COMP_HYSTERESIS_MEDIUM|Medium
+Hysteresis|COMP_HYSTERESIS_HIGH|High
+BlankingSrce|COMP_BLANKINGSRCE_NONE|None
+BlankingSrce|COMP_BLANKINGSRCE_TIM1OC5|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRCE_TIM2OC3|Timer 2 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRCE_TIM3OC3|Timer 3 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRCE_TIM3OC4|Timer 3 Output Compare 4
+BlankingSrce|COMP_BLANKINGSRCE_TIM15OC1|Timer 15 Output Compare 1
+BlankingSrce|COMP_BLANKINGSRCE_TIM2OC4|Timer 2 Output Compare 4
+BlankingSrce|COMP_BLANKINGSRCE_TIM15OC2|Timer 15 Output Compare 2
+OutputPol|COMP_OUTPUTPOL_NONINVERTED|Not Inverted
+OutputPol|COMP_OUTPUTPOL_INVERTED|Inverted
+Output|COMP_OUTPUT_NONE|None
+Output|COMP_OUTPUT_TIM1BKIN|Timer 1 Break Input (BRK_ACTH)
+Output|COMP_OUTPUT_TIM1BKIN2|Timer 1 Break Input 2 (BRK2)
+Output|COMP_OUTPUT_TIM1IC1|Timer 1 Input Capture 1
+Output|COMP_OUTPUT_TIM1OCREFCLR|Timer 1 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM2IC4|Timer 2 Input Capture 4
+Output|COMP_OUTPUT_TIM2OCREFCLR|Timer 2 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM3IC1|Timer 3 Input Capture 1
+Output|COMP_OUTPUT_TIM3OCREFCLR|Timer 3 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM3IC3|Timer 3 Input Capture 3
+Output|COMP_OUTPUT_TIM15IC2|Timer 15 Input Capture 2
+Output|COMP_OUTPUT_TIM15OCREFCLR|Timer 15 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM2IC2|Timer 2 Input Capture 2
+Output|COMP_OUTPUT_COMP6_TIM2OCREFCLR|Timer 2 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM16IC1|Timer 16 Input Capture 1
+Output|COMP_OUTPUT_TIM16OCREFCLR|Timer 16 Output Compare Reference Clear

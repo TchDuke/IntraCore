@@ -1,0 +1,27 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=M33TD_NSAppCore
+Version=MP2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+verbosity|Verbosity level|Log Configuration||||Logger Verbosity Configuration
+WDG_MONITOR|Watchdog Monitor task|Watchdog Monitor Task||||WDG_MONITOR task configuration
+WDG_TASK_STACK_SIZE|Stack size|Watchdog Monitor Task||||<b></b>WDG_MONITOR task Stack size. It's recommended to keep the default values to avoid runtime issues.
+WDG_TASK_PRIORITY|Priority level|Watchdog Monitor Task||||<b></b>Logger Verbosity Configuration. It's recommended to keep the default values to avoid runtime issues.
+REMOTEPROC_TASK|RemoteProc Task|RemoteProc Task||||REMOTEPROC task configuration
+REMOTEPROC_TASK_STACK_SIZE|Stack size|RemoteProc Task||||<b></b>REMOTEPROC task Stack size. It's recommended to keep the default values to avoid runtime issues.
+REMOTEPROC_TASK_PRIORITY|Priority level|RemoteProc Task||||<b></b>REMOTEPROC task priority Configuration. It's recommended to keep the default values to avoid runtime issues.
+USERAPP_TASK|UserApp Task|UserApp Task||||User App task configuration
+USERAPP_TASK_STACK_SIZE|Stack size|UserApp Task||||<b></b>User App task Stack size. It's recommended to keep the default values to avoid runtime issues.
+USERAPP_TASK_PRIORITY|Priority level|UserApp Task||||<b></b>User App task priority configuration. It's recommended to keep the default values to avoid runtime issues.
+LOGGER_TASK|Logger Task|Logger Task||||LOGGER task configuration
+LOGGER_TASK_STACK_SIZE|Stack size|Logger Task||||<b></b>LOGGER task Stack size. It's recommended to keep the default values to avoid runtime issues.
+LOGGER_TASK_PRIORITY|Priority level|Logger Task||||Logger task priority
+SCMI_MGR_TASK|SCMI Manager Task|SCMI Manager Task||||SCMI_MGR task configuration
+SCMI_MGR_TASK_STACK_SIZE|Stack size|SCMI Manager Task||||<b></b>SCMI_MGR task Stack size. It's recommended to keep the default values to avoid runtime issues.
+SCMI_MGR_TASK_PRIORITY|Priority level|SCMI Manager Task||||<b></b>SCMI_MGR task priority. It's recommended to keep the default values to avoid runtime issues.
+
+[Values]
+# параметр|значение|подпись

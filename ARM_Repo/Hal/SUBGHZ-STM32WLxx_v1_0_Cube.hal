@@ -1,0 +1,20 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SUBGHZ
+Version=STM32WLxx_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+BaudratePrescaler|Baudrate Prescaler Value|||||
+
+[Values]
+# параметр|значение|подпись
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_2|2
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_4|4
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_8|8
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_16|16
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_32|32
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_64|64
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_128|128
+BaudratePrescaler|SUBGHZSPI_BAUDRATEPRESCALER_256|256

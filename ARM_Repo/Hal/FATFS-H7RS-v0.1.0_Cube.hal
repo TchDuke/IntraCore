@@ -1,0 +1,84 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FATFS
+Version=H7RS-v0.1.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FATFS_version|FATFS version|Version||||
+RTOS_IN_USE|RTOS_IN_USE|||||
+MAX_VOLUMES_VALUE|Max value for the volumes parameter|||||
+SD_MODE|SD MODE|||||
+SDMMC1_MODE|SD MODE|||||
+SDMMC2_MODE|SD MODE|||||
+_HSD|SDMMC instance|SDIO/SDMMC||||
+_HUSBH|USBH instance|USBH||||
+_HNAND|NandFlash instance|Nand||||
+_HSDRAM|SDRAM instance|SDRAM||||
+VIRTUAL_SRAM1|SRAM1 on|SRAM||||
+VIRTUAL_SRAM2|SRAM2 on|SRAM||||
+VIRTUAL_SRAM3|SRAM3 on|SRAM||||
+VIRTUAL_SRAM4|SRAM4 on|SRAM||||
+_HSRAM|SRAM instance|SRAM||||
+SD_DISKIO_INTERFACE|SD Diskio Interface|SDIO/SDMMC||||
+SD_TIMEOUT|SD Timeout|SDIO/SDMMC||1000|1000000|
+ENABLE_SD_INIT|Enable SD Init|SDIO/SDMMC||||Let the Low-level Diskio driver initialize the SD driver.
+ENABLE_SD_DMA_CACHE_MAINTENANCE|Enable SD DMA Cache Maintenance|SDIO/SDMMC||||Enable the define below to activate a cache maintenance at each read and write operation. Requires: Under condition (DMA RTOS) mode or (DMA Standlone) mode
+BLOCK_SIZE|Block size|SRAM||||
+SRAM_DISK_BASE_ADDR|SRAM device Base address|SRAM||||
+SRAM_DISK_SIZE|SRAM device size in bytes|SRAM||||
+USB_BLOCK_SIZE|Block size|USBH||||
+HUSB_HOST|hUsb_Host|||||
+FF_STR_VOLUME_ID|String volume ID|||||
+FF_VOLUME_STRS|String volume ID|||||
+USE_DMA_CODE_SD|Use dma template|SDIO/SDMMC||||When enabled, generate code based on sd_diskio_dma_template.* files (recommended choice). Please ensure that the DMA controller to be used is properly configured. When disabled, generate code based on sd_diskio_template.* files
+BOARD_NAME|Name|Board||||No board available, as no custom configuration on-going/possible on that series
+DISKIO_CODE|Diskio code|UserDefined||||TO DO
+VIRTUAL_CS|At least one CS set|CS||||
+FF_FS_READONLY|FS_READONLY (Read-only mode)|Function Parameters||||Setting FS_READONLY to 1 defines read only configuration. This removes writing functions: f_write, f_sync, f_unlink, f_mkdir, f_chmod, f_rename, f_truncate and useless f_getfree. <b>Dependency</b>: FS_READONLY = 1 (Enabled) possible as FS_LOCK = 0.
+FF_FS_MINIMIZE|FS_MINIMIZE (Minimization level)|Function Parameters||||The FS_MINIMIZE option defines minimization level to remove some functions. 0: All basic functions are enabled. 1: f_stat(), f_getfree(), f_unlink(), f_mkdir(), f_truncate() and f_rename() functions are removed. 2: f_opendir(), f_readdir() and f_closedir() are removed in addition to 1. 3: f_lseek() function is removed in addition to 2.
+FF_USE_STRFUNC|USE_STRFUNC (String functions)|Function Parameters||||To enable string functions (f_gets, f_putc, f_puts, ...), set USE_STRFUNC to 1 or 2. When set to 2, makes a LF -> CRLF conversion.
+FF_USE_FIND|USE_FIND (Find functions)|Function Parameters||||This option switches filtered directory read feature and related functions, f_findfirst() and f_findnext(). (0:Disable or 1:Enable).
+FF_PRINT_LLI|FF_PRINT_LLI (PRINT functions)|Function Parameters||||This option switches support for long integer argument in f_printf. When this feature is enabled, C standard needs to be C99 or later and math.h is included in ff.c.
+FF_PRINT_FLOAT|FF_PRINT_FLOAT (PRINT functions)|Function Parameters||||This option switches support for floating point argument in f_printf. When this feature is enabled, C standard needs to be C99 or later.
+FF_USE_MKFS|USE_MKFS (Make filesystem function)|Function Parameters||||To enable f_mkfs function, set USE_MKFS to 1 (Enabled) and set FS_READONLY to 0 (Disabled)
+FF_USE_FORWARD|USE_FORWARD (Forward function)|Function Parameters||||To enable f_forward function, set USE_FORWARD to 1 (Enabled) and set FS_TINY to 1 (Enabled).
+FF_USE_LABEL|USE_LABEL (Volume label functions)|Function Parameters||||To enable volume label functions, set USE_LABEL to 1 (Enabled).
+FF_USE_FASTSEEK|USE_FASTSEEK (Fast seek function)|Function Parameters||||To enable fast seek feature, set USE_FASTSEEK to 1 (Enabled).
+VIRTUAL_CODE_PAGE|VIRTUAL_CODE_PAGE|Locale and Namespace Parameters||||
+FF_CODE_PAGE|CODE_PAGE (Code page on target)|Locale and Namespace Parameters||||The CODE_PAGE specifies the OEM code page to be used on the target system. Incorrect setting of the code page can cause a file open failure.
+FF_USE_LFN|FF_USE_LFN (Use Long Filename)|Locale and Namespace Parameters||||The USE_LFN option switches the LFN feature. - 0: Disable LFN feature. MAX_LFN has no effect. - 1: Enable LFN with static working buffer on the BSS. Always NOT reentrant. - 2: Enable LFN with dynamic working buffer on the STACK. - 3: Enable LFN with dynamic working buffer on the HEAP. To enable LFN feature, Unicode handling functions ff_convert() and ff_wtoupper() function must be added to the project. The LFN working buffer occupies (MAX_LFN + 1) * 2 bytes. When use stack for the working buffer, take care on stack overflow. When use heap memory for the working buffer, memory management functions, ff_memalloc() and ff_memfree(), must be added to the project. <b>Dependency</b>: USE_LFN = 0 (Disabled) not possible : it requires LFN_UNICODE = 0 (ANSI/OEM).
+FF_MAX_LFN|MAX_LFN (Max Long Filename)|Locale and Namespace Parameters||12|255|Maximum LFN length to handle.
+FF_LFN_UNICODE|LFN_UNICODE (Enable Unicode)|Locale and Namespace Parameters||||This option switches the character encoding on the API when LFN is enabled (FF_USE_LFN = 1).
+FF_STRF_ENCODE|STRF_ENCODE (Character encoding)|Locale and Namespace Parameters||||When Unicode API is enabled, character encoding on the all FatFs API is switched to Unicode. STRF_ENCODE option selects the character encoding on the file to be read/written via string functions, f_gets(), f_putc(), f_puts and f_printf(). - 0: Read/Write a character in ANSI/OEM. - 1: Read/Write a character in UTF-16LE. - 2: Read/Write a character in UTF-16BE, - 3: Read/Write a character in UTF-8 <b>Dependency</b>: This option has no effect when LFN_UNICODE is 0 (ANSI/OEM).
+FF_FS_RPATH|FS_RPATH (Relative Path)|Locale and Namespace Parameters||||The FS_RPATH option configures relative path feature. - 0: Disable relative path feature and remove related functions. - 1: Enable relative path. f_chdrive() and f_chdir() function are available. - 2: f_getcwd() function is available in addition to 1. Note that output of the f_readdir() function is affected by this option.
+FF_VOLUMES|VOLUMES (Logical drives)|Physical Drive Parameters||1|=MAX_VOLUMES_VALUE|Number of volumes (logical drives) to be used.
+FF_LBA64|Logical Block Addressing (LBA64)|Physical Drive Parameters||0|1|Support for 64-bit LBA (Logical Block Addressing).
+FF_MIN_GPT|MIN_GPT|Physical Drive Parameters|||0x100000000|Minimum number of sectors to switch GPT format to create partition in f_mkfs() and f_fdisk().
+FF_MAX_SS|MAX_SS (Maximum Sector Size)|Physical Drive Parameters||||Maximum sector size to be handled. Four possible values: 512, 1024, 2048, 4096. Always set <b>512</b> for memory card and hard disk but a larger value may be required for on-board flash memory, floppy disk and optical disk. When MAX_SS is larger than 512, it configures FatFs to variable sector size and GET_SECTOR_SIZE command must be implemented to the disk_ioctl() function.
+FF_MIN_SS|MIN_SS (Minimum Sector Size)|Physical Drive Parameters||||Minimum sector size to be handled. Note: must be less than or equal to FF_MAX_SS.
+FF_MULTI_PARTITION|MULTI_PARTITION (Volume partitions feature)|Physical Drive Parameters||||When set to 0 (Disabled), each volume is bound to the same physical drive number and it can mount only first primaly partition. When it is set to 1 (Enabled), each volume is tied to the partitions listed in VolToPart[]. <b>Warning: </b> The volToPart variable contains the "volume management table" defined by the user (<b>required</b> when FF_MULTI_PARTITION != 0). It is generated in a USER SECTION so that it can be completed by the user.
+FF_USE_TRIM|USE_TRIM (Erase feature)|Physical Drive Parameters||||This option switches ATA-TRIM feature. (0:Disable or 1:Enable) To enable Trim feature, also CTRL_TRIM command should be implemented to the disk_ioctl() function.
+FF_FS_NOFSINFO|FS_NOFSINFO (Force full FAT scan)|Physical Drive Parameters||||If you need to know correct free space on the FAT32 volume, set bit 0 of this option and f_getfree() function at first time after volume mount will force a full FAT scan. Bit 1 controls the last allocated cluster number as bit 0. - bit0=0: Use free cluster count in the FSINFO if available. - bit0=1: Do not trust free cluster count in the FSINFO. - bit1=0: Use last allocated cluster number in the FSINFO if available. - bit1=1: Do not trust last allocated cluster number in the FSINFO.
+FF_FS_TINY|FS_TINY (Tiny mode)|System Parameters||||When FS_TINY is set to 1, FatFs uses the sector buffer in the file system object instead of the sector buffer in the individual file object for file data transfer. This reduces memory consumption 512 bytes each file object.
+FF_FS_NORTC|FS_NORTC (Timestamp feature)|System Parameters||||The FF_FS_NORTC option switches timestamp feature. - If the system does not have an RTC function or valid timestamp is not needed, set FF_FS_NORTC to 1 (Fixed timestamp) to disable the timestamp feature. All objects modified by FatFs will have a fixed timestamp defined by FF_NORTC_MON, FF_NORTC_MDAY and FF_NORTC_YEAR. - When timestamp feature is enabled (Dynamic timestamp), get_fattime() function need to be added to the project to read current time form RTC and generate a timestamp. FF_NORTC_MON, FF_NORTC_MDAY and FF_NORTC_YEAR have no effect.
+FF_NORTC_YEAR|NORTC_YEAR (Year for timestamp)|System Parameters||1980|2107|As FS_NORTC is enabled, it is the year part of the timestamps used by Fatfs.
+FF_NORTC_MON|NORTC_MON (Month for timestamp)|System Parameters||1|12|As FS_NORTC is enabled, it is the month part of the timestamps used by Fatfs.
+FF_NORTC_MDAY|NORTC_MDAY (Day for timestamp)|System Parameters||1|31|As FS_NORTC is enabled, it is the day part of the timestamps used by Fatfs.
+FF_FS_REENTRANT|FS_REENTRANT (Re-Entrancy)|System Parameters||||The FS_REENTRANT option switches the re-entrancy (thread safe) of the FatFs module. <B>Baremetal mode</B>: value read-only set to 0 <B>RTOS mode</B> is configurable as below: - 0: Disable re-entrancy. FS_TIMEOUT have no effect. - 1: Enable re-entrancy. Also user provided synchronization handlers, ff_mutex_create(), ff_mutex_delete(), ff_mutex_take(), and ff_mutex_give() Sync functions must be added to the project. Samples are available in ffsystem.C
+FF_FS_TIMEOUT|FS_TIMEOUT (Timeout ticks)|System Parameters||1|100000000|Timeout period in unit of time ticks
+FF_FS_LOCK|FS_LOCK (Number of files opened simultaneously)|System Parameters||0|255|To enable file lock control feature, set FS_LOCK to 1 or greater. The value defines how many files can be opened simultaneously.
+FF_USE_EXPAND|USE_EXPAND (Use f_expand function)|Function Parameters||||Flag to enable the f_expand function (0:Disabled or 1:Enabled). The f_expand function prepares or allocates a contiguous data area to the file. Note: can be enabled as FF_FS_READONLY equals to 0 (Disabled)
+FF_USE_CHMOD|USE_CHMOD (Change attributes function)|Function Parameters||||Flag to enable the f_chmod function (0:Disabled or 1:Enabled). The f_chmod function changes the attribute of a file or sub-directory. Note: can be enabled as FF_FS_READONLY equals to 0 (Disabled)
+FF_FS_EXFAT|FS_EXFAT (Support of exFAT file system)|System Parameters||||This option switches support of exFAT file system. (0:Disabled or 1:Enabled). When enable exFAT, also LFN needs to be enabled. (FF_USE_LFN >= 1). Note that enabling exFAT discards C89 compatibility. <b>Warning: </b> <i>Extracted from http://elm-chan.org/fsw/ff/doc/appnote.html#exfat </i> The exFAT filesystem is a patent of Microsoft Corporation. - the exFAT feature of FatFs is an implementation based on US. Pat. App. Pub. No. 2009/0164440 A1. - when enable the exFAT for the commercial products, a license by Microsoft will be needed depends on the final destination of the products.
+FF_LFN_BUF|LFN_BUF|Locale and Namespace Parameters||12|255|Buffer size to store "long filename".
+FF_SFN_BUF|SFN_BUF|Locale and Namespace Parameters||12|=_LFN_BUF|Buffer size to store ""alternate filename" (short filename).
+_FS_FATFS_SDIO|SD mode|||||
+_FS_FATFS_SDRAM|SDRAM mode|||||
+_FS_FATFS_SRAM|SRAM mode|||||
+_FS_FATFS_USB|USB mode|||||
+_FS_FATFS_USER|USER mode|||||
+
+[Values]
+# параметр|значение|подпись

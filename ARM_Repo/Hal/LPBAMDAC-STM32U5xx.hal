@@ -1,0 +1,209 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPBAMDAC
+Version=STM32U5xx
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InstanceHAL|HAL IP Instance|||||
+QUEUE_NAME|Define the name of your Queue|||||
+DESCRIPTOR_NAME_CONVERSION_DATA|name of the descriptor|||||
+DESCRIPTOR_NAME_CONVERSION_CONFIG|name of the descriptor|||||
+DESCRIPTOR_NAME_CONVERSION|name of the descriptor|||||
+DESCRIPTOR_NAME_STOP|name of the descriptor|||||
+CircularNode_CONVERSION_CONFIG|Circular Node for CONVERSION CONFIG|Conversion Config||||description
+CircularNode_CONVERSION_DATA|Circular Node for CONVERSION DATA|Conversion Data||||description
+CircularNode_CONVERSION|Circular Node for CONVERSION|Conversion||||description
+MYCHANNELCONVERSION_CONFIG|My Channel|Conversion Config||||
+MYCHANNELCONVERSION_DATA|My Channel|Conversion Data||||
+MYCHANNELCONVERSION|My Channel|Conversion||||
+CircularNode_STOP|Circular Node for STOP|Stop||||description
+TriggerPolarity|The Function execution is|Trigger Configuration||||description
+TriggerSelection|Trigger Hardware Signal is|Trigger Configuration||||description
+TriggerMode_CONFIG|Trigger Mode|Trigger Configuration||||description
+NodeLevel|Node on which the trigger is applied (not visible)|Trigger Configuration||||description
+SrcInc_CONVERSION_DATA|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_CONVERSION_DATA|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_CONVERSION_DATA|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_CONVERSION_DATA|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_CONVERSION_DATA|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_CONVERSION_DATA|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_CONVERSION_DATA|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_CONVERSION_DATA|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_CONVERSION_DATA|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_CONVERSION_DATA|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_CONVERSION_DATA|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_CONVERSION_DATA|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_CONVERSION_DATA|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_CONVERSION_DATA|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_CONVERSION_DATA|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcInc_CONVERSION|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_CONVERSION|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_CONVERSION|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_CONVERSION|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_CONVERSION|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_CONVERSION|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_CONVERSION|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_CONVERSION|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_CONVERSION|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_CONVERSION|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_CONVERSION|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_CONVERSION|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_CONVERSION|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_CONVERSION|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_CONVERSION|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DAC_Trigger_CONVERSION_CONFIG1|DAC Channel 1 Trigger|Conversion Config||||
+DAC_Trigger_CONVERSION_CONFIG2|DAC Channel 2 Trigger|Conversion Config||||
+Alignment_CONVERSION_DATA|Alignment|Conversion Data||||
+Size_CONVERSION_DATA|Number of Data|Conversion Data - Data Configuration||||description
+BufferName_CONVERSION_DATA|Data Buffer Name|Conversion Data - Data Configuration||||uint32 buffer address
+BufferOffset_CONVERSION_DATA|Data Buffer Offset|Conversion Data - Data Configuration||||uint32 buffer address
+BufferAddress_CONVERSION_DATA|Data Buffer Addresss|Conversion Data - Data Configuration||||uint32 buffer address
+DAC_Trigger_CONVERSION1|DAC Channel 1 Trigger|Conversion||||
+DAC_Trigger_CONVERSION2|DAC Channel 2 Trigger|Conversion||||
+Alignment_CONVERSION|Alignment|Conversion||||
+Size_CONVERSION|Number of Data|Conversion - Data Configuration||||description
+BufferName_CONVERSION|Data Buffer Name|Conversion - Data Configuration||||uint32 buffer address
+BufferOffset_CONVERSION|Data Buffer Offset|Conversion - Data Configuration||||uint32 buffer address
+BufferAddress_CONVERSION|Data Buffer Addresss|Conversion - Data Configuration||||uint32 buffer address
+
+[Values]
+# параметр|значение|подпись
+CircularNode_CONVERSION_CONFIG|__NULL|DISABLE
+CircularNode_CONVERSION_CONFIG|LPBAM_DAC_CONVERSION_CONFIGQ_CONFIG_NODE|Configuration Node
+CircularNode_CONVERSION_DATA|__NULL|DISABLE
+CircularNode_CONVERSION_DATA|LPBAM_DAC_CONVERSION_DATAQ_CONFIG_NODE|Configuration Node
+CircularNode_CONVERSION_DATA|LPBAM_DAC_CONVERSION_DATAQ_DATA_NODE|Data Node
+CircularNode_CONVERSION|__NULL|DISABLE
+CircularNode_CONVERSION|LPBAM_DAC_CONVERSION_FULLQ_CONFIG_NODE|Configuration Node
+CircularNode_CONVERSION|LPBAM_DAC_CONVERSION_FULLQ_DATA_NODE|Data Node
+MYCHANNELCONVERSION_CONFIG|LPBAM_DAC_CHANNEL_1|Channel 1
+MYCHANNELCONVERSION_CONFIG|LPBAM_DAC_CHANNEL_2|Channel 2
+MYCHANNELCONVERSION_DATA|LPBAM_DAC_CHANNEL_1|Channel 1
+MYCHANNELCONVERSION_DATA|LPBAM_DAC_CHANNEL_2|Channel 2
+MYCHANNELCONVERSION|LPBAM_DAC_CHANNEL_1|Channel 1
+MYCHANNELCONVERSION|LPBAM_DAC_CHANNEL_2|Channel 2
+CircularNode_STOP|__NULL|DISABLE
+CircularNode_STOP|LPBAM_DAC_STOP_FULLQ_CONFIG_NODE|Configuration Node
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_MASKED|not conditionned by a Trigger
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_RISING|trigged on the Rising Edge of the Hardware Signal
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_FALLING|trigged on the Falling Edge of the Hardware Signal
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE0|EXTI Line 0
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE1|EXTI Line 1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE2|EXTI Line 2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE3|EXTI Line 3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE4|EXTI Line 4
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG1|TAMP TRG1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG2|TAMP TRG2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG3|TAMP TRG3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM4_OUT|LPTIM4 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP1_OUT|COMP1 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP2_OUT|COMP2 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_ADC4_AWD1|ADC4 AWD1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH0_TCF|LPDMA1 CH0 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH1_TCF|LPDMA1 CH1 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH2_TCF|LPDMA1 CH2 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH3_TCF|LPDMA1 CH3 TCF
+TriggerMode_CONFIG|LPBAM_DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+NodeLevel|LPBAM_DAC_CONVERSION_CONFIGQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_DAC_CONVERSION_DATAQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_DAC_CONVERSION_FULLQ_CONFIG_NODE|Config Node
+SrcInc_CONVERSION_DATA|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_CONVERSION_DATA|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_CONVERSION_DATA|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_CONVERSION_DATA|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_CONVERSION_DATA|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_CONVERSION_DATA|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_CONVERSION_DATA|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_CONVERSION_DATA|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_CONVERSION_DATA|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_CONVERSION_DATA|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_CONVERSION_DATA|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_CONVERSION_DATA|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_CONVERSION_DATA|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_CONVERSION_DATA|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_CONVERSION_DATA|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_CONVERSION_DATA|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_CONVERSION_DATA|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_CONVERSION_DATA|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_CONVERSION_DATA|LPBAM_DAC_CONVERSION_DATAQ_DATA_NODE|Data Node
+SrcInc_CONVERSION|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_CONVERSION|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_CONVERSION|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_CONVERSION|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_CONVERSION|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_CONVERSION|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_CONVERSION|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_CONVERSION|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_CONVERSION|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_CONVERSION|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_CONVERSION|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_CONVERSION|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_CONVERSION|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_CONVERSION|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_CONVERSION|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_CONVERSION|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_CONVERSION|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_CONVERSION|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_CONVERSION|LPBAM_DAC_CONVERSION_FULLQ_DATA_NODE|Data Node
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_NONE|Conversion is not conditioned by Trigger
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T1_TRGO|TIM1 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T2_TRGO|TIM2 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T4_TRGO|TIM4 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T5_TRGO|TIM5 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T6_TRGO|TIM6 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T7_TRGO|TIM7 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T8_TRGO|TIM8 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_T15_TRGO|TIM15 TRGO
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+DAC_Trigger_CONVERSION_CONFIG1|LPBAM_DAC_TRIGGER_EXT_IT9|EXTI Line 9
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_NONE|Conversion is not conditioned by Trigger
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T1_TRGO|TIM1 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T2_TRGO|TIM2 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T4_TRGO|TIM4 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T5_TRGO|TIM5 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T6_TRGO|TIM6 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T7_TRGO|TIM7 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T8_TRGO|TIM8 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_T15_TRGO|TIM15 TRGO
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+DAC_Trigger_CONVERSION_CONFIG2|LPBAM_DAC_TRIGGER_EXT_IT9|EXTI Line 9
+Alignment_CONVERSION_DATA|LPBAM_DAC_ALIGN_12B_R|12 bits right alignment
+Alignment_CONVERSION_DATA|LPBAM_DAC_ALIGN_12B_L|12 bits left alignment
+Alignment_CONVERSION_DATA|LPBAM_DAC_ALIGN_8B_R|8 bits right alignment
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_NONE|Conversion is not conditioned by Trigger
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T1_TRGO|TIM1 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T2_TRGO|TIM2 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T4_TRGO|TIM4 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T5_TRGO|TIM5 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T6_TRGO|TIM6 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T7_TRGO|TIM7 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T8_TRGO|TIM8 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_T15_TRGO|TIM15 TRGO
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+DAC_Trigger_CONVERSION1|LPBAM_DAC_TRIGGER_EXT_IT9|EXTI Line 9
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_NONE|Conversion is not conditioned by Trigger
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T1_TRGO|TIM1 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T2_TRGO|TIM2 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T4_TRGO|TIM4 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T5_TRGO|TIM5 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T6_TRGO|TIM6 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T7_TRGO|TIM7 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T8_TRGO|TIM8 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_T15_TRGO|TIM15 TRGO
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+DAC_Trigger_CONVERSION2|LPBAM_DAC_TRIGGER_EXT_IT9|EXTI Line 9
+Alignment_CONVERSION|LPBAM_DAC_ALIGN_12B_R|12 bits right alignment
+Alignment_CONVERSION|LPBAM_DAC_ALIGN_12B_L|12 bits left alignment
+Alignment_CONVERSION|LPBAM_DAC_ALIGN_8B_R|8 bits right alignment

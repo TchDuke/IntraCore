@@ -1,0 +1,43 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USB_HOST
+Version=v2.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+USBH_MAX_NUM_ENDPOINTS|USBH_MAX_NUM_ENDPOINTS (Maximum number of endpoints)|Host Configuration||1|255|Maximum number of supported endpoints per interface for All Classes
+USBH_MAX_NUM_INTERFACES|USBH_MAX_NUM_INTERFACES (Maximun number of interfaces)|Host Configuration||1|255|Maximum number of supported Interfaces
+USBH_MAX_NUM_SUPPORTED_CLASS|USBH_MAX_NUM_SUPPORTED_CLASS (Maximun number of supported class)|Host Configuration||1|255|Maximum number of supported Classes
+USBH_USE_OS|USBH_USE_OS (Enable the support of an RTOS)|CMSIS_RTOS||||Enable RTOS support
+USBH_PROCESS_PRIO|USBH_PROCESS_PRIO (The CMSIS-RTOS osPriority value specifies the priority for the USB Host thread)|CMSIS_RTOS||||The osPriority value specifies the priority for a thread. <b>Note:</b> only one possible value as configMAX_PRIORITIES in FreeRTOS equals to 1
+USBH_PROCESS_STACK_SIZE|USBH_PROCESS_STACK_SIZE (The CMSIS-RTOS stack size requirements in bytes)|CMSIS_RTOS|Words|=FREERTOS:configMINIMAL_STACK_SIZE|=FREERTOS:configTOTAL_HEAP_SIZE/4|stack size requirements in word format; 256 word is default stack size
+USBH_MAX_NUM_CONFIGURATION|USBH_MAX_NUM_CONFIGURATION (Maximun number of supported configuration)|Host Configuration||1|255|Maximum number of supported Configurations
+USBH_KEEP_CFG_DESCRIPTOR|USBH_KEEP_CFG_DESCRIPTOR (Keep the configuration into RAM)|Host Configuration||||Allow to keep full configuration descriptor in RAM when further parsing is needed
+USBH_MAX_SIZE_CONFIGURATION|USBH_MAX_SIZE_CONFIGURATION (Maximun size in bytes for the Configuration Descriptor)|Host Configuration|Byte(s)|1|256|Maximum size of configuration descriptor
+USBH_MAX_DATA_BUFFER|USBH_MAX_DATA_BUFFER (Maximun size of temporary data)|Host Configuration|Byte(s)|1|65536|Maximum size for USB descriptor container
+USBH_DEBUG_LEVEL|USBH_DEBUG_LEVEL (USBH Debug Level)|Host Configuration||||Define different level output trace as folowing : 0 : No debug message is shown 1 : only User message are shown 2 : User + Error messages are shown 3 : All message and interal debug message are shown
+VirtualModeFS||Basic Parameters||||
+VirtualModeHS||Basic Parameters||||
+gState|gState|||HOST_IDLE|HOST_ABORT_STATE|
+HOST_FS||||0|10|
+HOST_HS||||0|10|
+USBH_CLASS||||0|10|
+USBH_AUDIO||||0|10|
+USBH_CDC||||0|10|
+USBH_HID||||0|10|
+USBH_MSC||||0|10|
+USBH_MTP||||0|10|
+
+[Values]
+# параметр|значение|подпись
+VirtualModeFS|All_Classes|
+VirtualModeHS|All_Classes|
+HOST_FS|HOST_FS|
+HOST_HS|HOST_HS|
+USBH_CLASS|USB_ALL_CLASSES|
+USBH_AUDIO|USBH_AUDIO_CLASS|
+USBH_CDC|USBH_CDC_CLASS|
+USBH_HID|USBH_HID_CLASS|
+USBH_MSC|USBH_MSC_CLASS|
+USBH_MTP|USBH_MTP_CLASS|

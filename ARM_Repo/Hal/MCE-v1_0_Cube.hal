@@ -1,0 +1,47 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=MCE
+Version=v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Index|Index|||||
+Algorithm|Cipher Selection|Settings||||
+RegionIndex|Region Index|Settings||||
+Mode|Context Mode|Settings||||
+ContextID|Context Index|Settings||||
+ContextID_Neo|Context Index|Settings||||
+KeyType|Key Type|Settings||||MCE_KeyType key type used for encryption, Master key or Fast Master key
+pKey|Key|Settings||||
+Nonce|Nonce|Settings||||
+Version|Version|Settings||0x0000|0xFFFF|
+PrivilegedAccess|Privileged Access|Settings||||
+AccessMode|Access Mode|Settings||||
+StartAddress|Start Adress|XSPI Adress||0xC0000000|0xDFFFFFFF|
+EndAddress|End Adress|XSPI Adress||0xC0000FFF|0xDFFFFFFF|
+FMC_Memory|FMC Memory Banks|FMC Adress||||
+
+[Values]
+# параметр|значение|подпись
+Algorithm|MCE_AES_128|AES_128
+Algorithm|MCE_AES_256|AES_256
+Algorithm|MCE_NOEKEON|NOEKEON
+RegionIndex|MCE_REGION1|1
+RegionIndex|MCE_REGION2|2
+RegionIndex|MCE_REGION3|3
+RegionIndex|MCE_REGION4|4
+Mode|MCE_NO_CIPHER|MCE no cipher
+Mode|MCE_STREAM_CIPHER|MCE stream cipher
+Mode|MCE_BLOCK_CIPHER|MCE block cipher
+Mode|MCE_FASTBLOCK_CIPHER|MCE fast block cipher
+ContextID|MCE_NO_CONTEXT|No Context
+ContextID|MCE_CONTEXT1|Context 1
+ContextID|MCE_CONTEXT2|Context 2
+KeyType|MCE_USE_MASTERKEYS|Master keys
+KeyType|MCE_USE_FASTMASTERKEYS|Fast Master keys
+PrivilegedAccess|MCE_REGION_NPRIV|Region non-privileged
+PrivilegedAccess|MCE_REGION_PRIV|Region privileged access
+AccessMode|MCE_REGION_READONLY|Read only
+AccessMode|MCE_REGION_READWRITE|Region can be read and written
+FMC_Memory|NOR_PSRAM_SRAM|NOR/PSRAM/SRAM Memory

@@ -1,0 +1,2392 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RIF
+Version=STM32N6_rif_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+IP_ID|ID of each IP|||||
+SPI1/I2S1_Privilege|SPI1/I2S1|||||
+SPI2/I2S2_Privilege|SPI2/I2S2|||||
+SPI3/I2S3_Privilege|SPI3/I2S3|||||
+SPI4_Privilege|SPI4|||||
+SPI5_Privilege|SPI5|||||
+SPI6/I2S6_Privilege|SPI6/I2S6|||||
+SAI1_Privilege|SAI1|||||
+SAI2_Privilege|SAI2|||||
+I2C1_Privilege|I2C1|||||
+I2C2_Privilege|I2C2|||||
+I2C3_Privilege|I2C3|||||
+I2C4_Privilege|I2C4|||||
+I3C1_Privilege|I3C1|||||
+I3C2_Privilege|I3C2|||||
+USART1_Privilege|USART1|||||
+USART2_Privilege|USART2|||||
+USART3_Privilege|USART3|||||
+UART4_Privilege|UART4|||||
+UART5_Privilege|UART5|||||
+USART6_Privilege|USART6|||||
+UART7_Privilege|UART7|||||
+UART8_Privilege|UART8|||||
+UART9_Privilege|UART9|||||
+USART10_Privilege|USART10|||||
+LPUART1_Privilege|LPUART1|||||
+FDCAN1_Privilege|FDCAN1|||||
+FDCAN2_Privilege|FDCAN2|||||
+FDCAN3_Privilege|FDCAN3|||||
+TIM1_Privilege|TIM1|||||
+TIM2_Privilege|TIM2|||||
+TIM3_Privilege|TIM3|||||
+TIM4_Privilege|TIM4|||||
+TIM5_Privilege|TIM5|||||
+TIM6_Privilege|TIM6|||||
+TIM7_Privilege|TIM7|||||
+TIM8_Privilege|TIM8|||||
+TIM9_Privilege|TIM9|||||
+TIM10_Privilege|TIM10|||||
+TIM11_Privilege|TIM11|||||
+TIM12_Privilege|TIM12|||||
+TIM13_Privilege|TIM13|||||
+TIM14_Privilege|TIM14|||||
+TIM15_Privilege|TIM15|||||
+TIM16_Privilege|TIM16|||||
+TIM17_Privilege|TIM17|||||
+TIM18_Privilege|TIM18|||||
+GFXTIM_Privilege|GFXTIM|||||
+LPTIM1_Privilege|LPTIM1|||||
+LPTIM2_Privilege|LPTIM2|||||
+LPTIM3_Privilege|LPTIM3|||||
+LPTIM4_Privilege|LPTIM4|||||
+LPTIM5_Privilege|LPTIM5|||||
+ADF1_Privilege|ADF1|||||
+MDF1_Privilege|MDF1|||||
+SDMMC1_Privilege|SDMMC1|||||
+SDMMC2_Privilege|SDMMC2|||||
+MDIOS_Privilege|MDIOS|||||
+OTG1_HS_Privilege|OTG1_HS|||||
+OTG2_HS_Privilege|OTG2_HS|||||
+UCPD1_Privilege|UCPD1|||||
+ETH1_Privilege|ETH1|||||
+SPDIFRX1_Privilege|SPDIFRX1|||||
+SYSCFG_Privilege|SYSCFG|||||
+ADC12_Privilege|ADC12|||||
+VREFBUF_Privilege|VREFBUF|||||
+CRC_Privilege|CRC|||||
+IWDG_Privilege|IWDG|||||
+WWDG_Privilege|WWDG|||||
+RNG_Privilege|RNG|||||
+PKA_Privilege|PKA|||||
+SAES_Privilege|SAES|||||
+HASH_Privilege|HASH|||||
+CRYP_Privilege|CRYP|||||
+MCE1_Privilege|MCE1|||||
+MCE2_Privilege|MCE2|||||
+MCE3_Privilege|MCE3|||||
+MCE4_Privilege|MCE4|||||
+XSPI1_Privilege|XSPI1|||||
+XSPI2_Privilege|XSPI2|||||
+XSPI3_Privilege|XSPI3|||||
+XSPIM_Privilege|XSPIM|||||
+FMC_Privilege|FMC|||||
+CSI2HOST_Privilege|CSI2HOST|||||
+DCMIPP_Privilege|DCMIPP|||||
+DCMI_Privilege|DCMI|||||
+JPEG_Privilege|JPEG|||||
+VENC_Privilege|VENC|||||
+ICACHE_Privilege|ICACHE|||||
+GPU_Privilege|GPU|||||
+GFXMMU_Privilege|GFXMMU|||||
+DMA2D_Privilege|DMA2D|||||
+LTDC_CMN_Privilege|LTDC_CMN|||||
+LTDC_L1_Privilege|LTDC_L1|||||
+LTDC_L2_Privilege|LTDC_L2|||||
+NPU_Privilege|NPU|||||
+NPU_Name_RIMU|NotSupportedByAllCPN|||||
+SDMMC1_Name_RIMU|NotSupportedByAllCPN|||||
+SDMMC2_Name_RIMU|NotSupportedByAllCPN|||||
+ETH1_Name_RIMU|NotSupportedByAllCPN|||||
+LTDC_L1_Name_RIMU||||||
+LTDC_L2_Name_RIMU||||||
+SPI1/I2S1_IAC_ID||||||
+SPI2/I2S2_Name_IAC|NotSupportedByAllCPN|||||
+SPI2/I2S2_IAC_ID||||||
+SPI3/I2S3_IAC_ID||||||
+SPI4_IAC_ID||||||
+SPI5_IAC_ID||||||
+SPI6/I2S6_IAC_ID||||||
+SAI1_IAC_ID||||||
+SAI2_IAC_ID||||||
+I2C1_Name_IAC|NotSupportedByAllCPN|||||
+I2C1_IAC_ID||||||
+I2C2_IAC_ID||||||
+I2C3_IAC_ID||||||
+I2C4_IAC_ID||||||
+I3C1_IAC_ID||||||
+I3C2_IAC_ID||||||
+USART1_IAC_ID||||||
+USART2_Name_IAC|NotSupportedByAllCPN|||||
+USART2_IAC_ID||||||
+USART3_IAC_ID||||||
+UART4_IAC_ID||||||
+UART5_IAC_ID||||||
+USART6_Name_IAC|NotSupportedByAllCPN|||||
+USART6_IAC_ID||||||
+UART7_IAC_ID||||||
+UART8_IAC_ID||||||
+UART9_IAC_ID||||||
+USART10_Name_IAC|NotSupportedByAllCPN|||||
+USART10_IAC_ID||||||
+LPUART1_IAC_ID||||||
+FDCAN1_FDCAN2_FDCAN3_Name_IAC||||||
+FDCAN1_FDCAN2_FDCAN3_IAC_ID||||||
+TIM1_Name_IAC|NotSupportedByAllCPN|||||
+TIM1_IAC_ID||||||
+TIM2_IAC_ID||||||
+TIM3_IAC_ID||||||
+TIM4_Name_IAC|NotSupportedByAllCPN|||||
+TIM4_IAC_ID||||||
+TIM5_Name_IAC|NotSupportedByAllCPN|||||
+TIM5_IAC_ID||||||
+TIM6_IAC_ID||||||
+TIM7_IAC_ID||||||
+TIM8_Name_IAC|NotSupportedByAllCPN|||||
+TIM8_IAC_ID||||||
+TIM9_IAC_ID||||||
+TIM10_IAC_ID||||||
+TIM11_IAC_ID||||||
+TIM12_Name_IAC|NotSupportedByAllCPN|||||
+TIM12_IAC_ID||||||
+TIM13_IAC_ID||||||
+TIM14_IAC_ID||||||
+TIM15_IAC_ID||||||
+TIM16_Name_IAC|NotSupportedByAllCPN|||||
+TIM16_IAC_ID||||||
+TIM17_Name_IAC|NotSupportedByAllCPN|||||
+TIM17_IAC_ID||||||
+TIM18_IAC_ID||||||
+GFXTIM_IAC_ID||||||
+LPTIM1_Name_IAC|NotSupportedByAllCPN|||||
+LPTIM1_IAC_ID||||||
+LPTIM2_IAC_ID||||||
+LPTIM3_Name_IAC|NotSupportedByAllCPN|||||
+LPTIM3_IAC_ID||||||
+LPTIM4_Name_IAC|NotSupportedByAllCPN|||||
+LPTIM4_IAC_ID||||||
+LPTIM5_Name_IAC|NotSupportedByAllCPN|||||
+LPTIM5_IAC_ID||||||
+ADF1_IAC_ID||||||
+MDF1_IAC_ID||||||
+SDMMC1_Name_IAC|NotSupportedByAllCPN|||||
+SDMMC1_IAC_ID||||||
+SDMMC2_Name_IAC|NotSupportedByAllCPN|||||
+SDMMC2_IAC_ID||||||
+MDIOS_IAC_ID||||||
+OTG1_HS_Name_IAC||||||
+OTG1_HS_IAC_ID||||||
+OTG1_FS_Name_IAC||||||
+OTG1_FS_IAC_ID||||||
+UCPD_IAC_ID||||||
+GB-ETH_IAC_ID||||||
+SPDIFRX1_Name_IAC|NotSupportedByAllCPN|||||
+SPDIFRX1_IAC_ID||||||
+SYSCONF_IAC_ID||||||
+ADC12_IAC_ID||||||
+VREFBUF_IAC_ID||||||
+CRC_IAC_ID||||||
+IWDG_IAC_ID||||||
+WWDG_IAC_ID||||||
+RNG_IAC_ID||||||
+PKA_Name_IAC|NotSupportedByAllCPN|||||
+PKA_IAC_ID||||||
+SAES_Name_IAC|NotSupportedByAllCPN|||||
+SAES_IAC_ID||||||
+HASH_IAC_ID||||||
+CRYP_Name_IAC|NotSupportedByAllCPN|||||
+CRYP_IAC_ID||||||
+MCE1_Name_IAC|NotSupportedByAllCPN|||||
+MCE1_IAC_ID||||||
+MCE2_Name_IAC|NotSupportedByAllCPN|||||
+MCE2_IAC_ID||||||
+MCE3_Name_IAC|NotSupportedByAllCPN|||||
+MCE3_IAC_ID||||||
+MCE4_Name_IAC|NotSupportedByAllCPN|||||
+MCE4_IAC_ID||||||
+XSPI1_IAC_ID||||||
+XSPI2_IAC_ID||||||
+XSPI3_IAC_ID||||||
+XSPIM_IAC_ID||||||
+FMC_Name_IAC|NotSupportedByAllCPN|||||
+FMC_IAC_ID||||||
+CSI2HOST_IAC_ID||||||
+DCMIPP_IAC_ID||||||
+DCMI_IAC_ID||||||
+JPEG_IAC_ID||||||
+VENC_IAC_ID||||||
+ICACHE_IAC_ID||||||
+GPU_IAC_ID||||||
+GFXMMU_IAC_ID||||||
+DMA2D_IAC_ID||||||
+LTDC_CMN_Name_IAC||||||
+LTDC_CMN_IAC_ID||||||
+LTDC_L1_Name_IAC||||||
+LTDC_L1_IAC_ID||||||
+LTDC_L2_Name_IAC||||||
+LTDC_L2_IAC_ID||||||
+NPU_Name_IAC|NotSupportedByAllCPN|||||
+NPU_IAC_ID||||||
+CM55_IAC_ID||||||
+EXTI_IAC_ID||||||
+GPDMA1_IAC_ID||||||
+HPDMA1_IAC_ID||||||
+RTC_IAC_ID||||||
+TAMP_IAC_ID||||||
+BSEC_IAC_ID||||||
+RCC_IAC_ID||||||
+PWR_CTRL_Name_IAC||||||
+PWR_CTRL_IAC_ID||||||
+IAC_IAC_ID||||||
+RISAF1 (TCM)_IAC_ID||||||
+RISAF2 (AXISRAM1)_IAC_ID||||||
+RISAF3 (AXISRAM2)_IAC_ID||||||
+RISAF4 (NPU_MST0)_IAC_ID||||||
+RISAF5 (NPU_MST1)_IAC_ID||||||
+RISAF6 (CPU_MST)_IAC_ID||||||
+RISAF7 (FLEXRAM)_IAC_ID||||||
+RISAF8 (CACHAXI)_IAC_ID||||||
+RISAF9 (VENCRAM)_IAC_ID||||||
+RISAF11 (XSPI1)_IAC_ID||||||
+RISAF12 (XSPI2)_IAC_ID||||||
+RISAF13 (XSPI3)_IAC_ID||||||
+RISAF14 (FMC)_IAC_ID||||||
+RISAF15 (Cache config)_IAC_ID||||||
+RISAF21 (AHB RAM1)_IAC_ID||||||
+RISAF22 (AHB RAM2)_IAC_ID||||||
+RISAF23 (BKPSRAM)_IAC_ID||||||
+RIFSC_IAC_ID||||||
+CPUAXI_RAM0_SubRegion1_ID|CPUAXI_RAM0_SubRegion1|||||
+CPUAXI_RAM0_SubRegion2_ID|CPUAXI_RAM0_SubRegion2|||||
+CPUAXI_RAM0_SubRegion3_ID|CPUAXI_RAM0_SubRegion3|||||
+CPUAXI_RAM0_SubRegion4_ID|CPUAXI_RAM0_SubRegion4|||||
+CPUAXI_RAM0_SubRegion5_ID|CPUAXI_RAM0_SubRegion5|||||
+CPUAXI_RAM0_SubRegion6_ID|CPUAXI_RAM0_SubRegion6|||||
+CPUAXI_RAM0_SubRegion7_ID|CPUAXI_RAM0_SubRegion7|||||
+RISAF_CPUAXI_RAM0_SubRegion1_Name|A|||||
+RISAF_CPUAXI_RAM0_SubRegion2_Name|B|||||
+RISAF_CPUAXI_RAM0_SubRegion3_Name|A|||||
+RISAF_CPUAXI_RAM0_SubRegion4_Name|B|||||
+RISAF_CPUAXI_RAM0_SubRegion5_Name|A|||||
+RISAF_CPUAXI_RAM0_SubRegion6_Name|B|||||
+RISAF_CPUAXI_RAM0_SubRegion7_Name|A|||||
+RISAF_CPUAXI_RAM0_SubRegion8_Name|B|||||
+RISAF_CPUAXI_RAM0_SubRegion9_Name|A|||||
+RISAF_CPUAXI_RAM0_SubRegion10_Name|B|||||
+RISAF_CPUAXI_RAM0_SubRegion11_Name|A|||||
+RISAF_CPUAXI_RAM0_SubRegion12_Name|B|||||
+RISAF_CPUAXI_RAM0_SubRegion13_Name|A|||||
+RISAF_CPUAXI_RAM0_SubRegion14_Name|B|||||
+Backup_RAM_SubRegion1_ID|Backup_RAM_SubRegion1|||||
+Backup_RAM_SubRegion2_ID|Backup_RAM_SubRegion2|||||
+Backup_RAM_SubRegion3_ID|Backup_RAM_SubRegion3|||||
+RISAF_Backup_RAM_SubRegion1_Name|A|||||
+RISAF_Backup_RAM_SubRegion2_Name|B|||||
+RISAF_Backup_RAM_SubRegion3_Name|A|||||
+RISAF_Backup_RAM_SubRegion4_Name|B|||||
+RISAF_Backup_RAM_SubRegion5_Name|A|||||
+RISAF_Backup_RAM_SubRegion6_Name|B|||||
+AHB_RAM1_SubRegion1_ID|AHB_RAM1_SubRegion1|||||
+AHB_RAM1_SubRegion2_ID|AHB_RAM1_SubRegion2|||||
+AHB_RAM1_SubRegion3_ID|AHB_RAM1_SubRegion3|||||
+AHB_RAM1_SubRegion4_ID|AHB_RAM1_SubRegion4|||||
+AHB_RAM1_SubRegion5_ID|AHB_RAM1_SubRegion5|||||
+AHB_RAM1_SubRegion6_ID|AHB_RAM1_SubRegion6|||||
+AHB_RAM1_SubRegion7_ID|AHB_RAM1_SubRegion7|||||
+RISAF_AHB_RAM1_SubRegion1_Name|A|||||
+RISAF_AHB_RAM1_SubRegion2_Name|B|||||
+RISAF_AHB_RAM1_SubRegion3_Name|A|||||
+RISAF_AHB_RAM1_SubRegion4_Name|B|||||
+RISAF_AHB_RAM1_SubRegion5_Name|A|||||
+RISAF_AHB_RAM1_SubRegion6_Name|B|||||
+RISAF_AHB_RAM1_SubRegion7_Name|A|||||
+RISAF_AHB_RAM1_SubRegion8_Name|B|||||
+RISAF_AHB_RAM1_SubRegion9_Name|A|||||
+RISAF_AHB_RAM1_SubRegion10_Name|B|||||
+RISAF_AHB_RAM1_SubRegion11_Name|A|||||
+RISAF_AHB_RAM1_SubRegion12_Name|B|||||
+RISAF_AHB_RAM1_SubRegion13_Name|A|||||
+RISAF_AHB_RAM1_SubRegion14_Name|B|||||
+AHB_RAM2_SubRegion1_ID|AHB_RAM2_SubRegion1|||||
+AHB_RAM2_SubRegion2_ID|AHB_RAM2_SubRegion2|||||
+AHB_RAM2_SubRegion3_ID|AHB_RAM2_SubRegion3|||||
+AHB_RAM2_SubRegion4_ID|AHB_RAM2_SubRegion4|||||
+AHB_RAM2_SubRegion5_ID|AHB_RAM2_SubRegion5|||||
+AHB_RAM2_SubRegion6_ID|AHB_RAM2_SubRegion6|||||
+AHB_RAM2_SubRegion7_ID|AHB_RAM2_SubRegion7|||||
+RISAF_AHB_RAM2_SubRegion1_Name|A|||||
+RISAF_AHB_RAM2_SubRegion2_Name|B|||||
+RISAF_AHB_RAM2_SubRegion3_Name|A|||||
+RISAF_AHB_RAM2_SubRegion4_Name|B|||||
+RISAF_AHB_RAM2_SubRegion5_Name|A|||||
+RISAF_AHB_RAM2_SubRegion6_Name|B|||||
+RISAF_AHB_RAM2_SubRegion7_Name|A|||||
+RISAF_AHB_RAM2_SubRegion8_Name|B|||||
+RISAF_AHB_RAM2_SubRegion9_Name|A|||||
+RISAF_AHB_RAM2_SubRegion10_Name|B|||||
+RISAF_AHB_RAM2_SubRegion11_Name|A|||||
+RISAF_AHB_RAM2_SubRegion12_Name|B|||||
+RISAF_AHB_RAM2_SubRegion13_Name|A|||||
+RISAF_AHB_RAM2_SubRegion14_Name|B|||||
+FLEXRAM_SubRegion1_ID|FLEXRAM_SubRegion1|||||
+FLEXRAM_SubRegion2_ID|FLEXRAM_SubRegion2|||||
+FLEXRAM_SubRegion3_ID|FLEXRAM_SubRegion3|||||
+FLEXRAM_SubRegion4_ID|FLEXRAM_SubRegion4|||||
+FLEXRAM_SubRegion5_ID|FLEXRAM_SubRegion5|||||
+FLEXRAM_SubRegion6_ID|FLEXRAM_SubRegion6|||||
+FLEXRAM_SubRegion7_ID|FLEXRAM_SubRegion7|||||
+RISAF_FLEXRAM_SubRegion1_Name|A|||||
+RISAF_FLEXRAM_SubRegion2_Name|B|||||
+RISAF_FLEXRAM_SubRegion3_Name|A|||||
+RISAF_FLEXRAM_SubRegion4_Name|B|||||
+RISAF_FLEXRAM_SubRegion5_Name|A|||||
+RISAF_FLEXRAM_SubRegion6_Name|B|||||
+RISAF_FLEXRAM_SubRegion7_Name|A|||||
+RISAF_FLEXRAM_SubRegion8_Name|B|||||
+RISAF_FLEXRAM_SubRegion9_Name|A|||||
+RISAF_FLEXRAM_SubRegion10_Name|B|||||
+RISAF_FLEXRAM_SubRegion11_Name|A|||||
+RISAF_FLEXRAM_SubRegion12_Name|B|||||
+RISAF_FLEXRAM_SubRegion13_Name|A|||||
+RISAF_FLEXRAM_SubRegion14_Name|B|||||
+CACHEAXI_configuration_port_SubRegion1_ID|CACHEAXI_configuration_port_SubRegion1|||||
+CACHEAXI_configuration_port_SubRegion2_ID|CACHEAXI_configuration_port_SubRegion2|||||
+RISAF_CACHEAXI_configuration_port_SubRegion1_Name|A|||||
+RISAF_CACHEAXI_configuration_port_SubRegion2_Name|B|||||
+RISAF_CACHEAXI_configuration_port_SubRegion3_Name|A|||||
+RISAF_CACHEAXI_configuration_port_SubRegion4_Name|B|||||
+CACHEAXI_RAM_SubRegion1_ID|CACHEAXI_RAM_SubRegion1|||||
+CACHEAXI_RAM_SubRegion2_ID|CACHEAXI_RAM_SubRegion2|||||
+CACHEAXI_RAM_SubRegion3_ID|CACHEAXI_RAM_SubRegion3|||||
+CACHEAXI_RAM_SubRegion4_ID|CACHEAXI_RAM_SubRegion4|||||
+CACHEAXI_RAM_SubRegion5_ID|CACHEAXI_RAM_SubRegion5|||||
+CACHEAXI_RAM_SubRegion6_ID|CACHEAXI_RAM_SubRegion6|||||
+CACHEAXI_RAM_SubRegion7_ID|CACHEAXI_RAM_SubRegion7|||||
+RISAF_CACHEAXI_RAM_SubRegion1_Name|A|||||
+RISAF_CACHEAXI_RAM_SubRegion2_Name|B|||||
+RISAF_CACHEAXI_RAM_SubRegion3_Name|A|||||
+RISAF_CACHEAXI_RAM_SubRegion4_Name|B|||||
+RISAF_CACHEAXI_RAM_SubRegion5_Name|A|||||
+RISAF_CACHEAXI_RAM_SubRegion6_Name|B|||||
+RISAF_CACHEAXI_RAM_SubRegion7_Name|A|||||
+RISAF_CACHEAXI_RAM_SubRegion8_Name|B|||||
+RISAF_CACHEAXI_RAM_SubRegion9_Name|A|||||
+RISAF_CACHEAXI_RAM_SubRegion10_Name|B|||||
+RISAF_CACHEAXI_RAM_SubRegion11_Name|A|||||
+RISAF_CACHEAXI_RAM_SubRegion12_Name|B|||||
+RISAF_CACHEAXI_RAM_SubRegion13_Name|A|||||
+RISAF_CACHEAXI_RAM_SubRegion14_Name|B|||||
+VENCRAM_SubRegion1_ID|VENCRAM_SubRegion1|||||
+VENCRAM_SubRegion2_ID|VENCRAM_SubRegion2|||||
+VENCRAM_SubRegion3_ID|VENCRAM_SubRegion3|||||
+VENCRAM_SubRegion4_ID|VENCRAM_SubRegion4|||||
+VENCRAM_SubRegion5_ID|VENCRAM_SubRegion5|||||
+VENCRAM_SubRegion6_ID|VENCRAM_SubRegion6|||||
+VENCRAM_SubRegion7_ID|VENCRAM_SubRegion7|||||
+RISAF_VENCRAM_SubRegion1_Name|A|||||
+RISAF_VENCRAM_SubRegion2_Name|B|||||
+RISAF_VENCRAM_SubRegion3_Name|A|||||
+RISAF_VENCRAM_SubRegion4_Name|B|||||
+RISAF_VENCRAM_SubRegion5_Name|A|||||
+RISAF_VENCRAM_SubRegion6_Name|B|||||
+RISAF_VENCRAM_SubRegion7_Name|A|||||
+RISAF_VENCRAM_SubRegion8_Name|B|||||
+RISAF_VENCRAM_SubRegion9_Name|A|||||
+RISAF_VENCRAM_SubRegion10_Name|B|||||
+RISAF_VENCRAM_SubRegion11_Name|A|||||
+RISAF_VENCRAM_SubRegion12_Name|B|||||
+RISAF_VENCRAM_SubRegion13_Name|A|||||
+RISAF_VENCRAM_SubRegion14_Name|B|||||
+XSPI1_SubRegion1_ID|XSPI1_SubRegion1|||||
+XSPI1_SubRegion2_ID|XSPI1_SubRegion2|||||
+XSPI1_SubRegion3_ID|XSPI1_SubRegion3|||||
+XSPI1_SubRegion4_ID|XSPI1_SubRegion4|||||
+XSPI1_SubRegion5_ID|XSPI1_SubRegion5|||||
+XSPI1_SubRegion6_ID|XSPI1_SubRegion6|||||
+XSPI1_SubRegion7_ID|XSPI1_SubRegion7|||||
+RISAF_XSPI1_SubRegion1_Name|A|||||
+RISAF_XSPI1_SubRegion2_Name|B|||||
+RISAF_XSPI1_SubRegion3_Name|A|||||
+RISAF_XSPI1_SubRegion4_Name|B|||||
+RISAF_XSPI1_SubRegion5_Name|A|||||
+RISAF_XSPI1_SubRegion6_Name|B|||||
+RISAF_XSPI1_SubRegion7_Name|A|||||
+RISAF_XSPI1_SubRegion8_Name|B|||||
+RISAF_XSPI1_SubRegion9_Name|A|||||
+RISAF_XSPI1_SubRegion10_Name|B|||||
+RISAF_XSPI1_SubRegion11_Name|A|||||
+RISAF_XSPI1_SubRegion12_Name|B|||||
+RISAF_XSPI1_SubRegion13_Name|A|||||
+RISAF_XSPI1_SubRegion14_Name|B|||||
+XSPI2_SubRegion1_ID|XSPI2_SubRegion1|||||
+XSPI2_SubRegion2_ID|XSPI2_SubRegion2|||||
+XSPI2_SubRegion3_ID|XSPI2_SubRegion3|||||
+XSPI2_SubRegion4_ID|XSPI2_SubRegion4|||||
+XSPI2_SubRegion5_ID|XSPI2_SubRegion5|||||
+XSPI2_SubRegion6_ID|XSPI2_SubRegion6|||||
+XSPI2_SubRegion7_ID|XSPI2_SubRegion7|||||
+RISAF_XSPI2_SubRegion1_Name|A|||||
+RISAF_XSPI2_SubRegion2_Name|B|||||
+RISAF_XSPI2_SubRegion3_Name|A|||||
+RISAF_XSPI2_SubRegion4_Name|B|||||
+RISAF_XSPI2_SubRegion5_Name|A|||||
+RISAF_XSPI2_SubRegion6_Name|B|||||
+RISAF_XSPI2_SubRegion7_Name|A|||||
+RISAF_XSPI2_SubRegion8_Name|B|||||
+RISAF_XSPI2_SubRegion9_Name|A|||||
+RISAF_XSPI2_SubRegion10_Name|B|||||
+RISAF_XSPI2_SubRegion11_Name|A|||||
+RISAF_XSPI2_SubRegion12_Name|B|||||
+RISAF_XSPI2_SubRegion13_Name|A|||||
+RISAF_XSPI2_SubRegion14_Name|B|||||
+XSPI3_SubRegion1_ID|XSPI3_SubRegion1|||||
+XSPI3_SubRegion2_ID|XSPI3_SubRegion2|||||
+XSPI3_SubRegion3_ID|XSPI3_SubRegion3|||||
+XSPI3_SubRegion4_ID|XSPI3_SubRegion4|||||
+XSPI3_SubRegion5_ID|XSPI3_SubRegion5|||||
+XSPI3_SubRegion6_ID|XSPI3_SubRegion6|||||
+XSPI3_SubRegion7_ID|XSPI3_SubRegion7|||||
+RISAF_XSPI3_SubRegion1_Name|A|||||
+RISAF_XSPI3_SubRegion2_Name|B|||||
+RISAF_XSPI3_SubRegion3_Name|A|||||
+RISAF_XSPI3_SubRegion4_Name|B|||||
+RISAF_XSPI3_SubRegion5_Name|A|||||
+RISAF_XSPI3_SubRegion6_Name|B|||||
+RISAF_XSPI3_SubRegion7_Name|A|||||
+RISAF_XSPI3_SubRegion8_Name|B|||||
+RISAF_XSPI3_SubRegion9_Name|A|||||
+RISAF_XSPI3_SubRegion10_Name|B|||||
+RISAF_XSPI3_SubRegion11_Name|A|||||
+RISAF_XSPI3_SubRegion12_Name|B|||||
+RISAF_XSPI3_SubRegion13_Name|A|||||
+RISAF_XSPI3_SubRegion14_Name|B|||||
+FMC_SubRegion1_ID|FMC_SubRegion1|||||
+FMC_SubRegion2_ID|FMC_SubRegion2|||||
+FMC_SubRegion3_ID|FMC_SubRegion3|||||
+FMC_SubRegion4_ID|FMC_SubRegion4|||||
+FMC_SubRegion5_ID|FMC_SubRegion5|||||
+FMC_SubRegion6_ID|FMC_SubRegion6|||||
+FMC_SubRegion7_ID|FMC_SubRegion7|||||
+RISAF_FMC_SubRegion1_Name|A|||||
+RISAF_FMC_SubRegion2_Name|B|||||
+RISAF_FMC_SubRegion3_Name|A|||||
+RISAF_FMC_SubRegion4_Name|B|||||
+RISAF_FMC_SubRegion5_Name|A|||||
+RISAF_FMC_SubRegion6_Name|B|||||
+RISAF_FMC_SubRegion7_Name|A|||||
+RISAF_FMC_SubRegion8_Name|B|||||
+RISAF_FMC_SubRegion9_Name|A|||||
+RISAF_FMC_SubRegion10_Name|B|||||
+RISAF_FMC_SubRegion11_Name|A|||||
+RISAF_FMC_SubRegion12_Name|B|||||
+RISAF_FMC_SubRegion13_Name|A|||||
+RISAF_FMC_SubRegion14_Name|B|||||
+NPU_master0_SubRegion1_ID|NPU_master0_SubRegion1|||||
+NPU_master0_SubRegion2_ID|NPU_master0_SubRegion2|||||
+NPU_master0_SubRegion3_ID|NPU_master0_SubRegion3|||||
+NPU_master0_SubRegion4_ID|NPU_master0_SubRegion4|||||
+NPU_master0_SubRegion5_ID|NPU_master0_SubRegion5|||||
+NPU_master0_SubRegion6_ID|NPU_master0_SubRegion6|||||
+NPU_master0_SubRegion7_ID|NPU_master0_SubRegion7|||||
+NPU_master0_SubRegion8_ID|NPU_master0_SubRegion8|||||
+NPU_master0_SubRegion9_ID|NPU_master0_SubRegion9|||||
+NPU_master0_SubRegion10_ID|NPU_master0_SubRegion10|||||
+NPU_master0_SubRegion11_ID|NPU_master0_SubRegion11|||||
+CPU_master_SubRegion1_ID|CPU_master_SubRegion1|||||
+CPU_master_SubRegion2_ID|CPU_master_SubRegion2|||||
+CPU_master_SubRegion3_ID|CPU_master_SubRegion3|||||
+CPU_master_SubRegion4_ID|CPU_master_SubRegion4|||||
+CPU_master_SubRegion5_ID|CPU_master_SubRegion5|||||
+CPU_master_SubRegion6_ID|CPU_master_SubRegion6|||||
+CPU_master_SubRegion7_ID|CPU_master_SubRegion7|||||
+CPU_master_SubRegion8_ID|CPU_master_SubRegion8|||||
+CPU_master_SubRegion9_ID|CPU_master_SubRegion9|||||
+CPU_master_SubRegion10_ID|CPU_master_SubRegion10|||||
+CPU_master_SubRegion11_ID|CPU_master_SubRegion11|||||
+NPU_master1_SubRegion1_ID|NPU_master1_SubRegion1|||||
+NPU_master1_SubRegion2_ID|NPU_master1_SubRegion2|||||
+NPU_master1_SubRegion3_ID|NPU_master1_SubRegion3|||||
+NPU_master1_SubRegion4_ID|NPU_master1_SubRegion4|||||
+NPU_master1_SubRegion5_ID|NPU_master1_SubRegion5|||||
+NPU_master1_SubRegion6_ID|NPU_master1_SubRegion6|||||
+NPU_master1_SubRegion7_ID|NPU_master1_SubRegion7|||||
+NPU_master1_SubRegion8_ID|NPU_master1_SubRegion8|||||
+NPU_master1_SubRegion9_ID|NPU_master1_SubRegion9|||||
+NPU_master1_SubRegion10_ID|NPU_master1_SubRegion10|||||
+NPU_master1_SubRegion11_ID|NPU_master1_SubRegion11|||||
+RISAF_NPU_master0_SubRegion1_Name|A|||||
+RISAF_NPU_master0_SubRegion2_Name|B|||||
+RISAF_NPU_master0_SubRegion3_Name|A|||||
+RISAF_NPU_master0_SubRegion4_Name|B|||||
+RISAF_NPU_master0_SubRegion5_Name|A|||||
+RISAF_NPU_master0_SubRegion6_Name|B|||||
+RISAF_NPU_master0_SubRegion7_Name|A|||||
+RISAF_NPU_master0_SubRegion8_Name|B|||||
+RISAF_NPU_master0_SubRegion9_Name|A|||||
+RISAF_NPU_master0_SubRegion10_Name|B|||||
+RISAF_NPU_master0_SubRegion11_Name|A|||||
+RISAF_NPU_master0_SubRegion12_Name|B|||||
+RISAF_NPU_master0_SubRegion13_Name|A|||||
+RISAF_NPU_master0_SubRegion14_Name|B|||||
+RISAF_NPU_master0_SubRegion15_Name|A|||||
+RISAF_NPU_master0_SubRegion16_Name|B|||||
+RISAF_NPU_master0_SubRegion17_Name|A|||||
+RISAF_NPU_master0_SubRegion18_Name|B|||||
+RISAF_NPU_master0_SubRegion19_Name|A|||||
+RISAF_NPU_master0_SubRegion20_Name|B|||||
+RISAF_NPU_master0_SubRegion21_Name|A|||||
+RISAF_NPU_master0_SubRegion22_Name|B|||||
+RISAF_CPU_master_SubRegion1_Name|A|||||
+RISAF_CPU_master_SubRegion2_Name|B|||||
+RISAF_CPU_master_SubRegion3_Name|A|||||
+RISAF_CPU_master_SubRegion4_Name|B|||||
+RISAF_CPU_master_SubRegion5_Name|A|||||
+RISAF_CPU_master_SubRegion6_Name|B|||||
+RISAF_CPU_master_SubRegion7_Name|A|||||
+RISAF_CPU_master_SubRegion8_Name|B|||||
+RISAF_CPU_master_SubRegion9_Name|A|||||
+RISAF_CPU_master_SubRegion10_Name|B|||||
+RISAF_CPU_master_SubRegion11_Name|A|||||
+RISAF_CPU_master_SubRegion12_Name|B|||||
+RISAF_CPU_master_SubRegion13_Name|A|||||
+RISAF_CPU_master_SubRegion14_Name|B|||||
+RISAF_CPU_master_SubRegion15_Name|A|||||
+RISAF_CPU_master_SubRegion16_Name|B|||||
+RISAF_CPU_master_SubRegion17_Name|A|||||
+RISAF_CPU_master_SubRegion18_Name|B|||||
+RISAF_CPU_master_SubRegion19_Name|A|||||
+RISAF_CPU_master_SubRegion20_Name|B|||||
+RISAF_CPU_master_SubRegion21_Name|A|||||
+RISAF_CPU_master_SubRegion22_Name|B|||||
+RISAF_NPU_master1_SubRegion1_Name|A|||||
+RISAF_NPU_master1_SubRegion2_Name|B|||||
+RISAF_NPU_master1_SubRegion3_Name|A|||||
+RISAF_NPU_master1_SubRegion4_Name|B|||||
+RISAF_NPU_master1_SubRegion5_Name|A|||||
+RISAF_NPU_master1_SubRegion6_Name|B|||||
+RISAF_NPU_master1_SubRegion7_Name|A|||||
+RISAF_NPU_master1_SubRegion8_Name|B|||||
+RISAF_NPU_master1_SubRegion9_Name|A|||||
+RISAF_NPU_master1_SubRegion10_Name|B|||||
+RISAF_NPU_master1_SubRegion11_Name|A|||||
+RISAF_NPU_master1_SubRegion12_Name|B|||||
+RISAF_NPU_master1_SubRegion13_Name|A|||||
+RISAF_NPU_master1_SubRegion14_Name|B|||||
+RISAF_NPU_master1_SubRegion15_Name|A|||||
+RISAF_NPU_master1_SubRegion16_Name|B|||||
+RISAF_NPU_master1_SubRegion17_Name|A|||||
+RISAF_NPU_master1_SubRegion18_Name|B|||||
+RISAF_NPU_master1_SubRegion19_Name|A|||||
+RISAF_NPU_master1_SubRegion20_Name|B|||||
+RISAF_NPU_master1_SubRegion21_Name|A|||||
+RISAF_NPU_master1_SubRegion22_Name|B|||||
+CPUAXI_RAM1_SubRegion1_ID|CPUAXI_RAM1_SubRegion1|||||
+CPUAXI_RAM1_SubRegion2_ID|CPUAXI_RAM1_SubRegion2|||||
+CPUAXI_RAM1_SubRegion3_ID|CPUAXI_RAM1_SubRegion3|||||
+CPUAXI_RAM1_SubRegion4_ID|CPUAXI_RAM1_SubRegion4|||||
+CPUAXI_RAM1_SubRegion5_ID|CPUAXI_RAM1_SubRegion5|||||
+CPUAXI_RAM1_SubRegion6_ID|CPUAXI_RAM1_SubRegion6|||||
+CPUAXI_RAM1_SubRegion7_ID|CPUAXI_RAM1_SubRegion7|||||
+RISAF_CPUAXI_RAM1_SubRegion1_Name|A|||||
+RISAF_CPUAXI_RAM1_SubRegion2_Name|B|||||
+RISAF_CPUAXI_RAM1_SubRegion3_Name|A|||||
+RISAF_CPUAXI_RAM1_SubRegion4_Name|B|||||
+RISAF_CPUAXI_RAM1_SubRegion5_Name|A|||||
+RISAF_CPUAXI_RAM1_SubRegion6_Name|B|||||
+RISAF_CPUAXI_RAM1_SubRegion7_Name|A|||||
+RISAF_CPUAXI_RAM1_SubRegion8_Name|B|||||
+RISAF_CPUAXI_RAM1_SubRegion9_Name|A|||||
+RISAF_CPUAXI_RAM1_SubRegion10_Name|B|||||
+RISAF_CPUAXI_RAM1_SubRegion11_Name|A|||||
+RISAF_CPUAXI_RAM1_SubRegion12_Name|B|||||
+RISAF_CPUAXI_RAM1_SubRegion13_Name|A|||||
+RISAF_CPUAXI_RAM1_SubRegion14_Name|B|||||
+TCM_SubRegion1_ID|TCM_SubRegion1|||||
+TCM_SubRegion2_ID|TCM_SubRegion2|||||
+TCM_SubRegion3_ID|TCM_SubRegion3|||||
+TCM_SubRegion4_ID|TCM_SubRegion4|||||
+TCM_SubRegion5_ID|TCM_SubRegion5|||||
+TCM_SubRegion6_ID|TCM_SubRegion6|||||
+TCM_SubRegion7_ID|TCM_SubRegion7|||||
+RISAF_TCM_SubRegion1_Name|A|||||
+RISAF_TCM_SubRegion2_Name|B|||||
+RISAF_TCM_SubRegion3_Name|A|||||
+RISAF_TCM_SubRegion4_Name|B|||||
+RISAF_TCM_SubRegion5_Name|A|||||
+RISAF_TCM_SubRegion6_Name|B|||||
+RISAF_TCM_SubRegion7_Name|A|||||
+RISAF_TCM_SubRegion8_Name|B|||||
+RISAF_TCM_SubRegion9_Name|A|||||
+RISAF_TCM_SubRegion10_Name|B|||||
+RISAF_TCM_SubRegion11_Name|A|||||
+RISAF_TCM_SubRegion12_Name|B|||||
+RISAF_TCM_SubRegion13_Name|A|||||
+RISAF_TCM_SubRegion14_Name|B|||||
+RISAF_SubRegion_Secured|Secure|||||
+RISAF_Panel|All Risaf Panels names|||||
+RISAF_SubRegion_Lock|Lock|||||
+RISAF_SubRegion_CID_Filtering|Filtering|||||
+RISAF_Subregion_CID_Read|RISAF_Subregion_CID_Read|||||
+RISAF_Subregion_CID_Write|RISAF_Subregion_CID_Write|||||
+RISAF_Subregion_CID_Privilege|RISAF_Subregion_CID_Privilege|||||
+RISAF_Subregion_DelegationEnabled|RISAF_Subregion_DelegationEnabled|||||
+RISAF_Backup_RAM_SubRegion1_SRCID_|RISAF_Backup_RAM_SubRegion1_SRCID_|||||
+RISAF_Backup_RAM_SubRegion2_SRCID_|RISAF_Backup_RAM_SubRegion2_SRCID_|||||
+RISAF_Backup_RAM_SubRegion3_SRCID_|RISAF_Backup_RAM_SubRegion3_SRCID_|||||
+RISAF_Backup_RAM_SubRegion4_SRCID_|RISAF_Backup_RAM_SubRegion4_SRCID_|||||
+RISAF_Backup_RAM_SubRegion5_SRCID_|RISAF_Backup_RAM_SubRegion5_SRCID_|||||
+RISAF_Backup_RAM_SubRegion6_SRCID_|RISAF_Backup_RAM_SubRegion6_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion1_SRCID_|RISAF_CPUAXI_RAM0_SubRegion1_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion2_SRCID_|RISAF_CPUAXI_RAM0_SubRegion2_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion3_SRCID_|RISAF_CPUAXI_RAM0_SubRegion3_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion4_SRCID_|RISAF_CPUAXI_RAM0_SubRegion4_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion5_SRCID_|RISAF_CPUAXI_RAM0_SubRegion5_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion6_SRCID_|RISAF_CPUAXI_RAM0_SubRegion6_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion7_SRCID_|RISAF_CPUAXI_RAM0_SubRegion7_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion8_SRCID_|RISAF_CPUAXI_RAM0_SubRegion8_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion9_SRCID_|RISAF_CPUAXI_RAM0_SubRegion9_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion10_SRCID_|RISAF_CPUAXI_RAM0_SubRegion10_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion11_SRCID_|RISAF_CPUAXI_RAM0_SubRegion11_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion12_SRCID_|RISAF_CPUAXI_RAM0_SubRegion12_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion13_SRCID_|RISAF_CPUAXI_RAM0_SubRegion13_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion14_SRCID_|RISAF_CPUAXI_RAM0_SubRegion14_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion1_SRCID_|RISAF_AHB_RAM1_SubRegion1_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion2_SRCID_|RISAF_AHB_RAM1_SubRegion2_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion3_SRCID_|RISAF_AHB_RAM1_SubRegion3_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion4_SRCID_|RISAF_AHB_RAM1_SubRegion4_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion5_SRCID_|RISAF_AHB_RAM1_SubRegion5_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion6_SRCID_|RISAF_AHB_RAM1_SubRegion6_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion7_SRCID_|RISAF_AHB_RAM1_SubRegion7_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion8_SRCID_|RISAF_AHB_RAM1_SubRegion8_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion9_SRCID_|RISAF_AHB_RAM1_SubRegion9_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion10_SRCID_|RISAF_AHB_RAM1_SubRegion10_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion11_SRCID_|RISAF_AHB_RAM1_SubRegion11_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion12_SRCID_|RISAF_AHB_RAM1_SubRegion12_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion13_SRCID_|RISAF_AHB_RAM1_SubRegion13_SRCID_|||||
+RISAF_AHB_RAM1_SubRegion14_SRCID_|RISAF_AHB_RAM1_SubRegion14_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion1_SRCID_|RISAF_AHB_RAM2_SubRegion1_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion2_SRCID_|RISAF_AHB_RAM2_SubRegion2_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion3_SRCID_|RISAF_AHB_RAM2_SubRegion3_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion4_SRCID_|RISAF_AHB_RAM2_SubRegion4_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion5_SRCID_|RISAF_AHB_RAM2_SubRegion5_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion6_SRCID_|RISAF_AHB_RAM2_SubRegion6_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion7_SRCID_|RISAF_AHB_RAM2_SubRegion7_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion8_SRCID_|RISAF_AHB_RAM2_SubRegion8_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion9_SRCID_|RISAF_AHB_RAM2_SubRegion9_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion10_SRCID_|RISAF_AHB_RAM2_SubRegion10_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion11_SRCID_|RISAF_AHB_RAM2_SubRegion11_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion12_SRCID_|RISAF_AHB_RAM2_SubRegion12_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion13_SRCID_|RISAF_AHB_RAM2_SubRegion13_SRCID_|||||
+RISAF_AHB_RAM2_SubRegion14_SRCID_|RISAF_AHB_RAM2_SubRegion14_SRCID_|||||
+RISAF_CACHEAXI_configuration_port_SubRegion1_SRCID_|RISAF_CACHEAXI_configuration_port_SubRegion1_SRCID_|||||
+RISAF_CACHEAXI_configuration_port_SubRegion2_SRCID_|RISAF_CACHEAXI_configuration_port_SubRegion2_SRCID_|||||
+RISAF_CACHEAXI_configuration_port_SubRegion3_SRCID_|RISAF_CACHEAXI_configuration_port_SubRegion3_SRCID_|||||
+RISAF_CACHEAXI_configuration_port_SubRegion4_SRCID_|RISAF_CACHEAXI_configuration_port_SubRegion4_SRCID_|||||
+RISAF_FLEXRAM_SubRegion1_SRCID_|RISAF_FLEXRAM_SubRegion1_SRCID_|||||
+RISAF_FLEXRAM_SubRegion2_SRCID_|RISAF_FLEXRAM_SubRegion2_SRCID_|||||
+RISAF_FLEXRAM_SubRegion3_SRCID_|RISAF_FLEXRAM_SubRegion3_SRCID_|||||
+RISAF_FLEXRAM_SubRegion4_SRCID_|RISAF_FLEXRAM_SubRegion4_SRCID_|||||
+RISAF_FLEXRAM_SubRegion5_SRCID_|RISAF_FLEXRAM_SubRegion5_SRCID_|||||
+RISAF_FLEXRAM_SubRegion6_SRCID_|RISAF_FLEXRAM_SubRegion6_SRCID_|||||
+RISAF_FLEXRAM_SubRegion7_SRCID_|RISAF_FLEXRAM_SubRegion7_SRCID_|||||
+RISAF_FLEXRAM_SubRegion8_SRCID_|RISAF_FLEXRAM_SubRegion8_SRCID_|||||
+RISAF_FLEXRAM_SubRegion9_SRCID_|RISAF_FLEXRAM_SubRegion9_SRCID_|||||
+RISAF_FLEXRAM_SubRegion10_SRCID_|RISAF_FLEXRAM_SubRegion10_SRCID_|||||
+RISAF_FLEXRAM_SubRegion11_SRCID_|RISAF_FLEXRAM_SubRegion11_SRCID_|||||
+RISAF_FLEXRAM_SubRegion12_SRCID_|RISAF_FLEXRAM_SubRegion12_SRCID_|||||
+RISAF_FLEXRAM_SubRegion13_SRCID_|RISAF_FLEXRAM_SubRegion13_SRCID_|||||
+RISAF_FLEXRAM_SubRegion14_SRCID_|RISAF_FLEXRAM_SubRegion14_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion1_SRCID_|RISAF_CACHEAXI_RAM_SubRegion1_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion2_SRCID_|RISAF_CACHEAXI_RAM_SubRegion2_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion3_SRCID_|RISAF_CACHEAXI_RAM_SubRegion3_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion4_SRCID_|RISAF_CACHEAXI_RAM_SubRegion4_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion5_SRCID_|RISAF_CACHEAXI_RAM_SubRegion5_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion6_SRCID_|RISAF_CACHEAXI_RAM_SubRegion6_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion7_SRCID_|RISAF_CACHEAXI_RAM_SubRegion7_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion8_SRCID_|RISAF_CACHEAXI_RAM_SubRegion8_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion9_SRCID_|RISAF_CACHEAXI_RAM_SubRegion9_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion10_SRCID_|RISAF_CACHEAXI_RAM_SubRegion10_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion11_SRCID_|RISAF_CACHEAXI_RAM_SubRegion11_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion12_SRCID_|RISAF_CACHEAXI_RAM_SubRegion12_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion13_SRCID_|RISAF_CACHEAXI_RAM_SubRegion13_SRCID_|||||
+RISAF_CACHEAXI_RAM_SubRegion14_SRCID_|RISAF_CACHEAXI_RAM_SubRegion14_SRCID_|||||
+RISAF_VENCRAM_SubRegion1_SRCID_|RISAF_VENCRAM_SubRegion1_SRCID_|||||
+RISAF_VENCRAM_SubRegion2_SRCID_|RISAF_VENCRAM_SubRegion2_SRCID_|||||
+RISAF_VENCRAM_SubRegion3_SRCID_|RISAF_VENCRAM_SubRegion3_SRCID_|||||
+RISAF_VENCRAM_SubRegion4_SRCID_|RISAF_VENCRAM_SubRegion4_SRCID_|||||
+RISAF_VENCRAM_SubRegion5_SRCID_|RISAF_VENCRAM_SubRegion5_SRCID_|||||
+RISAF_VENCRAM_SubRegion6_SRCID_|RISAF_VENCRAM_SubRegion6_SRCID_|||||
+RISAF_VENCRAM_SubRegion7_SRCID_|RISAF_VENCRAM_SubRegion7_SRCID_|||||
+RISAF_VENCRAM_SubRegion8_SRCID_|RISAF_VENCRAM_SubRegion8_SRCID_|||||
+RISAF_VENCRAM_SubRegion9_SRCID_|RISAF_VENCRAM_SubRegion9_SRCID_|||||
+RISAF_VENCRAM_SubRegion10_SRCID_|RISAF_VENCRAM_SubRegion10_SRCID_|||||
+RISAF_VENCRAM_SubRegion11_SRCID_|RISAF_VENCRAM_SubRegion11_SRCID_|||||
+RISAF_VENCRAM_SubRegion12_SRCID_|RISAF_VENCRAM_SubRegion12_SRCID_|||||
+RISAF_VENCRAM_SubRegion13_SRCID_|RISAF_VENCRAM_SubRegion13_SRCID_|||||
+RISAF_VENCRAM_SubRegion14_SRCID_|RISAF_VENCRAM_SubRegion14_SRCID_|||||
+RISAF_XSPI1_SubRegion1_SRCID_|RISAF_XSPI1_SubRegion1_SRCID_|||||
+RISAF_XSPI1_SubRegion2_SRCID_|RISAF_XSPI1_SubRegion2_SRCID_|||||
+RISAF_XSPI1_SubRegion3_SRCID_|RISAF_XSPI1_SubRegion3_SRCID_|||||
+RISAF_XSPI1_SubRegion4_SRCID_|RISAF_XSPI1_SubRegion4_SRCID_|||||
+RISAF_XSPI1_SubRegion5_SRCID_|RISAF_XSPI1_SubRegion5_SRCID_|||||
+RISAF_XSPI1_SubRegion6_SRCID_|RISAF_XSPI1_SubRegion6_SRCID_|||||
+RISAF_XSPI1_SubRegion7_SRCID_|RISAF_XSPI1_SubRegion7_SRCID_|||||
+RISAF_XSPI1_SubRegion8_SRCID_|RISAF_XSPI1_SubRegion8_SRCID_|||||
+RISAF_XSPI1_SubRegion9_SRCID_|RISAF_XSPI1_SubRegion9_SRCID_|||||
+RISAF_XSPI1_SubRegion10_SRCID_|RISAF_XSPI1_SubRegion10_SRCID_|||||
+RISAF_XSPI1_SubRegion11_SRCID_|RISAF_XSPI1_SubRegion11_SRCID_|||||
+RISAF_XSPI1_SubRegion12_SRCID_|RISAF_XSPI1_SubRegion12_SRCID_|||||
+RISAF_XSPI1_SubRegion13_SRCID_|RISAF_XSPI1_SubRegion13_SRCID_|||||
+RISAF_XSPI1_SubRegion14_SRCID_|RISAF_XSPI1_SubRegion14_SRCID_|||||
+RISAF_XSPI2_SubRegion1_SRCID_|RISAF_XSPI2_SubRegion1_SRCID_|||||
+RISAF_XSPI2_SubRegion2_SRCID_|RISAF_XSPI2_SubRegion2_SRCID_|||||
+RISAF_XSPI2_SubRegion3_SRCID_|RISAF_XSPI2_SubRegion3_SRCID_|||||
+RISAF_XSPI2_SubRegion4_SRCID_|RISAF_XSPI2_SubRegion4_SRCID_|||||
+RISAF_XSPI2_SubRegion5_SRCID_|RISAF_XSPI2_SubRegion5_SRCID_|||||
+RISAF_XSPI2_SubRegion6_SRCID_|RISAF_XSPI2_SubRegion6_SRCID_|||||
+RISAF_XSPI2_SubRegion7_SRCID_|RISAF_XSPI2_SubRegion7_SRCID_|||||
+RISAF_XSPI2_SubRegion8_SRCID_|RISAF_XSPI2_SubRegion8_SRCID_|||||
+RISAF_XSPI2_SubRegion9_SRCID_|RISAF_XSPI2_SubRegion9_SRCID_|||||
+RISAF_XSPI2_SubRegion10_SRCID_|RISAF_XSPI2_SubRegion10_SRCID_|||||
+RISAF_XSPI2_SubRegion11_SRCID_|RISAF_XSPI2_SubRegion11_SRCID_|||||
+RISAF_XSPI2_SubRegion12_SRCID_|RISAF_XSPI2_SubRegion12_SRCID_|||||
+RISAF_XSPI2_SubRegion13_SRCID_|RISAF_XSPI2_SubRegion13_SRCID_|||||
+RISAF_XSPI2_SubRegion14_SRCID_|RISAF_XSPI2_SubRegion14_SRCID_|||||
+RISAF_XSPI3_SubRegion1_SRCID_|RISAF_XSPI3_SubRegion1_SRCID_|||||
+RISAF_XSPI3_SubRegion2_SRCID_|RISAF_XSPI3_SubRegion2_SRCID_|||||
+RISAF_XSPI3_SubRegion3_SRCID_|RISAF_XSPI3_SubRegion3_SRCID_|||||
+RISAF_XSPI3_SubRegion4_SRCID_|RISAF_XSPI3_SubRegion4_SRCID_|||||
+RISAF_XSPI3_SubRegion5_SRCID_|RISAF_XSPI3_SubRegion5_SRCID_|||||
+RISAF_XSPI3_SubRegion6_SRCID_|RISAF_XSPI3_SubRegion6_SRCID_|||||
+RISAF_XSPI3_SubRegion7_SRCID_|RISAF_XSPI3_SubRegion7_SRCID_|||||
+RISAF_XSPI3_SubRegion8_SRCID_|RISAF_XSPI3_SubRegion8_SRCID_|||||
+RISAF_XSPI3_SubRegion9_SRCID_|RISAF_XSPI3_SubRegion9_SRCID_|||||
+RISAF_XSPI3_SubRegion10_SRCID_|RISAF_XSPI3_SubRegion10_SRCID_|||||
+RISAF_XSPI3_SubRegion11_SRCID_|RISAF_XSPI3_SubRegion11_SRCID_|||||
+RISAF_XSPI3_SubRegion12_SRCID_|RISAF_XSPI3_SubRegion12_SRCID_|||||
+RISAF_XSPI3_SubRegion13_SRCID_|RISAF_XSPI3_SubRegion13_SRCID_|||||
+RISAF_XSPI3_SubRegion14_SRCID_|RISAF_XSPI3_SubRegion14_SRCID_|||||
+RISAF_FMC_SubRegion1_SRCID_|RISAF_FMC_SubRegion1_SRCID_|||||
+RISAF_FMC_SubRegion2_SRCID_|RISAF_FMC_SubRegion2_SRCID_|||||
+RISAF_FMC_SubRegion3_SRCID_|RISAF_FMC_SubRegion3_SRCID_|||||
+RISAF_FMC_SubRegion4_SRCID_|RISAF_FMC_SubRegion4_SRCID_|||||
+RISAF_FMC_SubRegion5_SRCID_|RISAF_FMC_SubRegion5_SRCID_|||||
+RISAF_FMC_SubRegion6_SRCID_|RISAF_FMC_SubRegion6_SRCID_|||||
+RISAF_FMC_SubRegion7_SRCID_|RISAF_FMC_SubRegion7_SRCID_|||||
+RISAF_FMC_SubRegion8_SRCID_|RISAF_FMC_SubRegion8_SRCID_|||||
+RISAF_FMC_SubRegion9_SRCID_|RISAF_FMC_SubRegion9_SRCID_|||||
+RISAF_FMC_SubRegion10_SRCID_|RISAF_FMC_SubRegion10_SRCID_|||||
+RISAF_FMC_SubRegion11_SRCID_|RISAF_FMC_SubRegion11_SRCID_|||||
+RISAF_FMC_SubRegion12_SRCID_|RISAF_FMC_SubRegion12_SRCID_|||||
+RISAF_FMC_SubRegion13_SRCID_|RISAF_FMC_SubRegion13_SRCID_|||||
+RISAF_FMC_SubRegion14_SRCID_|RISAF_FMC_SubRegion14_SRCID_|||||
+RISAF_NPU_master0_SubRegion1_SRCID_|RISAF_NPU_master0_SubRegion1_SRCID_|||||
+RISAF_NPU_master0_SubRegion2_SRCID_|RISAF_NPU_master0_SubRegion2_SRCID_|||||
+RISAF_NPU_master0_SubRegion3_SRCID_|RISAF_NPU_master0_SubRegion3_SRCID_|||||
+RISAF_NPU_master0_SubRegion4_SRCID_|RISAF_NPU_master0_SubRegion4_SRCID_|||||
+RISAF_NPU_master0_SubRegion5_SRCID_|RISAF_NPU_master0_SubRegion5_SRCID_|||||
+RISAF_NPU_master0_SubRegion6_SRCID_|RISAF_NPU_master0_SubRegion6_SRCID_|||||
+RISAF_NPU_master0_SubRegion7_SRCID_|RISAF_NPU_master0_SubRegion7_SRCID_|||||
+RISAF_NPU_master0_SubRegion8_SRCID_|RISAF_NPU_master0_SubRegion8_SRCID_|||||
+RISAF_NPU_master0_SubRegion9_SRCID_|RISAF_NPU_master0_SubRegion9_SRCID_|||||
+RISAF_NPU_master0_SubRegion10_SRCID_|RISAF_NPU_master0_SubRegion10_SRCID_|||||
+RISAF_NPU_master0_SubRegion11_SRCID_|RISAF_NPU_master0_SubRegion11_SRCID_|||||
+RISAF_NPU_master0_SubRegion12_SRCID_|RISAF_NPU_master0_SubRegion12_SRCID_|||||
+RISAF_NPU_master0_SubRegion13_SRCID_|RISAF_NPU_master0_SubRegion13_SRCID_|||||
+RISAF_NPU_master0_SubRegion14_SRCID_|RISAF_NPU_master0_SubRegion14_SRCID_|||||
+RISAF_NPU_master0_SubRegion15_SRCID_|RISAF_NPU_master0_SubRegion15_SRCID_|||||
+RISAF_NPU_master0_SubRegion16_SRCID_|RISAF_NPU_master0_SubRegion16_SRCID_|||||
+RISAF_NPU_master0_SubRegion17_SRCID_|RISAF_NPU_master0_SubRegion17_SRCID_|||||
+RISAF_NPU_master0_SubRegion18_SRCID_|RISAF_NPU_master0_SubRegion18_SRCID_|||||
+RISAF_NPU_master0_SubRegion19_SRCID_|RISAF_NPU_master0_SubRegion19_SRCID_|||||
+RISAF_NPU_master0_SubRegion20_SRCID_|RISAF_NPU_master0_SubRegion20_SRCID_|||||
+RISAF_NPU_master0_SubRegion21_SRCID_|RISAF_NPU_master0_SubRegion21_SRCID_|||||
+RISAF_NPU_master0_SubRegion22_SRCID_|RISAF_NPU_master0_SubRegion22_SRCID_|||||
+RISAF_CPU_master_SubRegion1_SRCID_|RISAF_CPU_master_SubRegion1_SRCID_|||||
+RISAF_CPU_master_SubRegion2_SRCID_|RISAF_CPU_master_SubRegion2_SRCID_|||||
+RISAF_CPU_master_SubRegion3_SRCID_|RISAF_CPU_master_SubRegion3_SRCID_|||||
+RISAF_CPU_master_SubRegion4_SRCID_|RISAF_CPU_master_SubRegion4_SRCID_|||||
+RISAF_CPU_master_SubRegion5_SRCID_|RISAF_CPU_master_SubRegion5_SRCID_|||||
+RISAF_CPU_master_SubRegion6_SRCID_|RISAF_CPU_master_SubRegion6_SRCID_|||||
+RISAF_CPU_master_SubRegion7_SRCID_|RISAF_CPU_master_SubRegion7_SRCID_|||||
+RISAF_CPU_master_SubRegion8_SRCID_|RISAF_CPU_master_SubRegion8_SRCID_|||||
+RISAF_CPU_master_SubRegion9_SRCID_|RISAF_CPU_master_SubRegion9_SRCID_|||||
+RISAF_CPU_master_SubRegion10_SRCID_|RISAF_CPU_master_SubRegion10_SRCID_|||||
+RISAF_CPU_master_SubRegion11_SRCID_|RISAF_CPU_master_SubRegion11_SRCID_|||||
+RISAF_CPU_master_SubRegion12_SRCID_|RISAF_CPU_master_SubRegion12_SRCID_|||||
+RISAF_CPU_master_SubRegion13_SRCID_|RISAF_CPU_master_SubRegion13_SRCID_|||||
+RISAF_CPU_master_SubRegion14_SRCID_|RISAF_CPU_master_SubRegion14_SRCID_|||||
+RISAF_CPU_master_SubRegion15_SRCID_|RISAF_CPU_master_SubRegion15_SRCID_|||||
+RISAF_CPU_master_SubRegion16_SRCID_|RISAF_CPU_master_SubRegion16_SRCID_|||||
+RISAF_CPU_master_SubRegion17_SRCID_|RISAF_CPU_master_SubRegion17_SRCID_|||||
+RISAF_CPU_master_SubRegion18_SRCID_|RISAF_CPU_master_SubRegion18_SRCID_|||||
+RISAF_CPU_master_SubRegion19_SRCID_|RISAF_CPU_master_SubRegion19_SRCID_|||||
+RISAF_CPU_master_SubRegion20_SRCID_|RISAF_CPU_master_SubRegion20_SRCID_|||||
+RISAF_CPU_master_SubRegion21_SRCID_|RISAF_CPU_master_SubRegion21_SRCID_|||||
+RISAF_CPU_master_SubRegion22_SRCID_|RISAF_CPU_master_SubRegion22_SRCID_|||||
+RISAF_NPU_master1_SubRegion1_SRCID_|RISAF_NPU_master1_SubRegion1_SRCID_|||||
+RISAF_NPU_master1_SubRegion2_SRCID_|RISAF_NPU_master1_SubRegion2_SRCID_|||||
+RISAF_NPU_master1_SubRegion3_SRCID_|RISAF_NPU_master1_SubRegion3_SRCID_|||||
+RISAF_NPU_master1_SubRegion4_SRCID_|RISAF_NPU_master1_SubRegion4_SRCID_|||||
+RISAF_NPU_master1_SubRegion5_SRCID_|RISAF_NPU_master1_SubRegion5_SRCID_|||||
+RISAF_NPU_master1_SubRegion6_SRCID_|RISAF_NPU_master1_SubRegion6_SRCID_|||||
+RISAF_NPU_master1_SubRegion7_SRCID_|RISAF_NPU_master1_SubRegion7_SRCID_|||||
+RISAF_NPU_master1_SubRegion8_SRCID_|RISAF_NPU_master1_SubRegion8_SRCID_|||||
+RISAF_NPU_master1_SubRegion9_SRCID_|RISAF_NPU_master1_SubRegion9_SRCID_|||||
+RISAF_NPU_master1_SubRegion10_SRCID_|RISAF_NPU_master1_SubRegion10_SRCID_|||||
+RISAF_NPU_master1_SubRegion11_SRCID_|RISAF_NPU_master1_SubRegion11_SRCID_|||||
+RISAF_NPU_master1_SubRegion12_SRCID_|RISAF_NPU_master1_SubRegion12_SRCID_|||||
+RISAF_NPU_master1_SubRegion13_SRCID_|RISAF_NPU_master1_SubRegion13_SRCID_|||||
+RISAF_NPU_master1_SubRegion14_SRCID_|RISAF_NPU_master1_SubRegion14_SRCID_|||||
+RISAF_NPU_master1_SubRegion15_SRCID_|RISAF_NPU_master1_SubRegion15_SRCID_|||||
+RISAF_NPU_master1_SubRegion16_SRCID_|RISAF_NPU_master1_SubRegion16_SRCID_|||||
+RISAF_NPU_master1_SubRegion17_SRCID_|RISAF_NPU_master1_SubRegion17_SRCID_|||||
+RISAF_NPU_master1_SubRegion18_SRCID_|RISAF_NPU_master1_SubRegion18_SRCID_|||||
+RISAF_NPU_master1_SubRegion19_SRCID_|RISAF_NPU_master1_SubRegion19_SRCID_|||||
+RISAF_NPU_master1_SubRegion20_SRCID_|RISAF_NPU_master1_SubRegion20_SRCID_|||||
+RISAF_NPU_master1_SubRegion21_SRCID_|RISAF_NPU_master1_SubRegion21_SRCID_|||||
+RISAF_NPU_master1_SubRegion22_SRCID_|RISAF_NPU_master1_SubRegion22_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion1_SRCID_|RISAF_CPUAXI_RAM1_SubRegion1_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion2_SRCID_|RISAF_CPUAXI_RAM1_SubRegion2_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion3_SRCID_|RISAF_CPUAXI_RAM1_SubRegion3_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion4_SRCID_|RISAF_CPUAXI_RAM1_SubRegion4_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion5_SRCID_|RISAF_CPUAXI_RAM1_SubRegion5_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion6_SRCID_|RISAF_CPUAXI_RAM1_SubRegion6_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion7_SRCID_|RISAF_CPUAXI_RAM1_SubRegion7_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion8_SRCID_|RISAF_CPUAXI_RAM1_SubRegion8_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion9_SRCID_|RISAF_CPUAXI_RAM1_SubRegion9_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion10_SRCID_|RISAF_CPUAXI_RAM1_SubRegion10_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion11_SRCID_|RISAF_CPUAXI_RAM1_SubRegion11_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion12_SRCID_|RISAF_CPUAXI_RAM1_SubRegion12_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion13_SRCID_|RISAF_CPUAXI_RAM1_SubRegion13_SRCID_|||||
+RISAF_CPUAXI_RAM1_SubRegion14_SRCID_|RISAF_CPUAXI_RAM1_SubRegion14_SRCID_|||||
+RISAF_CPUAXI_RAM0_SubRegion1_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion1_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion2_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion2_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion3_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion3_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion4_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion4_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion5_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion5_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion6_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion6_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion7_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion7_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion8_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion8_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion9_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion9_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion10_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion10_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion11_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion11_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion12_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion12_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion13_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion13_Delegated_CID|||||
+RISAF_CPUAXI_RAM0_SubRegion14_Delegated_CID|RISAF_CPUAXI_RAM0_SubRegion14_Delegated_CID|||||
+RISAF_Backup_RAM_SubRegion1_Delegated_CID|RISAF_Backup_RAM_SubRegion1_Delegated_CID|||||
+RISAF_Backup_RAM_SubRegion2_Delegated_CID|RISAF_Backup_RAM_SubRegion2_Delegated_CID|||||
+RISAF_Backup_RAM_SubRegion3_Delegated_CID|RISAF_Backup_RAM_SubRegion3_Delegated_CID|||||
+RISAF_Backup_RAM_SubRegion4_Delegated_CID|RISAF_Backup_RAM_SubRegion4_Delegated_CID|||||
+RISAF_Backup_RAM_SubRegion5_Delegated_CID|RISAF_Backup_RAM_SubRegion5_Delegated_CID|||||
+RISAF_Backup_RAM_SubRegion6_Delegated_CID|RISAF_Backup_RAM_SubRegion6_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion1_Delegated_CID|RISAF_AHB_RAM1_SubRegion1_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion2_Delegated_CID|RISAF_AHB_RAM1_SubRegion2_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion3_Delegated_CID|RISAF_AHB_RAM1_SubRegion3_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion4_Delegated_CID|RISAF_AHB_RAM1_SubRegion4_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion5_Delegated_CID|RISAF_AHB_RAM1_SubRegion5_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion6_Delegated_CID|RISAF_AHB_RAM1_SubRegion6_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion7_Delegated_CID|RISAF_AHB_RAM1_SubRegion7_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion8_Delegated_CID|RISAF_AHB_RAM1_SubRegion8_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion9_Delegated_CID|RISAF_AHB_RAM1_SubRegion9_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion10_Delegated_CID|RISAF_AHB_RAM1_SubRegion10_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion11_Delegated_CID|RISAF_AHB_RAM1_SubRegion11_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion12_Delegated_CID|RISAF_AHB_RAM1_SubRegion12_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion13_Delegated_CID|RISAF_AHB_RAM1_SubRegion13_Delegated_CID|||||
+RISAF_AHB_RAM1_SubRegion14_Delegated_CID|RISAF_AHB_RAM1_SubRegion14_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion1_Delegated_CID|RISAF_AHB_RAM2_SubRegion1_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion2_Delegated_CID|RISAF_AHB_RAM2_SubRegion2_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion3_Delegated_CID|RISAF_AHB_RAM2_SubRegion3_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion4_Delegated_CID|RISAF_AHB_RAM2_SubRegion4_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion5_Delegated_CID|RISAF_AHB_RAM2_SubRegion5_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion6_Delegated_CID|RISAF_AHB_RAM2_SubRegion6_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion7_Delegated_CID|RISAF_AHB_RAM2_SubRegion7_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion8_Delegated_CID|RISAF_AHB_RAM2_SubRegion8_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion9_Delegated_CID|RISAF_AHB_RAM2_SubRegion9_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion10_Delegated_CID|RISAF_AHB_RAM2_SubRegion10_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion11_Delegated_CID|RISAF_AHB_RAM2_SubRegion11_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion12_Delegated_CID|RISAF_AHB_RAM2_SubRegion12_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion13_Delegated_CID|RISAF_AHB_RAM2_SubRegion13_Delegated_CID|||||
+RISAF_AHB_RAM2_SubRegion14_Delegated_CID|RISAF_AHB_RAM2_SubRegion14_Delegated_CID|||||
+RISAF_CACHEAXI_configuration_port_SubRegion1_Delegated_CID|RISAF_CACHEAXI_configuration_port_SubRegion1_Delegated_CID|||||
+RISAF_CACHEAXI_configuration_port_SubRegion2_Delegated_CID|RISAF_CACHEAXI_configuration_port_SubRegion2_Delegated_CID|||||
+RISAF_CACHEAXI_configuration_port_SubRegion3_Delegated_CID|RISAF_CACHEAXI_configuration_port_SubRegion3_Delegated_CID|||||
+RISAF_CACHEAXI_configuration_port_SubRegion4_Delegated_CID|RISAF_CACHEAXI_configuration_port_SubRegion4_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion1_Delegated_CID|RISAF_FLEXRAM_SubRegion1_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion2_Delegated_CID|RISAF_FLEXRAM_SubRegion2_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion3_Delegated_CID|RISAF_FLEXRAM_SubRegion3_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion4_Delegated_CID|RISAF_FLEXRAM_SubRegion4_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion5_Delegated_CID|RISAF_FLEXRAM_SubRegion5_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion6_Delegated_CID|RISAF_FLEXRAM_SubRegion6_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion7_Delegated_CID|RISAF_FLEXRAM_SubRegion7_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion8_Delegated_CID|RISAF_FLEXRAM_SubRegion8_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion9_Delegated_CID|RISAF_FLEXRAM_SubRegion9_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion10_Delegated_CID|RISAF_FLEXRAM_SubRegion10_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion11_Delegated_CID|RISAF_FLEXRAM_SubRegion11_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion12_Delegated_CID|RISAF_FLEXRAM_SubRegion12_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion13_Delegated_CID|RISAF_FLEXRAM_SubRegion13_Delegated_CID|||||
+RISAF_FLEXRAM_SubRegion14_Delegated_CID|RISAF_FLEXRAM_SubRegion14_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion1_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion1_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion2_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion2_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion3_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion3_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion4_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion4_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion5_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion5_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion6_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion6_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion7_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion7_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion8_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion8_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion9_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion9_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion10_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion10_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion11_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion11_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion12_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion12_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion13_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion13_Delegated_CID|||||
+RISAF_CACHEAXI_RAM_SubRegion14_Delegated_CID|RISAF_CACHEAXI_RAM_SubRegion14_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion1_Delegated_CID|RISAF_VENCRAM_SubRegion1_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion2_Delegated_CID|RISAF_VENCRAM_SubRegion2_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion3_Delegated_CID|RISAF_VENCRAM_SubRegion3_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion4_Delegated_CID|RISAF_VENCRAM_SubRegion4_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion5_Delegated_CID|RISAF_VENCRAM_SubRegion5_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion6_Delegated_CID|RISAF_VENCRAM_SubRegion6_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion7_Delegated_CID|RISAF_VENCRAM_SubRegion7_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion8_Delegated_CID|RISAF_VENCRAM_SubRegion8_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion9_Delegated_CID|RISAF_VENCRAM_SubRegion9_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion10_Delegated_CID|RISAF_VENCRAM_SubRegion10_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion11_Delegated_CID|RISAF_VENCRAM_SubRegion11_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion12_Delegated_CID|RISAF_VENCRAM_SubRegion12_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion13_Delegated_CID|RISAF_VENCRAM_SubRegion13_Delegated_CID|||||
+RISAF_VENCRAM_SubRegion14_Delegated_CID|RISAF_VENCRAM_SubRegion14_Delegated_CID|||||
+RISAF_XSPI1_SubRegion1_Delegated_CID|RISAF_XSPI1_SubRegion1_Delegated_CID|||||
+RISAF_XSPI1_SubRegion2_Delegated_CID|RISAF_XSPI1_SubRegion2_Delegated_CID|||||
+RISAF_XSPI1_SubRegion3_Delegated_CID|RISAF_XSPI1_SubRegion3_Delegated_CID|||||
+RISAF_XSPI1_SubRegion4_Delegated_CID|RISAF_XSPI1_SubRegion4_Delegated_CID|||||
+RISAF_XSPI1_SubRegion5_Delegated_CID|RISAF_XSPI1_SubRegion5_Delegated_CID|||||
+RISAF_XSPI1_SubRegion6_Delegated_CID|RISAF_XSPI1_SubRegion6_Delegated_CID|||||
+RISAF_XSPI1_SubRegion7_Delegated_CID|RISAF_XSPI1_SubRegion7_Delegated_CID|||||
+RISAF_XSPI1_SubRegion8_Delegated_CID|RISAF_XSPI1_SubRegion8_Delegated_CID|||||
+RISAF_XSPI1_SubRegion9_Delegated_CID|RISAF_XSPI1_SubRegion9_Delegated_CID|||||
+RISAF_XSPI1_SubRegion10_Delegated_CID|RISAF_XSPI1_SubRegion10_Delegated_CID|||||
+RISAF_XSPI1_SubRegion11_Delegated_CID|RISAF_XSPI1_SubRegion11_Delegated_CID|||||
+RISAF_XSPI1_SubRegion12_Delegated_CID|RISAF_XSPI1_SubRegion12_Delegated_CID|||||
+RISAF_XSPI1_SubRegion13_Delegated_CID|RISAF_XSPI1_SubRegion13_Delegated_CID|||||
+RISAF_XSPI1_SubRegion14_Delegated_CID|RISAF_XSPI1_SubRegion14_Delegated_CID|||||
+RISAF_XSPI2_SubRegion1_Delegated_CID|RISAF_XSPI2_SubRegion1_Delegated_CID|||||
+RISAF_XSPI2_SubRegion2_Delegated_CID|RISAF_XSPI2_SubRegion2_Delegated_CID|||||
+RISAF_XSPI2_SubRegion3_Delegated_CID|RISAF_XSPI2_SubRegion3_Delegated_CID|||||
+RISAF_XSPI2_SubRegion4_Delegated_CID|RISAF_XSPI2_SubRegion4_Delegated_CID|||||
+RISAF_XSPI2_SubRegion5_Delegated_CID|RISAF_XSPI2_SubRegion5_Delegated_CID|||||
+RISAF_XSPI2_SubRegion6_Delegated_CID|RISAF_XSPI2_SubRegion6_Delegated_CID|||||
+RISAF_XSPI2_SubRegion7_Delegated_CID|RISAF_XSPI2_SubRegion7_Delegated_CID|||||
+RISAF_XSPI2_SubRegion8_Delegated_CID|RISAF_XSPI2_SubRegion8_Delegated_CID|||||
+RISAF_XSPI2_SubRegion9_Delegated_CID|RISAF_XSPI2_SubRegion9_Delegated_CID|||||
+RISAF_XSPI2_SubRegion10_Delegated_CID|RISAF_XSPI2_SubRegion10_Delegated_CID|||||
+RISAF_XSPI2_SubRegion11_Delegated_CID|RISAF_XSPI2_SubRegion11_Delegated_CID|||||
+RISAF_XSPI2_SubRegion12_Delegated_CID|RISAF_XSPI2_SubRegion12_Delegated_CID|||||
+RISAF_XSPI2_SubRegion13_Delegated_CID|RISAF_XSPI2_SubRegion13_Delegated_CID|||||
+RISAF_XSPI2_SubRegion14_Delegated_CID|RISAF_XSPI2_SubRegion14_Delegated_CID|||||
+RISAF_XSPI3_SubRegion1_Delegated_CID|RISAF_XSPI3_SubRegion1_Delegated_CID|||||
+RISAF_XSPI3_SubRegion2_Delegated_CID|RISAF_XSPI3_SubRegion2_Delegated_CID|||||
+RISAF_XSPI3_SubRegion3_Delegated_CID|RISAF_XSPI3_SubRegion3_Delegated_CID|||||
+RISAF_XSPI3_SubRegion4_Delegated_CID|RISAF_XSPI3_SubRegion4_Delegated_CID|||||
+RISAF_XSPI3_SubRegion5_Delegated_CID|RISAF_XSPI3_SubRegion5_Delegated_CID|||||
+RISAF_XSPI3_SubRegion6_Delegated_CID|RISAF_XSPI3_SubRegion6_Delegated_CID|||||
+RISAF_XSPI3_SubRegion7_Delegated_CID|RISAF_XSPI3_SubRegion7_Delegated_CID|||||
+RISAF_XSPI3_SubRegion8_Delegated_CID|RISAF_XSPI3_SubRegion8_Delegated_CID|||||
+RISAF_XSPI3_SubRegion9_Delegated_CID|RISAF_XSPI3_SubRegion9_Delegated_CID|||||
+RISAF_XSPI3_SubRegion10_Delegated_CID|RISAF_XSPI3_SubRegion10_Delegated_CID|||||
+RISAF_XSPI3_SubRegion11_Delegated_CID|RISAF_XSPI3_SubRegion11_Delegated_CID|||||
+RISAF_XSPI3_SubRegion12_Delegated_CID|RISAF_XSPI3_SubRegion12_Delegated_CID|||||
+RISAF_XSPI3_SubRegion13_Delegated_CID|RISAF_XSPI3_SubRegion13_Delegated_CID|||||
+RISAF_XSPI3_SubRegion14_Delegated_CID|RISAF_XSPI3_SubRegion14_Delegated_CID|||||
+RISAF_FMC_SubRegion1_Delegated_CID|RISAF_FMC_SubRegion1_Delegated_CID|||||
+RISAF_FMC_SubRegion2_Delegated_CID|RISAF_FMC_SubRegion2_Delegated_CID|||||
+RISAF_FMC_SubRegion3_Delegated_CID|RISAF_FMC_SubRegion3_Delegated_CID|||||
+RISAF_FMC_SubRegion4_Delegated_CID|RISAF_FMC_SubRegion4_Delegated_CID|||||
+RISAF_FMC_SubRegion5_Delegated_CID|RISAF_FMC_SubRegion5_Delegated_CID|||||
+RISAF_FMC_SubRegion6_Delegated_CID|RISAF_FMC_SubRegion6_Delegated_CID|||||
+RISAF_FMC_SubRegion7_Delegated_CID|RISAF_FMC_SubRegion7_Delegated_CID|||||
+RISAF_FMC_SubRegion8_Delegated_CID|RISAF_FMC_SubRegion8_Delegated_CID|||||
+RISAF_FMC_SubRegion9_Delegated_CID|RISAF_FMC_SubRegion9_Delegated_CID|||||
+RISAF_FMC_SubRegion10_Delegated_CID|RISAF_FMC_SubRegion10_Delegated_CID|||||
+RISAF_FMC_SubRegion11_Delegated_CID|RISAF_FMC_SubRegion11_Delegated_CID|||||
+RISAF_FMC_SubRegion12_Delegated_CID|RISAF_FMC_SubRegion12_Delegated_CID|||||
+RISAF_FMC_SubRegion13_Delegated_CID|RISAF_FMC_SubRegion13_Delegated_CID|||||
+RISAF_FMC_SubRegion14_Delegated_CID|RISAF_FMC_SubRegion14_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion1_Delegated_CID|RISAF_NPU_master0_SubRegion1_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion2_Delegated_CID|RISAF_NPU_master0_SubRegion2_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion3_Delegated_CID|RISAF_NPU_master0_SubRegion3_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion4_Delegated_CID|RISAF_NPU_master0_SubRegion4_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion5_Delegated_CID|RISAF_NPU_master0_SubRegion5_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion6_Delegated_CID|RISAF_NPU_master0_SubRegion6_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion7_Delegated_CID|RISAF_NPU_master0_SubRegion7_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion8_Delegated_CID|RISAF_NPU_master0_SubRegion8_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion9_Delegated_CID|RISAF_NPU_master0_SubRegion9_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion10_Delegated_CID|RISAF_NPU_master0_SubRegion10_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion11_Delegated_CID|RISAF_NPU_master0_SubRegion11_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion12_Delegated_CID|RISAF_NPU_master0_SubRegion12_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion13_Delegated_CID|RISAF_NPU_master0_SubRegion13_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion14_Delegated_CID|RISAF_NPU_master0_SubRegion14_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion15_Delegated_CID|RISAF_NPU_master0_SubRegion15_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion16_Delegated_CID|RISAF_NPU_master0_SubRegion16_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion17_Delegated_CID|RISAF_NPU_master0_SubRegion17_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion18_Delegated_CID|RISAF_NPU_master0_SubRegion18_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion19_Delegated_CID|RISAF_NPU_master0_SubRegion19_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion20_Delegated_CID|RISAF_NPU_master0_SubRegion20_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion21_Delegated_CID|RISAF_NPU_master0_SubRegion21_Delegated_CID|||||
+RISAF_NPU_master0_SubRegion22_Delegated_CID|RISAF_NPU_master0_SubRegion22_Delegated_CID|||||
+RISAF_CPU_master_SubRegion1_Delegated_CID|RISAF_CPU_master_SubRegion1_Delegated_CID|||||
+RISAF_CPU_master_SubRegion2_Delegated_CID|RISAF_CPU_master_SubRegion2_Delegated_CID|||||
+RISAF_CPU_master_SubRegion3_Delegated_CID|RISAF_CPU_master_SubRegion3_Delegated_CID|||||
+RISAF_CPU_master_SubRegion4_Delegated_CID|RISAF_CPU_master_SubRegion4_Delegated_CID|||||
+RISAF_CPU_master_SubRegion5_Delegated_CID|RISAF_CPU_master_SubRegion5_Delegated_CID|||||
+RISAF_CPU_master_SubRegion6_Delegated_CID|RISAF_CPU_master_SubRegion6_Delegated_CID|||||
+RISAF_CPU_master_SubRegion7_Delegated_CID|RISAF_CPU_master_SubRegion7_Delegated_CID|||||
+RISAF_CPU_master_SubRegion8_Delegated_CID|RISAF_CPU_master_SubRegion8_Delegated_CID|||||
+RISAF_CPU_master_SubRegion9_Delegated_CID|RISAF_CPU_master_SubRegion9_Delegated_CID|||||
+RISAF_CPU_master_SubRegion10_Delegated_CID|RISAF_CPU_master_SubRegion10_Delegated_CID|||||
+RISAF_CPU_master_SubRegion11_Delegated_CID|RISAF_CPU_master_SubRegion11_Delegated_CID|||||
+RISAF_CPU_master_SubRegion12_Delegated_CID|RISAF_CPU_master_SubRegion12_Delegated_CID|||||
+RISAF_CPU_master_SubRegion13_Delegated_CID|RISAF_CPU_master_SubRegion13_Delegated_CID|||||
+RISAF_CPU_master_SubRegion14_Delegated_CID|RISAF_CPU_master_SubRegion14_Delegated_CID|||||
+RISAF_CPU_master_SubRegion15_Delegated_CID|RISAF_CPU_master_SubRegion15_Delegated_CID|||||
+RISAF_CPU_master_SubRegion16_Delegated_CID|RISAF_CPU_master_SubRegion16_Delegated_CID|||||
+RISAF_CPU_master_SubRegion17_Delegated_CID|RISAF_CPU_master_SubRegion17_Delegated_CID|||||
+RISAF_CPU_master_SubRegion18_Delegated_CID|RISAF_CPU_master_SubRegion18_Delegated_CID|||||
+RISAF_CPU_master_SubRegion19_Delegated_CID|RISAF_CPU_master_SubRegion19_Delegated_CID|||||
+RISAF_CPU_master_SubRegion20_Delegated_CID|RISAF_CPU_master_SubRegion20_Delegated_CID|||||
+RISAF_CPU_master_SubRegion21_Delegated_CID|RISAF_CPU_master_SubRegion21_Delegated_CID|||||
+RISAF_CPU_master_SubRegion22_Delegated_CID|RISAF_CPU_master_SubRegion22_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion1_Delegated_CID|RISAF_NPU_master1_SubRegion1_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion2_Delegated_CID|RISAF_NPU_master1_SubRegion2_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion3_Delegated_CID|RISAF_NPU_master1_SubRegion3_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion4_Delegated_CID|RISAF_NPU_master1_SubRegion4_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion5_Delegated_CID|RISAF_NPU_master1_SubRegion5_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion6_Delegated_CID|RISAF_NPU_master1_SubRegion6_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion7_Delegated_CID|RISAF_NPU_master1_SubRegion7_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion8_Delegated_CID|RISAF_NPU_master1_SubRegion8_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion9_Delegated_CID|RISAF_NPU_master1_SubRegion9_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion10_Delegated_CID|RISAF_NPU_master1_SubRegion10_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion11_Delegated_CID|RISAF_NPU_master1_SubRegion11_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion12_Delegated_CID|RISAF_NPU_master1_SubRegion12_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion13_Delegated_CID|RISAF_NPU_master1_SubRegion13_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion14_Delegated_CID|RISAF_NPU_master1_SubRegion14_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion15_Delegated_CID|RISAF_NPU_master1_SubRegion15_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion16_Delegated_CID|RISAF_NPU_master1_SubRegion16_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion17_Delegated_CID|RISAF_NPU_master1_SubRegion17_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion18_Delegated_CID|RISAF_NPU_master1_SubRegion18_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion19_Delegated_CID|RISAF_NPU_master1_SubRegion19_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion20_Delegated_CID|RISAF_NPU_master1_SubRegion20_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion21_Delegated_CID|RISAF_NPU_master1_SubRegion21_Delegated_CID|||||
+RISAF_NPU_master1_SubRegion22_Delegated_CID|RISAF_NPU_master1_SubRegion22_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion1_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion1_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion2_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion2_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion3_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion3_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion4_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion4_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion5_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion5_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion6_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion6_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion7_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion7_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion8_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion8_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion9_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion9_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion10_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion10_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion11_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion11_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion12_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion12_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion13_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion13_Delegated_CID|||||
+RISAF_CPUAXI_RAM1_SubRegion14_Delegated_CID|RISAF_CPUAXI_RAM1_SubRegion14_Delegated_CID|||||
+RISAF_TCM_SubRegion1_SRCID_|RISAF_TCM_SubRegion1_SRCID_|||||
+RISAF_TCM_SubRegion2_SRCID_|RISAF_TCM_SubRegion2_SRCID_|||||
+RISAF_TCM_SubRegion3_SRCID_|RISAF_TCM_SubRegion3_SRCID_|||||
+RISAF_TCM_SubRegion4_SRCID_|RISAF_TCM_SubRegion4_SRCID_|||||
+RISAF_TCM_SubRegion5_SRCID_|RISAF_TCM_SubRegion5_SRCID_|||||
+RISAF_TCM_SubRegion6_SRCID_|RISAF_TCM_SubRegion6_SRCID_|||||
+RISAF_TCM_SubRegion7_SRCID_|RISAF_TCM_SubRegion7_SRCID_|||||
+RISAF_TCM_SubRegion8_SRCID_|RISAF_TCM_SubRegion8_SRCID_|||||
+RISAF_TCM_SubRegion9_SRCID_|RISAF_TCM_SubRegion9_SRCID_|||||
+RISAF_TCM_SubRegion10_SRCID_|RISAF_TCM_SubRegion10_SRCID_|||||
+RISAF_TCM_SubRegion11_SRCID_|RISAF_TCM_SubRegion11_SRCID_|||||
+RISAF_TCM_SubRegion12_SRCID_|RISAF_TCM_SubRegion12_SRCID_|||||
+RISAF_TCM_SubRegion13_SRCID_|RISAF_TCM_SubRegion13_SRCID_|||||
+RISAF_TCM_SubRegion14_SRCID_|RISAF_TCM_SubRegion14_SRCID_|||||
+RISAF_TCM_SubRegion1_Delegated_CID|RISAF_TCM_SubRegion1_Delegated_CID|||||
+RISAF_TCM_SubRegion2_Delegated_CID|RISAF_TCM_SubRegion2_Delegated_CID|||||
+RISAF_TCM_SubRegion3_Delegated_CID|RISAF_TCM_SubRegion3_Delegated_CID|||||
+RISAF_TCM_SubRegion4_Delegated_CID|RISAF_TCM_SubRegion4_Delegated_CID|||||
+RISAF_TCM_SubRegion5_Delegated_CID|RISAF_TCM_SubRegion5_Delegated_CID|||||
+RISAF_TCM_SubRegion6_Delegated_CID|RISAF_TCM_SubRegion6_Delegated_CID|||||
+RISAF_TCM_SubRegion7_Delegated_CID|RISAF_TCM_SubRegion7_Delegated_CID|||||
+RISAF_TCM_SubRegion8_Delegated_CID|RISAF_TCM_SubRegion8_Delegated_CID|||||
+RISAF_TCM_SubRegion9_Delegated_CID|RISAF_TCM_SubRegion9_Delegated_CID|||||
+RISAF_TCM_SubRegion10_Delegated_CID|RISAF_TCM_SubRegion10_Delegated_CID|||||
+RISAF_TCM_SubRegion11_Delegated_CID|RISAF_TCM_SubRegion11_Delegated_CID|||||
+RISAF_TCM_SubRegion12_Delegated_CID|RISAF_TCM_SubRegion12_Delegated_CID|||||
+RISAF_TCM_SubRegion13_Delegated_CID|RISAF_TCM_SubRegion13_Delegated_CID|||||
+RISAF_TCM_SubRegion14_Delegated_CID|RISAF_TCM_SubRegion14_Delegated_CID|||||
+RISAF_Backup_RAM_SubRegion1_Start_Address|assign Backup_RAM start address|||||
+RISAF_Backup_RAM_SubRegion1_Region_Size|assign the region size for Backup_RAM|||||
+RISAF_Backup_RAM_SubRegion2_Start_Address|assign Backup_RAM start address|||||
+RISAF_Backup_RAM_SubRegion2_Region_Size|assign the region size for Backup_RAM|||||
+RISAF_Backup_RAM_SubRegion3_Start_Address|assign Backup_RAM start address|||||
+RISAF_Backup_RAM_SubRegion3_Region_Size|assign the region size for Backup_RAM|||||
+RISAF_Backup_RAM_SubRegion4_Start_Address|assign Backup_RAM start address|||||
+RISAF_Backup_RAM_SubRegion4_Region_Size|assign the region size for Backup_RAM|||||
+RISAF_Backup_RAM_SubRegion5_Start_Address|assign Backup_RAM start address|||||
+RISAF_Backup_RAM_SubRegion5_Region_Size|assign the region size for Backup_RAM|||||
+RISAF_Backup_RAM_SubRegion6_Start_Address|assign Backup_RAM start address|||||
+RISAF_Backup_RAM_SubRegion6_Region_Size|assign the region size for Backup_RAM|||||
+RISAF_CPUAXI_RAM0_SubRegion1_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion1_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion2_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion2_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion3_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion3_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion4_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion4_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion5_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion5_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion6_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion6_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion7_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion7_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion8_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion8_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion9_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion9_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion10_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion10_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion11_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion11_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion12_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion12_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion13_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion13_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_CPUAXI_RAM0_SubRegion14_Start_Address|assign CPUAXI_RAM0 start address|||||
+RISAF_CPUAXI_RAM0_SubRegion14_Region_Size|assign the region size for CPUAXI_RAM0|||||
+RISAF_AHB_RAM1_SubRegion1_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion1_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion2_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion2_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion3_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion3_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion4_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion4_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion5_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion5_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion6_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion6_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion7_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion7_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion8_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion8_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion9_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion9_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion10_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion10_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion11_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion11_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion12_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion12_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion13_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion13_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM1_SubRegion14_Start_Address|assign AHB_RAM1 start address|||||
+RISAF_AHB_RAM1_SubRegion14_Region_Size|assign the region size for AHB_RAM1|||||
+RISAF_AHB_RAM2_SubRegion1_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion1_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion2_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion2_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion3_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion3_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion4_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion4_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion5_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion5_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion6_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion6_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion7_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion7_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion8_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion8_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion9_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion9_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion10_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion10_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion11_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion11_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion12_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion12_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion13_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion13_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_AHB_RAM2_SubRegion14_Start_Address|assign AHB_RAM2 start address|||||
+RISAF_AHB_RAM2_SubRegion14_Region_Size|assign the region size for AHB_RAM2|||||
+RISAF_CACHEAXI_configuration_port_SubRegion1_Start_Address|assign CACHEAXI_configuration_port start address|||||
+RISAF_CACHEAXI_configuration_port_SubRegion1_Region_Size|assign the region size for CACHEAXI_configuration_port|||||
+RISAF_CACHEAXI_configuration_port_SubRegion2_Start_Address|assign CACHEAXI_configuration_port start address|||||
+RISAF_CACHEAXI_configuration_port_SubRegion2_Region_Size|assign the region size for CACHEAXI_configuration_port|||||
+RISAF_CACHEAXI_configuration_port_SubRegion3_Start_Address|assign CACHEAXI_configuration_port start address|||||
+RISAF_CACHEAXI_configuration_port_SubRegion3_Region_Size|assign the region size for CACHEAXI_configuration_port|||||
+RISAF_CACHEAXI_configuration_port_SubRegion4_Start_Address|assign CACHEAXI_configuration_port start address|||||
+RISAF_CACHEAXI_configuration_port_SubRegion4_Region_Size|assign the region size for CACHEAXI_configuration_port|||||
+RISAF_FLEXRAM_SubRegion1_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion1_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion2_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion2_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion3_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion3_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion4_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion4_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion5_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion5_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion6_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion6_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion7_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion7_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion8_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion8_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion9_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion9_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion10_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion10_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion11_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion11_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion12_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion12_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion13_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion13_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_SubRegion14_Start_Address|assign FLEXRAM start address|||||
+RISAF_FLEXRAM_SubRegion14_Region_Size|assign the region size for FLEXRAM|||||
+RISAF_FLEXRAM_Start_Address_Physical|FLEXRAM_Start_Address_Physical|||||
+RISAF_FLEXRAM_Region_Size_Physical|FLEXRAM_Region_Size_Physical|||||
+RISAF_CACHEAXI_RAM_SubRegion1_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion1_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion2_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion2_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion3_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion3_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion4_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion4_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion5_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion5_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion6_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion6_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion7_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion7_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion8_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion8_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion9_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion9_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion10_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion10_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion11_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion11_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion12_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion12_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion13_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion13_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_SubRegion14_Start_Address|assign CACHEAXI_RAM start address|||||
+RISAF_CACHEAXI_RAM_SubRegion14_Region_Size|assign the region size for CACHEAXI_RAM|||||
+RISAF_CACHEAXI_RAM_Start_Address_Physical|CACHEAXI_RAM_Start_Address_Physical|||||
+RISAF_CACHEAXI_RAM_Region_Size_Physical|CACHEAXI_RAM_Region_Size_Physical|||||
+RISAF_VENCRAM_SubRegion1_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion1_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion2_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion2_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion3_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion3_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion4_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion4_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion5_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion5_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion6_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion6_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion7_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion7_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion8_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion8_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion9_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion9_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion10_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion10_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion11_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion11_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion12_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion12_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion13_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion13_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_SubRegion14_Start_Address|assign VENCRAM start address|||||
+RISAF_VENCRAM_SubRegion14_Region_Size|assign the region size for VENCRAM|||||
+RISAF_VENCRAM_Start_Address_Physical|VENCRAM_Start_Address_Physical|||||
+RISAF_VENCRAM_Region_Size_Physical|VENCRAM_Region_Size_Physical|||||
+RISAF_XSPI1_SubRegion1_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion1_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion2_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion2_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion3_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion3_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion4_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion4_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion5_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion5_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion6_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion6_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion7_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion7_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion8_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion8_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion9_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion9_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion10_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion10_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion11_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion11_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion12_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion12_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion13_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion13_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_SubRegion14_Start_Address|assign XSPI1 start address|||||
+RISAF_XSPI1_SubRegion14_Region_Size|assign the region size for XSPI1|||||
+RISAF_XSPI1_Start_Address_Physical|XSPI1_Start_Address_Physical|||||
+RISAF_XSPI1_Region_Size_Physical|XSPI1_Region_Size_Physical|||||
+RISAF_XSPI2_SubRegion1_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion1_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion2_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion2_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion3_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion3_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion4_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion4_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion5_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion5_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion6_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion6_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion7_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion7_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion8_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion8_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion9_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion9_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion10_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion10_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion11_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion11_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion12_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion12_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion13_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion13_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_SubRegion14_Start_Address|assign XSPI2 start address|||||
+RISAF_XSPI2_SubRegion14_Region_Size|assign the region size for XSPI2|||||
+RISAF_XSPI2_Start_Address_Physical|XSPI2_Start_Address_Physical|||||
+RISAF_XSPI2_Region_Size_Physical|XSPI2_Region_Size_Physical|||||
+RISAF_XSPI3_SubRegion1_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion1_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion2_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion2_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion3_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion3_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion4_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion4_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion5_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion5_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion6_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion6_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion7_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion7_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion8_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion8_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion9_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion9_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion10_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion10_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion11_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion11_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion12_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion12_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion13_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion13_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_SubRegion14_Start_Address|assign XSPI3 start address|||||
+RISAF_XSPI3_SubRegion14_Region_Size|assign the region size for XSPI3|||||
+RISAF_XSPI3_Start_Address_Physical|XSPI3_Start_Address_Physical|||||
+RISAF_XSPI3_Region_Size_Physical|XSPI3_Region_Size_Physical|||||
+RISAF_FMC_SubRegion1_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion1_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion2_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion2_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion3_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion3_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion4_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion4_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion5_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion5_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion6_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion6_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion7_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion7_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion8_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion8_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion9_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion9_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion10_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion10_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion11_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion11_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion12_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion12_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion13_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion13_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_SubRegion14_Start_Address|assign FMC start address|||||
+RISAF_FMC_SubRegion14_Region_Size|assign the region size for FMC|||||
+RISAF_FMC_Start_Address_Physical|FMC_Start_Address_Physical|||||
+RISAF_FMC_Region_Size_Physical|FMC_Region_Size_Physical|||||
+RISAF_NPU_master0_SubRegion1_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion1_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion2_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion2_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion3_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion3_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion4_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion4_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion5_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion5_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion6_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion6_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion7_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion7_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion8_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion8_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion9_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion9_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion10_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion10_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion11_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion11_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion12_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion12_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion13_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion13_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion14_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion14_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion15_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion15_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion16_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion16_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion17_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion17_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion18_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion18_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion19_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion19_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion20_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion20_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion21_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion21_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_SubRegion22_Start_Address|assign NPU_master0 start address|||||
+RISAF_NPU_master0_SubRegion22_Region_Size|assign the region size for NPU_master0|||||
+RISAF_NPU_master0_Start_Address_Physical|NPU_master0_Start_Address_Physical|||||
+RISAF_NPU_master0_Region_Size_Physical|NPU_master0_Region_Size_Physical|||||
+RISAF_CPU_master_SubRegion1_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion1_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion2_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion2_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion3_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion3_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion4_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion4_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion5_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion5_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion6_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion6_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion7_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion7_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion8_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion8_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion9_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion9_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion10_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion10_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion11_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion11_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion12_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion12_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion13_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion13_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion14_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion14_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion15_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion15_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion16_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion16_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion17_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion17_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion18_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion18_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion19_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion19_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion20_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion20_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion21_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion21_Region_Size|assign the region size for CPU_master|||||
+RISAF_CPU_master_SubRegion22_Start_Address|assign CPU_master start address|||||
+RISAF_CPU_master_SubRegion22_Region_Size|assign the region size for CPU_master|||||
+RISAF_NPU_master1_SubRegion1_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion1_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion2_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion2_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion3_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion3_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion4_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion4_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion5_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion5_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion6_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion6_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion7_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion7_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion8_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion8_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion9_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion9_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion10_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion10_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion11_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion11_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion12_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion12_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion13_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion13_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion14_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion14_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion15_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion15_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion16_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion16_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion17_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion17_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion18_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion18_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion19_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion19_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion20_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion20_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion21_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion21_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_SubRegion22_Start_Address|assign NPU_master1 start address|||||
+RISAF_NPU_master1_SubRegion22_Region_Size|assign the region size for NPU_master1|||||
+RISAF_NPU_master1_Start_Address_Physical|NPU_master1_Start_Address_Physical|||||
+RISAF_NPU_master1_Region_Size_Physical|NPU_master1_Region_Size_Physical|||||
+RISAF_CPUAXI_RAM1_SubRegion1_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion1_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion2_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion2_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion3_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion3_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion4_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion4_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion5_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion5_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion6_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion6_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion7_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion7_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion8_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion8_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion9_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion9_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion10_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion10_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion11_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion11_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion12_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion12_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion13_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion13_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_CPUAXI_RAM1_SubRegion14_Start_Address|assign CPUAXI_RAM1 start address|||||
+RISAF_CPUAXI_RAM1_SubRegion14_Region_Size|assign the region size for CPUAXI_RAM1|||||
+RISAF_TCM_SubRegion1_Start_Address|assign TCM1 start address|||||
+RISAF_TCM_SubRegion1_Region_Size|assign the region size for TCM1|||||
+RISAF_TCM_SubRegion2_Start_Address|assign TCM2 start address|||||
+RISAF_TCM_SubRegion2_Region_Size|assign the region size for TCM2|||||
+RISAF_TCM_SubRegion3_Start_Address|assign TCM3 start address|||||
+RISAF_TCM_SubRegion3_Region_Size|assign the region size for TCM3|||||
+RISAF_TCM_SubRegion4_Start_Address|assign TCM4 start address|||||
+RISAF_TCM_SubRegion4_Region_Size|assign the region size for TCM4|||||
+RISAF_TCM_SubRegion5_Start_Address|assign TCM5 start address|||||
+RISAF_TCM_SubRegion5_Region_Size|assign the region size for TCM5|||||
+RISAF_TCM_SubRegion6_Start_Address|assign TCM6 start address|||||
+RISAF_TCM_SubRegion6_Region_Size|assign the region size for TCM6|||||
+RISAF_TCM_SubRegion7_Start_Address|assign TCM7 start address|||||
+RISAF_TCM_SubRegion7_Region_Size|assign the region size for TCM7|||||
+RISAF_TCM_SubRegion8_Start_Address|assign TCM8 start address|||||
+RISAF_TCM_SubRegion8_Region_Size|assign the region size for TCM8|||||
+RISAF_TCM_SubRegion9_Start_Address|assign TCM9 start address|||||
+RISAF_TCM_SubRegion9_Region_Size|assign the region size for DDR9|||||
+RISAF_TCM_SubRegion10_Start_Address|assign TCM10 start address|||||
+RISAF_TCM_SubRegion10_Region_Size|assign the region size for DDR10|||||
+RISAF_TCM_SubRegion11_Start_Address|assign TCM11 start address|||||
+RISAF_TCM_SubRegion11_Region_Size|assign the region size for TCM11|||||
+RISAF_TCM_SubRegion12_Start_Address|assign TCM12 start address|||||
+RISAF_TCM_SubRegion12_Region_Size|assign the region size for DDR12|||||
+RISAF_TCM_SubRegion13_Start_Address|assign TCM13 start address|||||
+RISAF_TCM_SubRegion13_Region_Size|assign the region size for DDR13|||||
+RISAF_TCM_SubRegion14_Start_Address|assign TCM14 start address|||||
+RISAF_TCM_SubRegion14_Region_Size|assign the region size for TCM14|||||
+RISAF_TCM_Start_Address_Physical|TCM start address|||||
+RISAF_TCM_Region_Size_Physical|TCM Region_Size|||||
+RISAF_CPUAXI_RAM0_Region1_Start_Address_memory|assign CPUAXI_RAM0_Region1 start address|||||
+RISAF_CPUAXI_RAM0_Region1_Region_Size_memory|region1|||||
+RISAF_CPUAXI_RAM0_Region1_CID_Filtering_memory|region1|||||
+RISAF_CPUAXI_RAM0_Region2_Start_Address_memory|assign CPUAXI_RAM0_Region2 start address|||||
+RISAF_CPUAXI_RAM0_Region2_Region_Size_memory|region2|||||
+RISAF_CPUAXI_RAM0_Region2_CID_Filtering_memory|region1|||||
+RISAF_CPUAXI_RAM0_Region3_Start_Address_memory|assign CPUAXI_RAM0_Region3 start address|||||
+RISAF_CPUAXI_RAM0_Region3_Region_Size_memory|region3|||||
+RISAF_CPUAXI_RAM0_Region3_CID_Filtering_memory|region1|||||
+RISAF_CPUAXI_RAM0_Region4_Start_Address_memory|assign CPUAXI_RAM0_Region4 start address|||||
+RISAF_CPUAXI_RAM0_Region4_Region_Size_memory|region4|||||
+RISAF_CPUAXI_RAM0_Region4_CID_Filtering_memory|region1|||||
+RISAF_CPUAXI_RAM0_Region5_Start_Address_memory|assign CPUAXI_RAM0_Region5 start address|||||
+RISAF_CPUAXI_RAM0_Region5_Region_Size_memory|region5|||||
+RISAF_CPUAXI_RAM0_Region5_CID_Filtering_memory|region1|||||
+RISAF_CPUAXI_RAM0_Region6_Start_Address_memory|assign CPUAXI_RAM0_Region6 start address|||||
+RISAF_CPUAXI_RAM0_Region6_Region_Size_memory|region6|||||
+RISAF_CPUAXI_RAM0_Region6_CID_Filtering_memory|region1|||||
+RISAF_CPUAXI_RAM0_Region7_Start_Address_memory|assign CPUAXI_RAM0_Region7 start address|||||
+RISAF_CPUAXI_RAM0_Region7_Region_Size_memory|region7|||||
+RISAF_CPUAXI_RAM0_Region7_CID_Filtering_memory|region1|||||
+RISAF_memory_CPUAXI_RAM0_Region1_Secured|region 1|||||
+RISAF_memory_CPUAXI_RAM0_Region2_Secured|region 2|||||
+RISAF_memory_CPUAXI_RAM0_Region3_Secured|region 3|||||
+RISAF_memory_CPUAXI_RAM0_Region4_Secured|region 4|||||
+RISAF_memory_CPUAXI_RAM0_Region5_Secured|region 5|||||
+RISAF_memory_CPUAXI_RAM0_Region6_Secured|region 6|||||
+RISAF_memory_CPUAXI_RAM0_Region7_Secured|region 7|||||
+RISAF_CPUAXI_RAM0_Start_Address_Physical|CPUAXI_RAM0_Start_Address_Physical|||||
+RISAF_CPUAXI_RAM0_Region_Size_Physical|CPUAXI_RAM0_Region_Size_Physical|||||
+RISAF_AHB_RAM1_Region1_Start_Address_memory|assign AHB_RAM1_Region1 start address|||||
+RISAF_AHB_RAM1_Region1_Region_Size_memory|region1|||||
+RISAF_AHB_RAM1_Region1_CID_Filtering_memory|region1|||||
+RISAF_AHB_RAM1_Region2_Start_Address_memory|assign AHB_RAM1_Region2 start address|||||
+RISAF_AHB_RAM1_Region2_Region_Size_memory|region2|||||
+RISAF_AHB_RAM1_Region2_CID_Filtering_memory|region2|||||
+RISAF_AHB_RAM1_Region3_Start_Address_memory|assign AHB_RAM1_Region3 start address|||||
+RISAF_AHB_RAM1_Region3_Region_Size_memory|region3|||||
+RISAF_AHB_RAM1_Region3_CID_Filtering_memory|region3|||||
+RISAF_AHB_RAM1_Region4_Start_Address_memory|assign AHB_RAM1_Region4 start address|||||
+RISAF_AHB_RAM1_Region4_Region_Size_memory|region4|||||
+RISAF_AHB_RAM1_Region4_CID_Filtering_memory|region4|||||
+RISAF_AHB_RAM1_Region5_Start_Address_memory|assign AHB_RAM1_Region5 start address|||||
+RISAF_AHB_RAM1_Region5_Region_Size_memory|region5|||||
+RISAF_AHB_RAM1_Region5_CID_Filtering_memory|region5|||||
+RISAF_AHB_RAM1_Region6_Start_Address_memory|assign AHB_RAM1_Region6 start address|||||
+RISAF_AHB_RAM1_Region6_Region_Size_memory|region6|||||
+RISAF_AHB_RAM1_Region6_CID_Filtering_memory|region6|||||
+RISAF_AHB_RAM1_Region7_Start_Address_memory|assign AHB_RAM1_Region7 start address|||||
+RISAF_AHB_RAM1_Region7_Region_Size_memory|region7|||||
+RISAF_AHB_RAM1_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_AHB_RAM1_Region1_Secured|region 1|||||
+RISAF_memory_AHB_RAM1_Region2_Secured|region 2|||||
+RISAF_memory_AHB_RAM1_Region3_Secured|region 3|||||
+RISAF_memory_AHB_RAM1_Region4_Secured|region 4|||||
+RISAF_memory_AHB_RAM1_Region5_Secured|region 5|||||
+RISAF_memory_AHB_RAM1_Region6_Secured|region 6|||||
+RISAF_memory_AHB_RAM1_Region7_Secured|region 7|||||
+RISAF_Backup_RAM_Region1_Start_Address_memory|assign Backup_RAM_Region1 start address|||||
+RISAF_Backup_RAM_Region1_Region_Size_memory|region1|||||
+RISAF_Backup_RAM_Region1_CID_Filtering_memory|region1|||||
+RISAF_Backup_RAM_Region2_Start_Address_memory|assign Backup_RAM_Region2 start address|||||
+RISAF_Backup_RAM_Region2_Region_Size_memory|region2|||||
+RISAF_Backup_RAM_Region2_CID_Filtering_memory|region2|||||
+RISAF_Backup_RAM_Region3_Start_Address_memory|assign Backup_RAM_Region3 start address|||||
+RISAF_Backup_RAM_Region3_Region_Size_memory|region3|||||
+RISAF_Backup_RAM_Region3_CID_Filtering_memory|region3|||||
+RISAF_memory_Backup_RAM_Region1_Secured|region 1|||||
+RISAF_memory_Backup_RAM_Region2_Secured|region 2|||||
+RISAF_memory_Backup_RAM_Region3_Secured|region 3|||||
+RISAF_AHB_RAM2_Region1_Start_Address_memory|assign AHB_RAM2_Region1 start address|||||
+RISAF_AHB_RAM2_Region1_Region_Size_memory|region1|||||
+RISAF_AHB_RAM2_Region1_CID_Filtering_memory|region1|||||
+RISAF_AHB_RAM2_Region2_Start_Address_memory|assign AHB_RAM2_Region2 start address|||||
+RISAF_AHB_RAM2_Region2_Region_Size_memory|region2|||||
+RISAF_AHB_RAM2_Region2_CID_Filtering_memory|region2|||||
+RISAF_AHB_RAM2_Region3_Start_Address_memory|assign AHB_RAM2_Region3 start address|||||
+RISAF_AHB_RAM2_Region3_Region_Size_memory|region3|||||
+RISAF_AHB_RAM2_Region3_CID_Filtering_memory|region3|||||
+RISAF_AHB_RAM2_Region4_Start_Address_memory|assign AHB_RAM2_Region4 start address|||||
+RISAF_AHB_RAM2_Region4_Region_Size_memory|region4|||||
+RISAF_AHB_RAM2_Region4_CID_Filtering_memory|region4|||||
+RISAF_AHB_RAM2_Region5_Start_Address_memory|assign AHB_RAM2_Region5 start address|||||
+RISAF_AHB_RAM2_Region5_Region_Size_memory|region5|||||
+RISAF_AHB_RAM2_Region5_CID_Filtering_memory|region5|||||
+RISAF_AHB_RAM2_Region6_Start_Address_memory|assign AHB_RAM2_Region6 start address|||||
+RISAF_AHB_RAM2_Region6_Region_Size_memory|region6|||||
+RISAF_AHB_RAM2_Region6_CID_Filtering_memory|region6|||||
+RISAF_AHB_RAM2_Region7_Start_Address_memory|assign AHB_RAM2_Region7 start address|||||
+RISAF_AHB_RAM2_Region7_Region_Size_memory|region7|||||
+RISAF_AHB_RAM2_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_AHB_RAM2_Region1_Secured|region 1|||||
+RISAF_memory_AHB_RAM2_Region2_Secured|region 2|||||
+RISAF_memory_AHB_RAM2_Region3_Secured|region 3|||||
+RISAF_memory_AHB_RAM2_Region4_Secured|region 4|||||
+RISAF_memory_AHB_RAM2_Region5_Secured|region 5|||||
+RISAF_memory_AHB_RAM2_Region6_Secured|region 6|||||
+RISAF_memory_AHB_RAM2_Region7_Secured|region 7|||||
+RISAF_FLEXRAM_Region1_Start_Address_memory|assign FLEXRAM_Region1 start address|||||
+RISAF_FLEXRAM_Region1_Region_Size_memory|region1|||||
+RISAF_FLEXRAM_Region1_CID_Filtering_memory|region1|||||
+RISAF_FLEXRAM_Region2_Start_Address_memory|assign FLEXRAM_Region2 start address|||||
+RISAF_FLEXRAM_Region2_Region_Size_memory|region2|||||
+RISAF_FLEXRAM_Region2_CID_Filtering_memory|region2|||||
+RISAF_FLEXRAM_Region3_Start_Address_memory|assign FLEXRAM_Region3 start address|||||
+RISAF_FLEXRAM_Region3_Region_Size_memory|region3|||||
+RISAF_FLEXRAM_Region3_CID_Filtering_memory|region3|||||
+RISAF_FLEXRAM_Region4_Start_Address_memory|assign FLEXRAM_Region4 start address|||||
+RISAF_FLEXRAM_Region4_Region_Size_memory|region4|||||
+RISAF_FLEXRAM_Region4_CID_Filtering_memory|region4|||||
+RISAF_FLEXRAM_Region5_Start_Address_memory|assign FLEXRAM_Region5 start address|||||
+RISAF_FLEXRAM_Region5_Region_Size_memory|region5|||||
+RISAF_FLEXRAM_Region5_CID_Filtering_memory|region5|||||
+RISAF_FLEXRAM_Region6_Start_Address_memory|assign FLEXRAM_Region6 start address|||||
+RISAF_FLEXRAM_Region6_Region_Size_memory|region6|||||
+RISAF_FLEXRAM_Region6_CID_Filtering_memory|region6|||||
+RISAF_FLEXRAM_Region7_Start_Address_memory|assign FLEXRAM_Region7 start address|||||
+RISAF_FLEXRAM_Region7_Region_Size_memory|region7|||||
+RISAF_FLEXRAM_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_FLEXRAM_Region1_Secured|region 1|||||
+RISAF_memory_FLEXRAM_Region2_Secured|region 2|||||
+RISAF_memory_FLEXRAM_Region3_Secured|region 3|||||
+RISAF_memory_FLEXRAM_Region4_Secured|region 4|||||
+RISAF_memory_FLEXRAM_Region5_Secured|region 5|||||
+RISAF_memory_FLEXRAM_Region6_Secured|region 6|||||
+RISAF_memory_FLEXRAM_Region7_Secured|region 7|||||
+RISAF_CACHEAXI_RAM_Region1_Start_Address_memory|assign CACHEAXI_RAM_Region1 start address|||||
+RISAF_CACHEAXI_RAM_Region1_Region_Size_memory|region1|||||
+RISAF_CACHEAXI_RAM_Region1_CID_Filtering_memory|region1|||||
+RISAF_CACHEAXI_RAM_Region2_Start_Address_memory|assign CACHEAXI_RAM_Region2 start address|||||
+RISAF_CACHEAXI_RAM_Region2_Region_Size_memory|region2|||||
+RISAF_CACHEAXI_RAM_Region2_CID_Filtering_memory|region2|||||
+RISAF_CACHEAXI_RAM_Region3_Start_Address_memory|assign CACHEAXI_RAM_Region3 start address|||||
+RISAF_CACHEAXI_RAM_Region3_Region_Size_memory|region3|||||
+RISAF_CACHEAXI_RAM_Region3_CID_Filtering_memory|region3|||||
+RISAF_CACHEAXI_RAM_Region4_Start_Address_memory|assign CACHEAXI_RAM_Region4 start address|||||
+RISAF_CACHEAXI_RAM_Region4_Region_Size_memory|region4|||||
+RISAF_CACHEAXI_RAM_Region4_CID_Filtering_memory|region4|||||
+RISAF_CACHEAXI_RAM_Region5_Start_Address_memory|assign CACHEAXI_RAM_Region5 start address|||||
+RISAF_CACHEAXI_RAM_Region5_Region_Size_memory|region5|||||
+RISAF_CACHEAXI_RAM_Region5_CID_Filtering_memory|region5|||||
+RISAF_CACHEAXI_RAM_Region6_Start_Address_memory|assign CACHEAXI_RAM_Region6 start address|||||
+RISAF_CACHEAXI_RAM_Region6_Region_Size_memory|region6|||||
+RISAF_CACHEAXI_RAM_Region6_CID_Filtering_memory|region6|||||
+RISAF_CACHEAXI_RAM_Region7_Start_Address_memory|assign CACHEAXI_RAM_Region7 start address|||||
+RISAF_CACHEAXI_RAM_Region7_Region_Size_memory|region7|||||
+RISAF_CACHEAXI_RAM_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_CACHEAXI_RAM_Region1_Secured|region 1|||||
+RISAF_memory_CACHEAXI_RAM_Region2_Secured|region 2|||||
+RISAF_memory_CACHEAXI_RAM_Region3_Secured|region 3|||||
+RISAF_memory_CACHEAXI_RAM_Region4_Secured|region 4|||||
+RISAF_memory_CACHEAXI_RAM_Region5_Secured|region 5|||||
+RISAF_memory_CACHEAXI_RAM_Region6_Secured|region 6|||||
+RISAF_memory_CACHEAXI_RAM_Region7_Secured|region 7|||||
+RISAF_VENCRAM_Region1_Start_Address_memory|assign VENCRAM_Region1 start address|||||
+RISAF_VENCRAM_Region1_Region_Size_memory|region1|||||
+RISAF_VENCRAM_Region1_CID_Filtering_memory|region1|||||
+RISAF_VENCRAM_Region2_Start_Address_memory|assign VENCRAM_Region2 start address|||||
+RISAF_VENCRAM_Region2_Region_Size_memory|region2|||||
+RISAF_VENCRAM_Region2_CID_Filtering_memory|region2|||||
+RISAF_VENCRAM_Region3_Start_Address_memory|assign VENCRAM_Region3 start address|||||
+RISAF_VENCRAM_Region3_Region_Size_memory|region3|||||
+RISAF_VENCRAM_Region3_CID_Filtering_memory|region3|||||
+RISAF_VENCRAM_Region4_Start_Address_memory|assign VENCRAM_Region4 start address|||||
+RISAF_VENCRAM_Region4_Region_Size_memory|region4|||||
+RISAF_VENCRAM_Region4_CID_Filtering_memory|region4|||||
+RISAF_VENCRAM_Region5_Start_Address_memory|assign VENCRAM_Region5 start address|||||
+RISAF_VENCRAM_Region5_Region_Size_memory|region5|||||
+RISAF_VENCRAM_Region5_CID_Filtering_memory|region5|||||
+RISAF_VENCRAM_Region6_Start_Address_memory|assign VENCRAM_Region6 start address|||||
+RISAF_VENCRAM_Region6_Region_Size_memory|region6|||||
+RISAF_VENCRAM_Region6_CID_Filtering_memory|region6|||||
+RISAF_VENCRAM_Region7_Start_Address_memory|assign VENCRAM_Region7 start address|||||
+RISAF_VENCRAM_Region7_Region_Size_memory|region7|||||
+RISAF_VENCRAM_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_VENCRAM_Region1_Secured|region 1|||||
+RISAF_memory_VENCRAM_Region2_Secured|region 2|||||
+RISAF_memory_VENCRAM_Region3_Secured|region 3|||||
+RISAF_memory_VENCRAM_Region4_Secured|region 4|||||
+RISAF_memory_VENCRAM_Region5_Secured|region 5|||||
+RISAF_memory_VENCRAM_Region6_Secured|region 6|||||
+RISAF_memory_VENCRAM_Region7_Secured|region 7|||||
+RISAF_XSPI1_Region1_Start_Address_memory|assign XSPI1_Region1 start address|||||
+RISAF_XSPI1_Region1_Region_Size_memory|region1|||||
+RISAF_XSPI1_Region1_CID_Filtering_memory|region1|||||
+RISAF_XSPI1_Region2_Start_Address_memory|assign XSPI1_Region2 start address|||||
+RISAF_XSPI1_Region2_Region_Size_memory|region2|||||
+RISAF_XSPI1_Region2_CID_Filtering_memory|region2|||||
+RISAF_XSPI1_Region3_Start_Address_memory|assign XSPI1_Region3 start address|||||
+RISAF_XSPI1_Region3_Region_Size_memory|region3|||||
+RISAF_XSPI1_Region3_CID_Filtering_memory|region3|||||
+RISAF_XSPI1_Region4_Start_Address_memory|assign XSPI1_Region4 start address|||||
+RISAF_XSPI1_Region4_Region_Size_memory|region4|||||
+RISAF_XSPI1_Region4_CID_Filtering_memory|region4|||||
+RISAF_XSPI1_Region5_Start_Address_memory|assign XSPI1_Region5 start address|||||
+RISAF_XSPI1_Region5_Region_Size_memory|region5|||||
+RISAF_XSPI1_Region5_CID_Filtering_memory|region5|||||
+RISAF_XSPI1_Region6_Start_Address_memory|assign XSPI1_Region6 start address|||||
+RISAF_XSPI1_Region6_Region_Size_memory|region6|||||
+RISAF_XSPI1_Region6_CID_Filtering_memory|region6|||||
+RISAF_XSPI1_Region7_Start_Address_memory|assign XSPI1_Region7 start address|||||
+RISAF_XSPI1_Region7_Region_Size_memory|region7|||||
+RISAF_XSPI1_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_XSPI1_Region1_Secured|region 1|||||
+RISAF_memory_XSPI1_Region2_Secured|region 2|||||
+RISAF_memory_XSPI1_Region3_Secured|region 3|||||
+RISAF_memory_XSPI1_Region4_Secured|region 4|||||
+RISAF_memory_XSPI1_Region5_Secured|region 5|||||
+RISAF_memory_XSPI1_Region6_Secured|region 6|||||
+RISAF_memory_XSPI1_Region7_Secured|region 7|||||
+RISAF_XSPI2_Region1_Start_Address_memory|assign XSPI2_Region1 start address|||||
+RISAF_XSPI2_Region1_Region_Size_memory|region1|||||
+RISAF_XSPI2_Region1_CID_Filtering_memory|region1|||||
+RISAF_XSPI2_Region2_Start_Address_memory|assign XSPI2_Region2 start address|||||
+RISAF_XSPI2_Region2_Region_Size_memory|region2|||||
+RISAF_XSPI2_Region2_CID_Filtering_memory|region2|||||
+RISAF_XSPI2_Region3_Start_Address_memory|assign XSPI2_Region3 start address|||||
+RISAF_XSPI2_Region3_Region_Size_memory|region3|||||
+RISAF_XSPI2_Region3_CID_Filtering_memory|region3|||||
+RISAF_XSPI2_Region4_Start_Address_memory|assign XSPI2_Region4 start address|||||
+RISAF_XSPI2_Region4_Region_Size_memory|region4|||||
+RISAF_XSPI2_Region4_CID_Filtering_memory|region4|||||
+RISAF_XSPI2_Region5_Start_Address_memory|assign XSPI2_Region5 start address|||||
+RISAF_XSPI2_Region5_Region_Size_memory|region5|||||
+RISAF_XSPI2_Region5_CID_Filtering_memory|region5|||||
+RISAF_XSPI2_Region6_Start_Address_memory|assign XSPI2_Region6 start address|||||
+RISAF_XSPI2_Region6_Region_Size_memory|region6|||||
+RISAF_XSPI2_Region6_CID_Filtering_memory|region6|||||
+RISAF_XSPI2_Region7_Start_Address_memory|assign XSPI2_Region7 start address|||||
+RISAF_XSPI2_Region7_Region_Size_memory|region7|||||
+RISAF_XSPI2_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_XSPI2_Region1_Secured|region 1|||||
+RISAF_memory_XSPI2_Region2_Secured|region 2|||||
+RISAF_memory_XSPI2_Region3_Secured|region 3|||||
+RISAF_memory_XSPI2_Region4_Secured|region 4|||||
+RISAF_memory_XSPI2_Region5_Secured|region 5|||||
+RISAF_memory_XSPI2_Region6_Secured|region 6|||||
+RISAF_memory_XSPI2_Region7_Secured|region 7|||||
+RISAF_XSPI3_Region1_Start_Address_memory|assign XSPI3_Region1 start address|||||
+RISAF_XSPI3_Region1_Region_Size_memory|region1|||||
+RISAF_XSPI3_Region1_CID_Filtering_memory|region1|||||
+RISAF_XSPI3_Region2_Start_Address_memory|assign XSPI3_Region2 start address|||||
+RISAF_XSPI3_Region2_Region_Size_memory|region2|||||
+RISAF_XSPI3_Region2_CID_Filtering_memory|region2|||||
+RISAF_XSPI3_Region3_Start_Address_memory|assign XSPI3_Region3 start address|||||
+RISAF_XSPI3_Region3_Region_Size_memory|region3|||||
+RISAF_XSPI3_Region3_CID_Filtering_memory|region3|||||
+RISAF_XSPI3_Region4_Start_Address_memory|assign XSPI3_Region4 start address|||||
+RISAF_XSPI3_Region4_Region_Size_memory|region4|||||
+RISAF_XSPI3_Region4_CID_Filtering_memory|region4|||||
+RISAF_XSPI3_Region5_Start_Address_memory|assign XSPI3_Region5 start address|||||
+RISAF_XSPI3_Region5_Region_Size_memory|region5|||||
+RISAF_XSPI3_Region5_CID_Filtering_memory|region5|||||
+RISAF_XSPI3_Region6_Start_Address_memory|assign XSPI3_Region6 start address|||||
+RISAF_XSPI3_Region6_Region_Size_memory|region6|||||
+RISAF_XSPI3_Region6_CID_Filtering_memory|region6|||||
+RISAF_XSPI3_Region7_Start_Address_memory|assign XSPI3_Region7 start address|||||
+RISAF_XSPI3_Region7_Region_Size_memory|region7|||||
+RISAF_XSPI3_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_XSPI3_Region1_Secured|region 1|||||
+RISAF_memory_XSPI3_Region2_Secured|region 2|||||
+RISAF_memory_XSPI3_Region3_Secured|region 3|||||
+RISAF_memory_XSPI3_Region4_Secured|region 4|||||
+RISAF_memory_XSPI3_Region5_Secured|region 5|||||
+RISAF_memory_XSPI3_Region6_Secured|region 6|||||
+RISAF_memory_XSPI3_Region7_Secured|region 7|||||
+RISAF_FMC_Region1_Start_Address_memory|assign FMC_Region1 start address|||||
+RISAF_FMC_Region1_Region_Size_memory|region1|||||
+RISAF_FMC_Region1_CID_Filtering_memory|region1|||||
+RISAF_FMC_Region2_Start_Address_memory|assign FMC_Region2 start address|||||
+RISAF_FMC_Region2_Region_Size_memory|region2|||||
+RISAF_FMC_Region2_CID_Filtering_memory|region2|||||
+RISAF_FMC_Region3_Start_Address_memory|assign FMC_Region3 start address|||||
+RISAF_FMC_Region3_Region_Size_memory|region3|||||
+RISAF_FMC_Region3_CID_Filtering_memory|region3|||||
+RISAF_FMC_Region4_Start_Address_memory|assign FMC_Region4 start address|||||
+RISAF_FMC_Region4_Region_Size_memory|region4|||||
+RISAF_FMC_Region4_CID_Filtering_memory|region4|||||
+RISAF_FMC_Region5_Start_Address_memory|assign FMC_Region5 start address|||||
+RISAF_FMC_Region5_Region_Size_memory|region5|||||
+RISAF_FMC_Region5_CID_Filtering_memory|region5|||||
+RISAF_FMC_Region6_Start_Address_memory|assign FMC_Region6 start address|||||
+RISAF_FMC_Region6_Region_Size_memory|region6|||||
+RISAF_FMC_Region6_CID_Filtering_memory|region6|||||
+RISAF_FMC_Region7_Start_Address_memory|assign FMC_Region7 start address|||||
+RISAF_FMC_Region7_Region_Size_memory|region7|||||
+RISAF_FMC_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_FMC_Region1_Secured|region 1|||||
+RISAF_memory_FMC_Region2_Secured|region 2|||||
+RISAF_memory_FMC_Region3_Secured|region 3|||||
+RISAF_memory_FMC_Region4_Secured|region 4|||||
+RISAF_memory_FMC_Region5_Secured|region 5|||||
+RISAF_memory_FMC_Region6_Secured|region 6|||||
+RISAF_memory_FMC_Region7_Secured|region 7|||||
+RISAF_NPU_master0_Region1_Start_Address_memory|assign NPU_master0_Region1 start address|||||
+RISAF_NPU_master0_Region1_Region_Size_memory|region1|||||
+RISAF_NPU_master0_Region1_CID_Filtering_memory|region1|||||
+RISAF_memory_NPU_master0_Region1_Secured|region1|||||
+RISAF_NPU_master0_Region2_Start_Address_memory|assign NPU_master0_Region2 start address|||||
+RISAF_NPU_master0_Region2_Region_Size_memory|region2|||||
+RISAF_NPU_master0_Region2_CID_Filtering_memory|region2|||||
+RISAF_memory_NPU_master0_Region2_Secured|region2|||||
+RISAF_NPU_master0_Region3_Start_Address_memory|assign NPU_master0_Region3 start address|||||
+RISAF_NPU_master0_Region3_Region_Size_memory|region3|||||
+RISAF_NPU_master0_Region3_CID_Filtering_memory|region3|||||
+RISAF_memory_NPU_master0_Region3_Secured|region3|||||
+RISAF_NPU_master0_Region4_Start_Address_memory|assign NPU_master0_Region4 start address|||||
+RISAF_NPU_master0_Region4_Region_Size_memory|region4|||||
+RISAF_NPU_master0_Region4_CID_Filtering_memory|region4|||||
+RISAF_memory_NPU_master0_Region4_Secured|region4|||||
+RISAF_NPU_master0_Region5_Start_Address_memory|assign NPU_master0_Region5 start address|||||
+RISAF_NPU_master0_Region5_Region_Size_memory|region5|||||
+RISAF_NPU_master0_Region5_CID_Filtering_memory|region5|||||
+RISAF_memory_NPU_master0_Region5_Secured|region5|||||
+RISAF_NPU_master0_Region6_Start_Address_memory|assign NPU_master0_Region6 start address|||||
+RISAF_NPU_master0_Region6_Region_Size_memory|region6|||||
+RISAF_NPU_master0_Region6_CID_Filtering_memory|region6|||||
+RISAF_memory_NPU_master0_Region6_Secured|region6|||||
+RISAF_NPU_master0_Region7_Start_Address_memory|assign NPU_master0_Region7 start address|||||
+RISAF_NPU_master0_Region7_Region_Size_memory|region7|||||
+RISAF_NPU_master0_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_NPU_master0_Region7_Secured|region7|||||
+RISAF_NPU_master0_Region8_Start_Address_memory|assign NPU_master0_Region8 start address|||||
+RISAF_NPU_master0_Region8_Region_Size_memory|region8|||||
+RISAF_NPU_master0_Region8_CID_Filtering_memory|region8|||||
+RISAF_memory_NPU_master0_Region8_Secured|region8|||||
+RISAF_NPU_master0_Region9_Start_Address_memory|assign NPU_master0_Region9 start address|||||
+RISAF_NPU_master0_Region9_Region_Size_memory|region9|||||
+RISAF_NPU_master0_Region9_CID_Filtering_memory|region9|||||
+RISAF_memory_NPU_master0_Region9_Secured|region9|||||
+RISAF_NPU_master0_Region10_Start_Address_memory|assign NPU_master0_Region10 start address|||||
+RISAF_NPU_master0_Region10_Region_Size_memory|region10|||||
+RISAF_NPU_master0_Region10_CID_Filtering_memory|region10|||||
+RISAF_memory_NPU_master0_Region10_Secured|region10|||||
+RISAF_NPU_master0_Region11_Start_Address_memory|assign NPU_master0_Region11 start address|||||
+RISAF_NPU_master0_Region11_Region_Size_memory|region11|||||
+RISAF_NPU_master0_Region11_CID_Filtering_memory|region11|||||
+RISAF_memory_NPU_master0_Region11_Secured|region11|||||
+RISAF_CPU_master_Region1_Start_Address_memory|assign CPU_master_Region1 start address|||||
+RISAF_CPU_master_Region1_Region_Size_memory|region1|||||
+RISAF_CPU_master_Region1_CID_Filtering_memory|region1|||||
+RISAF_CPU_master_Region2_Start_Address_memory|assign CPU_master_Region2 start address|||||
+RISAF_CPU_master_Region2_Region_Size_memory|region2|||||
+RISAF_CPU_master_Region2_CID_Filtering_memory|region2|||||
+RISAF_CPU_master_Region3_Start_Address_memory|assign CPU_master_Region3 start address|||||
+RISAF_CPU_master_Region3_Region_Size_memory|region3|||||
+RISAF_CPU_master_Region3_CID_Filtering_memory|region3|||||
+RISAF_CPU_master_Region4_Start_Address_memory|assign CPU_master_Region4 start address|||||
+RISAF_CPU_master_Region4_Region_Size_memory|region4|||||
+RISAF_CPU_master_Region4_CID_Filtering_memory|region4|||||
+RISAF_CPU_master_Region5_Start_Address_memory|assign CPU_master_Region5 start address|||||
+RISAF_CPU_master_Region5_Region_Size_memory|region5|||||
+RISAF_CPU_master_Region5_CID_Filtering_memory|region5|||||
+RISAF_CPU_master_Region6_Start_Address_memory|assign CPU_master_Region6 start address|||||
+RISAF_CPU_master_Region6_Region_Size_memory|region6|||||
+RISAF_CPU_master_Region6_CID_Filtering_memory|region6|||||
+RISAF_CPU_master_Region7_Start_Address_memory|assign CPU_master_Region7 start address|||||
+RISAF_CPU_master_Region7_Region_Size_memory|region7|||||
+RISAF_CPU_master_Region7_CID_Filtering_memory|region7|||||
+RISAF_CPU_master_Region8_Start_Address_memory|assign CPU_master_Region8 start address|||||
+RISAF_CPU_master_Region8_Region_Size_memory|region8|||||
+RISAF_CPU_master_Region8_CID_Filtering_memory|region8|||||
+RISAF_CPU_master_Region9_Start_Address_memory|assign CPU_master_Region9 start address|||||
+RISAF_CPU_master_Region9_Region_Size_memory|region9|||||
+RISAF_CPU_master_Region9_CID_Filtering_memory|region9|||||
+RISAF_CPU_master_Region10_Start_Address_memory|assign CPU_master_Region10 start address|||||
+RISAF_CPU_master_Region10_Region_Size_memory|region10|||||
+RISAF_CPU_master_Region10_CID_Filtering_memory|region10|||||
+RISAF_CPU_master_Region11_Start_Address_memory|assign CPU_master_Region11 start address|||||
+RISAF_CPU_master_Region11_Region_Size_memory|region11|||||
+RISAF_CPU_master_Region11_CID_Filtering_memory|region11|||||
+RISAF_memory_CPU_master_Region1_Secured|region 1|||||
+RISAF_memory_CPU_master_Region2_Secured|region 2|||||
+RISAF_memory_CPU_master_Region3_Secured|region 3|||||
+RISAF_memory_CPU_master_Region4_Secured|region 4|||||
+RISAF_memory_CPU_master_Region5_Secured|region 5|||||
+RISAF_memory_CPU_master_Region6_Secured|region 6|||||
+RISAF_memory_CPU_master_Region7_Secured|region 7|||||
+RISAF_memory_CPU_master_Region8_Secured|region 8|||||
+RISAF_memory_CPU_master_Region9_Secured|region 9|||||
+RISAF_memory_CPU_master_Region10_Secured|region 10|||||
+RISAF_memory_CPU_master_Region11_Secured|region 11|||||
+RISAF_CPU_master_Start_Address_Physical|CPU_master_Start_Address_Physical|||||
+RISAF_CPU_master_Region_Size_Physical|CPU_master_Region_Size_Physical|||||
+RISAF_NPU_master1_Region1_Start_Address_memory|assign NPU_master1_Region1 start address|||||
+RISAF_NPU_master1_Region1_Region_Size_memory|region1|||||
+RISAF_NPU_master1_Region1_CID_Filtering_memory|region1|||||
+RISAF_memory_NPU_master1_Region1_Secured|region1|||||
+RISAF_NPU_master1_Region2_Start_Address_memory|assign NPU_master1_Region2 start address|||||
+RISAF_NPU_master1_Region2_Region_Size_memory|region2|||||
+RISAF_NPU_master1_Region2_CID_Filtering_memory|region2|||||
+RISAF_memory_NPU_master1_Region2_Secured|region2|||||
+RISAF_NPU_master1_Region3_Start_Address_memory|assign NPU_master1_Region3 start address|||||
+RISAF_NPU_master1_Region3_Region_Size_memory|region3|||||
+RISAF_NPU_master1_Region3_CID_Filtering_memory|region3|||||
+RISAF_memory_NPU_master1_Region3_Secured|region3|||||
+RISAF_NPU_master1_Region4_Start_Address_memory|assign NPU_master1_Region4 start address|||||
+RISAF_NPU_master1_Region4_Region_Size_memory|region4|||||
+RISAF_NPU_master1_Region4_CID_Filtering_memory|region4|||||
+RISAF_memory_NPU_master1_Region4_Secured|region4|||||
+RISAF_NPU_master1_Region5_Start_Address_memory|assign NPU_master1_Region5 start address|||||
+RISAF_NPU_master1_Region5_Region_Size_memory|region5|||||
+RISAF_NPU_master1_Region5_CID_Filtering_memory|region5|||||
+RISAF_memory_NPU_master1_Region5_Secured|region5|||||
+RISAF_NPU_master1_Region6_Start_Address_memory|assign NPU_master1_Region6 start address|||||
+RISAF_NPU_master1_Region6_Region_Size_memory|region6|||||
+RISAF_NPU_master1_Region6_CID_Filtering_memory|region6|||||
+RISAF_memory_NPU_master1_Region6_Secured|region6|||||
+RISAF_NPU_master1_Region7_Start_Address_memory|assign NPU_master1_Region7 start address|||||
+RISAF_NPU_master1_Region7_Region_Size_memory|region7|||||
+RISAF_NPU_master1_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_NPU_master1_Region7_Secured|region7|||||
+RISAF_NPU_master1_Region8_Start_Address_memory|assign NPU_master1_Region8 start address|||||
+RISAF_NPU_master1_Region8_Region_Size_memory|region8|||||
+RISAF_NPU_master1_Region8_CID_Filtering_memory|region8|||||
+RISAF_memory_NPU_master1_Region8_Secured|region8|||||
+RISAF_NPU_master1_Region9_Start_Address_memory|assign NPU_master1_Region9 start address|||||
+RISAF_NPU_master1_Region9_Region_Size_memory|region9|||||
+RISAF_NPU_master1_Region9_CID_Filtering_memory|region9|||||
+RISAF_memory_NPU_master1_Region9_Secured|region9|||||
+RISAF_NPU_master1_Region10_Start_Address_memory|assign NPU_master1_Region10 start address|||||
+RISAF_NPU_master1_Region10_Region_Size_memory|region10|||||
+RISAF_NPU_master1_Region10_CID_Filtering_memory|region10|||||
+RISAF_memory_NPU_master1_Region10_Secured|region10|||||
+RISAF_NPU_master1_Region11_Start_Address_memory|assign NPU_master1_Region11 start address|||||
+RISAF_NPU_master1_Region11_Region_Size_memory|region11|||||
+RISAF_NPU_master1_Region11_CID_Filtering_memory|region11|||||
+RISAF_memory_NPU_master1_Region11_Secured|region11|||||
+RISAF_NPU_master0_Region1_Name|region 1|||||
+RISAF_NPU_master0_Region2_Name|region 2|||||
+RISAF_NPU_master0_Region3_Name|region 3|||||
+RISAF_NPU_master0_Region4_Name|region 4|||||
+RISAF_NPU_master0_Region5_Name|region 5|||||
+RISAF_NPU_master0_Region6_Name|region 6|||||
+RISAF_NPU_master0_Region7_Name|region 7|||||
+RISAF_NPU_master0_Region8_Name|region 8|||||
+RISAF_NPU_master0_Region9_Name|region 9|||||
+RISAF_NPU_master0_Region10_Name|region 10|||||
+RISAF_NPU_master0_Region11_Name|region 11|||||
+RISAF_CACHEAXI_configuration_port_Region1_Name|region 1|||||
+RISAF_CACHEAXI_configuration_port_Region2_Name|region 2|||||
+RISAF_Backup_RAM_Region1_Name|region 1|||||
+RISAF_Backup_RAM_Region2_Name|region 2|||||
+RISAF_Backup_RAM_Region3_Name|region 3|||||
+RISAF_AHB_RAM1_Region1_Name|region 1|||||
+RISAF_AHB_RAM1_Region2_Name|region 2|||||
+RISAF_AHB_RAM1_Region3_Name|region 3|||||
+RISAF_AHB_RAM1_Region4_Name|region 4|||||
+RISAF_AHB_RAM1_Region5_Name|region 5|||||
+RISAF_AHB_RAM1_Region6_Name|region 6|||||
+RISAF_AHB_RAM1_Region7_Name|region 7|||||
+RISAF_AHB_RAM2_Region1_Name|region 1|||||
+RISAF_AHB_RAM2_Region2_Name|region 2|||||
+RISAF_AHB_RAM2_Region3_Name|region 3|||||
+RISAF_AHB_RAM2_Region4_Name|region 4|||||
+RISAF_AHB_RAM2_Region5_Name|region 5|||||
+RISAF_AHB_RAM2_Region6_Name|region 6|||||
+RISAF_AHB_RAM2_Region7_Name|region 7|||||
+RISAF_FLEXRAM_Region1_Name|region 1|||||
+RISAF_FLEXRAM_Region2_Name|region 2|||||
+RISAF_FLEXRAM_Region3_Name|region 3|||||
+RISAF_FLEXRAM_Region4_Name|region 4|||||
+RISAF_FLEXRAM_Region5_Name|region 5|||||
+RISAF_FLEXRAM_Region6_Name|region 6|||||
+RISAF_FLEXRAM_Region7_Name|region 7|||||
+RISAF_CACHEAXI_RAM_Region1_Name|region 1|||||
+RISAF_CACHEAXI_RAM_Region2_Name|region 2|||||
+RISAF_CACHEAXI_RAM_Region3_Name|region 3|||||
+RISAF_CACHEAXI_RAM_Region4_Name|region 4|||||
+RISAF_CACHEAXI_RAM_Region5_Name|region 5|||||
+RISAF_CACHEAXI_RAM_Region6_Name|region 6|||||
+RISAF_CACHEAXI_RAM_Region7_Name|region 7|||||
+RISAF_VENCRAM_Region1_Name|region 1|||||
+RISAF_VENCRAM_Region2_Name|region 2|||||
+RISAF_VENCRAM_Region3_Name|region 3|||||
+RISAF_VENCRAM_Region4_Name|region 4|||||
+RISAF_VENCRAM_Region5_Name|region 5|||||
+RISAF_VENCRAM_Region6_Name|region 6|||||
+RISAF_VENCRAM_Region7_Name|region 7|||||
+RISAF_XSPI1_Region1_Name|region 1|||||
+RISAF_XSPI1_Region2_Name|region 2|||||
+RISAF_XSPI1_Region3_Name|region 3|||||
+RISAF_XSPI1_Region4_Name|region 4|||||
+RISAF_XSPI1_Region5_Name|region 5|||||
+RISAF_XSPI1_Region6_Name|region 6|||||
+RISAF_XSPI1_Region7_Name|region 7|||||
+RISAF_XSPI2_Region1_Name|region 1|||||
+RISAF_XSPI2_Region2_Name|region 2|||||
+RISAF_XSPI2_Region3_Name|region 3|||||
+RISAF_XSPI2_Region4_Name|region 4|||||
+RISAF_XSPI2_Region5_Name|region 5|||||
+RISAF_XSPI2_Region6_Name|region 6|||||
+RISAF_XSPI2_Region7_Name|region 7|||||
+RISAF_XSPI3_Region1_Name|region 1|||||
+RISAF_XSPI3_Region2_Name|region 2|||||
+RISAF_XSPI3_Region3_Name|region 3|||||
+RISAF_XSPI3_Region4_Name|region 4|||||
+RISAF_XSPI3_Region5_Name|region 5|||||
+RISAF_XSPI3_Region6_Name|region 6|||||
+RISAF_XSPI3_Region7_Name|region 7|||||
+RISAF_FMC_Region1_Name|region 1|||||
+RISAF_FMC_Region2_Name|region 2|||||
+RISAF_FMC_Region3_Name|region 3|||||
+RISAF_FMC_Region4_Name|region 4|||||
+RISAF_FMC_Region5_Name|region 5|||||
+RISAF_FMC_Region6_Name|region 6|||||
+RISAF_FMC_Region7_Name|region 7|||||
+RISAF_CPU_master_Region1_Name|region 1|||||
+RISAF_CPU_master_Region2_Name|region 2|||||
+RISAF_CPU_master_Region3_Name|region 3|||||
+RISAF_CPU_master_Region4_Name|region 4|||||
+RISAF_CPU_master_Region5_Name|region 5|||||
+RISAF_CPU_master_Region6_Name|region 6|||||
+RISAF_CPU_master_Region7_Name|region 7|||||
+RISAF_CPU_master_Region8_Name|region 8|||||
+RISAF_CPU_master_Region9_Name|region 9|||||
+RISAF_CPU_master_Region10_Name|region 10|||||
+RISAF_CPU_master_Region11_Name|region 11|||||
+RISAF_NPU_master1_Region1_Name|region 1|||||
+RISAF_NPU_master1_Region2_Name|region 2|||||
+RISAF_NPU_master1_Region3_Name|region 3|||||
+RISAF_NPU_master1_Region4_Name|region 4|||||
+RISAF_NPU_master1_Region5_Name|region 5|||||
+RISAF_NPU_master1_Region6_Name|region 6|||||
+RISAF_NPU_master1_Region7_Name|region 7|||||
+RISAF_NPU_master1_Region8_Name|region 8|||||
+RISAF_NPU_master1_Region9_Name|region 9|||||
+RISAF_NPU_master1_Region10_Name|region 10|||||
+RISAF_NPU_master1_Region11_Name|region 11|||||
+RISAF_CPUAXI_RAM0_Region1_Name|region 1|||||
+RISAF_CPUAXI_RAM0_Region2_Name|region 2|||||
+RISAF_CPUAXI_RAM0_Region3_Name|region 3|||||
+RISAF_CPUAXI_RAM0_Region4_Name|region 4|||||
+RISAF_CPUAXI_RAM0_Region5_Name|region 5|||||
+RISAF_CPUAXI_RAM0_Region6_Name|region 6|||||
+RISAF_CPUAXI_RAM0_Region7_Name|region 7|||||
+RISAF_CPUAXI_RAM1_Region1_Start_Address_memory|assign CPUAXI_RAM1_Region1 start address|||||
+RISAF_CPUAXI_RAM1_Region1_Region_Size_memory|region1|||||
+RISAF_CPUAXI_RAM1_Region1_CID_Filtering_memory|region1|||||
+RISAF_CPUAXI_RAM1_Region2_Start_Address_memory|assign CPUAXI_RAM1_Region2 start address|||||
+RISAF_CPUAXI_RAM1_Region2_Region_Size_memory|region2|||||
+RISAF_CPUAXI_RAM1_Region2_CID_Filtering_memory|region2|||||
+RISAF_CPUAXI_RAM1_Region3_Start_Address_memory|assign CPUAXI_RAM1_Region3 start address|||||
+RISAF_CPUAXI_RAM1_Region3_Region_Size_memory|region3|||||
+RISAF_CPUAXI_RAM1_Region3_CID_Filtering_memory|region3|||||
+RISAF_CPUAXI_RAM1_Region4_Start_Address_memory|assign CPUAXI_RAM1_Region4 start address|||||
+RISAF_CPUAXI_RAM1_Region4_Region_Size_memory|region4|||||
+RISAF_CPUAXI_RAM1_Region4_CID_Filtering_memory|region4|||||
+RISAF_CPUAXI_RAM1_Region5_Start_Address_memory|assign CPUAXI_RAM1_Region5 start address|||||
+RISAF_CPUAXI_RAM1_Region5_Region_Size_memory|region5|||||
+RISAF_CPUAXI_RAM1_Region5_CID_Filtering_memory|region5|||||
+RISAF_CPUAXI_RAM1_Region6_Start_Address_memory|assign CPUAXI_RAM1_Region6 start address|||||
+RISAF_CPUAXI_RAM1_Region6_Region_Size_memory|region6|||||
+RISAF_CPUAXI_RAM1_Region6_CID_Filtering_memory|region6|||||
+RISAF_CPUAXI_RAM1_Region7_Start_Address_memory|assign CPUAXI_RAM1_Region7 start address|||||
+RISAF_CPUAXI_RAM1_Region7_Region_Size_memory|region7|||||
+RISAF_CPUAXI_RAM1_Region7_CID_Filtering_memory|region7|||||
+RISAF_memory_CPUAXI_RAM1_Region1_Secured|region 1|||||
+RISAF_memory_CPUAXI_RAM1_Region2_Secured|region 1|||||
+RISAF_memory_CPUAXI_RAM1_Region3_Secured|region 1|||||
+RISAF_memory_CPUAXI_RAM1_Region4_Secured|region 1|||||
+RISAF_memory_CPUAXI_RAM1_Region5_Secured|region 1|||||
+RISAF_memory_CPUAXI_RAM1_Region6_Secured|region 1|||||
+RISAF_memory_CPUAXI_RAM1_Region7_Secured|region 1|||||
+RISAF_CPUAXI_RAM1_Start_Address_Physical|CPUAXI_RAM1_Start_Address_Physical|||||
+RISAF_CPUAXI_RAM1_Region_Size_Physical|CPUAXI_RAM1_Region_Size_Physical|||||
+RISAF_CACHEAXI_configuration_port_Region1_Start_Address_memory|assign CACHEAXI_configuration_port_Region1 start address|||||
+RISAF_CACHEAXI_configuration_port_Region1_Region_Size_memory|region1|||||
+RISAF_CACHEAXI_configuration_port_Region1_CID_Filtering_memory|region1|||||
+RISAF_memory_CACHEAXI_configuration_port_Region1_Secured|region1|||||
+RISAF_CACHEAXI_configuration_port_Region2_Start_Address_memory|assign CACHEAXI_configuration_port_Region2 start address|||||
+RISAF_CACHEAXI_configuration_port_Region2_Region_Size_memory|region2|||||
+RISAF_CACHEAXI_configuration_port_Region2_CID_Filtering_memory|region2|||||
+RISAF_memory_CACHEAXI_configuration_port_Region2_Secured|region2|||||
+RISAF_CACHEAXI_configuration_port_Start_Address_Physical|CACHEAXI_configuration_port_Start_Address_Physical|||||
+RISAF_CACHEAXI_configuration_port_Region_Size_Physical|CACHEAXI_configuration_port_Region_Size_Physical|||||
+RISAF_CPUAXI_RAM1_Region1_Name|region 1|||||
+RISAF_CPUAXI_RAM1_Region2_Name|region 2|||||
+RISAF_CPUAXI_RAM1_Region3_Name|region 3|||||
+RISAF_CPUAXI_RAM1_Region4_Name|region 4|||||
+RISAF_CPUAXI_RAM1_Region5_Name|region 5|||||
+RISAF_CPUAXI_RAM1_Region6_Name|region 6|||||
+RISAF_CPUAXI_RAM1_Region7_Name|region 7|||||
+RISAF_TCM_Region1_Start_Address_memory|assign TCM_Region1 start address|||||
+RISAF_TCM_Region1_Region_Size_memory|region1|||||
+RISAF_TCM_Region2_Start_Address_memory|assign TCM_Region2 start address|||||
+RISAF_TCM_Region2_Region_Size_memory|region2|||||
+RISAF_TCM_Region3_Start_Address_memory|assign TCM_Region3 start address|||||
+RISAF_TCM_Region3_Region_Size_memory|region3|||||
+RISAF_TCM_Region4_Start_Address_memory|assign TCM_Region4 start address|||||
+RISAF_TCM_Region4_Region_Size_memory|region4|||||
+RISAF_TCM_Region5_Start_Address_memory|assign TCM_Region5 start address|||||
+RISAF_TCM_Region5_Region_Size_memory|region5|||||
+RISAF_TCM_Region6_Start_Address_memory|assign TCM_Region6 start address|||||
+RISAF_TCM_Region6_Region_Size_memory|region6|||||
+RISAF_TCM_Region7_Start_Address_memory|assign TCM_Region7 start address|||||
+RISAF_TCM_Region7_Region_Size_memory|region7|||||
+RISAF_TCM_Region1_Name|region 1|||||
+RISAF_TCM_Region2_Name|region 2|||||
+RISAF_TCM_Region3_Name|region 3|||||
+RISAF_TCM_Region4_Name|region 4|||||
+RISAF_TCM_Region5_Name|region 5|||||
+RISAF_TCM_Region6_Name|region 6|||||
+RISAF_TCM_Region7_Name|region 7|||||
+RISAF_TCM_Region1_CID_Filtering_memory|region 1|||||
+RISAF_TCM_Region2_CID_Filtering_memory|region 2|||||
+RISAF_TCM_Region3_CID_Filtering_memory|region 3|||||
+RISAF_TCM_Region4_CID_Filtering_memory|region 4|||||
+RISAF_TCM_Region5_CID_Filtering_memory|region 5|||||
+RISAF_TCM_Region6_CID_Filtering_memory|region 6|||||
+RISAF_TCM_Region7_CID_Filtering_memory|region 7|||||
+RISAF_memory_TCM_Region1_Secured|region 1|||||
+RISAF_memory_TCM_Region2_Secured|region 2|||||
+RISAF_memory_TCM_Region3_Secured|region 3|||||
+RISAF_memory_TCM_Region4_Secured|region 4|||||
+RISAF_memory_TCM_Region5_Secured|region 5|||||
+RISAF_memory_TCM_Region6_Secured|region 6|||||
+RISAF_memory_TCM_Region7_Secured|region 7|||||
+RISAF_Region_Filtering_memory|Filtering|||||
+RISAF_Region_Read_memory|RISAF_Region_Read|||||
+RISAF_Region_Write_memory|RISAF_Region_Write|||||
+RISAF_Region_Privilege_memory|RISAF_Region_Privilege|||||
+RISAF_Region_Secured_memory|RISAF_Region_Secured|||||
+
+[Values]
+# параметр|значение|подпись
+LTDC_L1_Name_RIMU|LTDC_L1|LTDC_L1
+LTDC_L2_Name_RIMU|LTDC_L2|LTDC_L2
+SPI1/I2S1_IAC_ID|RIF_RISC_PERIPH_INDEX_SPI1|0
+SPI2/I2S2_IAC_ID|RIF_RISC_PERIPH_INDEX_SPI2|1
+SPI3/I2S3_IAC_ID|RIF_RISC_PERIPH_INDEX_SPI3|2
+SPI4_IAC_ID|RIF_RISC_PERIPH_INDEX_SPI4|3
+SPI5_IAC_ID|RIF_RISC_PERIPH_INDEX_SPI5|4
+SPI6/I2S6_IAC_ID|RIF_RISC_PERIPH_INDEX_SPI6|5
+SAI1_IAC_ID|RIF_RISC_PERIPH_INDEX_SAI1|6
+SAI2_IAC_ID|RIF_RISC_PERIPH_INDEX_SAI2|8
+I2C1_IAC_ID|RIF_RISC_PERIPH_INDEX_I2C1|9
+I2C2_IAC_ID|RIF_RISC_PERIPH_INDEX_I2C2|10
+I2C3_IAC_ID|RIF_RISC_PERIPH_INDEX_I2C3|11
+I2C4_IAC_ID|RIF_RISC_PERIPH_INDEX_I2C4|12
+I3C1_IAC_ID|RIF_RISC_PERIPH_INDEX_I3C1|13
+I3C2_IAC_ID|RIF_RISC_PERIPH_INDEX_I3C2|14
+USART1_IAC_ID|RIF_RISC_PERIPH_INDEX_USART1|15
+USART2_IAC_ID|RIF_RISC_PERIPH_INDEX_USART2|16
+USART3_IAC_ID|RIF_RISC_PERIPH_INDEX_USART3|17
+UART4_IAC_ID|RIF_RISC_PERIPH_INDEX_UART4|18
+UART5_IAC_ID|RIF_RISC_PERIPH_INDEX_UART5|19
+USART6_IAC_ID|RIF_RISC_PERIPH_INDEX_USART6|20
+UART7_IAC_ID|RIF_RISC_PERIPH_INDEX_UART7|21
+UART8_IAC_ID|RIF_RISC_PERIPH_INDEX_UART8|22
+UART9_IAC_ID|RIF_RISC_PERIPH_INDEX_UART9|23
+USART10_IAC_ID|RIF_RISC_PERIPH_INDEX_USART10|24
+LPUART1_IAC_ID|RIF_RISC_PERIPH_INDEX_LPUART1|25
+FDCAN1_FDCAN2_FDCAN3_Name_IAC|FDCAN1_FDCAN2_FDCAN3|FDCAN1_FDCAN2_FDCAN3
+FDCAN1_FDCAN2_FDCAN3_IAC_ID|RIF_RISC_PERIPH_INDEX_FDCAN1|26
+TIM1_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM1|27
+TIM2_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM2|28
+TIM3_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM3|29
+TIM4_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM4|30
+TIM5_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM5|31
+TIM6_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM6|32
+TIM7_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM7|33
+TIM8_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM8|34
+TIM9_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM9|35
+TIM10_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM10|36
+TIM11_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM11|37
+TIM12_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM12|38
+TIM13_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM13|39
+TIM14_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM14|40
+TIM15_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM15|41
+TIM16_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM16|42
+TIM17_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM17|43
+TIM18_IAC_ID|RIF_RISC_PERIPH_INDEX_TIM18|44
+GFXTIM_IAC_ID|RIF_RISC_PERIPH_INDEX_GFXTIM|45
+LPTIM1_IAC_ID|RIF_RISC_PERIPH_INDEX_LPTIM1|46
+LPTIM2_IAC_ID|RIF_RISC_PERIPH_INDEX_LPTIM2|47
+LPTIM3_IAC_ID|RIF_RISC_PERIPH_INDEX_LPTIM3|48
+LPTIM4_IAC_ID|RIF_RISC_PERIPH_INDEX_LPTIM4|49
+LPTIM5_IAC_ID|RIF_RISC_PERIPH_INDEX_LPTIM5|50
+ADF1_IAC_ID|RIF_RISC_PERIPH_INDEX_ADF1|51
+MDF1_IAC_ID|RIF_RISC_PERIPH_INDEX_MDF1|52
+SDMMC1_IAC_ID|RIF_RISC_PERIPH_INDEX_SDMMC1|53
+SDMMC2_IAC_ID|RIF_RISC_PERIPH_INDEX_SDMMC2|54
+MDIOS_IAC_ID|RIF_RISC_PERIPH_INDEX_MDIOS|55
+OTG1_HS_Name_IAC|OTG1_HS|OTG1_HS
+OTG1_HS_IAC_ID|RIF_RISC_PERIPH_INDEX_OTG1HS|56
+OTG1_FS_Name_IAC|OTG1_FS|OTG1_FS
+OTG1_FS_IAC_ID|RIF_RISC_PERIPH_INDEX_OTG2HS|57
+UCPD_IAC_ID|RIF_RISC_PERIPH_INDEX_UCPD1|58
+GB-ETH_IAC_ID|RIF_RISC_PERIPH_INDEX_ETH1|60
+SPDIFRX1_IAC_ID|RIF_RISC_PERIPH_INDEX_SPDIFRX|61
+SYSCONF_IAC_ID|RIF_RISC_PERIPH_INDEX_SYSCFG|62
+ADC12_IAC_ID|RIF_RISC_PERIPH_INDEX_ADC12|64
+VREFBUF_IAC_ID|RIF_RISC_PERIPH_INDEX_VREFBUF|65
+CRC_IAC_ID|RIF_RISC_PERIPH_INDEX_CRC|67
+IWDG_IAC_ID|RIF_RISC_PERIPH_INDEX_IWDG|68
+WWDG_IAC_ID|RIF_RISC_PERIPH_INDEX_WWDG|69
+RNG_IAC_ID|RIF_RISC_PERIPH_INDEX_RNG|76
+PKA_IAC_ID|RIF_RISC_PERIPH_INDEX_PKA|77
+SAES_IAC_ID|RIF_RISC_PERIPH_INDEX_SAES|78
+HASH_IAC_ID|RIF_RISC_PERIPH_INDEX_HASH|79
+CRYP_IAC_ID|RIF_RISC_PERIPH_INDEX_CRYP|80
+MCE1_IAC_ID|RIF_RISC_PERIPH_INDEX_MCE1|81
+MCE2_IAC_ID|RIF_RISC_PERIPH_INDEX_MCE2|82
+MCE3_IAC_ID|RIF_RISC_PERIPH_INDEX_MCE3|83
+MCE4_IAC_ID|RIF_RISC_PERIPH_INDEX_MCE4|84
+XSPI1_IAC_ID|RIF_RISC_PERIPH_INDEX_XSPI1|86
+XSPI2_IAC_ID|RIF_RISC_PERIPH_INDEX_XSPI2|87
+XSPI3_IAC_ID|RIF_RISC_PERIPH_INDEX_XSPI3|88
+XSPIM_IAC_ID|RIF_RISC_PERIPH_INDEX_XSPIM|89
+FMC_IAC_ID|RIF_RISC_PERIPH_INDEX_FMC|90
+CSI2HOST_IAC_ID|RIF_RISC_PERIPH_INDEX_CSI|92
+DCMIPP_IAC_ID|RIF_RISC_PERIPH_INDEX_DCMIPP|93
+DCMI_IAC_ID|RIF_RISC_PERIPH_INDEX_DCMI|94
+JPEG_IAC_ID|RIF_RISC_PERIPH_INDEX_JPEG|96
+VENC_IAC_ID|RIF_RISC_PERIPH_INDEX_VENC|97
+ICACHE_IAC_ID|RIF_RISC_PERIPH_INDEX_ICACHE|98
+GPU_IAC_ID|RIF_RISC_PERIPH_INDEX_GPU2D|99
+GFXMMU_IAC_ID|RIF_RISC_PERIPH_INDEX_GFXMMU|100
+DMA2D_IAC_ID|RIF_RISC_PERIPH_INDEX_DMA2D|101
+LTDC_CMN_Name_IAC|LTDC_CMN|LTDC_CMN
+LTDC_CMN_IAC_ID|RIF_RISC_PERIPH_INDEX_LTDC|102
+LTDC_L1_Name_IAC|LTDC_L1|LTDC_L1
+LTDC_L1_IAC_ID|RIF_RISC_PERIPH_INDEX_LTDCL1|103
+LTDC_L2_Name_IAC|LTDC_L2|LTDC_L2
+LTDC_L2_IAC_ID|RIF_RISC_PERIPH_INDEX_LTDCL2|104
+NPU_IAC_ID|RIF_RISC_PERIPH_INDEX_NPU|106
+CM55_IAC_ID|RIF_AWARE_PERIPH_INDEX_CM55|128
+EXTI_IAC_ID|RIF_AWARE_PERIPH_INDEX_EXTI|129
+GPDMA1_IAC_ID|RIF_RCC_PERIPH_INDEX_GPDMA1|130
+HPDMA1_IAC_ID|RIF_AWARE_PERIPH_INDEX_HPDMA1|131
+RTC_IAC_ID|RIF_AWARE_PERIPH_INDEX_RTC|133
+TAMP_IAC_ID|RIF_AWARE_PERIPH_INDEX_TAMP|134
+BSEC_IAC_ID|RIF_AWARE_PERIPH_INDEX_BSEC|135
+RCC_IAC_ID|RIF_AWARE_PERIPH_INDEX_RCC|136
+PWR_CTRL_Name_IAC|PWR_CTRL|PWR_CTRL
+PWR_CTRL_IAC_ID|RIF_AWARE_PERIPH_INDEX_PWR|137
+IAC_IAC_ID|RIF_AWARE_PERIPH_INDEX_IAC|138
+RISAF1 (TCM)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF1|139
+RISAF2 (AXISRAM1)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF2|140
+RISAF3 (AXISRAM2)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF3|141
+RISAF4 (NPU_MST0)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF4|142
+RISAF5 (NPU_MST1)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF5|143
+RISAF6 (CPU_MST)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF6|144
+RISAF7 (FLEXRAM)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF7|145
+RISAF8 (CACHAXI)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF8|146
+RISAF9 (VENCRAM)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF9|147
+RISAF11 (XSPI1)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF11|149
+RISAF12 (XSPI2)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF12|150
+RISAF13 (XSPI3)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF13|151
+RISAF14 (FMC)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF14|152
+RISAF15 (Cache config)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF15|153
+RISAF21 (AHB RAM1)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF21|155
+RISAF22 (AHB RAM2)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF22|156
+RISAF23 (BKPSRAM)_IAC_ID|RIF_AWARE_PERIPH_INDEX_RISAF23|157
+RIFSC_IAC_ID|RIF_AWARE_PERIPH_INDEX_RIFSC|158

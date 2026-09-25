@@ -1,0 +1,30 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=HSP1
+Version=v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+General|General|||||
+CRC_CHECK|CRC Check|HSP Boot Parameters||||
+SMART_CLOCK_GATING|Smart Clock Gating|HSP Boot Parameters||||
+REGISTERS_LOCK|Registers Lock|HSP Boot Parameters||||
+DIRECT_COMMAND_EVENT_ENABLE|Direct Command Event Enable|HSP Boot Parameters||||
+global_state|global_state|HSP Boot Parameters||||
+SNOOP_SEL_A|Snoop signal selection A|Snoop Selection||||Show the selected signals on the pins HSP1_[2..0]
+SNOOP_SEL_B|Snoop signal selection B|Snoop Selection||||Show the selected signals on the pins HSP1_[5..3]
+SNOOP_A_ENABLE|SNOOP_A_ENABLE|Debug||||
+SNOOP_A_SIGNAL|tsk_active|Debug||||
+SNOOP_B_ENABLE|SNOOP_B_ENABLE|Debug||||
+SNOOP_B_SIGNAL|tsk_active|Debug||||
+NumberOfDataToProcess|Number Of Data To Process|Data||1|128|
+NumberOfTaps|Number Of TAPs|Data||||
+
+[Values]
+# параметр|значение|подпись
+global_state|HAL_HSP_STATE_RESET|HAL_HSP_STATE_RESET
+global_state|HAL_HSP_STATE_INIT|HAL_HSP_STATE_INIT
+global_state|HAL_HSP_STATE_READY_TO_BOOT|HAL_HSP_STATE_READY_TO_BOOT
+global_state|HAL_HSP_STATE_READY|HAL_HSP_STATE_READY
+global_state|HAL_HSP_STATE_FAULT|HAL_HSP_STATE_FAULT

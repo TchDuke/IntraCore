@@ -1,0 +1,67 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPBAMQUEUE
+Version=STM32U5xx
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PRIORITY|Priority|DMA Channel Configuration||||
+PRIORITY_CoupledQueue|Priority|DMA Channel Configuration||||
+LINKSTEPMODE|Linked List Execution Mode|DMA Channel Configuration||||
+TRANSFEREVENTMODE|Transfer Event Generation|DMA Channel Configuration||||
+LINKEDLISTMODE|Execution Mode of the Queue|DMA Channel Configuration||||
+QUEUE_NAME|Define the name of your Queue|||||
+Interrupt1|Data Transfer Error Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt1_CoupledQueue|Data Transfer Error Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt2|Update Link Error Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt2_CoupledQueue|Update Link Error Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt3|User Setting Error Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt3_CoupledQueue|User Setting Error Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt6|Trigger Overrun Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt6_CoupledQueue|Trigger Overrun Interrupt|DMA Channel Interrupt Configuration||||description
+pCallback1236|pCallback1|DMA Channel Configuration||||description
+pCallback1236_CoupledQueue|pCallback1|DMA Channel Configuration||||description
+Interrupt4|Half Transfer Complete Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt4_CoupledQueue|Half Transfer Complete Interrupt|DMA Channel Interrupt Configuration||||description
+pCallback4|pCallback4|DMA Channel Configuration||||description
+pCallback4_CoupledQueue|pCallback4|DMA Channel Configuration||||description
+Interrupt5|Transfer Complete Interrupt|DMA Channel Interrupt Configuration||||description
+Interrupt5_CoupledQueue|Transfer Complete Interrupt|DMA Channel Interrupt Configuration||||description
+pCallback5|pCallback5|DMA Channel Configuration||||description
+pCallback5_CoupledQueue|pCallback5|DMA Channel Configuration||||description
+ORingInterrupt|Interrupt parameter for code generation __HAL_DMA_ENABLE_IT|||||
+ORingInterrupt_CoupledQueue|Interrupt parameter for code generation __HAL_DMA_ENABLE_IT|||||
+PreemptPriority|Preemption Priority|DMA Channel NVIC Configuration||||
+PreemptPriority_Coupled|Preemption Priority|DMA Channel NVIC Configuration||||
+SubPriority|Sub Priority|DMA Channel NVIC Configuration||||
+SubPriority_Coupled|Sub Priority|DMA Channel NVIC Configuration||||
+
+[Values]
+# параметр|значение|подпись
+PRIORITY|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY|DMA_HIGH_PRIORITY|Very High
+PRIORITY_CoupledQueue|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_CoupledQueue|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_CoupledQueue|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_CoupledQueue|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+TRANSFEREVENTMODE|DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TRANSFEREVENTMODE|DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on last linked-list item
+LINKEDLISTMODE|DMA_LINKEDLIST_CIRCULAR|Circular
+LINKEDLISTMODE|DMA_LINKEDLIST_NORMAL|Linear
+Interrupt1|DMA_IT_DTE|Enable
+Interrupt1_CoupledQueue|DMA_IT_DTE|Enable
+Interrupt2|DMA_IT_ULE|Enable
+Interrupt2_CoupledQueue|DMA_IT_ULE|Enable
+Interrupt3|DMA_IT_USE|Enable
+Interrupt3_CoupledQueue|DMA_IT_USE|Enable
+Interrupt6|DMA_IT_TO|Enable
+Interrupt6_CoupledQueue|DMA_IT_TO|Enable
+Interrupt4|DMA_IT_HT|Enable
+Interrupt4_CoupledQueue|DMA_IT_HT|Enable
+Interrupt5|DMA_IT_TC|Enable
+Interrupt5_CoupledQueue|DMA_IT_TC|Enable

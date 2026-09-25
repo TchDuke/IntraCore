@@ -1,0 +1,126 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=XSPIM
+Version=xspi_v2_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockPrescaler|Clock Prescaler|General Parameters||1|255|
+FifoThresholdByte|Fifo Threshold|General Parameters||1|64|
+MemoryMode|Memory Mode|General Parameters||||
+MemoryType|Memory Type|General Parameters||||
+MemorySize|Memory Size|General Parameters||||
+SampleShifting|Sample Shifting|General Parameters||||
+ChipSelectHighTimeCycle|Chip Select High Time Cycle|General Parameters||1|64|
+FreeRunningClock|Free Running Clock|General Parameters||||
+ClockMode|Clock Mode|General Parameters||||
+WrapSize|Wrap Size|General Parameters||||
+DelayHoldQuarterCycle|Delay Hold Quarter Cycle|General Parameters||||
+ChipSelectBoundary|Chip Select Boundary|General Parameters||||
+MaxTran|Maximum Transfer|General Parameters||0|255|
+Refresh|Refresh Rate|General Parameters||0|0xFFFFFFFF|
+MemorySelect|Memory Select|General Parameters||||
+TimeOutActivation|Time Out Activation|Memory Mapped Parameters||||
+TimeoutPeriodClock|Time Out Period|Memory Mapped Parameters||1|0xFFFF|
+MatchValue|Match Value|Status Polling Parameters||0|0xFFFFFFFF|
+MatchMask|Match Mask Value|Status Polling Parameters||0|0xFFFFFFFF|
+MatchMode|MatchMode Parameter|Status Polling Parameters||||
+AutomaticStop|Automatic Stop Value|Status Polling Parameters||||
+IntervalTime|IntervalTime Value|Status Polling Parameters||0|65535|
+
+[Values]
+# параметр|значение|подпись
+MemoryMode|HAL_XSPI_SINGLE_MEM|Disable
+MemoryMode|HAL_XSPI_DUAL_MEM|Enable
+MemoryType|HAL_XSPI_MEMTYPE_MICRON|Micron mode
+MemoryType|HAL_XSPI_MEMTYPE_MACRONIX|Macronix mode
+MemoryType|HAL_XSPI_MEMTYPE_APMEM|Macronix mode
+MemoryType|HAL_XSPI_MEMTYPE_MACRONIX_RAM|Macronix RAM mode
+MemoryType|HAL_XSPI_MEMTYPE_HYPERBUS|Hyperbus mode
+MemoryType|HAL_XSPI_MEMTYPE_APMEM_16BITS|Hyperbus mode
+MemorySize|HAL_XSPI_SIZE_16B|16 Bytes
+MemorySize|HAL_XSPI_SIZE_32B|32 Bytes
+MemorySize|HAL_XSPI_SIZE_64B|64 Bytes
+MemorySize|HAL_XSPI_SIZE_128B|128 Bytes
+MemorySize|HAL_XSPI_SIZE_256B|256 Bytes
+MemorySize|HAL_XSPI_SIZE_512B|512 Bytes
+MemorySize|HAL_XSPI_SIZE_1KB|1 KBytes
+MemorySize|HAL_XSPI_SIZE_2KB|2 KBytes
+MemorySize|HAL_XSPI_SIZE_4KB|4 KBytes
+MemorySize|HAL_XSPI_SIZE_8KB|8 KBytes
+MemorySize|HAL_XSPI_SIZE_16KB|16 KBytes
+MemorySize|HAL_XSPI_SIZE_32KB|32 KBytes
+MemorySize|HAL_XSPI_SIZE_64KB|64 KBytes
+MemorySize|HAL_XSPI_SIZE_128KB|128 KBytes
+MemorySize|HAL_XSPI_SIZE_256KB|256 KBytes
+MemorySize|HAL_XSPI_SIZE_512KB|512 KBytes
+MemorySize|HAL_XSPI_SIZE_1MB|1 MBytes
+MemorySize|HAL_XSPI_SIZE_2MB|2 MBytes
+MemorySize|HAL_XSPI_SIZE_4MB|4 MBytes
+MemorySize|HAL_XSPI_SIZE_8MB|8 MBytes
+MemorySize|HAL_XSPI_SIZE_16MB|16 MBytes
+MemorySize|HAL_XSPI_SIZE_32MB|32 MBytes
+MemorySize|HAL_XSPI_SIZE_64MB|64 MBytes
+MemorySize|HAL_XSPI_SIZE_128MB|128 MBytes
+MemorySize|HAL_XSPI_SIZE_256MB|256 MBytes
+MemorySize|HAL_XSPI_SIZE_512MB|512 MBytes
+MemorySize|HAL_XSPI_SIZE_1GB|1 GBytes
+MemorySize|HAL_XSPI_SIZE_2GB|2 GBytes
+MemorySize|HAL_XSPI_SIZE_4GB|4 GBytes
+MemorySize|HAL_XSPI_SIZE_8GB|8 GBytes
+MemorySize|HAL_XSPI_SIZE_16GB|16 GBytes
+MemorySize|HAL_XSPI_SIZE_32GB|32 GBytes
+SampleShifting|HAL_XSPI_SAMPLE_SHIFT_NONE|No Sample Shifting
+SampleShifting|HAL_XSPI_SAMPLE_SHIFT_HALFCYCLE|Sample Shifting Half Cycle
+FreeRunningClock|HAL_XSPI_FREERUNCLK_DISABLE|Disable
+FreeRunningClock|HAL_XSPI_FREERUNCLK_ENABLE|Enable
+ClockMode|HAL_XSPI_CLOCK_MODE_0|Low
+ClockMode|HAL_XSPI_CLOCK_MODE_3|High
+WrapSize|HAL_XSPI_WRAP_NOT_SUPPORTED|Not Supported
+WrapSize|HAL_XSPI_WRAP_16_BYTES|16 Bytes
+WrapSize|HAL_XSPI_WRAP_32_BYTES|32 Bytes
+WrapSize|HAL_XSPI_WRAP_64_BYTES|64 Bytes
+WrapSize|HAL_XSPI_WRAP_128_BYTES|128 Bytes
+DelayHoldQuarterCycle|HAL_XSPI_DHQC_DISABLE|Disable
+DelayHoldQuarterCycle|HAL_XSPI_DHQC_ENABLE|Enable
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_NONE|ChipSelectBoundary Disabled
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16B|16 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_32B|32 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_64B|64 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_128B|128 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_256B|256 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_512B|512 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_1KB|1 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_2KB|2 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_4KB|4 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_8KB|8 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16KB|16 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_32KB|32 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_64KB|64 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_128KB|128 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_256KB|256 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_512KB|512 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_1MB|1 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_2MB|2 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_4MB|4 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_8MB|8 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16MB|16 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_32MB|32 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_64MB|64 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_128MB|128 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_256MB|256 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_512MB|512 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_1GB|1 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_2GB|2 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_4GB|4 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_8GB|8 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16GB|16 GBytes
+MemorySelect|HAL_XSPI_CSSEL_NCS1|NCS1
+MemorySelect|HAL_XSPI_CSSEL_NCS2|NCS2
+TimeOutActivation|HAL_XSPI_TIMEOUT_COUNTER_DISABLE|Disable
+TimeOutActivation|HAL_XSPI_TIMEOUT_COUNTER_ENABLE|Enable
+MatchMode|HAL_XSPI_MATCH_MODE_AND|Disable
+MatchMode|HAL_XSPI_MATCH_MODE_OR|Enable
+AutomaticStop|HAL_XSPI_AUTOMATIC_STOP_DISABLE|Disable
+AutomaticStop|HAL_XSPI_AUTOMATIC_STOP_ENABLE|Enable

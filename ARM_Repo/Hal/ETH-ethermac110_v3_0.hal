@@ -1,0 +1,29 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ETH
+Version=ethermac110_v3_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Warning|Warning|General : Ethernet Configuration||||
+Note|Note|General : Ethernet Configuration||||
+MACAddr|Ethernet MAC Address|General : Ethernet Configuration||||
+RxMode|Rx Mode|General : Ethernet Configuration||||Polling mode is supported without FreeRTOS. Interrupt mode is supported with FreeRTOS. Tx mode is the same as Rx mode.
+ETH_RX_DESC_CNT|Rx Descriptor Length|General : Ethernet Configuration||4|1024|Rx Descriptor Length value must be modulo 4. Rx descriptor length must be set in a way that Rx descriptor contents must not exceed max value and must not overlap with Rx buffer and Tx descriptor.
+RxDescAddress|First Rx Descriptor Address|General : Ethernet Configuration||=IF(STM32H7,0x24000000,0x20000000)|=IF(STM32H723_733/STM32H725_735/STM32H730_Value_line,0x30007FFF,IF(STM32F7x2/STM32F7x3, 0x2003FFFF,IF(STM32F7x6/STM32F7x0_Value_line/(STM32F7x5 & !CAN3_Exist), 0x2004FFFF, IF(STM32F7x7/STM32F7x9/(STM32F7x5 & CAN3_Exist), 0x2007FFFF, 0x30047FFF))))|Fisrt Rx Descriptor address must be only in the D2 Domain AHB SRAM. Rx descriptor address must not exceed Max value and must no overlap with Tx descriptor and Rx buffer. These areas must not be cacheable.
+TxDesc|Tx Desc|General : Ethernet Configuration||||
+ETH_TX_DESC_CNT|Tx Descriptor Length|General : Ethernet Configuration||4|1024|Tx Descriptor Length value must be modulo 4. Tx descriptor length must be set in a way that Tx descriptor contents must not exceed max value and must not overlap with Rx descriptor and buffer.
+TxDescAddress|First Tx Descriptor Address|General : Ethernet Configuration||=IF(STM32H7,0x24000000,0x20000000)|=IF(STM32H7,IF(STM32H723_733/STM32H725_735/STM32H730_Value_line, 0x30007FFF, 0x30047FFF),IF(STM32F7x2/STM32F7x3, 0x2003FFFF, IF(STM32F7x6/STM32F7x0_Value_line/(STM32F7x5 & !CAN3_Exist), 0x2004FFFF, IF(STM32F7x7/STM32F7x9/(STM32F7x5 & CAN3_Exist), 0x2007FFFF, 0x30047FFF))))|First Tx Descriptor address must be only in the D2 Domain AHB SRAM. Tx descriptor address must not exceed Max value and must no overlap with Rx descriptor and buffer. These areas must not be cacheable.
+RxDesc|Rx Desc|General : Ethernet Configuration||||
+RxBuffLen|Rx Buffers Length|General : Ethernet Configuration||0|1536|Rx buffers Length must be set in a way that Rx buffer contents must not exceed max value and must not overlap with Rx and Tx descriptors. Rx Buffer is declared into the NetXDuo Mw. Length for the HAL is set to 0 for this buffer to avoid allocating unnecessary memory space. Value must be modulo 4.
+RxBufferAddress|Rx Buffers Address|General : Ethernet Configuration||=IF(STM32H7,0x24000000,0x20000000)|=IF(STM32H723_733/STM32H725_735/STM32H730_Value_line, 0x30007FFF, 0x30047FFF)|
+DESC_SIZE_UNIT|Descriptor Size Unit|General : Ethernet Configuration||||
+MediaInterface|Media Interface|General : Ethernet Configuration||||
+
+[Values]
+# параметр|значение|подпись
+RxMode|ETH_RXINTERRUPT_MODE|Interrupt Mode
+RxMode|ETH_RXPOLLING_MODE|Polling Mode
+MediaInterface|HAL_ETH_MII_MODE|
+MediaInterface|HAL_ETH_RMII_MODE|

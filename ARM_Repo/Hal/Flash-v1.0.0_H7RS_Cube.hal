@@ -1,0 +1,144 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=Flash
+Version=v1.0.0_H7RS_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+OptionType|Option Type|OBProgram||||
+OptionType_USER|Option Type USER|OBProgram||||
+USERType|User Type|OBProgram||||
+USERConfig1|User Config1|OBProgram||||
+USERConfig2|User Config2|OBProgram||||
+OB_BOR_Level_active|Activate|BOR Level||||
+OB_BOR_level|BOR Level|BOR Level||||These bits contain the supply level threshold that activates/releases the reset. They can be written to program a new BOR level value into Flash memory. BOR level 0 (reset level threshold around 2.1 V). BOR level 1 (reset level threshold around 2.1 V). BOR level 2 (reset level threshold around 2.4 V). BOR level 3 (reset level threshold around 2.7 V)
+OB_User_Configuration1_active|Activate|User Configuration 1||||
+OB_IWDG1_SW_UI|IWDG_HW|User Configuration 1||||Option Bytes User IWDG control mode.
+OB_IWDGSW|IWDG_HW|User Configuration 1||||
+OB_USER_IWDG_SW|IWDG_HW|User Configuration 1||||
+OB_nRST_STOP_UI|NRST_STOP|User Configuration 1||||FLASH Option Bytes User stop entry reset.
+OB_nRST_STOP|NRST_STOP|User Configuration 1||||
+OB_USER_NRST_STOP|NRST_STOP|User Configuration 1||||
+OB_nRST_STDBY_UI|NRST_STDBY|User Configuration 1||||FLASH Option Bytes User standby entry reset
+OB_nRST_STDBY|NRST_STDBY|User Configuration 1||||
+OB_USER_NRST_STDBY|NRST_STDBY|User Configuration 1||||
+OB_IO_HSLV_UI|VDDIO_HSLV|User Configuration 1||||FLASH Option Bytes User I/O High-Speed at Low-Voltage.
+OB_IO_HSLV|VDDIO_HSLV|User Configuration 1||||
+OB_USER_VDDIO_HSLV|VDDIO_HSLV|User Configuration 1||||
+OB_FZ_IWDG_STOP_UI|IWDG_FZ_STOP|User Configuration 1||||FLASH Option Bytes User IWDG Stop Mode Freeze.
+OB_FZ_IWDG_STOP|IWDG_FZ_STOP|User Configuration 1||||
+OB_USER_IWDG_STOP|IWDG_FZ_STOP|User Configuration 1||||
+OB_FZ_IWDG_SDBY_UI|IWDG_FZ_SDBY|User Configuration 1||||FLASH Option Bytes User IWDG Standby Mode Freeze.
+OB_FZ_IWDG_SDBY|IWDG_FZ_SDBY|User Configuration 1||||
+OB_USER_IWDG_STDBY|IWDG_FZ_SDBY|User Configuration 1||||
+OB_XSPI1_HSLV_UI|XSPI1_HSLV|User Configuration 1||||FLASH Option Bytes User XSPI 1 High-Speed at Low-Voltage.
+OB_XSPI1_HSLV|XSPI1_HSLV|User Configuration 1||||
+OB_USER_XSPI1_HSLV|XSPI1_HSLV|User Configuration 1||||
+OB_XSPI2_HSLV_UI|XSPI2_HSLV|User Configuration 1||||FLASH Option Bytes User XSPI 2 High-Speed at Low-Voltage.
+OB_XSPI2_HSLV|XSPI2_HSLV|User Configuration 1||||
+OB_USER_XSPI2_HSLV|XSPI2_HSLV|User Configuration 1||||
+OB_USERType_Config2ALL|Option Bytes|User Configuration 2||||
+OB_USER_I2C_NI3C|OB_USER_I2C_NI3C|User Configuration 2||||
+OB_USER_SRAM_ECC|OB_USER_SRAM_ECC|User Configuration 2||||
+OB_User_Configuration2_active|Activate|User Configuration 2||||
+OB_ECC_ON_SRAM_UI|ECC_ON_SRAM|User Configuration 2||||FLASH Option Bytes User ECC on sRAM.
+OB_ECC_ON_SRAM|ECC_ON_SRAM|User Configuration 2||||
+OB_I2C_NI3C|I2C_NI3C|User Configuration 2||||The option byte I2C_NI3C settings is link to I3C or I2C peripheral enabling status. This update and code generation of I2C_NI3C option byte is totally managed by the tool STM32CubeMX.
+UserConfigCondition|UserConfig_Condition|||||
+IWDG_SW|IWDG_HW|||||
+NRST_STOP|RST_STOP|||||
+NRST_STDBY|nRST_STDBY|||||
+VDDIO_HSLV|VDDIO_HSLV|||||
+IWDG_STOP|IWDG_FZ_STOP|||||
+IWDG_STDBY|IWDG_FZ_SDBY|||||
+XSPI1_HSLV|XSPI1_HSLV|||||
+XSPI2_HSLV|XSPI2_HSLV|||||
+SRAM_ECC|SRAM_ECC|||||
+I2C_NI3C|I2CNI3C|||||
+OB_ITCM_AXI|OB_ITCM_AXI|||||
+OB_DTCM_AXI|OB_DTCM_AXI|||||
+OB_DTCM_active|Activate|DTCM size configuration||||
+OB_DTCM_AXI_SHARE|DTCM_AXI_SHARE|DTCM size configuration||||DTCM AXI share FLASH Option Byte. - DTCM_AXI_SHARE = "0" or "3": DTCM 64 Kbytes - DTCM_AXI_SHARE = "1": DTCM 128 Kbytes - DTCM_AXI_SHARE = "2": DTCM 192 Kbytes <font color="green">Once DTCM Flash Option Byte is updated and Memory Management Tool (MMT) is not enabled, Linker file should be adapted manually in the generated project in order to benefit from the mapping change.</font>
+OB_ITCM_active|Activate|ITCM size configuration||||
+OB_ITCM_AXI_SHARE|ITCM_AXI_SHARE|ITCM size configuration||||ITCM AXI share FLASH Option Byte. -ITCM_AXI_SHARE: = "0" or "3": ITCM 64 Kbytes. -ITCM_AXI_SHARE = "1": ITCM 128 Kbytes. -ITCM_AXI_SHARE = "2": ITCM 192 Kbytes. <font color="green">Once ITCM Flash Option Byte is updated and Memory Management Tool (MMT) is not enabled, Linker file should be adapted manually in the generated project in order to benefit from the mapping change.</font>
+OptionType_WRP|Option Type WRP|OBProgram||||
+OB_WRP_active|Activate|Write Protection||||
+OB_nWRP0|WRPS0|Write Protection||||Sector 0 to be write protected.
+OB_nWRP1|WRPS1|Write Protection||||Sector 1 to be write protected.
+OB_nWRP2|WRPS2|Write Protection||||Sector 2 to be write protected.
+OB_nWRP3|WRPS3|Write Protection||||Sector 3 to be write protected.
+OB_nWRP4|WRPS4|Write Protection||||Sector 4 to be write protected.
+OB_nWRP5|WRPS5|Write Protection||||Sector 5 to be write protected.
+OB_nWRP6|WRPS6|Write Protection||||Sector 6 to be write protected.
+OB_nWRP7|WRPS7|Write Protection||||Sector 7 to be write protected.
+OB_WRP_Enabled_Sector0|enable0|Write Protection||||
+OB_WRP_Disable_Sector0|disable0|Write Protection||||
+OB_WRP_Enabled_Sector1|enable1|Write Protection||||
+OB_WRP_Disable_Sector1|disable1|Write Protection||||
+OB_WRP_Enabled_Sector2|enable2|Write Protection||||
+OB_WRP_Disable_Sector2|disable2|Write Protection||||
+OB_WRP_Enabled_Sector3|enable3|Write Protection||||
+OB_WRP_Disable_Sector3|disable3|Write Protection||||
+OB_WRP_Enabled_Sector4|enable4|Write Protection||||
+OB_WRP_Disable_Sector4|disable4|Write Protection||||
+OB_WRP_Enabled_Sector5|enable5|Write Protection||||
+OB_WRP_Disable_Sector5|disable5|Write Protection||||
+OB_WRP_Enabled_Sector6|enable6|Write Protection||||
+OB_WRP_Disable_Sector6|disable6|Write Protection||||
+OB_WRP_Enabled_Sector7|enable7|Write Protection||||
+OB_WRP_Disable_Sector7|disable7|Write Protection||||
+WRPSector|Enable All Sectors|Write Protection||||
+WRPState|OB_WRP_State_Enable|Write Protection||||
+OB_WRP_Enabled_Sectors|Enabled_Sectors|Write Protection||||
+OB_WRP_Disabled_Sectors|Disabled_Sectors|Write Protection||||
+OB_WRP_State_Enable|OB_WRP_State_Enable|Write Protection||||
+OB_WRP_State_Disable|OB_WRP_State_Disable|Write Protection||||
+OptionType_HDP|Option Type HDP|OBProgram||||
+OB_HDP_active|Activate|HDP Protection||||
+HDPStartPage|HDPStartPage|HDP Protection||0x0|0xfff|Start address that contains the first 256-byte block of HDP area (used for OPTIONBYTE_HDP).
+HDPEndPage|HDPEndPage|HDP Protection||0x0|0xfff|End address that contains the last 256-byte block of HDP area (used for OPTIONBYTE_HDP).
+
+[Values]
+# параметр|значение|подпись
+OB_BOR_level|OB_BOR_LEVEL_0|BOR LEVEL 0
+OB_BOR_level|OB_BOR_LEVEL_1|BOR LEVEL 1
+OB_BOR_level|OB_BOR_LEVEL_2|BOR LEVEL 2
+OB_BOR_level|OB_BOR_LEVEL_3|BOR LEVEL 3
+OB_IWDG1_SW_UI|OB_IWDG_NOUPD|no update
+OB_IWDG1_SW_UI|OB_IWDG_SW|enable
+OB_IWDG1_SW_UI|OB_IWDG_HW|disable
+OB_nRST_STOP_UI|OB_STOP_NOUPD|no update
+OB_nRST_STOP_UI|OB_STOP_NORST|enable
+OB_nRST_STOP_UI|OB_STOP_RST|disable
+OB_nRST_STDBY_UI|OB_STANDBY_NOUPD|no update
+OB_nRST_STDBY_UI|OB_STANDBY_NORST|enable
+OB_nRST_STDBY_UI|OB_STANDBY_RST|disable
+OB_IO_HSLV_UI|OB_VDDIO_HSLV_NOUPD|no update
+OB_IO_HSLV_UI|OB_VDDIO_HSLV_ENABLE|enable
+OB_IO_HSLV_UI|OB_VDDIO_HSLV_DISABLE|disable
+OB_FZ_IWDG_STOP_UI|OB_IWDG_STOP_NOUPD|no update
+OB_FZ_IWDG_STOP_UI|OB_IWDG_STOP_RUN|enable
+OB_FZ_IWDG_STOP_UI|OB_IWDG_STOP_FREEZE|disable
+OB_FZ_IWDG_SDBY_UI|OB_IWDG_STDBY_NOUPD|no update
+OB_FZ_IWDG_SDBY_UI|OB_IWDG_STDBY_RUN|enable
+OB_FZ_IWDG_SDBY_UI|OB_IWDG_STDBY_FREEZE|disable
+OB_XSPI1_HSLV_UI|OB_XSPI1_HSLV_NOUPD|no update
+OB_XSPI1_HSLV_UI|OB_XSPI1_HSLV_ENABLE|enable
+OB_XSPI1_HSLV_UI|OB_XSPI1_HSLV_DISABLE|disable
+OB_XSPI2_HSLV_UI|OB_XSPI2_HSLV_NOUPD|no update
+OB_XSPI2_HSLV_UI|OB_XSPI2_HSLV_ENABLE|enable
+OB_XSPI2_HSLV_UI|OB_XSPI2_HSLV_DISABLE|disable
+OB_ECC_ON_SRAM_UI|OB_AXISRAM_ECC__NOUPD|no update
+OB_ECC_ON_SRAM_UI|OB_AXISRAM_ECC_ENABLE|Enable
+OB_ECC_ON_SRAM_UI|OB_AXISRAM_ECC_DISABLE|Disable
+OB_DTCM_AXI_SHARE|OB_DTCM_AXI_SHARE_0|0
+OB_DTCM_AXI_SHARE|OB_DTCM_AXI_SHARE_1|1
+OB_DTCM_AXI_SHARE|OB_DTCM_AXI_SHARE_2|2
+OB_DTCM_AXI_SHARE|OB_DTCM_AXI_SHARE_3|3
+OB_ITCM_AXI_SHARE|OB_ITCM_AXI_SHARE_0|0
+OB_ITCM_AXI_SHARE|OB_ITCM_AXI_SHARE_1|1
+OB_ITCM_AXI_SHARE|OB_ITCM_AXI_SHARE_2|2
+OB_ITCM_AXI_SHARE|OB_ITCM_AXI_SHARE_3|3
+WRPState|OB_WRPSTATE_ENABLE|OB_WRPSTATE_ENABLE
+WRPState|OB_WRPSTATE_DISABLE|OB_WRPSTATE_DISABLE

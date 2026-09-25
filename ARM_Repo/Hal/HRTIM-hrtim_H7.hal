@@ -1,0 +1,2011 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=HRTIM
+Version=hrtim_H7
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+SimpleMode|Simple Mode|UseCase Selection||||
+OCChannel|Channel Configuration|Output Compare||||
+OCMode|Mode|Output Compare||||
+PWMChannel|Channel Configuration|PWM||||
+CaptureChannel|Capture Channel Configuration|Capture||||
+CaptureEvent_TA1|Event|||||
+CaptureEvent_TA2|Event|||||
+CaptureEvent_TB1|Event|||||
+CaptureEvent_TB2|Event|||||
+CaptureEvent_TC1|Event|||||
+CaptureEvent_TC2|Event|||||
+CaptureEvent_TD1|Event|||||
+CaptureEvent_TD2|Event|||||
+CaptureEvent_TE1|Event|||||
+CaptureEvent_TE2|Event|||||
+OnePulseChannel|Channel Configuration|One Pulse||||
+OnePulseEvent_TA1|Event|||||
+OnePulseEvent_TA2|Event|||||
+OnePulseEvent_TB1|Event|||||
+OnePulseEvent_TB2|Event|||||
+OnePulseEvent_TC1|Event|||||
+OnePulseEvent_TC2|Event|||||
+OnePulseEvent_TD1|Event|||||
+OnePulseEvent_TD2|Event|||||
+OnePulseEvent_TE1|Event|||||
+OnePulseEvent_TE2|Event|||||
+Enable|Burst Mode|Burst Mode Enabling||||
+Mode|Mode|Settings||||
+ClockSource|Clock Source|Settings||||
+PrescalerBurst|Prescaler|Settings||||
+BurstPreloadEnable|Preload Enable|Settings||||
+NumberBURSTMODE_TriggerSources|Number of Burst Mode Trigger Sources|Settings||0|32|
+Source_BURSTMODETrigger|Trigger Source|Settings||||
+ORingBURSTMODETrigger|Burst Mode Trigger|||||
+IdleDuration|Burst Mode Idle Duration|Settings||0x0000|0xFFFF|
+BURSTMODEPeriod|Burst Mode Period|Settings||0x0001|0xFFFF|
+HRTIMInterruptResquests|Hrtim Interrupt Requests|Sources||||
+ORingHRTIMInterruptResquests|Hrtim Interrupt Requests|||||
+SyncOptions|Sync Options|Master Timer Synchronization||||
+SyncInputSource|Sync Input Source|Master Timer Synchronization||||
+SyncOutputSource|Sync Output Source|Master Timer Synchronization||||
+SyncOutputPolarity|Sync Output Polarity|Master Timer Synchronization||||
+ADCTrigger_Id1|ADC Trigger Configuration|||||
+ADCTrigger_Id2|ADC Trigger Configuration|||||
+ADCTrigger_Id3|ADC Trigger Configuration|||||
+ADCTrigger_Id4|ADC Trigger Configuration|||||
+UpdateSource_ADCTrigger|Update Source|||||
+NumberADCTriggerSource|Trigger Sources Selection : Please enter the number of Active Trigger Sources|||0|32|
+Source_ADCTrigger13|Trigger|||||
+Source_ADCTrigger24|Trigger|||||
+ORingADCTrigger1|Source|||||
+ORingADCTrigger2|Source|||||
+ORingADCTrigger3|Source|||||
+ORingADCTrigger4|Source|||||
+PrescalerFault|Prescaler|Common Prescaler||||
+EnableFault|Line Ctl|||||
+Fault_Line1|Line Configuration|||||
+Fault_Line2|Line Configuration|||||
+Fault_Line3|Line Configuration|||||
+Fault_Line4|Line Configuration|||||
+Fault_Line5|Line Configuration|||||
+Source_FaultLine|Source|||||
+Polarity_FaultLine|Polarity|||||
+Filter_FaultLine|Filter|||||
+Lock_FaultLine|Lock|||||
+EventPrescaler|Prescaler|External Event Clock||||
+Event_EEV1|Event Configuration|||||
+Event_EEV2|Event Configuration|||||
+Event_EEV3|Event Configuration|||||
+Event_EEV4|Event Configuration|||||
+Event_EEV5|Event Configuration|||||
+Event_EEV6|Event Configuration|||||
+Event_EEV7|Event Configuration|||||
+Event_EEV8|Event Configuration|||||
+Event_EEV9|Event Configuration|||||
+Event_EEV10|Event Configuration|||||
+Source_EEV|Source|||||
+Polarity_EEV|Event Polarity|||||
+Sensitivity_EEV|Event Sensitivity|||||
+FastMode_EEV|Event Fast Mode|||||
+Filter_EEV|Event Filter|||||
+CaptureEventPolarity_TA1|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TA1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TA1|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TA2|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TA2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TA2|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TA1|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TA1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TA1|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TA2|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TA2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TA2|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TB1|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TB1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TB1|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TB2|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TB2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TB2|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TB1|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TB1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TB1|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TB2|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TB2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TB2|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TC1|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TC1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TC1|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TC2|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TC2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TC2|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TC1|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TC1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TC1|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TC2|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TC2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TC2|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TD1|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TD1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TD1|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TD2|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TD2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TD2|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TD1|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TD1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TD1|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TD2|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TD2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TD2|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TE1|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TE1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TE1|Event Filter (defined in External Event Configuration Tab)|||||
+CaptureEventPolarity_TE2|Event Polarity (defined in External Event Configuration Tab)|||||
+CaptureEventSensitivity_TE2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+CaptureEventFilter_TE2|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TE1|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TE1|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TE1|Event Filter (defined in External Event Configuration Tab)|||||
+OnePulseEventPolarity_TE2|Event Polarity (defined in External Event Configuration Tab)|||||
+OnePulseEventSensitivity_TE2|Event Sensitivity (defined in External Event Configuration Tab)|||||
+OnePulseEventFilter_TE2|Event Filter (defined in External Event Configuration Tab)|||||
+Configuration_TA|Basic/Advanced Configuration|||||
+Configuration_TB|Basic/Advanced Configuration|||||
+Configuration_TC|Basic/Advanced Configuration|||||
+Configuration_TD|Basic/Advanced Configuration|||||
+Configuration_TE|Basic/Advanced Configuration|||||
+TimerIdx|Timer Idx|||||
+RepetitionCounter|Repetition Counter|Time Base Setting||0x00|0xFF|
+CompareValue_TA|Compare Value|||0x0003|0xFFFD|
+CompareValue_TB|Compare Value|||0x0003|0xFFFD|
+CompareValue_TC|Compare Value|||0x0003|0xFFFD|
+CompareValue_TD|Compare Value|||0x0003|0xFFFD|
+CompareValue_TE|Compare Value|||0x0003|0xFFFD|
+CompareValue_MASTER|Compare Value|||0x0003|0xFFFD|
+Periode_TA|Period|Time Base Setting||0x0003|0xFFFD|
+Periode_TA_reelle|Resulting PWM Frequency|Time Base Setting|Hz|||
+Counter_TA_reelle|fHRCK Equivalent Frequency|Time Base Setting|Hz|||
+Periode_TB|Period|Time Base Setting||0x0003|0xFFFD|
+Periode_TB_reelle|Resulting PWM Frequency|Time Base Setting|Hz|||
+Counter_TB_reelle|fHRCK Equivalent Frequency|Time Base Setting|Hz|||
+Periode_TC|Period|Time Base Setting||0x0003|0xFFFD|
+Periode_TC_reelle|Resulting PWM Frequency|Time Base Setting|Hz|||
+Counter_TC_reelle|fHRCK Equivalent Frequency|Time Base Setting|Hz|||
+Periode_TD|Period|Time Base Setting||0x0003|0xFFFD|
+Periode_TD_reelle|Resulting PWM Frequency|Time Base Setting|Hz|||
+Counter_TD_reelle|fHRCK Equivalent Frequency|Time Base Setting|Hz|||
+Periode_TE|Period|Time Base Setting||0x0003|0xFFFD|
+Periode_TE_reelle|Resulting PWM Frequency|Time Base Setting|Hz|||
+Counter_TE_reelle|fHRCK Equivalent Frequency|Time Base Setting|Hz|||
+Periode_MASTER|Period|Time Base Setting||0x0003|0xFFFD|
+Periode_MASTER_reelle|Resulting PWM Frequency|Time Base Setting|Hz|||
+Counter_MASTER_reelle|fHRCK Equivalent Frequency|Time Base Setting|Hz|||
+PrescalerRatio_TA|Prescaler Ratio|Time Base Setting||||
+PrescalerRatio_TB|Prescaler Ratio|Time Base Setting||||
+PrescalerRatio_TC|Prescaler Ratio|Time Base Setting||||
+PrescalerRatio_TD|Prescaler Ratio|Time Base Setting||||
+PrescalerRatio_TE|Prescaler Ratio|Time Base Setting||||
+PrescalerRatio_MASTER|Prescaler Ratio|Time Base Setting||||
+ModeTimeBase|Mode|Time Base Setting||||
+HalfModeEnable|Half Mode Enable - The Compare Value of CP Unit 1 is set automatically to half the Timer Period -|Timing Unit||||
+StartOnSync|Start On Sync|Timing Unit||||
+ResetOnSync|Reset On Sync|Timing Unit||||
+DACSynchro|Dac Synchro|Timing Unit||||
+PreloadEnable|Preload Enable|Timing Unit||||
+UpdateGating_MASTER|Update Gating|Timing Unit||||
+UpdateGating_TA|Update Gating|Timing Unit||||
+UpdateGating_TB|Update Gating|Timing Unit||||
+UpdateGating_TC|Update Gating|Timing Unit||||
+UpdateGating_TD|Update Gating|Timing Unit||||
+UpdateGating_TE|Update Gating|Timing Unit||||
+RepetitionUpdate|Repetition Update|Timing Unit||||
+BurstMode|Burst Mode|Timing Unit||||
+PushPull|Push Pull|Timing Unit||||
+NumberFaultEnable|Number of Faults to enable|Timing Unit||0|5|
+FaultEnable|Fault Enable|Timing Unit||||
+ORingFaultEnable|Fault Enable|Timing Unit||||
+FaultLock|Fault Lock|Timing Unit||||
+DeadTimeInsertion|Dead Time Insertion|Timing Unit||||
+DelayedProtectionMode|Delayed Protection Mode|Timing Unit||||
+NumberUpdateTrigger|Update Trigger Sources Selection : Please enter the number of Triggers to select|Timing Unit||0|6|
+UpdateTrigger|Update Trigger|Timing Unit||||
+ORingUpdateTrigger|Update Trigger|||||
+ResetUpdate|Reset Update|Timing Unit||||
+ResetTrigger|Reset Trigger|Timing Unit||||
+NumberResetTrigger|Reset Trigger Sources Selection : Please enter the number of Triggers to select|Timing Unit||0|30|
+ResetTrigger_TA|Reset Trigger|Timing Unit||||
+ResetTrigger_TB|Reset Trigger|Timing Unit||||
+ResetTrigger_TC|Reset Trigger|Timing Unit||||
+ResetTrigger_TD|Reset Trigger|Timing Unit||||
+ResetTrigger_TE|Reset Trigger|Timing Unit||||
+ORingResetTrigger|Reset Trigger|||||
+InterruptRequests|Interrupt Requests|Timing Unit||||
+NumberInterruptRequests|Interrupt Requests Sources Selection : Please enter the number of Active Interrupt Requests|Timing Unit||0|14|
+NumberInterruptRequests_Master|Interrupt Requests Sources Selection : Please enter the number of Active Interrupt Requests|Timing Unit||0|7|
+InterruptRequests_MASTER|Interrupt Requests|Timing Unit||||
+ORingInterruptRequests_Master|Interrupt Requests|||||
+InterruptRequests_TA|Interrupt Requests|Timing Unit||||
+InterruptRequests_TB|Interrupt Requests|Timing Unit||||
+InterruptRequests_TC|Interrupt Requests|Timing Unit||||
+InterruptRequests_TD|Interrupt Requests|Timing Unit||||
+InterruptRequests_TE|Interrupt Requests|Timing Unit||||
+ORingInterruptRequests|Interrupt Requests|||||
+DMARequests_Semaphore|For DMA semaphore|Timing Unit||||
+DMARequests|DMA Requests|Timing Unit||||
+NumberDMARequests_TA|Number of Timer A Internal DMA Request Sources - at least 1 if Timer A DMA request is configured in DMA Settings Tab|Timing Unit||0|0|
+NumberDMARequests_TB|Number of Timer B Internal DMA Request Sources - at least 1 if Timer B DMA request is configured in DMA Settings Tab|Timing Unit||0|0|
+NumberDMARequests_TC|Number of Timer C Internal DMA Request Sources - at least 1 if Timer C DMA request is configured in DMA Settings Tab|Timing Unit||0|0|
+NumberDMARequests_TD|Number of Timer D Internal DMA Request Sources - at least 1 if Timer D DMA request is configured in DMA Settings Tab|Timing Unit||0|0|
+NumberDMARequests_TE|Number of Timer E Internal DMA Request Sources - at least 1 if Timer E DMA request is configured in DMA Settings Tab|Timing Unit||0|0|
+NumberDMARequests_Master|Number of Master Timer Internal DMA Request Sources - at least 1 if Master Timer DMA request is configured in DMA Settings Tab|Timing Unit||0|0|
+DMARequests_MASTER|DMA Requests|Timing Unit||||
+ORingDMARequests_Master|DMA Requests|||||
+DMARequests_TA|DMA Requests|Timing Unit||||
+DMARequests_TB|DMA Requests|Timing Unit||||
+DMARequests_TC|DMA Requests|Timing Unit||||
+DMARequests_TD|DMA Requests|Timing Unit||||
+DMARequests_TE|DMA Requests|Timing Unit||||
+ORingDMARequests|DMA Requests|||||
+DMASize|DMA Size|Timing Unit|(no Unit - number of DMA transactions)|0x1|0x10000|
+CompareUnit1|Compare Unit 1 Configuration|Compare Unit 1||||
+CompareUnit2|Compare Unit 2 Configuration|Compare Unit 2||||
+CompareUnit3|Compare Unit 3 Configuration|Compare Unit 3||||
+CompareUnit4|Compare Unit 4 Configuration|Compare Unit 4||||
+CompareValue|Compare Value|Compare Units||0x0000|0xFFFF|
+AutoDelayedMode_refcomp2|Auto Delayed Mode|Compare Units||||
+AutoDelayedMode_refcomp4|Auto Delayed Mode|Compare Units||||
+AutoDelayedTimeout_ref|Auto Delayed Timeout|Compare Units||0x0000|0xFFFF|
+CaptureUnit1|Capture Unit 1 Configuration|Capture Unit 1||||
+CaptureUnit2|Capture Unit 2 Configuration|Capture Unit 2||||
+NumberTriggerSource_Capture|Trigger Sources Selection : Please enter the number of Sources to select|||0|32|
+Source_TriggerCapture|Trigger|||||
+ORingTriggerCapture1|Capture Trigger|Capture Unit 1||||
+ORingTriggerCapture2|Capture Trigger|Capture Unit 2||||
+Output1|Output1 Configuration|Output 1 Configuration||||
+Output2|Output2 Configuration|Output 2 Configuration||||
+Polarity|Polarity|||||
+NumberSetSource1|Set Source Selection : Please enter the number of Active Set Sources|Output 1 Configuration||0|32|
+NumberSetSource2|Set Source Selection : Please enter the number of Active Set Sources|Output 2 Configuration||0|32|
+NumberSetSource2_TA|Set Source Selection : Please enter the number of Active Set Sources|Output 2 Configuration||0|0|
+NumberSetSource2_TB|Set Source Selection : Please enter the number of Active Set Sources|Output 2 Configuration||0|0|
+NumberSetSource2_TC|Set Source Selection : Please enter the number of Active Set Sources|Output 2 Configuration||0|0|
+NumberSetSource2_TD|Set Source Selection : Please enter the number of Active Set Sources|Output 2 Configuration||0|0|
+NumberSetSource2_TE|Set Source Selection : Please enter the number of Active Set Sources|Output 2 Configuration||0|0|
+SetSource_TA|Set Source|||||
+SetSource_TB|Set Source|||||
+SetSource_TC|Set Source|||||
+SetSource_TD|Set Source|||||
+SetSource_TE|Set Source|||||
+ORingSetOutput1|Set Source|||||
+ORingSetOutput2|Set Source|||||
+ORingSetOutput2_TA|Set Source|Output 2 Configuration||||
+ORingSetOutput2_TB|Set Source|Output 2 Configuration||||
+ORingSetOutput2_TC|Set Source|Output 2 Configuration||||
+ORingSetOutput2_TD|Set Source|Output 2 Configuration||||
+ORingSetOutput2_TE|Set Source|Output 2 Configuration||||
+NumberResetSource1|Reset Source Selection : Please enter the number of Active Reset Sources|Output 1 Configuration||0|32|
+NumberResetSource2|Reset Source Selection : Please enter the number of Active Reset Sources|Output 2 Configuration||0|32|
+NumberResetSource2_TA|Reset Source Selection : Please enter the number of Active Reset Sources|Output 2 Configuration||0|0|
+NumberResetSource2_TB|Reset Source Selection : Please enter the number of Active Reset Sources|Output 2 Configuration||0|0|
+NumberResetSource2_TC|Reset Source Selection : Please enter the number of Active Reset Sources|Output 2 Configuration||0|0|
+NumberResetSource2_TD|Reset Source Selection : Please enter the number of Active Reset Sources|Output 2 Configuration||0|0|
+NumberResetSource2_TE|Reset Source Selection : Please enter the number of Active Reset Sources|Output 2 Configuration||0|0|
+ResetSource|Reset Source|||||
+ResetSource_TA|Reset Source|||||
+ResetSource_TB|Reset Source|||||
+ResetSource_TC|Reset Source|||||
+ResetSource_TD|Reset Source|||||
+ResetSource_TE|Reset Source|||||
+ORingResetOutput1|Reset Source|||||
+ORingResetOutput2|Reset Source|||||
+ORingResetOutput2_TA|Reset Source|Output 2 Configuration||||
+ORingResetOutput2_TB|Reset Source|Output 2 Configuration||||
+ORingResetOutput2_TC|Reset Source|Output 2 Configuration||||
+ORingResetOutput2_TD|Reset Source|Output 2 Configuration||||
+ORingResetOutput2_TE|Reset Source|Output 2 Configuration||||
+IdleMode|Idle Mode|||||
+IdleLevel|Idle Level|||||
+FaultLevel|Fault Level|||||
+ChopperModeEnable|Chopper Mode Enable|||||
+BurstModeEntryDelayed|Burst Mode Entry Delayed|||||
+Event|Filtering Configuration|||||
+Filter_TA|Filter|||||
+Filter_TB|Filter|||||
+Filter_TC|Filter|||||
+Filter_TD|Filter|||||
+Filter_TE|Filter|||||
+Latch|Latch|||||
+Deadtimeconfig|Dead Time Configuration|Dead Time||||
+PrescalerDead|Prescaler (PSC - 16 bits value)|Dead Time||||
+RisingValue|Rising Value|Dead Time||0x000|0x1FF|
+RisingSign|Rising Sign|Dead Time||||
+RisingLock|Rising Lock|Dead Time||||
+RisingSignLock|Rising Sign Lock|Dead Time||||
+FallingValue|Falling Value|Dead Time||0x000|0x1FF|
+FallingSign|Falling Sign|Dead Time||||
+FallingLock|Falling Lock|Dead Time||||
+FallingSignLock|Falling Sign Lock|Dead Time||||
+ChopperModeconfig|Chopper Mode Configuration|Chopper Mode||||
+CarrierFreq|Carrier Freq|Chopper Mode||||
+DutyCycle|Duty Cycle|Chopper Mode||||
+StartPulse|Start Pulse|Chopper Mode||||
+NumberRegisters_BURSTDMA|Number of Registers to update|Burst DMA Controller||0|21|
+NumberRegisters_BURSTDMAMaster|Number of Registers to update|Burst DMA Controller||0|10|
+BurstDMAconfig|Burst DMA Configuration|Burst DMA Controller||||
+Source_RegistersToUpdate|Registers To Update|Burst DMA Controller||||
+Source_RegistersToUpdateMaster|Registers To Update|Burst DMA Controller||||
+ORingRegistersToUpdate|Registers to update|Burst DMA Controller||||
+ORingRegistersToUpdateMaster|Registers to update|Burst DMA Controller||||
+
+[Values]
+# параметр|значение|подпись
+OCChannel|__NULL|Disable
+OCChannel|HRTIM_OUTPUT_TA1|Enable
+OCChannel|HRTIM_OUTPUT_TB1|Enable
+OCChannel|HRTIM_OUTPUT_TC1|Enable
+OCChannel|HRTIM_OUTPUT_TD1|Enable
+OCChannel|HRTIM_OUTPUT_TE1|Enable
+OCChannel|HRTIM_OUTPUT_TA2|Enable
+OCChannel|HRTIM_OUTPUT_TB2|Enable
+OCChannel|HRTIM_OUTPUT_TC2|Enable
+OCChannel|HRTIM_OUTPUT_TD2|Enable
+OCChannel|HRTIM_OUTPUT_TE2|Enable
+OCMode|HRTIM_BASICOCMODE_TOGGLE|Ouput toggles when the timer counter reaches the compare value
+OCMode|HRTIM_BASICOCMODE_INACTIVE|Ouput forced to active level when the timer counter reaches the compare value
+OCMode|HRTIM_BASICOCMODE_ACTIVE|Ouput forced to inactive level when the timer counter reaches the compare value
+PWMChannel|__NULL|Disable
+PWMChannel|HRTIM_OUTPUT_TA1|Enable
+PWMChannel|HRTIM_OUTPUT_TB1|Enable
+PWMChannel|HRTIM_OUTPUT_TC1|Enable
+PWMChannel|HRTIM_OUTPUT_TD1|Enable
+PWMChannel|HRTIM_OUTPUT_TE1|Enable
+PWMChannel|HRTIM_OUTPUT_TA2|Enable
+PWMChannel|HRTIM_OUTPUT_TB2|Enable
+PWMChannel|HRTIM_OUTPUT_TC2|Enable
+PWMChannel|HRTIM_OUTPUT_TD2|Enable
+PWMChannel|HRTIM_OUTPUT_TE2|Enable
+CaptureChannel|__NULL|Disable
+CaptureChannel|HRTIM_CAPTUREUNIT_1|Enable
+CaptureChannel|HRTIM_CAPTUREUNIT_2|Enable
+CaptureEvent_TA1|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TA1|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TA1|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TA1|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TA1|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TA1|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TA1|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TA1|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TA1|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TA1|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TA1|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TA2|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TA2|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TA2|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TA2|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TA2|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TA2|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TA2|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TA2|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TA2|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TA2|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TA2|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TB1|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TB1|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TB1|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TB1|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TB1|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TB1|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TB1|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TB1|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TB1|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TB1|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TB1|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TB2|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TB2|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TB2|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TB2|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TB2|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TB2|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TB2|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TB2|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TB2|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TB2|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TB2|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TC1|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TC1|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TC1|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TC1|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TC1|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TC1|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TC1|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TC1|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TC1|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TC1|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TC1|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TC2|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TC2|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TC2|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TC2|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TC2|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TC2|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TC2|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TC2|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TC2|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TC2|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TC2|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TD1|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TD1|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TD1|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TD1|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TD1|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TD1|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TD1|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TD1|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TD1|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TD1|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TD1|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TD2|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TD2|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TD2|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TD2|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TD2|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TD2|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TD2|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TD2|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TD2|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TD2|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TD2|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TE1|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TE1|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TE1|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TE1|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TE1|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TE1|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TE1|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TE1|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TE1|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TE1|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TE1|HRTIM_EVENT_10|External Event 10
+CaptureEvent_TE2|HRTIM_EVENT_NONE|No Event Channel
+CaptureEvent_TE2|HRTIM_EVENT_1|External Event 1
+CaptureEvent_TE2|HRTIM_EVENT_2|External Event 2
+CaptureEvent_TE2|HRTIM_EVENT_3|External Event 3
+CaptureEvent_TE2|HRTIM_EVENT_4|External Event 4
+CaptureEvent_TE2|HRTIM_EVENT_5|External Event 5
+CaptureEvent_TE2|HRTIM_EVENT_6|External Event 6
+CaptureEvent_TE2|HRTIM_EVENT_7|External Event 7
+CaptureEvent_TE2|HRTIM_EVENT_8|External Event 8
+CaptureEvent_TE2|HRTIM_EVENT_9|External Event 9
+CaptureEvent_TE2|HRTIM_EVENT_10|External Event 10
+OnePulseChannel|__NULL|Disable
+OnePulseChannel|HRTIM_OUTPUT_TA1|Enable
+OnePulseChannel|HRTIM_OUTPUT_TB1|Enable
+OnePulseChannel|HRTIM_OUTPUT_TC1|Enable
+OnePulseChannel|HRTIM_OUTPUT_TD1|Enable
+OnePulseChannel|HRTIM_OUTPUT_TE1|Enable
+OnePulseChannel|HRTIM_OUTPUT_TA2|Enable
+OnePulseChannel|HRTIM_OUTPUT_TB2|Enable
+OnePulseChannel|HRTIM_OUTPUT_TC2|Enable
+OnePulseChannel|HRTIM_OUTPUT_TD2|Enable
+OnePulseChannel|HRTIM_OUTPUT_TE2|Enable
+OnePulseEvent_TA1|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TA1|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TA1|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TA1|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TA1|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TA1|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TA1|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TA1|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TA1|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TA1|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TA1|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TA2|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TA2|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TA2|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TA2|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TA2|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TA2|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TA2|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TA2|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TA2|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TA2|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TA2|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TB1|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TB1|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TB1|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TB1|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TB1|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TB1|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TB1|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TB1|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TB1|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TB1|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TB1|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TB2|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TB2|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TB2|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TB2|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TB2|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TB2|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TB2|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TB2|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TB2|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TB2|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TB2|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TC1|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TC1|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TC1|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TC1|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TC1|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TC1|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TC1|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TC1|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TC1|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TC1|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TC1|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TC2|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TC2|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TC2|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TC2|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TC2|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TC2|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TC2|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TC2|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TC2|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TC2|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TC2|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TD1|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TD1|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TD1|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TD1|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TD1|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TD1|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TD1|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TD1|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TD1|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TD1|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TD1|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TD2|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TD2|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TD2|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TD2|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TD2|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TD2|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TD2|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TD2|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TD2|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TD2|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TD2|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TE1|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TE1|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TE1|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TE1|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TE1|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TE1|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TE1|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TE1|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TE1|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TE1|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TE1|HRTIM_EVENT_10|External Event 10
+OnePulseEvent_TE2|HRTIM_EVENT_NONE|No Event Channel
+OnePulseEvent_TE2|HRTIM_EVENT_1|External Event 1
+OnePulseEvent_TE2|HRTIM_EVENT_2|External Event 2
+OnePulseEvent_TE2|HRTIM_EVENT_3|External Event 3
+OnePulseEvent_TE2|HRTIM_EVENT_4|External Event 4
+OnePulseEvent_TE2|HRTIM_EVENT_5|External Event 5
+OnePulseEvent_TE2|HRTIM_EVENT_6|External Event 6
+OnePulseEvent_TE2|HRTIM_EVENT_7|External Event 7
+OnePulseEvent_TE2|HRTIM_EVENT_8|External Event 8
+OnePulseEvent_TE2|HRTIM_EVENT_9|External Event 9
+OnePulseEvent_TE2|HRTIM_EVENT_10|External Event 10
+Enable|HRTIM_BURSTMODECTL_DISABLED|Burst mode disabled
+Enable|HRTIM_BURSTMODECTL_ENABLED|Burst mode enabled
+Mode|HRTIM_BURSTMODE_SINGLESHOT|Burst mode operates in single shot mode
+Mode|HRTIM_BURSTMODE_CONTINOUS|Burst mode operates in continuous mode
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_MASTER|Master timer counter reset/roll-over is used as clock source for the burst mode counter
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIMER_A|Timer A counter reset/roll-over is used as clock source for the burst mode counter
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIMER_B|Timer B counter reset/roll-over is used as clock source for the burst mode counter
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIMER_C|Timer C counter reset/roll-over is used as clock source for the burst mode counter
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIMER_D|Timer D counter reset/roll-over is used as clock source for the burst mode counter
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIMER_E|Timer E counter reset/roll-over is used as clock source for the burst mode counter
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIM16_OC|On-chip Event 1 (TIM16_OC), acting as a burst mode counter clock
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIM17_OC|On-chip Event 2 (TIM17_OC), acting as a burst mode counter clock
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_TIM7_TRGO|On-chip Event 3 (TIM7_TRGO), acting as a burst mode counter clock
+ClockSource|HRTIM_BURSTMODECLOCKSOURCE_FHRTIM|Prescaled fHRTIM clock is used as clock source for the burst mode counter
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV1|fEEVS=fHRTIM
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV2|fEEVS=fHRTIM div 2
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV4|fEEVS=fHRTIM div 4
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV8|fEEVS=fHRTIM div 8
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV16|fEEVS=fHRTIM div 16
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV32|fEEVS=fHRTIM div 32
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV64|fEEVS=fHRTIM div 64
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV128|fEEVS=fHRTIM div 128
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV256|fEEVS=fHRTIM div 256
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV512|fEEVS=fHRTIM div 512
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV1024|fEEVS=fHRTIM div 1024
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV2048|fEEVS=fHRTIM div 2048
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV4096|fEEVS=fHRTIM div 4096
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV8192|fEEVS=fHRTIM div 8192
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV16384|fEEVS=fHRTIM div 16384
+PrescalerBurst|HRTIM_BURSTMODEPRESCALER_DIV32768|fEEVS=fHRTIM div 32768
+BurstPreloadEnable|HRIM_BURSTMODEPRELOAD_DISABLED|Preload disabled: the write access is directly done into active registers
+BurstPreloadEnable|HRIM_BURSTMODEPRELOAD_ENABLED|Preload enabled: the write access is done into preload registers
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_NONE|No trigger
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_MASTER_RESET|Master reset
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_MASTER_REPETITION|Master repetition
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_MASTER_CMP1|Master compare 1
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_MASTER_CMP2|Master compare 2
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_MASTER_CMP3|Master compare 3
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_MASTER_CMP4|Master compare 4
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERA_RESET|Timer A reset
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERA_REPETITION|Timer A repetition
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERA_CMP1|Timer A compare 1
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERA_CMP2|Timer A compare 2
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERB_RESET|Timer B reset
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERB_REPETITION|Timer B repetition
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERB_CMP1|Timer B compare 1
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERB_CMP2|Timer B compare 2
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERC_RESET|Timer C reset
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERC_REPETITION|Timer C repetition
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERC_CMP1|Timer C compare 1
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERC_CMP2|Timer C compare 2
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERD_RESET|Timer D reset
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERD_REPETITION|Timer D repetition
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERD_CMP1|Timer D compare 1
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERD_CMP2|Timer D compare 2
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERE_RESET|Timer E reset
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERE_REPETITION|Timer E repetition
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERE_CMP1|Timer E compare 1
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERE_CMP2|Timer E compare 2
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERA_EVENT7|Timer A period following External Event 7
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_TIMERD_EVENT8|Timer D period following External Event 8
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_EVENT_7|External Event 7 (timer A filters applied)
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_EVENT_8|External Event 8 (timer D filters applied)
+Source_BURSTMODETrigger|HRTIM_BURSTMODETRIGGER_EVENT_ONCHIP|On-chip Event
+HRTIMInterruptResquests|HRTIM_IT_NONE|No interrupt enabled
+HRTIMInterruptResquests|HRTIM_IT_FLT1|Fault 1 interrupt enable
+HRTIMInterruptResquests|HRTIM_IT_FLT2|Fault 2 interrupt enable
+HRTIMInterruptResquests|HRTIM_IT_FLT3|Fault 3 interrupt enable
+HRTIMInterruptResquests|HRTIM_IT_FLT4|Fault 4 interrupt enable
+HRTIMInterruptResquests|HRTIM_IT_FLT5|Fault 5 interrupt enable
+HRTIMInterruptResquests|HRTIM_IT_SYSFLT|System Fault interrupt enable
+HRTIMInterruptResquests|HRTIM_IT_BMPER|Burst mode period interrupt enable
+SyncOptions|HRTIM_SYNCOPTION_NONE|HRTIM instance doesn't handle external synchronization signals (SYNCIN, SYNCOUT)
+SyncOptions|HRTIM_SYNCOPTION_MASTER|HRTIM instance acts as a MASTER, i.e. generates external synchronization output (SYNCOUT)
+SyncOptions|HRTIM_SYNCOPTION_SLAVE|HRTIM instance acts as a SLAVE, i.e. it is synchronized by external sources (SYNCIN)
+SyncInputSource|HRTIM_SYNCINPUTSOURCE_NONE|HRTIM is not synchronized and runs in standalone mode
+SyncInputSource|HRTIM_SYNCINPUTSOURCE_INTERNALEVENT|The HRTIM is synchronized with the on-chip timer
+SyncInputSource|HRTIM_SYNCINPUTSOURCE_EXTERNALEVENT|A positive pulse on SYNCIN input triggers the HRTIM
+SyncOutputSource|HRTIM_SYNCOUTPUTSOURCE_MASTER_START|A pulse is sent on the SYNCOUT output (16x fHRTIM clock cycles) upon master timer start event
+SyncOutputSource|HRTIM_SYNCOUTPUTSOURCE_MASTER_CMP1|A pulse is sent on the SYNCOUT output (16x fHRTIM clock cycles) upon master timer compare 1 event
+SyncOutputSource|HRTIM_SYNCOUTPUTSOURCE_TIMA_START|A pulse is sent on the SYNCOUT output (16x fHRTIM clock cycles) upon timer A start or reset events
+SyncOutputSource|HRTIM_SYNCOUTPUTSOURCE_TIMA_CMP1|A pulse is sent on the SYNCOUT output (16x fHRTIM clock cycles) upon timer A compare 1 event
+SyncOutputPolarity|HRTIM_SYNCOUTPUTPOLARITY_NONE|Synchronization output event is disabled
+SyncOutputPolarity|HRTIM_SYNCOUTPUTPOLARITY_POSITIVE|Positive pulse on SCOUT output (16x fHRTIM clock cycles)
+SyncOutputPolarity|HRTIM_SYNCOUTPUTPOLARITY_NEGATIVE|Negative pulse on SCOUT output (16x fHRTIM clock cycles)
+ADCTrigger_Id1|__NULL|Disable
+ADCTrigger_Id1|HRTIM_ADCTRIGGER_1|Enable ADC Trigger 1
+ADCTrigger_Id2|__NULL|Disable
+ADCTrigger_Id2|HRTIM_ADCTRIGGER_2|Enable ADC Trigger 2
+ADCTrigger_Id3|__NULL|Disable
+ADCTrigger_Id3|HRTIM_ADCTRIGGER_3|Enable ADC Trigger 3
+ADCTrigger_Id4|__NULL|Disable
+ADCTrigger_Id4|HRTIM_ADCTRIGGER_4|Enable ADC Trigger 4
+UpdateSource_ADCTrigger|HRTIM_ADCTRIGGERUPDATE_MASTER|Master timer
+UpdateSource_ADCTrigger|HRTIM_ADCTRIGGERUPDATE_TIMER_A|Timer A
+UpdateSource_ADCTrigger|HRTIM_ADCTRIGGERUPDATE_TIMER_B|Timer B
+UpdateSource_ADCTrigger|HRTIM_ADCTRIGGERUPDATE_TIMER_C|Timer C
+UpdateSource_ADCTrigger|HRTIM_ADCTRIGGERUPDATE_TIMER_D|Timer D
+UpdateSource_ADCTrigger|HRTIM_ADCTRIGGERUPDATE_TIMER_E|Timer E
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_NONE|No ADC trigger event
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_MASTER_CMP1|ADC Trigger on master compare 1
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_MASTER_CMP2|ADC Trigger on master compare 2
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_MASTER_CMP3|ADC Trigger on master compare 3
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_MASTER_CMP4|ADC Trigger on master compare 4
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_MASTER_PERIOD|ADC Trigger on master period
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_EVENT_1|ADC Trigger on external event 1
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_EVENT_2|ADC Trigger on external event 2
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_EVENT_3|ADC Trigger on external event 3
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_EVENT_4|ADC Trigger on external event 4
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_EVENT_5|ADC Trigger on external event 5
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERA_CMP2|ADC Trigger on Timer A compare 2
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERA_CMP3|ADC Trigger on Timer A compare 3
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERA_CMP4|ADC Trigger on Timer A compare 4
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERA_PERIOD|ADC Trigger on Timer A period
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERA_RESET|ADC Trigger on Timer A reset
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERB_CMP2|ADC Trigger on Timer B compare 2
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERB_CMP3|ADC Trigger on Timer B compare 3
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERB_CMP4|ADC Trigger on Timer B compare 4
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERB_PERIOD|ADC Trigger on Timer B period
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERB_RESET|ADC Trigger on Timer B reset
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERC_CMP2|ADC Trigger on Timer C compare 2
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERC_CMP3|ADC Trigger on Timer C compare 3
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERC_CMP4|ADC Trigger on Timer C compare 4
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERC_PERIOD|ADC Trigger on Timer C period
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERD_CMP2|ADC Trigger on Timer D compare 2
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERD_CMP3|ADC Trigger on Timer D compare 3
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERD_CMP4|ADC Trigger on Timer D compare 4
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERD_PERIOD|ADC Trigger on Timer D period
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERE_CMP2|ADC Trigger on Timer E compare 2
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERE_CMP3|ADC Trigger on Timer E compare 3
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERE_CMP4|ADC Trigger on Timer E compare 4
+Source_ADCTrigger13|HRTIM_ADCTRIGGEREVENT13_TIMERE_PERIOD|ADC Trigger on Timer E period
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_NONE|No ADC trigger event
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_MASTER_CMP1|ADC Trigger on master compare 1
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_MASTER_CMP2|ADC Trigger on master compare 2
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_MASTER_CMP3|ADC Trigger on master compare 3
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_MASTER_CMP4|ADC Trigger on master compare 4
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_MASTER_PERIOD|ADC Trigger on master period
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_EVENT_6|ADC Trigger on external event 6
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_EVENT_7|ADC Trigger on external event 7
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_EVENT_8|ADC Trigger on external event 8
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_EVENT_9|ADC Trigger on external event 9
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_EVENT_10|ADC Trigger on external event 10
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERA_CMP2|ADC Trigger on Timer A compare 2
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERA_CMP3|ADC Trigger on Timer A compare 3
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERA_CMP4|ADC Trigger on Timer A compare 4
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERA_PERIOD|ADC Trigger on Timer A period
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERB_CMP2|ADC Trigger on Timer B compare 2
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERB_CMP3|ADC Trigger on Timer B compare 3
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERB_CMP4|ADC Trigger on Timer B compare 4
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERB_PERIOD|ADC Trigger on Timer B period
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERC_CMP2|ADC Trigger on Timer C compare 2
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERC_CMP3|ADC Trigger on Timer C compare 3
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERC_CMP4|ADC Trigger on Timer C compare 4
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERC_PERIOD|ADC Trigger on Timer C period
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERC_RESET|ADC Trigger on Timer C reset
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERD_CMP2|ADC Trigger on Timer D compare 2
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERD_CMP3|ADC Trigger on Timer D compare 3
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERD_CMP4|ADC Trigger on Timer D compare 4
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERD_PERIOD|ADC Trigger on Timer D period
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERD_RESET|ADC Trigger on Timer D reset
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERE_CMP2|ADC Trigger on Timer E compare 2
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERE_CMP3|ADC Trigger on Timer E compare 3
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERE_CMP4|ADC Trigger on Timer E compare 4
+Source_ADCTrigger24|HRTIM_ADCTRIGGEREVENT24_TIMERE_RESET|ADC Trigger on Timer E reset
+PrescalerFault|HRTIM_FAULTPRESCALER_DIV1|fFLTS=fHRTIM
+PrescalerFault|HRTIM_FAULTPRESCALER_DIV2|fFLTS=fHRTIM div 2
+PrescalerFault|HRTIM_FAULTPRESCALER_DIV4|fFLTS=fHRTIM div 4
+PrescalerFault|HRTIM_FAULTPRESCALER_DIV8|fFLTS=fHRTIM div 8
+PrescalerFault|__NULL|Disable
+EnableFault|HRTIM_FAULTMODECTL_ENABLED|Enable Fault Line
+EnableFault|HRTIM_FAULTMODECTL_DISABLED|Disable Fault Line (Fault Line is configured but not enabled)
+Fault_Line1|__NULL|No Configuration of Fault Line
+Fault_Line1|HRTIM_FAULT_1|Configure Fault Line
+Fault_Line2|__NULL|No Configuration of Fault Line
+Fault_Line2|HRTIM_FAULT_2|Configure Fault Line
+Fault_Line3|__NULL|No Configuration of Fault Line
+Fault_Line3|HRTIM_FAULT_3|Configure Fault Line
+Fault_Line4|__NULL|No Configuration of Fault Line
+Fault_Line4|HRTIM_FAULT_4|Configure Fault Line
+Fault_Line5|__NULL|No Configuration of Fault Line
+Fault_Line5|HRTIM_FAULT_5|Configure Fault Line
+Source_FaultLine|HRTIM_FAULTSOURCE_DIGITALINPUT|Fault input is FLT input pin
+Source_FaultLine|HRTIM_FAULTSOURCE_INTERNAL|Fault input is FLT_Int signal (e.g. internal comparator)
+Polarity_FaultLine|HRTIM_FAULTPOLARITY_HIGH|External event is active high
+Polarity_FaultLine|HRTIM_FAULTPOLARITY_LOW|External event is active low
+Filter_FaultLine|HRTIM_FAULTFILTER_NONE|Filter disabled
+Filter_FaultLine|HRTIM_FAULTFILTER_1|fSAMPLING= fHRTIM, N=2
+Filter_FaultLine|HRTIM_FAULTFILTER_2|fSAMPLING= fHRTIM, N=4
+Filter_FaultLine|HRTIM_FAULTFILTER_3|fSAMPLING= fHRTIM, N=8
+Filter_FaultLine|HRTIM_FAULTFILTER_4|fSAMPLING= fFLTS div 2, N=6
+Filter_FaultLine|HRTIM_FAULTFILTER_5|fSAMPLING= fFLTS div 2, N=8
+Filter_FaultLine|HRTIM_FAULTFILTER_6|fSAMPLING= fFLTS div 4, N=6
+Filter_FaultLine|HRTIM_FAULTFILTER_7|fSAMPLING= fFLTS div 4, N=8
+Filter_FaultLine|HRTIM_FAULTFILTER_8|fSAMPLING= fFLTS div 8, N=6
+Filter_FaultLine|HRTIM_FAULTFILTER_9|fSAMPLING= fFLTS div 8, N=8
+Filter_FaultLine|HRTIM_FAULTFILTER_10|fSAMPLING= fFLTS div 16, N=5
+Filter_FaultLine|HRTIM_FAULTFILTER_11|fSAMPLING= fFLTS div 16, N=6
+Filter_FaultLine|HRTIM_FAULTFILTER_12|fSAMPLING= fFLTS div 16, N=8
+Filter_FaultLine|HRTIM_FAULTFILTER_13|fSAMPLING= fFLTS div 32, N=5
+Filter_FaultLine|HRTIM_FAULTFILTER_14|fSAMPLING= fFLTS div 32, N=6
+Filter_FaultLine|HRTIM_FAULTFILTER_15|fSAMPLING= fFLTS div 32, N=8
+Lock_FaultLine|HRTIM_FAULTLOCK_READWRITE|Fault settings bits are read/write
+Lock_FaultLine|HRTIM_FAULTLOCK_READONLY|Fault settings bits are read only
+EventPrescaler|HRTIM_EVENTPRESCALER_DIV1|fEEVS=fHRTIM
+EventPrescaler|HRTIM_EVENTPRESCALER_DIV2|fEEVS=fHRTIM div 2
+EventPrescaler|HRTIM_EVENTPRESCALER_DIV4|fEEVS=fHRTIM div 4
+EventPrescaler|HRTIM_EVENTPRESCALER_DIV8|fEEVS=fHRTIM div 8
+Event_EEV1|__NULL|Disable
+Event_EEV1|HRTIM_EVENT_1|Enable External Event 1
+Event_EEV2|__NULL|Disable
+Event_EEV2|HRTIM_EVENT_2|Enable External Event 2
+Event_EEV3|__NULL|Disable
+Event_EEV3|HRTIM_EVENT_3|Enable External Event 3
+Event_EEV4|__NULL|Disable
+Event_EEV4|HRTIM_EVENT_4|Enable External Event 4
+Event_EEV5|__NULL|Disable
+Event_EEV5|HRTIM_EVENT_5|Enable External Event 5
+Event_EEV6|__NULL|Disable
+Event_EEV6|HRTIM_EVENT_6|Enable External Event 6
+Event_EEV7|__NULL|Disable
+Event_EEV7|HRTIM_EVENT_7|Enable External Event 7
+Event_EEV8|__NULL|Disable
+Event_EEV8|HRTIM_EVENT_8|Enable External Event 8
+Event_EEV9|__NULL|Disable
+Event_EEV9|HRTIM_EVENT_9|Enable External Event 9
+Event_EEV10|__NULL|Disable
+Event_EEV10|HRTIM_EVENT_10|Enable External Event 10
+Source_EEV|HRTIM_EVENTSRC_1|1
+Source_EEV|HRTIM_EVENTSRC_2|2
+Source_EEV|HRTIM_EVENTSRC_3|3
+Source_EEV|HRTIM_EVENTSRC_4|4
+Polarity_EEV|HRTIM_EVENTPOLARITY_HIGH|External event is active high
+Polarity_EEV|HRTIM_EVENTPOLARITY_LOW|External event is active low
+Sensitivity_EEV|HRTIM_EVENTSENSITIVITY_LEVEL|External event is active on level
+Sensitivity_EEV|HRTIM_EVENTSENSITIVITY_RISINGEDGE|External event is active on Rising edge
+Sensitivity_EEV|HRTIM_EVENTSENSITIVITY_FALLINGEDGE|External event is active on Falling edge
+Sensitivity_EEV|HRTIM_EVENTSENSITIVITY_BOTHEDGES|External event is active on Rising and Falling edges
+FastMode_EEV|HRTIM_EVENTFASTMODE_DISABLE|External Event is acting asynchronously on outputs (low latency mode)
+FastMode_EEV|HRTIM_EVENTFASTMODE_ENABLE|External Event is re-synchronized by the HRTIM logic before acting on outputs
+Filter_EEV|HRTIM_EVENTFILTER_NONE|Filter disabled
+Filter_EEV|HRTIM_EVENTFILTER_1|fSAMPLING= fHRTIM, N=2
+Filter_EEV|HRTIM_EVENTFILTER_2|fSAMPLING= fHRTIM, N=4
+Filter_EEV|HRTIM_EVENTFILTER_3|fSAMPLING= fHRTIM, N=8
+Filter_EEV|HRTIM_EVENTFILTER_4|fSAMPLING= fEEVS div 2, N=6
+Filter_EEV|HRTIM_EVENTFILTER_5|fSAMPLING= fEEVS div 2, N=8
+Filter_EEV|HRTIM_EVENTFILTER_6|fSAMPLING= fEEVS div 4, N=6
+Filter_EEV|HRTIM_EVENTFILTER_7|fSAMPLING= fEEVS div 4, N=8
+Filter_EEV|HRTIM_EVENTFILTER_8|fSAMPLING= fEEVS div 8, N=6
+Filter_EEV|HRTIM_EVENTFILTER_9|fSAMPLING= fEEVS div 8, N=8
+Filter_EEV|HRTIM_EVENTFILTER_10|fSAMPLING= fEEVS div 16, N=5
+Filter_EEV|HRTIM_EVENTFILTER_11|fSAMPLING= fEEVS div 16, N=6
+Filter_EEV|HRTIM_EVENTFILTER_12|fSAMPLING= fEEVS div 16, N=8
+Filter_EEV|HRTIM_EVENTFILTER_13|fSAMPLING= fEEVS div 32, N=5
+Filter_EEV|HRTIM_EVENTFILTER_14|fSAMPLING= fEEVS div 32, N=6
+Filter_EEV|HRTIM_EVENTFILTER_15|fSAMPLING= fEEVS div 32, N=8
+TimerIdx|__NULL|Disable
+TimerIdx|HRTIM_TIMERINDEX_TIMER_A|Timer A
+TimerIdx|HRTIM_TIMERINDEX_TIMER_B|Timer B
+TimerIdx|HRTIM_TIMERINDEX_TIMER_C|Timer C
+TimerIdx|HRTIM_TIMERINDEX_TIMER_D|Timer D
+TimerIdx|HRTIM_TIMERINDEX_TIMER_E|Timer E
+TimerIdx|HRTIM_TIMERINDEX_MASTER|Master Timer
+PrescalerRatio_TA|HRTIM_PRESCALERRATIO_DIV1|HRTIM Clock (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TA|HRTIM_PRESCALERRATIO_DIV2|HRTIM Clock Divided by 2 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TA|HRTIM_PRESCALERRATIO_DIV4|HRTIM Clock Divided by 4 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TB|HRTIM_PRESCALERRATIO_DIV1|HRTIM Clock (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TB|HRTIM_PRESCALERRATIO_DIV2|HRTIM Clock Divided by 2 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TB|HRTIM_PRESCALERRATIO_DIV4|HRTIM Clock Divided by 4 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TC|HRTIM_PRESCALERRATIO_DIV1|HRTIM Clock (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TC|HRTIM_PRESCALERRATIO_DIV2|HRTIM Clock Divided by 2 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TC|HRTIM_PRESCALERRATIO_DIV4|HRTIM Clock Divided by 4 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TD|HRTIM_PRESCALERRATIO_DIV1|HRTIM Clock (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TD|HRTIM_PRESCALERRATIO_DIV2|HRTIM Clock Divided by 2 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TD|HRTIM_PRESCALERRATIO_DIV4|HRTIM Clock Divided by 4 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TE|HRTIM_PRESCALERRATIO_DIV1|HRTIM Clock (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TE|HRTIM_PRESCALERRATIO_DIV2|HRTIM Clock Divided by 2 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_TE|HRTIM_PRESCALERRATIO_DIV4|HRTIM Clock Divided by 4 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_MASTER|HRTIM_PRESCALERRATIO_DIV1|HRTIM Clock (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_MASTER|HRTIM_PRESCALERRATIO_DIV2|HRTIM Clock Divided by 2 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+PrescalerRatio_MASTER|HRTIM_PRESCALERRATIO_DIV4|HRTIM Clock Divided by 4 (HRTIM Clock is set in Clock Configuration Tab with Max Value = 400MHz)
+ModeTimeBase|HRTIM_MODE_CONTINUOUS|The timer operates in continuous (free-running) mode
+ModeTimeBase|HRTIM_MODE_SINGLESHOT|The timer operates in non retriggerable single-shot mode
+ModeTimeBase|HRTIM_MODE_SINGLESHOT_RETRIGGERABLE|The timer operates in retriggerable single-shot mode
+HalfModeEnable|HRTIM_HALFMODE_DISABLED|Half mode is disabled
+HalfModeEnable|HRTIM_HALFMODE_ENABLED|Half mode is enabled - Period has to be set at least twice its Min Value
+StartOnSync|HRTIM_SYNCSTART_DISABLED|Synchronization input event has no effect on the timer
+StartOnSync|HRTIM_SYNCSTART_ENABLED|Synchronization input event starts the timer
+ResetOnSync|HRTIM_SYNCRESET_DISABLED|Synchronization input event has no effect on the timer
+ResetOnSync|HRTIM_SYNCRESET_ENABLED|Synchronization input event resets the timer
+DACSynchro|HRTIM_DACSYNC_NONE|No DAC synchronization event generated
+DACSynchro|HRTIM_DACSYNC_DACTRIGOUT_1|DAC synchronization event generated on DACTrigOut1 output upon timer update
+DACSynchro|HRTIM_DACSYNC_DACTRIGOUT_2|DAC synchronization event generated on DACTrigOut2 output upon timer update
+DACSynchro|HRTIM_DACSYNC_DACTRIGOUT_3|DAC update generated on DACTrigOut3 output upon timer update
+PreloadEnable|HRTIM_PRELOAD_DISABLED|Preload disabled: the write access is directly done into the active register
+PreloadEnable|HRTIM_PRELOAD_ENABLED|Preload enabled: the write access is done into the preload register
+UpdateGating_MASTER|HRTIM_UPDATEGATING_INDEPENDENT|Update done independently from the DMA burst transfer completion
+UpdateGating_MASTER|HRTIM_UPDATEGATING_DMABURST|Update done when the DMA burst transfer is completed
+UpdateGating_MASTER|HRTIM_UPDATEGATING_DMABURST_UPDATE|Update done on timer roll-over following a DMA burst transfer completion
+UpdateGating_TA|HRTIM_UPDATEGATING_INDEPENDENT|Update done independently from the DMA burst transfer completion
+UpdateGating_TA|HRTIM_UPDATEGATING_DMABURST|Update done when the DMA burst transfer is completed
+UpdateGating_TA|HRTIM_UPDATEGATING_DMABURST_UPDATE|Update done on timer roll-over following a DMA burst transfer completion
+UpdateGating_TA|HRTIM_UPDATEGATING_UPDEN1|Slave timer only - Update done on a rising edge of HRTIM update enable input 1
+UpdateGating_TA|HRTIM_UPDATEGATING_UPDEN2|Slave timer only - Update done on a rising edge of HRTIM update enable input 2
+UpdateGating_TA|HRTIM_UPDATEGATING_UPDEN3|Slave timer only - Update done on a rising edge of HRTIM update enable input 3
+UpdateGating_TA|HRTIM_UPDATEGATING_UPDEN1_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 1
+UpdateGating_TA|HRTIM_UPDATEGATING_UPDEN2_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 2
+UpdateGating_TA|HRTIM_UPDATEGATING_UPDEN3_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 3
+UpdateGating_TB|HRTIM_UPDATEGATING_INDEPENDENT|Update done independently from the DMA burst transfer completion
+UpdateGating_TB|HRTIM_UPDATEGATING_DMABURST|Update done when the DMA burst transfer is completed
+UpdateGating_TB|HRTIM_UPDATEGATING_DMABURST_UPDATE|Update done on timer roll-over following a DMA burst transfer completion
+UpdateGating_TB|HRTIM_UPDATEGATING_UPDEN1|Slave timer only - Update done on a rising edge of HRTIM update enable input 1
+UpdateGating_TB|HRTIM_UPDATEGATING_UPDEN2|Slave timer only - Update done on a rising edge of HRTIM update enable input 2
+UpdateGating_TB|HRTIM_UPDATEGATING_UPDEN3|Slave timer only - Update done on a rising edge of HRTIM update enable input 3
+UpdateGating_TB|HRTIM_UPDATEGATING_UPDEN1_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 1
+UpdateGating_TB|HRTIM_UPDATEGATING_UPDEN2_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 2
+UpdateGating_TB|HRTIM_UPDATEGATING_UPDEN3_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 3
+UpdateGating_TC|HRTIM_UPDATEGATING_INDEPENDENT|Update done independently from the DMA burst transfer completion
+UpdateGating_TC|HRTIM_UPDATEGATING_DMABURST|Update done when the DMA burst transfer is completed
+UpdateGating_TC|HRTIM_UPDATEGATING_DMABURST_UPDATE|Update done on timer roll-over following a DMA burst transfer completion
+UpdateGating_TC|HRTIM_UPDATEGATING_UPDEN1|Slave timer only - Update done on a rising edge of HRTIM update enable input 1
+UpdateGating_TC|HRTIM_UPDATEGATING_UPDEN2|Slave timer only - Update done on a rising edge of HRTIM update enable input 2
+UpdateGating_TC|HRTIM_UPDATEGATING_UPDEN3|Slave timer only - Update done on a rising edge of HRTIM update enable input 3
+UpdateGating_TC|HRTIM_UPDATEGATING_UPDEN1_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 1
+UpdateGating_TC|HRTIM_UPDATEGATING_UPDEN2_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 2
+UpdateGating_TC|HRTIM_UPDATEGATING_UPDEN3_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 3
+UpdateGating_TD|HRTIM_UPDATEGATING_INDEPENDENT|Update done independently from the DMA burst transfer completion
+UpdateGating_TD|HRTIM_UPDATEGATING_DMABURST|Update done when the DMA burst transfer is completed
+UpdateGating_TD|HRTIM_UPDATEGATING_DMABURST_UPDATE|Update done on timer roll-over following a DMA burst transfer completion
+UpdateGating_TD|HRTIM_UPDATEGATING_UPDEN1|Slave timer only - Update done on a rising edge of HRTIM update enable input 1
+UpdateGating_TD|HRTIM_UPDATEGATING_UPDEN2|Slave timer only - Update done on a rising edge of HRTIM update enable input 2
+UpdateGating_TD|HRTIM_UPDATEGATING_UPDEN3|Slave timer only - Update done on a rising edge of HRTIM update enable input 3
+UpdateGating_TD|HRTIM_UPDATEGATING_UPDEN1_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 1
+UpdateGating_TD|HRTIM_UPDATEGATING_UPDEN2_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 2
+UpdateGating_TD|HRTIM_UPDATEGATING_UPDEN3_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 3
+UpdateGating_TE|HRTIM_UPDATEGATING_INDEPENDENT|Update done independently from the DMA burst transfer completion
+UpdateGating_TE|HRTIM_UPDATEGATING_DMABURST|Update done when the DMA burst transfer is completed
+UpdateGating_TE|HRTIM_UPDATEGATING_DMABURST_UPDATE|Update done on timer roll-over following a DMA burst transfer completion
+UpdateGating_TE|HRTIM_UPDATEGATING_UPDEN1|Slave timer only - Update done on a rising edge of HRTIM update enable input 1
+UpdateGating_TE|HRTIM_UPDATEGATING_UPDEN2|Slave timer only - Update done on a rising edge of HRTIM update enable input 2
+UpdateGating_TE|HRTIM_UPDATEGATING_UPDEN3|Slave timer only - Update done on a rising edge of HRTIM update enable input 3
+UpdateGating_TE|HRTIM_UPDATEGATING_UPDEN1_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 1
+UpdateGating_TE|HRTIM_UPDATEGATING_UPDEN2_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 2
+UpdateGating_TE|HRTIM_UPDATEGATING_UPDEN3_UPDATE|Slave timer only - Update done on the update event following a rising edge of HRTIM update enable input 3
+RepetitionUpdate|HRTIM_UPDATEONREPETITION_DISABLED|Update on repetition disabled
+RepetitionUpdate|HRTIM_UPDATEONREPETITION_ENABLED|Update on repetition enabled
+BurstMode|HRTIM_TIMERBURSTMODE_MAINTAINCLOCK|Timer counter clock is maintained and the timer operates normally
+BurstMode|HRTIM_TIMERBURSTMODE_RESETCOUNTER|Timer counter clock is stopped and the counter is reset
+PushPull|HRTIM_TIMPUSHPULLMODE_DISABLED|Push-Pull mode disabled
+PushPull|HRTIM_TIMPUSHPULLMODE_ENABLED|Push-Pull mode enabled
+FaultEnable|HRTIM_TIMFAULTENABLE_NONE|No fault enabled
+FaultEnable|HRTIM_TIMFAULTENABLE_FAULT1|Fault 1 enabled
+FaultEnable|HRTIM_TIMFAULTENABLE_FAULT2|Fault 2 enabled
+FaultEnable|HRTIM_TIMFAULTENABLE_FAULT3|Fault 3 enabled
+FaultEnable|HRTIM_TIMFAULTENABLE_FAULT4|Fault 4 enabled
+FaultEnable|HRTIM_TIMFAULTENABLE_FAULT5|Fault 5 enabled
+FaultLock|HRTIM_TIMFAULTLOCK_READWRITE|Timer fault enabling bits are read/write
+FaultLock|HRTIM_TIMFAULTLOCK_READONLY|Timer fault enabling bits are read only
+DeadTimeInsertion|HRTIM_TIMDEADTIMEINSERTION_DISABLED|Output 1 and output 2 signals are independent
+DeadTimeInsertion|HRTIM_TIMDEADTIMEINSERTION_ENABLED|Deadtime is inserted between output 1 and output 2
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_DISABLED|No action
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_DELAYEDOUT1_EEV6|Output 1 delayed Idle on external Event 6
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_DELAYEDOUT2_EEV6|Output 2 delayed Idle on external Event 6
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_DELAYEDBOTH_EEV6|Output 1 and output 2 delayed Idle on external Event 6
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_BALANCED_EEV6|Balanced Idle on external Event 6
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_DELAYEDOUT1_DEEV7|Output 1 delayed Idle on external Event 7
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_DELAYEDOUT2_DEEV7|Output 2 delayed Idle on external Event 7
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_DELAYEDBOTH_EEV7|Output 1 and output2 delayed Idle on external Event 7
+DelayedProtectionMode|HRTIM_TIMER_A_B_C_DELAYEDPROTECTION_BALANCED_EEV7|Balanced Idle on external Event 7
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_DISABLED|No action
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_DELAYEDOUT1_EEV8|Output 1 delayed Idle on external Event 8
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_DELAYEDOUT2_EEV8|Output 2 delayed Idle on external Event 8
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_DELAYEDBOTH_EEV8|Output 1 and output 2 delayed Idle on external Event 8
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_BALANCED_EEV8|Balanced Idle on external Event 8
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_DELAYEDOUT1_DEEV9|Output 1 delayed Idle on external Event 9
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_DELAYEDOUT2_DEEV9|Output 2 delayed Idle on external Event 9
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_DELAYEDBOTH_EEV9|Output 1 and output2 delayed Idle on external Event 9
+DelayedProtectionMode|HRTIM_TIMER_D_E_DELAYEDPROTECTION_BALANCED_EEV9|Balanced Idle on external Event 9
+UpdateTrigger|HRTIM_TIMUPDATETRIGGER_NONE|Register update is disabled
+UpdateTrigger|HRTIM_TIMUPDATETRIGGER_MASTER|Register update is triggered by the master timer update
+UpdateTrigger|HRTIM_TIMUPDATETRIGGER_TIMER_A|Register update is triggered by the timer A update
+UpdateTrigger|HRTIM_TIMUPDATETRIGGER_TIMER_B|Register update is triggered by the timer B update
+UpdateTrigger|HRTIM_TIMUPDATETRIGGER_TIMER_C|Register update is triggered by the timer C update
+UpdateTrigger|HRTIM_TIMUPDATETRIGGER_TIMER_D|Register update is triggered by the timer D update
+UpdateTrigger|HRTIM_TIMUPDATETRIGGER_TIMER_E|Register update is triggered by the timer E update
+ResetUpdate|HRTIM_TIMUPDATEONRESET_DISABLED|Update by Timer reset / roll-over disabled
+ResetUpdate|HRTIM_TIMUPDATEONRESET_ENABLED|Update by Timer reset / roll-over enabled
+ResetTrigger|HRTIM_TIMRESETTRIGGER_NONE|No counter reset trigger
+ResetTrigger|HRTIM_TIMRESETTRIGGER_UPDATE|The timer counter is reset upon update event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_CMP2|The timer counter is reset upon Timer A Compare 2 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_CMP4|The timer counter is reset upon Timer A Compare 4 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_MASTER_PER|The timercounter is reset upon master timer period event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_MASTER_CMP1|The timer counter is reset upon master timer Compare 1 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_MASTER_CMP2|The timer counter is reset upon master timer Compare 2 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_MASTER_CMP3|The timer counter is reset upon master timer Compare 3 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_MASTER_CMP4|The timer counter is reset upon master timer Compare 4 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_1|The timer counter is reset upon external event 1
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_2|The timer counter is reset upon external event 2
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_3|The timer counter is reset upon external event 3
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_4|The timer counter is reset upon external event 4
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_5|The timer counter is reset upon external event 5
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_6|The timer counter is reset upon external event 6
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_7|The timer counter is reset upon external event 7
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_8|The timer counter is reset upon external event 8
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_9|The timer counter is reset upon external event 9
+ResetTrigger|HRTIM_TIMRESETTRIGGER_EEV_10|The timer counter is reset upon external event 10
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER1_CMP1|The timer counter is reset upon Timer B Compare 1 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER1_CMP2|The timer counter is reset upon Timer B Compare 2 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER1_CMP4|The timer counter is reset upon Timer B Compare 4 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER2_CMP1|The timer counter is reset upon Timer C Compare 1 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER2_CMP2|The timer counter is reset upon Timer C Compare 2 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER2_CMP4|The timer counter is reset upon Timer D Compare 4 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER3_CMP1|The timer counter is reset upon other timer Compare 1 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER3_CMP2|The timer counter is reset upon other timer Compare 2 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER3_CMP4|The timer counter is reset upon other timer Compare 4 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER4_CMP1|The timer counter is reset upon other timer Compare 1 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER4_CMP2|The timer counter is reset upon other timer Compare 2 event
+ResetTrigger|HRTIM_TIMRESETTRIGGER_OTHER4_CMP4|The timer counter is reset upon other timer Compare 4 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_NONE|No counter reset trigger
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_UPDATE|The timer counter is reset upon update event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_CMP2|The timer counter is reset upon Timer A Compare 2 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_CMP4|The timer counter is reset upon Timer A Compare 4 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_MASTER_PER|The timer counter is reset upon master timer period event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_MASTER_CMP1|The timer counter is reset upon master timer Compare 1 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_MASTER_CMP2|The timer counter is reset upon master timer Compare 2 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_MASTER_CMP3|The timer counter is reset upon master timer Compare 3 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_MASTER_CMP4|The timer counter is reset upon master timer Compare 4 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_1|The timer counter is reset upon external event 1
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_2|The timer counter is reset upon external event 2
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_3|The timer counter is reset upon external event 3
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_4|The timer counter is reset upon external event 4
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_5|The timer counter is reset upon external event 5
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_6|The timer counter is reset upon external event 6
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_7|The timer counter is reset upon external event 7
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_8|The timer counter is reset upon external event 8
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_9|The timer counter is reset upon external event 9
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_EEV_10|The timer counter is reset upon external event 10
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER1_CMP1|The timer counter is reset upon Timer B Compare 1 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER1_CMP2|The timer counter is reset upon Timer B Compare 2 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER1_CMP4|The timer counter is reset upon Timer B Compare 4 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER2_CMP1|The timer counter is reset upon Timer C Compare 1 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER2_CMP2|The timer counter is reset upon Timer C Compare 2 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER2_CMP4|The timer counter is reset upon Timer C Compare 4 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER3_CMP1|The timer counter is reset upon Timer D Compare 1 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER3_CMP2|The timer counter is reset upon Timer D Compare 2 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER3_CMP4|The timer counter is reset upon Timer D Compare 4 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER4_CMP1|The timer counter is reset upon Timer E Compare 1 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER4_CMP2|The timer counter is reset upon Timer E Compare 2 event
+ResetTrigger_TA|HRTIM_TIMRESETTRIGGER_OTHER4_CMP4|The timer counter is reset upon Timer E Compare 4 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_NONE|No counter reset trigger
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_UPDATE|The timer counter is reset upon update event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_CMP2|The timer counter is reset upon Timer B Compare 2 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_CMP4|The timer counter is reset upon Timer B Compare 4 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_MASTER_PER|The timer counter is reset upon master timer period event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_MASTER_CMP1|The timer counter is reset upon master timer Compare 1 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_MASTER_CMP2|The timer counter is reset upon master timer Compare 2 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_MASTER_CMP3|The timer counter is reset upon master timer Compare 3 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_MASTER_CMP4|The timer counter is reset upon master timer Compare 4 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_1|The timer counter is reset upon external event 1
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_2|The timer counter is reset upon external event 2
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_3|The timer counter is reset upon external event 3
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_4|The timer counter is reset upon external event 4
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_5|The timer counter is reset upon external event 5
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_6|The timer counter is reset upon external event 6
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_7|The timer counter is reset upon external event 7
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_8|The timer counter is reset upon external event 8
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_9|The timer counter is reset upon external event 9
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_EEV_10|The timer counter is reset upon external event 10
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER1_CMP1|The timer counter is reset upon Timer A Compare 1 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER1_CMP2|The timer counter is reset upon Timer A Compare 2 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER1_CMP4|The timer counter is reset upon Timer A Compare 4 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER2_CMP1|The timer counter is reset upon Timer C Compare 1 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER2_CMP2|The timer counter is reset upon Timer C Compare 2 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER2_CMP4|The timer counter is reset upon Timer C Compare 4 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER3_CMP1|The timer counter is reset upon Timer D Compare 1 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER3_CMP2|The timer counter is reset upon Timer D Compare 2 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER3_CMP4|The timer counter is reset upon Timer D Compare 4 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER4_CMP1|The timer counter is reset upon Timer E Compare 1 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER4_CMP2|The timer counter is reset upon Timer E Compare 2 event
+ResetTrigger_TB|HRTIM_TIMRESETTRIGGER_OTHER4_CMP4|The timer counter is reset upon Timer E Compare 4 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_NONE|No counter reset trigger
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_UPDATE|The timer counter is reset upon update event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_CMP2|The timer counter is reset upon Timer C Compare 2 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_CMP4|The timer counter is reset upon Timer C Compare 4 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_MASTER_PER|The timer counter is reset upon master timer period event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_MASTER_CMP1|The timer counter is reset upon master timer Compare 1 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_MASTER_CMP2|The timer counter is reset upon master timer Compare 2 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_MASTER_CMP3|The timer counter is reset upon master timer Compare 3 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_MASTER_CMP4|The timer counter is reset upon master timer Compare 4 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_1|The timer counter is reset upon external event 1
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_2|The timer counter is reset upon external event 2
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_3|The timer counter is reset upon external event 3
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_4|The timer counter is reset upon external event 4
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_5|The timer counter is reset upon external event 5
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_6|The timer counter is reset upon external event 6
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_7|The timer counter is reset upon external event 7
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_8|The timer counter is reset upon external event 8
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_9|The timer counter is reset upon external event 9
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_EEV_10|The timer counter is reset upon external event 10
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER1_CMP1|The timer counter is reset upon Timer A Compare 1 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER1_CMP2|The timer counter is reset upon Timer A Compare 2 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER1_CMP4|The timer counter is reset upon Timer A Compare 4 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER2_CMP1|The timer counter is reset upon Timer B Compare 1 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER2_CMP2|The timer counter is reset upon Timer B Compare 2 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER2_CMP4|The timer counter is reset upon Timer B Compare 4 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER3_CMP1|The timer counter is reset upon Timer D Compare 1 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER3_CMP2|The timer counter is reset upon Timer D Compare 2 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER3_CMP4|The timer counter is reset upon Timer D Compare 4 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER4_CMP1|The timer counter is reset upon Timer E Compare 1 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER4_CMP2|The timer counter is reset upon Timer E Compare 2 event
+ResetTrigger_TC|HRTIM_TIMRESETTRIGGER_OTHER4_CMP4|The timer counter is reset upon Timer E Compare 4 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_NONE|No counter reset trigger
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_UPDATE|The timer counter is reset upon update event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_CMP2|The timer counter is reset upon Timer D Compare 2 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_CMP4|The timer counter is reset upon Timer D Compare 4 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_MASTER_PER|The timer counter is reset upon master timer period event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_MASTER_CMP1|The timer counter is reset upon master timer Compare 1 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_MASTER_CMP2|The timer counter is reset upon master timer Compare 2 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_MASTER_CMP3|The timer counter is reset upon master timer Compare 3 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_MASTER_CMP4|The timer counter is reset upon master timer Compare 4 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_1|The timer counter is reset upon external event 1
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_2|The timer counter is reset upon external event 2
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_3|The timer counter is reset upon external event 3
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_4|The timer counter is reset upon external event 4
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_5|The timer counter is reset upon external event 5
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_6|The timer counter is reset upon external event 6
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_7|The timer counter is reset upon external event 7
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_8|The timer counter is reset upon external event 8
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_9|The timer counter is reset upon external event 9
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_EEV_10|The timer counter is reset upon external event 10
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER1_CMP1|The timer counter is reset upon Timer A Compare 1 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER1_CMP2|The timer counter is reset upon Timer A Compare 2 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER1_CMP4|The timer counter is reset upon Timer A Compare 4 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER2_CMP1|The timer counter is reset upon Timer B Compare 1 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER2_CMP2|The timer counter is reset upon Timer B Compare 2 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER2_CMP4|The timer counter is reset upon Timer B Compare 4 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER3_CMP1|The timer counter is reset upon Timer C Compare 1 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER3_CMP2|The timer counter is reset upon Timer C Compare 2 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER3_CMP4|The timer counter is reset upon Timer C Compare 4 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER4_CMP1|The timer counter is reset upon Timer E Compare 1 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER4_CMP2|The timer counter is reset upon Timer E Compare 2 event
+ResetTrigger_TD|HRTIM_TIMRESETTRIGGER_OTHER4_CMP4|The timer counter is reset upon Timer E Compare 4 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_NONE|No counter reset trigger
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_UPDATE|The timer counter is reset upon update event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_CMP2|The timer counter is reset upon Timer E Compare 2 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_CMP4|The timer counter is reset upon Timer E Compare 4 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_MASTER_PER|The timer counter is reset upon master timer period event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_MASTER_CMP1|The timer counter is reset upon master timer Compare 1 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_MASTER_CMP2|The timer counter is reset upon master timer Compare 2 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_MASTER_CMP3|The timer counter is reset upon master timer Compare 3 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_MASTER_CMP4|The timer counter is reset upon master timer Compare 4 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_1|The timer counter is reset upon external event 1
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_2|The timer counter is reset upon external event 2
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_3|The timer counter is reset upon external event 3
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_4|The timer counter is reset upon external event 4
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_5|The timer counter is reset upon external event 5
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_6|The timer counter is reset upon external event 6
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_7|The timer counter is reset upon external event 7
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_8|The timer counter is reset upon external event 8
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_9|The timer counter is reset upon external event 9
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_EEV_10|The timer counter is reset upon external event 10
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER1_CMP1|The timer counter is reset upon Timer A Compare 1 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER1_CMP2|The timer counter is reset upon Timer A Compare 2 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER1_CMP4|The timer counter is reset upon Timer A Compare 4 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER2_CMP1|The timer counter is reset upon Timer B Compare 1 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER2_CMP2|The timer counter is reset upon Timer B Compare 2 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER2_CMP4|The timer counter is reset upon Timer B Compare 4 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER3_CMP1|The timer counter is reset upon Timer C Compare 1 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER3_CMP2|The timer counter is reset upon Timer C Compare 2 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER3_CMP4|The timer counter is reset upon Timer C Compare 4 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER4_CMP1|The timer counter is reset upon Timer D Compare 1 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER4_CMP2|The timer counter is reset upon Timer D Compare 2 event
+ResetTrigger_TE|HRTIM_TIMRESETTRIGGER_OTHER4_CMP4|The timer counter is reset upon Timer D Compare 4 event
+InterruptRequests|HRTIM_TIM_IT_NONE|No interrupt enabled
+InterruptRequests|HRTIM_TIM_IT_CMP1|Timer compare 1 interrupt enable
+InterruptRequests|HRTIM_TIM_IT_CMP2|Timer compare 2 interrupt enable
+InterruptRequests|HRTIM_TIM_IT_CMP3|Timer compare 3 interrupt enable
+InterruptRequests|HRTIM_TIM_IT_CMP4|Timer compare 4 interrupt enable
+InterruptRequests|HRTIM_TIM_IT_REP|Timer repetition interrupt enable
+InterruptRequests|HRTIM_TIM_IT_UPD|Timer update interrupt enable
+InterruptRequests|HRTIM_TIM_IT_CPT1|Timer capture 1 interrupt enable
+InterruptRequests|HRTIM_TIM_IT_CPT2|Timer capture 2 interrupt enable
+InterruptRequests|HRTIM_TIM_IT_SET1|Timer output 1 set interrupt enable
+InterruptRequests|HRTIM_TIM_IT_RST1|Timer output 1 reset interrupt enable
+InterruptRequests|HRTIM_TIM_IT_SET2|Timer output 2 set interrupt enable
+InterruptRequests|HRTIM_TIM_IT_RST2|Timer output 2 reset interrupt enable
+InterruptRequests|HRTIM_TIM_IT_RST|Timer reset interrupt enable
+InterruptRequests|HRTIM_TIM_IT_DLYPRT|Timer delay protection interrupt enable
+InterruptRequests_MASTER|HRTIM_MASTER_IT_NONE|No interrupt enabled
+InterruptRequests_MASTER|HRTIM_MASTER_IT_MCMP1|Timer compare 1 interrupt enable
+InterruptRequests_MASTER|HRTIM_MASTER_IT_MCMP2|Timer compare 2 interrupt enable
+InterruptRequests_MASTER|HRTIM_MASTER_IT_MCMP3|Timer compare 3 interrupt enable
+InterruptRequests_MASTER|HRTIM_MASTER_IT_MCMP4|Timer compare 4 interrupt enable
+InterruptRequests_MASTER|HRTIM_MASTER_IT_MREP|Timer repetition interrupt enable
+InterruptRequests_MASTER|HRTIM_MASTER_IT_MUPD|Timer update interrupt enable
+InterruptRequests_MASTER|HRTIM_MASTER_IT_SYNC|Synchronization input interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_NONE|No interrupt enabled
+InterruptRequests_TA|HRTIM_TIM_IT_CMP1|Timer compare 1 interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_CMP2|Timer compare 2 interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_CMP3|Timer compare 3 interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_CMP4|Timer compare 4 interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_REP|Timer repetition interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_UPD|Timer update interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_CPT1|Timer capture 1 interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_CPT2|Timer capture 2 interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_SET1|Timer output 1 set interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_RST1|Timer output 1 reset interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_SET2|Timer output 2 set interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_RST2|Timer output 2 reset interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_RST|Timer reset interrupt enable
+InterruptRequests_TA|HRTIM_TIM_IT_DLYPRT|Timer delay protection interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_NONE|No interrupt enabled
+InterruptRequests_TB|HRTIM_TIM_IT_CMP1|Timer compare 1 interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_CMP2|Timer compare 2 interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_CMP3|Timer compare 3 interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_CMP4|Timer compare 4 interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_REP|Timer repetition interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_UPD|Timer update interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_CPT1|Timer capture 1 interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_CPT2|Timer capture 2 interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_SET1|Timer output 1 set interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_RST1|Timer output 1 reset interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_SET2|Timer output 2 set interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_RST2|Timer output 2 reset interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_RST|Timer reset interrupt enable
+InterruptRequests_TB|HRTIM_TIM_IT_DLYPRT|Timer delay protection interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_NONE|No interrupt enabled
+InterruptRequests_TC|HRTIM_TIM_IT_CMP1|Timer compare 1 interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_CMP2|Timer compare 2 interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_CMP3|Timer compare 3 interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_CMP4|Timer compare 4 interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_REP|Timer repetition interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_UPD|Timer update interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_CPT1|Timer capture 1 interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_CPT2|Timer capture 2 interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_SET1|Timer output 1 set interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_RST1|Timer output 1 reset interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_SET2|Timer output 2 set interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_RST2|Timer output 2 reset interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_RST|Timer reset interrupt enable
+InterruptRequests_TC|HRTIM_TIM_IT_DLYPRT|Timer delay protection interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_NONE|No interrupt enabled
+InterruptRequests_TD|HRTIM_TIM_IT_CMP1|Timer compare 1 interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_CMP2|Timer compare 2 interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_CMP3|Timer compare 3 interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_CMP4|Timer compare 4 interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_REP|Timer repetition interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_UPD|Timer update interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_CPT1|Timer capture 1 interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_CPT2|Timer capture 2 interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_SET1|Timer output 1 set interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_RST1|Timer output 1 reset interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_SET2|Timer output 2 set interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_RST2|Timer output 2 reset interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_RST|Timer reset interrupt enable
+InterruptRequests_TD|HRTIM_TIM_IT_DLYPRT|Timer delay protection interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_NONE|No interrupt enabled
+InterruptRequests_TE|HRTIM_TIM_IT_CMP1|Timer compare 1 interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_CMP2|Timer compare 2 interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_CMP3|Timer compare 3 interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_CMP4|Timer compare 4 interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_REP|Timer repetition interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_UPD|Timer update interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_CPT1|Timer capture 1 interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_CPT2|Timer capture 2 interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_SET1|Timer output 1 set interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_RST1|Timer output 1 reset interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_SET2|Timer output 2 set interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_RST2|Timer output 2 reset interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_RST|Timer reset interrupt enable
+InterruptRequests_TE|HRTIM_TIM_IT_DLYPRT|Timer delay protection interrupt enable
+DMARequests_Semaphore|__NULL|No DMA Request
+DMARequests|HRTIM_TIM_DMA_NONE|No DMA Request enabled
+DMARequests|HRTIM_TIM_DMA_CMP1|Timer compare 1 DMA request enable
+DMARequests|HRTIM_TIM_DMA_CMP2|Timer compare 2 DMA request enable
+DMARequests|HRTIM_TIM_DMA_CMP3|Timer compare 3 DMA request enable
+DMARequests|HRTIM_TIM_DMA_CMP4|Timer compare 4 DMA request enable
+DMARequests|HRTIM_TIM_DMA_REP|Timer repetition DMA request enable
+DMARequests|HRTIM_TIM_DMA_UPD|Timer update DMA request enable
+DMARequests|HRTIM_TIM_DMA_CPT1|Timer capture 1 DMA request enable
+DMARequests|HRTIM_TIM_DMA_CPT2|Timer capture 2 DMA request enable
+DMARequests|HRTIM_TIM_DMA_SET1|Timer output 1 set DMA request enable
+DMARequests|HRTIM_TIM_DMA_RST1|Timer output 1 reset DMA request enable
+DMARequests|HRTIM_TIM_DMA_SET2|Timer output 2 set DMA request enable
+DMARequests|HRTIM_TIM_DMA_RST2|Timer output 2 reset DMA request enable
+DMARequests|HRTIM_TIM_DMA_RST|Timer reset DMA request enable
+DMARequests|HRTIM_TIM_DMA_DLYPRT|Timer delay protection DMA request enable
+DMARequests_MASTER|HRTIM_MASTER_DMA_NONE|No DMA Request enabled
+DMARequests_MASTER|HRTIM_MASTER_DMA_MCMP1|Timer compare 1 DMA request enable
+DMARequests_MASTER|HRTIM_MASTER_DMA_MCMP2|Timer compare 2 DMA request enable
+DMARequests_MASTER|HRTIM_MASTER_DMA_MCMP3|Timer compare 3 DMA request enable
+DMARequests_MASTER|HRTIM_MASTER_DMA_MCMP4|Timer compare 4 DMA request enable
+DMARequests_MASTER|HRTIM_MASTER_DMA_MREP|Timer repetition DMA request enable
+DMARequests_MASTER|HRTIM_MASTER_DMA_MUPD|Timer update DMA request enable
+DMARequests_MASTER|HRTIM_MASTER_DMA_SYNC|Synchronization input interrupt enable
+DMARequests_TA|HRTIM_TIM_DMA_NONE|No DMA Request enabled
+DMARequests_TA|HRTIM_TIM_DMA_CMP1|Timer compare 1 DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_CMP2|Timer compare 2 DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_CMP3|Timer compare 3 DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_CMP4|Timer compare 4 DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_REP|Timer repetition DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_UPD|Timer update DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_CPT1|Timer capture 1 DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_CPT2|Timer capture 2 DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_SET1|Timer output 1 set DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_RST1|Timer output 1 reset DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_SET2|Timer output 2 set DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_RST2|Timer output 2 reset DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_RST|Timer reset DMA request enable
+DMARequests_TA|HRTIM_TIM_DMA_DLYPRT|Timer delay protection DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_NONE|No DMA Request enabled
+DMARequests_TB|HRTIM_TIM_DMA_CMP1|Timer compare 1 DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_CMP2|Timer compare 2 DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_CMP3|Timer compare 3 DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_CMP4|Timer compare 4 DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_REP|Timer repetition DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_UPD|Timer update DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_CPT1|Timer capture 1 DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_CPT2|Timer capture 2 DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_SET1|Timer output 1 set DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_RST1|Timer output 1 reset DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_SET2|Timer output 2 set DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_RST2|Timer output 2 reset DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_RST|Timer reset DMA request enable
+DMARequests_TB|HRTIM_TIM_DMA_DLYPRT|Timer delay protection DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_NONE|No DMA Request enabled
+DMARequests_TC|HRTIM_TIM_DMA_CMP1|Timer compare 1 DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_CMP2|Timer compare 2 DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_CMP3|Timer compare 3 DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_CMP4|Timer compare 4 DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_REP|Timer repetition DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_UPD|Timer update DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_CPT1|Timer capture 1 DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_CPT2|Timer capture 2 DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_SET1|Timer output 1 set DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_RST1|Timer output 1 reset DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_SET2|Timer output 2 set DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_RST2|Timer output 2 reset DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_RST|Timer reset DMA request enable
+DMARequests_TC|HRTIM_TIM_DMA_DLYPRT|Timer delay protection DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_NONE|No DMA Request enabled
+DMARequests_TD|HRTIM_TIM_DMA_CMP1|Timer compare 1 DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_CMP2|Timer compare 2 DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_CMP3|Timer compare 3 DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_CMP4|Timer compare 4 DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_REP|Timer repetition DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_UPD|Timer update DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_CPT1|Timer capture 1 DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_CPT2|Timer capture 2 DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_SET1|Timer output 1 set DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_RST1|Timer output 1 reset DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_SET2|Timer output 2 set DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_RST2|Timer output 2 reset DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_RST|Timer reset DMA request enable
+DMARequests_TD|HRTIM_TIM_DMA_DLYPRT|Timer delay protection DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_NONE|No DMA Request enabled
+DMARequests_TE|HRTIM_TIM_DMA_CMP1|Timer compare 1 DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_CMP2|Timer compare 2 DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_CMP3|Timer compare 3 DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_CMP4|Timer compare 4 DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_REP|Timer repetition DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_UPD|Timer update DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_CPT1|Timer capture 1 DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_CPT2|Timer capture 2 DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_SET1|Timer output 1 set DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_RST1|Timer output 1 reset DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_SET2|Timer output 2 set DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_RST2|Timer output 2 reset DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_RST|Timer reset DMA request enable
+DMARequests_TE|HRTIM_TIM_DMA_DLYPRT|Timer delay protection DMA request enable
+CompareUnit1|__NULL|Disable
+CompareUnit1|HRTIM_COMPAREUNIT_1|Enable
+CompareUnit2|__NULL|Disable
+CompareUnit2|HRTIM_COMPAREUNIT_2|Enable
+CompareUnit3|__NULL|Disable
+CompareUnit3|HRTIM_COMPAREUNIT_3|Enable
+CompareUnit4|__NULL|Disable
+CompareUnit4|HRTIM_COMPAREUNIT_4|Enable
+AutoDelayedMode_refcomp2|HRTIM_AUTODELAYEDMODE_REGULAR|standard compare mode
+AutoDelayedMode_refcomp2|HRTIM_AUTODELAYEDMODE_AUTODELAYED_NOTIMEOUT|Compare 2 event generated only if a Capture 1 has occured
+AutoDelayedMode_refcomp2|HRTIM_AUTODELAYEDMODE_AUTODELAYED_TIMEOUTCMP1|Compare 2 event generated if a Capture 1 has occured or after a Compare 1 match (timeout if Capture 1 event is missing)
+AutoDelayedMode_refcomp2|HRTIM_AUTODELAYEDMODE_AUTODELAYED_TIMEOUTCMP3|Compare 2 event generated if a Capture 1 has occured or after a Compare 3 match (timeout if Capture 1 event is missing)
+AutoDelayedMode_refcomp4|HRTIM_AUTODELAYEDMODE_REGULAR|standard compare mode
+AutoDelayedMode_refcomp4|HRTIM_AUTODELAYEDMODE_AUTODELAYED_NOTIMEOUT|Compare 4 event generated only if a Capture 2 has occured
+AutoDelayedMode_refcomp4|HRTIM_AUTODELAYEDMODE_AUTODELAYED_TIMEOUTCMP1|Compare 4 event generated if a Capture 2 has occured or after a Compare 1 match (timeout if Capture 2 event is missing)
+AutoDelayedMode_refcomp4|HRTIM_AUTODELAYEDMODE_AUTODELAYED_TIMEOUTCMP3|Compare 4 event generated if a Capture 2 has occured or after a Compare 3 match (timeout if Capture 2 event is missing)
+CaptureUnit1|__NULL|Disable
+CaptureUnit1|HRTIM_CAPTUREUNIT_1|Enable
+CaptureUnit2|__NULL|Disable
+CaptureUnit2|HRTIM_CAPTUREUNIT_2|Enable
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_NONE|Capture trigger is disabled
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_UPDATE|The update event triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_1|The External event 1 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_2|The External event 2 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_3|The External event 3 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_4|The External event 4 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_5|The External event 5 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_6|The External event 6 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_7|The External event 7 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_8|The External event 8 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_9|The External event 9 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_EEV_10|The External event 10 triggers the Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TA1_SET|Capture is triggered by TA1 output inactive to active transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TA1_RESET|Capture is triggered by TA1 output active to inactive transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERA_CMP1|Timer A Compare 1 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERA_CMP2|Timer A Compare 2 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TB1_SET|Capture is triggered by TB1 output inactive to active transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TB1_RESET|Capture is triggered by TB1 output active to inactive transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERB_CMP1|Timer B Compare 1 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERB_CMP2|Timer B Compare 2 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TC1_SET|Capture is triggered by TC1 output inactive to active transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TC1_RESET|Capture is triggered by TC1 output active to inactive transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERC_CMP1|Timer C Compare 1 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERC_CMP2|Timer C Compare 2 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TD1_SET|Capture is triggered by TD1 output inactive to active transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TD1_RESET|Capture is triggered by TD1 output active to inactive transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERD_CMP1|Timer D Compare 1 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERD_CMP2|Timer D Compare 2 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TE1_SET|Capture is triggered by TE1 output inactive to active transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TE1_RESET|Capture is triggered by TE1 output active to inactive transition
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERE_CMP1|Timer E Compare 1 triggers Capture
+Source_TriggerCapture|HRTIM_CAPTURETRIGGER_TIMERE_CMP2|Timer E Compare 2 triggers Capture
+Output1|__NULL|Disable
+Output1|HRTIM_OUTPUT_TA1|TA1
+Output1|HRTIM_OUTPUT_TB1|TB1
+Output1|HRTIM_OUTPUT_TC1|TC1
+Output1|HRTIM_OUTPUT_TD1|TD1
+Output1|HRTIM_OUTPUT_TE1|TE1
+Output2|__NULL|Disable
+Output2|HRTIM_OUTPUT_TA2|TA2
+Output2|HRTIM_OUTPUT_TB2|TB2
+Output2|HRTIM_OUTPUT_TC2|TC2
+Output2|HRTIM_OUTPUT_TD2|TD2
+Output2|HRTIM_OUTPUT_TE2|TE2
+Polarity|HRTIM_OUTPUTPOLARITY_HIGH|Output is active HIGH
+Polarity|HRTIM_OUTPUTPOLARITY_LOW|Output is active LOW
+SetSource_TA|HRTIM_OUTPUTSET_NONE|No source is selected
+SetSource_TA|HRTIM_OUTPUTSET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMPER|Timer period event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMCMP1|Timer compare 1 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMCMP2|Timer compare 2 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMCMP3|Timer compare 3 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMCMP4|Timer compare 4 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_MASTERPER|The master timer period event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_MASTERCMP1|Master Timer compare 1 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_MASTERCMP2|Master Timer compare 2 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_MASTERCMP3|Master Timer compare 3 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_MASTERCMP4|Master Timer compare 4 event forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_1|Timer event 1 (Timer B CMP1) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_2|Timer event 2 (Timer B CMP2) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_3|Timer event 3 (Timer B CMP4) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_4|Timer event 4 (Timer C CMP2) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_5|Timer event 5 (Timer C CMP3) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_6|Timer event 6 (Timer D CMP1) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_7|Timer event 7 (Timer D CMP2) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_8|Timer event 8 (Timer E CMP3) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_TIMEV_9|Timer event 9 (Timer E CMP4) forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_1|External event 1 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_2|External event 2 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_3|External event 3 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_4|External event 4 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_5|External event 5 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_6|External event 6 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_7|External event 7 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_8|External event 8 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_9|External event 9 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_EEV_10|External event 10 forces the output to its active state
+SetSource_TA|HRTIM_OUTPUTSET_UPDATE|Timer register update event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_NONE|No source is selected
+SetSource_TB|HRTIM_OUTPUTSET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMPER|Timer period event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMCMP1|Timer compare 1 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMCMP2|Timer compare 2 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMCMP3|Timer compare 3 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMCMP4|Timer compare 4 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_MASTERPER|The master timer period event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_MASTERCMP1|Master Timer compare 1 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_MASTERCMP2|Master Timer compare 2 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_MASTERCMP3|Master Timer compare 3 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_MASTERCMP4|Master Timer compare 4 event forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_1|Timer event 1 (Timer A CMP1) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_2|Timer event 2 (Timer A CMP2) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_3|Timer event 3 (Timer A CMP4) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_4|Timer event 4 (Timer C CMP3) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_5|Timer event 5 (Timer C CMP4) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_6|Timer event 6 (Timer D CMP3) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_7|Timer event 7 (Timer D CMP4) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_8|Timer event 8 (Timer E CMP1) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_TIMEV_9|Timer event 9 (Timer E CMP2) forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_1|External event 1 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_2|External event 2 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_3|External event 3 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_4|External event 4 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_5|External event 5 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_6|External event 6 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_7|External event 7 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_8|External event 8 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_9|External event 9 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_EEV_10|External event 10 forces the output to its active state
+SetSource_TB|HRTIM_OUTPUTSET_UPDATE|Timer register update event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_NONE|No source is selected
+SetSource_TC|HRTIM_OUTPUTSET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMPER|Timer period event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMCMP1|Timer compare 1 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMCMP2|Timer compare 2 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMCMP3|Timer compare 3 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMCMP4|Timer compare 4 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_MASTERPER|The master timer period event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_MASTERCMP1|Master Timer compare 1 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_MASTERCMP2|Master Timer compare 2 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_MASTERCMP3|Master Timer compare 3 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_MASTERCMP4|Master Timer compare 4 event forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_1|Timer event 1 (Timer A CMP2) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_2|Timer event 2 (Timer A CMP3) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_3|Timer event 3 (Timer B CMP2) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_4|Timer event 4 (Timer B CMP3) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_5|Timer event 5 (Timer D CMP2) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_6|Timer event 6 (Timer D CMP4) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_7|Timer event 7 (Timer E CMP2) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_8|Timer event 8 (Timer E CMP3) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_TIMEV_9|Timer event 9 (Timer E CMP4) forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_1|External event 1 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_2|External event 2 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_3|External event 3 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_4|External event 4 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_5|External event 5 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_6|External event 6 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_7|External event 7 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_8|External event 8 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_9|External event 9 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_EEV_10|External event 10 forces the output to its active state
+SetSource_TC|HRTIM_OUTPUTSET_UPDATE|Timer register update event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_NONE|No source is selected
+SetSource_TD|HRTIM_OUTPUTSET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMPER|Timer period event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMCMP1|Timer compare 1 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMCMP2|Timer compare 2 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMCMP3|Timer compare 3 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMCMP4|Timer compare 4 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_MASTERPER|The master timer period event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_MASTERCMP1|Master Timer compare 1 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_MASTERCMP2|Master Timer compare 2 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_MASTERCMP3|Master Timer compare 3 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_MASTERCMP4|Master Timer compare 4 event forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_1|Timer event 1 (Timer A CMP1) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_2|Timer event 2 (Timer A CMP4) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_3|Timer event 3 (Timer B CMP2) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_4|Timer event 4 (Timer B CMP4) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_5|Timer event 5 (Timer C CMP1) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_6|Timer event 6 (Timer C CMP3) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_7|Timer event 7 (Timer C CMP4) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_8|Timer event 8 (Timer E CMP1) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_TIMEV_9|Timer event 9 (Timer E CMP4) forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_1|External event 1 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_2|External event 2 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_3|External event 3 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_4|External event 4 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_5|External event 5 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_6|External event 6 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_7|External event 7 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_8|External event 8 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_9|External event 9 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_EEV_10|External event 10 forces the output to its active state
+SetSource_TD|HRTIM_OUTPUTSET_UPDATE|Timer register update event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_NONE|No source is selected
+SetSource_TE|HRTIM_OUTPUTSET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMPER|Timer period event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMCMP1|Timer compare 1 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMCMP2|Timer compare 2 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMCMP3|Timer compare 3 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMCMP4|Timer compare 4 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_MASTERPER|The master timer period event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_MASTERCMP1|Master Timer compare 1 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_MASTERCMP2|Master Timer compare 2 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_MASTERCMP3|Master Timer compare 3 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_MASTERCMP4|Master Timer compare 4 event forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_1|Timer event 1 (Timer A CMP3) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_2|Timer event 2 (Timer A CMP4) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_3|Timer event 3 (Timer B CMP3) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_4|Timer event 4 (Timer B CMP4) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_5|Timer event 5 (Timer C CMP1) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_6|Timer event 6 (Timer C CMP2) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_7|Timer event 7 (Timer D CMP1) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_8|Timer event 8 (Timer D CMP2) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_TIMEV_9|Timer event 9 (Timer D CMP4) forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_1|External event 1 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_2|External event 2 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_3|External event 3 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_4|External event 4 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_5|External event 5 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_6|External event 6 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_7|External event 7 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_8|External event 8 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_9|External event 9 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_EEV_10|External event 10 forces the output to its active state
+SetSource_TE|HRTIM_OUTPUTSET_UPDATE|Timer register update event forces the output to its active state
+ORingSetOutput2_TA|HRTIM_OUTPUTSET_NONE|No source is selected
+ORingSetOutput2_TB|HRTIM_OUTPUTSET_NONE|No source is selected
+ORingSetOutput2_TC|HRTIM_OUTPUTSET_NONE|No source is selected
+ORingSetOutput2_TD|HRTIM_OUTPUTSET_NONE|No source is selected
+ORingSetOutput2_TE|HRTIM_OUTPUTSET_NONE|No source is selected
+ResetSource|HRTIM_OUTPUTRESET_NONE|No source is selected
+ResetSource|HRTIM_OUTPUTRESET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMPER|Timer period event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMCMP1|Timer compare 1 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMCMP2|Timer compare 2 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMCMP3|Timer compare 3 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMCMP4|Timer compare 4 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_MASTERPER|The master timer period event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_MASTERCMP1|Master Timer compare 1 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_MASTERCMP2|Master Timer compare 2 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_MASTERCMP3|Master Timer compare 3 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_MASTERCMP4|Master Timer compare 4 event forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_1|Timer event 1 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_2|Timer event 2 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_3|Timer event 3 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_4|Timer event 4 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_5|Timer event 5 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_6|Timer event 6 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_7|Timer event 7 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_8|Timer event 8 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_TIMEV_9|Timer event 9 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_1|External event 1 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_2|External event 2 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_3|External event 3 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_4|External event 4 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_5|External event 5 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_6|External event 6 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_7|External event 7 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_8|External event 8 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_9|External event 9 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_EEV_10|External event 10 forces the output to its inactive state
+ResetSource|HRTIM_OUTPUTRESET_UPDATE|Timer register update event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_NONE|No source is selected
+ResetSource_TA|HRTIM_OUTPUTRESET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMPER|Timer period event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMCMP1|Timer compare 1 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMCMP2|Timer compare 2 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMCMP3|Timer compare 3 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMCMP4|Timer compare 4 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_MASTERPER|The master timer period event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_MASTERCMP1|Master Timer compare 1 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_MASTERCMP2|Master Timer compare 2 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_MASTERCMP3|Master Timer compare 3 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_MASTERCMP4|Master Timer compare 4 event forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_1|Timer event 1 (Timer B CMP1) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_2|Timer event 2 (Timer B CMP2) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_3|Timer event 3 (Timer B CMP4) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_4|Timer event 4 (Timer C CMP2) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_5|Timer event 5 (Timer C CMP3) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_6|Timer event 6 (Timer D CMP1) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_7|Timer event 7 (Timer D CMP2) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_8|Timer event 8 (Timer E CMP3) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_TIMEV_9|Timer event 9 (Timer E CMP4) forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_1|External event 1 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_2|External event 2 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_3|External event 3 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_4|External event 4 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_5|External event 5 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_6|External event 6 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_7|External event 7 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_8|External event 8 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_9|External event 9 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_EEV_10|External event 10 forces the output to its inactive state
+ResetSource_TA|HRTIM_OUTPUTRESET_UPDATE|Timer register update event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_NONE|No source is selected
+ResetSource_TB|HRTIM_OUTPUTRESET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMPER|Timer period event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMCMP1|Timer compare 1 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMCMP2|Timer compare 2 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMCMP3|Timer compare 3 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMCMP4|Timer compare 4 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_MASTERPER|The master timer period event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_MASTERCMP1|Master Timer compare 1 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_MASTERCMP2|Master Timer compare 2 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_MASTERCMP3|Master Timer compare 3 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_MASTERCMP4|Master Timer compare 4 event forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_1|Timer event 1 (Timer A CMP1) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_2|Timer event 2 (Timer A CMP2) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_3|Timer event 3 (Timer A CMP4) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_4|Timer event 4 (Timer C CMP3) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_5|Timer event 5 (Timer C CMP4) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_6|Timer event 6 (Timer D CMP3) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_7|Timer event 7 (Timer D CMP4) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_8|Timer event 8 (Timer E CMP1) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_TIMEV_9|Timer event 9 (Timer E CMP2) forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_1|External event 1 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_2|External event 2 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_3|External event 3 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_4|External event 4 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_5|External event 5 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_6|External event 6 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_7|External event 7 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_8|External event 8 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_9|External event 9 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_EEV_10|External event 10 forces the output to its inactive state
+ResetSource_TB|HRTIM_OUTPUTRESET_UPDATE|Timer register update event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_NONE|No source is selected
+ResetSource_TC|HRTIM_OUTPUTRESET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMPER|Timer period event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMCMP1|Timer compare 1 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMCMP2|Timer compare 2 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMCMP3|Timer compare 3 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMCMP4|Timer compare 4 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_MASTERPER|The master timer period event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_MASTERCMP1|Master Timer compare 1 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_MASTERCMP2|Master Timer compare 2 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_MASTERCMP3|Master Timer compare 3 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_MASTERCMP4|Master Timer compare 4 event forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_1|Timer event 1 (Timer A CMP2) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_2|Timer event 2 (Timer A CMP3) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_3|Timer event 3 (Timer B CMP2) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_4|Timer event 4 (Timer B CMP3) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_5|Timer event 5 (Timer D CMP2) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_6|Timer event 6 (Timer D CMP4) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_7|Timer event 7 (Timer E CMP2) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_8|Timer event 8 (Timer E CMP3) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_TIMEV_9|Timer event 9 (Timer E CMP4) forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_1|External event 1 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_2|External event 2 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_3|External event 3 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_4|External event 4 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_5|External event 5 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_6|External event 6 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_7|External event 7 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_8|External event 8 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_9|External event 9 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_EEV_10|External event 10 forces the output to its inactive state
+ResetSource_TC|HRTIM_OUTPUTRESET_UPDATE|Timer register update event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_NONE|No source is selected
+ResetSource_TD|HRTIM_OUTPUTRESET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMPER|Timer period event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMCMP1|Timer compare 1 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMCMP2|Timer compare 2 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMCMP3|Timer compare 3 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMCMP4|Timer compare 4 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_MASTERPER|The master timer period event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_MASTERCMP1|Master Timer compare 1 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_MASTERCMP2|Master Timer compare 2 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_MASTERCMP3|Master Timer compare 3 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_MASTERCMP4|Master Timer compare 4 event forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_1|Timer event 1 (Timer A CMP1) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_2|Timer event 2 (Timer A CMP4) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_3|Timer event 3 (Timer B CMP2) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_4|Timer event 4 (Timer B CMP4) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_5|Timer event 5 (Timer C CMP1) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_6|Timer event 6 (Timer C CMP3) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_7|Timer event 7 (Timer C CMP4) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_8|Timer event 8 (Timer E CMP1) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_TIMEV_9|Timer event 9 (Timer E CMP4) forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_1|External event 1 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_2|External event 2 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_3|External event 3 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_4|External event 4 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_5|External event 5 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_6|External event 6 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_7|External event 7 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_8|External event 8 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_9|External event 9 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_EEV_10|External event 10 forces the output to its inactive state
+ResetSource_TD|HRTIM_OUTPUTRESET_UPDATE|Timer register update event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_NONE|No source is selected
+ResetSource_TE|HRTIM_OUTPUTRESET_RESYNC|Timer counter reset event coming solely from software or SYNC input forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMPER|Timer period event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMCMP1|Timer compare 1 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMCMP2|Timer compare 2 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMCMP3|Timer compare 3 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMCMP4|Timer compare 4 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_MASTERPER|The master timer period event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_MASTERCMP1|Master Timer compare 1 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_MASTERCMP2|Master Timer compare 2 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_MASTERCMP3|Master Timer compare 3 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_MASTERCMP4|Master Timer compare 4 event forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_1|Timer event 1 (Timer A CMP3) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_2|Timer event 2 (Timer A CMP4) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_3|Timer event 3 (Timer B CMP3) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_4|Timer event 4 (Timer B CMP4) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_5|Timer event 5 (Timer C CMP1) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_6|Timer event 6 (Timer C CMP2) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_7|Timer event 7 (Timer D CMP1) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_8|Timer event 8 (Timer D CMP2) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_TIMEV_9|Timer event 9 (Timer D CMP4) forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_1|External event 1 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_2|External event 2 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_3|External event 3 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_4|External event 4 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_5|External event 5 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_6|External event 6 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_7|External event 7 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_8|External event 8 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_9|External event 9 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_EEV_10|External event 10 forces the output to its inactive state
+ResetSource_TE|HRTIM_OUTPUTRESET_UPDATE|Timer register update event forces the output to its inactive state
+ORingResetOutput2_TA|HRTIM_OUTPUTRESET_NONE|No source is selected
+ORingResetOutput2_TB|HRTIM_OUTPUTRESET_NONE|No source is selected
+ORingResetOutput2_TC|HRTIM_OUTPUTRESET_NONE|No source is selected
+ORingResetOutput2_TD|HRTIM_OUTPUTRESET_NONE|No source is selected
+ORingResetOutput2_TE|HRTIM_OUTPUTRESET_NONE|No source is selected
+IdleMode|HRTIM_OUTPUTIDLEMODE_NONE|The output is not affected by the burst mode operation
+IdleMode|HRTIM_OUTPUTIDLEMODE_IDLE|The output is in idle state when requested by the burst mode controller
+IdleLevel|HRTIM_OUTPUTIDLELEVEL_INACTIVE|Output at inactive level when in IDLE state
+IdleLevel|HRTIM_OUTPUTIDLELEVEL_ACTIVE|Output at active level when in IDLE state
+FaultLevel|HRTIM_OUTPUTFAULTLEVEL_NONE|The output is not affected by the fault input
+FaultLevel|HRTIM_OUTPUTFAULTLEVEL_ACTIVE|Output at active level when in FAULT state
+FaultLevel|HRTIM_OUTPUTFAULTLEVEL_INACTIVE|Output at inactive level when in FAULT state
+FaultLevel|HRTIM_OUTPUTFAULTLEVEL_HIGHZ|Output is tri-stated when in FAULT state
+ChopperModeEnable|HRTIM_OUTPUTCHOPPERMODE_DISABLED|Output signal is not altered
+ChopperModeEnable|HRTIM_OUTPUTCHOPPERMODE_ENABLED|Output signal is chopped by a carrier signal
+BurstModeEntryDelayed|HRTIM_OUTPUTBURSTMODEENTRY_REGULAR|The programmed Idle state is applied immediately to the Output
+BurstModeEntryDelayed|HRTIM_OUTPUTBURSTMODEENTRY_DELAYED|Deadtime is inserted on output before entering the idle mode
+Event|__NULL|Disable
+Event|HRTIM_EVENT_NONE|Reset timer event filtering configuration
+Event|HRTIM_EVENT_1|Enable
+Event|HRTIM_EVENT_2|Enable
+Event|HRTIM_EVENT_3|Enable
+Event|HRTIM_EVENT_4|Enable
+Event|HRTIM_EVENT_5|Enable
+Event|HRTIM_EVENT_6|Enable
+Event|HRTIM_EVENT_7|Enable
+Event|HRTIM_EVENT_8|Enable
+Event|HRTIM_EVENT_9|Enable
+Event|HRTIM_EVENT_10|Enable
+Filter_TA|HRTIM_TIMEVENTFILTER_NONE|None
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGCMP1|Blanking from counter reset/roll-over to Compare 1
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGCMP2|Blanking from counter reset/roll-over to Compare 2
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGCMP3|Blanking from counter reset/roll-over to Compare 3
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGCMP4|Blanking from counter reset/roll-over to Compare 4
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR1|Blanking from Timer B Compare 1 : TIMFLTR1 source
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR2|Blanking from Timer B Compare 4 : TIMFLTR2 source
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR3|Blanking from Timer B Output 2 : TIMFLTR3 source
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR4|Blanking from Timer C Compare 1: TIMFLTR4 source
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR5|Blanking from Timer C Compare 4: TIMFLTR5 source
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR6|Blanking from Timer C Output 2 : TIMFLTR6 source
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR7|Blanking from Timer D Compare 1: TIMFLTR7 source
+Filter_TA|HRTIM_TIMEVENTFILTER_BLANKINGFLTR8|Blanking from Timer E Compare 2: TIMFLTR8 source
+Filter_TA|HRTIM_TIMEVENTFILTER_WINDOWINGCMP2|Windowing from counter reset/roll-over to Compare 2
+Filter_TA|HRTIM_TIMEVENTFILTER_WINDOWINGCMP3|Windowing from counter reset/roll-over to Compare 3
+Filter_TA|HRTIM_TIMEVENTFILTER_WINDOWINGTIM|Windowing from another timing unit: TIMWIN source
+Filter_TB|HRTIM_TIMEVENTFILTER_NONE|None
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGCMP1|Blanking from counter reset/roll-over to Compare 1
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGCMP2|Blanking from counter reset/roll-over to Compare 2
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGCMP3|Blanking from counter reset/roll-over to Compare 3
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGCMP4|Blanking from counter reset/roll-over to Compare 4
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR1|Blanking from Timer A Compare 1 : TIMFLTR1 source
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR2|Blanking from Timer A Compare 4 : TIMFLTR2 source
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR3|Blanking from Timer A Output 2 : TIMFLTR3 source
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR4|Blanking from Timer C Compare 1 : TIMFLTR4 source
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR5|Blanking from Timer C Compare 2 : TIMFLTR5 source
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR6|Blanking from Timer C Output 2 : TIMFLTR6 source
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR7|Blanking from Timer D Compare 2 : TIMFLTR7 source
+Filter_TB|HRTIM_TIMEVENTFILTER_BLANKINGFLTR8|Blanking from Timer E Compare 1 : TIMFLTR8 source
+Filter_TB|HRTIM_TIMEVENTFILTER_WINDOWINGCMP2|Windowing from counter reset/roll-over to Compare 2
+Filter_TB|HRTIM_TIMEVENTFILTER_WINDOWINGCMP3|Windowing from counter reset/roll-over to Compare 3
+Filter_TB|HRTIM_TIMEVENTFILTER_WINDOWINGTIM|Windowing from another timing unit: TIMWIN source
+Filter_TC|HRTIM_TIMEVENTFILTER_NONE|None
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGCMP1|Blanking from counter reset/roll-over to Compare 1
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGCMP2|Blanking from counter reset/roll-over to Compare 2
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGCMP3|Blanking from counter reset/roll-over to Compare 3
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGCMP4|Blanking from counter reset/roll-over to Compare 4
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR1|Blanking from Timer A Compare 2 : TIMFLTR1 source
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR2|Blanking from Timer B Compare 1 : TIMFLTR2 source
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR3|Blanking from Timer B Compare 4 : TIMFLTR3 source
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR4|Blanking from Timer B Output 2 : TIMFLTR4 source
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR5|Blanking from Timer D Compare 1 : TIMFLTR5 source
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR6|Blanking from Timer D Compare 4 : TIMFLTR6 source
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR7|Blanking from Timer D Output 2 : TIMFLTR7 source
+Filter_TC|HRTIM_TIMEVENTFILTER_BLANKINGFLTR8|Blanking from Timer E Compare 4 : TIMFLTR8 source
+Filter_TC|HRTIM_TIMEVENTFILTER_WINDOWINGCMP2|Windowing from counter reset/roll-over to Compare 2
+Filter_TC|HRTIM_TIMEVENTFILTER_WINDOWINGCMP3|Windowing from counter reset/roll-over to Compare 3
+Filter_TC|HRTIM_TIMEVENTFILTER_WINDOWINGTIM|Windowing from another timing unit: TIMWIN source
+Filter_TD|HRTIM_TIMEVENTFILTER_NONE|None
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGCMP1|Blanking from counter reset/roll-over to Compare 1
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGCMP2|Blanking from counter reset/roll-over to Compare 2
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGCMP3|Blanking from counter reset/roll-over to Compare 3
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGCMP4|Blanking from counter reset/roll-over to Compare 4
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR1|Blanking from Timer A Compare 1: TIMFLTR1 source
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR2|Blanking from Timer B Compare 2: TIMFLTR2 source
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR3|Blanking from Timer C Compare 1: TIMFLTR3 source
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR4|Blanking from Timer C Compare 2: TIMFLTR4 source
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR5|Blanking from Timer C Output 2: TIMFLTR5 source
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR6|Blanking from Timer E Compare 1: TIMFLTR6 source
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR7|Blanking from Timer E Compare 4: TIMFLTR7 source
+Filter_TD|HRTIM_TIMEVENTFILTER_BLANKINGFLTR8|Blanking from Timer E Output 2: TIMFLTR8 source
+Filter_TD|HRTIM_TIMEVENTFILTER_WINDOWINGCMP2|Windowing from counter reset/roll-over to Compare 2
+Filter_TD|HRTIM_TIMEVENTFILTER_WINDOWINGCMP3|Windowing from counter reset/roll-over to Compare 3
+Filter_TD|HRTIM_TIMEVENTFILTER_WINDOWINGTIM|Windowing from another timing unit: TIMWIN source
+Filter_TE|HRTIM_TIMEVENTFILTER_NONE|None
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGCMP1|Blanking from counter reset/roll-over to Compare 1
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGCMP2|Blanking from counter reset/roll-over to Compare 2
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGCMP3|Blanking from counter reset/roll-over to Compare 3
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGCMP4|Blanking from counter reset/roll-over to Compare 4
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR1|Blanking from Timer A Compare 2 : TIMFLTR1 source
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR2|Blanking from Timer B Compare 1 : TIMFLTR2 source
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR3|Blanking from Timer C Compare 1 : TIMFLTR3 source
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR4|Blanking from Timer C Compare 4 : TIMFLTR4 source
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR5|Blanking from Timer C Output 2 : TIMFLTR5 source
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR6|Blanking from Timer D Compare 1 : TIMFLTR6 source
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR7|Blanking from Timer D Compare 4 : TIMFLTR7 source
+Filter_TE|HRTIM_TIMEVENTFILTER_BLANKINGFLTR8|Blanking from Timer D Output 2 : TIMFLTR8 source
+Filter_TE|HRTIM_TIMEVENTFILTER_WINDOWINGCMP2|Windowing from counter reset/roll-over to Compare 2
+Filter_TE|HRTIM_TIMEVENTFILTER_WINDOWINGCMP3|Windowing from counter reset/roll-over to Compare 3
+Filter_TE|HRTIM_TIMEVENTFILTER_WINDOWINGTIM|Windowing from another timing unit: TIMWIN source
+Latch|HRTIM_TIMEVENTLATCH_DISABLED|Event is ignored if it happens during a blank, or passed through during a window
+Latch|HRTIM_TIMEVENTLATCH_ENABLED|Event is latched and delayed till the end of the blanking or windowing period
+Deadtimeconfig|__NULL|Disable
+Deadtimeconfig|HRTIM_TIMERINDEX_TIMER_A|Enable
+Deadtimeconfig|HRTIM_TIMERINDEX_TIMER_B|Enable
+Deadtimeconfig|HRTIM_TIMERINDEX_TIMER_C|Enable
+Deadtimeconfig|HRTIM_TIMERINDEX_TIMER_D|Enable
+Deadtimeconfig|HRTIM_TIMERINDEX_TIMER_E|Enable
+PrescalerDead|HRTIM_TIMDEADTIME_PRESCALERRATIO_DIV1|fDTG = fHRTIM
+PrescalerDead|HRTIM_TIMDEADTIME_PRESCALERRATIO_DIV2|fDTG = fHRTIM / 2
+PrescalerDead|HRTIM_TIMDEADTIME_PRESCALERRATIO_DIV4|fDTG = fHRTIM / 4
+PrescalerDead|HRTIM_TIMDEADTIME_PRESCALERRATIO_DIV8|fDTG = fHRTIM / 8
+PrescalerDead|HRTIM_TIMDEADTIME_PRESCALERRATIO_DIV16|fDTG = fHRTIM / 16
+RisingSign|HRTIM_TIMDEADTIME_RISINGSIGN_POSITIVE|Positive deadtime on rising edge
+RisingSign|HRTIM_TIMDEADTIME_RISINGSIGN_NEGATIVE|Negative deadtime on rising edge
+RisingLock|HRTIM_TIMDEADTIME_RISINGLOCK_WRITE|Deadtime rising value and sign is writable
+RisingLock|HRTIM_TIMDEADTIME_RISINGLOCK_READONLY|Deadtime rising value and sign is read-only
+RisingSignLock|HRTIM_TIMDEADTIME_RISINGSIGNLOCK_WRITE|Deadtime rising sign is writable
+RisingSignLock|HRTIM_TIMDEADTIME_RISINGSIGNLOCK_READONLY|Deadtime rising sign is read-only
+FallingSign|HRTIM_TIMDEADTIME_FALLINGSIGN_POSITIVE|Positive deadtime on falling edge
+FallingSign|HRTIM_TIMDEADTIME_FALLINGSIGN_NEGATIVE|Negative deadtime on falling edge
+FallingLock|HRTIM_TIMDEADTIME_FALLINGLOCK_WRITE|Deadtime falling value and sign is writable
+FallingLock|HRTIM_TIMDEADTIME_FALLINGLOCK_READONLY|Deadtime falling value and sign is read-only
+FallingSignLock|HRTIM_TIMDEADTIME_FALLINGSIGNLOCK_WRITE|Deadtime falling sign is writable
+FallingSignLock|HRTIM_TIMDEADTIME_FALLINGSIGNLOCK_READONLY|Deadtime falling sign is read-only
+ChopperModeconfig|__NULL|Disable
+ChopperModeconfig|HRTIM_TIMERINDEX_TIMER_A|Enable
+ChopperModeconfig|HRTIM_TIMERINDEX_TIMER_B|Enable
+ChopperModeconfig|HRTIM_TIMERINDEX_TIMER_C|Enable
+ChopperModeconfig|HRTIM_TIMERINDEX_TIMER_D|Enable
+ChopperModeconfig|HRTIM_TIMERINDEX_TIMER_E|Enable
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV16|fCHPFRQ = fHRTIM / 16
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV32|fCHPFRQ = fHRTIM / 32
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV48|fCHPFRQ = fHRTIM / 48
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV64|fCHPFRQ = fHRTIM / 64
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV80|fCHPFRQ = fHRTIM / 80
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV96|fCHPFRQ = fHRTIM / 96
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV112|fCHPFRQ = fHRTIM / 112
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV128|fCHPFRQ = fHRTIM / 128
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV144|fCHPFRQ = fHRTIM / 144
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV160|fCHPFRQ = fHRTIM / 160
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV176|fCHPFRQ = fHRTIM / 176
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV192|fCHPFRQ = fHRTIM / 192
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV208|fCHPFRQ = fHRTIM / 208
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV224|fCHPFRQ = fHRTIM / 224
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV240|fCHPFRQ = fHRTIM / 240
+CarrierFreq|HRTIM_CHOPPER_PRESCALERRATIO_DIV256|fCHPFRQ = fHRTIM / 256
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_0|fCHPFRQ = fHRTIM / 16 only 1st pulse is present
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_125|fCHPFRQ = fHRTIM / 16 12.5 %
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_250|fCHPFRQ = fHRTIM / 16 25 %
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_375|fCHPFRQ = fHRTIM / 16 37.5 %
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_500|fCHPFRQ = fHRTIM / 16 50 %
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_625|fCHPFRQ = fHRTIM / 16 62.5 %
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_750|fCHPFRQ = fHRTIM / 16 75 %
+DutyCycle|HRTIM_CHOPPER_DUTYCYCLE_875|fCHPFRQ = fHRTIM / 16 87.5%
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_16|tSTPW = tHRTIM x 16
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_32|tSTPW = tHRTIM x 32
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_48|tSTPW = tHRTIM x 48
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_64|tSTPW = tHRTIM x 64
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_80|tSTPW = tHRTIM x 80
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_96|tSTPW = tHRTIM x 96
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_112|tSTPW = tHRTIM x 112
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_128|tSTPW = tHRTIM x 128
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_144|tSTPW = tHRTIM x 144
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_160|tSTPW = tHRTIM x 160
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_176|tSTPW = tHRTIM x 176
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_192|tSTPW = tHRTIM x 192
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_208|tSTPW = tHRTIM x 208
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_224|tSTPW = tHRTIM x 224
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_240|tSTPW = tHRTIM x 240
+StartPulse|HRTIM_CHOPPER_PULSEWIDTH_256|tSTPW = tHRTIM x 256
+BurstDMAconfig|__NULL|Disable
+BurstDMAconfig|HRTIM_TIMERINDEX_TIMER_A|Enable
+BurstDMAconfig|HRTIM_TIMERINDEX_TIMER_B|Enable
+BurstDMAconfig|HRTIM_TIMERINDEX_TIMER_C|Enable
+BurstDMAconfig|HRTIM_TIMERINDEX_TIMER_D|Enable
+BurstDMAconfig|HRTIM_TIMERINDEX_TIMER_E|Enable
+BurstDMAconfig|HRTIM_TIMERINDEX_MASTER|Enable
+Source_RegistersToUpdate|HRTIM_BURSTDMA_NONE|No register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_CR|TIMxCR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_ICR|TIMxICR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_DIER|TIMxDIER register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_CNT|CNTxCR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_PER|PERxR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_REP|REPxR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_CMP1|CMP1xR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_CMP2|CMP2xR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_CMP3|CMP3xR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_CMP4|CMP4xR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_DTR|TDxR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_SET1R|SET1R register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_RST1R|RST1R register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_SET2R|SET2R register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_RST2R|RST1R register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_EEFR1|EEFxR1 register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_EEFR2|EEFxR2 register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_RSTR|RSTxR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_CHPR|CHPxR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_OUTR|OUTxR register is updated by Burst DMA accesses
+Source_RegistersToUpdate|HRTIM_BURSTDMA_FLTR|FLTxR register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_NONE|No register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_CR|MCR register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_ICR|MICR register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_DIER|MDIER register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_CNT|MCNTR register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_PER|MPER register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_REP|MREPR register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_CMP1|MCMP1R register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_CMP2|MCMP2R register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_CMP3|MCMP3R register is updated by Burst DMA accesses
+Source_RegistersToUpdateMaster|HRTIM_BURSTDMA_CMP4|MCMP4R register is updated by Burst DMA accesses

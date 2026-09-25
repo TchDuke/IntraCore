@@ -1,0 +1,41 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=CRC
+Version=integtest1_v2_1_U0_N6
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DefaultPolynomialUse|Default Polynomial State|Basic Parameters||||
+DefaultInitValueUse|Default Init Value State|Basic Parameters||||
+GeneratingPolynomial|CRC Generating Polynomial|Basic Parameters|||7|
+CRCLength|CRC Length|Basic Parameters||||
+InitValue|Init Value For CRC computation|Basic Parameters||0|4294967295|
+InputDataInversionMode|Input Data Inversion Mode|Advanced Parameters||||
+OutputDataInversionMode|Output Data Inversion Mode|Advanced Parameters||||
+InputDataFormat|Input Data Format|Advanced Parameters||||The Parameter " Input Data Format " will not be generated when using LL Driver
+
+[Values]
+# параметр|значение|подпись
+DefaultPolynomialUse|__NULL|Enable
+DefaultPolynomialUse|DEFAULT_POLYNOMIAL_ENABLE|Enable
+DefaultPolynomialUse|DEFAULT_POLYNOMIAL_DISABLE|Disable
+DefaultInitValueUse|DEFAULT_INIT_VALUE_ENABLE|Enable
+DefaultInitValueUse|DEFAULT_INIT_VALUE_DISABLE|Disable
+CRCLength|CRC_POLYLENGTH_32B|32-bit
+CRCLength|CRC_POLYLENGTH_16B|16-bit
+CRCLength|CRC_POLYLENGTH_8B|8-bit
+CRCLength|CRC_POLYLENGTH_7B|7-bit
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_NONE|None
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_BIT_BYBYTE|Input data bit-reversal done by byte
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_BIT_BYHALFWORD|Input data bit-reversal done by half-word
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_BIT_BYWORD|Input data bit-reversal done by word
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_BYTE_BYWORD|Input data byte-reversal done by word
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_HALFWORD_BYWORD|Input data half-word-reversal done by word
+OutputDataInversionMode|CRC_OUTPUTDATA_INVERSION_DISABLE|Disable
+OutputDataInversionMode|CRC_OUTPUTDATA_INVERSION_BIT|Output data bit-reversal
+OutputDataInversionMode|CRC_OUTPUTDATA_INVERSION_HALFWORD|Output data half-word-reversal done by word
+OutputDataInversionMode|CRC_OUTPUTDATA_INVERSION_BYTE|Output data byte-reversal done by word
+InputDataFormat|CRC_INPUTDATA_FORMAT_BYTES|Bytes
+InputDataFormat|CRC_INPUTDATA_FORMAT_HALFWORDS|HalfWords
+InputDataFormat|CRC_INPUTDATA_FORMAT_WORDS|Words

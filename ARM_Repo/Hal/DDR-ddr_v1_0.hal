@@ -1,0 +1,678 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DDR
+Version=ddr_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+CubeProgrammer_Minimal_Version|This is the minimal CubeProgrammer version for the concerned MPU package|||||
+DDR_Start_Address|This is the base address for DDR subsystem in the specific MPU packages considered|||||
+DDR_Frequency|DDR subsystem frequency|SYSTEM PARAMETERS|MHz|200|533|DDR subsystem frequency. This value is copied from the Clock Configuration panel
+ADDRESS_MAPPING|Address Mapping configuration|SYSTEM PARAMETERS||||DDR Address mapping can be configured in RBC (Row-Bank-Column) or BRC (Bank-Row-Column)
+RELAXED_TIMING_MODE|Relaxed Timing mode|SYSTEM PARAMETERS||||Add one supplementary clock cycle to some key DDR parameters. This ease the DDR bring-up by relaxing some key timings. The relaxed timing parameters are: tRC, tRCD and tRP. The +1 is made before register computation, thus not visible in the parameter edition interface
+TEMPERATURE_OVER_85C|Temperature case over 85°C support|SYSTEM PARAMETERS||||DDR3 only, when TC > 85 TREFI = 3.9 and ASR = 1
+IMPEDANCE_DURING_READ|Impedance During Read|SYSTEM PARAMETERS||||Changing Output impedance (DDR) and ODT (PHY) for read Operations.
+IMPEDANCE_DURING_WRITE|Impedance During Write|SYSTEM PARAMETERS||||Changing Output impedance (PHY) and ODT (DDR) for write Operations.
+SPEED_BIN_GRADE|Speed Bin Grade|SYSTEM PARAMETERS||||JEDEC Standard for DDR3 SDRAM. Set value of each timings from JEDEC standard for this 'Speed Bin Grade' selection. Tick 'Show Advanced Parameters' to see the involved timings. Select Speed Bin / Grade combination according to the DDR you have provisioned. In case your Speed Bin / Grade is not listed, please use: "1066G / 8-8-8” as a relaxed configuration that should work with most of DDRs. "1066E / 6-6-6” if you have faster DDR Speed Bin / Grade”
+SCHEDULING_AND_QOS|Performance and scheduling|SYSTEM PARAMETERS||||Allows to choose the best scheduling and Quality of Service configuration for the targeted project. The various configurations possible are: - CONFIG 0: 1 port + No VPR/VPW + antistarvation - CONFIG 1: 2 ports + No VPR/VPW + antistarvation - CONFIG 2: 2 ports + QoS VPR/VPW + antistarvation - CONFIG 3: 2 ports + QoS VPR/VPW + timeout + antistarvation - CONFIG 4: 2 ports + QoS VPR/VPW + timeout + antistarvation - CONFIG 5: 1 port + intelligent percharge + No VPR/VPW + antistarvation
+BL|Burst Length (BL)|SYSTEM PARAMETERS||||Burst Length (BL) is variable for LPDDR2. Fixed for other DDR types. Possible values are 4, 8 and 16.
+CL|CAS Latency (CL)|JEDEC CORE TIMINGS|clocks|||The number of cycles between sending a column address to the memory and the beginning of the data in response. This is the number of cycles it takes to read the first bit of memory from a DRAM with the correct row already open. Unlike the other numbers, this is not a maximum, but an exact number that must be agreed on between the memory controller and the memory
+CWL|CAS Write Latency (CWL)|JEDEC CORE TIMINGS|clocks|||"CAS Write Latency is the delay, in clock cycles, between the internal Write command and the availability of the first bit of input data.
+tRAS|Row Active Time (tRAS)|JEDEC CORE TIMINGS|ns|0.01|150|ACT to PRE command period the minimum number of clock cycles required between a row active command and issuing the precharge command. This is the time needed to internally refresh the row, and overlaps with TRCD. In SDRAM modules, it is simply TRCD + CL. Otherwise, approximately equal to TRCD + 2×CL.
+tMRD|MODE REGISTER SET command cycle time (tMRD)|COMMAND AND ADDRESS TIMINGS|ns|0.01|150|Mode Register Set command cycle time
+tMOD|MODE REGISTER SET command update delay (tMOD)|COMMAND AND ADDRESS TIMINGS|ns|0.01|10000|Mode Register Set command update delay. This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tRCD|Row Address to column Address Delay (tRCD)|JEDEC CORE TIMINGS|ns|0.01|77|Activate to Read/Write command period: the minimum number of clock cycles required between opening a row of memory and accessing columns within it. The time to read the first bit of memory from a DRAM without an active row is TRCD + CL
+tRP|Row Precharge Time (tRP)|JEDEC CORE TIMINGS|ns|0.01|58|PRE command period: the minimum number of clock cycles required between issuing the precharge command and opening the next row. The time to read the first bit of memory from a DRAM with the wrong row open is TRP + TRCD + CL
+tRPab|Row Precharge Time (tRPab)|JEDEC CORE TIMINGS|ns|0.01|77|Row Precharge Time (all banks)
+WL|Write Latency (WL)|JEDEC CORE TIMINGS|clocks|||The Write Latency is defined from the rising edge of the clock on which the Write Command is issued to the rising edge of the clock from which the tDQSS delay is measured.
+tWR|Write recovery time (tWR)|JEDEC CORE TIMINGS|ns|0.01|255|Write to Precharge Delay / Write Recovery Time or tWR: This sets the number of clock cycles between the completion of a valid write operation and before an active bank can be precharged. Write to precharge formula is tCL -1 +(Burst Legnth / 2)+tWTR
+tCCD|CAS#-to-CAS# command delay (tCCD)|COMMAND AND ADDRESS TIMINGS|clocks|1|7|CAS# to CAS#, min between 2 READ or 2 WRITE (burst can’tbe interrupted with DDR3)
+tMRW|CAS#-to-CAS# command delay (tMRW)|JEDEC CORE TIMINGS|clocks|1|10|MR write command period
+tMRR|CAS#-to-CAS# command delay (tMRR)|JEDEC CORE TIMINGS|clocks|1|7|MR read command period
+tRRD|ACTIVATE-to-ACTIVATE minimum command period (tRRD)|COMMAND AND ADDRESS TIMINGS|ns|0.01|37|Activate to Activate delay or tRRD: Number of clock cycles between the activation of two rows in different banks of the same rank. (not much of a performance boost). This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tCKSRX|Min clocks before self refresh exit (tCKSRX)|SELF REFRESH TIMINGS|ns|1|15|Valid Clock Requirement before Self Refresh Exit (SRX) or Power-Down Exit (PDX) or Reset Exit. This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tCKSRE|Min clocks after self refresh entry (tCKSRE)|SELF REFRESH TIMINGS|ns|1|15|Valid Clock Requirement after Self Refresh Entry (SRE) or Power-Down Entry (PDE). This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tCKE|Min number of CKE high/low during Self Refresh and Power Down (tCKE)|POWER DOWN TIMINGS|ns|0.01|150|CKE minimum pulse width. This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tCKESR|Min CKE low between during SR (tCKESR)|JEDEC CORE TIMINGS|ns|0.01|150|CKE minimum pulse width during SELF REFRESH (low pulse width during SELF REFRESH)
+tXP|Power-Down Exit (tXP)|POWER DOWN TIMINGS|ns|0.01|77|Exit Power Down with DLL on to any valid command; Exit Precharge Power Down with DLL frozen to commands not requiring a locked DLL. This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tDQSCKmax|Maximum DQS output access time (tDQSCKmax)|READ PARAMETERS|ns|0.01|18|DQS, DQS# rising edge output access time from rising CK, CK# - max value
+tDQSCKmin|Minimum DQS output access time (tDQSCKmin)|READ PARAMETERS|ns|0.01|18|DQS, DQS# rising edge output access time from rising CK, CK# - min value
+tXPDLL|Power-Down Exit (tXPDLL)|POWER DOWN TIMINGS|ns|0.01|100|Exit Precharge Power Down with DLL frozen to commands requiring a locked DLL. This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tRFC|Refresh Cycle Time (tRFC)|JEDEC CORE TIMINGS|ns|0.01|10000|Refresh to Activate Delay / Refresh Cycle Time or tRFC: Sets the number of clock cycles from the refresh command until the first activate command to the same rank.
+tRFCab|Refresh Cycle time (tRFCab)|REFRESH PARAMETERS|ns|0.01|255|Minimum time from refresh to refresh or activate, if using all-bank refreshes
+tXS|Exit SR to CMD not requiring locked DLL: = max(5 clk , tRFC +10ns) (tXS)|SELF REFRESH TIMINGS|ns|1|1023|Exit SR to CMD not requiring locked DLL: = max(5 clk , tRFC +10ns)
+tXSDLL|Exit self refresh to commands requiring a locked DLL (tXSDLL)|SELF REFRESH TIMINGS|clocks|1|1023|Exit Self Refresh to commands requiring a locked DLL
+RL|Read Latency (RL)|JEDEC CORE TIMINGS|clocks|||The Read Latency is defined from the rising edge of the clock on which the Read Command is issued to the rising edge of the clock from which the tDQSCK delay is measured.
+wr2pre|Min WR to PRE in same bank (wr2pre)|DDR CONTROLLER TIMINGS|ns|0|0x7F|
+wr2rd|Min write CMD to read CMD (wr2rd)|DDR CONTROLLER TIMINGS|clocks|0|0x3F|
+rd2wr|Min read CMD to write CMD (rd2wr)|DDR CONTROLLER TIMINGS|clocks|0|0x3F|
+read_latency|read CMD to read Data (read_latency)|DDR CONTROLLER TIMINGS|clocks|0|0x3F|
+write_latency|Write CMD to write Data (write_latency)|DDR CONTROLLER TIMINGS|clocks|0|0x3F|
+t_rc|Min between activate to same ban (t_rc), this parameter can be relaxed|DDR CONTROLLER TIMINGS||0|0x7F|
+t_mrw|Time to wait after MRW or MRR (t_mrw)|DDR CONTROLLER TIMINGS|clocks|0|0x3FF|
+t_mod|Load mode to non load mode (t_mod)|DDR CONTROLLER TIMINGS||0|0x3FF|
+t_mrd|Mode Register Set to Mode Register Set (t_mrd)|DDR CONTROLLER TIMINGS||0|0x3F|
+t_rcd|Mode Register Set to Mode Register Set (t_rcd), this parameter can be relaxed|DDR CONTROLLER TIMINGS||0|0x1F|
+t_ccd|Min between 2 read or 2 write (t_ccd)|DDR CONTROLLER TIMINGS||0|0xF|
+t_rrd|Min between Active to 2 banks (t_rrd)|DDR CONTROLLER TIMINGS||0|0xF|
+t_faw|Four activate window (t_faw)|DDR CONTROLLER TIMINGS|ns|0|0x3F|
+tFAW|Four ACTIVATE windows (tFAW)|COMMAND AND ADDRESS TIMINGS|ns|0.01|150|Four Activate Window or tFAW: The number of cycles in which four activates are allowed within the same rank.
+tRASmax|Max between ACT and PRE to same bank in 1024 clk (tRASmax)|COMMAND AND ADDRESS TIMINGS|tREFI|1|31|Max between ACT and PRE to same bank in 1024 clk: 9 *tREFI
+tRTP|READ-to-PRECHARGE time (tRTP)|COMMAND AND ADDRESS TIMINGS|ns|0.01|72|Read to Precharge delay or tRTP: The number of clock cycles between a read command to a row pre-charge command of the same rank. This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+tRC|Row Cycle Time (tRC)|JEDEC CORE TIMINGS|ns|0.01|240|Row Cycle Time or tRC:This sets the number of cpu cycles a memory row (Remeber that memory is devided into "cells" much like an excel spredsheet) takes to complete a full cycle. A full cycle is from row activation to precharging of the active row. This setting has major affect on memory speed w/ a lower timing being faster. tRC= tras + tRP
+tREFI|Refresh Interval Time (tREFI)|JEDEC CORE TIMINGS|us|||Refresh Mode Select / Refresh Period or tREFi: Sets the number of clock cycles refreshes. 3,9us (DDR TcMax above 85°C) or 7,8us (DDR TcMax 85°C).
+tWTR|Write recovery time (tWTR)|COMMAND AND ADDRESS TIMINGS|ns|0.01|135|Delay from start of internal write transaction to internal read command. This parameter can be found expressed in ns in the DRAM datasheet. Tools requires a conversion to clk. Please make sure you use your target DDR clock value for conversion.
+t_ras_max|Max between ACT and PRE to same bank in 1024 clk (t_ras_max)|DDR CONTROLLER TIMINGS||0|0x7F|
+t_ras_min|Min between ACT and PRE (t_ras_min)|DDR CONTROLLER TIMINGS||0|0x7F|
+t_xp|Exit Power Down (t_xp)|DDR CONTROLLER TIMINGS||0|0x1F|
+t_rd2pre|Min RD to PRE in same bank (t_rd2pre)|DDR CONTROLLER TIMINGS||0|0x1F|
+t_rp|PRECHARGE command period (t_rp), this parameter can be relaxed|DDR CONTROLLER TIMINGS||0|0x1F|
+t_cksrx|Min clock stable before self refresh exit (t_cksrx)|DDR CONTROLLER TIMINGS|ns|0|0xF|
+t_cksre|min clock stable after self refresh entry (t_cksre)|DDR CONTROLLER TIMINGS|ns|0|0xF|
+t_ckesr|Min CKE low SR / Power down (t_ckesr)|DDR CONTROLLER TIMINGS|clocks|0|0x3F|
+t_cke|CKE minimum pulse width (t_cke)|DDR CONTROLLER TIMINGS|clocks|0|0x3F|
+t_ckdpde|Clock disable delay after DPDN (t_ckdpde)|DDR CONTROLLER TIMINGS|clocks|0|0xF|
+t_ckdpdx|Clock stable time before DPDX (t_ckdpdx)|DDR CONTROLLER TIMINGS|clocks|0|0xF|
+t_ckcsx|Clock stable time before next command after Clock Stop Exit (t_ckcsx)|DDR CONTROLLER TIMINGS|clocks|0|0xF|
+t_ckpde|Clock disable delay after Enter Power-down (t_ckpde)|DDR CONTROLLER TIMINGS|clocks|0|0xF|
+t_ckpdx|Clock stable time before Exit Power-down (t_ckpdx)|DDR CONTROLLER TIMINGS|clocks|0|0xF|
+t_xs_dll_x32|Exit SR to CMD requiring locked DLL (t_xs_dll_x32)|||0|0x7F|
+t_xs_x32|Exit Self Refresh to CMD not requiring locked DLL (t_xs_x32)|DDR CONTROLLER TIMINGS|clocks|0|0x7F|
+t_xsr|Exit self refresh to any command (t_xsr)|DDR CONTROLLER TIMINGS||0|0xFFF|
+t_rfc_nom_x1_x32|tREFI in multiple of 32 clocks (t_rfc_nom_x1_x32)|DDR CONTROLLER TIMINGS||0|0xFFF|
+t_rfc_min|Refresh Control (t_rfc_min)|DDR CONTROLLER TIMINGS|clocks|0|0x3FF|
+wr_odt_hold|Cycle to hold ODT for Write, min 2 recommended (wr_odt_hold)|DDR CONTROLLER TIMINGS|clocks|0|0xF|
+wr_odt_delay|ODT delay should be set to 0 for DDR3 (wr_odt_delay)|DDR CONTROLLER TIMINGS|clocks|0|0x1F|
+rd_odt_hold|Cycle to hold ODT for Read min 2 recommended (rd_odt_hold)|DDR CONTROLLER TIMINGS|clocks|0|0xF|
+rd_odt_delay|ODT delay should be set to CL-CWL for DDR3 (rd_odt_delay)|DDR CONTROLLER TIMINGS|clocks|0|0x1F|
+dfi_t_rddata_en|Num of clocks from DFI read to readdata_en (RL-2) (dfi_t_rddata_en)||clocks|0|0x7F|
+dfi_tphy_wrlat|Num of clocks from DFI write to wrdata_en (WL-1) (dfi_tphy_wrlat)||clocks|0|0x3F|
+tdlllock|DLL lock time (5.12uS) (tdlllock)|DDR PHY TIMINGS||0|0xFFF|
+tdllsrst|DLL soft reset tDLLSRST: max(50nS, 8CK) (tdllsrst)|DDR PHY TIMINGS||0|0x3F|
+tdinit1|tDINIT1|DDR PHY TIMINGS||0|0xFF|
+tdinit0|tDINIT0|DDR PHY TIMINGS||0|0x7FFFF|
+tdinit2|tDINIT2|DDR PHY TIMINGS||0|0x1FFFF|
+tdinit3|tDINIT3|DDR PHY TIMINGS||0|0x3FF|
+tccd|CAS#-to-CAS# command delay (tccd), this parameter can be relaxed|DDR PHY TIMINGS|clocks|0|0x1|
+trc|trc, this parameter can be relaxed|DDR PHY TIMINGS||0|0x3F|
+trrd|Min between ACT to 2 banks (trrd)|DDR PHY TIMINGS||0|0xF|
+tras|tras|DDR PHY TIMINGS||0|0x1F|
+trcd|Min from ACT to RD or WR (trcd), this parameter can be relaxed|DDR PHY TIMINGS||0|0xF|
+trp|Min PRE to ACT (trp), this parameter can be relaxed|DDR PHY TIMINGS||0|0xF|
+twtr|twtr|DDR PHY TIMINGS||0|0x7|
+trtp|trtp|DDR PHY TIMINGS||0|0x7|
+tmrd|tmrd|DDR PHY TIMINGS||0|0x3|
+tdqsckmax|tdqsckmax|DDR PHY TIMINGS||0|0x7|
+tdqsckmin|tdqsckmin|DDR PHY TIMINGS||0|0x7|
+trfc|trfc|DDR PHY TIMINGS||0|0xFF|
+trtodt|trtodt|DDR PHY TIMINGS||0|0x1|
+tmod|Load mode to non load mode (tmod)|DDR PHY TIMINGS||0|0x3|
+tfaw|Min WR to PRE in same bank (tfaw)|DDR PHY TIMINGS||0|0x3F|
+trtw|trtw, this parameter can be relaxed|DDR PHY TIMINGS||0|0x1|
+taond|taond|DDR PHY TIMINGS||0|0x3|
+tdllk|tdllk|DDR PHY TIMINGS||0|0x3FF|
+tcke|tcke|DDR PHY TIMINGS||0|0xF|
+txp|Timing for PUBL, used during init, calibration (txp)|DDR PHY TIMINGS||0|0x1F|
+txs|Self Refresh Timing (txs)|DDR PHY TIMINGS|clocks|0|0x3FF|
+MR0.WR|MR0.WR|DDR PHY TIMINGS||0|0x7|
+MR0.CL|MR0.CL|DDR PHY TIMINGS||0|0x7|
+MR1.nWR|Write recovery|||||
+MR1.BL|Burst Lenght|||||
+MR1.DIC0|Output Driver Impedance: 0: 40ohm, 1: 34ohm|||||
+MR2.CWL|MR2.CWL|DDR PHY TIMINGS||0|0x7|
+MR2.RTT|MR2.RTT|DDR PHY TIMINGS||0|0x3|
+MR2.ASR|MR2.ASR|DDR PHY TIMINGS||0x0|0x1|
+MR2.RLWL|Read Latency / Write Latency|DDR PHY TIMINGS||0|0xF|
+tINIT1|CKE low time before 1rst NOP (tINIT1)|DDR PHY TIMINGS|ns|||
+tINIT3|CKE high (NOP) before 1rst command (tINIT3)|DDR PHY TIMINGS|us|||
+tINIT5|from ZQ initialization to 1rst command (tINIT5)|DDR PHY TIMINGS|us|||
+tINIT4_5|from Reset to end of Initialization (tINIT4_5)|DDR PHY TIMINGS|us|||
+burst_rdwr|BL8 for DDR3 (burst_rdwr)|||||
+dll_off_mode|DLL off (dll_off_mode)|||||
+data_bus_width|00: full; 01: halfwidth (data_bus_width)|||||
+en_2t_timing_mode|2T timing (en_2t_timing_mode)|||||
+burstchop|Enable BC4 on the fly (burstchop)|||||
+lpddr3|LPDDR3 SDRAM|||||
+lpddr2|LPDDR2 SDRAM|||||
+ddr3|DDR3 SDRAM|||||
+mr_wr|trigger mode register read / write|||||
+mr_addr|MR1 to MR8 select|||||
+mr_rank|Selects Rank 0|||||
+mr_type|Selects Rank 0|||||
+mr_data|Mode register addr/data for LP and data for non LP|||||
+derate_byte|Which byte of MRR is used for derating|||||
+derate_value|Derating|||||
+derate_enable|Derating enable|||||
+mr4_read_interval|Interval between 2 MR4 reads|||||
+dis_cam_drain_selfref|0: CAM empty before SRE|||||
+selfref_sw|SW entry/exit in SR|||||
+en_dfi_dram_clk_disable|Assertion of clk disable to DFI|||||
+deeppowerdown_en|Goes into DPD after number of idle cycle|||||
+powerdown_en|Goes into PDN after number of idle cycle|||||
+selfref_en|Goes into SR after number of idle cycle|||||
+selfref_to_x32|Number of clocks to selfref|||||
+t_dpd_x4096|Number of clocks to dpd|||||
+powerdown_to_x32|Number of clocks to power_down|||||
+hw_lp_exit_idle_x32|Active driven low after x clocks|||||
+hw_lp_exit_idle_en|Enable exit from automatic PDN, SR modes|||||
+hw_lp_en|Enable HW low power interface|||||
+refresh_margin|Recommendation to leave the default|||||
+refresh_to_x32|Speculative burst refresh timeout|||||
+refresh_burst|Number of refresh allowed to accumulate|||||
+per_bank_refresh|Per_bank_refresh for some LPDDR2|||||
+refresh_update_level|Toggle this bit after update the Refresh registers!|||||
+dis_auto_refresh|Disable Auto Refresh|||||
+dfi_alert_err_cnt_clr|DFI alert error count clear|||||
+dfi_alert_err_int_clr|Interrupt clear|||||
+dfi_alert_err_int_en|Interrupt enable for DFI alert error|||||
+skip_dram_init|Control initialization routine|||||
+post_cke_x1024|Cycle to wait after CKE to start init in 1024 clk|||||
+pre_cke_x1024|In 1024 clk|||||
+en_dfi_lp_t_stab|Enable using tSTAB on DFI LP exit|||||
+t_stab_x32|tSTAB stabilization time in x32 clocks|||||
+dis_auto_zq|Disable issuing of ZQCS|||||
+dis_srx_zqcl|Disable issuing of ZQCL after SRX|||||
+zq_resistor_shared|ZQ is not shared between ranks|||||
+t_zq_long_nop|Num of NOP after ZQCL|||||
+t_zq_short_nop|Num of NOP after ZQCS|||||
+dfi_t_ctrl_delay|Num of clocks for command bus from DFI to DDR|||||
+dfi_tphy_wrdata|Num of clocks from DFI wrdata_en to wrdata on DFI|||||
+dfi_t_wrdata_delay|Num of clk from dfi_wrdata_en to data on DRAM|||||
+dfi_t_dram_clk_disable|Num of clk from dfi_dram_clk disable to DDR clk disable|||||
+dfi_t_dram_clk_enable|Num of clk from dfi_dram_clk disable to DDR clk valid|||||
+dfi_tlp_resp|tfi_resp time for pdn, sr, dpd|||||
+dfi_lp_wakeup_dpd|Value to drive on dfi_lp_wakeup when dpd: 16 cycles|||||
+dfi_lp_en_dpd|Enable LPI during dpd entry/exit (LPDDR2)|||||
+dfi_lp_wakeup_sr|Value to drive on dfi_lp_wakeup when selfref entered: 16 cycles|||||
+dfi_lp_en_sr|Enable LPI during selfref entry/exit|||||
+dfi_lp_wakeup_pd|Value to drive on dfi_lp_wakeup on pdn: 16 cycles|||||
+dfi_lp_en_pd|Enable DFI LPI during power down entry /exit|||||
+dis_auto_ctrlupd|Disable auto dfi_ctrlupd|||||
+dis_auto_ctrlupd_srx|Disable auto dfi_ctrlupd at SRX|||||
+ctrlupd_pre_srx|Send ctrlupd after SRX|||||
+dfi_t_ctrlup_max|Max num of clocks that dfi_ctrlupd must be asserted|||||
+dfi_t_ctrlup_min|Min num of clocks that dfi_ctrlupd must be asserted|||||
+dfi_t_ctrlupd_interval_min_x1024|Min time between dfi_upd request|||||
+dfi_t_ctrlupd_interval_max_x1024|Max time between dfi_upd request|||||
+dfi_phyupd_en|Enable ack of PHY initiated updates|||||
+dfi_frequency|Operating frequency (PHY specific)|||||
+dfi_init_start|Triggers the PHY init start request|||||
+ctl_idle_en|Enable support of ctl_idle signal (non DFI)|||||
+dfi_init_complete_en|Phy init complete enable signal|||||
+dfi_phymstr_en|Enable the PHY Master interface|||||
+rank0_rd_odt|ODT's on during read from rank0, should be 0|||||
+rank0_wr_odt|ODT's on during write to rank0|||||
+rdwr_idle_gap|Switch time gap between transaction stores|||||
+go2critical_hysteresis|Go to critical hysteresis|||||
+lpr_num_entries|Num of entries in LP stores|||||
+pageclose|Page close by default (pageclose)|||||
+prefer_write|Bank selector prefer write to read|||||
+force_low_pri_n|Active low to force incoming to LP|||||
+pageclose_timer|Page close timer|||||
+hpr_xact_run_length|Num of transaction serviced once HPR goes critical|||||
+hpr_max_starve|Num of clocks before the starved HPR goes critical|||||
+lpr_xact_run_length|Num of transaction serviced once LPR goes critical|||||
+lpr_max_starve|Num of clocks before starved LPR goes critical|||||
+w_xact_run_length|Num of transaction serviced once WR goes critical|||||
+w_max_starve|Num of clocks before starved WPR goes critical|||||
+dis_collision_page_opt|Auto prech disable for flushed command with collision|||||
+dis_wc|Disable write combine|||||
+ctrl_upd|Issue dfi_ctrlupd to the PHY|||||
+zq_calib_short|Issue ZQCS|||||
+rank0_refresh|Issue rank0 refresh|||||
+sw_done|enable Quasi Dynamic register programming|||||
+bl_exp_mode|Burst length expansion|||||
+pagematch_limit|Pagematch four limit|||||
+go2critical_en|Goes to critical based on urgent signals|||||
+0rdwr_ordered_en|Enable read-write ordered|||||
+0rd_port_pagematch_en|Enable the page match feature|||||
+0rd_port_urgent_en|Enable the urgent sideband|||||
+0rd_port_aging_en|Enable the aging function|||||
+0rd_port_priority|Initial value of aging counters|||||
+0wr_port_pagematch_en|Enable the page match feature|||||
+0wr_port_urgent_en|Enable the urgent sideband|||||
+0wr_port_aging_en|Enable the aging function|||||
+0wr_port_priority|Initial value of aging counters|||||
+0port_en|Port enable|||||
+0rqos_map_region2|Traffic class for region 2|||||
+0rqos_map_region1|Traffic class for region 1|||||
+0rqos_map_region0|Traffic class for region 0|||||
+0rqos_map_level2|Level2 = end of region1 (level1+ 1 to 14)|||||
+0rqos_map_level1|Level1 = end of region0 (0 to 13)|||||
+0rqos_map_timeoutr|Timeout to the Read Red Queue|||||
+0rqos_map_timeoutb|Timeout to the Read Blue Queue|||||
+0wqos_map_region2|Traffic class for region 2|||||
+0wqos_map_region1|Traffic class for region 1|||||
+0wqos_map_region0|Traffic class for region 0|||||
+0wqos_map_level2|level2 = end of region1 (level1+ 1 to 14)|||||
+0wqos_map_level1|Level1 = end of region0 (0 to 13)|||||
+0wqos_map_timeout2|Timeout for Write in QoS region 2|||||
+0wqos_map_timeout1|Timeout for Write in QoS region 0 and 1|||||
+1rdwr_ordered_en|Enable read-write ordered|||||
+1rd_port_pagematch_en|Enable the page match feature|||||
+1rd_port_urgent_en|Enable the urgent sideband|||||
+1rd_port_aging_en|Enable the aging function|||||
+1rd_port_priority|Initial value of aging counters|||||
+1wr_port_pagematch_en|Enable the page match feature|||||
+1wr_port_urgent_en|Enable the urgent sideband|||||
+1wr_port_aging_en|Enable the aging function|||||
+1wr_port_priority|Initial value of aging counters|||||
+1port_en|Port enable|||||
+1rqos_map_region2|Traffic class for region 2|||||
+1rqos_map_region1|Traffic class for region 1|||||
+1rqos_map_region0|Traffic class for region 0|||||
+1rqos_map_level2|Level2 = end of region1 (level1+ 1 to 14)|||||
+1rqos_map_level1|Level1 = end of region0 (0 to 13)|||||
+1rqos_map_timeoutr|Timeout to the Read Red Queue|||||
+1rqos_map_timeoutb|Timeout to the Read Blue Queue|||||
+1wqos_map_region2|Traffic class for region 2|||||
+1wqos_map_region1|Traffic class for region 1|||||
+1wqos_map_region0|Traffic class for region 0|||||
+1wqos_map_level2|level2 = end of region1 (level1+ 1 to 14)|||||
+1wqos_map_level1|Level1 = end of region0 (0 to 13)|||||
+1wqos_map_timeout2|Timeout for Write in QoS region 2|||||
+1wqos_map_timeout1|Timeout for Write in QoS region 0 and 1|||||
+initbyp|Initialization bypass|||||
+zcalbyp|Impedance claibration bypass|||||
+lockbyp|DLL Lock bypass|||||
+clrsr|clear status register|||||
+ctldinit|Controller DRAM initialization|||||
+dllbyp|DLL bypass|||||
+icpc|Initialization Complete Pin configuration|||||
+rvtrn|Read DQS gate training and RV training|||||
+qstrn|Read DQS training|||||
+draminit|DRAM initialization|||||
+dramrst|DRAM reset (DDR3 only)|||||
+itmsrst|ITM reset|||||
+zcal_PIR|zcal: perf impedance calibration|||||
+dlllock|DLL lock: wait for the DLL to lock|||||
+dllsrst|DLL soft reset|||||
+init|Initialization trigger|||||
+lbmode|Loop back mode|||||
+lbgdqs|Loop back DQS gating|||||
+lbdqss|Loop back DQS shift|||||
+rfshdt|Refresh during training|||||
+pddisdx|Power down disabled byte|||||
+zksel|Impedance clock divider selection|||||
+ranken|Rank enable|||||
+ioddrm|I/O DDR mode|||||
+iolb|I/O loop back select|||||
+ckdv|CK disable value|||||
+cken|CK enable|||||
+dtosel|Digital test output select|||||
+dftlmt|DQS drift limit|||||
+dftcmp|DQS drift compensation|||||
+dqscfg|DQS gating configuration|||||
+itmdmd|ITM DDR mode|||||
+titmsrst|ITM DDR mode|||||
+acsr|AC slew rate|||||
+rstiom|Reset I/O mode|||||
+rstpdr|RST pin power down receiver|||||
+rstpdd|RST pin power down driver|||||
+rstodt|RST pin ODT|||||
+rankpdr|Rank power down receiver|||||
+cspdd|CS# power down driver|||||
+rankodt|Rank ODT|||||
+ckpdr|CK pin power down receiver|||||
+ckpdd|CK pin power down receiver|||||
+ckodt|CK pin ODT|||||
+acpdr|AC pins power down receivers|||||
+acpdd|AC pins power down drivers|||||
+acodt|AC pins ODT|||||
+acoe|AC pins output enable|||||
+aciom|AC pins I/O mode|||||
+awdt|Active window data train|||||
+rvsel|ITMD read valid select|||||
+dqsnrst|DQS# reset|||||
+dqsnres|DQS# resistor|||||
+dqsres|DQS resistor|||||
+dxpdr|Data power down receiver|||||
+dxpdd|Data power down driver|||||
+dxiom|Data I/O mode|||||
+dxodt|Data on die termination|||||
+ckeoe|CKE output enable|||||
+rstoe|RST# output enable|||||
+odtoe|ODT output enable|||||
+ckoe|CK output enable|||||
+nl2oe|Non LPDDR2 output enable|||||
+nl2pd|Non LPDDR2 power down|||||
+odtpdd|ODT power down driver|||||
+ckepdd|CKE power down driver|||||
+fxdlat|Fixed latency|||||
+nobub|no bubble|||||
+dqsge|DQS gate early|||||
+dqsgx|DQS gate extension|||||
+lpdllpd|Low power DLL power down|||||
+lpiopd|Low power I/O power down|||||
+zuen|Zcal on DFI update request|||||
+bdisen|Byte disable enable|||||
+puren|PHY update request enable|||||
+tpd|Test Power Down|||||
+rdimm|Registered DIMM|||||
+udimm|Un bufferred DIMM|||||
+ddr2t|2T timing|||||
+nosra|No simultaneous rank access|||||
+ddrtype|DDR type (LPDDR2 S4)|||||
+mprdq|MPR DQ|||||
+pdq|Primary DQ|||||
+ddr8bnk|DDR 8 banks|||||
+ddrmd|DDR Mode: 3: DDR3, 4:LPDDR2, 5: LPDDR3|||||
+de|DLL Enable/Disable 0: enabled, 1: disable|||||
+mpr|MPR enable|||||
+mprloc|MPR location|||||
+ds|Drive strength: 3: 48ohms|||||
+wrodt3|N/A|||||
+wrodt2|N/A|||||
+wrodt1|N/A|||||
+wrodt0|N/A|||||
+rdodt3|N/A|||||
+rdodt2|N/A|||||
+rdodt1|N/A|||||
+rdodt0|N/A|||||
+dtmpr|Gate training using MPR|||||
+dtbank|Bank used for Data training|||||
+dtrow|Bank used for Data training|||||
+dtcol|Column used for Data training|||||
+zprog|ZQ Control - Impedance divide ratio to ext R|||||
+0r0rvsl|Byte Lane 0 - Read valid system latency in steps|||||
+0rttoal|Byte Lane 0 - RTT ON additive latency|||||
+0rttoh|Byte Lane 0 - RTT Output Hold|||||
+0dqrtt|Byte Lane 0 - DQ dynamic RTT Control|||||
+0dqsrtt|Byte Lane 0 - DQS dynamic RTT Control|||||
+0dsen|Byte Lane 0 - Write DQS Enable|||||
+0dqsrpd|Byte Lane 0 - DQSR Power Down|||||
+0dxpdr|Byte Lane 0 - Data Power Down Receiver|||||
+0dxpdd|Byte Lane 0 - Data Power Down Driver|||||
+0dxiom|Byte Lane 0 - Data I/O Mode|||||
+0dqodt|Byte Lane 0 - DQ ODT Enable|||||
+0dqsodt|Byte Lane 0 - DQS ODT Enable|||||
+0dxen|Byte Lane 0 - DATA Byte Enable|||||
+0dlldis|Byte Lane 0 - DLL Bypass|||||
+0dllsrst|Byte Lane 0 - DLL Reset|||||
+0sdlbmode|Byte Lane 0 - Bypass Slave DLL during Loopback|||||
+0atesten|Byte Lane 0 - Enable path to pin ATO|||||
+0sdphase|Byte Lane 0 - Slave DLL phase|BYTE 0||||This parameter contains the DQS Phase after tuning. Default value is 0. Coarse position: Phase delay (7 steps: 0 to 6). Possible values are: Reported Index: 0 (36 degrees) Reported Index: 1 (54 degrees) Reported Index: 2 (72 degrees) Reported Index: 3 (90 degrees) (default value) Reported Index: 4 (108 degrees) Reported Index: 5 (126 degrees) Reported Index: 6 (144 degrees) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0sstart|Byte Lane 0 - Slave DLL Autostart|||||
+0mfwdly|Byte Lane 0 - Master DLL Feedforward trim|||||
+0mfbdly|Byte Lane 0 - Master DLL Feedback trim|||||
+0sfwdly|Byte Lane 0 - Slave DLL Feedforward trim|||||
+0sfbdly|Byte Lane 0 - Slave DLL Feedback trim|||||
+0dqdly7|Byte lane 0 – DQ delay for bit 7 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqdly6|Byte lane 0 – DQ delay for bit 6 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqdly5|Byte lane 0 – DQ delay for bit 5 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqdly4|Byte lane 0 – DQ delay for bit 4 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqdly3|Byte lane 0 – DQ delay for bit 3 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqdly2|Byte lane 0 – DQ delay for bit 2 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqdly1|Byte lane 0 – DQ delay for bit 1 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqdly0|Byte lane 0 – DQ delay for bit 0 fine tuning (both DQS/DQS# clock)|BYTE 0||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dmdly|Byte Lane 0 - DM delay fine tuning|||||
+0dqsndly|Byte Lane 0 - DQS# delay fine tuning|BYTE 0||||This parameter contains the DQS# fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0dqsdly|Byte Lane 0 - DQS delay fine tuning|BYTE 0||||This parameter contains the DQS fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0r0dgps|Byte Lane 0 - DQS gating phase select fine tuning|BYTE 0||||This parameter contains the DQS gating phase select fine tuning. Default value is 2. Valid values are: 0 (clk180) 1 (clk270) 2 (clk0) (default value) 3 (next clk90) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+0r0dgsl|Byte Lane 0 - DQS gating system latency fine tuning|BYTE 0||||This parameter contains the DQS gating system latency fine tuning. Default value is 3. Valid values are: 0 (No extra clock cycles) (default value) 1 (1 extra clock cycle) 2 (2 extra clock cycles) 3 (3 extra clock cycles) 4 (4 extra clock cycles) 5 (5 extra clock cycles) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1r0rvsl|Byte Lane 1 - Read valid system latency in steps|||||
+1rttoal|Byte Lane 1 - RTT ON additive latency|||||
+1rttoh|Byte Lane 1 - RTT Output Hold|||||
+1dqrtt|Byte Lane 1 - DQ dynamic RTT Control|||||
+1dqsrtt|Byte Lane 1 - DQS dynamic RTT Control|||||
+1dsen|Byte Lane 1 - Write DQS Enable|||||
+1dqsrpd|Byte Lane 1 - DQSR Power Down|||||
+1dxpdr|Byte Lane 1 - Data Power Down Receiver|||||
+1dxpdd|Byte Lane 1 - Data Power Down Driver|||||
+1dxiom|Byte Lane 1 - Data I/O Mode|||||
+1dqodt|Byte Lane 1 - DQ ODT Enable|||||
+1dqsodt|Byte Lane 1 - DQS ODT Enable|||||
+1dxen|Byte Lane 1 - DATA Byte Enable|||||
+1dlldis|Byte Lane 1 - DLL Bypass|||||
+1dllsrst|Byte Lane 1 - DLL Reset|||||
+1sdlbmode|Byte Lane 1 - Bypass Slave DLL during Loopback|||||
+1atesten|Byte Lane 1 - Enable path to pin ATO|||||
+1sdphase|Byte Lane 1 - Slave DLL phase|BYTE 1||||This parameter contains the DQS Phase after tuning. Default value is 0. Coarse position: Phase delay (7 steps: 0 to 6). Possible values are: Reported Index: 0 (36 degrees) Reported Index: 1 (54 degrees) Reported Index: 2 (72 degrees) Reported Index: 3 (90 degrees) (default value) Reported Index: 4 (108 degrees) Reported Index: 5 (126 degrees) Reported Index: 6 (144 degrees) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1sstart|Byte Lane 1 - Slave DLL Autostart|||||
+1mfwdly|Byte Lane 1 - Master DLL Feedforward trim|||||
+1mfbdly|Byte Lane 1 - Master DLL Feedback trim|||||
+1sfwdly|Byte Lane 1 - Slave DLL Feedforward trim|||||
+1sfbdly|Byte Lane 1 - Slave DLL Feedback trim|||||
+1dqdly7|Byte lane 1 – DQ delay for bit 7 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqdly6|Byte lane 1 – DQ delay for bit 6 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqdly5|Byte lane 1 – DQ delay for bit 5 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqdly4|Byte lane 1 – DQ delay for bit 4 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqdly3|Byte lane 1 – DQ delay for bit 3 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqdly2|Byte lane 1 – DQ delay for bit 2 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqdly1|Byte lane 1 – DQ delay for bit 1 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqdly0|Byte lane 1 – DQ delay for bit 0 fine tuning (both DQS/DQS# clock)|BYTE 1||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dmdly|Byte Lane 1 - DM delay fine tuning|||||
+1dqsndly|Byte Lane 1 - DQS# delay fine tuning|BYTE 1||||This parameter contains the DQS# fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1dqsdly|Byte Lane 1 - DQS delay fine tuning|BYTE 1||||This parameter contains the DQS fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1r0dgps|Byte Lane 1 - DQS gating system latency fine tuning|BYTE 1||||This parameter contains the DQS gating phase select fine tuning. Default value is 2. Valid values are: 0 (clk180) 1 (clk270) 2 (clk0) (default value) 3 (next clk90) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+1r0dgsl|Byte Lane 1 - DQS gating system latency fine tuning|BYTE 1||||This parameter contains the DQS gating system latency fine tuning. Default value is 3. Valid values are: 0 (No extra clock cycles) (default value) 1 (1 extra clock cycle) 2 (2 extra clock cycles) 3 (3 extra clock cycles) 4 (4 extra clock cycles) 5 (5 extra clock cycles) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2r0rvsl|Byte Lane 2 - Read valid system latency in steps|||||
+2rttoal|Byte Lane 2 - RTT ON additive latency|||||
+2rttoh|Byte Lane 2 - RTT Output Hold|||||
+2dqrtt|Byte Lane 2 - DQ dynamic RTT Control|||||
+2dqsrtt|Byte Lane 2 - DQS dynamic RTT Control|||||
+2dsen|Byte Lane 2 - Write DQS Enable|||||
+2dqsrpd|Byte Lane 2 - DQSR Power Down|||||
+2dxpdr|Byte Lane 2 - Data Power Down Receiver|||||
+2dxpdd|Byte Lane 2 - Data Power Down Driver|||||
+2dxiom|Byte Lane 2 - Data I/O Mode|||||
+2dqodt|Byte Lane 2 - DQ ODT Enable|||||
+2dqsodt|Byte Lane 2 - DQS ODT Enable|||||
+2dxen|Byte Lane 2 - DATA Byte Enable|||||
+2dlldis|Byte Lane 2 - DLL Bypass|||||
+2dllsrst|Byte Lane 2 - DLL Reset|||||
+2sdlbmode|Byte Lane 2 - Bypass Slave DLL during Loopback|||||
+2atesten|Byte Lane 2 - Enable path to pin ATO|||||
+2sdphase|Byte Lane 2 - Slave DLL phase|BYTE 2||||This parameter contains the DQS Phase after tuning. Default value is 0. Coarse position: Phase delay (7 steps: 0 to 6). Possible values are: Reported Index: 0 (36 degrees) Reported Index: 1 (54 degrees) Reported Index: 2 (72 degrees) Reported Index: 3 (90 degrees) (default value) Reported Index: 4 (108 degrees) Reported Index: 5 (126 degrees) Reported Index: 6 (144 degrees) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2sstart|Byte Lane 2 - Slave DLL Autostart|||||
+2mfwdly|Byte Lane 2 - Master DLL Feedforward trim|||||
+2mfbdly|Byte Lane 2 - Master DLL Feedback trim|||||
+2sfwdly|Byte Lane 2 - Slave DLL Feedforward trim|||||
+2sfbdly|Byte Lane 2 - Slave DLL Feedback trim|||||
+2dqdly7|Byte lane 2 – DQ delay for bit 7 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqdly6|Byte lane 2 – DQ delay for bit 6 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqdly5|Byte lane 2 – DQ delay for bit 5 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqdly4|Byte lane 2 – DQ delay for bit 4 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqdly3|Byte lane 2 – DQ delay for bit 3 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqdly2|Byte lane 2 – DQ delay for bit 2 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqdly1|Byte lane 2 – DQ delay for bit 1 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqdly0|Byte lane 2 – DQ delay for bit 0 fine tuning (both DQS/DQS# clock)|BYTE 2||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dmdly|Byte Lane 2 - DM delay fine tuning|||||
+2dqsndly|Byte Lane 2 - DQS# delay fine tuning|BYTE 2||||This parameter contains the DQS# fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2dqsdly|Byte Lane 2 - DQS delay fine tuning|BYTE 2||||This parameter contains the DQS fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2r0dgps|Byte Lane 2 - DQS gating phase select fine tuning|BYTE 2||||This parameter contains the DQS gating phase select fine tuning. Default value is 2. Valid values are: 0 (clk180) 1 (clk270) 2 (clk0) (default value) 3 (next clk90) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+2r0dgsl|Byte Lane 2 - DQS gating system latency fine tuning|BYTE 2||||This parameter contains the DQS gating system latency fine tuning. Default value is 3. Valid values are: 0 (No extra clock cycles) (default value) 1 (1 extra clock cycle) 2 (2 extra clock cycles) 3 (3 extra clock cycles) 4 (4 extra clock cycles) 5 (5 extra clock cycles) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3r0rvsl|Byte Lane 3 - Read valid system latency in steps|||||
+3rttoal|Byte Lane 3 - RTT ON additive latency|||||
+3rttoh|Byte Lane 3 - RTT Output Hold|||||
+3dqrtt|Byte Lane 3 - DQ dynamic RTT Control|||||
+3dqsrtt|Byte Lane 3 - DQS dynamic RTT Control|||||
+3dsen|Byte Lane 3 - Write DQS Enable|||||
+3dqsrpd|Byte Lane 3 - DQSR Power Down|||||
+3dxpdr|Byte Lane 3 - Data Power Down Receiver|||||
+3dxpdd|Byte Lane 3 - Data Power Down Driver|||||
+3dxiom|Byte Lane 3 - Data I/O Mode|||||
+3dqodt|Byte Lane 3 - DQ ODT Enable|||||
+3dqsodt|Byte Lane 3 - DQS ODT Enable|||||
+3dxen|Byte Lane 3 - DATA Byte Enable|||||
+3dlldis|Byte Lane 3 - DLL Bypass|||||
+3dllsrst|Byte Lane 3 - DLL Reset|||||
+3sdlbmode|Byte Lane 3 - Bypass Slave DLL during Loopback|||||
+3atesten|Byte Lane 3 - Enable path to pin ATO|||||
+3sdphase|Byte Lane 3 - Slave DLL phase|BYTE 3||||This parameter contains the DQS Phase after tuning. Default value is 0. Coarse position: Phase delay (7 steps: 0 to 6). Possible values are: Reported Index: 0 (36 degrees) Reported Index: 1 (54 degrees) Reported Index: 2 (72 degrees) Reported Index: 3 (90 degrees) (default value) Reported Index: 4 (108 degrees) Reported Index: 5 (126 degrees) Reported Index: 6 (144 degrees) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3sstart|Byte Lane 3 - Slave DLL Autostart|||||
+3mfwdly|Byte Lane 3 - Master DLL Feedforward trim|||||
+3mfbdly|Byte Lane 3 - Master DLL Feedback trim|||||
+3sfwdly|Byte Lane 3 - Slave DLL Feedforward trim|||||
+3sfbdly|Byte Lane 3 - Slave DLL Feedback trim|||||
+3dqdly7|Byte lane 3 – DQ delay for bit 7 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqdly6|Byte lane 3 – DQ delay for bit 6 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqdly5|Byte lane 3 – DQ delay for bit 5 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqdly4|Byte lane 3 – DQ delay for bit 4 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqdly3|Byte lane 3 – DQ delay for bit 3 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqdly2|Byte lane 3 – DQ delay for bit 2 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqdly1|Byte lane 3 – DQ delay for bit 1 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqdly0|Byte lane 3 – DQ delay for bit 0 fine tuning (both DQS/DQS# clock)|BYTE 3||||This parameter contains the DQ bit lane fine delay after tuning. Default value is 0x0F. Valid settings for each 2-bit control field are: 0 stands for 0 (DQ=00 DQ#=00 0000(0)) (nominal delay) 5 stands for 1 (DQ=01 DQ#=01 0101(5)) (nominal delay + 1 step) A stands for 2 (DQ=10 DQ#=10 1010(A)) (nominal delay + 2 steps) F stands for 3 (DQ=11 DQ#=11 1111(F)) (nominal delay + 3 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dmdly|Byte Lane 3 - DM delay fine tuning|||||
+3dqsndly|Byte Lane 3 - DQS# delay fine tuning|BYTE 3||||This parameter contains the DQS# fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3dqsdly|Byte Lane 3 - DQS delay fine tuning|BYTE 3||||This parameter contains the DQS fine tuning. Default value is 3. Valid values are: 0 (nominal delay - 3 steps) 1 (nominal delay - 2 steps) 2 (nominal delay - 1 steps) 3 (nominal delay) 4 (nominal delay + 1 step) 5 (nominal delay + 2 steps) 6 (nominal delay + 3 steps) 7 (nominal delay + 4 steps) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3r0dgps|Byte Lane 3 - DQS gating phase select fine tuning|BYTE 3||||This parameter contains the DQS gating phase select fine tuning. Default value is 2. Valid values are: 0 (clk180) 1 (clk270) 2 (clk0) (default value) 3 (next clk90) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+3r0dgsl|Byte Lane 3 - DQS gating system latency fine tuning|BYTE 3||||This parameter contains the DQS gating system latency fine tuning. Default value is 3. Valid values are: 0 (No extra clock cycles) (default value) 1 (1 extra clock cycle) 2 (2 extra clock cycles) 3 (3 extra clock cycles) 4 (4 extra clock cycles) 5 (5 extra clock cycles) Please use the DDR Tuning feature of STM32CubeMx DDR Test Suite to get tuned values for your hardware design.
+addrmap_row_b15|addrmap_row_b15|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b14|addrmap_row_b14|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b13|addrmap_row_b13|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b12|addrmap_row_b12|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b11|addrmap_row_b11|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b2_10|addrmap_row_b2_10|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b1|addrmap_row_b1|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b0|addrmap_row_b0|ADDRESS MAPPING||0|0x0F|
+addrmap_bank_b2|addrmap_bank_b2|ADDRESS MAPPING||0|0x3F|
+addrmap_bank_b1|addrmap_bank_b1|ADDRESS MAPPING||0|0x3F|
+addrmap_bank_b0|addrmap_bank_b0|ADDRESS MAPPING||0|0x3F|
+addrmap_col_b11|addrmap_col_b11|ADDRESS MAPPING||0|0x1F|
+addrmap_col_b10|addrmap_col_b10|ADDRESS MAPPING||0|0x1F|
+addrmap_col_b9|addrmap_col_b9|ADDRESS MAPPING||0|0x1F|
+addrmap_col_b8|addrmap_col_b8|ADDRESS MAPPING||0|0x1F|
+addrmap_col_b7|addrmap_col_b7|ADDRESS MAPPING||0|0x1F|
+addrmap_col_b6|addrmap_col_b6|ADDRESS MAPPING||0|0x0F|
+addrmap_col_b5|addrmap_col_b5|ADDRESS MAPPING||0|0x0F|
+addrmap_col_b4|addrmap_col_b4|ADDRESS MAPPING||0|0x0F|
+addrmap_col_b3|addrmap_col_b3|ADDRESS MAPPING||0|0x0F|
+addrmap_col_b2|addrmap_col_b2|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b5|addrmap_row_b5|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b4|addrmap_row_b4|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b3|addrmap_row_b3|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b2|addrmap_row_b2|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b9|addrmap_row_b9|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b8|addrmap_row_b8|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b7|addrmap_row_b7|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b6|addrmap_row_b6|ADDRESS MAPPING||0|0x0F|
+addrmap_row_b10|addrmap_row_b10|ADDRESS MAPPING||0|0x0F|
+lpddr3_6gb_12gb|lpddr3 6Gb or 12Gb in use|ADDRESS MAPPING||||
+MSTR|Master Register0 (MSTR)|UMCTL2/CTRL - MAIN CONTROL||||
+MRCTRL0|Mode Register Read/Write Control Register 0 (MRCTRL0)|UMCTL2/CTRL - MAIN CONTROL||||
+MRCTRL1|Mode Register Read/Write Control Register 1 (MRCTRL1)|UMCTL2/CTRL - MAIN CONTROL||||
+DERATEEN|Temperature Derate Enable Register (DERATEEN)|UMCTL2/CTRL - T DERATING CONTROL||||
+DERATEINT|Temperature Derate Interval Register (DERATEINT)|UMCTL2/CTRL - T DERATING CONTROL||||
+PWRCTL|Low Power Control Register (PWRCTL)|UMCTL2/CTRL - LOW POWER MODES CONTROL||||
+PWRTMG|Low Power Timing Register (PWRTMG)|UMCTL2/CTRL - LOW POWER MODES CONTROL||||
+HWLPCTL|Hardware Low Power Control Register (HWLPCTL)|UMCTL2/CTRL - LOW POWER MODES CONTROL||||
+RFSHCTL0|Refresh Control Register 0 (RFSHCTL0)|UMCTL2/CTRL - REFRESH CONTROL||||
+RFSHCTL3|Refresh Control Register 3 (RFSHCTL3)|UMCTL2/CTRL - REFRESH CONTROL||||
+RFSHTMG|Refresh Timing Register (RFSHTMG)|UMCTL2/CTRL - REFRESH CONTROL||||
+CRCPARCTL0|CRC Parity Control Register0 (CRCPARCTL0)|UMCTL2/CTRL - PARITY CONTROL||||
+INIT0|SDRAM Initialization Register 0 (INIT0)|UMCTL2/CTRL - INITIALISATION CONTROL||||
+DRAMTMG0|SDRAM Timing Register 0 (DRAMTMG0)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG1|SDRAM Timing Register 1 (DRAMTMG1)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG2|SDRAM Timing Register 2 (DRAMTMG2)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG3|SDRAM Timing Register 3 (DRAMTMG3)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG4|SDRAM Timing Register 4 (DRAMTMG4)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG5|SDRAM Timing Register 5 (DRAMTMG5)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG6|SDRAM Timing Register 6 (DRAMTMG6)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG7|SDRAM Timing Register 7 (DRAMTMG7)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG8|SDRAM Timing Register 8 (DRAMTMG8)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG14|SDRAM Timing Register 14 (DRAMTMG14)|UMCTL2/CTRL - TIMING CONTROL||||
+DRAMTMG15|SDRAM Timing Register 15 (DRAMTMG15)|UMCTL2/CTRL - TIMING CONTROL||||
+ZQCTL0|ZQ Control Register 0 (ZQCTL0)|UMCTL2/CTRL - ZQ CONTROL||||
+DFITMG0|DFI Timing Register 0 (DFITMG0)|UMCTL2/CTRL - DFI CONTROL||||
+DFITMG1|DFI Timing Register 1 (DFITMG1)|UMCTL2/CTRL - DFI CONTROL||||
+DFILPCFG0|DFI Low Power Configuration Register 0 (DFILPCFG0)|UMCTL2/CTRL - DFI CONTROL||||
+DFIUPD0|DFI Update Register 0 (DFIUPD0)|UMCTL2/CTRL - DFI CONTROL||||
+DFIUPD1|DFI Update Register 1 (DFIUPD1)|UMCTL2/CTRL - DFI CONTROL||||
+DFIUPD2|DFI Update Register 2 (DFIUPD2)|UMCTL2/CTRL - DFI CONTROL||||
+DFIMISC|DFI Miscellaneous Control Register (DFIMISC)|UMCTL2/CTRL - DFI CONTROL||||
+DFIPHYMSTR|DFI PHY Master interface (DFIPHYMSTR)|UMCTL2/CTRL - DFI CONTROL||||
+ODTCFG|ODT Configuration Register (ODTCFG)|UMCTL2/CTRL - ODT CONTROL||||
+ODTMAP|ODT/Rank Map Register (ODTMAP)|UMCTL2/CTRL - ODT CONTROL||||
+SCHED|Scheduler Control Register (SCHED)|UMCTL2/CTRL - SCHEDULING AND PERFORMANCE CONTROL||||
+SCHED1|Scheduler Control Register 1 (SCHED1)|UMCTL2/CTRL - SCHEDULING AND PERFORMANCE CONTROL||||
+PERFHPR1|High Priority Read CAM Register 1 (PERFHPR1)|UMCTL2/CTRL - SCHEDULING AND PERFORMANCE CONTROL||||
+PERFLPR1|Low Priority Read CAM Register 1 (PERFLPR1)|UMCTL2/CTRL - SCHEDULING AND PERFORMANCE CONTROL||||
+PERFWR1|Write CAM Register 1 (PERFWR1)|UMCTL2/CTRL - SCHEDULING AND PERFORMANCE CONTROL||||
+DBG0|Debug Register 0 (DBG0)|UMCTL2/CTRL - DEBUG CONTROL||||
+DBG1|Debug Register 1 (DBG1)|UMCTL2/CTRL - DEBUG CONTROL||||
+DBGCMD|Command Debug Register (DBGCMD)|UMCTL2/CTRL - DEBUG CONTROL||||
+SWCTL|Software Register Programming Control Enable (SWCTL)|UMCTL2/CTRL - DEBUG CONTROL||||
+POISONCFG|AXI Poison Configuration Register. Common for all AXI ports (POISONCFG)|UMCTL2/CTRL - DEBUG CONTROL||||
+POISONSTAT|AXI Poison Status Register (POISONSTAT)|UMCTL2/CTRL - DEBUG CONTROL||||
+PCCFG|Port Common Configuration Register (PCCFG)|UMCTL2/CTRL - COMMON AXI PORT REGISTER||||
+PCFGR_0|Port 0 Configuration Read Register (PCFGR_0)|UMCTL2/CTRL - AXI PORT 0||||
+PCFGW_0|Port 0 Configuration Write Register (PCFGW_0)|UMCTL2/CTRL - AXI PORT 0||||
+PCTRL_0|Port 0 Control Register (PCTRL_0)|UMCTL2/CTRL - AXI PORT 0||||
+PCFGQOS0_0|Port 0 Read QoS Configuration Register 0(PCFGQOS0_0)|UMCTL2/CTRL - AXI PORT 0||||
+PCFGQOS1_0|Port 0 Read QoS Configuration Register 1(PCFGQOS1_0)|UMCTL2/CTRL - AXI PORT 0||||
+PCFGWQOS0_0|Port 0 Write QoS Configuration Register 0(PCFGWQOS0_0)|UMCTL2/CTRL - AXI PORT 0||||
+PCFGWQOS1_0|Port 0 Write QoS Configuration Register 1(PCFGWQOS1_0)|UMCTL2/CTRL - AXI PORT 0||||
+PCFGR_1|Port 1 Configuration Read Register (PCFGR_1)|UMCTL2/CTRL - AXI PORT 1||||
+PCFGW_1|Port 1 Configuration Write Register (PCFGW_1)|UMCTL2/CTRL - AXI PORT 1||||
+PCTRL_1|Port 1 Control Register (PCTRL_1)|UMCTL2/CTRL - AXI PORT 1||||
+PCFGQOS0_1|Port 1 Read QoS Configuration Register 0 (PCFGQOS0_1)|UMCTL2/CTRL - AXI PORT 1||||
+PCFGQOS1_1|Port 1 Read QoS Configuration Register 1 (PCFGQOS1_1)|UMCTL2/CTRL - AXI PORT 1||||
+PCFGWQOS0_1|Port 1 Write QoS Configuration Register 0 (PCFGWQOS0_1)|UMCTL2/CTRL - AXI PORT 1||||
+PCFGWQOS1_1|Port 1 Write QoS Configuration Register 1 (PCFGWQOS1_1)|UMCTL2/CTRL - AXI PORT 1||||
+PIR|PHY Initialization Register (PIR)|PUBL/PHY - MAIN CONTROL||||
+PGCR|PHY General Configuration Register (PGCR)|PUBL/PHY - MAIN CONTROL||||
+PTR0|PHY Timing Register 0 (PTR0)|PUBL/PHY - MAIN CONTROL||||
+PTR1|PHY Timing Register 1 (PTR1)|PUBL/PHY - MAIN CONTROL||||
+PTR2|PHY Timing Register 2 (PTR2)|PUBL/PHY - MAIN CONTROL||||
+ACIOCR|AC I/O Configuration Register (ACIOCR)|PUBL/PHY - MAIN CONTROL||||
+DXCCR|Byte lane Common Configuration Register (DXCCR)|PUBL/PHY - MAIN CONTROL||||
+DSGCR|DDR System General Configuration Register (DSGCR)|PUBL/PHY - MAIN CONTROL||||
+DCR|DRAM Configuration Register (DCR)|PUBL/PHY - MAIN CONTROL||||
+DTPR0|DRAM Timing Parameters Register 0 (DTPR0)|PUBL/PHY - MAIN CONTROL||||
+DTPR1|DRAM Timing Parameters Register 1 (DTPR1)|PUBL/PHY - MAIN CONTROL||||
+DTPR2|DRAM Timing Parameters Register 2 (DTPR2)|PUBL/PHY - MAIN CONTROL||||
+MR0|Mode Register 0 (MR0)|PUBL/PHY - MAIN CONTROL||||
+MR1|Mode Register 1 (MR1)|PUBL/PHY - MAIN CONTROL||||
+MR2|Mode Register 2 (MR2)|PUBL/PHY - MAIN CONTROL||||
+MR3|Mode Register 3 (MR3)|PUBL/PHY - MAIN CONTROL||||
+ODTCR|ODT Configuration Register (ODTCR)|PUBL/PHY - MAIN CONTROL||||
+DTAR|Data Training Address Register (DTAR)|PUBL/PHY - MAIN CONTROL||||
+ZQ0CR1|ZQ Control (ZQ0CR1)|PUBL/PHY - ZQ Control||||
+DX0GCR|Byte lane 0 General Configuration Register (DX0GCR)|PUBL/PHY - BYTE LANE 0 TIMING REGISTERS||||
+DX1GCR|Byte lane 1 General Configuration Register (DX1GCR)|PUBL/PHY - BYTE LANE 1 TIMING REGISTERS||||
+DX2GCR|Byte lane 2 General Configuration Register (DX2GCR)|PUBL/PHY - BYTE LANE 2 TIMING REGISTERS||||
+DX3GCR|Byte lane 3 General Configuration Register (DX3GCR)|PUBL/PHY - BYTE LANE 3 TIMING REGISTERS||||
+ADDRMAP1|Address Map Register 1|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP2|Address Map Register 2|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP3|Address Map Register 3|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP4|Address Map Register 4|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP5|Address Map Register 5|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP6|Address Map Register 6|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP9|Address Map Register 9|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP10|Address Map Register 10|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+ADDRMAP11|Address Map Register 11|UMCTL2/CTRL - ADDRESS MAP CONTROL||||
+
+[Values]
+# параметр|значение|подпись
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG0|Ron 34 ohm / ODT = 40 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG1|Ron 34 ohm / ODT = 46 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG2|Ron 34 ohm / ODT = 52 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG3|Ron 34 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG4|Ron 34 ohm / ODT = 69 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG5|Ron 34 ohm / ODT = 80 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG6|Ron 34 ohm / ODT = 96 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG7|Ron 40 ohm / ODT = 40 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG8|Ron 40 ohm / ODT = 46 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG9|Ron 40 ohm / ODT = 52 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG10|Ron 40 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG11|Ron 40 ohm / ODT = 69 ohm
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG12|Ron 40 ohm / ODT = 80 ohm (Default)
+IMPEDANCE_DURING_READ|Ron_ODT_CONFIG13|Ron 40 ohm / ODT = 96 ohm
+IMPEDANCE_DURING_READ|Ron_CONFIG0|Ron 40 ohm
+IMPEDANCE_DURING_READ|Ron_CONFIG1|Ron 48 ohm (Default)
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG0|Ron 34 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG1|Ron 37 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG2|Ron 40 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG3|Ron 44 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG4|Ron 48 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG5|Ron 53 ohm / ODT = 60 ohm (Default)
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG6|Ron 60 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_ODT_CONFIG7|Ron 69 ohm / ODT = 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_CONFIG0|Ron 40 ohm
+IMPEDANCE_DURING_WRITE|Ron_CONFIG1|Ron 44 ohm
+IMPEDANCE_DURING_WRITE|Ron_CONFIG2|Ron 48 ohm
+IMPEDANCE_DURING_WRITE|Ron_CONFIG3|Ron 53 ohm (Default)
+IMPEDANCE_DURING_WRITE|Ron_CONFIG4|Ron 60 ohm
+IMPEDANCE_DURING_WRITE|Ron_CONFIG5|Ron 69 ohm

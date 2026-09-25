@@ -1,0 +1,15 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=MDIOS
+Version=mdios1_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PortAddress|Port Address|Basic Parameters||0|31|
+PreambleCheck|Preamble Check State|Basic Parameters||||
+
+[Values]
+# параметр|значение|подпись
+PreambleCheck|MDIOS_PREAMBLE_CHECK_ENABLE|Enable
+PreambleCheck|MDIOS_PREAMBLE_CHECK_DISABLE|Disable

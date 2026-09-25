@@ -1,0 +1,14 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DCACHE
+Version=STM32U5xx1_v0_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DCACHE_Read_Burst_Type|DCACHE Read Burst Type|Basic Parameters||||
+
+[Values]
+# параметр|значение|подпись
+DCACHE_Read_Burst_Type|DCACHE_READ_BURST_WRAP|DCACHE READ BURST WRAP
+DCACHE_Read_Burst_Type|DCACHE_READ_BURST_INCR|DCACHE READ BURST INCR

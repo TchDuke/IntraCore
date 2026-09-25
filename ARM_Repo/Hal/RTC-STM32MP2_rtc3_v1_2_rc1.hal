@@ -1,0 +1,370 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RTC
+Version=STM32MP2_rtc3_v1_2_rc1
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Instance1|Instance|||||
+IOSemaphoreAssignement|IO Semaphore Assignement|||||
+OutPutPullUp|Output Pull Up|General||||
+HourFormat|Hour Format|General||||
+BinaryAutoClr_A|Binary AutoControl|Alarm A||||
+BinaryAutoClr_B|Binary AutoControl|Alarm B||||
+Interrupt1|Tamper1_Interrupt_mode|Tamper||||
+Interrupt2|Tamper2_Interrupt_mode|Tamper||||
+Interrupt3|Tamper3_Interrupt_mode|Tamper||||
+AutoReload|AutoReload|General||||
+AsynchPrediv|Asynchronous Predivider value|General||0|127|
+SynchPrediv|Synchronous Predivider value|General||0|32767|
+maskk|mask|General||0x0|0x3F|
+AlarmSubSecondMask|Free running 32 bit mask|Alarm A||||
+AlarmSubSecondMask_B|Free running 32 bit mask|Alarm B||||
+OutPutRemap|Output Remap|General||||
+OutPutPolarity|Output Polarity|General||||
+OutPutType|Output Type|General||||
+BinMode|Bin Mode|General||||
+SSRU_Underflow_Interrupt|SSRU Underflow Interrupt|General||||
+BinMixBcdU|Bin mix BcdU|General||||
+Format|Data Format|Calendar Time||||
+Hours|Hours|Calendar Time||0|23|
+HoursARG|Hours|Calendar Time||||
+Minutes|Minutes|Calendar Time||0|59|
+MinutesARG|Minutes|Calendar Time||||
+Seconds|Seconds|Calendar Time||0|59|
+SecondsARG|Seconds|Calendar Time||||
+TimeFormat|Time Format|Calendar Time||||
+DayLightSaving|Day Light Saving: value of hour adjustment|Calendar Time||||
+StoreOperation|Store Operation|Calendar Time||||
+WeekDay|Week Day|Calendar Date||||
+Month|Month|Calendar Date||||
+Date|Date|Calendar Date||1|31|
+DateARG|Date|Calendar Date||||
+Year|Year|Calendar Date||0|99|
+YearARG|Year|Calendar Date||||
+Hours_A|Hours|Alarm A||1|12|
+HoursARG_A|Hours|Alarm A||||
+Minutes_A|Minutes|Alarm A||0|59|
+MinutesARG_A|Minutes|Alarm A||||
+Seconds_A|Seconds|Alarm A||0|59|
+SecondsARG_A|Seconds|Alarm A||||
+SubSeconds_A|Free running 32 bit value|Alarm A||0|59|
+SubSecondsARG_A|Free running 32 bit value|Alarm A||||
+AlarmMask|Alarm Mask|Alarm A||||
+AlarmMaskDateWeekDay|Alarm Mask Date Week day|Alarm A||||
+AlarmMaskHours|Alarm Mask Hours|Alarm A||||
+AlarmMaskMinutes|Alarm Mask Minutes|Alarm A||||
+AlarmMaskSeconds|Alarm Mask Seconds|Alarm A||||
+AlarmDateWeekDaySel|Alarm Date Week Day Sel|Alarm A||||
+AlarmDateWeekDay|Alarm Week Day|Alarm A||1|31|
+AlarmDateWeekDayARG|Alarm Date|Alarm A||||
+Alarm|Alarm|Alarm A||||
+Hours_B|Hours|Alarm B||1|12|
+Minutes_B|Minutes|Alarm B||0|59|
+HoursARG_B|Hours|Alarm B||||
+MinutesARG_B|Minutes|Alarm B||||
+Seconds_B|Seconds|Alarm B||0|59|
+SecondsARG_B|Seconds|Alarm B||||
+SubSeconds_B|Free running 32 bit value|Alarm B||0|59|
+SubSecondsARG_B|Free running 32 bit value|Alarm B||||
+AlarmMask_B|Alarm Mask|Alarm B||||
+AlarmMaskDateWeekDay_B|Alarm Mask Date Week day|Alarm B||||
+AlarmMaskHours_B|Alarm Mask Hours|Alarm B||||
+AlarmMaskMinutes_B|Alarm Mask Minutes|Alarm B||||
+AlarmMaskSeconds_B|Alarm Mask Seconds|Alarm B||||
+AlarmDateWeekDaySel_B|Alarm Date Week Day Sel|Alarm B||||
+AlarmDateWeekDay_B|Alarm Week Day|Alarm B||1|31|
+AlarmDateWeekDayARG_B|Alarm Date|Alarm B||||
+Alarm_B|Alarm|Alarm B||||
+TimeStampEdge|Time Stamp Pin Edge|Time Stamp||||
+TimeStampPin|Time Stamp Pin|Time Stamp||||
+FlagAutoClr_A|Flag AutoClre|Alarm A||||
+FlagAutoClr_B|Flag AutoClre|Alarm B||||
+Tamper_1|Tamper|Tamper||||
+Filter|Filter|Tamper||||
+SamplingFrequency|Sampling Frequency|Tamper||||
+PrechargeDuration|Precharge Duration|Tamper||||
+TamperPullUp|Tamper Pull Up|Tamper||||
+TimeStampOnTamperDetection|Time Stamp On Tamper Detection|Tamper||||
+Trigger_1|Tamper 1 Trigger|Tamper||||
+NoErase_1|Tamper 1 No Erase|Tamper||||
+MaskFlag_1|Tamper 1 Mask Flag|Tamper||||
+Interrupt|Tamper Interruption|Tamper||||
+Tamper_2|Tamper|Tamper||||
+Trigger_2|Tamper 2 Trigger|Tamper||||
+NoErase_2|Tamper 2 No Erase|Tamper||||
+MaskFlag_2|Tamper 2 Mask Flag|Tamper||||
+Tamper_3|Tamper|Tamper||||
+Trigger_3|Tamper 3 Trigger|Tamper||||
+NoErase_3|Tamper 3 No Erase|Tamper||||
+MaskFlag_3|Tamper 3 Mask Flag|Tamper||||
+WakeUpClock|Wake Up Clock|Wake UP||||
+WakeUpCounter|Wake Up Counter|Wake UP||0|65535|
+CalibOutput|Calibration|Calibration||||
+OutPut1|Output1|General||||
+OutPut2|Output2|General||||
+OutPut3|Output3|General||||
+OutPut|Output|General||||
+WakeUpAutoClr|Wake Up Auto Clr|Wake UP||0|65535|
+
+[Values]
+# параметр|значение|подпись
+OutPutPullUp|RTC_OUTPUT_PULLUP_NONE|Output PullUp Disabled
+OutPutPullUp|RTC_OUTPUT_PULLUP_ON|Output PullUp Enabled
+HourFormat|RTC_HOURFORMAT_12|Hourformat 12
+HourFormat|RTC_HOURFORMAT_24|Hourformat 24
+BinaryAutoClr_A|RTC_ALARMSUBSECONDBIN_AUTOCLR_YES|RTC_ALARMSUBSECONDBIN_AUTOCLR_YES
+BinaryAutoClr_A|RTC_ALARMSUBSECONDBIN_AUTOCLR_NO|RTC_ALARMSUBSECONDBIN_AUTOCLR_NO
+BinaryAutoClr_B|RTC_ALARMSUBSECONDBIN_AUTOCLR_YES|RTC_ALARMSUBSECONDBIN_AUTOCLR_YES
+BinaryAutoClr_B|RTC_ALARMSUBSECONDBIN_AUTOCLR_NO|RTC_ALARMSUBSECONDBIN_AUTOCLR_NO
+Interrupt1|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt1|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt2|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt2|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt3|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt3|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_ALL|All Alarm SS fields are masked. There is no comparison on sub seconds for Alarm
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_1|SS[31:1] are don't care in Alarm comparison. Only SS[0] is compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_2|SS[31:2] are don't care in Alarm comparison. Only SS[1:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_3|SS[31:3] are don't care in Alarm comparison. Only SS[2:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_4|SS[31:4] are don't care in Alarm comparison. Only SS[3:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_5|SS[31:5] are don't care in Alarm comparison. Only SS[4:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_6|SS[31:6] are don't care in Alarm comparison. Only SS[5:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_7|SS[31:7] are don't care in Alarm comparison. Only SS[6:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_8|SS[31:8] are don't care in Alarm comparison. Only SS[7:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_9|SS[31:9] are don't care in Alarm comparison. Only SS[8:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_10|SS[31:10] are don't care in Alarm comparison. Only SS[9:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_11|SS[31:11] are don't care in Alarm comparison. Only SS[10:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_12|SS[31:12] are don't care in Alarm comparison.Only SS[11:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_13|SS[31:13] are don't care in Alarm comparison. Only SS[12:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_14|SS[31:14] are don't care in Alarm comparison. Only SS[13:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_15|SS[31:15] are don't care in Alarm comparison. Only SS[14:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_16|SS[31:16] are don't care in Alarm comparison. Only SS[15:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_17|SS[31:17] are don't care in Alarm comparison. Only SS[16:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_18|SS[31:18] are don't care in Alarm comparison. Only SS[17:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_19|SS[31:19] are don't care in Alarm comparison. Only SS[18:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_20|SS[31:20] are don't care in Alarm comparison. Only SS[19:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_21|SS[31:21] are don't care in Alarm comparison. Only SS[20:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_22|SS[31:22] are don't care in Alarm comparison. Only SS[21:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_23|SS[31:23] are don't care in Alarm comparison. Only SS[22:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_24|SS[31:24] are don't care in Alarm comparison. Only SS[23:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_25|SS[31:25] are don't care in Alarm comparison. Only SS[24:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_26|SS[31:26] are don't care in Alarm comparison. Only SS[25:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_27|SS[31:27] are don't care in Alarm comparison. Only SS[26:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_28|SS[31:28] are don't care in Alarm comparison. Only SS[27:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_29|SS[31:29] are don't care in Alarm comparison. Only SS[28:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31_30|SS[31:30] are don't care in Alarm comparison. Only SS[29:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_SS31|SS[31] is don't care in Alarm comparison. Only SS[30:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDBINMASK_NONE|SS[31:0] are compared and must match to activate alarm
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_1|Only SS[0] is compared.
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_2|Only SS[1:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_3|Only SS[2:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_4|Only SS[3:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_5|Only SS[4:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_6|Only SS[5:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_7|Only SS[6:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_8|Only SS[7:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_9|Only SS[8:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_10|Only SS[9:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_11|Only SS[10:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_12|Only SS[11:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14_13|Only SS[12:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_SS14|Only SS[13:0] are compared
+AlarmSubSecondMask|RTC_ALARMSUBSECONDMASK_NONE|SS[14:0] are compared and must match to activate alarm.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_ALL|All Alarm SS fields are masked. There is no comparison on sub seconds for Alarm
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_1|SS[31:1] are don't care in Alarm comparison. Only SS[0] is compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_2|SS[31:2] are don't care in Alarm comparison. Only SS[1:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_3|SS[31:3] are don't care in Alarm comparison. Only SS[2:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_4|SS[31:4] are don't care in Alarm comparison. Only SS[3:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_5|SS[31:5] are don't care in Alarm comparison. Only SS[4:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_6|SS[31:6] are don't care in Alarm comparison. Only SS[5:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_7|SS[31:7] are don't care in Alarm comparison. Only SS[6:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_8|SS[31:8] are don't care in Alarm comparison. Only SS[7:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_9|SS[31:9] are don't care in Alarm comparison. Only SS[8:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_10|SS[31:10] are don't care in Alarm comparison. Only SS[9:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_11|SS[31:11] are don't care in Alarm comparison. Only SS[10:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_12|SS[31:12] are don't care in Alarm comparison.Only SS[11:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_13|SS[31:13] are don't care in Alarm comparison. Only SS[12:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_14|SS[31:14] are don't care in Alarm comparison. Only SS[13:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_15|SS[31:15] are don't care in Alarm comparison. Only SS[14:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_16|SS[31:16] are don't care in Alarm comparison. Only SS[15:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_17|SS[31:17] are don't care in Alarm comparison. Only SS[16:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_18|SS[31:18] are don't care in Alarm comparison. Only SS[17:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_19|SS[31:19] are don't care in Alarm comparison. Only SS[18:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_20|SS[31:20] are don't care in Alarm comparison. Only SS[19:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_21|SS[31:21] are don't care in Alarm comparison. Only SS[20:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_22|SS[31:22] are don't care in Alarm comparison. Only SS[21:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_23|SS[31:23] are don't care in Alarm comparison. Only SS[22:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_24|SS[31:24] are don't care in Alarm comparison. Only SS[23:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_25|SS[31:25] are don't care in Alarm comparison. Only SS[24:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_26|SS[31:26] are don't care in Alarm comparison. Only SS[25:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_27|SS[31:27] are don't care in Alarm comparison. Only SS[26:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_28|SS[31:28] are don't care in Alarm comparison. Only SS[27:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_29|SS[31:29] are don't care in Alarm comparison. Only SS[28:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31_30|SS[31:30] are don't care in Alarm comparison. Only SS[29:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_SS31|SS[31] is don't care in Alarm comparison. Only SS[30:0] are compared
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDBINMASK_NONE|SS[31:0] are compared and must match to activate alarm
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_1|Only SS[0] is compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_2|Only SS[1:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_3|Only SS[2:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_4|Only SS[3:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_5|Only SS[4:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_6|Only SS[5:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_7|Only SS[6:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_8|Only SS[7:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_9|Only SS[8:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_10|Only SS[9:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_11|Only SS[10:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_12|Only SS[11:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14_13|Only SS[12:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_SS14|Only SS[13:0] are compared.
+AlarmSubSecondMask_B|RTC_ALARMSUBSECONDMASK_NONE|SS[14:0] are compared and must match to activate alarm.
+OutPutRemap|RTC_OUTPUT_REMAP_POS1|Output Remap on PA4 pin
+OutPutRemap|RTC_OUTPUT_REMAP_NONE|Output Remap on PC13 pin
+OutPutPolarity|RTC_OUTPUT_POLARITY_HIGH|Output Polarity High
+OutPutPolarity|RTC_OUTPUT_POLARITY_LOW|Output Polarity Low
+OutPutType|RTC_OUTPUT_TYPE_OPENDRAIN|Output Type Opendrain
+OutPutType|RTC_OUTPUT_TYPE_PUSHPULL|Output Type Pushpull
+BinMode|RTC_BINARY_NONE|Free running BCD calender mode
+BinMode|RTC_BINARY_ONLY|Free running Binary mode
+BinMode|RTC_BINARY_MIX|Free running BCD calender and binary mode
+BinMixBcdU|RTC_BINARY_MIX_BCDU_0|The 1s BCD calendar increment is generated each time SS[7:0]
+BinMixBcdU|RTC_BINARY_MIX_BCDU_1|The 1s BCD calendar increment is generated each time SS[8:0]
+BinMixBcdU|RTC_BINARY_MIX_BCDU_2|The 1s BCD calendar increment is generated each time SS[9:0]
+BinMixBcdU|RTC_BINARY_MIX_BCDU_3|The 1s BCD calendar increment is generated each time SS[10:0]
+BinMixBcdU|RTC_BINARY_MIX_BCDU_4|The 1s BCD calendar increment is generated each time SS[11:0]
+BinMixBcdU|RTC_BINARY_MIX_BCDU_5|The 1s BCD calendar increment is generated each time SS[12:0]
+BinMixBcdU|RTC_BINARY_MIX_BCDU_6|The 1s BCD calendar increment is generated each time SS[13:0]
+BinMixBcdU|RTC_BINARY_MIX_BCDU_7|The 1s BCD calendar increment is generated each time SS[14:0]
+Format|RTC_FORMAT_BIN|Binary data format
+Format|RTC_FORMAT_BCD|BCD data format
+TimeFormat|RTC_HOURFORMAT12_AM|12 AM
+TimeFormat|RTC_HOURFORMAT12_PM|12 PM
+DayLightSaving|RTC_DAYLIGHTSAVING_NONE|Daylightsaving None
+DayLightSaving|RTC_DAYLIGHTSAVING_SUB1H|Daylightsaving Sub1h
+DayLightSaving|RTC_DAYLIGHTSAVING_ADD1H|Daylightsaving Add1h
+StoreOperation|RTC_STOREOPERATION_RESET|Storeoperation Reset
+StoreOperation|RTC_STOREOPERATION_SET|Storeoperation Set
+WeekDay|RTC_WEEKDAY_MONDAY|Monday
+WeekDay|RTC_WEEKDAY_TUESDAY|Tuesday
+WeekDay|RTC_WEEKDAY_WEDNESDAY|Wednesday
+WeekDay|RTC_WEEKDAY_THURSDAY|Thursday
+WeekDay|RTC_WEEKDAY_FRIDAY|Friday
+WeekDay|RTC_WEEKDAY_SATURDAY|Saturday
+WeekDay|RTC_WEEKDAY_SUNDAY|Sunday
+Month|RTC_MONTH_JANUARY|January
+Month|RTC_MONTH_FEBRUARY|February
+Month|RTC_MONTH_MARCH|March
+Month|RTC_MONTH_APRIL|April
+Month|RTC_MONTH_MAY|May
+Month|RTC_MONTH_JUNE|June
+Month|RTC_MONTH_JULY|July
+Month|RTC_MONTH_AUGUST|August
+Month|RTC_MONTH_SEPTEMBER|September
+Month|RTC_MONTH_OCTOBER|October
+Month|RTC_MONTH_NOVEMBER|November
+Month|RTC_MONTH_DECEMBER|December
+AlarmMaskDateWeekDay|RTC_ALARMMASK_DATEWEEKDAY|Enable
+AlarmMaskHours|RTC_ALARMMASK_HOURS|Enable
+AlarmMaskMinutes|RTC_ALARMMASK_MINUTES|Enable
+AlarmMaskSeconds|RTC_ALARMMASK_SECONDS|Enable
+AlarmDateWeekDaySel|RTC_ALARMDATEWEEKDAYSEL_DATE|Date
+AlarmDateWeekDaySel|RTC_ALARMDATEWEEKDAYSEL_WEEKDAY|Weekday
+AlarmDateWeekDay|RTC_WEEKDAY_MONDAY|Monday
+AlarmDateWeekDay|RTC_WEEKDAY_TUESDAY|Tuesday
+AlarmDateWeekDay|RTC_WEEKDAY_WEDNESDAY|Wednesday
+AlarmDateWeekDay|RTC_WEEKDAY_THURSDAY|Thursday
+AlarmDateWeekDay|RTC_WEEKDAY_FRIDAY|Friday
+AlarmDateWeekDay|RTC_WEEKDAY_SATURDAY|Saturday
+AlarmDateWeekDay|RTC_WEEKDAY_SUNDAY|Sunday
+Alarm|RTC_ALARM_A|ALARM A
+Alarm|RTC_ALARM_B|ALARM B
+AlarmMaskDateWeekDay_B|RTC_ALARMMASK_DATEWEEKDAY|Enable
+AlarmMaskHours_B|RTC_ALARMMASK_HOURS|Enable
+AlarmMaskMinutes_B|RTC_ALARMMASK_MINUTES|Enable
+AlarmMaskSeconds_B|RTC_ALARMMASK_SECONDS|Enable
+AlarmDateWeekDaySel_B|RTC_ALARMDATEWEEKDAYSEL_DATE|Date
+AlarmDateWeekDaySel_B|RTC_ALARMDATEWEEKDAYSEL_WEEKDAY|Weekday
+AlarmDateWeekDay_B|RTC_WEEKDAY_MONDAY|Monday
+AlarmDateWeekDay_B|RTC_WEEKDAY_TUESDAY|Tuesday
+AlarmDateWeekDay_B|RTC_WEEKDAY_WEDNESDAY|Wednesday
+AlarmDateWeekDay_B|RTC_WEEKDAY_THURSDAY|Thursday
+AlarmDateWeekDay_B|RTC_WEEKDAY_FRIDAY|Friday
+AlarmDateWeekDay_B|RTC_WEEKDAY_SATURDAY|Saturday
+AlarmDateWeekDay_B|RTC_WEEKDAY_SUNDAY|Sunday
+Alarm_B|RTC_ALARM_A|ALARM A
+Alarm_B|RTC_ALARM_B|ALARM B
+TimeStampEdge|RTC_TIMESTAMPEDGE_RISING|Time Stamp occurs on the Rising edge
+TimeStampEdge|RTC_TIMESTAMPEDGE_FALLING|Time Stamp occurs on the Falling edge
+TimeStampPin|RTC_TIMESTAMPPIN_DEFAULT|PC13 is selected as RTC TimeStamp Pin
+FlagAutoClr_A|ALARM_FLAG_AUTOCLR_ENABLE|Enable
+FlagAutoClr_A|ALARM_FLAG_AUTOCLR_DISABLE|Disable
+FlagAutoClr_B|ALARM_FLAG_AUTOCLR_ENABLE|Enable
+FlagAutoClr_B|ALARM_FLAG_AUTOCLR_DISABLE|Disable
+Tamper_1|RTC_TAMPER_1|Tamper 1
+Filter|RTC_TAMPERFILTER_DISABLE|Disabled
+Filter|RTC_TAMPERFILTER_2SAMPLE|Tamper activated after 2 consecutive samples
+Filter|RTC_TAMPERFILTER_4SAMPLE|Tamper activated after 4 consecutive samples
+Filter|RTC_TAMPERFILTER_8SAMPLE|Tamper activated after 8 consecutive samples
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV32768|Sampling Frequency = RTCCLK / 32768
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV16384|Sampling Frequency = RTCCLK / 16384
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV8192|Sampling Frequency = RTCCLK / 8192
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV4096|Sampling Frequency = RTCCLK / 4096
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV2048|Sampling Frequency = RTCCLK / 2048
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV1024|Sampling Frequency = RTCCLK / 1024
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV512|Sampling Frequency = RTCCLK / 512
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV256|Sampling Frequency = RTCCLK / 256
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_1RTCCLK|Precharge Duration = 1 RTCCLK cycle
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_2RTCCLK|Precharge Duration = 2 RTCCLK cycles
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_4RTCCLK|Precharge Duration = 4 RTCCLK cycles
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_8RTCCLK|Precharge Duration = 8 RTCCLK cycles
+TamperPullUp|RTC_TAMPER_PULLUP_ENABLE|Enabled
+TamperPullUp|RTC_TAMPER_PULLUP_DISABLE|Disabled
+TimeStampOnTamperDetection|RTC_TIMESTAMPONTAMPERDETECTION_ENABLE|Time Stamp on Tamper Detection event saved
+TimeStampOnTamperDetection|RTC_TIMESTAMPONTAMPERDETECTION_DISABLE|Time Stamp on Tamper Detection event is not saved
+Trigger_1|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_1|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_1|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_1|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_1|RTC_TAMPER_ERASE_BACKUP_ENABLE|No Erase Enabled
+NoErase_1|RTC_TAMPER_ERASE_BACKUP_DISABLE|No Erase Disabled
+MaskFlag_1|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_1|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+Interrupt|RTC_TAMPER1_INTERRUPT|Tamper 1 Interruption Only
+Interrupt|RTC_TAMPER2_INTERRUPT|Tamper 2 Interruption Only
+Interrupt|RTC_TAMPER3_INTERRUPT|Tamper 3 Interruption Only
+Interrupt|__NULL|__NULL
+Tamper_2|RTC_TAMPER_2|Tamper 2
+Trigger_2|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_2|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_2|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_2|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_2|RTC_TAMPER_ERASE_BACKUP_ENABLE|No Erase Enabled
+NoErase_2|RTC_TAMPER_ERASE_BACKUP_DISABLE|No Erase Disabled
+MaskFlag_2|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_2|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+Tamper_3|RTC_TAMPER_3|Tamper 3
+Trigger_3|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_3|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_3|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_3|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_3|RTC_TAMPER_ERASE_BACKUP_ENABLE|No Erase Enabled
+NoErase_3|RTC_TAMPER_ERASE_BACKUP_DISABLE|No Erase Disabled
+MaskFlag_3|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_3|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV16|RTCCLK / 16
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV8|RTCCLK / 8
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV4|RTCCLK / 4
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV2|RTCCLK / 2
+WakeUpClock|RTC_WAKEUPCLOCK_CK_SPRE_16BITS|1 Hz
+WakeUpClock|RTC_WAKEUPCLOCK_CK_SPRE_17BITS|1 Hz with 1 bit added to Wake Up Counter
+CalibOutput|RTC_CALIBOUTPUT_512HZ|Signal has a regular waveform at 512Hz
+CalibOutput|RTC_CALIBOUTPUT_1HZ|signal has a regular waveform at 1Hz
+OutPut1|RTC_OUTPUT_ALARMA|Output Alarm A
+OutPut2|RTC_OUTPUT_ALARMB|Output Alarm B
+OutPut3|RTC_OUTPUT_WAKEUP|Output Wakeup
+OutPut|RTC_OUTPUT_ALARMA|Output
+OutPut|RTC_OUTPUT_ALARMB|Output
+OutPut|RTC_OUTPUT_WAKEUP|Output
+OutPut|RTC_OUTPUT_DISABLE|Output

@@ -1,0 +1,1036 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=MDF
+Version=v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+MDF_Instance0|MDF_Instance0|MDFgroup||||
+MDF_Handle0|MDF_Handle0|MDFgroup||||
+MDF_SITF0_ActivationSerialInterface|SITF0 Activation|||||
+MDF_SITF0_Mode_Display|Serial interface mode|||||<b>Normal SPI </b>Mode <b>LF Master SPI </b>Mode : Dedicated to low-power use-cases, using low-speed sensors. To guarantee optimal timing performances, the application must select the same clock than the one provided to the external sensor for each SITFx <b>Manchester </b>Mode : Decoded data and clock signals are recovered from serial stream after Manchester decoding.
+MDF_SITF0_Mode|MDF_SITF_Mode|||||
+MDF_SITF0_Manchester_Front|Means of edge|||||Means of edge for Manchester Mode
+MDF_SITF0_Threshold|Manchester symbol threshold|||4|31|Manchester symbol threshold.
+MDF_SITF0_ClockSource|Serial interface clock source|||||Select which common clock source is used for the Serial Interface SITF
+MDF_DFLT0_SITF_Choice|bitstream matrix Serial-ITF selection|||||Selection of the serial interface (SITF) to use for the current Filter configuration (DFLT) as well as the related Short Circuit Detector (SCD)
+MDF_DFLT0_FilterBistreamFront|bitstream matrix Front selection|||||Select the bitstream to use. Indeed for each SITF the both streams are available (one defined on the rising edge, one defined on the falling edge).
+MDF_DFLT0_FilterBistream|Filter Bitstream Selection|||||
+MDF_DFLT0_StructureName|Structure|||||
+MDF_DFLT0_Data_Source|Data Source|||||The source of the digital filter (DFLT) can be selected between the two following: • data coming from the Bitstream matrix (then select which SITF and the front used in the additionnal parameters) • data coming from the ADC interface 1 or 2 To use the data source coming from ADC interface 1 or 2, these 3 conditions have to be checked : - 1 : ADC1 (or ADC2) has to be activated with the Conversion Data Management Parameter set to "MDF mode" value - 2 : the SCD (Short Circuit Detector) mode has to be desactivated
+MDF_DFLT0_CIC_Mode|CIC Mode|||||The Cascaded-Integrator-Comb (CIC) filter is a high-resolution low-pass decimation filter CIC filter can be configured with Sinc4 or Sinc5 order
+MDF_DFLT0_ReshapeFilterActivation|Reshape Filter|||||Activation of reshaping filter mainly dedicated to the audio application but also usable in other applications.
+MDF_DFLT0_ReshapeFilterDecimationRatio|Decimation ratio|||||The samples at the reshape filter output can be decimated by four (4) or not (1)
+MDF_DFLT0_HighPassFilterActivation|High pass filter|||||"The high-pass filter suppresses the low-frequency content from the final output data stream in case of continuous conversion mode. This filter is useful when there is parasitic low-frequency noise (or DC signal) in the input data source and it must be removed from the final data."
+MDF_DFLT0_HighPassCutOffFrequency|Cut off frequency|||||Cut-off freqency of the high-pass filter : FPCM represents the sampling frequency at HPF input
+MDF_DFLT0_IntegratorActivation|Offset|||||The Integrator performs additional decimation and a resolution increase of data coming from the digital filter.
+MDF_DFLT0_IntegratorValue|Integrator Value|||2|128|Value is the amount of integrated values.
+MDF_DFLT0_IntegratorOutputDivision|Integrator Output division|||||In order to control the data width at the integrator output, the resulting data can be divided by 1, 4, 32 or 128.
+MDF_DFLT0_SADActivation|Sound Activity|||||
+MDF_DFLT0_SADDetector|Detector Mode|||||Sound activity detector mode.
+MDF_DFLT0_SADFrameSize|Frame size|||||Size of one frame to compute short-term signal level.
+MDF_DFLT0_SADHysteresis|Hysteresis|||||
+MDF_DFLT0_SADTriggerEvent|Sound trigger event configuration|||||Sound trigger event configuration : An event indicates when the Sound Activity Detector (SAD) enters and/or exits the DETECT state. This event is used to generate an interrupt when a sound is detected or when a sound is no longer detected. Either the application receives an event only when the SAD enters the DETECT state (or MONITOR state). Or the application receives an event when the SAD enters or exits the DETECT state.
+MDF_DFLT0_SADDataMemoryTransfer|Data Memory Transfer|||||
+MDF_DFLT0_SADMinNoiseLevel|Minimum noise level|||0|8191|
+MDF_DFLT0_SADHangoverWindow|hangover time window|||||Hangover time window in frames
+MDF_DFLT0_SADLearningFrames|Learning frames|||||Number of learning frames for the first estimation of noise level.
+MDF_DFLT0_SADAmbientNoiseSlope|Ambient Noise Slope|||0|7|Ambient noise slope control.
+MDF_DFLT0_SADSignalNoiseThreshold|Signal Noise Threshold|||||Signal to noise threshold.
+MDF_DFLT0_SADSoundLevelInterrupt|Sound level interrupt|||||This interrupt is mainly used for debug purpose.
+MDF_DFLT0_AcquisitionMode|Acquisition mode|||||<b>Asynchronous, continuous</b> mode allows the application to start a continuous acquisition <b>Asynchronous, single-shot</b> mode allows the application to start the acquisition of one sample <b>Synchronous, continuous</b> mode allows the application to start a continuous acquisition by using trigger source <b>Synchronous, single-shot</b> mode allows the application to start a single acquisition by using trigger source <b>Window, continuous</b> mode allows the application to start or stop a continuous acquisition by consecutive edges of using trigger source <b>Window, snapshot (for MDF)</b> mode allows the application to store when a trigger occurs, the last valid sample, the current decimation value of CIC and the sample counter of the integrator are stored whereas the DFLT is continuously acquiring the samples
+MDF_DFLT0_TriggerSource|Trigger Source|||||Digital filter trigger signal selection, select which external signals trigger for the corresponding filter When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT0_TriggerEdge|Trigger edge|||||Edge to use on the trigger source. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT0_SnapShotFormat|Snapshot data resolution|||||
+MDF_DFLT0_SCDActivation|Short Circuit Detector Activation|||||The SCD detects, with a very fast response time, if an analog signal reached saturated values (out-of-full scale ranges) and remained on this value for a given time.
+MDF_DFLT0_SCDThreshold|Threshold|||2|256|Threshold defines the max consecutive 1's or 0's which will generate an event.
+MDF_DFLT0_SCDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT0_OLDActivation|Out-Off Limit Detector Activation|||||"The OLD triggers an event when a signal reaches or crosses given maximum and minimum threshold values. The generated event drives a break signals when conditions are met. <b>Warning :</b> The OLD can be used only if the CIC filter is configured in motor and sensing mode (not vailable for CIC Mode = Sinc4 or Sinc5)"
+MDF_DFLT0_OLDCicMode|OutOff Limit CIC Mode|||||CIC filter can be configured with Sinc1, Sinc2, Sinc3 or FastSinc order.
+MDF_DFLT0_OLDDecimationRatio|Decimantion Ratio|||1|32|Decimation ration of the OLD CIC filter.
+MDF_DFLT0_OLDEventConfig|OutOff Limit Event Config|||||Define when the OLD generates an event.
+MDF_DFLT0_OLDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT0_OLDHighThreshold|High Threshold|||=MDF_DFLT0_OLDLowThreshold + 1|33554431|High Threshold for out-of-limit detector. Has to be strictly greater than Low Threshold Min = Low Threshold + 1 Max = 33554431
+MDF_DFLT0_OLDLowThreshold|Low Threshold|||-33554432|=MDF_DFLT0_OLDHighThreshold - 1|Low Threshold for out-of-limit detector. Has to be strictly lower than High Threshold Min = -33554432 Max = High Threshold - 1
+MDF_Handle1|MDF_Handle1|MDFgroup||||
+MDF_Instance1|MDF_Instance1|MDFgroup||||
+MDF_SITF1_ActivationSerialInterface|SITF1 Activation|||||
+MDF_SITF1_Mode_Display|Serial interface mode|||||<b>Normal SPI </b>Mode <b>LF Master SPI </b>Mode : Dedicated to low-power use-cases, using low-speed sensors. To guarantee optimal timing performances, the application must select the same clock than the one provided to the external sensor for each SITFx <b>Manchester </b>Mode : Decoded data and clock signals are recovered from serial stream after Manchester decoding.
+MDF_SITF1_Mode|MDF_SITF_Mode|||||
+MDF_SITF1_Manchester_Front|Means of edge|||||Means of edge for Manchester Mode
+MDF_SITF1_Threshold|Manchester symbol threshold|||4|31|Manchester symbol threshold.
+MDF_SITF1_ClockSource|Serial interface clock source|||||Warning : The clock source used by the SITF is defined only in the Mode window. Here is just for information.
+MDF_DFLT1_SITF_Choice|bitstream matrix Serial-ITF selection|||||Selection of the serial interface (SITF) to use for the current Filter configuration (DFLT) as well as the related Short Circuit Detector (SCD)
+MDF_DFLT1_FilterBistreamFront|bitstream matrix Front selection|||||Select the bitstream to use. Indeed for each SITF the both streams are available (one defined on the rising edge, one defined on the falling edge).
+MDF_DFLT1_FilterBistream|Filter Bitstream Selection|||||
+MDF_DFLT1_Data_Source|Data Source|||||The source of the digital filter (DFLT) can be selected between the two following: • data coming from the Bitstream matrix (then select which SITF and the front used in the additionnal parameters) • data coming from the ADC interface 1 To use the data source coming from ADC interface 1, these 3 conditions have to be checked : - 1 : ADC1 has to be activated with the Conversion Data Management Parameter set to "MDF mode" value - 2 : the SCD (Short Circuit Detector) mode has to be desactivated
+MDF_DFLT1_CIC_Mode|CIC Mode|||||The Cascaded-Integrator-Comb (CIC) filters are an efficient implementation of low-pass filters, often used for decimation and interpolation. CIC filter can be configured: – in single CIC filter with Sinc4 or Sinc5 order (for high-resolution low-pass decimation filter usually selected for audio applications, such as speech capture from digital microphones) – in two CIC filters with Sinc1, Sinc2, Sinc3 or FastSinc order (to offer a main filter path for acquisition and an auxiliary filter for fast-event generation (for the out-off-limit detector - OLD))
+MDF_DFLT1_ReshapeFilterActivation|Reshape Filter|||||Activation of reshaping filter mainly dedicated to the audio application but also usable in other applications.
+MDF_DFLT1_ReshapeFilterDecimationRatio|Decimation ratio|||||The samples at the reshape filter output can be decimated by four (4) or not (1)
+MDF_DFLT1_HighPassFilterActivation|High pass filter|||||"The high-pass filter suppresses the low-frequency content from the final output data stream in case of continuous conversion mode. This filter is useful when there is parasitic low-frequency noise (or DC signal) in the input data source and it must be removed from the final data."
+MDF_DFLT1_HighPassCutOffFrequency|Cut off frequency|||||Cut-off freqency of the high-pass filter : FPCM represents the sampling frequency at HPF input
+MDF_DFLT1_IntegratorActivation|Integrator|||||The Integrator performs additional decimation and a resolution increase of data coming from the digital filter.
+MDF_DFLT1_IntegratorValue|Integrator Value|||2|128|Value is the amount of integrated values.
+MDF_DFLT1_IntegratorOutputDivision|Integrator Output division|||||In order to control the data width at the integrator output, the resulting data can be divided by 1, 4, 32 or 128.
+MDF_DFLT1_SADActivation|Sound Activity|||||
+MDF_DFLT1_SADDetector|Detector|||||Sound activity detector mode.
+MDF_DFLT1_SADFrameSize|Frame size|||||Size of one frame to compute short-term signal level.
+MDF_DFLT1_SADHysteresis|Hysteresis|||||
+MDF_DFLT1_SADTriggerEvent|Sound trigger event configuration|||||Sound trigger event configuration : An event indicates when the Sound Activity Detector (SAD) enters and/or exits the DETECT state. This event is used to generate an interrupt when a sound is detected or when a sound is no longer detected. Either the application receives an event only when the SAD enters the DETECT state (or MONITOR state). Or the application receives an event when the SAD enters or exits the DETECT state.
+MDF_DFLT1_SADDataMemoryTransfer|Data Memory Transfer|||||
+MDF_DFLT1_SADMinNoiseLevel|Minimum noise level|||0|8191|
+MDF_DFLT1_SADHangoverWindow|hangover time window|||||Hangover time window in frames
+MDF_DFLT1_SADLearningFrames|Learning frames|||||Number of learning frames for the first estimation of noise level.
+MDF_DFLT1_SADAmbientNoiseSlope|Ambient Noise Slope|||0|7|Ambient noise slope control.
+MDF_DFLT1_SADSignalNoiseThreshold|Signal Noise Threshold|||||Signal to noise threshold.
+MDF_DFLT1_SADSoundLevelInterrupt|Sound level interrupt|||||This interrupt is mainly used for debug purpose.
+MDF_DFLT1_AcquisitionMode|Acquisition mode|||||<b>Asynchronous, continuous</b> mode allows the application to start a continuous acquisition <b>Asynchronous, single-shot</b> mode allows the application to start the acquisition of one sample <b>Synchronous, continuous</b> mode allows the application to start a continuous acquisition by using trigger source <b>Synchronous, single-shot</b> mode allows the application to start a single acquisition by using trigger source <b>Window, continuous</b> mode allows the application to start or stop a continuous acquisition by consecutive edges of using trigger source <b>Window, snapshot</b> mode allows the application to store when a trigger occurs, the last valid sample, the current decimation value of CIC and the sample counter of the integrator are stored whereas the DFLT is continuously acquiring the samples
+MDF_DFLT1_TriggerSource|Trigger Source|||||Digital filter trigger signal selection, select which external signals trigger for the corresponding filter When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT1_TriggerEdge|Trigger edge|||||Edge to use on the trigger source. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT1_SnapShotFormat|Snapshot data resolution|||||
+MDF_DFLT1_SCDActivation|Short Circuit Detector Activation|||||The SCD detects, with a very fast response time, if an analog signal reached saturated values (out-of-full scale ranges) and remained on this value for a given time.
+MDF_DFLT1_SCDThreshold|Threshold|||2|256|Threshold defines the max consecutive 1's or 0's which will generate an event.
+MDF_DFLT1_SCDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT1_OLDActivation|Out-Off Limit Detector Activation|||||"The OLD triggers an event when a signal reaches or crosses given maximum and minimum threshold values. The generated event drives a break signals when conditions are met. <b>Warning :</b> The OLD can be used only if the CIC filter is configured in motor and sensing mode (not vailable for CIC Mode = Sinc4 or Sinc5)"
+MDF_DFLT1_OLDCicMode|OutOff Limit CIC Mode|||||CIC filter can be configured with Sinc1, Sinc2, Sinc3 or FastSinc order.
+MDF_DFLT1_OLDDecimationRatio|Decimantion Ratio|||1|32|Decimation ration of the OLD CIC filter.
+MDF_DFLT1_OLDEventConfig|OutOff Limit Event Config|||||Define when the OLD generates an event.
+MDF_DFLT1_OLDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT1_OLDHighThreshold|High Threshold|||= MDF_DFLT1_OLDLowThreshold + 1|33554431|High Threshold for out-of-limit detector. Has to be strictly greater than Low Threshold Min = Low Threshold + 1 Max = 33554431
+MDF_DFLT1_OLDLowThreshold|Low Threshold|||-33554432|= MDF_DFLT1_OLDHighThreshold - 1|Low Threshold for out-of-limit detector. Has to be strictly lower than High Threshold Min = -33554432 Max = High Threshold - 1
+MDF_Handle2|MDF_Handle2|MDFgroup||||
+MDF_Instance2|MDF_Instance2|MDFgroup||||
+MDF_SITF2_ActivationSerialInterface|SITF2 Activation|||||
+MDF_SITF2_Mode_Display|Serial interface mode|||||<b>Normal SPI </b>Mode <b>LF Master SPI </b>Mode : Dedicated to low-power use-cases, using low-speed sensors. To guarantee optimal timing performances, the application must select the same clock than the one provided to the external sensor for each SITFx <b>Manchester </b>Mode : Decoded data and clock signals are recovered from serial stream after Manchester decoding.
+MDF_SITF2_Mode|MDF_SITF_Mode|||||
+MDF_SITF2_Manchester_Front|Means of edge|||||Means of edge for Manchester Mode
+MDF_SITF2_Threshold|Manchester symbol threshold|||4|31|Manchester symbol threshold.
+MDF_SITF2_ClockSource|Serial interface clock source|||||Warning : The clock source used by the SITF is defined only in the Mode window. Here is just for information.
+MDF_DFLT2_SITF_Choice|bitstream matrix Serial-ITF selection|||||Selection of the serial interface (SITF) to use for the current Filter configuration (DFLT) as well as the related Short Circuit Detector (SCD)
+MDF_DFLT2_FilterBistreamFront|bitstream matrix Front selection|||||Select the bitstream to use. Indeed for each SITF the both streams are available (one defined on the rising edge, one defined on the falling edge).
+MDF_DFLT2_FilterBistream|Filter Bitstream Selection|||||
+MDF_DFLT2_Data_Source|Data Source|||||The source of the digital filter (DFLT) can be selected between the two following: • data coming from the Bitstream matrix (then select which SITF and the front used in the additionnal parameters) • data coming from the ADC interface 1 To use the data source coming from ADC interface 1, these 3 conditions have to be checked : - 1 : ADC1 has to be activated with the Conversion Data Management Parameter set to "MDF mode" value - 2 : the SCD (Short Circuit Detector) mode has to be desactivated
+MDF_DFLT2_CIC_Mode|CIC Mode|||||The Cascaded-Integrator-Comb (CIC) filters are an efficient implementation of low-pass filters, often used for decimation and interpolation. CIC filter can be configured: – in single CIC filter with Sinc4 or Sinc5 order (for high-resolution low-pass decimation filter usually selected for audio applications, such as speech capture from digital microphones) – in two CIC filters with Sinc1, Sinc2, Sinc3 or FastSinc order (to offer a main filter path for acquisition and an auxiliary filter for fast-event generation (for the out-off-limit detector - OLD))
+MDF_DFLT2_ReshapeFilterActivation|Reshape Filter|||||Activation of reshaping filter mainly dedicated to the audio application but also usable in other applications.
+MDF_DFLT2_ReshapeFilterDecimationRatio|Decimation ratio|||||The samples at the reshape filter output can be decimated by four (4) or not (1)
+MDF_DFLT2_HighPassFilterActivation|High pass filter|||||"The high-pass filter suppresses the low-frequency content from the final output data stream in case of continuous conversion mode. This filter is useful when there is parasitic low-frequency noise (or DC signal) in the input data source and it must be removed from the final data."
+MDF_DFLT2_HighPassCutOffFrequency|Cut off frequency|||||Cut-off freqency of the high-pass filter : FPCM represents the sampling frequency at HPF input
+MDF_DFLT2_IntegratorActivation|Integrator|||||The Integrator performs additional decimation and a resolution increase of data coming from the digital filter.
+MDF_DFLT2_IntegratorValue|Integrator Value|||2|128|Value is the amount of integrated values.
+MDF_DFLT2_IntegratorOutputDivision|Integrator Output division|||||In order to control the data width at the integrator output, the resulting data can be divided by 1, 4, 32 or 128.
+MDF_DFLT2_SADActivation|Sound Activity|||||
+MDF_DFLT2_SADDetector|Detector|||||Sound activity detector mode.
+MDF_DFLT2_SADFrameSize|Frame size|||||Size of one frame to compute short-term signal level.
+MDF_DFLT2_SADHysteresis|Hysteresis|||||
+MDF_DFLT2_SADTriggerEvent|Sound trigger event configuration|||||Sound trigger event configuration : An event indicates when the Sound Activity Detector (SAD) enters and/or exits the DETECT state. This event is used to generate an interrupt when a sound is detected or when a sound is no longer detected. Either the application receives an event only when the SAD enters the DETECT state (or MONITOR state). Or the application receives an event when the SAD enters or exits the DETECT state.
+MDF_DFLT2_SADDataMemoryTransfer|Data Memory Transfer|||||
+MDF_DFLT2_SADMinNoiseLevel|Minimum noise level|||0|8191|
+MDF_DFLT2_SADHangoverWindow|hangover time window|||||Hangover time window in frames
+MDF_DFLT2_SADLearningFrames|Learning frames|||||Number of learning frames for the first estimation of noise level.
+MDF_DFLT2_SADAmbientNoiseSlope|Ambient Noise Slope|||0|7|Ambient noise slope control.
+MDF_DFLT2_SADSignalNoiseThreshold|Signal Noise Threshold|||||Signal to noise threshold.
+MDF_DFLT2_SADSoundLevelInterrupt|Sound level interrupt|||||This interrupt is mainly used for debug purpose.
+MDF_DFLT2_AcquisitionMode|Acquisition mode|||||<b>Asynchronous, continuous</b> mode allows the application to start a continuous acquisition <b>Asynchronous, single-shot</b> mode allows the application to start the acquisition of one sample <b>Synchronous, continuous</b> mode allows the application to start a continuous acquisition by using trigger source <b>Synchronous, single-shot</b> mode allows the application to start a single acquisition by using trigger source <b>Window, continuous</b> mode allows the application to start or stop a continuous acquisition by consecutive edges of using trigger source <b>Window, snapshot</b> mode allows the application to store when a trigger occurs, the last valid sample, the current decimation value of CIC and the sample counter of the integrator are stored whereas the DFLT is continuously acquiring the samples
+MDF_DFLT2_TriggerSource|Trigger Source|||||Digital filter trigger signal selection, select which external signals trigger for the corresponding filter When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT2_TriggerEdge|Trigger edge|||||Edge to use on the trigger source. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT2_SnapShotFormat|Snapshot data resolution|||||
+MDF_DFLT2_SCDActivation|Short Circuit Detector Activation|||||The SCD detects, with a very fast response time, if an analog signal reached saturated values (out-of-full scale ranges) and remained on this value for a given time.
+MDF_DFLT2_SCDThreshold|Threshold|||2|256|Threshold defines the max consecutive 1's or 0's which will generate an event.
+MDF_DFLT2_SCDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT2_OLDActivation|Out-Off Limit Detector Activation|||||"The OLD triggers an event when a signal reaches or crosses given maximum and minimum threshold values. The generated event drives a break signals when conditions are met. <b>Warning :</b> The OLD can be used only if the CIC filter is configured in motor and sensing mode (not vailable for CIC Mode = Sinc4 or Sinc5)"
+MDF_DFLT2_OLDCicMode|OutOff Limit CIC Mode|||||CIC filter can be configured with Sinc1, Sinc2, Sinc3 or FastSinc order.
+MDF_DFLT2_OLDDecimationRatio|Decimantion Ratio|||1|32|Decimation ration of the OLD CIC filter.
+MDF_DFLT2_OLDEventConfig|OutOff Limit Event Config|||||Define when the OLD generates an event.
+MDF_DFLT2_OLDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT2_OLDHighThreshold|High Threshold|||=MDF_DFLT2_OLDLowThreshold + 1|33554431|High Threshold for out-of-limit detector. Has to be strictly greater than Low Threshold Min = Low Threshold + 1 Max = 33554431
+MDF_DFLT2_OLDLowThreshold|Low Threshold|||-33554432|=MDF_DFLT2_OLDHighThreshold - 1|Low Threshold for out-of-limit detector. Has to be strictly lower than High Threshold Min = -33554432 Max = High Threshold - 1
+MDF_Handle3|MDF_Handle3|MDFgroup||||
+MDF_Instance3|MDF_Instance3|MDFgroup||||
+MDF_SITF3_ActivationSerialInterface|SITF3 Activation|||||
+MDF_SITF3_Mode_Display|Serial interface mode|||||<b>Normal SPI </b>Mode <b>LF Master SPI </b>Mode : Dedicated to low-power use-cases, using low-speed sensors. To guarantee optimal timing performances, the application must select the same clock than the one provided to the external sensor for each SITFx <b>Manchester </b>Mode : Decoded data and clock signals are recovered from serial stream after Manchester decoding.
+MDF_SITF3_Mode|MDF_SITF_Mode|||||
+MDF_SITF3_Manchester_Front|Means of edge|||||Means of edge for Manchester Mode
+MDF_SITF3_Threshold|Manchester symbol threshold|||4|31|Manchester symbol threshold.
+MDF_SITF3_ClockSource|Serial interface clock source|||||Warning : The clock source used by the SITF is defined only in the Mode window. Here is just for information.
+MDF_DFLT3_SITF_Choice|bitstream matrix Serial-ITF selection|||||Selection of the serial interface (SITF) to use for the current Filter configuration (DFLT) as well as the related Short Circuit Detector (SCD)
+MDF_DFLT3_FilterBistreamFront|bitstream matrix Front selection|||||Select the bitstream to use. Indeed for each SITF the both streams are available (one defined on the rising edge, one defined on the falling edge).
+MDF_DFLT3_FilterBistream|Filter Bitstream Selection|||||
+MDF_DFLT3_Data_Source|Data Source|||||The source of the digital filter (DFLT) can be selected between the two following: • data coming from the Bitstream matrix (then select which SITF and the front used in the additionnal parameters) • data coming from the ADC interface 1 To use the data source coming from ADC interface 1, these 3 conditions have to be checked : - 1 : ADC1 has to be activated with the Conversion Data Management Parameter set to "MDF mode" value - 2 : the SCD (Short Circuit Detector) mode has to be desactivated
+MDF_DFLT3_CIC_Mode|CIC Mode|||||The Cascaded-Integrator-Comb (CIC) filters are an efficient implementation of low-pass filters, often used for decimation and interpolation. CIC filter can be configured: – in single CIC filter with Sinc4 or Sinc5 order (for high-resolution low-pass decimation filter usually selected for audio applications, such as speech capture from digital microphones) – in two CIC filters with Sinc1, Sinc2, Sinc3 or FastSinc order (to offer a main filter path for acquisition and an auxiliary filter for fast-event generation (for the out-off-limit detector - OLD))
+MDF_DFLT3_ReshapeFilterActivation|Reshape Filter|||||Activation of reshaping filter mainly dedicated to the audio application but also usable in other applications.
+MDF_DFLT3_ReshapeFilterDecimationRatio|Decimation ratio|||||The samples at the reshape filter output can be decimated by four (4) or not (1)
+MDF_DFLT3_HighPassFilterActivation|High pass filter|||||"The high-pass filter suppresses the low-frequency content from the final output data stream in case of continuous conversion mode. This filter is useful when there is parasitic low-frequency noise (or DC signal) in the input data source and it must be removed from the final data."
+MDF_DFLT3_HighPassCutOffFrequency|Cut off frequency|||||Cut-off freqency of the high-pass filter : FPCM represents the sampling frequency at HPF input
+MDF_DFLT3_IntegratorActivation|Integrator|||||The Integrator performs additional decimation and a resolution increase of data coming from the digital filter.
+MDF_DFLT3_IntegratorValue|Integrator Value|||2|128|Value is the amount of integrated values.
+MDF_DFLT3_IntegratorOutputDivision|Integrator Output division|||||In order to control the data width at the integrator output, the resulting data can be divided by 1, 4, 32 or 128.
+MDF_DFLT3_SADActivation|Sound Activity|||||
+MDF_DFLT3_SADDetector|Detector|||||Sound activity detector mode.
+MDF_DFLT3_SADFrameSize|Frame size|||||Size of one frame to compute short-term signal level.
+MDF_DFLT3_SADHysteresis|Hysteresis|||||
+MDF_DFLT3_SADTriggerEvent|Sound trigger event configuration|||||Sound trigger event configuration : An event indicates when the Sound Activity Detector (SAD) enters and/or exits the DETECT state. This event is used to generate an interrupt when a sound is detected or when a sound is no longer detected. Either the application receives an event only when the SAD enters the DETECT state (or MONITOR state). Or the application receives an event when the SAD enters or exits the DETECT state.
+MDF_DFLT3_SADDataMemoryTransfer|Data Memory Transfer|||||
+MDF_DFLT3_SADMinNoiseLevel|Minimum noise level|||0|8191|
+MDF_DFLT3_SADHangoverWindow|hangover time window|||||Hangover time window in frames
+MDF_DFLT3_SADLearningFrames|Learning frames|||||Number of learning frames for the first estimation of noise level.
+MDF_DFLT3_SADAmbientNoiseSlope|Ambient Noise Slope|||0|7|Ambient noise slope control.
+MDF_DFLT3_SADSignalNoiseThreshold|Signal Noise Threshold|||||Signal to noise threshold.
+MDF_DFLT3_SADSoundLevelInterrupt|Sound level interrupt|||||This interrupt is mainly used for debug purpose.
+MDF_DFLT3_AcquisitionMode|Acquisition mode|||||<b>Asynchronous, continuous</b> mode allows the application to start a continuous acquisition <b>Asynchronous, single-shot</b> mode allows the application to start the acquisition of one sample <b>Synchronous, continuous</b> mode allows the application to start a continuous acquisition by using trigger source <b>Synchronous, single-shot</b> mode allows the application to start a single acquisition by using trigger source <b>Window, continuous</b> mode allows the application to start or stop a continuous acquisition by consecutive edges of using trigger source <b>Window, snapshot</b> mode allows the application to store when a trigger occurs, the last valid sample, the current decimation value of CIC and the sample counter of the integrator are stored whereas the DFLT is continuously acquiring the samples
+MDF_DFLT3_TriggerSource|Trigger Source|||||Digital filter trigger signal selection, select which external signals trigger for the corresponding filter When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT3_TriggerEdge|Trigger edge|||||Edge to use on the trigger source. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT3_SnapShotFormat|Snapshot data resolution|||||
+MDF_DFLT3_SCDActivation|Short Circuit Detector Activation|||||The SCD detects, with a very fast response time, if an analog signal reached saturated values (out-of-full scale ranges) and remained on this value for a given time.
+MDF_DFLT3_SCDThreshold|Threshold|||2|256|Threshold defines the max consecutive 1's or 0's which will generate an event.
+MDF_DFLT3_SCDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT3_OLDActivation|Out-Off Limit Detector Activation|||||"The OLD triggers an event when a signal reaches or crosses given maximum and minimum threshold values. The generated event drives a break signals when conditions are met. <b>Warning :</b> The OLD can be used only if the CIC filter is configured in motor and sensing mode (not vailable for CIC Mode = Sinc4 or Sinc5)"
+MDF_DFLT3_OLDCicMode|OutOff Limit CIC Mode|||||CIC filter can be configured with Sinc1, Sinc2, Sinc3 or FastSinc order.
+MDF_DFLT3_OLDDecimationRatio|Decimantion Ratio|||1|32|Decimation ration of the OLD CIC filter.
+MDF_DFLT3_OLDEventConfig|OutOff Limit Event Config|||||Define when the OLD generates an event.
+MDF_DFLT3_OLDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT3_OLDHighThreshold|High Threshold|||=MDF_DFLT3_OLDLowThreshold + 1|33554431|High Threshold for out-of-limit detector. Has to be strictly greater than Low Threshold Min = Low Threshold + 1 Max = 33554431
+MDF_DFLT3_OLDLowThreshold|Low Threshold|||-33554432|=MDF_DFLT3_OLDHighThreshold - 1|Low Threshold for out-of-limit detector. Has to be strictly lower than High Threshold Min = -33554432 Max = High Threshold - 1
+MDF_Handle4|MDF_Handle4|MDFgroup||||
+MDF_Instance4|MDF_Instance4|MDFgroup||||
+MDF_SITF4_ActivationSerialInterface|SITF4 Activation|||||
+MDF_SITF4_Mode_Display|Serial interface mode|||||<b>Normal SPI </b>Mode <b>LF Master SPI </b>Mode : Dedicated to low-power use-cases, using low-speed sensors. To guarantee optimal timing performances, the application must select the same clock than the one provided to the external sensor for each SITFx <b>Manchester </b>Mode : Decoded data and clock signals are recovered from serial stream after Manchester decoding.
+MDF_SITF4_Mode|MDF_SITF_Mode|||||
+MDF_SITF4_Manchester_Front|Means of edge|||||Means of edge for Manchester Mode
+MDF_SITF4_Threshold|Manchester symbol threshold|||4|31|Manchester symbol threshold.
+MDF_SITF4_ClockSource|Serial interface clock source|||||Warning : The clock source used by the SITF is defined only in the Mode window. Here is just for information.
+MDF_DFLT4_SITF_Choice|bitstream matrix Serial-ITF selection|||||Selection of the serial interface (SITF) to use for the current Filter configuration (DFLT) as well as the related Short Circuit Detector (SCD)
+MDF_DFLT4_FilterBistreamFront|bitstream matrix Front selection|||||Select the bitstream to use. Indeed for each SITF the both streams are available (one defined on the rising edge, one defined on the falling edge).
+MDF_DFLT4_FilterBistream|Filter Bitstream Selection|||||
+MDF_DFLT4_Data_Source|Data Source|||||The source of the digital filter (DFLT) can be selected between the two following: • data coming from the Bitstream matrix (then select which SITF and the front used in the additionnal parameters) • data coming from the ADC interface 1 To use the data source coming from ADC interface 1, these 3 conditions have to be checked : - 1 : ADC1 has to be activated with the Conversion Data Management Parameter set to "MDF mode" value - 2 : the SCD (Short Circuit Detector) mode has to be desactivated
+MDF_DFLT4_CIC_Mode|CIC Mode|||||The Cascaded-Integrator-Comb (CIC) filters are an efficient implementation of low-pass filters, often used for decimation and interpolation. CIC filter can be configured: – in single CIC filter with Sinc4 or Sinc5 order (for high-resolution low-pass decimation filter usually selected for audio applications, such as speech capture from digital microphones) – in two CIC filters with Sinc1, Sinc2, Sinc3 or FastSinc order (to offer a main filter path for acquisition and an auxiliary filter for fast-event generation (for the out-off-limit detector - OLD))
+MDF_DFLT4_ReshapeFilterActivation|Reshape Filter|||||Activation of reshaping filter mainly dedicated to the audio application but also usable in other applications.
+MDF_DFLT4_ReshapeFilterDecimationRatio|Decimation ratio|||||The samples at the reshape filter output can be decimated by four (4) or not (1)
+MDF_DFLT4_HighPassFilterActivation|High pass filter|||||"The high-pass filter suppresses the low-frequency content from the final output data stream in case of continuous conversion mode. This filter is useful when there is parasitic low-frequency noise (or DC signal) in the input data source and it must be removed from the final data."
+MDF_DFLT4_HighPassCutOffFrequency|Cut off frequency|||||Cut-off freqency of the high-pass filter : FPCM represents the sampling frequency at HPF input
+MDF_DFLT4_IntegratorActivation|Integrator|||||The Integrator performs additional decimation and a resolution increase of data coming from the digital filter.
+MDF_DFLT4_IntegratorValue|Integrator Value|||2|128|Value is the amount of integrated values.
+MDF_DFLT4_IntegratorOutputDivision|Integrator Output division|||||In order to control the data width at the integrator output, the resulting data can be divided by 1, 4, 32 or 128.
+MDF_DFLT4_SADActivation|Sound Activity|||||
+MDF_DFLT4_SADDetector|Detector|||||Sound activity detector mode.
+MDF_DFLT4_SADFrameSize|Frame size|||||Size of one frame to compute short-term signal level.
+MDF_DFLT4_SADHysteresis|Hysteresis|||||
+MDF_DFLT4_SADTriggerEvent|Sound trigger event configuration|||||Sound trigger event configuration : An event indicates when the Sound Activity Detector (SAD) enters and/or exits the DETECT state. This event is used to generate an interrupt when a sound is detected or when a sound is no longer detected. Either the application receives an event only when the SAD enters the DETECT state (or MONITOR state). Or the application receives an event when the SAD enters or exits the DETECT state.
+MDF_DFLT4_SADDataMemoryTransfer|Data Memory Transfer|||||
+MDF_DFLT4_SADMinNoiseLevel|Minimum noise level|||0|8191|
+MDF_DFLT4_SADHangoverWindow|hangover time window|||||Hangover time window in frames
+MDF_DFLT4_SADLearningFrames|Learning frames|||||Number of learning frames for the first estimation of noise level.
+MDF_DFLT4_SADAmbientNoiseSlope|Ambient Noise Slope|||0|7|Ambient noise slope control.
+MDF_DFLT4_SADSignalNoiseThreshold|Signal Noise Threshold|||||Signal to noise threshold.
+MDF_DFLT4_SADSoundLevelInterrupt|Sound level interrupt|||||This interrupt is mainly used for debug purpose.
+MDF_DFLT4_AcquisitionMode|Acquisition mode|||||<b>Asynchronous, continuous</b> mode allows the application to start a continuous acquisition <b>Asynchronous, single-shot</b> mode allows the application to start the acquisition of one sample <b>Synchronous, continuous</b> mode allows the application to start a continuous acquisition by using trigger source <b>Synchronous, single-shot</b> mode allows the application to start a single acquisition by using trigger source <b>Window, continuous</b> mode allows the application to start or stop a continuous acquisition by consecutive edges of using trigger source <b>Window, snapshot</b> mode allows the application to store when a trigger occurs, the last valid sample, the current decimation value of CIC and the sample counter of the integrator are stored whereas the DFLT is continuously acquiring the samples
+MDF_DFLT4_TriggerSource|Trigger Source|||||Digital filter trigger signal selection, select which external signals trigger for the corresponding filter When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT4_TriggerEdge|Trigger edge|||||Edge to use on the trigger source. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT4_SnapShotFormat|Snapshot data resolution|||||
+MDF_DFLT4_SCDActivation|Short Circuit Detector Activation|||||The SCD detects, with a very fast response time, if an analog signal reached saturated values (out-of-full scale ranges) and remained on this value for a given time.
+MDF_DFLT4_SCDThreshold|Threshold|||2|256|Threshold defines the max consecutive 1's or 0's which will generate an event.
+MDF_DFLT4_SCDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT4_OLDActivation|Out-Off Limit Detector Activation|||||"The OLD triggers an event when a signal reaches or crosses given maximum and minimum threshold values. The generated event drives a break signals when conditions are met. <b>Warning :</b> The OLD can be used only if the CIC filter is configured in motor and sensing mode (not vailable for CIC Mode = Sinc4 or Sinc5)"
+MDF_DFLT4_OLDCicMode|OutOff Limit CIC Mode|||||CIC filter can be configured with Sinc1, Sinc2, Sinc3 or FastSinc order.
+MDF_DFLT4_OLDDecimationRatio|Decimantion Ratio|||1|32|Decimation ration of the OLD CIC filter.
+MDF_DFLT4_OLDEventConfig|OutOff Limit Event Config|||||Define when the OLD generates an event.
+MDF_DFLT4_OLDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT4_OLDHighThreshold|High Threshold|||=MDF_DFLT4_OLDLowThreshold + 1|33554431|High Threshold for out-of-limit detector. Has to be strictly greater than Low Threshold Min = Low Threshold + 1 Max = 33554431
+MDF_DFLT4_OLDLowThreshold|Low Threshold|||-33554432|=MDF_DFLT4_OLDHighThreshold - 1|Low Threshold for out-of-limit detector. Has to be strictly lower than High Threshold Min = -33554432 Max = High Threshold - 1
+MDF_Handle5|MDF_Handle5|MDFgroup||||
+MDF_Instance5|MDF_Instance5|MDFgroup||||
+MDF_SITF5_ActivationSerialInterface|SITF5 Activation|||||
+MDF_SITF5_Mode_Display|Serial interface mode|||||<b>Normal SPI </b>Mode <b>LF Master SPI </b>Mode : Dedicated to low-power use-cases, using low-speed sensors. To guarantee optimal timing performances, the application must select the same clock than the one provided to the external sensor for each SITFx <b>Manchester </b>Mode : Decoded data and clock signals are recovered from serial stream after Manchester decoding.
+MDF_SITF5_Mode|MDF_SITF_Mode|||||
+MDF_SITF5_Manchester_Front|Means of edge|||||Means of edge for Manchester Mode
+MDF_SITF5_Threshold|Manchester symbol threshold|||4|31|Manchester symbol threshold.
+MDF_SITF5_ClockSource|Serial interface clock source|||||Warning : The clock source used by the SITF is defined only in the Mode window. Here is just for information.
+MDF_DFLT5_SITF_Choice|bitstream matrix Serial-ITF selection|||||Selection of the serial interface (SITF) to use for the current Filter configuration (DFLT) as well as the related Short Circuit Detector (SCD)
+MDF_DFLT5_FilterBistreamFront|bitstream matrix Front selection|||||Select the bitstream to use. Indeed for each SITF the both streams are available (one defined on the rising edge, one defined on the falling edge).
+MDF_DFLT5_FilterBistream|Filter Bitstream Selection|||||
+MDF_DFLT5_Data_Source|Data Source|||||The source of the digital filter (DFLT) can be selected between the two following: • data coming from the Bitstream matrix (then select which SITF and the front used in the additionnal parameters) • data coming from the ADC interface 1 To use the data source coming from ADC interface 1, these 3 conditions have to be checked : - 1 : ADC1 has to be activated with the Conversion Data Management Parameter set to "MDF mode" value - 2 : the SCD (Short Circuit Detector) mode has to be desactivated
+MDF_DFLT5_CIC_Mode|CIC Mode|||||The Cascaded-Integrator-Comb (CIC) filters are an efficient implementation of low-pass filters, often used for decimation and interpolation. CIC filter can be configured: – in single CIC filter with Sinc4 or Sinc5 order (for high-resolution low-pass decimation filter usually selected for audio applications, such as speech capture from digital microphones) – in two CIC filters with Sinc1, Sinc2, Sinc3 or FastSinc order (to offer a main filter path for acquisition and an auxiliary filter for fast-event generation (for the out-off-limit detector - OLD))
+MDF_DFLT5_ReshapeFilterActivation|Reshape Filter|||||Activation of reshaping filter mainly dedicated to the audio application but also usable in other applications.
+MDF_DFLT5_ReshapeFilterDecimationRatio|Decimation ratio|||||The samples at the reshape filter output can be decimated by four (4) or not (1)
+MDF_DFLT5_HighPassFilterActivation|High pass filter|||||"The high-pass filter suppresses the low-frequency content from the final output data stream in case of continuous conversion mode. This filter is useful when there is parasitic low-frequency noise (or DC signal) in the input data source and it must be removed from the final data."
+MDF_DFLT5_HighPassCutOffFrequency|Cut off frequency|||||Cut-off freqency of the high-pass filter : FPCM represents the sampling frequency at HPF input
+MDF_DFLT5_IntegratorActivation|Integrator|||||The Integrator performs additional decimation and a resolution increase of data coming from the digital filter.
+MDF_DFLT5_IntegratorValue|Integrator Value|||2|128|Value is the amount of integrated values.
+MDF_DFLT5_IntegratorOutputDivision|Integrator Output division|||||In order to control the data width at the integrator output, the resulting data can be divided by 1, 4, 32 or 128.
+MDF_DFLT5_SADActivation|Sound Activity|||||
+MDF_DFLT5_SADDetector|Detector|||||Sound activity detector mode.
+MDF_DFLT5_SADFrameSize|Frame size|||||Size of one frame to compute short-term signal level.
+MDF_DFLT5_SADHysteresis|Hysteresis|||||
+MDF_DFLT5_SADTriggerEvent|Sound trigger event configuration|||||Sound trigger event configuration : An event indicates when the Sound Activity Detector (SAD) enters and/or exits the DETECT state. This event is used to generate an interrupt when a sound is detected or when a sound is no longer detected. Either the application receives an event only when the SAD enters the DETECT state (or MONITOR state). Or the application receives an event when the SAD enters or exits the DETECT state.
+MDF_DFLT5_SADDataMemoryTransfer|Data Memory Transfer|||||
+MDF_DFLT5_SADMinNoiseLevel|Minimum noise level|||0|8191|
+MDF_DFLT5_SADHangoverWindow|hangover time window|||||Hangover time window in frames
+MDF_DFLT5_SADLearningFrames|Learning frames|||||Number of learning frames for the first estimation of noise level.
+MDF_DFLT5_SADAmbientNoiseSlope|Ambient Noise Slope|||0|7|Ambient noise slope control.
+MDF_DFLT5_SADSignalNoiseThreshold|Signal Noise Threshold|||||Signal to noise threshold.
+MDF_DFLT5_SADSoundLevelInterrupt|Sound level interrupt|||||This interrupt is mainly used for debug purpose.
+MDF_DFLT5_AcquisitionMode|Acquisition mode|||||<b>Asynchronous, continuous</b> mode allows the application to start a continuous acquisition <b>Asynchronous, single-shot</b> mode allows the application to start the acquisition of one sample <b>Synchronous, continuous</b> mode allows the application to start a continuous acquisition by using trigger source <b>Synchronous, single-shot</b> mode allows the application to start a single acquisition by using trigger source <b>Window, continuous</b> mode allows the application to start or stop a continuous acquisition by consecutive edges of using trigger source <b>Window, snapshot</b> mode allows the application to store when a trigger occurs, the last valid sample, the current decimation value of CIC and the sample counter of the integrator are stored whereas the DFLT is continuously acquiring the samples
+MDF_DFLT5_TriggerSource|Trigger Source|||||Digital filter trigger signal selection, select which external signals trigger for the corresponding filter When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT5_TriggerEdge|Trigger edge|||||Edge to use on the trigger source. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_DFLT5_SnapShotFormat|Snapshot data resolution|||||
+MDF_DFLT5_SCDActivation|Short Circuit Detector Activation|||||The SCD detects, with a very fast response time, if an analog signal reached saturated values (out-of-full scale ranges) and remained on this value for a given time.
+MDF_DFLT5_SCDThreshold|Threshold|||2|256|Threshold defines the max consecutive 1's or 0's which will generate an event.
+MDF_DFLT5_SCDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT5_OLDActivation|Out-Off Limit Detector Activation|||||"The OLD triggers an event when a signal reaches or crosses given maximum and minimum threshold values. The generated event drives a break signals when conditions are met. <b>Warning :</b> The OLD can be used only if the CIC filter is configured in motor and sensing mode (not vailable for CIC Mode = Sinc4 or Sinc5)"
+MDF_DFLT5_OLDCicMode|OutOff Limit CIC Mode|||||CIC filter can be configured with Sinc1, Sinc2, Sinc3 or FastSinc order.
+MDF_DFLT5_OLDDecimationRatio|Decimantion Ratio|||1|32|Decimation ration of the OLD CIC filter.
+MDF_DFLT5_OLDEventConfig|OutOff Limit Event Config|||||Define when the OLD generates an event.
+MDF_DFLT5_OLDBreakSignal|Break Signal|||||Break signal defines the signal to use when the threshold is reached.
+MDF_DFLT5_OLDHighThreshold|High Threshold|||=MDF_DFLT5_OLDLowThreshold + 1|33554431|High Threshold for out-of-limit detector. Has to be strictly greater than Low Threshold Min = Low Threshold + 1 Max = 33554431
+MDF_DFLT5_OLDLowThreshold|Low Threshold|||-33554432|=MDF_DFLT5_OLDHighThreshold - 1|Low Threshold for out-of-limit detector. Has to be strictly lower than High Threshold Min = -33554432 Max = High Threshold - 1
+MDF_DFLT_Delay|Delay|||0|127|The delay is performed by discarding a given number of samples from the selected input stream, before samples enter into the CIC filter. This data discarding is performed by skipping a given number of data strobe, preventing the CIC filter to take into account those data.
+MDF_DFLT_Decimation|Decimation Ratio|||2|512|The maximum allowed decimation ratio for the CIC filter is depending on the input data size and the CIC order. See reference manual to help the calculation in order to insure that the data size does not exceed the CIC capability.
+MDF_DFLT_Offset|Offset|||-33554432|33554431|Offset error compensation. This field represents the value to be subtracted to the signal provided by the CIC filter and before going to the SCALE which adjusts the amplitude of the signal
+MDF_DFLT_Gain|Gain|||-16|24|The gain definition defines the amplitude adjustment of the signal provided by the CIC filter, by steps of 3 dB : from -48db (-16) to 72dB (24). To get the best MDF performances, it is important to properly adjust the gain value. See Reference Manual to clculate the best value.
+MDF_DFLT_FifoThreshold|FIFO Data Transfer threshold|||||Define which event generates a data transfer from the FIFO to the bus.
+MDF_DFLT_DiscardSamples|Samples to discard|||0|255|Here is the amount of samples to be discarded after each restart
+MDF_COMPARAM_InterleavedFilters|Number of Interleaved mode filters|Common Parameter||||Number of filters in interleaved mode. The number of interleaved SITF is from the SITF0 up to the number of SITF. <b><font color="orange">Warning</b> : </font>the ADC interface cannot be used in the interleaved Mode.
+MDF_COMPARAM_ProcClockDivider|Processing clock divider|Common Parameter||1|128|The digital processing is performed using only the kernel clock which can be divided by this value. This divider is used to adjust the frequency of the clock provided to the SITF.
+MDF_COMPARAM_ActivationOutputClock|Output Clock Activation|Output Clock||||Activate Common Clock 0 and/or 1 as output clocks
+MDF_COMPARAM_Pins|Output Clock Pin|Output Clock||||Select which common clocks have to be defined as output clocks
+MDF_COMPARAM_Divider|Output clock divider|Output Clock||1|16|This divider is used to adjust the frequency of the MDF_CCK clock. The input clock of this divider is the clock provided to the SITF (see Processing clock divider parameter)
+MDF_COMPARAM_ActivationClockTrigger|Output Clock trigger Activation|||||Trigger to start the output Clock Divider. divider can be triggered on the rising or falling edge of one of the 16 trigger sources. This feature can be helpful to synchronize the clock generation to a timer event.
+MDF_COMPARAM_Clock_Source|Trigger Source|Clock Trigger||||Clock trigger signal choice selects which external signal has to used to trigger the common clock activation This allows to synchronize the common clocks of several MDF instances, or to synchronize the common clock generation to a timer event. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_COMPARAM_Clock_Edge|Trigger Edge|||||Edge to use on the trigger source. When the trigger source is TRGO, the sensitivity is forced to falling edge.
+MDF_ADF_InstanceToActivate|Common Clock to activate|||||In order to activate MDF, common clocks activation in the mode menu is not enough, please activate at least one instance in the above Mode menu.
+MDF_SITF_NOT_USED|No filter available|||||
+
+[Values]
+# параметр|значение|подпись
+MDF_SITF0_Mode_Display|MDF_SITF_LF_MASTER_SPI_MODE|LF Master SPI
+MDF_SITF0_Mode_Display|MDF_SITF_NORMAL_SPI_MODE|Normal SPI
+MDF_SITF0_Mode_Display|MDF_SITF_MANCHESTER|Manchester
+MDF_SITF0_Manchester_Front|MDF_SITF_MANCHESTER_FALLING_MODE|Rising edge means 0 and Falling Edge means 1
+MDF_SITF0_Manchester_Front|MDF_SITF_MANCHESTER_RISING_MODE|Rising edge means 1 and Falling Edge means 0
+MDF_SITF0_ClockSource|MDF_SITF_CCK0_SOURCE|Common clock 0 source
+MDF_SITF0_ClockSource|MDF_SITF_CCK1_SOURCE|Common clock 1 source
+MDF_SITF0_ClockSource|MDF_SITF_CKI_SOURCE|Dedicated input clock source
+MDF_DFLT0_SITF_Choice|MDF_DFLT_SITF0|SITF0
+MDF_DFLT0_SITF_Choice|MDF_DFLT_SITF1|SITF1
+MDF_DFLT0_SITF_Choice|MDF_DFLT_SITF2|SITF2
+MDF_DFLT0_SITF_Choice|MDF_DFLT_SITF3|SITF3
+MDF_DFLT0_SITF_Choice|MDF_DFLT_SITF4|SITF4
+MDF_DFLT0_SITF_Choice|MDF_DFLT_SITF5|SITF5
+MDF_DFLT0_FilterBistreamFront|FRONT_RISING|rising front
+MDF_DFLT0_FilterBistreamFront|FRONT_FALLING|falling front
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM0_RISING|MDF_BITSTREAM0_RISING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM0_FALLING|MDF_BITSTREAM0_FALLING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM1_RISING|MDF_BITSTREAM1_RISING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM1_FALLING|MDF_BITSTREAM1_FALLING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM2_RISING|MDF_BITSTREAM2_RISING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM2_FALLING|MDF_BITSTREAM2_FALLING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM3_RISING|MDF_BITSTREAM3_RISING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM3_FALLING|MDF_BITSTREAM3_FALLING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM4_RISING|MDF_BITSTREAM4_RISING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM4_FALLING|MDF_BITSTREAM4_FALLING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM5_RISING|MDF_BITSTREAM5_RISING
+MDF_DFLT0_FilterBistream|MDF_BITSTREAM5_FALLING|MDF_BITSTREAM5_FALLING
+MDF_DFLT0_Data_Source|MDF_DATA_SOURCE_BSMX|Data from bitstream matrix
+MDF_DFLT0_Data_Source|MDF_DATA_SOURCE_ADCITF1|Data from ADC interface 1
+MDF_DFLT0_Data_Source|MDF_DATA_SOURCE_ADCITF2|Data from ADC interface 2
+MDF_DFLT0_CIC_Mode|MDF_ONE_FILTER_SINC4|One filter in Sinc4 order
+MDF_DFLT0_CIC_Mode|MDF_ONE_FILTER_SINC5|One filter in Sinc5 order
+MDF_DFLT0_CIC_Mode|MDF_TWO_FILTERS_MCIC_FASTSINC|Two filters, main filter in FastSinc order
+MDF_DFLT0_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC1|Two filters, main filter in Sinc1 order
+MDF_DFLT0_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC2|Two filters, main filter in Sinc2 order
+MDF_DFLT0_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC3|Two filters, main filter in Sinc3 order
+MDF_DFLT0_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_4|4
+MDF_DFLT0_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_1|1
+MDF_DFLT0_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_000625FPCM|0.000625xFpcm
+MDF_DFLT0_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_00125FPCM|0.00125xFpcm
+MDF_DFLT0_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0025FPCM|0.0025xFpcm
+MDF_DFLT0_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0095FPCM|0.0095xFpcm
+MDF_DFLT0_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_128|by 128
+MDF_DFLT0_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_32|by 32
+MDF_DFLT0_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_4|by 4
+MDF_DFLT0_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_NO_DIV|None
+MDF_DFLT0_SADDetector|MDF_SAD_VOICE_ACTIVITY_DETECTOR|Voice activity detector
+MDF_DFLT0_SADDetector|MDF_SAD_SOUND_DETECTOR|Sound detector
+MDF_DFLT0_SADDetector|MDF_SAD_AMBIENT_NOISE_DETECTOR|Ambient noise detector
+MDF_DFLT0_SADFrameSize|MDF_SAD_8_PCM_SAMPLES|8 PCM samples
+MDF_DFLT0_SADFrameSize|MDF_SAD_16_PCM_SAMPLES|16 PCM samples
+MDF_DFLT0_SADFrameSize|MDF_SAD_32_PCM_SAMPLES|32 PCM samples
+MDF_DFLT0_SADFrameSize|MDF_SAD_64_PCM_SAMPLES|64 PCM samples
+MDF_DFLT0_SADFrameSize|MDF_SAD_128_PCM_SAMPLES|128 PCM samples
+MDF_DFLT0_SADFrameSize|MDF_SAD_256_PCM_SAMPLES|256 PCM samples
+MDF_DFLT0_SADFrameSize|MDF_SAD_512_PCM_SAMPLES|512 PCM samples
+MDF_DFLT0_SADTriggerEvent|MDF_SAD_ENTER_DETECT|when Sound Activity Detector enters the MONITOR state
+MDF_DFLT0_SADTriggerEvent|MDF_SAD_ENTER_EXIT_DETECT|when Sound Activity Detector enters or exits the DETECT state
+MDF_DFLT0_SADDataMemoryTransfer|MDF_SAD_NO_MEMORY_TRANSFER|None
+MDF_DFLT0_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_IN_DETECT|Only in detect state
+MDF_DFLT0_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_ALWAYS|Always
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_4_FRAMES|4 frames
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_8_FRAMES|8 frames
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_16_FRAMES|16 frames
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_32_FRAMES|32 frames
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_64_FRAMES|64 frames
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_128_FRAMES|128 frames
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_256_FRAMES|256 frames
+MDF_DFLT0_SADHangoverWindow|MDF_SAD_HANGOVER_512_FRAMES|512 frames
+MDF_DFLT0_SADLearningFrames|MDF_SAD_LEARNING_2_FRAMES|2
+MDF_DFLT0_SADLearningFrames|MDF_SAD_LEARNING_4_FRAMES|4
+MDF_DFLT0_SADLearningFrames|MDF_SAD_LEARNING_8_FRAMES|8
+MDF_DFLT0_SADLearningFrames|MDF_SAD_LEARNING_16_FRAMES|16
+MDF_DFLT0_SADLearningFrames|MDF_SAD_LEARNING_32_FRAMES|32
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_3_5DB|3.5dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_6DB|6dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_9_5DB|9.5dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_12DB|12dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_15_6DB|15.6dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_18DB|18dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_21_6DB|21.6dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_24_1DB|24.1dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_27_6DB|27.6dB
+MDF_DFLT0_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_30_1DB|30.1dB
+MDF_DFLT0_AcquisitionMode|MDF_MODE_ASYNC_CONT|Asynchronous, continuous
+MDF_DFLT0_AcquisitionMode|MDF_MODE_ASYNC_SINGLE|Asynchronous, single-shot
+MDF_DFLT0_AcquisitionMode|MDF_MODE_SYNC_CONT|Synchronous, continuous
+MDF_DFLT0_AcquisitionMode|MDF_MODE_SYNC_SINGLE|Synchronous, single-shot
+MDF_DFLT0_AcquisitionMode|MDF_MODE_WINDOW_CONT|Window, continuous
+MDF_DFLT0_AcquisitionMode|MDF_MODE_SYNC_SNAPSHOT|Window, snapshot
+MDF_DFLT0_TriggerSource|MDF_CLOCK_TRIG_TRGO|TRGO
+MDF_DFLT0_TriggerSource|MDF_CLOCK_TRIG_EXTI15|EXTI15
+MDF_DFLT0_TriggerEdge|MDF_FILTER_TRIG_RISING_EDGE|Rising Edge
+MDF_DFLT0_TriggerEdge|MDF_FILTER_TRIG_FALLING_EDGE|Falling Edge
+MDF_DFLT0_SnapShotFormat|MDF_SNAPSHOT_23BITS|23 bits
+MDF_DFLT0_SnapShotFormat|MDF_SNAPSHOT_16BITS|16 bits
+MDF_DFLT0_SCDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT0_SCDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 Break
+MDF_DFLT0_SCDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT0_SCDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT0_SCDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 Break2
+MDF_DFLT0_SCDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 Break
+MDF_DFLT0_SCDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT0_SCDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_DFLT0_OLDCicMode|MDF_OLD_FILTER_FASTSINC|FastSinc
+MDF_DFLT0_OLDCicMode|MDF_OLD_FILTER_SINC1|Sinc1
+MDF_DFLT0_OLDCicMode|MDF_OLD_FILTER_SINC2|Sinc2
+MDF_DFLT0_OLDCicMode|MDF_OLD_FILTER_SINC3|Sinc3
+MDF_DFLT0_OLDEventConfig|MDF_OLD_SIGNAL_OUTSIDE_THRESHOLDS|When signal OUTside thresholds
+MDF_DFLT0_OLDEventConfig|MDF_OLD_SIGNAL_IN_THRESHOLDS|When signal INside thresholds
+MDF_DFLT0_OLDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT0_OLDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 Break
+MDF_DFLT0_OLDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT0_OLDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT0_OLDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 Break2
+MDF_DFLT0_OLDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 Break
+MDF_DFLT0_OLDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT0_OLDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_SITF1_Mode_Display|MDF_SITF_LF_MASTER_SPI_MODE|LF Master SPI
+MDF_SITF1_Mode_Display|MDF_SITF_NORMAL_SPI_MODE|Normal SPI
+MDF_SITF1_Mode_Display|MDF_SITF_MANCHESTER|Manchester
+MDF_SITF1_Manchester_Front|MDF_SITF_MANCHESTER_FALLING_MODE|Rising edge means 0 and Falling Edge means 1
+MDF_SITF1_Manchester_Front|MDF_SITF_MANCHESTER_RISING_MODE|Rising edge means 1 and Falling Edge means 0
+MDF_SITF1_ClockSource|MDF_SITF_CCK0_SOURCE|Common clock 0 source
+MDF_SITF1_ClockSource|MDF_SITF_CCK1_SOURCE|Common clock 1 source
+MDF_SITF1_ClockSource|MDF_SITF_CKI_SOURCE|Dedicated input clock source
+MDF_DFLT1_SITF_Choice|MDF_DFLT_SITF0|SITF0
+MDF_DFLT1_SITF_Choice|MDF_DFLT_SITF1|SITF1
+MDF_DFLT1_SITF_Choice|MDF_DFLT_SITF2|SITF2
+MDF_DFLT1_SITF_Choice|MDF_DFLT_SITF3|SITF3
+MDF_DFLT1_SITF_Choice|MDF_DFLT_SITF4|SITF4
+MDF_DFLT1_SITF_Choice|MDF_DFLT_SITF5|SITF5
+MDF_DFLT1_FilterBistreamFront|FRONT_RISING|rising front
+MDF_DFLT1_FilterBistreamFront|FRONT_FALLING|falling front
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM0_RISING|MDF_BITSTREAM0_RISING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM0_FALLING|MDF_BITSTREAM0_FALLING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM1_RISING|MDF_BITSTREAM1_RISING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM1_FALLING|MDF_BITSTREAM1_FALLING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM2_RISING|MDF_BITSTREAM2_RISING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM2_FALLING|MDF_BITSTREAM2_FALLING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM3_RISING|MDF_BITSTREAM3_RISING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM3_FALLING|MDF_BITSTREAM3_FALLING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM4_RISING|MDF_BITSTREAM4_RISING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM4_FALLING|MDF_BITSTREAM4_FALLING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM5_RISING|MDF_BITSTREAM5_RISING
+MDF_DFLT1_FilterBistream|MDF_BITSTREAM5_FALLING|MDF_BITSTREAM5_FALLING
+MDF_DFLT1_Data_Source|MDF_DATA_SOURCE_BSMX|Data from bitstream matrix
+MDF_DFLT1_Data_Source|MDF_DATA_SOURCE_ADCITF1|Data from ADC interface 1
+MDF_DFLT1_Data_Source|MDF_DATA_SOURCE_ADCITF2|Data from ADC interface 2
+MDF_DFLT1_CIC_Mode|MDF_TWO_FILTERS_MCIC_FASTSINC|Two filters, main filter in FastSinc order
+MDF_DFLT1_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC1|Two filters, main filter in Sinc1 order
+MDF_DFLT1_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC2|Two filters, main filter in Sinc2 order
+MDF_DFLT1_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC3|Two filters, main filter in Sinc3 order
+MDF_DFLT1_CIC_Mode|MDF_ONE_FILTER_SINC4|One filter in Sinc4 order
+MDF_DFLT1_CIC_Mode|MDF_ONE_FILTER_SINC5|One filter in Sinc5 order
+MDF_DFLT1_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_4|4
+MDF_DFLT1_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_1|1
+MDF_DFLT1_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_000625FPCM|0.000625xFpcm
+MDF_DFLT1_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_00125FPCM|0.00125xFpcm
+MDF_DFLT1_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0025FPCM|0.0025xFpcm
+MDF_DFLT1_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0095FPCM|0.0095xFpcm
+MDF_DFLT1_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_128|by 128
+MDF_DFLT1_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_32|by 32
+MDF_DFLT1_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_4|by 4
+MDF_DFLT1_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_NO_DIV|None
+MDF_DFLT1_SADDetector|MDF_SAD_VOICE_ACTIVITY_DETECTOR|Voice activity
+MDF_DFLT1_SADDetector|MDF_SAD_SOUND_DETECTOR|Sound
+MDF_DFLT1_SADDetector|MDF_SAD_AMBIENT_NOISE_DETECTOR|Ambient noise
+MDF_DFLT1_SADFrameSize|MDF_SAD_8_PCM_SAMPLES|8 PCM samples
+MDF_DFLT1_SADFrameSize|MDF_SAD_16_PCM_SAMPLES|16 PCM samples
+MDF_DFLT1_SADFrameSize|MDF_SAD_32_PCM_SAMPLES|32 PCM samples
+MDF_DFLT1_SADFrameSize|MDF_SAD_64_PCM_SAMPLES|64 PCM samples
+MDF_DFLT1_SADFrameSize|MDF_SAD_128_PCM_SAMPLES|128 PCM samples
+MDF_DFLT1_SADFrameSize|MDF_SAD_256_PCM_SAMPLES|256 PCM samples
+MDF_DFLT1_SADFrameSize|MDF_SAD_512_PCM_SAMPLES|512 PCM samples
+MDF_DFLT1_SADTriggerEvent|MDF_SAD_ENTER_DETECT|when Sound Activity Detector enters the MONITOR state
+MDF_DFLT1_SADTriggerEvent|MDF_SAD_ENTER_EXIT_DETECT|when Sound Activity Detector enters or exits the DETECT state
+MDF_DFLT1_SADDataMemoryTransfer|MDF_SAD_NO_MEMORY_TRANSFER|None
+MDF_DFLT1_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_IN_DETECT|Only in detect state
+MDF_DFLT1_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_ALWAYS|Always
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_4_FRAMES|4 frames
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_8_FRAMES|8 frames
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_16_FRAMES|16 frames
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_32_FRAMES|32 frames
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_64_FRAMES|64 frames
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_128_FRAMES|128 frames
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_256_FRAMES|256 frames
+MDF_DFLT1_SADHangoverWindow|MDF_SAD_HANGOVER_512_FRAMES|512 frames
+MDF_DFLT1_SADLearningFrames|MDF_SAD_LEARNING_2_FRAMES|2
+MDF_DFLT1_SADLearningFrames|MDF_SAD_LEARNING_4_FRAMES|4
+MDF_DFLT1_SADLearningFrames|MDF_SAD_LEARNING_8_FRAMES|8
+MDF_DFLT1_SADLearningFrames|MDF_SAD_LEARNING_16_FRAMES|16
+MDF_DFLT1_SADLearningFrames|MDF_SAD_LEARNING_32_FRAMES|32
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_3_5DB|3.5dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_6DB|6dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_9_5DB|9.5dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_12DB|12dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_15_6DB|15.6dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_18DB|18dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_21_6DB|21.6dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_24_1DB|24.1dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_27_6DB|27.6dB
+MDF_DFLT1_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_30_1DB|30.1dB
+MDF_DFLT1_AcquisitionMode|MDF_MODE_ASYNC_CONT|Asynchronous, continuous
+MDF_DFLT1_AcquisitionMode|MDF_MODE_ASYNC_SINGLE|Asynchronous, single-shot
+MDF_DFLT1_AcquisitionMode|MDF_MODE_SYNC_CONT|Synchronous, continuous
+MDF_DFLT1_AcquisitionMode|MDF_MODE_SYNC_SINGLE|Synchronous, single-shot
+MDF_DFLT1_AcquisitionMode|MDF_MODE_WINDOW_CONT|Window, continuous
+MDF_DFLT1_AcquisitionMode|MDF_MODE_SYNC_SNAPSHOT|Window, snapshot
+MDF_DFLT1_TriggerSource|MDF_CLOCK_TRIG_TRGO|TRGO
+MDF_DFLT1_TriggerSource|MDF_CLOCK_TRIG_EXTI15|EXTI15
+MDF_DFLT1_TriggerEdge|MDF_FILTER_TRIG_RISING_EDGE|Rising Edge
+MDF_DFLT1_TriggerEdge|MDF_FILTER_TRIG_FALLING_EDGE|Falling Edge
+MDF_DFLT1_SnapShotFormat|MDF_SNAPSHOT_23BITS|23 bits
+MDF_DFLT1_SnapShotFormat|MDF_SNAPSHOT_16BITS|16 bits
+MDF_DFLT1_SCDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT1_SCDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 break
+MDF_DFLT1_SCDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT1_SCDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT1_SCDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 break2
+MDF_DFLT1_SCDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 break
+MDF_DFLT1_SCDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT1_SCDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_DFLT1_OLDCicMode|MDF_OLD_FILTER_FASTSINC|FastSinc
+MDF_DFLT1_OLDCicMode|MDF_OLD_FILTER_SINC1|Sinc1
+MDF_DFLT1_OLDCicMode|MDF_OLD_FILTER_SINC2|Sinc2
+MDF_DFLT1_OLDCicMode|MDF_OLD_FILTER_SINC3|Sinc3
+MDF_DFLT1_OLDEventConfig|MDF_OLD_SIGNAL_OUTSIDE_THRESHOLDS|When signal OUTside thresholds
+MDF_DFLT1_OLDEventConfig|MDF_OLD_SIGNAL_IN_THRESHOLDS|When signal INside thresholds
+MDF_DFLT1_OLDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT1_OLDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 Break
+MDF_DFLT1_OLDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT1_OLDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT1_OLDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 Break2
+MDF_DFLT1_OLDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 Break
+MDF_DFLT1_OLDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT1_OLDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_SITF2_Mode_Display|MDF_SITF_LF_MASTER_SPI_MODE|LF Master SPI
+MDF_SITF2_Mode_Display|MDF_SITF_NORMAL_SPI_MODE|Normal SPI
+MDF_SITF2_Mode_Display|MDF_SITF_MANCHESTER|Manchester
+MDF_SITF2_Manchester_Front|MDF_SITF_MANCHESTER_FALLING_MODE|Rising edge means 0 and Falling Edge means 1
+MDF_SITF2_Manchester_Front|MDF_SITF_MANCHESTER_RISING_MODE|Rising edge means 1 and Falling Edge means 0
+MDF_SITF2_ClockSource|MDF_SITF_CCK0_SOURCE|Common clock 0 source
+MDF_SITF2_ClockSource|MDF_SITF_CCK1_SOURCE|Common clock 1 source
+MDF_SITF2_ClockSource|MDF_SITF_CKI_SOURCE|Dedicated input clock source
+MDF_DFLT2_SITF_Choice|MDF_DFLT_SITF0|SITF0
+MDF_DFLT2_SITF_Choice|MDF_DFLT_SITF1|SITF1
+MDF_DFLT2_SITF_Choice|MDF_DFLT_SITF2|SITF2
+MDF_DFLT2_SITF_Choice|MDF_DFLT_SITF3|SITF3
+MDF_DFLT2_SITF_Choice|MDF_DFLT_SITF4|SITF4
+MDF_DFLT2_SITF_Choice|MDF_DFLT_SITF5|SITF5
+MDF_DFLT2_FilterBistreamFront|FRONT_RISING|rising front
+MDF_DFLT2_FilterBistreamFront|FRONT_FALLING|falling front
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM0_RISING|MDF_BITSTREAM0_RISING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM0_FALLING|MDF_BITSTREAM0_FALLING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM1_RISING|MDF_BITSTREAM1_RISING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM1_FALLING|MDF_BITSTREAM1_FALLING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM2_RISING|MDF_BITSTREAM2_RISING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM2_FALLING|MDF_BITSTREAM2_FALLING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM3_RISING|MDF_BITSTREAM3_RISING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM3_FALLING|MDF_BITSTREAM3_FALLING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM4_RISING|MDF_BITSTREAM4_RISING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM4_FALLING|MDF_BITSTREAM4_FALLING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM5_RISING|MDF_BITSTREAM5_RISING
+MDF_DFLT2_FilterBistream|MDF_BITSTREAM5_FALLING|MDF_BITSTREAM5_FALLING
+MDF_DFLT2_Data_Source|MDF_DATA_SOURCE_BSMX|Data from bitstream matrix
+MDF_DFLT2_Data_Source|MDF_DATA_SOURCE_ADCITF1|Data from ADC interface 1
+MDF_DFLT2_Data_Source|MDF_DATA_SOURCE_ADCITF2|Data from ADC interface 2
+MDF_DFLT2_CIC_Mode|MDF_TWO_FILTERS_MCIC_FASTSINC|Two filters, main filter in FastSinc order
+MDF_DFLT2_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC1|Two filters, main filter in Sinc1 order
+MDF_DFLT2_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC2|Two filters, main filter in Sinc2 order
+MDF_DFLT2_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC3|Two filters, main filter in Sinc3 order
+MDF_DFLT2_CIC_Mode|MDF_ONE_FILTER_SINC4|One filter in Sinc4 order
+MDF_DFLT2_CIC_Mode|MDF_ONE_FILTER_SINC5|One filter in Sinc5 order
+MDF_DFLT2_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_4|4
+MDF_DFLT2_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_1|1
+MDF_DFLT2_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_000625FPCM|0.000625xFpcm
+MDF_DFLT2_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_00125FPCM|0.00125xFpcm
+MDF_DFLT2_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0025FPCM|0.0025xFpcm
+MDF_DFLT2_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0095FPCM|0.0095xFpcm
+MDF_DFLT2_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_128|by 128
+MDF_DFLT2_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_32|by 32
+MDF_DFLT2_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_4|by 4
+MDF_DFLT2_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_NO_DIV|None
+MDF_DFLT2_SADDetector|MDF_SAD_VOICE_ACTIVITY_DETECTOR|Voice activity
+MDF_DFLT2_SADDetector|MDF_SAD_SOUND_DETECTOR|Sound
+MDF_DFLT2_SADDetector|MDF_SAD_AMBIENT_NOISE_DETECTOR|Ambient noise
+MDF_DFLT2_SADFrameSize|MDF_SAD_8_PCM_SAMPLES|8 PCM samples
+MDF_DFLT2_SADFrameSize|MDF_SAD_16_PCM_SAMPLES|16 PCM samples
+MDF_DFLT2_SADFrameSize|MDF_SAD_32_PCM_SAMPLES|32 PCM samples
+MDF_DFLT2_SADFrameSize|MDF_SAD_64_PCM_SAMPLES|64 PCM samples
+MDF_DFLT2_SADFrameSize|MDF_SAD_128_PCM_SAMPLES|128 PCM samples
+MDF_DFLT2_SADFrameSize|MDF_SAD_256_PCM_SAMPLES|256 PCM samples
+MDF_DFLT2_SADFrameSize|MDF_SAD_512_PCM_SAMPLES|512 PCM samples
+MDF_DFLT2_SADTriggerEvent|MDF_SAD_ENTER_DETECT|when Sound Activity Detector enters the MONITOR state
+MDF_DFLT2_SADTriggerEvent|MDF_SAD_ENTER_EXIT_DETECT|when Sound Activity Detector enters or exits the DETECT state
+MDF_DFLT2_SADDataMemoryTransfer|MDF_SAD_NO_MEMORY_TRANSFER|None
+MDF_DFLT2_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_IN_DETECT|Only in detect state
+MDF_DFLT2_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_ALWAYS|Always
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_4_FRAMES|4 frames
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_8_FRAMES|8 frames
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_16_FRAMES|16 frames
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_32_FRAMES|32 frames
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_64_FRAMES|64 frames
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_128_FRAMES|128 frames
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_256_FRAMES|256 frames
+MDF_DFLT2_SADHangoverWindow|MDF_SAD_HANGOVER_512_FRAMES|512 frames
+MDF_DFLT2_SADLearningFrames|MDF_SAD_LEARNING_2_FRAMES|2
+MDF_DFLT2_SADLearningFrames|MDF_SAD_LEARNING_4_FRAMES|4
+MDF_DFLT2_SADLearningFrames|MDF_SAD_LEARNING_8_FRAMES|8
+MDF_DFLT2_SADLearningFrames|MDF_SAD_LEARNING_16_FRAMES|16
+MDF_DFLT2_SADLearningFrames|MDF_SAD_LEARNING_32_FRAMES|32
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_3_5DB|3.5dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_6DB|6dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_9_5DB|9.5dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_12DB|12dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_15_6DB|15.6dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_18DB|18dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_21_6DB|21.6dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_24_1DB|24.1dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_27_6DB|27.6dB
+MDF_DFLT2_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_30_1DB|30.1dB
+MDF_DFLT2_AcquisitionMode|MDF_MODE_ASYNC_CONT|Asynchronous, continuous
+MDF_DFLT2_AcquisitionMode|MDF_MODE_ASYNC_SINGLE|Asynchronous, single-shot
+MDF_DFLT2_AcquisitionMode|MDF_MODE_SYNC_CONT|Synchronous, continuous
+MDF_DFLT2_AcquisitionMode|MDF_MODE_SYNC_SINGLE|Synchronous, single-shot
+MDF_DFLT2_AcquisitionMode|MDF_MODE_WINDOW_CONT|Window, continuous
+MDF_DFLT2_AcquisitionMode|MDF_MODE_SYNC_SNAPSHOT|Window, snapshot
+MDF_DFLT2_TriggerSource|MDF_CLOCK_TRIG_TRGO|TRGO
+MDF_DFLT2_TriggerSource|MDF_CLOCK_TRIG_EXTI15|EXTI15
+MDF_DFLT2_TriggerEdge|MDF_FILTER_TRIG_RISING_EDGE|Rising Edge
+MDF_DFLT2_TriggerEdge|MDF_FILTER_TRIG_FALLING_EDGE|Falling Edge
+MDF_DFLT2_SnapShotFormat|MDF_SNAPSHOT_23BITS|23 bits
+MDF_DFLT2_SnapShotFormat|MDF_SNAPSHOT_16BITS|16 bits
+MDF_DFLT2_SCDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT2_SCDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 break
+MDF_DFLT2_SCDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT2_SCDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT2_SCDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 break2
+MDF_DFLT2_SCDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 break
+MDF_DFLT2_SCDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT2_SCDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_DFLT2_OLDCicMode|MDF_OLD_FILTER_FASTSINC|FastSinc
+MDF_DFLT2_OLDCicMode|MDF_OLD_FILTER_SINC1|Sinc1
+MDF_DFLT2_OLDCicMode|MDF_OLD_FILTER_SINC2|Sinc2
+MDF_DFLT2_OLDCicMode|MDF_OLD_FILTER_SINC3|Sinc3
+MDF_DFLT2_OLDEventConfig|MDF_OLD_SIGNAL_OUTSIDE_THRESHOLDS|When signal OUTside thresholds
+MDF_DFLT2_OLDEventConfig|MDF_OLD_SIGNAL_IN_THRESHOLDS|When signal INside thresholds
+MDF_DFLT2_OLDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT2_OLDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 Break
+MDF_DFLT2_OLDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT2_OLDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT2_OLDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 Break2
+MDF_DFLT2_OLDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 Break
+MDF_DFLT2_OLDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT2_OLDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_SITF3_Mode_Display|MDF_SITF_LF_MASTER_SPI_MODE|LF Master SPI
+MDF_SITF3_Mode_Display|MDF_SITF_NORMAL_SPI_MODE|Normal SPI
+MDF_SITF3_Mode_Display|MDF_SITF_MANCHESTER|Manchester
+MDF_SITF3_Manchester_Front|MDF_SITF_MANCHESTER_FALLING_MODE|Rising edge means 0 and Falling Edge means 1
+MDF_SITF3_Manchester_Front|MDF_SITF_MANCHESTER_RISING_MODE|Rising edge means 1 and Falling Edge means 0
+MDF_SITF3_ClockSource|MDF_SITF_CCK0_SOURCE|Common clock 0 source
+MDF_SITF3_ClockSource|MDF_SITF_CCK1_SOURCE|Common clock 1 source
+MDF_SITF3_ClockSource|MDF_SITF_CKI_SOURCE|Dedicated input clock source
+MDF_DFLT3_SITF_Choice|MDF_DFLT_SITF0|SITF0
+MDF_DFLT3_SITF_Choice|MDF_DFLT_SITF1|SITF1
+MDF_DFLT3_SITF_Choice|MDF_DFLT_SITF2|SITF2
+MDF_DFLT3_SITF_Choice|MDF_DFLT_SITF3|SITF3
+MDF_DFLT3_SITF_Choice|MDF_DFLT_SITF4|SITF4
+MDF_DFLT3_SITF_Choice|MDF_DFLT_SITF5|SITF5
+MDF_DFLT3_FilterBistreamFront|FRONT_RISING|rising front
+MDF_DFLT3_FilterBistreamFront|FRONT_FALLING|falling front
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM0_RISING|MDF_BITSTREAM0_RISING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM0_FALLING|MDF_BITSTREAM0_FALLING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM1_RISING|MDF_BITSTREAM1_RISING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM1_FALLING|MDF_BITSTREAM1_FALLING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM3_RISING|MDF_BITSTREAM3_RISING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM3_FALLING|MDF_BITSTREAM3_FALLING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM4_RISING|MDF_BITSTREAM4_RISING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM4_FALLING|MDF_BITSTREAM4_FALLING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM5_RISING|MDF_BITSTREAM5_RISING
+MDF_DFLT3_FilterBistream|MDF_BITSTREAM5_FALLING|MDF_BITSTREAM5_FALLING
+MDF_DFLT3_Data_Source|MDF_DATA_SOURCE_BSMX|Data from bitstream matrix
+MDF_DFLT3_Data_Source|MDF_DATA_SOURCE_ADCITF1|Data from ADC interface 1
+MDF_DFLT3_Data_Source|MDF_DATA_SOURCE_ADCITF2|Data from ADC interface 2
+MDF_DFLT3_CIC_Mode|MDF_TWO_FILTERS_MCIC_FASTSINC|Two filters, main filter in FastSinc order
+MDF_DFLT3_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC1|Two filters, main filter in Sinc1 order
+MDF_DFLT3_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC2|Two filters, main filter in Sinc2 order
+MDF_DFLT3_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC3|Two filters, main filter in Sinc3 order
+MDF_DFLT3_CIC_Mode|MDF_ONE_FILTER_SINC4|One filter in Sinc4 order
+MDF_DFLT3_CIC_Mode|MDF_ONE_FILTER_SINC5|One filter in Sinc5 order
+MDF_DFLT3_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_4|4
+MDF_DFLT3_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_1|1
+MDF_DFLT3_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_000625FPCM|0.000625xFpcm
+MDF_DFLT3_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_00125FPCM|0.00125xFpcm
+MDF_DFLT3_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0025FPCM|0.0025xFpcm
+MDF_DFLT3_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0095FPCM|0.0095xFpcm
+MDF_DFLT3_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_128|by 128
+MDF_DFLT3_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_32|by 32
+MDF_DFLT3_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_4|by 4
+MDF_DFLT3_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_NO_DIV|None
+MDF_DFLT3_SADDetector|MDF_SAD_VOICE_ACTIVITY_DETECTOR|Voice activity
+MDF_DFLT3_SADDetector|MDF_SAD_SOUND_DETECTOR|Sound
+MDF_DFLT3_SADDetector|MDF_SAD_AMBIENT_NOISE_DETECTOR|Ambient noise
+MDF_DFLT3_SADFrameSize|MDF_SAD_8_PCM_SAMPLES|8 PCM samples
+MDF_DFLT3_SADFrameSize|MDF_SAD_16_PCM_SAMPLES|16 PCM samples
+MDF_DFLT3_SADFrameSize|MDF_SAD_32_PCM_SAMPLES|32 PCM samples
+MDF_DFLT3_SADFrameSize|MDF_SAD_64_PCM_SAMPLES|64 PCM samples
+MDF_DFLT3_SADFrameSize|MDF_SAD_128_PCM_SAMPLES|128 PCM samples
+MDF_DFLT3_SADFrameSize|MDF_SAD_256_PCM_SAMPLES|256 PCM samples
+MDF_DFLT3_SADFrameSize|MDF_SAD_512_PCM_SAMPLES|512 PCM samples
+MDF_DFLT3_SADTriggerEvent|MDF_SAD_ENTER_DETECT|when Sound Activity Detector enters the MONITOR state
+MDF_DFLT3_SADTriggerEvent|MDF_SAD_ENTER_EXIT_DETECT|when Sound Activity Detector enters or exits the DETECT state
+MDF_DFLT3_SADDataMemoryTransfer|MDF_SAD_NO_MEMORY_TRANSFER|None
+MDF_DFLT3_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_IN_DETECT|Only in detect state
+MDF_DFLT3_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_ALWAYS|Always
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_4_FRAMES|4 frames
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_8_FRAMES|8 frames
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_16_FRAMES|16 frames
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_32_FRAMES|32 frames
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_64_FRAMES|64 frames
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_128_FRAMES|128 frames
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_256_FRAMES|256 frames
+MDF_DFLT3_SADHangoverWindow|MDF_SAD_HANGOVER_512_FRAMES|512 frames
+MDF_DFLT3_SADLearningFrames|MDF_SAD_LEARNING_2_FRAMES|2
+MDF_DFLT3_SADLearningFrames|MDF_SAD_LEARNING_4_FRAMES|4
+MDF_DFLT3_SADLearningFrames|MDF_SAD_LEARNING_8_FRAMES|8
+MDF_DFLT3_SADLearningFrames|MDF_SAD_LEARNING_16_FRAMES|16
+MDF_DFLT3_SADLearningFrames|MDF_SAD_LEARNING_32_FRAMES|32
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_3_5DB|3.5dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_6DB|6dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_9_5DB|9.5dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_12DB|12dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_15_6DB|15.6dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_18DB|18dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_21_6DB|21.6dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_24_1DB|24.1dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_27_6DB|27.6dB
+MDF_DFLT3_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_30_1DB|30.1dB
+MDF_DFLT3_AcquisitionMode|MDF_MODE_ASYNC_CONT|Asynchronous, continuous
+MDF_DFLT3_AcquisitionMode|MDF_MODE_ASYNC_SINGLE|Asynchronous, single-shot
+MDF_DFLT3_AcquisitionMode|MDF_MODE_SYNC_CONT|Synchronous, continuous
+MDF_DFLT3_AcquisitionMode|MDF_MODE_SYNC_SINGLE|Synchronous, single-shot
+MDF_DFLT3_AcquisitionMode|MDF_MODE_WINDOW_CONT|Window, continuous
+MDF_DFLT3_AcquisitionMode|MDF_MODE_SYNC_SNAPSHOT|Window, snapshot
+MDF_DFLT3_TriggerSource|MDF_CLOCK_TRIG_TRGO|TRGO
+MDF_DFLT3_TriggerSource|MDF_CLOCK_TRIG_EXTI15|EXTI15
+MDF_DFLT3_TriggerEdge|MDF_FILTER_TRIG_RISING_EDGE|Rising Edge
+MDF_DFLT3_TriggerEdge|MDF_FILTER_TRIG_FALLING_EDGE|Falling Edge
+MDF_DFLT3_SnapShotFormat|MDF_SNAPSHOT_23BITS|23 bits
+MDF_DFLT3_SnapShotFormat|MDF_SNAPSHOT_16BITS|16 bits
+MDF_DFLT3_SCDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT3_SCDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 break
+MDF_DFLT3_SCDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT3_SCDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT3_SCDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 break2
+MDF_DFLT3_SCDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 break
+MDF_DFLT3_SCDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT3_SCDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_DFLT3_OLDCicMode|MDF_OLD_FILTER_FASTSINC|FastSinc
+MDF_DFLT3_OLDCicMode|MDF_OLD_FILTER_SINC1|Sinc1
+MDF_DFLT3_OLDCicMode|MDF_OLD_FILTER_SINC2|Sinc2
+MDF_DFLT3_OLDCicMode|MDF_OLD_FILTER_SINC3|Sinc3
+MDF_DFLT3_OLDEventConfig|MDF_OLD_SIGNAL_OUTSIDE_THRESHOLDS|When signal OUTside thresholds
+MDF_DFLT3_OLDEventConfig|MDF_OLD_SIGNAL_IN_THRESHOLDS|When signal INside thresholds
+MDF_DFLT3_OLDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT3_OLDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 Break
+MDF_DFLT3_OLDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT3_OLDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT3_OLDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 Break2
+MDF_DFLT3_OLDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 Break
+MDF_DFLT3_OLDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT3_OLDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_SITF4_Mode_Display|MDF_SITF_LF_MASTER_SPI_MODE|LF Master SPI
+MDF_SITF4_Mode_Display|MDF_SITF_NORMAL_SPI_MODE|Normal SPI
+MDF_SITF4_Mode_Display|MDF_SITF_MANCHESTER|Manchester
+MDF_SITF4_Manchester_Front|MDF_SITF_MANCHESTER_FALLING_MODE|Rising edge means 0 and Falling Edge means 1
+MDF_SITF4_Manchester_Front|MDF_SITF_MANCHESTER_RISING_MODE|Rising edge means 1 and Falling Edge means 0
+MDF_SITF4_ClockSource|MDF_SITF_CCK0_SOURCE|Common clock 0 source
+MDF_SITF4_ClockSource|MDF_SITF_CCK1_SOURCE|Common clock 1 source
+MDF_SITF4_ClockSource|MDF_SITF_CKI_SOURCE|Dedicated input clock source
+MDF_DFLT4_SITF_Choice|MDF_DFLT_SITF0|SITF0
+MDF_DFLT4_SITF_Choice|MDF_DFLT_SITF1|SITF1
+MDF_DFLT4_SITF_Choice|MDF_DFLT_SITF2|SITF2
+MDF_DFLT4_SITF_Choice|MDF_DFLT_SITF3|SITF3
+MDF_DFLT4_SITF_Choice|MDF_DFLT_SITF4|SITF4
+MDF_DFLT4_SITF_Choice|MDF_DFLT_SITF5|SITF5
+MDF_DFLT4_FilterBistreamFront|FRONT_RISING|rising front
+MDF_DFLT4_FilterBistreamFront|FRONT_FALLING|falling front
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM0_RISING|MDF_BITSTREAM0_RISING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM0_FALLING|MDF_BITSTREAM0_FALLING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM1_RISING|MDF_BITSTREAM1_RISING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM1_FALLING|MDF_BITSTREAM1_FALLING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM4_RISING|MDF_BITSTREAM4_RISING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM4_FALLING|MDF_BITSTREAM4_FALLING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM3_RISING|MDF_BITSTREAM3_RISING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM3_FALLING|MDF_BITSTREAM3_FALLING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM5_RISING|MDF_BITSTREAM5_RISING
+MDF_DFLT4_FilterBistream|MDF_BITSTREAM5_FALLING|MDF_BITSTREAM5_FALLING
+MDF_DFLT4_Data_Source|MDF_DATA_SOURCE_BSMX|Data from bitstream matrix
+MDF_DFLT4_Data_Source|MDF_DATA_SOURCE_ADCITF1|Data from ADC interface 1
+MDF_DFLT4_Data_Source|MDF_DATA_SOURCE_ADCITF2|Data from ADC interface 2
+MDF_DFLT4_CIC_Mode|MDF_TWO_FILTERS_MCIC_FASTSINC|Two filters, main filter in FastSinc order
+MDF_DFLT4_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC1|Two filters, main filter in Sinc1 order
+MDF_DFLT4_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC2|Two filters, main filter in Sinc2 order
+MDF_DFLT4_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC3|Two filters, main filter in Sinc3 order
+MDF_DFLT4_CIC_Mode|MDF_ONE_FILTER_SINC4|One filter in Sinc4 order
+MDF_DFLT4_CIC_Mode|MDF_ONE_FILTER_SINC5|One filter in Sinc5 order
+MDF_DFLT4_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_4|4
+MDF_DFLT4_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_1|1
+MDF_DFLT4_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_000625FPCM|0.000625xFpcm
+MDF_DFLT4_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_00125FPCM|0.00125xFpcm
+MDF_DFLT4_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0025FPCM|0.0025xFpcm
+MDF_DFLT4_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0095FPCM|0.0095xFpcm
+MDF_DFLT4_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_128|by 128
+MDF_DFLT4_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_32|by 32
+MDF_DFLT4_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_4|by 4
+MDF_DFLT4_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_NO_DIV|None
+MDF_DFLT4_SADDetector|MDF_SAD_VOICE_ACTIVITY_DETECTOR|Voice activity
+MDF_DFLT4_SADDetector|MDF_SAD_SOUND_DETECTOR|Sound
+MDF_DFLT4_SADDetector|MDF_SAD_AMBIENT_NOISE_DETECTOR|Ambient noise
+MDF_DFLT4_SADFrameSize|MDF_SAD_8_PCM_SAMPLES|8 PCM samples
+MDF_DFLT4_SADFrameSize|MDF_SAD_16_PCM_SAMPLES|16 PCM samples
+MDF_DFLT4_SADFrameSize|MDF_SAD_32_PCM_SAMPLES|32 PCM samples
+MDF_DFLT4_SADFrameSize|MDF_SAD_64_PCM_SAMPLES|64 PCM samples
+MDF_DFLT4_SADFrameSize|MDF_SAD_128_PCM_SAMPLES|128 PCM samples
+MDF_DFLT4_SADFrameSize|MDF_SAD_256_PCM_SAMPLES|256 PCM samples
+MDF_DFLT4_SADFrameSize|MDF_SAD_512_PCM_SAMPLES|512 PCM samples
+MDF_DFLT4_SADTriggerEvent|MDF_SAD_ENTER_DETECT|when Sound Activity Detector enters the MONITOR state
+MDF_DFLT4_SADTriggerEvent|MDF_SAD_ENTER_EXIT_DETECT|when Sound Activity Detector enters or exits the DETECT state
+MDF_DFLT4_SADDataMemoryTransfer|MDF_SAD_NO_MEMORY_TRANSFER|None
+MDF_DFLT4_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_IN_DETECT|Only in detect state
+MDF_DFLT4_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_ALWAYS|Always
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_4_FRAMES|4 frames
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_8_FRAMES|8 frames
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_16_FRAMES|16 frames
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_32_FRAMES|32 frames
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_64_FRAMES|64 frames
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_128_FRAMES|128 frames
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_256_FRAMES|256 frames
+MDF_DFLT4_SADHangoverWindow|MDF_SAD_HANGOVER_512_FRAMES|512 frames
+MDF_DFLT4_SADLearningFrames|MDF_SAD_LEARNING_2_FRAMES|2
+MDF_DFLT4_SADLearningFrames|MDF_SAD_LEARNING_4_FRAMES|4
+MDF_DFLT4_SADLearningFrames|MDF_SAD_LEARNING_8_FRAMES|8
+MDF_DFLT4_SADLearningFrames|MDF_SAD_LEARNING_16_FRAMES|16
+MDF_DFLT4_SADLearningFrames|MDF_SAD_LEARNING_32_FRAMES|32
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_3_5DB|3.5dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_6DB|6dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_9_5DB|9.5dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_12DB|12dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_15_6DB|15.6dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_18DB|18dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_21_6DB|21.6dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_24_1DB|24.1dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_27_6DB|27.6dB
+MDF_DFLT4_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_30_1DB|30.1dB
+MDF_DFLT4_AcquisitionMode|MDF_MODE_ASYNC_CONT|Asynchronous, continuous
+MDF_DFLT4_AcquisitionMode|MDF_MODE_ASYNC_SINGLE|Asynchronous, single-shot
+MDF_DFLT4_AcquisitionMode|MDF_MODE_SYNC_CONT|Synchronous, continuous
+MDF_DFLT4_AcquisitionMode|MDF_MODE_SYNC_SINGLE|Synchronous, single-shot
+MDF_DFLT4_AcquisitionMode|MDF_MODE_WINDOW_CONT|Window, continuous
+MDF_DFLT4_AcquisitionMode|MDF_MODE_SYNC_SNAPSHOT|Window, snapshot
+MDF_DFLT4_TriggerSource|MDF_CLOCK_TRIG_TRGO|TRGO
+MDF_DFLT4_TriggerSource|MDF_CLOCK_TRIG_EXTI15|EXTI15
+MDF_DFLT4_TriggerEdge|MDF_FILTER_TRIG_RISING_EDGE|Rising Edge
+MDF_DFLT4_TriggerEdge|MDF_FILTER_TRIG_FALLING_EDGE|Falling Edge
+MDF_DFLT4_SnapShotFormat|MDF_SNAPSHOT_23BITS|23 bits
+MDF_DFLT4_SnapShotFormat|MDF_SNAPSHOT_16BITS|16 bits
+MDF_DFLT4_SCDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT4_SCDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 break
+MDF_DFLT4_SCDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT4_SCDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT4_SCDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 break2
+MDF_DFLT4_SCDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 break
+MDF_DFLT4_SCDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT4_SCDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_DFLT4_OLDCicMode|MDF_OLD_FILTER_FASTSINC|FastSinc
+MDF_DFLT4_OLDCicMode|MDF_OLD_FILTER_SINC1|Sinc1
+MDF_DFLT4_OLDCicMode|MDF_OLD_FILTER_SINC2|Sinc2
+MDF_DFLT4_OLDCicMode|MDF_OLD_FILTER_SINC3|Sinc3
+MDF_DFLT4_OLDEventConfig|MDF_OLD_SIGNAL_OUTSIDE_THRESHOLDS|When signal OUTside thresholds
+MDF_DFLT4_OLDEventConfig|MDF_OLD_SIGNAL_IN_THRESHOLDS|When signal INside thresholds
+MDF_DFLT4_OLDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT4_OLDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 Break
+MDF_DFLT4_OLDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT4_OLDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT4_OLDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 Break2
+MDF_DFLT4_OLDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 Break
+MDF_DFLT4_OLDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT4_OLDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_SITF5_Mode_Display|MDF_SITF_LF_MASTER_SPI_MODE|LF Master SPI
+MDF_SITF5_Mode_Display|MDF_SITF_NORMAL_SPI_MODE|Normal SPI
+MDF_SITF5_Mode_Display|MDF_SITF_MANCHESTER|Manchester
+MDF_SITF5_Manchester_Front|MDF_SITF_MANCHESTER_FALLING_MODE|Rising edge means 0 and Falling Edge means 1
+MDF_SITF5_Manchester_Front|MDF_SITF_MANCHESTER_RISING_MODE|Rising edge means 1 and Falling Edge means 0
+MDF_SITF5_ClockSource|MDF_SITF_CCK0_SOURCE|Common clock 0 source
+MDF_SITF5_ClockSource|MDF_SITF_CCK1_SOURCE|Common clock 1 source
+MDF_SITF5_ClockSource|MDF_SITF_CKI_SOURCE|Dedicated input clock source
+MDF_DFLT5_SITF_Choice|MDF_DFLT_SITF0|SITF0
+MDF_DFLT5_SITF_Choice|MDF_DFLT_SITF1|SITF1
+MDF_DFLT5_SITF_Choice|MDF_DFLT_SITF2|SITF2
+MDF_DFLT5_SITF_Choice|MDF_DFLT_SITF3|SITF3
+MDF_DFLT5_SITF_Choice|MDF_DFLT_SITF4|SITF4
+MDF_DFLT5_SITF_Choice|MDF_DFLT_SITF5|SITF5
+MDF_DFLT5_FilterBistreamFront|FRONT_RISING|rising front
+MDF_DFLT5_FilterBistreamFront|FRONT_FALLING|falling front
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM0_RISING|MDF_BITSTREAM0_RISING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM0_FALLING|MDF_BITSTREAM0_FALLING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM1_RISING|MDF_BITSTREAM1_RISING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM1_FALLING|MDF_BITSTREAM1_FALLING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM5_RISING|MDF_BITSTREAM5_RISING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM5_FALLING|MDF_BITSTREAM5_FALLING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM3_RISING|MDF_BITSTREAM3_RISING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM3_FALLING|MDF_BITSTREAM3_FALLING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM4_RISING|MDF_BITSTREAM4_RISING
+MDF_DFLT5_FilterBistream|MDF_BITSTREAM4_FALLING|MDF_BITSTREAM4_FALLING
+MDF_DFLT5_Data_Source|MDF_DATA_SOURCE_BSMX|Data from bitstream matrix
+MDF_DFLT5_Data_Source|MDF_DATA_SOURCE_ADCITF1|Data from ADC interface 1
+MDF_DFLT5_Data_Source|MDF_DATA_SOURCE_ADCITF2|Data from ADC interface 2
+MDF_DFLT5_CIC_Mode|MDF_TWO_FILTERS_MCIC_FASTSINC|Two filters, main filter in FastSinc order
+MDF_DFLT5_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC1|Two filters, main filter in Sinc1 order
+MDF_DFLT5_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC2|Two filters, main filter in Sinc2 order
+MDF_DFLT5_CIC_Mode|MDF_TWO_FILTERS_MCIC_SINC3|Two filters, main filter in Sinc3 order
+MDF_DFLT5_CIC_Mode|MDF_ONE_FILTER_SINC4|One filter in Sinc4 order
+MDF_DFLT5_CIC_Mode|MDF_ONE_FILTER_SINC5|One filter in Sinc5 order
+MDF_DFLT5_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_4|4
+MDF_DFLT5_ReshapeFilterDecimationRatio|MDF_RSF_DECIMATION_RATIO_1|1
+MDF_DFLT5_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_000625FPCM|0.000625xFpcm
+MDF_DFLT5_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_00125FPCM|0.00125xFpcm
+MDF_DFLT5_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0025FPCM|0.0025xFpcm
+MDF_DFLT5_HighPassCutOffFrequency|MDF_HPF_CUTOFF_0_0095FPCM|0.0095xFpcm
+MDF_DFLT5_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_128|by 128
+MDF_DFLT5_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_32|by 32
+MDF_DFLT5_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_DIV_4|by 4
+MDF_DFLT5_IntegratorOutputDivision|MDF_INTEGRATOR_OUTPUT_NO_DIV|None
+MDF_DFLT5_SADDetector|MDF_SAD_VOICE_ACTIVITY_DETECTOR|Voice activity
+MDF_DFLT5_SADDetector|MDF_SAD_SOUND_DETECTOR|Sound
+MDF_DFLT5_SADDetector|MDF_SAD_AMBIENT_NOISE_DETECTOR|Ambient noise
+MDF_DFLT5_SADFrameSize|MDF_SAD_8_PCM_SAMPLES|8 PCM samples
+MDF_DFLT5_SADFrameSize|MDF_SAD_16_PCM_SAMPLES|16 PCM samples
+MDF_DFLT5_SADFrameSize|MDF_SAD_32_PCM_SAMPLES|32 PCM samples
+MDF_DFLT5_SADFrameSize|MDF_SAD_64_PCM_SAMPLES|64 PCM samples
+MDF_DFLT5_SADFrameSize|MDF_SAD_128_PCM_SAMPLES|128 PCM samples
+MDF_DFLT5_SADFrameSize|MDF_SAD_256_PCM_SAMPLES|256 PCM samples
+MDF_DFLT5_SADFrameSize|MDF_SAD_512_PCM_SAMPLES|512 PCM samples
+MDF_DFLT5_SADTriggerEvent|MDF_SAD_ENTER_DETECT|when Sound Activity Detector enters the MONITOR state
+MDF_DFLT5_SADTriggerEvent|MDF_SAD_ENTER_EXIT_DETECT|when Sound Activity Detector enters or exits the DETECT state
+MDF_DFLT5_SADDataMemoryTransfer|MDF_SAD_NO_MEMORY_TRANSFER|None
+MDF_DFLT5_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_IN_DETECT|Only in detect state
+MDF_DFLT5_SADDataMemoryTransfer|MDF_SAD_MEMORY_TRANSFER_ALWAYS|Always
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_4_FRAMES|4 frames
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_8_FRAMES|8 frames
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_16_FRAMES|16 frames
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_32_FRAMES|32 frames
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_64_FRAMES|64 frames
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_128_FRAMES|128 frames
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_256_FRAMES|256 frames
+MDF_DFLT5_SADHangoverWindow|MDF_SAD_HANGOVER_512_FRAMES|512 frames
+MDF_DFLT5_SADLearningFrames|MDF_SAD_LEARNING_2_FRAMES|2
+MDF_DFLT5_SADLearningFrames|MDF_SAD_LEARNING_4_FRAMES|4
+MDF_DFLT5_SADLearningFrames|MDF_SAD_LEARNING_8_FRAMES|8
+MDF_DFLT5_SADLearningFrames|MDF_SAD_LEARNING_16_FRAMES|16
+MDF_DFLT5_SADLearningFrames|MDF_SAD_LEARNING_32_FRAMES|32
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_3_5DB|3.5dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_6DB|6dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_9_5DB|9.5dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_12DB|12dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_15_6DB|15.6dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_18DB|18dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_21_6DB|21.6dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_24_1DB|24.1dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_27_6DB|27.6dB
+MDF_DFLT5_SADSignalNoiseThreshold|MDF_SAD_SIGNAL_NOISE_30_1DB|30.1dB
+MDF_DFLT5_AcquisitionMode|MDF_MODE_ASYNC_CONT|Asynchronous, continuous
+MDF_DFLT5_AcquisitionMode|MDF_MODE_ASYNC_SINGLE|Asynchronous, single-shot
+MDF_DFLT5_AcquisitionMode|MDF_MODE_SYNC_CONT|Synchronous, continuous
+MDF_DFLT5_AcquisitionMode|MDF_MODE_SYNC_SINGLE|Synchronous, single-shot
+MDF_DFLT5_AcquisitionMode|MDF_MODE_WINDOW_CONT|Window, continuous
+MDF_DFLT5_AcquisitionMode|MDF_MODE_SYNC_SNAPSHOT|Window, snapshot
+MDF_DFLT5_TriggerSource|MDF_CLOCK_TRIG_TRGO|TRGO
+MDF_DFLT5_TriggerSource|MDF_CLOCK_TRIG_EXTI15|EXTI15
+MDF_DFLT5_TriggerSource|MDF_CLOCK_TRIG_TIM1_TRGO|TIM1 TRGO
+MDF_DFLT5_TriggerEdge|MDF_FILTER_TRIG_RISING_EDGE|Rising Edge
+MDF_DFLT5_TriggerEdge|MDF_FILTER_TRIG_FALLING_EDGE|Falling Edge
+MDF_DFLT5_SnapShotFormat|MDF_SNAPSHOT_23BITS|23 bits
+MDF_DFLT5_SnapShotFormat|MDF_SNAPSHOT_16BITS|16 bits
+MDF_DFLT5_SCDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT5_SCDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 break
+MDF_DFLT5_SCDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT5_SCDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT5_SCDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 break2
+MDF_DFLT5_SCDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 break
+MDF_DFLT5_SCDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT5_SCDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_DFLT5_OLDCicMode|MDF_OLD_FILTER_FASTSINC|FastSinc
+MDF_DFLT5_OLDCicMode|MDF_OLD_FILTER_SINC1|Sinc1
+MDF_DFLT5_OLDCicMode|MDF_OLD_FILTER_SINC2|Sinc2
+MDF_DFLT5_OLDCicMode|MDF_OLD_FILTER_SINC3|Sinc3
+MDF_DFLT5_OLDEventConfig|MDF_OLD_SIGNAL_OUTSIDE_THRESHOLDS|When signal OUTside thresholds
+MDF_DFLT5_OLDEventConfig|MDF_OLD_SIGNAL_IN_THRESHOLDS|When signal INside thresholds
+MDF_DFLT5_OLDBreakSignal|MDF_NO_BREAK_SIGNAL|No Break
+MDF_DFLT5_OLDBreakSignal|MDF_TIM1_BREAK_TIM15_BREAK_SIGNALS|TIM1 Break
+MDF_DFLT5_OLDBreakSignal|MDF_TIM1_BREAK2_TIM16_BREAK_SIGNALS|TIM1 Break2
+MDF_DFLT5_OLDBreakSignal|MDF_TIM8_BREAK_TIM17_BREAK_SIGNALS|TIM8 Break
+MDF_DFLT5_OLDBreakSignal|MDF_TIM8_BREAK2_SIGNAL|TIM8 Break2
+MDF_DFLT5_OLDBreakSignal|MDF_TIM1_BREAK_SIGNAL|TIM1 Break
+MDF_DFLT5_OLDBreakSignal|MDF_TIM1_BREAK2_SIGNAL|TIM1 Break2
+MDF_DFLT5_OLDBreakSignal|MDF_TIM8_BREAK_SIGNAL|TIM8 Break
+MDF_DFLT_FifoThreshold|MDF_FIFO_THRESHOLD_NOT_EMPTY|when RXFIFO is not empty
+MDF_DFLT_FifoThreshold|MDF_FIFO_THRESHOLD_HALF_FULL|when RXFIFO is half-full
+MDF_COMPARAM_Pins|MDF_OUTPUT_CLOCK_0|CCK0 is used as output clock
+MDF_COMPARAM_Pins|MDF_OUTPUT_CLOCK_1|CCK1 is used as output clock
+MDF_COMPARAM_Pins|MDF_OUTPUT_CLOCK_ALL|CCK0 and CCK1 are used as output clock
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TRGO|TRGO
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_EXTI15|EXTI15
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM1_TRGO|TIM1 TRGO
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM3_TRGO|TIM3 TRGO
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM6_TRGO|TIM6 TRGO
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM1_TRGO2|TIM1 TRGO2
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM8_TRGO|TIM8 TRGO
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM8_TRGO2|TIM8 TRGO2
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM4_TRGO|TIM4 TRGO
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM16_OC1|TIM16 OC1
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_TIM7_TRGO|TIM7 TRGO
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_SAD_DET|SAD DET
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_EXTI11|EXTI11
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_LPTIM1_OUT|LPTIM1 Out
+MDF_COMPARAM_Clock_Source|MDF_CLOCK_TRIG_SAD_TRGO|SAD TRGO
+MDF_COMPARAM_Clock_Source|MDF_FILTER_TRIG_TIM15_TRGO|TIM15 TRGO
+MDF_COMPARAM_Clock_Edge|MDF_CLOCK_TRIG_RISING_EDGE|Rising Edge
+MDF_COMPARAM_Clock_Edge|MDF_CLOCK_TRIG_FALLING_EDGE|Falling Edge

@@ -1,0 +1,204 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RESMGR_UTILITY
+Version=STM32MP_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+RESMGR_UTILITY_Version|RESMGR_UTILITY version|Version||||
+RESMGR_UTILITY_SendFunct|initialisation function of RESMGR|Initialisation||||
+RESMGR_UTILITY_Callback|callback function of RESMGR|Initialisation||||
+RESMGR_UTILITY_Void|deinitialisation function of RESMGR|DeInitialisation||||
+RESMGR_UTILITY_DynamicSystemResourcesUpdate|use the RPMSG/OpenAMP-based extension|configuration||||
+RESMGR_REQUEST_ADC1|request peripheral assignment for ADC1 in resource table|||||
+RESMGR_REQUEST_ADC2|request peripheral assignment for ADC2 in resource table|||||
+RESMGR_REQUEST_CRC|request peripheral assignment for CRC in resource table|||||
+RESMGR_REQUEST_CRC1|request peripheral assignment for CRC1 in resource table|||||
+RESMGR_REQUEST_CRC2|request peripheral assignment for CRC2 in resource table|||||
+RESMGR_REQUEST_CRYP1|request peripheral assignment for CRYP1 in resource table|||||
+RESMGR_REQUEST_CRYP2|request peripheral assignment for CRYP2 in resource table|||||
+RESMGR_REQUEST_DAC1|request peripheral assignment for DAC1 in resource table|||||
+RESMGR_REQUEST_DEBUG|request peripheral assignment for DBGMCU in resource table|||||
+RESMGR_REQUEST_DCMI|request peripheral assignment for DCMI in resource table|||||
+RESMGR_REQUEST_DFSDM1|request peripheral assignment for DFSDM1 in resource table|||||
+RESMGR_REQUEST_DLYB_QUADSPI|request peripheral assignment for DLYB_QUADSPI in resource table|||||
+RESMGR_REQUEST_DLYB_SDMMC1|request peripheral assignment for DLYB_SDMMC1 in resource table|||||
+RESMGR_REQUEST_DLYB_SDMMC2|request peripheral assignment for DLYB_SDMMC2 in resource table|||||
+RESMGR_REQUEST_DLYB_SDMMC3|request peripheral assignment for DLYB_SDMMC3 in resource table|||||
+RESMGR_REQUEST_DMA1|request peripheral assignment for DMA1 in resource table|||||
+RESMGR_REQUEST_DMA2|request peripheral assignment for DMA2 in resource table|||||
+RESMGR_REQUEST_DMAMUX1|request peripheral assignment for DMAMUX1 in resource table|||||
+RESMGR_REQUEST_DSIHOST|request peripheral assignment for DSI in resource table|||||
+RESMGR_REQUEST_DTS|request peripheral assignment for DTS in resource table|||||
+RESMGR_REQUEST_ETH1|request peripheral assignment for ETH in resource table|||||
+RESMGR_REQUEST_FDCAN_CCU|request peripheral assignment for FDCAN_CCU in resource table|||||
+RESMGR_REQUEST_FDCAN1|request peripheral assignment for FDCAN1 in resource table|||||
+RESMGR_REQUEST_FDCAN2|request peripheral assignment for FDCAN2 in resource table|||||
+RESMGR_REQUEST_FMC|request peripheral assignment for FMC in resource table|||||
+RESMGR_REQUEST_GPU|request peripheral assignment for GPU in resource table|||||
+RESMGR_REQUEST_HASH1|request peripheral assignment for HASH1 in resource table|||||
+RESMGR_REQUEST_HASH2|request peripheral assignment for HASH2 in resource table|||||
+RESMGR_REQUEST_HDMI_CEC|request peripheral assignment for CEC in resource table|||||
+RESMGR_REQUEST_HSEM|request peripheral assignment for HSEM in resource table|||||
+RESMGR_REQUEST_I2C1|request peripheral assignment for I2C1 in resource table|||||
+RESMGR_REQUEST_I2C2|request peripheral assignment for I2C2 in resource table|||||
+RESMGR_REQUEST_I2C3|request peripheral assignment for I2C3 in resource table|||||
+RESMGR_REQUEST_I2C4|request peripheral assignment for I2C4 in resource table|||||
+RESMGR_REQUEST_I2C5|request peripheral assignment for I2C5 in resource table|||||
+RESMGR_REQUEST_I2C6|request peripheral assignment for I2C6 in resource table|||||
+RESMGR_REQUEST_IWDG1|request peripheral assignment for IWDG1 in resource table|||||
+RESMGR_REQUEST_IWDG2|request peripheral assignment for IWDG2 in resource table|||||
+RESMGR_REQUEST_LPTIM1|request peripheral assignment for LPTIM1 in resource table|||||
+RESMGR_REQUEST_LPTIM2|request peripheral assignment for LPTIM2 in resource table|||||
+RESMGR_REQUEST_LPTIM3|request peripheral assignment for LPTIM3 in resource table|||||
+RESMGR_REQUEST_LPTIM4|request peripheral assignment for LPTIM4 in resource table|||||
+RESMGR_REQUEST_LPTIM5|request peripheral assignment for LPTIM5 in resource table|||||
+RESMGR_REQUEST_LTDC|request peripheral assignment for LTDC in resource table|||||
+RESMGR_REQUEST_MDIOS|request peripheral assignment for MDIOS in resource table|||||
+RESMGR_REQUEST_MDMA|request peripheral assignment for MDMA in resource table|||||
+RESMGR_REQUEST_QUADSPI|request peripheral assignment for QUADSPI in resource table|||||
+RESMGR_REQUEST_RNG|request peripheral assignment for RNG in resource table|||||
+RESMGR_REQUEST_RNG1|request peripheral assignment for RNG1 in resource table|||||
+RESMGR_REQUEST_RNG2|request peripheral assignment for RNG2 in resource table|||||
+RESMGR_REQUEST_RTC|request peripheral assignment for RTC in resource table|||||
+RESMGR_REQUEST_SAI1|request peripheral assignment for SAI1 in resource table|||||
+RESMGR_REQUEST_SAI2|request peripheral assignment for SAI2 in resource table|||||
+RESMGR_REQUEST_SAI3|request peripheral assignment for SAI3 in resource table|||||
+RESMGR_REQUEST_SAI4|request peripheral assignment for SAI4 in resource table|||||
+RESMGR_REQUEST_SDMMC1|request peripheral assignment for SDMMC1 in resource table|||||
+RESMGR_REQUEST_SDMMC2|request peripheral assignment for SDMMC2 in resource table|||||
+RESMGR_REQUEST_SDMMC3|request peripheral assignment for SDMMC3 in resource table|||||
+RESMGR_REQUEST_SPDIFRX|request peripheral assignment for SPDIFRX in resource table|||||
+RESMGR_REQUEST_SPI1|request peripheral assignment for SPI1 in resource table|||||
+RESMGR_REQUEST_SPI2|request peripheral assignment for SPI2 in resource table|||||
+RESMGR_REQUEST_SPI3|request peripheral assignment for SPI3 in resource table|||||
+RESMGR_REQUEST_SPI4|request peripheral assignment for SPI4 in resource table|||||
+RESMGR_REQUEST_SPI5|request peripheral assignment for SPI5 in resource table|||||
+RESMGR_REQUEST_SPI6|request peripheral assignment for SPI6 in resource table|||||
+RESMGR_REQUEST_SYSCFG|request peripheral assignment for SYSCFG in resource table|||||
+RESMGR_REQUEST_TIM1|request peripheral assignment for TIM1 in resource table|||||
+RESMGR_REQUEST_TIM12|request peripheral assignment for TIM12 in resource table|||||
+RESMGR_REQUEST_TIM13|request peripheral assignment for TIM13 in resource table|||||
+RESMGR_REQUEST_TIM14|request peripheral assignment for TIM14 in resource table|||||
+RESMGR_REQUEST_TIM15|request peripheral assignment for TIM15 in resource table|||||
+RESMGR_REQUEST_TIM16|request peripheral assignment for TIM16 in resource table|||||
+RESMGR_REQUEST_TIM17|request peripheral assignment for TIM17 in resource table|||||
+RESMGR_REQUEST_TIM2|request peripheral assignment for TIM2 in resource table|||||
+RESMGR_REQUEST_TIM3|request peripheral assignment for TIM3 in resource table|||||
+RESMGR_REQUEST_TIM4|request peripheral assignment for TIM4 in resource table|||||
+RESMGR_REQUEST_TIM5|request peripheral assignment for TIM5 in resource table|||||
+RESMGR_REQUEST_TIM6|request peripheral assignment for TIM6 in resource table|||||
+RESMGR_REQUEST_TIM7|request peripheral assignment for TIM7 in resource table|||||
+RESMGR_REQUEST_TIM8|request peripheral assignment for TIM8 in resource table|||||
+RESMGR_REQUEST_UART4|request peripheral assignment for UART4 in resource table|||||
+RESMGR_REQUEST_UART5|request peripheral assignment for UART5 in resource table|||||
+RESMGR_REQUEST_UART7|request peripheral assignment for UART7 in resource table|||||
+RESMGR_REQUEST_UART8|request peripheral assignment for UART8 in resource table|||||
+RESMGR_REQUEST_USART1|request peripheral assignment for USART1 in resource table|||||
+RESMGR_REQUEST_USART2|request peripheral assignment for USART2 in resource table|||||
+RESMGR_REQUEST_USART3|request peripheral assignment for USART3 in resource table|||||
+RESMGR_REQUEST_USART6|request peripheral assignment for USART6 in resource table|||||
+RESMGR_REQUEST_USBH_HS1|request peripheral assignment for USB1HSFSP1 in resource table|||||
+RESMGR_REQUEST_USBH_HS2|request peripheral assignment for USB1HSFSP2 in resource table|||||
+RESMGR_REQUEST_USB_OTG_HS|request peripheral assignment for USB1_OTG_HS in resource table|||||
+RESMGR_REQUEST_USBPHYC|request peripheral assignment for USBPHYC in resource table|||||
+RESMGR_REQUEST_VREFBUF|request peripheral assignment for VREFBUF in resource table|||||
+RESMGR_REQUEST_WWDG1|request peripheral assignment for WWDG1 in resource table|||||
+RESMGR_ID_ADC1|ID for ADC1 in resource table|||||
+RESMGR_ID_ADC2|ID for ADC2 in resource table|||||
+RESMGR_ID_CEC|ID for CEC in resource table|||||
+RESMGR_ID_CRC|ID for CRC in resource table|||||
+RESMGR_ID_CRC1|ID for CRC1 in resource table|||||
+RESMGR_ID_CRC2|ID for CRC2 in resource table|||||
+RESMGR_ID_CRYP1|ID for CRYP1 in resource table|||||
+RESMGR_ID_CRYP2|ID for CRYP2 in resource table|||||
+RESMGR_ID_DAC1|ID for DAC1 in resource table|||||
+RESMGR_ID_DBGMCU|ID for DBGMCU in resource table|||||
+RESMGR_ID_DCMI|ID for DCMI in resource table|||||
+RESMGR_ID_DFSDM1|ID for DFSDM1 in resource table|||||
+RESMGR_ID_DLYB_QUADSPI|ID for DLYB_QUADSPI in resource table|||||
+RESMGR_ID_DLYB_SDMMC1|ID for DLYB_SDMMC1 in resource table|||||
+RESMGR_ID_DLYB_SDMMC2|ID for DLYB_SDMMC2 in resource table|||||
+RESMGR_ID_DLYB_SDMMC3|ID for DLYB_SDMMC3 in resource table|||||
+RESMGR_ID_DMA1|ID for DMA1 in resource table|||||
+RESMGR_ID_DMA2|ID for DMA2 in resource table|||||
+RESMGR_ID_DMAMUX1|ID for DMAMUX1 in resource table|||||
+RESMGR_ID_DSI|ID for DSI in resource table|||||
+RESMGR_ID_DTS|ID for DTS in resource table|||||
+RESMGR_ID_ETH|ID for ETH in resource table|||||
+RESMGR_ID_FDCAN_CCU|ID for FDCAN_CCU in resource table|||||
+RESMGR_ID_FDCAN1|ID for FDCAN1 in resource table|||||
+RESMGR_ID_FDCAN2|ID for FDCAN2 in resource table|||||
+RESMGR_ID_FMC|ID for FMC in resource table|||||
+RESMGR_ID_GPU|ID for GPU in resource table|||||
+RESMGR_ID_HASH1|ID for HASH1 in resource table|||||
+RESMGR_ID_HASH2|ID for HASH2 in resource table|||||
+RESMGR_ID_HSEM|ID for HSEM in resource table|||||
+RESMGR_ID_I2C1|ID for I2C1 in resource table|||||
+RESMGR_ID_I2C2|ID for I2C2 in resource table|||||
+RESMGR_ID_I2C3|ID for I2C3 in resource table|||||
+RESMGR_ID_I2C4|ID for I2C4 in resource table|||||
+RESMGR_ID_I2C5|ID for I2C5 in resource table|||||
+RESMGR_ID_I2C6|ID for I2C6 in resource table|||||
+RESMGR_ID_IWDG1|ID for IWDG1 in resource table|||||
+RESMGR_ID_IWDG2|ID for IWDG2 in resource table|||||
+RESMGR_ID_LPTIM1|ID for LPTIM1 in resource table|||||
+RESMGR_ID_LPTIM2|ID for LPTIM2 in resource table|||||
+RESMGR_ID_LPTIM3|ID for LPTIM3 in resource table|||||
+RESMGR_ID_LPTIM4|ID for LPTIM4 in resource table|||||
+RESMGR_ID_LPTIM5|ID for LPTIM5 in resource table|||||
+RESMGR_ID_LTDC|ID for LTDC in resource table|||||
+RESMGR_ID_MDIOS|ID for MDIOS in resource table|||||
+RESMGR_ID_MDMA|ID for MDMA in resource table|||||
+RESMGR_ID_QUADSPI|ID for QUADSPI in resource table|||||
+RESMGR_ID_RNG|ID for RNG in resource table|||||
+RESMGR_ID_RNG1|ID for RNG1 in resource table|||||
+RESMGR_ID_RNG2|ID for RNG2 in resource table|||||
+RESMGR_ID_RTC|ID for RTC in resource table|||||
+RESMGR_ID_SAI1|ID for SAI1 in resource table|||||
+RESMGR_ID_SAI2|ID for SAI2 in resource table|||||
+RESMGR_ID_SAI3|ID for SAI3 in resource table|||||
+RESMGR_ID_SAI4|ID for SAI4 in resource table|||||
+RESMGR_ID_SDMMC1|ID for SDMMC1 in resource table|||||
+RESMGR_ID_SDMMC2|ID for SDMMC2 in resource table|||||
+RESMGR_ID_SDMMC3|ID for SDMMC3 in resource table|||||
+RESMGR_ID_SPDIFRX|ID for SPDIFRX in resource table|||||
+RESMGR_ID_SPI1|ID for SPI1 in resource table|||||
+RESMGR_ID_SPI2|ID for SPI2 in resource table|||||
+RESMGR_ID_SPI3|ID for SPI3 in resource table|||||
+RESMGR_ID_SPI4|ID for SPI4 in resource table|||||
+RESMGR_ID_SPI5|ID for SPI5 in resource table|||||
+RESMGR_ID_SPI6|ID for SPI6 in resource table|||||
+RESMGR_ID_SYSCFG|ID for SYSCFG in resource table|||||
+RESMGR_ID_TIM1|ID for TIM1 in resource table|||||
+RESMGR_ID_TIM12|ID for TIM12 in resource table|||||
+RESMGR_ID_TIM13|ID for TIM13 in resource table|||||
+RESMGR_ID_TIM14|ID for TIM14 in resource table|||||
+RESMGR_ID_TIM15|ID for TIM15 in resource table|||||
+RESMGR_ID_TIM16|ID for TIM16 in resource table|||||
+RESMGR_ID_TIM17|ID for TIM17 in resource table|||||
+RESMGR_ID_TIM2|ID for TIM2 in resource table|||||
+RESMGR_ID_TIM3|ID for TIM3 in resource table|||||
+RESMGR_ID_TIM4|ID for TIM4 in resource table|||||
+RESMGR_ID_TIM5|ID for TIM5 in resource table|||||
+RESMGR_ID_TIM6|ID for TIM6 in resource table|||||
+RESMGR_ID_TIM7|ID for TIM7 in resource table|||||
+RESMGR_ID_TIM8|ID for TIM8 in resource table|||||
+RESMGR_ID_UART4|ID for UART4 in resource table|||||
+RESMGR_ID_UART5|ID for UART5 in resource table|||||
+RESMGR_ID_UART7|ID for UART7 in resource table|||||
+RESMGR_ID_UART8|ID for UART8 in resource table|||||
+RESMGR_ID_USART1|ID for USART1 in resource table|||||
+RESMGR_ID_USART2|ID for USART2 in resource table|||||
+RESMGR_ID_USART3|ID for USART3 in resource table|||||
+RESMGR_ID_USART6|ID for USART6 in resource table|||||
+RESMGR_ID_USB1HSFSP1|ID for USB1HSFSP1 in resource table|||||
+RESMGR_ID_USB1HSFSP2|ID for USB1HSFSP2 in resource table|||||
+RESMGR_ID_USB1_OTG_HS|ID for USB1_OTG_HS in resource table|||||
+RESMGR_ID_USBPHYC|ID for USBPHYC in resource table|||||
+RESMGR_ID_VREFBUF|ID for VREFBUF in resource table|||||
+RESMGR_ID_WWDG1|ID for WWDG1 in resource table|||||
+
+[Values]
+# параметр|значение|подпись

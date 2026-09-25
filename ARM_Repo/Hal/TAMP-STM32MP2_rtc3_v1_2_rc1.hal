@@ -1,0 +1,327 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=TAMP
+Version=STM32MP2_rtc3_v1_2_rc1
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+IOSemaphoreAssignement|IO Semaphore Assignement|||||
+Tamper_1|Tamper|Tamper1||||
+Filter|Filter|Passive tamper signals||||
+Enable1|Tamper1|Tamper1||||
+Enable10|Enable10|Tamper1||||
+SamplingFrequency|Sampling Frequency|Passive tamper signals||||
+PrechargeDuration|Precharge Duration|Passive tamper signals||||
+TamperPullUp|Tamper_PullUp|Passive tamper signals||||
+TimeStampOnTamperDetection|TimeStamp_On_Tamper_ Detection|Time Stamp||||
+Trigger_1|Tamper1_Trigger|Tamper1||||
+NoErase_1|Tamper1_NoErase|Tamper1||||
+NoErase_10|Tamper1_NoErase|Tamper1||||
+MaskFlag_1|Tamper1_Mask_Flag|Tamper1||||
+MaskFlag_10|Tamper1_Mask_Flag|Tamper1||||
+ActiveAsyncPrescaler|Active AsyncPrescaler|Active tamper signals||||
+ActiveFilter|Active Filter|Active tamper signals||||
+ActiveOutputChangePeriod|Active Output Change Period|Active tamper signals||0|7|
+Seed_Size0|Seed[0]|Active tamper signals||0x00000000|0xFFFFFFFF|
+Seed_Size1|Seed[1]|Active tamper signals||0x00000000|0xFFFFFFFF|
+Seed_Size2|Seed[2]|Active tamper signals||0x00000000|0xFFFFFFFF|
+Seed_Size3|Seed[3]|Active tamper signals||0x00000000|0xFFFFFFFF|
+Interrupt1|Tamper1_Interrupt_mode|Tamper1||||
+Output1|Tamper1_Active_Input_Output|Tamper1||||
+Tamper_2|Tamper|Tamper2||||
+Enable2|Tamper2|Tamper2||||
+Enable20|Tamper2|Tamper2||||
+Trigger_2|Tamper2_Trigger|Tamper2||||
+NoErase_2|Tamper2_NoErase|Tamper2||||
+NoErase_20|Tamper2_NoErase|Tamper2||||
+MaskFlag_2|Tamper2_Mask_Flag|Tamper2||||
+MaskFlag_20|Tamper2_Mask_Flag|Tamper2||||
+Interrupt2|Tamper2_Interrupt_mode|Tamper2||||
+Output2|Tamper2_Active_Input_Output|Tamper2||||
+Tamper_3|Tamper|Tamper3||||
+Trigger_3|Tamper3_Trigger|Tamper3||||
+NoErase_3|Tamper3_NoErase|Tamper3||||
+NoErase_30|Tamper2_NoErase|Tamper3||||
+Enable3|Tamper3|Tamper3||||
+Enable30|Tamper3|Tamper3||||
+MaskFlag_3|Tamper3_Mask_Flag|Tamper3||||
+Interrupt3|Tamper3_Interrupt_mode|Tamper3||||
+Output3|Tamper3_Active_Input_Output|Tamper3||||
+Tamper_4|Tamper|Tamper4||||
+Trigger_4|Tamper4_Trigger|Tamper4||||
+Enable4|Tamper4|Tamper4||||
+Enable40|Tamper4|Tamper4||||
+NoErase_4|Tamper4_NoErase|Tamper4||||
+NoErase_40|Tamper4_NoErase|Tamper4||||
+Interrupt4|Tamper4_Interrupt_mode|Tamper4||||
+Output4|Tamper4_Active_Input_Output|Tamper4||||
+Tamper_5|Tamper|Tamper5||||
+Trigger_5|Tamper5_Trigger|Tamper5||||
+NoErase_5|Tamper5_NoErase|Tamper5||||
+NoErase_50|NoErase_50|Tamper5||||
+Enable5|Tamper5|Tamper5||||
+Enable50|Tamper5|Tamper5||||
+Interrupt5|Tamper5_Interrupt_mode|Tamper5||||
+Output5|Tamper5_Active_Input_Output|Tamper5||||
+Tamper_6|Tamper|Tamper6||||
+Trigger_6|Tamper6_Trigger|Tamper6||||
+NoErase_6|Tamper6_NoErase|Tamper6||||
+NoErase_60|NoErase_60|Tamper6||||
+Enable6|Tamper6|Tamper6||||
+Enable60|Tamper6|Tamper6||||
+Interrupt6|Tamper6 Interrupt mode|Tamper6||||
+Output6|Tamper6_Active_Input_Output|Tamper6||||
+Tamper_7|Tamper|Tamper7||||
+Trigger_7|Tamper7_Trigger|Tamper7||||
+NoErase_7|Tamper7_NoErase|Tamper7||||
+NoErase_70|NoErase_60|Tamper6||||
+Enable7|Tamper7|Tamper7||||
+Enable70|Tamper7|Tamper7||||
+Interrupt7|Tamper7_Interrupt_mode|Tamper7||||
+Output7|Tamper7_Active_Input_Output|Tamper7||||
+Tamper_8|Tamper|Tamper8||||
+Enable8|Tamper8|Tamper8||||
+Enable80|Tamper8|Tamper8||||
+Interrupt8|Tamper8_Interrupt_mode|Tamper8||||
+Trigger_8|Tamper8_Trigger|Tamper8||||
+NoErase_8|Tamper8_NoErase|Tamper8||||
+NoErase_80|Tamper8_NoErase|Tamper8||||
+Output8|Tamper8_Active_Input_Output|Tamper8||||
+
+[Values]
+# параметр|значение|подпись
+Tamper_1|RTC_TAMPER_1|Tamper 1
+Filter|RTC_TAMPERFILTER_DISABLE|Disabled
+Filter|RTC_TAMPERFILTER_2SAMPLE|Tamper activated after 2 consecutive samples
+Filter|RTC_TAMPERFILTER_4SAMPLE|Tamper activated after 4 consecutive samples
+Filter|RTC_TAMPERFILTER_8SAMPLE|Tamper activated after 8 consecutive samples
+Enable1|RTC_ATAMP_ENABLE|Active Input
+Enable1|RTC_ATAMP_DISABLE|Passive Input
+Enable1|__NULL|__NULL
+Enable10|RTC_ATAMP_ENABLE|Active Input
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV32768|Sampling Frequency = RTCCLK / 32768
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV16384|Sampling Frequency = RTCCLK / 16384
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV8192|Sampling Frequency = RTCCLK / 8192
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV4096|Sampling Frequency = RTCCLK / 4096
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV2048|Sampling Frequency = RTCCLK / 2048
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV1024|Sampling Frequency = RTCCLK / 1024
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV512|Sampling Frequency = RTCCLK / 512
+SamplingFrequency|RTC_TAMPERSAMPLINGFREQ_RTCCLK_DIV256|Sampling Frequency = RTCCLK / 256
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_1RTCCLK|Precharge Duration = 1 RTCCLK cycle
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_2RTCCLK|Precharge Duration = 2 RTCCLK cycles
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_4RTCCLK|Precharge Duration = 4 RTCCLK cycles
+PrechargeDuration|RTC_TAMPERPRECHARGEDURATION_8RTCCLK|Precharge Duration = 8 RTCCLK cycles
+TamperPullUp|RTC_TAMPER_PULLUP_ENABLE|Enabled
+TamperPullUp|RTC_TAMPER_PULLUP_DISABLE|Disabled
+TimeStampOnTamperDetection|RTC_TIMESTAMPONTAMPERDETECTION_ENABLE|Saved
+TimeStampOnTamperDetection|RTC_TIMESTAMPONTAMPERDETECTION_DISABLE|Not saved
+Trigger_1|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_1|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_1|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_1|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_1|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_1|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_10|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_10|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+MaskFlag_1|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_1|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+MaskFlag_10|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_10|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK|RTC ATAMP ASYNCPRES RTCCLK
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_2|RTC ATAMP ASYNCPRES RTCCLK 2
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_4|RTC ATAMP ASYNCPRES RTCCLK 4
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_8|RTC ATAMP ASYNCPRES RTCCLK 8
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_16|RTC ATAMP ASYNCPRES RTCCLK 16
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_32|RTC ATAMP ASYNCPRES RTCCLK 32
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_64|RTC ATAMP ASYNCPRES RTCCLK 64
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_128|RTC ATAMP ASYNCPRES RTCCLK 128
+ActiveAsyncPrescaler|RTC_ATAMP_ASYNCPRES_RTCCLK_2048|RTC_ATAMP_ASYNCPRES_RTCCLK_2048
+ActiveFilter|RTC_ATAMP_FILTER_ENABLE|Enable
+ActiveFilter|RTC_ATAMP_FILTER_DISABLE|Disable
+Interrupt1|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt1|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt1|__NULL|__NULL
+Output1|__NULL|__NULL
+Output1|RTC_ATAMP_1|Tamper 1
+Output1|RTC_ATAMP_2|Tamper 2
+Output1|RTC_ATAMP_3|Tamper 3
+Output1|RTC_ATAMP_4|Tamper 4
+Output1|RTC_ATAMP_5|Tamper 5
+Output1|RTC_ATAMP_6|Tamper 6
+Output1|RTC_ATAMP_7|Tamper 7
+Output1|RTC_ATAMP_8|Tamper 8
+Tamper_2|RTC_TAMPER_2|Tamper 2
+Enable2|RTC_ATAMP_ENABLE|Active Input
+Enable2|RTC_ATAMP_DISABLE|Passive Input
+Enable20|RTC_ATAMP_ENABLE|Active Input
+Trigger_2|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_2|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_2|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_2|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_2|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_2|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_20|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_20|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+MaskFlag_2|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_2|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+MaskFlag_20|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_20|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+Interrupt2|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt2|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt2|__NULL|__NULL
+Output2|__NULL|__NULL
+Output2|RTC_ATAMP_1|Tamper 1
+Output2|RTC_ATAMP_2|Tamper 2
+Output2|RTC_ATAMP_3|Tamper 3
+Output2|RTC_ATAMP_4|Tamper 4
+Output2|RTC_ATAMP_5|Tamper 5
+Output2|RTC_ATAMP_6|Tamper 6
+Output2|RTC_ATAMP_7|Tamper 7
+Output2|RTC_ATAMP_8|Tamper 8
+Tamper_3|RTC_TAMPER_3|Tamper 3
+Trigger_3|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_3|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_3|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_3|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_3|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_3|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_30|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_30|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+Enable3|RTC_ATAMP_ENABLE|Active Input
+Enable3|RTC_ATAMP_DISABLE|Passive Input
+Enable30|RTC_ATAMP_ENABLE|Active Input
+MaskFlag_3|RTC_TAMPERMASK_FLAG_DISABLE|Mask Flag Disabled
+MaskFlag_3|RTC_TAMPERMASK_FLAG_ENABLE|Mask Flag Enabled
+Interrupt3|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt3|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt3|__NULL|__NULL
+Output3|__NULL|__NULL
+Output3|RTC_ATAMP_1|Tamper 1
+Output3|RTC_ATAMP_2|Tamper 2
+Output3|RTC_ATAMP_3|Tamper 3
+Output3|RTC_ATAMP_4|Tamper 4
+Output3|RTC_ATAMP_5|Tamper 5
+Output3|RTC_ATAMP_6|Tamper 6
+Output3|RTC_ATAMP_7|Tamper 7
+Output3|RTC_ATAMP_8|Tamper 8
+Tamper_4|RTC_TAMPER_4|Tamper 4
+Trigger_4|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_4|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_4|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_4|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+Enable4|RTC_ATAMP_ENABLE|Active Input
+Enable4|RTC_ATAMP_DISABLE|Passive Input
+Enable40|RTC_ATAMP_ENABLE|Active Input
+NoErase_4|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_4|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_40|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_40|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+Interrupt4|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt4|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt4|__NULL|__NULL
+Output4|__NULL|__NULL
+Output4|RTC_ATAMP_1|Tamper 1
+Output4|RTC_ATAMP_2|Tamper 2
+Output4|RTC_ATAMP_3|Tamper 3
+Output4|RTC_ATAMP_4|Tamper 4
+Output4|RTC_ATAMP_5|Tamper 5
+Output4|RTC_ATAMP_6|Tamper 6
+Output4|RTC_ATAMP_7|Tamper 7
+Output4|RTC_ATAMP_8|Tamper 8
+Tamper_5|RTC_TAMPER_5|Tamper 5
+Trigger_5|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_5|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_5|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_5|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_5|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_5|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_50|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_50|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+Enable5|RTC_ATAMP_ENABLE|Active Input
+Enable5|RTC_ATAMP_DISABLE|Passive Input
+Enable50|RTC_ATAMP_ENABLE|Active Input
+Interrupt5|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt5|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt5|__NULL|__NULL
+Output5|__NULL|__NULL
+Output5|RTC_ATAMP_1|Tamper 1
+Output5|RTC_ATAMP_2|Tamper 2
+Output5|RTC_ATAMP_3|Tamper 3
+Output5|RTC_ATAMP_4|Tamper 4
+Output5|RTC_ATAMP_5|Tamper 5
+Output5|RTC_ATAMP_6|Tamper 6
+Output5|RTC_ATAMP_7|Tamper 7
+Output5|RTC_ATAMP_8|Tamper 8
+Tamper_6|RTC_TAMPER_6|Tamper 6
+Trigger_6|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_6|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_6|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_6|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_6|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_6|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_60|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_60|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+Enable6|RTC_ATAMP_ENABLE|Active Input
+Enable6|RTC_ATAMP_DISABLE|Passive Input
+Enable60|RTC_ATAMP_ENABLE|Active Input
+Interrupt6|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt6|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt6|__NULL|__NULL
+Output6|__NULL|__NULL
+Output6|RTC_ATAMP_1|Tamper 1
+Output6|RTC_ATAMP_2|Tamper 2
+Output6|RTC_ATAMP_3|Tamper 3
+Output6|RTC_ATAMP_4|Tamper 4
+Output6|RTC_ATAMP_5|Tamper 5
+Output6|RTC_ATAMP_6|Tamper 6
+Output6|RTC_ATAMP_7|Tamper 7
+Output6|RTC_ATAMP_8|Tamper 8
+Tamper_7|RTC_TAMPER_7|Tamper 7
+Trigger_7|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_7|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_7|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_7|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_7|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_7|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_70|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_70|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+Enable7|RTC_ATAMP_ENABLE|Active Input
+Enable7|RTC_ATAMP_DISABLE|Passive Input
+Enable70|RTC_ATAMP_ENABLE|Active Input
+Interrupt7|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt7|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt7|__NULL|__NULL
+Output7|__NULL|__NULL
+Output7|RTC_ATAMP_1|Tamper 1
+Output7|RTC_ATAMP_2|Tamper 2
+Output7|RTC_ATAMP_3|Tamper 3
+Output7|RTC_ATAMP_4|Tamper 4
+Output7|RTC_ATAMP_5|Tamper 5
+Output7|RTC_ATAMP_6|Tamper 6
+Output7|RTC_ATAMP_7|Tamper 7
+Output7|RTC_ATAMP_8|Tamper 8
+Tamper_8|RTC_TAMPER_8|Tamper 8
+Enable8|RTC_ATAMP_ENABLE|Active Input
+Enable8|RTC_ATAMP_DISABLE|Passive Input
+Enable80|RTC_ATAMP_ENABLE|Active Input
+Interrupt8|RTC_ATAMP_INTERRUPT_ENABLE|Enable
+Interrupt8|RTC_ATAMP_INTERRUPT_DISABLE|Disable
+Interrupt8|__NULL|__NULL
+Trigger_8|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_8|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+Trigger_8|RTC_TAMPERTRIGGER_LOWLEVEL|Low Level
+Trigger_8|RTC_TAMPERTRIGGER_HIGHLEVEL|High Level
+NoErase_8|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_8|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+NoErase_80|RTC_TAMPER_ERASE_BACKUP_ENABLE|Erase Enabled
+NoErase_80|RTC_TAMPER_ERASE_BACKUP_DISABLE|Erase Disabled
+Output8|__NULL|__NULL
+Output8|RTC_ATAMP_1|Tamper 1
+Output8|RTC_ATAMP_2|Tamper 2
+Output8|RTC_ATAMP_3|Tamper 3
+Output8|RTC_ATAMP_4|Tamper 4
+Output8|RTC_ATAMP_5|Tamper 5
+Output8|RTC_ATAMP_6|Tamper 6
+Output8|RTC_ATAMP_7|Tamper 7
+Output8|RTC_ATAMP_8|Tamper 8

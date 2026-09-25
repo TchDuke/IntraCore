@@ -1,0 +1,42 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DMA
+Version=STM32L162E_dma_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+ClockEnableMode|Clock Enable Mode|||||
+DMA_Handle|DMA Handle|||||
+IpInstance|IP Instance|||||
+
+[Values]
+# параметр|значение|подпись
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+ClockEnableMode|__HAL_RCC_DMA1_CLK_ENABLE|DMA1 clock enable
+ClockEnableMode|__HAL_RCC_DMA2_CLK_ENABLE|DMA2 clock enable

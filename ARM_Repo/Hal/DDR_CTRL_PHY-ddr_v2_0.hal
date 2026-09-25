@@ -1,0 +1,461 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DDR_CTRL_PHY
+Version=ddr_v2_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DDR_Start_Address|This is the base address for DDR subsystem in the specific MPU packages considered|||||
+RD-PRE|RD-PRE|SYSTEM PARAMETERS||||
+tRPRE|READ Preamble (tRPRE)|SYSTEM PARAMETERS|clock|||Programmable READ preamble tRPRE, can be set to either 1tCK or 2tCK via the MR3 register.
+tWPRE|WRITE Preamble (tWPRE)|SYSTEM PARAMETERS|clock|||Programmable WRITE preamble tWPRE, can either be set to 1tCK or 2 tCK via the MR3 register.
+FGRM|Fine Granularity Refresh Mode (FGRM)|REFRESH TIMINGS||||Controls REFRESH cycle time and average refresh interval for the DDR4 SDRAM via the MR3, leave default 1x.
+VREF (%)|VREFDQ Training Value|SYSTEM PARAMETERS|%|||VREFDQ Training Value: Fifty settings provided 0.65% of granularity steps sizes for both Range 1 and Range 2 of VREFDQ; Range 1 with 74.3% is set by default. (the optimal setting according to Impedance is determined during PHY Initialization).
+LPASR|Low-power auto self refresh (LPASR)|SELF REFRESH TIMINGS||||SELF REFRESH operation over different temperature ranges can use this feature to optimize the IDD6 current for a given temperature range as specified in the MR2 register.
+ODI|Output Driver Impedance Control (ODI)|SYSTEM PARAMETERS|ohm|||The output driver impedance of the DDR4 SDRAM device is selected via MR1 register.
+RTT_NOM|DDR4 nominal termination (RTT_NOM)|SYSTEM PARAMETERS|ohm|||DDR4 nominal termination programmed via MR1 register.
+ASR|ASR|SYSTEM PARAMETERS||||
+SRT|SRT|SYSTEM PARAMETERS||||
+Ron|Ron|SYSTEM PARAMETERS|ohm|||
+RTT_WR|DDR4 termination during Write (RTT_WR)|SYSTEM PARAMETERS|ohm|||DDR4 termination during Write programmed via MR2 register.
+CAS lat|CAS lat|SYSTEM PARAMETERS|clock|||
+RTT_PARK|DDR4 parked termination (RTT_PARK)|SYSTEM PARAMETERS|ohm|||DDR4 parked termination programmed via MR5 register.
+WR-RTP|Write recovery / READ to Precharge (WR-RTP)|DISPLAY VALUE|clock|||Write recovery / READ to Precharge programmed in MR0 (this parameter is determined according to frequency and tWR / tRTP).
+WR|WR|DISPLAY VALUE|clock|||
+WCL|WCL|SYSTEM PARAMETERS|clock|||Write command latency applicable only when Write CRC and DM are enabled, leave default (4).
+memclk|memclk|SYSTEM PARAMETERS|MHz|300|800|This Parameter can be changed from the clock tree.
+version|version|SYSTEM PARAMETERS||||Platform selection: 2: STM32MP25 3: STM32MP21 4: STM32MP23
+package|package|SYSTEM PARAMETERS||||
+Speed_Bin|Speed_Bin|SYSTEM PARAMETERS||||
+BL|Burst Length (BL)|SYSTEM PARAMETERS|bits|||Burst Length (BL8/BC4/BC4 or 8 on the fly) leave default (BL8).
+device_width|device_width|SYSTEM PARAMETERS|bits|||
+ranks|Number of ranks|SYSTEM PARAMETERS||||Number of ranks (dual rank is improbable with 2 8Gbit with half width interface).
+Addressing|Row,Bank, Column Address Mapping configuration|SYSTEM PARAMETERS||||Row,Bank, Column Address Mapping configuration according to options supported: - RBC is Row,Bg0,B1,B0,Col (default) - BRC is Bg0,B1,B0,Row,Col
+RDBI|Data Bus Inversion for READ (RDBI)|SYSTEM PARAMETERS||||Data Bus Inversion for READ can be enabled to reduce power and to improve SI at the expense of additonal latency and timings degradation, it is not activated by default.
+RPST|RPST|SYSTEM PARAMETERS|clock|||DDR4 supports a fixed postamble it is 1/2tCK.
+WR-PST|WR-PST|SYSTEM PARAMETERS|clock|||
+DBI-RD|DBI-RD|SYSTEM PARAMETERS||||
+DBI-WR|DBI-WR|SYSTEM PARAMETERS||||
+PU-CAL|PU-CAL|SYSTEM PARAMETERS||||
+PDDS|PDDS|SYSTEM PARAMETERS|ohm|||
+CA ODT|CA ODT|SYSTEM PARAMETERS|ohm|||
+DQ ODT|DQ ODT|SYSTEM PARAMETERS|ohm|||
+SoC ODT|SoC ODT|SYSTEM PARAMETERS|ohm|||
+ATx Impedance|ATx Impedance|SYSTEM PARAMETERS|ohm|||
+ODT Impedance|ODT Impedance|SYSTEM PARAMETERS|ohm|||
+Tx Impedance|Tx Impedance|SYSTEM PARAMETERS|ohm|||
+phyvref|phyvref|SYSTEM PARAMETERS|%|||% of VDDq
+training_sequence|training_sequence|SYSTEM PARAMETERS|hexa|||
+WR-PRE|WR-PRE|SYSTEM PARAMETERS|clock|||DDR4 supports a fixed postamble it is 1/2tCK.
+RL|RL|SYSTEM PARAMETERS|clock|||
+WL|WL|SYSTEM PARAMETERS|clock|||
+Per_bank_ref|Per_bank_ref|SYSTEM PARAMETERS||||
+CL|CAS Latency (CL)|JEDEC CORE TIMINGS|clock|||CAS latency for timing and DDR4 MR0 registers, calculated according to frequency.
+CWL|CAS Write Latency (CWL)|JEDEC CORE TIMINGS|clock|||CAS Write latency for timing and DDR4 MR2 registers, calculated according to frequency.
+nWR|nWR|SYSTEM PARAMETERS|clock|||JEDEC timing vs frequency.
+nRTP|nRTP|SYSTEM PARAMETERS|clock|||JEDEC timing vs frequency.
+tFAW|Four ACTIVATE windows for 2K page size (tFAW)|JEDEC TIMINGS|ns|||JEDEC timing vs frequency.
+tRAS|ACT to PRE command period (tRAS)|JEDEC CORE TIMINGS|ns|||JEDEC timings, according to speed grade / speed bins, used by DDR controller.
+tRAS_max|tRAS_max|JEDEC TIMINGS|µs|||9*tRFI
+tRPab|tRPab|JEDEC TIMINGS|ns|||
+tRPpb|tRPpb|JEDEC TIMINGS|ns|||
+tRP|Row Precharge Time (tRP)|JEDEC CORE TIMINGS|ns|||JEDEC timings, according to speed grade / speed bins, used by DDR controller.
+tRC|Row Cycle Time (tRC)|JEDEC CORE TIMINGS|ns|||JEDEC timings, according to speed grade / speed bins, used by DDR controller.
+tXP|Power-Down Exit (tXP)|POWER DOWN TIMINGS|ns|||JEDEC timings, according to speed grade / speed bins, used by DDR controller.
+tRTP|READ-to-PRECHARGE time (tRTP)|JEDEC TIMINGS|ns|||JEDEC timings, according to speed grade / speed bins, used by DDR controller.
+tWR|Write recovery time (tWR)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tWTR_S|Internal write transaction to internal read command for different Bank Groups (tWTR_S)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tWTR|Internal write transaction to internal read command for different Bank Groups (tWTR)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tCCD|CAS to CAS command delay for different Bank Groups (tCCD)|JEDEC TIMINGS|clock|||JEDEC timings, used by DDR controller.
+tCCD_S|CAS to CAS command delay for different Bank Groups (tCCD_S)|JEDEC TIMINGS|clock|||JEDEC timings, used by DDR controller.
+tPPD|tPPD|JEDEC TIMINGS|clock|||
+tRCD|Different bank group (tRCD)|JEDEC CORE TIMINGS|ns|||JEDEC timings, according to Speed grade / speed bins, used by DDR controller.
+tRRD_S|ACTIVATE to ACTIVATE Command delay to different Bank Group for 2K page (tRRD_S)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tRRD|ACTIVATE to ACTIVATE Command delay to different Bank Group for 2K page (tRRD)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tXSR|tXSR|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tREFI|Refresh Interval Time (tREFI)|REFRESH TIMINGS|ns|||
+tREFIpb|tREFIpb|REFRESH TIMINGS|ns|||
+tRFCab|tRFCab|REFRESH TIMINGS|ns|||
+tRFCpb|tRFCpb|REFRESH TIMINGS|ns|||
+tpbR2pbR|tpbR2pbR|REFRESH TIMINGS|ns|||
+tMRWCKEL|tMRWCKEL|REFRESH TIMINGS|ns|||
+tRFC|Refresh Cycle Time (tRFC)|REFRESH TIMINGS|ns|||tRFC, depends on DRAM density.
+tRFC1|Refresh Cycle Time in 1x mode(tRFC1)|REFRESH TIMINGS|ns|||tRFC in 1X mode, depends on DRAM density.
+tRFC2|Refresh Cycle Time in 2x mode(tRFC2)|REFRESH TIMINGS|ns|||tRFC in 2X mode, depends on DRAM density.
+tRFC4|Refresh Cycle Time in 4x mode(tRFC4)|REFRESH TIMINGS|ns|||tRFC in 4X mode, depends on DRAM density.
+tMRD|MODE REGISTER SET command cycle time (tMRD)|JEDEC TIMINGS|clock|||JEDEC timings, used by DDR controller.
+tMOD|MODE REGISTER SET command update delay (tMOD)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tCKSRE|Min clocks after self refresh entry (tCKSRE)|SELF REFRESH TIMINGS|ns|||Valid Clock Requirement before Self Refresh Entry or Power-Down Entry.
+tESCKE|tESCKE|SELF REFRESH TIMINGS|ns|||
+tCKCKEH|tCKCKEH|SELF REFRESH TIMINGS|ns|||
+tCKELCK|tCKELCK|SELF REFRESH TIMINGS|ns|||
+tCKSRX|Min clocks before self refresh exit (tCKSRX)|SELF REFRESH TIMINGS|ns|||Valid Clock Requirement before Self Refresh Exit or Power-Down Exit or Reset Exit.
+tCKE|CKE minimum pulse width (tCKE)|JEDEC TIMINGS|ns|||Min number of CKE high/low during Self Refresh and Power Down.
+tCMDCKE|tCMDCKE|JEDEC TIMINGS|ns|||
+ODTLoff|ODTLoff|JEDEC TIMINGS|clock|||
+ODTLon|ODTLon|JEDEC TIMINGS|clock|||
+tCCDMW|tCCDMW|JEDEC TIMINGS|clock|||
+tMPXLH|tMPXLH|SYSTEM PARAMETERS|ns|||JEDEC timings, used by DDR controller.
+tDQSCK|tDQSCK|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tSR|tSR|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tODTmin|tODTmin|JEDEC TIMINGS|ns|||
+tCSCKE|tCSCKE|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tDLLK|DLL locking time (tDLLK)|JEDEC TIMINGS|clock|||JEDEC timings, used by DDR controller on exit of Self-Refresh.
+tZQinit|tZQinit|JEDEC TIMINGS|clock|||JEDEC timings, used by DDR controller on exit of Self-Refresh.
+tCCD_L|tCCD_L|JEDEC TIMINGS|clock|||JEDEC timings, used by DDR controller.
+tRRD_L|ACTIVATE to ACTIVATE Command delay to same Bank Groupfor 2K page (tRRD_L)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+tWTR_L|Internal write transaction to internal read command for same Bank Group s (tWTR_L)|JEDEC TIMINGS|ns|||JEDEC timings, used by DDR controller.
+MSTR_REG|MSTR_REG|||||
+MRCTRL0_REG|MRCTRL0_REG|||||
+MRCTRL1_REG|MRCTRL1_REG|||||
+MRCTRL2_REG|MRCTRL2_REG|||||
+ADDRMAP0_REG|ADDRMAP0_REG|||||
+ADDRMAP1_REG|ADDRMAP1_REG|||||
+ADDRMAP10_REG|ADDRMAP10_REG|||||
+ADDRMAP11_REG|ADDRMAP11_REG|||||
+ADDRMAP2_REG|ADDRMAP2_REG|||||
+ADDRMAP3_REG|ADDRMAP3_REG|||||
+ADDRMAP4_REG|ADDRMAP4_REG|||||
+ADDRMAP5_REG|ADDRMAP5_REG|||||
+ADDRMAP6_REG|ADDRMAP6_REG|||||
+ADDRMAP7_REG|ADDRMAP7_REG|||||
+ADDRMAP8_REG|ADDRMAP8_REG|||||
+ADDRMAP9_REG|ADDRMAP9_REG|||||
+DBICTL_REG|DBICTL_REG|||||
+DFILPCFG0_REG|DFILPCFG0_REG|||||
+DFILPCFG1_REG|DFILPCFG1_REG|||||
+DFIMISC_REG|DFIMISC_REG|||||
+DFIPHYMSTR_REG|DFIPHYMSTR_REG|||||
+DFITMG0_REG|DFITMG0_REG|||||
+DFITMG1_REG|DFITMG1_REG|||||
+DFITMG2_REG|DFITMG2_REG|||||
+DFITMG3_REG|DFITMG3_REG|||||
+DFIUPD0_REG|DFIUPD0_REG|||||
+DFIUPD1_REG|DFIUPD1_REG|||||
+DFIUPD2_REG|DFIUPD2_REG|||||
+DIMMCTL_REG|DIMMCTL_REG|||||
+DRAMTMG0_REG|DRAMTMG0_REG|||||
+DRAMTMG1_REG|DRAMTMG1_REG|||||
+DRAMTMG11_REG|DRAMTMG11_REG|||||
+DRAMTMG13_REG|DRAMTMG13_REG|||||
+DRAMTMG14_REG|DRAMTMG14_REG|||||
+DRAMTMG2_REG|DRAMTMG2_REG|||||
+DRAMTMG3_REG|DRAMTMG3_REG|||||
+DRAMTMG4_REG|DRAMTMG4_REG|||||
+DRAMTMG5_REG|DRAMTMG5_REG|||||
+DRAMTMG7_REG|DRAMTMG7_REG|||||
+DRAMTMG8_REG|DRAMTMG8_REG|||||
+DRAMTMG9_REG|DRAMTMG9_REG|||||
+HWLPCTL_REG|HWLPCTL_REG|||||
+INIT0_REG|INIT0_REG|||||
+INIT1_REG|INIT1_REG|||||
+INIT2_REG|INIT2_REG|||||
+INIT3_REG|INIT3_REG|||||
+INIT4_REG|INIT4_REG|||||
+INIT5_REG|INIT5_REG|||||
+INIT6_REG|INIT6_REG|||||
+INIT7_REG|INIT7_REG|||||
+DERATEEN_REG|DERATEEN_REG|||||
+DERATEINT_REG|DERATEINT_REG|||||
+DERATECTL_REG|DERATECTL_REG|||||
+PWRCTL_REG|PWRCTL_REG|||||
+PWRTMG_REG|PWRTMG_REG|||||
+RFSHCTL0_REG|RFSHCTL0_REG|||||
+RFSHCTL1_REG|RFSHCTL1_REG|||||
+RFSHCTL3_REG|RFSHCTL3_REG|||||
+RFSHTMG_REG|RFSHTMG_REG|||||
+RFSHTMG1_REG|RFSHTMG1_REG|||||
+CRCPARCTL0_REG|CRCPARCTL0_REG|||||
+CRCPARCTL1_REG|CRCPARCTL1_REG|||||
+RANKCTL_REG|RANKCTL_REG|||||
+RANKCTL1_REG|RANKCTL1_REG|||||
+DRAMTMG6_REG|DRAMTMG6_REG|||||
+DRAMTMG10_REG|DRAMTMG10_REG|||||
+DRAMTMG12_REG|DRAMTMG12_REG|||||
+DRAMTMG15_REG|DRAMTMG15_REG|||||
+ZQCTL0_REG|ZQCTL0_REG|||||
+ZQCTL1_REG|ZQCTL1_REG|||||
+ZQCTL2_REG|ZQCTL2_REG|||||
+ODTCFG_REG|ODTCFG_REG|||||
+ODTMAP_REG|ODTMAP_REG|||||
+SCHED_REG|SCHED_REG|||||
+SCHED1_REG|SCHED1_REG|||||
+PERFHPR1_REG|PERFHPR1_REG|||||
+PERFLPR1_REG|PERFLPR1_REG|||||
+PERFWR1_REG|PERFWR1_REG|||||
+SCHED3_REG|SCHED3_REG|||||
+SCHED4_REG|SCHED4_REG|||||
+DBG0_REG|DBG0_REG|||||
+DBG1_REG|DBG1_REG|||||
+DBGCMD_REG|DBGCMD_REG|||||
+SWCTL_REG|SWCTL_REG|||||
+SWCTLSTATIC_REG|SWCTLSTATIC_REG|||||
+POISONCFG_REG|POISONCFG_REG|||||
+PCCFG_REG|PCCFG_REG|||||
+PCFGR_0_REG|PCFGR_0_REG|||||
+PCFGW_0_REG|PCFGW_0_REG|||||
+PCTRL_0_REG|PCTRL_0_REG|||||
+PCFGQOS0_0_REG|PCFGQOS0_0_REG|||||
+PCFGQOS1_0_REG|PCFGQOS1_0_REG|||||
+PCFGWQOS0_0_REG|PCFGWQOS0_0_REG|||||
+PCFGWQOS1_0_REG|PCFGWQOS1_0_REG|||||
+PCFGR_1_REG|PCFGR_1_REG|||||
+PCFGW_1_REG|PCFGW_1_REG|||||
+PCTRL_1_REG|PCTRL_1_REG|||||
+PCFGQOS0_1_REG|PCFGQOS0_1_REG|||||
+PCFGQOS1_1_REG|PCFGQOS1_1_REG|||||
+PCFGWQOS0_1_REG|PCFGWQOS0_1_REG|||||
+PCFGWQOS1_1_REG|PCFGWQOS1_1_REG|||||
+UIB_DRAMTYPE_REG|UIB_DRAMTYPE_REG|||||
+UIB_DIMMTYPE_REG|UIB_DIMMTYPE_REG|||||
+UIB_LP4XMODE_REG|UIB_LP4XMODE_REG|||||
+UIB_NUMDBYTE_REG|UIB_NUMDBYTE_REG|||||
+UIB_NUMACTIVEDBYTEDFI0_REG|UIB_NUMACTIVEDBYTEDFI0_REG|||||
+UIB_NUMACTIVEDBYTEDFI1_REG|UIB_NUMACTIVEDBYTEDFI1_REG|||||
+UIB_NUMANIB_REG|UIB_NUMANIB_REG|||||
+UIB_NUMRANK_DFI0_REG|UIB_NUMRANK_DFI0_REG|||||
+UIB_NUMRANK_DFI1_REG|UIB_NUMRANK_DFI1_REG|||||
+UIB_DRAMDATAWIDTH_REG|UIB_DRAMDATAWIDTH_REG|||||
+UIB_NUMPSTATES_REG|UIB_NUMPSTATES_REG|||||
+UIB_FREQUENCY_0_REG|UIB_FREQUENCY_0_REG|||||
+UIB_PLLBYPASS_0_REG|UIB_PLLBYPASS_0_REG|||||
+UIB_DFIFREQRATIO_0_REG|UIB_DFIFREQRATIO_0_REG|||||
+UIB_DFI1EXISTS_REG|UIB_DFI1EXISTS_REG|||||
+UIB_TRAIN2D_REG|UIB_TRAIN2D_REG|||||
+UIB_HARDMACROVER_REG|UIB_HARDMACROVER_REG|||||
+UIB_READDBIENABLE_0_REG|UIB_READDBIENABLE_0_REG|||||
+UIB_DIMODE_REG|UIB_DIMODE_REG|||||
+UIA_LP4RXPREAMBLEMODE_0_REG|UIA_LP4RXPREAMBLEMODE_0_REG|||||
+UIA_LP4POSTAMBLEEXT_0_REG|UIA_LP4POSTAMBLEEXT_0_REG|||||
+UIA_D4RXPREAMBLELENGTH_0_REG|UIA_D4RXPREAMBLELENGTH_0_REG|||||
+UIA_D4TXPREAMBLELENGTH_0_REG|UIA_D4TXPREAMBLELENGTH_0_REG|||||
+UIA_EXTCALRESVAL_REG|UIA_EXTCALRESVAL_REG|||||
+UIA_IS2TTIMING_0_REG|UIA_IS2TTIMING_0_REG|||||
+UIA_ODTIMPEDANCE_0_REG|UIA_ODTIMPEDANCE_0_REG|||||
+UIA_TXIMPEDANCE_0_REG|UIA_TXIMPEDANCE_0_REG|||||
+UIA_ATXIMPEDANCE_REG|UIA_ATXIMPEDANCE_REG|||||
+UIA_MEMALERTEN_REG|UIA_MEMALERTEN_REG|||||
+UIA_MEMALERTPUIMP_REG|UIA_MEMALERTPUIMP_REG|||||
+UIA_MEMALERTVREFLEVEL_REG|UIA_MEMALERTVREFLEVEL_REG|||||
+UIA_MEMALERTSYNCBYPASS_REG|UIA_MEMALERTSYNCBYPASS_REG|||||
+UIA_DISDYNADRTRI_0_REG|UIA_DISDYNADRTRI_0_REG|||||
+UIA_PHYMSTRTRAININTERVAL_0_REG|UIA_PHYMSTRTRAININTERVAL_0_REG|||||
+UIA_PHYMSTRMAXREQTOACK_0_REG|UIA_PHYMSTRMAXREQTOACK_0_REG|||||
+UIA_WDQSEXT_REG|UIA_WDQSEXT_REG|||||
+UIA_CALINTERVAL_REG|UIA_CALINTERVAL_REG|||||
+UIA_CALONCE_REG|UIA_CALONCE_REG|||||
+UIA_LP4RL_0_REG|UIA_LP4RL_0_REG|||||
+UIA_LP4WL_0_REG|UIA_LP4WL_0_REG|||||
+UIA_LP4WLS_0_REG|UIA_LP4WLS_0_REG|||||
+UIA_LP4DBIRD_0_REG|UIA_LP4DBIRD_0_REG|||||
+UIA_LP4DBIWR_0_REG|UIA_LP4DBIWR_0_REG|||||
+UIA_LP4NWR_0_REG|UIA_LP4NWR_0_REG|||||
+UIA_LP4LOWPOWERDRV_REG|UIA_LP4LOWPOWERDRV_REG|||||
+UIA_DRAMBYTESWAP_REG|UIA_DRAMBYTESWAP_REG|||||
+UIA_RXENBACKOFF_REG|UIA_RXENBACKOFF_REG|||||
+UIA_TRAINSEQUENCECTRL_REG|UIA_TRAINSEQUENCECTRL_REG|||||
+UIA_SEQUENCECTRL_0_REG|UIA_SEQUENCECTRL_0_REG|||||
+UIA_PHYVREF_REG|UIA_PHYVREF_REG|||||
+UIA_SNPSUMCTLOPT_REG|UIA_SNPSUMCTLOPT_REG|||||
+UIA_SNPSUMCTLF0RC5X_0_REG|UIA_SNPSUMCTLF0RC5X_0_REG|||||
+UIA_TXSLEWRISEDQ_0_REG|UIA_TXSLEWRISEDQ_0_REG|||||
+UIA_TXSLEWFALLDQ_0_REG|UIA_TXSLEWFALLDQ_0_REG|||||
+UIA_TXSLEWRISEAC_REG|UIA_TXSLEWRISEAC_REG|||||
+UIA_TXSLEWFALLAC_REG|UIA_TXSLEWFALLAC_REG|||||
+UIA_DISABLERETRAINING_REG|UIA_DISABLERETRAINING_REG|||||
+UIA_DISABLEPHYUPDATE_REG|UIA_DISABLEPHYUPDATE_REG|||||
+UIA_ENABLEHIGHCLKSKEWFIX_REG|UIA_ENABLEHIGHCLKSKEWFIX_REG|||||
+UIA_DISABLEUNUSEDADDRLNS_REG|UIA_DISABLEUNUSEDADDRLNS_REG|||||
+UIA_PHYINITSEQUENCENUM_REG|UIA_PHYINITSEQUENCENUM_REG|||||
+UIA_ENABLEDFICSPOLARITYFIX_REG|UIA_ENABLEDFICSPOLARITYFIX_REG|||||
+UIM_MR0_0_REG|UIM_MR0_0_REG|||||
+UIM_MR1_0_REG|UIM_MR1_0_REG|||||
+UIM_MR2_0_REG|UIM_MR2_0_REG|||||
+UIM_MR3_0_REG|UIM_MR3_0_REG|||||
+UIM_MR4_0_REG|UIM_MR4_0_REG|||||
+UIM_MR5_0_REG|UIM_MR5_0_REG|||||
+UIM_MR6_0_REG|UIM_MR6_0_REG|||||
+UIM_MR11_0_REG|UIM_MR11_0_REG|||||
+UIM_MR12_0_REG|UIM_MR12_0_REG|||||
+UIM_MR13_0_REG|UIM_MR13_0_REG|||||
+UIM_MR14_0_REG|UIM_MR14_0_REG|||||
+UIM_MR22_0_REG|UIM_MR22_0_REG|||||
+UIS_SWIZZLE_0_REG|UIS_SWIZZLE_0_REG|||||
+UIS_SWIZZLE_1_REG|UIS_SWIZZLE_1_REG|||||
+UIS_SWIZZLE_2_REG|UIS_SWIZZLE_2_REG|||||
+UIS_SWIZZLE_3_REG|UIS_SWIZZLE_3_REG|||||
+UIS_SWIZZLE_4_REG|UIS_SWIZZLE_4_REG|||||
+UIS_SWIZZLE_5_REG|UIS_SWIZZLE_5_REG|||||
+UIS_SWIZZLE_6_REG|UIS_SWIZZLE_6_REG|||||
+UIS_SWIZZLE_7_REG|UIS_SWIZZLE_7_REG|||||
+UIS_SWIZZLE_8_REG|UIS_SWIZZLE_8_REG|||||
+UIS_SWIZZLE_9_REG|UIS_SWIZZLE_9_REG|||||
+UIS_SWIZZLE_10_REG|UIS_SWIZZLE_10_REG|||||
+UIS_SWIZZLE_11_REG|UIS_SWIZZLE_11_REG|||||
+UIS_SWIZZLE_12_REG|UIS_SWIZZLE_12_REG|||||
+UIS_SWIZZLE_13_REG|UIS_SWIZZLE_13_REG|||||
+UIS_SWIZZLE_14_REG|UIS_SWIZZLE_14_REG|||||
+UIS_SWIZZLE_15_REG|UIS_SWIZZLE_15_REG|||||
+UIS_SWIZZLE_16_REG|UIS_SWIZZLE_16_REG|||||
+UIS_SWIZZLE_17_REG|UIS_SWIZZLE_17_REG|||||
+UIS_SWIZZLE_18_REG|UIS_SWIZZLE_18_REG|||||
+UIS_SWIZZLE_19_REG|UIS_SWIZZLE_19_REG|||||
+UIS_SWIZZLE_20_REG|UIS_SWIZZLE_20_REG|||||
+UIS_SWIZZLE_21_REG|UIS_SWIZZLE_21_REG|||||
+UIS_SWIZZLE_22_REG|UIS_SWIZZLE_22_REG|||||
+UIS_SWIZZLE_23_REG|UIS_SWIZZLE_23_REG|||||
+UIS_SWIZZLE_24_REG|UIS_SWIZZLE_24_REG|||||
+UIS_SWIZZLE_25_REG|UIS_SWIZZLE_25_REG|||||
+UIS_SWIZZLE_26_REG|UIS_SWIZZLE_26_REG|||||
+UIS_SWIZZLE_27_REG|UIS_SWIZZLE_27_REG|||||
+UIS_SWIZZLE_28_REG|UIS_SWIZZLE_28_REG|||||
+UIS_SWIZZLE_29_REG|UIS_SWIZZLE_29_REG|||||
+UIS_SWIZZLE_30_REG|UIS_SWIZZLE_30_REG|||||
+UIS_SWIZZLE_31_REG|UIS_SWIZZLE_31_REG|||||
+UIS_SWIZZLE_32_REG|UIS_SWIZZLE_32_REG|||||
+UIS_SWIZZLE_33_REG|UIS_SWIZZLE_33_REG|||||
+UIS_SWIZZLE_34_REG|UIS_SWIZZLE_34_REG|||||
+UIS_SWIZZLE_35_REG|UIS_SWIZZLE_35_REG|||||
+UIS_SWIZZLE_36_REG|UIS_SWIZZLE_36_REG|||||
+UIS_SWIZZLE_37_REG|UIS_SWIZZLE_37_REG|||||
+UIS_SWIZZLE_38_REG|UIS_SWIZZLE_38_REG|||||
+UIS_SWIZZLE_39_REG|UIS_SWIZZLE_39_REG|||||
+UIS_SWIZZLE_40_REG|UIS_SWIZZLE_40_REG|||||
+UIS_SWIZZLE_41_REG|UIS_SWIZZLE_41_REG|||||
+UIS_SWIZZLE_42_REG|UIS_SWIZZLE_42_REG|||||
+UIS_SWIZZLE_43_REG|UIS_SWIZZLE_43_REG|||||
+DRAMTYPE|DRAMTYPE|USER INPUT BASIC||||DRAM Module Type
+DIMMTYPE|DIMMTYPE|USER INPUT BASIC||||DIMM Module Type
+LP4XMODE|LP4XMODE|USER INPUT BASIC||||0
+NUMDBYTE|NUMDBYTE|USER INPUT BASIC||||Enter number of dbytes physically instantiated in RTL.
+NUMACTIVEDBYTEDFI0|NUMACTIVEDBYTEDFI0|USER INPUT BASIC||||Enter number of active dbytes to be controlled by dfi0.
+NUMACTIVEDBYTEDFI1|NUMACTIVEDBYTEDFI1|USER INPUT BASIC||||Enter number of active dbytes to be controlled by dfi1.
+NUMANIB|NUMANIB|USER INPUT BASIC||||Enter number of ANIBs physically instantiated.
+NUMRANK_DFI0|NUMRANK_DFI0|USER INPUT BASIC||||Number of ranks in DFI0 channel.
+NUMRANK_DFI1|NUMRANK_DFI1|USER INPUT BASIC||||Number of ranks in DFI1 channel (if DFI1 exists).
+DRAMDATAWIDTH|DRAMDATAWIDTH|USER INPUT BASIC||||Width of the DRAM device.
+NUMPSTATES|NUMPSTATES|USER INPUT BASIC||||Number of p-states used.
+FREQUENCY_0|FREQUENCY_0|USER INPUT BASIC||||Memclk Frequency for each PState.
+PLLBYPASS_0|PLLBYPASS_0|USER INPUT BASIC||||Indicates if PLL should be in Bypass mode.
+DFIFREQRATIO_0|DFIFREQRATIO_0|USER INPUT BASIC||||Selected Dfi Frequency ratio.
+DFI1EXISTS|DFI1EXISTS|USER INPUT BASIC||||Indicates whether they PHY configuration has Dfi1 channel.
+TRAIN2D|TRAIN2D|USER INPUT BASIC||||Obsolete, Not used.
+HARDMACROVER|HARDMACROVER|USER INPUT BASIC||||Hard Macro Family version in use.
+READDBIENABLE_0|READDBIENABLE_0|USER INPUT BASIC||||Obsolete, Not used.
+DFIMODE|DFIMODE|USER INPUT BASIC||||Obsolete, Not used.
+LP4RXPREAMBLEMODE_0|LP4RXPREAMBLEMODE_0|USER INPUT ADVANCED||||Selects between DRAM static read vs toggle read preamble.
+LP4POSTAMBLEEXT_0|LP4POSTAMBLEEXT_0|USER INPUT ADVANCED||||Extend write postamble in LPDDR4.
+D4RXPREAMBLELENGTH_0|D4RXPREAMBLELENGTH_0|USER INPUT ADVANCED||||Length of read preamble in DDR4 mode.
+D4TXPREAMBLELENGTH_0|D4TXPREAMBLELENGTH_0|USER INPUT ADVANCED||||Length of write preamble in DDR4 mode.
+EXTCALRESVAL|EXTCALRESVAL|USER INPUT ADVANCED||||External Impedance calibration pull-down resistor value select.
+IS2TTIMING_0|IS2TTIMING_0|USER INPUT ADVANCED||||Set to 1 to use 2T timing for address/command, otherwise 1T timing will be used.
+ODTIMPEDANCE_0|ODTIMPEDANCE_0|USER INPUT ADVANCED||||Enter desired ODT impedance in ohm.
+TXIMPEDANCE_0|TXIMPEDANCE_0|USER INPUT ADVANCED||||Tx Drive Impedance for DQ/DQS in ohm.
+ATXIMPEDANCE|ATXIMPEDANCE|USER INPUT ADVANCED||||Tx Drive Impedance for AC in ohm.
+MEMALERTEN|MEMALERTEN|USER INPUT ADVANCED||||Enables BP_ALERT programming of PHY registers.
+MEMALERTPUIMP|MEMALERTPUIMP|USER INPUT ADVANCED||||Specify MemAlert Pull-up Termination Impedance.
+MEMALERTVREFLEVEL|MEMALERTVREFLEVEL|USER INPUT ADVANCED||||Specify the Vref level for BP_ALERT(MemAlert) Receiver.
+MEMALERTSYNCBYPASS|MEMALERTSYNCBYPASS|USER INPUT ADVANCED||||When set, this bit bypasses the DfiClk synchronizer on dfi_alert_n.
+DISDYNADRTRI_0|DISDYNADRTRI_0|USER INPUT ADVANCED||||Disable Dynamic Per-MEMCLK Address Tristate feature.
+PHYMSTRTRAININTERVAL_0|PHYMSTRTRAININTERVAL_0|USER INPUT ADVANCED||||Specifies the how frequent dfi_phymstr_req is issued by PHY.
+PHYMSTRMAXREQTOACK_0|PHYMSTRMAXREQTOACK_0|USER INPUT ADVANCED||||Max time from dfi_phymstr_req asserted to dfi_phymstr_ack asserted.
+WDQSEXT|WDQSEXT|USER INPUT ADVANCED||||Enable Write DQS Extension feature of PHY.
+CALINTERVAL|CALINTERVAL|USER INPUT ADVANCED||||Specifies the interval between successive calibrations, in mS.
+CALONCE|CALONCE|USER INPUT ADVANCED||||This setting changes the behaviour of CalRun register.
+LP4RL_0|LP4RL_0|USER INPUT ADVANCED||||LPDDR4 Dram Read Latency.
+LP4WL_0|LP4WL_0|USER INPUT ADVANCED||||LPDDR4 Dram Write Latency.
+LP4WLS_0|LP4WLS_0|USER INPUT ADVANCED||||LPDDR4 Dram WL Set.
+LP4DBIRD_0|LP4DBIRD_0|USER INPUT ADVANCED||||LPDDR4 Dram DBI-Read Enable.
+LP4DBIWR_0|LP4DBIWR_0|USER INPUT ADVANCED||||LPDDR4 Dram DBI-Write Enable.
+LP4NWR_0|LP4NWR_0|USER INPUT ADVANCED||||LPDDR4 Write-Recovery for Auto- Pre-charge commands.
+LP4LOWPOWERDRV|LP4LOWPOWERDRV|USER INPUT ADVANCED||||Configure output Driver in Low power mode..
+DRAMBYTESWAP|DRAMBYTESWAP|USER INPUT ADVANCED||||DRAM Oscillator count source mapping for skip_training.
+RXENBACKOFF|RXENBACKOFF|USER INPUT ADVANCED||||Determines the Placement of PHY Read Gate signal.
+TRAINSEQUENCECTRL|TRAINSEQUENCECTRL|USER INPUT ADVANCED||||Firmware Training Sequence Control.
+SNPSUMCTLOPT|SNPSUMCTLOPT|USER INPUT ADVANCED||||Enable Fast Frequency Change (FFC) Optimizations specific to Synopsys UMCTL2.
+SNPSUMCTLF0RC5X_0|SNPSUMCTLF0RC5X_0|USER INPUT ADVANCED||||F0RX5x RCD Control Word when using Fast Frequency Change(FFC) optimizations specific to Synopsys UMCTL2.
+TXSLEWRISEDQ_0|TXSLEWRISEDQ_0|USER INPUT ADVANCED||||Pull-up slew rate control for DBYTE Tx.
+TXSLEWFALLDQ_0|TXSLEWFALLDQ_0|USER INPUT ADVANCED||||Pull-down slew rate control for DBYTE Tx.
+TXSLEWRISEAC|TXSLEWRISEAC|USER INPUT ADVANCED||||Pull-up slew rate control for ANIB Tx.
+TXSLEWFALLAC|TXSLEWFALLAC|USER INPUT ADVANCED||||Pull-down slew rate control for ANIB Tx.
+DISABLERETRAINING|DISABLERETRAINING|USER INPUT ADVANCED||||Disable PHY DRAM Drift compensation re-training.
+DISABLEPHYUPDATE|DISABLEPHYUPDATE|USER INPUT ADVANCED||||Disable DFI PHY Update feature.
+ENABLEHIGHCLKSKEWFIX|ENABLEHIGHCLKSKEWFIX|USER INPUT ADVANCED||||Enable alternative PIE program.
+DISABLEUNUSEDADDRLNS|DISABLEUNUSEDADDRLNS|USER INPUT ADVANCED||||Turn off or tristate Address Lanes when possible.
+PHYINITSEQUENCENUM|PHYINITSEQUENCENUM|USER INPUT ADVANCED||||Switches between supported phyinit training sequences refer to "Alternative PHY Training sequence" document for further details.
+ENABLEDFICSPOLARITYFIX|ENABLEDFICSPOLARITYFIX|USER INPUT ADVANCED||||Enable alternative PIE program.
+PHYVREF|PHYVREF|USER INPUT ADVANCED||||
+SEQUENCECTRL_0|SEQUENCECTRL_0|USER INPUT ADVANCED||||
+Check|Check|||||
+A8|A8|||||
+A9|A9|||||
+A10|A10|||||
+A11|A11|||||
+A12|A12|||||
+A13|A13|||||
+A14|A14|||||
+A15|A15|||||
+A16|A16|||||
+A17|A17|||||
+A18|A18|||||
+A19|A19|||||
+A20|A20|||||
+A21|A21|||||
+A22|A22|||||
+DQ0|DQ0|||||
+DQ1|DQ1|||||
+DQ2|DQ2|||||
+DQ3|DQ3|||||
+DQ4|DQ4|||||
+DQ5|DQ5|||||
+DQ6|DQ6|||||
+DQ7|DQ7|||||
+DQ8|DQ8|||||
+DQ9|DQ9|||||
+DQ10|DQ10|||||
+DQ11|DQ11|||||
+DQ12|DQ12|||||
+DQ13|DQ13|||||
+DQ14|DQ14|||||
+DQ15|DQ15|||||
+DQ16|DQ16|||||
+DQ17|DQ17|||||
+DQ18|DQ18|||||
+DQ19|DQ19|||||
+DQ20|DQ20|||||
+DQ21|DQ21|||||
+DQ22|DQ22|||||
+DQ23|DQ23|||||
+DQ24|DQ24|||||
+DQ25|DQ25|||||
+DQ26|DQ26|||||
+DQ27|DQ27|||||
+DQ28|DQ28|||||
+DQ29|DQ29|||||
+DQ30|DQ30|||||
+DQ31|DQ31|||||
+DDR_A2|DDR_A2|||||
+DDR_A3|DDR_A3|||||
+DDR_A8|DDR_A8|||||
+DDR_A9|DDR_A9|||||
+DDR_A10|DDR_A10|||||
+DDR_A11|DDR_A11|||||
+DDR_A14|DDR_A14|||||
+DDR_A15|DDR_A15|||||
+DDR_A20|DDR_A20|||||
+DDR_A21|DDR_A21|||||
+DDR_A22|DDR_A22|||||
+DDR_A23|DDR_A23|||||
+A23|A23|||||
+A24|A24|||||
+A25|A25|||||
+A26|A26|||||
+A27|A27|||||
+A28|A28|||||
+A29|A29|||||
+A30|A30|||||
+A31|A31|||||
+
+[Values]
+# параметр|значение|подпись

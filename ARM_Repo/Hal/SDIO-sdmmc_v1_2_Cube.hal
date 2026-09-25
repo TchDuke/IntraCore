@@ -1,0 +1,28 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SDIO
+Version=sdmmc_v1_2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockEdge|Clock transition on which the bit capture is made|SDIO parameters||||
+ClockBypass|SDIO Clock divider bypass|SDIO parameters||||
+ClockPowerSave|SDIO Clock output enable or disable when the bus is idle|SDIO parameters||||
+BusWide|Wide bus mode|||||
+HardwareFlowControl|SDIO hardware flow control|SDIO parameters||||
+ClockDiv|SDIOCLK clock divide factor|SDIO parameters||0|255|SDIO_CK = SDIOCLK / [CLKDIV + 2]. The output clock frequency can vary between 187 KHz and 24 MHz. It is advised to keep the default ClockDiv value (0) to have a maximum SDIO_CK frequency of 24 MHz.
+
+[Values]
+# параметр|значение|подпись
+ClockEdge|SDIO_CLOCK_EDGE_RISING|Rising transition
+ClockEdge|SDIO_CLOCK_EDGE_FALLING|Falling transition
+ClockBypass|SDIO_CLOCK_BYPASS_DISABLE|Disable
+ClockBypass|SDIO_CLOCK_BYPASS_ENABLE|Enable
+ClockPowerSave|SDIO_CLOCK_POWER_SAVE_DISABLE|Disable the power save for the clock
+ClockPowerSave|SDIO_CLOCK_POWER_SAVE_ENABLE|Enable the power save for the clock
+BusWide|SDIO_BUS_WIDE_8B|Bus wide 8-bit data
+BusWide|SDIO_BUS_WIDE_4B|Bus wide 4-bit data
+BusWide|SDIO_BUS_WIDE_1B|Bus wide 1-bit data
+HardwareFlowControl|SDIO_HARDWARE_FLOW_CONTROL_DISABLE|The hardware control flow is disabled
+HardwareFlowControl|SDIO_HARDWARE_FLOW_CONTROL_ENABLE|The hardware control flow is enabled

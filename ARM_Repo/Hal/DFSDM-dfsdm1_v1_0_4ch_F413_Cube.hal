@@ -1,0 +1,412 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DFSDM
+Version=dfsdm1_v1_0_4ch_F413_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Activation_Ref|output Clock|||||Output clock enable/disable
+Activation|Activation|||1|1|Output clock disable
+Selection|Selection|Output Clock parameters||||Output clock is system clock or audio clock.
+Divider|Divider|Output Clock parameters||2|256|Output clock divider.
+Multiplexer_CH0|Multiplexer|||||Input is external serial inputs or internal register.
+Multiplexer_external_CH0|Multiplexer_External_CH0|||||Input is external serial inputs
+Multiplexer_internal_CH0|Multiplexer_Internal_CH0|||||Input is internal register
+DataPacking_CH0|Data Packing|Channel 0 parameters||||Standard, interleaved or dual mode for internal register.
+Pins_none_CH0|Pins|||||Input pins are taken from same or following channel.
+Pins_same_CH0|Pins|||||Input pins are taken from same channel.
+Pins_next_CH0|Pins|||||Input pins are taken from following channel.
+Type_spi_CH0|Type|Channel 0 parameters||||SPI modes.
+Type_manchester_CH0|Type|Channel 0 parameters||||Manchester modes.
+Type_none_CH0|Type|||||SPI default but null expected
+SpiClock_none_CH0|Spi Clock|||||SPI clock select SHOULD BE null.
+SpiClock_external_CH0|Spi Clock|||||SPI clock select (external with different sampling point).
+SpiClock_internal_CH0|Spi Clock|Channel 0 parameters||||SPI clock select (internal with different sampling point).
+FilterOrder_CH0|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.
+FilterOrder_none_CH0|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.SHOULD BE null
+Oversampling_CH0|Oversampling|Analog watchdog parameters||1|32|Analog watchdog filter oversampling ratio.
+Oversampling_none_CH0|Oversampling|Analog watchdog parameters||1|1|Analog watchdog filter oversampling ratio.SHOULD BE null
+Offset_CH0|Offset|Channel 0 parameters||-8388608|8388607|DFSDM channel offset.
+Offset_none_CH0|Offset|||0x00|0x00|DFSDM channel offset.SHOULD BE null
+RightBitShift_CH0|Right Bit Shift|Channel 0 parameters||0x00|0x1F|DFSDM channel right bit shift.
+Multiplexer_CH1|Multiplexer|||||Input is external serial inputs or internal register.
+Multiplexer_external_CH1|Multiplexer_External_CH1|||||Input is external serial inputs
+Multiplexer_internal_CH1|Multiplexer_Internal_CH1|||||Input is internal register
+DataPacking_CH1|Data Packing|Channel 1 parameters||||Standard, interleaved or dual mode for internal register.
+Pins_none_CH1|Pins|||||Input pins are taken from same or following channel.
+Pins_same_CH1|Pins|||||Input pins are taken from same channel.
+Pins_next_CH1|Pins|||||Input pins are taken from following channel.
+Type_spi_CH1|Type|Channel 1 parameters||||SPI modes.
+Type_manchester_CH1|Type|Channel 1 parameters||||Manchester modes.
+Type_none_CH1|Type|||||SPI default but null expected
+SpiClock_none_CH1|Spi Clock|||||SPI clock select SHOULD BE null.
+SpiClock_external_CH1|Spi Clock|||||SPI clock select (external with different sampling point).
+SpiClock_internal_CH1|Spi Clock|Channel 1 parameters||||SPI clock select (internal with different sampling point).
+FilterOrder_CH1|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.
+FilterOrder_none_CH1|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.SHOULD BE null
+Oversampling_CH1|Oversampling|Analog watchdog parameters||1|32|Analog watchdog filter oversampling ratio.
+Oversampling_none_CH1|Oversampling|Analog watchdog parameters||1|1|Analog watchdog filter oversampling ratio.SHOULD BE null
+Offset_CH1|Offset|Channel 1 parameters||-8388608|8388607|DFSDM channel offset.
+Offset_none_CH1|Offset|||0x00|0x00|DFSDM channel offset.SHOULD BE null
+RightBitShift_CH1|Right Bit Shift|Channel 1 parameters||0x00|0x1F|DFSDM channel right bit shift.
+Multiplexer_CH2|Multiplexer|||||Input is external serial inputs or internal register.
+Multiplexer_external_CH2|Multiplexer_External_CH2|||||Input is external serial inputs
+Multiplexer_internal_CH2|Multiplexer_Internal_CH2|||||Input is internal register
+DataPacking_CH2|Data Packing|Channel 2 parameters||||Standard, interleaved or dual mode for internal register.
+Pins_none_CH2|Pins|||||Input pins are taken from same or following channel.
+Pins_same_CH2|Pins|||||Input pins are taken from same channel.
+Pins_next_CH2|Pins|||||Input pins are taken from following channel.
+Type_spi_CH2|Type|Channel 2 parameters||||SPI modes.
+Type_manchester_CH2|Type|Channel 2 parameters||||Manchester modes.
+Type_none_CH2|Type|||||SPI default but null expected
+SpiClock_none_CH2|Spi Clock|||||SPI clock select SHOULD BE null.
+SpiClock_external_CH2|Spi Clock|||||SPI clock select (external with different sampling point).
+SpiClock_internal_CH2|Spi Clock|Channel 2 parameters||||SPI clock select (internal with different sampling point).
+FilterOrder_CH2|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.
+FilterOrder_none_CH2|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.SHOULD BE null
+Oversampling_CH2|Oversampling|Analog watchdog parameters||1|32|Analog watchdog filter oversampling ratio.
+Oversampling_none_CH2|Oversampling|Analog watchdog parameters||1|1|Analog watchdog filter oversampling ratio.SHOULD BE null
+Offset_CH2|Offset|Channel 2 parameters||-8388608|8388607|DFSDM channel offset.
+Offset_none_CH2|Offset|||0x00|0x00|DFSDM channel offset.SHOULD BE null
+RightBitShift_CH2|Right Bit Shift|Channel 2 parameters||0x00|0x1F|DFSDM channel right bit shift.
+Multiplexer_CH3|Multiplexer|||||Input is external serial inputs or internal register.
+Multiplexer_external_CH3|Multiplexer_External_CH3|||||Input is external serial inputs
+Multiplexer_internal_CH3|Multiplexer_Internal_CH3|||||Input is internal register
+DataPacking_CH3|Data Packing|Channel 3 parameters||||Standard, interleaved or dual mode for internal register.
+Pins_none_CH3|Pins|||||Input pins are taken from same or following channel.
+Pins_same_CH3|Pins|||||Input pins are taken from same channel.
+Pins_next_CH3|Pins|||||Input pins are taken from following channel.
+Type_spi_CH3|Type|Channel 3 parameters||||SPI modes.
+Type_manchester_CH3|Type|Channel 3 parameters||||Manchester modes.
+Type_none_CH3|Type|||||SPI default but null expected
+SpiClock_none_CH3|Spi Clock|||||SPI clock select SHOULD BE null.
+SpiClock_external_CH3|Spi Clock|||||SPI clock select (external with different sampling point).
+SpiClock_internal_CH3|Spi Clock|Channel 3 parameters||||SPI clock select (internal with different sampling point).
+FilterOrder_CH3|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.
+FilterOrder_none_CH3|Filter Order|Analog watchdog parameters||||Analog watchdog sinc filter order.SHOULD BE null
+Oversampling_CH3|Oversampling|Analog watchdog parameters||1|32|Analog watchdog filter oversampling ratio.
+Oversampling_none_CH3|Oversampling|Analog watchdog parameters||1|1|Analog watchdog filter oversampling ratio.SHOULD BE null
+Offset_CH3|Offset|Channel 3 parameters||-8388608|8388607|DFSDM channel offset.
+Offset_none_CH3|Offset|||0x00|0x00|DFSDM channel offset.SHOULD BE null
+RightBitShift_CH3|Right Bit Shift|Channel 3 parameters||0x00|0x1F|DFSDM channel right bit shift.
+Trigger_reg_FIL0|Trigger to start regular conversion|regular channel selection||||Trigger used to start regular conversion: software or synchronous.
+FastMode_reg_FIL0|Fast Mode|regular channel selection||||Enable/disable fast mode for regular conversion
+DmaMode_reg_FIL0|Dma Mode|regular channel selection||||Enable/disable DMA for regular conversion
+Trigger_inj_FIL0|Trigger to start injected conversion|injected channel selection||||Trigger used to start injected conversion: software, external or synchronous.
+ScanMode_inj_FIL0|Scan Mode|injected channel selection||||Enable/disable scanning mode for injected conversion
+DmaMode_inj_FIL0|Dma Mode|injected channel selection||||Enable/disable DMA for injected conversion
+ExtTrigger_inj_FIL0|External Trigger Source|injected channel selection||||External trigger.
+ExtTriggerEdge_inj_FIL0|Ext Trigger Edge|injected channel selection||||External trigger edge: rising, falling or both.
+SincOrder_FIL0|Sinc Order|Filter parameters||||Sinc filter order.
+Fosr_FIL0|Fosr|Filter parameters||1|73|Filter oversampling ratio ( 1 means bypass).
+Iosr_FIL0|Iosr|Filter parameters||1|256|Integrator oversampling ratio.
+hdmaReg_FIL0|Hdma Reg|Filter parameters||0|0|Pointer on DMA handler for regular conversions
+hdmaInj_FIL0|Hdma Inj|other ???||0|0|Pointer on DMA handler for injected conversions
+Filter_regChannel_FIL0|regular channel selection|regular channel selection||||regular channel selection.
+Filter_regContinuousMode_FIL0|Continuous Mode|regular channel selection||0|4294967295|regular conversion continous/one shot mode. (Bit field RCONT in DFSDM_CR1 register)
+Filter_injChannel_FIL0|Channel|injected channel selection||0|255|
+Filter_injChannel0_FIL0|Channel0 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel1_FIL0|Channel1 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel2_FIL0|Channel2 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel3_FIL0|Channel3 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel4_FIL0|Channel4 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel5_FIL0|Channel5 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel6_FIL0|Channel6 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel7_FIL0|Channel7 as injected channel|injected channel selection||||injected channel selection.
+Filter_ACTIVATED_FIL0||regular channel selection||||to indicate to NVIC or DMA that the filter is active
+Trigger_reg_FIL1|Trigger to start regular conversion|regular channel selection||||Trigger used to start regular conversion: software or synchronous.
+FastMode_reg_FIL1|Fast Mode|regular channel selection||||Enable/disable fast mode for regular conversion
+DmaMode_reg_FIL1|Dma Mode|regular channel selection||||Enable/disable DMA for regular conversion
+Trigger_inj_FIL1|Trigger to start injected conversion|injected channel selection||||Trigger used to start injected conversion: software, external or synchronous.
+ScanMode_inj_FIL1|Scan Mode|injected channel selection||||Enable/disable scanning mode for injected conversion
+DmaMode_inj_FIL1|Dma Mode|injected channel selection||||Enable/disable DMA for injected conversion
+ExtTrigger_inj_FIL1|External Trigger Source|injected channel selection||||External trigger.
+ExtTriggerEdge_inj_FIL1|Ext Trigger Edge|injected channel selection||||External trigger edge: rising, falling or both.
+SincOrder_FIL1|Sinc Order|Filter parameters||||Sinc filter order.
+Fosr_FIL1|Fosr|Filter parameters||1|73|Filter oversampling ratio ( 1 means bypass).
+Iosr_FIL1|Iosr|Filter parameters||1|256|Integrator oversampling ratio.
+hdmaReg_FIL1|Hdma Reg|Filter parameters||0|0|Pointer on DMA handler for regular conversions
+hdmaInj_FIL1|Hdma Inj|other ???||0|0|Pointer on DMA handler for injected conversions
+Filter_regChannel_FIL1|regular channel selection|regular channel selection||||regular channel selection.
+Filter_regContinuousMode_FIL1|Continuous Mode|regular channel selection||0|4294967295|regular conversion continous/one shot mode. (Bit field RCONT in DFSDM_CR1 register)
+Filter_injChannel_FIL1|Channel|injected channel selection||0|255|
+Filter_injChannel0_FIL1|Channel0 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel1_FIL1|Channel1 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel2_FIL1|Channel2 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel3_FIL1|Channel3 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel4_FIL1|Channel4 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel5_FIL1|Channel5 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel6_FIL1|Channel6 as injected channel|injected channel selection||||injected channel selection.
+Filter_injChannel7_FIL1|Channel7 as injected channel|injected channel selection||||injected channel selection.
+Filter_ACTIVATED_FIL1||regular channel selection||||to indicate to NVIC or DMA that the filter is active
+pData|P Data|||0|0|
+Length|Length|||0|4294967295|
+DataSource|Data Source|||||Values from digital filter or from channel watchdog filter.
+Channel|Channel|||||Analog watchdog channel selection.
+HighThreshold|High Threshold|||0x0|0x00FFFFFF|High threshold for the analog watchdog.
+LowThreshold|Low Threshold|||0x0|0x00FFFFFF|Low threshold for the analog watchdog.
+HighBreakSignal|High Break Signal|||||Break signal assigned to analog watchdog high threshold event.
+LowBreakSignal|Low Break Signal|||||Break signal assigned to analog watchdog low threshold event.
+ExtTrigger_inj|External Trigger Source|||||External trigger.
+Threshold|Threshold|||0|4294967295|
+BreakSignal|Break Signal|||0|4294967295|
+Timeout|Timeout|||0|4294967295|
+RegularContMode|Regular Cont Mode|||0|4294967295|Regular conversion continuous mode
+RegularTrigger|Regular Trigger|||0|4294967295|Trigger used for regular conversion
+InjectedTrigger|Injected Trigger|||0|4294967295|Trigger used for injected conversion
+ExtTriggerEdge|Ext Trigger Edge|||0|4294967295|Rising, falling or both edges selected
+InjectedScanMode|Injected Scan Mode|||0|1|Injected scanning mode
+InjectedChannelsNbr|Injected Channels Nbr|||0|4294967295|Number of channels in injected sequence
+InjConvRemaining|Inj Conv Remaining|||0|4294967295|Injected conversions remaining
+ErrorCode|Error Code|||0|4294967295|DFSDM filter error code
+Instance_DFSDM1_CH0||||||
+Instance_DFSDM1_CH1||||||
+Instance_DFSDM1_CH2||||||
+Instance_DFSDM1_CH3||||||
+Instance_DFSDM1_FIL0||||||
+Instance_DFSDM1_FIL1||||||
+Instance_DFSDM2_CH0||||||
+Instance_DFSDM2_CH1||||||
+Instance_DFSDM2_CH2||||||
+Instance_DFSDM2_CH3||||||
+Instance_DFSDM2_FIL0||||||
+Instance_DFSDM2_FIL1||||||
+
+[Values]
+# параметр|значение|подпись
+Selection|DFSDM_CHANNEL_OUTPUT_CLOCK_SYSTEM|Source for ouput clock is system clock
+Selection|DFSDM_CHANNEL_OUTPUT_CLOCK_AUDIO|Source for ouput clock is audio clock
+Multiplexer_CH0|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_CH0|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+Multiplexer_external_CH0|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_internal_CH0|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+DataPacking_CH0|DFSDM_CHANNEL_STANDARD_MODE|Standard data packing mode
+DataPacking_CH0|DFSDM_CHANNEL_INTERLEAVED_MODE|Interleaved data packing mode
+DataPacking_CH0|DFSDM_CHANNEL_DUAL_MODE|Dual data packing mode
+Pins_none_CH0|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_none_CH0|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Pins_same_CH0|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_next_CH0|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Type_spi_CH0|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+Type_spi_CH0|DFSDM_CHANNEL_SPI_FALLING|SPI with falling edge
+Type_manchester_CH0|DFSDM_CHANNEL_MANCHESTER_RISING|Manchester with rising edge
+Type_manchester_CH0|DFSDM_CHANNEL_MANCHESTER_FALLING|Manchester with falling edge
+Type_none_CH0|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+SpiClock_none_CH0|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_external_CH0|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_internal_CH0|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL|Internal SPI clock
+SpiClock_internal_CH0|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_FALLING|Internal SPI clock divided by 2, falling edge
+SpiClock_internal_CH0|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_RISING|Internal SPI clock divided by 2, rising edge
+FilterOrder_CH0|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+FilterOrder_CH0|DFSDM_CHANNEL_SINC1_ORDER|Sinc 1 filter type
+FilterOrder_CH0|DFSDM_CHANNEL_SINC2_ORDER|Sinc 2 filter type
+FilterOrder_CH0|DFSDM_CHANNEL_SINC3_ORDER|Sinc 3 filter type
+FilterOrder_none_CH0|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+Multiplexer_CH1|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_CH1|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+Multiplexer_external_CH1|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_internal_CH1|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+DataPacking_CH1|DFSDM_CHANNEL_STANDARD_MODE|Standard data packing mode
+DataPacking_CH1|DFSDM_CHANNEL_INTERLEAVED_MODE|Interleaved data packing mode
+Pins_none_CH1|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_none_CH1|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Pins_same_CH1|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_next_CH1|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Type_spi_CH1|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+Type_spi_CH1|DFSDM_CHANNEL_SPI_FALLING|SPI with falling edge
+Type_manchester_CH1|DFSDM_CHANNEL_MANCHESTER_RISING|Manchester with rising edge
+Type_manchester_CH1|DFSDM_CHANNEL_MANCHESTER_FALLING|Manchester with falling edge
+Type_none_CH1|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+SpiClock_none_CH1|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_external_CH1|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_internal_CH1|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL|Internal SPI clock
+SpiClock_internal_CH1|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_FALLING|Internal SPI clock divided by 2, falling edge
+SpiClock_internal_CH1|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_RISING|Internal SPI clock divided by 2, rising edge
+FilterOrder_CH1|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+FilterOrder_CH1|DFSDM_CHANNEL_SINC1_ORDER|Sinc 1 filter type
+FilterOrder_CH1|DFSDM_CHANNEL_SINC2_ORDER|Sinc 2 filter type
+FilterOrder_CH1|DFSDM_CHANNEL_SINC3_ORDER|Sinc 3 filter type
+FilterOrder_none_CH1|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+Multiplexer_CH2|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_CH2|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+Multiplexer_external_CH2|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_internal_CH2|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+DataPacking_CH2|DFSDM_CHANNEL_STANDARD_MODE|Standard data packing mode
+DataPacking_CH2|DFSDM_CHANNEL_INTERLEAVED_MODE|Interleaved data packing mode
+DataPacking_CH2|DFSDM_CHANNEL_DUAL_MODE|Dual data packing mode
+Pins_none_CH2|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_none_CH2|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Pins_same_CH2|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_next_CH2|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Type_spi_CH2|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+Type_spi_CH2|DFSDM_CHANNEL_SPI_FALLING|SPI with falling edge
+Type_manchester_CH2|DFSDM_CHANNEL_MANCHESTER_RISING|Manchester with rising edge
+Type_manchester_CH2|DFSDM_CHANNEL_MANCHESTER_FALLING|Manchester with falling edge
+Type_none_CH2|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+SpiClock_none_CH2|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_external_CH2|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_internal_CH2|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL|Internal SPI clock
+SpiClock_internal_CH2|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_FALLING|Internal SPI clock divided by 2, falling edge
+SpiClock_internal_CH2|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_RISING|Internal SPI clock divided by 2, rising edge
+FilterOrder_CH2|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+FilterOrder_CH2|DFSDM_CHANNEL_SINC1_ORDER|Sinc 1 filter type
+FilterOrder_CH2|DFSDM_CHANNEL_SINC2_ORDER|Sinc 2 filter type
+FilterOrder_CH2|DFSDM_CHANNEL_SINC3_ORDER|Sinc 3 filter type
+FilterOrder_none_CH2|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+Multiplexer_CH3|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_CH3|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+Multiplexer_external_CH3|DFSDM_CHANNEL_EXTERNAL_INPUTS|Data are taken from external inputs
+Multiplexer_internal_CH3|DFSDM_CHANNEL_INTERNAL_REGISTER|Data are taken from internal register
+DataPacking_CH3|DFSDM_CHANNEL_STANDARD_MODE|Standard data packing mode
+DataPacking_CH3|DFSDM_CHANNEL_INTERLEAVED_MODE|Interleaved data packing mode
+Pins_none_CH3|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_none_CH3|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Pins_same_CH3|DFSDM_CHANNEL_SAME_CHANNEL_PINS|Input from pins on same channel
+Pins_next_CH3|DFSDM_CHANNEL_FOLLOWING_CHANNEL_PINS|Input from pins on following channel
+Type_spi_CH3|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+Type_spi_CH3|DFSDM_CHANNEL_SPI_FALLING|SPI with falling edge
+Type_manchester_CH3|DFSDM_CHANNEL_MANCHESTER_RISING|Manchester with rising edge
+Type_manchester_CH3|DFSDM_CHANNEL_MANCHESTER_FALLING|Manchester with falling edge
+Type_none_CH3|DFSDM_CHANNEL_SPI_RISING|SPI with rising edge
+SpiClock_none_CH3|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_external_CH3|DFSDM_CHANNEL_SPI_CLOCK_EXTERNAL|External SPI clock
+SpiClock_internal_CH3|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL|Internal SPI clock
+SpiClock_internal_CH3|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_FALLING|Internal SPI clock divided by 2, falling edge
+SpiClock_internal_CH3|DFSDM_CHANNEL_SPI_CLOCK_INTERNAL_DIV2_RISING|Internal SPI clock divided by 2, rising edge
+FilterOrder_CH3|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+FilterOrder_CH3|DFSDM_CHANNEL_SINC1_ORDER|Sinc 1 filter type
+FilterOrder_CH3|DFSDM_CHANNEL_SINC2_ORDER|Sinc 2 filter type
+FilterOrder_CH3|DFSDM_CHANNEL_SINC3_ORDER|Sinc 3 filter type
+FilterOrder_none_CH3|DFSDM_CHANNEL_FASTSINC_ORDER|FastSinc filter type
+Trigger_reg_FIL0|DFSDM_FILTER_SW_TRIGGER|Software trigger
+Trigger_inj_FIL0|DFSDM_FILTER_SW_TRIGGER|Software trigger
+Trigger_inj_FIL0|DFSDM_FILTER_EXT_TRIGGER|External trigger
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_TIM1_TRGO|TIM1_ TRGO
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_TIM3_TRGO|TIM3_TRGO
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_TIM8_TRGO|TIM8_TRGO
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_TIM10_OC1|TIM10_OC1
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_TIM4_TRGO|TIM4_TRGO
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_TIM6_TRGO|TIM6_TRGO
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_EXTI11|EXTI11
+ExtTrigger_inj_FIL0|DFSDM_FILTER_EXT_TRIG_EXTI15|EXTI15
+ExtTriggerEdge_inj_FIL0|DFSDM_FILTER_EXT_TRIG_RISING_EDGE|External rising edge
+ExtTriggerEdge_inj_FIL0|DFSDM_FILTER_EXT_TRIG_FALLING_EDGE|External falling edge
+ExtTriggerEdge_inj_FIL0|DFSDM_FILTER_EXT_TRIG_BOTH_EDGES|External rising and falling edges
+SincOrder_FIL0|DFSDM_FILTER_FASTSINC_ORDER|FastSinc filter type
+SincOrder_FIL0|DFSDM_FILTER_SINC1_ORDER|Sinc 1 filter type
+SincOrder_FIL0|DFSDM_FILTER_SINC2_ORDER|Sinc 2 filter type
+SincOrder_FIL0|DFSDM_FILTER_SINC3_ORDER|Sinc 3 filter type
+SincOrder_FIL0|DFSDM_FILTER_SINC4_ORDER|Sinc 4 filter type
+SincOrder_FIL0|DFSDM_FILTER_SINC5_ORDER|Sinc 5 filter type
+Filter_regChannel_FIL0|__NULL|- None -
+Filter_regChannel_FIL0|DFSDM_CHANNEL_0|Channel 0
+Filter_regChannel_FIL0|DFSDM_CHANNEL_1|Channel 1
+Filter_regChannel_FIL0|DFSDM_CHANNEL_2|Channel 2
+Filter_regChannel_FIL0|DFSDM_CHANNEL_3|Channel 3
+Filter_regContinuousMode_FIL0|DFSDM_CONTINUOUS_CONV_OFF|One Shot Mode
+Filter_regContinuousMode_FIL0|DFSDM_CONTINUOUS_CONV_ON|Continuous Mode
+Filter_injChannel0_FIL0|__NULL|Disable
+Filter_injChannel0_FIL0|DFSDM_CHANNEL_0|Enable
+Filter_injChannel1_FIL0|__NULL|Disable
+Filter_injChannel1_FIL0|DFSDM_CHANNEL_1|Enable
+Filter_injChannel2_FIL0|__NULL|Disable
+Filter_injChannel2_FIL0|DFSDM_CHANNEL_2|Enable
+Filter_injChannel3_FIL0|__NULL|Disable
+Filter_injChannel3_FIL0|DFSDM_CHANNEL_3|Enable
+Filter_injChannel4_FIL0|__NULL|Disable
+Filter_injChannel4_FIL0|DFSDM_CHANNEL_4|Enable
+Filter_injChannel5_FIL0|__NULL|Disable
+Filter_injChannel5_FIL0|DFSDM_CHANNEL_5|Enable
+Filter_injChannel6_FIL0|__NULL|Disable
+Filter_injChannel6_FIL0|DFSDM_CHANNEL_6|Enable
+Filter_injChannel7_FIL0|__NULL|Disable
+Filter_injChannel7_FIL0|DFSDM_CHANNEL_7|Enable
+Filter_ACTIVATED_FIL0|Filter_FIL0_DISABLE|Filter not activated
+Filter_ACTIVATED_FIL0|Filter_FIL0_ENABLE|Filter activated
+Trigger_reg_FIL1|DFSDM_FILTER_SW_TRIGGER|Software trigger
+Trigger_reg_FIL1|DFSDM_FILTER_SYNC_TRIGGER|Synchronous with DFSDM0
+Trigger_inj_FIL1|DFSDM_FILTER_SW_TRIGGER|Software trigger
+Trigger_inj_FIL1|DFSDM_FILTER_SYNC_TRIGGER|Synchronous with DFSDM0
+Trigger_inj_FIL1|DFSDM_FILTER_EXT_TRIGGER|External trigger
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_TIM1_TRGO|TIM1_TRGO
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_TIM3_TRGO|TIM3_TRGO
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_TIM8_TRGO|TIM8_TRGO
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_TIM10_OC1|TIM10_OC1
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_TIM4_TRGO|TIM4_TRGO
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_TIM6_TRGO|TIM6_TRGO
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_EXTI11|EXTI11
+ExtTrigger_inj_FIL1|DFSDM_FILTER_EXT_TRIG_EXTI15|EXTI15
+ExtTriggerEdge_inj_FIL1|DFSDM_FILTER_EXT_TRIG_RISING_EDGE|External rising edge
+ExtTriggerEdge_inj_FIL1|DFSDM_FILTER_EXT_TRIG_FALLING_EDGE|External falling edge
+ExtTriggerEdge_inj_FIL1|DFSDM_FILTER_EXT_TRIG_BOTH_EDGES|External rising and falling edges
+SincOrder_FIL1|DFSDM_FILTER_FASTSINC_ORDER|FastSinc filter type
+SincOrder_FIL1|DFSDM_FILTER_SINC1_ORDER|Sinc 1 filter type
+SincOrder_FIL1|DFSDM_FILTER_SINC2_ORDER|Sinc 2 filter type
+SincOrder_FIL1|DFSDM_FILTER_SINC3_ORDER|Sinc 3 filter type
+SincOrder_FIL1|DFSDM_FILTER_SINC4_ORDER|Sinc 4 filter type
+SincOrder_FIL1|DFSDM_FILTER_SINC5_ORDER|Sinc 5 filter type
+Filter_regChannel_FIL1|__NULL|- None -
+Filter_regChannel_FIL1|DFSDM_CHANNEL_0|Channel 0
+Filter_regChannel_FIL1|DFSDM_CHANNEL_1|Channel 1
+Filter_regChannel_FIL1|DFSDM_CHANNEL_2|Channel 2
+Filter_regChannel_FIL1|DFSDM_CHANNEL_3|Channel 3
+Filter_regContinuousMode_FIL1|DFSDM_CONTINUOUS_CONV_OFF|One Shot Mode
+Filter_regContinuousMode_FIL1|DFSDM_CONTINUOUS_CONV_ON|Continuous Mode
+Filter_injChannel0_FIL1|__NULL|Disable
+Filter_injChannel0_FIL1|DFSDM_CHANNEL_0|Enable
+Filter_injChannel1_FIL1|__NULL|Disable
+Filter_injChannel1_FIL1|DFSDM_CHANNEL_1|Enable
+Filter_injChannel2_FIL1|__NULL|Disable
+Filter_injChannel2_FIL1|DFSDM_CHANNEL_2|Enable
+Filter_injChannel3_FIL1|__NULL|Disable
+Filter_injChannel3_FIL1|DFSDM_CHANNEL_3|Enable
+Filter_injChannel4_FIL1|__NULL|Disable
+Filter_injChannel4_FIL1|DFSDM_CHANNEL_4|Enable
+Filter_injChannel5_FIL1|__NULL|Disable
+Filter_injChannel5_FIL1|DFSDM_CHANNEL_5|Enable
+Filter_injChannel6_FIL1|__NULL|Disable
+Filter_injChannel6_FIL1|DFSDM_CHANNEL_6|Enable
+Filter_injChannel7_FIL1|__NULL|Disable
+Filter_injChannel7_FIL1|DFSDM_CHANNEL_7|Enable
+Filter_ACTIVATED_FIL1|Filter_FIL1_DISABLE|Filter not activated
+Filter_ACTIVATED_FIL1|Filter_FIL1_ENABLE|Filter activated
+DataSource|DFSDM_FILTER_AWD_FILTER_DATA|From digital filter
+DataSource|DFSDM_FILTER_AWD_CHANNEL_DATA|From analog watchdog channel
+Channel|DFSDM_CHANNEL_0|Channel 0
+Channel|DFSDM_CHANNEL_1|Channel 1
+Channel|DFSDM_CHANNEL_2|Channel 2
+Channel|DFSDM_CHANNEL_3|Channel 3
+HighBreakSignal|DFSDM_NO_BREAK_SIGNAL|No break signal
+HighBreakSignal|DFSDM_BREAK_SIGNAL_0|Break signal 0
+HighBreakSignal|DFSDM_BREAK_SIGNAL_1|Break signal 1
+HighBreakSignal|DFSDM_BREAK_SIGNAL_2|Break signal 2
+HighBreakSignal|DFSDM_BREAK_SIGNAL_3|Break signal 3
+LowBreakSignal|DFSDM_NO_BREAK_SIGNAL|No break signal
+LowBreakSignal|DFSDM_BREAK_SIGNAL_0|Break signal 0
+LowBreakSignal|DFSDM_BREAK_SIGNAL_1|Break signal 1
+LowBreakSignal|DFSDM_BREAK_SIGNAL_2|Break signal 2
+LowBreakSignal|DFSDM_BREAK_SIGNAL_3|Break signal 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM1_TRGO|TIM1_ TRGO For DFSDM 0, 1, 2 and 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM1_TRGO2|TIM1_TRGO2 For DFSDM 0, 1, 2 and 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM8_TRGO|TIM8_TRGO For DFSDM 0, 1, 2 and 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM8_TRGO2|TIM8_TRGO2 For DFSDM 0, 1 and 2
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM3_TRGO|TIM3_TRGO For DFSDM 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM4_TRGO|TIM4_TRGO For DFSDM 0, 1 and 2
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM16_OC1|TIM16_OC1 For DFSDM 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM6_TRGO|TIM6_TRGO For DFSDM 0 and 1
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_TIM7_TRGO|TIM7_TRGO For DFSDM 2 and 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_EXTI11|EXTI11 For DFSDM 0, 1, 2 and 3
+ExtTrigger_inj|DFSDM_FILTER_EXT_TRIG_EXTI15|EXTI15 For DFSDM 0, 1, 2 and 3
+Instance_DFSDM1_CH0|DFSDM1_Channel0|
+Instance_DFSDM1_CH1|DFSDM1_Channel1|
+Instance_DFSDM1_CH2|DFSDM1_Channel2|
+Instance_DFSDM1_CH3|DFSDM1_Channel3|
+Instance_DFSDM1_FIL0|DFSDM1_Filter0|
+Instance_DFSDM1_FIL1|DFSDM1_Filter1|
+Instance_DFSDM2_CH0|DFSDM2_Channel0|
+Instance_DFSDM2_CH1|DFSDM2_Channel1|
+Instance_DFSDM2_CH2|DFSDM2_Channel2|
+Instance_DFSDM2_CH3|DFSDM2_Channel3|
+Instance_DFSDM2_FIL0|DFSDM_Filter0|
+Instance_DFSDM2_FIL1|DFSDM2_Filter1|

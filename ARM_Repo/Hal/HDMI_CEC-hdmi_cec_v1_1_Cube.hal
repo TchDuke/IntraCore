@@ -1,0 +1,35 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=HDMI_CEC
+Version=hdmi_cec_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+TimingErrorFree|Bit timing error mode|Error handling||||
+PeriodErrorFree|Bit period error mode|Error handling||||
+OwnAddress|CEC device address|Address parameters||||
+RxBuffer|Received data buffer name|Address parameters||||
+
+[Values]
+# параметр|значение|подпись
+TimingErrorFree|CEC_BIT_TIMING_ERROR_MODE_STANDARD|Bit timing error standard mode
+TimingErrorFree|CEC_BIT_TIMING_ERROR_MODE_ERRORFREE|Bit timing error free mode
+PeriodErrorFree|CEC_BIT_PERIOD_ERROR_MODE_STANDARD|Bit period error standard mode
+PeriodErrorFree|CEC_BIT_PERIOD_ERROR_MODE_FLEXIBLE|Bit period error flexible mode
+OwnAddress|CEC_OWN_ADDRESS_0|Logical address 0
+OwnAddress|CEC_OWN_ADDRESS_1|Logical address 1
+OwnAddress|CEC_OWN_ADDRESS_2|Logical address 2
+OwnAddress|CEC_OWN_ADDRESS_3|Logical address 3
+OwnAddress|CEC_OWN_ADDRESS_4|Logical address 4
+OwnAddress|CEC_OWN_ADDRESS_5|Logical address 5
+OwnAddress|CEC_OWN_ADDRESS_6|Logical address 6
+OwnAddress|CEC_OWN_ADDRESS_7|Logical address 7
+OwnAddress|CEC_OWN_ADDRESS_8|Logical address 8
+OwnAddress|CEC_OWN_ADDRESS_9|Logical address 9
+OwnAddress|CEC_OWN_ADDRESS_10|Logical address 10
+OwnAddress|CEC_OWN_ADDRESS_11|Logical address 11
+OwnAddress|CEC_OWN_ADDRESS_12|Logical address 12
+OwnAddress|CEC_OWN_ADDRESS_13|Logical address 13
+OwnAddress|CEC_OWN_ADDRESS_14|Logical address 14
+OwnAddress|CEC_OWN_ADDRESS_15|Logical address 15

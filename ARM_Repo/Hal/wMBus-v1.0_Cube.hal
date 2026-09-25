@@ -1,0 +1,35 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=wMBus
+Version=v1.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ST_WMB_TYPE|ST_WMB_TYPE|Application configuration||||<font color="blue"><b>wMBus device type:</b></font><> <font color="blue"><b>Meter:</b></font><> a remote device which measures and records consumption data, and periodically transmits them using wM-Bus frames to collector devices <font color="blue"><b>Concentrator:</b></font><> device collecting data from meters (like readout devices, stationary receivers, data collectors, multi-utility concentrators or system network components)
+ST_WMB_MODE|ST_WMB_MODE|Application configuration||||<font color="blue"><b>wMBus modes:</b></font><> <font color="blue"><b>T1: </b></font><>Frequent transmit unidirectional. Send data every few seconds. Configurable interval. 100 kbps. <font color="blue"><b>T2: </b></font><>Frequent transmit bidirectional. Send data every few seconds. Configurable interval. 100 kbps. <font color="blue"><b>C1: </b></font><>Compact unidirectional. Unidirectional communication using NRZ coding. Similar to T1 but higher data-rate, 50 kbps. Stationary operation. <font color="blue"><b>C2: </b></font><>Compact bidirectional. Unidirectional communication using NRZ coding. Similar to T1 but higher data-rate, 50 kbps. Stationary operation. <font color="blue"><b>S1: </b></font><>Stationary unidirectional. Send data a few times per day. Optimized for battery operation and stationary operation. 32.7 kbps. <font color="blue"><b>S2: </b></font><>Stationary bidirectional. Send data a few times per day. Optimized for battery operation and stationary operation. 32.7 kbps.
+ST_ACTIVE_MODE|ST_ACTIVE_MODE|Application configuration||||
+ST_WMB_TX_Trigger|ST_WMB_TX_Trigger|Application configuration||||
+ST_WMB_APP_TYPE|ST_WMB_App_Type|Application configuration||||
+ST_WMB_FORMAT|ST_WMB_FORMAT|Application configuration||||<font color="blue"><b>Frame formats</b></font><> <font color="blue"><b>2 types: </b></font><>A and B The standard EN 13757-4:2013 specifies different packet formats
+CFG_LPM_SUPPORTED|CFG_LPM_SUPPORTED|Application configuration - Low Power||||Low Power mode
+
+[Values]
+# параметр|значение|подпись
+ST_WMB_MODE|ST_WMB_T1|ST_WMB_T1 (Frequent transmit unidirectional)
+ST_WMB_MODE|ST_WMB_T2|ST_WMB_T2 (Frequent transmit bidirectional)
+ST_WMB_MODE|ST_WMB_C1|ST_WMB_C1 (Compact unidirectional)
+ST_WMB_MODE|ST_WMB_C2|ST_WMB_C2 (Compact bidirectional)
+ST_WMB_MODE|ST_WMB_S1|ST_WMB_S1 (Stationary unidirectional)
+ST_WMB_MODE|ST_WMB_S2|ST_WMB_S2 (Stationary bidirectional)
+ST_ACTIVE_MODE|T_MODE|T_Mode active
+ST_ACTIVE_MODE|C_MODE|C_Mode active
+ST_ACTIVE_MODE|S_MODE|S_Mode active
+ST_WMB_APP_TYPE|Phy_Meter|Phy_Meter
+ST_WMB_APP_TYPE|Phy_Meter_Button|Phy_Meter_Button
+ST_WMB_APP_TYPE|Phy_Meter_RadioTimer|Phy_Meter_RadioTimer
+ST_WMB_APP_TYPE|Phy_Concentrator|Phy_Concentrator
+ST_WMB_APP_TYPE|DataLink_Meter|DataLink_Meter
+ST_WMB_APP_TYPE|DataLink_Concentrator|DataLink_Concentrator
+ST_WMB_FORMAT|WMBUS_FORMAT_A|ST_WMB_FORMAT_A (frame format A)
+ST_WMB_FORMAT|WMBUS_FORMAT_B|ST_WMB_FORMAT_B (frame format B)

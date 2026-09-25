@@ -1,0 +1,53 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMP
+Version=TSMC90_WLxx_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InvertingInput|Inverting Input|Pinout Parameters||||
+NonInvertingInput|Non Inverting Input|Pinout Parameters||||
+WindowMode|Window Mode|Pinout Parameters||||
+Mode|Speed / Power Mode|Basic Parameters||||
+TriggerMode|Trigger Mode|Basic Parameters||||
+Hysteresis|Hysteresis Level|Basic Parameters||||
+BlankingSrce|Blanking Source|Output Configuration||||
+OutputPol|Output Polarity|Output Configuration||||
+
+[Values]
+# параметр|значение|подпись
+InvertingInput|COMP_INPUT_MINUS_IO1|I/O1 (PB3/PB3)
+InvertingInput|COMP_INPUT_MINUS_IO2|I/O2 (PA10/PB2)
+InvertingInput|COMP_INPUT_MINUS_IO3|I/O3 (PA11/PA10)
+InvertingInput|COMP_INPUT_MINUS_IO4|I/O4 (PA15/PA11)
+InvertingInput|COMP_INPUT_MINUS_DAC_CH1|DAC Channel1
+InvertingInput|COMP_INPUT_MINUS_DAC_CH2|DAC Channel2
+InvertingInput|COMP_INPUT_MINUS_1_4VREFINT|1/4 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_1_2VREFINT|1/2 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_3_4VREFINT|3/4 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_VREFINT|VREFINT connected to comparator1 inverting input
+NonInvertingInput|COMP_INPUT_PLUS_IO1|
+NonInvertingInput|COMP_INPUT_PLUS_IO2|
+NonInvertingInput|COMP_INPUT_PLUS_IO3|
+WindowMode|COMP_WINDOWMODE_DISABLE|Window mode disabled (Plus input of comparator 1 connected to PC5/PB2)
+WindowMode|COMP_WINDOWMODE_COMP1_INPUT_PLUS_COMMON|Window mode enabled: Plus input of comparator 1 shorted with Plus input of comparator 2
+Mode|COMP_POWERMODE_HIGHSPEED|High Speed
+Mode|COMP_POWERMODE_MEDIUMSPEED|Medium Speed
+Mode|COMP_POWERMODE_ULTRALOWPOWER|Ultra-low power mode
+TriggerMode|COMP_TRIGGERMODE_NONE|None
+TriggerMode|COMP_TRIGGERMODE_IT_RISING|Rising Edge Interrupt
+TriggerMode|COMP_TRIGGERMODE_IT_FALLING|Falling Edge Interrupt
+TriggerMode|COMP_TRIGGERMODE_IT_RISING_FALLING|Rising/Falling Edge Interrupt
+TriggerMode|COMP_TRIGGERMODE_EVENT_RISING|Rising Edge Event
+TriggerMode|COMP_TRIGGERMODE_EVENT_FALLING|Falling Edge Event
+TriggerMode|COMP_TRIGGERMODE_EVENT_RISING_FALLING|Rising/Falling Edge Event
+Hysteresis|COMP_HYSTERESIS_NONE|None
+Hysteresis|COMP_HYSTERESIS_LOW|Low
+Hysteresis|COMP_HYSTERESIS_MEDIUM|Medium
+Hysteresis|COMP_HYSTERESIS_HIGH|High
+BlankingSrce|COMP_BLANKINGSRC_NONE|None
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM2_OC3|Timer 2 Output Compare 3
+OutputPol|COMP_OUTPUTPOL_NONINVERTED|COMP output on GPIO isn't inverted
+OutputPol|COMP_OUTPUTPOL_INVERTED|COMP output on GPIO is inverted

@@ -1,0 +1,33 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=EXTMEM_LOADER
+Version=v1.0.0_N6_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+RefParam_ExtMemLoader_Board|Select memory loader for your board|Board selection||||
+RefParam_ELOADER_Board|Select memory loader for your board|Board selection||||
+RefParam_ELOADER_Keil|k3|Board selection||||
+RefParam_ELOADER_memory|select the memory|Configuration||||The memeory targeted by the loader. The Memories are defined in the EXTMEM_MANAGER middleware.
+RefParam_ELOADER_Target|select the target IDE\Tool|Configuration||||Select the target IDE \ Tool for the ExtMemLoader: <font color="blue"><b>Selected Toolchain:</b></font> the ExtMemLoader project will generate an external memory loader for the target toolchain selected in the Project Manager Tab. <font color="blue"><b>STM32CubeProgrammer:</b></font> the ExtMemLoader project will generate an external memory loader for STM32CubeProgrammer Tool. <font color="blue"><b>STM32CubeProgrammer_OpenBL:</b></font> the ExtMemLoader project will generate an external memory OpenBL loader for STM32CubeProgrammer Tool. <font color="orange"><b>Warning:</b> Changing this parameter will lead to linker file settings update in the ExtMemLoader project settings.</font> <font color="orange"><> For MDK-ARM, the debug options "Run to main()" the "Initialization file" will be updated in the ExtMemLoader project settings.</font>
+RefParam_DEBUG_enable|Enable debug|Configuration||||<b></b> Add main() entry point for debug purpose <font color="orange"><b>Warning:</b> Changing this parameter will lead to linker file update. Any change in the linker file will be lost.</font>
+RefParam_TRACE_enable|Enable use of UART/USART for trace|Configuration||||<b>Modes:</b> Asynchronous <font color="blue"><b>EXTMEM - Platform Settings panel:</b> Platform proposals</font>    • Ensure that chosen UART/USART is selected in Found Solutions
+RefParam_Loader_Name|Loader name|Target memory parameters||||External memory Loader name
+RefParam_ELOADER_ADDRESS|Start address|Target memory parameters||0|0xFFFFFFFF|External memory start address
+RefParam_ELOADER_END_ADDRESS|End address|Target memory parameters||0|0xFFFFFFFF|External memory end address
+RefParam_ELOADER_SIZE|Size|Target memory parameters|Bytes|0|0xFFFFFFFF|External memory maximum size
+RefParam_SECTORS_NBR|Number of sectors|Target memory parameters||1|0xFFFFFFFF|External memory sectors' number
+RefParam_SECTORS_SIZE|Sector size|Target memory parameters|Bytes|1|0xFFFFFFFF|External memory sectors' size
+RefParam_PAGE_SIZE|Page size|Target memory parameters|Bytes|1|0xFFFFFFFF|External memory page size
+RefParam_MEM_SIZE|Memory size|Target memory parameters|Bytes|||External memory size (sectors' size * sectors' number)
+RefParam_MEM_SIZE_Display|Memory size|Target memory parameters|Bytes|||External memory size (sectors' size * sectors' number)
+RefParam_INIT_VAL|Initial value|Target memory parameters|Bytes|0|0xFFFFFFFF|Initial value (Erased memory)
+RefParam_PAGE_TIMEOUT|Program Page Timeout|Target memory parameters|ms|||Program Page Timeout in milliseconds
+RefParam_SECTOR_TIMEOUT|Erase Sector Timeout|Target memory parameters|ms|||Erase Sector Timeout in milliseconds
+RefParam_ELOADER_ADDRESS_HEX|Memory start address hex|Target memory parameters|Bytes|||External memory size + start address
+RefParam_MEM_END_ADDRESS|Memory end address|Target memory parameters|Bytes|||External memory size + start address
+
+[Values]
+# параметр|значение|подпись
+RefParam_ELOADER_Target|PROGRAMMER_OpenBL|STM32CubeProgrammer_OpenBL

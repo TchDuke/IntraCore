@@ -1,0 +1,67 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RTC
+Version=rtc1_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+AutoPrediv|Auto Predivider Calculation|General||||
+AsynchPrediv|Asynchronous Predivider value|General||0|1048575|
+OutPut|Output|General||||
+Format|Data Format|Calendar Time||||
+Hours|Hours|Calendar Time||0|23|
+HoursARG|Hours|Calendar Time||||
+Minutes|Minutes|Calendar Time||0|59|
+MinutesARG|Minutes|Calendar Time||||
+Seconds|Seconds|Calendar Time||0|59|
+SecondsARG|Seconds|Calendar Time||||
+WeekDay|Week Day|Calendar Date||||
+Month|Month|Calendar Date||||
+Date|Date|Calendar Date||1|31|
+DateARG|Date|Calendar Date||||
+Year|Year|Calendar Date||0|99|
+YearARG|Year|Calendar Date||||
+Hours_A|Hours|Alarm A||0|23|
+HoursARG_A|Hours|Alarm A||||
+Minutes_A|Minutes|Alarm A||0|59|
+MinutesARG_A|Minutes|Alarm A||||
+Seconds_A|Seconds|Alarm A||0|59|
+SecondsARG_A|Seconds|Alarm A||||
+Alarm_A|Alarm|Alarm A||||
+Tamper|Tamper|Tamper||||
+Trigger|Tamper Trigger|Tamper||||
+
+[Values]
+# параметр|значение|подпись
+AutoPrediv|RTC_AUTO_1_SECOND|Enabled
+AsynchPrediv|RTC_AUTO_1_SECOND|Automatic Predivider Calculation Enabled
+OutPut|RTC_OUTPUTSOURCE_NONE|No output on the TAMPER pin
+OutPut|RTC_OUTPUTSOURCE_ALARM|Alarm pulse signal on the TAMPER pin
+OutPut|RTC_OUTPUTSOURCE_CALIBCLOCK|RTC clock with a frequency divided by 64 on the TAMPER pin
+OutPut|RTC_OUTPUTSOURCE_SECOND|Second pulse signal on the TAMPER pin
+Format|RTC_FORMAT_BIN|Binary data format
+Format|RTC_FORMAT_BCD|BCD data format
+WeekDay|RTC_WEEKDAY_MONDAY|Monday
+WeekDay|RTC_WEEKDAY_TUESDAY|Tuesday
+WeekDay|RTC_WEEKDAY_WEDNESDAY|Wednesday
+WeekDay|RTC_WEEKDAY_THURSDAY|Thursday
+WeekDay|RTC_WEEKDAY_FRIDAY|Friday
+WeekDay|RTC_WEEKDAY_SATURDAY|Saturday
+WeekDay|RTC_WEEKDAY_SUNDAY|Sunday
+Month|RTC_MONTH_JANUARY|January
+Month|RTC_MONTH_FEBRUARY|February
+Month|RTC_MONTH_MARCH|March
+Month|RTC_MONTH_APRIL|April
+Month|RTC_MONTH_MAY|May
+Month|RTC_MONTH_JUNE|June
+Month|RTC_MONTH_JULY|July
+Month|RTC_MONTH_AUGUST|August
+Month|RTC_MONTH_SEPTEMBER|September
+Month|RTC_MONTH_OCTOBER|October
+Month|RTC_MONTH_NOVEMBER|November
+Month|RTC_MONTH_DECEMBER|December
+Alarm_A|RTC_ALARM_A|ALARM A
+Tamper|RTC_TAMPER_1|Tamper
+Trigger|RTC_TAMPERTRIGGER_LOWLEVEL|Rising Edge
+Trigger|RTC_TAMPERTRIGGER_HIGHLEVEL|Falling Edge

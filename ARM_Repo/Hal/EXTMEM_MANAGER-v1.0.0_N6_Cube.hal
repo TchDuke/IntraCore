@@ -1,0 +1,133 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=EXTMEM_MANAGER
+Version=v1.0.0_N6_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+RefParam_EXTMEM_Number_of_Memory|Number of memories|Configuration||||
+RefParam_EXTMEM_SAL_SD|enable interface SD|Interface selection||||
+RefParam_EXTMEM_SAL_SD_AUTO|enable interface SD|Interface selection||||
+RefParam_EXTMEM_SDCARD_AUTO|enable interface SD|Interface selection||||
+RefParam_EXTMEM_SAL_XSPI|enable interface XSPI|Interface selection||||
+RefParam_EXTMEM_SAL_XSPI_AUTO|enable interface XSPI|Interface selection||||
+RefParam_EXTMEM_SFDP|enable NOR_SFDP support|Driver selection||||
+RefParam_EXTMEM_SFDP_AUTO|enable NOR_SFDP support|Driver selection||||
+RefParam_EXTMEM_PSRAM|enable PSRAM support|Driver selection||||
+RefParam_EXTMEM_PSRAM_AUTO|enable PSRAM support|Driver selection||||
+RefParam_EXTMEM_SDCARD|enable SDCARD support|Driver selection||||
+RefParam_EXTMEM_USER|enable USER support|Driver selection||||
+RefParam_EXTMEM_USER_AUTO|enable USER support|Driver selection||||
+RefParam_BOOT_enable|Select boot code generation|Boot||||Enable the selection of boot mode of the application
+RefParam_BOOT_selection|Selection of the boot system|Boot||||Select the boot mode of the application
+EXTMEM_LRUN_TZ_ENABLE_NS|NS enable trust zone|Boot||||Enable the NS Trust zone
+RefParam_XIP_memory|select the memory|XIP||||the memeory selection correspond to set a vector table at the mount adress of the memory
+RefParam_XIP_ApplicationOffset|Application offset|XIP||0x0|0xffffffff|<font color="red">If the default value of this parameter is updated, the secure application linker script must be manually updated accordingly</font>
+RefParam_XIP_ApplicationOffsetNS|Application offset NS|XIP||0x0|0xffffffff|<font color="red">If the default value of this parameter is updated, the secure application linker script must be manually updated accordingly</font>
+RefParam_HeaderOffset|Header size|Boot||0x0|0xffffffff|<font color="red">If the default value of this parameter is updated, the secure application linker script must be manually updated accordingly</font>
+RefParam_LRUN_SRC_memory|select the source memory|LRUN source||||selection of the source memory, this memory contains the binaty to execute
+RefParam_LRUN_SRC_offset|source address offset|LRUN source||0x0|0xffffffff|selection of the source address offset
+RefParam_LRUN_SRC_size|source code size|LRUN source||0x0|0xffffffff|select the source binary size
+EXTMEM_LRUN_SOURCE_ADDRESS_NS|NS source address offset|LRUN source||0x0|0xffffffff|selection of the NS source address
+RefParam_LRUN_DEST_memory|selection of the memory|LRUN destination||||selection of the memory, this memory contains the binaty to execute
+RefParam_LRUN_DEST_offset|destination address|LRUN destination||0x0|0xffffffff|selection of the destination offset address, in case of internal memory the specified address corresponds to memory address
+EXTMEM_LRUN_DESTINATION_ADDRESS_NS|NS destination address|LRUN destination||0x0|0xffffffff|selection of the NS destination address
+RefParam_MEMORY_1_Driver_Selection|Select the memory driver|Select driver||||selection of the driver type
+RefParam_MEMORY_1_Instance|Memory Instance|Configuration||||selection of the HW instance
+RefParam_MEMORY_1_ConfigType|Number of memory data lines|Configuration||||Number of data lines
+RefParam_MEMORY_1_Size|Memory Size|Memory Info||||Memory size expressed in bits
+RefParam_MEMORY_1_FreqMax|Memory Maximun Frequency|Memory Info|Mhz|||Maximum frequency at which memory is expected to operate
+RefParam_MEMORY_1_ReadReg|Read Register command|Memory Command||0x0|0xffffffff|Command used to read register
+RefParam_MEMORY_1_WriteReg|Write Register command|Memory Command||0x0|0xffffffff|Command used to write register
+RefParam_MEMORY_1_RegSize|Register Size|Memory Command||||Size of memory registers (expressed in bytes)
+RefParam_MEMORY_1_RegDummyCycle|Register Dummy Cycles|Memory Command||||Number of dummy cycles used on Read Register command
+RefParam_MEMORY_1_WriteCommand|Write Command|Memory Command||0x0|0xffffffff|Command used to write data
+RefParam_MEMORY_1_WriteDummyCycle|Write Dummy Cycles|Memory Command||||Number of dummy cycles used on Write command
+RefParam_MEMORY_1_ReadCommand|Read Command|Memory Command||0x0|0xffffffff|Command used to read data
+RefParam_MEMORY_1_WrapReadCommand|Wrap Read Command|Memory Command||0x0|0xffffffff|Command used to read data in Wrap mode
+RefParam_MEMORY_1_ReadDummyCycle|Read Dummy Cycles|Memory Command||||Number of dummy cycles used on Read command
+RefParam_MEMORY_1_NumberOfConfig|Number of Configuration Steps|Memory Configuration||0|3|Number of required configuration steps in memory registers
+RefParam_MEMORY_1_Config1_WriteMask|Write Mask|Configuration 1||0x00|0xff|Mask applied to the Write Value to select bits to be written into the memory register
+RefParam_MEMORY_1_Config1_WriteValue|Write Value|Configuration 1||0x00|0xff|Value to be written into the memory register after applying the Write Mask
+RefParam_MEMORY_1_Config1_RegAddress|Register Address|Configuration 1||0x00|0xff|Address of memory register where value is written
+RefParam_MEMORY_1_Config2_WriteMask|Write Mask|Configuration 2||0x00|0xff|Mask applied to the Write Value to select bits to be written into the memory register
+RefParam_MEMORY_1_Config2_WriteValue|Write Value|Configuration 2||0x00|0xff|Value to be written into the memory register after applying the Write Mask
+RefParam_MEMORY_1_Config2_RegAddress|Register Address|Configuration 2||0x00|0xff|Address of memory register where value is written
+RefParam_MEMORY_1_Config3_WriteMask|Write Mask|Configuration 3||0x00|0xff|Mask applied to the Write Value to select bits to be written into the memory register
+RefParam_MEMORY_1_Config3_WriteValue|Write Value|Configuration 3||0x00|0xff|Value to be written into the memory register after applying the Write Mask
+RefParam_MEMORY_1_Config3_RegAddress|Register Address|Configuration 3||0x00|0xff|Address of memory register where value is written
+RefParam_MEMORY_2_Driver_Selection|Select the memory driver|Select driver||||selection of the driver type
+RefParam_MEMORY_2_Instance|Memory Instance|Configuration||||selection of the HW instance
+RefParam_MEMORY_2_ConfigType|Number of memory data lines|Configuration||||Number of data lines
+RefParam_MEMORY_2_Size|Memory Size|Memory Info||||Memory size expressed in bits
+RefParam_MEMORY_2_FreqMax|Memory Maximun Frequency|Memory Info|Mhz|||Maximum frequency at which memory is expected to operate
+RefParam_MEMORY_2_ReadReg|Read Register command|Memory Command||0x00000000|0xffffffff|Command used to read register
+RefParam_MEMORY_2_WriteReg|Write Register command|Memory Command||0x00000000|0xffffffff|Command used to write register
+RefParam_MEMORY_2_RegSize|Register Size|Memory Command||||Size of memory registers (expressed in bytes)
+RefParam_MEMORY_2_RegDummyCycle|Register Dummy Cycles|Memory Command||||Number of dummy cycles used on Read Register command
+RefParam_MEMORY_2_WriteCommand|Write Command|Memory Command||0x00000000|0xffffffff|Command used to write data
+RefParam_MEMORY_2_WriteDummyCycle|Write Dummy Cycles|Memory Command||||Number of dummy cycles used on Write command
+RefParam_MEMORY_2_ReadCommand|Read Command|Memory Command||0x00000000|0xffffffff|Command used to read data
+RefParam_MEMORY_2_WrapReadCommand|Wrap Read Command|Memory Command||0x00000000|0xffffffff|Command used to read data in Wrap mode
+RefParam_MEMORY_2_ReadDummyCycle|Read Dummy Cycles|Memory Command||||Number of dummy cycles used on Read command
+RefParam_MEMORY_2_NumberOfConfig|Number of Configuration Steps|Memory Configuration||0|3|Number of required configuration steps in memory registers
+RefParam_MEMORY_2_Config1_WriteMask|Write Mask|Configuration 1||0x00|0xff|Mask applied to the Write Value to select bits to be written into the memory register
+RefParam_MEMORY_2_Config1_WriteValue|Write Value|Configuration 1||0x00|0xff|Value to be written into the memory register after applying the Write Mask
+RefParam_MEMORY_2_Config1_RegAddress|Register Address|Configuration 1||0x00|0xff|Address of memory register where value is written
+RefParam_MEMORY_2_Config2_WriteMask|Write Mask|Configuration 2||0x00|0xff|Mask applied to the Write Value to select bits to be written into the memory register
+RefParam_MEMORY_2_Config2_WriteValue|Write Value|Configuration 2||0x00|0xff|Value to be written into the memory register after applying the Write Mask
+RefParam_MEMORY_2_Config2_RegAddress|Register Address|Configuration 2||0x00|0xff|Address of memory register where value is written
+RefParam_MEMORY_2_Config3_WriteMask|Write Mask|Configuration 3||0x00|0xff|Mask applied to the Write Value to select bits to be written into the memory register
+RefParam_MEMORY_2_Config3_WriteValue|Write Value|Configuration 3||0x00|0xff|Value to be written into the memory register after applying the Write Mask
+RefParam_MEMORY_2_Config3_RegAddress|Register Address|Configuration 3||0x00|0xff|Address of memory register where value is written
+RefParam_ClockProtection|RefParam_ClockProtection|||||
+RCC_CP_XSPI|RCC_CP_XSPI|||||
+RCC_CP_FMC|RCC_CP_FMC|||||
+ICF_Application|ICF Application|||||
+RefParam_ELOADER_memory|ELOADER memory|||||
+
+[Values]
+# параметр|значение|подпись
+RefParam_MEMORY_1_Driver_Selection|EXTMEM_NOR_SFDP|EXTMEM_NOR_SFDP
+RefParam_MEMORY_1_Driver_Selection|EXTMEM_PSRAM|EXTMEM_PSRAM
+RefParam_MEMORY_1_Driver_Selection|EXTMEM_SDCARD|EXTMEM_SDCARD
+RefParam_MEMORY_1_Driver_Selection|EXTMEM_USER|EXTMEM_USER
+RefParam_MEMORY_1_ConfigType|EXTMEM_LINK_CONFIG_1LINE|EXTMEM_LINK_CONFIG_1LINE
+RefParam_MEMORY_1_ConfigType|EXTMEM_LINK_CONFIG_4LINES|EXTMEM_LINK_CONFIG_4LINES
+RefParam_MEMORY_1_ConfigType|EXTMEM_LINK_CONFIG_8LINES|EXTMEM_LINK_CONFIG_8LINES
+RefParam_MEMORY_1_ConfigType|EXTMEM_LINK_CONFIG_16LINES|EXTMEM_LINK_CONFIG_16LINES
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_16MB|HAL_XSPI_SIZE_16MB
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_32MB|HAL_XSPI_SIZE_32MB
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_64MB|HAL_XSPI_SIZE_64MB
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_128MB|HAL_XSPI_SIZE_128MB
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_256MB|HAL_XSPI_SIZE_256MB
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_512MB|HAL_XSPI_SIZE_512MB
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_1GB|HAL_XSPI_SIZE_1GB
+RefParam_MEMORY_1_Size|HAL_XSPI_SIZE_2GB|HAL_XSPI_SIZE_2GB
+RefParam_MEMORY_2_Driver_Selection|EXTMEM_NOT_USED|NONE
+RefParam_MEMORY_2_Driver_Selection|EXTMEM_NOR_SFDP|EXTMEM_NOR_SFDP
+RefParam_MEMORY_2_Driver_Selection|EXTMEM_PSRAM|EXTMEM_PSRAM
+RefParam_MEMORY_2_Driver_Selection|EXTMEM_SDCARD|EXTMEM_SDCARD
+RefParam_MEMORY_2_Driver_Selection|EXTMEM_USER|EXTMEM_USER
+RefParam_MEMORY_2_ConfigType|EXTMEM_LINK_CONFIG_1LINE|EXTMEM_LINK_CONFIG_1LINE
+RefParam_MEMORY_2_ConfigType|EXTMEM_LINK_CONFIG_4LINES|EXTMEM_LINK_CONFIG_4LINES
+RefParam_MEMORY_2_ConfigType|EXTMEM_LINK_CONFIG_8LINES|EXTMEM_LINK_CONFIG_8LINES
+RefParam_MEMORY_2_ConfigType|EXTMEM_LINK_CONFIG_16LINES|EXTMEM_LINK_CONFIG_16LINES
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_16MB|HAL_XSPI_SIZE_16MB
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_32MB|HAL_XSPI_SIZE_32MB
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_64MB|HAL_XSPI_SIZE_64MB
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_128MB|HAL_XSPI_SIZE_128MB
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_256MB|HAL_XSPI_SIZE_256MB
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_512MB|HAL_XSPI_SIZE_512MB
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_1GB|HAL_XSPI_SIZE_1GB
+RefParam_MEMORY_2_Size|HAL_XSPI_SIZE_2GB|HAL_XSPI_SIZE_2GB
+ICF_Application|SEM_EXTMEM_ROMxspi1_RAMxspi2|SEM_EXTMEM_ROMxspi1_RAMxspi2
+ICF_Application|SEM_EXTMEM_ROMxspi2_RAMxspi1|SEM_EXTMEM_ROMxspi2_RAMxspi1
+ICF_Application|SEM_EXTMEM_ROMxspi1|SEM_EXTMEM_ROMxspi1
+ICF_Application|SEM_EXTMEM_ROMxspi2|SEM_EXTMEM_ROMxspi2
+ICF_Application|SEM_EXTMEM_ROMxspi3_RAMxspi1xspi2|SEM_EXTMEM_ROMxspi3_RAMxspi1xspi2
+ICF_Application|SEM_EXTMEM_ROMxspi1xspi2_RAMxspi3|SEM_EXTMEM_ROMxspi1xspi2_RAMxspi3
+ICF_Application|SEM_EXTMEM_LRUN_RAMxspi2|SEM_EXTMEM_LRUN_RAMxspi2
+ICF_Application|SEM_EXTMEM_LRUN_RAMxspi1|SEM_EXTMEM_LRUN_RAMxspi1
+ICF_Application|SEM_EXTMEM_LRUN|SEM_EXTMEM_LRUN

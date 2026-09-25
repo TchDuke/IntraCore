@@ -1,0 +1,163 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RCC
+Version=STM32WL33xx_rcc_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+OscillatorType|Oscillator Type|||||
+HSE_Timout|HSE Startup Timout Value (ms)|RCC Parameters||1|4294967295|
+LSE_Timout|LSE Startup Timout Value (ms)|RCC Parameters||1|4294967295|
+CLK_SMPS_Div4|CLK_SMPS_Div4|||4|4|
+CLK_SMPS_Div2|CLK_SMPS_Div2|||2|2|
+Div2|Div2|||2|2|
+ClkROOTDIV_Div3|ClkROOTDIV_Div3|||3|3|
+ClkROOTDIV_Div4|ClkROOTDIV_Div4|||4|4|
+RCC_RTC_Clock_Source_FROM_CLK_ROOT_DIV|RCC_RTC_Clock_Source_FROM_CLK_ROOT_DIV|||512|512|
+RCC_MCODiv|MCO Prescaler|||||
+SYSCLK48Divider|SYSCLK48 Divider|||||
+SYSCLK64Divider|SYSCLK64 Divider|||||
+CLK_SPMS_KRM_DIV|CLK_SPMS_KRM Divider|||||
+LSCOSource1|LSCOS Clock Source|||||
+LSCOSource1ARG|LSCOSource1ARG|||||
+CLKSYSMultSource|CLKSYS Clock Source|||||
+CLKSPI3I2SMultSource|CLK SPI3 I2S3 Clock Source|||||
+RC64MPLLSource|RC64MPLL Clock Source|||||
+ROOTClkSource|SYSCLK Source|||||
+ClkROOTDIVSource|SYSCLK 16MHZ Source|||||
+ClkSMPSDIVSource|SYSCLK SMPSDIV Source|||||
+ClkKRMSource|SYSCLK SMPSDIV Source|||||
+LPUARTClockSelection|LPUART Source|||||
+RCC_MCO1Source|MCO Clock Source|||||
+RTCClockSelection|RTC Clock Selection|||||
+FLatency|Flash Latency(WS)|||||
+HSE_VALUE|HSE OSC||MHz|||
+LSE_VALUE|LSE OSC||KHz|32768|32768|
+LSI_VALUE|LSI Source||KHz|32000|32000|
+HSI_VALUE|HSI Source||MHz|||
+PLL64_VALUE|HSI Source||MHz|||
+CLKSPI3I2SFreq_VALUE|SPI3I2S Output||MHz||64000000|
+ClkSMPSDIVFreq_VALUE|SMPSDIV Output||MHz||64000000|
+ClkSMPSFreq_VALUE|SMPS Output||MHz||64000000|
+BLEFreq_VALUE|BLE Output||MHz||64000000|
+LPUARTFreq_VALUE|LPUART Output||MHz||32000000|
+SysCLKFreq_VALUE|SysCLK Output||MHz||64000000|
+ClkROOTDIVFreq_VALUE|ClkROOTDIV Output||MHz|12000000|32000000|
+MCO1PinFreq_Value|MCO Output||MHz|||
+CLKSYSFreq_VALUE|CLKSYS Output||MHz|16000000|64000000|
+USART1Freq_VALUE|USART1 Output||MHz|||
+LPUART1Freq_Value|LPUART1 clock Source||MHz|||
+I2C1Freq_VALUE|I2C1 Output||MHz||16000000|
+I2C2Freq_VALUE|I2C2 Output||MHz||16000000|
+RTCFreq_Value|RTC Clock Source||KHz|0|1000000|
+LSCOPinFreq_Value|LSCO Output||MHz|||
+EnableHSE|HSE OSC|||||
+LSCOEnable|LSCO clock output|||||
+SPI3Enable|SPI3 clock output|||||
+MRSUBGEnable|MRSUBG clock output|||||
+LPAWUREnable|LPAWUR clock output|||||
+LCDEnable|LCD clock output|||||
+LCSCEnable|LCSC clock output|||||
+LPUART1Enable|LPUART1 clock output|||||
+SYSCLK64Enable|SYSCLK64 prescaler|||||
+SysSourceHSEEnable|SysSourceHSE prescaler|||||
+RTCEnable|RTC|||||
+EnableLSERTC|EnableLSERTC|||||
+EnableLSE|EnableLSE|||||
+IWDGEnable|IWDG|||||
+MCOEnable|Master clock output|||||
+I2C3Enable|I2C3|||||
+OscillatorTypeHSE|Clock Type HSE|||||
+RCC_SYSCLKSOURCE_RC64MPLL|RCC_SYSCLKSOURCE_RC64MPLL|||||
+OscillatorTypeHSI|Clock Type HSI|||||
+OscillatorTypeLSE_BYPASS|Clock Type LSE_BYPASS|||||
+HSEUsed|HSE used flag|||1|1|
+HSEState|Hse State|||||
+OscillatorTypeLSE|Clock Type LSE|||||
+LSEUsed|LSE Is Used|||1|1|
+LSEState|Lse State|||||
+LSEBYPASSState|Lse by pass state|||||
+OscillatorTypeLSI|Clock Type LSI|||||
+LSIUsed|LSI used flag|||1|1|
+LSIState|Lsi State|||||
+HSIUsed|HSI Is Used|||1||
+SmpsDivSelectionARG|SmpsDivSelectionARG|||||
+KRMRateMultiplierARG|KRMRateMultiplierARG|||||
+RTCWDGSUBGLPAWURLCDLCSCClockSelectionARG|RTCClockSelectionARG|||||
+LPUART1ClockSelectionARG|LPUART1lockSelectionARG|||||
+SPI3I2SClockSelectionARG|SPI3I2 Clock Selection|||||
+HSEStateARG|Hse StateARG|||||
+LSEStateARG|Lse StateARG|||||
+LSEBYPASSStateARG|Lse by pass state ARG|||||
+HSIStateARG|HSI StateARG|||||
+LSIStateARG|LSI StateARG|||||
+HSICalibrationValue|HSI Calibration Value|RCC Parameters||0|31|
+SYSCLKSourceARG|SysClock SourceARG|||||
+SYSCLKDividerARG|SYSCLKDivider|||||
+RCC_MCO|Clock Output|||||
+RCC_LSCO|LCO Output|||||
+HSICalibrationValueARG|HSICalibrationValueARG|||||
+RCC_MCO1SourceARG|RCC_MCO1SourceARG|||||
+PeriphClockSelectionARG|Periph Clock Selection|||||
+C_PeriphClockSelectionARG|common Periph Clock Selection|||||
+VDD_VALUE|VDD voltage (V)|System Parameters|V|1.65|3.6|
+INSTRUCTION_CACHE_ENABLE|Instruction Cache|System Parameters||||
+PREFETCH_ENABLE|Prefetch Buffer|System Parameters||||
+DATA_CACHE_ENABLE|Data Cache|System Parameters||||
+HSE_current_control|HSE Current Control|RCC Parameters||0|40|
+HSE_Capacitor_Tuning|HSE Capacitor Tuning|RCC Parameters||0|63|
+HSE_Capacitor_TuningArg|HSE Capacitor Tuning|||||
+LSE_Drive_Capability|LSE Drive Capability|RCC Parameters||||
+HSEOSCisInternal|Hse is Internal osc|||||
+LSEOSCisInternal|LSE is Internal osc|||||
+
+[Values]
+# параметр|значение|подпись
+RCC_MCODiv|RCC_MCODIV_1|1
+RCC_MCODiv|RCC_MCODIV_2|2
+RCC_MCODiv|RCC_MCODIV_4|4
+RCC_MCODiv|RCC_MCODIV_8|8
+RCC_MCODiv|RCC_MCODIV_16|16
+RCC_MCODiv|RCC_MCODIV_32|32
+SYSCLK48Divider|RCC_DIRECT_HSE_DIV1|1
+SYSCLK48Divider|RCC_DIRECT_HSE_DIV2|2
+SYSCLK48Divider|RCC_DIRECT_HSE_DIV3|3
+SYSCLK48Divider|RCC_DIRECT_HSE_DIV6|6
+SYSCLK48Divider|RCC_DIRECT_HSE_DIV12|12
+SYSCLK48Divider|RCC_DIRECT_HSE_DIV24|24
+SYSCLK48Divider|RCC_DIRECT_HSE_DIV48|48
+SYSCLK64Divider|RCC_RC64MPLL_DIV1|1
+SYSCLK64Divider|RCC_RC64MPLL_DIV2|2
+SYSCLK64Divider|RCC_RC64MPLL_DIV4|4
+SYSCLK64Divider|RCC_RC64MPLL_DIV8|8
+SYSCLK64Divider|RCC_RC64MPLL_DIV16|16
+SYSCLK64Divider|RCC_RC64MPLL_DIV32|32
+SYSCLK64Divider|RCC_RC64MPLL_DIV64|64
+LSCOSource1|RCC_LSCOSOURCE_LSI|LSI
+LSCOSource1|RCC_LSCOSOURCE_LSE|LSE
+CLKSPI3I2SMultSource|RCC_SPI3I2S_CLKSOURCE_CLK_ROOT|
+CLKSPI3I2SMultSource|RCC_SPI3I2S_CLKSOURCE_CLK_ROOT_DIV|
+CLKSPI3I2SMultSource|RCC_SPI3I2S_CLKSOURCE_CLK_RC64MPLL|
+RC64MPLLSource|RCC_LSCOSOURCE_HSI|LSI
+RC64MPLLSource|RCC_LSCOSOURCE_PLL64|LSE
+ROOTClkSource|RCC_SYSCLKSOURCE_DIRECT_HSE|ROOTClkSource HSE
+ROOTClkSource|RCC_SYSCLKSOURCE_RC64MPLL|ROOTClkSource RC64
+ClkSMPSDIVSource|RCC_SMPSCLK_DIV4|devisor /4
+ClkSMPSDIVSource|RCC_SMPSCLK_DIV2|devisor /2
+ClkKRMSource|CLK_SPMS_KRM|CLK_SPMS_KRM
+LPUARTClockSelection|RCC_LPUART1_CLKSOURCE_LSE|LSE
+LPUARTClockSelection|RCC_LPUART1_CLKSOURCE_16M|CLK_16MHZ
+RCC_MCO1Source|RCC_MCOSOURCE_ADC|MCOSRC ADC
+RCC_MCO1Source|RCC_MCOSOURCE_SMPS|MCOSRC SMPS
+RCC_MCO1Source|RCC_MCO1SOURCE_SYSCLK|MCOSRC SYSCLK
+RCC_MCO1Source|RCC_MCO1SOURCE_HSE|MCOSRC HSE
+RCC_MCO1Source|RCC_MCOSOURCE_RC64MPLL|MCOSRC RC64MPLL
+RCC_MCO1Source|RCC_MCOSOURCE_HSI64M_DIV2048|MCOSRC CLK16
+RTCClockSelection|RCC_RTC_WDG_SUBG_LPAWUR_LCD_LCSC_CLKSOURCE_DIV512|Rtcclksource Clk16
+RTCClockSelection|RCC_RTC_WDG_SUBG_LPAWUR_LCD_LCSC_CLKSOURCE_LSE|Rtcclksource Lse
+RTCClockSelection|RCC_RTC_WDG_SUBG_LPAWUR_LCD_LCSC_CLKSOURCE_LSI|Rtcclksource Lsi
+LSE_Drive_Capability|RCC_LSEDRIVE_LOW|LSE oscillator low drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_MEDIUMLOW|LSE oscillator medium low drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_MEDIUMHIGH|LSE oscillator medium high drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_HIGH|LSE oscillator high drive capability

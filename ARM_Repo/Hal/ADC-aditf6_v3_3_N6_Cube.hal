@@ -1,0 +1,493 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ADC
+Version=aditf6_v3_3_N6_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+master|Master Flag|||0|1|
+UnUsedParameter|UnUsedParameter|||||
+FadcConstraint|Fadc Constraint|||140000|20000000|
+CommonPathInternal|comm|||||
+ChannelVREF|ChannelVREF|||||
+ChannelTS|ChannelTS|||||
+ChannelVBAT|ChannelVBAT|||||
+ChannelVDDCORE|ChannelVDDCORE|||||
+Mode|Mode|ADCsgroup||||Multi ADC mode selection: Configures the ADC to operate in independent or multi mode
+DMAAccessModeView|DMA Access Mode|ADCsgroup||||
+DMAAccessMode|DMA Access Mode|ADCsgroup||||
+TwoSamplingDelay|Delay between 2 sampling phases|ADCsgroup||||Delay between 2 sampling phases
+Resolution|Resolution|ADCgroup||||Resolution of the ADC conversion
+ScanConvMode|Scan Conversion Mode|ADCgroup||||Enable or Disable the Scan Conversion Mode
+ContinuousConvMode|Continuous Conversion Mode|ADCgroup||||Enable or Disable the Continuous Conversion Mode
+DiscontinuousConvMode|Discontinuous Conversion Mode|ADCgroup||||Enable or Disable the Discontinuous Conversion Mode
+NbrOfDiscConversion|Number Of Discontinuous Conversions|ADCgroup||1|8|
+EOCSelection|End Of Conversion Selection|ADCgroup||||Regular channel end of conversion selection
+Overrun|Overrun behaviour|ADCgroup||||Select the behaviour in case of overrun
+ConversionDataManagement|Conversion Data Management Mode|ADCgroup||||This mode specifies whether the Data conversion data is managed: using the DMA (oneshot or circular), or stored in the DR register or transfered to DFSDM register
+LowPowerAutoWait|Low Power Auto Wait|ADCgroup||||Specifies the usage of Low Power Auto Wait Mode: new conversion start only when the previous conversion (for regular group) or previous sequence (for injected group) has been treated by user software.
+EnableRegularConversion|Enable Regular Conversions|ADC_Regular_ConversionMode||||Enable/Disable Regular Conversion
+LeftBitShift|Left Bit Shift|ADC_Regular_ConversionMode||||Configures the left shifting applied to the final result with or without oversampling.
+OversamplingMode|Enable Regular Oversampling|ADC_Regular_ConversionMode||||Enable/Disable Regular Oversampling
+RightBitShift|Oversampling Right Shift|ADCgroup||||
+Ratio|Oversampling Ratio|ADCgroup||1|1024|
+GainCompensation|Gain Compensation|ADCgroup||0|16383|Specify the ADC gain compensation coefficient.
+OversamplingStopReset|Regular Oversampling Mode|ADCgroup||||
+TriggeredMode|Regular Oversampling Trigger|ADCgroup||||
+NbrOfConversionFlag|Number Of Conversion Flag|ADCgroup||0|1|
+NbrOfConversion|Number Of Conversion|ADCgroup||1|16|Number of regular channels to be converted
+ExternalTrigConv|External Trigger Conversion Source|ADCgroup||||Select the external event used to trigger the start of conversion of a regular group
+ExternalTrigConvEdge|External Trigger Conversion Edge|ADCgroup||||Select the external trigger polarity and enable the trigger of a regular group: When an external trigger is selected for ADC regular or injected conversion, only the rising edge of the signal can start the conversion.
+SingleDiff|Single-ended or differential|ADCgroup||||Selection of single-ended or differential input
+Rank|Rank|ADCgroup||1|16|The rank in the regular group sequencer
+OffsetNumber|Offset Number|ADCgroup||||Regular Channel x offset number selection
+Offset|Offset|ADCgroup||0|255|Data offset for regular channel
+RightOffsetShift|Offset right shift|ADCgroup||||Signed saturation for injected channel
+SignedSaturation|Signed saturation|ADCgroup||||Signed saturation for regular channel
+SamplingTime|Sampling Time|ADCChannel||||Regular Channel x sampling time selection
+RegHighThreshold|Regular HighThreshold|ADCChannel||||
+RegLowThreshold|Regular LowThreshold|ADCChannel||||
+RegITMode|Regular ITMode|ADCChannel||||
+MonitoredBy|Monitored by|ADCgroup||||Select a watchdog to monitor the channel.
+EnableInjectedConversion|Enable Injected Conversions|ADCgroup||||<html> <font color="red"><b>*</b>In case of usage of channels on injected group, ADC frequency should be low than AHB clock frequency /4 for resolution 12 or 10 bits, AHB clock frequency /3 for resolution 8 bits, AHB clock frequency /2 for resolution 6 bits.</font></br></html>
+EnableInjectedOversampling|Enable Injected Oversampling|ADC_Injected_ConversionMode||||Enable/Disable Injected Oversampling
+InjOversamplingRatio|Oversampling Ratio|ADCgroup||1|1024|
+InjNumberOfConversion|Number Of Conversions|ADCgroup||0|4|Number of injected channels to be converted
+ExternalTrigInjecConv|External Trigger Source|ADCgroup||||EXTI Line15 is used for External-Trigger-for-Injected-conversion mode
+ExternalTrigInjecConvEdge|External Trigger Conversion Edge|ADCgroup||||You cannot configure a trigger because the Auto Injected mode is selected.
+injectedQueueMode|Injected Queue|ADCgroup||||Enable/Disable Injected Queue
+QueueInjectedContext|Queue Injected Context Mode|ADCgroup||||Enable/Disable the queue of injected context
+InjectedConvMode|Injected Conversion Mode|ADCgroup||||Injected Conversion Mode selection
+InjectedDiscontinuousConvMode|Injected Discontinuous Conversion Mode|||||
+AutoInjectedConv|Automatic Injected Conversion|||||
+InjectedSingleDiff|Single-ended or differential|ADCgroup||||Selection of single-ended or differential input
+InjectedRank|Rank|ADCgroup||1|4|The rank in the regular group sequencer
+InjectedOffsetNumber|Offset Number|ADCgroup||||Injected Channel x offset number selection
+InjectedOffsetRightShift|Offset right shift|ADCgroup||||Offset Right Shift for injected channel
+InjectedOffset|Injected Offset|ADCgroup||0|255|Data offset for Injected channel
+InjectedSignedSaturation|Signed saturation|ADCgroup||||Signed saturation for injected channel
+InjectedSamplingTime|Sampling Time|ADCChannel||||Injected Channel x sampling time selection
+InjHighThreshold|Injected HighThreshold|ADCChannel||||
+InjLowThreshold|Injected LowThreshold|ADCChannel||||
+InjITMode|Injected ITMode|ADCChannel||||
+InjMonitoredBy|Monitored by|ADCgroup||||The ADC analog input channel is not monitored by Watchdog 2 or 3.
+Channel|Channel|ADCChannel||||
+InjectedChannel|Channel|ADCChannel||||
+AWDChannel|AWDChannel|ADCChannel||||ADC channel for the analog watchdog
+RegFilteringConfig|RegFilteringConfig|ADCChannel||||ADC Analog Watchdog filtering configuration.
+InjFilteringConfig|InjFilteringConfig|ADCChannel||||ADC Analog Watchdog filtering configuration.
+AWD1FilteringConfig|Filtering|||||
+AWD2FilteringConfig|Filtering|||||
+AWD3FilteringConfig|Filtering|||||
+InjAWDChannel|Monitored by|ADCgroup||||ADC channel for the analog watchdog
+AnalogWDChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+ChannelForWatchDog|Channel type for WatchDog|||||
+EnableAnalogWatchDog3|Enable Analog WatchDog3 Mode|ADCgroup||||Enable/Disable Analog WatchDog3 Mode
+AWD3WatchdogNumber|Watchdog instance|ADCgroup||||Number of used watchDogs.
+AWD3HighThreshold|High Threshold|ADCgroup||=AWD3LowThreshold|262143|Configures the ADC analog watchdog High threshold value.
+AWD3LowThreshold|Low Threshold|ADCgroup||0|=AWD3HighThreshold|Configures the ADC analog watchdog Low threshold value.
+AWD3ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured is interrupt mode or in polling mode.
+EnableAnalogWatchDog2|Enable Analog WatchDog2 Mode|ADCgroup||||Enable/Disable Analog WatchDog2 Mode
+AWD2WatchdogNumber|Watchdog instance|ADCgroup||||Number of used watchDogs.
+AWD2HighThreshold|High Threshold|ADCgroup||=AWD2LowThreshold|262143|Configures the ADC analog watchdog High threshold value.
+WDG3ChannelR1|WDG3ChannelR1|ADCgroup||||
+WDG3ChannelR2|WDG3ChannelR2|ADCgroup||||
+WDG3ChannelR3|WDG3ChannelR3|ADCgroup||||
+WDG3ChannelR4|WDG3ChannelR4|ADCgroup||||
+WDG3ChannelR5|WDG3ChannelR5|ADCgroup||||
+WDG3ChannelR6|WDG3ChannelR6|ADCgroup||||
+WDG3ChannelR7|WDG3ChannelR7|ADCgroup||||
+WDG3ChannelR8|WDG3ChannelR8|ADCgroup||||
+WDG2ChannelR1|WDG2ChannelR1|ADCgroup||||
+WDG2ChannelR2|WDG2ChannelR2|ADCgroup||||
+WDG2ChannelR3|WDG2ChannelR3|ADCgroup||||
+WDG2ChannelR4|WDG2ChannelR4|ADCgroup||||
+WDG2ChannelR5|WDG2ChannelR5|ADCgroup||||
+WDG2ChannelR6|WDG2ChannelR6|ADCgroup||||
+WDG2ChannelR7|WDG2ChannelR7|ADCgroup||||
+WDG2ChannelR8|WDG2ChannelR8|ADCgroup||||
+InjWDG3ChannelR1|InjWDG3ChannelR1|ADCgroup||||
+InjWDG3ChannelR2|InjWDG3ChannelR2|ADCgroup||||
+InjWDG3ChannelR3|InjWDG3ChannelR3|ADCgroup||||
+InjWDG3ChannelR4|InjWDG3ChannelR4|ADCgroup||||
+InjWDG3ChannelR5|InjWDG3ChannelR5|ADCgroup||||
+InjWDG3ChannelR6|InjWDG3ChannelR6|ADCgroup||||
+InjWDG3ChannelR7|InjWDG3ChannelR7|ADCgroup||||
+InjWDG3ChannelR8|InjWDG3ChannelR8|ADCgroup||||
+InjWDG2ChannelR1|InjWDG2ChannelR1|ADCgroup||||
+InjWDG2ChannelR2|InjWDG2ChannelR2|ADCgroup||||
+InjWDG2ChannelR3|InjWDG2ChannelR3|ADCgroup||||
+InjWDG2ChannelR4|InjWDG2ChannelR4|ADCgroup||||
+InjWDG2ChannelR5|InjWDG2ChannelR5|ADCgroup||||
+InjWDG2ChannelR6|InjWDG2ChannelR6|ADCgroup||||
+InjWDG2ChannelR7|InjWDG2ChannelR7|ADCgroup||||
+InjWDG2ChannelR8|InjWDG2ChannelR8|ADCgroup||||
+WDG3MonitoredChannels|WDG3MonitoredChannels|ADCgroup||||
+WDG2MonitoredChannels|WDG2MonitoredChannels|ADCgroup||||
+injWDG3MonitoredChannels|injWDG3MonitoredChannels|ADCgroup||||
+injWDG2MonitoredChannels|injWDG2MonitoredChannels|ADCgroup||||
+AWD2LowThreshold|Low Threshold|ADCgroup||0|=AWD2HighThreshold|Configures the ADC analog watchdog Low threshold value.
+AWD2ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured is interrupt mode or in polling mode.
+EnableAnalogWatchDog1|Enable Analog WatchDog1 Mode|ADCgroup||||Enable/Disable Analog WatchDog1 Mode
+AWD1WatchdogNumber|Watchdog instance|ADCgroup||||Number of used watchDogs.
+WatchdogMode|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+WatchdogChannel|Analog WatchDog Channel|ADCChannel||||
+AWD1HighThreshold|High Threshold|ADCgroup||=AWD1LowThreshold|262143|Configures the ADC analog watchdog High threshold value.
+AWD1LowThreshold|Low Threshold|ADCgroup||0|=AWD1HighThreshold|Configures the ADC analog watchdog Low threshold value.
+AWD1ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured is interrupt mode or in polling mode.
+AllChannels|Channel|ADCChannel||||
+
+[Values]
+# параметр|значение|подпись
+Mode|ADC_MODE_INDEPENDENT|Independent mode
+Mode|ADC_DUALMODE_REGSIMULT_ALTERTRIG|Dual regular simultaneous + alternate trigger mode
+Mode|ADC_DUALMODE_REGSIMULT|Dual regular simultaneous mode only
+Mode|ADC_DUALMODE_INTERL|Dual interleaved mode only
+Mode|ADC_DUALMODE_ALTERTRIG|Dual alternate trigger mode only
+Mode|ADC_DUALMODE_REGSIMULT_INJECSIMULT|Dual combined regular simultaneous + injected simultaneous mode
+Mode|ADC_DUALMODE_REGINTERL_INJECSIMULT|Dual Interleaved mode + injected simultaneous mode
+Mode|ADC_DUALMODE_INJECSIMULT|Dual injected simultaneous mode only
+DMAAccessMode|ADC_DUALMODEDATAFORMAT_DISABLED|DMA access mode disabled
+DMAAccessMode|ADC_DUALMODEDATAFORMAT_8_BITS|DMA access mode enabled
+DMAAccessMode|ADC_DUALMODEDATAFORMAT_32_10_BITS|DMA access mode enabled
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_1CYCLE|1,5 Cycle
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_2CYCLES|2,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_3CYCLES|3,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_4CYCLES|4,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_5CYCLES|5,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_6CYCLES|6,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_7CYCLES|7,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_8CYCLES|8,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_9CYCLES|9,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_10CYCLES|10,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_11CYCLES|11,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_12CYCLES|12,5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_13CYCLES|13,5 Cycles
+Resolution|ADC_RESOLUTION_12B|ADC 12-bit resolution
+Resolution|ADC_RESOLUTION_10B|ADC 10-bit resolution
+Resolution|ADC_RESOLUTION_8B|ADC 8-bit resolution
+Resolution|ADC_RESOLUTION_6B|ADC 6-bit resolution
+ScanConvMode|ADC_SCAN_ENABLE|Enabled
+ScanConvMode|ADC_SCAN_DISABLE|Disabled
+EOCSelection|ADC_EOC_SINGLE_CONV|End of single conversion
+EOCSelection|ADC_EOC_SEQ_CONV|End of sequence of conversion
+Overrun|ADC_OVR_DATA_PRESERVED|Overrun data preserved
+Overrun|ADC_OVR_DATA_OVERWRITTEN|Overrun data overwritten
+ConversionDataManagement|ADC_CONVERSIONDATA_DR|Regular Conversion data stored in DR register only
+ConversionDataManagement|ADC_CONVERSIONDATA_MDF|MDF Mode
+ConversionDataManagement|ADC_CONVERSIONDATA_DMA_ONESHOT|DMA One Shot Mode
+ConversionDataManagement|ADC_CONVERSIONDATA_DMA_CIRCULAR|DMA Circular Mode
+LeftBitShift|ADC_LEFTBITSHIFT_NONE|No bit shift
+LeftBitShift|ADC_LEFTBITSHIFT_1|1 bit shift
+LeftBitShift|ADC_LEFTBITSHIFT_2|2 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_3|3 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_4|4 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_5|5 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_6|6 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_7|7 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_8|8 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_9|9 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_10|10 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_11|11 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_12|12 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_13|13 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_14|14 bits shift
+LeftBitShift|ADC_LEFTBITSHIFT_15|15 bits shift
+RightBitShift|ADC_RIGHTBITSHIFT_NONE|No bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_1|1 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_2|2 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_3|3 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_4|4 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_5|5 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_6|6 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_7|7 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_8|8 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_9|9 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_10|10 bit shift for oversampling
+OversamplingStopReset|ADC_REGOVERSAMPLING_CONTINUED_MODE|Oversampling Continued Mode
+OversamplingStopReset|ADC_REGOVERSAMPLING_RESUMED_MODE|Oversampling Resumed Mode
+TriggeredMode|ADC_TRIGGEREDMODE_SINGLE_TRIGGER|Single trigger for all oversampled conversions
+TriggeredMode|ADC_TRIGGEREDMODE_MULTI_TRIGGER|Trigger for each oversampled conversion
+ExternalTrigConv|ADC_EXTERNALTRIG_EXT_IT11|EXTI Line11
+ExternalTrigConv|ADC_SOFTWARE_START|Regular Conversion launched by software
+ExternalTrigConv|ADC_EXTERNALTRIG_T1_CC1|Timer 1 Capture Compare 1 event
+ExternalTrigConv|ADC_EXTERNALTRIG_T9_CC1|Timer 9 Capture Compare 1 event
+ExternalTrigConv|ADC_EXTERNALTRIG_T1_CC2|Timer 1 Capture Compare 2 event
+ExternalTrigConv|ADC_EXTERNALTRIG_T1_CC3|Timer 1 Capture Compare 3 event
+ExternalTrigConv|ADC_EXTERNALTRIG_T2_CC2|Timer 2 Capture Compare 2 event
+ExternalTrigConv|ADC_EXTERNALTRIG_T3_TRGO|Timer 3 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T4_CC4|Timer 4 Capture Compare 4 event
+ExternalTrigConv|ADC_EXTERNALTRIG_T8_TRGO|Timer 8 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T8_TRGO2|Timer 8 Trigger Out 2 event
+ExternalTrigConv|ADC_EXTERNALTRIG_T1_TRGO|Timer 1 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T1_TRGO2|Timer 1 Trigger Out event 2
+ExternalTrigConv|ADC_EXTERNALTRIG_T2_TRGO|Timer 2 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T4_TRGO|Timer 4 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T5_TRGO|Timer 5 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T6_TRGO|Timer 6 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T7_TRGO|Timer 7 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T9_TRGO|Timer 9 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T12_TRGO|Timer 12 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T15_TRGO|Timer 15 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T18_TRGO|Timer 18 Trigger Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_T3_CC4|Timer 3 Capture Compare 4 event
+ExternalTrigConv|ADC_EXTERNALTRIG_LPTIM1_CH1|LPTIM 1 Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_LPTIM2_CH1|LPTIM 2 Out event
+ExternalTrigConv|ADC_EXTERNALTRIG_LPTIM3_CH1|LPTIM 3 Out event
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_NONE|None
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_RISING|Trigger detection on the rising edge
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_FALLING|Trigger detection on the falling edge
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_RISINGFALLING|Trigger detection on the rising and falling edges
+SingleDiff|ADC_SINGLE_ENDED|Single-ended mode
+SingleDiff|ADC_DIFFERENTIAL_ENDED|differential mode
+OffsetNumber|ADC_OFFSET_NONE|No offset
+OffsetNumber|ADC_OFFSET_1|1 offset
+OffsetNumber|ADC_OFFSET_2|2 offsets
+OffsetNumber|ADC_OFFSET_3|3 offsets
+OffsetNumber|ADC_OFFSET_4|4 offsets
+SamplingTime|ADC_SAMPLETIME_1CYCLE_5|1.5 Cycles
+SamplingTime|ADC_SAMPLETIME_2CYCLES_5|2.5 Cycles
+SamplingTime|ADC_SAMPLETIME_6CYCLES_5|6.5 Cycles
+SamplingTime|ADC_SAMPLETIME_11CYCLES_5|11.5 Cycles
+SamplingTime|ADC_SAMPLETIME_23CYCLES_5|23.5 Cycles
+SamplingTime|ADC_SAMPLETIME_46CYCLES_5|46.5 Cycles
+SamplingTime|ADC_SAMPLETIME_246CYCLES_5|246.5 Cycles
+SamplingTime|ADC_SAMPLETIME_1499CYCLES_5|1499.5 Cycles
+MonitoredBy|__NULL|None
+MonitoredBy|ADC_ANALOGWATCHDOG_2|Analog Watchdog 2
+MonitoredBy|ADC_ANALOGWATCHDOG_3|Analog Watchdog 3
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_EXT_IT15|EXTI line15
+ExternalTrigInjecConv|ADC_INJECTED_SOFTWARE_START|External Trigger on injected channels are disabled (Auto-injection mode selected)
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T1_TRGO|Timer 1 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T1_CC4|Timer 1 Capture Compare 4 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T2_TRGO|Timer 2 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T2_CC1|Timer 2 Capture Compare 1 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T3_CC4|Timer 3 Capture Compare 4 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T4_TRGO|Timer 4 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T5_TRGO|Timer 5 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T8_CC4|Timer 8 Capture Compare 4 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T9_CC2|Timer 9 Capture Compare 2 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T12_CC4|Timer 12 Capture Compare 4 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T1_TRGO2|Timer 1 Trigger Out 2 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T8_TRGO|Timer 8 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T9_TRGO|Timer 9 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T8_TRGO2|Timer 8 Trigger Out 2 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T3_CC3|Timer 3 Capture Compare 3 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T3_TRGO|Timer 3 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T3_CC1|Timer 3 Capture Compare 1 event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T6_TRGO|Timer 6 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T7_TRGO|Timer 7 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T12_TRGO|Timer 12 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T15_TRGO|Timer 15 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_T18_TRGO|Timer 18 Trigger Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_LPTIM1_CH2|LPTIM 1 Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_LPTIM2_CH2|LPTIM 2 Out event
+ExternalTrigInjecConv|ADC_EXTERNALTRIGINJEC_LPTIM3_CH2|LPTIM 3 Out event
+ExternalTrigInjecConvEdge|ADC_EXTERNALTRIGINJECCONV_EDGE_NONE|None
+ExternalTrigInjecConvEdge|ADC_EXTERNALTRIGINJECCONV_EDGE_RISING|Trigger detection on the rising edge
+ExternalTrigInjecConvEdge|ADC_EXTERNALTRIGINJECCONV_EDGE_FALLING|Trigger detection on the falling edge
+ExternalTrigInjecConvEdge|ADC_EXTERNALTRIGINJECCONV_EDGE_RISINGFALLING|Trigger detection on the rising and falling edges
+InjectedSingleDiff|ADC_SINGLE_ENDED|Single-ended mode
+InjectedSingleDiff|ADC_DIFFERENTIAL_ENDED|differential mode
+InjectedOffsetNumber|ADC_OFFSET_NONE|No offset
+InjectedOffsetNumber|ADC_OFFSET_1|1 offset
+InjectedOffsetNumber|ADC_OFFSET_2|2 offsets
+InjectedOffsetNumber|ADC_OFFSET_3|3 offsets
+InjectedOffsetNumber|ADC_OFFSET_4|4 offsets
+InjectedOffsetRightShift|__NULL|Disable
+InjectedSamplingTime|ADC_SAMPLETIME_1CYCLE_5|1.5 Cycles
+InjectedSamplingTime|ADC_SAMPLETIME_2CYCLES_5|2.5 Cycles
+InjectedSamplingTime|ADC_SAMPLETIME_6CYCLES_5|6.5 Cycles
+InjectedSamplingTime|ADC_SAMPLETIME_11CYCLES_5|11.5 Cycles
+InjectedSamplingTime|ADC_SAMPLETIME_23CYCLES_5|23.5 Cycles
+InjectedSamplingTime|ADC_SAMPLETIME_46CYCLES_5|46.5 Cycles
+InjectedSamplingTime|ADC_SAMPLETIME_246CYCLES_5|246.5 Cycles
+InjectedSamplingTime|ADC_SAMPLETIME_1499CYCLES_5|1499.5 Cycles
+InjMonitoredBy|__NULL|None
+InjMonitoredBy|ADC_ANALOGWATCHDOG_2|Analog Watchdog 2
+InjMonitoredBy|ADC_ANALOGWATCHDOG_3|Analog Watchdog 3
+Channel|ADC_CHANNEL_0|Channel 0
+Channel|ADC_CHANNEL_1|Channel 1
+Channel|ADC_CHANNEL_2|Channel 2
+Channel|ADC_CHANNEL_3|Channel 3
+Channel|ADC_CHANNEL_4|Channel 4
+Channel|ADC_CHANNEL_5|Channel 5
+Channel|ADC_CHANNEL_6|Channel 6
+Channel|ADC_CHANNEL_7|Channel 7
+Channel|ADC_CHANNEL_8|Channel 8
+Channel|ADC_CHANNEL_9|Channel 9
+Channel|ADC_CHANNEL_10|Channel 10
+Channel|ADC_CHANNEL_11|Channel 11
+Channel|ADC_CHANNEL_12|Channel 12
+Channel|ADC_CHANNEL_13|Channel 13
+Channel|ADC_CHANNEL_14|Channel 14
+Channel|ADC_CHANNEL_15|Channel 15
+Channel|ADC_CHANNEL_16|Channel 16
+Channel|ADC_CHANNEL_17|Channel 17
+Channel|ADC_CHANNEL_18|Channel 18
+Channel|ADC_CHANNEL_VREFINT|Channel Vrefint
+Channel|ADC_CHANNEL_VBAT|Channel Vbat
+Channel|ADC_CHANNEL_VDDCORE|Channel VddCore
+InjectedChannel|ADC_CHANNEL_0|Channel 0
+InjectedChannel|ADC_CHANNEL_1|Channel 1
+InjectedChannel|ADC_CHANNEL_2|Channel 2
+InjectedChannel|ADC_CHANNEL_3|Channel 3
+InjectedChannel|ADC_CHANNEL_4|Channel 4
+InjectedChannel|ADC_CHANNEL_5|Channel 5
+InjectedChannel|ADC_CHANNEL_6|Channel 6
+InjectedChannel|ADC_CHANNEL_7|Channel 7
+InjectedChannel|ADC_CHANNEL_8|Channel 8
+InjectedChannel|ADC_CHANNEL_9|Channel 9
+InjectedChannel|ADC_CHANNEL_10|Channel 10
+InjectedChannel|ADC_CHANNEL_11|Channel 11
+InjectedChannel|ADC_CHANNEL_12|Channel 12
+InjectedChannel|ADC_CHANNEL_13|Channel 13
+InjectedChannel|ADC_CHANNEL_14|Channel 14
+InjectedChannel|ADC_CHANNEL_15|Channel 15
+InjectedChannel|ADC_CHANNEL_16|Channel 16
+InjectedChannel|ADC_CHANNEL_18|Channel 18
+InjectedChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+InjectedChannel|ADC_CHANNEL_VBAT|Channel Vbat
+InjectedChannel|ADC_CHANNEL_VDDCORE|Channel VddCore
+AWDChannel|__NULL|none
+AWDChannel|ADC_CHANNEL_0|Channel 0
+AWDChannel|ADC_CHANNEL_1|Channel 1
+AWDChannel|ADC_CHANNEL_2|Channel 2
+AWDChannel|ADC_CHANNEL_3|Channel 3
+AWDChannel|ADC_CHANNEL_4|Channel 4
+AWDChannel|ADC_CHANNEL_5|Channel 5
+AWDChannel|ADC_CHANNEL_6|Channel 6
+AWDChannel|ADC_CHANNEL_7|Channel 7
+AWDChannel|ADC_CHANNEL_8|Channel 8
+AWDChannel|ADC_CHANNEL_9|Channel 9
+AWDChannel|ADC_CHANNEL_10|Channel 10
+AWDChannel|ADC_CHANNEL_11|Channel 11
+AWDChannel|ADC_CHANNEL_12|Channel 12
+AWDChannel|ADC_CHANNEL_13|Channel 13
+AWDChannel|ADC_CHANNEL_14|Channel 14
+AWDChannel|ADC_CHANNEL_15|Channel 15
+AWDChannel|ADC_CHANNEL_16|Channel 16
+AWDChannel|ADC_CHANNEL_17|Channel 17
+AWDChannel|ADC_CHANNEL_18|Channel 18
+AWDChannel|ADC_CHANNEL_19|Channel 19
+AWDChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+AWDChannel|ADC_CHANNEL_VBAT|Channel Vbat
+AWDChannel|ADC_CHANNEL_VDDCORE|Channel VddCore
+AWDChannel|ADC_CHANNEL_DAC1CH1_ADC2|Channel DAC1_OUT1
+AWDChannel|ADC_CHANNEL_DAC1CH2_ADC2|Channel DAC1_OUT2
+RegFilteringConfig|ADC_AWD_FILTERING_NONE|None
+InjFilteringConfig|ADC_AWD_FILTERING_NONE|None
+AWD1FilteringConfig|ADC_AWD_FILTERING_NONE|None
+AWD1FilteringConfig|ADC_AWD_FILTERING_2SAMPLES|2 Samples
+AWD1FilteringConfig|ADC_AWD_FILTERING_3SAMPLES|3 Samples
+AWD1FilteringConfig|ADC_AWD_FILTERING_4SAMPLES|4 Samples
+AWD1FilteringConfig|ADC_AWD_FILTERING_5SAMPLES|5 Samples
+AWD1FilteringConfig|ADC_AWD_FILTERING_6SAMPLES|6 Samples
+AWD1FilteringConfig|ADC_AWD_FILTERING_7SAMPLES|7 Samples
+AWD1FilteringConfig|ADC_AWD_FILTERING_8SAMPLES|8 Samples
+AWD1FilteringConfig|__NULL|None
+InjAWDChannel|__NULL|none
+InjAWDChannel|ADC_CHANNEL_0|Channel 0
+InjAWDChannel|ADC_CHANNEL_1|Channel 1
+InjAWDChannel|ADC_CHANNEL_2|Channel 2
+InjAWDChannel|ADC_CHANNEL_3|Channel 3
+InjAWDChannel|ADC_CHANNEL_4|Channel 4
+InjAWDChannel|ADC_CHANNEL_5|Channel 5
+InjAWDChannel|ADC_CHANNEL_6|Channel 6
+InjAWDChannel|ADC_CHANNEL_7|Channel 7
+InjAWDChannel|ADC_CHANNEL_8|Channel 8
+InjAWDChannel|ADC_CHANNEL_9|Channel 9
+InjAWDChannel|ADC_CHANNEL_10|Channel 10
+InjAWDChannel|ADC_CHANNEL_11|Channel 11
+InjAWDChannel|ADC_CHANNEL_12|Channel 12
+InjAWDChannel|ADC_CHANNEL_13|Channel 13
+InjAWDChannel|ADC_CHANNEL_14|Channel 14
+InjAWDChannel|ADC_CHANNEL_15|Channel 15
+InjAWDChannel|ADC_CHANNEL_16|Channel 16
+InjAWDChannel|ADC_CHANNEL_17|Channel 17
+InjAWDChannel|ADC_CHANNEL_18|Channel 18
+InjAWDChannel|ADC_CHANNEL_19|Channel 19
+InjAWDChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+InjAWDChannel|ADC_CHANNEL_VBAT|Channel Vbat
+InjAWDChannel|ADC_CHANNEL_VDDCORE|Channel VddCore
+InjAWDChannel|ADC_CHANNEL_DAC1CH1_ADC2|Channel DAC1_OUT1
+InjAWDChannel|ADC_CHANNEL_DAC1CH2_ADC2|Channel DAC1_OUT2
+AnalogWDChannel|ADC_CHANNEL_0|Channel 0
+AnalogWDChannel|ADC_CHANNEL_1|Channel 1
+AnalogWDChannel|ADC_CHANNEL_2|Channel 2
+AnalogWDChannel|ADC_CHANNEL_3|Channel 3
+AnalogWDChannel|ADC_CHANNEL_4|Channel 4
+AnalogWDChannel|ADC_CHANNEL_5|Channel 5
+AnalogWDChannel|ADC_CHANNEL_6|Channel 6
+AnalogWDChannel|ADC_CHANNEL_7|Channel 7
+AnalogWDChannel|ADC_CHANNEL_8|Channel 8
+AnalogWDChannel|ADC_CHANNEL_9|Channel 9
+AnalogWDChannel|ADC_CHANNEL_10|Channel 10
+AnalogWDChannel|ADC_CHANNEL_11|Channel 11
+AnalogWDChannel|ADC_CHANNEL_12|Channel 12
+AnalogWDChannel|ADC_CHANNEL_13|Channel 13
+AnalogWDChannel|ADC_CHANNEL_14|Channel 14
+AnalogWDChannel|ADC_CHANNEL_15|Channel 15
+AnalogWDChannel|ADC_CHANNEL_16|Channel 16
+AnalogWDChannel|ADC_CHANNEL_17|Channel 17
+AnalogWDChannel|ADC_CHANNEL_18|Channel 18
+AnalogWDChannel|ADC_CHANNEL_19|Channel 19
+AnalogWDChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+AnalogWDChannel|ADC_CHANNEL_VBAT|Channel Vbat
+AnalogWDChannel|ADC_CHANNEL_VDDCORE|Channel VddCore
+AWD3WatchdogNumber|ADC_ANALOGWATCHDOG_3|WatchDog 3
+AWD2WatchdogNumber|ADC_ANALOGWATCHDOG_2|WatchDog 2
+AWD1WatchdogNumber|ADC_ANALOGWATCHDOG_1|WatchDog 1
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_REG|Single regular channel
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_REGINJEC|Single regular or injected channel
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_REGINJEC|All regular and injected channels
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_INJEC|Single injected channel
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_INJEC|All injected channels
+WatchdogChannel|ADC_CHANNEL_0|Channel 0
+WatchdogChannel|ADC_CHANNEL_1|Channel 1
+WatchdogChannel|ADC_CHANNEL_2|Channel 2
+WatchdogChannel|ADC_CHANNEL_3|Channel 3
+WatchdogChannel|ADC_CHANNEL_4|Channel 4
+WatchdogChannel|ADC_CHANNEL_5|Channel 5
+WatchdogChannel|ADC_CHANNEL_6|Channel 6
+WatchdogChannel|ADC_CHANNEL_7|Channel 7
+WatchdogChannel|ADC_CHANNEL_8|Channel 8
+WatchdogChannel|ADC_CHANNEL_9|Channel 9
+WatchdogChannel|ADC_CHANNEL_10|Channel 10
+WatchdogChannel|ADC_CHANNEL_11|Channel 11
+WatchdogChannel|ADC_CHANNEL_12|Channel 12
+WatchdogChannel|ADC_CHANNEL_13|Channel 13
+WatchdogChannel|ADC_CHANNEL_14|Channel 14
+WatchdogChannel|ADC_CHANNEL_15|Channel 15
+WatchdogChannel|ADC_CHANNEL_16|Channel 16
+WatchdogChannel|ADC_CHANNEL_17|Channel 17
+WatchdogChannel|ADC_CHANNEL_18|Channel 18
+WatchdogChannel|ADC_CHANNEL_19|Channel 19
+WatchdogChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+WatchdogChannel|ADC_CHANNEL_VBAT|Channel Vbat
+WatchdogChannel|ADC_CHANNEL_VDDCORE|Channel VddCore
+AllChannels|ADC_CHANNEL_0|Channel 0
+AllChannels|ADC_CHANNEL_1|Channel 1
+AllChannels|ADC_CHANNEL_2|Channel 2
+AllChannels|ADC_CHANNEL_3|Channel 3
+AllChannels|ADC_CHANNEL_4|Channel 4
+AllChannels|ADC_CHANNEL_5|Channel 5
+AllChannels|ADC_CHANNEL_6|Channel 6
+AllChannels|ADC_CHANNEL_7|Channel 7
+AllChannels|ADC_CHANNEL_8|Channel 8
+AllChannels|ADC_CHANNEL_9|Channel 9
+AllChannels|ADC_CHANNEL_10|Channel 10
+AllChannels|ADC_CHANNEL_11|Channel 11
+AllChannels|ADC_CHANNEL_12|Channel 12
+AllChannels|ADC_CHANNEL_13|Channel 13
+AllChannels|ADC_CHANNEL_14|Channel 14
+AllChannels|ADC_CHANNEL_15|Channel 15
+AllChannels|ADC_CHANNEL_16|Channel 16
+AllChannels|ADC_CHANNEL_17|Channel 17
+AllChannels|ADC_CHANNEL_18|Channel 18
+AllChannels|ADC_CHANNEL_19|Channel 19
+AllChannels|ADC_CHANNEL_VREFINT|Channel Vrefint
+AllChannels|ADC_CHANNEL_VBAT|Channel Vbat
+AllChannels|ADC_CHANNEL_VDDCORE|Channel VddCore

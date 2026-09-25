@@ -1,0 +1,51 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=PWR
+Version=STM32H7RS_pwr_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PVDLevel|PVD detection Level|||||
+Mode|PWR PVD Mode|||||Mode: Specifies the PVD trigger mode.
+AVDLevel|AVD detection Level|||||
+AVDMode|PWR AVD Mode|||||Mode: Specifies the PVD trigger mode.
+HighImpedanceMode|High impedance mode|||||
+VoltageScaling|Internal Voltage reference scale|||||
+TrimmingMode|Trimming Mode|||||
+TrimmingValue|Trimming Value|||0|63|
+USB_REGEN|USB_REGEN|||||When active the USB_OTG_HS and/or USB_OTG_FS and/or UCPD, the user can enable/disable this parameter.
+USB_HS_REGEN|USB_HS_REGEN|||||When we active the USB_OTG_HS the user can enable/disable this parameter.
+
+[Values]
+# параметр|значение|подпись
+PVDLevel|PWR_PVDLEVEL_EXT_VOL|PWR PVD LEVEL EXTERNAL VOLTAGE
+PVDLevel|PWR_PVDLEVEL_1|PWR PVD LEVEL 1 (1.95 V)
+PVDLevel|PWR_PVDLEVEL_2|PWR PVD LEVEL 2 (2.1 V)
+PVDLevel|PWR_PVDLEVEL_3|PWR PVD LEVEL 3 (2.25 V)
+PVDLevel|PWR_PVDLEVEL_4|PWR PVD LEVEL 4 (2.4 V)
+PVDLevel|PWR_PVDLEVEL_5|PWR PVD LEVEL 5 (2.55 V)
+PVDLevel|PWR_PVDLEVEL_6|PWR PVD LEVEL 6 (2.7 V)
+PVDLevel|PWR_PVDLEVEL_7|PWR PVD LEVEL 7 (2.85 V)
+PVDLevel|PWR_PVDLEVEL_0|PWR PVD LEVEL 0 (1.95 V)
+Mode|PWR_PVD_MODE_NORMAL|basic mode is used
+Mode|PWR_PVD_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING|Event Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_FALLING|Event Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING_FALLING|Event Mode with Rising/Falling edge trigger detection
+AVDLevel|PWR_AVDLEVEL_1|PWR AVD LEVEL 1 (1.7 V)
+AVDLevel|PWR_AVDLEVEL_2|PWR AVD LEVEL 2 (2.1 V)
+AVDLevel|PWR_AVDLEVEL_3|PWR AVD LEVEL 3 (2.5 V)
+AVDLevel|PWR_AVDLEVEL_4|AWR AVD LEVEL 4 (2.8 V)
+AVDLevel|PWR_AVDLEVEL_0|PWR AVD LEVEL 0 (1.7 V)
+AVDMode|PWR_AVD_MODE_NORMAL|basic mode is used
+AVDMode|PWR_AVD_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+AVDMode|PWR_AVD_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+AVDMode|PWR_AVD_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+AVDMode|PWR_AVD_MODE_EVENT_RISING|Event Mode with Rising edge trigger detection
+AVDMode|PWR_AVD_MODE_EVENT_FALLING|Event Mode with Falling edge trigger detection
+AVDMode|PWR_AVD_MODE_EVENT_RISING_FALLING|Event Mode with Rising/Falling edge trigger detection
+TrimmingMode|__NULL|Factory Trimming
+TrimmingMode|USER_TRIMMING|User Trimming

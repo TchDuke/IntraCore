@@ -1,0 +1,35 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=HASH
+Version=hash1_v4_1_MP2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Algorithm|Secure HASH algorithm type|Algorithm||||Secure HASH algorithm type. Default setting is SHA1
+HASHMAC|HMAC Operation|Algorithm||||
+DataType|HASH Data Type|Parameters||||32-bit data, 16-bit data, 8-bit data or 1-bit string. This parameter can be a value of @ref HASH_Data_Type. Default setting is 32-bit(HASH_DATATYPE_32B)
+pKeyInputType|pKey input type|Parameters||||User can choose between HEXA or ASCII for pKey input type
+pKeyInput|pKey user input|Parameters||||Used only in HMAC operation. Will be used to generate Encryption/Decryption key in right format.
+KeySize|pkey size|Parameters||0|4294967295|Used only in HMAC operation.
+pKey|pkey formatted in hexadecimal format|Parameters||||Used only in HMAC operation.
+
+[Values]
+# параметр|значение|подпись
+Algorithm|HASH_ALGOSELECTION_SHA1|SHA1
+Algorithm|HASH_ALGOSELECTION_SHA2_224|SHA2_224
+Algorithm|HASH_ALGOSELECTION_SHA2_256|SHA2_256
+Algorithm|HASH_ALGOSELECTION_SHA2_384|SHA2_384
+Algorithm|HASH_ALGOSELECTION_SHA2_512_224|SHA2_512_224
+Algorithm|HASH_ALGOSELECTION_SHA2_512_256|SHA2_512_256
+Algorithm|HASH_ALGOSELECTION_SHA2_512|SHA2_512
+Algorithm|HASH_ALGOSELECTION_SHA3_224|SHA3_224
+Algorithm|HASH_ALGOSELECTION_SHA3_256|SHA3_256
+Algorithm|HASH_ALGOSELECTION_SHA3_384|SHA3_384
+Algorithm|HASH_ALGOSELECTION_SHA3_512|SHA3_512
+Algorithm|HASH_ALGOSELECTION_SHAKE_128|SHAKE_128
+Algorithm|HASH_ALGOSELECTION_SHAKE_256|SHAKE_256
+DataType|HASH_NO_SWAP|32-bit data. No swapping
+DataType|HASH_HALFWORD_SWAP|16-bit data. Each half word is swapped
+DataType|HASH_BYTE_SWAP|8-bit data. All bytes are swapped
+DataType|HASH_BIT_SWAP|1-bit data. In the word all bits are

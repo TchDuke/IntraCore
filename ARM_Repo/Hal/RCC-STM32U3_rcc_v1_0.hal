@@ -1,0 +1,558 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RCC
+Version=STM32U3_rcc_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+OscillatorType|Oscillator Type|||||
+HSE_Timout|HSE Startup Timout Value (ms)|RCC Parameters||1|4294967295|
+LSE_Timout|LSE Startup Timout Value (ms)|RCC Parameters||1|4294967295|
+APB1TimCLKDivider|APB1 Timer Clock Divider|||1|1|
+APB2TimCLKDivider|APB2 Timer Clock Divider|||1|1|
+ADC_DIV|ADC_DIV|||||
+USB_DIV|USB_DIV|||||
+MSIKDIV|MSIK Div|||||
+MSISDIV|MSIS Div|||||
+LSIDIV|LSIDIV|||||
+Cortex_Div|Cortex Div|||||
+CortexCLockSelectionVirtual|Cortex Clock Selection|||||
+CortexCLockSelectionVirtualString|Cortex Clock Selection|||||
+CortexCLockSelection|Cortex Clock Selection|||||
+RCC_RTC_Clock_Source_FROM_HSE|RCC_RTC_Clock_Source_FROM_HSE|||32|32|
+AHBCLKDivider|AHBCLK Divider|||||
+RCC_MCODiv|MCO Prescaler|||||
+RCC_MCO2Div|MCO2 Prescaler|||||
+APB1CLKDivider|APB1 Clock Divider|||||
+APB2CLKDivider|APB2 Clock Divider|||||
+APB3CLKDivider|APB3 Clock Divider|||||
+SYSCLKSource|SYSCLK Source|||||
+RCC_MCO1Source|MCO Clock Source|||||
+RCC_MCO2Source|MCO2 Clock Source|||||
+LSCOSource1Virtual|LSCO Clock Source|||||
+LSCOSource1VirtualString|LSCO Source|||||
+LSCOSource1|LSCO Clock Source|||||
+SPI1CLockSelection|SPI1 Clock Selection|||||
+SPI2CLockSelection|SPI2 Clock Selection|||||
+SPI3CLockSelection|SPI3 Clock Selection|||||
+SPI4CLockSelection|SPI4 Clock Selection|||||
+RTCClockSelection|RTC Clock Selection|||||
+USART1CLockSelection|USART1 Clock Source|||||
+FDCANClockSelection|FDCAN Clock Selection|||||
+USART3CLockSelection|USART3 Clock Source|||||
+USART2CLockSelection|USART2 Clock Source|||||
+UART4CLockSelection|UART4 Clock Source|||||
+UART5CLockSelection|UART5 Clock Source|||||
+LPUART1CLockSelection|MCO Clock Source|||||
+I2C1CLockSelection|I2C1 Clock Selection|||||
+I2C2CLockSelection|I2C2 Clock Selection|||||
+I2C3CLockSelection|I2C3 Clock Selection|||||
+I2C4CLockSelection|I2C4 Clock Selection|||||
+I3C1CLockSelection|I3C1 Clock Selection|||||
+I3C2CLockSelection|I3C2 Clock Selection|||||
+OCTOSPIMCLockSelection|OCTOSPIM Clock Selection|||||
+LPTIM1CLockSelection|LPTIM1 Clock Selection|||||
+LPTIM2CLockSelection|LPTIM2 Clock Selection|||||
+LPTIM3CLockSelection|LPTIM3,4 Clock Selection|||||
+SAI1CLockSelection|SAI1 CLock Selection|||||
+ADCCLockSelection|ADC, DAC CLock Selection|||||
+DACCLockSelectionVirtual|DAC Clock Source|||||
+DACCLockSelectionVirtualString|PLL Source|||||
+DACCLockSelection|DAC1 CLock Selection|||||
+AdfClockSelection|ADF1 CLock Selection|||||
+ICLKCLockSelection|CK48 CLock Selection|||||
+RNGCLockSelection|RNG CLock Selection|||||
+EnbaleCSS|Clock Security System: available only when HSE is used directly or undirectly as System Clock|||||
+EnableCSSLSE|LSE Clock Security System: available only when LSE is used as Clock Source for RTC/LCD|||||
+HSE_VALUE|HSE OSC||MHz|4000000|50000000|
+LSE_VALUE|LSE OSC||KHz|32768|32768|
+LSI_VALUE|LSI Source||KHz|31400|32600|
+LSIDIV_VALUE|LSI Source||KHz|245|32600|
+MSIKSource|MSIK Source||MHz|||
+MSISSource|MSIS Source||MHz|||
+HSI_VALUE|HSI Source||MHz|||
+HSI48_VALUE|HSI Source||MHz|||
+EPOD_VALUE|EPOD input freq value||MHz|||
+FCLKCortexFreq_Value|FCLK Cortex||MHz||96000000|
+AHBFreq_Value|AHB clock||MHz||96000000|
+WatchDogFreq_Value|IWDG clock||KHz|||
+CortexFreq_Value|Cortex System Timer||MHz||96000000|
+CRSFreq_Value|CRS clock||MHz|||
+SAESFreq_Value|SAES clock||MHz|||
+SPI1Freq_Value|SPI1 clock||MHz||96000000|
+SPI2Freq_Value|SPI2 clock||MHz||96000000|
+SPI3Freq_Value|SPI3 clock||MHz||96000000|
+SPI4Freq_Value|SPI4 clock||MHz||96000000|
+SYSCLKFreq_VALUE|System Clock||MHz||96000000|
+MSISFreq_Value|MSIS Clock||MHz||96000000|
+WakeUpClockFreq_VALUE|Wakeup Clock||MHz||25000000|
+MCO1PinFreq_Value|MCO Output||MHz|||
+MCO2PinFreq_Value|MCO2 Output||MHz|||
+LSCOPinFreq_Value|LSCO Output||MHz|||
+HCLKFreq_Value|HCLK clock||MHz||96000000|
+SAI1Freq_Value|SAI1 clock||MHz||96000000|
+I2C3Freq_Value|I2C3 clock||MHz||96000000|
+I2C4Freq_Value|I2C4 clock||MHz||96000000|
+I2C2Freq_Value|I2C2 clock||MHz||96000000|
+I2C1Freq_Value|I2C1 clock||MHz||96000000|
+I3C1Freq_Value|I3C1 clock||MHz||96000000|
+I3C2Freq_Value|I3C2 clock||MHz||96000000|
+ADF1Freq_Value|ADF1 clock||MHz||96000000|
+FDCANFreq_Value|FDCAN clock||MHz||96000000|
+OCTOSPIMFreq_Value|OCTOSPIM clock||MHz||96000000|
+LPTIM3Freq_Value|LPTIM3,4 clock||MHz||96000000|
+UART5Freq_Value|UART5 clock||MHz||96000000|
+UART4Freq_Value|UART4 clock||MHz||96000000|
+USART3Freq_Value|USART3 clock||MHz||96000000|
+USART2Freq_Value|USART2 clock||MHz||96000000|
+USART1Freq_Value|USART1 clock||MHz||96000000|
+LPUART1Freq_Value|LPUART1 clock||MHz||96000000|
+LPTIM1Freq_Value|LPTIM1 clock||MHz||96000000|
+LPTIM2Freq_Value|LPTIM2 clock||MHz||96000000|
+USBFreq_Value|USB clock Source||MHz|48000000|48000000|
+SDMMCFreq_Value|SDMMC clock||MHz||96000000|
+RNGFreq_Value|RNG clock Source||MHz||48000000|
+ADCFreq_Value|ADC clock||MHz||96000000|
+DACFreq_Value|DAC1 clock Source||MHz|||
+synchADCFreq_Value|ADC synchr||MHz|||
+asynchADCFreq_Value|ADC asynchr||MHz|||
+RTCFreq_Value|RTC Clock Source||KHz||1562500|
+APB2TimFreq_Value|APB2 Timer clock||MHz||96000000|
+APB1TimFreq_Value|APB1 Timer clock||MHz||96000000|
+APB2Freq_Value|APB2 Peripheral Clock||MHz||96000000|
+APB1Freq_Value|APB1 Peripheral Clock||MHz||96000000|
+APB3Freq_Value|APB3 Peripheral Clock||MHz||96000000|
+EXTERNALSAI1_CLOCK_VALUE|SAI1 Extern Clock||MHz|||
+EnableHSE|HSE OSC|||||
+RTCEnable|RTC|||||
+RTCTZEnable|RTC|||||
+EnableLSERTC|EnableLSERTC|||||
+EnableHSERTCDevisor|RTC and HSE Oscillator|||||
+LSEEnable|LSE should be enabled from RCC config|||||
+ADCEnable|ADC in Asynchronous mode|||||
+ADCTZEnable|ADC in Asynchronous mode|||||
+DACEnable|DAC1|||||
+DACTZEnable|DAC1|||||
+IWDGEnable|IWDG|||||
+LSCOEnable|LSCO clock output|||||
+MCOEnable|Master clock output|||||
+MCO2Enable|Master clock2 output|||||
+MCOTZEnable|Master clock output|||||
+MCO2TZEnable|Master clock2 output|||||
+USBEnable|USB|||||
+SDMMCEnable|SDMMC|||||
+SDMMCTZEnable|SDMMC|||||
+SPI1Enable|SPI1|||||
+SPI1TZEnable|SPI1|||||
+SPI2Enable|SPI2|||||
+SPI2TZEnable|SPI2|||||
+SPI4Enable|SPI4|||||
+SPI3Enable|SPI3|||||
+SPI4TZEnable|SPI4|||||
+SPI3TZEnable|SPI3|||||
+RNGEnable|RNG|||||
+RNGTZEnable|RNG|||||
+USART1Enable|USART1|||||
+USART1TZEnable|USART1|||||
+APB1TrustZoneEnable|APB1 pres|||||
+MSIKRCTrustZoneEnable|MSIKRC pres|||||
+FDCANEnable|FDCAN|||||
+FDCANTZEnable|FDCAN|||||
+USART3Enable|USART3|||||
+USART2Enable|USART2|||||
+USART3TZEnable|USART3|||||
+USART2TZEnable|USART2|||||
+UART4Enable|UART4|||||
+UART4TZEnable|UART4|||||
+UART5Enable|UART5|||||
+UART5TZEnable|UART5|||||
+LPUART1Enable|LPUART1|||||
+LPUART1TZEnable|LPUART1|||||
+LPTIM1Enable|LPTIM1|||||
+LPTIM1TZEnable|LPTIM1|||||
+LPTIM2Enable|LPTIM2|||||
+LPTIM2TZEnable|LPTIM2|||||
+LPTIM3Enable|LPTIM3,4|||||
+LPTIM3TZEnable|LPTIM3,4|||||
+I2C1Enable|I2C1|||||
+I3C1Enable|I3C1|||||
+I3C1TZEnable|I3C1|||||
+I3C2Enable|I3C2|||||
+I3C2TZEnable|I3C1|||||
+I2C1TZEnable|I2C1|||||
+I2C2Enable|I2C2|||||
+I2C2TZEnable|I2C2|||||
+I2C4Enable|I2C4|||||
+I2C4TZEnable|I2C4|||||
+I2C3Enable|I2C3|||||
+I2C3TZEnable|I2C3|||||
+ADF1Enable|ADF1|||||
+ADF1TZEnable|ADF1|||||
+OCTOSPIMEnable|OCTOSPIM|||||
+OCTOSPIMTZEnable|OCTOSPIM|||||
+SAI1Enable|SAI1|||||
+SAI1TZEnable|SAI1|||||
+EnableExtClockForSAI1|EnableExtClockForSAI1|||||
+OscillatorTypeHSE|Clock Type HSE|||||
+HSEUsed|HSE used flag|||1|1|
+HSEState|Hse State|||||
+OscillatorTypeLSE|Clock Type LSE|||||
+LSEUsed|LSE Is Used|||1|1|
+LSEState|Lse State|||||
+OscillatorTypeLSI|Clock Type LSI|||||
+LSIUsed|LSI used flag|||1|1|
+LSIState|Lsi State|||||
+OscillatorTypeHSI|Clock Type HSI|||||
+HSIUsed|HSI Is Used|||1||
+HSIState|Hsi State|||||
+OscillatorTypeHSI48|Clock Type HSI48|||||
+HSI48Used|HSI48 Is Used|||1||
+HSI48State|Hsi48 State|||||
+OscillatorTypeMSIS|Clock Type MSI|||||
+OscillatorTypeMSIK|Clock Type MSI|||||
+MSIKUsed|MSIK Is Used|||1||
+MSISUsed|MSIS Is Used|||1||
+MSIUsed|MSI Is Used|||1||
+MSIState|Msi State|||||
+MSIKState|Msi State|||||
+ClockType|Clock Type|||||
+ClockTypeSysClk|Clock Type SysClk|||||
+ClockTypeHCLK|Clock Type AHB|||||
+ClockTypePCLK1|Clock Type HCLK1|||||
+ClockTypePCLK2|Clock Type HCLK2|||||
+ClockTypePCLK3|Clock Type HCLK3|||||
+PeriphClockSelectionARG|Peripherals clock selection|||||
+C_PeriphClockSelectionARG|common Periph Clock Selection|||||
+RCC_PERIPHCLK_SYSTICKVar|RCC_PERIPHCLK_SYSTICKVar|||||
+RTCClockSelectionARG|RTCClockSelectionARG|||||
+OCTOSPIMCLockSelectionARG|OCTOSPIMCLockSelectionARG|||||
+CortexCLockSelectionARG|CortexCLockSelectionARG|||||
+USART1lockSelectionARG|USART1lockSelectionARG|||||
+Spi1ClockSelectionARG|Spi1ClockSelectionARG|||||
+Spi2ClockSelectionARG|Spi2ClockSelectionARG|||||
+Spi3ClockSelectionARG|Spi3ClockSelectionARG|||||
+Spi4ClockSelectionARG|Spi4ClockSelectionARG|||||
+USART3lockSelectionARG|USART3lockSelectionARG|||||
+USART2lockSelectionARG|USART2lockSelectionARG|||||
+UART4lockSelectionARG|UART4lockSelectionARG|||||
+UART5lockSelectionARG|UART5lockSelectionARG|||||
+LPUART1lockSelectionARG|LPUART1lockSelectionARG|||||
+LPTIM1lockSelectionARG|LPTIM1lockSelectionARG|||||
+LPTIM2lockSelectionARG|LPTIM2lockSelectionARG|||||
+LPTIM3lockSelectionARG|LPTIM3lockSelectionARG|||||
+FDCANClockSelectionARG|FDCAN|||||
+Adf1ClockSelectionARG|ADF1|||||
+SAI1lockSelectionARG|SAI1lockSelectionARG|||||
+I2C1lockSelectionARG|I2C1lockSelectionARG|||||
+I2C2lockSelectionARG|I2C2lockSelectionARG|||||
+I3C1lockSelectionARG|I3C1lockSelectionARG|||||
+I3C2lockSelectionARG|I3C2lockSelectionARG|||||
+I2C3lockSelectionARG|I2C3lockSelectionARG|||||
+I2C4lockSelectionARG|I2C4lockSelectionARG|||||
+RNGClockSelectionARG|RNGClockSelectionARG|||||
+ICLKCLockSelectionARG|ICLKCLockSelectionARG|||||
+USBDivARG|USBDivARG|||||
+ADCClockSelectionARG|ADCClockSelectionARG|||||
+ADCDivARG|ADCDivARG|||||
+Dac1ClockSelectionARG|Dac1ClockSelectionARG|||||
+HSEStateARG|Lse StateARG|||||
+LSEStateARG|Lse StateARG|||||
+HSIStateARG|HSI StateARG|||||
+LSIStateARG|LSI StateARG|||||
+HSI48StateARG|HSI48 StateARG|||||
+LSIDivARG|LSIDivARG|||||
+MSIStateARG|MSI StateARG|||||
+MSISSourceARG|MSI SourceARG|||||
+MSIPLLStructStateARG|MSI PLLStructStateARG|||||
+MSIPLLStructSourceARG|MSI SourceARG|||||
+MSIKSourceARG|MSI SourceARG|||||
+MSIKStateARG|MSIK StateARG|||||
+MSISDIVARG|MSIS Div|||||
+MSIKDIVARG|MSIK Div|||||
+HSICalibrationValue|HSI Calibration Value|RCC Parameters||0|127|
+ClockTypeARG|Clock TypeARG|||||
+SYSCLKSourceARG|SysClock SourceARG|||||
+AHBCLKDividerARG|AHBCLKDividerARG|||||
+APB1CLKDividerARG|APB1CLKDividerARG|||||
+APB2CLKDividerARG|APB2CLKDividerARG|||||
+APB3CLKDividerARG|APB3CLKDividerARG|||||
+RCC_MCO1|Clock Output|||||
+RCC_MCO2|Clock Output|||||
+HSICalibrationValueARG|HSICalValue|||||
+LSCOSource1ARG|LSCOSource1ARG|||||
+VDD_VALUE|VDD voltage (V)|System Parameters|V|1.71|3.6|
+SupplySource|SupplySource|Power Parameters||||
+PWR_Regulator_Voltage_Scale|Power Regulator Voltage Scale|Power Parameters||||
+EPOD_Booster_Source|EPOD Booster Source|Power Parameters||||Only available when HCLK frequency is greater than 24MHz.
+EPOD_Booster_SourceArg|EPOD Booster Source|||||
+Booster_Source|EPOD Booster Src|Power Parameters||||
+EPOD_Booster_Divider|EPOD Booster Divider|Power Parameters||||Only Divider 1 is available when MSIS is selected as EPOD Booster Source.
+EPOD_Booster_DividerArg|EPOD Booster Divider|||||
+FLatency|Flash Latency(WS)|System Parameters||||
+MSIAutoCalibration|MSIS/MSIK Auto Calibration|RCC Parameters||||
+MSIAutoCalibrationArg|MSI Auto Calibration arg|RCC Parameters||||
+MSIPLLFAST|MSI PLL mode fast startup|RCC Parameters||||
+EnableCRS|CRS|||||
+RCC_MCO1SourceARG|MCO1 SourceARG|||||
+RCC_MCO2SourceARG|MCO2 SourceARG|||||
+Prescaler|CRS Synchro Divider|CRS Parameters||||
+Source|Synchro|CRS Parameters||||
+Polarity|CRS Synchro Polarity|CRS Parameters||||
+ReloadValueType|CRS Synchro Reload Value Type|CRS Parameters||||
+ReloadValueLL|CRS Synchro Reload Value|CRS Parameters||0|65535|
+ReloadValue|CRS Synchro Reload Value|CRS Parameters||0|65535|
+ReloadValueARGLL|CRS Synchro Reload Value|CRS Parameters||||
+ReloadValueARG|CRS Synchro Reload Value|CRS Parameters||||
+Fsync|CRS Synchro frequency (Hz)|CRS Parameters||=1000/128|=1000/128|
+ErrorLimitValue|Error limit Value|CRS Parameters||0|255|
+HSI48CalibrationValue|HSI48 Calibration Value|CRS Parameters||0|63|
+LSE_Drive_Capability|LSE Drive Capability|RCC Parameters||||
+LSIRCisInternal|LSIRC is Internal osc|||||
+LSIEnable|LSIEnable|||||
+rccSecurity|Security of the reset flag|Security RCC||||
+rccPrivilegeNSecure|Privilege of RCC Non-Secure Items|Privilege RCC||||
+rccPrivilegeSecure|Privilege of RCC Secure Items|Privilege RCC||||
+
+[Values]
+# параметр|значение|подпись
+ADC_DIV|RCC_ADCDACCLK_DIV1|1
+ADC_DIV|RCC_ADCDACCLK_DIV2|2
+ADC_DIV|RCC_ADCDACCLK_DIV4|4
+ADC_DIV|RCC_ADCDACCLK_DIV8|8
+ADC_DIV|RCC_ADCDACCLK_DIV16|16
+ADC_DIV|RCC_ADCDACCLK_DIV32|32
+ADC_DIV|RCC_ADCDACCLK_DIV64|64
+ADC_DIV|RCC_ADCDACCLK_DIV128|128
+ADC_DIV|RCC_ADCDACCLK_DIV256|256
+ADC_DIV|RCC_ADCDACCLK_DIV512|512
+USB_DIV|RCC_USB1CLKSOURCE_ICLK|1
+USB_DIV|RCC_USB1CLKSOURCE_ICLK_DIV2|2
+MSIKDIV|RCC_MSI_DIV1|1
+MSIKDIV|RCC_MSI_DIV2|2
+MSIKDIV|RCC_MSI_DIV4|4
+MSIKDIV|RCC_MSI_DIV8|8
+MSISDIV|RCC_MSI_DIV1|1
+MSISDIV|RCC_MSI_DIV2|2
+MSISDIV|RCC_MSI_DIV4|4
+MSISDIV|RCC_MSI_DIV8|8
+LSIDIV|RCC_LSI_DIV1|1
+LSIDIV|RCC_LSI_DIV128|128
+CortexCLockSelectionVirtual|RCC_SYSTICKCLKSOURCE_HCLK_DIV8|SYSTICK Clksource HCLK
+CortexCLockSelectionVirtual|RCC_SYSTICKCLKSOURCE_LSI|SYSTICK Clksource LSI
+CortexCLockSelectionVirtual|RCC_SYSTICKCLKSOURCE_LSE|SYSTICK Clksource LSE
+CortexCLockSelection|RCC_SYSTICKCLKSOURCE_HCLK_DIV8|SYSTICK Clksource HCLK
+CortexCLockSelection|RCC_SYSTICKCLKSOURCE_LSE|SYSTICK Clksource LSE
+CortexCLockSelection|RCC_SYSTICKCLKSOURCE_LSI|SYSTICK Clksource LSI
+AHBCLKDivider|RCC_SYSCLK_DIV1|1
+AHBCLKDivider|RCC_SYSCLK_DIV2|2
+AHBCLKDivider|RCC_SYSCLK_DIV4|4
+AHBCLKDivider|RCC_SYSCLK_DIV8|8
+AHBCLKDivider|RCC_SYSCLK_DIV16|16
+AHBCLKDivider|RCC_SYSCLK_DIV64|64
+AHBCLKDivider|RCC_SYSCLK_DIV128|128
+AHBCLKDivider|RCC_SYSCLK_DIV256|256
+AHBCLKDivider|RCC_SYSCLK_DIV512|512
+RCC_MCODiv|RCC_MCODIV_1|1
+RCC_MCODiv|RCC_MCODIV_2|2
+RCC_MCODiv|RCC_MCODIV_4|4
+RCC_MCODiv|RCC_MCODIV_8|8
+RCC_MCODiv|RCC_MCODIV_16|16
+RCC_MCODiv|RCC_MCODIV_32|32
+RCC_MCODiv|RCC_MCODIV_64|64
+RCC_MCODiv|RCC_MCODIV_128|128
+RCC_MCO2Div|RCC_MCO2DIV_1|1
+RCC_MCO2Div|RCC_MCO2DIV_2|2
+RCC_MCO2Div|RCC_MCO2DIV_4|4
+RCC_MCO2Div|RCC_MCO2DIV_8|8
+RCC_MCO2Div|RCC_MCO2DIV_16|16
+RCC_MCO2Div|RCC_MCO2DIV_32|32
+RCC_MCO2Div|RCC_MCO2DIV_64|64
+RCC_MCO2Div|RCC_MCO2DIV_128|128
+APB1CLKDivider|RCC_HCLK_DIV1|1
+APB1CLKDivider|RCC_HCLK_DIV2|2
+APB1CLKDivider|RCC_HCLK_DIV4|4
+APB1CLKDivider|RCC_HCLK_DIV8|8
+APB1CLKDivider|RCC_HCLK_DIV16|16
+APB2CLKDivider|RCC_HCLK_DIV1|1
+APB2CLKDivider|RCC_HCLK_DIV2|2
+APB2CLKDivider|RCC_HCLK_DIV4|4
+APB2CLKDivider|RCC_HCLK_DIV8|8
+APB2CLKDivider|RCC_HCLK_DIV16|16
+APB3CLKDivider|RCC_HCLK_DIV1|1
+APB3CLKDivider|RCC_HCLK_DIV2|2
+APB3CLKDivider|RCC_HCLK_DIV4|4
+APB3CLKDivider|RCC_HCLK_DIV8|8
+APB3CLKDivider|RCC_HCLK_DIV16|16
+SYSCLKSource|RCC_SYSCLKSOURCE_MSIS|Sysclksource Msi
+SYSCLKSource|RCC_SYSCLKSOURCE_HSI|Sysclksource Hsi
+SYSCLKSource|RCC_SYSCLKSOURCE_HSE|Sysclksource Hse
+RCC_MCO1Source|RCC_MCO1SOURCE_LSE|MCO1SRC LSE
+RCC_MCO1Source|RCC_MCO1SOURCE_LSI|MCO1SRC SYSCLK
+RCC_MCO1Source|RCC_MCO1SOURCE_HSE|MCO1SRC HSI
+RCC_MCO1Source|RCC_MCO1SOURCE_HSI|MCO1SRC MSI
+RCC_MCO1Source|RCC_MCO1SOURCE_SYSCLK|MCO1SRC HSE
+RCC_MCO1Source|RCC_MCO1SOURCE_MSIS|MCO1SRC LSI
+RCC_MCO1Source|RCC_MCO1SOURCE_HSI48|MCO1SRC HSI48
+RCC_MCO1Source|RCC_MCO1SOURCE_MSIK|MCO1SRC MSIK
+RCC_MCO2Source|RCC_MCO2SOURCE_LSE|MCO2SRC SYSCLK
+RCC_MCO2Source|RCC_MCO2SOURCE_LSI|MCO2SRC HSI
+RCC_MCO2Source|RCC_MCO2SOURCE_HSE|MCO2SRC MSI
+RCC_MCO2Source|RCC_MCO2SOURCE_HSI|MCO2SRC HSE
+RCC_MCO2Source|RCC_MCO2SOURCE_SYSCLK|MCO2SRC LSE
+RCC_MCO2Source|RCC_MCO2SOURCE_MSIS|MCO2SRC LSI
+RCC_MCO2Source|RCC_MCO2SOURCE_HSI48|MCO2SRC HSI48
+RCC_MCO2Source|RCC_MCO2SOURCE_MSIK|MCO2SRC MSIK
+LSCOSource1Virtual|RCC_LSCOSOURCE_LSI|LSI
+LSCOSource1Virtual|RCC_LSCOSOURCE_LSE|LSE
+LSCOSource1|RCC_LSCOSOURCE_LSI|LSI
+LSCOSource1|RCC_LSCOSOURCE_LSE|LSE
+SPI1CLockSelection|RCC_SPI1CLKSOURCE_PCLK2|SPI1 Clksource PCLK2
+SPI1CLockSelection|RCC_SPI1CLKSOURCE_MSIK|SPI1 Clksource MSIK
+SPI2CLockSelection|RCC_SPI2CLKSOURCE_PCLK1|SPI2 Clksource PCLK1
+SPI2CLockSelection|RCC_SPI2CLKSOURCE_MSIK|SPI2 Clksource MSIK
+SPI3CLockSelection|RCC_SPI3CLKSOURCE_PCLK1|SPI3 Clksource PCLK1
+SPI3CLockSelection|RCC_SPI3CLKSOURCE_MSIK|SPI3 Clksource MSIK
+SPI4CLockSelection|RCC_SPI4CLKSOURCE_PCLK1|SPI4 Clksource PCLK1
+SPI4CLockSelection|RCC_SPI4CLKSOURCE_MSIK|SPI4 Clksource MSIK
+RTCClockSelection|RCC_RTCCLKSOURCE_HSE_DIV32|Rtcclksource Hse div32
+RTCClockSelection|RCC_RTCCLKSOURCE_LSE|Rtcclksource Lse
+RTCClockSelection|RCC_RTCCLKSOURCE_LSI|Rtcclksource Lsi
+USART1CLockSelection|RCC_USART1CLKSOURCE_PCLK2|Usart1 Clksource Pclk2
+USART1CLockSelection|RCC_USART1CLKSOURCE_HSI|Usart1 Clksource Hsi
+FDCANClockSelection|RCC_FDCANCLKSOURCE_SYSCLK|FDCAN Clksource SYSCLK
+FDCANClockSelection|RCC_FDCANCLKSOURCE_MSIK|FDCAN Clksource MSIK
+USART3CLockSelection|RCC_USART3CLKSOURCE_PCLK1|Usart3 Clksource Pclk1
+USART3CLockSelection|RCC_USART3CLKSOURCE_HSI|Usart3 Clksource Hsi
+USART2CLockSelection|RCC_USART2CLKSOURCE_PCLK1|Usart2 Clksource Pclk1
+USART2CLockSelection|RCC_USART2CLKSOURCE_HSI|Usart2 Clksource Hsi
+UART4CLockSelection|RCC_UART4CLKSOURCE_PCLK1|UART4 Clksource Pclk1
+UART4CLockSelection|RCC_UART4CLKSOURCE_HSI|UART4 Clksource Hsi
+UART5CLockSelection|RCC_UART5CLKSOURCE_PCLK1|UART5 Clksource Pclk1
+UART5CLockSelection|RCC_UART5CLKSOURCE_HSI|UART5 Clksource Hsi
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_PCLK3|LPUART1 Clksource Pclk3
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_HSI|LPUART1 Clksource Hsi
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_LSE|LPUART1 Clksource Lse
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_MSIK|LPUART1 Clksource MSIK
+I2C1CLockSelection|RCC_I2C1CLKSOURCE_PCLK1|I2C1 Clksource PCLK1
+I2C1CLockSelection|RCC_I2C1CLKSOURCE_MSIK|I2C1 Clksource MSIK
+I2C2CLockSelection|RCC_I2C2CLKSOURCE_PCLK1|I2C2 Clksource PCLK2
+I2C2CLockSelection|RCC_I2C2CLKSOURCE_MSIK|I2C2 Clksource MSIK
+I2C3CLockSelection|RCC_I2C3CLKSOURCE_PCLK3|I2C3 Clksource PCLK3
+I2C3CLockSelection|RCC_I2C3CLKSOURCE_MSIK|I2C3 Clksource MSIK
+I2C4CLockSelection|RCC_I2C4CLKSOURCE_PCLK1|I2C4 Clksource PCLK1
+I2C4CLockSelection|RCC_I2C4CLKSOURCE_MSIK|I2C4 Clksource MSIK
+I3C1CLockSelection|RCC_I3C1CLKSOURCE_PCLK1|I3C1 Clksource PCLK1
+I3C1CLockSelection|RCC_I3C1CLKSOURCE_MSIK|I3C1 Clksource MSIK
+I3C2CLockSelection|RCC_I3C2CLKSOURCE_PCLK2|I3C2 Clksource PCLK2
+I3C2CLockSelection|RCC_I3C2CLKSOURCE_MSIK|I3C2 Clksource MSIK
+OCTOSPIMCLockSelection|RCC_OCTOSPICLKSOURCE_SYSCLK|OCTOSPIM Clksource Sysclk
+OCTOSPIMCLockSelection|RCC_OCTOSPICLKSOURCE_MSIK|OCTOSPIM Clksource Msi
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_MSIK|Lptim1 Clksource Pclk
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_LSI|Lptim1 Clksource Lsi
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_HSI|Lptim1 Clksource Hsi
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_LSE|Lptim1 Clksource Lse
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_PCLK1|LPTIM2 Clksource Pclk
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_LSI|LPTIM2 Clksource Lsi
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_HSI|LPTIM2 Clksource Hsi
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_LSE|LPTIM2 Clksource Lse
+LPTIM3CLockSelection|RCC_LPTIM34CLKSOURCE_MSIK|LPTIM3,4 Clksource Pclk
+LPTIM3CLockSelection|RCC_LPTIM34CLKSOURCE_LSI|LPTIM3,4 Clksource Lsi
+LPTIM3CLockSelection|RCC_LPTIM34CLKSOURCE_HSI|LPTIM3,4 Clksource Hsi
+LPTIM3CLockSelection|RCC_LPTIM34CLKSOURCE_LSE|LPTIM3,4 Clksource Lse
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_MSIK|MSIK
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_PIN|SAI1_EXT
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_HSE|HSE
+ADCCLockSelection|RCC_ADCDACCLKSOURCE_HCLK|HCLK
+ADCCLockSelection|RCC_ADCDACCLKSOURCE_HSE|HSE
+ADCCLockSelection|RCC_ADCDACCLKSOURCE_MSIK|MSIK
+DACCLockSelectionVirtual|RCC_DAC1SHCLKSOURCE_LSI|LSI
+DACCLockSelectionVirtual|RCC_DAC1SHCLKSOURCE_LSE|LSE
+DACCLockSelection|RCC_DAC1SHCLKSOURCE_LSE|LSE
+DACCLockSelection|RCC_DAC1SHCLKSOURCE_LSI|LSI
+AdfClockSelection|RCC_ADF1CLKSOURCE_HCLK|HCLK
+AdfClockSelection|RCC_ADF1CLKSOURCE_PIN|SAI1_EXT
+AdfClockSelection|RCC_ADF1CLKSOURCE_MSIK|MSIK
+AdfClockSelection|RCC_ADF1CLKSOURCE_SAI1K|SAI1
+ICLKCLockSelection|RCC_ICLKCLKSOURCE_SYSCLK|SYSCLK
+ICLKCLockSelection|RCC_ICLKCLKSOURCE_MSIK|MSIK
+ICLKCLockSelection|RCC_ICLKCLKSOURCE_HSE|HSE
+ICLKCLockSelection|RCC_ICLKCLKSOURCE_HSI48|HSI48
+RNGCLockSelection|RCC_RNGCLKSOURCE_HSI48|HSI48
+RNGCLockSelection|RCC_RNGCLKSOURCE_MSIK|MSIK
+MSIKSource|RCC_MSI_RC0|96
+MSIKSource|RCC_MSI_RC1|24
+MSISSource|RCC_MSI_RC0|96
+MSISSource|RCC_MSI_RC1|24
+OscillatorTypeHSE|RCC_OSCILLATORTYPE_HSE|HSE
+HSEState|RCC_HSE_BYPASS|Hse Bypass
+HSEState|RCC_HSE_BYPASS_DIGITAL|Hse Digital Bypass
+HSEState|RCC_HSE_ON|Hse ON
+HSEState|RCC_HSE_OFF|Hse Off
+OscillatorTypeLSE|RCC_OSCILLATORTYPE_LSE|LSE
+LSEState|RCC_LSE_BYPASS_RTC_ONLY|Lse Bypass for RTC only
+LSEState|RCC_LSE_ON_RTC_ONLY|Lse on for RTC only
+LSEState|RCC_LSE_BYPASS|Lse Bypass
+LSEState|RCC_LSE_ON|Lse ON
+LSEState|RCC_LSE_OFF|Lse Off
+OscillatorTypeLSI|RCC_OSCILLATORTYPE_LSI|LSI
+LSIState|RCC_LSI_ON|LSI ON
+OscillatorTypeHSI|RCC_OSCILLATORTYPE_HSI|HSI
+HSIState|RCC_HSI_ON|Hsi On
+OscillatorTypeHSI48|RCC_OSCILLATORTYPE_HSI48|HSI48
+HSI48State|RCC_HSI48_ON|Hsi48 On
+OscillatorTypeMSIS|RCC_OSCILLATORTYPE_MSIS|MSI
+OscillatorTypeMSIK|RCC_OSCILLATORTYPE_MSIK|MSIK
+ClockTypeSysClk|RCC_CLOCKTYPE_SYSCLK|Sysclk
+ClockTypeHCLK|RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_HCLK
+ClockTypePCLK1|RCC_CLOCKTYPE_PCLK1|PCLK1
+ClockTypePCLK2|RCC_CLOCKTYPE_PCLK2|PCLK2
+ClockTypePCLK3|RCC_CLOCKTYPE_PCLK3|PCLK3
+RCC_PERIPHCLK_SYSTICKVar|RCC_PERIPHCLK_SYSTICK|RCC_PERIPHCLK_SYSTICK
+RCC_MCO1|RCC_MCO1|Clock Output
+RCC_MCO2|RCC_MCO2|Clock Output
+SupplySource|PWR_LDO_SUPPLY|PWR_LDO_SUPPLY
+SupplySource|PWR_SMPS_SUPPLY|PWR_SMPS_SUPPLY
+PWR_Regulator_Voltage_Scale|PWR_REGULATOR_VOLTAGE_SCALE2|Power Regulator Voltage Scale 2
+PWR_Regulator_Voltage_Scale|PWR_REGULATOR_VOLTAGE_SCALE1|Power Regulator Voltage Scale 1
+EPOD_Booster_Source|RCC_EPODBOOSTER_SOURCE_MSIS|EPOD Booster Source MSIS
+EPOD_Booster_Source|RCC_EPODBOOSTER_SOURCE_HSI|EPOD Booster Source HSI
+EPOD_Booster_Source|RCC_EPODBOOSTER_SOURCE_HSE|EPOD Booster Source HSE
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV1|EPOD Booster Divider 1
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV2|EPOD Booster Divider 2
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV4|EPOD Booster Divider 4
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV6|EPOD Booster Divider 6
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV8|EPOD Booster Divider 8
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV10|EPOD Booster Divider 10
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV12|EPOD Booster Divider 12
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV14|EPOD Booster Divider 14
+EPOD_Booster_Divider|RCC_EPODBOOSTER_DIV16|EPOD Booster Divider 16
+FLatency|FLASH_LATENCY_2|2 WS (3 CPU cycle)
+FLatency|FLASH_LATENCY_1|1 WS (2 CPU cycle)
+FLatency|FLASH_LATENCY_0|0 WS (1 CPU cycle)
+FLatency|FLASH_LATENCY_3|3 WS (4 CPU cycle)
+MSIAutoCalibration|PLLMODE_MSIS|MSIS auto calibration
+MSIAutoCalibration|PLLMODE_MSIK|MSISK auto calibration
+Prescaler|RCC_CRS_SYNC_DIV1|1
+Prescaler|RCC_CRS_SYNC_DIV2|2
+Prescaler|RCC_CRS_SYNC_DIV4|4
+Prescaler|RCC_CRS_SYNC_DIV8|8
+Prescaler|RCC_CRS_SYNC_DIV16|16
+Prescaler|RCC_CRS_SYNC_DIV32|32
+Prescaler|RCC_CRS_SYNC_DIV64|64
+Prescaler|RCC_CRS_SYNC_DIV128|128
+Source|RCC_CRS_SYNC_SOURCE_GPIO|GPIO
+Source|RCC_CRS_SYNC_SOURCE_LSE|LSE
+Source|RCC_CRS_SYNC_SOURCE_USB|USB
+Polarity|RCC_CRS_SYNC_POLARITY_RISING|Active on rising edge
+Polarity|RCC_CRS_SYNC_POLARITY_FALLING|Active on falling edge
+LSE_Drive_Capability|RCC_LSEDRIVE_LOW|LSE oscillator low drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_MEDIUMLOW|LSE oscillator medium low drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_MEDIUMHIGH|LSE oscillator medium high drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_HIGH|LSE oscillator high drive capability
+rccSecurity|RMVF_SEC|Enable
+rccSecurity|RMVF_NSEC|Disable
+rccPrivilegeNSecure|RCC_NSEC_PRIV|Enable
+rccPrivilegeNSecure|RCC_NSEC_NPRIV|Disable
+rccPrivilegeSecure|RCC_SEC_PRIV|Enable
+rccPrivilegeSecure|RCC_SEC_NPRIV|Disable

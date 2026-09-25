@@ -1,0 +1,155 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RTC
+Version=rtc2_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+HourFormat|Hour Format|General||||
+AsynchPrediv|Asynchronous Predivider value|General||0|127|
+SynchPrediv|Synchronous Predivider value|General||0|32767|
+OutPut|Output|General||||
+OutPutPolarity|Output Polarity|General||||
+OutPutType|Output Type|General||||
+Format|Data Format|Calendar Time||||
+Hours|Hours|Calendar Time||0|23|
+HoursARG|Hours|Calendar Time||||
+Minutes|Minutes|Calendar Time||0|59|
+MinutesARG|Minutes|Calendar Time||||
+Seconds|Seconds|Calendar Time||0|59|
+SecondsARG|Seconds|Calendar Time||||
+TimeFormat|Time Format|Calendar Time||||
+DayLightSaving|Day Light Saving: value of hour adjustment|Calendar Time||||
+StoreOperation|Store Operation|Calendar Time||||
+WeekDay|Week Day|Calendar Date||||
+Month|Month|Calendar Date||||
+Date|Date|Calendar Date||1|31|
+DateARG|Date|Calendar Date||||
+Year|Year|Calendar Date||0|99|
+YearARG|Year|Calendar Date||||
+Hours_A|Hours|Alarm A||0|23|
+HoursARG_A|Hours|Alarm A||||
+Minutes_A|Minutes|Alarm A||0|59|
+MinutesARG_A|Minutes|Alarm A||||
+Seconds_A|Seconds|Alarm A||0|59|
+SecondsARG_A|Seconds|Alarm A||||
+AlarmMask_A|Alarm Mask|Alarm A||||
+AlarmMaskDateWeekDay_A|Alarm Mask Date Week day|Alarm A||||
+AlarmMaskHours_A|Alarm Mask Hours|Alarm A||||
+AlarmMaskMinutes_A|Alarm Mask Minutes|Alarm A||||
+AlarmMaskSeconds_A|Alarm Mask Seconds|Alarm A||||
+AlarmDateWeekDaySel_A|Alarm Date Week Day Sel|Alarm A||||
+AlarmDateWeekDay_A|Alarm Week Day|Alarm A||1|31|
+AlarmDateWeekDayARG_A|Alarm Date|Alarm A||||
+Alarm_A|Alarm|Alarm A||||
+Hours_B|Hours|Alarm B||0|23|
+HoursARG_B|Hours|Alarm B||||
+Minutes_B|Minutes|Alarm B||0|59|
+MinutesARG_B|Minutes|Alarm B||||
+Seconds_B|Seconds|Alarm B||0|59|
+SecondsARG_B|Seconds|Alarm B||||
+AlarmMask_B|Alarm Mask|Alarm B||||
+AlarmMaskDateWeekDay_B|Alarm Mask Date Week day|Alarm B||||
+AlarmMaskHours_B|Alarm Mask Hours|Alarm B||||
+AlarmMaskMinutes_B|Alarm Mask Minutes|Alarm B||||
+AlarmMaskSeconds_B|Alarm Mask Seconds|Alarm B||||
+AlarmDateWeekDaySel_B|Alarm Date Week Day Sel|Alarm B||||
+AlarmDateWeekDay_B|Alarm Week Day|Alarm B||1|31|
+AlarmDateWeekDayARG_B|Alarm Date|Alarm B||||
+Alarm_B|Alarm|Alarm B||||
+TimeStampEdge|Time Stamp Pin Edge|Time Stamp||||
+TimeStampPin|Time Stamp Pin|Time Stamp||||
+Tamper_1|Tamper|Tamper||||
+PinSelection_1|Pin Selection|Tamper||||
+Trigger_1|Tamper 1 Trigger|Tamper||||
+WakeUpClock|Wake Up Clock|Wake UP||||
+WakeUpCounter|Wake Up Counter|Wake UP||0|65535|
+RTC_CalibOutput|Calibration|Calibration||||
+
+[Values]
+# параметр|значение|подпись
+HourFormat|RTC_HOURFORMAT_12|Hourformat 12
+HourFormat|RTC_HOURFORMAT_24|Hourformat 24
+OutPut|RTC_OUTPUT_ALARMA|Output Alarm A
+OutPut|RTC_OUTPUT_ALARMB|Output Alarm B
+OutPut|RTC_OUTPUT_WAKEUP|Output Wakeup
+OutPut|RTC_OUTPUT_DISABLE|Output Disable
+OutPutPolarity|RTC_OUTPUT_POLARITY_HIGH|Output Polarity High
+OutPutPolarity|RTC_OUTPUT_POLARITY_LOW|Output Polarity Low
+OutPutType|RTC_OUTPUT_TYPE_OPENDRAIN|Output Type Opendrain
+OutPutType|RTC_OUTPUT_TYPE_PUSHPULL|Output Type Pushpull
+Format|RTC_FORMAT_BIN|Binary data format
+Format|RTC_FORMAT_BCD|BCD data format
+TimeFormat|RTC_HOURFORMAT12_AM|12 AM
+TimeFormat|RTC_HOURFORMAT12_PM|12 PM
+DayLightSaving|RTC_DAYLIGHTSAVING_NONE|Daylightsaving None
+DayLightSaving|RTC_DAYLIGHTSAVING_SUB1H|Daylightsaving Sub1h
+DayLightSaving|RTC_DAYLIGHTSAVING_ADD1H|Daylightsaving Add1h
+StoreOperation|RTC_STOREOPERATION_RESET|Storeoperation Reset
+StoreOperation|RTC_STOREOPERATION_SET|Storeoperation Set
+WeekDay|RTC_WEEKDAY_MONDAY|Monday
+WeekDay|RTC_WEEKDAY_TUESDAY|Tuesday
+WeekDay|RTC_WEEKDAY_WEDNESDAY|Wednesday
+WeekDay|RTC_WEEKDAY_THURSDAY|Thursday
+WeekDay|RTC_WEEKDAY_FRIDAY|Friday
+WeekDay|RTC_WEEKDAY_SATURDAY|Saturday
+WeekDay|RTC_WEEKDAY_SUNDAY|Sunday
+Month|RTC_MONTH_JANUARY|January
+Month|RTC_MONTH_FEBRUARY|February
+Month|RTC_MONTH_MARCH|March
+Month|RTC_MONTH_APRIL|April
+Month|RTC_MONTH_MAY|May
+Month|RTC_MONTH_JUNE|June
+Month|RTC_MONTH_JULY|July
+Month|RTC_MONTH_AUGUST|August
+Month|RTC_MONTH_SEPTEMBER|September
+Month|RTC_MONTH_OCTOBER|October
+Month|RTC_MONTH_NOVEMBER|November
+Month|RTC_MONTH_DECEMBER|December
+AlarmMaskDateWeekDay_A|RTC_ALARMMASK_DATEWEEKDAY|Enable
+AlarmMaskHours_A|RTC_ALARMMASK_HOURS|Enable
+AlarmMaskMinutes_A|RTC_ALARMMASK_MINUTES|Enable
+AlarmMaskSeconds_A|RTC_ALARMMASK_SECONDS|Enable
+AlarmDateWeekDaySel_A|RTC_ALARMDATEWEEKDAYSEL_DATE|Date
+AlarmDateWeekDaySel_A|RTC_ALARMDATEWEEKDAYSEL_WEEKDAY|Weekday
+AlarmDateWeekDay_A|RTC_WEEKDAY_MONDAY|Monday
+AlarmDateWeekDay_A|RTC_WEEKDAY_TUESDAY|Tuesday
+AlarmDateWeekDay_A|RTC_WEEKDAY_WEDNESDAY|Wednesday
+AlarmDateWeekDay_A|RTC_WEEKDAY_THURSDAY|Thursday
+AlarmDateWeekDay_A|RTC_WEEKDAY_FRIDAY|Friday
+AlarmDateWeekDay_A|RTC_WEEKDAY_SATURDAY|Saturday
+AlarmDateWeekDay_A|RTC_WEEKDAY_SUNDAY|Sunday
+Alarm_A|RTC_ALARM_A|ALARM A
+Alarm_A|RTC_ALARM_B|ALARM B
+AlarmMaskDateWeekDay_B|RTC_ALARMMASK_DATEWEEKDAY|Enable
+AlarmMaskHours_B|RTC_ALARMMASK_HOURS|Enable
+AlarmMaskMinutes_B|RTC_ALARMMASK_MINUTES|Enable
+AlarmMaskSeconds_B|RTC_ALARMMASK_SECONDS|Enable
+AlarmDateWeekDaySel_B|RTC_ALARMDATEWEEKDAYSEL_DATE|Date
+AlarmDateWeekDaySel_B|RTC_ALARMDATEWEEKDAYSEL_WEEKDAY|Weekday
+AlarmDateWeekDay_B|RTC_WEEKDAY_MONDAY|Monday
+AlarmDateWeekDay_B|RTC_WEEKDAY_TUESDAY|Tuesday
+AlarmDateWeekDay_B|RTC_WEEKDAY_WEDNESDAY|Wednesday
+AlarmDateWeekDay_B|RTC_WEEKDAY_THURSDAY|Thursday
+AlarmDateWeekDay_B|RTC_WEEKDAY_FRIDAY|Friday
+AlarmDateWeekDay_B|RTC_WEEKDAY_SATURDAY|Saturday
+AlarmDateWeekDay_B|RTC_WEEKDAY_SUNDAY|Sunday
+Alarm_B|RTC_ALARM_A|ALARM A
+Alarm_B|RTC_ALARM_B|ALARM B
+TimeStampEdge|RTC_TIMESTAMPEDGE_RISING|Time Stamp occurs on the Rising edge
+TimeStampEdge|RTC_TIMESTAMPEDGE_FALLING|Time Stamp occurs on the Falling edge
+TimeStampPin|RTC_TIMESTAMPPIN_DEFAULT|PC13 is selected as RTC TimeStamp Pin
+TimeStampPin|RTC_TIMESTAMPPIN_POS1|PI8 is selected as RTC TimeStamp Pin
+Tamper_1|RTC_TAMPER_1|Tamper 1
+PinSelection_1|RTC_TAMPERPIN_DEFAULT|Tamper Pin PC13
+PinSelection_1|RTC_TAMPERPIN_POS1|Tamper Pin PI8
+Trigger_1|RTC_TAMPERTRIGGER_RISINGEDGE|Rising Edge
+Trigger_1|RTC_TAMPERTRIGGER_FALLINGEDGE|Falling Edge
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV16|RTCCLK / 16
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV8|RTCCLK / 8
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV4|RTCCLK / 4
+WakeUpClock|RTC_WAKEUPCLOCK_RTCCLK_DIV2|RTCCLK / 2
+WakeUpClock|RTC_WAKEUPCLOCK_CK_SPRE_16BITS|1 Hz
+WakeUpClock|RTC_WAKEUPCLOCK_CK_SPRE_17BITS|1 Hz with 1 bit added to Wake Up Counter
+RTC_CalibOutput|RTC_CALIBOUTPUT_512HZ|Signal has a regular waveform at 512Hz

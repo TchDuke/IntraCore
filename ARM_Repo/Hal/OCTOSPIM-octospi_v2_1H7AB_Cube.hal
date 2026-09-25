@@ -1,0 +1,63 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=OCTOSPIM
+Version=octospi_v2_1H7AB_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockPrescaler|Clock Prescaler|General Parameters||1|255|
+FifoThreshold|Fifo Threshold|General Parameters||1|32|
+DualQuad|Dual Quad mode|General Parameters||||
+MemoryType|Memory Type|General Parameters||||
+DeviceSize|Device Size|General Parameters||1|32|
+SampleShifting|Sample Shifting|General Parameters||||
+ChipSelectHighTime|Chip Select High Time|General Parameters||||
+FreeRunningClock|Free Running Clock|General Parameters||||
+ClockMode|Clock Mode|General Parameters||||
+WrapSize|Wrap Size|General Parameters||||
+DelayHoldQuarterCycle|Delay Hold Quarter Cycle|General Parameters||||
+ChipSelectBoundary|Flash Size|General Parameters||0|31|
+TimeOutActivation|Time Out Activation|Memory Mapped Parameters||||
+TimeOutPeriod|Time Out Period|Memory Mapped Parameters||1|4294967295|
+Match|Match Value|Status Polling Parameters||0|4294967295|
+Mask|Mask Value|Status Polling Parameters||0|4294967295|
+MatchMode|MatchMode Parameter|Status Polling Parameters||||
+AutomaticStop|Automatic Stop Value|Status Polling Parameters||||
+Interval|Interval Value|Status Polling Parameters||0|65535|
+
+[Values]
+# параметр|значение|подпись
+DualQuad|HAL_OSPI_DUALQUAD_DISABLE|Disable
+DualQuad|HAL_OSPI_DUALQUAD_ENABLE|Enable
+MemoryType|HAL_OSPI_MEMTYPE_MICRON|Micron mode
+MemoryType|HAL_OSPI_MEMTYPE_MACRONIX|Macronix mode
+MemoryType|HAL_OSPI_MEMTYPE_HYPERBUS|Hyperbus mode
+MemoryType|HAL_OSPI_MEMTYPE_MACRONIX_RAM|Macronix RAM mode
+SampleShifting|HAL_OSPI_SAMPLE_SHIFTING_NONE|No Sample Shifting
+SampleShifting|HAL_OSPI_SAMPLE_SHIFTING_HALFCYCLE|Sample Shifting Half Cycle
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_1_CYCLE|1 Cycle
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_2_CYCLE|2 Cycles
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_3_CYCLE|3 Cycles
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_4_CYCLE|4 Cycles
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_5_CYCLE|5 Cycles
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_6_CYCLE|6 Cycles
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_7_CYCLE|7 Cycles
+ChipSelectHighTime|QSPI_CS_HIGH_TIME_8_CYCLE|8 Cycles
+FreeRunningClock|HAL_OSPI_FREERUNCLK_DISABLE|Disable
+FreeRunningClock|HAL_OSPI_FREERUNCLK_ENABLE|Enable
+ClockMode|HAL_OSPI_CLOCK_MODE_0|Low
+ClockMode|HAL_OSPI_CLOCK_MODE_3|High
+WrapSize|HAL_OSPI_WRAP_NOT_SUPPORTED|Not Supported
+WrapSize|HAL_OSPI_WRAP_16_BYTES|16 Bytes
+WrapSize|HAL_OSPI_WRAP_32_BYTES|32 Bytes
+WrapSize|HAL_OSPI_WRAP_64_BYTES|64 Bytes
+WrapSize|HAL_OSPI_WRAP_128_BYTES|128 Bytes
+DelayHoldQuarterCycle|HAL_OSPI_DHQC_DISABLE|Disable
+DelayHoldQuarterCycle|HAL_OSPI_DHQC_ENABLE|Enable
+TimeOutActivation|HAL_OSPI_TIMEOUT_COUNTER_DISABLE|Disable
+TimeOutActivation|HAL_OSPI_TIMEOUT_COUNTER_ENABLE|Enable
+MatchMode|HAL_OSPI_MATCH_MODE_AND|Disable
+MatchMode|HAL_OSPI_MATCH_MODE_OR|Enable
+AutomaticStop|HAL_OSPI_AUTOMATIC_STOP_DISABLE|Disable
+AutomaticStop|HAL_OSPI_AUTOMATIC_STOP_ENABLE|Enable

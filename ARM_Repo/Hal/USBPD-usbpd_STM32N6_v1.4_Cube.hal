@@ -1,0 +1,265 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USBPD
+Version=usbpd_STM32N6_v1.4_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+USBPD_DEVICE_APP_MEM_POOL_SIZE|USBPD memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBPD application.
+USBPD_NVIC_Request|USBPD request UCPD1 NVIC|USBPD needs||||
+USBPD_DMA_Request|USBPD request UCPD1 DMA|USBPD needs||||
+USBPD_NbPorts|Number of USBPD ports|USB IF and Manufacturer ID||||
+USBPD_VID|Vendor ID|USB IF and Manufacturer ID||0x00000000|0xFFFFFFFF|The Vendor ID is defined by the USBD_VID parameter of USBX peripheral.
+USBPD_PID|Product ID|USB IF and Manufacturer ID||||The Product ID is defined by the USBD_PID parameter of USBX peripheral.
+USBPD_XID|XID|USB IF and Manufacturer ID||||Outward facing identifier used to determine certification status of a PD product.
+GUI_V1_8_0_OR_NEWER|GUI_VERS|||||GUI Version embedded in FW package.
+PE_SupportedSOP_P0|SOP|Start of Packet Parameters||||SOP is supported by default
+PE_SupportedSOPapos_P0|SOP'|Start of Packet Parameters||||SOP' is not supported by default
+PE_SupportedSOPquot_P0|SOP"|Start of Packet Parameters||||SOP" is not supported by default
+PE_SupportedSOPaposDBG_P0|SOP' debug|Start of Packet Parameters||||SOP' debug is not supported by default
+PE_SupportedSOPquotDBG_P0|SOP" debug|Start of Packet Parameters||||SOP" debug is not supported by default
+PE_SpecRevision_P0|Specification revision value|Port 0 Parameters||||
+PE_DefaultRole_P0|Default port role|Port 0 Parameters||||When the UCPD instance is initialized to sink then the port role will always be sink. When the UCPD instance is initialized to source then the port role will always be source. When the UCPD instance is initialized to dual role then the port role can either be source or sink. By default it will be initialized to sink.
+PE_RoleSwap_P0|Port role swap|Port 0 Parameters||||"Port role swap" is not supported by "Min Source" and "Min Sink" mode.
+PE_DataSwap_P0|Data role swap|Port 0 Parameters||||
+PE_DR_Swap_To_DFP_P0|Data role swap to DFP|Port 0 Parameters||||"Data role swap to DFP" is not supported by "Min Source" and "Min Sink" mode.
+PE_DR_Swap_To_UFP_P0|Data role swap to UFP|Port 0 Parameters||||"Data role swap to UFP" is not supported by "Min Source" and "Min Sink" mode.
+PE_VconnSwap_P0|VCONN swap|Port 0 Parameters||||"VCONN swap" is not supported by "Min Sink" mode.
+PE_VDMSupport_P0|Vendor defined messages|Port 0 Parameters||||"Vendor defined messages" is not supported by "CONFIG SPR", "Min Source", "Min Sink" and "Min Drp" mode.
+PE_RespondsToDiscovSOP_P0|Discover Identity response|Port 0 Parameters||||"Discover Identity response" is not supported by "Min Sink" mode.
+PE_AttemptsDiscovSOP_P0|Discover Identity sent|Port 0 Parameters||||
+PE_PingSupport_P0|Ping|Port 0 Parameters||||
+PE_CapscounterSupport_P0|Caps counter|Port 0 Parameters||||
+PE_UnchunkSupport_P0|Unchunk mode|PD Revision 3 specific parameters||||"Unchunk mode" is not supported by "Min Source", "Min Sink" and "Min Drp" mode.
+PE_FastRoleSwapSupportDisplayed_P0|Fast role swap|PD Revision 3 specific parameters||||"Fast role swap" is not supported by "Min Source", "Min Sink" and "Min Drp" mode.
+PE_FastRoleSwapSupport_P0|Fast role swap|PD Revision 3 specific parameters||||
+USBPD_PDO_FIXED_EXT_POWER_P0|Unconstrained Power|PD Revision 3 specific parameters||||
+USBPD_PDO_FIXED_HIGHERCAPAB_P0|Higher Capability|PD Revision 3 specific parameters||||
+USBPD_PDO_FIXED_USBCOMM_P0|USB Communication Capable|PD Revision 3 specific parameters||||
+USBPD_PDO_FIXED_USBSUSPEND_P0|USB Suspend Supported|PD Revision 3 specific parameters||||
+Is_GetPPSStatus_Supported_P0|PPS message|PD Revision 3 specific parameters||||"PPS message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_SrcCapaExt_Supported_P0|Source Capabilities Extended message|PD Revision 3 specific parameters||||"Source Capabilities Extended message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_Alert_Supported_P0|Alert message|PD Revision 3 specific parameters||||"Alert message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_GetStatus_Supported_P0|Status message|PD Revision 3 specific parameters||||"Status message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_GetManufacturerInfo_Supported_P0|Manufacturer Info message|PD Revision 3 specific parameters||||"Manufacturer Info message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_GetCountryCodes_Supported_P0|Country Codes message|PD Revision 3 specific parameters||||"Country Codes message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_GetCountryInfo_Supported_P0|Country Info message|PD Revision 3 specific parameters||||"Country Info message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_SecurityRequest_Supported_P0|Security Response message|PD Revision 3 specific parameters||||"Security Response message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_FirmUpdateRequest_Supported_P0|Firmware update Response message|PD Revision 3 specific parameters||||"Firmware update Response message" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+Is_SnkCapaExt_Supported_P0|Sink Capabilities Extended message|PD Revision 3 specific parameters||||
+Is_GetBattery_Supported_P0|Get Battery Capabitity and Status messages|PD Revision 3 specific parameters||||"Get Battery Capabitity and Status messages" is not supported by "Min Sink", "Min Source" and "Min Drp" mode.
+VDM_ModalOperation_P0|Product support Modes|Vendor Defined Message parameters||||
+VDM_bcdDevice_SOP_P0|Vendor ID assigned product release version|Vendor Defined Message parameters||||
+VDM_USBHostSupport_P0|USB Host enumerating|Vendor Defined Message parameters||||
+VDM_USBDeviceSupport_P0|USB Device enumerating|Vendor Defined Message parameters||||
+VDM_ProductTypeUFPorCP_P0|UFP or CP product type|Vendor Defined Message parameters||||
+VDM_ProductTypeDFP_P0|DFP product type|Vendor Defined Message parameters||||
+CAD_RoleToggle_P0|CAD role toggle|Cable Detection Parameters||||
+CAD_DefaultResistor_P0|CAD default resistor|Cable Detection Parameters||||
+CAD_TryFeature_P0|CAD try feature|Cable Detection Parameters||||
+CAD_AccesorySupport_P0|CAD accessory|Cable Detection Parameters||||
+CAD_SRCToggleTime_P0|CAD source toggle time|Cable Detection Parameters|ms|||
+CAD_SNKToggleTime_P0|CAD sink toggle time|Cable Detection Parameters|ms|||
+PORT0_NB_SOURCEPDO|Number of Source PDOs for port 0|||1|7|
+USBPD_PDO_NB|Number of PDO to define|||0|7|
+USBPD_PDO_TYPE|PDO type|||||It doesn't support "Augmented Power Data Object (APDO)" in case of "PPS Message" in sheet "Stack Port 0 Parameters" is "Not Supported"
+USBPD_PDO_TYPE0|PDO type|||||PDO 0 supports only Fixed Supply
+USBPD_PDO_APDO_SET_MAX_CURRENT|Max Current (mA)|||0|5000|3A max, 5A only for 20V PDO
+USBPD_PDO_APDO_SET_MAX_VOLTAGE|Max Voltage (mV)|||3300|21000|
+USBPD_PDO_APDO_SET_MIN_VOLTAGE|Min Voltage (mV)|||3300|21000|
+USBPD_PORT0_PDO_SRC_FIXED_DRD|Dual-Role Data|||||It takes "Supported" of "Data role swap to UFP" or "Data role swap to UFP" parameter available in the "Stack Port 0 Parameters" sheet in case of one of them is "supported" else "Not Supported"
+USBPD_PORT0_PDO_SNK_FIXED_DRD|Dual-Role Data|||||It takes "Supported" of "Data role swap to UFP" or "Data role swap to UFP" parameter available in the "Stack Port 0 Parameters" sheet in case of one of them is "supported" else "Not Supported"
+USBPD_PORT0_PDO_SRC_FIXED_DRP|Dual Role Power|||||It takes the value of "Port role swap" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PORT0_PDO_SNK_FIXED_DRP|Dual Role Power|||||It takes the value of "Port role swap" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PORT0_PDO_SRC_FIXED_EXT_POWER|Unconstrained Power|||||It takes the value of "Unconstrained Power" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PORT0_PDO_SNK_FIXED_EXT_POWER|Unconstrained Power|||||It takes the value of "Unconstrained Power" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PORT0_PDO_FIXED_FRS|Fast Role Swap|||||"Fast Role Swap" takes the same value of "Fast Role Swap" in "Stack Port 0 Parameters" sheet.
+USBPD_PORT0_PDO_FIXED_HIGHERCAPAB|Higher Capability|||||It takes the value of "Higher Capability" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PDO_FIXED_PEAKCURRENT|Peak Current|||||
+USBPD_PDO_FIXED_SET_MAX_CURRENT|Current (mA)|||100|5000|3A max, 5A only for 20V PDO
+USBPD_PDO_FIXED_SET_OP_CURRENT|Current (mA)|||0|5000|Max 3A for all voltages, except 20V: max 5A (requires 5A cable). For EPR: Same but 5A 20V requires EPR cable. + 5A 28V/36V/48V possible also with EPR cable
+USBPD_PDO_FIXED_SET_VOLTAGE|Voltage (mV)|||||Only possible 5V, 9V, 15V, 20V
+USBPD_PORT0_PDO_FIXED_UNCHUNK|Unchunked Extended Messages Supported|||||It takes the value of "Unchunk mode" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PORT0_PDO_SRC_FIXED_USBCOMM|USB Communication Capable|||||It takes the value of "USB Communication Capable" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PORT0_PDO_SNK_FIXED_USBCOMM|USB Communication Capable|||||It takes the value of "USB Communication Capable" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PORT0_PDO_FIXED_USBSUSPEND|USB Suspend Supported|||||It takes the value of "USB Suspend Supported" parameter available in the "Stack Port 0 Parameters" sheet
+USBPD_PDO_PPS_PWR_LIMITED|Programmable Power Supply : Power Limited|||||
+USBPD_PDO_SNK_APDO_PPS|PPS|||||
+USBPD_PDO_SNK_BATTERY_SET_MAX_VOLTAGE|Max Voltage (mV)|||3300|21000|
+USBPD_PDO_SNK_BATTERY_SET_MIN_VOLTAGE|Min Voltage (mV)|||3300|21000|
+USBPD_PDO_SNK_BATTERY_SET_OP_POWER|Operational Power (mW)|||0|100000|
+USBPD_PDO_SNK_VARIABLE_SET_MAX_VOLTAGE|Max Voltage (mV)|||3300|21000|
+USBPD_PDO_SNK_VARIABLE_SET_MIN_VOLTAGE|Min Voltage (mV)|||3300|21000|
+USBPD_PDO_SNK_VARIABLE_SET_OP_CURRENT|Operationnal Current (mA)|||0|5000|3A max, 5A only for 20V PDO
+USBPD_PDO_SRC_APDO_PPS|PPS|||||
+USBPD_PDO_SRC_BATTERY_SET_MAX_POWER|Max Power (mW)|||500|100000|
+USBPD_PDO_SRC_BATTERY_SET_MAX_VOLTAGE|Max Voltage (mV)|||3300|21000|
+USBPD_PDO_SRC_BATTERY_SET_MIN_VOLTAGE|Min Voltage (mV)|||3300|21000|
+USBPD_PDO_SRC_VARIABLE_SET_MAX_CURRENT|Max Current (mA)|||100|5000|3A max, 5A only for 20V PDO
+USBPD_PDO_SRC_VARIABLE_SET_MAX_VOLTAGE|Max Voltage (mV)|||3300|21000|
+USBPD_PDO_SRC_VARIABLE_SET_MIN_VOLTAGE|Min Voltage (mV)|||3300|21000|
+USBPD_PORT0|UCPD Instance|Port Configuration||||
+UCPD1_RX_DMA_CHANNEL|DMA Request for UCPD1_RX|||||
+UCPD1_TX_DMA_CHANNEL|DMA Request for UCPD1_TX|||||
+USBPD_PORT0_RX_DMA_CHANNEL|DMA Request RX for UCPD Port 0|Port Configuration||||
+USBPD_PORT0_TX_DMA_CHANNEL|DMA Request TX for UCPD Port 0|Port Configuration||||
+UCPD1_FRSTX1_PIN|FRSTX1 for UCPD1 on PC8,AF6|||||
+UCPD1_FRSTX2_PIN|FRSTX2 for UCPD1 on PC9,AF6|||||
+USBPD_PORT0_FRSTX1_PIN|FRSTX1 for USB port 0|Gpio Configuration||||
+USBPD_PORT0_FRSTX2_PIN|FRSTX2 for USB port 0|Gpio Configuration||||
+UCPD1_IRQ|External Interrupt number for UCPD1|||||
+USBPD_PORT0_IRQ|External Interrupt number for USB port 0|Gpio Configuration||||
+TIMinterrupt||||||
+USBPD_CoreLib|USBPD_CoreLib|||||
+PORT0_UCPD_MODE|USBPD Defined Mode used for ftl|||||
+
+[Values]
+# параметр|значение|подпись
+PE_SupportedSOP_P0|USBPD_SUPPORTED_SOP_NONE|Not supported
+PE_SupportedSOP_P0|USBPD_SUPPORTED_SOP_SOP|Supported
+PE_SupportedSOPapos_P0|USBPD_SUPPORTED_SOP_NONE|Not supported
+PE_SupportedSOPapos_P0|USBPD_SUPPORTED_SOP_SOP1|Supported
+PE_SupportedSOPquot_P0|USBPD_SUPPORTED_SOP_NONE|Not supported
+PE_SupportedSOPquot_P0|USBPD_SUPPORTED_SOP_SOP2|Supported
+PE_SupportedSOPaposDBG_P0|USBPD_SUPPORTED_SOP_NONE|Not supported
+PE_SupportedSOPaposDBG_P0|USBPD_SUPPORTED_SOP_SOP1_DEBUG|Supported
+PE_SupportedSOPquotDBG_P0|USBPD_SUPPORTED_SOP_NONE|Not supported
+PE_SupportedSOPquotDBG_P0|USBPD_SUPPORTED_SOP_SOP2_DEBUG|Supported
+PE_SpecRevision_P0|USBPD_SPECIFICATION_REV3|Revision 3 (PD3)
+PE_DefaultRole_P0|USBPD_PORTPOWERROLE_SRC|Source
+PE_DefaultRole_P0|USBPD_PORTPOWERROLE_SNK|Sink
+PE_RoleSwap_P0|USBPD_FALSE|Not supported
+PE_RoleSwap_P0|USBPD_TRUE|Supported
+PE_DataSwap_P0|USBPD_FALSE|Not supported
+PE_DataSwap_P0|USBPD_TRUE|Supported
+PE_DR_Swap_To_DFP_P0|USBPD_FALSE|Not supported
+PE_DR_Swap_To_DFP_P0|USBPD_TRUE|Supported
+PE_DR_Swap_To_UFP_P0|USBPD_FALSE|Not supported
+PE_DR_Swap_To_UFP_P0|USBPD_TRUE|Supported
+PE_VconnSwap_P0|USBPD_FALSE|Not supported
+PE_VconnSwap_P0|USBPD_TRUE|Supported
+PE_VDMSupport_P0|USBPD_FALSE|Not supported
+PE_VDMSupport_P0|USBPD_TRUE|Supported
+PE_RespondsToDiscovSOP_P0|USBPD_FALSE|Not supported
+PE_RespondsToDiscovSOP_P0|USBPD_TRUE|Supported
+PE_AttemptsDiscovSOP_P0|USBPD_FALSE|Not supported
+PE_AttemptsDiscovSOP_P0|USBPD_TRUE|Supported
+PE_PingSupport_P0|USBPD_FALSE|Not supported
+PE_PingSupport_P0|USBPD_TRUE|Supported
+PE_CapscounterSupport_P0|USBPD_FALSE|Not supported
+PE_CapscounterSupport_P0|USBPD_TRUE|Supported
+PE_UnchunkSupport_P0|USBPD_FALSE|Not supported
+PE_UnchunkSupport_P0|USBPD_TRUE|Supported
+PE_FastRoleSwapSupportDisplayed_P0|USBPD_PDO_SNK_FIXED_FRS_NOT_SUPPORTED|Not supported
+PE_FastRoleSwapSupportDisplayed_P0|USBPD_PDO_SNK_FIXED_FRS_DEFAULT|Default USB Power
+PE_FastRoleSwapSupportDisplayed_P0|USBPD_PDO_SNK_FIXED_FRS_1_5A|1.5A @ 5V
+PE_FastRoleSwapSupportDisplayed_P0|USBPD_PDO_SNK_FIXED_FRS_3A|3.0A@ 5V
+PE_FastRoleSwapSupport_P0|USBPD_FALSE|Not supported
+PE_FastRoleSwapSupport_P0|USBPD_TRUE|Supported
+USBPD_PDO_FIXED_EXT_POWER_P0|VUSBPD_PDO_FIXED_EXT_POWER_NOT_SUPPORTED|Not supported
+USBPD_PDO_FIXED_EXT_POWER_P0|VUSBPD_PDO_FIXED_EXT_POWER_SUPPORTED|Supported
+USBPD_PDO_FIXED_HIGHERCAPAB_P0|USBPD_PDO_SNK_FIXED_HIGHERCAPAB_NOT_SUPPORTED|Not supported
+USBPD_PDO_FIXED_HIGHERCAPAB_P0|USBPD_PDO_SNK_FIXED_HIGHERCAPAB_SUPPORTED|Supported
+USBPD_PDO_FIXED_USBCOMM_P0|USBPD_PDO_FIXED_USBCOMM_NOT_SUPPORTED|Not supported
+USBPD_PDO_FIXED_USBCOMM_P0|USBPD_PDO_FIXED_USBCOMM_SUPPORTED|Supported
+USBPD_PDO_FIXED_USBSUSPEND_P0|USBPD_PDO_SRC_FIXED_USBSUSPEND_NOT_SUPPORTED|Not supported
+USBPD_PDO_FIXED_USBSUSPEND_P0|USBPD_PDO_SRC_FIXED_USBSUSPEND_SUPPORTED|Supported
+Is_GetPPSStatus_Supported_P0|USBPD_FALSE|Not supported
+Is_GetPPSStatus_Supported_P0|USBPD_TRUE|Supported
+Is_SrcCapaExt_Supported_P0|USBPD_FALSE|Not supported
+Is_SrcCapaExt_Supported_P0|USBPD_TRUE|Supported
+Is_Alert_Supported_P0|USBPD_FALSE|Not supported
+Is_Alert_Supported_P0|USBPD_TRUE|Supported
+Is_GetStatus_Supported_P0|USBPD_FALSE|Not supported
+Is_GetStatus_Supported_P0|USBPD_TRUE|Supported
+Is_GetManufacturerInfo_Supported_P0|USBPD_FALSE|Not supported
+Is_GetManufacturerInfo_Supported_P0|USBPD_TRUE|Supported
+Is_GetCountryCodes_Supported_P0|USBPD_FALSE|Not supported
+Is_GetCountryCodes_Supported_P0|USBPD_TRUE|Supported
+Is_GetCountryInfo_Supported_P0|USBPD_FALSE|Not supported
+Is_GetCountryInfo_Supported_P0|USBPD_TRUE|Supported
+Is_SecurityRequest_Supported_P0|USBPD_FALSE|Not supported
+Is_SecurityRequest_Supported_P0|USBPD_TRUE|Supported
+Is_FirmUpdateRequest_Supported_P0|USBPD_FALSE|Not supported
+Is_FirmUpdateRequest_Supported_P0|USBPD_TRUE|Supported
+Is_SnkCapaExt_Supported_P0|USBPD_TRUE|IOCCompatibility
+Is_GetBattery_Supported_P0|USBPD_FALSE|Not supported
+Is_GetBattery_Supported_P0|USBPD_TRUE|Supported
+VDM_ModalOperation_P0|MODAL_OPERATION_NONSUPP|Not supported
+VDM_ModalOperation_P0|MODAL_OPERATION_SUPPORTED|Supported
+VDM_USBHostSupport_P0|USB_NOTCAPABLE|Not capable
+VDM_USBHostSupport_P0|USB_CAPABLE|Capable
+VDM_USBDeviceSupport_P0|USB_NOTCAPABLE|Not capable
+VDM_USBDeviceSupport_P0|USB_CAPABLE|Capable
+VDM_ProductTypeUFPorCP_P0|PRODUCT_TYPE_UNDEFINED|Undefined
+VDM_ProductTypeUFPorCP_P0|PRODUCT_TYPE_HUB|PDUSB Hub (UFP)
+VDM_ProductTypeUFPorCP_P0|PRODUCT_TYPE_PERIPHERAL|PDUSB Host (UFP)
+VDM_ProductTypeUFPorCP_P0|PRODUCT_TYPE_PASSIVE_CABLE|Passive Cable (Cable Plug)
+VDM_ProductTypeUFPorCP_P0|PRODUCT_TYPE_ACTIVE_CABLE|Active Cable (Cable Plug)
+VDM_ProductTypeUFPorCP_P0|PRODUCT_TYPE_AMA|Alternate Mode Adapter (AMA) (UFP)
+VDM_ProductTypeDFP_P0|PRODUCT_TYPE_UNDEFINED|Undefined
+VDM_ProductTypeDFP_P0|PRODUCT_TYPE_HOST|PDUSB Host (DFP)
+VDM_ProductTypeDFP_P0|PRODUCT_TYPE_POWER_BRICK|Power Brick (DFP)
+VDM_ProductTypeDFP_P0|PRODUCT_TYPE_AMC|Alternate Mode Controller (AMC) (DFP)
+CAD_RoleToggle_P0|USBPD_FALSE|Not supported
+CAD_RoleToggle_P0|USBPD_TRUE|Supported
+CAD_AccesorySupport_P0|USBPD_FALSE|Not supported
+CAD_AccesorySupport_P0|USBPD_TRUE|Supported
+USBPD_PDO_TYPE|USBPD_PDO_TYPE_FIXED|Fixed Supply (Vmin=Vmax)
+USBPD_PDO_TYPE|USBPD_PDO_TYPE_BATTERY|Battery
+USBPD_PDO_TYPE|USBPD_PDO_TYPE_VARIABLE|Variable Supply
+USBPD_PDO_TYPE|USBPD_PDO_TYPE_APDO|Augmented Power Data Object (APDO)
+USBPD_PDO_TYPE0|USBPD_PDO_TYPE_FIXED|Fixed Supply (Vmin=Vmax)
+USBPD_PDO_TYPE0|USBPD_PDO_TYPE_BATTERY|Battery
+USBPD_PDO_TYPE0|USBPD_PDO_TYPE_VARIABLE|Variable Supply
+USBPD_PDO_TYPE0|USBPD_PDO_TYPE_APDO|Augmented Power Data Object (APDO)
+USBPD_PORT0_PDO_SRC_FIXED_DRD|USBPD_PDO_SRC_FIXED_DRD_SUPPORTED|Supported
+USBPD_PORT0_PDO_SRC_FIXED_DRD|USBPD_PDO_SRC_FIXED_DRD_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_SNK_FIXED_DRD|USBPD_PDO_SNK_FIXED_DRD_SUPPORTED|Supported
+USBPD_PORT0_PDO_SNK_FIXED_DRD|USBPD_PDO_SNK_FIXED_DRD_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_SRC_FIXED_DRP|USBPD_PDO_SRC_FIXED_DRP_SUPPORTED|Supported
+USBPD_PORT0_PDO_SRC_FIXED_DRP|USBPD_PDO_SRC_FIXED_DRP_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_SNK_FIXED_DRP|USBPD_PDO_SNK_FIXED_DRP_SUPPORTED|Supported
+USBPD_PORT0_PDO_SNK_FIXED_DRP|USBPD_PDO_SNK_FIXED_DRP_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_SRC_FIXED_EXT_POWER|USBPD_PDO_SRC_FIXED_EXT_POWER_AVAILABLE|Supported
+USBPD_PORT0_PDO_SRC_FIXED_EXT_POWER|USBPD_PDO_SRC_FIXED_EXT_POWER_NOT_AVAILABLE|Not supported
+USBPD_PORT0_PDO_SNK_FIXED_EXT_POWER|USBPD_PDO_SNK_FIXED_EXT_POWER_AVAILABLE|Supported
+USBPD_PORT0_PDO_SNK_FIXED_EXT_POWER|USBPD_PDO_SNK_FIXED_EXT_POWER_NOT_AVAILABLE|Not supported
+USBPD_PORT0_PDO_FIXED_FRS|USBPD_PDO_SNK_FIXED_FRS_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_FIXED_FRS|USBPD_PDO_SNK_FIXED_FRS_DEFAULT|Default USB Power
+USBPD_PORT0_PDO_FIXED_FRS|USBPD_PDO_SNK_FIXED_FRS_1_5A|1.5A @ 5V
+USBPD_PORT0_PDO_FIXED_FRS|USBPD_PDO_SNK_FIXED_FRS_3A|3.0A@ 5V
+USBPD_PORT0_PDO_FIXED_HIGHERCAPAB|USBPD_PDO_SNK_FIXED_HIGHERCAPAB_SUPPORTED|Supported
+USBPD_PORT0_PDO_FIXED_HIGHERCAPAB|USBPD_PDO_SNK_FIXED_HIGHERCAPAB_NOT_SUPPORTED|Not supported
+USBPD_PDO_FIXED_PEAKCURRENT|USBPD_PDO_SRC_FIXED_PEAKCURRENT_EQUAL|Peak equal
+USBPD_PDO_FIXED_PEAKCURRENT|USBPD_PDO_SRC_FIXED_PEAKCURRENT_OVER1|Peak over1
+USBPD_PDO_FIXED_PEAKCURRENT|USBPD_PDO_SRC_FIXED_PEAKCURRENT_OVER2|Peak over2
+USBPD_PDO_FIXED_PEAKCURRENT|USBPD_PDO_SRC_FIXED_PEAKCURRENT_OVER3|Peak over3
+USBPD_PORT0_PDO_FIXED_UNCHUNK|USBPD_PDO_SRC_FIXED_UNCHUNK_SUPPORTED|Supported
+USBPD_PORT0_PDO_FIXED_UNCHUNK|USBPD_PDO_SRC_FIXED_UNCHUNK_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_SRC_FIXED_USBCOMM|USBPD_PDO_SRC_FIXED_USBCOMM_SUPPORTED|Supported
+USBPD_PORT0_PDO_SRC_FIXED_USBCOMM|USBPD_PDO_SRC_FIXED_USBCOMM_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_SNK_FIXED_USBCOMM|USBPD_PDO_SNK_FIXED_USBCOMM_SUPPORTED|Supported
+USBPD_PORT0_PDO_SNK_FIXED_USBCOMM|USBPD_PDO_SNK_FIXED_USBCOMM_NOT_SUPPORTED|Not supported
+USBPD_PORT0_PDO_FIXED_USBSUSPEND|USBPD_PDO_SRC_FIXED_USBSUSPEND_SUPPORTED|Supported
+USBPD_PORT0_PDO_FIXED_USBSUSPEND|USBPD_PDO_SRC_FIXED_USBSUSPEND_NOT_SUPPORTED|Not supported
+USBPD_PDO_PPS_PWR_LIMITED|USBPD_PDO_SRC_APDO_PPS_PWR_LIMITED_CLEAR|Not supported
+USBPD_PDO_PPS_PWR_LIMITED|USBPD_PDO_SRC_APDO_PPS_PWR_LIMITED_SET|Supported
+TIMinterrupt|TIM1_UP_IRQn|
+TIMinterrupt|TIM2_IRQn|
+TIMinterrupt|TIM3_IRQn|
+TIMinterrupt|TIM4_IRQn|
+TIMinterrupt|TIM5_IRQn|
+TIMinterrupt|TIM6_IRQn|
+TIMinterrupt|TIM7_IRQn|
+TIMinterrupt|TIM8_UP_IRQn|
+TIMinterrupt|TIM15_IRQn|
+TIMinterrupt|TIM16_IRQn|
+TIMinterrupt|TIM17_IRQn|
+USBPD_CoreLib|USBPDCORE_LIB_PD3_CONFIG_SPR|USBPDCORE_LIB_PD3_CONFIG_SPR
+USBPD_CoreLib|USBPDCORE_LIB_PD3_CONFIG_MINSRC|USBPDCORE_LIB_PD3_CONFIG_MINSRC
+USBPD_CoreLib|USBPDCORE_LIB_PD3_CONFIG_MINSNK|USBPDCORE_LIB_PD3_CONFIG_MINSNK
+USBPD_CoreLib|USBPDCORE_LIB_PD3_CONFIG_MINDRP|USBPDCORE_LIB_PD3_CONFIG_MINDRP
+USBPD_CoreLib|USBPDCORE_LIB_NO_PD|USBPDCORE_LIB_NO_PD
+USBPD_CoreLib|USBPDCORE_LIB_PD3_FULL|USBPDCORE_LIB_PD3_FULL

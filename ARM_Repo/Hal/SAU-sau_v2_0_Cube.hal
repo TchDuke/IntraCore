@@ -1,0 +1,51 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SAU
+Version=sau_v2_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+SAU0_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU0_INIT_START|Start Address|||0x00000000|0xFFFFFFFF|Start address of this region
+SAU0_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU0_INIT_END|End Address|||||
+SAU0_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+SAU1_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU1_INIT_START|Start Address|||0x00000000|0xFFFFFFE0|Start address of this region
+SAU1_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU1_INIT_END|End Address|||||
+SAU1_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+SAU2_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU2_INIT_START|Start Address|||0x00000000|0xFFFFFFE0|Start address of this region
+SAU2_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU2_INIT_END|End Address|||||
+SAU2_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+SAU3_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU3_INIT_START|Start Address|||0x00000000|0xFFFFFFE0|Start address of this region
+SAU3_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU3_INIT_END|End Address|||||
+SAU3_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+SAU4_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU4_INIT_START|Start Address|||0x00000000|0xFFFFFFE0|Start address of this region
+SAU4_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU4_INIT_END|End Address|||||
+SAU4_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+SAU5_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU5_INIT_START|Start Address|||0x00000000|0xFFFFFFE0|Start address of this region
+SAU5_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU5_INIT_END|End Address|||||
+SAU5_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+SAU6_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU6_INIT_START|Start Address|||0x00000000|0xFFFFFFE0|Start address of this region
+SAU6_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU6_INIT_END|End Address|||||
+SAU6_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+SAU7_INIT_REGION|Enable this region|||||Activate the region initialisation. If no initialisation all fields are forced to 0x00
+SAU7_INIT_START|Start Address|||0x00000000|0xFFFFFFE0|Start address of this region
+SAU7_INIT_SIZE|Block Size|||0x20|0xFFFFFFFF|Size of this region Used to compute the end address of this region
+SAU7_INIT_END|End Address|||||
+SAU7_INIT_NSC|Secure Attribute|||||Region could be defined as - Non-Secure - Secure with Non-Secure Callable
+
+[Values]
+# параметр|значение|подпись

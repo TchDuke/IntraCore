@@ -1,0 +1,53 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LevelX
+Version=v1.0.0_N6_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+LX_DIRECT_READ|LX_DIRECT_READ|NOR Flash Support||||Defined, this option bypasses the NOR flash driver read routine in favor or reading the NOR memory directly, resulting in a significant performance increase.
+LX_FREE_SECTOR_DATA_VERIFY|LX_FREE_SECTOR_DATA_VERIFY|NOR Flash Support||||Defined, this causes the LevelX NOR instance open logic to verify free NOR sectors are all ones.
+LX_NOR_DISABLE_EXTENDED_CACHE|LX_NOR_DISABLE_EXTENDED_CACHE|NOR Flash Support||||Defined, this disables the extended NOR cache.
+LX_NOR_EXTENDED_CACHE_SIZE|LX_NOR_EXTENDED_CACHE_SIZE|NOR Flash Support||1|8|Represent the number of sectors that can be cashed in a NOR instance.
+LX_NOR_SECTOR_MAPPING_CACHE_SIZE|LX_NOR_SECTOR_MAPPING_CACHE_SIZE|NOR Flash Support||||By default this value is 16 and defines the logical sector mapping cache size. Large values improve performance, but cost memory. The minimum size is 8 and all values must be a power of 2.
+NOR_SECTOR_MAPPING_CACHE_SIZE_NB_BIT|NOR_SECTOR_MAPPING_CACHE_SIZE_NB_BIT|NOR Flash Support||3|10|represents the power of which LX_NOR_SECTOR_MAPPING_CACHE_SIZE is rised to
+LX_THREAD_SAFE_ENABLE|LX_THREAD_SAFE_ENABLE|Core||||Defined, this makes LevelX thread-safe by using a ThreadX mutex object throughout the API.
+LX_STANDALONE_ENABLE|LX_STANDALONE_ENABLE|Core||||Configure the LevelX in Standalone mode.
+LevelX_Version|LevelX version|Version||||LevelX version
+NAND_SECTOR_MAPPING_CACHE_SIZE_NB_BIT|NAND_SECTOR_MAPPING_CACHE_SIZE_NB_BIT|NAND Flash Support||3|10|represents the power of which LX_NAND_SECTOR_MAPPING_CACHE_SIZE is rised to
+LX_NOR_SIM_BASE_ADDRESS_RANGES|NOR Simulator Base Address Ranges|NOR Simulator Driver||||define the address range from which the SRAM file system will be created
+LX_NOR_SIM_BASE_ADDRESS|NOR Simulator Base Address|NOR Simulator Driver||0x28000000|0x28004000|the base address from which the NOR flash starts
+LX_NOR_SIM_FLASH_SIZE|NOR Flash Size|NOR Simulator Driver||9192|16384|the size in bytes of the NOR flash for the simulator. Notice that this size is tightly dependant on the Base Address used the maxium size should not exceed the actual memory amount starting from the Base address.
+LX_NOR_SIM_SECTORS_PER_BLOCK|Sectors per block|NOR Simulator Driver||2|32|The number of sectors per block should be multiple of 2
+LX_NOR_SIM_SECTOR_SIZE|NOR Flash Simulator Sector Size|NOR Simulator Driver||512|4096|For the Simulator, the sector size is limited to 4096 as maximum value, due to the memory constraints. it is highly recommended to use a value among 512, 1024, 2048, 4096
+LX_NOR_ENABLE_MAPPING_BITMAP|LX_NOR_ENABLE_MAPPING_BITMAP|NOR Flash Support||||Determine if logical sector mapping bitmap should be enabled in extended cache. Cache memory will be allocated to sector mapping bitmap first. One bit can be allocated for each physical sector.
+LX_NOR_ENABLE_OBSOLETE_COUNT_CACHE|LX_NOR_ENABLE_OBSOLETE_COUNT_CACHE|NOR Flash Support||||Determine if obsolete count cache should be enabled in extended cache. Cache memory will be allocated to obsolete count cache after the mapping bitmap if enabled, and the rest of the cache memory is allocated to sector cache.
+LX_NOR_OBSOLETE_COUNT_CACHE_TYPE|LX_NOR_OBSOLETE_COUNT_CACHE_TYPE|NOR Flash Support||||Defines obsolete count cache element size. If number of sectors per block is greater than 256, use USHORT instead of UCHAR.
+LX_NOR_SECTOR_SIZE|LX_NOR_SECTOR_SIZE|NOR Flash Support||512|=1024*4|Define the logical sector size for NOR flash. The sector size is in units of 32-bit words. This sector size should match the sector size used in file system.
+LX_OSPI_INSTANCE|OctoSPI Instance|NOR OctoSPI driver||||the Octo SPI instance.
+LX_DRIVER_CALLS_OSPI_INIT|Driver calls OctoSPI Init|NOR OctoSPI driver||||the LevelX OctoSPI interface intialializes the OSPI hw memory. If true, the parameter <b> Driver Erases the OctoSPI after init </b> will be available.
+LX_DRIVER_ERASES_OSPI_AFTER_INIT|Driver Erases the OctoSPI after init|NOR OctoSPI driver||||Allow the driver to erase the OSPI memory before using it. The memory needs to be erased incase a fresh FAT file system is to be created.
+LX_OSPI_USE_BSP_API|Use BSP/OSPI API|NOR OctoSPI driver||||When set to 1 the LevelX octoSPI driver will use the BSP/OctoSPI API provided by the STM32Cube_FW under <b> "Drivers/BSP/{borad_name}_ospi.[c/h]"</b> in this case the user should provide the ".extSettings" file in the root of the project before generation. When Set the 0 the user needs to implment the following API at application level to be linked with the LevelX OSPI driver: <ul> <li><code>int32_t Lx_OSPI_Init(uint32_t Instance) </code></li> <li><code>int32_t Lx_OSPI_GetStatus(uint32_t Instance)</code></li> <li><code>int32_t Lx_OSPI_GetInfo(uint32_t Instance, uint32_t *totalSectors, uint32_t *SectorSize)</code></li> <li><code>int32_t Lx_OSPI_Erase_Chip(uint32_t Instance)</code></li> <li><code>int32_t Lx_OSPI_Erase_Block(uint32_t Instance, uint32_t Block, uint32_t EraseSize)</code></li> <li><code>int32_t Lx_OPI_Read(uint32_t Instance, uint8_t* Buffer, uint32_t ReadAddr, uint32_t Size)</code></li> <li><code>int32_t Lx_OSPI_Write(uint32_t Instance, uint8_t* Buffer, uint32_t ReadAddr, uint32_t Size)</code></li> </ul>
+GLUE_FUNCTIONS|Glue Function Implementation|NOR OctoSPI driver||||
+TRANSFER_NOTIFICATION|Transfer Completion Notification|NOR OctoSPI driver||||
+LX_USE_OCTOSPI|LX_USE_OCTOSPI|NOR OctoSPI driver||||
+LX_NAND_FLASH_MAX_METADATA_BLOCKS|LX_NAND_FLASH_MAX_METADATA_BLOCKS|NAND Flash Support||2|65534|Define maximum number of allocated blocks for metadata
+LX_NAND_SIM_SPARE_BYTES_PER_PAGE|NAND spare bytes per page|NAND Simulator Driver||||The number of spare bytes per page. These bytes are not part of the page. They are used for error correction algorithms and bad block flags.
+LX_NAND_SIM_BAD_BLOCK_BYTE_POSITION|NAND bad block position|NAND Simulator Driver||0|63|The position of the bad block byte within the spare bytes.
+LX_NAND_SIM_PAGES_PER_BLOCK|NAND pages per block|NAND Simulator Driver||||The number of pages in each block of the simulated NAND memory. The total number of blocks, the pages per block and bytes per page parameters control the total simulated NAND flash size.
+LX_NAND_SIM_BYTES_PER_PAGE|NAND bytes per page|NAND Simulator Driver||||The number of bytes in each page of the simulated NAND memory. The total number of blocks, the pages per block and bytes per page parameters control the total simulated NAND flash size.
+LX_NAND_SIM_EXTRA_BYTES_POSITION|NAND extra bytes start position|NAND Simulator Driver||0|63|The start position of extra bytes within the spare bytes.
+LX_NAND_SIM_TOTAL_BLOCKS|NAND total blocks|NAND Simulator Driver||0|1024|The number of blocks of the simulated NAND memory. This parameter along with the total pages per block and bytes per page determine the total size of the simulated memory.
+
+[Values]
+# параметр|значение|подпись
+LX_NOR_SIM_BASE_ADDRESS_RANGES|SRAM1_BASE_NS|SRAM1_BASE_NS (0x20000000UL)
+LX_NOR_SIM_BASE_ADDRESS_RANGES|SRAM2_BASE_NS|SRAM2_BASE_NS (0x20030000UL)
+LX_NOR_SIM_BASE_ADDRESS_RANGES|SRAM3_BASE_NS|SRAM3_BASE_NS (0x20040000UL)
+LX_NOR_SIM_BASE_ADDRESS_RANGES|SRAM4_BASE_NS|SRAM4_BASE_NS (0x28000000UL)
+GLUE_FUNCTIONS|DMA_API|HAL DMA API
+GLUE_FUNCTIONS|IT_API|HAL IT API
+GLUE_FUNCTIONS|POLLING_API|HAL POLLING API
+TRANSFER_NOTIFICATION|ThreadX_Semaphore|ThreadX Semaphore
+TRANSFER_NOTIFICATION|Global_state_variables|Global state variables

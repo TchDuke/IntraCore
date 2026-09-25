@@ -1,0 +1,18 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=TS
+Version=ts1_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Gx_IOx-Sampling|Gx_IOx-Sampling|TSC Settings||0|11|
+Gx_IOx-Channel|Gx_IOx-Channel|TSC Settings||0|34|
+Gx_IOx-Shield|Gx_IOx-Shield|TSC Settings||0|1|
+ShieldIOs|Shield IOs|TSC Settings||||
+SamplingIOs|Sampling IOs|TSC Settings||||
+G2_Activated_Channels|G2_Activated_Channels|TSC Settings||0|4|
+G7_Activated_Channels|G7_Activated_Channels|TSC Settings||0|5|
+
+[Values]
+# параметр|значение|подпись

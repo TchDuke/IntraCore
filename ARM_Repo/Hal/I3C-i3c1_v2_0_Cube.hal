@@ -1,0 +1,126 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=I3C
+Version=i3c1_v2_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Mode|Mode|||||
+SDARiseTime|SDA Rise Time (ns)|Hardware Specific Timing Constraints||0|1000|Time in ns for SDA rise to 70% VDD from GND, capacitor effect, as example Value measure on Nucleo around 350ns.
+BusUsage|Bus usage|Bus Characteristics||||I3C Controller Mode: Using only I3C or mixed I3C + I2C.
+FrequencyI3C|Frequency I3C Controller|Bus Characteristics|Khz|1|12500|Frequency I3C (Khz).
+FrequencyI2C|Frequency I2C Controller|Bus Characteristics|Khz|100|1000|Frequency I2C Controller (Khz).
+DutyCycleI3C|I3C Duty Cycle|Bus Characteristics|%|0|50|I3C Duty cycle (in %).
+DutyCycleI2C|I2C Duty Cycle|Bus Characteristics|%|0|50|I2C Duty Cycle (in %).
+Register0|Timing Register 0|Bus Characteristics||0x00000000|0xFFFFFFFF|
+Register1|Timing Register 1|Bus Timing Activity||0x00000000|0xFFFFFFFF|
+Register2|Timing Register 2|Basic Configuration||0x00000000|0xFFFFFFFF|
+SCL_OD_Freq|SCL OD Freq|Bus Characteristics|Khz|0x00000000|0xFFFFFFFF|
+SCL_PP_Freq|SCL PP Freq|Bus Characteristics|Khz|0x00000000|0xFFFFFFFF|
+SCLPPLowDuration|SCL PP Low Duration|Bus Characteristics||0|65535|SCL low duration in I3C push-pull phases (ns).
+SCLI3CHighDuration|SCL I3C High Duration|Bus Characteristics||0|65535|SCL high duration, used for I3C messages (ns) for I3C open-drain and push pull phases.
+SCLODLowDuration|SCL OD Low Duration|Bus Characteristics||0|65535|SCL low duration in open-drain phases, used for legacy I2C commands and for I3C open-drain phases (ns).
+SCLI2CHighDuration|SCL I2C High Duration|Bus Characteristics||0|65535|SCL high duration used for legacy I2C commands (ns).
+hexBusFreeDuration|Bus free duration|Bus Timing Activity||||Bus free duration value in hexadicimal to be generated.
+hexBusIdleDuration|Bus idle duration|Bus Timing Activity||||Bus idle duration value in hexadicimal to be generated.
+hexBusAvailableDuration|Bus Available duration|Bus Timing Activity||||Bus Available duration value in hexadicimal to be generated.
+SDAHoldTime|SDA Hold Time|Bus Timing Activity||||SDA hold time: SDA Hold 0.5 or 1.5 multiple of Kernel Clock Period (SDA_HOLD_0.5, SDA_HOLD_1.5).
+WaitTime|Wait Time|Bus Timing Activity||||Field indicates the time that the main and the new controllers should wait before issuing a start (ns).
+BusFreeDuration|Bus Free Duration (ns)|Bus Timing Activity||20|50000000|The duration after a stop and before a start (ns).
+T_BusAvailableDuration|Bus Available Duration (ns)|Bus Timing Activity||1000||The duration when the SDA and the SCL are high for at least taval (ns).
+BusIdleDuration|Bus Idle Duration (ns)|Bus Timing Activity||200000||An extended duration of the bus free to allow the devices to Hot Join the I3C bus.(ns).
+HotJoinAllowed|Target Hot Join Acknowledgement|Basic Configuration||||Enable/Disable the controller Hot Join acknowledgement.
+StallConf1|Stall Configuration|Basic Configuration||||
+StallTime|- Stall Time (ns)|Basic Configuration||0|65535|The controller clock stall time (ns).
+hexStallTime|Stall Time|Basic Configuration||||Stall Time value in hexadicimal to be generated.
+ACKStallState|- ACK Stalling|Basic Configuration||||Enable/disable the controller clock stall on the ACK phase.
+CCCStallState|- CCC T-Bit Stalling|Basic Configuration||||Enable/disable the controller clock stall on the T bit phase of a CCC communication to allow the target to decode command.
+TxStallState|- Tx Parity Stalling|Basic Configuration||||Enable/disable the controller clock stall on parity phase of data to allow the target to read received data.
+RxStallState|- Rx Parity Stalling|Basic Configuration||||Enable/disable the controller clock stall on the T bit phase of data enable to allow the target to prepare data to be sent.
+DynamicAddr|Own Dynamic Address|Advanced Configuration||0x0|0x7F|The dynamic address of the controller, when goes Target.
+HighKeeperSDA|SDA High Keeper|Advanced Configuration||||Enable/disable the controller SDA high keeper.
+Identifier|Target Characterics ID|Basic Configuration||0|255|The target characteristic ID (MIPI named reference DCR) This parameter must be a value between Min_Data = 0 and Max_Data = 255.
+MIPIIdentifier|MIPI Identifier|Basic Configuration||0|255|The bits [12-15] of the 48-provisioned ID (MIPI named reference PID), other 48-provisioned ID are hardcoded.
+IBIconfig|In-Band-Interrupt Request Configuration|Basic Configuration||||
+IBIRequest|- In-Band-Interrupt authorized|Basic Configuration||||Field to enable/disable the target In Band Interrupt authorized request.
+IBIPayload|- In-Band-Interrupt associated additional data|Basic Configuration||||Field to enable/disable the data payload after an accepted IBI .
+IBIPayloadSize|- In-Band-Interrupt payload size|Basic Configuration||||Payload data size.
+CRRconfig|Controller Role Request Configuration|Basic Configuration||||
+CtrlRoleRequest|- Controller Role Request Autorized|Basic Configuration||||Field to enable/disable the autorisation target request for a second masterChip.
+CtrlCapability|- Controller Role Capabilities|Basic Configuration||||Field to enable/disable the target controller capability.
+HotJoinRequest|Hot Join Request Autorized|Basic Configuration||||Field to enable/disable the target hot join authorized request.
+MaxDataSSconfig|Max Data Size/Speed Configuration|Advanced Configuration||||
+MaxReadDataSize|- Max Read Data Size|Advanced Configuration||0|65535|The numbers of data bytes that the target can read at maximum.
+MaxWriteDataSize|- Max Write Data Size|Advanced Configuration||0|65535|The numbers of data bytes that the target can write at maximum.
+MaxSpeedLimitation|- Data Speed Limitation|Advanced Configuration||||Field to enable/disable the max data speed limitation.
+MaxDataSpeed|- Max Speed Format|Advanced Configuration||||This field describes the returned GETMXDS CCC format, .
+HandOffConfig|Hand Off Configuration|Advanced Configuration||||
+HandOffDelay|- Hand Off Delay|Advanced Configuration||||Field to enable/disable the target need of delay to process the controller rôle hand-off.
+HandOffActivityState|- Hand Off Activity State|Advanced Configuration||||This field describes the target activity state when becoming controller.
+GroupAddrCapability|Group Address Capabilities|Advanced Configuration||||Field to enable/disable the target support of group address after a controller rôle hand-off.
+PendingReadMDB|Pending Read Mandatory Data Byte|Advanced Configuration||||Field to enable/disable the target transmission of a mandatory data bytes indicating a pending read notification For getcapr CCC command.
+TurnAroundConfig|Turn Around Configuration|Advanced Configuration||||
+MaxReadTurnAround|- Max Read TurnAround|Advanced Configuration||0|255|This field indicates the maximum read turnaround byte. This parameter must be a value between Min_Data = 0 and Max_Data = 255.
+DataTurnAroundDuration|- Data TurnAround Duration|Advanced Configuration||||This filed indicates the clock to data turnaround time.
+FifoConf|Fifo Configuration|Advanced Configuration||||
+TXFIFOThreshold|- Transmit Fifo Threshold|Advanced Configuration||||
+RXFIFOThreshold|- Receive Fifo Threshold|Advanced Configuration||||
+FIFOControl|- Control Fifo|Advanced Configuration||||
+FIFOStatus|- Status Fifo|Advanced Configuration||||
+AutonomousMode|Autonomous Mode|Autonomous Mode||||
+TriggerState|Trigger State|Autonomous Mode||||
+TriggerPolarity|Trigger Polarity|Autonomous Mode||||
+TriggerSelection|Trigger Selection|Autonomous Mode||||
+
+[Values]
+# параметр|значение|подпись
+SDAHoldTime|HAL_I3C_SDA_HOLD_TIME_0_5|SDA Hold 0.5 multiple of Kernel Clock Period
+SDAHoldTime|HAL_I3C_SDA_HOLD_TIME_1_5|SDA Hold 1.5 multiple of Kernel Clock Period
+WaitTime|HAL_I3C_OWN_ACTIVITY_STATE_0|Own Controller Activity state 0
+WaitTime|HAL_I3C_OWN_ACTIVITY_STATE_1|Own Controller Activity state 1
+WaitTime|HAL_I3C_OWN_ACTIVITY_STATE_2|Own Controller Activity state 2
+WaitTime|HAL_I3C_OWN_ACTIVITY_STATE_3|Own Controller Activity state 3
+IBIPayloadSize|HAL_I3C_PAYLOAD_EMPTY|Empty payload
+IBIPayloadSize|HAL_I3C_PAYLOAD_1_BYTE|Payload 1 byte
+IBIPayloadSize|HAL_I3C_PAYLOAD_2_BYTES|Payload 2 bytes
+IBIPayloadSize|HAL_I3C_PAYLOAD_3_BYTES|Payload 3 bytes
+IBIPayloadSize|HAL_I3C_PAYLOAD_4_BYTES|Payload 4 bytes
+MaxDataSpeed|HAL_I3C_GETMXDS_FORMAT_1|CCC Format 1
+MaxDataSpeed|HAL_I3C_GETMXDS_FORMAT_2_LSB|CCC Format 2
+MaxDataSpeed|HAL_I3C_GETMXDS_FORMAT_2_MID|CCC Format 3
+MaxDataSpeed|HAL_I3C_GETMXDS_FORMAT_2_MSB|CCC Format 4
+HandOffActivityState|HAL_I3C_HANDOFF_ACTIVITY_STATE_0|Activity state 0
+HandOffActivityState|HAL_I3C_HANDOFF_ACTIVITY_STATE_1|Activity state 1
+HandOffActivityState|HAL_I3C_HANDOFF_ACTIVITY_STATE_2|Activity state 2
+HandOffActivityState|HAL_I3C_HANDOFF_ACTIVITY_STATE_3|Activity state 3
+DataTurnAroundDuration|HAL_I3C_TURNAROUND_TIME_TSCO_LESS_12NS|Clock to data turnaround <= 12ns
+DataTurnAroundDuration|HAL_I3C_TURNAROUND_TIME_TSCO_GREATER_12NS|Clock to data turnaround > 12ns
+TXFIFOThreshold|HAL_I3C_TXFIFO_THRESHOLD_1_4|Threshold 1 byte
+TXFIFOThreshold|HAL_I3C_TXFIFO_THRESHOLD_4_4|Threshold 4 bytes
+RXFIFOThreshold|HAL_I3C_RXFIFO_THRESHOLD_1_4|Threshold 1 byte
+RXFIFOThreshold|HAL_I3C_RXFIFO_THRESHOLD_4_4|Threshold 4 bytes
+FIFOControl|HAL_I3C_CONTROLFIFO_DISABLE|Disable
+FIFOControl|HAL_I3C_CONTROLFIFO_ENABLE|Enable
+FIFOStatus|HAL_I3C_STATUSFIFO_DISABLE|Disable
+FIFOStatus|HAL_I3C_STATUSFIFO_ENABLE|Enable
+AutonomousMode|AUTONOMOUS_MODE_DISABLE|Disable
+AutonomousMode|AUTONOMOUS_MODE_ENABLE|Enable
+TriggerState|I3C_TRIGGER_ENABLE|Enable
+TriggerState|I3C_TRIGGER_DISABLE|Disable
+TriggerPolarity|I3C_TRIG_POLARITY_LOW|LOW
+TriggerPolarity|I3C_TRIG_POLARITY_HIGH|HIGH
+TriggerSelection|I3C_GRP1_GPDMA_CH0_TCF_TRG|GPDMA1 channel 0
+TriggerSelection|I3C_GRP1_GPDMA_CH1_TCF_TRG|GPDMA1 channel 1
+TriggerSelection|I3C_GRP1_GPDMA_CH2_TCF_TRG|GPDMA1 channel 2
+TriggerSelection|I3C_GRP1_GPDMA_CH3_TCF_TRG|GPDMA1 channel 3
+TriggerSelection|I3C_GRP1_EXTI5_TRG|EXTI line 5
+TriggerSelection|I3C_GRP1_EXTI9_TRG|EXTI line 9
+TriggerSelection|I3C_GRP1_LPTIM1_CH1_TRG|LPTIM1 out
+TriggerSelection|I3C_GRP1_LPTIM2_CH1_TRG|LPTIM2 out
+TriggerSelection|I3C_GRP1_COMP1_TRG|COMP1 out
+TriggerSelection|I3C_GRP1_COMP2_TRG|COMP2 out
+TriggerSelection|I3C_GRP1_RTC_ALRA_TRG|RTC alarm
+TriggerSelection|I3C_GRP1_RTC_WUT_TRG|RTC wakeup
+TriggerSelection|I3C_GRP1_TIM15_TGO_CKTIM_TRG|TIM15
+TriggerSelection|I3C_GRP1_TIM16_OC1_TRG|TIM16

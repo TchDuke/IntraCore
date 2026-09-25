@@ -1,0 +1,954 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=HSP_Engine
+Version=v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+HSP_SysClkConfigRange|System clock config range|System Clock||||The system clock is configured at 12MHz by default and it is better to configure at 96MHz for highest performance.
+HSP_SPE_SMART_CLOCKING|SPE Smart Clocking|Generic settings||||Smart Clocking feature for SPE (If enabled, the SPE is not clocked in WFE mode)
+SPE|SPE|Generic settings||||
+HSP_MMC_SMART_CLOCKING|MMC Smart Clocking|Generic settings||||Smart Clocking feature for MMC(If enabled the Memory is not clocked if no access)
+MMC|MMC|Generic settings||||
+HSP_Controller_SMART_CLOCKING|Controller Smart Clocking|Generic settings||||Smart Clocking feature for CTRL(If enabled the parts of HSP CTRL block are not clocked if inactive)
+CTRL|CTRL|Generic settings||||
+HSP_LockRegisters|Lock configuration|Generic settings||||Lock the HSP configuration.
+DirectLib|Direct library|Modules||||Direct_lib for Direct Command API to run Processing Functions.
+DspLib|DSP library|Modules||||Dsp_lib for DSP API (CMSIS ARM like) using HSP capabilities.
+CNNLib|CNN library|Modules||||CNN_lib for Convolution using HSP capabilities.
+HSP_DEVICE_CROM_VERSION|HSP Device CROM version|Generic settings||||Reference the CROM version embedded by the HSP (Needed to load the right HSP FW RAM).
+GUI_HSP_DEVICE_CROM_VERSION|HSP Device CROM version|Generic settings||||Reference the CROM version embedded by the HSP (Needed to load the right HSP FW RAM).
+HSP_FW_CRAM_TO_LOAD_VERSION|HSP Firmware CRAM version|Generic settings||||Reference the CRAM version to load.
+ENABLE_HSP_PERFORMANCE_MONITOR|Performance Monitor|Generic settings||||Enable the HSP Performance Monitor at boot step (0U to disable, 1U to enable)
+USE_HSP_ACC_DIRECT_COMMAND_SYNCHRONOUS|Accelerator Direct Command Synchronous Mode|Generic settings||||Enable the Synchronous mode of Direct Command APIs (0U to disable, 1U to enable)
+HSP_BRAM_AI_SIZE|BRAM region size for AI|Generic settings|word|0|4096|Define the BRAM Size in word reserved for CubeAI processing. The maximum value of this flag is dependent on the size of the created buffers.
+HSP_BRAM_AI_SIZE_bytes|BRAM region size for AI in bytes|Generic settings||0|16384|Define the BRAM Size in bytes reserved for CubeAI processing. The maximum value of this flag is dependent on the size of the created buffers.
+USE_HSP_BRAM_ACCESS_ARBITRATION|BRAM Access Arbitration|Generic settings||||HAL HSP BRAM Bandwidth Arbitration
+SMART_CLOCK_GATING|Smart Clock Gating|HSP Boot Parameters||||
+REGISTERS_LOCK|Registers Lock|HSP Boot Parameters||||
+DIRECT_COMMAND_EVENT_ENABLE|Direct Command Event Enable|HSP Boot Parameters||||
+TCU1_ENABLE|Task Comparator 1|Task Comparator Unit (TCU)||||Enable the Task Comparator 1
+TCU1_VALUE|Task Value 1|Task Comparator Unit (TCU)||0|62|Define which task shall be detected by TCU 1
+TCU2_ENABLE|Task Comparator 2|Task Comparator Unit (TCU)||||Enable the Task Comparator 2
+TCU2_VALUE|Task Value 2|Task Comparator Unit (TCU)||0|62|Define which task shall be detected by TCU 2
+TCU3_ENABLE|Task Comparator 3|Task Comparator Unit (TCU)||||Enable the Task Comparator 3
+TCU3_VALUE|Task Value 1|Task Comparator Unit (TCU)||0|62|Define which task shall be detected by TCU 3
+TCU4_ENABLE|Task Comparator 4|Task Comparator Unit (TCU)||||Enable the Task Comparator 4
+TCU4_VALUE|Task Value 4|Task Comparator Unit (TCU)||0|62|Define which task shall be detected by TCU 4
+TCU_OVERLAP_DETECTION|Task Overlap Detection|Task Comparator Unit (TCU)||||Enable the Task Overlap Detection
+TCU_LOWER_TASK_ID|Lower Task ID|Task Comparator Unit (TCU)||0|62|Define the Lower Task ID
+TCU_HIGHER_TASK_ID|Higher Task ID|Task Comparator Unit (TCU)||0|62|Define the Higher Task ID
+TRGO_ENABLE|Trigger Output|Trigger Output (TRGO)||||Enable the Trigger Output
+TRGO0_SOURCE|Trigger 0 Output Source|Trigger Output (TRGO)||||Define which value for trigger 0 output
+TRGO1_SOURCE|Trigger 1 Output Source|Trigger Output (TRGO)||||Define which value for trigger 1 output
+TRGO2_SOURCE|Trigger 2 Output Source|Trigger Output (TRGO)||||Define which value for trigger 2 output
+TRGO3_SOURCE|Trigger 3 Output Source|Trigger Output (TRGO)||||Define which value for trigger 3 output
+BRKITF_OUTPUT_ENABLE|Break Output Interface Enable|Break Interface (BKITF)||||Enable/Disable the Break Output Interface
+BRKITF0_OUTPUT|Break Interface Output 0|Break Interface (BKITF)||||Define which value.....
+BRKITF1_OUTPUT|Break Interface Output 1|Break Interface (BKITF)||||Define which value.....
+BRKITF2_OUTPUT|Break Interface Output 2|Break Interface (BKITF)||||Define which value.....
+BRKITF3_OUTPUT|Break Interface Output 3|Break Interface (BKITF)||||Define which value.....
+BRKITF_INPUT_ENABLE|Break Input Interface Enable|Break Interface (BKITF)||||Enable/Disable the Break Output Interface
+BRKITF0_INPUT|Break Interface Input 0|Break Interface (BKITF)||||Define which value.....
+BRKITF1_INPUT|Break Interface Input 1|Break Interface (BKITF)||||Define which value.....
+BRKITF2_INPUT|Break Interface Input 2|Break Interface (BKITF)||||Define which value.....
+BRKITF3_INPUT|Break Interface Input 3|Break Interface (BKITF)||||Define which value.....
+CAPTURE_MODE|Time-Stamp Capture Mode|Time-Stamp Capture (TSC)||||Define which value.....
+PRESCALER_VALUE|Time-Stamp Prescaler Value|Time-Stamp Capture (TSC)||||Define which value.....
+Processing Lists|General|HSP Boot Parameters||||
+Data Buffers|General|HSP Boot Parameters||||
+Events|General|HSP Boot Parameters||||
+Interfaces|General|HSP Boot Parameters||||
+Interrupts|General|HSP Boot Parameters||||
+SNOOP_A_ENABLE|SNOOP_A_ENABLE|Debug||||
+SNOOP_A_SIGNAL|tsk_active|Debug||||
+SNOOP_B_ENABLE|SNOOP_B_ENABLE|Debug||||
+SNOOP_B_SIGNAL|tsk_active|Debug||||
+Audio Plugin|Audio HIFI|Audio||||
+USE_STREAM_BUFFER|Use stream buffer|Generic settings||||
+Driver|Driver|Generic settings||||
+InsertYourName|Name|Processing List||||
+Description|Description|Processing List||||
+ProcessingListId|ID|Processing List||||
+UseEvent|UseEvent|Processing List||||
+EventTypesForPL|Event Type For Processing List|EventTypeAndSource||||
+EventSourcesForPL|Event Source For Processing List|EventTypeAndSource||||
+ProcessingElementName|Name|Info||||
+ProcessingElementDescription|Description|Info||||
+Category|Category|Function||||
+FunctionF|Name|Function||||
+hmw|hmw|Arguments||||
+inBuff|Input Buffer Name|Arguments||||
+inABuff|Input Buffer A Name|Arguments||||
+pSrcA|pSrcA|Arguments||||
+inBBuff|Input Buffer B Name|Arguments||||
+pSrcB|pSrcB|Arguments||||
+outBuff|Output Buffer Name|Arguments||||
+outBuffScaIPark|Output Buffer Name|Arguments||||
+outBuffScaPark|Output Buffer Name|Arguments||||
+coefBuff|Coefficient Buffer|Arguments||||
+nbSamples|Number of Samples|Arguments||1|4096|
+step|Number Of Steps|Arguments||1|128|
+coeffsk|Coefficient Buffer SK|Arguments||||
+coeffsv|Coefficient Buffer SV|Arguments||||
+errBuff|Error Buffer Name|Arguments||||
+spectrCol|SpectrCol Buffer Name|Arguments||||
+startIdx|Start Idx|Arguments||||
+idxSize|Size Idx|Arguments||||
+fltbankCol|fltbankCol|Arguments||||
+inBuffAlphaBeta|inBuffAlphaBeta|Arguments||||
+inBuffAlphaBetaInv|inBuffAlphaBetaInv|Arguments||||
+inBuffuint32_t|inBuffuint32_t|Arguments||||
+inBuffint32_t|inBuffint32_t|Arguments||||
+inBuffShift|inBuffShift|Arguments||||
+outBuffuint32_t|outBuffuint32_t|Arguments||||
+outBuffInt32_t|outBuffInt32_t|Arguments||||
+outBuffAlphaBeta|outBuffAlphaBeta|Arguments||||
+outBuffAlphaBetaInv|outBuffAlphaBetaInv|Arguments||||
+regBuff|regBuff|Arguments||||
+pState|pState|Arguments||||
+pCRC|pCRC|Arguments||||
+thetaBuff|thetaBuff|Arguments||||
+qdBuff|qdBuff|Arguments||||
+abBuff|abBuff|Arguments||||
+cfgBuff|cfgBuff|Arguments||||
+inBuffAnd|inBuffAnd|Arguments||||
+inBuffTmpuint32_t|inBuffTmpuint32_t|Arguments||||
+inBuffTmpInt32_t|inBuffTmpInt32_t|Arguments||||
+inBuffSub|inBuffSub|Arguments||||
+addr|addr|Arguments||||
+pSrc|pSrc|Arguments||||
+pSrcInt32_t|pSrcInt32_t|Arguments||||
+pSrcuint32_t|pSrcuint32_t|Arguments||||
+pIdx|pIdx|Arguments||||
+pDst|pDst|Arguments||||
+pDstuint32_t|pDstuint32_t|Arguments||||
+pDstInt32_t|pDstInt32_t|Arguments||||
+pSat|pSat|Arguments||||
+imm|imm|Arguments||1|128|
+base|base|Arguments||1|128|
+size|size|Arguments||1|128|
+cntIdx|cntIdx|Arguments||1|128|
+val|val|Arguments||1|65535|
+listNumber|listNumber|Arguments||1|128|
+itf|itf|Arguments||1|128|
+flag|flag|Arguments||1|128|
+fieldMask|fieldMask|Arguments||1|128|
+fieldVal|fieldVal|Arguments||1|128|
+blockSize|blockSize|Arguments||1|128|
+posFEOR|posFEOR|Arguments||1|128|
+posFEOB|posFEOB|Arguments||1|128|
+memType|memType|Arguments||||
+startBuff|startBuff|Arguments||||
+outVal|outVal|Arguments||||
+outIdx|outIdx|Arguments||||
+decim|decim|Arguments||1|128|
+sizeOu|sizeOu|Arguments||1|128|
+pLim|pLim|Arguments||||
+pRes|pRes|Arguments||||
+cmpType|cmpType|Arguments||1|128|
+pLimLow|pLimLow|Arguments||1|128|
+pLimHigh|pLimHigh|Arguments||1|128|
+pMaxLow|pMaxLow|Arguments||1|128|
+pMaxHigh|pMaxHigh|Arguments||1|128|
+pCntLow|pCntLow|Arguments||1|128|
+pCntHigh|pCntHigh|Arguments||1|128|
+diffCond|diffCond|Arguments||1|128|
+timeout|timeout|Arguments||1|65535|
+timeoutF1|timeoutF1|Arguments||1|128|
+pMat|Matrix address|Arguments||||
+pVal|Input value address|Arguments||||
+pCurIdx|Points to the current column index|Arguments||||
+matHeight|Number of samples in each vector (matHeight)|Arguments||1|128|
+matWidth|Jump between 2 matrix column elements (matWidth)|Arguments||1|128|
+incBetCol|Write pDst increment between 2 consecutives (incBetCol)|Arguments||1|128|
+nCols|Matrix columns number|Arguments||1|128|
+nRows|Matrix rows number|Arguments||1|128|
+nColsA|Matrix A columns number|Arguments||1|128|
+nRowsA|Matrix A rows number|Arguments||32|128|
+nColsB|Matrix B columns number|Arguments||1|128|
+nRowsB|Matrix B rows number|Arguments||1|128|
+coldIdx|Start columns index to set|Arguments||1|128|
+staBuff_BDF1|State Buffer Name|Arguments||||
+staBuff_BDF2|State Buffer Name|Arguments||||
+staBuff_Fir|State Buffer Name|Arguments||||
+staBuff_FirDec|State Buffer Name|Arguments||||
+staBuff_Iir2p2z|State Buffer Name|Arguments||||
+staBuff_Iir3p3z|State Buffer Name|Arguments||||
+staBuff_IirDF1|State Buffer Name|Arguments||||
+staBuff_IirLattice|State Buffer Name|Arguments||||
+staBuff_FirLms|State Buffer Name|Arguments||||
+Name|State Buffer name|Buffer||||
+NumberSamples|State Buffer NumberSamples|Buffer||||
+NumberTaps|State Buffer NumberTaps|Buffer||||
+NumberStages|State Buffer NumberStages|Buffer||||
+DecimFactor|State Buffer decimFactor|Buffer||||
+staBuff|State Buffer Name|Arguments||||
+sizeA|Number Of Float element in VectA|Arguments||1|128|
+sizeB|Number Of Float element in VectB|Arguments||1|128|
+decimFactor|Decim Factor|Arguments||1|65535|
+mu|Adaptative Factor|Arguments||1|65535|
+refBuff|Reference Buffer Name|Arguments||||
+DmaAdd|DMA Addr|Arguments||||
+DmaSize|DMA Size|Arguments||1|65535|
+nFltbanks|Number of Mels|Arguments||1|65535|
+SizeW|SizeW|Arguments||1|65535|
+SizeD0|SizeD0|Arguments||1|65535|
+valueToAdd|Value to Add|Arguments||||
+valueToMult|Value to Mult|Arguments||1|128|
+valueToSet|Value to Set|Arguments||||
+valueToSub|Value to Sub|Arguments||||
+satMod|Saturation Mode|Arguments||1|128|
+satfl|Saturation detected flag index|Arguments||1|128|
+fftBuff|Input/output Buffer|Arguments||||
+log2Nbp|log2Nbp|Arguments||||
+fftSize|fftSize|Arguments||1|128|
+ifftFlag|ifftFlag|Arguments||1|128|
+bitrev|bitrev|Arguments||1|128|
+fftVariant|fftVariant|Arguments||||
+offset|offset|Arguments||||
+offset |offset|Arguments||||
+scale|scale|Arguments||||
+value|value|Arguments||||
+interp|interp|Arguments||1|128|
+sizeIn|sizeIn|Arguments||2|128|
+cmd|cmd|Arguments||||
+var1|var1|Arguments||||
+var1Int32_t|var1Int32_t|Arguments||||
+var1Uint32_t|var1Uint32_t|Arguments||||
+var2p|var2p|Arguments||||
+var2pUint32_t|var2pUint32_t|Arguments||||
+var2pInt32_t|var2pInt32_t|Arguments||||
+var2|var2|Arguments||||
+loHiBuff|loHiBuff|Arguments||||
+nbSamplesForCmp|nbSamples|Arguments||1|65535|
+loLimCl|loLimCl|Arguments||1|128|
+loLimFl|loLimFl|Arguments||1|128|
+hiLimCl|hiLimCl|Arguments||1|128|
+hiLimFl|hiLimFl|Arguments||1|128|
+noLimCl|noLimCl|Arguments||1|128|
+noLimFl|noLimFl|Arguments||1|128|
+eqLimCl|eqLimCl|Arguments||1|128|
+eqLimFl|eqLimFl|Arguments||1|128|
+lowValue|lowValue|Arguments||||
+highValue|highValue|Arguments||||
+ouBuff|ouBuff|Arguments||||
+doneCl|doneCl|Arguments||1|128|
+doneFl|doneFl|Arguments||1|128|
+timeoutFl|timeoutFl|Arguments||1|65535|
+ioBuff|ioBuff|Arguments||||
+parBuff|parBuff|Arguments||||
+ongoingCl|ongoingCl|Arguments||1|128|
+loop_cmd|cmd|Arguments||||
+var|var|Arguments||||
+idx|idx|Arguments||1|65535|
+direction|Direction|StreamEventConfiguration||||
+sync|Sync|StreamEventConfiguration||||
+polarity|Polarity|TriggerEventConfiguration||||
+source|Source|TriggerEventConfiguration||||
+cfg_source|Trigger Source|TriggerEventConfiguration||||
+evt_sync|Event Sync|EventConfiguration||||
+EventID_0|Event ID|EventConfiguration||||
+isUsed_0|Is Used|EventConfiguration||||
+Enabled_0|Enabled|EventConfiguration||||
+EventSource_0|Event Source|EventConfiguration||||
+Synchro_0|Synchro|EventConfiguration||||
+SynchroSignal_0|Synchro signal|EventConfiguration||||
+EventID_1|Event ID|Events||||
+isUsed_1|Is Used|Events||||
+Enabled_1|Enabled|Events||||
+EventSource_1|Event Source|Events||||
+Synchro_1|Synchro|Events||||
+SynchroSignal_1|Synchro signal|Events||||
+EventID_2|Event ID|Events||||
+isUsed_2|Is Used|Events||||
+Enabled_2|Enabled|Events||||
+EventSource_2|Event Source|Events||||
+Synchro_2|Synchro|Events||||
+SynchroSignal_2|Synchro signal|Events||||
+EventID_3|Event ID|Events||||
+isUsed_3|Is Used|Events||||
+Enabled_3|Enabled|Events||||
+EventSource_3|Event Source|Events||||
+Synchro_3|Synchro|Events||||
+SynchroSignal_3|Synchro signal|Events||||
+EventID_4|Event ID|Events||||
+isUsed_4|Is Used|Events||||
+Enabled_4|Enabled|Events||||
+EventSource_4|Event Source|Events||||
+Synchro_4|Synchro|Events||||
+SynchroSignal_4|Synchro signal|Events||||
+EventID_5|Event ID|Events||||
+isUsed_5|Is Used|Events||||
+Enabled_5|Enabled|Events||||
+EventSource_5|Event Source|Events||||
+Synchro_5|Synchro|Events||||
+SynchroSignal_5|Synchro signal|Events||||
+EventID_6|Event ID|Events||||
+isUsed_6|Is Used|Events||||
+Enabled_6|Enabled|Events||||
+EventSource_6|Event Source|Events||||
+Synchro_6|Synchro|Events||||
+SynchroSignal_6|Synchro signal|Events||||
+EventID_7|Event ID|Events||||
+isUsed_7|Is Used|Events||||
+Enabled_7|Enabled|Events||||
+EventSource_7|Event Source|Events||||
+Synchro_7|Synchro|Events||||
+SynchroSignal_7|Synchro signal|Events||||
+EventID_8|Event ID|Events||||
+isUsed_8|Is Used|Events||||
+Enabled_8|Enabled|Events||||
+EventSource_8|Event Source|Events||||
+Synchro_8|Synchro|Events||||
+SynchroSignal_8|Synchro signal|Events||||
+EventID_9|Event ID|Events||||
+isUsed_9|Is Used|Events||||
+Enabled_9|Enabled|Events||||
+EventSource_9|Event Source|Events||||
+Synchro_9|Synchro|Events||||
+SynchroSignal_9|Synchro signal|Events||||
+EventID_10|Event ID|Events||||
+isUsed_10|Is Used|Events||||
+Enabled_10|Enabled|Events||||
+EventSource_10|Event Source|Events||||
+Synchro_10|Synchro|Events||||
+SynchroSignal_10|Synchro signal|Events||||
+EventID_11|Event ID|Events||||
+isUsed_11|Is Used|Events||||
+Enabled_11|Enabled|Events||||
+EventSource_11|Event Source|Events||||
+Synchro_11|Synchro|Events||||
+SynchroSignal_11|Synchro signal|Events||||
+EventID_12|Event ID|Events||||
+isUsed_12|Is Used|Events||||
+Enabled_12|Enabled|Events||||
+EventSource_12|Event Source|Events||||
+Synchro_12|Synchro|Events||||
+SynchroSignal_12|Synchro signal|Events||||
+EventID_13|Event ID|Events||||
+isUsed_13|Is Used|Events||||
+Enabled_13|Enabled|Events||||
+EventSource_13|Event Source|Events||||
+Synchro_13|Synchro|Events||||
+SynchroSignal_13|Synchro signal|Events||||
+EventID_14|Event ID|Events||||
+isUsed_14|Is Used|Events||||
+Enabled_14|Enabled|Events||||
+EventSource_14|Event Source|Events||||
+Synchro_14|Synchro|Events||||
+SynchroSignal_14|Synchro signal|Events||||
+EventID_15|Event ID|Events||||
+isUsed_15|Is Used|Events||||
+Enabled_15|Enabled|Events||||
+EventSource_15|Event Source|Events||||
+Synchro_15|Synchro|Events||||
+SynchroSignal_15|Synchro signal|Events||||
+EventID_16|Event ID|Events||||
+isUsed_16|Is Used|Events||||
+Enabled_16|Enabled|Events||||
+EventSource_16|Event Source|Events||||
+Synchro_16|Synchro|Events||||
+SynchroSignal_16|Synchro signal|Events||||
+EventID_17|Event ID|Events||||
+isUsed_17|Is Used|Events||||
+Enabled_17|Enabled|Events||||
+EventSource_17|Event Source|Events||||
+Synchro_17|Synchro|Events||||
+SynchroSignal_17|Synchro signal|Events||||
+EventID_18|Event ID|Events||||
+isUsed_18|Is Used|Events||||
+Enabled_18|Enabled|Events||||
+EventSource_18|Event Source|Events||||
+Synchro_18|Synchro|Events||||
+SynchroSignal_18|Synchro signal|Events||||
+EventID_19|Event ID|Events||||
+isUsed_19|Is Used|Events||||
+Enabled_19|Enabled|Events||||
+EventSource_19|Event Source|Events||||
+Synchro_19|Synchro|Events||||
+SynchroSignal_19|Synchro signal|Events||||
+EventID_20|Event ID|Events||||
+isUsed_20|Is Used|Events||||
+Enabled_20|Enabled|Events||||
+EventSource_20|Event Source|Events||||
+Synchro_20|Synchro|Events||||
+SynchroSignal_20|Synchro signal|Events||||
+EventID_21|Event ID|Events||||
+isUsed_21|Is Used|Events||||
+Enabled_21|Enabled|Events||||
+EventSource_21|Event Source|Events||||
+Synchro_21|Synchro|Events||||
+SynchroSignal_21|Synchro signal|Events||||
+EventID_22|Event ID|Events||||
+isUsed_22|Is Used|Events||||
+Enabled_22|Enabled|Events||||
+EventSource_22|Event Source|Events||||
+Synchro_22|Synchro|Events||||
+SynchroSignal_22|Synchro signal|Events||||
+EventID_23|Event ID|Events||||
+isUsed_23|Is Used|Events||||
+Enabled_23|Enabled|Events||||
+EventSource_23|Event Source|Events||||
+Synchro_23|Synchro|Events||||
+SynchroSignal_23|Synchro signal|Events||||
+EventID_24|Event ID|Events||||
+isUsed_24|Is Used|Events||||
+Enabled_24|Enabled|Events||||
+EventSource_24|Event Source|Events||||
+Synchro_24|Synchro|Events||||
+SynchroSignal_24|Synchro signal|Events||||
+EventID_25|Event ID|Events||||
+isUsed_25|Is Used|Events||||
+Enabled_25|Enabled|Events||||
+EventSource_25|Event Source|Events||||
+Synchro_25|Synchro|Events||||
+SynchroSignal_25|Synchro signal|Events||||
+BufferFilterName|Source|Buffer||||
+BufferOrigin|Source|Buffer||||
+BufferAllocMode|Source|Buffer||||
+Buffer|Source|Buffer||||
+BufferValue|BufferValue|Buffer||||Input value
+BufferName|Name|Buffer||||Input name
+BufferType|Type C|Buffer||||
+BufferSize|Size|Buffer||0|2028|
+ioType|ioType|Arguments||||
+Function_Filtering|Processing|Processing||||
+Application_Audio|Audio|Audio||||
+Application_AI|AI|AI||||
+
+[Values]
+# параметр|значение|подпись
+HSP_SPE_SMART_CLOCKING|HSP_CORE_EnableSmartClocking|Enabled
+HSP_SPE_SMART_CLOCKING|HSP_CORE_DisableSmartClocking|Disabled
+USE_HSP_BRAM_ACCESS_ARBITRATION|HSP_BRAM_ARBITRATION_LATENCY_4_CYCLES|4 cycles
+USE_HSP_BRAM_ACCESS_ARBITRATION|HSP_BRAM_ARBITRATION_LATENCY_8_CYCLES|8 cycles
+USE_HSP_BRAM_ACCESS_ARBITRATION|HSP_BRAM_ARBITRATION_LATENCY_16_CYCLES|16 cycles
+TRGO0_SOURCE|HSP_CORE_TRGO_SRC_NONE|HSP_CORE_TRGO_NONE
+TRGO0_SOURCE|HSP_CORE_TRGO_SRC_STREAM|HSP_CORE_TRGO_STREAM
+TRGO0_SOURCE|HSP_CORE_TRGO_SRC_SPE|HSP_CORE_TRGO_SPE
+TRGO1_SOURCE|HSP_CORE_TRGO_SRC_NONE|HSP_CORE_TRGO_NONE
+TRGO1_SOURCE|HSP_CORE_TRGO_SRC_STREAM|HSP_CORE_TRGO_STREAM
+TRGO1_SOURCE|HSP_CORE_TRGO_SRC_SPE|HSP_CORE_TRGO_SPE
+TRGO2_SOURCE|HSP_CORE_TRGO_SRC_NONE|HSP_CORE_TRGO_NONE
+TRGO2_SOURCE|HSP_CORE_TRGO_SRC_STREAM|HSP_CORE_TRGO_STREAM
+TRGO2_SOURCE|HSP_CORE_TRGO_SRC_SPE|HSP_CORE_TRGO_SPE
+TRGO3_SOURCE|HSP_CORE_TRGO_SRC_NONE|HSP_CORE_TRGO_NONE
+TRGO3_SOURCE|HSP_CORE_TRGO_SRC_STREAM|HSP_CORE_TRGO_STREAM
+TRGO3_SOURCE|HSP_CORE_TRGO_SRC_SPE|HSP_CORE_TRGO_SPE
+Processing Lists|SMBUS_GENERALCALL_DISABLE|Disabled
+Processing Lists|SMBUS_GENERALCALL_ENABLE|Enabled
+Data Buffers|SMBUS_GENERALCALL_DISABLE|Disabled
+Data Buffers|SMBUS_GENERALCALL_ENABLE|Enabled
+Events|SMBUS_GENERALCALL_DISABLE|Disabled
+Events|SMBUS_GENERALCALL_ENABLE|Enabled
+Interfaces|SMBUS_GENERALCALL_DISABLE|Disabled
+Interfaces|SMBUS_GENERALCALL_ENABLE|Enabled
+Interrupts|SMBUS_GENERALCALL_DISABLE|Disabled
+Interrupts|SMBUS_GENERALCALL_ENABLE|Enabled
+ProcessingListId|HSP_SEQ_EVENT_1|1
+ProcessingListId|HSP_SEQ_EVENT_2|2
+ProcessingListId|HSP_SEQ_EVENT_3|3
+ProcessingListId|HSP_SEQ_EVENT_4|4
+ProcessingListId|HSP_SEQ_EVENT_5|5
+ProcessingListId|HSP_SEQ_EVENT_6|6
+ProcessingListId|HSP_SEQ_EVENT_7|7
+ProcessingListId|HSP_SEQ_EVENT_8|8
+ProcessingListId|HSP_SEQ_EVENT_9|9
+ProcessingListId|HSP_SEQ_EVENT_10|10
+ProcessingListId|HSP_SEQ_EVENT_11|11
+ProcessingListId|HSP_SEQ_EVENT_12|12
+ProcessingListId|HSP_SEQ_EVENT_13|13
+ProcessingListId|HSP_SEQ_EVENT_14|14
+ProcessingListId|HSP_SEQ_EVENT_15|15
+ProcessingListId|HSP_SEQ_EVENT_16|16
+ProcessingListId|HSP_SEQ_EVENT_17|17
+ProcessingListId|HSP_SEQ_EVENT_18|18
+ProcessingListId|HSP_SEQ_EVENT_19|19
+ProcessingListId|HSP_SEQ_EVENT_20|20
+ProcessingListId|HSP_SEQ_EVENT_21|21
+ProcessingListId|HSP_SEQ_EVENT_22|22
+EventTypesForPL|TRIGGER_INPUT|TRIGGER_INPUT
+EventSourcesForPL|HSP_SEQ_STREAM_BUFFER_0|BUFF_0
+EventSourcesForPL|HSP_SEQ_STREAM_BUFFER_1|BUFF_1
+EventSourcesForPL|HSP_SEQ_STREAM_BUFFER_2|BUFF_2
+EventSourcesForPL|HSP_SEQ_STREAM_BUFFER_3|BUFF_3
+EventSourcesForPL|HSP_SEQ_TRGIN_0|TRGIN_0
+EventSourcesForPL|HSP_SEQ_TRGIN_5|TRGIN_5
+EventSourcesForPL|HSP_SEQ_TRGIN_1|TRGIN_1
+EventSourcesForPL|HSP_SEQ_TRGIN_6|TRGIN_6
+EventSourcesForPL|HSP_SEQ_TRGIN_2|TRGIN_2
+EventSourcesForPL|HSP_SEQ_TRGIN_7|TRGIN_7
+EventSourcesForPL|HSP_SEQ_TRGIN_3|TRGIN_3
+EventSourcesForPL|HSP_SEQ_TRGIN_8|TRGIN_8
+EventSourcesForPL|HSP_SEQ_TRGIN_4|TRGIN_4
+EventSourcesForPL|HSP_SEQ_TRGIN_9|TRGIN_9
+EventSourcesForPL|HSEG_1|HSEG_1
+EventSourcesForPL|HSEG_2|HSEG_2
+EventSourcesForPL|HSEG_3|HSEG_3
+EventSourcesForPL|HSEG_4|HSEG_4
+EventSourcesForPL|HSEG_5|HSEG_5
+EventSourcesForPL|HSEG_6|HSEG_6
+EventSourcesForPL|HSEG_7|HSEG_7
+EventSourcesForPL|HSEG_8|HSEG_8
+EventSourcesForPL|HSEG_9|HSEG_9
+EventSourcesForPL|HSEG_10|HSEG_10
+EventSourcesForPL|HSEG_11|HSEG_11
+EventSourcesForPL|HSEG_12|HSEG_12
+EventSourcesForPL|HSEG_13|HSEG_13
+EventSourcesForPL|HSEG_14|HSEG_14
+EventSourcesForPL|HSEG_15|HSEG_15
+EventSourcesForPL|HSEG_16|HSEG_16
+EventSourcesForPL|HSEG_17|HSEG_17
+EventSourcesForPL|HSEG_18|HSEG_18
+EventSourcesForPL|HSEG_19|HSEG_19
+EventSourcesForPL|HSEG_20|HSEG_20
+EventSourcesForPL|HSEG_21|HSEG_21
+EventSourcesForPL|HSEG_22|HSEG_22
+EventSourcesForPL|CSEG_1|CSEG_1
+EventSourcesForPL|CSEG_2|CSEG_2
+EventSourcesForPL|CSEG_3|CSEG_3
+EventSourcesForPL|CSEG_4|CSEG_4
+EventSourcesForPL|CSEG_5|CSEG_5
+EventSourcesForPL|CSEG_6|CSEG_6
+EventSourcesForPL|CSEG_7|CSEG_7
+EventSourcesForPL|CSEG_8|CSEG_8
+EventSourcesForPL|CSEG_9|CSEG_9
+EventSourcesForPL|CSEG_10|CSEG_10
+EventSourcesForPL|CSEG_11|CSEG_11
+EventSourcesForPL|CSEG_12|CSEG_12
+EventSourcesForPL|CSEG_13|CSEG_13
+EventSourcesForPL|CSEG_14|CSEG_14
+EventSourcesForPL|CSEG_15|CSEG_15
+EventSourcesForPL|CSEG_16|CSEG_16
+EventSourcesForPL|CSEG_17|CSEG_17
+EventSourcesForPL|CSEG_18|CSEG_18
+EventSourcesForPL|CSEG_19|CSEG_19
+EventSourcesForPL|CSEG_20|CSEG_20
+EventSourcesForPL|CSEG_21|CSEG_21
+EventSourcesForPL|CSEG_22|CSEG_22
+FunctionF|HSP_SEQ_BiquadCascadeDf1_f32|Biquadratic Direct Form 1;BiqCascadeDF1
+FunctionF|HSP_SEQ_BiquadCascadeDf2T_f32|Biquadratic Direct Form 2;BiqCascadeDF2T
+FunctionF|HSP_SEQ_Conv_f32|Convolution;Conv
+FunctionF|HSP_SEQ_Correlate_f32|Correlation;Corr
+FunctionF|HSP_SEQ_Fir_f32|Finite Impulse Response (FIR);Fir
+FunctionF|HSP_SEQ_FirDecimate_f32|Finite Impulse Response (FIR) Decimation;DecimFactor
+FunctionF|HSP_SEQ_Iir2p2z_f32|Infinite Impulse Response (IIR) 2 poles 2 zeros;Iir2p2z
+FunctionF|HSP_SEQ_Iir3p3z_f32|Infinite Impulse Response (IIR) 3 poles 3 zeros;Iir3p3z
+FunctionF|HSP_SEQ_IirDf1_f32|Infinite Impulse Response (IIR) Direct Form 1;IirDF1
+FunctionF|HSP_SEQ_IirLattice_f32|Infinite Impulse Response (IIR) Lattice;IirLattice
+FunctionF|HSP_SEQ_Lms_f32|Infinite Impulse Response (IIR) Least Mean Square (LMS);FirLms
+FunctionF|HSP_SEQ_FltBank_f32|Infinite Impulse Response (IIR) Mel;FilterBank
+FunctionF|HSP_SEQ_WinSym_f32|Winsym;Winsym
+FunctionF|HSP_SEQ_CmplxConj_f32|Compute Conjugate Complex Vector;CmplxConj;inBuff;nbSamples;outBuff
+FunctionF|HSP_SEQ_CmplxDotProd_f32|Compute Dot Product Complex Vector;CmplxDotProd;inABuff;inBBuff;nbSamples;outBuff
+FunctionF|HSP_SEQ_CmplxMag_f32|Compute Magnitude Complex Vector;CmplxMag;inBuff;nbSamples;outBuff
+FunctionF|HSP_SEQ_CmplxMagSquared_f32|Compute Squared Magnitude Complex Vector;CmplxMagSqr;inBuff;nbSamples;outBuff
+FunctionF|HSP_SEQ_CmplxMul_f32|Compute Multiplication Complex Vector;CmplxMul;inABuff;inBBuff;nbSamples;outBuff;
+FunctionF|HSP_SEQ_CmplxMulExp_f32|Compute Multiplication Complex Vector and Exponential Complex Signal;CmplxMulExp;inBuff;startBuff;nbSamples;step;outBuff
+FunctionF|HSP_SEQ_CmplxRMul_f32|Compute Multiplication Complex Vector and Real Vector;CmplxRMul;inABuff;inBBuff;nbSamples;outBuff
+FunctionF|HSP_SEQ_MatCol2Vector_f32|Copy one Matrix Column into Vector Area;Matcol2Vector;pSrc;pCurIdx;pDst;matHeight;matWidth;incBetCol
+FunctionF|HSP_SEQ_MatrixAbs_f32|Matrix Absolute Value Function;MatrixAbs;pSrc;nCols;nRows;pDst
+FunctionF|HSP_SEQ_MatrixAdd_f32|Matrix Add Function;MatrixAdd;pSrcA;pSrcB;nCols;nRows;pDst
+FunctionF|HSP_SEQ_MatrixColISet_f32|Set Immediate Value in Matrix per Column;MatrixColISet;pVal;pMat;nCols;matHeight;matWidth;coldIdx
+FunctionF|HSP_SEQ_MatrixColSet_f32|Set Value in Matrix per Column;MatrixColSet;pVal;pMat;nCols;matHeight;matWidth;coldIdx
+FunctionF|HSP_SEQ_MatrixInv_f32|Matrix Inverse Function;MatrixInv;pSrc;nCols;nRows;pDst
+FunctionF|HSP_SEQ_MatrixMult_f32|Matrix Multiplication Function;MatrixMult;pSrcA;pSrcB;nColsA;nRowsA;nColsB;nRowsB;pDst
+FunctionF|HSP_SEQ_MatrixOffset_f32|Add to each Matrix Element a Scalar;MatrixOffset;pSrcA;pSrcB;nCols;nRows;pDst
+FunctionF|HSP_SEQ_MatrixScale_f32|Multiply each Matrix Element by a Scalar;MatrixScale;pSrcA;pSrcB;nCols;nRows;pDst
+FunctionF|HSP_SEQ_MatrixSub_f32|Matrix Substraction Function;MatrixSub;pSrcA;pSrcB;nCols;nRows;pDst
+FunctionF|HSP_SEQ_MatrixTrans_f32|Matrix Transpose Function;MatrixTrans;pSrc;nCols;nRows;pDst
+FunctionF|HSP_SEQ_Vector2MatCol_f32|Copy of a Matrix Column in a Vector Circularly;Vector2Matcol;pSrc;pCurIdx;pDst;matHeight;matWidth;incBetCol
+FunctionF|HSP_SEQ_ScaCos_f32|Cosine of a Float Value;Cos;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaSin_f32|Sine of a Float Value;Sin;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaSinCos_f32|Sine and Cosine of a Float Value;SinCos;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaAtan2_f32|Comput ArcTangent of 2 on X and Y;FAtan2;inABuff;inBBuff;outBuff
+FunctionF|HSP_SEQ_ScaFSin_f32|Fast Sine of a Float Value;FSin;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFCos_f32|Fast Cosine of a Float Value;FCos;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFAtan2_f32|Comput Fast ArcTangent of 2 on X and Y;FAtan2;inABuff;inBBuff;outBuff
+FunctionF|HSP_SEQ_ScaClarke_f32|Clarke Transform;Clarke;inBuffAlphaBeta;outBuffAlphaBeta
+FunctionF|HSP_SEQ_ScaIClarke_f32|Floating point Inverse Clarke Transform;IClarke;inBuffAlphaBetaInv;outBuffAlphaBetaInv
+FunctionF|HSP_SEQ_ScaPark_f32|Park Transform;Park;inBuff;abBuff;outBuffScaPark
+FunctionF|HSP_SEQ_ScaIPark_f32|Ipark Transform;IPark;thetaBuff;qdBuff;outBuffScaIPark
+FunctionF|HSP_SEQ_ScaPid_f32|Performs Pid;Pid;inABuff;inBBuff;cfgBuff;satMod;satfl;outBuff
+FunctionF|HSP_SEQ_ScaIAdd_f32|Add Scalar with Immediate Value;+;inBuff;valueToAdd;outBuff
+FunctionF|HSP_SEQ_ScaISet_f32|Set Value for a Scalar Float;=;valueToSet;outBuff
+FunctionF|HSP_SEQ_ScaSet_u32|Set Value for a Scalar Uint;=;inBuffuint32_t;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaISet_u32|Set Uint Value for a Scalar;=;valueToSet;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaISub_f32|Scalar Subtraction with Immediate Value;-;inBuff;valueToSub;outBuff
+FunctionF|HSP_SEQ_ScaIMul_f32|Scalar Multiplication with Immediate Value;*;inBuff;valueToMult;outBuff
+FunctionF|HSP_SEQ_ScaISub_i32|ScaISub;-;inBuffint32_t;imm;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaSub_i32|ScaSub_i32;-;inBuffint32_t;inBuffTmpInt32_t;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaIMul_i32|ScaIMul;*;inBuffint32_t;imm;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaMul_i32|ScaMul_i32;*;inBuffint32_t;inBuffTmpInt32_t;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaIAdd_i32|ScaIAdd;+;inBuffint32_t;imm;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaAdd_i32|ScaAdd_i32;+;inBuffint32_t;inBuffTmpInt32_t;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaSub_f32|ScaSub;-;inBuff;inBuffSub;outBuff
+FunctionF|HSP_SEQ_ScaSqrt_f32|ScaSqrt;ScaSqrt;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaMul_f32|ScaMul;*;inABuff;inBBuff;outBuff
+FunctionF|HSP_SEQ_ScaDiv_f32|ScaDiv;/;inABuff;inBBuff;outBuff
+FunctionF|HSP_SEQ_ScaAdd_f32|ScaAdd;+;inABuff;inBBuff;outBuff
+FunctionF|HSP_SEQ_ScaAbs_f32|ScaAbs;ScaAbs;inBuff;outBuff
+FunctionF|HSP_SEQ_Sca2Vect_f32|Sca2Vect;Sca2Vect;pSrc;pIdx;pDst
+FunctionF|HSP_SEQ_ScaSat_f32|ScaSat;ScaSat;pSrc;pSat;pDst
+FunctionF|HSP_SEQ_ScaNeg_f32|ScaNeg;ScaNeg;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaInc_u32|ScaInc;ScaInc;inBuffuint32_t;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaMac_f32|ScaMac;ScaMac;inABuff;inBBuff;outBuff
+FunctionF|HSP_SEQ_ScaExp10_f32|ScaExp10;ScaExp10;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaExp_f32|ScaExp;ScaExp;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaLog10_f32|ScaLog10;ScaLog10;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaLn_f32|ScaLn;ScaLn;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastExp2_f32|ScaFastExp2;ScaFastExp2;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastExp10_f32|ScaFastExp10;ScaFastExp10;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastExpe_f32|ScaFastExpe;ScaFastExpe;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastExpdB_f32|ScaFastExpdB;ScaFastExpdB;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastLog2_f32|ScaFastLog2;ScaFastLog2;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastLog10_f32|ScaFastLog10;ScaFastLog10;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastLogdB_f32|ScaFastLogdB;ScaFastLogdB;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaFastLn_f32|ScaFastLn;ScaFastLn;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaQ312F|ScaQ312F;ScaQ312F;inBuffint32_t;outBuff
+FunctionF|HSP_SEQ_ScaF2Q31|ScaF2Q31;ScaF2Q31;inBuff;outBuffInt32_t
+FunctionF|HSP_SEQ_Sca24S2F|Sca24S2F;Sca24S2F;inBuffint32_t;outBuff
+FunctionF|HSP_SEQ_ScaU2F|ScaU2F;ScaU2F;inBuffuint32_t;outBuff
+FunctionF|HSP_SEQ_ScaF2U|ScaF2U;ScaF2U;inBuff;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaI2F|ScaI2F;ScaI2F;inBuffint32_t;outBuff
+FunctionF|HSP_SEQ_ScaF2I|ScaF2I;ScaF2I;inBuff;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaSet_f32|ScaSet;ScaSet;inBuff;outBuff
+FunctionF|HSP_SEQ_ScaIShift_i32|ScaIShift;ScaIShift;inBuffint32_t;imm;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaShift_i32|ScaShift;ScaShift;inBuffint32_t;inBuffShift;outBuffInt32_t
+FunctionF|HSP_SEQ_ScaIAnd_u32|ScaIAnd;ScaIAnd;inBuffuint32_t;imm;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaAnd_u32|ScaAnd;ScaAnd;inBuffuint32_t;inBuffAnd;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaIOr_u32|ScaIOr;ScaIOr;inBuffuint32_t;imm;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaOr_u32|ScaOr;ScaOr;inBuffuint32_t;inBuffTmpuint32_t;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaIXor_u32|ScaIXor;ScaIXor;inBuffuint32_t;imm;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaXor_u32|ScaXor;ScaXor;inBuffuint32_t;inBuffTmpuint32_t;outBuffuint32_t
+FunctionF|HSP_SEQ_ScaNot_u32|ScaNot;!;inBuffuint32_t;outBuffuint32_t
+FunctionF|HSP_SEQ_GetSatFlag|GetSatFlag;GetSatFlag;pDstuint32_t
+FunctionF|HSP_SEQ_ClrSatFlag|ClrSatFlag;ClrSatFlag;
+FunctionF|HSP_SEQ_CounterAdd|CounterAdd;CounterAdd;cntIdx;val
+FunctionF|HSP_SEQ_CounterSet|CounterSet;CounterSet;cntIdx;val
+FunctionF|HSP_SEQ_SendEvt|SendEvt;SendEvt;listNumber;itf
+FunctionF|HSP_SEQ_SetFlag|SetFlag;SetFlag;flag
+FunctionF|HSP_SEQ_SetTrgo|SetTrgo;SetTrgo;val
+FunctionF|HSP_SEQ_SetGpo|SetGpo;SetGpo;fieldMask;fieldVal
+FunctionF|HSP_SEQ_WaitCond|WaitCond;WaitCond;regBuff;fieldMask;fieldVal;diffCond;timeout;timeoutF1
+FunctionF|HSP_SEQ_SetBits|SetBits;SetBits;fieldMask;fieldVal;regBuff
+FunctionF|HSP_SEQ_ScaIModAdd_u32|ScaIModAdd;ScaIModAdd;addr;imm;base;size
+FunctionF|HSP_SEQ_ScaCmpCnt_f32|Performs a comparison of an input number to two thresholds;ScaCmpCnt;pSrc;pLimLow;pLimHigh;pMaxLow;pMaxHigh;pCntLow;pCntHigh;pDstInt32_t
+FunctionF|HSP_SEQ_Dct_f32|DCT Transform;DCT;fftBuff;log2Nbp;fftBuff
+FunctionF|HSP_SEQ_Fft_f32|FFT Transform;FFT;fftBuff;ifftFlag;bitrev;log2Nbp;fftBuff
+FunctionF|HSP_SEQ_IDct_f32|Inverse DCT Transform;IDCT;fftBuff;log2Nbp;fftBuff
+FunctionF|HSP_SEQ_Rfft_f32|RFFT Transform;RFFT;fftBuff;log2Nbp;ifftFlag;bitrev;fftVariant;fftBuff
+FunctionF|HSP_SEQ_VectAbs_f32|Element-wise Absolute Value of a Vector;VectAbs;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectAdd_f32|Element-wise Addition of a Vector;VectAdd;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectAvg_f32|Compute the Average Value of a Vector;VectAvg;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectDiv_f32|Element-wise Division of a Vector;VectDiv;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectDotProd_f32|Perform Dot Product of a Vector;VectDotProd;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectDecim_f32|Performs the Decimation of a Vector;VectDcim;pSrc;decim;sizeOu;pDst
+FunctionF|HSP_SEQ_VectIOffset_f32|Add to Each Vector Element an Immediate Scalar Value;VectIOffset;pSrc;nbSamples;offset;pDst
+FunctionF|HSP_SEQ_VectIScale_f32|Multiply Each Vector Element by an Immediate Scalar Value;VectIScale;pSrc;nbSamples;scale;pDst
+FunctionF|HSP_SEQ_VectOffset_f32|Add to Each Vector Element a Scalar;VectOffset;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectScale_f32|Multiply Each Vector Element by a Scalar;VectScale;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectMul_f32|Element-wise Multiplication of a Vector;VectMul;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectRms_f32|Compute the RMS Value of a Vector;VectRms;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectSqrt_f32|Element-wise Square-root of a Vector;VectSqrt;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectSub_f32|Element-wise Subtraction of a Vector;VectSub;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectAbsmax_f32|Performs the absolute Max Value of a Real Vector;VectAbsmax;pSrc;outVal;outIdx;nbSamples;pDst
+FunctionF|HSP_SEQ_VectMulCos_f32|Compute the Multiplication of Vector and Cos ROM and an Exponential Complex Signal;VectMulCos;pSrcA;pSrcB;nbSamples;step;pDst
+FunctionF|HSP_SEQ_VectMulSin_f32|Compute the Multiplication of Vector and Sin ROM and an Exponential Complex Signal;VectMulSin;pSrcA;pSrcB;nbSamples;step;pDst
+FunctionF|HSP_SEQ_VectMax_f32|Search for Value and Position of the Biggest Element of Vector;VectMax;pSrc;outVal;outIdx;nbSamples
+FunctionF|HSP_SEQ_VectMin_f32|Search for Value and Position of the Minimum Element of Vector;VectMin;pSrc;outVal;outIdx;nbSamples
+FunctionF|HSP_SEQ_VectSat_f32|Performs the Vector saturation;VectSat;pSrc;pSat;nbSamples;pRes;pDst
+FunctionF|HSP_SEQ_VectExp_f32|Performs Exponential of Each Element of Vector;VectExp;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectExp10_f32|Performs Powers of Ten (exp base 10) of Each Element of Vector;VectExp10;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectLn_f32|Performs Logarithm Natural of Each Element of Vector;VectLn;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectLog10_f32|Performs Logarithm (base 10) of Each Element of Vector;VectLog10;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastLn_f32|Performs the fast calculation of natural logarithm of each input element of a real vector;VectFastLn;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastLog10_f32|Performs the fast calculation of decimal logarithm (10 based logarithm) of each input element of a real vector;VectFastLn;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastLog2_f32|Performs the fast calculation of 2 based logarithm of each input element of a real vector;VectFastLog2;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastLogdB_f32|Performs the fast calculation of dB (decibel) based logarithm of each input element of a real vector;VectFastLogdB;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastExpe_f32|Performs the fast calculation of exponential of each input element;VectFastExpe;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastExp10_f32|Performs the fast calculation of base 10 exponential of each input element;VectFastExp10;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastExp2_f32|Performs the fast calculation of base 2 exponential of each input element;VectFastExp2;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectFastExpdB_f32|Performs the fast calculation of base dB exponential of each input element;VectFastExpdB;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectCos_f32|Perform the Cosine of a Vector;VectCos;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectAtan2_f32|Performs ArcTangent of 2 of Vector X and Y;VectAtan2;pSrcA;pSrcB;nbSamples;pDst
+FunctionF|HSP_SEQ_VectSin_f32|Perform the Sin of Each Element of a Vector;VectSin;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectSinCos_f32|Perform the Sin,Cosine of Each Element of Vector;VectSinCos;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectF2I|Perform the Float32 to Integer 32bits Conversion;VectF2I;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectF2Q15|Perform the Float32 to Q15 Conversion;VectF2Q15;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectF2Q31|Perform the Float32 to Q31 Conversion;VectF2Q31;pSrc;nbSamples;pDstInt32_t
+FunctionF|HSP_SEQ_VectF2U|Perform the Float32 to Unsigned Integer 32bits Conversion;VectF2U;pSrcuint32_t;nbSamples;pDstuint32_t
+FunctionF|HSP_SEQ_VectQ152F|Perform the Q15 to Float32 Conversion;VectQ152F;pSrcInt32_t;nbSamples;pDst
+FunctionF|HSP_SEQ_VectQ312F|Perform the Q31 to Float32 Conversion;VectQ312F;pSrcInt32_t;nbSamples;pDst
+FunctionF|HSP_SEQ_VectI2F|Perform the Integer 32bits to Float32 Conversion;VectI2F;pSrcInt32_t;nbSamples;pDst
+FunctionF|HSP_SEQ_VectU2F|Perform the Unsigned Integer 32bits to Float32 Conversion;VectU2F;pSrcuint32_t;nbSamples;pDst
+FunctionF|HSP_SEQ_VectSet_f32|Set Value for Whole Vector;VectSet;pSrc;nbSamples;pDst
+FunctionF|HSP_SEQ_VectISet_f32|Set Value for whole Vector using Immediate Value;VectISet;valueToSet;nbSamples;pDst
+FunctionF|HSP_SEQ_VectCopy_f32|Performs Copy of a Vector;VectCopy;pSrc;nbSamples;pDst;
+FunctionF|HSP_SEQ_VectZins_f32|Performs the Interpolation of a Real Vector;VectZins;pSrc;interp;sizeIn;pDst
+FunctionF|HSP_SEQ_VectCmp_f32|Performs the Vector comparison;VectCmp;pSrc;pLim;pRes;nbSamples;cmpType
+FunctionF|HSP_SEQ_IfFloat|IF_FLOAT;ifF;cmd;var1;var2p;(xxx == yyy)
+FunctionF|HSP_SEQ_IfIFloat|IF_IFLOAT;iflF;cmd;var1;var2;(xxx == ccc)
+FunctionF|HSP_SEQ_IfIInt32|IF_INT_1;ifII;cmd;var1Int32_t;var2;( xxx == ccc)
+FunctionF|HSP_SEQ_IfInt32|IF_INT_2;ifI;cmd;var1Int32_t;var2pInt32_t;( xxx == yyy)
+FunctionF|HSP_SEQ_IfIUint32|IF_UINT_1;ifIU;cmd;var1Uint32_t;var2;( xxx == ccc)
+FunctionF|HSP_SEQ_IfUint32|IF_UINT2;ifU;cmd;var1Uint32_t;var2pUint32_t;( xxx == yyy)
+FunctionF|HSP_SEQ_IfElse|Else;Else
+FunctionF|HSP_SEQ_IfEndif|Endif;Endif
+FunctionF|HSP_SEQ_CmpBranch|CmpBranch;CmpBranch
+FunctionF|HSP_SEQ_CmpChkBits|CmpChkBits;CmpChkBits
+FunctionF|HSP_SEQ_CmpCntBranch|CmpCntBranch;CmpCntBranch
+FunctionF|HSP_SEQ_CmpISat|CmpISat;CmpISat
+FunctionF|HSP_SEQ_CmpRamp|CmpRamp;CmpRamp
+FunctionF|HSP_SEQ_CmpSat|CmpSat;CmpSat
+FunctionF|HSP_SEQ_CmpSca2Vect|CmpSca2Vect;CmpSca2Vect
+FunctionF|HSP_SEQ_CmpSetBits|CmpSetBits;CmpSetBits
+FunctionF|HSP_SEQ_CmpWaitCond|CmpWaitCond;CmpWaitCond
+FunctionF|HSP_SEQ_IfILoop|IfILoop;IfILoop;loop_cmd;val
+FunctionF|HSP_SEQ_IfLoop|IfLoop;IfLoop;loop_cmd;var1Uint32_t
+FunctionF|HSP_SEQ_IfLoopEven|IfLoopEven;IfLoopEven
+FunctionF|HSP_SEQ_IfLoopOdd|IfLoopOdd;IfLoopOdd
+FunctionF|HSP_SEQ_Loop|Loop;Loop;idx
+FunctionF|HSP_SEQ_LoopEnd|LoopEnd;LoopEnd
+FunctionF|HSP_SEQ_IfCnt|ifCount;ifCount;loop_cmd;idx;var2
+memType|HSP_CRC_CROM|HSP_CRC_CROM
+memType|HSP_CRC_DROM|HSP_CRC_DROM
+cmpType|HSP_SEQ_CMP_VECT_TYPE_GT|HSP_SEQ_CMP_VECT_TYPE_GT
+cmpType|HSP_SEQ_CMP_VECT_TYPE_GE|HSP_SEQ_CMP_VECT_TYPE_GE
+cmpType|HSP_SEQ_CMP_VECT_TYPE_LT|HSP_SEQ_CMP_VECT_TYPE_LT
+cmpType|HSP_SEQ_CMP_VECT_TYPE_LE|HSP_SEQ_CMP_VECT_TYPE_LE
+cmpType|HSP_SEQ_CMP_VECT_TYPE_EQ|HSP_SEQ_CMP_VECT_TYPE_EQ
+log2Nbp|HSP_LOG2NBP_32|Log2(32) for FFT 32 pts
+log2Nbp|HSP_LOG2NBP_64|Log2(64) for FFT 64 pts
+log2Nbp|HSP_LOG2NBP_128|Log2(128) for FFT 128 pts
+log2Nbp|HSP_LOG2NBP_256|Log2(256) for FFT 256 pts
+log2Nbp|HSP_LOG2NBP_512|Log2(512) for FFT 512 pts
+log2Nbp|HSP_LOG2NBP_1024|Log2(1024) for FFT 1024 pts
+log2Nbp|HSP_LOG2NBP_2048|Log2(2048) for FFT 2028 pts
+log2Nbp|HSP_LOG2NBP_4096|Log2(4096) for FFT 4096 pts
+fftVariant|HSP_RFFT_TYPE_1|real FFT
+fftVariant|HSP_RFFT_TYPE_2|real FFT CMSIS-like
+fftVariant|HSP_RFFT_TYPE_3|real FFT with n+1 elements
+cmd|HSP_SEQ_CMP_IFEQ|HSP_SEQ_CMP_IFEQ;==
+cmd|HSP_SEQ_CMP_IFNE|HSP_SEQ_CMP_IFNE;!=
+cmd|HSP_SEQ_CMP_IFGT|HSP_SEQ_CMP_IFGT;>
+cmd|HSP_SEQ_CMP_IFLT|HSP_SEQ_CMP_IFLT;<
+cmd|HSP_SEQ_CMP_IFGE|HSP_SEQ_CMP_IFGE;>=
+cmd|HSP_SEQ_CMP_IFLE|HSP_SEQ_CMP_IFLE;<=
+loop_cmd|HSP_SEQ_CMP_IFEQ|HSP_SEQ_CMP_IFEQ;==
+loop_cmd|HSP_SEQ_CMP_IFNE|HSP_SEQ_CMP_IFNE;!=
+loop_cmd|HSP_SEQ_CMP_IFGT|HSP_SEQ_CMP_IFGT;>
+loop_cmd|HSP_SEQ_CMP_IFLT|HSP_SEQ_CMP_IFLT;<
+loop_cmd|HSP_SEQ_CMP_IFGE|HSP_SEQ_CMP_IFGE;>=
+loop_cmd|HSP_SEQ_CMP_IFLE|HSP_SEQ_CMP_IFLE;<=
+direction|HSP_SEQ_STREAM_BUFFER_RX|RX
+direction|HSP_SEQ_STREAM_BUFFER_TX|TX
+sync|HSP_SEQ_STREAM_BUFFER_SYNC_DISABLE|Disable
+sync|HSP_SEQ_STREAM_BUFFER_SYNC_ENABLE|Enable
+polarity|HSP_SEQ_TRGIN_POLARITY_RISING|Rising
+polarity|HSP_SEQ_TRGIN_POLARITY_FALLING|Falling
+source|HSP_TRGIN_DMA_TC_0|DMA1 CHANNEL1 TC
+source|HSP_TRGIN_DMA_TC_1|DMA1 CHANNEL2 TC
+source|HSP_TRGIN_DMA_TC_2|DMA1 CHANNEL3 TC
+source|HSP_TRGIN_DMA_TC_3|DMA1 CHANNEL4 TC
+source|HSP_TRGIN_EXTI_0|EXTI0
+source|HSP_TRGIN_EXTI_1|EXTI1
+source|HSP_TRGIN_TIM_TRGO_0|TIM1 TRGO
+source|HSP_TRGIN_TIM_TRGO_1|TIM1 TRGO2
+source|HSP_TRGIN_TIM_TRGO_2|TIM2 TRGO
+source|HSP_TRGIN_TIM_TRGO_3|TIM3 TRGO
+source|HSP_TRGIN_TIM_TRGO_4|TIM6 TRGO
+source|HSP_TRGIN_TIM_TRGO_5|TIM7 TRGO
+source|HSP_TRGIN_TIM_TRGO_6|TIM8 TRGO
+source|HSP_TRGIN_TIM_TRGO_7|TIM8 TRGO2
+source|HSP_TRGIN_TIM_TRGO_8|TIM15 TRGO
+source|HSP_TRGIN_LPTIM_TRGO_0|LPTIM1 CH1
+source|HSP_TRGIN_LPTIM_TRGO_1|LPTIM1 CH2
+source|HSP_TRGIN_LPTIM_TRGO_2|LPTIM2 CH1
+source|HSP_TRGIN_LPTIM_TRGO_3|LPTIM2 CH2
+source|HSP_TRGIN_ADF_0|ADF1 SAD det
+cfg_source|HAL_HSP_EVENT_1_TRGIN3|EVENT_1 TRGIN3
+cfg_source|HAL_HSP_EVENT_2_TRGIN4|EVENT_2 TRGIN4
+cfg_source|HAL_HSP_EVENT_3_TRGIN0|EVENT_3 TRGIN0
+cfg_source|HAL_HSP_EVENT_4_TRGIN1|EVENT_4 TRGIN1
+cfg_source|HAL_HSP_EVENT_5_TRGIN2|EVENT_5 TRGIN2
+cfg_source|HAL_HSP_EVENT_6_TRGIN3|EVENT_6 TRGIN3
+cfg_source|HAL_HSP_EVENT_7_TRGIN4|EVENT_7 TRGIN4
+cfg_source|HAL_HSP_EVENT_8_TRGIN0|EVENT_8 TRGIN0
+cfg_source|HAL_HSP_EVENT_9_TRGIN1|EVENT_9 TRGIN1
+cfg_source|HAL_HSP_EVENT_10_TRGIN2|EVENT_10 TRGIN2
+cfg_source|HAL_HSP_EVENT_11_TRGIN3|EVENT_11 TRGIN3
+cfg_source|HAL_HSP_EVENT_12_TRGIN4|EVENT_12 TRGIN4
+cfg_source|HAL_HSP_EVENT_13_TRGIN0|EVENT_13 TRGIN0
+cfg_source|HAL_HSP_EVENT_14_TRGIN1|EVENT_14 TRGIN1
+cfg_source|HAL_HSP_EVENT_15_TRGIN2|EVENT_15 TRGIN2
+cfg_source|HAL_HSP_EVENT_16_TRGIN3|EVENT_16 TRGIN3
+cfg_source|HAL_HSP_EVENT_17_TRGIN4|EVENT_17 TRGIN4
+cfg_source|HAL_HSP_EVENT_18_TRGIN0|EVENT_18 TRGIN0
+cfg_source|HAL_HSP_EVENT_19_TRGIN1|EVENT_19 TRGIN1
+cfg_source|HAL_HSP_EVENT_20_TRGIN2|EVENT_20 TRGIN2
+cfg_source|HAL_HSP_EVENT_21_TRGIN3|EVENT_21 TRGIN3
+cfg_source|HAL_HSP_EVENT_22_TRGIN4|EVENT_22 TRGIN4
+cfg_source|HAL_HSP_EVENT_1_TRGIN8|EVENT_1 TRGIN8
+cfg_source|HAL_HSP_EVENT_2_TRGIN9|EVENT_2 TRGIN9
+cfg_source|HAL_HSP_EVENT_3_TRGIN5|EVENT_3 TRGIN5
+cfg_source|HAL_HSP_EVENT_4_TRGIN6|EVENT_4 TRGIN6
+cfg_source|HAL_HSP_EVENT_5_TRGIN7|EVENT_5 TRGIN7
+cfg_source|HAL_HSP_EVENT_6_TRGIN8|EVENT_6 TRGIN8
+cfg_source|HAL_HSP_EVENT_7_TRGIN9|EVENT_7 TRGIN9
+cfg_source|HAL_HSP_EVENT_8_TRGIN5|EVENT_8 TRGIN5
+cfg_source|HAL_HSP_EVENT_9_TRGIN6|EVENT_9 TRGIN6
+cfg_source|HAL_HSP_EVENT_10_TRGIN7|EVENT_10 TRGIN7
+cfg_source|HAL_HSP_EVENT_11_TRGIN8|EVENT_11 TRGIN8
+cfg_source|HAL_HSP_EVENT_12_TRGIN9|EVENT_12 TRGIN9
+cfg_source|HAL_HSP_EVENT_13_TRGIN5|EVENT_13 TRGIN5
+cfg_source|HAL_HSP_EVENT_14_TRGIN6|EVENT_14 TRGIN6
+cfg_source|HAL_HSP_EVENT_15_TRGIN7|EVENT_15 TRGIN7
+cfg_source|HAL_HSP_EVENT_16_TRGIN8|EVENT_16 TRGIN8
+cfg_source|HAL_HSP_EVENT_17_TRGIN9|EVENT_17 TRGIN9
+cfg_source|HAL_HSP_EVENT_18_TRGIN5|EVENT_18 TRGIN5
+cfg_source|HAL_HSP_EVENT_19_TRGIN6|EVENT_19 TRGIN6
+cfg_source|HAL_HSP_EVENT_20_TRGIN7|EVENT_20 TRGIN7
+cfg_source|HAL_HSP_EVENT_21_TRGIN8|EVENT_21 TRGIN8
+cfg_source|HAL_HSP_EVENT_22_TRGIN9|EVENT_22 TRGIN9
+evt_sync|HSP_SEQ_EVENT_SYNC_TCU_DISABLED|Disable
+EventSource_1|BUFF_0|BUFF_0
+EventSource_1|TRGIN_3|TRGIN_3
+EventSource_1|TRGIN_8|TRGIN_8
+EventSource_1|HSEG_1|HSEG_1
+EventSource_1|CSEG_1|CSEG_1
+EventSource_2|BUFF_1|BUFF_1
+EventSource_2|TRGIN_4|TRGIN_4
+EventSource_2|TRGIN_9|TRGIN_9
+EventSource_2|HSEG_2|HSEG_2
+EventSource_2|CSEG_2|CSEG_2
+EventSource_3|BUFF_2|BUFF_2
+EventSource_3|TRGIN_0|TRGIN_0
+EventSource_3|TRGIN_5|TRGIN_5
+EventSource_3|HSEG_3|HSEG_3
+EventSource_3|CSEG_3|CSEG_2
+EventSource_4|BUFF_3|BUFF_3
+EventSource_4|TRGIN_1|TRGIN_1
+EventSource_4|TRGIN_6|TRGIN_6
+EventSource_4|HSEG_4|HSEG_4
+EventSource_4|CSEG_4|CSEG_4
+EventSource_5|BUFF_0|BUFF_0
+EventSource_5|TRGIN_2|TRGIN_2
+EventSource_5|TRGIN_7|TRGIN_7
+EventSource_5|HSEG_5|HSEG_5
+EventSource_5|CSEG_5|CSEG_5
+EventSource_6|BUFF_1|BUFF_1
+EventSource_6|TRGIN_3|TRGIN_3
+EventSource_6|TRGIN_8|TRGIN_8
+EventSource_6|HSEG_6|HSEG_6
+EventSource_6|CSEG_6|CSEG_6
+EventSource_7|BUFF_2|BUFF_2
+EventSource_7|TRGIN_4|TRGIN_4
+EventSource_7|TRGIN_9|TRGIN_9
+EventSource_7|HSEG_7|HSEG_7
+EventSource_7|CSEG_7|CSEG_7
+EventSource_8|BUFF_3|BUFF_3
+EventSource_8|TRGIN_0|TRGIN_0
+EventSource_8|TRGIN_5|TRGIN_5
+EventSource_8|HSEG_8|HSEG_8
+EventSource_8|CSEG_8|CSEG_8
+EventSource_9|BUFF_0|BUFF_0
+EventSource_9|TRGIN_1|TRGIN_1
+EventSource_9|TRGIN_6|TRGIN_6
+EventSource_9|HSEG_9|HSEG_9
+EventSource_9|CSEG_9|CSEG_9
+EventSource_10|BUFF_1|BUFF_1
+EventSource_10|TRGIN_2|TRGIN_2
+EventSource_10|TRGIN_7|TRGIN_7
+EventSource_10|HSEG_10|HSEG_10
+EventSource_10|CSEG_10|CSEG_10
+EventSource_11|BUFF_2|BUFF_2
+EventSource_11|TRGIN_3|TRGIN_3
+EventSource_11|TRGIN_8|TRGIN_8
+EventSource_11|HSEG_11|HSEG_11
+EventSource_11|CSEG_11|CSEG_11
+EventSource_12|BUFF_3|BUFF_3
+EventSource_12|TRGIN_4|TRGIN_4
+EventSource_12|TRGIN_9|TRGIN_9
+EventSource_12|HSEG_12|HSEG_12
+EventSource_12|CSEG_12|CSEG_12
+EventSource_13|BUFF_0|BUFF_0
+EventSource_13|TRGIN_0|TRGIN_0
+EventSource_13|TRGIN_5|TRGIN_5
+EventSource_13|HSEG_13|HSEG_13
+EventSource_13|CSEG_13|CSEG_13
+EventSource_14|BUFF_1|BUFF_1
+EventSource_14|TRGIN_1|TRGIN_1
+EventSource_14|TRGIN_5|TRGIN_5
+EventSource_14|HSEG_14|HSEG_14
+EventSource_14|CSEG_14|CSEG_14
+EventSource_15|BUFF_2|BUFF_2
+EventSource_15|TRGIN_2|TRGIN_2
+EventSource_15|TRGIN_7|TRGIN_7
+EventSource_15|HSEG_15|HSEG_15
+EventSource_15|CSEG_15|CSEG_15
+EventSource_16|BUFF_3|BUFF_3
+EventSource_16|TRGIN_3|TRGIN_3
+EventSource_16|TRGIN_8|TRGIN_8
+EventSource_16|HSEG_16|HSEG_16
+EventSource_16|CSEG_16|CSEG_16
+EventSource_17|BUFF_0|BUFF_0
+EventSource_17|TRGIN_4|TRGIN_4
+EventSource_17|TRGIN_9|TRGIN_9
+EventSource_17|HSEG_17|HSEG_17
+EventSource_17|CSEG_17|CSEG_17
+EventSource_18|BUFF_1|BUFF_1
+EventSource_18|TRGIN_0|TRGIN_0
+EventSource_18|TRGIN_5|TRGIN_5
+EventSource_18|HSEG_18|HSEG_18
+EventSource_18|CSEG_18|CSEG_18
+EventSource_19|BUFF_2|BUFF_2
+EventSource_19|TRGIN_1|TRGIN_1
+EventSource_19|TRGIN_6|TRGIN_6
+EventSource_19|HSEG_19|HSEG_19
+EventSource_19|CSEG_19|CSEG_19
+EventSource_20|BUFF_3|BUFF_3
+EventSource_20|TRGIN_2|TRGIN_2
+EventSource_20|TRGIN_7|TRGIN_7
+EventSource_20|HSEG_20|HSEG_20
+EventSource_20|CSEG_20|CSEG_20
+EventSource_21|BUFF_0|BUFF_0
+EventSource_21|TRGIN_3|TRGIN_3
+EventSource_21|TRGIN_8|TRGIN_8
+EventSource_21|HSEG_21|HSEG_21
+EventSource_21|CSEG_21|CSEG_21
+EventSource_22|BUFF_1|BUFF_1
+EventSource_22|TRGIN_4|TRGIN_4
+EventSource_22|TRGIN_9|TRGIN_9
+EventSource_22|HSEG_22|HSEG_22
+EventSource_22|CSEG_22|CSEG_22
+BufferFilterName|HSP_SEQ_BiquadCascadeDf1_f32|Biquadratic Direct Form 1;BiqCascadeDF1
+BufferFilterName|HSP_SEQ_BiquadCascadeDf2T_f32|Biquadratic Direct Form 2;BiqCascadeDF2T
+BufferFilterName|HSP_SEQ_Fir_f32|Finite Impulse Response (FIR);Fir
+BufferFilterName|HSP_SEQ_FirDecimate_f32|Finite Impulse Response (FIR) Decimation;FirDec
+BufferFilterName|HSP_SEQ_Iir2p2z_f32|Infinite Impulse Response (IIR) 2 poles 2 zeros;Iir2p2z
+BufferFilterName|HSP_SEQ_Iir3p3z_f32|Infinite Impulse Response (IIR) 3 poles 3 zeros;Iir3p3z
+BufferFilterName|HSP_SEQ_IirDf1_f32|Infinite Impulse Response (IIR) Direct Form 1;IirDF1
+BufferFilterName|HSP_SEQ_IirLattice_f32|Infinite Impulse Response (IIR) Lattice;IirLattice
+BufferFilterName|HSP_SEQ_Lms_f32|Infinite Impulse Response (IIR) Least Mean Square (LMS);FirLms
+BufferOrigin|BRAM_POP|Internal shared memory Buffers (BRAM_POP)
+ioType|HSP_SEQ_IOTYPE_DEFAULT|HSP_SEQ_IOTYPE_DEFAULT
+ioType|HSP_SEQ_IOTYPE_POP_0|HSP_SEQ_IOTYPE_POP_0
+ioType|HSP_SEQ_IOTYPE_POP_1|HSP_SEQ_IOTYPE_POP_1
+ioType|HSP_SEQ_IOTYPE_POP_2|HSP_SEQ_IOTYPE_POP_2
+ioType|HSP_SEQ_IOTYPE_IMM_0|HSP_SEQ_IOTYPE_IMM_0
+ioType|HSP_SEQ_IOTYPE_IMM_1|HSP_SEQ_IOTYPE_IMM_1
+ioType|HSP_SEQ_IOTYPE_RXTX_0|HSP_SEQ_IOTYPE_RXTX_0
+ioType|HSP_SEQ_IOTYPE_RXTX_1|HSP_SEQ_IOTYPE_RXTX_1
+ioType|HSP_SEQ_IOTYPE_RXTX_2|HSP_SEQ_IOTYPE_RXTX_2
+Function_Filtering|FIR_DECIMATE|FIR Decimate
+Application_Audio|Audio_1|Audio_1
+Application_Audio|Audio_2|Audio_2
+Application_Audio|Audio_3|Audio_3
+Application_Audio|Audio_4|Audio_4
+Application_AI|AI_1|AI_1
+Application_AI|AI_2|AI_2
+Application_AI|AI_3|AI_3
+Application_AI|AI_4|AI_4

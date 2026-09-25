@@ -1,0 +1,1186 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RIF
+Version=STM32MP2_rif_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+TIM1_Privilege|TIM1|||||
+TIM2_Privilege|TIM2|||||
+TIM3_Privilege|TIM3|||||
+TIM4_Privilege|TIM4|||||
+TIM5_Privilege|TIM5|||||
+TIM6_Privilege|TIM6|||||
+TIM7_Privilege|TIM7|||||
+TIM8_Privilege|TIM8|||||
+TIM10_Privilege|TIM10|||||
+TIM11_Privilege|TIM11|||||
+TIM12_Privilege|TIM12|||||
+TIM13_Privilege|TIM13|||||
+TIM14_Privilege|TIM14|||||
+TIM15_Privilege|TIM15|||||
+TIM16_Privilege|TIM16|||||
+TIM17_Privilege|TIM17|||||
+TIM20_Privilege|TIM20|||||
+LPTIM1_Privilege|LPTIM1|||||
+LPTIM2_Privilege|LPTIM2|||||
+LPTIM3_Privilege|LPTIM3|||||
+LPTIM4_Privilege|LPTIM4|||||
+LPTIM5_Privilege|LPTIM5|||||
+SPI1_Privilege|SPI1|||||
+SPI2_Privilege|SPI2|||||
+SPI3_Privilege|SPI3|||||
+SPI4_Privilege|SPI4|||||
+SPI5_Privilege|SPI5|||||
+SPI6_Privilege|SPI6|||||
+SPI7_Privilege|SPI7|||||
+SPI8_Privilege|SPI8|||||
+SPDIFRX_Privilege|SPDIFRX|||||
+USART1_Privilege|USART1|||||
+USART2_Privilege|USART2|||||
+USART3_Privilege|USART3|||||
+UART4_Privilege|UART4|||||
+UART5_Privilege|UART5|||||
+USART6_Privilege|USART6|||||
+UART7_Privilege|UART7|||||
+UART8_Privilege|UART8|||||
+UART9_Privilege|UART9|||||
+LPUART1_Privilege|LPUART1|||||
+I2C1_Privilege|I2C1|||||
+I2C2_Privilege|I2C2|||||
+I2C3_Privilege|I2C3|||||
+I2C4_Privilege|I2C4|||||
+I2C5_Privilege|I2C5|||||
+I2C6_Privilege|I2C6|||||
+I2C7_Privilege|I2C7|||||
+I2C8_Privilege|I2C8|||||
+SAI1_Privilege|SAI1|||||
+SAI2_Privilege|SAI2|||||
+SAI3_Privilege|SAI3|||||
+SAI4_Privilege|SAI4|||||
+MDF1_Privilege|MDF1|||||
+ADF1_Privilege|ADF1|||||
+FDCAN_Privilege|FDCAN|||||
+HDP_Privilege|HDP|||||
+ADC12_Privilege|ADC12|||||
+ADC3_Privilege|ADC3|||||
+ETH1_Privilege|ETH1|||||
+ETH2_Privilege|ETH2|||||
+USBH_Privilege|USBH|||||
+USB3DR_Privilege|USB3DR|||||
+COMBOPHY_Privilege|COMBOPHY|||||
+PCIE_Privilege|PCIE|||||
+UCPD1_Privilege|UCPD1|||||
+ETHSW_DEIP_Privilege|ETHSW_DEIP|||||
+ETHSW_ACM_CFG_Privilege|ETHSW_ACM_CFG|||||
+ETHSW_ACM_MSGBUF_Privilege|ETHSW_ACM_MSGBUF|||||
+STGEN_Privilege|STGEN|||||
+OCTOSPI1_Privilege|OCTOSPI1|||||
+OCTOSPI2_Privilege|OCTOSPI2|||||
+SDMMC1_Privilege|SDMMC1|||||
+SDMMC2_Privilege|SDMMC2|||||
+SDMMC3_Privilege|SDMMC3|||||
+GPU_Privilege|GPU|||||
+LTDC_CMN_Privilege|LTDC_CMN|||||
+DSI_CMN_Privilege|DSI_CMN|||||
+LVDS_Privilege|LVDS|||||
+CSI_Privilege|CSI|||||
+DCMIPP_Privilege|DCMIPP|||||
+DCMI_PSSI_Privilege|DCMI_PSSI|||||
+VDEC_Privilege|VDEC|||||
+VENC_Privilege|VENC|||||
+RNG_Privilege|RNG|||||
+PKA_Privilege|PKA|||||
+SAES_Privilege|SAES|||||
+HASH_Privilege|HASH|||||
+CRYP1_Privilege|CRYP1|||||
+CRYP2_Privilege|CRYP2|||||
+IWDG1_Privilege|IWDG1|||||
+IWDG2_Privilege|IWDG2|||||
+IWDG3_Privilege|IWDG3|||||
+IWDG4_Privilege|IWDG4|||||
+IWDG5_Privilege|IWDG5|||||
+WWDG1_Privilege|WWDG1|||||
+WWDG2_Privilege|WWDG2|||||
+VREFBUF_Privilege|VREFBUF|||||
+DTS_Privilege|DTS|||||
+RAMCFG_Privilege|RAMCFG|||||
+CRC_Privilege|CRC|||||
+SERC_Privilege|SERC|||||
+OCTOSPIM_Privilege|OCTOSPIM|||||
+GICV2M_Privilege|GICV2M|||||
+I3C1_Privilege|I3C1|||||
+I3C2_Privilege|I3C2|||||
+I3C3_Privilege|I3C3|||||
+I3C4_Privilege|I3C4|||||
+ICACHE_DCACHE_Privilege|ICACHE_DCACHE|||||
+LTDC_L1L2_Privilege|LTDC_L1L2|||||
+LTDC_L3_Privilege|LTDC_L3|||||
+LTDC_ROT_Privilege|LTDC_ROT|||||
+DSI_TRIG_Privilege|DSI_TRIG|||||
+DSI_RDFIFO_Privilege|DSI_RDFIFO|||||
+OTFDEC1_Privilege|OTFDEC1|||||
+OTFDEC2_Privilege|OTFDEC2|||||
+IP_ID|ID of each IP|||||
+LTDC_L1L2_Name_RIMU||||||
+LTDC_L3_Name_RIMU||||||
+LTDC_ROT_Name_RIMU||||||
+RISAF_DDR_End_Address|DDR end address|||||
+RISAF_DDR_End_Address_2GO|DDR end address|||||
+RISAF_DDR_End_Address_1GO|DDR end address|||||
+RISAF_DDR_End_Address_4GO|DDR end address|||||
+RISAF_DDR_End_Address_512MB|DDR end address|||||
+RISAF_DDR1_Start_Address|assign DDR1 start address|||0x80000000|0x80000000|
+RISAF_DDR1_Region_Size|assign the region size for DDR1|||0x0000|=(RISAF_DDR2_Start_Address - RISAF_DDR1_Start_Address)|
+RISAF_DDR2_Start_Address|assign DDR2 start address|||=(RISAF_DDR1_Start_Address + RISAF_DDR1_Region_Size)|0x100000000|
+RISAF_DDR2_Region_Size|assign the region size for DDR2|||0x0000|=(RISAF_DDR3_Start_Address - RISAF_DDR2_Start_Address)|
+RISAF_DDR3_Start_Address|assign DDR3 start address|||=(RISAF_DDR2_Start_Address + RISAF_DDR2_Region_Size)|0x100000000|
+RISAF_DDR3_Region_Size|assign the region size for DDR3|||0x0000|=(RISAF_DDR4_Start_Address - RISAF_DDR3_Start_Address)|
+RISAF_DDR4_Start_Address|assign DDR4 start address|||=(RISAF_DDR3_Start_Address + RISAF_DDR3_Region_Size)|0x100000000|
+RISAF_DDR4_Region_Size|assign the region size for DDR4|||0x0000|=(RISAF_DDR5_Start_Address - RISAF_DDR4_Start_Address)|
+RISAF_DDR5_Start_Address|assign DDR5 start address|||=(RISAF_DDR4_Start_Address + RISAF_DDR4_Region_Size)|0x100000000|
+RISAF_DDR5_Region_Size|assign the region size for DDR5|||0x0000|=(RISAF_DDR6_Start_Address - RISAF_DDR5_Start_Address)|
+RISAF_DDR6_Start_Address|assign DDR6 start address|||=(RISAF_DDR5_Start_Address + RISAF_DDR5_Region_Size)|0x100000000|
+RISAF_DDR6_Region_Size|assign the region size for DDR6|||0x0000|=(RISAF_DDR7_Start_Address - RISAF_DDR6_Start_Address)|
+RISAF_DDR7_Start_Address|assign DDR7 start address|||=(RISAF_DDR6_Start_Address + RISAF_DDR6_Region_Size)|0x100000000|
+RISAF_DDR7_Region_Size|assign the region size for DDR7|||0x0000|=(RISAF_DDR8_Start_Address - RISAF_DDR7_Start_Address)|
+RISAF_DDR8_Start_Address|assign DDR8 start address|||=(RISAF_DDR7_Start_Address + RISAF_DDR7_Region_Size)|0x100000000|
+RISAF_DDR8_Region_Size|assign the region size for DDR8|||0x0000|=(RISAF_DDR9_Start_Address - RISAF_DDR8_Start_Address)|
+RISAF_DDR9_Start_Address|assign DDR9 start address|||=(RISAF_DDR8_Start_Address + RISAF_DDR8_Region_Size)|0x100000000|
+RISAF_DDR9_Region_Size|assign the region size for DDR9|||0x0000|=(RISAF_DDR10_Start_Address - RISAF_DDR9_Start_Address)|
+RISAF_DDR10_Start_Address|assign DDR10 start address|||=(RISAF_DDR9_Start_Address + RISAF_DDR9_Region_Size)|0xF80000000|
+RISAF_DDR10_Region_Size|assign the region size for DDR10|||0x0000|=(RISAF_DDR11_Start_Address - RISAF_DDR10_Start_Address)|
+RISAF_DDR11_Start_Address|assign DDR11 start address|||=(RISAF_DDR10_Start_Address + RISAF_DDR10_Region_Size)|0x100000000|
+RISAF_DDR11_Region_Size|assign the region size for DDR11|||0x0000|=(RISAF_DDR12_Start_Address - RISAF_DDR11_Start_Address)|
+RISAF_DDR12_Start_Address|assign DDR12 start address|||=(RISAF_DDR11_Start_Address + RISAF_DDR11_Region_Size)|0x100000000|
+RISAF_DDR12_Region_Size|assign the region size for DDR12|||0x0000|=(RISAF_DDR13_Start_Address - RISAF_DDR12_Start_Address)|
+RISAF_DDR13_Start_Address|assign DDR13 start address|||=(RISAF_DDR12_Start_Address + RISAF_DDR12_Region_Size)|0x100000000|
+RISAF_DDR13_Region_Size|assign the region size for DDR13|||0x0000|=(RISAF_DDR13_Start_Address - RISAF_DDR12_Start_Address)|
+RISAF_DDR14_Start_Address|assign DDR14 start address|||=(RISAF_DDR13_Start_Address + RISAF_DDR13_Region_Size)|0x100000000|
+RISAF_DDR14_Region_Size|assign the region size for DDR14|||0x0000|=(RISAF_DDR15_Start_Address - RISAF_DDR14_Start_Address)|
+RISAF_DDR15_Start_Address|assign DDR15 start address|||=(RISAF_DDR14_Start_Address + RISAF_DDR14_Region_Size)|0x100000000|
+RISAF_DDR15_Region_Size|assign the region size for DDR15|||0x0000|0x180000000|
+RISAF_DDR1_Start_Address_4GO|assign DDR1 start address|||0x80000000|0x80000000|
+RISAF_DDR2_Start_Address_4GO|assign DDR2 start address|||=(RISAF_DDR1_Start_Address_4GO + RISAF_DDR1_Region_Size_4GO)|0x100000000|
+RISAF_DDR3_Start_Address_4GO|assign DDR3 start address|||=(RISAF_DDR2_Start_Address_4GO + RISAF_DDR2_Region_Size_4GO)|0x100000000|
+RISAF_DDR4_Start_Address_4GO|assign DDR4 start address|||=(RISAF_DDR3_Start_Address_4GO + RISAF_DDR3_Region_Size_4GO)|0x100000000|
+RISAF_DDR5_Start_Address_4GO|assign DDR5 start address|||=(RISAF_DDR4_Start_Address_4GO + RISAF_DDR4_Region_Size_4GO)|0x100000000|
+RISAF_DDR6_Start_Address_4GO|assign DDR6 start address|||=(RISAF_DDR5_Start_Address_4GO + RISAF_DDR5_Region_Size_4GO)|0x100000000|
+RISAF_DDR7_Start_Address_4GO|assign DDR7 start address|||=(RISAF_DDR6_Start_Address_4GO + RISAF_DDR6_Region_Size_4GO)|0x100000000|
+RISAF_DDR8_Start_Address_4GO|assign DDR8 start address|||=(RISAF_DDR7_Start_Address_4GO + RISAF_DDR7_Region_Size_4GO)|0x100000000|
+RISAF_DDR9_Start_Address_4GO|assign DDR9 start address|||=(RISAF_DDR8_Start_Address_4GO + RISAF_DDR8_Region_Size_4GO)|0x100000000|
+RISAF_DDR10_Start_Address_4GO|assign DDR10 start address|||=(RISAF_DDR9_Start_Address_4GO + RISAF_DDR9_Region_Size_4GO)|0x100000000|
+RISAF_DDR11_Start_Address_4GO|assign DDR11 start address|||=(RISAF_DDR10_Start_Address_4GO + RISAF_DDR10_Region_Size_4GO)|0x100000000|
+RISAF_DDR12_Start_Address_4GO|assign DDR12 start address|||=(RISAF_DDR11_Start_Address_4GO + RISAF_DDR11_Region_Size_4GO)|0x100000000|
+RISAF_DDR13_Start_Address_4GO|assign DDR13 start address|||=(RISAF_DDR12_Start_Address_4GO + RISAF_DDR12_Region_Size_4GO)|0x100000000|
+RISAF_DDR14_Start_Address_4GO|assign DDR14 start address|||=(RISAF_DDR13_Start_Address_4GO + RISAF_DDR13_Region_Size_4GO)|0x100000000|
+RISAF_DDR15_Start_Address_4GO|assign DDR15 start address|||=(RISAF_DDR14_Start_Address_4GO + RISAF_DDR14_Region_Size_4GO)|0x100000000|
+RISAF_DDR1_Region_Size_4GO|assign the region size for DDR1|||0x0000|=(RISAF_DDR2_Start_Address_4GO - RISAF_DDR1_Start_Address_4GO)|
+RISAF_DDR2_Region_Size_4GO|assign the region size for DDR2|||0x0000|=(RISAF_DDR3_Start_Address_4GO - RISAF_DDR2_Start_Address_4GO)|
+RISAF_DDR3_Region_Size_4GO|assign the region size for DDR3|||0x0000|=(RISAF_DDR4_Start_Address_4GO - RISAF_DDR3_Start_Address_4GO)|
+RISAF_DDR4_Region_Size_4GO|assign the region size for DDR4|||0x0000|=(RISAF_DDR5_Start_Address_4GO - RISAF_DDR4_Start_Address_4GO)|
+RISAF_DDR5_Region_Size_4GO|assign the region size for DDR5|||0x0000|=(RISAF_DDR6_Start_Address_4GO - RISAF_DDR5_Start_Address_4GO)|
+RISAF_DDR6_Region_Size_4GO|assign the region size for DDR6|||0x0000|=(RISAF_DDR7_Start_Address_4GO - RISAF_DDR6_Start_Address_4GO)|
+RISAF_DDR7_Region_Size_4GO|assign the region size for DDR7|||0x0000|=(RISAF_DDR8_Start_Address_4GO - RISAF_DDR7_Start_Address_4GO)|
+RISAF_DDR8_Region_Size_4GO|assign the region size for DDR8|||0x0000|=(RISAF_DDR9_Start_Address_4GO - RISAF_DDR7_Start_Address_4GO)|
+RISAF_DDR9_Region_Size_4GO|assign the region size for DDR9|||0x0000|=(RISAF_DDR10_Start_Address_4GO - RISAF_DDR9_Start_Address_4GO)|
+RISAF_DDR10_Region_Size_4GO|assign the region size for DDR10|||0x0000|=(RISAF_DDR11_Start_Address_4GO - RISAF_DDR10_Start_Address_4GO)|
+RISAF_DDR11_Region_Size_4GO|assign the region size for DDR11|||0x0000|=(RISAF_DDR12_Start_Address_4GO - RISAF_DDR11_Start_Address_4GO)|
+RISAF_DDR12_Region_Size_4GO|assign the region size for DDR12|||0x0000|=(RISAF_DDR13_Start_Address_4GO - RISAF_DDR12_Start_Address_4GO)|
+RISAF_DDR13_Region_Size_4GO|assign the region size for DDR13|||0x0000|=(RISAF_DDR14_Start_Address_4GO - RISAF_DDR13_Start_Address_4GO)|
+RISAF_DDR14_Region_Size_4GO|assign the region size for DDR14|||0x0000|=(RISAF_DDR15_Start_Address_4GO - RISAF_DDR14_Start_Address_4GO)|
+RISAF_DDR15_Region_Size_4GO|assign the region size for DDR15|||0x0000|=(RISAF_DDR_End_Address_4GO - RISAF_DDR15_Start_Address_4GO)|
+RISAF_DDR1_Start_Address_1GO|assign DDR1 start address|||0x80000000|0x80000000|
+RISAF_DDR1_Region_Size_1GO|assign the region size for DDR1|||0x0000|=(RISAF_DDR2_Start_Address_1GO - RISAF_DDR1_Start_Address_1GO)|
+RISAF_DDR2_Start_Address_1GO|assign DDR2 start address|||=(RISAF_DDR1_Start_Address_1GO + RISAF_DDR1_Region_Size_1GO)|0x100000000|
+RISAF_DDR2_Region_Size_1GO|assign the region size for DDR2|||0x0000|=(RISAF_DDR3_Start_Address_1GO - RISAF_DDR2_Start_Address_1GO)|
+RISAF_DDR3_Start_Address_1GO|assign DDR3 start address|||=(RISAF_DDR2_Start_Address_1GO + RISAF_DDR2_Region_Size_1GO)|0x100000000|
+RISAF_DDR3_Region_Size_1GO|assign the region size for DDR3|||0x0000|=(RISAF_DDR4_Start_Address_1GO - RISAF_DDR3_Start_Address)|
+RISAF_DDR4_Start_Address_1GO|assign DDR4 start address|||=(RISAF_DDR3_Start_Address_1GO + RISAF_DDR3_Region_Size_1GO)|0x100000000|
+RISAF_DDR4_Region_Size_1GO|assign the region size for DDR4|||0x0000|=(RISAF_DDR5_Start_Address_1GO - RISAF_DDR4_Start_Address_1GO)|
+RISAF_DDR5_Start_Address_1GO|assign DDR5 start address|||=(RISAF_DDR4_Start_Address_1GO + RISAF_DDR4_Region_Size_1GO)|0x100000000|
+RISAF_DDR5_Region_Size_1GO|assign the region size for DDR5|||0x0000|=(RISAF_DDR6_Start_Address_1GO - RISAF_DDR5_Start_Address_1GO)|
+RISAF_DDR6_Start_Address_1GO|assign DDR6 start address|||=(RISAF_DDR5_Start_Address_1GO + RISAF_DDR5_Region_Size_1GO)|0x100000000|
+RISAF_DDR6_Region_Size_1GO|assign the region size for DDR6|||0x0000|=(RISAF_DDR7_Start_Address_1GO - RISAF_DDR6_Start_Address_1GO)|
+RISAF_DDR7_Start_Address_1GO|assign DDR7 start address|||=(RISAF_DDR6_Start_Address_1GO + RISAF_DDR6_Region_Size_1GO)|0x100000000|
+RISAF_DDR7_Region_Size_1GO|assign the region size for DDR7|||0x0000|=(RISAF_DDR8_Start_Address_1GO - RISAF_DDR7_Start_Address_1GO)|
+RISAF_DDR8_Start_Address_1GO|assign DDR8 start address|||=(RISAF_DDR7_Start_Address_1GO + RISAF_DDR7_Region_Size_1GO)|0x100000000|
+RISAF_DDR8_Region_Size_1GO|assign the region size for DDR8|||0x0000|=(RISAF_DDR9_Start_Address_1GO - RISAF_DDR8_Start_Address_1GO)|
+RISAF_DDR9_Start_Address_1GO|assign DDR9 start address|||=(RISAF_DDR8_Start_Address_1GO + RISAF_DDR8_Region_Size_1GO)|0x100000000|
+RISAF_DDR9_Region_Size_1GO|assign the region size for DDR9|||0x0000|=((RISAF_DDR_End_Address_1GO - RISAF_DDR9_Start_Address_1GO)- RISAF_DDR10_Region_Size_1GO- RISAF_DDR11_Region_Size_1GO -RISAF_DDR12_Region_Size_1GO- RISAF_DDR13_Region_Size_1GO - RISAF_DDR14_Region_Size_1GO)|
+RISAF_DDR10_Start_Address_1GO|assign DDR10 start address|||=(RISAF_DDR9_Start_Address_1GO + RISAF_DDR9_Region_Size_1GO)|0xF80000000|
+RISAF_DDR10_Region_Size_1GO|assign the region size for DDR10|||0x0000|=((RISAF_DDR_End_Address_1GO - RISAF_DDR10_Start_Address_1GO)- RISAF_DDR11_Region_Size_1GO -RISAF_DDR12_Region_Size_1GO- RISAF_DDR13_Region_Size_1GO - RISAF_DDR14_Region_Size_1GO)|
+RISAF_DDR11_Start_Address_1GO|assign DDR11 start address|||=(RISAF_DDR10_Start_Address_1GO + RISAF_DDR10_Region_Size_1GO)|0x100000000|
+RISAF_DDR11_Region_Size_1GO|assign the region size for DDR11|||0x0000|=((RISAF_DDR_End_Address_1GO - RISAF_DDR11_Start_Address_1GO)-RISAF_DDR12_Region_Size_1GO- RISAF_DDR13_Region_Size_1GO - RISAF_DDR14_Region_Size_1GO)|
+RISAF_DDR12_Start_Address_1GO|assign DDR12 start address|||=(RISAF_DDR11_Start_Address_1GO + RISAF_DDR11_Region_Size_1GO)|0x100000000|
+RISAF_DDR12_Region_Size_1GO|assign the region size for DDR12|||0x0000|=((RISAF_DDR_End_Address_1GO - RISAF_DDR12_Start_Address_1GO) - RISAF_DDR13_Region_Size_1GO - RISAF_DDR14_Region_Size_1GO)|
+RISAF_DDR13_Start_Address_1GO|assign DDR13 start address|||=(RISAF_DDR12_Start_Address_1GO + RISAF_DDR12_Region_Size_1GO)|0x100000000|
+RISAF_DDR13_Region_Size_1GO|assign the region size for DDR13|||0x0000|=((RISAF_DDR_End_Address_1GO - RISAF_DDR13_Start_Address_1GO) - RISAF_DDR14_Region_Size_1GO)|
+RISAF_DDR14_Start_Address_1GO|assign DDR14 start address|||=(RISAF_DDR13_Start_Address_1GO + RISAF_DDR13_Region_Size_1GO)|0x100000000|
+RISAF_DDR14_Region_Size_1GO|assign the region size for DDR14|||0x0000|=(RISAF_DDR_End_Address_1GO - RISAF_DDR14_Start_Address_1GO)|
+RISAF_DDR1_Start_Address_2GO|assign DDR1 start address|||0x80000000|0x80000000|
+RISAF_DDR1_Region_Size_2GO|assign the region size for DDR1|||0x0000|=(RISAF_DDR2_Start_Address_2GO - RISAF_DDR1_Start_Address_2GO)|
+RISAF_DDR2_Start_Address_2GO|assign DDR2 start address|||=(RISAF_DDR1_Start_Address_2GO + RISAF_DDR1_Region_Size_2GO)|0x100000000|
+RISAF_DDR2_Region_Size_2GO|assign the region size for DDR2|||0x0000|=(RISAF_DDR3_Start_Address_2GO - RISAF_DDR2_Start_Address_2GO)|
+RISAF_DDR3_Start_Address_2GO|assign DDR3 start address|||=(RISAF_DDR2_Start_Address_2GO + RISAF_DDR2_Region_Size_2GO)|0x100000000|
+RISAF_DDR3_Region_Size_2GO|assign the region size for DDR3|||0x0000|=(RISAF_DDR4_Start_Address_2GO - RISAF_DDR3_Start_Address_2GO)|
+RISAF_DDR4_Start_Address_2GO|assign DDR4 start address|||=(RISAF_DDR3_Start_Address_2GO + RISAF_DDR3_Region_Size_2GO)|0x100000000|
+RISAF_DDR4_Region_Size_2GO|assign the region size for DDR4|||0x0000|=(RISAF_DDR5_Start_Address_2GO - RISAF_DDR4_Start_Address_2GO)|
+RISAF_DDR5_Start_Address_2GO|assign DDR5 start address|||=(RISAF_DDR4_Start_Address_2GO + RISAF_DDR4_Region_Size_2GO)|0x100000000|
+RISAF_DDR5_Region_Size_2GO|assign the region size for DDR5|||0x0000|=(RISAF_DDR6_Start_Address_2GO - RISAF_DDR5_Start_Address_2GO)|
+RISAF_DDR6_Start_Address_2GO|assign DDR6 start address|||=(RISAF_DDR5_Start_Address_2GO + RISAF_DDR5_Region_Size_2GO)|0x100000000|
+RISAF_DDR6_Region_Size_2GO|assign the region size for DDR6|||0x0000|=(RISAF_DDR7_Start_Address_2GO - RISAF_DDR6_Start_Address_2GO)|
+RISAF_DDR7_Start_Address_2GO|assign DDR7 start address|||=(RISAF_DDR6_Start_Address_2GO + RISAF_DDR6_Region_Size_2GO)|0x100000000|
+RISAF_DDR7_Region_Size_2GO|assign the region size for DDR7|||0x0000|=(RISAF_DDR8_Start_Address_2GO - RISAF_DDR7_Start_Address_2GO)|
+RISAF_DDR8_Start_Address_2GO|assign DDR8 start address|||=(RISAF_DDR7_Start_Address_2GO + RISAF_DDR7_Region_Size_2GO)|0x100000000|
+RISAF_DDR8_Region_Size_2GO|assign the region size for DDR8|||0x0000|=(RISAF_DDR9_Start_Address_2GO - RISAF_DDR8_Start_Address_2GO)|
+RISAF_DDR9_Start_Address_2GO|assign DDR9 start address|||=(RISAF_DDR8_Start_Address_2GO + RISAF_DDR8_Region_Size_2GO)|0x100000000|
+RISAF_DDR9_Region_Size_2GO|assign the region size for DDR9|||0x0000|=((RISAF_DDR_End_Address_2GO - RISAF_DDR9_Start_Address_2GO)- RISAF_DDR10_Region_Size_2GO- RISAF_DDR11_Region_Size_2GO -RISAF_DDR12_Region_Size_2GO- RISAF_DDR13_Region_Size_2GO - RISAF_DDR14_Region_Size_2GO)|
+RISAF_DDR10_Start_Address_2GO|assign DDR10 start address|||=(RISAF_DDR9_Start_Address_2GO + RISAF_DDR9_Region_Size_2GO)|0xF80000000|
+RISAF_DDR10_Region_Size_2GO|assign the region size for DDR10|||0x0000|=((RISAF_DDR_End_Address_2GO - RISAF_DDR10_Start_Address_2GO)- RISAF_DDR11_Region_Size_2GO -RISAF_DDR12_Region_Size_2GO- RISAF_DDR13_Region_Size_2GO - RISAF_DDR14_Region_Size_2GO)|
+RISAF_DDR11_Start_Address_2GO|assign DDR11 start address|||=(RISAF_DDR10_Start_Address_2GO + RISAF_DDR10_Region_Size_2GO)|0x100000000|
+RISAF_DDR11_Region_Size_2GO|assign the region size for DDR11|||0x0000|=((RISAF_DDR_End_Address_2GO - RISAF_DDR11_Start_Address_2GO)-RISAF_DDR12_Region_Size_2GO- RISAF_DDR13_Region_Size_2GO - RISAF_DDR14_Region_Size_2GO)|
+RISAF_DDR12_Start_Address_2GO|assign DDR12 start address|||=(RISAF_DDR11_Start_Address_2GO + RISAF_DDR11_Region_Size_2GO)|0x100000000|
+RISAF_DDR12_Region_Size_2GO|assign the region size for DDR12|||0x0000|=((RISAF_DDR_End_Address_2GO - RISAF_DDR12_Start_Address_2GO) - RISAF_DDR13_Region_Size_2GO - RISAF_DDR14_Region_Size_2GO)|
+RISAF_DDR13_Start_Address_2GO|assign DDR13 start address|||=(RISAF_DDR12_Start_Address_2GO + RISAF_DDR12_Region_Size_2GO)|0x100000000|
+RISAF_DDR13_Region_Size_2GO|assign the region size for DDR13|||0x0000|=((RISAF_DDR_End_Address_2GO - RISAF_DDR13_Start_Address_2GO) - RISAF_DDR14_Region_Size_2GO)|
+RISAF_DDR14_Start_Address_2GO|assign DDR14 start address|||=(RISAF_DDR13_Start_Address_2GO + RISAF_DDR13_Region_Size_2GO)|0x100000000|
+RISAF_DDR14_Region_Size_2GO|assign the region size for DDR14|||0x0000|=(RISAF_DDR_End_Address_2GO - RISAF_DDR14_Start_Address_2GO)|
+RISAF_DDR1_Start_Address_512MB|assign DDR1 start address|||0x80000000|0x80000000|
+RISAF_DDR1_Region_Size_512MB|assign the region size for DDR1|||0x0000|=(RISAF_DDR2_Start_Address_512MB - RISAF_DDR1_Start_Address_512MB)|
+RISAF_DDR2_Start_Address_512MB|assign DDR2 start address|||=(RISAF_DDR1_Start_Address_512MB + RISAF_DDR1_Region_Size_512MB)|0x100000000|
+RISAF_DDR2_Region_Size_512MB|assign the region size for DDR2|||0x0000|=(RISAF_DDR3_Start_Address_512MB - RISAF_DDR2_Start_Address_512MB)|
+RISAF_DDR3_Start_Address_512MB|assign DDR3 start address|||=(RISAF_DDR2_Start_Address_512MB + RISAF_DDR2_Region_Size_512MB)|0x100000000|
+RISAF_DDR3_Region_Size_512MB|assign the region size for DDR3|||0x0000|=(RISAF_DDR4_Start_Address_512MB - RISAF_DDR3_Start_Address_512MB)|
+RISAF_DDR4_Start_Address_512MB|assign DDR4 start address|||=(RISAF_DDR3_Start_Address_512MB + RISAF_DDR3_Region_Size_512MB)|0x100000000|
+RISAF_DDR4_Region_Size_512MB|assign the region size for DDR4|||0x0000|=(RISAF_DDR5_Start_Address_512MB - RISAF_DDR4_Start_Address_512MB)|
+RISAF_DDR5_Start_Address_512MB|assign DDR5 start address|||=(RISAF_DDR4_Start_Address_512MB + RISAF_DDR4_Region_Size_512MB)|0x100000000|
+RISAF_DDR5_Region_Size_512MB|assign the region size for DDR5|||0x0000|=(RISAF_DDR6_Start_Address_512MB - RISAF_DDR5_Start_Address_512MB)|
+RISAF_DDR6_Start_Address_512MB|assign DDR6 start address|||=(RISAF_DDR5_Start_Address_512MB + RISAF_DDR5_Region_Size_512MB)|0x100000000|
+RISAF_DDR6_Region_Size_512MB|assign the region size for DDR6|||0x0000|=(RISAF_DDR7_Start_Address_512MB - RISAF_DDR6_Start_Address_512MB)|
+RISAF_DDR7_Start_Address_512MB|assign DDR7 start address|||=(RISAF_DDR6_Start_Address_512MB + RISAF_DDR6_Region_Size_512MB)|0x100000000|
+RISAF_DDR7_Region_Size_512MB|assign the region size for DDR7|||0x0000|=(RISAF_DDR8_Start_Address_512MB - RISAF_DDR7_Start_Address_512MB)|
+RISAF_DDR8_Start_Address_512MB|assign DDR8 start address|||=(RISAF_DDR7_Start_Address_512MB + RISAF_DDR7_Region_Size_512MB)|0x100000000|
+RISAF_DDR8_Region_Size_512MB|assign the region size for DDR8|||0x0000|=(RISAF_DDR9_Start_Address_512MB - RISAF_DDR8_Start_Address_512MB)|
+RISAF_DDR9_Start_Address_512MB|assign DDR9 start address|||=(RISAF_DDR8_Start_Address_512MB + RISAF_DDR8_Region_Size_512MB)|0x100000000|
+RISAF_DDR9_Region_Size_512MB|assign the region size for DDR9|||0x0000|=((RISAF_DDR_End_Address_512MB - RISAF_DDR9_Start_Address_512MB)- RISAF_DDR10_Region_Size_512MB- RISAF_DDR11_Region_Size_512MB -RISAF_DDR12_Region_Size_512MB- RISAF_DDR13_Region_Size_512MB - RISAF_DDR14_Region_Size_512MB)|
+RISAF_DDR10_Start_Address_512MB|assign DDR10 start address|||=(RISAF_DDR9_Start_Address_512MB + RISAF_DDR9_Region_Size_512MB)|0xF80000000|
+RISAF_DDR10_Region_Size_512MB|assign the region size for DDR10|||0x0000|=((RISAF_DDR_End_Address_512MB - RISAF_DDR10_Start_Address_512MB)- RISAF_DDR11_Region_Size_512MB -RISAF_DDR12_Region_Size_512MB- RISAF_DDR13_Region_Size_512MB - RISAF_DDR14_Region_Size_512MB)|
+RISAF_DDR11_Start_Address_512MB|assign DDR11 start address|||=(RISAF_DDR10_Start_Address_512MB + RISAF_DDR10_Region_Size_512MB)|0x100000000|
+RISAF_DDR11_Region_Size_512MB|assign the region size for DDR11|||0x0000|=((RISAF_DDR_End_Address_512MB - RISAF_DDR11_Start_Address_512MB)-RISAF_DDR12_Region_Size_512MB- RISAF_DDR13_Region_Size_512MB - RISAF_DDR14_Region_Size_512MB)|
+RISAF_DDR12_Start_Address_512MB|assign DDR12 start address|||=(RISAF_DDR11_Start_Address_512MB + RISAF_DDR11_Region_Size_512MB)|0x100000000|
+RISAF_DDR12_Region_Size_512MB|assign the region size for DDR12|||0x0000|=((RISAF_DDR_End_Address_512MB - RISAF_DDR12_Start_Address_512MB) - RISAF_DDR13_Region_Size_512MB - RISAF_DDR14_Region_Size_512MB)|
+RISAF_DDR13_Start_Address_512MB|assign DDR13 start address|||=(RISAF_DDR12_Start_Address_512MB + RISAF_DDR12_Region_Size_512MB)|0x100000000|
+RISAF_DDR13_Region_Size_512MB|assign the region size for DDR13|||0x0000|=((RISAF_DDR_End_Address_512MB - RISAF_DDR13_Start_Address_512MB) - RISAF_DDR14_Region_Size_512MB)|
+RISAF_DDR14_Start_Address_512MB|assign DDR14 start address|||=(RISAF_DDR13_Start_Address_512MB + RISAF_DDR13_Region_Size_512MB)|0x100000000|
+RISAF_DDR14_Region_Size_512MB|assign the region size for DDR14|||0x0000|=(RISAF_DDR_End_Address_512MB - RISAF_DDR14_Start_Address_512MB)|
+RISAF_BKPSRAM_Region_ID_1_Master_CID0_Privilege|RISAF_BKPSRAM_Region_ID_1_Privilege|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID1_Privilege|RISAF_BKPSRAM_Region_ID_1_Privilege|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID2_Privilege|RISAF_BKPSRAM_Region_ID_1_Privilege|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID3_Privilege|RISAF_BKPSRAM_Region_ID_1_Privilege|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID4_Privilege|RISAF_BKPSRAM_Region_ID_1_Privilege|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID5_Privilege|RISAF_BKPSRAM_Region_ID_1_Privilege|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID6_Privilege|RISAF_BKPSRAM_Region_ID_1_Privilege|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID0_Privilege|RISAF_BKPSRAM_Region_ID_2_Privilege|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID1_Privilege|RISAF_BKPSRAM_Region_ID_2_Privilege|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID2_Privilege|RISAF_BKPSRAM_Region_ID_2_Privilege|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID3_Privilege|RISAF_BKPSRAM_Region_ID_2_Privilege|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID4_Privilege|RISAF_BKPSRAM_Region_ID_2_Privilege|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID5_Privilege|RISAF_BKPSRAM_Region_ID_2_Privilege|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID6_Privilege|RISAF_BKPSRAM_Region_ID_2_Privilege|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID0_Privilege|RISAF_BKPSRAM_Region_ID_3_Privilege|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID1_Privilege|RISAF_BKPSRAM_Region_ID_3_Privilege|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID2_Privilege|RISAF_BKPSRAM_Region_ID_3_Privilege|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID3_Privilege|RISAF_BKPSRAM_Region_ID_3_Privilege|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID4_Privilege|RISAF_BKPSRAM_Region_ID_3_Privilege|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID5_Privilege|RISAF_BKPSRAM_Region_ID_3_Privilege|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID6_Privilege|RISAF_BKPSRAM_Region_ID_3_Privilege|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID0_Privilege|RISAF_BKPSRAM_Region_ID_4_Privilege|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID1_Privilege|RISAF_BKPSRAM_Region_ID_4_Privilege|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID2_Privilege|RISAF_BKPSRAM_Region_ID_4_Privilege|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID3_Privilege|RISAF_BKPSRAM_Region_ID_4_Privilege|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID4_Privilege|RISAF_BKPSRAM_Region_ID_4_Privilege|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID5_Privilege|RISAF_BKPSRAM_Region_ID_4_Privilege|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID6_Privilege|RISAF_BKPSRAM_Region_ID_4_Privilege|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID0_Read|RISAF_BKPSRAM_Region_ID_1_Read|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID1_Read|RISAF_BKPSRAM_Region_ID_1_Read|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID2_Read|RISAF_BKPSRAM_Region_ID_1_Read|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID3_Read|RISAF_BKPSRAM_Region_ID_1_Read|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID4_Read|RISAF_BKPSRAM_Region_ID_1_Read|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID5_Read|RISAF_BKPSRAM_Region_ID_1_Read|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID6_Read|RISAF_BKPSRAM_Region_ID_1_Read|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID0_Read|RISAF_BKPSRAM_Region_ID_2_Read|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID1_Read|RISAF_BKPSRAM_Region_ID_2_Read|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID2_Read|RISAF_BKPSRAM_Region_ID_2_Read|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID3_Read|RISAF_BKPSRAM_Region_ID_2_Read|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID4_Read|RISAF_BKPSRAM_Region_ID_2_Read|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID5_Read|RISAF_BKPSRAM_Region_ID_2_Read|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID6_Read|RISAF_BKPSRAM_Region_ID_2_Read|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID0_Read|RISAF_BKPSRAM_Region_ID_3_Read|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID1_Read|RISAF_BKPSRAM_Region_ID_3_Read|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID2_Read|RISAF_BKPSRAM_Region_ID_3_Read|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID3_Read|RISAF_BKPSRAM_Region_ID_3_Read|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID4_Read|RISAF_BKPSRAM_Region_ID_3_Read|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID5_Read|RISAF_BKPSRAM_Region_ID_3_Read|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID6_Read|RISAF_BKPSRAM_Region_ID_3_Read|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID0_Read|RISAF_BKPSRAM_Region_ID_4_Read|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID1_Read|RISAF_BKPSRAM_Region_ID_4_Read|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID2_Read|RISAF_BKPSRAM_Region_ID_4_Read|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID3_Read|RISAF_BKPSRAM_Region_ID_4_Read|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID4_Read|RISAF_BKPSRAM_Region_ID_4_Read|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID5_Read|RISAF_BKPSRAM_Region_ID_4_Read|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID6_Read|RISAF_BKPSRAM_Region_ID_4_Read|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID0_Write|RISAF_BKPSRAM_Region_ID_1_Write|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID1_Write|RISAF_BKPSRAM_Region_ID_1_Write|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID2_Write|RISAF_BKPSRAM_Region_ID_1_Write|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID3_Write|RISAF_BKPSRAM_Region_ID_1_Write|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID4_Write|RISAF_BKPSRAM_Region_ID_1_Write|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID5_Write|RISAF_BKPSRAM_Region_ID_1_Write|||||
+RISAF_BKPSRAM_Region_ID_1_Master_CID6_Write|RISAF_BKPSRAM_Region_ID_1_Write|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID0_Write|RISAF_BKPSRAM_Region_ID_2_Write|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID1_Write|RISAF_BKPSRAM_Region_ID_2_Write|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID2_Write|RISAF_BKPSRAM_Region_ID_2_Write|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID3_Write|RISAF_BKPSRAM_Region_ID_2_Write|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID4_Write|RISAF_BKPSRAM_Region_ID_2_Write|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID5_Write|RISAF_BKPSRAM_Region_ID_2_Write|||||
+RISAF_BKPSRAM_Region_ID_2_Master_CID6_Write|RISAF_BKPSRAM_Region_ID_2_Write|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID0_Write|RISAF_BKPSRAM_Region_ID_3_Write|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID1_Write|RISAF_BKPSRAM_Region_ID_3_Write|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID2_Write|RISAF_BKPSRAM_Region_ID_3_Write|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID3_Write|RISAF_BKPSRAM_Region_ID_3_Write|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID4_Write|RISAF_BKPSRAM_Region_ID_3_Write|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID5_Write|RISAF_BKPSRAM_Region_ID_3_Write|||||
+RISAF_BKPSRAM_Region_ID_3_Master_CID6_Write|RISAF_BKPSRAM_Region_ID_3_Write|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID0_Write|RISAF_BKPSRAM_Region_ID_4_Write|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID1_Write|RISAF_BKPSRAM_Region_ID_4_Write|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID2_Write|RISAF_BKPSRAM_Region_ID_4_Write|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID3_Write|RISAF_BKPSRAM_Region_ID_4_Write|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID4_Write|RISAF_BKPSRAM_Region_ID_4_Write|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID5_Write|RISAF_BKPSRAM_Region_ID_4_Write|||||
+RISAF_BKPSRAM_Region_ID_4_Master_CID6_Write|RISAF_BKPSRAM_Region_ID_4_Write|||||
+RISAF_PCIE_Region_ID_1_Master_CID0_Privilege|RISAF_PCIE_Region_ID_1_Privilege|||||
+RISAF_PCIE_Region_ID_1_Master_CID1_Privilege|RISAF_PCIE_Region_ID_1_Privilege|||||
+RISAF_PCIE_Region_ID_1_Master_CID2_Privilege|RISAF_PCIE_Region_ID_1_Privilege|||||
+RISAF_PCIE_Region_ID_1_Master_CID3_Privilege|RISAF_PCIE_Region_ID_1_Privilege|||||
+RISAF_PCIE_Region_ID_1_Master_CID4_Privilege|RISAF_PCIE_Region_ID_1_Privilege|||||
+RISAF_PCIE_Region_ID_1_Master_CID5_Privilege|RISAF_PCIE_Region_ID_1_Privilege|||||
+RISAF_PCIE_Region_ID_1_Master_CID6_Privilege|RISAF_PCIE_Region_ID_1_Privilege|||||
+RISAF_PCIE_Region_ID_2_Master_CID0_Privilege|RISAF_PCIE_Region_ID_2_Privilege|||||
+RISAF_PCIE_Region_ID_2_Master_CID1_Privilege|RISAF_PCIE_Region_ID_2_Privilege|||||
+RISAF_PCIE_Region_ID_2_Master_CID2_Privilege|RISAF_PCIE_Region_ID_2_Privilege|||||
+RISAF_PCIE_Region_ID_2_Master_CID3_Privilege|RISAF_PCIE_Region_ID_2_Privilege|||||
+RISAF_PCIE_Region_ID_2_Master_CID4_Privilege|RISAF_PCIE_Region_ID_2_Privilege|||||
+RISAF_PCIE_Region_ID_2_Master_CID5_Privilege|RISAF_PCIE_Region_ID_2_Privilege|||||
+RISAF_PCIE_Region_ID_2_Master_CID6_Privilege|RISAF_PCIE_Region_ID_2_Privilege|||||
+RISAF_PCIE_Region_ID_3_Master_CID0_Privilege|RISAF_PCIE_Region_ID_3_Privilege|||||
+RISAF_PCIE_Region_ID_3_Master_CID1_Privilege|RISAF_PCIE_Region_ID_3_Privilege|||||
+RISAF_PCIE_Region_ID_3_Master_CID2_Privilege|RISAF_PCIE_Region_ID_3_Privilege|||||
+RISAF_PCIE_Region_ID_3_Master_CID3_Privilege|RISAF_PCIE_Region_ID_3_Privilege|||||
+RISAF_PCIE_Region_ID_3_Master_CID4_Privilege|RISAF_PCIE_Region_ID_3_Privilege|||||
+RISAF_PCIE_Region_ID_3_Master_CID5_Privilege|RISAF_PCIE_Region_ID_3_Privilege|||||
+RISAF_PCIE_Region_ID_3_Master_CID6_Privilege|RISAF_PCIE_Region_ID_3_Privilege|||||
+RISAF_PCIE_Region_ID_4_Master_CID0_Privilege|RISAF_PCIE_Region_ID_4_Privilege|||||
+RISAF_PCIE_Region_ID_4_Master_CID1_Privilege|RISAF_PCIE_Region_ID_4_Privilege|||||
+RISAF_PCIE_Region_ID_4_Master_CID2_Privilege|RISAF_PCIE_Region_ID_4_Privilege|||||
+RISAF_PCIE_Region_ID_4_Master_CID3_Privilege|RISAF_PCIE_Region_ID_4_Privilege|||||
+RISAF_PCIE_Region_ID_4_Master_CID4_Privilege|RISAF_PCIE_Region_ID_4_Privilege|||||
+RISAF_PCIE_Region_ID_4_Master_CID5_Privilege|RISAF_PCIE_Region_ID_4_Privilege|||||
+RISAF_PCIE_Region_ID_4_Master_CID6_Privilege|RISAF_PCIE_Region_ID_4_Privilege|||||
+RISAF_PCIE_Region_ID_1_Master_CID0_Read|RISAF_PCIE_Region_ID_1_Read|||||
+RISAF_PCIE_Region_ID_1_Master_CID1_Read|RISAF_PCIE_Region_ID_1_Read|||||
+RISAF_PCIE_Region_ID_1_Master_CID2_Read|RISAF_PCIE_Region_ID_1_Read|||||
+RISAF_PCIE_Region_ID_1_Master_CID3_Read|RISAF_PCIE_Region_ID_1_Read|||||
+RISAF_PCIE_Region_ID_1_Master_CID4_Read|RISAF_PCIE_Region_ID_1_Read|||||
+RISAF_PCIE_Region_ID_1_Master_CID5_Read|RISAF_PCIE_Region_ID_1_Read|||||
+RISAF_PCIE_Region_ID_1_Master_CID6_Read|RISAF_PCIE_Region_ID_1_Read|||||
+RISAF_PCIE_Region_ID_2_Master_CID0_Read|RISAF_PCIE_Region_ID_2_Read|||||
+RISAF_PCIE_Region_ID_2_Master_CID1_Read|RISAF_PCIE_Region_ID_2_Read|||||
+RISAF_PCIE_Region_ID_2_Master_CID2_Read|RISAF_PCIE_Region_ID_2_Read|||||
+RISAF_PCIE_Region_ID_2_Master_CID3_Read|RISAF_PCIE_Region_ID_2_Read|||||
+RISAF_PCIE_Region_ID_2_Master_CID4_Read|RISAF_PCIE_Region_ID_2_Read|||||
+RISAF_PCIE_Region_ID_2_Master_CID5_Read|RISAF_PCIE_Region_ID_2_Read|||||
+RISAF_PCIE_Region_ID_2_Master_CID6_Read|RISAF_PCIE_Region_ID_2_Read|||||
+RISAF_PCIE_Region_ID_3_Master_CID0_Read|RISAF_PCIE_Region_ID_3_Read|||||
+RISAF_PCIE_Region_ID_3_Master_CID1_Read|RISAF_PCIE_Region_ID_3_Read|||||
+RISAF_PCIE_Region_ID_3_Master_CID2_Read|RISAF_PCIE_Region_ID_3_Read|||||
+RISAF_PCIE_Region_ID_3_Master_CID3_Read|RISAF_PCIE_Region_ID_3_Read|||||
+RISAF_PCIE_Region_ID_3_Master_CID4_Read|RISAF_PCIE_Region_ID_3_Read|||||
+RISAF_PCIE_Region_ID_3_Master_CID5_Read|RISAF_PCIE_Region_ID_3_Read|||||
+RISAF_PCIE_Region_ID_3_Master_CID6_Read|RISAF_PCIE_Region_ID_3_Read|||||
+RISAF_PCIE_Region_ID_4_Master_CID0_Read|RISAF_PCIE_Region_ID_4_Read|||||
+RISAF_PCIE_Region_ID_4_Master_CID1_Read|RISAF_PCIE_Region_ID_4_Read|||||
+RISAF_PCIE_Region_ID_4_Master_CID2_Read|RISAF_PCIE_Region_ID_4_Read|||||
+RISAF_PCIE_Region_ID_4_Master_CID3_Read|RISAF_PCIE_Region_ID_4_Read|||||
+RISAF_PCIE_Region_ID_4_Master_CID4_Read|RISAF_PCIE_Region_ID_4_Read|||||
+RISAF_PCIE_Region_ID_4_Master_CID5_Read|RISAF_PCIE_Region_ID_4_Read|||||
+RISAF_PCIE_Region_ID_4_Master_CID6_Read|RISAF_PCIE_Region_ID_4_Read|||||
+RISAF_PCIE_Region_ID_1_Master_CID0_Write|RISAF_PCIE_Region_ID_1_Write|||||
+RISAF_PCIE_Region_ID_1_Master_CID1_Write|RISAF_PCIE_Region_ID_1_Write|||||
+RISAF_PCIE_Region_ID_1_Master_CID2_Write|RISAF_PCIE_Region_ID_1_Write|||||
+RISAF_PCIE_Region_ID_1_Master_CID3_Write|RISAF_PCIE_Region_ID_1_Write|||||
+RISAF_PCIE_Region_ID_1_Master_CID4_Write|RISAF_PCIE_Region_ID_1_Write|||||
+RISAF_PCIE_Region_ID_1_Master_CID5_Write|RISAF_PCIE_Region_ID_1_Write|||||
+RISAF_PCIE_Region_ID_1_Master_CID6_Write|RISAF_PCIE_Region_ID_1_Write|||||
+RISAF_PCIE_Region_ID_2_Master_CID0_Write|RISAF_PCIE_Region_ID_2_Write|||||
+RISAF_PCIE_Region_ID_2_Master_CID1_Write|RISAF_PCIE_Region_ID_2_Write|||||
+RISAF_PCIE_Region_ID_2_Master_CID2_Write|RISAF_PCIE_Region_ID_2_Write|||||
+RISAF_PCIE_Region_ID_2_Master_CID3_Write|RISAF_PCIE_Region_ID_2_Write|||||
+RISAF_PCIE_Region_ID_2_Master_CID4_Write|RISAF_PCIE_Region_ID_2_Write|||||
+RISAF_PCIE_Region_ID_2_Master_CID5_Write|RISAF_PCIE_Region_ID_2_Write|||||
+RISAF_PCIE_Region_ID_2_Master_CID6_Write|RISAF_PCIE_Region_ID_2_Write|||||
+RISAF_PCIE_Region_ID_3_Master_CID0_Write|RISAF_PCIE_Region_ID_3_Write|||||
+RISAF_PCIE_Region_ID_3_Master_CID1_Write|RISAF_PCIE_Region_ID_3_Write|||||
+RISAF_PCIE_Region_ID_3_Master_CID2_Write|RISAF_PCIE_Region_ID_3_Write|||||
+RISAF_PCIE_Region_ID_3_Master_CID3_Write|RISAF_PCIE_Region_ID_3_Write|||||
+RISAF_PCIE_Region_ID_3_Master_CID4_Write|RISAF_PCIE_Region_ID_3_Write|||||
+RISAF_PCIE_Region_ID_3_Master_CID5_Write|RISAF_PCIE_Region_ID_3_Write|||||
+RISAF_PCIE_Region_ID_3_Master_CID6_Write|RISAF_PCIE_Region_ID_3_Write|||||
+RISAF_PCIE_Region_ID_4_Master_CID0_Write|RISAF_PCIE_Region_ID_4_Write|||||
+RISAF_PCIE_Region_ID_4_Master_CID1_Write|RISAF_PCIE_Region_ID_4_Write|||||
+RISAF_PCIE_Region_ID_4_Master_CID2_Write|RISAF_PCIE_Region_ID_4_Write|||||
+RISAF_PCIE_Region_ID_4_Master_CID3_Write|RISAF_PCIE_Region_ID_4_Write|||||
+RISAF_PCIE_Region_ID_4_Master_CID4_Write|RISAF_PCIE_Region_ID_4_Write|||||
+RISAF_PCIE_Region_ID_4_Master_CID5_Write|RISAF_PCIE_Region_ID_4_Write|||||
+RISAF_PCIE_Region_ID_4_Master_CID6_Write|RISAF_PCIE_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_1_Master_CID0_Privilege|RISAF_DDR_Region_ID_1_Privilege|||||
+RISAF_DDR_Region_ID_1_Master_CID1_Privilege|RISAF_DDR_Region_ID_1_Privilege|||||
+RISAF_DDR_Region_ID_1_Master_CID2_Privilege|RISAF_DDR_Region_ID_1_Privilege|||||
+RISAF_DDR_Region_ID_1_Master_CID3_Privilege|RISAF_DDR_Region_ID_1_Privilege|||||
+RISAF_DDR_Region_ID_1_Master_CID4_Privilege|RISAF_DDR_Region_ID_1_Privilege|||||
+RISAF_DDR_Region_ID_1_Master_CID5_Privilege|RISAF_DDR_Region_ID_1_Privilege|||||
+RISAF_DDR_Region_ID_1_Master_CID6_Privilege|RISAF_DDR_Region_ID_1_Privilege|||||
+RISAF_DDR_Region_ID_2_Master_CID0_Privilege|RISAF_DDR_Region_ID_2_Privilege|||||
+RISAF_DDR_Region_ID_2_Master_CID1_Privilege|RISAF_DDR_Region_ID_2_Privilege|||||
+RISAF_DDR_Region_ID_2_Master_CID2_Privilege|RISAF_DDR_Region_ID_2_Privilege|||||
+RISAF_DDR_Region_ID_2_Master_CID3_Privilege|RISAF_DDR_Region_ID_2_Privilege|||||
+RISAF_DDR_Region_ID_2_Master_CID4_Privilege|RISAF_DDR_Region_ID_2_Privilege|||||
+RISAF_DDR_Region_ID_2_Master_CID5_Privilege|RISAF_DDR_Region_ID_2_Privilege|||||
+RISAF_DDR_Region_ID_2_Master_CID6_Privilege|RISAF_DDR_Region_ID_2_Privilege|||||
+RISAF_DDR_Region_ID_3_Master_CID0_Privilege|RISAF_DDR_Region_ID_3_Privilege|||||
+RISAF_DDR_Region_ID_3_Master_CID1_Privilege|RISAF_DDR_Region_ID_3_Privilege|||||
+RISAF_DDR_Region_ID_3_Master_CID2_Privilege|RISAF_DDR_Region_ID_3_Privilege|||||
+RISAF_DDR_Region_ID_3_Master_CID3_Privilege|RISAF_DDR_Region_ID_3_Privilege|||||
+RISAF_DDR_Region_ID_3_Master_CID4_Privilege|RISAF_DDR_Region_ID_3_Privilege|||||
+RISAF_DDR_Region_ID_3_Master_CID5_Privilege|RISAF_DDR_Region_ID_3_Privilege|||||
+RISAF_DDR_Region_ID_3_Master_CID6_Privilege|RISAF_DDR_Region_ID_3_Privilege|||||
+RISAF_DDR_Region_ID_4_Master_CID0_Privilege|RISAF_DDR_Region_ID_4_Privilege|||||
+RISAF_DDR_Region_ID_4_Master_CID1_Privilege|RISAF_DDR_Region_ID_4_Privilege|||||
+RISAF_DDR_Region_ID_4_Master_CID2_Privilege|RISAF_DDR_Region_ID_4_Privilege|||||
+RISAF_DDR_Region_ID_4_Master_CID3_Privilege|RISAF_DDR_Region_ID_4_Privilege|||||
+RISAF_DDR_Region_ID_4_Master_CID4_Privilege|RISAF_DDR_Region_ID_4_Privilege|||||
+RISAF_DDR_Region_ID_4_Master_CID5_Privilege|RISAF_DDR_Region_ID_4_Privilege|||||
+RISAF_DDR_Region_ID_4_Master_CID6_Privilege|RISAF_DDR_Region_ID_4_Privilege|||||
+RISAF_DDR_Region_ID_5_Master_CID0_Privilege|RISAF_DDR_Region_ID_5_Privilege|||||
+RISAF_DDR_Region_ID_5_Master_CID1_Privilege|RISAF_DDR_Region_ID_5_Privilege|||||
+RISAF_DDR_Region_ID_5_Master_CID2_Privilege|RISAF_DDR_Region_ID_5_Privilege|||||
+RISAF_DDR_Region_ID_5_Master_CID3_Privilege|RISAF_DDR_Region_ID_5_Privilege|||||
+RISAF_DDR_Region_ID_5_Master_CID4_Privilege|RISAF_DDR_Region_ID_5_Privilege|||||
+RISAF_DDR_Region_ID_5_Master_CID5_Privilege|RISAF_DDR_Region_ID_5_Privilege|||||
+RISAF_DDR_Region_ID_5_Master_CID6_Privilege|RISAF_DDR_Region_ID_5_Privilege|||||
+RISAF_DDR_Region_ID_6_Master_CID0_Privilege|RISAF_DDR_Region_ID_6_Privilege|||||
+RISAF_DDR_Region_ID_6_Master_CID1_Privilege|RISAF_DDR_Region_ID_6_Privilege|||||
+RISAF_DDR_Region_ID_6_Master_CID2_Privilege|RISAF_DDR_Region_ID_6_Privilege|||||
+RISAF_DDR_Region_ID_6_Master_CID3_Privilege|RISAF_DDR_Region_ID_6_Privilege|||||
+RISAF_DDR_Region_ID_6_Master_CID4_Privilege|RISAF_DDR_Region_ID_6_Privilege|||||
+RISAF_DDR_Region_ID_6_Master_CID5_Privilege|RISAF_DDR_Region_ID_6_Privilege|||||
+RISAF_DDR_Region_ID_6_Master_CID6_Privilege|RISAF_DDR_Region_ID_6_Privilege|||||
+RISAF_DDR_Region_ID_7_Master_CID0_Privilege|RISAF_DDR_Region_ID_7_Privilege|||||
+RISAF_DDR_Region_ID_7_Master_CID1_Privilege|RISAF_DDR_Region_ID_7_Privilege|||||
+RISAF_DDR_Region_ID_7_Master_CID2_Privilege|RISAF_DDR_Region_ID_7_Privilege|||||
+RISAF_DDR_Region_ID_7_Master_CID3_Privilege|RISAF_DDR_Region_ID_7_Privilege|||||
+RISAF_DDR_Region_ID_7_Master_CID4_Privilege|RISAF_DDR_Region_ID_7_Privilege|||||
+RISAF_DDR_Region_ID_7_Master_CID5_Privilege|RISAF_DDR_Region_ID_7_Privilege|||||
+RISAF_DDR_Region_ID_7_Master_CID6_Privilege|RISAF_DDR_Region_ID_7_Privilege|||||
+RISAF_DDR_Region_ID_8_Master_CID0_Privilege|RISAF_DDR_Region_ID_8_Privilege|||||
+RISAF_DDR_Region_ID_8_Master_CID1_Privilege|RISAF_DDR_Region_ID_8_Privilege|||||
+RISAF_DDR_Region_ID_8_Master_CID2_Privilege|RISAF_DDR_Region_ID_8_Privilege|||||
+RISAF_DDR_Region_ID_8_Master_CID3_Privilege|RISAF_DDR_Region_ID_8_Privilege|||||
+RISAF_DDR_Region_ID_8_Master_CID4_Privilege|RISAF_DDR_Region_ID_8_Privilege|||||
+RISAF_DDR_Region_ID_8_Master_CID5_Privilege|RISAF_DDR_Region_ID_8_Privilege|||||
+RISAF_DDR_Region_ID_8_Master_CID6_Privilege|RISAF_DDR_Region_ID_8_Privilege|||||
+RISAF_DDR_Region_ID_9_Master_CID0_Privilege|RISAF_DDR_Region_ID_9_Privilege|||||
+RISAF_DDR_Region_ID_9_Master_CID1_Privilege|RISAF_DDR_Region_ID_9_Privilege|||||
+RISAF_DDR_Region_ID_9_Master_CID2_Privilege|RISAF_DDR_Region_ID_9_Privilege|||||
+RISAF_DDR_Region_ID_9_Master_CID3_Privilege|RISAF_DDR_Region_ID_9_Privilege|||||
+RISAF_DDR_Region_ID_9_Master_CID4_Privilege|RISAF_DDR_Region_ID_9_Privilege|||||
+RISAF_DDR_Region_ID_9_Master_CID5_Privilege|RISAF_DDR_Region_ID_9_Privilege|||||
+RISAF_DDR_Region_ID_9_Master_CID6_Privilege|RISAF_DDR_Region_ID_9_Privilege|||||
+RISAF_DDR_Region_ID_10_Master_CID0_Privilege|RISAF_DDR_Region_ID_10_Privilege|||||
+RISAF_DDR_Region_ID_10_Master_CID1_Privilege|RISAF_DDR_Region_ID_10_Privilege|||||
+RISAF_DDR_Region_ID_10_Master_CID2_Privilege|RISAF_DDR_Region_ID_10_Privilege|||||
+RISAF_DDR_Region_ID_10_Master_CID3_Privilege|RISAF_DDR_Region_ID_10_Privilege|||||
+RISAF_DDR_Region_ID_10_Master_CID4_Privilege|RISAF_DDR_Region_ID_10_Privilege|||||
+RISAF_DDR_Region_ID_10_Master_CID5_Privilege|RISAF_DDR_Region_ID_10_Privilege|||||
+RISAF_DDR_Region_ID_10_Master_CID6_Privilege|RISAF_DDR_Region_ID_10_Privilege|||||
+RISAF_DDR_Region_ID_11_Master_CID0_Privilege|RISAF_DDR_Region_ID_11_Privilege|||||
+RISAF_DDR_Region_ID_11_Master_CID1_Privilege|RISAF_DDR_Region_ID_11_Privilege|||||
+RISAF_DDR_Region_ID_11_Master_CID2_Privilege|RISAF_DDR_Region_ID_11_Privilege|||||
+RISAF_DDR_Region_ID_11_Master_CID3_Privilege|RISAF_DDR_Region_ID_11_Privilege|||||
+RISAF_DDR_Region_ID_11_Master_CID4_Privilege|RISAF_DDR_Region_ID_11_Privilege|||||
+RISAF_DDR_Region_ID_11_Master_CID5_Privilege|RISAF_DDR_Region_ID_11_Privilege|||||
+RISAF_DDR_Region_ID_11_Master_CID6_Privilege|RISAF_DDR_Region_ID_11_Privilege|||||
+RISAF_DDR_Region_ID_12_Master_CID0_Privilege|RISAF_DDR_Region_ID_12_Privilege|||||
+RISAF_DDR_Region_ID_12_Master_CID1_Privilege|RISAF_DDR_Region_ID_12_Privilege|||||
+RISAF_DDR_Region_ID_12_Master_CID2_Privilege|RISAF_DDR_Region_ID_12_Privilege|||||
+RISAF_DDR_Region_ID_12_Master_CID3_Privilege|RISAF_DDR_Region_ID_12_Privilege|||||
+RISAF_DDR_Region_ID_12_Master_CID4_Privilege|RISAF_DDR_Region_ID_12_Privilege|||||
+RISAF_DDR_Region_ID_12_Master_CID5_Privilege|RISAF_DDR_Region_ID_12_Privilege|||||
+RISAF_DDR_Region_ID_12_Master_CID6_Privilege|RISAF_DDR_Region_ID_12_Privilege|||||
+RISAF_DDR_Region_ID_13_Master_CID0_Privilege|RISAF_DDR_Region_ID_13_Privilege|||||
+RISAF_DDR_Region_ID_13_Master_CID1_Privilege|RISAF_DDR_Region_ID_13_Privilege|||||
+RISAF_DDR_Region_ID_13_Master_CID2_Privilege|RISAF_DDR_Region_ID_13_Privilege|||||
+RISAF_DDR_Region_ID_13_Master_CID3_Privilege|RISAF_DDR_Region_ID_13_Privilege|||||
+RISAF_DDR_Region_ID_13_Master_CID4_Privilege|RISAF_DDR_Region_ID_13_Privilege|||||
+RISAF_DDR_Region_ID_13_Master_CID5_Privilege|RISAF_DDR_Region_ID_13_Privilege|||||
+RISAF_DDR_Region_ID_13_Master_CID6_Privilege|RISAF_DDR_Region_ID_13_Privilege|||||
+RISAF_DDR_Region_ID_14_Master_CID0_Privilege|RISAF_DDR_Region_ID_14_Privilege|||||
+RISAF_DDR_Region_ID_14_Master_CID1_Privilege|RISAF_DDR_Region_ID_14_Privilege|||||
+RISAF_DDR_Region_ID_14_Master_CID2_Privilege|RISAF_DDR_Region_ID_14_Privilege|||||
+RISAF_DDR_Region_ID_14_Master_CID3_Privilege|RISAF_DDR_Region_ID_14_Privilege|||||
+RISAF_DDR_Region_ID_14_Master_CID4_Privilege|RISAF_DDR_Region_ID_14_Privilege|||||
+RISAF_DDR_Region_ID_14_Master_CID5_Privilege|RISAF_DDR_Region_ID_14_Privilege|||||
+RISAF_DDR_Region_ID_14_Master_CID6_Privilege|RISAF_DDR_Region_ID_14_Privilege|||||
+RISAF_DDR_Region_ID_15_Master_CID0_Privilege|RISAF_DDR_Region_ID_15_Privilege|||||
+RISAF_DDR_Region_ID_15_Master_CID1_Privilege|RISAF_DDR_Region_ID_15_Privilege|||||
+RISAF_DDR_Region_ID_15_Master_CID2_Privilege|RISAF_DDR_Region_ID_15_Privilege|||||
+RISAF_DDR_Region_ID_15_Master_CID3_Privilege|RISAF_DDR_Region_ID_15_Privilege|||||
+RISAF_DDR_Region_ID_15_Master_CID4_Privilege|RISAF_DDR_Region_ID_15_Privilege|||||
+RISAF_DDR_Region_ID_15_Master_CID5_Privilege|RISAF_DDR_Region_ID_15_Privilege|||||
+RISAF_DDR_Region_ID_15_Master_CID6_Privilege|RISAF_DDR_Region_ID_15_Privilege|||||
+RISAF_DDR_Region_ID_1_Master_CID0_Read|RISAF_DDR_Region_ID_1_Read|||||
+RISAF_DDR_Region_ID_1_Master_CID1_Read|RISAF_DDR_Region_ID_1_Read|||||
+RISAF_DDR_Region_ID_1_Master_CID2_Read|RISAF_DDR_Region_ID_1_Read|||||
+RISAF_DDR_Region_ID_1_Master_CID3_Read|RISAF_DDR_Region_ID_1_Read|||||
+RISAF_DDR_Region_ID_1_Master_CID4_Read|RISAF_DDR_Region_ID_1_Read|||||
+RISAF_DDR_Region_ID_1_Master_CID5_Read|RISAF_DDR_Region_ID_1_Read|||||
+RISAF_DDR_Region_ID_1_Master_CID6_Read|RISAF_DDR_Region_ID_1_Read|||||
+RISAF_DDR_Region_ID_2_Master_CID0_Read|RISAF_DDR_Region_ID_2_Read|||||
+RISAF_DDR_Region_ID_2_Master_CID1_Read|RISAF_DDR_Region_ID_2_Read|||||
+RISAF_DDR_Region_ID_2_Master_CID2_Read|RISAF_DDR_Region_ID_2_Read|||||
+RISAF_DDR_Region_ID_2_Master_CID3_Read|RISAF_DDR_Region_ID_2_Read|||||
+RISAF_DDR_Region_ID_2_Master_CID4_Read|RISAF_DDR_Region_ID_2_Read|||||
+RISAF_DDR_Region_ID_2_Master_CID5_Read|RISAF_DDR_Region_ID_2_Read|||||
+RISAF_DDR_Region_ID_2_Master_CID6_Read|RISAF_DDR_Region_ID_2_Read|||||
+RISAF_DDR_Region_ID_3_Master_CID0_Read|RISAF_DDR_Region_ID_3_Read|||||
+RISAF_DDR_Region_ID_3_Master_CID1_Read|RISAF_DDR_Region_ID_3_Read|||||
+RISAF_DDR_Region_ID_3_Master_CID2_Read|RISAF_DDR_Region_ID_3_Read|||||
+RISAF_DDR_Region_ID_3_Master_CID3_Read|RISAF_DDR_Region_ID_3_Read|||||
+RISAF_DDR_Region_ID_3_Master_CID4_Read|RISAF_DDR_Region_ID_3_Read|||||
+RISAF_DDR_Region_ID_3_Master_CID5_Read|RISAF_DDR_Region_ID_3_Read|||||
+RISAF_DDR_Region_ID_3_Master_CID6_Read|RISAF_DDR_Region_ID_3_Read|||||
+RISAF_DDR_Region_ID_4_Master_CID0_Read|RISAF_DDR_Region_ID_4_Read|||||
+RISAF_DDR_Region_ID_4_Master_CID1_Read|RISAF_DDR_Region_ID_4_Read|||||
+RISAF_DDR_Region_ID_4_Master_CID2_Read|RISAF_DDR_Region_ID_4_Read|||||
+RISAF_DDR_Region_ID_4_Master_CID3_Read|RISAF_DDR_Region_ID_4_Read|||||
+RISAF_DDR_Region_ID_4_Master_CID4_Read|RISAF_DDR_Region_ID_4_Read|||||
+RISAF_DDR_Region_ID_4_Master_CID5_Read|RISAF_DDR_Region_ID_4_Read|||||
+RISAF_DDR_Region_ID_4_Master_CID6_Read|RISAF_DDR_Region_ID_4_Read|||||
+RISAF_DDR_Region_ID_5_Master_CID0_Read|RISAF_DDR_Region_ID_5_Read|||||
+RISAF_DDR_Region_ID_5_Master_CID1_Read|RISAF_DDR_Region_ID_5_Read|||||
+RISAF_DDR_Region_ID_5_Master_CID2_Read|RISAF_DDR_Region_ID_5_Read|||||
+RISAF_DDR_Region_ID_5_Master_CID3_Read|RISAF_DDR_Region_ID_5_Read|||||
+RISAF_DDR_Region_ID_5_Master_CID4_Read|RISAF_DDR_Region_ID_5_Read|||||
+RISAF_DDR_Region_ID_5_Master_CID5_Read|RISAF_DDR_Region_ID_5_Read|||||
+RISAF_DDR_Region_ID_5_Master_CID6_Read|RISAF_DDR_Region_ID_5_Read|||||
+RISAF_DDR_Region_ID_6_Master_CID0_Read|RISAF_DDR_Region_ID_6_Read|||||
+RISAF_DDR_Region_ID_6_Master_CID1_Read|RISAF_DDR_Region_ID_6_Read|||||
+RISAF_DDR_Region_ID_6_Master_CID2_Read|RISAF_DDR_Region_ID_6_Read|||||
+RISAF_DDR_Region_ID_6_Master_CID3_Read|RISAF_DDR_Region_ID_6_Read|||||
+RISAF_DDR_Region_ID_6_Master_CID4_Read|RISAF_DDR_Region_ID_6_Read|||||
+RISAF_DDR_Region_ID_6_Master_CID5_Read|RISAF_DDR_Region_ID_6_Read|||||
+RISAF_DDR_Region_ID_6_Master_CID6_Read|RISAF_DDR_Region_ID_6_Read|||||
+RISAF_DDR_Region_ID_7_Master_CID0_Read|RISAF_DDR_Region_ID_7_Read|||||
+RISAF_DDR_Region_ID_7_Master_CID1_Read|RISAF_DDR_Region_ID_7_Read|||||
+RISAF_DDR_Region_ID_7_Master_CID2_Read|RISAF_DDR_Region_ID_7_Read|||||
+RISAF_DDR_Region_ID_7_Master_CID3_Read|RISAF_DDR_Region_ID_7_Read|||||
+RISAF_DDR_Region_ID_7_Master_CID4_Read|RISAF_DDR_Region_ID_7_Read|||||
+RISAF_DDR_Region_ID_7_Master_CID5_Read|RISAF_DDR_Region_ID_7_Read|||||
+RISAF_DDR_Region_ID_7_Master_CID6_Read|RISAF_DDR_Region_ID_7_Read|||||
+RISAF_DDR_Region_ID_8_Master_CID0_Read|RISAF_DDR_Region_ID_8_Read|||||
+RISAF_DDR_Region_ID_8_Master_CID1_Read|RISAF_DDR_Region_ID_8_Read|||||
+RISAF_DDR_Region_ID_8_Master_CID2_Read|RISAF_DDR_Region_ID_8_Read|||||
+RISAF_DDR_Region_ID_8_Master_CID3_Read|RISAF_DDR_Region_ID_8_Read|||||
+RISAF_DDR_Region_ID_8_Master_CID4_Read|RISAF_DDR_Region_ID_8_Read|||||
+RISAF_DDR_Region_ID_8_Master_CID5_Read|RISAF_DDR_Region_ID_8_Read|||||
+RISAF_DDR_Region_ID_8_Master_CID6_Read|RISAF_DDR_Region_ID_8_Read|||||
+RISAF_DDR_Region_ID_9_Master_CID0_Read|RISAF_DDR_Region_ID_9_Read|||||
+RISAF_DDR_Region_ID_9_Master_CID1_Read|RISAF_DDR_Region_ID_9_Read|||||
+RISAF_DDR_Region_ID_9_Master_CID2_Read|RISAF_DDR_Region_ID_9_Read|||||
+RISAF_DDR_Region_ID_9_Master_CID3_Read|RISAF_DDR_Region_ID_9_Read|||||
+RISAF_DDR_Region_ID_9_Master_CID4_Read|RISAF_DDR_Region_ID_9_Read|||||
+RISAF_DDR_Region_ID_9_Master_CID5_Read|RISAF_DDR_Region_ID_9_Read|||||
+RISAF_DDR_Region_ID_9_Master_CID6_Read|RISAF_DDR_Region_ID_9_Read|||||
+RISAF_DDR_Region_ID_10_Master_CID0_Read|RISAF_DDR_Region_ID_10_Read|||||
+RISAF_DDR_Region_ID_10_Master_CID1_Read|RISAF_DDR_Region_ID_10_Read|||||
+RISAF_DDR_Region_ID_10_Master_CID2_Read|RISAF_DDR_Region_ID_10_Read|||||
+RISAF_DDR_Region_ID_10_Master_CID3_Read|RISAF_DDR_Region_ID_10_Read|||||
+RISAF_DDR_Region_ID_10_Master_CID4_Read|RISAF_DDR_Region_ID_10_Read|||||
+RISAF_DDR_Region_ID_10_Master_CID5_Read|RISAF_DDR_Region_ID_10_Read|||||
+RISAF_DDR_Region_ID_10_Master_CID6_Read|RISAF_DDR_Region_ID_10_Read|||||
+RISAF_DDR_Region_ID_11_Master_CID0_Read|RISAF_DDR_Region_ID_11_Read|||||
+RISAF_DDR_Region_ID_11_Master_CID1_Read|RISAF_DDR_Region_ID_11_Read|||||
+RISAF_DDR_Region_ID_11_Master_CID2_Read|RISAF_DDR_Region_ID_11_Read|||||
+RISAF_DDR_Region_ID_11_Master_CID3_Read|RISAF_DDR_Region_ID_11_Read|||||
+RISAF_DDR_Region_ID_11_Master_CID4_Read|RISAF_DDR_Region_ID_11_Read|||||
+RISAF_DDR_Region_ID_11_Master_CID5_Read|RISAF_DDR_Region_ID_11_Read|||||
+RISAF_DDR_Region_ID_11_Master_CID6_Read|RISAF_DDR_Region_ID_11_Read|||||
+RISAF_DDR_Region_ID_12_Master_CID0_Read|RISAF_DDR_Region_ID_12_Read|||||
+RISAF_DDR_Region_ID_12_Master_CID1_Read|RISAF_DDR_Region_ID_12_Read|||||
+RISAF_DDR_Region_ID_12_Master_CID2_Read|RISAF_DDR_Region_ID_12_Read|||||
+RISAF_DDR_Region_ID_12_Master_CID3_Read|RISAF_DDR_Region_ID_12_Read|||||
+RISAF_DDR_Region_ID_12_Master_CID4_Read|RISAF_DDR_Region_ID_12_Read|||||
+RISAF_DDR_Region_ID_12_Master_CID5_Read|RISAF_DDR_Region_ID_12_Read|||||
+RISAF_DDR_Region_ID_12_Master_CID6_Read|RISAF_DDR_Region_ID_12_Read|||||
+RISAF_DDR_Region_ID_13_Master_CID0_Read|RISAF_DDR_Region_ID_13_Read|||||
+RISAF_DDR_Region_ID_13_Master_CID1_Read|RISAF_DDR_Region_ID_13_Read|||||
+RISAF_DDR_Region_ID_13_Master_CID2_Read|RISAF_DDR_Region_ID_13_Read|||||
+RISAF_DDR_Region_ID_13_Master_CID3_Read|RISAF_DDR_Region_ID_13_Read|||||
+RISAF_DDR_Region_ID_13_Master_CID4_Read|RISAF_DDR_Region_ID_13_Read|||||
+RISAF_DDR_Region_ID_13_Master_CID5_Read|RISAF_DDR_Region_ID_13_Read|||||
+RISAF_DDR_Region_ID_13_Master_CID6_Read|RISAF_DDR_Region_ID_13_Read|||||
+RISAF_DDR_Region_ID_14_Master_CID0_Read|RISAF_DDR_Region_ID_14_Read|||||
+RISAF_DDR_Region_ID_14_Master_CID1_Read|RISAF_DDR_Region_ID_14_Read|||||
+RISAF_DDR_Region_ID_14_Master_CID2_Read|RISAF_DDR_Region_ID_14_Read|||||
+RISAF_DDR_Region_ID_14_Master_CID3_Read|RISAF_DDR_Region_ID_14_Read|||||
+RISAF_DDR_Region_ID_14_Master_CID4_Read|RISAF_DDR_Region_ID_14_Read|||||
+RISAF_DDR_Region_ID_14_Master_CID5_Read|RISAF_DDR_Region_ID_14_Read|||||
+RISAF_DDR_Region_ID_14_Master_CID6_Read|RISAF_DDR_Region_ID_14_Read|||||
+RISAF_DDR_Region_ID_15_Master_CID0_Read|RISAF_DDR_Region_ID_15_Read|||||
+RISAF_DDR_Region_ID_15_Master_CID1_Read|RISAF_DDR_Region_ID_15_Read|||||
+RISAF_DDR_Region_ID_15_Master_CID2_Read|RISAF_DDR_Region_ID_15_Read|||||
+RISAF_DDR_Region_ID_15_Master_CID3_Read|RISAF_DDR_Region_ID_15_Read|||||
+RISAF_DDR_Region_ID_15_Master_CID4_Read|RISAF_DDR_Region_ID_15_Read|||||
+RISAF_DDR_Region_ID_15_Master_CID5_Read|RISAF_DDR_Region_ID_15_Read|||||
+RISAF_DDR_Region_ID_15_Master_CID6_Read|RISAF_DDR_Region_ID_15_Read|||||
+RISAF_DDR_Region_ID_1_Master_CID0_Write|RISAF_DDR_Region_ID_1_Write|||||
+RISAF_DDR_Region_ID_1_Master_CID1_Write|RISAF_DDR_Region_ID_1_Write|||||
+RISAF_DDR_Region_ID_1_Master_CID2_Write|RISAF_DDR_Region_ID_1_Write|||||
+RISAF_DDR_Region_ID_1_Master_CID3_Write|RISAF_DDR_Region_ID_1_Write|||||
+RISAF_DDR_Region_ID_1_Master_CID4_Write|RISAF_DDR_Region_ID_1_Write|||||
+RISAF_DDR_Region_ID_1_Master_CID5_Write|RISAF_DDR_Region_ID_1_Write|||||
+RISAF_DDR_Region_ID_1_Master_CID6_Write|RISAF_DDR_Region_ID_1_Write|||||
+RISAF_DDR_Region_ID_2_Master_CID0_Write|RISAF_DDR_Region_ID_2_Write|||||
+RISAF_DDR_Region_ID_2_Master_CID1_Write|RISAF_DDR_Region_ID_2_Write|||||
+RISAF_DDR_Region_ID_2_Master_CID2_Write|RISAF_DDR_Region_ID_2_Write|||||
+RISAF_DDR_Region_ID_2_Master_CID3_Write|RISAF_DDR_Region_ID_2_Write|||||
+RISAF_DDR_Region_ID_2_Master_CID4_Write|RISAF_DDR_Region_ID_2_Write|||||
+RISAF_DDR_Region_ID_2_Master_CID5_Write|RISAF_DDR_Region_ID_2_Write|||||
+RISAF_DDR_Region_ID_2_Master_CID6_Write|RISAF_DDR_Region_ID_2_Write|||||
+RISAF_DDR_Region_ID_3_Master_CID0_Write|RISAF_DDR_Region_ID_3_Write|||||
+RISAF_DDR_Region_ID_3_Master_CID1_Write|RISAF_DDR_Region_ID_3_Write|||||
+RISAF_DDR_Region_ID_3_Master_CID2_Write|RISAF_DDR_Region_ID_3_Write|||||
+RISAF_DDR_Region_ID_3_Master_CID3_Write|RISAF_DDR_Region_ID_3_Write|||||
+RISAF_DDR_Region_ID_3_Master_CID4_Write|RISAF_DDR_Region_ID_3_Write|||||
+RISAF_DDR_Region_ID_3_Master_CID5_Write|RISAF_DDR_Region_ID_3_Write|||||
+RISAF_DDR_Region_ID_3_Master_CID6_Write|RISAF_DDR_Region_ID_3_Write|||||
+RISAF_DDR_Region_ID_4_Master_CID0_Write|RISAF_DDR_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_4_Master_CID1_Write|RISAF_DDR_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_4_Master_CID2_Write|RISAF_DDR_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_4_Master_CID3_Write|RISAF_DDR_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_4_Master_CID4_Write|RISAF_DDR_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_4_Master_CID5_Write|RISAF_DDR_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_4_Master_CID6_Write|RISAF_DDR_Region_ID_4_Write|||||
+RISAF_DDR_Region_ID_5_Master_CID0_Write|RISAF_DDR_Region_ID_5_Write|||||
+RISAF_DDR_Region_ID_5_Master_CID1_Write|RISAF_DDR_Region_ID_5_Write|||||
+RISAF_DDR_Region_ID_5_Master_CID2_Write|RISAF_DDR_Region_ID_5_Write|||||
+RISAF_DDR_Region_ID_5_Master_CID3_Write|RISAF_DDR_Region_ID_5_Write|||||
+RISAF_DDR_Region_ID_5_Master_CID4_Write|RISAF_DDR_Region_ID_5_Write|||||
+RISAF_DDR_Region_ID_5_Master_CID5_Write|RISAF_DDR_Region_ID_5_Write|||||
+RISAF_DDR_Region_ID_5_Master_CID6_Write|RISAF_DDR_Region_ID_5_Write|||||
+RISAF_DDR_Region_ID_6_Master_CID0_Write|RISAF_DDR_Region_ID_6_Write|||||
+RISAF_DDR_Region_ID_6_Master_CID1_Write|RISAF_DDR_Region_ID_6_Write|||||
+RISAF_DDR_Region_ID_6_Master_CID2_Write|RISAF_DDR_Region_ID_6_Write|||||
+RISAF_DDR_Region_ID_6_Master_CID3_Write|RISAF_DDR_Region_ID_6_Write|||||
+RISAF_DDR_Region_ID_6_Master_CID4_Write|RISAF_DDR_Region_ID_6_Write|||||
+RISAF_DDR_Region_ID_6_Master_CID5_Write|RISAF_DDR_Region_ID_6_Write|||||
+RISAF_DDR_Region_ID_6_Master_CID6_Write|RISAF_DDR_Region_ID_6_Write|||||
+RISAF_DDR_Region_ID_7_Master_CID0_Write|RISAF_DDR_Region_ID_7_Write|||||
+RISAF_DDR_Region_ID_7_Master_CID1_Write|RISAF_DDR_Region_ID_7_Write|||||
+RISAF_DDR_Region_ID_7_Master_CID2_Write|RISAF_DDR_Region_ID_7_Write|||||
+RISAF_DDR_Region_ID_7_Master_CID3_Write|RISAF_DDR_Region_ID_7_Write|||||
+RISAF_DDR_Region_ID_7_Master_CID4_Write|RISAF_DDR_Region_ID_7_Write|||||
+RISAF_DDR_Region_ID_7_Master_CID5_Write|RISAF_DDR_Region_ID_7_Write|||||
+RISAF_DDR_Region_ID_7_Master_CID6_Write|RISAF_DDR_Region_ID_7_Write|||||
+RISAF_DDR_Region_ID_8_Master_CID0_Write|RISAF_DDR_Region_ID_8_Write|||||
+RISAF_DDR_Region_ID_8_Master_CID1_Write|RISAF_DDR_Region_ID_8_Write|||||
+RISAF_DDR_Region_ID_8_Master_CID2_Write|RISAF_DDR_Region_ID_8_Write|||||
+RISAF_DDR_Region_ID_8_Master_CID3_Write|RISAF_DDR_Region_ID_8_Write|||||
+RISAF_DDR_Region_ID_8_Master_CID4_Write|RISAF_DDR_Region_ID_8_Write|||||
+RISAF_DDR_Region_ID_8_Master_CID5_Write|RISAF_DDR_Region_ID_8_Write|||||
+RISAF_DDR_Region_ID_8_Master_CID6_Write|RISAF_DDR_Region_ID_8_Write|||||
+RISAF_DDR_Region_ID_9_Master_CID0_Write|RISAF_DDR_Region_ID_9_Write|||||
+RISAF_DDR_Region_ID_9_Master_CID1_Write|RISAF_DDR_Region_ID_9_Write|||||
+RISAF_DDR_Region_ID_9_Master_CID2_Write|RISAF_DDR_Region_ID_9_Write|||||
+RISAF_DDR_Region_ID_9_Master_CID3_Write|RISAF_DDR_Region_ID_9_Write|||||
+RISAF_DDR_Region_ID_9_Master_CID4_Write|RISAF_DDR_Region_ID_9_Write|||||
+RISAF_DDR_Region_ID_9_Master_CID5_Write|RISAF_DDR_Region_ID_9_Write|||||
+RISAF_DDR_Region_ID_9_Master_CID6_Write|RISAF_DDR_Region_ID_9_Write|||||
+RISAF_DDR_Region_ID_10_Master_CID0_Write|RISAF_DDR_Region_ID_10_Write|||||
+RISAF_DDR_Region_ID_10_Master_CID1_Write|RISAF_DDR_Region_ID_10_Write|||||
+RISAF_DDR_Region_ID_10_Master_CID2_Write|RISAF_DDR_Region_ID_10_Write|||||
+RISAF_DDR_Region_ID_10_Master_CID3_Write|RISAF_DDR_Region_ID_10_Write|||||
+RISAF_DDR_Region_ID_10_Master_CID4_Write|RISAF_DDR_Region_ID_10_Write|||||
+RISAF_DDR_Region_ID_10_Master_CID5_Write|RISAF_DDR_Region_ID_10_Write|||||
+RISAF_DDR_Region_ID_10_Master_CID6_Write|RISAF_DDR_Region_ID_10_Write|||||
+RISAF_DDR_Region_ID_11_Master_CID0_Write|RISAF_DDR_Region_ID_11_Write|||||
+RISAF_DDR_Region_ID_11_Master_CID1_Write|RISAF_DDR_Region_ID_11_Write|||||
+RISAF_DDR_Region_ID_11_Master_CID2_Write|RISAF_DDR_Region_ID_11_Write|||||
+RISAF_DDR_Region_ID_11_Master_CID3_Write|RISAF_DDR_Region_ID_11_Write|||||
+RISAF_DDR_Region_ID_11_Master_CID4_Write|RISAF_DDR_Region_ID_11_Write|||||
+RISAF_DDR_Region_ID_11_Master_CID5_Write|RISAF_DDR_Region_ID_11_Write|||||
+RISAF_DDR_Region_ID_11_Master_CID6_Write|RISAF_DDR_Region_ID_11_Write|||||
+RISAF_DDR_Region_ID_12_Master_CID0_Write|RISAF_DDR_Region_ID_12_Write|||||
+RISAF_DDR_Region_ID_12_Master_CID1_Write|RISAF_DDR_Region_ID_12_Write|||||
+RISAF_DDR_Region_ID_12_Master_CID2_Write|RISAF_DDR_Region_ID_12_Write|||||
+RISAF_DDR_Region_ID_12_Master_CID3_Write|RISAF_DDR_Region_ID_12_Write|||||
+RISAF_DDR_Region_ID_12_Master_CID4_Write|RISAF_DDR_Region_ID_12_Write|||||
+RISAF_DDR_Region_ID_12_Master_CID5_Write|RISAF_DDR_Region_ID_12_Write|||||
+RISAF_DDR_Region_ID_12_Master_CID6_Write|RISAF_DDR_Region_ID_12_Write|||||
+RISAF_DDR_Region_ID_13_Master_CID0_Write|RISAF_DDR_Region_ID_13_Write|||||
+RISAF_DDR_Region_ID_13_Master_CID1_Write|RISAF_DDR_Region_ID_13_Write|||||
+RISAF_DDR_Region_ID_13_Master_CID2_Write|RISAF_DDR_Region_ID_13_Write|||||
+RISAF_DDR_Region_ID_13_Master_CID3_Write|RISAF_DDR_Region_ID_13_Write|||||
+RISAF_DDR_Region_ID_13_Master_CID4_Write|RISAF_DDR_Region_ID_13_Write|||||
+RISAF_DDR_Region_ID_13_Master_CID5_Write|RISAF_DDR_Region_ID_13_Write|||||
+RISAF_DDR_Region_ID_13_Master_CID6_Write|RISAF_DDR_Region_ID_13_Write|||||
+RISAF_DDR_Region_ID_14_Master_CID0_Write|RISAF_DDR_Region_ID_14_Write|||||
+RISAF_DDR_Region_ID_14_Master_CID1_Write|RISAF_DDR_Region_ID_14_Write|||||
+RISAF_DDR_Region_ID_14_Master_CID2_Write|RISAF_DDR_Region_ID_14_Write|||||
+RISAF_DDR_Region_ID_14_Master_CID3_Write|RISAF_DDR_Region_ID_14_Write|||||
+RISAF_DDR_Region_ID_14_Master_CID4_Write|RISAF_DDR_Region_ID_14_Write|||||
+RISAF_DDR_Region_ID_14_Master_CID5_Write|RISAF_DDR_Region_ID_14_Write|||||
+RISAF_DDR_Region_ID_14_Master_CID6_Write|RISAF_DDR_Region_ID_14_Write|||||
+RISAF_DDR_Region_ID_15_Master_CID0_Write|RISAF_DDR_Region_ID_15_Write|||||
+RISAF_DDR_Region_ID_15_Master_CID1_Write|RISAF_DDR_Region_ID_15_Write|||||
+RISAF_DDR_Region_ID_15_Master_CID2_Write|RISAF_DDR_Region_ID_15_Write|||||
+RISAF_DDR_Region_ID_15_Master_CID3_Write|RISAF_DDR_Region_ID_15_Write|||||
+RISAF_DDR_Region_ID_15_Master_CID4_Write|RISAF_DDR_Region_ID_15_Write|||||
+RISAF_DDR_Region_ID_15_Master_CID5_Write|RISAF_DDR_Region_ID_15_Write|||||
+RISAF_DDR_Region_ID_15_Master_CID6_Write|RISAF_DDR_Region_ID_15_Write|||||
+RISAF_BKPSRAM_Region1_Secured|Secure|||||
+RISAF_BKPSRAM_Region2_Secured|Secure|||||
+RISAF_BKPSRAM_Region3_Secured|Secure|||||
+RISAF_BKPSRAM_Region4_Secured|Secure|||||
+RISAF_BKPSRAM_Region1_Encrypted|Encrypt|||||
+RISAF_BKPSRAM_Region2_Encrypted|Encrypt|||||
+RISAF_BKPSRAM_Region3_Encrypted|Encrypt|||||
+RISAF_BKPSRAM_Region4_Encrypted|Encrypt|||||
+RISAF_PCIE_Region1_Secured|Secure|||||
+RISAF_PCIE_Region2_Secured|Secure|||||
+RISAF_PCIE_Region3_Secured|Secure|||||
+RISAF_PCIE_Region4_Secured|Secure|||||
+RISAF_PCIE_Region1_Encrypted|Encrypt|||||
+RISAF_PCIE_Region2_Encrypted|Encrypt|||||
+RISAF_PCIE_Region3_Encrypted|Encrypt|||||
+RISAF_PCIE_Region4_Encrypted|Encrypt|||||
+RISAF_DDR_Region1_Secured|Secure|||||
+RISAF_DDR_Region2_Secured|Secure|||||
+RISAF_DDR_Region3_Secured|Secure|||||
+RISAF_DDR_Region4_Secured|Secure|||||
+RISAF_DDR_Region5_Secured|Secure|||||
+RISAF_DDR_Region6_Secured|Secure|||||
+RISAF_DDR_Region7_Secured|Secure|||||
+RISAF_DDR_Region8_Secured|Secure|||||
+RISAF_DDR_Region9_Secured|Secure|||||
+RISAF_DDR_Region10_Secured|Secure|||||
+RISAF_DDR_Region11_Secured|Secure|||||
+RISAF_DDR_Region12_Secured|Secure|||||
+RISAF_DDR_Region13_Secured|Secure|||||
+RISAF_DDR_Region14_Secured|Secure|||||
+RISAF_DDR_Region15_Secured|Secure|||||
+RISAF_DDR_Region1_Encrypted|Encrypt|||||
+RISAF_DDR_Region2_Encrypted|Encrypt|||||
+RISAF_DDR_Region3_Encrypted|Encrypt|||||
+RISAF_DDR_Region4_Encrypted|Encrypt|||||
+RISAF_DDR_Region5_Encrypted|Encrypt|||||
+RISAF_DDR_Region6_Encrypted|Encrypt|||||
+RISAF_DDR_Region7_Encrypted|Encrypt|||||
+RISAF_DDR_Region8_Encrypted|Encrypt|||||
+RISAF_DDR_Region9_Encrypted|Encrypt|||||
+RISAF_DDR_Region10_Encrypted|Encrypt|||||
+RISAF_DDR_Region11_Encrypted|Encrypt|||||
+RISAF_DDR_Region12_Encrypted|Encrypt|||||
+RISAF_DDR_Region13_Encrypted|Encrypt|||||
+RISAF_DDR_Region14_Encrypted|Encrypt|||||
+RISAF_DDR_Region15_Encrypted|Encrypt|||||
+PCIE_Region1_ID|PCIE_Region_ID_1|||||
+PCIE_Region2_ID|PCIE_Region_ID_2|||||
+PCIE_Region3_ID|PCIE_Region_ID_3|||||
+PCIE_Region4_ID|PCIE_Region_ID_4|||||
+RISAF_PCIE_Region1_Name|PCIE-device|||||
+BKPSRAM_Region1_ID|BKPSRAM_Region1|||||
+BKPSRAM_Region2_ID|BKPSRAM_Region2|||||
+BKPSRAM_Region3_ID|BKPSRAM_Region3|||||
+BKPSRAM_Region4_ID|BKPSRAM_Region4|||||
+RISAF_BKPSRAM_Region1_Name|bl31_lowpower|||||
+RISAF_BKPSRAM_Region2_Name|TFM-lTS|||||
+DDR_Region1_ID|DDR_Region1|||||
+DDR_Region2_ID|DDR_Region2|||||
+DDR_Region3_ID|DDR_Region3|||||
+DDR_Region4_ID|DDR_Region4|||||
+DDR_Region5_ID|DDR_Region5|||||
+DDR_Region6_ID|DDR_Region6|||||
+DDR_Region7_ID|DDR_Region7|||||
+DDR_Region8_ID|DDR_Region8|||||
+DDR_Region9_ID|DDR_Region9|||||
+DDR_Region10_ID|DDR_Region10|||||
+DDR_Region11_ID|DDR_Region11|||||
+DDR_Region12_ID|DDR_Region12|||||
+DDR_Region13_ID|DDR_Region13|||||
+DDR_Region14_ID|DDR_Region14|||||
+DDR_Region15_ID|DDR_Region15|||||
+Others_DDR_Region1_ID|DDR_Region1|||||
+Others_DDR_Region2_ID|DDR_Region2|||||
+Others_DDR_Region3_ID|DDR_Region3|||||
+Others_DDR_Region4_ID|DDR_Region4|||||
+Others_DDR_Region5_ID|DDR_Region5|||||
+Others_DDR_Region6_ID|DDR_Region6|||||
+Others_DDR_Region7_ID|DDR_Region7|||||
+Others_DDR_Region8_ID|DDR_Region8|||||
+Others_DDR_Region9_ID|DDR_Region9|||||
+Others_DDR_Region10_ID|DDR_Region10|||||
+Others_DDR_Region11_ID|DDR_Region11|||||
+Others_DDR_Region12_ID|DDR_Region12|||||
+Others_DDR_Region13_ID|DDR_Region13|||||
+Others_DDR_Region14_ID|DDR_Region14|||||
+RISAF_DDR_Region1_Name_1GO|TFM-code|||||
+RISAF_DDR_Region2_Name_1GO|CM33-Cube-fw|||||
+RISAF_DDR_Region3_Name_1GO|TFM-data|||||
+RISAF_DDR_Region4_Name_1GO|CM33-Cube-data|||||
+RISAF_DDR_Region5_Name_1GO|ipc-shmem|||||
+RISAF_DDR_Region6_Name_1GO|spare1|||||
+RISAF_DDR_Region7_Name_1GO|BL31-context|||||
+RISAF_DDR_Region8_Name_1GO|OP-TEE|||||
+RISAF_DDR_Region9_Name_1GO|linuxkernel1|||||
+RISAF_DDR_Region10_Name_1GO|gpu-reserved|||||
+RISAF_DDR_Region11_Name_1GO|vdec-reserved|||||
+RISAF_DDR_Region12_Name_1GO|venc-reserved|||||
+RISAF_DDR_Region13_Name_1GO|LTDC-sec-layer|||||
+RISAF_DDR_Region14_Name_1GO|LTDC-sec-rotation|||||
+RISAF_DDR_Region1_Name_2GO|TFM-code|||||
+RISAF_DDR_Region2_Name_2GO|CM33-Cube-fw|||||
+RISAF_DDR_Region3_Name_2GO|TFM-data|||||
+RISAF_DDR_Region4_Name_2GO|CM33-Cube-data|||||
+RISAF_DDR_Region5_Name_2GO|ipc-shmem|||||
+RISAF_DDR_Region6_Name_2GO|spare1|||||
+RISAF_DDR_Region7_Name_2GO|BL31-context|||||
+RISAF_DDR_Region8_Name_2GO|OP-TEE|||||
+RISAF_DDR_Region9_Name_2GO|linuxkernel1|||||
+RISAF_DDR_Region10_Name_2GO|gpu-reserved|||||
+RISAF_DDR_Region11_Name_2GO|vdec-reserved|||||
+RISAF_DDR_Region12_Name_2GO|venc-reserved|||||
+RISAF_DDR_Region13_Name_2GO|LTDC-sec-layer|||||
+RISAF_DDR_Region14_Name_2GO|LTDC-sec-rotation|||||
+RISAF_DDR_Region1_Name_512MB|TFM-code|||||
+RISAF_DDR_Region2_Name_512MB|CM33-Cube-fw|||||
+RISAF_DDR_Region3_Name_512MB|TFM-data|||||
+RISAF_DDR_Region4_Name_512MB|CM33-Cube-data|||||
+RISAF_DDR_Region5_Name_512MB|ipc-shmem|||||
+RISAF_DDR_Region6_Name_512MB|spare1|||||
+RISAF_DDR_Region7_Name_512MB|BL31-context|||||
+RISAF_DDR_Region8_Name_512MB|OP-TEE|||||
+RISAF_DDR_Region9_Name_512MB|linuxkernel1|||||
+RISAF_DDR_Region10_Name_512MB|gpu-reserved|||||
+RISAF_DDR_Region11_Name_512MB|vdec-reserved|||||
+RISAF_DDR_Region12_Name_512MB|venc-reserved|||||
+RISAF_DDR_Region13_Name_512MB|LTDC-sec-layer|||||
+RISAF_DDR_Region14_Name_512MB|LTDC-sec-rotation|||||
+RISAF_DDR_Region1_Name_4GO|TFM-code|||||
+RISAF_DDR_Region2_Name_4GO|CM33-Cube-fw|||||
+RISAF_DDR_Region3_Name_4GO|TFM-data|||||
+RISAF_DDR_Region4_Name_4GO|CM33-Cube-data|||||
+RISAF_DDR_Region5_Name_4GO|ipc-shmem|||||
+RISAF_DDR_Region6_Name_4GO|spare1|||||
+RISAF_DDR_Region7_Name_4GO|BL31-context|||||
+RISAF_DDR_Region8_Name_4GO|OP-TEE|||||
+RISAF_DDR_Region9_Name_4GO|linuxkernel1|||||
+RISAF_DDR_Region10_Name_4GO|gpu-reserved|||||
+RISAF_DDR_Region11_Name_4GO|vdec-reserved|||||
+RISAF_DDR_Region12_Name_4GO|venc-reserved|||||
+RISAF_DDR_Region13_Name_4GO|LTDC-sec-layer|||||
+RISAF_DDR_Region14_Name_4GO|LTDC-sec-rotation|||||
+RISAF_DDR_Region15_Name_4GO|linuxkernel2|||||
+SYSRAM1_region1_ID|SYSRAM1_region1|||||
+SYSRAM1_region2_ID|SYSRAM1_region2|||||
+SYSRAM1_region3_ID|SYSRAM1_region3|||||
+SYSRAM1_region4_ID|SYSRAM1_region4|||||
+SYSRAM1_region5_ID|SYSRAM1_region5|||||
+SYSRAM1_region6_ID|SYSRAM1_region6|||||
+SYSRAM1_region1_Region_Name|SYSRAM1_region1_Name|||||
+SYSRAM1_region2_Region_Name|SYSRAM1_region2_Name|||||
+SYSRAM1_region3_Region_Name|SYSRAM1_region3_Name|||||
+SYSRAM1_region4_Region_Name|SYSRAM1_region4_Name|||||
+SYSRAM1_region5_Region_Name|SYSRAM1_region5_Name|||||
+SYSRAM1_region6_Region_Name|SYSRAM1_region6_Name|||||
+SYSRAM1_region1_Start_Address|assign region1 start address|||0xA000000|0xA000000|
+SYSRAM1_region1_Region_Size|assign the region size for region1|||0x0000|=(SYSRAM1_region1_End_Address - SYSRAM1_region1_Start_Address)|
+SYSRAM1_region2_Start_Address|assign region2 start address|||=(SYSRAM1_region1_Start_Address + SYSRAM1_region1_Region_Size)|0xA020000|
+SYSRAM1_region2_Region_Size|assign the region size for region2|||0x0000|=(SYSRAM1_region1_End_Address - SYSRAM1_region2_Start_Address)|
+SYSRAM1_region3_Start_Address|assign region3 start address|||=(SYSRAM1_region2_Start_Address + SYSRAM1_region2_Region_Size)|0xA020000|
+SYSRAM1_region3_Region_Size|assign the region size for region3|||0x0000|=(SYSRAM1_region1_End_Address - SYSRAM1_region3_Start_Address)|
+SYSRAM1_region4_Start_Address|assign region4 start address|||=(SYSRAM1_region3_Start_Address + SYSRAM1_region3_Region_Size)|0xA020000|
+SYSRAM1_region4_Region_Size|assign the region size for region4|||0x0000|=(SYSRAM1_region1_End_Address - SYSRAM1_region4_Start_Address)|
+SYSRAM1_region5_Start_Address|assign region5 start address|||=(SYSRAM1_region4_Start_Address + SYSRAM1_region4_Region_Size)|0xA020000|
+SYSRAM1_region5_Region_Size|assign the region size for region5|||0x0000|=(SYSRAM1_region1_End_Address - SYSRAM1_region5_Start_Address)|
+SYSRAM1_region6_Start_Address|assign region6 start address|||=(SYSRAM1_region5_Start_Address + SYSRAM1_region5_Region_Size)|0xA020000|
+SYSRAM1_region6_Region_Size|assign the region size for region6|||0x0000|=(SYSRAM1_region1_End_Address - SYSRAM1_region6_Start_Address)|
+SYSRAM1_region1_Start_Address_M33|assign region1 start address|||0xE000000|0xE000000|
+SYSRAM1_region1_Region_Size_M33|assign the region size for region1|||0x0000|=(SYSRAM1_region1_End_Address_M33 - SYSRAM1_region1_Start_Address_M33)|
+SYSRAM1_region2_Start_Address_M33|assign region2 start address|||=(SYSRAM1_region1_Start_Address_M33 + SYSRAM1_region1_Region_Size_M33)|0xE020000|
+SYSRAM1_region2_Region_Size_M33|assign the region size for region2|||0x0000|=(SYSRAM1_region1_End_Address_M33 - SYSRAM1_region2_Start_Address_M33)|
+SYSRAM1_region3_Start_Address_M33|assign region3 start address|||=(SYSRAM1_region2_Start_Address_M33 + SYSRAM1_region2_Region_Size_M33)|0xE020000|
+SYSRAM1_region3_Region_Size_M33|assign the region size for region3|||0x0000|=(SYSRAM1_region1_End_Address_M33 - SYSRAM1_region3_Start_Address_M33)|
+SYSRAM1_region4_Start_Address_M33|assign region4 start address|||=(SYSRAM1_region3_Start_Address_M33 + SYSRAM1_region3_Region_Size_M33)|0xE020000|
+SYSRAM1_region4_Region_Size_M33|assign the region size for region4|||0x0000|=(SYSRAM1_region1_End_Address_M33 - SYSRAM1_region4_Start_Address_M33)|
+SYSRAM1_region5_Start_Address_M33|assign region5 start address|||=(SYSRAM1_region4_Start_Address_M33 + SYSRAM1_region4_Region_Size_M33)|0xE020000|
+SYSRAM1_region5_Region_Size_M33|assign the region size for region5|||0x0000|=(SYSRAM1_region1_End_Address_M33 - SYSRAM1_region5_Start_Address_M33)|
+SYSRAM1_region6_Start_Address_M33|assign region6 start address|||=(SYSRAM1_region5_Start_Address_M33 + SYSRAM1_region5_Region_Size_M33)|0xE020000|
+SYSRAM1_region6_Region_Size_M33|assign the region size for region6|||0x0000|=(SYSRAM1_region1_End_Address_M33 - SYSRAM1_region6_Start_Address_M33)|
+SYSRAM1_region1_Owner|SYSRAM1_region1_Owner|||||
+SYSRAM1_region2_Owner|SYSRAM1_region2_Owner|||||
+SYSRAM1_region3_Owner|SYSRAM1_region3_Owner|||||
+SYSRAM1_region4_Owner|SYSRAM1_region4_Owner|||||
+SYSRAM1_region5_Owner|SYSRAM1_region5_Owner|||||
+SYSRAM1_region6_Owner|SYSRAM1_region6_Owner|||||
+SYSRAM2_region1_ID|SYSRAM2_region1|||||
+SYSRAM2_region2_ID|SYSRAM2_region2|||||
+SYSRAM2_region3_ID|SYSRAM2_region3|||||
+SYSRAM2_region4_ID|SYSRAM2_region4|||||
+SYSRAM2_region5_ID|SYSRAM2_region5|||||
+SYSRAM2_region6_ID|SYSRAM2_region6|||||
+SYSRAM2_region1_Region_Name|SYSRAM2_region1_Name|||||
+SYSRAM2_region2_Region_Name|SYSRAM2_region2_Name|||||
+SYSRAM2_region3_Region_Name|SYSRAM2_region3_Name|||||
+SYSRAM2_region4_Region_Name|SYSRAM2_region4_Name|||||
+SYSRAM2_region5_Region_Name|SYSRAM2_region5_Name|||||
+SYSRAM2_region6_Region_Name|SYSRAM2_region6_Name|||||
+SYSRAM2_region1_Start_Address|assign region1 start address|||0xA020000|0xA020000|
+SYSRAM2_region1_Region_Size|assign the region size for region1|||0x0000|=(SYSRAM2_region1_End_Address - SYSRAM2_region1_Start_Address)|
+SYSRAM2_region2_Start_Address|assign region2 start address|||=(SYSRAM2_region1_Start_Address + SYSRAM2_region1_Region_Size)|0xA040000|
+SYSRAM2_region2_Region_Size|assign the region size for region2|||0x0000|=(SYSRAM2_region1_End_Address - SYSRAM2_region2_Start_Address)|
+SYSRAM2_region3_Start_Address|assign region3 start address|||=(SYSRAM2_region2_Start_Address + SYSRAM2_region2_Region_Size)|0xA040000|
+SYSRAM2_region3_Region_Size|assign the region size for region3|||0x0000|=(SYSRAM2_region1_End_Address - SYSRAM2_region3_Start_Address)|
+SYSRAM2_region4_Start_Address|assign region4 start address|||=(SYSRAM2_region3_Start_Address + SYSRAM2_region3_Region_Size)|0xA040000|
+SYSRAM2_region4_Region_Size|assign the region size for region4|||0x0000|=(SYSRAM2_region1_End_Address - SYSRAM2_region4_Start_Address)|
+SYSRAM2_region5_Start_Address|assign region5 start address|||=(SYSRAM2_region4_Start_Address + SYSRAM2_region4_Region_Size)|0xA040000|
+SYSRAM2_region5_Region_Size|assign the region size for region5|||0x0000|=(SYSRAM2_region1_End_Address - SYSRAM2_region5_Start_Address)|
+SYSRAM2_region6_Start_Address|assign region6 start address|||=(SYSRAM2_region5_Start_Address + SYSRAM2_region5_Region_Size)|0xA040000|
+SYSRAM2_region6_Region_Size|assign the region size for region6|||0x0000|=(SYSRAM2_region1_End_Address - SYSRAM2_region6_Start_Address)|
+SYSRAM2_region1_Start_Address_M33|assign region1 start address|||0xE020000|0xE020000|
+SYSRAM2_region1_Region_Size_M33|assign the region size for region1|||0x0000|=(SYSRAM2_region1_End_Address_M33 - SYSRAM2_region1_Start_Address_M33)|
+SYSRAM2_region2_Start_Address_M33|assign region2 start address|||=(SYSRAM2_region1_Start_Address_M33 + SYSRAM2_region1_Region_Size_M33)|0xE040000|
+SYSRAM2_region2_Region_Size_M33|assign the region size for region2|||0x0000|=(SYSRAM2_region1_End_Address_M33 - SYSRAM2_region2_Start_Address_M33)|
+SYSRAM2_region3_Start_Address_M33|assign region3 start address|||=(SYSRAM2_region2_Start_Address_M33 + SYSRAM2_region2_Region_Size_M33)|0xE040000|
+SYSRAM2_region3_Region_Size_M33|assign the region size for region3|||0x0000|=(SYSRAM2_region1_End_Address_M33 - SYSRAM2_region3_Start_Address_M33)|
+SYSRAM2_region4_Start_Address_M33|assign region4 start address|||=(SYSRAM2_region3_Start_Address_M33 + SYSRAM2_region3_Region_Size_M33)|0xE040000|
+SYSRAM2_region4_Region_Size_M33|assign the region size for region4|||0x0000|=(SYSRAM2_region1_End_Address_M33 - SYSRAM2_region4_Start_Address_M33)|
+SYSRAM2_region5_Start_Address_M33|assign region5 start address|||=(SYSRAM2_region4_Start_Address_M33 + SYSRAM2_region4_Region_Size_M33)|0xE040000|
+SYSRAM2_region5_Region_Size_M33|assign the region size for region5|||0x0000|=(SYSRAM2_region1_End_Address_M33 - SYSRAM2_region5_Start_Address_M33)|
+SYSRAM2_region6_Start_Address_M33|assign region6 start address|||=(SYSRAM2_region5_Start_Address_M33 + SYSRAM2_region5_Region_Size_M33)|0xE040000|
+SYSRAM2_region6_Region_Size_M33|assign the region size for region6|||0x0000|=(SYSRAM2_region1_End_Address_M33 - SYSRAM2_region6_Start_Address_M33)|
+SYSRAM2_region1_Owner|SYSRAM2_region1_Owner|||||
+SYSRAM2_region2_Owner|SYSRAM2_region2_Owner|||||
+SYSRAM2_region3_Owner|SYSRAM2_region3_Owner|||||
+SYSRAM2_region4_Owner|SYSRAM2_region4_Owner|||||
+SYSRAM2_region5_Owner|SYSRAM2_region5_Owner|||||
+SYSRAM2_region6_Owner|SYSRAM2_region6_Owner|||||
+SRAM1_region1_ID|SRAM1_region1|||||
+SRAM1_region2_ID|SRAM1_region2|||||
+SRAM1_region3_ID|SRAM1_region3|||||
+SRAM1_region4_ID|SRAM1_region4|||||
+SRAM1_region5_ID|SRAM1_region5|||||
+SRAM1_region6_ID|SRAM1_region6|||||
+SRAM1_region1_Region_Name|SRAM1_region1_Name|||||
+SRAM1_region2_Region_Name|SRAM1_region2_Name|||||
+SRAM1_region3_Region_Name|SRAM1_region3_Name|||||
+SRAM1_region4_Region_Name|SRAM1_region4_Name|||||
+SRAM1_region5_Region_Name|SRAM1_region5_Name|||||
+SRAM1_region6_Region_Name|SRAM1_region6_Name|||||
+SRAM1_region1_Start_Address|assign region1 start address|||0xA040000|0xA040000|
+SRAM1_region1_Region_Size|assign the region size for region1|||0x0000|=(SRAM1_region1_End_Address - SRAM1_region1_Start_Address)|
+SRAM1_region2_Start_Address|assign region2 start address|||=(SRAM1_region1_Start_Address + SRAM1_region1_Region_Size)|0xA060000|
+SRAM1_region2_Region_Size|assign the region size for region2|||0x0000|=(SRAM1_region1_End_Address -(SRAM1_region1_Start_Address+SRAM1_region1_Region_Size))|
+SRAM1_region3_Start_Address|assign region3 start address|||=(SRAM1_region2_Start_Address + SRAM1_region2_Region_Size)|0xA060000|
+SRAM1_region3_Region_Size|assign the region size for region3|||0x0000|=(SRAM1_region1_End_Address -SRAM1_region3_Start_Address)|
+SRAM1_region4_Start_Address|assign region4 start address|||=(SRAM1_region3_Start_Address + SRAM1_region3_Region_Size)|0xA060000|
+SRAM1_region4_Region_Size|assign the region size for region4|||0x0000|=(SRAM1_region1_End_Address -SRAM1_region4_Start_Address)|
+SRAM1_region5_Start_Address|assign region5 start address|||=(SRAM1_region4_Start_Address + SRAM1_region4_Region_Size)|0xA060000|
+SRAM1_region5_Region_Size|assign the region size for region5|||0x0000|=(SRAM1_region1_End_Address -SRAM1_region5_Start_Address)|
+SRAM1_region6_Start_Address|assign region6 start address|||=(SRAM1_region5_Start_Address + SRAM1_region5_Region_Size)|0xA060000|
+SRAM1_region6_Region_Size|assign the region size for region6|||0x0000|=(SRAM1_region1_End_Address -SRAM1_region6_Start_Address)|
+SRAM1_region1_Start_Address_M33|assign region1 start address|||0xE040000|0xE040000|
+SRAM1_region1_Region_Size_M33|assign the region size for region1|||0x0000|=(SRAM1_region1_End_Address_M33 - SRAM1_region1_Start_Address_M33)|
+SRAM1_region2_Start_Address_M33|assign region2 start address|||=(SRAM1_region1_Start_Address_M33 + SRAM1_region1_Region_Size_M33)|0xE060000|
+SRAM1_region2_Region_Size_M33|assign the region size for region2|||0x0000|=(SRAM1_region1_End_Address_M33 -(SRAM1_region1_Start_Address_M33+SRAM1_region1_Region_Size_M33))|
+SRAM1_region3_Start_Address_M33|assign region3 start address|||=(SRAM1_region2_Start_Address_M33 + SRAM1_region2_Region_Size_M33)|0xE060000|
+SRAM1_region3_Region_Size_M33|assign the region size for region3|||0x0000|=(SRAM1_region1_End_Address_M33 -SRAM1_region3_Start_Address_M33)|
+SRAM1_region4_Start_Address_M33|assign region4 start address|||=(SRAM1_region3_Start_Address_M33 + SRAM1_region3_Region_Size_M33)|0xE060000|
+SRAM1_region4_Region_Size_M33|assign the region size for region4|||0x0000|=(SRAM1_region1_End_Address_M33 -SRAM1_region4_Start_Address_M33)|
+SRAM1_region5_Start_Address_M33|assign region5 start address|||=(SRAM1_region4_Start_Address_M33 + SRAM1_region4_Region_Size_M33)|0xE060000|
+SRAM1_region5_Region_Size_M33|assign the region size for region5|||0x0000|=(SRAM1_region1_End_Address_M33 -SRAM1_region5_Start_Address_M33)|
+SRAM1_region6_Start_Address_M33|assign region6 start address|||=(SRAM1_region5_Start_Address_M33 + SRAM1_region5_Region_Size_M33)|0xE060000|
+SRAM1_region6_Region_Size_M33|assign the region size for region6|||0x0000|=(SRAM1_region1_End_Address_M33 -SRAM1_region6_Start_Address_M33)|
+SRAM1_region1_Owner|SRAM1_region1_Owner|||||
+SRAM1_region2_Owner|SRAM1_region2_Owner|||||
+SRAM1_region3_Owner|SRAM1_region3_Owner|||||
+SRAM1_region4_Owner|SRAM1_region4_Owner|||||
+SRAM1_region5_Owner|SRAM1_region5_Owner|||||
+SRAM1_region6_Owner|SRAM1_region6_Owner|||||
+SRAM2_region1_ID|SRAM2_region1|||||
+SRAM2_region2_ID|SRAM2_region2|||||
+SRAM2_region3_ID|SRAM2_region3|||||
+SRAM2_region4_ID|SRAM2_region4|||||
+SRAM2_region5_ID|SRAM2_region5|||||
+SRAM2_region6_ID|SRAM2_region6|||||
+SRAM2_region1_Region_Name|SRAM2_region1_Name|||||
+SRAM2_region2_Region_Name|SRAM2_region2_Name|||||
+SRAM2_region3_Region_Name|SRAM2_region3_Name|||||
+SRAM2_region4_Region_Name|SRAM2_region4_Name|||||
+SRAM2_region5_Region_Name|SRAM2_region5_Name|||||
+SRAM2_region6_Region_Name|SRAM2_region6_Name|||||
+SRAM2_region1_Start_Address|assign region1 start address|||0xA060000|0xA060000|
+SRAM2_region1_Region_Size|assign the region size for region1|||0x0000|=(SRAM2_region1_End_Address - SRAM2_region1_Start_Address)|
+SRAM2_region2_Start_Address|assign region2 start address|||=(SRAM2_region1_Start_Address + SRAM2_region1_Region_Size)|0xA080000|
+SRAM2_region2_Region_Size|assign the region size for region2|||0x0000|=(SRAM2_region1_End_Address -(SRAM2_region1_Start_Address+SRAM2_region1_Region_Size))|
+SRAM2_region3_Start_Address|assign region3 start address|||=(SRAM2_region2_Start_Address + SRAM2_region2_Region_Size)|0xA080000|
+SRAM2_region3_Region_Size|assign the region size for region3|||0x0000|=(SRAM2_region1_End_Address -SRAM2_region3_Start_Address)|
+SRAM2_region4_Start_Address|assign region4 start address|||=(SRAM2_region3_Start_Address + SRAM2_region3_Region_Size)|0xA080000|
+SRAM2_region4_Region_Size|assign the region size for region4|||0x0000|=(SRAM2_region1_End_Address -SRAM2_region4_Start_Address)|
+SRAM2_region5_Start_Address|assign region5 start address|||=(SRAM2_region4_Start_Address + SRAM2_region4_Region_Size)|0xA080000|
+SRAM2_region5_Region_Size|assign the region size for region5|||0x0000|=(SRAM2_region1_End_Address -SRAM2_region5_Start_Address)|
+SRAM2_region6_Start_Address|assign region6 start address|||=(SRAM2_region5_Start_Address + SRAM2_region5_Region_Size)|0xA080000|
+SRAM2_region6_Region_Size|assign the region size for region6|||0x0000|=(SRAM2_region1_End_Address -SRAM2_region6_Start_Address)|
+SRAM2_region1_Start_Address_M33|assign region1 start address|||0xE060000|0xE060000|
+SRAM2_region1_Region_Size_M33|assign the region size for region1|||0x0000|=(SRAM2_region1_End_Address_M33 - SRAM2_region1_Start_Address_M33)|
+SRAM2_region2_Start_Address_M33|assign region2 start address|||=(SRAM2_region1_Start_Address_M33 + SRAM2_region1_Region_Size_M33)|0xE080000|
+SRAM2_region2_Region_Size_M33|assign the region size for region2|||0x0000|=(SRAM2_region1_End_Address_M33 -(SRAM2_region1_Start_Address_M33+SRAM2_region1_Region_Size_M33))|
+SRAM2_region3_Start_Address_M33|assign region3 start address|||=(SRAM2_region2_Start_Address_M33 + SRAM2_region2_Region_Size_M33)|0xE080000|
+SRAM2_region3_Region_Size_M33|assign the region size for region3|||0x0000|=(SRAM2_region1_End_Address_M33 -SRAM2_region3_Start_Address_M33)|
+SRAM2_region4_Start_Address_M33|assign region4 start address|||=(SRAM2_region3_Start_Address_M33 + SRAM2_region3_Region_Size_M33)|0xE080000|
+SRAM2_region4_Region_Size_M33|assign the region size for region4|||0x0000|=(SRAM2_region1_End_Address_M33 -SRAM2_region4_Start_Address_M33)|
+SRAM2_region5_Start_Address_M33|assign region5 start address|||=(SRAM2_region4_Start_Address_M33 + SRAM2_region4_Region_Size_M33)|0xE080000|
+SRAM2_region5_Region_Size_M33|assign the region size for region5|||0x0000|=(SRAM2_region1_End_Address_M33 -SRAM2_region5_Start_Address_M33)|
+SRAM2_region6_Start_Address_M33|assign region6 start address|||=(SRAM2_region5_Start_Address_M33 + SRAM2_region5_Region_Size_M33)|0xE080000|
+SRAM2_region6_Region_Size_M33|assign the region size for region6|||0x0000|=(SRAM2_region1_End_Address_M33 -SRAM2_region6_Start_Address_M33)|
+SRAM2_region1_Owner|SRAM2_region1_Owner|||||
+SRAM2_region2_Owner|SRAM2_region2_Owner|||||
+SRAM2_region3_Owner|SRAM2_region3_Owner|||||
+SRAM2_region4_Owner|SRAM2_region4_Owner|||||
+SRAM2_region5_Owner|SRAM2_region5_Owner|||||
+SRAM2_region6_Owner|SRAM2_region6_Owner|||||
+RETRAM_region1_ID|RETRAM_region1|||||
+RETRAM_region2_ID|RETRAM_region2|||||
+RETRAM_region3_ID|RETRAM_region3|||||
+RETRAM_region4_ID|RETRAM_region4|||||
+RETRAM_region5_ID|RETRAM_region5|||||
+RETRAM_region6_ID|RETRAM_region6|||||
+RETRAM_region1_Region_Name|RETRAM_region1_Name|||||
+RETRAM_region2_Region_Name|RETRAM_region2_Name|||||
+RETRAM_region3_Region_Name|RETRAM_region3_Name|||||
+RETRAM_region4_Region_Name|RETRAM_region4_Name|||||
+RETRAM_region5_Region_Name|RETRAM_region5_Name|||||
+RETRAM_region6_Region_Name|RETRAM_region6_Name|||||
+RETRAM_region1_Start_Address|assign region1 start address|||0xA080000|0xA080000|
+RETRAM_region1_Region_Size|assign the region size for region1|||0x0000|=(RETRAM_region1_End_Address - RETRAM1_region1_Start_Address)|
+RETRAM_region2_Start_Address|assign region2 start address|||=(RETRAM_region1_Start_Address + RETRAM_region1_Region_Size)|0xA0A0000|
+RETRAM_region2_Region_Size|assign the region size for region2|||0x0000|=(RETRAM_region1_End_Address - RETRAM_region2_Start_Address)|
+RETRAM_region3_Start_Address|assign region3 start address|||=(RETRAM_region2_Start_Address + RETRAM_region2_Region_Size)|0xA0A0000|
+RETRAM_region3_Region_Size|assign the region size for region3|||0x0000|=(RETRAM_region1_End_Address - RETRAM_region3_Start_Address)|
+RETRAM_region4_Start_Address|assign region4 start address|||=(RETRAM_region3_Start_Address + RETRAM_region3_Region_Size)|0xA0A0000|
+RETRAM_region4_Region_Size|assign the region size for region4|||0x0000|=(RETRAM_region1_End_Address - RETRAM_region4_Start_Address)|
+RETRAM_region5_Start_Address|assign region5 start address|||=(RETRAM_region4_Start_Address + RETRAM_region4_Region_Size)|0xA0A0000|
+RETRAM_region5_Region_Size|assign the region size for region5|||0x0000|=(RETRAM_region1_End_Address - RETRAM_region5_Start_Address)|
+RETRAM_region6_Start_Address|assign region6 start address|||=(RETRAM_region5_Start_Address + RETRAM_region5_Region_Size)|0xA0A0000|
+RETRAM_region6_Region_Size|assign the region size for region6|||0x0000|=(RETRAM_region1_End_Address - RETRAM_region6_Start_Address)|
+RETRAM_region1_Start_Address_M33|assign region1 start address|||0xE080000|0xE080000|
+RETRAM_region1_Region_Size_M33|assign the region size for region1|||0x0000|=(RETRAM_region1_End_Address_M33 - RETRAM1_region1_Start_Address_M33)|
+RETRAM_region2_Start_Address_M33|assign region2 start address|||=(RETRAM_region1_Start_Address_M33 + RETRAM_region1_Region_Size_M33)|0xE0A0000|
+RETRAM_region2_Region_Size_M33|assign the region size for region2|||0x0000|=(RETRAM_region1_End_Address_M33 - RETRAM_region2_Start_Address_M33)|
+RETRAM_region3_Start_Address_M33|assign region3 start address|||=(RETRAM_region2_Start_Address_M33 + RETRAM_region2_Region_Size_M33)|0xE0A0000|
+RETRAM_region3_Region_Size_M33|assign the region size for region3|||0x0000|=(RETRAM_region1_End_Address_M33 - RETRAM_region3_Start_Address_M33)|
+RETRAM_region4_Start_Address_M33|assign region4 start address|||=(RETRAM_region3_Start_Address_M33 + RETRAM_region3_Region_Size_M33)|0xE0A0000|
+RETRAM_region4_Region_Size_M33|assign the region size for region4|||0x0000|=(RETRAM_region1_End_Address_M33 - RETRAM_region4_Start_Address_M33)|
+RETRAM_region5_Start_Address_M33|assign region5 start address|||=(RETRAM_region4_Start_Address_M33 + RETRAM_region4_Region_Size_M33)|0xE0A0000|
+RETRAM_region5_Region_Size_M33|assign the region size for region5|||0x0000|=(RETRAM_region1_End_Address_M33 - RETRAM_region5_Start_Address_M33)|
+RETRAM_region6_Start_Address_M33|assign region6 start address|||=(RETRAM_region5_Start_Address_M33 + RETRAM_region5_Region_Size_M33)|0xE0A0000|
+RETRAM_region6_Region_Size_M33|assign the region size for region6|||0x0000|=(RETRAM_region1_End_Address_M33 - RETRAM_region6_Start_Address_M33)|
+RETRAM_region1_Owner|RETRAM_region1_Owner|||||
+RETRAM_region2_Owner|RETRAM_region2_Owner|||||
+RETRAM_region3_Owner|RETRAM_region3_Owner|||||
+RETRAM_region4_Owner|RETRAM_region4_Owner|||||
+RETRAM_region5_Owner|RETRAM_region5_Owner|||||
+RETRAM_region6_Owner|RETRAM_region6_Owner|||||
+VDERAM_region1_ID|VDERAM_region1_ID|||||
+VDERAM_region2_ID|VDERAM_region2_ID|||||
+VDERAM_region3_ID|VDERAM_region3_ID|||||
+VDERAM_region4_ID|VDERAM_region4_ID|||||
+VDERAM_region5_ID|VDERAM_region5_ID|||||
+VDERAM_region6_ID|VDERAM_region6_ID|||||
+VDERAM_region1_Region_Name|VDERAM_region1_Name|||||
+VDERAM_region2_Region_Name|VDERAM_region2_Name|||||
+VDERAM_region3_Region_Name|VDERAM_region3_Name|||||
+VDERAM_region4_Region_Name|VDERAM_region4_Name|||||
+VDERAM_region5_Region_Name|VDERAM_region5_Name|||||
+VDERAM_region6_Region_Name|VDERAM_region6_Name|||||
+VDERAM_region1_Start_Address|assign region1 start address|||0xA09F000|0xA09F000|
+VDERAM_region1_Region_Size|assign the region size for region1|||0x0000|=(VDERAM_region1_End_Address - VDERAM_region1_Start_Address)|
+VDERAM_region2_Start_Address|assign region2 start address|||=(VDERAM_region1_Start_Address + VDERAM_region1_Region_Size)|0xA0C0000|
+VDERAM_region2_Region_Size|assign the region size for region2|||0x0000|=(VDERAM_region1_End_Address - VDERAM_region2_Start_Address)|
+VDERAM_region3_Start_Address|assign region3 start address|||=(VDERAM_region2_Start_Address + VDERAM_region2_Region_Size)|0xA0C0000|
+VDERAM_region3_Region_Size|assign the region size for region3|||0x0000|=(VDERAM_region1_End_Address - VDERAM_region3_Start_Address)|
+VDERAM_region4_Start_Address|assign region4 start address|||=(VDERAM_region3_Start_Address + VDERAM_region3_Region_Size)|0xA0C0000|
+VDERAM_region4_Region_Size|assign the region size for region4|||0x0000|=(VDERAM_region1_End_Address - VDERAM_region4_Start_Address)|
+VDERAM_region5_Start_Address|assign region5 start address|||=(VDERAM_region4_Start_Address + VDERAM_region4_Region_Size)|0xA0C0000|
+VDERAM_region5_Region_Size|assign the region size for region5|||0x0000|=(VDERAM_region1_End_Address - VDERAM_region5_Start_Address)|
+VDERAM_region6_Start_Address|assign region6 start address|||=(VDERAM_region5_Start_Address + VDERAM_region5_Region_Size)|0xA0C0000|
+VDERAM_region6_Region_Size|assign the region size for region6|||0x0000|=(VDERAM_region1_End_Address - VDERAM_region6_Start_Address)|
+VDERAM_region1_Start_Address_M33|assign region1 start address|||0xE09F000|0xE09F000|
+VDERAM_region1_Region_Size_M33|assign the region size for region1|||0x0000|=(VDERAM_region1_End_Address_M33 - VDERAM_region1_Start_Address_M33)|
+VDERAM_region2_Start_Address_M33|assign region2 start address|||=(VDERAM_region1_Start_Address_M33 + VDERAM_region1_Region_Size_M33)|0xE0C0000|
+VDERAM_region2_Region_Size_M33|assign the region size for region2|||0x0000|=(VDERAM_region1_End_Address_M33 - VDERAM_region2_Start_Address_M33)|
+VDERAM_region3_Start_Address_M33|assign region3 start address|||=(VDERAM_region2_Start_Address_M33 + VDERAM_region2_Region_Size_M33)|0xE0C0000|
+VDERAM_region3_Region_Size_M33|assign the region size for region3|||0x0000|=(VDERAM_region1_End_Address_M33 - VDERAM_region3_Start_Address_M33)|
+VDERAM_region4_Start_Address_M33|assign region4 start address|||=(VDERAM_region3_Start_Address_M33 + VDERAM_region3_Region_Size_M33)|0xE0C0000|
+VDERAM_region4_Region_Size_M33|assign the region size for region4|||0x0000|=(VDERAM_region1_End_Address_M33 - VDERAM_region4_Start_Address_M33)|
+VDERAM_region5_Start_Address_M33|assign region5 start address|||=(VDERAM_region4_Start_Address_M33 + VDERAM_region4_Region_Size_M33)|0xE0C0000|
+VDERAM_region5_Region_Size_M33|assign the region size for region5|||0x0000|=(VDERAM_region1_End_Address_M33 - VDERAM_region5_Start_Address_M33)|
+VDERAM_region6_Start_Address_M33|assign region6 start address|||=(VDERAM_region5_Start_Address_M33 + VDERAM_region5_Region_Size_M33)|0xE0C0000|
+VDERAM_region6_Region_Size_M33|assign the region size for region6|||0x0000|=(VDERAM_region1_End_Address_M33 - VDERAM_region6_Start_Address_M33)|
+VDERAM_region1_Owner|VDERAM_region1_Owner|||||
+VDERAM_region2_Owner|VDERAM_region2_Owner|||||
+VDERAM_region3_Owner|VDERAM_region3_Owner|||||
+VDERAM_region4_Owner|VDERAM_region4_Owner|||||
+VDERAM_region5_Owner|VDERAM_region5_Owner|||||
+VDERAM_region6_Owner|VDERAM_region6_Owner|||||
+OCTOSPI_Region1_ID|OCTOSPI_Region_ID_1|||||
+OCTOSPI_Region2_ID|OCTOSPI_Region_ID_2|||||
+RISAF_OCTOSPI_Region1_Name|mm_ospi1|||||
+RISAF_OCTOSPI_Region2_Name|mm_ospi2|||||
+RISAF_OCTOSPI_Region1_Encrypted|Encrypt|||||
+RISAF_OCTOSPI_Region2_Encrypted|Encrypt|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID0_Privilege|RISAF_OCTOSPI_Region_ID_1_Privilege|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID1_Privilege|RISAF_OCTOSPI_Region_ID_1_Privilege|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID2_Privilege|RISAF_OCTOSPI_Region_ID_1_Privilege|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID0_Privilege|RISAF_OCTOSPI_Region_ID_2_Privilege|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID1_Privilege|RISAF_OCTOSPI_Region_ID_2_Privilege|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID2_Privilege|RISAF_OCTOSPI_Region_ID_2_Privilege|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID0_Write|RISAF_OCTOSPI_Region_ID_1_Write|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID1_Write|RISAF_OCTOSPI_Region_ID_1_Write|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID2_Write|RISAF_OCTOSPI_Region_ID_1_Write|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID0_Write|RISAF_OCTOSPI_Region_ID_2_Write|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID1_Write|RISAF_OCTOSPI_Region_ID_2_Write|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID2_Write|RISAF_OCTOSPI_Region_ID_2_Write|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID0_Read|RISAF_OCTOSPI_Region_ID_1_Read|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID1_Read|RISAF_OCTOSPI_Region_ID_1_Read|||||
+RISAF_OCTOSPI_Region_ID_1_Master_CID2_Read|RISAF_OCTOSPI_Region_ID_1_Read|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID0_Read|RISAF_OCTOSPI_Region_ID_2_Read|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID1_Read|RISAF_OCTOSPI_Region_ID_2_Read|||||
+RISAF_OCTOSPI_Region_ID_2_Master_CID2_Read|RISAF_OCTOSPI_Region_ID_2_Read|||||
+RISAF_OCTOSPI_region1_Region_Size|RISAF_OCTOSPI_region1_Region_Size|||||
+
+[Values]
+# параметр|значение|подпись
+LTDC_L1L2_Name_RIMU|LTDC_L1L2|LTDC_L1L2
+LTDC_L3_Name_RIMU|LTDC_L3|LTDC_L3
+LTDC_ROT_Name_RIMU|LTDC_ROT|LTDC_ROT

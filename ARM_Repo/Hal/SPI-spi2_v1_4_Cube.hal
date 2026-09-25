@@ -1,0 +1,53 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SPI
+Version=spi2_v1_4_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Mode|Mode|Basic Parameters||||
+BidirectionalMode|Bidirectional Mode|Basic Parameters||||
+Direction|Direction|Basic Parameters||||
+TIMode|Frame Format|Basic Parameters||||
+DataSize|Data Size|Basic Parameters||||
+FirstBit|First Bit|Basic Parameters||0|1|
+BaudRatePrescaler|Prescaler (for Baud Rate)|Clock Parameters||||
+CalculateBaudRate|Baud Rate|Clock Parameters||0|18000000|Calculated Baudrate value based on SPI Clock source and Prescaler
+CLKPolarity|Clock Polarity (CPOL)|Clock Parameters||0|1|
+CLKPhase|Clock Phase (CPHA)|Clock Parameters||0|1|1 Edge means the first clock transition is the first data capture edge (value 0) AND 2 Edge means the second clock transition is the first data capture edge (value 1)
+CRCCalculation|CRC Calculation|Advanced Parameters||||
+CRCPolynomial|CRC Polynomial|Advanced Parameters|||16|
+NSS|NSS Signal Type|Advanced Parameters||||
+
+[Values]
+# параметр|значение|подпись
+Mode|SPI_MODE_SLAVE|Slave
+Mode|SPI_MODE_MASTER|Master
+BidirectionalMode|SPI_BIDIRECTIONAL_DISABLED|Disabled
+BidirectionalMode|SPI_BIDIRECTIONAL_ENABLED|Enabled
+Direction|SPI_DIRECTION_2LINES|2 Lines Unidirectionnal
+Direction|SPI_DIRECTION_2LINES_RXONLY|2 Lines with Receive only
+Direction|SPI_DIRECTION_1LINE|1 Line Bidirectionnal
+TIMode|SPI_TIMODE_DISABLE|Motorola
+DataSize|SPI_DATASIZE_8BIT|8 Bits
+DataSize|SPI_DATASIZE_16BIT|16 Bits
+FirstBit|SPI_FIRSTBIT_MSB|MSB First
+FirstBit|SPI_FIRSTBIT_LSB|LSB First
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_2|2
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_4|4
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_8|8
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_16|16
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_32|32
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_64|64
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_128|128
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_256|256
+CLKPolarity|SPI_POLARITY_LOW|Low
+CLKPolarity|SPI_POLARITY_HIGH|High
+CLKPhase|SPI_PHASE_1EDGE|1 Edge
+CLKPhase|SPI_PHASE_2EDGE|2 Edge
+CRCCalculation|SPI_CRCCALCULATION_DISABLE|Disabled
+CRCCalculation|SPI_CRCCALCULATION_ENABLE|Enabled
+NSS|SPI_NSS_HARD_OUTPUT|Output Hardware
+NSS|SPI_NSS_HARD_INPUT|Input Hardware
+NSS|SPI_NSS_SOFT|Software

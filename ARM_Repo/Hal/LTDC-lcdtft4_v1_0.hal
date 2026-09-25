@@ -1,0 +1,124 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LTDC
+Version=lcdtft4_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+HSync|Horizontal Synchronization Width|Synchronization for Width|pixels|1|4095|
+HBP|Horizontal Back Porch|Synchronization for Width|pixels|0|4095|
+ActiveW|Active Width|Synchronization for Width|pixels|0|=4095-(HBP+HSync+HFP)|When the graphics is enabled this register value will be devided by zone value(the parameter zone is in graphics parameters settings).
+HFP|Horizontal Front Porch|Synchronization for Width|pixels|0|4095|
+HorizontalSync|HSync Width|Synchronization for Width|||4095|This register value is equal to (Horizontal Synchronization Width - 1)
+AccumulatedHBP|Accumulated Horizontal Back Porch Width|Synchronization for Width|||4095|This register value is equal to the (Horizontal Synchronization Width + Horizontal Back Porch - 1)
+AccumulatedActiveW|Accumulated Active Width|Synchronization for Width|||4095|This register value is equal to (Horizontal Synchronization Width + Horizontal Back Porch + Active Width - 1)
+TotalWidth|Total Width|Synchronization for Width|||4095|This register value is equal to (Horizontal Synchronization Width + Horizontal Back Porch + Active Width + Horizontal Front Porch - 1)
+VSync|Vertical Synchronization Height|Synchronization for Height|lines|1|2047|
+VBP|Vertical Back Porch|Synchronization for Height|lines|0|2047|
+ActiveH|Active Height|Synchronization for Height|lines|0|=2047-(VBP+VSync+VFP)|
+VFP|Vertical Front Porch|Synchronization for Height|lines|0|2047|
+VerticalSync|VSync Height|Synchronization for Height|||2047|This register value is equal to (Vertical Synchronization Height - 1)
+AccumulatedVBP|Accumulated Vertical Back Porch Height|Synchronization for Height|||2047|This register value is equal to the (Vertical Synchronization Height + Vertical Back Porch - 1)
+AccumulatedActiveH|Accumulated Active Height|Synchronization for Height|||2047|This register value is equal to the (Vertical Synchronization Height + Vertical Back Porch + Active Height - 1)
+TotalHeigh|Total Height|Synchronization for Height|||2047|This register value is equal to the (Vertical Synchronization Height + Vertical Back Porch + Active Height + Vertical Front Porch - 1)
+HSPolarity|Horizontal Synchronization Polarity|Signal Polarity||||
+VSPolarity|Vertical Synchronization Polarity|Signal Polarity||||
+DEPolarity|Data Enable Polarity|Signal Polarity||||
+PCPolarity|Pixel Clock Polarity|Signal Polarity||||
+Red|Red|Layer Default Color||0|255|
+Green|Green|Layer Default Color||0|255|
+Blue|Blue|Layer Default Color||0|255|
+Reserved|Reserved|||0|255|
+Layers|Number of Layers|Number of Layers||1|2|Select the number of layers to configure (max of 2)
+LayerIdx_L0|LayerIdx|Layer 0 Layer Default Color||0|1|
+Red_L0|Layer 0 - Red|Layer Default Color||0|255|
+Green_L0|Layer 0 - Green|Layer Default Color||0|255|
+Blue_L0|Layer 0 - Blue|Layer Default Color||0|255|
+Alpha0_L0|Layer 0 - Alpha|Layer Default Color||0|255|
+WindowX0_L0|Layer 0 - Window Horizontal Start|Windows Position||0|4095|Configures the Window Horizontal Start Position Window X0.
+WindowX1_L0|Layer 0 - Window Horizontal Stop|Windows Position||0|4095|Configures the Window Horizontal Stop Position Window X1. < For information : </b> When the graphics is enabled the Window Horizontal Stop value will be devided by zone value(the parameter zone is in graphics parameters settings).
+WindowY0_L0|Layer 0 - Window Vertical Start|Windows Position||0|2047|Configures the Window vertical Start Position Window Y0.
+WindowY1_L0|Layer 0 - Window Vertical Stop|Windows Position||0|2047|Configures the Window vertical Stop Position Window Y1.
+PixelFormat_L0|Layer 0 - Pixel Format|Pixel Parameters||||Specifies the pixel format.
+PixelFormat_L0_not888|Layer 0 - Pixel Format|Pixel Parameters||||Specifies the pixel format.
+Alpha_L0|Layer 0 - Alpha constant for blending|Blending||0|255|Specifies the constant alpha used for blending.
+BlendingFactor1_L0|Layer 0 - Blending Factor1|Blending||||Select the blending factor 1: LTDC_BLENDING_FACTOR1_CA: blending factor is Alpha constant LTDC_BLENDING_FACTOR1_PAxCA: blending factor is Alpha constant x Pixel Alpha
+BlendingFactor2_L0|Layer 0 - Blending Factor2|Blending||||Select the blending factor 2. LTDC_BLENDING_FACTOR2_CA: blending factor is Alpha constant LTDC_BLENDING_FACTOR2_PAxCA: blending factor is Alpha constant x Pixel Alpha
+FBStartAdress_L0|Layer 0 - Color Frame Buffer Start Adress|Frame Buffer||0|4294967295|Configures the color frame buffer address
+ImageWidth_L0|Layer 0 - Color Frame Buffer Line Length (Image Width)|Frame Buffer||0|8191|Configures the color frame buffer line length. < For information : </b> When the graphics is enabled the color frame buffer line length value will be devided by zone value(the parameter zone is in Graphics parameters settings).
+ImageHeight_L0|Layer 0 - Color Frame Buffer Number of Lines (Image Height)|Frame Buffer||0|2047|Specifies the number of line in frame buffer.
+Pitch_L0|Layer 0 - Color Frame Line Pitch|Frame Buffer||||Specifies in pixel the line pitch (maximum number of line in frame buffer).
+LayerIdx_L1|Layer 1 - LayerIdx|Layer Default Color||0|1|
+Red_L1|Layer 1 - Red|Layer Default Color||0|255|
+Green_L1|Layer 1 - Green|Layer Default Color||0|255|
+Blue_L1|Layer 1 - Blue|Layer Default Color||0|255|
+Alpha0_L1|Layer 1 - Alpha|Layer Default Color||0|255|
+WindowX0_L1|Layer 1 - Window Horizontal Start|Windows Position||0|4095|Configures the Window Horizontal Start Position Window X0.
+WindowX1_L1|Layer 1 - Window Horizontal Stop|Windows Position||0|4095|Configures the Window Horizontal Stop Position Window X1. < For information : </b> When the graphics is enabled the Window Horizontal Stop value will be devided by zone value(the parameter zone is in graphics parameters settings).
+WindowY0_L1|Layer 1 - Window Vertical Start|Windows Position||0|2047|Configures the Window vertical Start Position Window Y0.
+WindowY1_L1|Layer 1 - Window Vertical Stop|Windows Position||0|2047|Configures the Window vertical Stop Position Window Y1.
+PixelFormat_L1|Layer 1 - Pixel Format|Pixel Parameters||||Specifies the pixel format.
+PixelFormat_L1_not888|Layer 1 - Pixel Format|Pixel Parameters||||Specifies the pixel format.
+Alpha_L1|Layer 1 - Alpha constant for blending|Blending||0|255|Specifies the constant alpha used for blending.
+BlendingFactor1_L1|Layer 1 - Blending Factor1|Blending||||Select the blending factor 1: LTDC_BLENDING_FACTOR1_CA: blending factor is Alpha constant LTDC_BLENDING_FACTOR1_PAxCA: blending factor is Alpha constant x Pixel Alpha
+BlendingFactor2_L1|Layer 1 - Blending Factor2|Blending||||Select the blending factor 2. LTDC_BLENDING_FACTOR2_CA: blending factor is Alpha constant LTDC_BLENDING_FACTOR2_PAxCA: blending factor is Alpha constant x Pixel Alpha
+FBStartAdress_L1|Layer 1 - Color Frame Buffer Start Adress|Frame Buffer||0|4294967295|Configures the color frame buffer address
+ImageWidth_L1|Layer 1 - Color Frame Buffer Line Length (Image Width)|Frame Buffer||0|=Pitch_L1|Configures the color frame buffer line length.
+ImageHeight_L1|Layer 1 - Color Frame Buffer Number of Lines (Image Height)|Frame Buffer||0|2047|Specifies the number of line in frame buffer.
+Pitch_L1|Layer 1 - Color Frame Line Pitch|Frame Buffer||||Specifies in pixel the line pitch (maximum number of line in frame buffer).
+
+[Values]
+# параметр|значение|подпись
+HSPolarity|LTDC_HSPOLARITY_AL|Active Low
+HSPolarity|LTDC_HSPOLARITY_AH|Active High
+VSPolarity|LTDC_VSPOLARITY_AL|Active Low
+VSPolarity|LTDC_VSPOLARITY_AH|Active High
+DEPolarity|LTDC_DEPOLARITY_AL|Active Low
+DEPolarity|LTDC_DEPOLARITY_AH|Active High
+PCPolarity|LTDC_PCPOLARITY_IPC|Normal Input
+PCPolarity|LTDC_PCPOLARITY_IIPC|Inverted Input
+PixelFormat_L0|LTDC_PIXEL_FORMAT_ARGB8888|ARGB8888
+PixelFormat_L0|LTDC_PIXEL_FORMAT_RGB888|RGB888
+PixelFormat_L0|LTDC_PIXEL_FORMAT_RGB565|RGB565
+PixelFormat_L0|LTDC_PIXEL_FORMAT_ARGB1555|ARGB1555
+PixelFormat_L0|LTDC_PIXEL_FORMAT_ARGB4444|ARGB4444
+PixelFormat_L0|LTDC_PIXEL_FORMAT_L8|L8
+PixelFormat_L0|LTDC_PIXEL_FORMAT_AL44|AL44
+PixelFormat_L0|LTDC_PIXEL_FORMAT_AL88|AL88
+PixelFormat_L0_not888|LTDC_PIXEL_FORMAT_RGB565|RGB565
+PixelFormat_L0_not888|LTDC_PIXEL_FORMAT_ARGB1555|ARGB1555
+PixelFormat_L0_not888|LTDC_PIXEL_FORMAT_ARGB4444|ARGB4444
+PixelFormat_L0_not888|LTDC_PIXEL_FORMAT_L8|L8
+PixelFormat_L0_not888|LTDC_PIXEL_FORMAT_AL44|AL44
+PixelFormat_L0_not888|LTDC_PIXEL_FORMAT_AL88|AL88
+BlendingFactor1_L0|LTDC_BLENDING_FACTOR1_CA|Alpha constant
+BlendingFactor1_L0|LTDC_BLENDING_FACTOR1_PAxCA|Alpha constant x Pixel Alpha
+BlendingFactor2_L0|LTDC_BLENDING_FACTOR2_CA|Alpha constant
+BlendingFactor2_L0|LTDC_BLENDING_FACTOR2_PAxCA|Alpha constant x Pixel Alpha
+FBStartAdress_L0|GFXMMU_VIRTUAL_BUFFER0_BASE|GFXMMU_VIRTUAL_BUFFER0_BASE
+FBStartAdress_L0|GFXMMU_VIRTUAL_BUFFER1_BASE|GFXMMU_VIRTUAL_BUFFER1_BASE
+FBStartAdress_L0|GFXMMU_VIRTUAL_BUFFER2_BASE|GFXMMU_VIRTUAL_BUFFER2_BASE
+FBStartAdress_L0|GFXMMU_VIRTUAL_BUFFER3_BASE|GFXMMU_VIRTUAL_BUFFER3_BASE
+PixelFormat_L1|LTDC_PIXEL_FORMAT_ARGB8888|ARGB8888
+PixelFormat_L1|LTDC_PIXEL_FORMAT_RGB888|RGB888
+PixelFormat_L1|LTDC_PIXEL_FORMAT_RGB565|RGB565
+PixelFormat_L1|LTDC_PIXEL_FORMAT_ARGB1555|ARGB1555
+PixelFormat_L1|LTDC_PIXEL_FORMAT_ARGB4444|ARGB4444
+PixelFormat_L1|LTDC_PIXEL_FORMAT_L8|L8
+PixelFormat_L1|LTDC_PIXEL_FORMAT_AL44|AL44
+PixelFormat_L1|LTDC_PIXEL_FORMAT_AL88|AL88
+PixelFormat_L1_not888|LTDC_PIXEL_FORMAT_RGB565|RGB565
+PixelFormat_L1_not888|LTDC_PIXEL_FORMAT_ARGB1555|ARGB1555
+PixelFormat_L1_not888|LTDC_PIXEL_FORMAT_ARGB4444|ARGB4444
+PixelFormat_L1_not888|LTDC_PIXEL_FORMAT_L8|L8
+PixelFormat_L1_not888|LTDC_PIXEL_FORMAT_AL44|AL44
+PixelFormat_L1_not888|LTDC_PIXEL_FORMAT_AL88|AL88
+BlendingFactor1_L1|LTDC_BLENDING_FACTOR1_CA|Alpha constant
+BlendingFactor1_L1|LTDC_BLENDING_FACTOR1_PAxCA|Alpha constant x Pixel Alpha
+BlendingFactor2_L1|LTDC_BLENDING_FACTOR2_CA|Alpha constant
+BlendingFactor2_L1|LTDC_BLENDING_FACTOR2_PAxCA|Alpha constant x Pixel Alpha
+FBStartAdress_L1|GFXMMU_VIRTUAL_BUFFER0_BASE|GFXMMU_VIRTUAL_BUFFER0_BASE
+FBStartAdress_L1|GFXMMU_VIRTUAL_BUFFER1_BASE|GFXMMU_VIRTUAL_BUFFER1_BASE
+FBStartAdress_L1|GFXMMU_VIRTUAL_BUFFER2_BASE|GFXMMU_VIRTUAL_BUFFER2_BASE
+FBStartAdress_L1|GFXMMU_VIRTUAL_BUFFER3_BASE|GFXMMU_VIRTUAL_BUFFER3_BASE

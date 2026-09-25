@@ -1,0 +1,28 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USB
+Version=usbfs_v1.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+VirtualMode||Basic Parameters||||
+DeviceSpeed|Speed|Basic Parameters||||
+dev_endpoints|Device endpoints number|||1|8|
+Host_channels|Host channel number|||1|8|
+phy_itface|Physical interface|Basic Parameters||||
+Sof_enable|Signal start of frame|Basic Parameters||||
+low_power_enable|Low Power|Power Parameters||||This mode is not supproted on CubeMx V4.2
+lpm_enable|Link Power Management|Power Parameters||||
+battery_charging_enable|Battery Charging|Power Parameters||||
+vbus_sensing_enable|vbus_sensing_enable|Basic Parameters||||
+bulk_doublebuffer_enable|Bulk double buffer|EndPoint Parameters||||
+iso_singlebuffer_enable|Iso single buffer|EndPoint Parameters||||
+
+[Values]
+# параметр|значение|подпись
+VirtualMode|Host_Only|
+VirtualMode|Device_Only|
+DeviceSpeed|USBD_FS_SPEED|Full Speed 12MBit/s
+phy_itface|PCD_PHY_EMBEDDED|Internal Phy
+phy_itface|HCD_PHY_EMBEDDED|Internal Phy

@@ -1,0 +1,103 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=MRSUBG
+Version=mrsubg_1_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+lFrequencyBase|lFrequencyBase|Radio||0||the base carrier frequency.
+xModulationSelect|xModulationSelect|Radio||||Specifies the modulation.
+lDatarate|lDatarate|Radio||0||the datarate expressed in sps.
+lFreqDev|lFreqDev|Radio||0||the frequency deviation.
+lBandwidth|lBandwidth|Radio||0||the channel filter bandwidth.
+dsssExp|dsssExp|Radio||0|255|the DSSS spreading exponent.
+outputPower|outputPower|Radio||0x0|0xFF|
+PADrvMode|PADrvMode|Radio||||drive modes.In case Sigfox is activated, then PA_DRV_TX is forbidden
+PacketFormat|Packet Format|Packet||||Packet Format.
+xWMbusSubmode|xWMbusSubmode|Packet||||WMBUS submode
+PreambleLength|PreambleLength|Packet||4|64|the preamble length of packet. From 1 to 2046 bit.
+PostambleLength|PostambleLength|Packet||0|63|the postable length of packet. From 1 to 63 bit.
+SyncLength|SyncLength|Packet||0|64|the sync word length of packet in bits. From 1 to 64 bits.
+SyncWord|SyncWord|Packet||0x0|0xFFFFFFFF|the sync words in MSB.
+FixVarLength|FixVarLength|Packet||||
+PreambleSequence|PreambleSequence|Packet||||
+PostambleSequence|PostambleSequence|Packet||||Packet postamble control: postamble bit sequence selection.
+CrcMode|CrcMode|Packet||||the CRC type
+Coding|Coding|Packet||||
+DataWhitening|DataWhitening|Packet||||the data whitening.
+LengthWidth|LengthWidth|Packet||||
+SyncPresent|SyncPresent|Packet||||
+Modulation|Modulation|Packet||||Modulation
+FCSType|FCSType|Packet||||the FCS type
+Whitening|Whitening|Packet||||the data whitening.
+FecType|FecType|Packet||||FEC type for 802.15.4g
+FrameLength|FrameLength|Packet||0|65535|Frame Length
+
+[Values]
+# параметр|значение|подпись
+xModulationSelect|MOD_2FSK|MOD_2FSK
+xModulationSelect|MOD_4FSK|MOD_4FSK
+xModulationSelect|MOD_2GFSK05|MOD_2GFSK05
+xModulationSelect|MOD_2GFSK1|MOD_2GFSK1
+xModulationSelect|MOD_4GFSK05|MOD_4GFSK05
+xModulationSelect|MOD_4GFSK1|MOD_4GFSK1
+xModulationSelect|MOD_ASK|MOD_ASK
+xModulationSelect|MOD_OOK|MOD_OOK
+xModulationSelect|MOD_POLAR|MOD_POLAR
+xModulationSelect|MOD_CW|MOD_CW
+PADrvMode|PA_DRV_TX|PA_DRV_TX
+PADrvMode|PA_DRV_TX_HP|PA_DRV_TX_HP
+PADrvMode|PA_DRV_TX_TX_HP|PA_DRV_TX_TX_HP
+xWMbusSubmode|WMBUS_SUBMODE_NOT_CONFIGURED|WMBUS_SUBMODE_NOT_CONFIGURED
+xWMbusSubmode|WMBUS_SUBMODE_S1_S2_LONG_HEADER|WMBUS_SUBMODE_S1_S2_LONG_HEADER
+xWMbusSubmode|WMBUS_SUBMODE_S1_M_S2_T2_OTHER_TO_METER|WMBUS_SUBMODE_S1_M_S2_T2_OTHER_TO_METER
+xWMbusSubmode|WMBUS_SUBMODE_T1_T2_METER_TO_OTHER|WMBUS_SUBMODE_T1_T2_METER_TO_OTHER
+xWMbusSubmode|WMBUS_SUBMODE_R2_SHORT_HEADER|WMBUS_SUBMODE_R2_SHORT_HEADER
+PreambleSequence|PRE_SEQ_0101|PRE_SEQ_0101
+PreambleSequence|PRE_SEQ_1010|PRE_SEQ_1010
+PreambleSequence|PRE_SEQ_0011|PRE_SEQ_0011
+PreambleSequence|PRE_SEQ_1100|PRE_SEQ_1100
+PreambleSequence|PRE_SEQ_0111|PRE_SEQ_0111
+PreambleSequence|PRE_SEQ_0010|PRE_SEQ_0010
+PreambleSequence|PRE_SEQ_1101|PRE_SEQ_1101
+PreambleSequence|PRE_SEQ_1000|PRE_SEQ_1000
+PostambleSequence|POST_SEQ_0101|POST_SEQ_0101
+PostambleSequence|POST_SEQ_1010|POST_SEQ_1010
+PostambleSequence|POST_SEQ_OTHER|POST_SEQ_OTHER
+CrcMode|PKT_NO_CRC|PKT_NO_CRC
+CrcMode|PKT_CRC_MODE_8BITS|PKT_CRC_MODE_8BITS
+CrcMode|PKT_CRC_MODE_16BITS_1|PKT_CRC_MODE_16BITS_1
+CrcMode|PKT_CRC_MODE_16BITS_2|PKT_CRC_MODE_16BITS_2
+CrcMode|FCS_16BIT|FCS_16BIT
+CrcMode|PKT_CRC_MODE_24BITS|PKT_CRC_MODE_24BITS
+CrcMode|PKT_CRC_MODE_32BITS|PKT_CRC_MODE_32BITS
+CrcMode|FCS_32BIT|FCS_32BIT
+Coding|CODING_NONE|CODING_NONE
+Coding|CODING_FEC|CODING_FEC
+Coding|CODING_3o6|CODING_3o6
+Coding|CODING_MANCHESTER|CODING_MANCHESTER
+LengthWidth|BYTE_LEN_1|BYTE_LEN_1
+LengthWidth|BYTES_LEN_2|BYTES_LEN_2
+Modulation|MOD_2FSK|MOD_2FSK
+Modulation|MOD_4FSK|MOD_4FSK
+Modulation|MOD_2GFSK05|MOD_2GFSK05
+Modulation|MOD_2GFSK1|MOD_2GFSK1
+Modulation|MOD_4GFSK05|MOD_4GFSK05
+Modulation|MOD_4GFSK1|MOD_4GFSK05
+Modulation|MOD_ASK|MOD_4GFSK05
+Modulation|MOD_OOK|MOD_4GFSK05
+Modulation|MOD_POLAR|MOD_4GFSK05
+Modulation|MOD_CW|MOD_CW
+FCSType|PKT_NO_CRC|PKT_NO_CRC
+FCSType|PKT_CRC_MODE_8BITS|PKT_CRC_MODE_8BITS
+FCSType|PKT_CRC_MODE_16BITS_1|PKT_CRC_MODE_16BITS_1
+FCSType|PKT_CRC_MODE_16BITS_2|PKT_CRC_MODE_16BITS_2
+FCSType|FCS_16BIT|FCS_16BIT
+FCSType|PKT_CRC_MODE_24BITS|PKT_CRC_MODE_24BITS
+FCSType|PKT_CRC_MODE_32BITS|PKT_CRC_MODE_32BITS
+FCSType|FCS_32BIT|FCS_32BIT
+FecType|FEC_15_4_G_NONE|FEC_15_4_G_NONE
+FecType|FEC_15_4_G_NRNSC|FEC_15_4_G_NRNSC
+FecType|FEC_15_4_G_RSC|FEC_15_4_G_RSC
+FecType|FEC_15_4_G_RSC_Interleaving|FEC_15_4_G_RSC_Interleaving

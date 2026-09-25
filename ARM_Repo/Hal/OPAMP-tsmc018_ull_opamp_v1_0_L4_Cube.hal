@@ -1,0 +1,51 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=OPAMP
+Version=tsmc018_ull_opamp_v1_0_L4_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PowerSupplyRange|Power Supply Range|Basic Parameters||||OPAMP_POWERSUPPLY_HIGH is the only available choice in STM32U5.
+PowerMode|Power Mode and Speed|Basic Parameters||||
+NonInvertingInput|Non Inverting Input|Basic Parameters||||
+InvertingInput|Inverting Input|Basic Parameters||||
+InternalOutput|Internal Output|Basic Parameters||||
+PgaGain|PGA Gain|Basic Parameters||||
+UserTrimming|User Trimming|Basic Parameters||||
+SelfCalibration|Self Calibration|Basic Parameters||||Self Calibration is not available for LL configuration.
+TrimmingValueP|OffSet Trimming Value (PMOS)|Basic Parameters||0|31|
+TrimmingValueN|OffSet Trimming Value (NMOS)|Basic Parameters||0|31|
+TrimmingValuePLowPower|OffSet Trimming Value Low Power (PMOS)|Basic Parameters||0|31|
+TrimmingValueNLowPower|OffSet Trimming Value Low Power (NMOS)|Basic Parameters||0|31|
+Mode|Mode|Basic Parameters||||
+
+[Values]
+# параметр|значение|подпись
+PowerSupplyRange|OPAMP_POWERSUPPLY_LOW|Power Supply Range Low
+PowerSupplyRange|OPAMP_POWERSUPPLY_HIGH|Power Supply Range High
+PowerMode|OPAMP_POWERMODE_NORMALPOWER_NORMALSPEED|Power Mode Normal Speed Normal
+PowerMode|OPAMP_POWERMODE_NORMALPOWER_HIGHSPEED|Power Mode Normal Speed High
+PowerMode|OPAMP_POWERMODE_NORMAL|Power Mode Low-Power Speed Normal
+PowerMode|OPAMP_POWERMODE_HIGHSPEED|Power Mode Low-Power Speed High
+PowerMode|OPAMP_POWERMODE_LOWPOWER_NORMALSPEED|Power Mode Low-Power Speed Normal
+PowerMode|OPAMP_POWERMODE_NORMALPOWER|Normal
+PowerMode|OPAMP_POWERMODE_LOWPOWER|Low Power
+NonInvertingInput|OPAMP_NONINVERTINGINPUT_DAC_CH|OPAMP Non Inverting Input connected internally to DAC channel
+NonInvertingInput|OPAMP_NONINVERTINGINPUT_IO0|OPAMP Non Inverting Input IO0
+InvertingInput|OPAMP_INVERTINGINPUT_IO0|OPAMP Inverting Input IO0
+InvertingInput|OPAMP_INVERTINGINPUT_IO1|OPAMP Inverting Input IO1
+InvertingInput|OPAMP_INVERTINGINPUT_CONNECT_NO|OPAMP INVERTINGINPUT CONNECT NO
+PgaGain|OPAMP_PGA_GAIN_2_OR_MINUS_1|2
+PgaGain|OPAMP_PGA_GAIN_4_OR_MINUS_3|4
+PgaGain|OPAMP_PGA_GAIN_8_OR_MINUS_7|8
+PgaGain|OPAMP_PGA_GAIN_16_OR_MINUS_15|16
+PgaGain|OPAMP_PGA_GAIN_2|2
+PgaGain|OPAMP_PGA_GAIN_4|4
+PgaGain|OPAMP_PGA_GAIN_8|8
+PgaGain|OPAMP_PGA_GAIN_16|16
+UserTrimming|OPAMP_TRIMMING_USER|Enable
+UserTrimming|OPAMP_TRIMMING_FACTORY|Disable
+Mode|OPAMP_STANDALONE_MODE|Standalone
+Mode|OPAMP_PGA_MODE|Pga
+Mode|OPAMP_FOLLOWER_MODE|Follower

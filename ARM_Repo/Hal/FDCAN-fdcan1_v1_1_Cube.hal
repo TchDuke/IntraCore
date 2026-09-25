@@ -1,0 +1,57 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FDCAN
+Version=fdcan1_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockDivider|Clock Divider|Basic Parameters||||Specifies the FDCAN kernel clock divider when the clock calibration is bypassed.
+FrameFormat|Frame Format|Basic Parameters||||Specifies the FDCAN frame format.
+Mode|Mode|Basic Parameters||||Specifies the FDCAN operating mode.
+AutoRetransmission|Auto Retransmission|Basic Parameters||||Enable or disable the automatic retransmission mode.
+TransmitPause|Transmit Pause|Basic Parameters||||Enable or disable the Transmit Pause feature.
+ProtocolException|Protocol Exception|Basic Parameters||||Enable or disable the Protocol Exception Handling.
+NominalPrescaler|Nominal Prescaler|Bit Timings Parameters||1|512|Specifies the value by which the oscillator frequency is divided for generating the nominal bit time quanta.
+NominalSyncJumpWidth|Nominal Sync Jump Width|Basic Parameters||1|128|Specifies the maximum number of time quanta the FDCAN hardware is allowed to lengthen or shorten a bit to perform resynchronization.
+NominalTimeSeg1|Nominal Time Seg1|Bit Timings Parameters||1|256|Specifies the number of time quanta in Bit Segment 1.
+NominalTimeSeg2|Nominal Time Seg2|Bit Timings Parameters||1|128|Specifies the number of time quanta in Bit Segment 2.
+DataPrescaler|Data Prescaler|Basic Parameters||1|32|Specifies the value by which the oscillator frequency is divided for generating the data bit time quanta.
+DataSyncJumpWidth|Data Sync Jump Width|Basic Parameters||1|16|Specifies the maximum number of time quanta the FDCAN hardware is allowed to lengthen or shorten a data bit to perform resynchronization.
+DataTimeSeg1|Data Time Seg1|Basic Parameters||1|32|Specifies the number of time quanta in Data Bit Segment 1.
+DataTimeSeg2|Data Time Seg2|Basic Parameters||1|16|Specifies the number of time quanta in Data Bit Segment 2.
+StdFiltersNbr|Std Filters Nbr|Basic Parameters||0|28|Specifies the number of standard Message ID filter.
+ExtFiltersNbr|Ext Filters Nbr|Basic Parameters||0|8|Specifies the number of extended Message ID filters.
+TxFifoQueueMode|Tx Fifo Queue Mode|Basic Parameters||||Tx FIFO/Queue Mode selection.
+CalculateTimeQuantumNominal|Nominal Time Quantum|Bit Timings Parameters|ns|||
+CalculateTimeBitNominal|Nominal Time for one Bit|Bit Timings Parameters|ns|||
+CalculateBaudRateNominal|Nominal Baud Rate|Bit Timings Parameters|bit/s|||
+
+[Values]
+# параметр|значение|подпись
+ClockDivider|FDCAN_CLOCK_DIV1|Divide kernel clock by 1
+ClockDivider|FDCAN_CLOCK_DIV2|Divide kernel clock by 2
+ClockDivider|FDCAN_CLOCK_DIV4|Divide kernel clock by 4
+ClockDivider|FDCAN_CLOCK_DIV6|Divide kernel clock by 6
+ClockDivider|FDCAN_CLOCK_DIV8|Divide kernel clock by 8
+ClockDivider|FDCAN_CLOCK_DIV10|Divide kernel clock by 10
+ClockDivider|FDCAN_CLOCK_DIV12|Divide kernel clock by 12
+ClockDivider|FDCAN_CLOCK_DIV14|Divide kernel clock by 14
+ClockDivider|FDCAN_CLOCK_DIV16|Divide kernel clock by 16
+ClockDivider|FDCAN_CLOCK_DIV18|Divide kernel clock by 18
+ClockDivider|FDCAN_CLOCK_DIV20|Divide kernel clock by 20
+ClockDivider|FDCAN_CLOCK_DIV22|Divide kernel clock by 22
+ClockDivider|FDCAN_CLOCK_DIV24|Divide kernel clock by 24
+ClockDivider|FDCAN_CLOCK_DIV26|Divide kernel clock by 26
+ClockDivider|FDCAN_CLOCK_DIV28|Divide kernel clock by 28
+ClockDivider|FDCAN_CLOCK_DIV30|Divide kernel clock by 30
+FrameFormat|FDCAN_FRAME_CLASSIC|Classic mode
+FrameFormat|FDCAN_FRAME_FD_NO_BRS|FD mode without BitRate Switching
+FrameFormat|FDCAN_FRAME_FD_BRS|FD mode with BitRate Switching
+Mode|FDCAN_MODE_NORMAL|Normal mode
+Mode|FDCAN_MODE_RESTRICTED_OPERATION|Restricted operation
+Mode|FDCAN_MODE_BUS_MONITORING|Bus Monitoring mode
+Mode|FDCAN_MODE_INTERNAL_LOOPBACK|Internal LoopBack mode
+Mode|FDCAN_MODE_EXTERNAL_LOOPBACK|External LoopBack mode
+TxFifoQueueMode|FDCAN_TX_FIFO_OPERATION|FIFO mode
+TxFifoQueueMode|FDCAN_TX_QUEUE_OPERATION|Queue mode

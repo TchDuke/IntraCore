@@ -1,0 +1,14 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RADIO_TIMER
+Version=radio_timer_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+XTAL_StartupTime|XTAL_StartupTime|Application configuration||1||XTAL startup time
+enableInitialCalibration|enableInitialCalibration|Application configuration||||Enable initial estimation of the frequency of the Low Speed Oscillator otherwise it is assumed fixed at 32.768 kHz.
+periodicCalibrationInterval|periodicCalibrationInterval|Application configuration||0|10000|Periodic calibration interval in ms (if 0 no calibration is done) Default value: 0 if RCC LSE clock is enabled; 10000 if RCC LSE clock is not enabled;
+
+[Values]
+# параметр|значение|подпись

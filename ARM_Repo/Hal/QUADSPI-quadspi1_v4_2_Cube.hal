@@ -1,0 +1,35 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=QUADSPI
+Version=quadspi1_v4_2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockPrescaler|Clock Prescaler|General Parameters||0|255|
+FifoThreshold|Fifo Threshold|General Parameters||1|32|
+SampleShifting|Sample Shifting|General Parameters||||
+MemorySize|Memory Size|General Parameters||0|31|
+ChipSelectHighTime|Chip Select High Time|General Parameters||||
+ClockMode|Clock Mode|General Parameters||||
+FlashID|Flash ID|General Parameters||||
+DualFlash|Dual Flash|General Parameters||||
+
+[Values]
+# параметр|значение|подпись
+SampleShifting|XSPI_SAMPLE_SHIFTING_NONE|No Sample Shifting
+SampleShifting|XSPI_SAMPLE_SHIFTING_HALFCYCLE|Sample Shifting Half Cycle
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_1_CYCLE|1 Cycle
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_2_CYCLE|2 Cycles
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_3_CYCLE|3 Cycles
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_4_CYCLE|4 Cycles
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_5_CYCLE|5 Cycles
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_6_CYCLE|6 Cycles
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_7_CYCLE|7 Cycles
+ChipSelectHighTime|XSPI_CS_HIGH_TIME_8_CYCLE|8 Cycles
+ClockMode|XSPI_CLOCK_MODE_0|Low
+ClockMode|XSPI_CLOCK_MODE_3|High
+FlashID|XSPI_FLASH_ID_1|Flash ID 1
+FlashID|XSPI_FLASH_ID_2|Flash ID 2
+DualFlash|HAL_XSPI_DUAL_MEM|Enabled
+DualFlash|HAL_XSPI_SINGLE_MEM|Disabled

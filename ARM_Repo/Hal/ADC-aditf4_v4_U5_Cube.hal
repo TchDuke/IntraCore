@@ -1,0 +1,1943 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ADC
+Version=aditf4_v4_U5_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ModeADC4|Mode|ADCs_Common_Settings||||Multi ADC mode selection: Configures the ADC to operate in independent or multi mode
+DMAAccessModeView|DMA Access Mode|ADCs_Common_Settings||||
+DMAAccessMode|DMA Access Mode|ADCs_Common_Settings||||
+master|Master Flag|||0|1|
+TwoSamplingDelay|Delay between 2 sampling phases|ADCs_Common_Settings||||Delay between 2 sampling phases
+CommonClock|Common Clock|ADCgroup||||
+ClockPrescaler|Clock Prescaler|ADCgroup||||frequency of the clock to the ADC. The clock is common for all the ADCs.
+EnableClockSemaphore|Clock Prescaler|ADCgroup||||
+Resolution|Resolution|ADCgroup||||Resolution of the ADC conversion
+DataAlign|Data Alignment|ADCgroup||||Select the alignment of the data stored after conversion.
+ContinuousConvMode|Continuous Conversion Mode|ADCgroup||||Enable or Disable the Continuous Conversion Mode
+DiscontinuousConvMode|Discontinuous Conversion Mode|ADCgroup||||Enable or Disable the Discontinuous Conversion Mode
+NbrOfDiscConversion|Number Of Discontinuous Conversions|ADCgroup||1|8|
+DMAContinuousRequestsForConfigFile|DMA Continuous Requests|ADCgroup||||Enable/Disable DMA Continuous Requests
+DMAContinuousRequests|DMA Continuous Requests|ADCgroup||||Enable/Disable DMA Continuous Requests
+EnableRegularConversion|Enable Regular Conversions|ADCgroup||||Enable/Disable Regular Conversion
+OversamplingMode|Oversampling Mode|ADCgroup||||Disable the over sampling mode
+RightBitShift|Oversampling Right Shift|ADCGroup||||
+Ratio|Oversampling Ratio|ADCGroup||||
+OffsetSignedSaturation|Offset signed saturation|ADCgroup||||Signed saturation for injected channel
+OffsetRightShift|Right offset shif|ADCgroup||||Signed saturation for injected channel
+CommonPathInternal|comm|||||
+ChannelVREF|ChannelVREF|||||
+ChannelTS|ChannelTS|||||
+ChannelVBAT|Channelvbat|||||
+ChannelVDDCORE|Channelvcore|||||
+ExternalTrigConv|External Trigger Conversion Source|ADCGroup||||Select the external event used to trigger the start of conversion of a regular group
+ExternalTrigConvEdge|External Trigger Conversion Edge|ADCGroup||||Select the external trigger polarity and enable the trigger of a regular group: When an external trigger is selected for ADC regular or injected conversion, only the rising edge of the signal can start the conversion.
+EOCSelection|End Of Conversion Selection|ADCgroup||||Regular channel end of conversion selection
+Overrun|Overrun behaviour|ADCgroup||||Select the behaviour in case of overrun
+LowPowerAutoWait|Low Power Auto Wait|||||Specifies the usage of dynamic low power Auto Delay: New conversion start only when the previous conversion (for regular channel) is completed.
+NbrOfConversionFlag|Number Of Conversion Flag|ADCgroup||0|1|
+NbrOfConversion|Number Of Conversion|ADCgroup||1|8|Number of regular channels to be converted
+NbrOfConversionADC4|Number Of Conversion ADC4|ADCgroup||1|8|Number of regular channels to be converted
+LowPowerAutoPowerOff|Low Power Auto Off|||||
+AutoffPDP|AutoffPDP|ADCgroup||||
+TriggeredMode|Triggered Mode|ADCgroup||||The regular triggered Oversampling mode
+Sequencer|Sequencer|ADCgroup||||
+SamplingTime_NFC|Sampling Time|ADCChannel||||
+SamplingTime_NFC1|Sampling Time|ADCChannel||||
+Channel0|Channel 0|ADCgroup||||
+Channel1|Channel1|ADCgroup||||
+Channel2|Channel 2|ADCgroup||||
+Channel3|Channel 3|ADCgroup||||
+Channel4|Channel 4|ADCgroup||||
+Channel5|Channel 5|ADCgroup||||
+Channel6|Channel 6|ADCgroup||||
+Channel7|Channel 7|ADCgroup||||
+Channel8|Channel 8|ADCgroup||||
+Channel10|Channel 10|ADCgroup||||
+Channel11|Channel 11|ADCgroup||||
+Channel12|Channel 12|ADCgroup||||
+Channel13|Channel 13|ADCgroup||||
+Channel14|Channel 14|ADCgroup||||
+Channel15|Channel 15|ADCgroup||||
+Channel16|Channel 16|ADCgroup||||
+Channel17|Channel 17|ADCgroup||||
+Channel18|Channel 18|ADCgroup||||Enable/Disable Analog WatchDog Mode
+Channel19|Channel 19|ADCgroup||||
+Channel20|Channel 20|ADCgroup||||
+Channel21|Channel 21|ADCgroup||||
+Channel22|Channel 22|ADCgroup||||
+Channel23|Channel 23|ADCgroup||||
+VCORE_S1|VCORE|ADCgroup||||
+VBAT_S1|VBAT|ADCgroup||||
+Temp_S1|TempSens|ADCgroup||||
+VREF_S1|VREF|ADCgroup||||
+DAC1OU1_S1|DAC1OU1|ADCgroup||||
+DAC1OU2_S1|DAC1OU2|ADCgroup||||
+Channell0|Channel 0|ADCgroup||||
+Channell1|Channel 1|ADCgroup||||
+Channell2|Channel 2|ADCgroup||||
+Channell3|Channel 3|ADCgroup||||
+Channell4|Channel 4|ADCgroup||||
+Channell5|Channel 5|ADCgroup||||
+Channell6|Channel 6|ADCgroup||||
+Channell7|Channel 7|ADCgroup||||
+Channell8|Channel 8|ADCgroup||||
+Channell10|Channel 10|ADCgroup||||
+Channell11|Channel 11|ADCgroup||||
+Channell12|Channel 12|ADCgroup||||
+Channell13|Channel 13|ADCgroup||||
+Channell14|Channel 14|ADCgroup||||
+Channell15|Channel 15|ADCgroup||||
+Channell16|Channel 16|ADCgroup||||
+Channell17|Channel 17|ADCgroup||||
+Channell18|Channel 18|ADCgroup||||Enable/Disable Analog WatchDog Mode
+Channell19|Channel 19|ADCgroup||||
+Channell20|Channel 20|ADCgroup||||
+Channell21|Channel 21|ADCgroup||||
+Channell22|Channell 22|ADCgroup||||
+Channell23|Channel 23|ADCgroup||||
+VCORE_S2|VCORE|ADCgroup||||
+VBAT_S2|VBAT|ADCgroup||||
+Temp_S2|TempSens|ADCgroup||||
+VREF_S2|VREF|ADCgroup||||
+DAC1OU1_S2|DAC1OU1|ADCgroup||||
+DAC1OU2_S2|DAC1OU2|ADCgroup||||
+SamplingTime|Sampling Time|ADCChannel||||Regular Channel x sampling time selection
+SAMPLINGTIME_COMMON1|Sampling Time common 1|ADCChannel||||
+SAMPLINGTIME_COMMON2|Sampling Time common 2|ADCChannel||||
+TriggerFrequencyMode|Trigger Frequency|ADCgroup||||ADC trigger frequency mode must be set to low frequency when a duration is exceeded before ADC conversion start trigger event (between ADC enable and ADC conversion start trigger event or between two ADC conversion start trigger event).
+VrefProtection|Vref Protection|ADCgroup||||
+SamplingTimeCommon1|SamplingTime Common 1|ADCgroup||||Set sampling time common to a group of channels.
+SamplingTimeCommon2|SamplingTime Common 2|ADCgroup||||Set sampling time common to a group of channels.
+OffsetNumber|Offset Number|ADCgroup||||Regular Channel x offset number selection
+Offset|Offset|ADCgroup||0|255|Data offset for regular channel
+Channel|Channel|ADCChannel||||
+ScanConvMode|Scan Conversion Mode|ADCgroup||||Enable or Disable the Scan Conversion Mode , To enable Scan conversion Mode : the number of Conversion should be > 1
+commmn|comm|||||
+Rank|Rank|ADCChannel||1|8|The rank in the regular group sequencer
+RankArg|RankArg|ADCgroup||||
+NbrOfChannel_WDG2CONV1|Number Of Channel|Analog WatchDog 2||||Number of regular channels to be converted
+WDG2MonitoredBy|Monitored by|Analog WatchDog 2||||For a dedicated channel, the generated analog watchdog configuration will correspond to the sum of all "Monitored" configurations for this channel when the number of ranks is greater than 1.
+WDGCONV1Channel1|1st Channel|Analog WatchDog 2||||
+WDGCONV1Channel2|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel3|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel4|Channel|Analog WatchDog 2||||
+WDGCONV1Channel5|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel6|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel7|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel8|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel9|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel10|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel11|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel12|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel13|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel14|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel15|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel16|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel17|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel18|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel19|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel20|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel21|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel22|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel23|11th Channel|Analog WatchDog 2||||
+WDGCONV1Channel24|11th Channel|Analog WatchDog 2||||
+NbrOfChannel_WDG3CONV1V1|Number Of Channel|Analog WatchDog 3||||Number of regular channels to be converted
+WDG3MonitoredBy|Monitored by|Analog WatchDog 3||||For a dedicated channel, the generated analog watchdog configuration will correspond to the sum of all "Monitored" configurations for this channel when the number of ranks is greater than 1.
+WDG3CONV1Channel1|1st Channel|ADCgroup||||
+WDG3CONV1Channel2|2nd Channel|ADCgroup||||
+WDG3CONV1Channel3|3rd Channel|ADCgroup||||
+WDG3CONV1Channel4|Channel|Analog WatchDog 3||||
+WDG3CONV1Channel5|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel6|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel7|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel8|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel9|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel10|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel11|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel12|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel13|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel14|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel15|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel16|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel17|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel18|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel19|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel20|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel21|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel22|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel23|11th Channel|Analog WatchDog 3||||
+WDG3CONV1Channel24|11th Channel|Analog WatchDog 3||||
+RegWDModeFC|Regular Watchdogmode|ADCChannel||||
+WatchdogMode2|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+WatchdogMode3|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+Interrupt|Overrun interrupt|IP Internal Interrupt||||description
+ORingInterrupt|Interrupt parameter for code generation __HAL_DAC_ENABLE_IT|||||Enable/Disable Analog WatchDog Mode
+EnableAnalogWatchDog1|Enable Analog WatchDog1 Mode|ADCgroup||||Enable/Disable Analog WatchDog Mode
+AWD1WatchdogNumber|Watchdog instance|ADCgroup||||Number of used watchDogs.
+WatchdogMode|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+SelectedChannel|ADC selected channels through mode list|ADCgroup||||
+WatchdogChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+AWD1HighThreshold|High Threshold|ADCgroup||=AWD1LowThreshold|4095|Configures the ADC analog watchdog High threshold value.
+AWD1LowThreshold|Low Threshold|ADCgroup||0|=AWD1HighThreshold|Configures the ADC analog watchdog Low threshold value.
+AWD1ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured in interrupt mode or in polling mode.
+EnableAnalogWatchDog2|Enable Analog WatchDog2 Mode|ADCgroup||||Enable/Disable Analog WatchDog Mode
+AWD2WatchdogNumber|Watchdog instance|ADCgroup||||Number of used watchDogs.
+AWD2HighThreshold|High Threshold|ADCgroup||=AWD2LowThreshold|63|Configures the ADC analog watchdog High threshold value.
+AWD2LowThreshold|Low Threshold|ADCgroup||0|=AWD2HighThreshold|Configures the ADC analog watchdog Low threshold value.
+AWD2ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured in interrupt mode or in polling mode.
+EnableAnalogWatchDog3|Enable Analog WatchDog3 Mode|ADCgroup||||Enable/Disable Analog WatchDog Mode
+AWD3WatchdogNumber|Watchdog instance|ADCgroup||||Number of used watchDogs.
+AWD3HighThreshold|High Threshold|ADCgroup||=AWD3LowThreshold|63|Configures the ADC analog watchdog High threshold value.
+AWD3LowThreshold|Low Threshold|ADCgroup||0|=AWD3HighThreshold|Configures the ADC analog watchdog Low threshold value.
+AWD3ITMode|Interrupt Mode|ADCgroup||||Specifies whether the analog watchdog is configured in interrupt mode or in polling mode.
+MonitoredBy|Monitored by|ADCgroup||||For a dedicated channel, the generated analog watchdog configuration will correspond to the sum of all "Monitored" configurations for this channel when the number of ranks is greater than 1.
+RegITMode|Regular ITMode|ADCChannel||||
+RegHighThreshold|Regular HighThreshold|ADCChannel||||
+RegLowThreshold|Regular LowThreshold|ADCChannel||||
+AWDChannel|AWDChannel|ADCChannel||||ADC channel for the analog watchdog
+UnUsedParameter|UnUsedParameter|||||
+AllChannels|Channel|ADCChannel||||
+Available_Channel|Available Channel|ADCChannel||||
+AnalogWDChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+ChannelForWatchDog|Channel type for WatchDog|||||
+
+[Values]
+# параметр|значение|подпись
+ModeADC4|ADC_MODE_INDEPENDENT|Independent mode
+DMAAccessMode|ADC_DMAACCESSMODE_DISABLED|DMA access mode disabled
+DMAAccessMode|ADC_DMAACCESSMODE_12_10_BITS|DMA access mode enabled
+DMAAccessMode|ADC_DMAACCESSMODE_8_6_BITS|DMA access mode enabled
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_1CYCLE|1 Cycle
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_2CYCLES|2 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_3CYCLES|3 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_4CYCLES|4 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_5CYCLES|5 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_6CYCLES|6 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_7CYCLES|7 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_8CYCLES|8 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_9CYCLES|9 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_10CYCLES|10 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_11CYCLES|11 Cycles
+TwoSamplingDelay|ADC_TWOSAMPLINGDELAY_12CYCLES|12 Cycles
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV1|Asynchronous clock mode divided by 1
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV2|Asynchronous clock mode divided by 2
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV4|Asynchronous clock mode divided by 4
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV6|Asynchronous clock mode divided by 6
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV8|Asynchronous clock mode divided by 8
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV10|Asynchronous clock mode divided by 10
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV12|Asynchronous clock mode divided by 12
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV16|Asynchronous clock mode divided by 16
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV32|Asynchronous clock mode divided by 32
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV64|Asynchronous clock mode divided by 64
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV128|Asynchronous clock mode divided by 128
+ClockPrescaler|ADC_CLOCK_ASYNC_DIV256|Asynchronous clock mode divided by 256
+Resolution|ADC_RESOLUTION_12B|ADC 12-bit resolution
+Resolution|ADC_RESOLUTION_10B|ADC 10-bit resolution
+Resolution|ADC_RESOLUTION_8B|ADC 8-bit resolution
+Resolution|ADC_RESOLUTION_6B|ADC 6-bit resolution
+DataAlign|ADC_DATAALIGN_RIGHT|Right alignment
+DataAlign|ADC_DATAALIGN_LEFT|Left alignment
+DiscontinuousConvMode|__NULL|None
+RightBitShift|ADC_RIGHTBITSHIFT_NONE|No bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_1|1 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_2|2 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_3|3 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_4|4 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_5|5 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_6|6 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_7|7 bit shift for oversampling
+RightBitShift|ADC_RIGHTBITSHIFT_8|8 bit shift for oversampling
+Ratio|ADC_OVERSAMPLING_RATIO_2|Oversampling ratio 2x
+Ratio|ADC_OVERSAMPLING_RATIO_4|Oversampling ratio 4x
+Ratio|ADC_OVERSAMPLING_RATIO_8|Oversampling ratio 8x
+Ratio|ADC_OVERSAMPLING_RATIO_16|Oversampling ratio 16x
+Ratio|ADC_OVERSAMPLING_RATIO_32|Oversampling ratio 32x
+Ratio|ADC_OVERSAMPLING_RATIO_64|Oversampling ratio 64x
+Ratio|ADC_OVERSAMPLING_RATIO_128|Oversampling ratio 128x
+Ratio|ADC_OVERSAMPLING_RATIO_256|Oversampling ratio 256x
+ChannelVREF|ADC_CHANNEL_VREFINT|ADC_CHANNEL_VREFINT
+ChannelTS|ADC4_CHANNEL_TEMPSENSOR|ADC4_CHANNEL_TEMPSENSOR
+ChannelVBAT|ADC4_CHANNEL_VBAT|ADC4_CHANNEL_VBAT
+ChannelVDDCORE|ADC_CHANNEL_VCORE|ADC_CHANNEL_VCORE
+ExternalTrigConv|ADC4_EXTERNALTRIG_LPTIM1_CH1|LPTIM 1 CH1 event
+ExternalTrigConv|ADC4_EXTERNALTRIG_LPTIM3_CH2|LPTIM 3 CH2 event
+ExternalTrigConv|ADC4_EXTERNALTRIG_EXT_IT15|EXTI15 event
+ExternalTrigConv|ADC_SOFTWARE_START|Regular Conversion launched by software
+ExternalTrigConv|ADC4_EXTERNALTRIG_T1_CC4|Timer 1 Capture Compare 4 event
+ExternalTrigConv|ADC4_EXTERNALTRIG_T1_TRGO2|Timer 1 Trigger Out 2 event
+ExternalTrigConv|ADC4_EXTERNALTRIG_T2_TRGO|Timer 2 Trigger Out event
+ExternalTrigConv|ADC4_EXTERNALTRIG_T15_TRGO|Timer 15 Trigger Out event
+ExternalTrigConv|ADC4_EXTERNALTRIG_T6_TRGO|Timer 6 Trigger Out event
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_NONE|None
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_RISING|Trigger detection on the rising edge
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_FALLING|Trigger detection on the falling edge
+ExternalTrigConvEdge|ADC_EXTERNALTRIGCONVEDGE_RISINGFALLING|Trigger detection on the rising and falling edges
+EOCSelection|ADC_EOC_SINGLE_CONV|End of single conversion
+EOCSelection|ADC_EOC_SEQ_CONV|End of sequence of conversion
+Overrun|ADC_OVR_DATA_OVERWRITTEN|Overrun data overwritten
+Overrun|ADC_OVR_DATA_PRESERVED|Overrun data preserved
+LowPowerAutoPowerOff|ADC_LOW_POWER_AUTOFF_DPD|Low power enabled and auto off enabled
+LowPowerAutoPowerOff|ADC_LOW_POWER_NONE|Low power disabled and auto off disabled
+LowPowerAutoPowerOff|ADC_LOW_POWER_AUTOFF|Low power disabled and auto off enabled
+LowPowerAutoPowerOff|ADC_LOW_POWER_DPD|Low power enabled and auto off disabled
+AutoffPDP|ADC_LOW_POWER_AUTOFF_DPD|Low power enabled and auto off enabled
+AutoffPDP|ADC_LOW_POWER_NONE|Low power disabled and auto off disabled
+AutoffPDP|ADC_LOW_POWER_AUTOFF|Low power disabled and auto off enabled
+AutoffPDP|ADC_LOW_POWER_DPD|Low power enabled and auto off disabled
+TriggeredMode|ADC_TRIGGEREDMODE_SINGLE_TRIGGER|Single trigger
+TriggeredMode|ADC_TRIGGEREDMODE_MULTI_TRIGGER|Multi trigger
+Sequencer|FULLY_CONFIGURABLE|Sequencer set to fully configurable
+Sequencer|NOT_FULLY_CONFIGURABLE|Sequencer set to not fully configurable
+SamplingTime_NFC|ADC4_SAMPLINGTIME_COMMON_1|Sampling time common 1
+SamplingTime_NFC1|ADC4_SAMPLINGTIME_COMMON_2|Sampling time common 2
+SamplingTime|ADC4_SAMPLINGTIME_COMMON_1|Sampling time common 1
+SamplingTime|ADC4_SAMPLINGTIME_COMMON_2|Sampling time common 2
+SAMPLINGTIME_COMMON1|ADC4_SAMPLINGTIME_COMMON_1|Sampling time common 1
+SAMPLINGTIME_COMMON2|ADC4_SAMPLINGTIME_COMMON_2|Sampling time common 2
+TriggerFrequencyMode|ADC_TRIGGER_FREQ_HIGH|High frequency
+TriggerFrequencyMode|ADC_TRIGGER_FREQ_LOW|Low frequency
+VrefProtection|ADC_VREF_PPROT_NONE|VREF protection disabled and VREF second protection disabled
+VrefProtection|ADC_VREF_PPROT_VREFPROT|VREF protection enabled and VREF second protection disabled
+VrefProtection|ADC_VREF_PPROT_VREFSECSMP|VREF protection disabled and VREF second protection enabled
+VrefProtection|ADC_VREF_PPROT_VREF_VREFSECSMP|VREF protection enabled and VREF second protection enabled
+SamplingTimeCommon1|ADC4_SAMPLETIME_1CYCLE_5|1.5 Cycles
+SamplingTimeCommon1|ADC4_SAMPLETIME_3CYCLES_5|3.5 Cycles
+SamplingTimeCommon1|ADC4_SAMPLETIME_7CYCLES_5|7.5 Cycles
+SamplingTimeCommon1|ADC4_SAMPLETIME_12CYCLES_5|12.5 Cycles
+SamplingTimeCommon1|ADC4_SAMPLETIME_19CYCLES_5|19.5 Cycles
+SamplingTimeCommon1|ADC4_SAMPLETIME_39CYCLES_5|39.5 Cycles
+SamplingTimeCommon1|ADC4_SAMPLETIME_79CYCLES_5|79.5 Cycles
+SamplingTimeCommon1|ADC4_SAMPLETIME_814CYCLES_5|814.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_1CYCLE_5|1.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_3CYCLES_5|3.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_7CYCLES_5|7.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_12CYCLES_5|12.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_19CYCLES_5|19.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_39CYCLES_5|39.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_79CYCLES_5|79.5 Cycles
+SamplingTimeCommon2|ADC4_SAMPLETIME_814CYCLES_5|814.5 Cycles
+SamplingTimeCommon2|__NULL|none
+OffsetNumber|ADC_OFFSET_NONE|No offset
+OffsetNumber|ADC_OFFSET_1|1 offset
+OffsetNumber|ADC_OFFSET_2|2 offsets
+OffsetNumber|ADC_OFFSET_3|3 offsets
+OffsetNumber|ADC_OFFSET_4|4 offsets
+Channel|ADC_CHANNEL_0|Channel 0
+Channel|ADC_CHANNEL_1|Channel 1
+Channel|ADC_CHANNEL_2|Channel 2
+Channel|ADC_CHANNEL_3|Channel 3
+Channel|ADC_CHANNEL_4|Channel 4
+Channel|ADC_CHANNEL_5|Channel 5
+Channel|ADC_CHANNEL_6|Channel 6
+Channel|ADC_CHANNEL_7|Channel 7
+Channel|ADC_CHANNEL_8|Channel 8
+Channel|ADC_CHANNEL_9|Channel 9
+Channel|ADC_CHANNEL_10|Channel 10
+Channel|ADC_CHANNEL_11|Channel 11
+Channel|ADC_CHANNEL_12|Channel 12
+Channel|ADC_CHANNEL_13|Channel 13
+Channel|ADC_CHANNEL_14|Channel 14
+Channel|ADC_CHANNEL_15|Channel 15
+Channel|ADC_CHANNEL_16|Channel 16
+Channel|ADC_CHANNEL_17|Channel 17
+Channel|ADC_CHANNEL_18|Channel 18
+Channel|ADC_CHANNEL_19|Channel 19
+Channel|ADC_CHANNEL_20|Channel 20
+Channel|ADC_CHANNEL_21|Channel 21
+Channel|ADC_CHANNEL_22|Channel 22
+Channel|ADC_CHANNEL_23|Channel 23
+Channel|ADC_CHANNEL_VREFINT|Channel Vrefint
+Channel|ADC4_CHANNEL_VBAT|Channel Vbat/4
+Channel|ADC_CHANNEL_VCORE|Channel Vcore
+Channel|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+Channel|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+Channel|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+ScanConvMode|ADC4_SCAN_ENABLE|Enabled
+ScanConvMode|ADC4_SCAN_DISABLE|Disabled
+ScanConvMode|ADC_SCAN_DIRECTION_FORWARD|Forward
+ScanConvMode|ADC_SCAN_DIRECTION_BACKWARD|Backward
+WDG2MonitoredBy|ADC_ANALOGWATCHDOG_2|Analog Watchdog 2
+WDGCONV1Channel1|__NULL|None
+WDGCONV1Channel1|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel1|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel1|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel1|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel1|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel1|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel1|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel1|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel1|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel1|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel1|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel1|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel1|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel1|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel1|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel1|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel1|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel1|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel1|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel1|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel1|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel1|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel1|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel1|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel1|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel1|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel1|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel1|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel1|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel2|__NULL|None
+WDGCONV1Channel2|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel2|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel2|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel2|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel2|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel2|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel2|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel2|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel2|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel2|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel2|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel2|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel2|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel2|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel2|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel2|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel2|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel2|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel2|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel2|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel2|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel2|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel2|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel2|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel2|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel2|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel2|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel2|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel2|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel3|__NULL|None
+WDGCONV1Channel3|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel3|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel3|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel3|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel3|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel3|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel3|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel3|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel3|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel3|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel3|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel3|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel3|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel3|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel3|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel3|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel3|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel3|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel3|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel3|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel3|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel3|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel3|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel3|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel3|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel3|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel3|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel3|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel3|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel4|__NULL|None
+WDGCONV1Channel4|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel4|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel4|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel4|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel4|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel4|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel4|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel4|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel4|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel4|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel4|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel4|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel4|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel4|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel4|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel4|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel4|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel4|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel4|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel4|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel4|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel4|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel4|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel4|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel4|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel4|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel4|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel4|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel4|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel5|__NULL|None
+WDGCONV1Channel5|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel5|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel5|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel5|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel5|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel5|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel5|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel5|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel5|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel5|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel5|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel5|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel5|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel5|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel5|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel5|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel5|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel5|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel5|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel5|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel5|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel5|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel5|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel5|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel5|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel5|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel5|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel5|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel5|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel6|__NULL|None
+WDGCONV1Channel6|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel6|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel6|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel6|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel6|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel6|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel6|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel6|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel6|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel6|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel6|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel6|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel6|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel6|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel6|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel6|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel6|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel6|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel6|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel6|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel6|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel6|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel6|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel6|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel6|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel6|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel6|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel6|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel6|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel7|__NULL|None
+WDGCONV1Channel7|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel7|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel7|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel7|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel7|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel7|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel7|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel7|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel7|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel7|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel7|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel7|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel7|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel7|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel7|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel7|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel7|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel7|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel7|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel7|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel7|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel7|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel7|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel7|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel7|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel7|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel7|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel7|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel7|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel8|__NULL|None
+WDGCONV1Channel8|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel8|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel8|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel8|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel8|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel8|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel8|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel8|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel8|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel8|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel8|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel8|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel8|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel8|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel8|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel8|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel8|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel8|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel8|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel8|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel8|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel8|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel8|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel8|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel8|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel8|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel8|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel8|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel8|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel9|__NULL|None
+WDGCONV1Channel9|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel9|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel9|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel9|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel9|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel9|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel9|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel9|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel9|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel9|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel9|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel9|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel9|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel9|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel9|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel9|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel9|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel9|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel9|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel9|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel9|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel9|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel9|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel9|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel9|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel9|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel9|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel9|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel9|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel10|__NULL|None
+WDGCONV1Channel10|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel10|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel10|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel10|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel10|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel10|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel10|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel10|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel10|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel10|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel10|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel10|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel10|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel10|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel10|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel10|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel10|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel10|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel10|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel10|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel10|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel10|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel10|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel10|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel10|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel10|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel10|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel10|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel10|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel11|__NULL|None
+WDGCONV1Channel11|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel11|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel11|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel11|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel11|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel11|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel11|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel11|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel11|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel11|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel11|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel11|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel11|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel11|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel11|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel11|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel11|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel11|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel11|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel11|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel11|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel11|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel11|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel11|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel11|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel11|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel11|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel11|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel11|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel12|__NULL|None
+WDGCONV1Channel12|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel12|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel12|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel12|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel12|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel12|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel12|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel12|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel12|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel12|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel12|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel12|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel12|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel12|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel12|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel12|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel12|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel12|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel12|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel12|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel12|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel12|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel12|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel12|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel12|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel12|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel12|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel12|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel12|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel13|__NULL|None
+WDGCONV1Channel13|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel13|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel13|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel13|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel13|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel13|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel13|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel13|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel13|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel13|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel13|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel13|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel13|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel13|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel13|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel13|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel13|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel13|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel13|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel13|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel13|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel13|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel13|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel13|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel13|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel13|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel13|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel13|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel13|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel14|__NULL|None
+WDGCONV1Channel14|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel14|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel14|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel14|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel14|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel14|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel14|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel14|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel14|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel14|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel14|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel14|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel14|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel14|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel14|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel14|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel14|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel14|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel14|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel14|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel14|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel14|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel14|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel14|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel14|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel14|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel14|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel14|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel14|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel15|__NULL|None
+WDGCONV1Channel15|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel15|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel15|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel15|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel15|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel15|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel15|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel15|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel15|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel15|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel15|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel15|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel15|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel15|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel15|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel15|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel15|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel15|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel15|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel15|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel15|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel15|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel15|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel15|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel15|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel15|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel15|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel15|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel15|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel16|__NULL|None
+WDGCONV1Channel16|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel16|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel16|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel16|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel16|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel16|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel16|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel16|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel16|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel16|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel16|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel16|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel16|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel16|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel16|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel16|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel16|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel16|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel16|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel16|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel16|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel16|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel16|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel16|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel16|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel16|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel16|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel16|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel16|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel17|__NULL|None
+WDGCONV1Channel17|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel17|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel17|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel17|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel17|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel17|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel17|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel17|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel17|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel17|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel17|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel17|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel17|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel17|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel17|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel17|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel17|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel17|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel17|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel17|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel17|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel17|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel17|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel17|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel17|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel17|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel17|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel17|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel17|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel18|__NULL|None
+WDGCONV1Channel18|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel18|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel18|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel18|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel18|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel18|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel18|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel18|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel18|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel18|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel18|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel18|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel18|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel18|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel18|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel18|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel18|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel18|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel18|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel18|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel18|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel18|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel18|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel18|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel18|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel18|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel18|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel18|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel18|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel19|__NULL|None
+WDGCONV1Channel19|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel19|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel19|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel19|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel19|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel19|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel19|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel19|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel19|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel19|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel19|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel19|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel19|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel19|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel19|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel19|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel19|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel19|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel19|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel19|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel19|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel19|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel19|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel19|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel19|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel19|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel19|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel19|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel19|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel20|__NULL|None
+WDGCONV1Channel20|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel20|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel20|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel20|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel20|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel20|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel20|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel20|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel20|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel20|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel20|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel20|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel20|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel20|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel20|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel20|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel20|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel20|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel20|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel20|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel20|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel20|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel20|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel20|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel20|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel20|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel20|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel20|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel20|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel21|__NULL|None
+WDGCONV1Channel21|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel21|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel21|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel21|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel21|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel21|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel21|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel21|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel21|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel21|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel21|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel21|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel21|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel21|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel21|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel21|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel21|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel21|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel21|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel21|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel21|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel21|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel21|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel21|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel21|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel21|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel21|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel21|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel21|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel22|__NULL|None
+WDGCONV1Channel22|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel22|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel22|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel22|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel22|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel22|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel22|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel22|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel22|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel22|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel22|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel22|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel22|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel22|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel22|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel22|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel22|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel22|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel22|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel22|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel22|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel22|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel22|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel22|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel22|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel22|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel22|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel22|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel22|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel23|__NULL|None
+WDGCONV1Channel23|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel23|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel23|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel23|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel23|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel23|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel23|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel23|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel23|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel23|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel23|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel23|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel23|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel23|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel23|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel23|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel23|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel23|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel23|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel23|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel23|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel23|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel23|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel23|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel23|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel23|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel23|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel23|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel23|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDGCONV1Channel24|__NULL|None
+WDGCONV1Channel24|ADC_CHANNEL_1|Channel 1
+WDGCONV1Channel24|ADC_CHANNEL_2|Channel 2
+WDGCONV1Channel24|ADC_CHANNEL_3|Channel 3
+WDGCONV1Channel24|ADC_CHANNEL_4|Channel 4
+WDGCONV1Channel24|ADC_CHANNEL_5|Channel 5
+WDGCONV1Channel24|ADC_CHANNEL_6|Channel 6
+WDGCONV1Channel24|ADC_CHANNEL_7|Channel 7
+WDGCONV1Channel24|ADC_CHANNEL_8|Channel 8
+WDGCONV1Channel24|ADC_CHANNEL_9|Channel 9
+WDGCONV1Channel24|ADC_CHANNEL_10|Channel 10
+WDGCONV1Channel24|ADC_CHANNEL_11|Channel 11
+WDGCONV1Channel24|ADC_CHANNEL_12|Channel 12
+WDGCONV1Channel24|ADC_CHANNEL_13|Channel 13
+WDGCONV1Channel24|ADC_CHANNEL_14|Channel 14
+WDGCONV1Channel24|ADC_CHANNEL_15|Channel 15
+WDGCONV1Channel24|ADC_CHANNEL_16|Channel 16
+WDGCONV1Channel24|ADC_CHANNEL_17|Channel 17
+WDGCONV1Channel24|ADC_CHANNEL_18|Channel 18
+WDGCONV1Channel24|ADC_CHANNEL_19|Channel 19
+WDGCONV1Channel24|ADC_CHANNEL_20|Channel 20
+WDGCONV1Channel24|ADC_CHANNEL_21|Channel 21
+WDGCONV1Channel24|ADC_CHANNEL_22|Channel 22
+WDGCONV1Channel24|ADC_CHANNEL_23|Channel 23
+WDGCONV1Channel24|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDGCONV1Channel24|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDGCONV1Channel24|ADC_CHANNEL_VCORE|Channel Vcore
+WDGCONV1Channel24|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel24|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDGCONV1Channel24|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3MonitoredBy|ADC_ANALOGWATCHDOG_3|Analog Watchdog 3
+WDG3CONV1Channel1|__NULL|None
+WDG3CONV1Channel1|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel1|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel1|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel1|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel1|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel1|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel1|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel1|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel1|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel1|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel1|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel1|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel1|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel1|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel1|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel1|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel1|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel1|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel1|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel1|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel1|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel1|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel1|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel1|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel1|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel1|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel1|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel1|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel1|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel2|__NULL|None
+WDG3CONV1Channel2|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel2|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel2|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel2|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel2|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel2|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel2|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel2|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel2|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel2|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel2|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel2|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel2|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel2|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel2|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel2|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel2|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel2|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel2|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel2|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel2|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel2|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel2|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel2|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel2|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel2|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel2|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel2|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel2|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel3|__NULL|None
+WDG3CONV1Channel3|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel3|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel3|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel3|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel3|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel3|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel3|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel3|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel3|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel3|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel3|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel3|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel3|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel3|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel3|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel3|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel3|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel3|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel3|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel3|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel3|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel3|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel3|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel3|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel3|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel3|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel3|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel3|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel3|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel4|__NULL|None
+WDG3CONV1Channel4|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel4|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel4|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel4|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel4|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel4|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel4|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel4|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel4|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel4|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel4|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel4|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel4|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel4|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel4|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel4|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel4|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel4|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel4|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel4|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel4|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel4|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel4|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel4|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel4|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel4|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel4|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel4|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel4|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel5|__NULL|None
+WDG3CONV1Channel5|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel5|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel5|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel5|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel5|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel5|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel5|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel5|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel5|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel5|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel5|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel5|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel5|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel5|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel5|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel5|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel5|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel5|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel5|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel5|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel5|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel5|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel5|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel5|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel5|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel5|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel5|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel5|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel5|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel6|__NULL|None
+WDG3CONV1Channel6|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel6|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel6|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel6|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel6|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel6|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel6|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel6|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel6|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel6|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel6|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel6|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel6|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel6|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel6|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel6|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel6|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel6|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel6|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel6|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel6|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel6|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel6|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel6|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel6|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel6|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel6|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel6|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel6|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel7|__NULL|None
+WDG3CONV1Channel7|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel7|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel7|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel7|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel7|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel7|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel7|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel7|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel7|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel7|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel7|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel7|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel7|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel7|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel7|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel7|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel7|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel7|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel7|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel7|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel7|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel7|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel7|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel7|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel7|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel7|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel7|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel7|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel7|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel8|__NULL|None
+WDG3CONV1Channel8|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel8|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel8|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel8|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel8|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel8|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel8|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel8|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel8|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel8|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel8|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel8|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel8|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel8|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel8|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel8|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel8|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel8|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel8|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel8|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel8|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel8|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel8|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel8|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel8|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel8|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel8|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel8|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel8|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel9|__NULL|None
+WDG3CONV1Channel9|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel9|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel9|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel9|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel9|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel9|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel9|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel9|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel9|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel9|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel9|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel9|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel9|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel9|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel9|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel9|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel9|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel9|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel9|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel9|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel9|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel9|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel9|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel9|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel9|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel9|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel9|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel9|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel9|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel10|__NULL|None
+WDG3CONV1Channel10|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel10|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel10|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel10|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel10|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel10|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel10|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel10|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel10|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel10|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel10|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel10|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel10|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel10|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel10|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel10|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel10|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel10|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel10|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel10|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel10|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel10|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel10|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel10|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel10|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel10|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel10|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel10|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel10|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel11|__NULL|None
+WDG3CONV1Channel11|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel11|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel11|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel11|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel11|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel11|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel11|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel11|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel11|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel11|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel11|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel11|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel11|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel11|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel11|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel11|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel11|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel11|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel11|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel11|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel11|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel11|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel11|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel11|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel11|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel11|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel11|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel11|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel11|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel12|__NULL|None
+WDG3CONV1Channel12|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel12|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel12|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel12|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel12|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel12|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel12|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel12|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel12|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel12|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel12|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel12|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel12|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel12|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel12|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel12|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel12|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel12|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel12|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel12|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel12|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel12|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel12|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel12|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel12|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel12|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel12|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel12|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel12|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel13|__NULL|None
+WDG3CONV1Channel13|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel13|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel13|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel13|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel13|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel13|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel13|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel13|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel13|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel13|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel13|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel13|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel13|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel13|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel13|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel13|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel13|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel13|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel13|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel13|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel13|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel13|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel13|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel13|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel13|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel13|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel13|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel13|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel13|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel14|__NULL|None
+WDG3CONV1Channel14|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel14|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel14|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel14|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel14|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel14|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel14|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel14|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel14|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel14|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel14|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel14|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel14|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel14|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel14|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel14|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel14|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel14|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel14|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel14|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel14|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel14|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel14|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel14|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel14|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel14|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel14|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel14|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel14|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel15|__NULL|None
+WDG3CONV1Channel15|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel15|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel15|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel15|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel15|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel15|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel15|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel15|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel15|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel15|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel15|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel15|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel15|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel15|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel15|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel15|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel15|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel15|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel15|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel15|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel15|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel15|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel15|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel15|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel15|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel15|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel15|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel15|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel15|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel16|__NULL|None
+WDG3CONV1Channel16|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel16|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel16|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel16|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel16|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel16|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel16|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel16|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel16|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel16|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel16|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel16|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel16|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel16|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel16|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel16|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel16|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel16|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel16|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel16|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel16|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel16|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel16|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel16|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel16|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel16|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel16|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel16|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel16|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel17|__NULL|None
+WDG3CONV1Channel17|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel17|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel17|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel17|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel17|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel17|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel17|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel17|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel17|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel17|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel17|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel17|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel17|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel17|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel17|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel17|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel17|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel17|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel17|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel17|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel17|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel17|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel17|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel17|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel17|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel17|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel17|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel17|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel17|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel18|__NULL|None
+WDG3CONV1Channel18|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel18|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel18|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel18|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel18|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel18|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel18|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel18|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel18|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel18|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel18|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel18|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel18|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel18|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel18|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel18|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel18|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel18|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel18|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel18|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel18|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel18|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel18|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel18|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel18|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel18|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel18|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel18|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel18|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel19|__NULL|None
+WDG3CONV1Channel19|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel19|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel19|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel19|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel19|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel19|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel19|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel19|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel19|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel19|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel19|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel19|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel19|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel19|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel19|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel19|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel19|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel19|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel19|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel19|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel19|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel19|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel19|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel19|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel19|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel19|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel19|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel19|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel19|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel20|__NULL|None
+WDG3CONV1Channel20|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel20|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel20|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel20|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel20|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel20|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel20|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel20|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel20|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel20|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel20|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel20|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel20|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel20|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel20|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel20|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel20|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel20|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel20|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel20|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel20|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel20|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel20|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel20|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel20|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel20|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel20|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel20|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel20|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel21|__NULL|None
+WDG3CONV1Channel21|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel21|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel21|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel21|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel21|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel21|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel21|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel21|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel21|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel21|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel21|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel21|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel21|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel21|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel21|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel21|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel21|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel21|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel21|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel21|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel21|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel21|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel21|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel21|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel21|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel21|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel21|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel21|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel21|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel22|__NULL|None
+WDG3CONV1Channel22|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel22|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel22|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel22|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel22|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel22|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel22|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel22|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel22|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel22|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel22|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel22|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel22|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel22|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel22|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel22|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel22|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel22|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel22|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel22|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel22|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel22|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel22|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel22|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel22|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel22|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel22|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel22|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel22|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel23|__NULL|None
+WDG3CONV1Channel23|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel23|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel23|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel23|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel23|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel23|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel23|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel23|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel23|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel23|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel23|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel23|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel23|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel23|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel23|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel23|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel23|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel23|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel23|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel23|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel23|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel23|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel23|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel23|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel23|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel23|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel23|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel23|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel23|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+WDG3CONV1Channel24|__NULL|None
+WDG3CONV1Channel24|ADC_CHANNEL_1|Channel 1
+WDG3CONV1Channel24|ADC_CHANNEL_2|Channel 2
+WDG3CONV1Channel24|ADC_CHANNEL_3|Channel 3
+WDG3CONV1Channel24|ADC_CHANNEL_4|Channel 4
+WDG3CONV1Channel24|ADC_CHANNEL_5|Channel 5
+WDG3CONV1Channel24|ADC_CHANNEL_6|Channel 6
+WDG3CONV1Channel24|ADC_CHANNEL_7|Channel 7
+WDG3CONV1Channel24|ADC_CHANNEL_8|Channel 8
+WDG3CONV1Channel24|ADC_CHANNEL_9|Channel 9
+WDG3CONV1Channel24|ADC_CHANNEL_10|Channel 10
+WDG3CONV1Channel24|ADC_CHANNEL_11|Channel 11
+WDG3CONV1Channel24|ADC_CHANNEL_12|Channel 12
+WDG3CONV1Channel24|ADC_CHANNEL_13|Channel 13
+WDG3CONV1Channel24|ADC_CHANNEL_14|Channel 14
+WDG3CONV1Channel24|ADC_CHANNEL_15|Channel 15
+WDG3CONV1Channel24|ADC_CHANNEL_16|Channel 16
+WDG3CONV1Channel24|ADC_CHANNEL_17|Channel 17
+WDG3CONV1Channel24|ADC_CHANNEL_18|Channel 18
+WDG3CONV1Channel24|ADC_CHANNEL_19|Channel 19
+WDG3CONV1Channel24|ADC_CHANNEL_20|Channel 20
+WDG3CONV1Channel24|ADC_CHANNEL_21|Channel 21
+WDG3CONV1Channel24|ADC_CHANNEL_22|Channel 22
+WDG3CONV1Channel24|ADC_CHANNEL_23|Channel 23
+WDG3CONV1Channel24|ADC_CHANNEL_VREFINT|Channel Vrefint
+WDG3CONV1Channel24|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WDG3CONV1Channel24|ADC_CHANNEL_VCORE|Channel Vcore
+WDG3CONV1Channel24|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDG3CONV1Channel24|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WDG3CONV1Channel24|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+RegWDModeFC|ADC_ANALOGWATCHDOG_SINGLE_REG|Multiple channels
+WatchdogMode2|ADC_ANALOGWATCHDOG_SINGLE_REG|Multiple channels
+WatchdogMode2|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+WatchdogMode3|ADC_ANALOGWATCHDOG_SINGLE_REG|Multiple channels
+WatchdogMode3|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+Interrupt|ADC_IT_OVR|Enable
+Interrupt|__NULL|Disable
+AWD1WatchdogNumber|ADC_ANALOGWATCHDOG_1|WatchDog 1
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_REG|Single regular channel
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+WatchdogChannel|ADC_CHANNEL_0|Channel 0
+WatchdogChannel|ADC_CHANNEL_1|Channel 1
+WatchdogChannel|ADC_CHANNEL_2|Channel 2
+WatchdogChannel|ADC_CHANNEL_3|Channel 3
+WatchdogChannel|ADC_CHANNEL_4|Channel 4
+WatchdogChannel|ADC_CHANNEL_5|Channel 5
+WatchdogChannel|ADC_CHANNEL_6|Channel 6
+WatchdogChannel|ADC_CHANNEL_7|Channel 7
+WatchdogChannel|ADC_CHANNEL_8|Channel 8
+WatchdogChannel|ADC_CHANNEL_9|Channel 9
+WatchdogChannel|ADC_CHANNEL_10|Channel 10
+WatchdogChannel|ADC_CHANNEL_11|Channel 11
+WatchdogChannel|ADC_CHANNEL_12|Channel 12
+WatchdogChannel|ADC_CHANNEL_13|Channel 13
+WatchdogChannel|ADC_CHANNEL_14|Channel 14
+WatchdogChannel|ADC_CHANNEL_15|Channel 15
+WatchdogChannel|ADC_CHANNEL_16|Channel 16
+WatchdogChannel|ADC_CHANNEL_17|Channel 17
+WatchdogChannel|ADC_CHANNEL_18|Channel 18
+WatchdogChannel|ADC_CHANNEL_19|Channel 19
+WatchdogChannel|ADC_CHANNEL_20|Channel 20
+WatchdogChannel|ADC_CHANNEL_21|Channel 21
+WatchdogChannel|ADC_CHANNEL_22|Channel 22
+WatchdogChannel|ADC_CHANNEL_23|Channel 23
+WatchdogChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+WatchdogChannel|ADC4_CHANNEL_VBAT|Channel Vbat/4
+WatchdogChannel|ADC_CHANNEL_VCORE|Channel Vcore
+WatchdogChannel|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WatchdogChannel|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+WatchdogChannel|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+AWD2WatchdogNumber|ADC_ANALOGWATCHDOG_2|WatchDog 2
+AWD3WatchdogNumber|ADC_ANALOGWATCHDOG_3|WatchDog 3
+MonitoredBy|__NULL|None
+MonitoredBy|ADC_ANALOGWATCHDOG_2|Analog Watchdog 2
+MonitoredBy|ADC_ANALOGWATCHDOG_3|Analog Watchdog 3
+MonitoredBy|ADC_ANALOGWATCHDOG_32|Analog Watchdog 2 and 3
+AWDChannel|ADC_CHANNEL_0|Channel 0
+AWDChannel|ADC_CHANNEL_1|Channel 1
+AWDChannel|ADC_CHANNEL_2|Channel 2
+AWDChannel|ADC_CHANNEL_3|Channel 3
+AWDChannel|ADC_CHANNEL_4|Channel 4
+AWDChannel|ADC_CHANNEL_5|Channel 5
+AWDChannel|ADC_CHANNEL_6|Channel 6
+AWDChannel|ADC_CHANNEL_7|Channel 7
+AWDChannel|ADC_CHANNEL_8|Channel 8
+AWDChannel|ADC_CHANNEL_9|Channel 9
+AWDChannel|ADC_CHANNEL_10|Channel 10
+AWDChannel|ADC_CHANNEL_11|Channel 11
+AWDChannel|ADC_CHANNEL_12|Channel 12
+AWDChannel|ADC_CHANNEL_13|Channel 13
+AWDChannel|ADC_CHANNEL_14|Channel 14
+AWDChannel|ADC_CHANNEL_15|Channel 15
+AWDChannel|ADC_CHANNEL_16|Channel 16
+AWDChannel|ADC_CHANNEL_17|Channel 17
+AWDChannel|ADC_CHANNEL_18|Channel 18
+AWDChannel|ADC_CHANNEL_19|Channel 19
+AWDChannel|ADC_CHANNEL_20|Channel 20
+AWDChannel|ADC_CHANNEL_21|Channel 21
+AWDChannel|ADC_CHANNEL_22|Channel 22
+AWDChannel|ADC_CHANNEL_23|Channel 23
+AWDChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+AWDChannel|ADC4_CHANNEL_VBAT|Channel Vbat/4
+AWDChannel|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+AWDChannel|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+AWDChannel|ADC_CHANNEL_VCORE|Channel Vcore
+AWDChannel|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+UnUsedParameter|ADC_ANALOGWATCHDOG_SINGLE_REG|Single regular channel
+AllChannels|ADC_CHANNEL_0|Channel 0
+AllChannels|ADC_CHANNEL_1|Channel 1
+AllChannels|ADC_CHANNEL_2|Channel 2
+AllChannels|ADC_CHANNEL_3|Channel 3
+AllChannels|ADC_CHANNEL_4|Channel 4
+AllChannels|ADC_CHANNEL_5|Channel 5
+AllChannels|ADC_CHANNEL_6|Channel 6
+AllChannels|ADC_CHANNEL_7|Channel 7
+AllChannels|ADC_CHANNEL_8|Channel 8
+AllChannels|ADC_CHANNEL_9|Channel 9
+AllChannels|ADC_CHANNEL_10|Channel 10
+AllChannels|ADC_CHANNEL_11|Channel 11
+AllChannels|ADC_CHANNEL_12|Channel 12
+AllChannels|ADC_CHANNEL_13|Channel 13
+AllChannels|ADC_CHANNEL_14|Channel 14
+AllChannels|ADC_CHANNEL_15|Channel 15
+AllChannels|ADC_CHANNEL_16|Channel 16
+AllChannels|ADC_CHANNEL_17|Channel 17
+AllChannels|ADC_CHANNEL_18|Channel 18
+AllChannels|ADC_CHANNEL_19|Channel 19
+AllChannels|ADC_CHANNEL_20|Channel 20
+AllChannels|ADC_CHANNEL_21|Channel 21
+AllChannels|ADC_CHANNEL_22|Channel 22
+AllChannels|ADC_CHANNEL_23|Channel 23
+AllChannels|ADC_CHANNEL_VREFINT|Channel Vrefint
+AllChannels|ADC4_CHANNEL_VBAT|Channel Vbat/4
+AllChannels|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+AllChannels|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+AllChannels|ADC_CHANNEL_VCORE|Channel Vcore
+AllChannels|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2
+Available_Channel|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+Available_Channel|ADC_CHANNEL_VREFINT|Channel Vrefint
+Available_Channel|ADC_CHANNEL_VLCD|Channel Vlcd
+AnalogWDChannel|ADC_CHANNEL_0|Channel 0
+AnalogWDChannel|ADC_CHANNEL_1|Channel 1
+AnalogWDChannel|ADC_CHANNEL_2|Channel 2
+AnalogWDChannel|ADC_CHANNEL_3|Channel 3
+AnalogWDChannel|ADC_CHANNEL_4|Channel 4
+AnalogWDChannel|ADC_CHANNEL_5|Channel 5
+AnalogWDChannel|ADC_CHANNEL_6|Channel 6
+AnalogWDChannel|ADC_CHANNEL_7|Channel 7
+AnalogWDChannel|ADC_CHANNEL_8|Channel 8
+AnalogWDChannel|ADC_CHANNEL_9|Channel 9
+AnalogWDChannel|ADC_CHANNEL_10|Channel 10
+AnalogWDChannel|ADC_CHANNEL_11|Channel 11
+AnalogWDChannel|ADC_CHANNEL_12|Channel 12
+AnalogWDChannel|ADC_CHANNEL_13|Channel 13
+AnalogWDChannel|ADC_CHANNEL_14|Channel 14
+AnalogWDChannel|ADC_CHANNEL_15|Channel 15
+AnalogWDChannel|ADC_CHANNEL_16|Channel 16
+AnalogWDChannel|ADC_CHANNEL_17|Channel 17
+AnalogWDChannel|ADC_CHANNEL_18|Channel 18
+AnalogWDChannel|ADC_CHANNEL_19|Channel 19
+AnalogWDChannel|ADC_CHANNEL_20|Channel 20
+AnalogWDChannel|ADC_CHANNEL_21|Channel 21
+AnalogWDChannel|ADC_CHANNEL_22|Channel 22
+AnalogWDChannel|ADC_CHANNEL_23|Channel 23
+AnalogWDChannel|ADC_CHANNEL_VREFINT|Channel Vrefint
+AnalogWDChannel|ADC4_CHANNEL_VBAT|Channel Vbat/4
+AnalogWDChannel|ADC_CHANNEL_VCORE|Channel Vcore
+AnalogWDChannel|ADC4_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+AnalogWDChannel|ADC_CHANNEL_DAC1CH1_ADC4|Channel DAC1_OUT1
+AnalogWDChannel|ADC_CHANNEL_DAC1CH2_ADC4|Channel DAC1_OUT2

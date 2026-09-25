@@ -1,0 +1,72 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ETH
+Version=ethermac110_v2_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+AutoNegotiation|Auto Negotiation|Advanced : Ethernet Media Configuration||||
+Speed|Speed|Advanced : Ethernet Media Configuration||||
+DuplexMode|Duplex Mode|Advanced : Ethernet Media Configuration||||
+PhyAddress|PHY Address|General : Ethernet Configuration||0|31|
+MACAddr|Ethernet MAC Address|General : Ethernet Configuration||||
+RxMode|Rx Mode|Ethernet Basic Configuration||||
+MediaInterface|Media Interface|General : Ethernet Configuration||||
+ChecksumMode|TX IP Header Checksum Computation|Ethernet Basic Configuration||||
+PHY_Name_RMII|PHY|External PHY Configuration||||
+PHY_Name_MII|PHY|External PHY Configuration||||
+PHY_User_Name|PHY name|External PHY Configuration||||PHY name
+PHY_Name|PHY name arg|External PHY Configuration||||PHY name
+PHY_NameString|static string|External PHY Configuration||||PHY name
+PHY_Value|PHY Address Value|External PHY Configuration||||
+PHY_RESET_DELAY|PHY Reset delay these values are based on a 1 ms Systick interrupt|External PHY Configuration||0x00000000|0xFFFFFFFF|
+PHY_CONFIG_DELAY|PHY Configuration delay|External PHY Configuration||0x0000|0xFFFFFFFF|
+PHY_READ_TO|PHY Read TimeOut|External PHY Configuration||0x0000|0xFFFFFFFF|
+PHY_WRITE_TO|PHY Write TimeOut|External PHY Configuration||0x0000|0xFFFFFFFF|
+PHY_BCR|Transceiver Basic Control Register|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_BSR|Transceiver Basic Status Register|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_RESET|PHY Reset|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_LOOPBACK|Select loop-back mode|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_FULLDUPLEX_100M|Set the full-duplex mode at 100 Mb/s|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_HALFDUPLEX_100M|Set the half-duplex mode at 100 Mb/s|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_FULLDUPLEX_10M|Set the full-duplex mode at 10 Mb/s|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_HALFDUPLEX_10M|Set the half-duplex mode at 10 Mb/s|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_AUTONEGOTIATION|Enable auto-negotiation function|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_RESTART_AUTONEGOTIATION|Restart auto-negotiation function|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_POWERDOWN|Select the power down mode|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_ISOLATE|Isolate PHY from MII|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_AUTONEGO_COMPLETE|Auto-Negotiation process completed|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_LINKED_STATUS|Valid link established|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_JABBER_DETECTION|Jabber condition detected|Common : External PHY Configuration||0x0000|0xFFFF|
+PHY_SR|PHY special control/status register Offset|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_MICR|MII Interrupt Control Register|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_MISR|MII Interrupt Status and Misc. Control Register|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_LINK_STATUS|PHY Link mask|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_SPEED_STATUS|PHY Speed mask|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_DUPLEX_STATUS|PHY Duplex mask|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_MICR_INT_EN|PHY Enable interrupts|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_MICR_INT_OE|PHY Enable output interrupt events|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_MISR_LINK_INT_EN|Enable Interrupt on change of link status|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_LINK_INTERRUPT|PHY link status interrupt mask|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_ISFR|PHY Interrupt Source Flag register Offset|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+PHY_ISFR_INT4|PHY Link down inturrupt|Extended : External PHY Configuration||0x0000|0xFFFF|PHY name
+
+[Values]
+# параметр|значение|подпись
+AutoNegotiation|ETH_AUTONEGOTIATION_DISABLE|Disabled
+AutoNegotiation|ETH_AUTONEGOTIATION_ENABLE|Enabled
+Speed|ETH_SPEED_100M|100 MBits/s
+Speed|ETH_SPEED_10M|10 MBits/s
+DuplexMode|ETH_MODE_FULLDUPLEX|Full Duplex
+DuplexMode|ETH_MODE_HALFDUPLEX|Half Duplex
+RxMode|ETH_RXINTERRUPT_MODE|Interrupt Mode
+RxMode|ETH_RXPOLLING_MODE|Polling Mode
+MediaInterface|ETH_MEDIA_INTERFACE_MII|
+MediaInterface|ETH_MEDIA_INTERFACE_RMII|
+ChecksumMode|ETH_CHECKSUM_BY_HARDWARE|By hardware
+ChecksumMode|ETH_CHECKSUM_BY_SOFTWARE|By software
+PHY_Name_RMII|LAN8742A_PHY_ADDRESS|LAN8742A_PHY_ADDRESS
+PHY_Name_RMII|DP83848_PHY_ADDRESS|DP83848_PHY_ADDRESS
+PHY_Name_MII|DP83848_PHY_ADDRESS|DP83848_PHY_ADDRESS
+PHY_User_Name|PHY_USER_NAME|PHY User name

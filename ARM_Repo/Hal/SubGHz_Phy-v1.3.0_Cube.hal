@@ -1,0 +1,84 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SubGHz_Phy
+Version=v1.3.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+STM32WL5MXX|Module|Application selection||||
+SUBGHZ_APPLICATION|Application|Application selection||||List of available applications
+DEBUGGER_ON|Serial Wires or JTAG enabled|Application selection||||
+UTIL_SEQ_EN_M4|Use Sequencer kernel on CM4|Application selection||||
+UTIL_SEQ_EN_M0|Use Sequencer kernel on CM0|Application selection||||
+UTIL_TIMER_EN|Enable/Disable TIMER utility|Application selection||||
+SUBGHZ_PHY_APP_MEM_POOL_SIZE|ThreadX SUBGHZ_PHY_APP_MEM_POOL_SIZE|Application selection||512|20480|Default AzRTOS ThreadX memory pool size for the SubGHz_Phy application.
+DEBUG_SUBGHZSPI_MONITORING|Sub-GHz radio SPI interface|Application selection||||
+DEBUG_RF_NRESET|Sub-GHz radio NRESET|Application selection||||
+DEBUG_RF_HSE32RDY|Sub-GHz radio HSE32 CLOCK monitoring|Application selection||||
+DEBUG_RF_SMPSRDY|Sub-GHz radio SMPS ready monitoring|Application selection||||
+DEBUG_RF_LDORDY|Sub-GHz radio LDO ready monitoring|Application selection||||
+DEBUG_RF_DTB1|Sub-GHz radio Internal Signal monitoring|Application selection||||
+DEBUG_RF_BUSY|Sub-GHz radio Busy monitoring|Application selection||||
+FILL_UCS|Fill User Code Sections|Application selection||||
+USE_LPM|Configure Low Power Mode|Application selection||||Allow pre-fill of stm32_lpm_if.c file.
+USE_RTC|Use RTC for Timer|Application selection||||<font color="blue"><b>RTC:</b> Proposed solution to manage timer in Low Power mode.</font>    • For Dual Core operation Runtime Contexts are both Cortex-M4 and Cortex-M0+ and initializer is Cortex-M0+ <b>Modes:</b> Activate Clock Source, Activate Calendar and activate Alarm A (and B for Dual Core) (Internal Alarm A (and B for Dual Core)) <b>User Constants:</b> Add the following Constants    • Constant Name: <b>RTC_N_PREDIV_S</b> Value: 10    • Constant Name: <b>RTC_PREDIV_S</b> Value: ((1 &lt;&lt; RTC_N_PREDIV_S)-1)    • Constant Name: <b>RTC_PREDIV_A</b> Value: ((1 &lt;&lt; (15-RTC_N_PREDIV_S))-1) <b>Configuration</b> - Parameters Settings:    • Asynchronous Predivider value: Set value to RTC_PREDIV_A    • Bin Mode: Free running Binary mode    • Alarm A Binary AutoControl: RTC_ALARMSUBSECONDBIN_AUTOCLR_NO <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <font color="blue"><b>SubGHz_Phy - Platform Settings panel:</b> Platform proposals</font>    • Ensure that RTC is selected in Found Solutions
+USE_UART|Use UART for Trace|Application selection||||<font color="blue"><b>USART/LPUART:</b> Proposed solution to manage trace.</font>    • For Dual Core operation Runtime Context is Cortex-M4 <b>Modes:</b> Asynchronous <b>Configuration</b> - Parameters Settings:    • If LPUART is selected then set Baud Rate: 9600 Bits/s <b>Configuration</b> - DMA Settings:    • Add USARTx_TX DMA Request with Channel configured with DMA1 Channel 5 <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <b>Clock Configuration panel</b>    • If LPUART is selected then set Clock Mux to LSE <b>NVIC Mode and Configuration panel</b> - Preemption priority management    • Set preemption Priority for DMA and UART Interrupt to 2 <font color="blue"><b>SubGHz_Phy - Platform Settings panel:</b> Platform proposals</font>    • Ensure that chosen UART is selected in Found Solutions
+USER_GUIDANCE_UTIL|none|Application selection||||<> If you see this message it means some Utilities are disabled. <> In this case only "User Defined Skeleton" Application is allowed. <> Please, enable all Utilities if you wish additional Application choices.
+USER_GUIDANCE|Application configuration recommendations|Application selection||||<font color="blue"><b>RCC:</b> Proposed solution to manage RCC.</font> <b>Modes:</b> Low Speed Clock (LSE): Set value to Crystal Ceramic Resonator <b>Configuration</b> - Parameters Settings:    • Flash Latency(WS): 2 WS (3 CPU cycle)    • Power Regulator Voltage Scale: Scale 1 <b>Clock Configuration panel</b>    • Set MSI RC to 32MHz    • Set RTC Clock Mux to LSE <font color="blue"><b>Project Manager- Advanced Settings panel:</b> Generated Function Calls management</font>    • Untick "Generate Code" for RTC on CortexM4 and DMA on CortexM0PLUS for Dual Core    • Tick "Do Not Generate Function Call" for DMA, RTC, SUBGHZ, UART and IPCC(for Dual Core)    • Untick Visibility for all Function Calls on both cores
+VERBOSE_LEVEL|Trace verbose level|sys_conf||||
+VERBOSE_LEVEL_CM4|Trace verbose level|sys_conf CM4||||
+VERBOSE_LEVEL_CM0PLUS|Trace verbose level|sys_conf CM0PLUS||||
+APP_LOG_ENABLED|Enable Application Logging|sys_conf||||
+APP_LOG_ENABLED_CM4|Enable Application Logging|sys_conf CM4||||
+APP_LOG_ENABLED_CM0PLUS|Enable Application Logging|sys_conf CM0PLUS||||
+DEBUGGER_ON_CM4|Activate Debugger|sys_conf CM4||||
+DEBUGGER_ON_CM0PLUS|Activate Debugger|sys_conf CM0PLUS||||
+LOW_POWER_DISABLE|Disable Low Power Mode|sys_conf||||It goes only to SLEEP but not to STOP mode
+LOW_POWER_DISABLE_CM4|Disable Low Power Mode|sys_conf CM4||||It goes only to SLEEP but not to STOP mode
+LOW_POWER_DISABLE_CM0PLUS|Disable Low Power Mode|sys_conf CM0PLUS||||It goes only to SLEEP but not to STOP mode
+RF_FREQUENCY|RF Frequency|app_subghz_phy||150000000|960000000|
+MODEM_USED|Modem used|app_subghz_phy||||By selecting OTHER user should add his code in USER CODE SECTIONs
+TX_OUTPUT_POWER|Transmit power level|app_subghz_phy||-17|22|
+LORA_BANDWIDTH|LoRa bandwidth|app_subghz_phy||||
+LORA_SPREADING_FACTOR|LoRa spreading factor|app_subghz_phy||||
+LORA_CODINGRATE|LoRa coding rate|app_subghz_phy||||
+LORA_PREAMBLE_LENGTH|LoRa preamble length|app_subghz_phy||1|65535|
+LORA_SYMBOL_TIMEOUT|LoRa symbol timeout|app_subghz_phy||1|255|
+LORA_FIX_LENGTH_PAYLOAD_ON|LoRa fix length payload on|app_subghz_phy||||
+LORA_IQ_INVERSION_ON|LoRa IQ inversion|app_subghz_phy||||
+FSK_FDEV|FSK frequency deviation|app_subghz_phy||||
+FSK_DATARATE|FSK data rate|app_subghz_phy||||
+FSK_BANDWIDTH|FSK bandwidth|app_subghz_phy||||
+FSK_PREAMBLE_LENGTH|FSK preamble length|app_subghz_phy||||
+FSK_FIX_LENGTH_PAYLOAD_ON|FSK fix lenght payload on|app_subghz_phy||||
+PAYLOAD_LEN|Payload length|app_subghz_phy||||
+MW_LOG_ENABLED|Enable Middleware log|mw_log_conf||||
+RF_WAKEUP_TIME|Radio maximum wakeup time (in ms)|radio_conf||||Radio maximum wakeup time (in ms)
+Activate_RADIO_BOARD_INTERFACE|Select radio Driver|radio_board_if||||UserBoard: user to complete; Bsp: need to be included in the IDE; NucleoPseudo: just x backward compatibility.
+IS_TCXO_SUPPORTED|TCXO support|radio_board_if||||Indicates whether or not TCXO is supported by the board. TCXO needs to be selected in RCC panel (HSE clock)
+IS_DCDC_SUPPORTED|DCDC support|radio_board_if||||Indicates whether or not DCDC is supported by the board
+TX_RFO_CONFIG|Tx Rfo Config|radio_board_if||||Indicates the config
+Activate_DEBUG_LINE|Probes Lines in Platform Settings|board settings||||Enable Probes Line using GPIO under Plaform Settings panel
+Activate_BOARD_RESOURCES|Board Resources|board settings||||Enable LEDs and BUTTONs settings using GPIO under Plaform Settings panel
+
+[Values]
+# параметр|значение|подпись
+SUBGHZ_APPLICATION|SUBGHZ_AT_SLAVE|ATSlave (only RF test)
+SUBGHZ_APPLICATION|SUBGHZ_ADV_APPLICATION|Advanced template
+SUBGHZ_APPLICATION|SUBGHZ_USER_APPLICATION|User defined template
+VERBOSE_LEVEL|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL|VLEVEL_L|VLEVEL_L
+VERBOSE_LEVEL_CM4|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL_CM4|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL_CM4|VLEVEL_L|VLEVEL_L
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_L|VLEVEL_L
+MODEM_USED|USE_MODEM_LORA|LoRa
+MODEM_USED|USE_MODEM_FSK|FSK
+MODEM_USED|USE_MODEM_OTHER|OTHER (Gmsk, LrFhss, etc)
+TX_RFO_CONFIG|RBI_CONF_RFO_LP_HP|CONF_RFO_LP_HP
+TX_RFO_CONFIG|RBI_CONF_RFO_LP|CONF_RFO_LP
+TX_RFO_CONFIG|RBI_CONF_RFO_HP|CONF_RFO_HP

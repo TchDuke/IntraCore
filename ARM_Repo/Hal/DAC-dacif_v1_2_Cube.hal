@@ -1,0 +1,50 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DAC
+Version=dacif_v1_2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DAC_Channel|Channel|DAC Out1 Settings||||
+DAC_Trigger|Trigger|DAC Out1 Settings||||
+DAC_OutputBuffer|Output Buffer|DAC Out1 Settings||||
+TriangleAmplitude|Triangle Amplitude|DAC Out1 Settings||||
+NoiseAmplitude|Noise Amplitude|DAC Out1 Settings||||
+WaveGeneration|Wave generation mode|DAC Out1 Settings||||
+
+[Values]
+# параметр|значение|подпись
+DAC_Channel|DAC_CHANNEL_1|DAC_CHANNEL_1
+DAC_Trigger|DAC_TRIGGER_NONE|None
+DAC_Trigger|DAC_TRIGGER_T2_TRGO|Timer 2 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T6_TRGO|Timer 6 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T21_TRGO|Timer 21 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_SOFTWARE|Software trigger
+DAC_Trigger|DAC_TRIGGER_EXT_IT9|External line 9
+DAC_OutputBuffer|DAC_OUTPUTBUFFER_ENABLE|Enable
+DAC_OutputBuffer|DAC_OUTPUTBUFFER_DISABLE|Disable
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_1|1
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_3|3
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_7|7
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_15|15
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_31|31
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_63|63
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_127|127
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_255|255
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_511|511
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_1023|1023
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_2047|2047
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_4095|4095
+NoiseAmplitude|DAC_LFSRUNMASK_BIT0|Unmask DAC channel LFSR bit0
+NoiseAmplitude|DAC_LFSRUNMASK_BITS1_0|Unmask DAC channel LFSR bits[1:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS2_0|Unmask DAC channel LFSR bits[2:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS3_0|Unmask DAC channel LFSR bits[3:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS4_0|Unmask DAC channel LFSR bits[4:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS5_0|Unmask DAC channel LFSR bits[5:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS6_0|Unmask DAC channel LFSR bits[6:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS7_0|Unmask DAC channel LFSR bits[7:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS8_0|Unmask DAC channel LFSR bits[8:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS9_0|Unmask DAC channel LFSR bits[9:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS10_0|Unmask DAC channel LFSR bits[10:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS11_0|Unmask DAC channel LFSR bits[11:0]

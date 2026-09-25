@@ -1,0 +1,331 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USBX
+Version=v1.0.0_U0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+UX_TRACE_INSERT_MACROS|UX_TRACE_INSERT_MACROS|TraceX||||Determine if tracing is enabled.
+UX_DEVICE_BIDIRECTIONAL_ENDPOINT_SUPPORT|UX_DEVICE_BIDIRECTIONAL_ENDPOINT_SUPPORT|Device Core||||Enable device bi-directional endpoint support.
+UX_DEVICE_CLASS_CDC_ACM_TRANSMISSION_DISABLE|UX_DEVICE_CLASS_CDC_ACM_TRANSMISSION_DISABLE|Device Class CDC ACM||||disable CDC ACM non-blocking transmission support.
+UX_THREAD_STACK_SIZE|UX_THREAD_STACK_SIZE|Core Utilities|Bytes|0|65535|This value is the size of the stack in bytes for the USBX threads.It can be typically 1024 or 2048 bytes depending on the processor used and the host controller.�
+UX_HOST_ENUM_THREAD_STACK_SIZE|UX_HOST_ENUM_THREAD_STACK_SIZE|Host Core|Bytes|ThreadX:TX_MINIMUM_STACK|65535|Define USBX Host Enum Thread Stack Size
+UX_HOST_HCD_THREAD_STACK_SIZE|UX_HOST_HCD_THREAD_STACK_SIZE|Host Core|Bytes|0|65535|Define USBX Host Thread Stack Size
+UX_HOST_HNP_POLLING_THREAD_STACK|UX_HOST_HNP_POLLING_THREAD_STACK|Host Core|Bytes|0|65535|Define USBX Host HNP Polling Thread Stack Size
+UX_MAX_HCD|UX_MAX_HCD|Host Core||||This value represents the number of different host controllers available in the system. For USB 1.1 support, this value will usually be 1. For USB 2.0 support, this value can be more than 1. This value represents the number of concurrent host controllers running at the same time. If for instance there are two instances of OHCI running, or one EHCI and one OHCI controller running, the UX_MAX_HCD should be set to 2
+UX_MAX_HOST_LUN|UX_MAX_HOST_LUN|Host Class STORAGE||1|255|This value represents the maximum number of SCSI logical units represented in the host storage class driver
+UX_PERIODIC_RATE|UX_PERIODIC_RATE|Core Utilities||0|65535|This value represents how many ticks per seconds for a specific hardware platform.
+UX_HOST_CLASS_STORAGE_MEMORY_BUFFER_SIZE|UX_HOST_CLASS_STORAGE_MEMORY_BUFFER_SIZE|Host Class STORAGE||0|65535|This value represents the maximum number of bytes that a storage payload can send/receive.
+UX_HOST_CLASS_STORAGE_THREAD_STACK_SIZE|UX_HOST_CLASS_STORAGE_THREAD_STACK_SIZE|Host Class STORAGE|Bytes|0|65535|USBX Mass Storage Thread Stack Size
+UX_MAX_ED|UX_MAX_ED|Host Controller||0|255|This value represents the maximum number of EDs in the controller pool. This number is assigned to one controller only. If multiple instances of controllers are present, this value is used by each individual controller
+UX_MAX_TD|UX_MAX_TD|Host Controller||0|255|This value represents the maximum number of regular and isochronous TDs in the controller pool. This number is assigned to one controller only. If multiple instances of controllers are present, this value is used by each individual controller
+UX_MAX_ISO_TD|UX_MAX_ISO_TD|Host Controller||0|255|This value represents the maximum number of regular and isochronous TDs in the controller pool. This number is assigned to one controller only. If multiple instances of controllers are present, this value is used by each individual controller
+UX_HOST_CLASS_HID_DECOMPRESSION_BUFFER|UX_HOST_CLASS_HID_DECOMPRESSION_BUFFER|Host HID Core||0|65535|This value represents the maximum size of the HID decompressed buffer. This cannot be determined in advance so we allocate a big block, usually 4K but for simple HID devices like keyboard and mouse it can be reduced a lot
+UX_HOST_CLASS_HID_USAGES|UX_HOST_CLASS_HID_USAGES|Host HID Core||0|65535|This value represents the maximum number of HID usages for a HID device
+UX_HOST_CLASS_HID_INTERRUPT_OUT_SUPPORT|UX_HOST_CLASS_HID_INTERRUPT_OUT_SUPPORT|Host HID Core||||Add support for Host HID OUT interrupt
+UX_HOST_CLASS_HID_REPORT_TRANSFER_TIMEOUT|UX_HOST_CLASS_HID_REPORT_TRANSFER_TIMEOUT|Host HID Core||0|65535|Define HID report transfer timeout value in millisecond. The default is 10000 milliseconds.
+UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE|UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE|Host Class HID Keyboard||||If defined, this value causes ux_host_class_hid_keyboard_key_get to only report key changes i.e. key presses and key releases. By default, it only reports when a key is down.
+UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE_REPORT_KEY_DOWN_ONLY|UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE_REPORT_KEY_DOWN_ONLY|Host Class HID Keyboard||||This value causes ux_host_class_hid_keyboard_key_get to only report key changes i.e. key presses and key releases. By default, it only reports when a key is down.
+UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE_REPORT_LOCK_KEYS|UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE_REPORT_LOCK_KEYS|Host Class HID Keyboard||||This value causes ux_host_class_hid_keyboard_key_get to report lock key (CapsLock/NumLock/ScrollLock) changes.
+UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE_REPORT_MODIFIER_KEYS|UX_HOST_CLASS_HID_KEYBOARD_EVENTS_KEY_CHANGES_MODE_REPORT_MODIFIER_KEYS|Host Class HID Keyboard||||This value causes ux_host_class_hid_keyboard_key_get to report modifier key (Ctrl/Alt/Shift/GUI) changes.
+UX_HOST_CLASS_STORAGE_MAX_MEDIA|UX_HOST_CLASS_STORAGE_MAX_MEDIA|Host Class STORAGE||1|8|This value represents the maximum number of media for the host storage class.
+UX_HOST_CLASS_STORAGE_INCLUDE_LEGACY_PROTOCOL_SUPPORT|UX_HOST_CLASS_STORAGE_INCLUDE_LEGACY_PROTOCOL_SUPPORT|Host Class STORAGE||||This value includes code to handle storage devices that use the CB or CBI protocol (such as floppy disks).
+UX_ENFORCE_SAFE_ALIGNMENT|UX_ENFORCE_SAFE_ALIGNMENT|Core Utilities||||This value forces the memory allocation scheme to enforce alignement of memory with the UX_SAFE_ALIGN field.
+UX_HOST_CLASS_CDC_ECM_NX_PKPOOL_ENTRIES|UX_HOST_CLASS_CDC_ECM_NX_PKPOOL_ENTRIES|Host Class CDC ECM||0|65535|This value represents the number of packets in the CDC_ECM host class.
+UX_HOST_CLASS_CDC_ECM_PACKET_POOL_INSTANCE_WAIT|UX_HOST_CLASS_CDC_ECM_PACKET_POOL_INSTANCE_WAIT|Host Class CDC ECM||0|65535|This value represents the number of milliseconds to wait for packet instance allocation until invoking the application's error callback and retrying.
+UX_HOST_CLASS_CDC_ECM_USE_PACKET_POOL_FROM_NETX|UX_HOST_CLASS_CDC_ECM_USE_PACKET_POOL_FROM_NETX|Host Class CDC ECM||||Defined, this enables CDC ECM class to use the packet pool from NetX instance.
+UX_HOST_CLASS_CDC_ECM_PACKET_POOL_WAIT|UX_HOST_CLASS_CDC_ECM_PACKET_POOL_WAIT|Host Class CDC ECM||0|65535|This value represents the number of milliseconds to wait for packet allocation until invoking the application's error callback and retrying.
+UX_HOST_SIDE_ONLY|UX_HOST_SIDE_ONLY|Host Core||||This value will only enable the host side of usbx.
+UX_HOST_CLASS_STORAGE_MAX_TRANSFER_SIZE|UX_HOST_CLASS_STORAGE_MAX_TRANSFER_SIZE|Host Class STORAGE||0|65535|This value represents the maximum size of single tansfers for the SCSI data phase.
+UX_DEBUG_LOG_SIZE|UX_DEBUG_LOG_SIZE|Core Utilities||0|65535|This value represents the size of the log pool.
+UX_THREAD_PRIORITY_ENUM|UX_THREAD_PRIORITY_ENUM|Core Utilities||0|255|This is the ThreadX priority value for the USBX enumeration threads that monitors the bus topology
+UX_THREAD_PRIORITY_CLASS|UX_THREAD_PRIORITY_CLASS|Core Utilities||0|255|This is the ThreadX priority value for the standard USBX threads
+UX_THREAD_PRIORITY_KEYBOARD|UX_THREAD_PRIORITY_KEYBOARD|Host Class HID Keyboard||0|255|
+UX_THREAD_PRIORITY_HCD|UX_THREAD_PRIORITY_HCD|Host Core||0|255|This is the ThreadX priority value for the host controller thread.
+UX_NO_TIME_SLICE|UX_NO_TIME_SLICE|Core Utilities||0|255|This value actually defines the time slice that will be used for threads. For example, if defined to 0, the ThreadX target port does not use time slices.
+UX_ENABLE_ERROR_CHECKING|UX_ENABLE_ERROR_CHECKING|Core Utilities||||This option enables the basic USBX error checking. This define is typically used when the application is debugging and removed after the application is fully debugged.
+UX_ALIGN_MIN|UX_ALIGN_MIN|Core Utilities||||Define the minimal allocated memory alignment in number of bytes: - Align 8. - Align 16. - Align 32. - Align 64. - Align 128. - Align 256. - Align 512. - Align 1024. - Align 2048. - Align 4096. - Safe Align. - Max Align.
+UX_NAME_REFERENCED_BY_POINTER|UX_NAME_REFERENCED_BY_POINTER|Core Utilities||||Define the _name in structs are referenced by pointer instead of by contents.
+UX_MAX_SLAVE_CLASS_DRIVER|UX_MAX_SLAVE_CLASS_DRIVER|Device Core||0|255|This value is the maximum number of classes in the device stack that can be loaded by USBX
+UX_MAX_SLAVE_INTERFACES|UX_MAX_SLAVE_INTERFACES|Device Core||0|255|This value is the maximum number of interfaces in the device framework
+UX_MAX_DEVICES|UX_MAX_DEVICES|Host Core||1|127|This value represents the maximum number of devices that can be attached to the USB. Normally, the theoretical maximum number on a single USB is 127 devices. This value can be scaled down to conserve memory. Note that this value represents the total number of devices regardless of the number of USB buses in the system.
+UX_MAX_SLAVE_LUN|UX_MAX_SLAVE_LUN|Device Core||1|255|This value represents the current number of SCSI logical units represented in the device storage class driver.
+UX_SLAVE_REQUEST_CONTROL_MAX_LENGTH|UX_SLAVE_REQUEST_CONTROL_MAX_LENGTH|Device Core||64|65535|This value represents the maximum number of bytes received on a control endpoint in the device stack
+UX_SLAVE_REQUEST_DATA_MAX_LENGTH|UX_SLAVE_REQUEST_DATA_MAX_LENGTH|Device Core||64|65535|This value represents the maximum number of bytes that can be received or transmitted on any endpoint. This value cannot be less than the maximum packet size of any endpoint.
+UX_DEVICE_ALTERNATE_SETTING_SUPPORT_DISABLE|UX_DEVICE_ALTERNATE_SETTING_SUPPORT_DISABLE|Device Core||||It disables interface alternate setting support.
+UX_DEVICE_INITIALIZE_FRAMEWORK_SCAN_DISABLE|UX_DEVICE_INITIALIZE_FRAMEWORK_SCAN_DISABLE|Device Core||||It disables device framework scan, where max number of endpoints (except EP0) and max number of interfaces are calculated at runtime, as a base to allocate memory for interfaces and endpoints structures and their buffers.
+UX_SLAVE_CLASS_STORAGE_INCLUDE_MMC|UX_SLAVE_CLASS_STORAGE_INCLUDE_MMC|Device Class STORAGE||||this value includes code to handle storage Multi-Media Commands (MMC). E.g., DVD-ROM.
+UX_DEVICE_CLASS_CDC_ECM_NX_PKPOOL_ENTRIES|UX_DEVICE_CLASS_CDC_ECM_NX_PKPOOL_ENTRIES|Device Class CDC ECM||0|65535|This value represents the number of packets in the CDC_ECM device class.
+UX_DEVICE_CLASS_CDC_ECM_PACKET_POOL_WAIT|UX_DEVICE_CLASS_CDC_ECM_PACKET_POOL_WAIT|Device Class CDC ECM||0|65535|This value represents the number of milliseconds to wait for packet allocation until invoking the application's error callback and retrying
+UX_DEVICE_CLASS_HID_EVENT_BUFFER_LENGTH|UX_DEVICE_CLASS_HID_EVENT_BUFFER_LENGTH|Device Class HID||0|1024|This value represents the the maximum length of HID reports on the device.
+UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE|UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE|Device Class HID||0|255|This value represents the the maximum number of HID events/reports that can be queued at once.
+UX_DEVICE_CLASS_AUDIO_INTERRUPT_SUPPORT|UX_DEVICE_CLASS_AUDIO_INTERRUPT_SUPPORT|Device Class AUDIO||||Enable the device audio interrupt endpoint support.
+UX_HOST_CLASS_AUDIO_2_SUPPORT|UX_HOST_CLASS_AUDIO_2_SUPPORT|Host Class AUDIO||||Enable the host audio UAC 2.0 supported.
+UX_HOST_CLASS_AUDIO_FEEDBACK_SUPPORT|UX_HOST_CLASS_AUDIO_FEEDBACK_SUPPORT|Host Class AUDIO||||Enable the host audio Feedback support.
+UX_HOST_CLASS_AUDIO_INTERRUPT_SUPPORT|UX_HOST_CLASS_AUDIO_INTERRUPT_SUPPORT|Host Class AUDIO||||Enable the device audio interrupt endpoint support.
+UX_DEVICE_CLASS_AUDIO_FEEDBACK_SUPPORT|UX_DEVICE_CLASS_AUDIO_FEEDBACK_SUPPORT|Device Class AUDIO||||Enable the device audio Feedback support.
+UX_HOST_DEVICE_CLASS_CODE_VALIDATION_ENABLE|UX_HOST_DEVICE_CLASS_CODE_VALIDATION_ENABLE|Core Utilities||||Enables host device class code validation
+UX_CONTROL_TRANSFER_TIMEOUT|UX_CONTROL_TRANSFER_TIMEOUT|Core Utilities||0|65535|Define control transfer timeout value in millisecond. The default is 10000 milliseconds.
+UX_NON_CONTROL_TRANSFER_TIMEOUT|UX_NON_CONTROL_TRANSFER_TIMEOUT|Core Utilities||0|65535|Define non control transfer timeout value in millisecond. The default is 50000 milliseconds.
+UX_DEVICE_CLASS_CDC_ACM_WRITE_AUTO_ZLP|UX_DEVICE_CLASS_CDC_ACM_WRITE_AUTO_ZLP|Device Class CDC ACM||||Enable automatic pending ZLP (complete transfer) after buffer is sent.
+UX_DEVICE_SIDE_ONLY|UX_DEVICE_SIDE_ONLY|Device Core||||This value will only enable the device side of usbx
+UX_THREAD_PRIORITY_DCD|UX_THREAD_PRIORITY_DCD|Device Core||0|255|This is the ThreadX priority value for the device controller thread.
+UX_MAX_CLASS_DRIVER|UX_MAX_CLASS_DRIVER|Host Core||0|255|This value is the maximum number of classes that can be loaded by USBX. This value represents the class container and not the number of instances of a class.
+UX_MAX_DEVICE_ENDPOINTS|UX_MAX_DEVICE_ENDPOINTS|Device Core||0|255|It defines USBX device max number of endpoints (1~n). <font color="red"> It must be greater or equal than the numbre of endpoints used. </font>
+UX_MAX_DEVICE_INTERFACES|UX_MAX_DEVICE_INTERFACES|Device Core||0|255|it define USBX device max number of interfacess (1~n).
+UX_MAX_ROOTHUB_PORT|UX_MAX_ROOTHUB_PORT|Host Class Hub||1|255|Define USBX max root hub port (1 ~ n).
+UX_MAX_TT|UX_MAX_TT|Host Core||1|255|Define USBX max TT.
+USBX_Version|USBX version|Version||||USBX version
+UX_PIMA_WITH_MTP_SUPPORT|UX_PIMA_WITH_MTP_SUPPORT|Device Class PIMA||||Enables device/host PIMA MTP support
+USBD_PIMA_EP_IN_CMD_HS_BINTERVAL|USBD_PIMA_ENDPOINT_IN_CMD_HS_BINTERVAL|Device Class PIMA||1|255|Device PIMA class endpoint cmd in HS BINERVAL
+USBD_PIMA_EP_IN_CMD_ADDR|USBD_PIMA_ENDPOINT_IN_CMD_ADDR|Device Class PIMA||1|9|Device PIMA class command endpoint in Address, should have a unique value when used alongside other device classes
+USBD_PIMA_EP_OUT_ADDR|USBD_PIMA_ENDPOINT_OUT_ADDR|Device Class PIMA||1|9|Device PIMA endpoint out address, should have a unique address when used alongside other device classes.
+USBD_PIMA_EP_IN_FS_MPS|USBD_PIMA_ENDPOINT_IN_FS_MPS|Device Class PIMA||1|64|Device PIMA class endpoint in FS max packet size
+USBD_PIMA_EP_IN_CMD_FS_MPS|USBD_PIMA_ENDPOINT_IN_CMD_FS_MPS|Device Class PIMA||1|64|Device PIMA class endpoint in FS max packet size
+USBD_PIMA_EP_IN_HS_MPS|USBD_PIMA_ENDPOINT_IN_HS_MPS|Device Class PIMA||1|512|Device PIMA class endpoint in HS max packet size
+USBD_PIMA_EP_IN_CMD_FS_BINTERVAL|USBD_PIMA_ENDPOINT_IN_CMD_FS_BINTERVAL|Device Class PIMA||1|255|Device PIMA class endpoint cmd in FS BINERVAL
+USBD_PIMA_EP_OUT_FS_MPS|USBD_PIMA_ENDPOINT_OUT_FS_MPS|Device Class PIMA||1|64|Device PIMA class endpoint out FS max packet size
+USBD_PIMA_EP_OUT_HS_MPS|USBD_PIMA_ENDPOINT_OUT_HS_MPS|Device Class PIMA||1|512|Device PIMA class endpoint out HS max packet size
+USBD_PIMA_EP_IN_ADDR|USBD_PIMA_ENDPOINT_IN_ADDR|Device Class PIMA||1|9|Device PIMA endpoint in address, should have a unique address when used alongside other device classes.
+USBD_PIMA_EP_IN_CMD_HS_MPS|USBD_PIMA_ENDPOINT_IN_CMD_HS_MPS|Device Class PIMA||1|512|Device PIMA class endpoint HS max packet size
+USBD_RNDIS_EPINCMD_FS_MPS|USBD_RNDIS_ENDPOINT_IN_CMD_FS_MPS|Device Class RNDIS||1|64|Device RNDIS class endpoint command FS max packet size.
+USBD_RNDIS_EPIN_ADDR|USBD_RNDIS_ENDPOINT_IN_ADDR|Device Class RNDIS||1|9|When UX_DEVICE_BIDIRECTIONAL_ENDPOINT_SUPPORT disabled, device RNDIS endpoint in address, should have a unique address when used alongside other device classes.
+USBD_RNDIS_LOCAL_MAC_ADDR|USBD_RNDIS_LOCAL_MAC_ADDR|Device Class RNDIS||||Device RNDIS MAC address. Make sure to use a valid local MAC address.
+USBD_RNDIS_EPIN_HS_MPS|USBD_RNDIS_ENDPOINT_IN_HS_MPS|Device Class RNDIS||1|512|Device RNDIS class endpoint in HS max packet size.
+USBD_RNDIS_REMOTE_MAC_ADDR|USBD_RNDIS_REMOTE_MAC_ADDR|Device Class RNDIS||||Device RNDIS MAC address. Make sure to use a valid remote MAC address.
+USBD_RNDIS_EPINCMD_FS_BINTERVAL|USBD_RNDIS_ENDPOINT_IN_CMD_FS_BINTERVAL|Device Class RNDIS||1|16|Device RNDIS class endpoint command in FS BINERVAL.
+USBD_RNDIS_EPOUT_ADDR|USBD_RNDIS_ENDPOINT_OUT_ADDR|Device Class RNDIS||1|9|When UX_DEVICE_BIDIRECTIONAL_ENDPOINT_SUPPORT disabled, device RNDIS endpoint out address, should have a unique address when used alongside other device classes.
+USBD_RNDIS_EPINCMD_ADDR|USBD_RNDIS_ENDPOINT_IN_CMD_ADDR|Device Class RNDIS||1|9|When UX_DEVICE_BIDIRECTIONAL_ENDPOINT_SUPPORT disabled, device RNDIS class command endpoint in Address, should have a unique value when used alongside other device classes .
+USBD_RNDIS_EPOUT_FS_MPS|USBD_RNDIS_ENDPOINT_OUT_FS_MPS|Device Class RNDIS||1|64|Device RNDIS class endpoint out FS max packet size.
+USBD_RNDIS_EPOUT_HS_MPS|USBD_RNDIS_ENDPOINT_OUT_HS_MPS|Device Class RNDIS||1|512|Device RNDIS class endpoint out HS max packet size.
+USBD_RNDIS_EPINCMD_HS_BINTERVAL|USBD_RNDIS_ENDPOINT_IN_CMD_HS_BINTERVAL|Device Class RNDIS||1|16|Device RNDIS class endpoint command in HS BINERVAL
+USBD_RNDIS_EPINCMD_HS_MPS|USBD_RNDIS_ENDPOINT_IN_CMD_HS_MPS|Device Class RNDIS||1|512|Device RNDIS class endpoint command HS max packet size.
+USBD_RNDIS_EPIN_FS_MPS|USBD_RNDIS_ENDPOINT_IN_FS_MPS|Device Class RNDIS||1|64|Device RNDIS class endpoint in FS max packet size
+USBD_MSC_EPIN_ADDR|USBD_MSC_ENDPOINT_IN_ADDR|Device Class STORAGE||0|9|this the device storage endpoint in address, <font color="red">make sure to have a unique address for the same class and alongside other device classes.</font>
+USBD_MSC_EPOUT_ADDR|USBD_MSC_ENDPOINT_OUT_ADDR|Device Class STORAGE||0|9|this the device storage endpoint out address, <font color="red">make sure to have a unique address for the same class and alongside other device classes.</font>
+USBD_HID_EPIN_ADDR|USBD_HID_ENDPOINT_IN_ADDRESS|Device Class HID||0|9|this the device HID endpoint in address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_MSC_EPOUT_FS_MPS|USBD_MSC_ENDPOINT_OUT_FS_MPS|Device Class STORAGE||||Device storage class endpoint out_FS Max Packet Size
+USBD_DFU_XFER_SIZE|USBD_DFU_XFER_SIZE|Device Class DFU||0|16777215|Maximum number of bytes that the device can accept per control-write operation. Note : The value of UX_SLAVE_REQUEST_CONTROL_MAX_LENGTH shall be greater or equal to USBD_DFU_XFER_SIZE
+USBD_DFU_MEDIA|USBD_DFU_MEDIA|Device Class DFU||||USBD_DFU_MEDIA Parameter Description: The description of the flash (used by PC tool DFuSe) Each Alternate setting string descriptor must follow this memory mapping so that the PC Host Software can decode the right mapping for the selected device: ● @: To detect that this is a special mapping descriptor (to avoid decoding standard descriptor) ● /: for separator between zones ● Maximum 8 digits per address starting by “0x” ● /: for separator between zones ● Maximum of 2 digits for the number of sectors ● *: For separator between number of sectors and sector size ● Maximum 3 digits for sector size between 0 and 999 ● 1 digit for the sector size multiplier. Valid entries are: B (byte), K (Kilo), M (Mega) ● 1 digit for the sector type as follows: – a (0x41): Readable – b (0x42): Erasable – c (0x43): Readable and Erasabled - d(0x44): Writeable – e (0x45): Readable and Writeable – f (0x46): Erasable and Writeable – g (0x47): Readable, Erasable and Writeable Note: If the target memory is not contiguous, the user can add the new sectors to be decoded just after a slash"/" as shown in the following example: "@Flash /0xF000/1*4Ka/0xE000/1*4Kg/0x8000/2*24Kg"
+USBD_DFU_DetachTimeout|USBD_DFU_DetachTimeout|Device Class DFU||0|16777215|Time, in milliseconds, that the device will wait after receipt of the DFU_DETACH request. If this time elapses without a USB reset, then the device will terminate the Reconfiguration phase and revert back to normal operation. This represents the maximum time that the device can wait (depending on its timers, etc.).
+UX_DEVICE_CLASS_DFU_STATUS_POLLTIMEOUT|UX_DEVICE_CLASS_DFU_STATUS_POLLTIMEOUT|Device Class DFU||0|16777215|This value represents the default DFU status bwPollTimeout. The value is 3 bytes long (max 0xFFFFFFu). By default the bwPollTimeout is 1 (means 1ms)
+UX_DEVICE_CLASS_DFU_CUSTOM_REQUEST_ENABLE|UX_DEVICE_CLASS_DFU_CUSTOM_REQUEST_ENABLE|Device Class DFU||||This macro will enable custom request process callback
+UX_DEVICE_CLASS_DFU_ERROR_GET_ENABLE|UX_DEVICE_CLASS_DFU_ERROR_GET_ENABLE|Device Class DFU||||This macro will enable DFU_GETSTATUS and DFU_GETSTATE in dfu ERROR
+UX_DEVICE_CLASS_DFU_UPLOAD_DISABLE|UX_DEVICE_CLASS_DFU_UPLOAD_DISABLE|Device Class DFU||||This macro disable DFU Upload support
+USBD_DFU_BM_ATTRIBUTES|USBD_DFU_BM_ATTRIBUTES|Device Class DFU||0|255|Bit 3: device will perform a bus detach-attach sequence when it receives a DFU_DETACH request. The host must not issue a USB Reset. (bitWillDetach) 0 = no 1 = yes Bit 2: device is able to communicate via USB after Manifestation phase. (bitManifestationTolerant) 0 = no, must see bus reset 1 = yes Bit 1: upload capable (bitCanUpload) 0 = no 1 = yes Bit 0: download capable (bitCanDnload) 0 = no 1 = yes
+MEDIA_ERASE_TIME|DFU_MEDIA_ERASE_TIME|Device Class DFU||0|16777215|Time to erase media 1 (means 1ms)
+UX_DEVICE_CLASS_DFU_STATUS_MODE|UX_DEVICE_CLASS_DFU_STATUS_MODE|Device Class DFU||||simple mode enabled: status is queried from application in dfuDNLOAD-SYNC and dfuMANIFEST-SYNC state, (no bwPollTimeout.) simple mode disabled: status is queried from application once requested, (bwPollTimeout supported)
+MEDIA_PROGRAM_TIME|DFU_MEDIA_PROGRAM_TIME|Device Class DFU||0|16777215|time to media prgram 1 (means 1ms)
+USBD_MSC_EPIN_HS_MPS|USBD_MSC_ENDPOINT_IN_HS_MPS|Device Class STORAGE||||Device storage class endpoint in_HS Max Packet Size
+USBD_MSC_EPOUT_HS_MPS|USBD_MSC_ENDPOINT_OUT_HS_MPS|Device Class STORAGE||||Device storage class endpoint out_HS Max Packet Size
+USBD_MSC_EPIN_FS_MPS|USBD_MSC_ENDPOINT_IN_FS_MPS|Device Class STORAGE||||Device storage class endpoint in_FS Max Packet Size
+USBD_HID_MOUSE_EPIN_ADDR|USBD_HID_MOUSE_ENDPOINT_IN_ADDRESS|Device Class HID MOUSE||0|9|this the device HID endpoint in address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_HID_MOUSE_EPIN_HS_MPS|USBD_HID_MOUSE_ENDPOINT_IN_HS_MPS|Device Class HID MOUSE||1|1024|Device HID class endpoint in_HS Max Packet Size
+USBD_HID_MOUSE_EPIN_FS_MPS|USBD_HID_MOUSE_ENDPOINT_IN_FS_MPS|Device Class HID MOUSE||1|1024|Device HID class endpoint in_FS Max Packet Size
+USBD_HID_MOUSE_EPIN_HS_BINTERVAL|USBD_HID_MOUSE_ENDPOINT_IN_HS_BINTERVAL|Device Class HID MOUSE||1|16|Device HID class endpoint in_HS BINERVAL
+USBD_HID_MOUSE_EPIN_FS_BINTERVAL|USBD_HID_MOUSE_ENDPOINT_IN_FS_BINTERVAL|Device Class HID MOUSE||1|255|Device HID class endpoint in_FS BINERVAL
+USBD_HID_KEYBOARD_EPIN_ADDR|USBD_HID_KEYBOARD_ENDPOINT_IN_ADDRESS|Device Class HID KEYBOARD||0|9|this the device HID endpoint in address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_HID_KEYBOARD_EPIN_HS_MPS|USBD_HID_KEYBOARD_ENDPOINT_IN_HS_MPS|Device Class HID KEYBOARD||1|1024|Device HID class endpoint in_HS Max Packet Size
+USBD_HID_KEYBOARD_EPIN_FS_MPS|USBD_HID_KEYBOARD_ENDPOINT_IN_FS_MPS|Device Class HID KEYBOARD||1|1024|Device HID class endpoint in_FS Max Packet Size
+USBD_HID_KEYBOARD_EPIN_HS_BINTERVAL|USBD_HID_KEYBOARD_ENDPOINT_IN_HS_BINTERVAL|Device Class HID KEYBOARD||1|16|Device HID class endpoint in_HS BINERVAL
+USBD_HID_KEYBOARD_EPIN_FS_BINTERVAL|USBD_HID_KEYBOARD_ENDPOINT_IN_FS_BINTERVAL|Device Class HID KEYBOARD||1|255|Device HID class endpoint in_FS BINERVAL
+UX_DEVICE_CLASS_HID_INTERRUPT_OUT_SUPPORT|UX_DEVICE_CLASS_HID_INTERRUPT_OUT_SUPPORT|Device Class HID CUSTOM||||Add support for Device HID OUT interrupt
+USBD_HID_CUSTOM_EPIN_ADDR|USBD_HID_CUSTOM_ENDPOINT_IN_ADDRESS|Device Class HID CUSTOM||0|9|this the device HID endpoint in address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_HID_CUSTOM_EPOUT_ADDR|USBD_HID_CUSTOM_ENDPOINT_OUT_ADDRESS|Device Class HID CUSTOM||0|9|this the device HID endpoint out address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_HID_CUSTOM_EPIN_HS_MPS|USBD_HID_CUSTOM_ENDPOINT_IN_HS_MPS|Device Class HID CUSTOM||1|1024|Device HID class endpoint in_HS Max Packet Size
+USBD_HID_CUSTOM_EPIN_FS_MPS|USBD_HID_CUSTOM_ENDPOINT_IN_FS_MPS|Device Class HID CUSTOM||1|1024|Device HID class endpoint in_FS Max Packet Size
+USBD_HID_CUSTOM_EPIN_HS_BINTERVAL|USBD_HID_CUSTOM_ENDPOINT_IN_HS_BINTERVAL|Device Class HID CUSTOM||1|16|Device HID class endpoint in_HS BINERVAL
+USBD_HID_CUSTOM_EPIN_FS_BINTERVAL|USBD_HID_CUSTOM_ENDPOINT_IN_FS_BINTERVAL|Device Class HID CUSTOM||1|255|Device HID class endpoint in_FS BINERVAL
+USBD_HID_CUSTOM_EPOUT_HS_MPS|USBD_HID_CUSTOM_ENDPOINT_OUT_HS_MPS|Device Class HID CUSTOM||1|1024|Device HID class endpoint out_HS Max Packet Size
+USBD_HID_CUSTOM_EPOUT_FS_MPS|USBD_HID_CUSTOM_ENDPOINT_OUT_FS_MPS|Device Class HID CUSTOM||1|1024|Device HID class endpoint out_FS Max Packet Size
+USBD_HID_CUSTOM_EPOUT_HS_BINTERVAL|USBD_HID_CUSTOM_ENDPOINT_OUT_HS_BINTERVAL|Device Class HID CUSTOM||1|16|Device HID class endpoint out_HS BINERVAL
+USBD_HID_CUSTOM_EPOUT_FS_BINTERVAL|USBD_HID_CUSTOM_ENDPOINT_OUT_FS_BINTERVAL|Device Class HID CUSTOM||1|255|Device HID class endpoint out_FS BINERVAL
+USBD_CDCACM_EPINCMD_ADDR|USBD_CDCACM_ENDPOINT_IN_CMD_ADDR|Device Class CDC ACM||0|9|Device CDC ACM class command endpoint in Address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_CDCACM_EPINCMD_HS_MPS|USBD_CDCACM_ENDPOINT_IN_CMD_HS_MPS|Device Class CDC ACM||1|64|Device CDC ACM class endpoint_HS max packet size
+USBD_CDCACM_EPINCMD_HS_BINTERVAL|USBD_CDCACM_ENDPOINT_IN_CMD_HS_BINTERVAL|Device Class CDC ACM||1|255|Device HID class endpoint cmd in_HS BINERVAL
+USBD_CDCACM_EPIN_ADDR|USBD_CDCACM_ENDPOINT_IN_ADDR|Device Class CDC ACM||0|9|Device CDC-ACM endpoint in address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_CDCACM_EPIN_HS_MPS|USBD_CDCACM_ENDPOINT_IN_HS_MPS|Device Class CDC ACM||1|512|Device CDC ACM class endpoint in _HS max packet size
+USBD_CDCACM_EPOUT_ADDR|USBD_CDCACM_ENDPOINT_OUT_ADDR|Device Class CDC ACM||0|9|Device CDC-ACM endpoint out address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_CDCACM_EPOUT_HS_MPS|USBD_CDCACM_ENDPOINT_OUT_HS_MPS|Device Class CDC ACM||1|512|Device CDC ACM class endpoint out_HS max packet size
+USBD_CDCACM_EPINCMD_FS_MPS|USBD_CDCACM_ENDPOINT_IN_CMD_FS_MPS|Device Class CDC ACM||1|64|Device CDC ACM class endpoint in _FS max packet size
+USBD_CDCACM_EPINCMD_FS_BINTERVAL|USBD_CDCACM_ENDPOINT_IN_CMD_FS_BINTERVAL|Device Class CDC ACM||1|255|Device HID class endpoint cmd in_FS BINERVAL
+USBD_CDCACM_EPIN_FS_MPS|USBD_CDCACM_ENDPOINT_IN_FS_MPS|Device Class CDC ACM||1|64|Device CDC ACM class endpoint in _FS max packet size
+USBD_CDCACM_EPOUT_FS_MPS|USBD_CDCACM_ENDPOINT_OUT_FS_MPS|Device Class CDC ACM||1|64|Device CDC ACM class endpoint out_FS max packet size
+USBD_DEVICE_FRAMEWORK_BUILDER_ENABLED|USBD_DEVICE_FRAMEWORK_BUILDER_ENABLED|Device Core||||Set to 1 to enable dynamic device descrriptors builder
+USBD_FRAMEWORK_MAX_DESC_SZ|USBD_FRAMEWORK_MAX_DESC_SZ|Device Core||45|2048|USB Device Builder FrameWork size
+USBD_VID|USBD_VID|Device Descriptors||0|65535|Vendor Identifier
+USBD_PID|USBD_PID|Device Descriptors||0|65535|Product Identifier
+USBD_MANUFACTURER_STRING|USBD_MANUFACTURER_STRING|Device Descriptors||||Manufacturer string
+USBD_PRODUCT_STRING|USBD_PRODUCT_STRING|Device Descriptors||||Product string
+USBD_LANGID_STRING|USBD_LANGID_STRING|Device Descriptors||||Language ID
+USBD_SERIAL_NUMBER|USBD_SERIAL_NUMBER|Device Descriptors||||Product serial number
+MAX_POWER_IN_MILLI_AMPER|USBD_MAX_POWER (mA)|Device Descriptors||0|500|max power in milli-amper
+USBD_MAX_POWER|USBD_MAX_POWER|Device Descriptors||||USBD_MAX_POWER
+USBD_COMPOSITE_USE_IAD|USBD_COMPOSITE_USE_IAD|Device Descriptors||||USBD_COMPOSITE_USE_IAD
+Core_System||||0|1|The Product Identfier value present on the Device Descriptor
+TraceX_Support||||0|1|The Product Identfier value present on the Device Descriptor
+Network_Driver||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_CoreStack||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_Controller||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_HID_Core||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_HID_Keyboard||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_HID_Mouse||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_HID_RCU||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_MSC||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_CDC_ACM||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_CDC_ECM||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_HUB||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_AUDIO||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_VIDEO||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_PRINTER||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_GSER||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_ASIX||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_PIMA||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_PROLIFIC||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Host_class_SWAR||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_HID||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_HID_CORE||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_HID_MOUSE||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_HID_KEYBOARD||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_HID_CUSTOM||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_STORAGE||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_CDC_ECM||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_CDC_ACM||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_DFU||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_AUDIO||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_PIMA_MTP||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_RNDIS||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_PRINTER||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Device_CoreStack||||0|1|The Product Identfier value present on the Device Descriptor
+UX_Device_Controller||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_VIDEO||||0|1|The Product Identfier value present on the Device Descriptor
+UX_DEVICE_CCID||||0|1|The Product Identfier value present on the Device Descriptor
+USBD_CDCECM_EPIN_FS_MPS|USBD_CDCECM_ENDPOINT_IN_FS_MPS|Device Class CDC ECM||1|64|Device CDC ECM class endpoint in _FS max packet size
+USBD_CDCECM_EPINCMD_FS_BINTERVAL|USBD_CDCECM_ENDPOINT_IN_CMD_FS_BINTERVAL|Device Class CDC ECM||1|255|Device CDC ECM class endpoint cmd in_FS BINERVAL
+USBD_CDCECM_LOCAL_MAC_ADDR|USBD_CDCECM_LOCAL_MAC_ADDR|Device Class CDC ECM||||Device CDC ECM MAC address. Make sure to use a valid local MAC address
+USBD_CDCECM_REMOTE_MAC_ADDR|USBD_CDCECM_REMOTE_MAC_ADDR|Device Class CDC ECM||||Device RNDIS MAC address. Make sure to use a valid remote MAC address.
+USBD_CDCECM_EPINCMD_HS_MPS|USBD_CDCECM_ENDPOINT_IN_CMD_HS_MPS|Device Class CDC ECM||1|512|Device CDC ECM class endpoint out_HS max packet size
+USBD_CDCECM_EPINCMD_ADDR|USBD_CDCECM_ENDPOINT_IN_CMD_ADDR|Device Class CDC ECM||0|9|Device CDC ECM class command endpoint in Address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_CDCECM_EPINCMD_FS_MPS|USBD_CDCECM_ENDPOINT_IN_CMD_FS_MPS|Device Class CDC ECM||1|64|Device CDC ECM class endpoint in _FS max packet size
+USBD_CDCECM_EPOUT_HS_MPS|USBD_CDCECM_ENDPOINT_OUT_HS_MPS|Device Class CDC ECM||1|512|Device CDC ECM class endpoint out_HS max packet size
+USBD_CDCECM_EPOUT_ADDR|USBD_CDCECM_ENDPOINT_OUT_ADDR|Device Class CDC ECM||0|9|Device CDC-ECM endpoint out address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_CDCECM_EPIN_HS_MPS|USBD_CDCECM_ENDPOINT_IN_HS_MPS|Device Class CDC ECM||1|512|Device CDC ECM class endpoint in _HS max packet size
+USBD_CDCECM_EPINCMD_HS_BINTERVAL|USBD_CDCECM_ENDPOINT_IN_CMD_HS_BINTERVAL|Device Class CDC ECM||1|255|Device CDC ECM class endpoint cmd in_HS BINERVAL
+USBD_CDCECM_EPIN_ADDR|USBD_CDCECM_ENDPOINT_IN_ADDR|Device Class CDC ECM||0|9|Device CDC-ECM endpoint in address, <font color="red">make sure to have a unique address when used alongside other device classes.</font>
+USBD_CDCECM_EPOUT_FS_MPS|USBD_CDCECM_ENDPOINT_OUT_FS_MPS|Device Class CDC ECM||1|64|Device CDC ECM class endpoint out_FS max packet size
+AZRTOS_APP_MEM_ALLOCATION_METHOD_STANDALONE|Memory Allocation|Memory Configuration||||<b> Use Static Allocation </b> : use predefined threadX memory pools for allocation. a static <b>TX_BYTE_POOL </b> is created using the <code> tx_byte_pool_create() </code> API and allocations are done with <code>tx_byte_allocate() </code> <b> Use Dynamic Allocation </b> :Using dynamic memory allocation requires to apply some changes to the linker file. + <b><i>ThreadX</i></b> ThreadX needs to pass a pointer to the first free memory location in RAM to the <code>tx_application_define()</code> function, <i>"first_unused_memory"</i> argument.This require changes in the linker files to expose this memory location. <ul> <li>For EWARM <i>add the following section into the .icf</i> file</li> <code> place in RAM_region { last section FREE_MEM}; </code> <li>For STM32CubeIDE <i>add the following section into the .ld </i>file</li> define the symbol <b>__RAM_segment_used_end__</b> <code> ._threadx_heap : { . = ALIGN(8); ` __RAM_segment_used_end__= .; . = .+64K; ` } >RAM_D1 AT> RAM_D1 </code> </ul> the<code> "tx_initialize_low_level.s" </code> The "tx_initialize_low_level.S" should be also modified to enable the "USE_DYNAMIC_MEMORY_ALLOCATION" flag.
+UX_HOST_APP_MEM_POOL_SIZE_STANDALONE|UXHost memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBXHost application.<font color="red">The allocated memory for all enabled middelwares should not exceed the total size of available memory.</font>
+UX_DEVICE_APP_MEM_POOL_SIZE_STANDALONE|UXDevice memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBXDevice application.<font color="red">The allocated memory for all enabled middelwares should not exceed the total size of available memory.</font>
+UX_HOST_APP_MEM_POOL_SIZE|UXHost memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBXHost application.<font color="red">The allocated memory for all enabled middelwares should not exceed the total size of available memory.</font>
+UX_DEVICE_APP_MEM_POOL_SIZE|UXDevice memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBXDevice application.<font color="red">The allocated memory for all enabled middelwares should not exceed the total size of available memory.</font>
+AZRTOS_APP_MEM_ALLOCATION_METHOD|Memory Allocation|Core||||
+REG_UX_DEVICE_CORE|USBX Device Generate Core Init code|USBX Device Common Init||||Generate USBX Device Core Init code.
+USBX_DEVICE_SYS_SIZE|USBX Device System Stack Size|USBX Device Common Init||512|=262144|default Size of the regular memory pool for USBX stack must be less than the memory pool size. Required value: - HID class : 4*1024 - Storage class : 5*1024 - DFU class: 4*1024 - CDC ACM class: 6*1024 - CDC ECM class: 34*1024 - VIDEO class: 6*1024 - RNDIS class: 34*1024 - MTP class: 12*1024 - Printer Class:3*1024 - CCID Class:8*1024 - Composite : addition of class required memory.
+REG_USBX_DEVICE_CON_CK|USBX Device Register Connection Callback|USBX Device Common Init||||Register USBX Device Connection Callback invoked when: - USB Device Connected. - USB Device Disconnected. - USB SOF Received. - USB Device Suspended. - USB Device Resumed. - USB Device Removed. - USB Device Attached.
+REG_UX_DEVICE_THREAD|USBX Device Application Thread Create|USBX Device Common Init||||Generate usbx device app thread
+USBX_DEVICE_APP_THREAD_NAME|USBX Device Application Thread Entry|USBX Device Common Init||||Main thread entry function Name. should not be empty
+USBX_DEVICE_APP_THREAD_PRIO|USBX Device Application Thread Priority|USBX Device Common Init||0|1024|ThreadX Application Thread Priority must be between 0 and TX_MAX_PRIORITIES.
+USBX_DEVICE_APP_THREAD_Size|USBX Device Application Thread Stack Size|USBX Device Common Init||512|=UX_DEVICE_APP_MEM_POOL_SIZE|Thread stack size must be between 512 and UXDevice memory pool size.
+REG_UX_DEVICE_HID_MOUSE|Register USBX Device Class HID MOUSE|USBX Device Classes||||Generate USBX Device Class HID Mouse init parameters.
+REG_UX_DEVICE_HID_KEYBOARD|Register USBX Device Class HID KEYBOARD|USBX Device Classes||||Generate USBX Device Class HID Keyboard init parameters.
+REG_UX_DEVICE_HID_CUSTOM|Register USBX Device Class HID CUSTOM|USBX Device Classes||||Generate USBX Device Class HID Custom init parameters.
+REG_UX_DEVICE_STORAGE|Register USBX Device Class STORAGE|USBX Device Classes||||Generate USBX Device Class Storage init parameters.
+REG_UX_DEVICE_CDC_ACM|Register USBX Device Class CDC ACM|USBX Device Classes||||Generate USBX Device Class CDC ACM init parameters.
+REG_UX_DEVICE_CDC_ECM|Register USBX Device Class CDC ECM|USBX Device Classes||||Generate USBX Device Class CDC ECM init parameters.
+REG_UX_DEVICE_DFU|Register USBX Device Class DFU|USBX Device Classes||||Generate USBX Device Class DFU init parameters.
+REG_UX_DEVICE_RNDIS|Register USBX Device Class RNDIS|USBX Device Classes||||Generate USBX Device Class RNDIS init parameters.
+REG_UX_DEVICE_PIMA_MTP|Register USBX Device Class PIMA MTP|USBX Device Classes||||Generate USBX Device Class PIMA init parameters.
+REG_UX_DEVICE_VIDEO|Register USBX Device Class VIDEO|USBX Device Classes||||Generate USBX Device Class VIDEO init parameters.
+REG_UX_DEVICE_CCID|Register USBX Device Class CCID|USBX Device Classes||||Generate USBX Device Class CCID init parameters.
+REG_UX_DEVICE_PRINTER|Register USBX Device Class PRINTER|USBX Device Classes||||Generate USBX Device Class PRINTER init parameters.
+REG_UX_HOST_CORE|USBX Host Generate Core Init code|USBX Host Core Init||||Generate USBX Host Core Init code for the USBX Host application.
+USBX_HOST_SYS_SIZE|USBX Host System Stack Size|USBX Host Core Init||512|262144|Default pool size for USBX stack. Required value: - HID class : 18*1024 - Storage class : 22*1024 - CDC ACM class: 10*1024 <font color="red">The allocated memory for all enabled middelwares should not exceed the total size of available memory.</font>
+REG_UX_HOST_THREAD|USBX Host Application Thread Create|USBX Host Core Init||||Generate usbx Host app thread
+USBX_HOST_APP_THREAD_NAME|USBX Host Application Thread Entry|USBX Host Core Init||||Main thread entry function Name. should not be empty
+USBX_HOST_APP_THREAD_Size|USBX Host Application thread stack size|USBX Host Core Init||0|UX_HOST_APP_MEM_POOL_SIZE|Size stack of the applicative USBX Host thread.
+USBX_HOST_APP_THREAD_PRIO|USBX Host Application Thread priority|USBX Host Core Init||0|1024|ThreadX Application Thread Priority must be between 0 and TX_MAX_PRIORITIES.
+REG_UX_HOST_HID_MOUSE|Register USBX Host Class HID MOUSE|USBX Host Classes||||Register USBX Host Class HID MOUSE
+REG_UX_HOST_HID_KEYBOARD|Register USBX Host Class HID KEYBOARD|USBX Host Classes||||Register USBX Host Class HID KEYBOARD
+REG_UX_HOST_CDC_ACM|Register USBX Host Class CDC ACM|USBX Host Classes||||Register USBX Host Class CDC ACM
+REG_UX_HOST_Mass_Storage|Register USBX Host Class Mass Storage|USBX Host Classes||||Register USBX Host Class Mass Storage
+REG_UX_HOST_HID_RCU|Register USBX Host Class HID RCU|USBX Host Classes||||Register USBX Host Class HID RCU.
+UX_HOST_STACK_CONFIGURATION_INSTANCE_CREATE_CONTROL|UX_HOST_STACK_CONFIGURATION_INSTANCE_CREATE_CONTROL|USBX Host Classes||||Define the value controls host configuration instance creation, include all interfaces and endpoints physical resources.
+UX_MAX_CLASSES|UX_MAX_CLASSES|Host Core||2|16|Define the maximum number of classes that can be loaded by USBX.
+USBX_HOST_MEM_POOL_VAR_NAME|USBXHost MemPool Name|Memory Configuration||||Default USBX Host memory pool var name <font color="red"> <b>This is a variable name. It should be C compliant declaration, Otherwise compilation errors will be generated in the project. </b> </font>
+USBX_DEVICE_MEM_POOL_VAR_NAME|USBXDevice MemPool Name|Memory Configuration||||Default USBX Device memory pool var name <font color="red"> <b>This is a variable name. It should be C compliant declaration, Otherwise compilation errors will be generated in the project. </b> </font>
+REG_UX_HOST_HUB|Register USBX Host Class HUB|USBX Host Classes||||Register USBX Host Class HUB
+UX_ENABLE_ASSERT|UX_ENABLE_ASSERT|Core Utilities||||Defined, this enables the assert checks inside usbx.
+UX_STANDALONE|UX_STANDALONE|Core Utilities||||Defined, this macro will enable the standalone mode of usbx.
+USBD_VIDEO_EPIN_ADDR|USBD_VIDEO_ENDPOINT_IN_ADDR|Device Class VIDEO||1|9|Device VIDEO endpoint in address, should have a unique address when used alongside other device classes.
+USBD_VIDEO_EPIN_FS_MPS|USBD_VIDEO_ENDPOINT_IN_FS_MPS|Device Class VIDEO||1|1023|Device VIDEO class endpoint in FS max packet size.
+USBD_VIDEO_EPIN_HS_MPS|USBD_VIDEO_ENDPOINT_IN_HS_MPS|Device Class VIDEO||1|3072|Device VIDEO class endpoint HS max packet size.
+USBD_VIDEO_EPIN_FS_BINTERVAL|USBD_VIDEO_ENDPOINT_IN_FS_BINTERVAL|Device Class VIDEO||1|255|Device VIDEO endpoint in FS BINERVAL
+USBD_VIDEO_EPIN_HS_BINTERVAL|USBD_VIDEO_ENDPOINT_IN_HS_BINTERVAL|Device Class VIDEO||1|16|Device VIDEO endpoint in HS BINERVAL
+VS_FORMAT_SUBTYPE|VIDEO_STREAMING_FORMAT_SUBTYPE|Device Class VIDEO||||A Payload Format descriptor defines the characteristics of a video stream with its specific format.
+UVC_UNCOMPRESSED_GUID|UVC_UNCOMPRESSED_GUID|Device Class VIDEO||||Globally Unique Identifier used to identify stream-encoding format.​
+UVC_BITS_PER_PIXEL|UVC_BITS_PER_PIXEL|Device Class VIDEO||0|255|Number of bits per pixel used to specify color in the decoded video frame.
+UVC_COLOR_PRIMARIE|UVC_COLOR_PRIMARIE|Device Class VIDEO||0|255|This defines the color primaries and the reference white. 0: Unspecified (Image characteristics unknown) 1: BT.709, sRGB (default) 2: BT.470-2 (M) 3: BT.470-2 (B, G) 4: SMPTE 170M 5: SMPTE 240M 6-255: Reserved
+UVC_TFR_CHARACTERISTICS|UVC_TFR_CHARACTERISTICS|Device Class VIDEO||0|255|This field defines the optoelectronic transfer characteristic of the source picture also called the gamma function. 0: Unspecified (Image characteristics unknown) 1: BT.709 (default) 2: BT.470-2 M 3: BT.470-2 B, G 4: SMPTE 170M 5: SMPTE 240M 6: Linear (V = Lc) 7: sRGB (very similar to BT.709) 8-255: Reserved
+UVC_MATRIX_COEFFICIENTS|UVC_MATRIX_COEFFICIENTS|Device Class VIDEO||0|255|Matrix used to compute luma and chroma values from the color primaries. 0: Unspecified (Image characteristics unknown) 1: BT. 709 2: FCC 3: BT.470-2 B, G 4: SMPTE 170M (BT.601, default) 5: SMPTE 240M 6-255: Reserved
+UVC_FRAME_WIDTH|UVC_FRAME_WIDTH|Device Class VIDEO||1|65535|Width of the still image.
+UVC_FRAME_HEIGHT|UVC_FRAME_HEIGHT|Device Class VIDEO||1|65535|Height of the still image.
+UVC_CAM_FPS_FS|UVC_CAM_FPS_FS|Device Class VIDEO||1|255|Frame rate in FS speed.
+UVC_CAM_FPS_HS|UVC_CAM_FPS_HS|Device Class VIDEO||1|255|Frame rate in HS speed.
+USBD_CCID_EPINCMD_ADDR|USBD_CCID_ENDPOINT_IN_CMD_ADDR|Device Class CCID||1|9|Device CCID class command endpoint in Address
+USBD_CCID_EPINCMD_FS_MPS|USBD_CCID_ENDPOINT_IN_CMD_FS_MPS|Device Class CCID||1|64|Device CCID class command endpoint in FS max packet size
+USBD_CCID_EPINCMD_HS_MPS|USBD_CCID_ENDPOINT_IN_CMD_HS_MPS|Device Class CCID||1|512|Device CCID class command endpoint in HS max packet size
+USBD_CCID_EPINCMD_FS_BINTERVAL|USBD_CCID_ENDPOINT_IN_CMD_FS_BINTERVAL|Device Class CCID||1|255|Device CCID class endpoint cmd in FS BINTERVAL
+USBD_CCID_EPINCMD_HS_BINTERVAL|USBD_CCID_ENDPOINT_IN_CMD_HS_BINTERVAL|Device Class CCID||1|16|Device CCID class endpoint cmd in HS BINTERVAL
+USBD_CCID_EPIN_ADDR|USBD_CCID_ENDPOINT_IN_ADDR|Device Class CCID||1|9|Device CCID endpoint in address
+USBD_CCID_EPIN_FS_MPS|USBD_CCID_ENDPOINT_IN_FS_MPS|Device Class CCID||1|64|Device CCID class endpoint in FS max packet size
+USBD_CCID_EPIN_HS_MPS|USBD_CCID_ENDPOINT_IN_HS_MPS|Device Class CCID||1|512|Device CCID class endpoint in HS max packet size
+USBD_CCID_EPOUT_ADDR|USBD_CCID_ENDPOINT_OUT_ADDR|Device Class CCID||1|9|Device CCID endpoint out address
+USBD_CCID_EPOUT_FS_MPS|USBD_CCID_ENDPOINT_OUT_FS_MPS|Device Class CCID||1|64|Device CCID class endpoint out FS max packet size
+USBD_CCID_EPOUT_HS_MPS|USBD_CCID_ENDPOINT_OUT_HS_MPS|Device Class CCID||1|512|Device CCID class endpoint out HS max packet size
+USBD_CCID_MAX_SLOT_INDEX|USBD_CCID_MAX_SLOT_INDEX|Device Class CCID||0|16|The index of the highest available slot on this ccid device
+USBD_CCID_MAX_BUSY_SLOTS|USBD_CCID_MAX_BUSY_SLOTS|Device Class CCID||1|255|Maximum number of slots which can be simultaneously busy in the CCID device
+USBD_CCID_N_CLOCKS|USBD_CCID_NUMBER_CLOCK_SUPPORTED|Device Class CCID||1|255|The number of clock frequencies that are supported by the CCID
+USBD_CCID_N_DATA_RATES|USBD_CCID_NUMBER_DATA_RATES_SUPPORTED|Device Class CCID||1|255|The number of data rates that are supported by the CCID device
+USBD_CCID_MAX_BLOCK_SIZE_HEADER|USBD_CCID_MAX_BLOCK_SIZE_HEADER|Device Class CCID||271|65554|The CCID max message length
+USBD_CCID_DEFAULT_DATA_RATE|USBD_CCID_DEFAULT_DATA_RATE|Device Class CCID||1|115200|Default ICC I/O data rate in bps
+USBD_CCID_MAX_DATA_RATE|USBD_CCID_MAX_DATA_RATE|Device Class CCID||1|115200|Maximum supported ICC I/O data rate in bps
+USBD_CCID_DEFAULT_CLOCK_FREQ|USBD_CCID_DEFAULT_CLOCK_FREQ|Device Class CCID||1|5000|Default ICC clock frequency in KHz
+USBD_CCID_MAX_CLOCK_FREQ|USBD_CCID_MAX_CLOCK_FREQ|Device Class CCID||1|5000|Maximum supported ICC clock frequency in KHz
+USBD_CCID_PROTOCOL|USBD_CCID_PROTOCOL|Device Class CCID||1|3|This value indicates support for the associated ISO protocol T=0 & T=1
+USBD_CCID_VOLTAGE_SUPPLY|USBD_CCID_VOLTAGE_SUPPLY|Device Class CCID||1|7|This value indicates what voltages the CCID can supply to its slots.
+USBD_PRNT_EPOUT_ADDR|USBD_PRINTER_ENDPOINT_OUT_ADDR|Device Class Printer||1|9|Device Printer Class endpoint OUT Address
+USBD_PRNT_EPIN_ADDR|USBD_PRINTER_ENDPOINT_IN_ADDR|Device Class Printer||1|9|Device Printer Class endpoint IN Address
+USBD_PRNT_EPOUT_FS_MPS|USBD_PRINTER_ENDPOINT_OUT_FS_MPS|Device Class Printer||1|64|Device Printer class endpoint OUT FS max packet size
+USBD_PRNT_EPOUT_HS_MPS|USBD_PRINTER_ENDPOINT_OUT_HS_MPS|Device Class Printer||1|512|Device PRNT class endpoint OUT HS max packet size
+USBD_PRNT_EPIN_FS_MPS|USBD_PRINTER_ENDPOINT_IN_FS_MPS|Device Class Printer||1|64|Device PRNT class endpoint IN FS max packet size
+USBD_PRNT_EPIN_HS_MPS|USBD_PRINTER_ENDPOINT_IN_HS_MPS|Device Class Printer||1|512|Device PRNT class endpoint IN HS max packet size
+USBD_PRNT_IF_PROTOCOL|USBD_PRINTER_INTERFACE_PROTOCOL|Device Class Printer||0|255|Device PRNT Class Interface Type
+UX_DEVICE_CLASS_PRINTER_WRITE_AUTO_ZLP|UX_DEVICE_CLASS_PRINTER_WRITE_AUTO_ZLP|Device Class Printer||||Defined, ZLP packet is sent automatically to complete printer write transfer
+UX_DEVICE_ENDPOINT_BUFFER_OWNER|UX_DEVICE_ENDPOINT_BUFFER_OWNER|Device Core||||Defined, this value represents the endpoint buffer owner. 0 - The default, endpoint buffer is managed by core stack. Each endpoint takes UX_SLAVE_REQUEST_DATA_MAX_LENGTH bytes. 1 - Endpoint buffer managed by classes. In this case not all endpoints consume UX_SLAVE_REQUEST_DATA_MAX_LENGTH bytes.
+UX_DEVICE_CLASS_CDC_ACM_ZERO_COPY|UX_DEVICE_CLASS_CDC_ACM_ZERO_COPY|Device Class CDC ACM||||Defined, it enables device CDC ACM zero copy for bulk in/out endpoints (write/read). Enabled, the endpoint buffer is not allocated in class, application must provide the buffer for read/write, and the buffer must meet device controller driver (DCD) buffer requirements (e.g., aligned and cache safe). It only works if UX_DEVICE_ENDPOINT_BUFFER_OWNER is 1 (endpoint buffer managed by class).
+UX_DEVICE_CLASS_HID_ZERO_COPY|UX_DEVICE_CLASS_HID_ZERO_COPY|Device Class HID||||Defined, it enables device HID zero copy and flexible queue support (works if HID owns endpoint buffer). Enabled, the internal queue buffer is directly used for transfer, the APIs are kept to keep backword compatibility, to AVOID KEEPING BUFFERS IN APPLICATION. Flexible queue introduces initialization parameter _event_max_number and _event_max_length, so each HID function could have different queue settings._event_max_number could be 2 ~UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE.Max of _event_max_length could be UX_DEVICE_CLASS_HID_EVENT_BUFFER_LENGTH. If the initialization parameters are invalid (are 0s or exceed upper mentioned definition), UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE and UX_DEVICE_CLASS_HID_EVENT_BUFFER_LENGTH are used to calculate and allocate the queue.
+UX_DEVICE_CLASS_CDC_ECM_ZERO_COPY|UX_DEVICE_CLASS_CDC_ECM_ZERO_COPY|Device Class CDC ECM||||Defined, it enables device CDC_ECM zero copy support (works if CDC_ECM owns endpoint buffer). Enabled, it requires that the NX IP default packet pool is in cache safe area, and buffer max size is larger than UX_DEVICE_CLASS_CDC_ECM_ETHERNET_PACKET_SIZE (1536).
+UX_DEVICE_CLASS_RNDIS_ZERO_COPY|UX_DEVICE_CLASS_RNDIS_ZERO_COPY|Device Class RNDIS||||Defined, it enables device RNDIS zero copy support (works if RNDIS owns endpoint buffer). Enabled, it requires that the NX IP default packet pool is in cache safe area, and buffer max size is larger than UX_DEVICE_CLASS_RNDIS_MAX_PACKET_TRANSFER_SIZE (1600).
+UX_DEVICE_CLASS_PRINTER_ZERO_COPY|UX_DEVICE_CLASS_PRINTER_ZERO_COPY|Device Class Printer||||Defined, it enables zero copy support (works if PRINTER owns endpoint buffer). Defined, it enables zero copy for bulk in/out endpoints (write/read). In this case, the endpoint buffer is not allocated in class, application must provide the buffer for read/write, and the buffer must meet device controller driver (DCD) buffer requirements (e.g., aligned and cache safe if buffer is for DMA).
+UX_DEVICE_ENABLE_GET_STRING_WITH_ZERO_LANGUAGE_ID|UX_DEVICE_ENABLE_GET_STRING_WITH_ZERO_LANGUAGE_ID|Device Core||||Defined, this enables processing of Get String Descriptor requests with zero Language ID. The first language ID in the language ID framework will be used if the request has a zero Language ID.
+USBD_HID_MOUSE_PARAMETER_REPORT_ID|USBD_HID_MOUSE_PARAMETER_REPORT_ID|Device Class HID MOUSE||||
+
+[Values]
+# параметр|значение|подпись
+UX_ALIGN_MIN|UX_ALIGN_8|Align 8
+UX_ALIGN_MIN|UX_ALIGN_16|Align 16
+UX_ALIGN_MIN|UX_ALIGN_32|Align 32
+UX_ALIGN_MIN|UX_ALIGN_64|Align 64
+UX_ALIGN_MIN|UX_ALIGN_128|Align 128
+UX_ALIGN_MIN|UX_ALIGN_256|Align 256
+UX_ALIGN_MIN|UX_ALIGN_512|Align 512
+UX_ALIGN_MIN|UX_ALIGN_1024|Align 1024
+UX_ALIGN_MIN|UX_ALIGN_2048|Align 2048
+UX_ALIGN_MIN|UX_ALIGN_4096|Align 4096
+UX_ALIGN_MIN|UX_SAFE_ALIGN|Safe Align
+UX_ALIGN_MIN|UX_MAX_SCATTER_GATHER_ALIGNMENT|Max Align
+UX_HOST_STACK_CONFIGURATION_INSTANCE_CREATE_CONTROL|UX_HOST_STACK_CONFIGURATION_INSTANCE_CREATE_ALL|Create all
+UX_HOST_STACK_CONFIGURATION_INSTANCE_CREATE_CONTROL|UX_HOST_STACK_CONFIGURATION_INSTANCE_CREATE_OWNED|Create owned
+USBD_HID_MOUSE_PARAMETER_REPORT_ID|UX_FALSE|UX_FALSE
+USBD_HID_MOUSE_PARAMETER_REPORT_ID|UX_TRUE|UX_TRUE

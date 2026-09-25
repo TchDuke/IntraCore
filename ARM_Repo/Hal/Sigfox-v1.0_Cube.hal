@@ -1,0 +1,29 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=Sigfox
+Version=v1.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+CFG_FULL_LOW_POWER|CFG_FULL_LOW_POWER|Application configuration - Low Power||||When CFG_FULL_LOW_POWER is set to 1, the system is configured in full low power mode. It means that all what can have an impact on the consumptions are powered down.(For instance LED, Access to Debugger, Etc.)
+CFG_LPM_SUPPORTED|CFG_LPM_SUPPORTED|Application configuration - Low Power||||Low Power mode: When set to 1, the low power mode is Enable When set to 0, the device stays in RUN mode
+ADV_TRACE_TIMESTAMP_ENABLE|ADV_TRACE_TIMESTAMP_ENABLE|Application configuration - Traces||||Enable or disable traces in application
+CFG_DEBUG_APP_TRACE|CFG_DEBUG_APP_TRACE|Application configuration - Traces||||Enable or disable traces in application
+CFG_DEBUG_TRACE_LIGHT|CFG_DEBUG_TRACE_LIGHT|Application configuration - Traces||||Enable or disable light traces
+CFG_DEBUG_TRACE_FULL|CFG_DEBUG_TRACE_FULL|Application configuration - Traces||||Enable or disable full traces
+DBG_TRACE_USE_CIRCULAR_QUEUE|DBG_TRACE_USE_CIRCULAR_QUEUE|Application configuration - Traces||||When not set, the traces is looping on sending the trace over UART
+APPLI_CONFIG_LOG_LEVEL|APPLI_CONFIG_LOG_LEVEL|Application configuration - Log level||||List of Log level for Application, can be: - LOG_LEVEL_NONE (None) - LOG_LEVEL_CRIT (Critical) - LOG_LEVEL_WARN (Warning) - LOG_LEVEL_INFO (Info) - LOG_LEVEL_DEBG (Debug)
+APPLI_PRINT_FILE_FUNC_LINE|APPLI_PRINT_FILE_FUNC_LINE|Application configuration - Log level||||
+RT_DEBUG_GPIO_MODULE|RT_DEBUG_GPIO_MODULE|Application configuration - RT GPIO debug||||Real Time Debug GPIO module configuration
+ST_SFX_FEM_MODULE|ST_SFX_FEM_NONE|Application configuration - Front-End module type||||Real Time Debug GPIO module configuration
+
+[Values]
+# параметр|значение|подпись
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_NONE|LOG_LEVEL_NONE
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_CRIT|LOG_LEVEL_CRIT
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_WARN|LOG_LEVEL_WARN
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_INFO|LOG_LEVEL_INFO
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_DEBG|LOG_LEVEL_DEBG
+ST_SFX_FEM_MODULE|ST_SFX_FEM_NONE|ST_SFX_FEM_NONE
+ST_SFX_FEM_MODULE|ST_SFX_FEM_CUSTOM|ST_SFX_FEM_CUSTOM

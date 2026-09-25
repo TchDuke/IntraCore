@@ -1,0 +1,70 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DMA
+Version=STM32F412_dma_v2_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Channel|Channel|||||
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+FIFOMode|FIFO Mode|||||
+FIFOThreshold|FIFO Threshold|||||
+MemBurst|Memory Burst|||||
+PeriphBurst|Peripheral Burst|||||
+ClockEnableMode|Clock enable mode|||||
+DMA_Handle|DMA_Handle|||||
+IpInstance|IpInstance|||||
+
+[Values]
+# параметр|значение|подпись
+Channel|DMA_CHANNEL_0|Channel 0
+Channel|DMA_CHANNEL_1|Channel 1
+Channel|DMA_CHANNEL_2|Channel 2
+Channel|DMA_CHANNEL_3|Channel 3
+Channel|DMA_CHANNEL_4|Channel 4
+Channel|DMA_CHANNEL_5|Channel 5
+Channel|DMA_CHANNEL_6|Channel 6
+Channel|DMA_CHANNEL_7|Channel 7
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Mode|DMA_PFCTRL|Peripheral Flow Control
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+FIFOMode|DMA_FIFOMODE_DISABLE|Disable
+FIFOMode|DMA_FIFOMODE_ENABLE|Enable
+FIFOThreshold|DMA_FIFO_THRESHOLD_FULL|Full
+FIFOThreshold|DMA_FIFO_THRESHOLD_HALFFULL|Half Full
+FIFOThreshold|DMA_FIFO_THRESHOLD_1QUARTERFULL|One Quarter Full
+FIFOThreshold|DMA_FIFO_THRESHOLD_3QUARTERSFULL|Three Quarters Full
+MemBurst|DMA_MBURST_SINGLE|Single
+MemBurst|DMA_MBURST_INC4|4 Increment
+MemBurst|DMA_MBURST_INC8|8 Increment
+MemBurst|DMA_MBURST_INC16|16 Increment
+PeriphBurst|DMA_PBURST_SINGLE|Single
+PeriphBurst|DMA_PBURST_INC4|4 Increment
+PeriphBurst|DMA_PBURST_INC8|8 Increment
+PeriphBurst|DMA_PBURST_INC16|16 Increment
+ClockEnableMode|__HAL_RCC_DMA1_CLK_ENABLE|DMA1 clock enable
+ClockEnableMode|__HAL_RCC_DMA2_CLK_ENABLE|DMA2 clock enable

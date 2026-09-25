@@ -1,0 +1,25 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LCSC
+Version=lcsc_1_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+measurementTime|Measurement duration|LCSC configuration||0|16383|
+captureTime|Capture duration time|LCSC configuration||0|63|
+InterCaptureTime|Inter-capture duration|LCSC configuration||0|7|
+VCMBuff_RecoveryTime|Duration of TrecoveryVCM|VCMBuff configuration||0|511|
+VCMBuff_StartingTime|Duration of TStartVCM|VCMBuff configuration||0|2047|
+DampingThresholdLCAB|Count threshold|LCA and LCB configuration||0|255|
+PulseLCAB|Pulse|LCA and LCB configuration||0|15|
+measurementInterval|Measurement Interval|LCT configuration||0|255|
+PulseLCT|Pulse|LCT configuration||0|15|
+DampingThresholdLCT|Count threshold|LCT configuration||0|255|
+ClockWiseTarget|Clock Wise revolutions target|Clock Wise configuration||0|65535|
+antiClockWiseTarget|Anti Clock Wise revolutions target|Clock Wise configuration||0|65535|
+maximumBound|Maximum bound|Clock Wise configuration||0|255|
+minimumBound|Minimum bound|Clock Wise configuration||0|255|
+
+[Values]
+# параметр|значение|подпись

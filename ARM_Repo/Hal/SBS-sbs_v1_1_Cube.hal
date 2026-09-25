@@ -1,0 +1,13 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SBS
+Version=sbs_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+VDDIO1|Compensation cell for VDDIO1|Basic parameters||||
+VDDIO22|Compensation cell for VDDIO2|Basic parameters||||
+
+[Values]
+# параметр|значение|подпись

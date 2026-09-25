@@ -1,0 +1,283 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FSMC
+Version=nor_fsmc7_v4_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+NORSRAM_Instance|Device|||||
+Extended|Extended Device|||||
+NSCoherentPinout1|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank1|Bank|NOR/PSRAM control||||
+DataAddressMux1|Data address multiplexing|NOR/PSRAM control||||
+MemoryType1|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth1|Data size|NOR/PSRAM control||||
+BurstAccessMode1|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity1|Wait signal polarity|NOR/PSRAM control||||
+WrapMode1|Wrap mode|NOR/PSRAM control||||
+WaitSignalActive1|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation1|Write operation|NOR/PSRAM control||||
+WaitSignal1|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode1|Extended mode|NOR/PSRAM control||||
+AsynchronousWait1|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst1|Burst write|NOR/PSRAM control||||
+AddressSetupTime1|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime1|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime1|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration1|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision1|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency1|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode1|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime1|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime1|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime1|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration1|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision1|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency1|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode1|Extended access mode|NOR/PSRAM timing for write accesses||||
+NSCoherentPinout2|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank2|Bank|NOR/PSRAM control||||
+DataAddressMux2|Data address multiplexing|NOR/PSRAM control||||
+MemoryType2|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth2|Data size|NOR/PSRAM control||||
+BurstAccessMode2|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity2|Wait signal polarity|NOR/PSRAM control||||
+WrapMode2|Wrap mode|NOR/PSRAM control||||
+WaitSignalActive2|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation2|Write operation|NOR/PSRAM control||||
+WaitSignal2|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode2|Extended mode|NOR/PSRAM control||||
+AsynchronousWait2|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst2|Burst write|NOR/PSRAM control||||
+AddressSetupTime2|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime2|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime2|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration2|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision2|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency2|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode2|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime2|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime2|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime2|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration2|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision2|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency2|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode2|Extended access mode|NOR/PSRAM timing for write accesses||||
+NSCoherentPinout3|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank3|Bank|NOR/PSRAM control||||
+DataAddressMux3|Data address multiplexing|NOR/PSRAM control||||
+MemoryType3|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth3|Data size|NOR/PSRAM control||||
+BurstAccessMode3|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity3|Wait signal polarity|NOR/PSRAM control||||
+WrapMode3|Wrap mode|NOR/PSRAM control||||
+WaitSignalActive3|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation3|Write operation|NOR/PSRAM control||||
+WaitSignal3|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode3|Extended mode|NOR/PSRAM control||||
+AsynchronousWait3|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst3|Burst write|NOR/PSRAM control||||
+AddressSetupTime3|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime3|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime3|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration3|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision3|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency3|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode3|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime3|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime3|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime3|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration3|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision3|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency3|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode3|Extended access mode|NOR/PSRAM timing for write accesses||||
+NSCoherentPinout4|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank4|Bank|NOR/PSRAM control||||
+DataAddressMux4|Data address multiplexing|NOR/PSRAM control||||
+MemoryType4|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth4|Data size|NOR/PSRAM control||||
+BurstAccessMode4|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity4|Wait signal polarity|NOR/PSRAM control||||
+WrapMode4|Wrap mode|NOR/PSRAM control||||
+WaitSignalActive4|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation4|Write operation|NOR/PSRAM control||||
+WaitSignal4|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode4|Extended mode|NOR/PSRAM control||||
+AsynchronousWait4|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst4|Burst write|NOR/PSRAM control||||
+AddressSetupTime4|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime4|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime4|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration4|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision4|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency4|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode4|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime4|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime4|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime4|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration4|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision4|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency4|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode4|Extended access mode|NOR/PSRAM timing for write accesses||||
+
+[Values]
+# параметр|значение|подпись
+NORSRAM_Instance|FSMC_NORSRAM_DEVICE|NOR/SRAM Device
+Extended|FSMC_NORSRAM_EXTENDED_DEVICE|NOR/SRAM Extended Device
+NSCoherentPinout1|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+NSBank1|FSMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank1|FSMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank1|FSMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank1|FSMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux1|FSMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux1|FSMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType1|FSMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType1|FSMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType1|FSMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth1|FSMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth1|FSMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+BurstAccessMode1|FSMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode1|FSMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity1|FSMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity1|FSMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WrapMode1|FSMC_WRAP_MODE_DISABLE|Disabled
+WaitSignalActive1|FSMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive1|FSMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation1|FSMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation1|FSMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal1|FSMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal1|FSMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode1|FSMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode1|FSMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait1|FSMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait1|FSMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst1|FSMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst1|FSMC_WRITE_BURST_DISABLE|Disabled
+AccessMode1|FSMC_ACCESS_MODE_A|A
+AccessMode1|FSMC_ACCESS_MODE_B|B
+AccessMode1|FSMC_ACCESS_MODE_C|C
+AccessMode1|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FSMC_ACCESS_MODE_B|B
+ExtendedAccessMode1|FSMC_ACCESS_MODE_C|C
+ExtendedAccessMode1|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FSMC_ACCESS_MODE_A|A
+NSCoherentPinout2|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout2|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout2|MEMORY_PINOUT_KO|PINOUT KO
+NSBank2|FSMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank2|FSMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank2|FSMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank2|FSMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux2|FSMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux2|FSMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType2|FSMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType2|FSMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType2|FSMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth2|FSMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth2|FSMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+BurstAccessMode2|FSMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode2|FSMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity2|FSMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity2|FSMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WrapMode2|FSMC_WRAP_MODE_DISABLE|Disabled
+WaitSignalActive2|FSMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive2|FSMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation2|FSMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation2|FSMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal2|FSMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal2|FSMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode2|FSMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode2|FSMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait2|FSMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait2|FSMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst2|FSMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst2|FSMC_WRITE_BURST_DISABLE|Disabled
+AccessMode2|FSMC_ACCESS_MODE_A|A
+AccessMode2|FSMC_ACCESS_MODE_B|B
+AccessMode2|FSMC_ACCESS_MODE_C|C
+AccessMode2|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode2|FSMC_ACCESS_MODE_B|B
+ExtendedAccessMode2|FSMC_ACCESS_MODE_C|C
+ExtendedAccessMode2|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode2|FSMC_ACCESS_MODE_A|A
+NSCoherentPinout3|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout3|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout3|MEMORY_PINOUT_KO|PINOUT KO
+NSBank3|FSMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank3|FSMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank3|FSMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank3|FSMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux3|FSMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux3|FSMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType3|FSMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType3|FSMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType3|FSMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth3|FSMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth3|FSMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+BurstAccessMode3|FSMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode3|FSMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity3|FSMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity3|FSMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WrapMode3|FSMC_WRAP_MODE_DISABLE|Disabled
+WaitSignalActive3|FSMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive3|FSMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation3|FSMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation3|FSMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal3|FSMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal3|FSMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode3|FSMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode3|FSMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait3|FSMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait3|FSMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst3|FSMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst3|FSMC_WRITE_BURST_DISABLE|Disabled
+AccessMode3|FSMC_ACCESS_MODE_A|A
+AccessMode3|FSMC_ACCESS_MODE_B|B
+AccessMode3|FSMC_ACCESS_MODE_C|C
+AccessMode3|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode3|FSMC_ACCESS_MODE_B|B
+ExtendedAccessMode3|FSMC_ACCESS_MODE_C|C
+ExtendedAccessMode3|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode3|FSMC_ACCESS_MODE_A|A
+NSCoherentPinout4|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout4|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout4|MEMORY_PINOUT_KO|PINOUT KO
+NSBank4|FSMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank4|FSMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank4|FSMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank4|FSMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux4|FSMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux4|FSMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType4|FSMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType4|FSMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType4|FSMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth4|FSMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth4|FSMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+BurstAccessMode4|FSMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode4|FSMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity4|FSMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity4|FSMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WrapMode4|FSMC_WRAP_MODE_DISABLE|Disabled
+WaitSignalActive4|FSMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive4|FSMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation4|FSMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation4|FSMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal4|FSMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal4|FSMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode4|FSMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode4|FSMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait4|FSMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait4|FSMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst4|FSMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst4|FSMC_WRITE_BURST_DISABLE|Disabled
+AccessMode4|FSMC_ACCESS_MODE_A|A
+AccessMode4|FSMC_ACCESS_MODE_B|B
+AccessMode4|FSMC_ACCESS_MODE_C|C
+AccessMode4|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode4|FSMC_ACCESS_MODE_B|B
+ExtendedAccessMode4|FSMC_ACCESS_MODE_C|C
+ExtendedAccessMode4|FSMC_ACCESS_MODE_D|D
+ExtendedAccessMode4|FSMC_ACCESS_MODE_A|A

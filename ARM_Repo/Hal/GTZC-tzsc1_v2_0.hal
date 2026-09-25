@@ -1,0 +1,64 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=GTZC
+Version=tzsc1_v2_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+TZSC_Lock|Lock the configuration of TZSC (Peripherals & MPCWM) until next reset|||||Lock TZSC and TZSC-MPCWM configuration.
+TZSC_Secure_IP_Choice|Configure Secure Peripheral|Secureable Peripherals||||Secure/Unsecure all the Peripherals in one time until individuals are modified.
+Securable_Peripheral|Securable Peripheral|Secureable Peripherals||||
+IP_Secure||Secureable Peripherals||||
+AES_Secure|AES|Secureable Peripherals||||
+PKA_Secure|PKA|Secureable Peripherals||||
+RNG_Secure|RNG|Secureable Peripherals||||
+AES_Privilege_Status|AES|||||
+PKA_Privilege_Status|PKA|||||
+RNG_Privilege_Status|RNG|||||
+TZSC_Privilege_IP_Choice|Configure Privilege Peripheral|Privilegeable Peripherals||||Privilege/Unprivilege all the Peripherals in one time until individuals are modified.
+Privilegeable_Peripheral|Privilegeable Peripheral|Privilegeable Peripherals||||
+IP_Privilege||Privilegeable Peripherals||||
+MPCWM_Activation|Memory Protection Controller WaterMark Activation Status|||||
+MPCWM_NonPrivilegeArea_Desc|Non Privilege Area Descriptor|||||
+MPCWM1_NonPrivilegeArea_Choice|Configure Memory|||||Privilege/Unprivilege all the memory range in one time until sizes are modified.
+MPCWM1_Area_FLASH_BASE|Memory Base Address FLASH_BASE|||0x08000000|0x08000000|
+MPCWM1_NonPrivilegeArea_Max|Non Privilege Area Max|||0x08040000|0x08040000|
+MPCWM1_NonPrivilegeArea_Size|Non Privilege Area Size|||0x0|=(MPCWM1_NonPrivilegeArea_Max - MPCWM1_Area_FLASH_BASE)|
+MPCWM1_NonPrivilegeArea_BlockSize|Non Privilege Area Block Size|||0x800|0x800|
+MPCWM1_NonPrivilegeWriteableArea_Max|Non Privilege Writeable Area Max|||0x08040000|0x08040000|
+MPCWM1_NonPrivilegeWriteableArea_Size|Non Privilege Writeable Area Size|||0x0|=(MPCWM1_NonPrivilegeArea_Size)|
+MPCWM1_NonPrivilegeWriteableArea_BlockSize|Non Privilege Area Block Size|||0x800|0x800|
+MPCWM2_NonPrivilegeArea_Choice|Configure Memory|||||Privilege/Unprivilege all the memory range in one time until sizes are modified.
+MPCWM2_NonPrivilegeArea_SRAM1_BASE|Memory Base Address SRAM1_BASE|||0x20000000|0x20000000|
+MPCWM2_NonPrivilegeArea_Max|Non Privilege Area Max|||0x20008000|0x20008000|
+MPCWM2_NonPrivilegeArea_Size|Non Privilege Area Size|||0x0|=(MPCWM2_NonPrivilegeArea_Max - MPCWM2_NonPrivilegeArea_SRAM1_BASE)|
+MPCWM2_NonPrivilegeArea_BlockSize|Non Privilege Area Block Size|||0x400|0x400|
+MPCWM3_NonPrivilegeArea_Choice|Configure Memory|||||Privilege/Unprivilege all the memory range in one time until sizes are modified.
+MPCWM3_NonPrivilegeArea_SRAM2_BASE|Memory Base Address SRAM2_BASE|||0x20008000|0x20008000|
+MPCWM3_NonPrivilegeArea_Max|Non Privilege Area Max|||0x20010000|0x20010000|
+MPCWM3_NonPrivilegeArea_Size|Non Privilege Area Size|||0x0|=(MPCWM3_NonPrivilegeArea_Max - MPCWM3_NonPrivilegeArea_SRAM2_BASE)|
+MPCWM3_NonPrivilegeArea_BlockSize|Non Privilege Area Block Size|||0x400|0x400|
+TZIC_Configure_IT_Choice|Configure Illegal access IT|Illegal Access ITs for securable & TZ-Aware Peripherals||||Enable/Disable all the Interrupts in one time until individuals are modified.
+Full_IT_Disabled|Full_IT_Disabled|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+Full_IT_Enabled|Full_IT_Enabled|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+Full_IT_Default|Full_IT_Default|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+Illegal_Access_Interrupt_Peripheral|Illegal Access Interrupt Peripheral|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+IAI_Disabled|IAI_Disabled|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+IAI_Enabled|IAI_Enabled|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+IAI_Default|IAI_Default|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+
+[Values]
+# параметр|значение|подпись
+IP_Secure|GTZC_TZSC_ATTRIBUTE_NSEC|not secured
+IP_Secure|GTZC_TZSC_ATTRIBUTE_SEC|secured
+AES_Secure|GTZC_TZSC_ATTRIBUTE_NSEC|not secured
+AES_Secure|GTZC_TZSC_ATTRIBUTE_SEC|secured
+PKA_Secure|GTZC_TZSC_ATTRIBUTE_SEC|secured
+PKA_Secure|GTZC_TZSC_ATTRIBUTE_NSEC|not secured
+RNG_Secure|GTZC_TZSC_ATTRIBUTE_SEC|secured
+RNG_Secure|GTZC_TZSC_ATTRIBUTE_NSEC|not secured
+IP_Privilege|GTZC_TZSC_ATTRIBUTE_NPRIV|not privileged
+IP_Privilege|GTZC_TZSC_ATTRIBUTE_PRIV|privileged
+MPCWM_Activation|MPCWM_DISABLE|disabled
+MPCWM_Activation|MPCWM_ENABLE|enabled

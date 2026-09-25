@@ -1,0 +1,28 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SDMMC
+Version=sdmmc2_v2_2_rc1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockEdge|Clock transition on which the bit capture is made|SDMMC parameters||||
+ClockPowerSave|SDMMC Clock output enable or disable when the bus is idle|SDMMC parameters||||
+BusWide|Wide bus mode|||||
+HardwareFlowControl|SDMMC hardware flow control|SDMMC parameters||||
+ClockDiv|SDMMCCLK clock divide factor|SDMMC parameters||0|1023|These bits can only be written when the CPSM and DPSM are not active (CPSMACT = 0 and DPSMACT = 0). This parameter defines the divide factor between the input clock (sdmmc_ker_ck) and the output clock (SDMMC_CK): SDMMC_CK frequency = sdmmc_ker_ck / [2 * CLKDIV]. 000: SDMMC_CK frequency = sdmmc_ker_ck / 1 (Does not support DDR) 001: SDMMC_CK frequency = sdmmc_ker_ck / 2 002: SDMMC_CK frequency = sdmmc_ker_ck / 4 0xx: etc 080: SDMMC_CK frequency = sdmmc_ker_ck / 256 xxx: etc 3FF: SDMMC_CK frequency = sdmmc_ker_ck / 2046
+Transceiver|Specifies whether external transceiver is enabled or disabled|SDMMC parameters||||
+
+[Values]
+# параметр|значение|подпись
+ClockEdge|SDMMC_CLOCK_EDGE_RISING|Rising transition
+ClockEdge|SDMMC_CLOCK_EDGE_FALLING|Falling transition
+ClockPowerSave|SDMMC_CLOCK_POWER_SAVE_DISABLE|Disable the power save for the clock
+ClockPowerSave|SDMMC_CLOCK_POWER_SAVE_ENABLE|Enable the power save for the clock
+BusWide|SDMMC_BUS_WIDE_8B|Bus wide 8-bit data
+BusWide|SDMMC_BUS_WIDE_4B|Bus wide 4-bit data
+BusWide|SDMMC_BUS_WIDE_1B|Bus wide 1-bit data
+HardwareFlowControl|SDMMC_HARDWARE_FLOW_CONTROL_DISABLE|The hardware control flow is disabled
+HardwareFlowControl|SDMMC_HARDWARE_FLOW_CONTROL_ENABLE|The hardware control flow is enabled
+Transceiver|SDMMC_TRANSCEIVER_ENABLE|The external transceiver is enabled
+Transceiver|SDMMC_TRANSCEIVER_DISABLE|The external transceiver is disabled

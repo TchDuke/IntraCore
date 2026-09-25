@@ -1,0 +1,152 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LINKEDLIST
+Version=STM32WBA2_linkedlist_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+LL_NAME|Define the name of your Queue|||||
+LL_MASTERDMA|DMA Channel to run the linked list|||||
+LL_TYPE|Linear or circular LinkedList setting|||||
+LL_CIRCULARNODE|First Loop Node, name of the node|||||
+SrcSecure|Enable Source as Secured|SECURITY||||
+DestSecure|Enable Destination as Secured|SECURITY||||
+NODE_NAME|Define the name of your node|General||||
+Requestforcodegen|Request as a parameter|Request Configuration||||
+BlkHWRequest|Block HW request protocol|Request Configuration||||
+NodeType|Node Type|Channel configuration||||
+Direction|Direction|Channel configuration||||
+SrcInc|Source Address Increment After Transfer|Source Data Setting||||
+DestInc|Destination Address Increment After Transfer|Destination Data Setting||||
+SrcDataWidth|Data Width|Source Data Setting||||
+DestDataWidth|Data Width|Destination Data Setting||||
+Priority|Priority|Channel configuration||||
+Mode|Transaction Mode|Channel configuration||||
+DataHandling|Data Handling Configuration|Data Handling||||
+DataAlignment|Data Alignment|Data Handling||||
+TriggerPolarity|Trigger Configuration|Trigger||||
+TriggerMode|Trigger Mode|Trigger||||
+TriggerSelection|Trigger Selection|Trigger||||
+TransferEventMode|Transfer Event Generation|Transfer Event Configuration||||
+SrcAddress|Source Address|Runtime configuration||0|65535|
+DstAddress|Destination Address|Runtime configuration||0|65535|
+DataSize|Data Size|Runtime configuration||0|65535|
+IpInstance|IpInstance|LEGACY||||
+Rank|Rank|LEGACY||||
+NbRequestsLinkedList|NbRequestsLinkedList|LEGACY||||
+pNodeConfig|pNodeConfig|LEGACY||||
+pNode|pNode|LEGACY||||
+pQueueLinkList|forcodegeneration|LEGACY||||
+node|node|LEGACY||||
+pNewNode|pNewNode|LEGACY||||
+Request|Request number|LEGACY||||
+CircularMode|Circular Mode|LEGACY||||
+
+[Values]
+# параметр|значение|подпись
+SrcSecure|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSecure|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSecure|DMA_CHANNEL_DEST_SEC|SECURE
+DestSecure|DMA_CHANNEL_DEST_NSEC|NON SECURE
+Requestforcodegen|DMA_REQUEST_SW|SoftWare
+Requestforcodegen|LPDMA1_REQUEST_ADC4|ADC4
+Requestforcodegen|LPDMA1_REQUEST_SPI3_RX|SPI3_RX
+Requestforcodegen|LPDMA1_REQUEST_SPI3_TX|SPI3_TX
+Requestforcodegen|LPDMA1_REQUEST_I2C1_RX|I2C1_RX
+Requestforcodegen|LPDMA1_REQUEST_I2C1_TX|I2C1_TX
+Requestforcodegen|LPDMA1_REQUEST_I2C1_EVC|I2C1_EVC
+Requestforcodegen|LPDMA1_REQUEST_I2C3_RX|I2C3_RX
+Requestforcodegen|LPDMA1_REQUEST_I2C3_TX|I2C3_TX
+Requestforcodegen|LPDMA1_REQUEST_I2C3_EVC|I2C3_EVC
+Requestforcodegen|LPDMA1_REQUEST_USART1_RX|USART1_RX
+Requestforcodegen|LPDMA1_REQUEST_USART1_TX|USART1_TX
+Requestforcodegen|LPDMA1_REQUEST_LPUART1_RX|LPUART1_RX
+Requestforcodegen|LPDMA1_REQUEST_LPUART1_TX|LPUART1_TX
+Requestforcodegen|LPDMA1_REQUEST_SAI1_A|SAI1_A
+Requestforcodegen|LPDMA1_REQUEST_SAI1_B|SAI1_B
+Requestforcodegen|LPDMA1_REQUEST_TIM2_CH1|TIM2_CH1
+Requestforcodegen|LPDMA1_REQUEST_TIM2_CH2|TIM2_CH2
+Requestforcodegen|LPDMA1_REQUEST_TIM2_CH3|TIM2_CH3
+Requestforcodegen|LPDMA1_REQUEST_TIM2_CH4|TIM2_CH4
+Requestforcodegen|LPDMA1_REQUEST_TIM2_UP|TIM2_UP
+Requestforcodegen|LPDMA1_REQUEST_TIM16_CH1|TIM16_CH1
+Requestforcodegen|LPDMA1_REQUEST_TIM16_UP|TIM16_UPD
+Requestforcodegen|LPDMA1_REQUEST_TIM17_CH1|TIM17_CH1
+Requestforcodegen|LPDMA1_REQUEST_TIM17_UP|TIM17_UPD
+Requestforcodegen|LPDMA1_REQUEST_AES_IN|AES_IN
+Requestforcodegen|LPDMA1_REQUEST_AES_OUT|AES_OUT
+Requestforcodegen|LPDMA1_REQUEST_HASH_IN|HASH_IN
+Requestforcodegen|LPDMA1_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+Requestforcodegen|LPDMA1_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+Requestforcodegen|LPDMA1_REQUEST_LPTIM1_UE|LPTIM1_UE
+Requestforcodegen|LPDMA1_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+Requestforcodegen|LPDMA1_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+Requestforcodegen|LPDMA1_REQUEST_LPTIM2_UE|LPTIM2_UE
+Requestforcodegen|LPDMA1_REQUEST_XSPI1|XSPI1
+BlkHWRequest|DMA_BREQ_BLOCK|Block Level
+BlkHWRequest|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+NodeType|DMA_LPDMA_LINEAR_NODE|LPDMA Linear Node
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+SrcInc|DMA_SINC_FIXED|Disabled
+SrcInc|DMA_SINC_INCREMENTED|Enabled
+DestInc|DMA_DINC_FIXED|Disabled
+DestInc|DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth|DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth|DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth|DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth|DMA_DEST_DATAWIDTH_WORD|Word
+Priority|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+Priority|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+Priority|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+Priority|DMA_HIGH_PRIORITY|Very High
+Mode|DMA_NORMAL|Normal
+DataAlignment|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DataAlignment|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DataAlignment|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DataAlignment|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+TriggerPolarity|DMA_TRIG_POLARITY_MASKED|Disable
+TriggerPolarity|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TriggerPolarity|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TriggerMode|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TriggerMode|DMA_TRIGM_LLI_LINK_TRANSFER|AA LLI link transfer is conditioned by (at least) one hit trigger
+TriggerMode|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TriggerSelection|LPDMA1_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TriggerSelection|LPDMA1_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TriggerSelection|LPDMA1_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TriggerSelection|LPDMA1_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TriggerSelection|LPDMA1_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TriggerSelection|LPDMA1_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TriggerSelection|LPDMA1_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TriggerSelection|LPDMA1_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TriggerSelection|LPDMA1_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TriggerSelection|LPDMA1_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TriggerSelection|LPDMA1_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH0_TCF|LPDMA CH0 TCF
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH1_TCF|LPDMA CH1 TCF
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH2_TCF|LPDMA CH2 TCF
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH3_TCF|LPDMA CH3 TCF
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH4_TCF|LPDMA CH4 TCF
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH5_TCF|LPDMA CH5 TCF
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH6_TCF|LPDMA CH6 TCF
+TriggerSelection|LPDMA1_TRIGGER_LPDMA1_CH7_TCF|LPDMA CH7 TCF
+TriggerSelection|LPDMA1_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TriggerSelection|LPDMA1_TRIGGER_ADC4_AWD1|ADC4 AWD1
+TransferEventMode|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TransferEventMode|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TransferEventMode|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+Request|DMA_REQUEST_SW|DMA_REQUEST_SW
+CircularMode|MDMA_LINEAR_LIST|Linear list
+CircularMode|MDMA_CIRCULAR_LIST_LOOPING_ON_FIRST_ELEMENT|Circular list looping on first transfer
+CircularMode|MDMA_CIRCULAR_LIST_LOOPING_ON_SECOND_ELEMENT|Circular list looping on second transfer

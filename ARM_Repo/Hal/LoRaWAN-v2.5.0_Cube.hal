@@ -1,0 +1,114 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LoRaWAN
+Version=v2.5.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+STM32WL5MXX|Module|Application selection||||
+SUBGHZ_APPLICATION|Application|Application selection||||List of available applications
+DISPLAY_APPLICATION|Application|Application selection||||List of available applications, some available starting the new project from EXAMPLE SELECTOR other from MCU or BOARD SELECTOR
+DEBUGGER_ON|Serial Wires or JTAG enabled|Application selection||||
+UTIL_SEQ_EN_M4|Use Sequencer kernel on CM4|Application selection||||
+UTIL_SEQ_EN_M0|Use Sequencer kernel on CM0|Application selection||||
+UTIL_TIMER_EN|Enable/Disable TIMER utility|Application selection||||
+LORAWAN_KMS|Use KMS for LoRaWAN|Application selection||||enable KMS for LoRa code, forbidden
+DEBUG_SUBGHZSPI_MONITORING|Sub-GHz radio SPI interface|Application selection||||
+DEBUG_RF_NRESET|Sub-GHz radio NRESET|Application selection||||
+DEBUG_RF_HSE32RDY|Sub-GHz radio HSE32 CLOCK monitoring|Application selection||||
+DEBUG_RF_SMPSRDY|Sub-GHz radio SMPS ready monitoring|Application selection||||
+DEBUG_RF_LDORDY|Sub-GHz radio LDO ready monitoring|Application selection||||
+DEBUG_RF_DTB1|Sub-GHz radio Internal Signal monitoring|Application selection||||
+DEBUG_RF_BUSY|Sub-GHz radio Busy monitoring|Application selection||||
+FILL_UCS|Fill User Code Sections|Application selection||||
+USE_LPM|Configure Low Power Mode|Application selection||||Allow pre-fill of stm32_lpm_if.c file.
+USE_ADC|Use ADC for T° and battery management|Application selection||||<font color="blue"><b>ADC:</b> Proposed solution to manage radio settings depending on Vrefint and device internal T°.</font>    • For Dual Core operation Runtime Context is Cortex-M4 <b>Mode:</b> Temperature Sensor Channel and Vrefint Channel <b>Configuration:</b> - Parameters Settings:    • Clock Prescaler: Synchronous clock mode divided by 4    • Overrun behaviour: Overrun data overwritten    • SamplingTime Common 1 and 2: 160.5 Cycles <font color="blue"><b>LoRaWAN - Platform Settings panel:</b> Platform proposals</font>    • Ensure that ADC is selected in Found Solutions
+USE_RTC|Use RTC for Timer|Application selection||||<font color="blue"><b>RTC:</b> Proposed solution to manage timer in Low Power mode.</font>    • For Dual Core operation Runtime Contexts are both Cortex-M4 and Cortex-M0+ and initializer is Cortex-M0+ <b>Mode:</b> Activate Clock Source, Activate Calendar and activate Alarm A (and B for Dual Core) (Internal Alarm A (and B for Dual Core)) <b>User Constants:</b> Add the following Constants    • Constant Name: <b>RTC_N_PREDIV_S</b> Value: 10    • Constant Name: <b>RTC_PREDIV_S</b> Value: ((1 &lt;&lt; RTC_N_PREDIV_S)-1)    • Constant Name: <b>RTC_PREDIV_A</b> Value: ((1 &lt;&lt; (15-RTC_N_PREDIV_S))-1) <b>Configuration</b> - Parameters Settings:    • Asynchronous Predivider value: Set value to RTC_PREDIV_A    • Bin Mode: Free running Binary mode    • Alarm A Binary AutoControl: RTC_ALARMSUBSECONDBIN_AUTOCLR_NO <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <font color="blue"><b>LoRaWAN - Platform Settings panel:</b> Platform proposals</font>    • Ensure that RTC is selected in Found Solutions
+USE_UART|Use UART for Trace|Application selection||||<font color="blue"><b>USART/LPUART:</b> Proposed solution to manage trace.</font>    • For Dual Core operation Runtime Context is Cortex-M4 <b>Mode:</b> Asynchronous <b>Configuration</b> - Parameters Settings:    • If LPUART is selected then set Baud Rate: 9600 Bits/s <b>Configuration</b> - DMA Settings:    • Add USARTx_TX DMA Request with Channel configured with DMA1 Channel 5 <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <b>Clock Configuration panel</b>    • If LPUART is selected then set Clock Mux to LSE <b>NVIC Mode and Configuration panel</b> - Preemption priority management    • Set preemption Priority for DMA and UART Interrupt to 2 <font color="blue"><b>LoRaWAN - Platform Settings panel:</b> Platform proposals</font>    • Ensure that chosen UART is selected in Found Solutions
+USER_GUIDANCE_UTIL|none|Application selection||||<> If you see this message it means some Utilities are disabled. <> In this case only "User Defined Skeleton" Application is allowed. <> Please, enable all Utilities if you wish additional Application choices.
+USER_GUIDANCE|Application configuration recommandations|Application selection||||<font color="blue"><b>KMS:</b> To set LoRaWAN using the KMS Middleware,</font><> <> User Code Sections in following files in the DualCore example project must be filled manually after generation:    • CM0PLUS/Core/Inc/kms_platf_objects_config.h : Add all LoRaWAN keys as kms_object_keyhead_32_t structures    • CM0PLUS/Core/Inc/kms_platf_objects_interface.h : Add all LoRaWAN key indexes    • CM0PLUS/Core/Inc/nvms_low_level.h : Enable the NVMS (Non Volatile Memory) to store the session keys    • CM0PLUS/Core/Src/nvms_low_level.c : Implement the Flash read/write functions to manage the NVMS items <> Example can be found in the RF projects in the STM32CubeWL MCU package : <> <font color="purple"> www.st.com/stm32cubewl</font> <font color="blue"><b>ADC:</b> Proposed solution to manage radio settings depending on Vrefint and device internal T°.</font>    • For Dual Core operation: Runtime Contexts is Cortex-M4 <b>Mode:</b> Temperature Sensor Channel and Vrefint Channel <b>Configuration:</b> - Parameters Settings:    • Clock Prescaler: Synchronous clock mode divided by 4    • Overrun behaviour: Overrun data overwritten    • SamplingTime Common 1 and 2: 160.5 Cycles <font color="blue"><b>RTC:</b> Proposed solution to manage timer in Low Power mode.</font>    • For Dual Core operation Runtime Contexts are both Cortex-M4 and Cortex-M0+ and initializer is Cortex-M0+ <b>Mode:</b> Activate Clock Source, Activate Calendar and activate Alarm A (and B for Dual Core) (Internal Alarm A (and B for Dual Core)) <b>User Constants:</b> Add the following Constants    • Constant Name: <b>RTC_N_PREDIV_S</b> Value: 10    • Constant Name: <b>RTC_PREDIV_S</b> Value: ((1 &lt;&lt; RTC_N_PREDIV_S)-1)    • Constant Name: <b>RTC_PREDIV_A</b> Value: ((1 &lt;&lt; (15-RTC_N_PREDIV_S))-1) <b>Configuration</b> - Parameters Settings:    • Asynchronous Predivider value: Set value to RTC_PREDIV_A    • Bin Mode: Free running Binary mode    • Alarm A Binary AutoControl: RTC_ALARMSUBSECONDBIN_AUTOCLR_NO <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <font color="blue"><b>RCC:</b> Proposed solution to manage RCC.</font> <b>Mode:</b> Low Speed Clock (LSE): Set value to Crystal Ceramic Resonator <b>Configuration</b> - Parameters Settings:    • Flash Latency(WS): 2 WS (3 CPU cycle)    • Power Regulator Voltage Scale: Scale 1 <b>Clock Configuration panel</b>    • Set MSI RC to 32MHz    • Set RTC Clock Mux to LSE <font color="blue"><b>USART/LPUART:</b> Proposed solution to manage trace.</font>    • For Dual Core operation: Runtime Contexts is Cortex-M4 <b>Mode:</b> Asynchronous <b>Configuration</b> - Parameters Settings:    • If LPUART is selected then set Baud Rate: 9600 Bits/s <b>Configuration</b> - DMA Settings:    • Add USARTx_TX DMA Request with Channel configured with DMA1 Channel 5 <b>Configuration</b> - NVIC settings:    • Enable both Interrupts <b>Clock Configuration panel</b>    • If LPUART is selected then set Clock Mux to LSE <b>NVIC Mode and Configuration panel</b> - Preemption priority management    • Set preemption Priority for DMA and UART Interrupt to 2 <font color="blue"><b>LoRaWAN - Platform Settings panel:</b> Platform proposals</font>    • Ensure that relevant solutions are properly selected <font color="blue"><b>Project Manager- Advanced Settings panel:</b> Generated Function Calls management</font>    • Untick "Generate Code" for RTC on CortexM4 and DMA on CortexM0PLUS for Dual Core    • Tick "Do Not Generate Function Call" for DMA (CortexM4 only for DualCore), ADC, RTC, SUBGHZ, UART and IPCC(for Dual Core)    • Untick Visibility for all Function Calls on both cores
+VERBOSE_LEVEL|Trace verbose level|sys_conf||||
+VERBOSE_LEVEL_CM4|Trace verbose level|sys_conf CM4||||
+VERBOSE_LEVEL_CM0PLUS|Trace verbose level|sys_conf CM0PLUS||||
+APP_LOG_ENABLED|Enable Application Logging|sys_conf||||
+APP_LOG_ENABLED_CM4|Enable Application Logging|sys_conf CM4||||
+APP_LOG_ENABLED_CM0PLUS|Enable Application Logging|sys_conf CM0PLUS||||
+DEBUGGER_ON_CM4|Activate Debugger|sys_conf CM4||||
+DEBUGGER_ON_CM0PLUS|Activate Debugger|sys_conf CM0PLUS||||
+LOW_POWER_DISABLE|Disable Low Power Mode|sys_conf||||It goes only to SLEEP but not to STOP mode
+LOW_POWER_DISABLE_CM4|Disable Low Power Mode|sys_conf CM4||||It goes only to SLEEP but not to STOP mode
+LOW_POWER_DISABLE_CM0PLUS|Disable Low Power Mode|sys_conf CM0PLUS||||It goes only to SLEEP but not to STOP mode
+SENSOR_ENABLED|Enable Sensor|sys_conf||||
+SENSOR_ENABLED_CM4|Enable Sensor|sys_conf CM4||||
+KEY_EXTRACTABLE|Enable Key read access|lorawan_conf||||
+LORAWAN_DEVICE_EUI|LoRaWAN device EUI|se-identity||||End-device IEEE EUI (big endian) When set to 00,00,00,00,00,00,00,00 DevEui is automatically set with a value provided by MCU platform
+LORAWAN_JOIN_EUI|App/Join EUI|se-identity||||App/Join IEEE EUI (big endian)
+LORAWAN_GEN_APP_KEY|Gen Application Key|se-identity||||Network root key (big endian) in OTAA Activation Type Used to derive the Network session and Application session keys
+LORAWAN_APP_KEY|Application key|se-identity||||Application root key (big endian) in OTAA Activation Type Used to derive the Multicast session keys
+LORAWAN_DEVICE_ADDRESS|Device Address|se-identity||||Device address on the network (big endian) When set to 00,00,00,00 DevAddr is automatically set with a value provided by MCU platform
+LORAWAN_NWK_S_KEY|Network session key|se-identity||||Network session key (big endian) in ABP Activation Type WARNING: NWK_S_KEY FOR 1.0.x DEVICES
+LORAWAN_APP_S_KEY|Application session key|se-identity||||Application session key (big endian) in ABP Activation Type
+Activate_DEBUG_LINE|Probes Lines in Platform Settings|board settings||||Enable Probes Line using GPIO under Plaform Settings panel
+Activate_BOARD_RESOURCES|Board Resources|board settings||||Enable LEDs and BUTTONs settings using GPIO under Plaform Settings panel or via .extSettings file
+LORAWAN_TIMER_OR_BUTTON|Send Tx on Timer or Button Evt|board settings||||
+ACTIVE_REGION|Active region|lora_app||||List of available regions is set in lorawan_conf.h available under LoRaWAN middleware panel
+APP_TX_DUTYCYCLE|Transmition duty cycle|lora_app||||
+LORAWAN_USER_APP_PORT|Application user port|lora_app||1|199|
+LORAWAN_CERTIFICATION_MODE|Certification mode|lora_app||||
+REGION|Region(s) selection|lorawan_conf||||
+REGION_AS923|Region Asia freq: 923|lorawan_conf||||
+REGION_AU915|Region Australia freq: 915|lorawan_conf||||
+REGION_CN470|Region China freq: 470|lorawan_conf||||
+REGION_EU868|Region Europe freq: 868|lorawan_conf||||
+REGION_KR920|Region Korea freq: 920|lorawan_conf||||
+REGION_IN865|Region India freq: 865|lorawan_conf||||
+REGION_US915|Region USA freq: 915|lorawan_conf||||
+REGION_RU864|Region Russia freq: 864|lorawan_conf||||
+REGION_CN470_RP_1_0|Region China (RP1.0) freq: 470|lorawan_conf||||
+LORAMAC_CLASSB_ENABLED|Enable LoRaMAC ClassB|lorawan_conf||||This class is a compromise between power consumption and bidirectional communication needs
+LORAMAC_SPECIFICATION_VERSION|Select the LoRaWAN Link Layer specification version|lorawan_conf||||LoRaWAN Link Layer and Regional Parameters configuration - v1.0.4: Link Layer TS001-1.0.4 + Regional Parameters RP002-1.0.1
+LORAWAN_DATA_DISTRIB_MGT|Enable the additional LoRaWAN packages|lorawan_conf||||LoRaWAN Packages configuration including: - Application Layer Clock Synchronization (Package ID: 1, Default Port: 202) - Remote Multicast Setup (Package ID: 2, Default Port: 200) - Fragmented Data Block Transport (Package ID: 3, Default Port: 201) - Firmware Management Protocol (Package ID: 4, Default Port: 203) The Certification Protocol is also defined as a mandatory package (Package ID: 0, Default Port: 224)
+LORAWAN_PACKAGES_VERSION|Select the LoRaWAN packages version|lorawan_conf||||LoRaWAN Packages version configuration: The v1.0.0 packages including: - Application Layer Clock Synchronization v1.0.0 - Remote Multicast Setup v1.0.0 - Fragmented Data Block Transport v1.0.0 The v2.0.0 packages including: - Application Layer Clock Synchronization v2.0.0 - Remote Multicast Setup v2.0.0 - Fragmented Data Block Transport v2.0.0 - Firmware Management Protocol v1.0.0
+MW_LOG_ENABLED|Enable Middleware log|mw_log_conf||||
+RF_WAKEUP_TIME|Radio maximum wakeup time (in ms)|radio_conf||||Radio maximum wakeup time (in ms)
+Activate_RADIO_BOARD_INTERFACE|Select radio Driver|radio_board_if||||UserBoard: user to complete; Bsp: need to be included in the IDE; NucleoPseudo: just x backward compatibility.
+IS_TCXO_SUPPORTED|TCXO support|radio_board_if||||Indicates whether or not TCXO is supported by the board. TCXO needs to be selected in RCC panel (HSE clock)
+IS_DCDC_SUPPORTED|DCDC support|radio_board_if||||Indicates whether or not DCDC is supported by the board
+TX_RFO_CONFIG|Tx Rfo Config|radio_board_if||||Indicates the config
+
+[Values]
+# параметр|значение|подпись
+SUBGHZ_APPLICATION|End_Node_LBM_skeleton|End Node LBM skeleton
+SUBGHZ_APPLICATION|End_Node_Relay_LBM_skeleton|End Node Relay LBM skeleton
+SUBGHZ_APPLICATION|Relay_LBM_skeleton|Relay LBM skeleton
+SUBGHZ_APPLICATION|LORA_USER_APPLICATION|User defined skeleton
+DISPLAY_APPLICATION|LORA_AT_SLAVE|AT_Slave (accessible from EXAMPLE selector)
+DISPLAY_APPLICATION|LORA_END_NODE|End_Node (accessible from EXAMPLE selector)
+DISPLAY_APPLICATION|LORA_USER_APPLICATION|User defined (accessible from WL MCU selector)
+VERBOSE_LEVEL|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL|VLEVEL_L|VLEVEL_L
+VERBOSE_LEVEL_CM4|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL_CM4|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL_CM4|VLEVEL_L|VLEVEL_L
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_H|VLEVEL_H
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_M|VLEVEL_M
+VERBOSE_LEVEL_CM0PLUS|VLEVEL_L|VLEVEL_L
+LORAWAN_TIMER_OR_BUTTON|TX_ON_TIMER|TX_ON_TIMER
+LORAWAN_TIMER_OR_BUTTON|TX_ON_EVENT|TX_ON_EVENT
+ACTIVE_REGION|LORAMAC_REGION_EU868|LORAMAC_REGION_EU868
+ACTIVE_REGION|LORAMAC_REGION_AS923_GRP1|LORAMAC_REGION_AS923_GRP1
+ACTIVE_REGION|LORAMAC_REGION_US915|LORAMAC_REGION_US915
+ACTIVE_REGION|LORAMAC_REGION_AU915|LORAMAC_REGION_AU915
+ACTIVE_REGION|LORAMAC_REGION_CN470|LORAMAC_REGION_CN470
+ACTIVE_REGION|LORAMAC_REGION_AS923_GRP2|LORAMAC_REGION_AS923_GRP2
+ACTIVE_REGION|LORAMAC_REGION_AS923_GRP3|LORAMAC_REGION_AS923_GRP3
+ACTIVE_REGION|LORAMAC_REGION_IN865|LORAMAC_REGION_IN865
+ACTIVE_REGION|LORAMAC_REGION_KR920|LORAMAC_REGION_KR920
+ACTIVE_REGION|LORAMAC_REGION_RU864|LORAMAC_REGION_RU864
+ACTIVE_REGION|LORAMAC_REGION_CN470_RP_1_0|LORAMAC_REGION_CN470_RP_1_0
+ACTIVE_REGION|LORAMAC_REGION_AS923_GRP4|LORAMAC_REGION_AS923_GRP4
+TX_RFO_CONFIG|RBI_CONF_RFO_LP_HP|CONF_RFO_LP_HP
+TX_RFO_CONFIG|RBI_CONF_RFO_LP|CONF_RFO_LP
+TX_RFO_CONFIG|RBI_CONF_RFO_HP|CONF_RFO_HP

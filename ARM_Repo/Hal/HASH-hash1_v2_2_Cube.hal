@@ -1,0 +1,21 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=HASH
+Version=hash1_v2_2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+SecureHashAlgorithmType|Secure hash algorithm type|Algorithm||||Secure hash algorithm type. Default setting is SHA1
+DataType|Hash data type in bit|Parameters||||This parameter can be a value of @ref HASH_Data_Type: - HASH_DATATYPE_32B: 32-bit data(No swapping) - HASH_DATATYPE_16B: 16-bit data(Each half word is swapped) - HASH_DATATYPE_8B: 8-bit data(All bytes are swapped) - HASH_DATATYPE_1B: 1-bit data(In the word all bits are swapped). Default setting is HASH_DATATYPE_32B
+pKeyInputType|pKey input type|Parameters||||User can choose between HEXA or ASCII for pKey input type
+pKeyInput|pKey user input|Parameters||||Used only in HMAC operation. Will be used to generate Encryption/Decryption key in right format.
+KeySize|pkey size|Parameters||0|4294967295|Used only in HMAC operation.
+pKey|pkey formatted in hexadecimal format|Parameters||||Used only in HMAC operation.
+
+[Values]
+# параметр|значение|подпись
+DataType|HASH_DATATYPE_32B|32-bit data. No swapping
+DataType|HASH_DATATYPE_16B|16-bit data. Each half word is swapped
+DataType|HASH_DATATYPE_8B|8-bit data. All bytes are swapped
+DataType|HASH_DATATYPE_1B|1-bit data. In the word all bits are swapped

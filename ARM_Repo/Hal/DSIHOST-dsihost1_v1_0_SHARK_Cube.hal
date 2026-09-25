@@ -1,0 +1,309 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DSIHOST
+Version=dsihost1_v1_0_SHARK_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FrameBTAAcknowledgeEnable|Frame BTA Acknowledge Enable|Video Mode Configuration||||if set to Enable, the DSI Host to request an acknowledge response message from the peripheral at the end of each frame
+TXEscapeCkdiv|Tx Escape Ckdiv|from PLLDSI||0|255|TX Escape clock division The values 0 and 1 stop the TX_ESC clock generation
+PLLNDIV|Pllndiv|from PLLDSI||10|125|
+PLLIDF|Pllidf|from PLLDSI||||
+PLLODF|Pllodf|from PLLDSI||||
+LPGenShortWriteNoP|Generic Short Write Zero Parameter|Transmission Mode for Commands:||||
+LPGenShortWriteOneP|Generic Short Write One Parameter|Transmission Mode for Commands:||||
+LPGenShortWriteTwoP|Generic Short Write Two parameters|Transmission Mode for Commands:||||
+LPGenShortReadNoP|Generic Short Read Zero parameter|Transmission Mode for Commands:||||
+LPGenShortReadOneP|Generic Short Read One parameter|Transmission Mode for Commands:||||
+LPGenShortReadTwoP|Generic Short Read Two parameters|Transmission Mode for Commands:||||
+LPGenLongWrite|Generic Long Write|Transmission Mode for Commands:||||
+LPDcsShortWriteNoP|DCS Short Write Zero parameter|Transmission Mode for Commands:||||
+LPDcsShortWriteOneP|DCS Short Write One parameter|Transmission Mode for Commands:||||
+LPDcsShortReadNoP|DCS Short Read Zero parameter|Transmission Mode for Commands:||||
+LPDcsLongWrite|DCS Long Write|Transmission Mode for Commands:||||
+LPMaxReadPacket|Maximum Read Packet Size Command|Transmission Mode for Commands:||||
+GCEIE|Generic Command Error Interrupt|APB Interface Error Configuration||||
+AcknowledgeRequest|Acknowledge Request after Each Transmission|Flow Control - Configuration||||
+TEAcknowledgeRequest|Tearing Effect Acknowledge Request Enable|Flow Control - Configuration||||
+CRCX_FlowControl|CRC Reception|Flow Control - Configuration||||
+CRCEIE|CRC Error Interrupt|Flow Control - Packet Analyzer Configuration||||
+ECCX_FlowControl|ECC Reception|Flow Control - Configuration||||
+ECCEIE|ECC Errors Interrupt|Flow Control - Packet Analyzer Configuration||||
+PSEIE|Packet Size Error Interrupt|Flow Control - Packet Analyzer Configuration||||
+AEIE|Acknowledge Errors Interrupt|Flow Control - Packet Analyzer Configuration||||
+PEXIE|PHY related Errors Interrupt|Flow Control - Packet Analyzer Configuration||||
+ETRX_FlowControl|EoTP Reception is|Flow Control - Configuration||||
+EOTPEIE|EoTP Error Interrupt|Flow Control - Packet Analyzer Configuration||||
+ETTX_FlowControl|EoTP Transmission is|Flow Control - Configuration||||
+BTA_FlowControl|Bus Turn Around Request is|Basic Settings||||
+FlowControl|Flow Control All|Basic Settings||||
+NumberOfLanes|Number of Lanes|Basic Settings||||
+State|Set pull-down on Lanes|Basic Settings||||
+State_SDD|Activate additional current path on clock and data lanes|Basic Settings||||
+AutomaticClockLaneControl|Automatic Clock Lane Control|Basic Settings||||
+SWAP_CLOCK_LANE_State|Swap Clock Lane PINs|Custom Lane Configuration||||
+SWAP_DATA_LANE0_State|Swap Data Lane 0 PINs|Custom Lane Configuration||||
+SWAP_DATA_LANE1_State|Swap Data Lane 1 PINS|Custom Lane Configuration||||
+INVERT_CLOCK_LANE_State|Invert the HS signal on Clock Lanes|Custom Lane Configuration||||
+INVERT_DATA_LANE0_State|Invert the HS signal on Data Lanes 0|Custom Lane Configuration||||
+INVERT_DATA_LANE1_State|Invert the HS signal on Data Lanes 1|Custom Lane Configuration||||
+SLEW_RATE_HSTX_CLOCK_LANE_Value|Slew-rate on Clock Lane|HS Tranmission fine tuning||0|10|
+param_SLEW_RATE_HSTX_CLOCK_LANE|valeur fonction|HS Tranmission fine tuning||||
+SLEW_RATE_HSTX_DATA_LANES_Value|Slew-rate on Data Lanes|HS Tranmission fine tuning||0|10|
+param_SLEW_RATE_HSTX_DATA_LANES|valeur fonction|HS Tranmission fine tuning||||
+HS_DELAY_CLOCK_LANE_Value|Transmission Delay on Clock Lane|HS Tranmission fine tuning||0|10|
+param_HS_DELAY_CLOCK_LANE|valeur fonction|HS Tranmission fine tuning||||
+HS_DELAY_DATA_LANES_Value|Transmission Delay on Data Lanes|HS Tranmission fine tuning||0|10|
+param_HS_DELAY_DATA_LANES|valeur fonction|HS Tranmission fine tuning||||
+SLEW_RATE_LPTX_CLOCK_LANE_Value|Slew-rate on Clock Lane|LP Tranmission fine tuning||0|10|
+param_SLEW_RATE_LPTX_CLOCK_LANE|valeur fonction|HS Tranmission fine tuning||||
+SLEW_RATE_LPTX_DATA_LANES_Value|Slew-rate on Data Lanes|LP Tranmission fine tuning||0|10|
+Frequency|Cut-off frequency of the LP Reception Low-Pass Filter|LP Reception fine tuning||0|10000|
+param_SLEW_RATE_LPTX_DATA_LANES|valeur fonction|HS Tranmission fine tuning||||
+ClockLaneLP2HSTime|Maximum time taken by the D-PHY clock lane to go from LP to HS transmission|LP to HS and HS to LP Transitions Timings|lane byte clock cycles|0|1023|LP2HS = TLPX_CLK + TCLK_PREPARE + TCLK_ZERO
+ClockLaneLP2HSTime_ns|Resulting Maximum time taken by the D-PHY clock lane to go from LP to HS transmission|LP to HS and HS to LP Transitions Timings|ns|||
+ClockLaneHS2LPTime|Maximum time taken by the D-PHY clock lane to go from HS to LP transmission|LP to HS and HS to LP Transitions Timings|lane byte clock cycles|0|1023|HS2LP = TCLK_POST + TCLK_TRAIL + TCLK_EXIT TCLK_TRAIL=60ns TCLK_EXIT=100ns
+ClockLaneHS2LPTime_ns|Resulting Maximum time taken by the D-PHY clock lane to go from HS to LP transmission|LP to HS and HS to LP Transitions Timings|ns|||
+DataLaneHS2LPTime|Maximum time taken by the D-PHY data lane to go from HS to LP transmission|LP to HS and HS to LP Transitions Timings|lane byte clock cycles|0|255|HS2LP = THS_TRAIL + THS_EXIT
+DataLaneHS2LPTime_ns|Resulting Maximum time taken by the D-PHY data lane to go from HS to LP transmission|LP to HS and HS to LP Transitions Timings|ns|||
+DataLaneLP2HSTime|Maximum time taken by the D-PHY data lane to go from LP to HS transmission|LP to HS and HS to LP Transitions Timings|lane byte clock cycles|0|255|LP2HS = TLPX_DATA + THS_PREPARE + THS_ZERO
+DataLaneLP2HSTime_ns|Resulting Maximum time taken by the D-PHY data lane to go from LP to HS transmission|LP to HS and HS to LP Transitions Timings|ns|||
+DataLaneMaxReadTime|Maximum time taken to perform a read command|Read Command Timing|lane byte clock cycles|0|32767|The MRD_TIME field is used in LP mode to determine if there is time to complete a read command in a BLLP period. MRD_TIME = Time to transmit the read command in LP mode + Time to enter and leave LPmode + Time to return the read data packet from the peripheral device. MRD_TIME = (tHS2LP + tLP2HS + tread + 2tBTA) / lanebyteclkperiod. Timings are expressed in ns. tHS2LP = time to enter the LP mode. tLP2HS = time to leave the LP mode. tLPDT = D-PHY timing related to Escape mode entry, LPDT command, and Escape mode exit (according to the D-PHY specification, this value is always 11 bits in LP. tlprd = Read command time in LP mode (64 * TX esc clock). tread = Time to return the read data packet from the peripheral. tBTA = time to perform a bus turnaround (D-PHY dependent).
+DataLaneMaxReadTime_ns|Resulting Maximum time taken to perform a read command|Read Command Timing|ns|||
+StopWaitTime|Minimum wait period to request a HS transmission after the Stop state (min est 1 cycle de escape clock)|LP to HS and HS to LP Transitions Timings|lane byte clock cycles|0|255|
+StopWaitTime_ns|Resulting Minimum wait period to request a HS transmission after the Stop state (min est 1 cycle de escape clock)|LP to HS and HS to LP Transitions Timings|ns|||
+HighSpeedClockfromDSI_noparam|High Speed Clock - PLLDSI Output|from PLLDSI|kHz|||
+LaneByteClockfromDSI_noparam|Lane Byte Clock|from PLLDSI|kHz|||
+LaneByteClockfromPLLR_noparam|Lane Byte Clock|from PLL2Q|kHz|||
+TransmissionEscapeClockfromDSI_noparam|Transmission Escape Clock|from PLLDSI|kHz|||
+TransmissionEscapeClockfromPLLR_noparam|Transmission Escape Clock|from PLL2Q|kHz|||
+EscapeClockDivider_noparam|Escape Clock Divider|from PLLDSI||||
+TimeOutClockfromDSI_noparam|Time Out Clock|from PLLDSI|kHz|||
+TimeOutClockfromDSI_noparamfortimeout|Time Out Clock - from PLLDSI|Time Out Clock Setting|kHz|||
+TimeOutClockfromPLLR_noparam|Time Out Clock|from PLL2Q|kHz|||
+TimeoutCkdiv|Time Out Clock Divider|Time Out Clock Setting||1|256|
+Mode|Video Mode|Video Mode Configuration||||The Burst mode increases the probability of the link spending more time in low-power mode: the DSI output bandwidth should be higher than the LTDC input bandwidth in a relation that enables the link to go to low-power once per line. The condition to use BURST mode is that the display device should support receiving a full pixel line in a single packet burst; if not use the Non Burst Mode
+PacketSize|Video Packet Size|Video Mode Configuration|Pixels|1|8191|The video packet size is limited by the size of the Pixel FIFO inside the display device. For 18-bit not loosely packed data types, this number must be a multiple of 4
+NumberOfChunks|Number of Chuncks|Video Mode Configuration||0|8191|The pixel line is divided into several chunks of Video Packet Size pixels . If set to 0 or 1, the video line is transmitted in a single packet. If set to 1, the packet is part of a chunk, so a null packet follows it if Null Packet SIZE > 0. You must set the value to have Video Packet Size * Number of Chuncks = Number of Pixels per Line
+NullPacketSize|Null Packet Size|Video Mode Configuration|Bytes|0|8191|Each chunk is composed of Video Packet Size pixels followed by Null Packet Size in a way that LTDC interface input pixel ratio matches with the DSI output pixel ratio. If Null Packet are allowed, the following equation has to be verified : lanebyteclkperiod * Number_of_Chuncks (VideoPacketSize * bytes_per_pixel + 12 + NullPacketSize) / number_of_lanes = pixels_per_line * LTDC_Clock_period If Null Packet are not allowed, the following equation has to be verified : lanebyteclkperiod * Number_of_Chuncks (VideoPacketSize * bytes_per_pixel + 6) / number_of_lanes = pixels_per_line * LTDC_Clock_period
+LPHorizontalFrontPorchEnable|Horizontal Front-Porch (HFP) Period|Enabling Low-Power Transitions during:||||
+LPHorizontalBackPorchEnable|Horizontal Back-Porch (HBP) Period|Enabling Low-Power Transitions during:||||
+LPVerticalActiveEnable|Vertical Active (VACT) Period|Enabling Low-Power Transitions during:||||
+LPVerticalFrontPorchEnable|Vertical Front Porch (VFP) Period|Enabling Low-Power Transitions during:||||
+LPVerticalBackPorchEnable|Vertical Back Porch (VBP) Period|Enabling Low-Power Transitions during:||||
+LPVerticalSyncActiveEnable|Vertical Sync time (VSA) Period|Enabling Low-Power Transitions during:||||
+LPCommandEnable|During HS Video Mode, Commands are Transmited in|Transmission of Commands during HS Video Transmission Mode||||If the commands are sent in high-speed in Video mode, the DSI Host automatically determines the area where each command can be sent and no programming or calculation is required.
+LPLargestPacketSize|The size of the LP largest packet that can fit in a line during VSA, VBP and VFP regions|Maximum Size allowed for Commands (except Read Command)|Bytes|0|255|The LPSIZE field is compared directly with the size of the command to be transmitted to determine if there is time to transmit the command. LPSIZE = (tL - (tH1 + tHS2LP + tLP2HS + tLPDT + 2 tESCCLK)) / (2.8.tESCCLK). Timings are expressed in ns. tL = line time. tH1 = time of the HSA pulse for sync pulses mode or time to send the HSS packet, including EoTp. tHS2LP = time to enter the LP mode. tLP2HS = time to leave the LP mode. tLPDT = D-PHY timing related with Escape mode Entry, LPDT Command, and Escape Exit. According to the D-PHY specification, this value is always 11 bits in LP. tESCCLK = escape clock period the term 2 tESCCLK is a delay imposed by the DSI Host implementation. The division by (2.8.tESCCLK) allows to expressed LPSIZE in number of Bytes transfered using the Escape Clock where 1 byte is transmitted every 2 cycles
+LPVACTLargestPacketSize|The size of the LP largest packet that can fit in a line during VACT region|Maximum Size allowed for Commands (except Read Command)|Bytes|0|255|The VLPSIZE field is compared directly with the size of the command to be transmitted to determine if there is time to transmit the command. VLPSIZE = (tL - (tHSA + tHBP + tHACT + tHS2LP + tLP2HS + tLPDT + 2 tESCCLK))/(2 . 8 . tESCCLK). Timings are expressed in ns. tL = line time. tHSA = time of the HSA pulse. tHBP = time of Horizontal back porch. tHACT = time of Video active. For Burst mode, the Video active is time compressed and is calculated as tHACT = (VPSIZE.Bytes_per_Pixel/Number_Lanes).tlanebyteclock tlanebyteclock = lane byte clock period tESCCLK = escape clock period tHS2LP = time to enter the LP mode. tLP2HS = time to leave the LP mode. tLPDT = D-PHY timing related with Escape mode Entry, LPDT Command, and Escape Exit. According to the D-PHY specification, this value is always 11 bits in LP. The division by (2.8.tESCCLK) allows to expressed LPSIZE in number of Bytes transfered using the Escape Clock where 1 byte is transmitted every 2 cycles
+VerticalSyncActive|VSA: Vertical Synchronism Active duration (Default value is retrieved from LTDC)|Frame Vertical Timings|Horizontal Lines|0|1023|
+VerticalBackPorch|VBP: Vertical Back-Porch duration (Default value is retrieved from LTDC)|Frame Vertical Timings|Horizontal Lines|0|1023|
+VerticalFrontPorch|VFP: Vertical Front-Porch duration (Default value is retrieved from LTDC)|Frame Vertical Timings|Horizontal Lines|0|1023|
+VerticalActive|VACT: Vertical Active duration (Default value is retrieved from LTDC)|Frame Vertical Timings|Horizontal Lines|0|16383|
+HorizontalSyncActive|HSA: Horizontal Synchronism Active duration (Default value is retrieved from LTDC)|Frame Horizontal Timings|lane byte clock cycles|0|4095|
+HorizontalBackPorch|HBP: Horizontal Back-Porch duration (Default value is retrieved from LTDC)|Frame Horizontal Timings|lane byte clock cycles|0|4095|
+HorizontalActiveDuration_noparam|HACT: Horizontal Active Duration NO PARAM|Frame Horizontal Timings|lane byte clock cycles|||
+HorizontalLine|HLINE: Horizontal Line duration (Default value is retrieved from LTDC)|Frame Horizontal Timings|lane byte clock cycles|0|32767|
+LTDCPixelClock_noparam|LTDC Pixel Clock (from Clock tree)|Clocking|MHZ|||
+VerticalSyncActive_LTDC_noparam|VSA: Vertical Synchronism Active duration (set in LTDC)|Frame Vertical Timings|Horizontal Lines|||
+VerticalBackPorch_LTDC_noparam|VBP: Vertical Back-Porch duration (set in LTDC)|Frame Vertical Timings|Horizontal Lines|||
+VerticalFrontPorch_LTDC_noparam|VFP: Vertical Front-Porch duration (set in LTDC)|Frame Vertical Timings|Horizontal Lines|||
+VerticalActive_LTDC_noparam|VACT: Vertical Active duration (set in LTDC)|Frame Vertical Timings|Horizontal Lines|||
+HorizontalSyncActive_LTDC_noparam|HSA: Horizontal Synchronism Active duration (set in LTDC)|Frame Horizontal Timings|LTDC Pixel Clock Cycles|||
+HorizontalBackPorch_LTDC_noparam|HBP: Horizontal Back-Porch duration (set in LTDC)|Frame Horizontal Timings|LTDC Pixel Clock Cycles|0|25|
+HorizontalActiveDuration_LTDC_noparam|HACT: Horizontal Active duration (set in LTDC)|Frame Horizontal Timings|LTDC Pixel Clock Cycles|||
+HorizontalLine_LTDC_noparam|HLINE: Horizontal Line duration (set in LTDC)|Frame Horizontal Timings|LTDC Pixel Clock Cycles|||
+HSPolarity|HSYNC Polarity (set in LTDC)|Polarity of the Control Signals||||
+VSPolarity|VSYNC Polarity (set in LTDC)|Polarity of the Control Signals||||
+DEPolarity|Data Enable Polarity (set in LTDC)|Polarity of the Control Signals||||
+VirtualChannelID|Display ID|Basic Settings||0|3|
+ColorCoding|Color Coding|Basic Settings||||
+ColorMode|Color Mode|Basic Settings||||
+byteperpixel|byteperpixel|Basic Settings||||
+LooselyPacked|Loosely Packed|Basic Settings||||
+CommandSize|Maximum Command Size|Specific Command Mode Settings|Pixels|0|=(1280*24)/byteperpixel|The Maximum Command Size is limited by the Size of the LTDC ctrl Pixel FIFO ie 1280 * 24bitsPixels
+TearingEffectSource|Tearing Effect Source|Specific Command Mode Settings||||
+TearingEffectPolarity|Polarity of the External Tearing Effect Source|Specific Command Mode Settings||||
+AutomaticRefresh|The Refresh of the Display Frame Buffer is Triggered|Specific Command Mode Settings||||
+VSyncPol|The DSI is halting the LTDC synchronously|Interface||||
+LPWREIE|LTDC FIFO Overflow Error Interrupt is|Interface Error Configuration||||
+HighSpeedTransmissionTimeout|High-speed transmission time-out|Contention Error Detection|Timeout Clock Cycles|0|35535|
+HighSpeedTransmissionTimeout_ns|Resulting Timing High-speed transmission time-out|Contention Error Detection|ns|||
+LowPowerReceptionTimeout|Low-power reception time-out|Contention Error Detection|Timeout Clock Cycles|0|35535|
+LowPowerReceptionTimeout_ns|Resulting Timing Low-power reception time-out|Contention Error Detection|ns|||
+TOHSTXIE|Timeout High-Speed Transmission Interrupt|Contention Error Detection||||
+TOLPRXIE|Timeout Low-Power Reception Interrupt|Contention Error Detection||||
+ActiveErrors|Active Errors|APB Interface Error Configuration||||
+HighSpeedReadTimeout|High-speed read time-out|Peripheral Response|lane byte clock cycles|0|65535|This timing must be preferably kept nul in Video Mode
+HighSpeedReadTimeout_ns|Resulting Timing High-speed read time-out|Peripheral Response|ns|||This timing must be preferably kept nul in Video Mode
+LowPowerReadTimeout|Low-power read time-out|Peripheral Response|lane byte clock cycles|0|65535|This timing must preferably be kept nul in Video Mode
+LowPowerReadTimeout_ns|Resulting Timing Low-power read time-out|Peripheral Response|ns|||This timing must preferably be kept nul in Video Mode
+HighSpeedWriteTimeout|High-speed write time-out|Peripheral Response|lane byte clock cycles|0|65535|This timing must preferably be kept nul in Video Mode
+HighSpeedWriteTimeout_ns|Resulting Timing High-speed write time-out|Peripheral Response|ns|||This timing must preferably be kept nul in Video Mode
+LowPowerWriteTimeout|Low-power write time-out|Peripheral Response|lane byte clock cycles|0|65535|This timing must preferably be kept nul in Video Mode
+LowPowerWriteTimeout_ns|Resulting Timing Low-power write time-out|Peripheral Response|ns|||This timing must preferably be kept nul in Video Mode
+BTATimeout|BTA time-out|Peripheral Response|lane byte clock cycles|0|65535|This timing must preferably be kept nul in Video Mode
+BTATimeout_ns|Resulting Timing for BTA time-out|Peripheral Response|ns|||This timing must preferably be kept nul in Video Mode
+HighSpeedWritePrespMode|High-speed write presp mode|Peripheral Response||||
+TimingPHY_TCLK_POST_Enable|Timing TCLK_POST is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_TCLK_POST_Value|TCLK_POST Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_TCLK_POST_Value_ns|TCLK_POST Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_TLPX_CLK_Enable|Timing TLPX_CLK is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_TLPX_CLK_Value|TLPX_CLK Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_TLPX_CLK_Value_ns|TLPX_CLK Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_THS_EXIT_Enable|Timing THS_EXIT is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_THS_EXIT_Value|THS_EXIT Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_THS_EXIT_Value_ns|THS_EXIT Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_TLPX_DATA_Enable|Timing TLPX_DATA is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_TLPX_DATA_Value|TLPX_DATA Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_TLPX_DATA_Value_ns|TLPX_DATA Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_THS_ZERO_Enable|Timing THS_ZERO is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_THS_ZERO_Value|THS_ZERO Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_THS_ZERO_Value_ns|THS_ZERO Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_THS_TRAIL_Enable|Timing THS_TRAIL is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_THS_TRAIL_Value|THS_TRAIL Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_THS_TRAIL_Value_ns|THS_TRAIL Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_THS_PREPARE_Enable|Timing THS_PREPARE is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_THS_PREPARE_Value|THS_PREPARE Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_THS_PREPARE_Value_ns|THS_PREPARE Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_TCLK_ZERO_Enable|Timing TCLK_ZERO is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_TCLK_ZERO_Value|TCLK_ZERO Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_TCLK_ZERO_Value_ns|TCLK_ZERO Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+TimingPHY_TCLK_PREPARE_Enable|Timing TCLK_PREPARE is redefined|Redefinition of PHY Timings||||This Timing depends on hardware implementation but can be redefined using a dedicated register
+TimingPHY_TCLK_PREPARE_Value|TCLK_PREPARE Register Value|Redefinition of PHY Timings||0|255|The default value set in this register defines the same timing as the hardware timing
+TimingPHY_TCLK_PREPARE_Value_ns|TCLK_PREPARE Timing (Hardware)|Redefinition of PHY Timings|ns|0|255|
+
+[Values]
+# параметр|значение|подпись
+FrameBTAAcknowledgeEnable|DSI_FBTAA_DISABLE|Disable
+FrameBTAAcknowledgeEnable|DSI_FBTAA_ENABLE|Enable
+PLLIDF|DSI_PLL_IN_DIV1|Pll In Div1
+PLLIDF|DSI_PLL_IN_DIV2|Pll In Div2
+PLLIDF|DSI_PLL_IN_DIV3|Pll In Div3
+PLLIDF|DSI_PLL_IN_DIV4|Pll In Div4
+PLLIDF|DSI_PLL_IN_DIV5|Pll In Div5
+PLLIDF|DSI_PLL_IN_DIV6|Pll In Div6
+PLLIDF|DSI_PLL_IN_DIV7|Pll In Div7
+PLLODF|DSI_PLL_OUT_DIV1|Pll Out Div1
+PLLODF|DSI_PLL_OUT_DIV2|Pll Out Div2
+PLLODF|DSI_PLL_OUT_DIV4|Pll Out Div4
+PLLODF|DSI_PLL_OUT_DIV8|Pll Out Div8
+LPGenShortWriteNoP|DSI_LP_GSW0P_DISABLE|High Speed Transmission
+LPGenShortWriteNoP|DSI_LP_GSW0P_ENABLE|Low Power Transmission
+LPGenShortWriteOneP|DSI_LP_GSW1P_DISABLE|High Speed Transmission
+LPGenShortWriteOneP|DSI_LP_GSW1P_ENABLE|Low Power Transmission
+LPGenShortWriteTwoP|DSI_LP_GSW2P_DISABLE|High Speed Transmission
+LPGenShortWriteTwoP|DSI_LP_GSW2P_ENABLE|Low Power Transmission
+LPGenShortReadNoP|DSI_LP_GSR0P_DISABLE|High Speed Transmission
+LPGenShortReadNoP|DSI_LP_GSR0P_ENABLE|Low Power Transmission
+LPGenShortReadOneP|DSI_LP_GSR1P_DISABLE|High Speed Transmission
+LPGenShortReadOneP|DSI_LP_GSR1P_ENABLE|Low Power Transmission
+LPGenShortReadTwoP|DSI_LP_GSR2P_DISABLE|High Speed Transmission
+LPGenShortReadTwoP|DSI_LP_GSR2P_ENABLE|Low Power Transmission
+LPGenLongWrite|DSI_LP_GLW_DISABLE|High Speed Transmission
+LPGenLongWrite|DSI_LP_GLW_ENABLE|Low Power Transmission
+LPDcsShortWriteNoP|DSI_LP_DSW0P_DISABLE|High Speed Transmission
+LPDcsShortWriteNoP|DSI_LP_DSW0P_ENABLE|Low Power Transmission
+LPDcsShortWriteOneP|DSI_LP_DSW1P_DISABLE|High Speed Transmission
+LPDcsShortWriteOneP|DSI_LP_DSW1P_ENABLE|Low Power Transmission
+LPDcsShortReadNoP|DSI_LP_DSR0P_DISABLE|High Speed Transmission
+LPDcsShortReadNoP|DSI_LP_DSR0P_ENABLE|Low Power Transmission
+LPDcsLongWrite|DSI_LP_DLW_DISABLE|High Speed Transmission
+LPDcsLongWrite|DSI_LP_DLW_ENABLE|Low Power Transmission
+LPMaxReadPacket|DSI_LP_MRDP_DISABLE|High Speed Transmission
+LPMaxReadPacket|DSI_LP_MRDP_ENABLE|Low Power Transmission
+GCEIE|HAL_DSI_ERROR_NONE|Disable
+GCEIE|HAL_DSI_ERROR_GEN|Enable
+AcknowledgeRequest|DSI_ACKNOWLEDGE_DISABLE|Disabled
+AcknowledgeRequest|DSI_ACKNOWLEDGE_ENABLE|Enabled
+TEAcknowledgeRequest|DSI_TE_ACKNOWLEDGE_DISABLE|Disabled
+TEAcknowledgeRequest|DSI_TE_ACKNOWLEDGE_ENABLE|Enabled
+CRCX_FlowControl|__NULL|Disabled
+CRCX_FlowControl|DSI_FLOW_CONTROL_CRC_RX|Enabled
+CRCEIE|HAL_DSI_ERROR_NONE|Disable
+CRCEIE|HAL_DSI_ERROR_CRC|Enable
+ECCX_FlowControl|__NULL|Disabled
+ECCX_FlowControl|DSI_FLOW_CONTROL_ECC_RX|Enabled
+ECCEIE|HAL_DSI_ERROR_NONE|Disable
+ECCEIE|HAL_DSI_ERROR_ECC|Enable
+PSEIE|HAL_DSI_ERROR_NONE|Disable
+PSEIE|HAL_DSI_ERROR_PSE|Enable
+AEIE|HAL_DSI_ERROR_NONE|Disable
+AEIE|HAL_DSI_ERROR_ACK|Enable
+PEXIE|HAL_DSI_ERROR_NONE|Disable
+PEXIE|HAL_DSI_ERROR_PHY|Enable
+ETRX_FlowControl|__NULL|Disabled
+ETRX_FlowControl|DSI_FLOW_CONTROL_EOTP_RX|Enabled
+EOTPEIE|HAL_DSI_ERROR_NONE|Disable
+EOTPEIE|HAL_DSI_ERROR_EOT|Enable
+ETTX_FlowControl|__NULL|Disabled
+ETTX_FlowControl|DSI_FLOW_CONTROL_EOTP_TX|Enabled
+BTA_FlowControl|__NULL|Disabled
+BTA_FlowControl|DSI_FLOW_CONTROL_BTA|Enabled
+NumberOfLanes|DSI_ONE_DATA_LANE|One Data Lane
+NumberOfLanes|DSI_TWO_DATA_LANES|Two Data Lanes
+State|__NULL|Disable
+State_SDD|__NULL|Disable
+AutomaticClockLaneControl|DSI_AUTO_CLK_LANE_CTRL_DISABLE|Clock lane is always provided
+AutomaticClockLaneControl|DSI_AUTO_CLK_LANE_CTRL_ENABLE|Clock lane is not provided when time allows
+SWAP_CLOCK_LANE_State|__NULL|Disable
+SWAP_DATA_LANE0_State|__NULL|Disable
+SWAP_DATA_LANE1_State|__NULL|Disable
+INVERT_CLOCK_LANE_State|__NULL|Disable
+INVERT_DATA_LANE0_State|__NULL|Disable
+INVERT_DATA_LANE1_State|__NULL|Disable
+Mode|DSI_VID_MODE_BURST|Burst Mode
+Mode|DSI_VID_MODE_NB_PULSES|Non Burst Mode with Sync
+Mode|DSI_VID_MODE_NB_EVENTS|Non Burst Mode with Event
+LPHorizontalFrontPorchEnable|DSI_LP_HFP_DISABLE|Disable
+LPHorizontalFrontPorchEnable|DSI_LP_HFP_ENABLE|Enable
+LPHorizontalBackPorchEnable|DSI_LP_HBP_DISABLE|Disable
+LPHorizontalBackPorchEnable|DSI_LP_HBP_ENABLE|Enable
+LPVerticalActiveEnable|DSI_LP_VACT_DISABLE|Disable
+LPVerticalActiveEnable|DSI_LP_VACT_ENABLE|Enable
+LPVerticalFrontPorchEnable|DSI_LP_VFP_DISABLE|Disable
+LPVerticalFrontPorchEnable|DSI_LP_VFP_ENABLE|Enable
+LPVerticalBackPorchEnable|DSI_LP_VBP_DISABLE|Disable
+LPVerticalBackPorchEnable|DSI_LP_VBP_ENABLE|Enable
+LPVerticalSyncActiveEnable|DSI_LP_VSYNC_DISABLE|Disable
+LPVerticalSyncActiveEnable|DSI_LP_VSYNC_ENABLE|Enable
+LPCommandEnable|DSI_LP_COMMAND_DISABLE|High Speed
+LPCommandEnable|DSI_LP_COMMAND_ENABLE|Low Power
+HSPolarity|DSI_HSYNC_ACTIVE_HIGH|PIN is Active High
+HSPolarity|DSI_HSYNC_ACTIVE_LOW|PIN is Active Low
+VSPolarity|DSI_VSYNC_ACTIVE_HIGH|PIN is Active High
+VSPolarity|DSI_VSYNC_ACTIVE_LOW|PIN is Active Low
+DEPolarity|DSI_DATA_ENABLE_ACTIVE_HIGH|PIN is Active High
+DEPolarity|DSI_DATA_ENABLE_ACTIVE_LOW|PIN is Active Low
+ColorCoding|DSI_RGB565|RGB565 (16 bits) - DSI mode
+ColorCoding|DSI_RGB666|RGB666 (18 bits) - DSI mode
+ColorCoding|DSI_RGB888|RGB888 (24 bits) - DSI mode
+ColorMode|DSI_COLOR_MODE_FULL|Fill Color Mode
+ColorMode|DSI_COLOR_MODE_EIGHT|Eight Color Mode
+LooselyPacked|DSI_LOOSELY_PACKED_DISABLE|Disable
+LooselyPacked|DSI_LOOSELY_PACKED_ENABLE|Enable
+TearingEffectSource|DSI_TE_DSILINK|DSI Link
+TearingEffectSource|DSI_TE_EXTERNAL|External Source
+TearingEffectPolarity|DSI_TE_RISING_EDGE|Rising Edge
+TearingEffectPolarity|DSI_TE_FALLING_EDGE|Falling Edge
+AutomaticRefresh|DSI_AR_DISABLE|manually by Enabling the LTDC
+AutomaticRefresh|DSI_AR_ENABLE|on a Tearing Effect Event
+VSyncPol|DSI_VSYNC_FALLING|On a Falling Edge of VSYNC
+VSyncPol|DSI_VSYNC_RISING|On a Rising Edge of VSYNC
+LPWREIE|HAL_DSI_ERROR_NONE|Disabled
+LPWREIE|HAL_DSI_ERROR_OVF|Enabled
+TOHSTXIE|HAL_DSI_ERROR_NONE|Disable
+TOHSTXIE|HAL_DSI_ERROR_TX|Enable
+TOLPRXIE|HAL_DSI_ERROR_NONE|Disable
+TOLPRXIE|HAL_DSI_ERROR_RX|Enable
+HighSpeedWritePrespMode|DSI_HS_PM_DISABLE|Normal Behavior
+HighSpeedWritePrespMode|DSI_HS_PM_ENABLE|Change behavior of HS Write operation timeout
+TimingPHY_TCLK_POST_Enable|__NULL|Disable
+TimingPHY_TLPX_CLK_Enable|__NULL|Disable
+TimingPHY_THS_EXIT_Enable|__NULL|Disable
+TimingPHY_TLPX_DATA_Enable|__NULL|Disable
+TimingPHY_THS_ZERO_Enable|__NULL|Disable
+TimingPHY_THS_TRAIL_Enable|__NULL|Disable
+TimingPHY_THS_PREPARE_Enable|__NULL|Disable
+TimingPHY_TCLK_ZERO_Enable|__NULL|Disable
+TimingPHY_TCLK_PREPARE_Enable|__NULL|Disable

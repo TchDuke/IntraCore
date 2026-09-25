@@ -1,0 +1,186 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=GFXTIM
+Version=v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+SynchroSrc|HSYNC and VSYNC sources|Source Selection||||Synchronization signals (HSYNC and VSYNC) sources. Note: This parameter can be a value.
+TearingEffectActivation|Tearing effect (TE)|Source Selection||||Tearing effect . Activate it to specify the configuration details
+TearingEffectSrc|Tearing effect source|Source Selection||||Tearing effect source. Note: This parameter can be a value.
+TearingEffectPolarity|Tearing effect polarity|Source Selection||||Tearing effect polarity. Note: This parameter can be a value.
+TearingEffectInterrupt|Tearing effect interrupt|Source Selection||||Tearing effect interrupt. Note: Useful only when Tearing effect interrupt parameter is enabled.
+LineClockCounter|Line Clock Counter (LCC)|Clock Generator||||Clock Generator Activation. Activate it to specify the configuration details
+LCCHwReloadSrc|LCC Auto-reload trigger|Clock Generator||||Line Clock Counter hardware reload source. Note: Useful only when Line Clock Counter hardware reload source parameter is enabled.
+LCCReloadValue|LCC Auto-reload value|Clock Generator||0|4194303|Line Clock Counter reload value (22 bits). This parameter must be a number between Min_Data = 1 and Max_Data = 4194303.
+LCCClockSrc|LCC clock source|Clock Generator||||Line Clock Counter Clock Source. Note: Useful only when Line Clock Counter Clock Source parameter is enabled.
+FrameClockCounter|Frame Clock Counter (FCC)|Clock Generator||||Clock Generator Activation. Activate it to specify the configuration details
+FCCHwReloadSrc|FCC Auto-reload trigger|Clock Generator||||Frame Clock Counter hardware reload source. Note: Useful only when Frame Clock Counter hardware reload source parameter is enabled.
+FCCReloadValue|FCC Auto-reload value|Clock Generator||0|4095|Frame Clock Counter reload value (12 bits). This parameter must be a number between Min_Data = 1 and Max_Data = 4095.
+FCCClockSrc|FCC clock source|Clock Generator||||Frame Clock Counter Clock Source. Note: Useful only when Frame Clock Counter Clock Source parameter is enabled.
+LineClockSrc|Line Ck source|Clock Generator||||Line Clock Source. Note: Useful only when Line Clock Source parameter is enabled.
+LineClockCalib|Line Ck output calibration|Clock Generator||||Debug purpose. Note: Useful only when Line Clock Calib parameter is enabled.
+FrameClockSrc|Frame Ck source|Clock Generator||||Frame Clock Source. Note: Useful only when Frame Clock Source parameter is enabled.
+FrameClockCalib|Frame Ck output calibration|Clock Generator||||Debug purpose. Note: Useful only when Frame Clock Calib parameter is enabled.
+EventGenerator1|Event generator 1|Event Generators||||Event Generator 1. Note: Useful only when Event Generator 1 parameter is enabled.
+EventInterrupt1|Event interrupt|Event Generators||||Event Interrupt 1. Note: Useful only when Event Interrupt 1 parameter is enabled.
+FrameEvent1|Frame event|Event Generators||||Event Frame 1. Note: Useful only when Event Frame 1 parameter is enabled.
+LineEvent1|Line event|Event Generators||||Event Line 1. Note: Useful only when Event Line 1 parameter is enabled.
+EventGenerator2|Event generator 2|Event Generators||||Event generator 2. Note: Useful only when Event Generator 2 parameter is enabled.
+EventInterrupt2|Event interrupt|Event Generators||||Event Interrupt 2. Note: Useful only when Event Interrupt 2 parameter is enabled.
+FrameEvent2|Frame event|Event Generators||||Event Frame 2. Note: Useful only when Event Frame 2 parameter is enabled.
+LineEvent2|Line event|Event Generators||||Event Line 2. Note: Useful only when Event Line 2 parameter is enabled.
+EventGenerator3|Event generator 3|Event Generators||||Event Generator 3. Note: Useful only when Event Generator 3 parameter is enabled.
+EventInterrupt3|Event interrupt|Event Generators||||Event Interrupt 3. Note: Useful only when Event Interrupt 3 parameter is enabled.
+FrameEvent3|Frame event|Event Generators||||Event Frame 3. Note: Useful only when Event Frame 3 parameter is enabled.
+LineEvent3|Line event|Event Generators||||Event Line 3. Note: Useful only when Event Line 3 parameter is enabled.
+EventGenerator4|Event generator 4|Event Generators||||Event Generator 4. Note: Useful only when Event Generator 4 parameter is enabled.
+EventInterrupt4|Event interrupt|Event Generators||||Event Interrupt 4. Note: Useful only when Event Interrupt 4 parameter is enabled.
+FrameEvent4|Frame event|Event Generators||||Event Frame 4. Note: Useful only when Event Frame 4 parameter is enabled.
+LineEvent4|Line event|Event Generators||||Event Line 4. Note: Useful only when Event Line 4 parameter is enabled.
+AbsoluteTimerActivation|Absolute Timer Activation|Absolute Timer||||Absolute Timer Activation. Activate it to specify the configuration details
+FrameCompare1Value|Absolute Frame Compare 1 value|Absolute Timer||0|1048575|Absolute Frame Compare 1 value (20 bits). This parameter must be a number between 1 and 1048575.
+FrameCounterValue|Absolute Frame Counter value|Absolute Timer||0|1048575|Absolute Frame Counter initial value (20 bits). This parameter must be a number between 1 and 1048575.
+FrameOverflowInterrupt|Absolute Frame Counter Overflow Interrupt|Absolute Timer||||Overflow Interrupt. Note: Useful only when Overflow Interrupt parameter is enabled.
+FrameCompare1Interrupt|Absolute Frame Compare 1 Interrupt|Absolute Timer||||Frame Compare 1 Interrupt. Note: Useful only when Frame Compare 1 Interrupt parameter is enabled.
+LineCompare1Value|Absolute Line Compare 1 value|Absolute Timer||0|4095|Absolute Line Compare 1. Note: Useful only when Absolute Line Compare 1 parameter is enabled.
+LineCompare2Value|Absolute Line Compare 2 value|Absolute Timer||0|4095|Absolute Line Compare 2 value (12 bits). This parameter must be a number between 0 and 4095.
+LineCounterValue|Absolute Line Counter value|Absolute Timer||0|4095|Absolute Line Counter value (12 bits). This parameter must be a number between 0 and 4095.
+LineOverflowInterrupt|Absolute Line Counter Overflow Interrupt|Absolute Timer||||Line Overflow Interrupt. Note: Useful only when Line Overflow Interrupt parameter is enabled.
+LineCompare1Interrupt|Absolute Line Compare 1 Interrupt|Absolute Timer||||Line Compare 1 Interrupt. Note: Useful only when Line Compare 1 Interrupt parameter is enabled.
+LineCompare2Interrupt|Absolute Line Compare 2 Interrupt|Absolute Timer||||Line Compare 2 Interrupt. Note: Useful only when Line Compare 2 Interrupt parameter is enabled.
+WatchdogTimer|Watchdog Timer|Watchdog||||Watchdog Activation. Activate it to specify the configuration details
+ClockSrc|Counter clock source|Watchdog||||Clock Source. Note: Useful only when Clock Source parameter is enabled.
+AutoReloadValue|Counter Auto-reload value|Watchdog||0|65535|Auto Reload value (16 bits). This parameter must be a number between 0 and 65535.
+HwReloadConfig|Auto-reload trigger|Watchdog||||Reload Configuration. Note: Useful only when Reload Configuration parameter is enabled. The two values wrld rising edge and wrld falling edge not available on Viper64K-H7R.
+PreAlarmValue|Pre-Alarm value|Watchdog||0|65535|Pre-alarm value (16 bits). This parameter must be a number between 0 and 65535.
+AlarmInterrupt|Alarm interrupt|Watchdog||||Interrupt Alarm. Note: Useful only when Interrupt Alarm parameter is enabled.
+PreAlarmInterrupt|Pre-Alarm interrupt|Watchdog||||Interrupt Pre-alarm. Note: Useful only when Interrupt Pre-Alarm parameter is enabled.
+RelativeTimerActivation|Relative timer activation|Relative timer||||Relative Timer Activation. Activate it to specify the configuration details
+RelativeTimer1|Relative Timer 1|Relative Timers||||Relative Timer 1 Note: Useful only when Relative Timer 1 parameter is enabled.
+AutoReloadValue1|Auto reload value|Relative Timers||0|4095|Auto reload value 1 (12 bits). This parameter must be a number between 0 and 4095.
+CounterMode1|Counter mode|Relative Timers||||Counter Mode 1. Note: Useful only when Counter Mode 1 parameter is enabled.
+ReloadInterrupt1|Reload interrupt|Relative Timers||||Reload Interrupt 1. Note: Useful only when Reload Interrupt 1 parameter is enabled.
+RelativeTimer2|Relative Timer 2|Relative Timers||||Relative Timer 2 Note: Useful only when Relative Timer 2 parameter is enabled.
+AutoReloadValue2|Auto reload value|Relative Timers||0|4095|Auto reload value 2 (12 bits). This parameter must be a number between 0 and 4095.
+CounterMode2|Counter mode|Relative Timers||||Counter Mode 2. Note: Useful only when Counter Mode 2 parameter is enabled.
+ReloadInterrupt2|Reload interrupt|Relative Timers||||Reload Interrupt 2. Note: Useful only when Reload Interrupt 2 parameter is enabled.
+
+[Values]
+# параметр|значение|подпись
+SynchroSrc|GFXTIM_SYNC_SRC_HSYNC_VSYNC_0|gfxtim_hsync[0] and gfxtim_vsync[0]
+SynchroSrc|GFXTIM_SYNC_SRC_HSYNC_VSYNC_1|gfxtim_hsync[1] and gfxtim_vsync[1]
+SynchroSrc|GFXTIM_SYNC_SRC_HSYNC_VSYNC_2|gfxtim_hsync[2] and gfxtim_vsync[2]
+SynchroSrc|GFXTIM_SYNC_SRC_HSYNC_VSYNC_3|gfxtim_hsync[3] and gfxtim_vsync[3]
+TearingEffectSrc|GFXTIM_TE_SRC_GPIO|GFXTIM_TE
+TearingEffectSrc|GFXTIM_TE_SRC_ITE|gfxtim_ite
+TearingEffectSrc|GFXTIM_TE_SRC_HSYNC|HSYNC
+TearingEffectSrc|GFXTIM_TE_SRC_VSYNC|VSYNC
+TearingEffectPolarity|GFXTIM_TE_RISING_EDGE|Rising edge
+TearingEffectPolarity|GFXTIM_TE_FALLING_EDGE|Falling edge
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_NONE|None
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_FCC_UNDERFLOW|FCC underflow
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_HSYNC_RISING|HSYNC rising
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_HSYNC_FALLING|HSYNC falling
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_VSYNC_RISING|VSYNC rising
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_VSYNC_FALLING|VSYNC falling
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_TE_RISING|TE rising
+LCCHwReloadSrc|GFXTIM_LCC_HW_RELOAD_SRC_TE_FALLING|TE falling
+LCCClockSrc|GFXTIM_LCC_CLK_SRC_SYSCLOCK|Sysclock
+LCCClockSrc|GFXTIM_LCC_CLK_SRC_DISABLE|Disable
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_NONE|None
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_LCC_UNDERFLOW|LCC Underflow
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_HSYNC_RISING|HSYNC Rising edge
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_HSYNC_FALLING|HSYNC Falling edge
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_VSYNC_RISING|VSYNC Rising edge
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_VSYNC_FALLING|VSYNC Falling edge
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_TE_RISING|TE Rising edge
+FCCHwReloadSrc|GFXTIM_FCC_HW_RELOAD_SRC_TE_FALLING|TE Falling edge
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_DISABLE|DISABLE
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_LCC_UNDERFLOW|LCC Underflow
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_HSYNC_RISING|HSYNC Rising edge
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_HSYNC_FALLING|HSYNC Falling edge
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_VSYNC_RISING|VSYNC Rising edge
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_VSYNC_FALLING|VSYNC Falling edge
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_TE_RISING|TE Rising edge
+FCCClockSrc|GFXTIM_FCC_CLK_SRC_TE_FALLING|TE Falling edge
+LineClockSrc|GFXTIM_LINE_CLK_SRC_LCC_UNDERFLOW|LCC Underflow
+LineClockSrc|GFXTIM_LINE_CLK_SRC_FCC_UNDERFLOW|FCC Underflow
+LineClockSrc|GFXTIM_LINE_CLK_SRC_HSYNC_RISING|HSYNC Rising edge
+LineClockSrc|GFXTIM_LINE_CLK_SRC_HSYNC_FALLING|HSYNC Falling edge
+LineClockSrc|GFXTIM_LINE_CLK_SRC_VSYNC_RISING|VSYNC Rising edge
+LineClockSrc|GFXTIM_LINE_CLK_SRC_VSYNC_FALLING|VSYNC Falling edge
+LineClockSrc|GFXTIM_LINE_CLK_SRC_TE_RISING|TE Rising edge
+LineClockSrc|GFXTIM_LINE_CLK_SRC_TE_FALLING|TE Falling edge
+LineClockCalib|GFXTIM_LINE_CLK_CALIB_ENABLE|Enable
+LineClockCalib|GFXTIM_LINE_CLK_CALIB_DISABLE|Disable
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_LCC_UNDERFLOW|LCC Underflow
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_FCC_UNDERFLOW|FCC Underflow
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_HSYNC_RISING|HSYNC Rising edge
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_HSYNC_FALLING|HSYNC Falling edge
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_VSYNC_RISING|VSYNC Rising edge
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_VSYNC_FALLING|VSYNC Falling edge
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_TE_RISING|TE Rising edge
+FrameClockSrc|GFXTIM_FRAME_CLK_SRC_TE_FALLING|TE Falling edge
+FrameClockCalib|GFXTIM_FRAME_CLK_CALIB_ENABLE|Enable
+FrameClockCalib|GFXTIM_FRAME_CLK_CALIB_DISABLE|Disable
+FrameEvent1|GFXTIM_FRAME_EVENT_NONE|None
+FrameEvent1|GFXTIM_FRAME_EVENT_AFC_OVERFLOW|Absolute frame counter overflow
+FrameEvent1|GFXTIM_FRAME_EVENT_AFC_COMPARE|Absolute frame counter compare
+FrameEvent1|GFXTIM_FRAME_EVENT_RFC1_RELOAD|Relative frame counter 1 reload
+FrameEvent1|GFXTIM_FRAME_EVENT_RFC2_RELOAD|Relative frame counter 2 reload
+LineEvent1|GFXTIM_LINE_EVENT_NONE|None
+LineEvent1|GFXTIM_LINE_EVENT_TE|TE
+LineEvent1|GFXTIM_LINE_EVENT_ALC_OVERFLOW|Absolute line counter overflow
+LineEvent1|GFXTIM_LINE_EVENT_ALC1_COMPARE|Absolute line counter 1 compare
+LineEvent1|GFXTIM_LINE_EVENT_ALC2_COMPARE|Absolute line counter 2 compare
+FrameEvent2|GFXTIM_FRAME_EVENT_NONE|None
+FrameEvent2|GFXTIM_FRAME_EVENT_AFC_OVERFLOW|Absolute frame counter overflow
+FrameEvent2|GFXTIM_FRAME_EVENT_AFC_COMPARE|Absolute frame counter compare
+FrameEvent2|GFXTIM_FRAME_EVENT_RFC1_RELOAD|Relative frame counter 1 reload
+FrameEvent2|GFXTIM_FRAME_EVENT_RFC2_RELOAD|Relative frame counter 2 reload
+LineEvent2|GFXTIM_LINE_EVENT_NONE|None
+LineEvent2|GFXTIM_LINE_EVENT_TE|TE
+LineEvent2|GFXTIM_LINE_EVENT_ALC_OVERFLOW|Absolute line counter overflow
+LineEvent2|GFXTIM_LINE_EVENT_ALC1_COMPARE|Absolute line counter 1 compare
+LineEvent2|GFXTIM_LINE_EVENT_ALC2_COMPARE|Absolute line counter 2 compare
+FrameEvent3|GFXTIM_FRAME_EVENT_NONE|None
+FrameEvent3|GFXTIM_FRAME_EVENT_AFC_OVERFLOW|Absolute frame counter overflow
+FrameEvent3|GFXTIM_FRAME_EVENT_AFC_COMPARE|Absolute frame counter compare
+FrameEvent3|GFXTIM_FRAME_EVENT_RFC1_RELOAD|Relative frame counter 1 reload
+FrameEvent3|GFXTIM_FRAME_EVENT_RFC2_RELOAD|Relative frame counter 2 reload
+LineEvent3|GFXTIM_LINE_EVENT_NONE|None
+LineEvent3|GFXTIM_LINE_EVENT_TE|TE
+LineEvent3|GFXTIM_LINE_EVENT_ALC_OVERFLOW|Absolute line counter overflow
+LineEvent3|GFXTIM_LINE_EVENT_ALC1_COMPARE|Absolute line counter 1 compare
+LineEvent3|GFXTIM_LINE_EVENT_ALC2_COMPARE|Absolute line counter 2 compare
+FrameEvent4|GFXTIM_FRAME_EVENT_NONE|None
+FrameEvent4|GFXTIM_FRAME_EVENT_AFC_OVERFLOW|Absolute frame counter overflow
+FrameEvent4|GFXTIM_FRAME_EVENT_AFC_COMPARE|Absolute frame counter compare
+FrameEvent4|GFXTIM_FRAME_EVENT_RFC1_RELOAD|Relative frame counter 1 reload
+FrameEvent4|GFXTIM_FRAME_EVENT_RFC2_RELOAD|Relative frame counter 2 reload
+LineEvent4|GFXTIM_LINE_EVENT_NONE|None
+LineEvent4|GFXTIM_LINE_EVENT_TE|TE
+LineEvent4|GFXTIM_LINE_EVENT_ALC_OVERFLOW|Absolute line counter overflow
+LineEvent4|GFXTIM_LINE_EVENT_ALC1_COMPARE|Absolute line counter 1 compare
+LineEvent4|GFXTIM_LINE_EVENT_ALC2_COMPARE|Absolute line counter 2 compare
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_LINE_CLK|Line Ck
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_FRAME_CLK|Frame Ck
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_HSYNC_RISING|HSYNC rising edge
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_HSYNC_FALLING|HSYNC falling edge
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_VSYNC_RISING|VSYNC rising edge
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_VSYNC_FALLING|VSYNC falling edge
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_TE_RISING|TE rising edge
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_TE_FALLING|TE falling edge
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_EVENT_1|Event Generator 1
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_EVENT_2|Event Generator 2
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_EVENT_3|Event Generator 3
+ClockSrc|GFXTIM_WATCHDOG_CLK_SRC_EVENT_4|Event Generator 4
+HwReloadConfig|GFXTIM_WATCHDOG_HW_RELOAD_DISABLE|Disable
+HwReloadConfig|GFXTIM_WATCHDOG_HW_RELOAD_RISING_EDGE|wrld rising edge
+HwReloadConfig|GFXTIM_WATCHDOG_HW_RELOAD_FALLING_EDGE|wrld falling edge
+CounterMode1|GFXTIM_MODE_ONE_SHOT|One Shot
+CounterMode1|GFXTIM_MODE_CONTINUOUS|Continuous
+CounterMode2|GFXTIM_MODE_ONE_SHOT|One Shot
+CounterMode2|GFXTIM_MODE_CONTINUOUS|Continuous

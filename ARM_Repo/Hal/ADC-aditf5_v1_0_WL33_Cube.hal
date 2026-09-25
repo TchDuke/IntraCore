@@ -1,0 +1,473 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ADC
+Version=aditf5_v1_0_WL33_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Sequencer|Sequencer|ADCgroup||||
+ContinuousConvMode|Continuous Conversion Mode|ADCgroup||||Enable or Disable the Continuous Conversion Mode
+Overrun|Overrun|ADCgroup||||Select the behaviour in case of overrun
+SamplingMode|SamplingMode|ADCgroup||||
+SampleRate|SampleRate|ADCgroup||||
+DMAAccessModeView|DMA Access Mode|ADCs_Common_Settings||||
+DMAAccessMode|DMA Access Mode|ADCs_Common_Settings||||
+DataWidth|DataWidth|ADCgroup||||
+DataRatio|DataRatio|ADCgroup||||
+InvertOutputMode|InvertOutputMode|ADCgroup||||
+VoltRange|voltage range|ADCgroup||||
+Number|Calibration Point|ADCgroup||||
+DMAContinuousRequestsForConfigFile|DMA Continuous Requests|ADCgroup||||Enable/Disable DMA Continuous Requests
+DMAContinuousRequests|DMA Continuous Requests|ADCgroup||||Enable/Disable DMA Continuous Requests
+EnableRegularConversion|Enable Regular Conversions|ADCgroup||||Enable/Disable Regular Conversion
+NbrOfConversion|Sequence Length|ADCgroup||1|16|Number of regular channels to be converted
+NbrOfConversionFlag|Number Of Conversion Flag|ADCgroup||0|1|
+SequenceLength|SequenceLength|ADCgroup||0|1|
+Channel|Channel|ADCChannel||||
+commmn|comm|||||
+ChannelVREF|ChannelVREF|||||
+ChannelTS|ChannelTS|||||
+Rank|Rank|ADCChannel||1|16|The rank in the regular group sequencer
+RankArg|RankArg|ADCgroup||||
+NbrOfChannel_WDG2CONV1|Number Of Channel|Analog WatchDog||||Number of regular channels to be converted
+WDG2MonitoredBy|Monitored by|Analog WatchDog||||For a dedicated channel, the generated analog watchdog configuration will correspond to the sum of all "Monitored" configurations for this channel when the number of ranks is greater than 1.
+WDGCONV1Channel1|1st Channel|Analog WatchDog||||
+WDGCONV1Channel2|11th Channel|Analog WatchDog||||
+WDGCONV1Channel3|11th Channel|Analog WatchDog||||
+WDGCONV1Channel4|Channel|Analog WatchDog||||
+WDGCONV1Channel5|11th Channel|Analog WatchDog||||
+WDGCONV1Channel6|11th Channel|Analog WatchDog||||
+WDGCONV1Channel7|11th Channel|Analog WatchDog||||
+WDGCONV1Channel8|11th Channel|Analog WatchDog||||
+WDGCONV1Channel9|11th Channel|Analog WatchDog||||
+WDGCONV1Channel10|11th Channel|Analog WatchDog||||
+WDGCONV1Channel11|11th Channel|Analog WatchDog||||
+WDGCONV1Channel12|11th Channel|Analog WatchDog||||
+WDGCONV1Channel13|11th Channel|Analog WatchDog||||
+WDGCONV1Channel14|11th Channel|Analog WatchDog||||
+WDGCONV1Channel15|11th Channel|Analog WatchDog||||
+WDGCONV1Channel16|11th Channel|Analog WatchDog||||
+RegWDModeFC|Regular Watchdogmode|ADCChannel||||
+WatchdogMode2|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+ChannelVDDCORE|Channelvcore|||||
+Interrupt|Overrun interrupt|IP Internal Interrupt||||description
+Gain1|Gain 1|||0x00000000|0xFFFFFFFF|
+Offset1|Offset 1|||0x00000000|0xFFFFFFFF|
+Gain2|Gain 2|||0x00000000|0xFFFFFFFF|
+Offset2|Offset 2|||0x00000000|0xFFFFFFFF|
+Gain3|Gain 3|||0x00000000|0xFFFFFFFF|
+Offset3|Offset 3|||0x00000000|0xFFFFFFFF|
+Gain4|Gain 4|||0x00000000|0xFFFFFFFF|
+Offset4|Offset 4|||0x00000000|0xFFFFFFFF|
+Gain|Gain|||||
+Offset|Offset|||||
+WatchdogMode|Watchdog Mode|ADCgroup||||Configures the ADC analog watchdog mode.
+SelectedChannel|ADC selected channels through mode list|ADCgroup||||
+WatchdogChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+EnableAnalogWatchDog2|Enable Analog WatchDog Mode|ADCgroup||||Enable/Disable Analog WatchDog Mode
+AWD2WatchdogNumber|Watchdog instance|ADCgroup||||Number of used watchDogs.
+AWD2HighThreshold|High Threshold|ADCgroup||=AWD2LowThreshold|4095|Configures the ADC analog watchdog High threshold value.
+AWD2LowThreshold|Low Threshold|ADCgroup||0|=AWD2HighThreshold|Configures the ADC analog watchdog Low threshold value.
+EventType|ADC watchdog event type|ADCgroup||||Specifies whether the analog watchdog is configured in interrupt mode or in polling mode.
+MonitoredBy|Monitored by|ADCgroup||||For a dedicated channel, the generated analog watchdog configuration will correspond to the sum of all "Monitored" configurations for this channel when the number of ranks is greater than 1.
+RegITMode|Regular ITMode|ADCChannel||||
+RegHighThreshold|Regular HighThreshold|ADCChannel||||
+RegLowThreshold|Regular LowThreshold|ADCChannel||||
+AWDChannel|AWDChannel|ADCChannel||||ADC channel for the analog watchdog
+UnUsedParameter|UnUsedParameter|||||
+master|Master Flag|||0|1|
+AllChannels|Channel|ADCChannel||||
+Available_Channel|Available Channel|ADCChannel||||
+AnalogWDChannel|Analog WatchDog Channel|ADCChannel||||ADC channel for the analog watchdog
+ChannelForWatchDog|Channel type for WatchDog|||||
+
+[Values]
+# параметр|значение|подпись
+Sequencer|FULLY_CONFIGURABLE|Sequencer set to fully configurable
+Overrun|ADC_NEW_DATA_IS_LOST|Previous data is preserved, new data is lost
+Overrun|ADC_NEW_DATA_IS_KEPT|Previous data is overwritten, new data is kept
+SamplingMode|ADC_SAMPLING_AT_START|Sampling only at conversion start
+SamplingMode|ADC_SAMPLING_AT_END|Sampling sampling phase starts after end of converfsion
+SampleRate|ADC_SAMPLE_RATE_16|ADC conversion rate at F_ADC_CLK /16
+SampleRate|ADC_SAMPLE_RATE_20|ADC conversion rate at F_ADC_CLK /20
+SampleRate|ADC_SAMPLE_RATE_24|ADC conversion rate at F_ADC_CLK /24
+SampleRate|ADC_SAMPLE_RATE_28|ADC conversion rate at F_ADC_CLK /28
+SampleRate|ADC_SAMPLE_RATE_32|ADC conversion rate at F_ADC_CLK /32
+SampleRate|ADC_SAMPLE_RATE_36|ADC conversion rate at F_ADC_CLK /36
+SampleRate|ADC_SAMPLE_RATE_40|ADC conversion rate at F_ADC_CLK /40
+SampleRate|ADC_SAMPLE_RATE_44|ADC conversion rate at F_ADC_CLK /44
+SampleRate|ADC_SAMPLE_RATE_48|ADC conversion rate at F_ADC_CLK /48
+SampleRate|ADC_SAMPLE_RATE_52|ADC conversion rate at F_ADC_CLK /52
+SampleRate|ADC_SAMPLE_RATE_56|ADC conversion rate at F_ADC_CLK /56
+SampleRate|ADC_SAMPLE_RATE_60|ADC conversion rate at F_ADC_CLK /60
+SampleRate|ADC_SAMPLE_RATE_64|ADC conversion rate at F_ADC_CLK /64
+SampleRate|ADC_SAMPLE_RATE_68|ADC conversion rate at F_ADC_CLK /68
+SampleRate|ADC_SAMPLE_RATE_72|ADC conversion rate at F_ADC_CLK /72
+SampleRate|ADC_SAMPLE_RATE_76|ADC conversion rate at F_ADC_CLK /76
+SampleRate|ADC_SAMPLE_RATE_80|ADC conversion rate at F_ADC_CLK /80
+SampleRate|ADC_SAMPLE_RATE_84|ADC conversion rate at F_ADC_CLK /84
+SampleRate|ADC_SAMPLE_RATE_88|ADC conversion rate at F_ADC_CLK /88
+SampleRate|ADC_SAMPLE_RATE_92|ADC conversion rate at F_ADC_CLK /92
+SampleRate|ADC_SAMPLE_RATE_96|ADC conversion rate at F_ADC_CLK /96
+SampleRate|ADC_SAMPLE_RATE_100|ADC conversion rate at F_ADC_CLK /100
+SampleRate|ADC_SAMPLE_RATE_104|ADC conversion rate at F_ADC_CLK /104
+SampleRate|ADC_SAMPLE_RATE_108|ADC conversion rate at F_ADC_CLK /108
+SampleRate|ADC_SAMPLE_RATE_112|ADC conversion rate at F_ADC_CLK /112
+SampleRate|ADC_SAMPLE_RATE_116|ADC conversion rate at F_ADC_CLK /116
+SampleRate|ADC_SAMPLE_RATE_120|ADC conversion rate at F_ADC_CLK /120
+SampleRate|ADC_SAMPLE_RATE_124|ADC conversion rate at F_ADC_CLK /124
+SampleRate|ADC_SAMPLE_RATE_128|ADC conversion rate at F_ADC_CLK /128
+SampleRate|ADC_SAMPLE_RATE_132|ADC conversion rate at F_ADC_CLK /132
+SampleRate|ADC_SAMPLE_RATE_136|ADC conversion rate at F_ADC_CLK /136
+SampleRate|ADC_SAMPLE_RATE_140|ADC conversion rate at F_ADC_CLK /140
+DMAAccessMode|ADC_DMAACCESSMODE_DISABLED|DMA access mode disabled
+DMAAccessMode|ADC_DMAACCESSMODE_12_10_BITS|DMA access mode enabled
+DMAAccessMode|ADC_DMAACCESSMODE_8_6_BITS|DMA access mode enabled
+DataWidth|ADC_DS_DATA_WIDTH_12_BIT|ADC Down Sampler data width 12 bits
+DataWidth|ADC_DS_DATA_WIDTH_13_BIT|ADC Down Sampler data width 13 bits
+DataWidth|ADC_DS_DATA_WIDTH_14_BIT|ADC Down Sampler data width 14 bits
+DataWidth|ADC_DS_DATA_WIDTH_15_BIT|ADC Down Sampler data width 15 bits
+DataWidth|ADC_DS_DATA_WIDTH_16_BIT|ADC Down Sampler data width 16 bits
+DataRatio|ADC_DS_RATIO_1|ADC Down Sampler ratio 1, no down sampling (default)
+DataRatio|ADC_DS_RATIO_2|ADC Down Sampler ratio 2
+DataRatio|ADC_DS_RATIO_4|ADC Down Sampler ratio 4
+DataRatio|ADC_DS_RATIO_8|ADC Down Sampler ratio 8
+DataRatio|ADC_DS_RATIO_16|ADC Down Sampler ratio 16
+DataRatio|ADC_DS_RATIO_32|ADC Down Sampler ratio 32
+DataRatio|ADC_DS_RATIO_64|ADC Down Sampler ratio 64
+DataRatio|ADC_DS_RATIO_128|ADC Down Sampler ratio 128
+InvertOutputMode|ADC_DATA_INVERT_NONE|No inversion
+InvertOutputMode|ADC_DATA_INVERT_DIFF|Inversion only for differential input
+InvertOutputMode|ADC_DATA_INVERT_SING|Inversion only for single negative input
+InvertOutputMode|ADC_DATA_INVERT_BOTH|Inversion for both input type
+VoltRange|ADC_VIN_RANGE_1V2|ADC input voltage range up to 1.2 V
+VoltRange|ADC_VIN_RANGE_2V4|ADC input voltage range up to 2.4 V
+VoltRange|ADC_VIN_RANGE_3V6|ADC input voltage range up to 3.6 V
+Number|ADC_CALIB_NONE|None
+Number|ADC_CALIB_POINT_1|Calibration Point 1
+Number|ADC_CALIB_POINT_2|Calibration Point 2
+Number|ADC_CALIB_POINT_3|Calibration Point 3
+Number|ADC_CALIB_POINT_4|Calibration Point 4
+Channel|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+Channel|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+Channel|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+Channel|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+Channel|ADC_CHANNEL_VINM0|Channel INM0
+Channel|ADC_CHANNEL_VINP0|Channel INP0
+Channel|ADC_CHANNEL_VINM1|Channel INM1
+Channel|ADC_CHANNEL_VINP1|Channel INP1
+Channel|ADC_CHANNEL_VINM2|Channel INM2
+Channel|ADC_CHANNEL_VINP2|Channel INP2
+Channel|ADC_CHANNEL_VINM3|Channel INM3
+Channel|ADC_CHANNEL_VINP3|Channel INP3
+Channel|ADC_CHANNEL_VBAT|Channel Vbat
+Channel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+ChannelVREF|ADC_CHANNEL_VREFINT|ADC_CHANNEL_VREFINT
+ChannelTS|ADC_CHANNEL_TEMPSENSOR|ADC_CHANNEL_TEMPSENSOR
+WDG2MonitoredBy|ADC_ANALOGWATCHDOG_2|Analog Watchdog
+WDGCONV1Channel1|__NULL|None
+WDGCONV1Channel1|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel1|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel1|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel1|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel1|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel1|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel1|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel1|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel1|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel1|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel1|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel1|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel1|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel1|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel2|__NULL|None
+WDGCONV1Channel2|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel2|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel2|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel2|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel2|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel2|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel2|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel2|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel2|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel2|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel2|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel2|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel2|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel2|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel3|__NULL|None
+WDGCONV1Channel3|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel3|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel3|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel3|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel3|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel3|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel3|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel3|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel3|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel3|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel3|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel3|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel3|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel3|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel4|__NULL|None
+WDGCONV1Channel4|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel4|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel4|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel4|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel4|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel4|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel4|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel4|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel4|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel4|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel4|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel4|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel4|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel4|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel5|__NULL|None
+WDGCONV1Channel5|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel5|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel5|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel5|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel5|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel5|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel5|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel5|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel5|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel5|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel5|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel5|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel5|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel5|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel6|__NULL|None
+WDGCONV1Channel6|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel6|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel6|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel6|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel6|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel6|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel6|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel6|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel6|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel6|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel6|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel6|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel6|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel6|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel7|__NULL|None
+WDGCONV1Channel7|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel7|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel7|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel7|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel7|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel7|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel7|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel7|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel7|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel7|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel7|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel7|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel7|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel7|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel8|__NULL|None
+WDGCONV1Channel8|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel8|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel8|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel8|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel8|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel8|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel8|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel8|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel8|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel8|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel8|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel8|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel8|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel8|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel9|__NULL|None
+WDGCONV1Channel9|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel9|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel9|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel9|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel9|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel9|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel9|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel9|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel9|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel9|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel9|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel9|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel9|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel9|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel10|__NULL|None
+WDGCONV1Channel10|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel10|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel10|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel10|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel10|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel10|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel10|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel10|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel10|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel10|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel10|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel10|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel10|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel10|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel11|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel11|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel11|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel11|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel11|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel11|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel11|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel11|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel11|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel11|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel11|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel11|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel11|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel11|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel12|__NULL|None
+WDGCONV1Channel12|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel12|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel12|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel12|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel12|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel12|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel12|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel12|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel12|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel12|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel12|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel12|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel12|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel12|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel13|__NULL|None
+WDGCONV1Channel13|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel13|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel13|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel13|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel13|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel13|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel13|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel13|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel13|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel13|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel13|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel13|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel13|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel13|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel14|__NULL|None
+WDGCONV1Channel14|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel14|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel14|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel14|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel14|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel14|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel14|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel14|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel14|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel14|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel14|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel14|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel14|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel14|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel15|__NULL|None
+WDGCONV1Channel15|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel15|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel15|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel15|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel15|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel15|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel15|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel15|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel15|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel15|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel15|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel15|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel15|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel15|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+WDGCONV1Channel16|__NULL|None
+WDGCONV1Channel16|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WDGCONV1Channel16|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WDGCONV1Channel16|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WDGCONV1Channel16|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WDGCONV1Channel16|ADC_CHANNEL_VINM0|Channel INM0
+WDGCONV1Channel16|ADC_CHANNEL_VINP0|Channel INP0
+WDGCONV1Channel16|ADC_CHANNEL_VINM1|Channel INM1
+WDGCONV1Channel16|ADC_CHANNEL_VINP1|Channel INP1
+WDGCONV1Channel16|ADC_CHANNEL_VINM2|Channel INM2
+WDGCONV1Channel16|ADC_CHANNEL_VINP2|Channel INP2
+WDGCONV1Channel16|ADC_CHANNEL_VINM3|Channel INM3
+WDGCONV1Channel16|ADC_CHANNEL_VINP3|Channel INP3
+WDGCONV1Channel16|ADC_CHANNEL_VBAT|Channel Vbat
+WDGCONV1Channel16|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+RegWDModeFC|ADC_ANALOGWATCHDOG_SINGLE_REG|Multiple channels
+WatchdogMode2|ADC_ANALOGWATCHDOG_SINGLE_REG|Multiple channels
+WatchdogMode2|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+ChannelVDDCORE|ADC_CHANNEL_VCORE|ADC_CHANNEL_VCORE
+Interrupt|ADC_IT_OVR|Enable
+Interrupt|__NULL|Disable
+WatchdogMode|ADC_ANALOGWATCHDOG_SINGLE_REG|Single regular channel
+WatchdogMode|ADC_ANALOGWATCHDOG_ALL_REG|All regular channels
+WatchdogChannel|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+WatchdogChannel|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+WatchdogChannel|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+WatchdogChannel|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+WatchdogChannel|ADC_CHANNEL_VINM0|Channel INM0
+WatchdogChannel|ADC_CHANNEL_VINP0|Channel INP0
+WatchdogChannel|ADC_CHANNEL_VINM1|Channel INM1
+WatchdogChannel|ADC_CHANNEL_VINP1|Channel INP1
+WatchdogChannel|ADC_CHANNEL_VINM2|Channel INM2
+WatchdogChannel|ADC_CHANNEL_VINP2|Channel INP2
+WatchdogChannel|ADC_CHANNEL_VINM3|Channel INM3
+WatchdogChannel|ADC_CHANNEL_VINP3|Channel INP3
+WatchdogChannel|ADC_CHANNEL_VBAT|Channel Vbat
+WatchdogChannel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+AWD2WatchdogNumber|ADC_ANALOGWATCHDOG_2|WatchDog
+EventType|ADC_AWD_EVENT_POLLING|ADC watchdog event type polling
+EventType|ADC_AWD_EVENT_INTERRUPT|ADC watchdog event type interrupt
+MonitoredBy|__NULL|None
+MonitoredBy|ADC_ANALOGWATCHDOG_2|Analog Watchdog
+AWDChannel|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+AWDChannel|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+AWDChannel|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+AWDChannel|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+AWDChannel|ADC_CHANNEL_VINM0|Channel INM0
+AWDChannel|ADC_CHANNEL_VINP0|Channel INP0
+AWDChannel|ADC_CHANNEL_VINM1|Channel INM1
+AWDChannel|ADC_CHANNEL_VINP1|Channel INP1
+AWDChannel|ADC_CHANNEL_VINM2|Channel INM2
+AWDChannel|ADC_CHANNEL_VINP2|Channel INP2
+AWDChannel|ADC_CHANNEL_VINM3|Channel INM3
+AWDChannel|ADC_CHANNEL_VINP3|Channel INP3
+AWDChannel|ADC_CHANNEL_VBAT|Channel Vbat
+AWDChannel|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+UnUsedParameter|ADC_ANALOGWATCHDOG_SINGLE_REG|Single regular channel
+AllChannels|ADC_CHANNEL_VINP0_VINM0|Channel IN0_Diff
+AllChannels|ADC_CHANNEL_VINP1_VINM1|Channel IN1_Diff
+AllChannels|ADC_CHANNEL_VINP2_VINM2|Channel IN2_Diff
+AllChannels|ADC_CHANNEL_VINP3_VINM3|Channel IN3_Diff
+AllChannels|ADC_CHANNEL_VINM0|Channel INM0
+AllChannels|ADC_CHANNEL_VINP0|Channel INP0
+AllChannels|ADC_CHANNEL_VINM1|Channel INM1
+AllChannels|ADC_CHANNEL_VINP1|Channel INP1
+AllChannels|ADC_CHANNEL_VINM2|Channel INM2
+AllChannels|ADC_CHANNEL_VINP2|Channel INP2
+AllChannels|ADC_CHANNEL_VINM3|Channel INM3
+AllChannels|ADC_CHANNEL_VINP3|Channel INP3
+AllChannels|ADC_CHANNEL_VBAT|Channel Vbat
+AllChannels|ADC_CHANNEL_TEMPSENSOR|Channel Temperature Sensor
+AnalogWDChannel|ADC_AWD_CH_VINP0|Channel IN0_Diff
+AnalogWDChannel|ADC_AWD_CH_VINP1|Channel IN1_Diff
+AnalogWDChannel|ADC_AWD_CH_VINP2|Channel IN2_Diff
+AnalogWDChannel|ADC_AWD_CH_VINM0|Channel INM0
+AnalogWDChannel|ADC_AWD_CH_VINM1|Channel INM1
+AnalogWDChannel|ADC_AWD_CH_VINM2|Channel INM2
+AnalogWDChannel|ADC_AWD_CH_VINM3|Channel INM3
+AnalogWDChannel|ADC_AWD_CH_VINP3|Channel INP3
+AnalogWDChannel|ADC_AWD_CH_VBAT|Channel Vbat
+AnalogWDChannel|ADC_AWD_CH_TEMPSENSOR|Channel Temperature Sensor

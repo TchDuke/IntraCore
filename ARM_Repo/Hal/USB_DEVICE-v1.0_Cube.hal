@@ -1,0 +1,277 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USB_DEVICE
+Version=v1.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+USBD_MAX_NUM_CONFIGURATION|USBD_MAX_NUM_CONFIGURATION (Maximum number of supported configuration)|Basic Parameters||1|255|Maximum number of supported configurations <font color="red"> The allocated memory for USBD_MAX_NUM_INTERFACES and USBD_MAX_NUM_CONFIGURATION should not exceed the total size of available memory. </font>
+USBD_MAX_NUM_INTERFACES|USBD_MAX_NUM_INTERFACES (Maximum number of supported interfaces)|Basic Parameters||1|255|Maximum number of supported Interfaces <font color="red"> The allocated memory for USBD_MAX_NUM_INTERFACES and USBD_MAX_NUM_CONFIGURATION should not exceed the total size of available memory. </font>
+USBD_MAX_STR_DESC_SIZ|USBD_MAX_STR_DESC_SIZ (Maximum size for the string descriptors)|Basic Parameters|bytes|1|65536|Maximum size of string descriptors
+USBD_SUPPORT_USER_STRING_DESC|USBD_SUPPORT_USER_STRING_DESC (Enable user string descriptor)|Basic Parameters||||Enable User string support
+USBD_SUPPORT_USER_STRING|USBD_SUPPORT_USER_STRING (Enable user string descriptor)|Basic Parameters||||Enable User string support
+USBD_SELF_POWERED|USBD_SELF_POWERED (Enabled self power)|Basic Parameters||||Enable Self power feature
+USBD_DEBUG_LEVEL|USBD_DEBUG_LEVEL (USBD Debug Level)|Basic Parameters||||Define different level output trace as folowing : 0 : No debug message is shown 1 : only User message are shown 2 : User + Error messages are shown 3 : All message and interal debug message are shown
+USBD_LPM_ENABLED|USBD_LPM_ENABLED (Link Power Management)|Basic Parameters||||The Link Power mmanagement available for STM32F446, STM32F469, STM32F479, STM32F7, STM32L4 and STM32H7 families
+VirtualMode|VirtualMode|Basic Parameters||||
+VirtualModeHS|VirtualModeHS|Basic Parameters||||
+VirtualModeFS|VirtualModeFS|Basic Parameters||||
+VID|VID (Vendor IDentifier)|Device Descriptor||0|65535|The Vendor Identfier value present on the Device Descriptor
+LANGID_STRING|LANGID_STRING (Language Identifier)|Device Descriptor||||The language used by the string descriptor
+MANUFACTURER_STRING|MANUFACTURER_STRING (Manufacturer Identifier)|Device Descriptor||||The manufacturer string identifier
+PID_AUDIO_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_CCID_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_CDC_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_DFU_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_HID_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_MSC_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_MTP_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_CUSTOMHID_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_BILLBOARD_HS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_HS|PID (Product IDentifier)|Device Descriptor HS||0|65535|The Product Identfier value present on the Device Descriptor
+CLASS_NAME_HS||||0|65535|The Product Identfier value present on the Device Descriptor
+PID_AUDIO_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_CCID_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_CDC_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_DFU_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_HID_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_MSC_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_MTP_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_CUSTOMHID_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_BILLBOARD_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+PID_FS|PID (Product IDentifier)|Device Descriptor FS||0|65535|The Product Identfier value present on the Device Descriptor
+CLASS_NAME_FS||||0|65535|The Product Identfier value present on the Device Descriptor
+PRODUCT_STRING_AUDIO_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_AUDIO_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_AUDIO_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_AUDIO_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_AUDIO_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_AUDIO_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_AUDIO_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_AUDIO_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_AUDIO_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_AUDIO_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_AUDIO_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_AUDIO_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_AUDIO_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_AUDIO_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_CCID_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_CCID_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_CCID_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_CCID_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_CCID_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_CCID_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_CCID_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_CCID_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_CCID_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_CCID_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_CCID_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_CCID_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_CCID_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_CCID_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_CDC_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_CDC_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_CDC_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_CDC_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_CDC_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_CDC_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_CDC_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_CDC_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_CDC_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_CDC_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_CDC_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_CDC_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_CDC_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_CDC_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_DFU_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_DFU_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_DFU_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_DFU_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_DFU_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_DFU_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_DFU_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_DFU_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_DFU_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_DFU_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_DFU_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_DFU_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_DFU_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_DFU_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_HID_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_HID_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_HID_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_HID_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_HID_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_HID_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_HID_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_HID_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_HID_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_HID_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_HID_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_HID_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_HID_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_HID_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_CUSTOMHID_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_CUSTOMHID_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_CUSTOMHID_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_CUSTOMHID_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_CUSTOM_HID_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_CUSTOM_HID_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_CUSTOM_HID_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_CUSTOMHID_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_CUSTOMHID_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_CUSTOMHID_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_CUSTOMHID_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_CUSTOM_HID_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_CUSTOM_HID_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_CUSTOM_HID_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_MSC_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_MSC_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_MSC_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_MSC_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_MSC_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_MSC_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_MSC_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_MSC_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_MSC_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_MSC_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_MSC_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_MSC_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_MSC_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_MSC_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_MTP_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_MTP_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_MTP_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_MTP_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_MTP_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_MTP_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_MTP_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_MTP_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_MTP_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_MTP_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_MTP_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_MTP_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_MTP_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_MTP_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_BILLBOARD_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_BILLBOARD_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_BILLBOARD_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_BILLBOARD_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+DEVICE_SERIAL0_BILLBOARD_HS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_BILLBOARD_HS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_BILLBOARD_HS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor HS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_BILLBOARD_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_BILLBOARD_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_BILLBOARD_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_BILLBOARD_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+DEVICE_SERIAL0_BILLBOARD_FS|DEVICE_SERIAL0 (Device Serial Number 0)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 0
+DEVICE_SERIAL1_BILLBOARD_FS|DEVICE_SERIAL1 (Device Serial Number 1)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 1
+DEVICE_SERIAL2_BILLBOARD_FS|DEVICE_SERIAL2 (Device Serial Number 2)|Device Descriptor FS||0x1|0x7FFFFFFF|The device serial number 2
+PRODUCT_STRING_HS|PRODUCT_STRING (Product Identifier)|Device Descriptor HS||||The product identifier
+SERIALNUMBER_STRING_HS|SERIALNUMBER_STRING (Serial number)|Device Descriptor HS||||The serial number identifier
+CONFIGURATION_STRING_HS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor HS||||The configuration identifier
+INTERFACE_STRING_HS|INTERFACE_STRING (Interface Identifier)|Device Descriptor HS||||The interface identifier
+PRODUCT_STRING_FS|PRODUCT_STRING (Product Identifier)|Device Descriptor FS||||The product identifier
+SERIALNUMBER_STRING_FS|SERIALNUMBER_STRING (Serial number)|Device Descriptor FS||||The serial number identifier
+CONFIGURATION_STRING_FS|CONFIGURATION_STRING (Configuration Identifier)|Device Descriptor FS||||The configuration identifier
+INTERFACE_STRING_FS|INTERFACE_STRING (Interface Identifier)|Device Descriptor FS||||The interface identifier
+MCU_RAM_SIZE|MCU_RAM_SIZE|||||
+HID_FS_BINTERVAL|HID_FS_BINTERVAL|Class Parameters||0x1|0xFF|
+HID_HS_BINTERVAL|HID_HS_BINTERVAL|Class Parameters||0x1|0xFF|
+CUSTOM_HID_FS_BINTERVAL|CUSTOM_HID_FS_BINTERVAL|Class Parameters||1|0xFF|
+CUSTOM_HID_HS_BINTERVAL|CUSTOM_HID_HS_BINTERVAL|Class Parameters||1|0xFF|
+APP_RX_DATA_SIZE|USB CDC Rx Buffer Size|Class Parameters|Bytes|1|512|Number of bytes for the receive buffer
+APP_TX_DATA_SIZE|USB CDC Tx Buffer Size|Class Parameters|Bytes|1|512|Number of bytes for the transmit buffer
+USBD_CDC_INTERVAL|USBD_CDC_INTERVAL (Number of micro-frames interval)|Class Parameters|micro-framne|1|1000|Number of micro-frames between IN transfers
+MAX_STATIC_ALLOC_SIZE|MAX_STATIC_ALLOC_SIZE (Maximum static allocation size)|Class Parameters||1|1000|CDC Class Driver Structure size
+USBD_CUSTOMHID_OUTREPORT_BUF_SIZE|USBD_CUSTOMHID_OUTREPORT_BUF_SIZE (Maximum report buffer size (OUT ENDPOINT))|Class Parameters||2|64|Custom HID Class out report buffer size (OUT ENDPOINT)
+USBD_CUSTOM_HID_REPORT_DESC_SIZE|USBD_CUSTOM_HID_REPORT_DESC_SIZE (Total length for Report descriptor (IN ENDPOINT))|Class Parameters||2|255|Custom HID Total length of Report descriptor (IN ENDPOINT)
+MSC_MEDIA_PACKET|MSC_MEDIA_PACKET (Media I/O buffer Size)|Class Parameters|bytes|1|32768|The Media Iunput/Output buffer Size
+USBD_AUDIO_FREQ|USBD_AUDIO_FREQ (Audio sample frequency rate)|Class Parameters|sample/s|250|48000|Audio sampling frequency rate
+CCID_BULK_EP_MAX_PACKET|CCID_BULK_EP_MAX_PACKET (CCID bulk endpoint max packet size)|Class Parameters|bytes|1|32768|Bulk Endpoint IN/OUT Packet size
+CCID_INTR_EP_MAX_PACKET|CCID_INTR_EP_MAX_PACKET (CCID interrupt endpoint max packet size)|Class Parameters|bytes|1|32768|Interrupt Endpoint IN/OUT Packet size
+USBD_DFU_MAX_ITF_NUM|USBD_DFU_MAX_ITF_NUM (DFU maximum interface numbers)|Class Parameters||1|6|Maximum number of supported interfaces
+USBD_DFU_XFER_SIZE|USBD_DFU_XFER_SIZE|Class Parameters|Bytes|1|32768|Maximum DFU transfert size
+USBD_DFU_MEDIA|USBD_DFU_MEDIA Interface|Class Parameters||||The description of the flash (used by PC tool DFuSe) Each Alternate setting string descriptor must follow this memory mapping so that the PC Host Software can decode the right mapping for the selected device: ● @: To detect that this is a special mapping descriptor (to avoid decoding standard descriptor) ● /: for separator between zones ● Maximum 8 digits per address starting by “0x” ● /: for separator between zones ● Maximum of 2 digits for the number of sectors ● *: For separator between number of sectors and sector size ● Maximum 3 digits for sector size between 0 and 999 ● 1 digit for the sector size multiplier. Valid entries are: B (byte), K (Kilo), M (Mega) ● 1 digit for the sector type as follows: – a (0x41): Readable – b (0x42): Erasable – c (0x43): Readable and Erasabled (0x44): Writeable – e (0x45): Readable and Writeable – f (0x46): Erasable and Writeable – g (0x47): Readable, Erasable and Writeable Note: If the target memory is not contiguous, the user can add the new sectors to be decoded just after a slash"/" as shown in the following example: "@Flash /0xF000/1*4Ka/0xE000/1*4Kg/0x8000/2*24Kg"
+USBD_DFU_APP_DEFAULT_ADD|USBD_DFU_APP_DEFAULT_ADD (enter a new address using hexadecimal format 0xVVVVVVVV)|Class Parameters||0x0|0xFFFFFFFF|Media Memory base address enter a value between 0x0 and 0xFFFFFFFF
+dev_config|dev_config|||||
+DEVICE_FS||||0|10|
+DEVICE_HS||||0|10|
+USBD_DESC||||0|10|
+HS_Desc||||0|10|
+FS_Desc||||0|10|
+USBD_CLASS||||0|10|
+USBD_CDC||||0|10|
+USBD_HID||||0|10|
+USBD_CUSTOM_HID||||0|10|
+USBD_MSC||||0|10|
+USBD_AUDIO||||0|10|
+USBD_CCID||||0|10|
+USBD_DFU||||0|10|
+USBD_MTP||||0|10|
+USBD_BILLBOARD||||0|10|
+USBD_USER_CALLBACK||||0|10|
+USBD_Interface_fops||||0|10|
+USBD_Interface_fops_HS||||0|10|
+USBD_Interface_fops_FS||||0|10|
+USBD_Storage_Interface_fops_FS||||0|10|
+USBD_Storage_Interface_fops_HS||||0|10|
+USBD_CustomHID_fops_FS||||0|10|
+USBD_CustomHID_fops_HS||||0|10|
+USBD_AUDIO_fops_FS||||0|10|
+USBD_AUDIO_fops_HS||||0|10|
+USBD_CCID_fops_FS||||0|10|
+USBD_CCID_fops_HS||||0|10|
+USBD_DFU_fops_FS||||0|10|
+USBD_DFU_fops_HS||||0|10|
+
+[Values]
+# параметр|значение|подпись
+VirtualModeHS|Audio_HS|
+VirtualModeHS|Ccid_HS|
+VirtualModeHS|Cdc_HS|
+VirtualModeHS|Dfu_HS|
+VirtualModeHS|Hid_HS|
+VirtualModeHS|Custom_Hid_HS|
+VirtualModeHS|Msc_HS|
+VirtualModeHS|Mtp_HS|
+VirtualModeHS|BillBoard_HS|
+VirtualModeFS|Audio_FS|
+VirtualModeFS|Ccid_FS|
+VirtualModeFS|Cdc_FS|
+VirtualModeFS|Dfu_FS|
+VirtualModeFS|Hid_FS|
+VirtualModeFS|Custom_Hid_FS|
+VirtualModeFS|Msc_FS|
+VirtualModeFS|Mtp_FS|
+VirtualModeFS|BillBoard_FS|
+DEVICE_FS|DEVICE_FS|
+DEVICE_HS|DEVICE_HS|
+USBD_DESC|USB_ALL_DESCRIPTOR|
+HS_Desc|HS_Desc|
+FS_Desc|FS_Desc|
+USBD_CLASS|USB_ALL_CLASSES|
+USBD_CDC|USBD_CDC|
+USBD_HID|USBD_HID|
+USBD_CUSTOM_HID|USBD_CUSTOM_HID|
+USBD_MSC|USBD_MSC|
+USBD_AUDIO|USBD_AUDIO|
+USBD_CCID|USBD_CCID|
+USBD_DFU|USBD_DFU|
+USBD_MTP|USBD_MTP|
+USBD_BILLBOARD|USBD_BB|
+USBD_USER_CALLBACK|USB_ALL_CALLBACK|
+USBD_Interface_fops|USBD_Interface_fops|
+USBD_Interface_fops_HS|USBD_Interface_fops_HS|
+USBD_Interface_fops_FS|USBD_Interface_fops_FS|
+USBD_Storage_Interface_fops_FS|USBD_Storage_Interface_fops_FS|
+USBD_Storage_Interface_fops_HS|USBD_Storage_Interface_fops_HS|
+USBD_CustomHID_fops_FS|USBD_CustomHID_fops_FS|
+USBD_CustomHID_fops_HS|USBD_CustomHID_fops_HS|
+USBD_AUDIO_fops_FS|USBD_AUDIO_fops_FS|
+USBD_AUDIO_fops_HS|USBD_AUDIO_fops_HS|
+USBD_CCID_fops_FS|USBD_CCID_fops_FS|
+USBD_CCID_fops_HS|USBD_CCID_fops_HS|
+USBD_DFU_fops_FS|USBD_DFU_fops_FS|
+USBD_DFU_fops_HS|USBD_DFU_fops_HS|

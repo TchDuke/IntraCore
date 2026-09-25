@@ -1,0 +1,76 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DAC
+Version=WL_dacif_v3_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DAC_Channel|Channel|||||
+DAC_Trigger|Trigger|||||Specifies the external trigger for the selected DAC channel.
+DAC_OutputBuffer|Output Buffer|||||
+TriangleAmplitude|Triangle Amplitude|||||
+NoiseAmplitude|Noise Amplitude|||||
+WaveGeneration|Wave generation mode|||||
+DAC_ConnectOnChipPeripheral1|Connect On Chip Peripheral1|||||Specifies whether the DAC output is connected or not to on chip peripheral .
+DAC_ConnectOnChipPeripheral2|Connect On Chip Peripheral2|||||Specifies whether the DAC output is connected or not to on chip peripheral .
+DAC_UserTrimming|User Trimming|||||Specifies the trimming mode This parameter must be a value of DAC User Trimming DAC_UserTrimming is either factory or user trimming
+DAC_TrimmingValue|Trimming Value|||1|31|Specifies the offset trimming value i.
+DAC_SampleAndHold|Mode selected|||||Specifies the DAC mode. In case of Sample and Hold Mode then specifies values in additionnal parameters : - Sample Time - Hold Time - Refresh Time
+DAC_SampleTime|Sample Time|||0|1023|Specifies the Sample time for the selected channel.
+DAC_HoldTime|Hold Time|||0|1023|Specifies the hold time for the selected channel This parameter applies when DAC_SampleAndHold is DAC_SAMPLEANDHOLD_ENABLE.
+DAC_RefreshTime|Refresh Time|||0|255|Specifies the refresh time for the selected channel This parameter applies when DAC_SampleAndHold is DAC_SAMPLEANDHOLD_ENABLE.
+
+[Values]
+# параметр|значение|подпись
+DAC_Channel|DAC_CHANNEL_1|DAC_CHANNEL_1
+DAC_Trigger|DAC_TRIGGER_NONE|None
+DAC_Trigger|DAC_TRIGGER_SOFTWARE|Software trigger
+DAC_Trigger|DAC_TRIGGER_T1_TRGO|Timer 1 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T2_TRGO|Timer 2 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T4_TRGO|Timer 4 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T5_TRGO|Timer 5 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T6_TRGO|Timer 6 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T7_TRGO|Timer 7 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T8_TRGO|Timer 8 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T15_TRGO|Timer 15 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_HR1_TRGO1|HR Timer 1 Trigger Out1 event
+DAC_Trigger|DAC_TRIGGER_HR1_TRGO2|HR Timer 1 Trigger Out2 event
+DAC_Trigger|DAC_TRIGGER_LPTIM1_OUT|LP Timer 1 Out event
+DAC_Trigger|DAC_TRIGGER_LPTIM2_OUT|LP Timer 2 Out event
+DAC_Trigger|DAC_TRIGGER_LPTIM3_OUT|LP Timer 3 Out event
+DAC_Trigger|DAC_TRIGGER_EXT_IT9|External line 9
+DAC_OutputBuffer|DAC_OUTPUTBUFFER_ENABLE|Enable
+DAC_OutputBuffer|DAC_OUTPUTBUFFER_DISABLE|Disable
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_1|1
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_3|3
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_7|7
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_15|15
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_31|31
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_63|63
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_127|127
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_255|255
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_511|511
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_1023|1023
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_2047|2047
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_4095|4095
+NoiseAmplitude|DAC_LFSRUNMASK_BIT0|Unmask DAC channel LFSR bit0
+NoiseAmplitude|DAC_LFSRUNMASK_BITS1_0|Unmask DAC channel LFSR bits[1:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS2_0|Unmask DAC channel LFSR bits[2:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS3_0|Unmask DAC channel LFSR bits[3:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS4_0|Unmask DAC channel LFSR bits[4:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS5_0|Unmask DAC channel LFSR bits[5:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS6_0|Unmask DAC channel LFSR bits[6:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS7_0|Unmask DAC channel LFSR bits[7:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS8_0|Unmask DAC channel LFSR bits[8:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS9_0|Unmask DAC channel LFSR bits[9:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS10_0|Unmask DAC channel LFSR bits[10:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS11_0|Unmask DAC channel LFSR bits[11:0]
+DAC_ConnectOnChipPeripheral1|DAC_CHIPCONNECT_ENABLE|Chipconnect Enable
+DAC_ConnectOnChipPeripheral1|DAC_CHIPCONNECT_DISABLE|Chipconnect Disable
+DAC_ConnectOnChipPeripheral2|DAC_CHIPCONNECT_ENABLE|Chipconnect Enable
+DAC_ConnectOnChipPeripheral2|DAC_CHIPCONNECT_DISABLE|Chipconnect Disable
+DAC_UserTrimming|DAC_TRIMMING_FACTORY|Factory trimming
+DAC_UserTrimming|DAC_TRIMMING_USER|User trimming
+DAC_SampleAndHold|DAC_SAMPLEANDHOLD_DISABLE|Normal Mode
+DAC_SampleAndHold|DAC_SAMPLEANDHOLD_ENABLE|Sample and Hold Mode

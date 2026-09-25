@@ -1,0 +1,2974 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=GPDMA
+Version=Instance2_STM32H5_dma3_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PARAMFORADC1|semaphore for ADC|||||
+PARAMFORADC4|semaphore for ADC|||||
+PARAMFORADC2|semaphore for ADC|||||
+ChannelSEC_GPDMACH0|Enable Channel as Secured|CH0||||
+ChannelPRIV_GPDMACH0|Enable Channel as Privileged|CH0||||
+SrcSEC_GPDMACH0|Enable Source as Secured|CH0||||
+DestSEC_GPDMACH0|Enable Destination as Secured|CH0||||
+ChannelAttributes_GPDMACH0|Channel Attributes|||||
+ChannelSEC_GPDMACH1|Enable Channel as Secured|CH1||||
+ChannelPRIV_GPDMACH1|Enable Channel as Privileged|CH1||||
+SrcSEC_GPDMACH1|Enable Source as Secured|CH1||||
+DestSEC_GPDMACH1|Enable Destination as Secured|CH1||||
+ChannelAttributes_GPDMACH1|Channel Attributes|||||
+ChannelSEC_GPDMACH2|Enable Channel as Secured|CH2||||
+ChannelPRIV_GPDMACH2|Enable Channel as Privileged|CH2||||
+SrcSEC_GPDMACH2|Enable Source as Secured|CH2||||
+DestSEC_GPDMACH2|Enable Destination as Secured|CH2||||
+ChannelAttributes_GPDMACH2|Channel Attributes|||||
+ChannelSEC_GPDMACH3|Enable Channel as Secured|CH3||||
+ChannelPRIV_GPDMACH3|Enable Channel as Privileged|CH3||||
+SrcSEC_GPDMACH3|Enable Source as Secured|CH3||||
+DestSEC_GPDMACH3|Enable Destination as Secured|CH3||||
+ChannelAttributes_GPDMACH3|Channel Attributes|||||
+ChannelSEC_GPDMACH4|Enable Channel as Secured|CH4||||
+ChannelPRIV_GPDMACH4|Enable Channel as Privileged|CH4||||
+SrcSEC_GPDMACH4|Enable Source as Secured|CH4||||
+DestSEC_GPDMACH4|Enable Destination as Secured|CH4||||
+ChannelAttributes_GPDMACH4|Channel Attributes|||||
+ChannelSEC_GPDMACH5|Enable Channel as Secured|CH5||||
+ChannelPRIV_GPDMACH5|Enable Channel as Privileged|CH5||||
+SrcSEC_GPDMACH5|Enable Source as Secured|CH5||||
+DestSEC_GPDMACH5|Enable Destination as Secured|CH5||||
+ChannelAttributes_GPDMACH5|Channel Attributes|||||
+ChannelSEC_GPDMACH6|Enable Channel as Secured|CH6||||
+ChannelPRIV_GPDMACH6|Enable Channel as Privileged|CH6||||
+SrcSEC_GPDMACH6|Enable Source as Secured|CH6||||
+DestSEC_GPDMACH6|Enable Destination as Secured|CH6||||
+ChannelAttributes_GPDMACH6|Channel Attributes|||||
+ChannelSEC_GPDMACH7|Enable Channel as Secured|CH7||||
+ChannelPRIV_GPDMACH7|Enable Channel as Privileged|CH7||||
+SrcSEC_GPDMACH7|Enable Source as Secured|CH7||||
+DestSEC_GPDMACH7|Enable Destination as Secured|CH7||||
+ChannelAttributes_GPDMACH7|Channel Attributes|||||
+RECAP_GPDMACH6|Request|Channel 6||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+RECAP_GPDMACH7|Request|Channel 7||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+RECAP_GPDMACH0|Request|Channel 0||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+RECAP_GPDMACH1|Request|Channel 1||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+RECAP_GPDMACH2|Request|Channel 2||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+RECAP_GPDMACH3|Request|Channel 3||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+RECAP_GPDMACH4|Request|Channel 4||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+RECAP_GPDMACH5|Request|Channel 5||||DMA is not intended to hardware support the case of simultaneous enabled channels incorrectly configured with a same hardware peripheral request signal, and there is no user setting error reporting.
+pNode_GPDMACH7|forcodegeneration|||||
+pQueueLinkList_GPDMACH7|forcodegeneration|||||
+pNode_GPDMACH6|forcodegeneration|||||
+pQueueLinkList_GPDMACH6|forcodegeneration|||||
+pNode_GPDMACH5|forcodegeneration|||||
+pQueueLinkList_GPDMACH5|forcodegeneration|||||
+pNode_GPDMACH4|forcodegeneration|||||
+pQueueLinkList_GPDMACH4|forcodegeneration|||||
+pNode_GPDMACH3|forcodegeneration|||||
+pQueueLinkList_GPDMACH3|forcodegeneration|||||
+pNode_GPDMACH2|forcodegeneration|||||
+pQueueLinkList_GPDMACH2|forcodegeneration|||||
+pNode_GPDMACH1|forcodegeneration|||||
+pQueueLinkList_GPDMACH1|forcodegeneration|||||
+pNode_GPDMACH0|forcodegeneration|||||
+pQueueLinkList_GPDMACH0|forcodegeneration|||||
+nodeconfig|forcodegeneration|||||
+pPrevNode|forcodegeneration|||||
+TRANSFEREVENTMODE_GPDMACH6|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH6|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH0|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH6|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH6|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH6|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH6|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH6|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH6|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH6|Node Type|Channel configuration||||
+SRCADD_GPDMACH6|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH6|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH6|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH6|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH6|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH6|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH6|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH6|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH6|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH6|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH6|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH6|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH6|IPINSTANCE_GPDMACH6|Request Configuration||||
+REQUEST_GPDMACH6|Request|Request Configuration||||
+DATAHANDLING_GPDMACH6|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH6|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH6|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH6|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH6|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH6|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH6|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH6|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH6|Trigger Selection|Trigger||||
+ADDRESSING2D_GPDMACH6|Configuration|2D Addressing||||
+SRCADDROFFSET_GPDMACH6|Source Address Offset (as a signed value)|2D Addressing||-8191|8191|
+DESTADDROFFSET_GPDMACH6|Destination Address Offset|2D Addressing||-8191|8191|
+BLKSRCADDROFFSET_GPDMACH6|Block Source Address Offset (as a signed value)|2D Addressing||-65535|65535|
+BLKDESTADDROFFSET_GPDMACH6|Block Destination Address Offset (as a signed value)|2D Addressing||-65535|65535|
+REPEATCOUNT_GPDMACH6|Repeat Counter|2D Addressing||1|2048|
+PRIORITY_LL_CIRCULAR_GPDMACH6|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH6|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH6|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH6|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH6|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH6|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH6|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH6|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH6|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH6|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_GPDMACH7|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH7|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH7|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH7|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH7|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH7|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH7|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH7|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH7|Node Type|Channel configuration||||
+SRCADD_GPDMACH7|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH7|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH7|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH7|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH7|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH7|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH7|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH7|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH7|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH7|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH7|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH7|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH7|IPINSTANCE_GPDMACH7|Request Configuration||||
+REQUEST_GPDMACH7|Request|Request Configuration||||
+DATAHANDLING_GPDMACH7|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH7|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH7|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH7|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH7|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH7|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH7|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH7|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH7|Trigger Selection|Trigger||||
+ADDRESSING2D_GPDMACH7|Configuration|2D Addressing||||
+SRCADDROFFSET_GPDMACH7|Source Address Offset (as a signed value)|2D Addressing||-8191|8191|
+DESTADDROFFSET_GPDMACH7|Destination Address Offset (as a signed value)|2D Addressing||-8191|8191|
+BLKSRCADDROFFSET_GPDMACH7|Block Source Address Offset (as a signed value)|2D Addressing||-65535|65535|
+BLKDESTADDROFFSET_GPDMACH7|Block Destination Address Offset (as a signed value)|2D Addressing||-65535|65535|
+REPEATCOUNT_GPDMACH7|Repeat Counter|2D Addressing||1|2048|
+PRIORITY_LL_CIRCULAR_GPDMACH7|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH7|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH7|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH7|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH7|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH7|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH7|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH7|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH7|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH7|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_GPDMACH0|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH0|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH0|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH0|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH0|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH0|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH0|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH0|Node Type|Channel configuration||||
+SRCADD_GPDMACH0|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH0|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH0|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH0|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH0|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH0|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH0|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH0|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH0|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH0|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH0|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH0|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH0|IPINSTANCE_GPDMACH0|Request Configuration||||
+REQUEST_GPDMACH0|Request|Request Configuration||||
+DATAHANDLING_GPDMACH0|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH0|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH0|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH0|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH0|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH0|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH0|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH0|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH0|Trigger Selection|Trigger||||
+PRIORITY_LL_CIRCULAR_GPDMACH0|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH0|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH0|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH0|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH0|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH0|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH0|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH0|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH0|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH0|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_GPDMACH1|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH1|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH1|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH1|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH1|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH1|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH1|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH1|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH1|Node Type|Channel configuration||||
+SRCADD_GPDMACH1|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH1|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH1|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH1|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH1|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH1|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH1|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH1|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH1|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH1|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH1|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH1|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH1|IPINSTANCE_GPDMACH1|Request Configuration||||
+REQUEST_GPDMACH1|Request|Request Configuration||||
+DATAHANDLING_GPDMACH1|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH1|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH1|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH1|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH1|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH1|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH1|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH1|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH1|Trigger Selection|Trigger||||
+PRIORITY_LL_CIRCULAR_GPDMACH1|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH1|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH1|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH1|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH1|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH1|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH1|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH1|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH1|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH1|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_GPDMACH2|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH2|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH2|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH2|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH2|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH2|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH2|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH2|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH2|Node Type|Channel configuration||||
+SRCADD_GPDMACH2|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH2|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH2|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH2|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH2|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH2|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH2|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH2|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH2|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH2|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH2|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH2|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH2|IPINSTANCE_GPDMACH2|Request Configuration||||
+REQUEST_GPDMACH2|Request|Request Configuration||||
+DATAHANDLING_GPDMACH2|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH2|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH2|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH2|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH2|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH2|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH2|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH2|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH2|Trigger Selection|Trigger||||
+PRIORITY_LL_CIRCULAR_GPDMACH2|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH2|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH2|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH2|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH2|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH2|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH2|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH2|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH2|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH2|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_GPDMACH3|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH3|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH3|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH3|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH3|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH3|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH3|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH3|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH3|Node Type|Channel configuration||||
+SRCADD_GPDMACH3|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH3|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH3|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH3|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH3|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH3|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH3|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH3|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH3|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH3|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH3|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH3|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH3|IPINSTANCE_GPDMACH3|Request Configuration||||
+REQUEST_GPDMACH3|Request|Request Configuration||||
+DATAHANDLING_GPDMACH3|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH3|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH3|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH3|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH3|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH3|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH3|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH3|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH3|Trigger Selection|Trigger||||
+PRIORITY_LL_CIRCULAR_GPDMACH3|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH3|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH3|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH3|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH3|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH3|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH3|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH3|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH3|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH3|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_GPDMACH4|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH4|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH4|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH4|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH4|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH4|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH4|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH4|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH4|Node Type|Channel configuration||||
+SRCADD_GPDMACH4|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH4|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH4|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH4|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH4|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH4|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH4|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH4|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH4|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH4|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH4|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH4|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH4|IPINSTANCE_GPDMACH4|Request Configuration||||
+REQUEST_GPDMACH4|Request|Request Configuration||||
+DATAHANDLING_GPDMACH4|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH4|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH4|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH4|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH4|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH4|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH4|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH4|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH4|Trigger Selection|Trigger||||
+PRIORITY_LL_CIRCULAR_GPDMACH4|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH4|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH4|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH4|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH4|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH4|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH4|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH4|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH4|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH4|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_GPDMACH5|Transfer Event Generation|Transfer Event Configuration||||
+TRANSFERALLOCATEDPORTSRC_GPDMACH5|Allocated Port for Transfer|Source Data Setting||||
+TRANSFERALLOCATEDPORTDEST_GPDMACH5|Allocated Port for Transfer|Destination Data Setting||||
+TRANSFERALLOCATEDPORT_GPDMACH5|Allocated Port for Transfer ORING|||||
+DESTBURSTLENGTH_GPDMACH5|Burst Length|Destination Data Setting||1|64|
+SRCBURSTLENGTH_GPDMACH5|Burst Length|Source Data Setting||1|64|
+MODE_GPDMACH5|Transaction Mode|Channel configuration||||
+CIRCULARMODE_GPDMACH5|Circular Mode|Circular configuration||||
+NODETYPE_GPDMACH5|Node Type|Channel configuration||||
+SRCADD_GPDMACH5|Source Address|Runtime configuration||0|65535|
+DSTADD_GPDMACH5|Destination Address|Runtime configuration||0|65535|
+DATASIZE_GPDMACH5|Data Size|Runtime configuration||0|65535|
+PRIORITY_GPDMACH5|Priority|Channel configuration||||
+SRCDATAWIDTH_GPDMACH5|Data Width|Source Data Setting||||
+DESTDATAWIDTH_GPDMACH5|Data Width|Destination Data Setting||||
+SRCINC_GPDMACH5|Source Address Increment After Transfer|Source Data Setting||||
+DESTINC_GPDMACH5|Destination Address Increment After Transfer|Destination Data Setting||||
+DIRECTION_GPDMACH5|Direction|Channel configuration||||
+BLKHWREQUEST_GPDMACH5|Block HW request protocol|Request Configuration||||
+IPHANDLE_GPDMACH5|IPHANDLE|Request Configuration||||
+DMAHANDLE_GPDMACH5|DMA Handle in IP Structure|Request Configuration||||
+IPINSTANCE_GPDMACH5|IPINSTANCE_GPDMACH5|Request Configuration||||
+REQUEST_GPDMACH5|Request|Request Configuration||||
+DATAHANDLING_GPDMACH5|Data Handling Configuration|Data Handling||||
+DATAEXCHANGE_GPDMACH5|Data exchange|Data Handling||||
+DATAEXCHANGEDESTBYTE_GPDMACH5|Exchange Destination Byte|Data Handling||||
+DATAEXCHANGEDESTHALFWORD_GPDMACH5|Exchange Destination Half Word|Data Handling||||
+DATAEXCHANGEDESRCBYTE_GPDMACH5|Exchange Source Byte|Data Handling||||
+DATAALIGNEMENT_GPDMACH5|Data Alignment|Data Handling||||
+TRIGGERPOLARITY_GPDMACH5|Trigger Configuration|Trigger||||
+TRIGGERMODE_GPDMACH5|Trigger Mode|Trigger||||
+TRIGGERSELECTION_GPDMACH5|Trigger Selection|Trigger||||
+PRIORITY_LL_CIRCULAR_GPDMACH5|Priority|Channel configuration||||
+LINKSTEPMODE_CIRCULAR_GPDMACH5|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH5|Circular Port|Circular configuration||||
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH5|Transfer Event Generation|Transfer Event Configuration||||
+LINKEDLISTMODE_CIRCULAR_GPDMACH5|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+PRIORITY_LL_GPDMACH5|Priority|Channel Configuration for Linked List||||
+LINKSTEPMODE_GPDMACH5|Linked List Execution Mode|Channel Configuration for Linked List||||
+LINKALLOCATEDPORT_GPDMACH5|Allocated Port for Transfer|Channel Configuration for Linked List||||
+TRANSFEREVENTMODE_LL_GPDMACH5|Transfer Event Generation|Channel Configuration for Linked List||||
+LINKEDLISTMODE_GPDMACH5|Execution Mode (circular/linear) of the Linked List|Channel Configuration for Linked List||||
+
+[Values]
+# параметр|значение|подпись
+ChannelSEC_GPDMACH0|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH0|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH0|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH0|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH0|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH0|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH0|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH0|DMA_CHANNEL_DEST_NSEC|NON SECURE
+ChannelSEC_GPDMACH1|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH1|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH1|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH1|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH1|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH1|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH1|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH1|DMA_CHANNEL_DEST_NSEC|NON SECURE
+ChannelSEC_GPDMACH2|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH2|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH2|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH2|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH2|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH2|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH2|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH2|DMA_CHANNEL_DEST_NSEC|NON SECURE
+ChannelSEC_GPDMACH3|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH3|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH3|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH3|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH3|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH3|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH3|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH3|DMA_CHANNEL_DEST_NSEC|NON SECURE
+ChannelSEC_GPDMACH4|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH4|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH4|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH4|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH4|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH4|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH4|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH4|DMA_CHANNEL_DEST_NSEC|NON SECURE
+ChannelSEC_GPDMACH5|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH5|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH5|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH5|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH5|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH5|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH5|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH5|DMA_CHANNEL_DEST_NSEC|NON SECURE
+ChannelSEC_GPDMACH6|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH6|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH6|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH6|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH6|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH6|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH6|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH6|DMA_CHANNEL_DEST_NSEC|NON SECURE
+ChannelSEC_GPDMACH7|DMA_CHANNEL_SEC|SECURE
+ChannelSEC_GPDMACH7|DMA_CHANNEL_NSEC|NON SECURE
+ChannelPRIV_GPDMACH7|DMA_CHANNEL_PRIV|PRIVILEDGED
+ChannelPRIV_GPDMACH7|DMA_CHANNEL_NPRIV|NON PRIVILEDGED
+SrcSEC_GPDMACH7|DMA_CHANNEL_SRC_SEC|SECURE
+SrcSEC_GPDMACH7|DMA_CHANNEL_SRC_NSEC|NON SECURE
+DestSEC_GPDMACH7|DMA_CHANNEL_DEST_SEC|SECURE
+DestSEC_GPDMACH7|DMA_CHANNEL_DEST_NSEC|NON SECURE
+TRANSFEREVENTMODE_GPDMACH6|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH6|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTSRC_GPDMACH6|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH6|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTSRC_GPDMACH0|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH0|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTDEST_GPDMACH6|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH6|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH6|DMA_NORMAL|Normal
+NODETYPE_GPDMACH6|DMA_GPDMA_2D_NODE|GPDMA 2D Addressing
+PRIORITY_GPDMACH6|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH6|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH6|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH6|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH6|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH6|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH6|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH6|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH6|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH6|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH6|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH6|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH6|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH6|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH6|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH6|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH6|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH6|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH6|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH6|__NULL|__NULL
+DMAHANDLE_GPDMACH6|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH6|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH6|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH6|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH6|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH6|GPDMA1_REQUEST_ADC3|ADC3
+REQUEST_GPDMACH6|GPDMA1_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH6|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH6|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH6|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH6|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH6|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH6|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH6|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH6|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH6|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH6|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH6|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH6|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH6|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH6|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH6|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH6|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH6|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH6|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH6|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH6|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH6|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH6|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH6|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH6|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH6|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH6|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH6|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH6|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH6|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH6|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH6|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH6|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH6|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH6|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH6|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH6|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH6|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH6|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH6|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH6|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH6|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH6|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH6|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH6|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH6|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH6|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH6|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH6|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH6|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH6|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH6|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH6|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH6|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH6|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH6|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH6|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH6|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH6|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH6|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH6|DMA_LINKEDLIST_CIRCULAR|Circular
+TRANSFEREVENTMODE_GPDMACH7|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH7|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTSRC_GPDMACH7|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH7|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTDEST_GPDMACH7|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH7|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH7|DMA_NORMAL|Normal
+MODE_GPDMACH7|DMA_PFCTRL|Peripheral control
+NODETYPE_GPDMACH7|DMA_GPDMA_2D_NODE|GPDMA 2D Addressing
+PRIORITY_GPDMACH7|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH7|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH7|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH7|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH7|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH7|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH7|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH7|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH7|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH7|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH7|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH7|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH7|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH7|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH7|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH7|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH7|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH7|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH7|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH7|__NULL|__NULL
+DMAHANDLE_GPDMACH7|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH7|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH7|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH7|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH7|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_ADC3|ADC3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH7|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH7|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH7|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH7|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH7|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH7|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH7|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH7|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH7|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH7|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH7|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH7|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH7|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH7|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH7|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH7|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH7|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH7|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH7|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH7|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH7|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH7|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH7|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH7|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH7|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH7|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH7|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH7|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH7|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH7|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH7|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH7|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH7|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH7|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH7|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH7|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH7|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH7|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH7|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH7|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH7|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH7|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH7|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH7|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH7|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH7|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH7|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH7|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH7|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH7|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH7|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH7|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH7|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH7|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH7|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH7|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH7|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH7|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH7|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH7|DMA_LINKEDLIST_CIRCULAR|Circular
+TRANSFEREVENTMODE_GPDMACH0|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH0|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTDEST_GPDMACH0|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH0|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH0|DMA_NORMAL|Normal
+MODE_GPDMACH0|DMA_PFCTRL|Peripheral control
+NODETYPE_GPDMACH0|DMA_GPDMA_LINEAR_NODE|GPDMA Linear Addressing
+PRIORITY_GPDMACH0|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH0|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH0|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH0|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH0|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH0|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH0|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH0|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH0|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH0|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH0|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH0|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH0|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH0|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH0|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH0|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH0|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH0|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH0|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH0|__NULL|__NULL
+DMAHANDLE_GPDMACH0|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH0|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH0|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH0|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH0|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_ADC3|ADC3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH0|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH0|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH0|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH0|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH0|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH0|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH0|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH0|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH0|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH0|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH0|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH0|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH0|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH0|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH0|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH0|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH0|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH0|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH0|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH0|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH0|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH0|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH0|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH0|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH0|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH0|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH0|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH0|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH0|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH0|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH0|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH0|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH0|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH0|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH0|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH0|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH0|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH0|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH0|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH0|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH0|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH0|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH0|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH0|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH0|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH0|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH0|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH0|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH0|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH0|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH0|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH0|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH0|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH0|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH0|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH0|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH0|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH0|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH0|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH0|DMA_LINKEDLIST_CIRCULAR|Circular
+TRANSFEREVENTMODE_GPDMACH1|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH1|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTSRC_GPDMACH1|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH1|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTDEST_GPDMACH1|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH1|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH1|DMA_NORMAL|Normal
+NODETYPE_GPDMACH1|DMA_GPDMA_LINEAR_NODE|GPDMA Linear Addressing
+PRIORITY_GPDMACH1|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH1|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH1|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH1|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH1|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH1|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH1|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH1|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH1|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH1|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH1|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH1|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH1|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH1|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH1|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH1|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH1|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH1|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH1|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH1|__NULL|__NULL
+DMAHANDLE_GPDMACH1|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH1|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH1|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH1|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH1|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_ADC4|ADC4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH1|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH1|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH1|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH1|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH1|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH1|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH1|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH1|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH1|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH1|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH1|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH1|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH1|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH1|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH1|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH1|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH1|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH1|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH1|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH1|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH1|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH1|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH1|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH1|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH1|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH1|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH1|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH1|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH1|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH1|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH1|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH1|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH1|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH1|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH1|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH1|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH1|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH1|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH1|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH1|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH1|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH1|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH1|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH1|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH1|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH1|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH1|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH1|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH1|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH1|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH1|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH1|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH1|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH1|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH1|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH1|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH1|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH1|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH1|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH1|DMA_LINKEDLIST_CIRCULAR|Circular
+TRANSFEREVENTMODE_GPDMACH2|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH2|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTSRC_GPDMACH2|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH2|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTDEST_GPDMACH2|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH2|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH2|DMA_NORMAL|Normal
+NODETYPE_GPDMACH2|DMA_GPDMA_LINEAR_NODE|GPDMA Linear Addressing
+PRIORITY_GPDMACH2|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH2|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH2|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH2|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH2|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH2|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH2|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH2|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH2|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH2|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH2|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH2|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH2|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH2|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH2|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH2|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH2|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH2|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH2|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH2|__NULL|__NULL
+DMAHANDLE_GPDMACH2|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH2|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH2|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH2|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH2|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_ADC3|ADC3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH2|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH2|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH2|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH2|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH2|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH2|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH2|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH2|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH2|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH2|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH2|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH2|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH2|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH2|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH2|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH2|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH2|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH2|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH2|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH2|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH2|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH2|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH2|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH2|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH2|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH2|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH2|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH2|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH2|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH2|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH2|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH2|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH2|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH2|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH2|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH2|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH2|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH2|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH2|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH2|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH2|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH2|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH2|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH2|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH2|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH2|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH2|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH2|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH2|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH2|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH2|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH2|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH2|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH2|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH2|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH2|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH2|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH2|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH2|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH2|DMA_LINKEDLIST_CIRCULAR|Circular
+TRANSFEREVENTMODE_GPDMACH3|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH3|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTSRC_GPDMACH3|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH3|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTDEST_GPDMACH3|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH3|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH3|DMA_NORMAL|Normal
+NODETYPE_GPDMACH3|DMA_GPDMA_LINEAR_NODE|GPDMA Linear Addressing
+PRIORITY_GPDMACH3|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH3|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH3|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH3|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH3|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH3|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH3|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH3|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH3|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH3|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH3|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH3|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH3|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH3|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH3|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH3|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH3|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH3|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH3|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH3|__NULL|__NULL
+DMAHANDLE_GPDMACH3|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH3|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH3|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH3|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH3|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_ADC4|ADC4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH3|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH3|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH3|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH3|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH3|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH3|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH3|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH3|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH3|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH3|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH3|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH3|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH3|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH3|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH3|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH3|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH3|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH3|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH3|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH3|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH3|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH3|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH3|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH3|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH3|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH3|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH3|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH3|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH3|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH3|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH3|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH3|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH3|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH3|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH3|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH3|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH3|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH3|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH3|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH3|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH3|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH3|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH3|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH3|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH3|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH3|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH3|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH3|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH3|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH3|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH3|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH3|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH3|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH3|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH3|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH3|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH3|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH3|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH3|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH3|DMA_LINKEDLIST_CIRCULAR|Circular
+TRANSFEREVENTMODE_GPDMACH4|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH4|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTSRC_GPDMACH4|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH4|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTDEST_GPDMACH4|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH4|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH4|DMA_NORMAL|Normal
+NODETYPE_GPDMACH4|DMA_GPDMA_LINEAR_NODE|GPDMA Linear Addressing
+PRIORITY_GPDMACH4|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH4|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH4|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH4|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH4|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH4|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH4|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH4|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH4|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH4|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH4|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH4|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH4|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH4|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH4|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH4|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH4|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH4|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH4|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH4|__NULL|__NULL
+DMAHANDLE_GPDMACH4|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH4|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH4|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH4|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH4|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_ADC3|ADC3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH4|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH4|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH4|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH4|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH4|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH4|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH4|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH4|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH4|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH4|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH4|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH4|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH4|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH4|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH4|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH4|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH4|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH4|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH4|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH4|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH4|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH4|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH4|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH4|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH4|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH4|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH4|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH4|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH4|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH4|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH4|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH4|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH4|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH4|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH4|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH4|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH4|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH4|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH4|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH4|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH4|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH4|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH4|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH4|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH4|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH4|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH4|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH4|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH4|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH4|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH4|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH4|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH4|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH4|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH4|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH4|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH4|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH4|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH4|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH4|DMA_LINKEDLIST_CIRCULAR|Circular
+TRANSFEREVENTMODE_GPDMACH5|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_GPDMACH5|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFERALLOCATEDPORTSRC_GPDMACH5|DMA_SRC_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTSRC_GPDMACH5|DMA_SRC_ALLOCATED_PORT1|Port 1
+TRANSFERALLOCATEDPORTDEST_GPDMACH5|DMA_DEST_ALLOCATED_PORT0|Port 0
+TRANSFERALLOCATEDPORTDEST_GPDMACH5|DMA_DEST_ALLOCATED_PORT1|Port 1
+MODE_GPDMACH5|DMA_NORMAL|Normal
+NODETYPE_GPDMACH5|DMA_GPDMA_LINEAR_NODE|GPDMA Linear Addressing
+PRIORITY_GPDMACH5|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_GPDMACH5|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_GPDMACH5|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_GPDMACH5|DMA_HIGH_PRIORITY|Very High
+SRCDATAWIDTH_GPDMACH5|DMA_SRC_DATAWIDTH_BYTE|Byte
+SRCDATAWIDTH_GPDMACH5|DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SRCDATAWIDTH_GPDMACH5|DMA_SRC_DATAWIDTH_WORD|Word
+DESTDATAWIDTH_GPDMACH5|DMA_DEST_DATAWIDTH_BYTE|Byte
+DESTDATAWIDTH_GPDMACH5|DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DESTDATAWIDTH_GPDMACH5|DMA_DEST_DATAWIDTH_WORD|Word
+SRCINC_GPDMACH5|DMA_SINC_FIXED|Disabled
+SRCINC_GPDMACH5|DMA_SINC_INCREMENTED|Enabled
+DESTINC_GPDMACH5|DMA_DINC_FIXED|Disabled
+DESTINC_GPDMACH5|DMA_DINC_INCREMENTED|Enabled
+DIRECTION_GPDMACH5|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+DIRECTION_GPDMACH5|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+DIRECTION_GPDMACH5|DMA_MEMORY_TO_MEMORY|Memory To Memory
+BLKHWREQUEST_GPDMACH5|DMA_BREQ_BLOCK|Block Level
+BLKHWREQUEST_GPDMACH5|DMA_BREQ_SINGLE_BURST|Single/Burst Level
+IPHANDLE_GPDMACH5|__NULL|__NULL
+DMAHANDLE_GPDMACH5|DMA_Handle|DMA_Handle
+DMAHANDLE_GPDMACH5|DMA_Handle1|DMA_Handle1
+DMAHANDLE_GPDMACH5|DMA_Handle2|DMA_Handle2
+REQUEST_GPDMACH5|DMA_REQUEST_SW|SoftWare
+REQUEST_GPDMACH5|GPDMA2_REQUEST_ADC1|ADC1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_ADC2|ADC2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_ADC3|ADC3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_HSPI1|HSPI1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_DAC1_CH1|DAC1_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_DAC1_CH2|DAC1_CH2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM6_UP|TIM6_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM7_UP|TIM7_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI1_RX|SPI1_RX/I2S1_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI1_TX|SPI1_TX/I2S1_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI2_RX|SPI2_RX/I2S2_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI2_TX|SPI2_TX/I2S2_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI3_RX|SPI3_RX/I2S3_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI3_TX|SPI3_TX/I2S3_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI4_RX|SPI4_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI4_TX|SPI4_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI5_RX|SPI5_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI5_TX|SPI5_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI6_RX|SPI6_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SPI6_TX|SPI6_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C1_RX|I3C1_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C1_TX|I3C1_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C1_TC|I3C1_TC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C1_RS|I3C1_RS
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C2_RX|I3C2_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C2_TX|I3C2_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C2_TC|I3C2_TC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I3C2_RS|I3C2_RS
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C1_RX|I2C1_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C1_TX|I2C1_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C1_EVC|I2C1_EVC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C2_RX|I2C2_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C2_TX|I2C2_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C2_EVC|I2C2_EVC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C3_RX|I2C3_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C3_TX|I2C3_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C3_EVC|I2C3_EVC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C4_RX|I2C4_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C5_RX|I2C5_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C6_RX|I2C6_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C4_TX|I2C4_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C5_TX|I2C5_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C6_TX|I2C6_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C4_EVC|I2C4_EVC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C5_EVC|I2C5_EVC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_I2C6_EVC|I2C6_EVC
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART1_RX|USART1_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART6_RX|USART6_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART1_TX|USART1_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART6_TX|USART6_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART2_RX|USART2_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART2_TX|USART2_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART3_RX|USART3_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART3_TX|USART3_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART10_RX|USART10_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART10_TX|USART10_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART11_RX|USART11_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_USART11_TX|USART11_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART4_RX|UART4_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART4_TX|UART4_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART5_RX|UART5_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART5_TX|UART5_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART7_RX|UART7_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART7_TX|UART7_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART8_RX|UART8_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART8_TX|UART8_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART9_RX|UART9_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART9_TX|UART9_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART10_RX|UART10_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART10_TX|UART10_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART11_RX|UART11_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART11_TX|UART11_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART12_RX|UART12_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UART12_TX|UART12_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPUART1_RX|LPUART1_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPUART1_TX|LPUART1_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SAI1_A|SAI1_A
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SAI1_B|SAI1_B
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SAI2_A|SAI2_A
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SAI2_B|SAI2_B
+REQUEST_GPDMACH5|GPDMA2_REQUEST_OCTOSPI1|OCTOSPI1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_OCTOSPI2|OCTOSPI2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM1_CH1|TIM1_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM1_CH2|TIM1_CH2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM1_CH3|TIM1_CH3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM1_CH4|TIM1_CH4
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM1_UP|TIM1_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM1_TRIG|TIM1_TRIG
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM1_COM|TIM1_COM
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM8_CH1|TIM8_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM8_CH2|TIM8_CH2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM8_CH3|TIM8_CH3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM8_CH4|TIM8_CH4
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM8_UP|TIM8_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM8_TRIG|TIM8_TRIG
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM8_COM|TIM8_COM
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM2_CH1|TIM2_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM2_CH2|TIM2_CH2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM2_CH3|TIM2_CH3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM2_CH4|TIM2_CH4
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM2_UP|TIM2_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM3_CH1|TIM3_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM3_CH2|TIM3_CH2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM3_CH3|TIM3_CH3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM3_CH4|TIM3_CH4
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM3_UP|TIM3_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM3_TRIG|TIM3_TRIG
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM4_CH1|TIM4_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM4_CH2|TIM4_CH2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM4_CH3|TIM4_CH3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM4_CH4|TIM4_CH4
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM4_UP|TIM4_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM5_CH1|TIM5_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM5_CH2|TIM5_CH2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM5_CH3|TIM5_CH3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM5_CH4|TIM5_CH4
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM5_UP|TIM5_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM5_TRIG|TIM5_TRIG
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM15_CH1|TIM15_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM15_UP|TIM15_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM15_TRIG|TIM15_TRIG
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM15_COM|TIM15_COM
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM16_CH1|TIM16_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM16_UP|TIM16_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM17_CH1|TIM17_CH1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_TIM17_UP|TIM17_UP
+REQUEST_GPDMACH5|GPDMA2_REQUEST_DCMI|DCMI
+REQUEST_GPDMACH5|GPDMA2_REQUEST_DCMI_PSSITX|PSSI_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_DCMI_PSSIRX|PSSI_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_AES_IN|AES_IN
+REQUEST_GPDMACH5|GPDMA2_REQUEST_AES_OUT|AES_OUT
+REQUEST_GPDMACH5|GPDMA2_REQUEST_HASH_IN|HASH_IN
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UCPD1_TX|UCPD1_TX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_UCPD1_RX|UCPD1_RX
+REQUEST_GPDMACH5|GPDMA2_REQUEST_MDF1_FLT0|MDF1_FLT0
+REQUEST_GPDMACH5|GPDMA2_REQUEST_MDF1_FLT1|MDF1_FLT1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_MDF1_FLT2|MDF1_FLT2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_MDF1_FLT3|MDF1_FLT3
+REQUEST_GPDMACH5|GPDMA2_REQUEST_MDF1_FLT4|MDF1_FLT4
+REQUEST_GPDMACH5|GPDMA2_REQUEST_MDF1_FLT5|MDF1_FLT5
+REQUEST_GPDMACH5|GPDMA2_REQUEST_ADF1_FLT0|ADF1_FLT0
+REQUEST_GPDMACH5|GPDMA2_REQUEST_FMAC_READ|FMAC_READ
+REQUEST_GPDMACH5|GPDMA2_REQUEST_FMAC_WRITE|FMAC_WRITE
+REQUEST_GPDMACH5|GPDMA2_REQUEST_CORDIC_READ|CORDIC_READ
+REQUEST_GPDMACH5|GPDMA2_REQUEST_CORDIC_WRITE|CORDIC_WRITE
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SAES_IN|SAES_IN
+REQUEST_GPDMACH5|GPDMA2_REQUEST_SAES_OUT|SAES_OUT
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM1_IC1|LPTIM1_IC1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM1_IC2|LPTIM1_IC2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM1_UE|LPTIM1_UE
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM2_IC1|LPTIM2_IC1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM2_IC2|LPTIM2_IC2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM2_UE|LPTIM2_UE
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM3_IC1|LPTIM3_IC1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM3_IC2|LPTIM3_IC2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM3_UE|LPTIM3_UE
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM5_IC1|LPTIM5_IC1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM5_IC2|LPTIM5_IC2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM5_UE|LPTIM5_UE
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM6_IC1|LPTIM6_IC1
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM6_IC2|LPTIM6_IC2
+REQUEST_GPDMACH5|GPDMA2_REQUEST_LPTIM6_UE|LPTIM6_UE
+DATAEXCHANGE_GPDMACH5|DMA_EXCHANGE_DEST_HALFWORD|NONE
+DATAEXCHANGE_GPDMACH5|DMA_EXCHANGE_DEST_BYTE|NONE
+DATAEXCHANGE_GPDMACH5|DMA_EXCHANGE_SRC_BYTE|NONE
+DATAEXCHANGE_GPDMACH5|DMA_EXCHANGE_NONE|NONE
+DATAEXCHANGEDESTBYTE_GPDMACH5|DMA_EXCHANGE_DEST_BYTE|Enable
+DATAEXCHANGEDESTHALFWORD_GPDMACH5|DMA_EXCHANGE_DEST_HALFWORD|Enable
+DATAEXCHANGEDESRCBYTE_GPDMACH5|DMA_EXCHANGE_SRC_BYTE|Enable
+DATAALIGNEMENT_GPDMACH5|DMA_DATA_RIGHTALIGN_ZEROPADDED|Right Aligned padded with 0 up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH5|DMA_DATA_RIGHTALIGN_LEFTTRUNC|Right Aligned Left Truncated down to destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH5|DMA_DATA_RIGHTALIGN_SIGNEXT|Right Aligned padded with sign extended up to destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH5|DMA_DATA_LEFTALIGN_RIGHTTRUNC|Left Aligned Right Truncated down to the destination data width when src data width bigger than dest data width
+DATAALIGNEMENT_GPDMACH5|DMA_DATA_PACK|Packed at the destination data width when src data width smaller than dest data width
+DATAALIGNEMENT_GPDMACH5|DMA_DATA_UNPACK|Unpacked at the destination data width when src data width bigger than dest data width
+TRIGGERPOLARITY_GPDMACH5|DMA_TRIG_POLARITY_MASKED|Disable
+TRIGGERPOLARITY_GPDMACH5|DMA_TRIG_POLARITY_RISING|Trigger of the selected DMA request on the rising edge of the selected trigger event input
+TRIGGERPOLARITY_GPDMACH5|DMA_TRIG_POLARITY_FALLING|Trigger of the selected DMA request on the falling edge of the selected trigger event input
+TRIGGERMODE_GPDMACH5|DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH5|DMA_TRIGM_REPEATED_BLOCK_TRANSFER|A repeated block transfer is conditioned by (at least) one hit trigger
+TRIGGERMODE_GPDMACH5|DMA_TRIGM_SINGLE_BURST_TRANSFER|A single/burst transfer is conditioned by (at least) one hit trigger
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE0|EXTI LINE 0
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE1|EXTI LINE 1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE2|EXTI LINE 2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE3|EXTI LINE 3
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE4|EXTI LINE 4
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE5|EXTI LINE 5
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE6|EXTI LINE 6
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EXTI_LINE7|EXTI LINE 7
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_TAMP_TRG1|TAMP TRIG1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_TAMP_TRG2|TAMP TRIG2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_TAMP_TRG3|TAMP TRIG3
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM2_CH1|LPTIM2 CH1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM2_CH2|LPTIM2 CH2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM3_CH2|LPTIM3 CH2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM4_AIT|LPTIM4 AIT
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM5_CH1|LPTIM5 CH1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM5_CH2|LPTIM5 CH2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM6_CH1|LPTIM6 CH1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LPTIM6_CH2|LPTIM6 CH2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_COMP2_OUT|COMP2_OUT
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_DMA2D_TC_FLAG|TC_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_DMA2D_CTC_FLAG|CTC_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_DMA2D_TW_FLAG|TW_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_DMA2D_GPFLAGS0|DMA2D_GPFLAGS0
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_DMA2D_GPFLAGS1|DMA2D_GPFLAGS1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_DMA2D_GPFLAGS2|DMA2D_GPFLAGS2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_DMA2D_GPFLAGS3|DMA2D_GPFLAGS3
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_JPEG_IFT_FLAG|JPEG_IFT_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_JPEG_IFNF_FLAG|JPEG_IFNF_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_JPEG_OFT_FLAG|JPEG_OFT_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_JPEG_OFNE_FLAG|JPEG_OFNE_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_JPEG_EOC_FLAG|JPEG_EOC_FLAG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GFXTIM_EVT1|GFXTIM_EVT1
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GFXTIM_EVT2|GFXTIM_EVT2
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GFXTIM_EVT3|GFXTIM_EVT3
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GFXTIM_EVT4|GFXTIM_EVT4
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_LCD_CTRL_SCANLINE|LCD_CTRL_SCANLINE
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH8_TCF|GPDMA1_CH8_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH9_TCF|GPDMA1_CH9_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH10_TCF|GPDMA1_CH10_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH11_TCF|GPDMA1_CH11_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH8_TCF|GPDMA2_CH8_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH9_TCF|GPDMA2_CH9_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH10_TCF|GPDMA2_CH10_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH11_TCF|GPDMA2_CH11_TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_PLAY1_OUT15|PLAY1_OUT15
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH0_TCF|GPDMA1 CH0 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH1_TCF|GPDMA1 CH1 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH2_TCF|GPDMA1 CH2 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH3_TCF|GPDMA1 CH3 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH4_TCF|GPDMA1 CH4 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH5_TCF|GPDMA1 CH5 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH6_TCF|GPDMA1 CH6 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA1_CH7_TCF|GPDMA1 CH7 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH0_TCF|GPDMA2 CH0 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH1_TCF|GPDMA2 CH1 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH2_TCF|GPDMA2 CH2 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH3_TCF|GPDMA2 CH3 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH4_TCF|GPDMA2 CH4 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH5_TCF|GPDMA2 CH5 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH6_TCF|GPDMA2 CH6 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_GPDMA2_CH7_TCF|GPDMA2 CH7 TCF
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_TIM2_TRGO|TIM2 TRGO
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_TIM12_TRGO|TIM12 TRGO
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_TIM15_TRGO|TIM15 TRGO
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_COMP1_OUT|COMP1 OUT
+TRIGGERSELECTION_GPDMACH5|GPDMA2_TRIGGER_EVENTOUT|EVENTOUT
+PRIORITY_LL_CIRCULAR_GPDMACH5|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_CIRCULAR_GPDMACH5|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_CIRCULAR_GPDMACH5|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_CIRCULAR_GPDMACH5|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_CIRCULAR_GPDMACH5|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH5|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_CIRCULAR_GPDMACH5|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH5|DMA_TCEM_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH5|DMA_TCEM_REPEATED_BLOCK_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the repeated block
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH5|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_CIRCULAR_GPDMACH5|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_CIRCULAR_GPDMACH5|DMA_LINKEDLIST_CIRCULAR|Circular
+PRIORITY_LL_GPDMACH5|DMA_LOW_PRIORITY_LOW_WEIGHT|Low
+PRIORITY_LL_GPDMACH5|DMA_LOW_PRIORITY_MID_WEIGHT|Medium
+PRIORITY_LL_GPDMACH5|DMA_LOW_PRIORITY_HIGH_WEIGHT|High
+PRIORITY_LL_GPDMACH5|DMA_HIGH_PRIORITY|Very High
+LINKSTEPMODE_GPDMACH5|DMA_LSM_FULL_EXECUTION|The List is fully executed
+LINKSTEPMODE_GPDMACH5|DMA_LSM_1LINK_EXECUTION|First Element of the List is executed
+LINKALLOCATEDPORT_GPDMACH5|DMA_LINK_ALLOCATED_PORT0|Port 0
+LINKALLOCATEDPORT_GPDMACH5|DMA_LINK_ALLOCATED_PORT1|Port 1
+TRANSFEREVENTMODE_LL_GPDMACH5|DMA_TCEM_EACH_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of each linked-list item
+TRANSFEREVENTMODE_LL_GPDMACH5|DMA_TCEM_LAST_LL_ITEM_TRANSFER|The TC (and the HT) event is generated at the (respectively half) end of the last linked-list item
+LINKEDLISTMODE_GPDMACH5|DMA_LINKEDLIST_NORMAL|Linear
+LINKEDLISTMODE_GPDMACH5|DMA_LINKEDLIST_CIRCULAR|Circular

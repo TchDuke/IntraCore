@@ -1,0 +1,465 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FMC
+Version=fmc_fixedsignals_v2_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+NORSRAM_Instance|Device|||||
+NAND_Instance|Device|||||
+SDRAM_Instance|Device|||||
+Extended|Extended Device|||||
+NSCoherentPinout1|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank1|Bank|NOR/PSRAM control||||
+DataAddressMux1|Data address multiplexing|NOR/PSRAM control||||
+MemoryType1|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth1|Data size|NOR/PSRAM control||||
+BurstAccessMode1|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity1|Wait signal polarity|NOR/PSRAM control||||
+WaitSignalActive1|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation1|Write operation|NOR/PSRAM control||||
+WaitSignal1|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode1|Extended mode|NOR/PSRAM control||||
+AsynchronousWait1|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst1|Burst write|NOR/PSRAM control||||
+ContinuousClock1|NOR/PSRAM common continuous clock|NOR/PSRAM control||||There is only one continuous clock enable bit located in sub-bank Bank 1 - NOR/PSRAM 1.
+WriteFifo1|Write FIFO|NOR/PSRAM control||||Enables or disables the write FIFO used by the FMC controller.
+PageSize1|CRAM page size|NOR/PSRAM control||||For Cellular RAM 1.5, specifies the memory page size from which a burst access is split.
+AddressSetupTime1|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime1|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime1|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration1|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision1|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency1|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode1|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime1|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime1|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime1|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration1|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision1|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency1|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode1|Extended access mode|NOR/PSRAM timing for write accesses||||
+NSCoherentPinout2|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank2|Bank|NOR/PSRAM control||||
+DataAddressMux2|Data address multiplexing|NOR/PSRAM control||||
+MemoryType2|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth2|Data size|NOR/PSRAM control||||
+BurstAccessMode2|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity2|Wait signal polarity|NOR/PSRAM control||||
+WaitSignalActive2|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation2|Write operation|NOR/PSRAM control||||
+WaitSignal2|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode2|Extended mode|NOR/PSRAM control||||
+AsynchronousWait2|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst2|Burst write|NOR/PSRAM control||||
+ContinuousClock2|NOR/PSRAM common continuous clock|NOR/PSRAM control||||There is only one continuous clock enable bit located in sub-bank Bank 1 - NOR/PSRAM 1.
+WriteFifo2|Write FIFO|NOR/PSRAM control||||Enables or disables the write FIFO used by the FMC controller.
+PageSize2|CRAM page size|NOR/PSRAM control||||For Cellular RAM 1.5, specifies the memory page size from which a burst access is split.
+AddressSetupTime2|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime2|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime2|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration2|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision2|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency2|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode2|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime2|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime2|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime2|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration2|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision2|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency2|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode2|Extended access mode|NOR/PSRAM timing for write accesses||||
+NSCoherentPinout3|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank3|Bank|NOR/PSRAM control||||
+DataAddressMux3|Data address multiplexing|NOR/PSRAM control||||
+MemoryType3|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth3|Data size|NOR/PSRAM control||||
+BurstAccessMode3|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity3|Wait signal polarity|NOR/PSRAM control||||
+WaitSignalActive3|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation3|Write operation|NOR/PSRAM control||||
+WaitSignal3|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode3|Extended mode|NOR/PSRAM control||||
+AsynchronousWait3|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst3|Burst write|NOR/PSRAM control||||
+ContinuousClock3|NOR/PSRAM common continuous clock|NOR/PSRAM control||||There is only one continuous clock enable bit located in sub-bank Bank 1 - NOR/PSRAM 1.
+WriteFifo3|Write FIFO|NOR/PSRAM control||||Enables or disables the write FIFO used by the FMC controller.
+PageSize3|CRAM page size|NOR/PSRAM control||||For Cellular RAM 1.5, specifies the memory page size from which a burst access is split.
+AddressSetupTime3|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime3|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime3|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration3|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision3|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency3|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode3|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime3|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime3|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime3|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration3|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision3|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency3|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode3|Extended access mode|NOR/PSRAM timing for write accesses||||
+NSCoherentPinout4|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank4|Bank|NOR/PSRAM control||||
+DataAddressMux4|Data address multiplexing|NOR/PSRAM control||||
+MemoryType4|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth4|Data size|NOR/PSRAM control||||
+BurstAccessMode4|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity4|Wait signal polarity|NOR/PSRAM control||||
+WaitSignalActive4|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation4|Write operation|NOR/PSRAM control||||
+WaitSignal4|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode4|Extended mode|NOR/PSRAM control||||
+AsynchronousWait4|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst4|Burst write|NOR/PSRAM control||||
+ContinuousClock4|NOR/PSRAM common continuous clock|NOR/PSRAM control||||There is only one continuous clock enable bit located in sub-bank Bank 1 - NOR/PSRAM 1.
+WriteFifo4|Write FIFO|NOR/PSRAM control||||Enables or disables the write FIFO used by the FMC controller.
+PageSize4|CRAM page size|NOR/PSRAM control||||For Cellular RAM 1.5, specifies the memory page size from which a burst access is split.
+AddressSetupTime4|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime4|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime4|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration4|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision4|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency4|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode4|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime4|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime4|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime4|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration4|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision4|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency4|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode4|Extended access mode|NOR/PSRAM timing for write accesses||||
+NandCoherentPinout1|Nand Coherent Pinout|NAND control||||
+NandBank1|Bank|NAND control||||
+NandMemoryDataWidth1|Data size|NAND control||||
+EccComputation1|ECC computation|NAND control||||
+ECCPageSize1|ECC page size|NAND control||||
+NandPageSize1|Page size|NAND characteristic information||0|4294967295|NAND memory page size (without spare area) measured in bytes for 8-bit addressing or words for 16-bit addressing.
+NandSpareAreaSize1|Spare area size|NAND characteristic information||0|4294967295|NAND memory spare area size measured in bytes for 8-bit addressing or words for 16-bit addressing.
+NandBlockSize1|Block size|NAND characteristic information||0|4294967295|NAND memory block size expressed in number of pages.
+NandBlockNbr1|Block number|NAND characteristic information||0|4294967295|NAND memory number of blocks.
+NandPlaneNbr1|Plane number|NAND characteristic information||0|4294967295|NAND memory number of planes.
+NandPlaneSize1|Plane size|NAND characteristic information||0|4294967295|NAND memory plane size measured in number of blocks.
+NandExtraCommandEnable1|Extra command enable|NAND characteristic information||||NAND extra command needed for page reading mode. This parameter is mandatory for some NAND memories. Please check the read mode sequence in the NAND device datasheet.
+Waitfeature1|Wait feature|NAND control||||
+TCLRSetupTime1|CLE low to RE low delay in HCLK cycles|NAND control||0|15|
+TARSetupTime1|ALE low to RE low delay in HCLK cycles|NAND control||0|15|
+CommonSpaceSetupTime1|Common space setup time|NAND common space timing in HCLK cycles||0|254|
+CommonSpaceWaitSetupTime1|Common space wait time|NAND common space timing in HCLK cycles||1|254|
+CommonSpaceHoldSetupTime1|Common space hold time|NAND common space timing in HCLK cycles||1|254|
+CommonSpaceHiZSetupTime1|Common space Hi-Z time|NAND common space timing in HCLK cycles||0|254|
+AttributeSpaceSetupTime1|Attribute space setup time|NAND attribute space timing in HCLK cycles||0|254|
+AttributeSpaceWaitSetupTime1|Attribute space wait time|NAND attribute space timing in HCLK cycles||1|254|
+AttributeSpaceHoldSetupTime1|Attribute space hold time|NAND attribute space timing in HCLK cycles||1|254|
+AttributeSpaceHiZSetupTime1|Attribute space Hi-Z time|NAND attribute space timing in HCLK cycles||0|254|
+SDCoherentPinout1|SDRAM Coherent Pinout|SDRAM control||||
+SDBank1|Bank|SDRAM control||||
+SDMemoryDataWidth1|Data size|SDRAM control||||
+ColumnBitsNumber1|Number of column address bits|SDRAM control||||
+RowBitsNumber1|Number of row address bits|SDRAM control||||
+InternalBankNumber1|Internal bank number|SDRAM control||||
+CASLatency1|CAS latency|SDRAM control||||Specifies the SDRAM Column Access Strobe (CAS) latency in number of memory clock cycles.
+WriteProtection1|Write protection|SDRAM control||||
+SDClockPeriod1|SDRAM common clock|SDRAM control||||Specifies the SDRAM clock period for both SDRAM banks and allows disabling the clock before changing the frequency. In this case the SDRAM must be re-initialized. The corresponding bits in the FMC_SDCR2 register are read only.
+ReadBurst1|SDRAM common burst read|SDRAM control||||Enables burst read mode. The SDRAM controller anticipates the next read commands during the CAS latency and stores data in the Read FIFO. The corresponding bit in the FMC_SDCR2 register is don't care.
+ReadPipeDelay1|SDRAM common read pipe delay|SDRAM control||||Specifies the delay, in HCLK clock cycles, for reading data after CAS latency. The corresponding bits in the FMC_SDCR2 register are read only.
+LoadToActiveDelay1|Load mode register to active delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between a Load Mode Register command and an Active or Refresh command in number of memory clock cycles. If two SDRAM devices are connected, all the accesses performed simultaneously to both devices by the Command Mode register (Load Mode Register command) are issued using the timing parameters configured for Bank 1 (TMRD (Load mode register to active delay) and TRAS (Self-refresh time) timings) in the FMC_SDTR1 register. The TRP (Row precharge delay) and TRC (Row cycle delay) timings are only configured in the FMC_SDTR1 register. If two SDRAM devices are used, the TRP and TRC timings must be programmed with the timings of the slowest device.
+ExitSelfRefreshDelay1|Exit self-refresh delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay from releasing the Self-refresh command to issuing the Activate command in number of memory clock cycles. If two SDRAM devices are used, the FMC_SDTR1 and FMC_SDTR2 registers must be programmed with the same Exit Self-refresh Delay corresponding to the slowest SDRAM device.
+SelfRefreshTime1|Self-refresh time|SDRAM timing in memory clock cycles||1|16|Specifies the minimum Self-refresh period in number of memory clock cycles.
+RowCycleDelay1|SDRAM common row cycle delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between the Refresh command and the Activate command, as well as the delay between two consecutive Refresh commands. It is expressed in number of memory clock cycles. The Row Cycle Delay is only configured in the FMC_SDTR1 register. If two SDRAM devices are used, the Row Cycle Delay must be programmed with the timings of the slowest device.
+WriteRecoveryTime1|Write recovery time|SDRAM timing in memory clock cycles||=MAX(1,MAX(SelfRefreshTime1-RCDDelay1,RowCycleDelay1-RCDDelay1-RPDelay1))|16|Specifies the delay between a Write and a Precharge command in number of memory clock cycles. WriteRecoveryTime must satisfy the following constraints: 1: WriteRecoveryTime >= SelfRefreshTime - RowToColumnDelay, 2: WriteRecoveryTime >= RowCycleDelay - RowToColumnDelay - RowPrechargeDelay. If two SDRAM devices are used, the FMC_SDTR1 and FMC_SDTR2 registers must be programmed with the same Write Recovery Time corresponding to the slowest SDRAM device.
+RPDelay1|SDRAM common row precharge delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between a Precharge command and another command in number of memory clock cycles. The Row Precharge Delay is only configured in the FMC_SDTR1 register. If two SDRAM devices are used, the Row Precharge Delay must be programmed with the timing of the slowest device.
+RCDDelay1|Row to column delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between the Activate command and a Read/Write command in number of memory clock cycles.
+SDCoherentPinout2|SDRAM Coherent Pinout|SDRAM control||||
+SDBank2|Bank|SDRAM control||||
+SDMemoryDataWidth2|Data size|SDRAM control||||
+ColumnBitsNumber2|Number of column address bits|SDRAM control||||
+RowBitsNumber2|Number of row address bits|SDRAM control||||
+InternalBankNumber2|Internal bank number|SDRAM control||||
+CASLatency2|CAS latency|SDRAM control||||Specifies the SDRAM Column Access Strobe (CAS) latency in number of memory clock cycles.
+WriteProtection2|Write protection|SDRAM control||||
+SDClockPeriod2|SDRAM common clock|SDRAM control||||Specifies the SDRAM clock period for both SDRAM banks and allows disabling the clock before changing the frequency. In this case the SDRAM must be re-initialized. The corresponding bits in the FMC_SDCR2 register are read only.
+ReadBurst2|SDRAM common burst read|SDRAM control||||Enables burst read mode. The SDRAM controller anticipates the next read commands during the CAS latency and stores data in the Read FIFO. The corresponding bit in the FMC_SDCR2 register is don't care.
+ReadPipeDelay2|SDRAM common read pipe delay|SDRAM control||||Specifies the delay, in HCLK clock cycles, for reading data after CAS latency. The corresponding bits in the FMC_SDCR2 register are read only.
+LoadToActiveDelay2|Load mode register to active delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between a Load Mode Register command and an Active or Refresh command in number of memory clock cycles. If two SDRAM devices are connected, all the accesses performed simultaneously to both devices by the Command Mode register (Load Mode Register command) are issued using the timing parameters configured for Bank 1 (TMRD (Load mode register to active delay) and TRAS (Self-refresh time) timings) in the FMC_SDTR1 register. The TRP (Row precharge delay) and TRC (Row cycle delay) timings are only configured in the FMC_SDTR1 register. If two SDRAM devices are used, the TRP and TRC timings must be programmed with the timings of the slowest device.
+ExitSelfRefreshDelay2|Exit self-refresh delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay from releasing the Self-refresh command to issuing the Activate command in number of memory clock cycles. If two SDRAM devices are used, the FMC_SDTR1 and FMC_SDTR2 registers must be programmed with the same Exit Self-refresh Delay corresponding to the slowest SDRAM device.
+SelfRefreshTime2|Self-refresh time|SDRAM timing in memory clock cycles||1|16|Specifies the minimum Self-refresh period in number of memory clock cycles.
+RowCycleDelay2|SDRAM common row cycle delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between the Refresh command and the Activate command, as well as the delay between two consecutive Refresh commands. It is expressed in number of memory clock cycles. The Row Cycle Delay is only configured in the FMC_SDTR1 register. If two SDRAM devices are used, the Row Cycle Delay must be programmed with the timings of the slowest device.
+WriteRecoveryTime2|Write recovery time|SDRAM timing in memory clock cycles||=MAX(1,MAX(SelfRefreshTime2-RCDDelay2,RowCycleDelay2-RCDDelay2-RPDelay2))|16|Specifies the delay between a Write and a Precharge command in number of memory clock cycles. WriteRecoveryTime must satisfy the following constraints: 1: WriteRecoveryTime >= SelfRefreshTime - RowToColumnDelay, 2: WriteRecoveryTime >= RowCycleDelay - RowToColumnDelay - RowPrechargeDelay. If two SDRAM devices are used, the FMC_SDTR1 and FMC_SDTR2 registers must be programmed with the same Write Recovery Time corresponding to the slowest SDRAM device.
+RPDelay2|SDRAM common row precharge delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between a Precharge command and another command in number of memory clock cycles. The Row Precharge Delay is only configured in the FMC_SDTR1 register. If two SDRAM devices are used, the Row Precharge Delay must be programmed with the timing of the slowest device.
+RCDDelay2|Row to column delay|SDRAM timing in memory clock cycles||1|16|Specifies the delay between the Activate command and a Read/Write command in number of memory clock cycles.
+
+[Values]
+# параметр|значение|подпись
+NORSRAM_Instance|FMC_NORSRAM_DEVICE|NOR/SRAM Device
+NAND_Instance|FMC_NAND_DEVICE|NAND Device
+SDRAM_Instance|FMC_SDRAM_DEVICE|SDRAM Device
+Extended|FMC_NORSRAM_EXTENDED_DEVICE|NOR/SRAM Extended Device
+NSCoherentPinout1|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+NSBank1|FMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank1|FMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank1|FMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank1|FMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux1|FMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux1|FMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType1|FMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType1|FMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType1|FMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth1|FMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth1|FMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+NSMemoryDataWidth1|FMC_NORSRAM_MEM_BUS_WIDTH_32|32 bits
+BurstAccessMode1|FMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode1|FMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity1|FMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity1|FMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WaitSignalActive1|FMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive1|FMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation1|FMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation1|FMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal1|FMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal1|FMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode1|FMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode1|FMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait1|FMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait1|FMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst1|FMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst1|FMC_WRITE_BURST_DISABLE|Disabled
+ContinuousClock1|FMC_CONTINUOUS_CLOCK_SYNC_ONLY|CLK only generated during sync accesses
+ContinuousClock1|FMC_CONTINUOUS_CLOCK_SYNC_ASYNC|CLK generated continuously
+WriteFifo1|FMC_WRITE_FIFO_DISABLE|Disabled
+WriteFifo1|FMC_WRITE_FIFO_ENABLE|Enabled
+PageSize1|FMC_PAGE_SIZE_NONE|None
+PageSize1|FMC_PAGE_SIZE_128|128 bytes
+PageSize1|FMC_PAGE_SIZE_256|256 bytes
+PageSize1|FMC_PAGE_SIZE_512|512 bytes
+PageSize1|FMC_PAGE_SIZE_1024|1024 bytes
+AccessMode1|FMC_ACCESS_MODE_A|A
+AccessMode1|FMC_ACCESS_MODE_B|B
+AccessMode1|FMC_ACCESS_MODE_C|C
+AccessMode1|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FMC_ACCESS_MODE_B|B
+ExtendedAccessMode1|FMC_ACCESS_MODE_C|C
+ExtendedAccessMode1|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FMC_ACCESS_MODE_A|A
+NSCoherentPinout2|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout2|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout2|MEMORY_PINOUT_KO|PINOUT KO
+NSBank2|FMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank2|FMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank2|FMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank2|FMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux2|FMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux2|FMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType2|FMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType2|FMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType2|FMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth2|FMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth2|FMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+NSMemoryDataWidth2|FMC_NORSRAM_MEM_BUS_WIDTH_32|32 bits
+BurstAccessMode2|FMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode2|FMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity2|FMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity2|FMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WaitSignalActive2|FMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive2|FMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation2|FMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation2|FMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal2|FMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal2|FMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode2|FMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode2|FMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait2|FMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait2|FMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst2|FMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst2|FMC_WRITE_BURST_DISABLE|Disabled
+ContinuousClock2|FMC_CONTINUOUS_CLOCK_SYNC_ONLY|CLK only generated during sync accesses
+ContinuousClock2|FMC_CONTINUOUS_CLOCK_SYNC_ASYNC|CLK generated continuously
+WriteFifo2|FMC_WRITE_FIFO_DISABLE|Disabled
+WriteFifo2|FMC_WRITE_FIFO_ENABLE|Enabled
+PageSize2|FMC_PAGE_SIZE_NONE|None
+PageSize2|FMC_PAGE_SIZE_128|128 bytes
+PageSize2|FMC_PAGE_SIZE_256|256 bytes
+PageSize2|FMC_PAGE_SIZE_512|512 bytes
+PageSize2|FMC_PAGE_SIZE_1024|1024 bytes
+AccessMode2|FMC_ACCESS_MODE_A|A
+AccessMode2|FMC_ACCESS_MODE_B|B
+AccessMode2|FMC_ACCESS_MODE_C|C
+AccessMode2|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode2|FMC_ACCESS_MODE_B|B
+ExtendedAccessMode2|FMC_ACCESS_MODE_C|C
+ExtendedAccessMode2|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode2|FMC_ACCESS_MODE_A|A
+NSCoherentPinout3|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout3|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout3|MEMORY_PINOUT_KO|PINOUT KO
+NSBank3|FMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank3|FMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank3|FMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank3|FMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux3|FMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux3|FMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType3|FMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType3|FMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType3|FMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth3|FMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth3|FMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+NSMemoryDataWidth3|FMC_NORSRAM_MEM_BUS_WIDTH_32|32 bits
+BurstAccessMode3|FMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode3|FMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity3|FMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity3|FMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WaitSignalActive3|FMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive3|FMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation3|FMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation3|FMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal3|FMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal3|FMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode3|FMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode3|FMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait3|FMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait3|FMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst3|FMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst3|FMC_WRITE_BURST_DISABLE|Disabled
+ContinuousClock3|FMC_CONTINUOUS_CLOCK_SYNC_ONLY|CLK only generated during sync accesses
+ContinuousClock3|FMC_CONTINUOUS_CLOCK_SYNC_ASYNC|CLK generated continuously
+WriteFifo3|FMC_WRITE_FIFO_DISABLE|Disabled
+WriteFifo3|FMC_WRITE_FIFO_ENABLE|Enabled
+PageSize3|FMC_PAGE_SIZE_NONE|None
+PageSize3|FMC_PAGE_SIZE_128|128 bytes
+PageSize3|FMC_PAGE_SIZE_256|256 bytes
+PageSize3|FMC_PAGE_SIZE_512|512 bytes
+PageSize3|FMC_PAGE_SIZE_1024|1024 bytes
+AccessMode3|FMC_ACCESS_MODE_A|A
+AccessMode3|FMC_ACCESS_MODE_B|B
+AccessMode3|FMC_ACCESS_MODE_C|C
+AccessMode3|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode3|FMC_ACCESS_MODE_B|B
+ExtendedAccessMode3|FMC_ACCESS_MODE_C|C
+ExtendedAccessMode3|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode3|FMC_ACCESS_MODE_A|A
+NSCoherentPinout4|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout4|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout4|MEMORY_PINOUT_KO|PINOUT KO
+NSBank4|FMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank4|FMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank4|FMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank4|FMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux4|FMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux4|FMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType4|FMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType4|FMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType4|FMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth4|FMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth4|FMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+NSMemoryDataWidth4|FMC_NORSRAM_MEM_BUS_WIDTH_32|32 bits
+BurstAccessMode4|FMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode4|FMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity4|FMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity4|FMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WaitSignalActive4|FMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive4|FMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation4|FMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation4|FMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal4|FMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal4|FMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode4|FMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode4|FMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait4|FMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait4|FMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst4|FMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst4|FMC_WRITE_BURST_DISABLE|Disabled
+ContinuousClock4|FMC_CONTINUOUS_CLOCK_SYNC_ONLY|CLK only generated during sync accesses
+ContinuousClock4|FMC_CONTINUOUS_CLOCK_SYNC_ASYNC|CLK generated continuously
+WriteFifo4|FMC_WRITE_FIFO_DISABLE|Disabled
+WriteFifo4|FMC_WRITE_FIFO_ENABLE|Enabled
+PageSize4|FMC_PAGE_SIZE_NONE|None
+PageSize4|FMC_PAGE_SIZE_128|128 bytes
+PageSize4|FMC_PAGE_SIZE_256|256 bytes
+PageSize4|FMC_PAGE_SIZE_512|512 bytes
+PageSize4|FMC_PAGE_SIZE_1024|1024 bytes
+AccessMode4|FMC_ACCESS_MODE_A|A
+AccessMode4|FMC_ACCESS_MODE_B|B
+AccessMode4|FMC_ACCESS_MODE_C|C
+AccessMode4|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode4|FMC_ACCESS_MODE_B|B
+ExtendedAccessMode4|FMC_ACCESS_MODE_C|C
+ExtendedAccessMode4|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode4|FMC_ACCESS_MODE_A|A
+NandCoherentPinout1|MEMORY_WAIT_KO|PINOUT KO
+NandCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+NandCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+NandBank1|FMC_NAND_BANK2|NAND bank 2
+NandBank1|FMC_NAND_BANK3|NAND bank 3
+NandMemoryDataWidth1|FMC_NAND_MEM_BUS_WIDTH_8|8 bits
+NandMemoryDataWidth1|FMC_NAND_MEM_BUS_WIDTH_16|16 bits
+EccComputation1|FMC_NAND_ECC_DISABLE|Disabled
+EccComputation1|FMC_NAND_ECC_ENABLE|Enabled
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_256BYTE|256 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_512BYTE|512 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_1024BYTE|1024 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_2048BYTE|2048 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_4096BYTE|4096 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_8192BYTE|8192 bytes
+Waitfeature1|FMC_NAND_WAIT_FEATURE_ENABLE|Enabled
+Waitfeature1|FMC_NAND_WAIT_FEATURE_DISABLE|Disabled
+SDCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+SDCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+SDBank1|FMC_SDRAM_BANK1|SDRAM bank 1
+SDBank1|FMC_SDRAM_BANK2|SDRAM bank 2
+SDMemoryDataWidth1|FMC_SDRAM_MEM_BUS_WIDTH_8|8 bits
+SDMemoryDataWidth1|FMC_SDRAM_MEM_BUS_WIDTH_16|16 bits
+SDMemoryDataWidth1|FMC_SDRAM_MEM_BUS_WIDTH_32|32 bits
+ColumnBitsNumber1|FMC_SDRAM_COLUMN_BITS_NUM_8|8 bits
+ColumnBitsNumber1|FMC_SDRAM_COLUMN_BITS_NUM_9|9 bits
+ColumnBitsNumber1|FMC_SDRAM_COLUMN_BITS_NUM_10|10 bits
+ColumnBitsNumber1|FMC_SDRAM_COLUMN_BITS_NUM_11|11 bits
+RowBitsNumber1|FMC_SDRAM_ROW_BITS_NUM_13|13 bits
+RowBitsNumber1|FMC_SDRAM_ROW_BITS_NUM_12|12 bits
+RowBitsNumber1|FMC_SDRAM_ROW_BITS_NUM_11|11 bits
+InternalBankNumber1|FMC_SDRAM_INTERN_BANKS_NUM_2|2 banks
+InternalBankNumber1|FMC_SDRAM_INTERN_BANKS_NUM_4|4 banks
+CASLatency1|FMC_SDRAM_CAS_LATENCY_1|1 memory clock cycle
+CASLatency1|FMC_SDRAM_CAS_LATENCY_2|2 memory clock cycles
+CASLatency1|FMC_SDRAM_CAS_LATENCY_3|3 memory clock cycles
+WriteProtection1|FMC_SDRAM_WRITE_PROTECTION_DISABLE|Disabled
+WriteProtection1|FMC_SDRAM_WRITE_PROTECTION_ENABLE|Enabled
+SDClockPeriod1|FMC_SDRAM_CLOCK_DISABLE|Disabled
+SDClockPeriod1|FMC_SDRAM_CLOCK_PERIOD_2|2 HCLK clock cycles
+SDClockPeriod1|FMC_SDRAM_CLOCK_PERIOD_3|3 HCLK clock cycles
+ReadBurst1|FMC_SDRAM_RBURST_DISABLE|Disabled
+ReadBurst1|FMC_SDRAM_RBURST_ENABLE|Enabled
+ReadPipeDelay1|FMC_SDRAM_RPIPE_DELAY_0|0 HCLK clock cycle
+ReadPipeDelay1|FMC_SDRAM_RPIPE_DELAY_1|1 HCLK clock cycle
+ReadPipeDelay1|FMC_SDRAM_RPIPE_DELAY_2|2 HCLK clock cycles
+SDCoherentPinout2|MEMORY_PINOUT_OK|PINOUT OK
+SDCoherentPinout2|MEMORY_PINOUT_KO|PINOUT KO
+SDBank2|FMC_SDRAM_BANK1|SDRAM bank 1
+SDBank2|FMC_SDRAM_BANK2|SDRAM bank 2
+SDMemoryDataWidth2|FMC_SDRAM_MEM_BUS_WIDTH_8|8 bits
+SDMemoryDataWidth2|FMC_SDRAM_MEM_BUS_WIDTH_16|16 bits
+SDMemoryDataWidth2|FMC_SDRAM_MEM_BUS_WIDTH_32|32 bits
+ColumnBitsNumber2|FMC_SDRAM_COLUMN_BITS_NUM_8|8 bits
+ColumnBitsNumber2|FMC_SDRAM_COLUMN_BITS_NUM_9|9 bits
+ColumnBitsNumber2|FMC_SDRAM_COLUMN_BITS_NUM_10|10 bits
+ColumnBitsNumber2|FMC_SDRAM_COLUMN_BITS_NUM_11|11 bits
+RowBitsNumber2|FMC_SDRAM_ROW_BITS_NUM_13|13 bits
+RowBitsNumber2|FMC_SDRAM_ROW_BITS_NUM_12|12 bits
+RowBitsNumber2|FMC_SDRAM_ROW_BITS_NUM_11|11 bits
+InternalBankNumber2|FMC_SDRAM_INTERN_BANKS_NUM_2|2 banks
+InternalBankNumber2|FMC_SDRAM_INTERN_BANKS_NUM_4|4 banks
+CASLatency2|FMC_SDRAM_CAS_LATENCY_1|1 memory clock cycle
+CASLatency2|FMC_SDRAM_CAS_LATENCY_2|2 memory clock cycles
+CASLatency2|FMC_SDRAM_CAS_LATENCY_3|3 memory clock cycles
+WriteProtection2|FMC_SDRAM_WRITE_PROTECTION_DISABLE|Disabled
+WriteProtection2|FMC_SDRAM_WRITE_PROTECTION_ENABLE|Enabled
+SDClockPeriod2|FMC_SDRAM_CLOCK_DISABLE|Disabled
+SDClockPeriod2|FMC_SDRAM_CLOCK_PERIOD_2|2 HCLK clock cycles
+SDClockPeriod2|FMC_SDRAM_CLOCK_PERIOD_3|3 HCLK clock cycles
+ReadBurst2|FMC_SDRAM_RBURST_DISABLE|Disabled
+ReadBurst2|FMC_SDRAM_RBURST_ENABLE|Enabled
+ReadPipeDelay2|FMC_SDRAM_RPIPE_DELAY_0|0 HCLK clock cycle
+ReadPipeDelay2|FMC_SDRAM_RPIPE_DELAY_1|1 HCLK clock cycle
+ReadPipeDelay2|FMC_SDRAM_RPIPE_DELAY_2|2 HCLK clock cycles

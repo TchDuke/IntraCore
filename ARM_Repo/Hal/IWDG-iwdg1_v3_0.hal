@@ -1,0 +1,24 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=IWDG
+Version=iwdg1_v3_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Prescaler|IWDG counter clock prescaler|Watchdog Clocking||||These bits are written by software to select the prescaler divider feeding the counter clock.
+Window|IWDG window value|Watchdog Clocking||0|4095|These bits contain the high limit of the window value to be compared with the downcounter.
+Reload|IWDG down-counter reload value|Watchdog Clocking||0|4095|These bits are written by software to define the value to be loaded in the watchdog counter each time the value 0xAAAA is written in the IWDG key register (IWDG_KR). The watchdog counter counts down from this value.
+EWI|IWDG Early Wakeup Interrupt|Watchdog Interrupt||0|4095|The IWDG offers the possibility to generate an early interrupt depending on the value of the down-counter. The early interrupt is enabled by setting the EWIE bit of the IWDG early wakeup interrupt register (IWDG_EWCR) to 1. This parameter must be a number between 0 and 0x0FFF. Value 0 means that EWI is disabled.
+
+[Values]
+# параметр|значение|подпись
+Prescaler|IWDG_PRESCALER_4|4
+Prescaler|IWDG_PRESCALER_8|8
+Prescaler|IWDG_PRESCALER_16|16
+Prescaler|IWDG_PRESCALER_32|32
+Prescaler|IWDG_PRESCALER_64|64
+Prescaler|IWDG_PRESCALER_128|128
+Prescaler|IWDG_PRESCALER_256|256
+Prescaler|IWDG_PRESCALER_512|512
+Prescaler|IWDG_PRESCALER_1024|1024

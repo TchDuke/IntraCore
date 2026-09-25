@@ -1,0 +1,40 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=AES
+Version=aes3_v1_0_U0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Algorithm|Data encryption type|Algorithm||||AES Data encryption types list
+DataType|Data type|Parameters||||AES Data Type selection: 32-bit data, 16-bit data, 8-bit data or 1-bit string. This parameter can be a value of @ref CRYP_Data_Type. Possible values are: CRYP_DATATYPE_32B: 32-bit data type (no swapping) CRYP_DATATYPE_16B: 16-bit data type (half-word swapping) CRYP_DATATYPE_8B: 8-bit data type (byte swapping) CRYP_DATATYPE_1B: 1-bit data type (bit swapping)
+KeySize|KeySize|Parameters||||Key size selection: 128 or 256 bit key length. This parameter can be a value of @ref CRYP_Key_Size. Possible values are: CRYP_KEYSIZE_128B CRYP_KEYSIZE_256B
+pKey|Encryption/Decryption key|Parameters||||Encryption/Decryption key
+pInitVect|Initialization vector|Parameters||||Initialization Vector used for CTR, CBC,GCM GMAC, CMAC (and CCM when applicable) modes
+Header|Header|Parameters||||The header also known as Additional Authentication Data is used for authentication
+HeaderInput|Header(Additional Authentication Data)|Parameters||||The header, also known as Additional Authentication Data in GCM mode is used as first part of the message just after the Initial Counter Block (ICB), and precede the plain text message. Input format: hexadecimal (ex: 0123456789abcdef)
+HeaderSize|Header size|Parameters||4|4294967295|The size of header buffer in word
+B0|B0|Parameters||||One 16-byte first authentication block, part of CBC-MAC mode Counter
+DataWidthUnit|Data width unit|Parameters||||Data With Unit.By default, size unit is word
+HeaderWidthUnit|Header width unit|Parameters||||Header Width Unit.By default, size unit is word
+KeyIVConfigSkip|Key and IV configuration skip|Parameters||||CRYP peripheral Key and IV configuration skip, to config Key and Initialization Vector only once and to skip configuration for consecutive processings. This parameter can be a value of @ref CRYP_Configuration_Skip
+
+[Values]
+# параметр|значение|подпись
+Algorithm|CRYP_AES_ECB|AES ECB
+Algorithm|CRYP_AES_CBC|AES CBC
+Algorithm|CRYP_AES_CTR|AES CTR
+Algorithm|CRYP_AES_GCM_GMAC|AES GCM GMAC
+Algorithm|CRYP_AES_CCM|AES CCM
+DataType|CRYP_DATATYPE_32B|32b(no swapping)
+DataType|CRYP_DATATYPE_16B|16b(half-word swapping)
+DataType|CRYP_DATATYPE_8B|8b(byte swapping)
+DataType|CRYP_DATATYPE_1B|1b(bit swapping)
+KeySize|CRYP_KEYSIZE_128B|128b
+KeySize|CRYP_KEYSIZE_256B|256b
+DataWidthUnit|CRYP_DATAWIDTHUNIT_WORD|Word
+DataWidthUnit|CRYP_DATAWIDTHUNIT_BYTE|Byte
+HeaderWidthUnit|CRYP_HEADERWIDTHUNIT_WORD|Word
+HeaderWidthUnit|CRYP_HEADERWIDTHUNIT_BYTE|Byte
+KeyIVConfigSkip|CRYP_KEYIVCONFIG_ALWAYS|Always
+KeyIVConfigSkip|CRYP_KEYIVCONFIG_ONCE|Once

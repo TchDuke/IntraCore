@@ -1,0 +1,134 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FMC
+Version=f4_nornandmux_fmc_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+NORSRAM_Instance|Device|||||
+NAND_Instance|Device|||||
+Extended|Extended Device|||||
+NSCoherentPinout1|NS Coherent Pinout|NOR/PSRAM control||||
+NSBank1|Bank|NOR/PSRAM control||||
+DataAddressMux1|Data address multiplexing|NOR/PSRAM control||||
+MemoryType1|Memory type|NOR/PSRAM control||||
+NSMemoryDataWidth1|Data size|NOR/PSRAM control||||
+BurstAccessMode1|Burst read|NOR/PSRAM control||||
+WaitSignalPolarity1|Wait signal polarity|NOR/PSRAM control||||
+WrapMode1|Wrap mode|NOR/PSRAM control||||
+WaitSignalActive1|Wait timing configuration|NOR/PSRAM control||||
+WriteOperation1|Write operation|NOR/PSRAM control||||
+WaitSignal1|Wait state insertion|NOR/PSRAM control||||
+ExtendedMode1|Extended mode|NOR/PSRAM control||||
+AsynchronousWait1|Asynchronous wait|NOR/PSRAM control||||
+WriteBurst1|Burst write|NOR/PSRAM control||||
+ContinuousClock1|NOR/PSRAM common continuous clock|NOR/PSRAM control||||There is only one continuous clock enable bit located in sub-bank Bank 1 - NOR/PSRAM 1.
+PageSize1|CRAM page size|NOR/PSRAM control||||For Cellular RAM 1.5, specifies the memory page size from which a burst access is split.
+AddressSetupTime1|Address setup time in FMC clock cycles|NOR/PSRAM timing||0|15|
+AddressHoldTime1|Address hold time in FMC clock cycles|NOR/PSRAM timing||1|15|
+DataSetupTime1|Data setup time in FMC clock cycles|NOR/PSRAM timing||1|255|
+BusTurnAroundDuration1|Bus turn around time in FMC clock cycles|NOR/PSRAM timing||0|15|
+CLKDivision1|CLK clock divide ratio|NOR/PSRAM timing||2|16|
+DataLatency1|Data latency in CLK clock cycles|NOR/PSRAM timing||2|17|
+AccessMode1|Access mode|NOR/PSRAM timing||||
+ExtendedAddressSetupTime1|Extended address setup time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedAddressHoldTime1|Extended address hold time|NOR/PSRAM timing for write accesses||1|15|
+ExtendedDataSetupTime1|Extended data setup time|NOR/PSRAM timing for write accesses||1|255|
+ExtendedBusTurnAroundDuration1|Extended bus turn around time|NOR/PSRAM timing for write accesses||0|15|
+ExtendedCLKDivision1|Extended CLK clock divide ratio|NOR/PSRAM timing for write accesses||||
+ExtendedDataLatency1|Extended data latency|NOR/PSRAM timing for write accesses||||
+ExtendedAccessMode1|Extended access mode|NOR/PSRAM timing for write accesses||||
+NandCoherentPinout1|Nand Coherent Pinout|NAND control||||
+NandBank1|Bank|NAND control||||
+NandMemoryDataWidth1|Data size|NAND control||||
+EccComputation1|ECC computation|NAND control||||
+ECCPageSize1|ECC page size|NAND control||||
+NandPageSize1|Page size|NAND characteristic information||0|4294967295|NAND memory page size (without spare area) measured in bytes for 8-bit addressing or words for 16-bit addressing.
+NandSpareAreaSize1|Spare area size|NAND characteristic information||0|4294967295|NAND memory spare area size measured in bytes for 8-bit addressing or words for 16-bit addressing.
+NandBlockSize1|Block size|NAND characteristic information||0|4294967295|NAND memory block size expressed in number of pages.
+NandBlockNbr1|Block number|NAND characteristic information||0|4294967295|NAND memory number of blocks.
+NandPlaneNbr1|Plane number|NAND characteristic information||0|4294967295|NAND memory number of planes.
+NandPlaneSize1|Plane size|NAND characteristic information||0|4294967295|NAND memory plane size measured in number of blocks.
+NandExtraCommandEnable1|Extra command enable|NAND characteristic information||||NAND extra command needed for page reading mode. This parameter is mandatory for some NAND memories. Please check the read mode sequence in the NAND device datasheet.
+Waitfeature1|Wait feature|NAND control||||
+TCLRSetupTime1|CLE low to RE low delay in HCLK cycles|NAND control||0|15|
+TARSetupTime1|ALE low to RE low delay in HCLK cycles|NAND control||0|15|
+CommonSpaceSetupTime1|Common space setup time|NAND common space timing in HCLK cycles||0|254|
+CommonSpaceWaitSetupTime1|Common space wait time|NAND common space timing in HCLK cycles||1|254|
+CommonSpaceHoldSetupTime1|Common space hold time|NAND common space timing in HCLK cycles||1|254|
+CommonSpaceHiZSetupTime1|Common space Hi-Z time|NAND common space timing in HCLK cycles||0|254|
+AttributeSpaceSetupTime1|Attribute space setup time|NAND attribute space timing in HCLK cycles||0|254|
+AttributeSpaceWaitSetupTime1|Attribute space wait time|NAND attribute space timing in HCLK cycles||1|254|
+AttributeSpaceHoldSetupTime1|Attribute space hold time|NAND attribute space timing in HCLK cycles||1|254|
+AttributeSpaceHiZSetupTime1|Attribute space Hi-Z time|NAND attribute space timing in HCLK cycles||0|254|
+
+[Values]
+# параметр|значение|подпись
+NORSRAM_Instance|FMC_NORSRAM_DEVICE|NOR/SRAM Device
+NAND_Instance|FMC_NAND_DEVICE|NAND Device
+Extended|FMC_NORSRAM_EXTENDED_DEVICE|NOR/SRAM Extended Device
+NSCoherentPinout1|MEMORY_NADV_KO|NADV KO
+NSCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+NSCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+NSBank1|FMC_NORSRAM_BANK1|Bank 1 NOR/PSRAM 1
+NSBank1|FMC_NORSRAM_BANK2|Bank 1 NOR/PSRAM 2
+NSBank1|FMC_NORSRAM_BANK3|Bank 1 NOR/PSRAM 3
+NSBank1|FMC_NORSRAM_BANK4|Bank 1 NOR/PSRAM 4
+DataAddressMux1|FMC_DATA_ADDRESS_MUX_DISABLE|Disabled
+DataAddressMux1|FMC_DATA_ADDRESS_MUX_ENABLE|Enabled
+MemoryType1|FMC_MEMORY_TYPE_SRAM|SRAM
+MemoryType1|FMC_MEMORY_TYPE_PSRAM|PSRAM
+MemoryType1|FMC_MEMORY_TYPE_NOR|NOR Flash
+NSMemoryDataWidth1|FMC_NORSRAM_MEM_BUS_WIDTH_8|8 bits
+NSMemoryDataWidth1|FMC_NORSRAM_MEM_BUS_WIDTH_16|16 bits
+NSMemoryDataWidth1|FMC_NORSRAM_MEM_BUS_WIDTH_32|32 bits
+BurstAccessMode1|FMC_BURST_ACCESS_MODE_ENABLE|Enabled
+BurstAccessMode1|FMC_BURST_ACCESS_MODE_DISABLE|Disabled
+WaitSignalPolarity1|FMC_WAIT_SIGNAL_POLARITY_LOW|Low polarity
+WaitSignalPolarity1|FMC_WAIT_SIGNAL_POLARITY_HIGH|High polarity
+WrapMode1|FMC_WRAP_MODE_DISABLE|Disabled
+WaitSignalActive1|FMC_WAIT_TIMING_BEFORE_WS|Wait active before wait state
+WaitSignalActive1|FMC_WAIT_TIMING_DURING_WS|Wait active during wait state
+WriteOperation1|FMC_WRITE_OPERATION_DISABLE|Disabled
+WriteOperation1|FMC_WRITE_OPERATION_ENABLE|Enabled
+WaitSignal1|FMC_WAIT_SIGNAL_ENABLE|Enabled
+WaitSignal1|FMC_WAIT_SIGNAL_DISABLE|Disabled
+ExtendedMode1|FMC_EXTENDED_MODE_DISABLE|Disabled
+ExtendedMode1|FMC_EXTENDED_MODE_ENABLE|Enabled
+AsynchronousWait1|FMC_ASYNCHRONOUS_WAIT_ENABLE|Enabled
+AsynchronousWait1|FMC_ASYNCHRONOUS_WAIT_DISABLE|Disabled
+WriteBurst1|FMC_WRITE_BURST_ENABLE|Enabled
+WriteBurst1|FMC_WRITE_BURST_DISABLE|Disabled
+ContinuousClock1|FMC_CONTINUOUS_CLOCK_SYNC_ONLY|CLK only generated during sync accesses
+ContinuousClock1|FMC_CONTINUOUS_CLOCK_SYNC_ASYNC|CLK generated continuously
+PageSize1|FMC_PAGE_SIZE_NONE|None
+PageSize1|FMC_PAGE_SIZE_128|128 bytes
+PageSize1|FMC_PAGE_SIZE_256|256 bytes
+PageSize1|FMC_PAGE_SIZE_512|512 bytes
+PageSize1|FMC_PAGE_SIZE_1024|1024 bytes
+AccessMode1|FMC_ACCESS_MODE_A|A
+AccessMode1|FMC_ACCESS_MODE_B|B
+AccessMode1|FMC_ACCESS_MODE_C|C
+AccessMode1|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FMC_ACCESS_MODE_B|B
+ExtendedAccessMode1|FMC_ACCESS_MODE_C|C
+ExtendedAccessMode1|FMC_ACCESS_MODE_D|D
+ExtendedAccessMode1|FMC_ACCESS_MODE_A|A
+NandCoherentPinout1|MEMORY_WAIT_KO|PINOUT KO
+NandCoherentPinout1|MEMORY_PINOUT_OK|PINOUT OK
+NandCoherentPinout1|MEMORY_PINOUT_KO|PINOUT KO
+NandBank1|FMC_NAND_BANK2|NAND bank 2
+NandBank1|FMC_NAND_BANK3|NAND bank 3
+NandMemoryDataWidth1|FMC_NAND_PCC_MEM_BUS_WIDTH_8|8 bits
+NandMemoryDataWidth1|FMC_NAND_PCC_MEM_BUS_WIDTH_16|16 bits
+EccComputation1|FMC_NAND_ECC_DISABLE|Disabled
+EccComputation1|FMC_NAND_ECC_ENABLE|Enabled
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_256BYTE|256 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_512BYTE|512 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_1024BYTE|1024 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_2048BYTE|2048 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_4096BYTE|4096 bytes
+ECCPageSize1|FMC_NAND_ECC_PAGE_SIZE_8192BYTE|8192 bytes
+Waitfeature1|FMC_NAND_PCC_WAIT_FEATURE_ENABLE|Enabled
+Waitfeature1|FMC_NAND_PCC_WAIT_FEATURE_DISABLE|Disabled

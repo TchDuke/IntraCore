@@ -1,0 +1,48 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMP
+Version=advmu_pvm_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InvertingInput|Inverting Input|Pinout Parameters||||
+NonInvertingInput|Non Inverting Input|Pinout Parameters||||
+WindowMode|Window Mode|Pinout Parameters||||
+Mode|Speed Mode|Basic Parameters||||
+TriggerMode|Trigger Mode|Basic Parameters||||
+OutputPol|Output Polarity|Basic Parameters||||
+LPTIMConnection|Low Power Timer (LPTIM) Connection|Basic Parameters||||
+
+[Values]
+# параметр|значение|подпись
+InvertingInput|COMP_INPUT_MINUS_IO1|I/O1 (PA0)
+InvertingInput|COMP_INPUT_MINUS_IO2|I/O2 (PB3)
+InvertingInput|COMP_INPUT_MINUS_DAC1_CH2|DAC_OUT2 (PA5)
+InvertingInput|COMP_INPUT_MINUS_DAC1_CH1|DAC_OUT1 (PA4)
+InvertingInput|COMP_INPUT_MINUS_VREFINT|VREFINT
+InvertingInput|COMP_INPUT_MINUS_1_4VREFINT|1/4 VREFINT
+InvertingInput|COMP_INPUT_MINUS_1_2VREFINT|1/2 VREFINT
+InvertingInput|COMP_INPUT_MINUS_3_4VREFINT|3/4 VREFINT
+NonInvertingInput|COMP_INPUT_PLUS_IO1|I/O1 (PA3)
+NonInvertingInput|COMP_INPUT_PLUS_IO2|I/O2 (PB4)
+NonInvertingInput|COMP_INPUT_PLUS_IO3|I/O3 (PB5)
+NonInvertingInput|COMP_INPUT_PLUS_IO4|I/O4 (PB6)
+NonInvertingInput|COMP_INPUT_PLUS_IO5|I/O5 (PB7)
+NonInvertingInput|COMP_INPUT_PLUS_IO6|I/O6 (PA7)
+WindowMode|COMP_WINDOWMODE_DISABLE|Disabled
+WindowMode|COMP_WINDOWMODE_COMP1_INPUT_PLUS_COMMON|Enabled
+Mode|COMP_POWERMODE_MEDIUMSPEED|High Speed
+Mode|COMP_POWERMODE_ULTRALOWPOWER|Low Speed
+TriggerMode|COMP_TRIGGERMODE_NONE|None
+TriggerMode|COMP_TRIGGERMODE_EVENT_RISING|Event mode with Rising Edge detection
+TriggerMode|COMP_TRIGGERMODE_EVENT_FALLING|Event mode with Falling Edge detection
+TriggerMode|COMP_TRIGGERMODE_EVENT_RISING_FALLING|Event mode with Rising/Falling Edges detection
+TriggerMode|COMP_TRIGGERMODE_IT_RISING|Interrupt mode with Rising Edge detection
+TriggerMode|COMP_TRIGGERMODE_IT_FALLING|Interrupt mode with Falling Edge detection
+TriggerMode|COMP_TRIGGERMODE_IT_RISING_FALLING|Interrupt mode with Rising/Falling Edges detection
+OutputPol|COMP_OUTPUTPOL_NONINVERTED|Not Inverted
+OutputPol|COMP_OUTPUTPOL_INVERTED|Inverted
+LPTIMConnection|COMP_LPTIMCONNECTION_DISABLED|Disabled
+LPTIMConnection|COMP_LPTIMCONNECTION_IN1_ENABLED|Enable COMP to LPTIM IN1 connection
+LPTIMConnection|COMP_LPTIMCONNECTION_IN2_ENABLED|Enable COMP to LPTIM IN2 connection

@@ -1,0 +1,430 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPBAMSPI
+Version=STM32U5xx
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InstanceHAL|HAL IP Instance|||||
+CLKPolarity|Clock Polarity (CPOL)|SPI Parameters - Clock||0|1|
+CLKPhase|Clock Phase (CPHA)|SPI Parameters - Clock||0|1|1 Edge means the first clock transition is the first data capture edge (value 0) AND 2 Edge means the second clock transition is the first data capture edge (value 1)
+BaudRatePrescaler|Prescaler (for Baud Rate)|SPI Parameters - Clock||||
+DataSize|Data Size|SPI Parameters - Data||||
+FirstBit|First Bit|SPI Parameters - Data||0|1|
+AM_TriggerState|State|SPI Parameters - Autonomous Mode||||Autonomous Mode activation.
+AM_TriggerSelection|Trigger Source|SPI Parameters - Autonomous Mode||||Autonomous Mode Trigger Source.
+AM_TriggerPolarity|Trigger Transition|SPI Parameters - Autonomous Mode||||Autonomous Mode Trigger Transition.
+WakeupIT_RXP|Receive Packet|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_TXP|Transmit Packet|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_DXP|Duplex Packet|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_EOT|End Of Transfer Packet|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_TRANSMIT_CONFIG|Wakeup Interrupt TRANSMIT CONFIG|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_TRANSMIT|Wakeup Interrupt TRANSMIT|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_RECEIVE_CONFIG|Wakeup Interrupt RECEIVE CONFIG|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_RECEIVE|Wakeup Interrupt RECEIVE|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_TRANSMITRECEIVE_CONFIG|Wakeup Interrupt TRANSMITRECEIVE CONFIG|SPI Parameters - WakeUp Interrupts||||
+WakeupIT_TRANSMITRECEIVE|Wakeup Interrupt TRANSMITRECEIVE|SPI Parameters - WakeUp Interrupts||||
+Size|Number of Data|SPI Parameters - R/W Buffers||1|1024|
+WDBufferName|Write Buffer Name|SPI Parameters - R/W Buffers||||uint32 buffer address
+WDBufferAddr|Write Buffer Address|SPI Parameters - R/W Buffers||||uint32 buffer address
+WDBufferOffset|Write Buffer Offset|SPI Parameters - R/W Buffers||||uint32 buffer address
+RDBufferName|Read Buffer Name|SPI Parameters - R/W Buffers||||uint32 buffer address
+RDBufferAddr|Read Buffer Address|SPI Parameters - R/W Buffers||||uint32 buffer address
+RDBufferOffset|Read Buffer Offset|SPI Parameters - R/W Buffers||||uint32 buffer address
+QUEUE_NAME|Define the name of your Queue|||||
+QUEUE_NAME_RX|Define the name of your Queue for RX|||||
+QUEUE_NAME_TX|Define the name of your Queue for TX|||||
+DESCRIPTOR_NAME_TRANSMIT_CONFIG|name of the descriptor|||||
+DESCRIPTOR_NAME_TRANSMIT_DATA|name of the descriptor|||||
+DESCRIPTOR_NAME_TRANSMIT|name of the descriptor|||||
+DESCRIPTOR_NAME_RECEIVE_CONFIG|name of the descriptor|||||
+DESCRIPTOR_NAME_RECEIVE_DATA|name of the descriptor|||||
+DESCRIPTOR_NAME_RECEIVE|name of the descriptor|||||
+DESCRIPTOR_NAME_TRANSMITRECEIVE_CONFIG|name of the descriptor|||||
+DESCRIPTOR_NAME_TRANSMITRECEIVE_DATA_RX|name of the descriptor|||||
+DESCRIPTOR_NAME_TRANSMITRECEIVE_DATA_TX|name of the descriptor|||||
+DESCRIPTOR_NAME_TRANSMITRECEIVE_RX|name of the descriptor|||||
+DESCRIPTOR_NAME_TRANSMITRECEIVE_TX|name of the descriptor|||||
+CircularNode_TRANSMIT_CONFIG|Circular Node for TRANSMIT_CONFIG|TRANSMIT CONFIG||||description
+CircularNode_TRANSMIT_DATA|Circular Node for TRANSMIT_DATA|TRANSMIT DATA||||description
+CircularNode_TRANSMIT|Circular Node for TRANSMIT|TRANSMIT||||description
+CircularNode_RECEIVE_CONFIG|Circular Node for RECEIVE_CONFIG|RECEIVE CONFIG||||description
+CircularNode_RECEIVE_DATA|Circular Node for RECEIVE_DATA|RECEIVE DATA||||description
+CircularNode_RECEIVE|Circular Node for RECEIVE|RECEIVE||||description
+CircularNode_TRANSMITRECEIVE_CONFIG|Circular Node for TRANSMITRECEIVE_CONFIG|TRANSMITRECEIVE CONFIG||||description
+CircularNode_TRANSMITRECEIVE_DATA|Circular Node for TRANSMITRECEIVE_DATA|TRANSMITRECEIVE DATA||||description
+CircularNode_TRANSMITRECEIVE|Circular Node for TRANSMITRECEIVE|TRANSMITRECEIVE||||description
+TriggerPolarity|The Function execution is|Trigger Configuration||||description
+TriggerSelection|Trigger Hardware Signal is|Trigger Configuration||||description
+TriggerMode_CONFIG|Trigger Mode|Trigger Configuration||||description
+NodeLevel|Node on which the trigger is applied (not visible)|Trigger Configuration||||description
+SrcInc_TRANSMIT_DATA|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_TRANSMIT_DATA|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_TRANSMIT_DATA|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_TRANSMIT_DATA|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_TRANSMIT_DATA|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_TRANSMIT_DATA|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_TRANSMIT_DATA|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_TRANSMIT_DATA|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_TRANSMIT_DATA|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_TRANSMIT_DATA|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_TRANSMIT_DATA|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_TRANSMIT_DATA|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_TRANSMIT_DATA|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_TRANSMIT_DATA|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_TRANSMIT_DATA|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcInc_TRANSMIT|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_TRANSMIT|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_TRANSMIT|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_TRANSMIT|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_TRANSMIT|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_TRANSMIT|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_TRANSMIT|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_TRANSMIT|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_TRANSMIT|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_TRANSMIT|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_TRANSMIT|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_TRANSMIT|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_TRANSMIT|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_TRANSMIT|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_TRANSMIT|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcInc_RECEIVE_DATA|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_RECEIVE_DATA|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_RECEIVE_DATA|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_RECEIVE_DATA|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_RECEIVE_DATA|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_RECEIVE_DATA|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_RECEIVE_DATA|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_RECEIVE_DATA|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_RECEIVE_DATA|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_RECEIVE_DATA|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_RECEIVE_DATA|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_RECEIVE_DATA|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_RECEIVE_DATA|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_RECEIVE_DATA|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_RECEIVE_DATA|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcInc_RECEIVE|Src Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcInc_RECEIVE|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestInc_RECEIVE|Dest Address Increment|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestInc_RECEIVE|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcDataWidth_RECEIVE|Src Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcDataWidth_RECEIVE|Update Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestDataWidth_RECEIVE|Dest Data Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestDataWidth_RECEIVE|Update Dest Width|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+TransferEventMode_RECEIVE|Transfer Event Generation|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateTransferEventMode_RECEIVE|Update Transfer Event|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcSecure_RECEIVE|Src Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateSrcSecure_RECEIVE|Update SECURITY Src|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+DestSecure_RECEIVE|Dest Access|Reconfigure DMA for Data Transfer / Default Setting is functional||||
+UpdateDestSecure_RECEIVE|Update SECURITY Dest|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+NodeLevel_Data_RECEIVE|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer / Default Setting is functional||||description
+SrcInc_TRANSMITRECEIVE_DATA_TX|Src Address Increment|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateSrcInc_TRANSMITRECEIVE_DATA_TX|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+DestInc_TRANSMITRECEIVE_DATA_TX|Dest Address Increment|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateDestInc_TRANSMITRECEIVE_DATA_TX|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+SrcDataWidth_TRANSMITRECEIVE_DATA_TX|Src Data Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateSrcDataWidth_TRANSMITRECEIVE_DATA_TX|Update Data Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+DestDataWidth_TRANSMITRECEIVE_DATA_TX|Dest Data Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateDestDataWidth_TRANSMITRECEIVE_DATA_TX|Update Dest Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+TransferEventMode_TRANSMITRECEIVE_DATA_TX|Transfer Event Generation|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateTransferEventMode_TRANSMITRECEIVE_DATA_TX|Update Transfer Event|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+SrcSecure_TRANSMITRECEIVE_DATA_TX|Src Access|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateSrcSecure_TRANSMITRECEIVE_DATA_TX|Update SECURITY Src|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+DestSecure_TRANSMITRECEIVE_DATA_TX|Dest Access|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateDestSecure_TRANSMITRECEIVE_DATA_TX|Update SECURITY Dest|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+NodeLevel_Data_TRANSMITRECEIVE_DATA_TX|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+SrcInc_TRANSMITRECEIVE_DATA_RX|Src Address Increment|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateSrcInc_TRANSMITRECEIVE_DATA_RX|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+DestInc_TRANSMITRECEIVE_DATA_RX|Dest Address Increment|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateDestInc_TRANSMITRECEIVE_DATA_RX|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+SrcDataWidth_TRANSMITRECEIVE_DATA_RX|Src Data Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateSrcDataWidth_TRANSMITRECEIVE_DATA_RX|Update Data Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+DestDataWidth_TRANSMITRECEIVE_DATA_RX|Dest Data Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateDestDataWidth_TRANSMITRECEIVE_DATA_RX|Update Dest Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+TransferEventMode_TRANSMITRECEIVE_DATA_RX|Transfer Event Generation|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateTransferEventMode_TRANSMITRECEIVE_DATA_RX|Update Transfer Event|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+SrcSecure_TRANSMITRECEIVE_DATA_RX|Src Access|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateSrcSecure_TRANSMITRECEIVE_DATA_RX|Update SECURITY Src|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+DestSecure_TRANSMITRECEIVE_DATA_RX|Dest Access|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateDestSecure_TRANSMITRECEIVE_DATA_RX|Update SECURITY Dest|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+NodeLevel_Data_TRANSMITRECEIVE_DATA_RX|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+SrcInc_TRANSMITRECEIVE_RX|Src Address Increment|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateSrcInc_TRANSMITRECEIVE_RX|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+DestInc_TRANSMITRECEIVE_RX|Dest Address Increment|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateDestInc_TRANSMITRECEIVE_RX|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+SrcDataWidth_TRANSMITRECEIVE_RX|Src Data Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateSrcDataWidth_TRANSMITRECEIVE_RX|Update Data Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+DestDataWidth_TRANSMITRECEIVE_RX|Dest Data Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateDestDataWidth_TRANSMITRECEIVE_RX|Update Dest Width|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+TransferEventMode_TRANSMITRECEIVE_RX|Transfer Event Generation|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateTransferEventMode_TRANSMITRECEIVE_RX|Update Transfer Event|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+SrcSecure_TRANSMITRECEIVE_RX|Src Access|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateSrcSecure_TRANSMITRECEIVE_RX|Update SECURITY Src|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+DestSecure_TRANSMITRECEIVE_RX|Dest Access|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||
+UpdateDestSecure_TRANSMITRECEIVE_RX|Update SECURITY Dest|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+NodeLevel_Data_TRANSMITRECEIVE_RX|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer RX / Default Setting is functional||||description
+SrcInc_TRANSMITRECEIVE_TX|Src Address Increment|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateSrcInc_TRANSMITRECEIVE_TX|Update Source Address Increment After Transfer|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+DestInc_TRANSMITRECEIVE_TX|Dest Address Increment|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateDestInc_TRANSMITRECEIVE_TX|Update Destination Address Increment After Transfer|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+SrcDataWidth_TRANSMITRECEIVE_TX|Src Data Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateSrcDataWidth_TRANSMITRECEIVE_TX|Update Data Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+DestDataWidth_TRANSMITRECEIVE_TX|Dest Data Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateDestDataWidth_TRANSMITRECEIVE_TX|Update Dest Width|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+TransferEventMode_TRANSMITRECEIVE_TX|Transfer Event Generation|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateTransferEventMode_TRANSMITRECEIVE_TX|Update Transfer Event|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+SrcSecure_TRANSMITRECEIVE_TX|Src Access|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateSrcSecure_TRANSMITRECEIVE_TX|Update SECURITY Src|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+DestSecure_TRANSMITRECEIVE_TX|Dest Access|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||
+UpdateDestSecure_TRANSMITRECEIVE_TX|Update SECURITY Dest|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+NodeLevel_Data_TRANSMITRECEIVE_TX|Node on which the Data Config is applied (not visible)|Reconfigure DMA for Data Transfer TX / Default Setting is functional||||description
+
+[Values]
+# параметр|значение|подпись
+CLKPolarity|LPBAM_SPI_POLARITY_LOW|Low
+CLKPolarity|LPBAM_SPI_POLARITY_HIGH|High
+CLKPhase|LPBAM_SPI_PHASE_1EDGE|1 Edge
+CLKPhase|LPBAM_SPI_PHASE_2EDGE|2 Edge
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_BYPASS|ByPass
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_2|2
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_4|4
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_8|8
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_16|16
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_32|32
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_64|64
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_128|128
+BaudRatePrescaler|LPBAM_SPI_BAUDRATEPRESCALER_256|256
+DataSize|LPBAM_SPI_DATASIZE_8BIT|8 Bits
+DataSize|LPBAM_SPI_DATASIZE_16BIT|16 Bits
+FirstBit|LPBAM_SPI_FIRSTBIT_MSB|MSB First
+FirstBit|LPBAM_SPI_FIRSTBIT_LSB|LSB First
+AM_TriggerState|LPBAM_SPI_AUTO_MODE_DISABLE|Disable
+AM_TriggerState|LPBAM_SPI_AUTO_MODE_ENABLE|Enable
+AM_TriggerSelection|LPBAM_SPI_GRP2_LPDMA_CH0_TCF_TRG|LowPower DMA Channel 0
+AM_TriggerSelection|LPBAM_SPI_GRP2_LPDMA_CH1_TCF_TRG|LowPower DMA Channel 1
+AM_TriggerSelection|LPBAM_SPI_GRP2_LPDMA_CH2_TCF_TRG|LowPower DMA Channel 2
+AM_TriggerSelection|LPBAM_SPI_GRP2_LPDMA_CH3_TCF_TRG|LowPower DMA Channel 3
+AM_TriggerSelection|LPBAM_SPI_GRP2_EXTI4_TRG|EXTI4
+AM_TriggerSelection|LPBAM_SPI_GRP2_EXTI8_TRG|EXTI8
+AM_TriggerSelection|LPBAM_SPI_GRP2_LPTIM1_CH1_TRG|LPTIM1 Channel 1
+AM_TriggerSelection|LPBAM_SPI_GRP2_LPTIM3_CH1_TRG|LPTIM3 Channel 1
+AM_TriggerSelection|LPBAM_SPI_GRP2_COMP1_TRG|COMP1
+AM_TriggerSelection|LPBAM_SPI_GRP2_COMP2_TRG|COMP2
+AM_TriggerSelection|LPBAM_SPI_GRP2_RTC_ALRA_TRG|RTC Alarm
+AM_TriggerSelection|LPBAM_SPI_GRP2_RTC_WUT_TRG|RTC Wakeup Timer
+AM_TriggerPolarity|LPBAM_SPI_TRIG_POLARITY_RISING|Rising Edge
+AM_TriggerPolarity|LPBAM_SPI_TRIG_POLARITY_FALLING|Falling Edge
+WakeupIT_RXP|LPBAM_SPI_IT_RXP|Enable
+WakeupIT_RXP|LPBAM_SPI_IT_NONE|Disable
+WakeupIT_TXP|LPBAM_SPI_IT_TXP|Enable
+WakeupIT_TXP|LPBAM_SPI_IT_NONE|Disable
+WakeupIT_DXP|LPBAM_SPI_IT_DXP|Enable
+WakeupIT_DXP|LPBAM_SPI_IT_NONE|Disable
+WakeupIT_EOT|LPBAM_SPI_IT_EOT|Enable
+WakeupIT_EOT|LPBAM_SPI_IT_NONE|Disable
+CircularNode_TRANSMIT_CONFIG|__NULL|DISABLE
+CircularNode_TRANSMIT_CONFIG|LPBAM_SPI_TX_CONFIGQ_CONFIG_NODE|Configuration Node
+CircularNode_TRANSMIT_DATA|__NULL|DISABLE
+CircularNode_TRANSMIT_DATA|LPBAM_SPI_TX_DATAQ_CONFIG_NODE|Configuration Node
+CircularNode_TRANSMIT|__NULL|DISABLE
+CircularNode_TRANSMIT|LPBAM_SPI_TX_FULLQ_CONFIG_NODE|Configuration Node
+CircularNode_RECEIVE_CONFIG|__NULL|DISABLE
+CircularNode_RECEIVE_CONFIG|LPBAM_SPI_RX_CONFIGQ_CONFIG_NODE|Configuration Node
+CircularNode_RECEIVE_DATA|__NULL|DISABLE
+CircularNode_RECEIVE_DATA|LPBAM_SPI_RX_DATAQ_CONFIG_NODE|Configuration Node
+CircularNode_RECEIVE|__NULL|DISABLE
+CircularNode_RECEIVE|LPBAM_SPI_RX_FULLQ_CONFIG_NODE|Configuration Node
+CircularNode_TRANSMITRECEIVE_CONFIG|__NULL|DISABLE
+CircularNode_TRANSMITRECEIVE_CONFIG|LPBAM_SPI_TXRX_CONFIGQ_CONFIG_NODE|Configuration Node
+CircularNode_TRANSMITRECEIVE_DATA|__NULL|DISABLE
+CircularNode_TRANSMITRECEIVE_DATA|LPBAM_SPI_TXRX_DATAQ_CONFIG_NODE|Configuration Node
+CircularNode_TRANSMITRECEIVE|__NULL|DISABLE
+CircularNode_TRANSMITRECEIVE|LPBAM_SPI_TXRX_FULLQ_CONFIG_NODE|Configuration Node
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_MASKED|not conditionned by a Trigger
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_RISING|trigged on the Rising Edge of the Hardware Signal
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_FALLING|trigged on the Falling Edge of the Hardware Signal
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE0|EXTI Line 0
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE1|EXTI Line 1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE2|EXTI Line 2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE3|EXTI Line 3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE4|EXTI Line 4
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG1|TAMP TRG1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG2|TAMP TRG2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG3|TAMP TRG3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM4_OUT|LPTIM4 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP1_OUT|COMP1 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP2_OUT|COMP2 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_ADC4_AWD1|ADC4 AWD1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH0_TCF|LPDMA1 CH0 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH1_TCF|LPDMA1 CH1 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH2_TCF|LPDMA1 CH2 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH3_TCF|LPDMA1 CH3 TCF
+TriggerMode_CONFIG|LPBAM_DMA_TRIGM_BLOCK_TRANSFER|A LLI link transfer is conditioned by (at least) one hit trigger
+NodeLevel|LPBAM_SPI_TX_CONFIGQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_TX_DATAQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_TX_FULLQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_RX_CONFIGQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_RX_DATAQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_RX_FULLQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_TXRX_CONFIGQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_TXRX_DATAQ_CONFIG_NODE|Config Node
+NodeLevel|LPBAM_SPI_TXRX_FULLQ_CONFIG_NODE|Config Node
+SrcInc_TRANSMIT_DATA|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_TRANSMIT_DATA|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_TRANSMIT_DATA|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_TRANSMIT_DATA|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_TRANSMIT_DATA|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_TRANSMIT_DATA|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_TRANSMIT_DATA|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_TRANSMIT_DATA|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_TRANSMIT_DATA|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_TRANSMIT_DATA|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_TRANSMIT_DATA|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_TRANSMIT_DATA|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_TRANSMIT_DATA|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_TRANSMIT_DATA|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_TRANSMIT_DATA|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_TRANSMIT_DATA|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_TRANSMIT_DATA|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_TRANSMIT_DATA|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_TRANSMIT_DATA|LPBAM_SPI_TX_DATAQ_DATA_NODE|Data Node
+SrcInc_TRANSMIT|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_TRANSMIT|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_TRANSMIT|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_TRANSMIT|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_TRANSMIT|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_TRANSMIT|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_TRANSMIT|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_TRANSMIT|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_TRANSMIT|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_TRANSMIT|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_TRANSMIT|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_TRANSMIT|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_TRANSMIT|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_TRANSMIT|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_TRANSMIT|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_TRANSMIT|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_TRANSMIT|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_TRANSMIT|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_TRANSMIT|LPBAM_SPI_TX_FULLQ_DATA_NODE|Data Node
+SrcInc_RECEIVE_DATA|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_RECEIVE_DATA|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_RECEIVE_DATA|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_RECEIVE_DATA|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_RECEIVE_DATA|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_RECEIVE_DATA|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_RECEIVE_DATA|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_RECEIVE_DATA|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_RECEIVE_DATA|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_RECEIVE_DATA|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_RECEIVE_DATA|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_RECEIVE_DATA|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_RECEIVE_DATA|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_RECEIVE_DATA|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_RECEIVE_DATA|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_RECEIVE_DATA|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_RECEIVE_DATA|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_RECEIVE_DATA|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_RECEIVE_DATA|LPBAM_SPI_RX_DATAQ_DATA_NODE|Data Node
+SrcInc_RECEIVE|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_RECEIVE|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_RECEIVE|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_RECEIVE|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_RECEIVE|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_RECEIVE|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_RECEIVE|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_RECEIVE|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_RECEIVE|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_RECEIVE|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_RECEIVE|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_RECEIVE|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_RECEIVE|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_RECEIVE|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_RECEIVE|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_RECEIVE|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_RECEIVE|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_RECEIVE|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_RECEIVE|LPBAM_SPI_RX_FULLQ_DATA_NODE|Data Node
+SrcInc_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_TRANSMITRECEIVE_DATA_TX|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_TRANSMITRECEIVE_DATA_TX|LPBAM_SPI_TXRX_DATAQ_TXDATA_NODE|Data Node
+SrcInc_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_TRANSMITRECEIVE_DATA_RX|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_TRANSMITRECEIVE_DATA_RX|LPBAM_SPI_TXRX_DATAQ_RXDATA_NODE|Data Node
+SrcInc_TRANSMITRECEIVE_RX|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_TRANSMITRECEIVE_RX|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_TRANSMITRECEIVE_RX|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_TRANSMITRECEIVE_RX|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_TRANSMITRECEIVE_RX|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_TRANSMITRECEIVE_RX|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_TRANSMITRECEIVE_RX|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_TRANSMITRECEIVE_RX|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_TRANSMITRECEIVE_RX|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_TRANSMITRECEIVE_RX|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_TRANSMITRECEIVE_RX|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_TRANSMITRECEIVE_RX|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_TRANSMITRECEIVE_RX|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_TRANSMITRECEIVE_RX|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_TRANSMITRECEIVE_RX|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_TRANSMITRECEIVE_RX|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_TRANSMITRECEIVE_RX|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_TRANSMITRECEIVE_RX|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_TRANSMITRECEIVE_RX|LPBAM_SPI_TXRX_FULLQ_RXDATA_NODE|Data Node
+SrcInc_TRANSMITRECEIVE_TX|LPBAM_DMA_SINC_FIXED|Disabled
+SrcInc_TRANSMITRECEIVE_TX|LPBAM_DMA_SINC_INCREMENTED|Enabled
+DestInc_TRANSMITRECEIVE_TX|LPBAM_DMA_DINC_FIXED|Disabled
+DestInc_TRANSMITRECEIVE_TX|LPBAM_DMA_DINC_INCREMENTED|Enabled
+SrcDataWidth_TRANSMITRECEIVE_TX|LPBAM_DMA_SRC_DATAWIDTH_BYTE|Byte
+SrcDataWidth_TRANSMITRECEIVE_TX|LPBAM_DMA_SRC_DATAWIDTH_HALFWORD|Half Word
+SrcDataWidth_TRANSMITRECEIVE_TX|LPBAM_DMA_SRC_DATAWIDTH_WORD|Word
+DestDataWidth_TRANSMITRECEIVE_TX|LPBAM_DMA_DEST_DATAWIDTH_BYTE|Byte
+DestDataWidth_TRANSMITRECEIVE_TX|LPBAM_DMA_DEST_DATAWIDTH_HALFWORD|Half Word
+DestDataWidth_TRANSMITRECEIVE_TX|LPBAM_DMA_DEST_DATAWIDTH_WORD|Word
+TransferEventMode_TRANSMITRECEIVE_TX|LPBAM_DMA_TCEM_BLOCK_TRANSFER|TC and HT generated on each block
+TransferEventMode_TRANSMITRECEIVE_TX|LPBAM_DMA_TCEM_REPEATED_BLOCK_TRANSFER|TC event at the end of the repeated block, HT event at the half of the repeated block
+TransferEventMode_TRANSMITRECEIVE_TX|LPBAM_DMA_TCEM_EACH_LL_ITEM_TRANSFER|TC and HT generated on each linked-list item
+TransferEventMode_TRANSMITRECEIVE_TX|LPBAM_DMA_TCEM_LAST_LL_ITEM_TRANSFER|TC and HT generated on the last linked-list item
+SrcSecure_TRANSMITRECEIVE_TX|LPBAM_DMA_CHANNEL_SRC_NSEC|Non Secure
+SrcSecure_TRANSMITRECEIVE_TX|LPBAM_DMA_CHANNEL_SRC_SEC|Secure
+DestSecure_TRANSMITRECEIVE_TX|LPBAM_DMA_CHANNEL_DEST_NSEC|Non Secure
+DestSecure_TRANSMITRECEIVE_TX|LPBAM_DMA_CHANNEL_DEST_SEC|Secure
+NodeLevel_Data_TRANSMITRECEIVE_TX|LPBAM_SPI_TXRX_FULLQ_TXDATA_NODE|Data Node

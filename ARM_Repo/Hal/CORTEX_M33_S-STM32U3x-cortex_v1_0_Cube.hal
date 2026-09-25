@@ -1,0 +1,288 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=CORTEX_M33_S
+Version=STM32U3x-cortex_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FlashInterface|Flash Interface|Cortex_Interface_Settings||||Specifies witch Flash interface will be used for code execution
+ART_ACCELERATOR_ENABLE|ART ACCELERATOR|Cortex_Interface_Settings||||Configure Flash Instruction cache through ART accelerator (Only for TCM)
+PREFETCH_ENABLE|Instruction Prefetch|Cortex_Interface_Settings||||Configure Flash Prefetch (Only for TCM)
+CPU_ICache|CPU ICache|Cortex_Interface_Settings||||Enable\Disable CPU Instruction Cache
+CPU_DCache|CPU DCache|Cortex_Interface_Settings||||Enable\Disable CPU Data Cache
+MPU_Control|MPU Control Mode|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the control mode of the MPU (in case MPU USED) during hard fault, NMI, FAULTMASK and privileged access to the default memory
+Enable|Region|Cortex_Memory_Protection_Unit_Region_Settings||||Enable or disable region
+Defaultmsg||Attributes Settings||||Specify MPU control mode (if MPU is used), then configure attributes.
+Attributes0|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Attributes1|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Attributes2|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Attributes3|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Attributes4|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Attributes5|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Attributes6|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Attributes7|Attributes|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Number|Region Number|Cortex_Memory_Protection_Unit_Region_Settings||||the index of the region to protect.
+BaseAddress|Region Base Address|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the base address of the region to protect
+LimitAddress|Region Limit Address|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the limit address of the region to protect
+AttributesIndex|MPU Attributes Number|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes index.
+AccessPermission|Access Permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the region access permission type
+DisableExec|Instruction Access|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the instruction access status
+IsShareable|Shareability Permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the shareability status of the protected region
+Memorytype0|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Memorytype1|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Memorytype2|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Memorytype3|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the MPU Memory Type
+Memorytype4|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Memorytype5|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Memorytype6|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+Memorytype7|Memory type|Cortex_Memory_Protection_Unit_Attributes_Settings||||Specifies the memory attributes value.
+DeviceAttribute0|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+DeviceAttribute1|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+DeviceAttribute2|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+DeviceAttribute3|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+DeviceAttribute4|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+DeviceAttribute5|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+DeviceAttribute6|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+DeviceAttribute7|Device|Cortex_Memory_Protection_Unit_Region_NSettings||||Specifies the memory attributes value.
+CacheableAttribute0|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+CacheableAttribute1|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+CacheableAttribute2|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+CacheableAttribute3|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+CacheableAttribute4|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+CacheableAttribute5|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+CacheableAttribute6|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+CacheableAttribute7|Cache policy|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute0|Transient permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute1|Transient permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute2|Transient permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute3|Transient Permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute4|Transient permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute5|Transient permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute6|Transient permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+TransientAttribute7|Transient permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute0|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute1|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute2|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute3|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute4|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute5|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute6|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+AllocateAttribute7|Allocate permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute20|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute21|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute22|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute23|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute24|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute25|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute26|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+DeviceAttribute27|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+LL_DeviceAttribute20|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attrib utes value.
+LL_DeviceAttribute21|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+LL_DeviceAttribute22|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+LL_DeviceAttribute23|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+LL_DeviceAttribute24|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+LL_DeviceAttribute25|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+LL_DeviceAttribute26|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+LL_DeviceAttribute27|Device|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the memory attributes value.
+
+[Values]
+# параметр|значение|подпись
+FlashInterface|TCM_Enabled|TCM Interface
+FlashInterface|AXI_Enabled|AXI Interface
+MPU_Control|__NULL|MPU NOT USED
+MPU_Control|MPU_HFNMI_PRIVDEF_NONE|Background Region Access Not Allowed + MPU Disabled during hard fault, NMI and FAULTMASK handlers
+MPU_Control|MPU_HARDFAULT_NMI|Background Region Access Not Allowed + MPU Enabled during hard fault, NMI and FAULTMASK handlers
+MPU_Control|MPU_PRIVILEGED_DEFAULT|Background Region Privileged accesses only + MPU Disabled during hard fault, NMI and FAULTMASK handlers
+MPU_Control|MPU_HFNMI_PRIVDEF|Background Region Privileged accesses only + MPU Enabled during hard fault, NMI and FAULTMASK handlers
+Enable|MPU_REGION_ENABLE|Enabled
+Enable|__NULL|Disabled
+Attributes0|MPU_ATTRIBUTES_NUMBER0|Enabled
+Attributes0|__NULL|Disabled
+Attributes1|MPU_ATTRIBUTES_NUMBER1|Enabled
+Attributes1|__NULL|Disabled
+Attributes2|MPU_ATTRIBUTES_NUMBER2|Enabled
+Attributes2|__NULL|Disabled
+Attributes3|MPU_ATTRIBUTES_NUMBER3|Enabled
+Attributes3|__NULL|Disabled
+Attributes4|MPU_ATTRIBUTES_NUMBER4|Enabled
+Attributes4|__NULL|Disabled
+Attributes5|MPU_ATTRIBUTES_NUMBER5|Enabled
+Attributes5|__NULL|Disabled
+Attributes6|MPU_ATTRIBUTES_NUMBER6|Enabled
+Attributes6|__NULL|Disabled
+Attributes7|MPU_ATTRIBUTES_NUMBER7|Enabled
+Attributes7|__NULL|Disabled
+Number|MPU_REGION_NUMBER0|Region 0
+Number|MPU_REGION_NUMBER1|Region 1
+Number|MPU_REGION_NUMBER2|Region 2
+Number|MPU_REGION_NUMBER3|Region 3
+Number|MPU_REGION_NUMBER4|Region 4
+Number|MPU_REGION_NUMBER5|Region 5
+Number|MPU_REGION_NUMBER6|Region 6
+Number|MPU_REGION_NUMBER7|Region 7
+Number|MPU_REGION_NUMBER8|Region 8
+Number|MPU_REGION_NUMBER9|Region 9
+Number|MPU_REGION_NUMBER10|Region 10
+Number|MPU_REGION_NUMBER11|Region 11
+AttributesIndex|MPU_ATTRIBUTES_NUMBER0|ATTRIBUTE 0
+AttributesIndex|MPU_ATTRIBUTES_NUMBER1|ATTRIBUTE 1
+AttributesIndex|MPU_ATTRIBUTES_NUMBER2|ATTRIBUTE 2
+AttributesIndex|MPU_ATTRIBUTES_NUMBER3|ATTRIBUTE 3
+AttributesIndex|MPU_ATTRIBUTES_NUMBER4|ATTRIBUTE 4
+AttributesIndex|MPU_ATTRIBUTES_NUMBER5|ATTRIBUTE 5
+AttributesIndex|MPU_ATTRIBUTES_NUMBER6|ATTRIBUTE 6
+AttributesIndex|MPU_ATTRIBUTES_NUMBER7|ATTRIBUTE 7
+AccessPermission|MPU_REGION_PRIV_RW|READS\WRITES Permissions
+AccessPermission|MPU_REGION_ALL_RW|ALL READS\WRITES Permissions
+AccessPermission|MPU_REGION_PRIV_RO|READS Permissions
+AccessPermission|MPU_REGION_ALL_RO|ALL READS Permissions
+DisableExec|MPU_INSTRUCTION_ACCESS_ENABLE|Enable
+DisableExec|MPU_INSTRUCTION_ACCESS_DISABLE|Disable
+IsShareable|MPU_ACCESS_NOT_SHAREABLE|Disable
+IsShareable|MPU_ACCESS_OUTER_SHAREABLE|Outer Shareable
+IsShareable|MPU_ACCESS_INNER_SHAREABLE|Inner Shareable
+Memorytype0|MPU_DEVICE|Device
+Memorytype0|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype0|MPU_CACHEABLE|Normal cacheable
+Memorytype1|MPU_DEVICE|Device
+Memorytype1|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype1|MPU_CACHEABLE|Normal cacheable
+Memorytype2|MPU_DEVICE|Device
+Memorytype2|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype2|MPU_CACHEABLE|Normal cacheable
+Memorytype3|MPU_DEVICE|Device
+Memorytype3|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype3|MPU_CACHEABLE|Normal cacheable
+Memorytype4|MPU_DEVICE|Device
+Memorytype4|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype4|MPU_CACHEABLE|Normal cacheable
+Memorytype5|MPU_DEVICE|Device
+Memorytype5|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype5|MPU_CACHEABLE|Normal cacheable
+Memorytype6|MPU_DEVICE|Device
+Memorytype6|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype6|MPU_CACHEABLE|Normal cacheable
+Memorytype7|MPU_DEVICE|Device
+Memorytype7|MPU_NOT_CACHEABLE|Normal non-cacheable
+Memorytype7|MPU_CACHEABLE|Normal cacheable
+DeviceAttribute0|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute0|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute0|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute0|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute0|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute0|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute0|MPU_DEVICE_NGRE|DEVICE nGRE
+DeviceAttribute1|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute1|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute1|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute1|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute1|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute1|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute1|MPU_DEVICE_NGRE|DEVICE nGRE
+DeviceAttribute2|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute2|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute2|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute2|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute2|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute2|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute2|MPU_DEVICE_NGRE|DEVICE nGRE
+DeviceAttribute3|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute3|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute3|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute3|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute3|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute3|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute3|MPU_DEVICE_NGRE|DEVICE nGRE
+DeviceAttribute4|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute4|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute4|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute4|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute4|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute4|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute4|MPU_DEVICE_NGRE|DEVICE nGRE
+DeviceAttribute5|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute5|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute5|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute5|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute5|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute5|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute5|MPU_DEVICE_NGRE|DEVICE nGRE
+DeviceAttribute6|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute6|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute6|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute6|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute6|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute6|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute6|MPU_DEVICE_NGRE|DEVICE nGRE
+DeviceAttribute7|MPU_DEVICE_nGnRnE|DEVICE nGnRnE
+DeviceAttribute7|MPU_DEVICE_nGnRE|DEVICE nGnRE
+DeviceAttribute7|MPU_DEVICE_nGRE|DEVICE nGRE
+DeviceAttribute7|MPU_DEVICE_GRE|DEVICE GRE
+DeviceAttribute7|MPU_DEVICE_NGNRNE|DEVICE nGnRnE
+DeviceAttribute7|MPU_DEVICE_NGNRE|DEVICE nGnRE
+DeviceAttribute7|MPU_DEVICE_NGRE|DEVICE nGRE
+CacheableAttribute0|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute0|MPU_WRITE_BACK|WRITE BACK
+CacheableAttribute1|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute1|MPU_WRITE_BACK|WRITE BACK
+CacheableAttribute2|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute2|MPU_WRITE_BACK|WRITE BACK
+CacheableAttribute3|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute3|MPU_WRITE_BACK|WRITE BACK
+CacheableAttribute4|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute4|MPU_WRITE_BACK|WRITE BACK
+CacheableAttribute5|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute5|MPU_WRITE_BACK|WRITE BACK
+CacheableAttribute6|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute6|MPU_WRITE_BACK|WRITE BACK
+CacheableAttribute7|MPU_WRITE_THROUGH|WRITE THROUGH
+CacheableAttribute7|MPU_WRITE_BACK|WRITE BACK
+TransientAttribute0|MPU_TRANSIENT|TRANSIENT
+TransientAttribute0|MPU_NON_TRANSIENT|NOT TRANSIENT
+TransientAttribute1|MPU_TRANSIENT|TRANSIENT
+TransientAttribute1|MPU_NON_TRANSIENT|NOT TRANSIENT
+TransientAttribute2|MPU_TRANSIENT|TRANSIENT
+TransientAttribute2|MPU_NON_TRANSIENT|NOT TRANSIENT
+TransientAttribute3|M33_MPU_TRANSIENT|TRANSIENT
+TransientAttribute3|MPU_NON_TRANSIENT|NOT TRANSIENT
+TransientAttribute4|MPU_TRANSIENT|TRANSIENT
+TransientAttribute4|MPU_NON_TRANSIENT|NOT TRANSIENT
+TransientAttribute5|MPU_TRANSIENT|TRANSIENT
+TransientAttribute5|MPU_NON_TRANSIENT|NOT TRANSIENT
+TransientAttribute6|MPU_TRANSIENT|TRANSIENT
+TransientAttribute6|MPU_NON_TRANSIENT|NOT TRANSIENT
+TransientAttribute7|MPU_TRANSIENT|TRANSIENT
+TransientAttribute7|MPU_NON_TRANSIENT|NOT TRANSIENT
+AllocateAttribute0|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute0|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute0|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute0|MPU_RW_ALLOCATE|RW ALLOCATE
+AllocateAttribute1|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute1|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute1|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute1|MPU_RW_ALLOCATE|RW ALLOCATE
+AllocateAttribute2|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute2|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute2|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute2|MPU_RW_ALLOCATE|RW ALLOCATE
+AllocateAttribute3|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute3|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute3|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute3|MPU_RW_ALLOCATE|RW ALLOCATE
+AllocateAttribute4|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute4|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute4|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute4|MPU_RW_ALLOCATE|RW ALLOCATE
+AllocateAttribute5|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute5|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute5|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute5|MPU_RW_ALLOCATE|RW ALLOCATE
+AllocateAttribute6|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute6|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute6|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute6|MPU_RW_ALLOCATE|RW ALLOCATE
+AllocateAttribute7|MPU_NO_ALLOCATE|NO ALLOCATE
+AllocateAttribute7|MPU_W_ALLOCATE|W ALLOCATE
+AllocateAttribute7|MPU_R_ALLOCATE|R ALLOCATE
+AllocateAttribute7|MPU_RW_ALLOCATE|RW ALLOCATE

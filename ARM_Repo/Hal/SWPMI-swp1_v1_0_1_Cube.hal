@@ -1,0 +1,24 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SWPMI
+Version=swp1_v1_0_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+VoltageClass|Voltage Class|Basic Parameters||||Specifies the SWP Voltage Class. Depends on RCC Vdd value that must be in a valid range, either [1.62 V to 1.98 V] or [2.70 V to 3.30 V]
+BitRate|Bit Rate Prescaler|Basic Parameters||0|63|Warning! This SWPMI Bitrate prescaler value must guarantee a programmed bit rate within the range from 100 kbit/s up to 2 Mbit/s
+Fswpclk|Fswpclk|||||Frequency value in Hz output of multiplexer for clocking SWPMI core.
+TxBufferingMode|Transmission Buffering Mode|Basic Parameters||||Specifies the frame transmission buffering mode.
+RxBufferingMode|Reception Buffering Mode|Basic Parameters||||Specifies the frame reception buffering mode.
+
+[Values]
+# параметр|значение|подпись
+VoltageClass|SWPMI_VOLTAGE_CLASS_C|Class C
+VoltageClass|SWPMI_VOLTAGE_CLASS_B|Class B
+TxBufferingMode|SWPMI_TX_NO_SOFTWAREBUFFER|No Software buffer
+TxBufferingMode|SWPMI_TX_SINGLE_SOFTWAREBUFFER|Single Software buffer
+TxBufferingMode|SWPMI_TX_MULTI_SOFTWAREBUFFER|Multi Software buffer
+RxBufferingMode|SWPMI_RX_NO_SOFTWAREBUFFER|No Software buffer
+RxBufferingMode|SWPMI_RX_SINGLE_SOFTWAREBUFFER|Single Software buffer
+RxBufferingMode|SWPMI_RX_MULTI_SOFTWAREBUFFER|Multi Software buffer

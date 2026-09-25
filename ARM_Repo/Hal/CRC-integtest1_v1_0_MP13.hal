@@ -1,0 +1,37 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=CRC
+Version=integtest1_v1_0_MP13
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Instance$IpInstance|Instance|||||
+DefaultPolynomialUse|Default Polynomial State|Basic Parameters||||
+DefaultInitValueUse|Default Init Value State|Basic Parameters||||
+GeneratingPolynomial|CRC Generating Polynomial|Basic Parameters|||7|
+CRCLength|CRC Length|Basic Parameters||||
+InitValue|Init Value For CRC computation|Basic Parameters||0|4294967295|
+InputDataInversionMode|Input Data Inversion Mode|Advanced Parameters||||
+OutputDataInversionMode|Output Data Inversion Mode|Advanced Parameters||||
+InputDataFormat|Input Data Format|Advanced Parameters||||The Parameter " Input Data Format " will not be generated when using LL Driver
+
+[Values]
+# параметр|значение|подпись
+DefaultPolynomialUse|DEFAULT_POLYNOMIAL_ENABLE|Enable
+DefaultPolynomialUse|DEFAULT_POLYNOMIAL_DISABLE|Disable
+DefaultInitValueUse|DEFAULT_INIT_VALUE_ENABLE|Enable
+DefaultInitValueUse|DEFAULT_INIT_VALUE_DISABLE|Disable
+CRCLength|CRC_POLYLENGTH_32B|32-bit
+CRCLength|CRC_POLYLENGTH_16B|16-bit
+CRCLength|CRC_POLYLENGTH_8B|8-bit
+CRCLength|CRC_POLYLENGTH_7B|7-bit
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_NONE|None
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_BYTE|Byte
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_HALFWORD|Halfword
+InputDataInversionMode|CRC_INPUTDATA_INVERSION_WORD|Word
+OutputDataInversionMode|CRC_OUTPUTDATA_INVERSION_DISABLE|Disable
+OutputDataInversionMode|CRC_OUTPUTDATA_INVERSION_ENABLE|Enable
+InputDataFormat|CRC_INPUTDATA_FORMAT_BYTES|Bytes
+InputDataFormat|CRC_INPUTDATA_FORMAT_HALFWORDS|HalfWords
+InputDataFormat|CRC_INPUTDATA_FORMAT_WORDS|Words

@@ -1,0 +1,611 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=GTZC
+Version=tzsc1_v2_2_rc1_Mustang4M
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+TZSC_Lock_GTZC1|Lock the configuration of Core domain (GTZC1) of TZSC (Peripherals & MPCWM) until next reset|||||
+TZSC_Secure_IP_Choice|Configure Secure Peripheral|Secureable Peripherals||||Secure/Unsecure all the Peripherals in one time until individuals are modified.
+Securable_Peripheral|Securable Peripheral|Secureable Peripherals||||
+IP_Secure||Secureable Peripherals||||
+AES_Secure|AES|Secureable Peripherals||||
+CCB_Secure|CCB|Secureable Peripherals||||
+I3C2_Secure|I3C2|Secureable Peripherals||||
+LTDC_Secure|LTDC|Secureable Peripherals||||
+CRS_Secure|CRS|Secureable Peripherals||||
+ICACHE_Secure|ICACHE|Secureable Peripherals||||
+PKA_Secure|PKA|Secureable Peripherals||||
+OPAMP1_Secure|OPAMP1|Secureable Peripherals||||
+RNG_Secure|RNG|Secureable Peripherals||||
+SAES_Secure|SAES|Secureable Peripherals||||
+ETH_Secure|ETH|Secureable Peripherals||||
+FDCAN2_Secure|FDCAN2|Secureable Peripherals||||
+FDCAN3_Secure|FDCAN3|Secureable Peripherals||||
+FMC_Secure|FMC|Secureable Peripherals||||
+COMP1_Secure|COMP1|Secureable Peripherals||||
+COMP2_Secure|COMP2|Secureable Peripherals||||
+SDMMC2_Secure|SDMMC2|Secureable Peripherals||||
+SPI4_Secure|SPI4|Secureable Peripherals||||
+SPI5_Secure|SPI5|Secureable Peripherals||||
+UART8_Secure|UART8|Secureable Peripherals||||
+UART9_Secure|UART9|Secureable Peripherals||||
+USART10_Secure|USART10|Secureable Peripherals||||
+USART5_Secure|USART5|Secureable Peripherals||||
+USART11_Secure|USART11|Secureable Peripherals||||
+UART12_Secure|UART12|Secureable Peripherals||||
+has_IP_Secured|has_IP_Secured|Secureable Peripherals||||
+has_IP_not_Secured|has_IP_not_Secured|Secureable Peripherals||||
+CRS_Privilege_Status|((GTZC_S:CRS_Secure=GTZC_TZSC_PERIPH_NSEC) & !($IpInstance=GTZC_S))|||||
+ICACHE_Privilege_Status|((GTZC_S:ICACHE_Secure=GTZC_TZSC_PERIPH_NSEC) & !($IpInstance=GTZC_S))|||||
+TZSC_Privilege_IP_Choice|Configure Privilege IP|Privilegeable Peripherals||||Privilege/Unprivilege all the Peripherals in one time until individuals are modified.
+Privilegeable_Peripheral|Privilegeable Peripheral|Privilegeable Peripherals||||
+IP_Privilege||Privilegeable Peripherals||||
+AES_Privilege|AES|Privilegeable Peripherals||||
+CCB_Privilege|CCB|Privilegeable Peripherals||||
+LTDC_Privilege|LTDC|Privilegeable Peripherals||||
+SAES_Privilege|SAES|Privilegeable Peripherals||||
+PKA_Privilege|PKA|Privilegeable Peripherals||||
+OPAMP1_Privilege|OPAMP1|Privilegeable Peripherals||||
+ETH_Privilege|ETH|Privilegeable Peripherals||||
+FDCAN2_Privilege|FDCAN2|Privilegeable Peripherals||||
+FDCAN3_Privilege|FDCAN3|Privilegeable Peripherals||||
+FMC_Privilege|FMC|Privilegeable Peripherals||||
+COMP1_Privilege|COMP1|Privilegeable Peripherals||||
+COMP2_Privilege|COMP2|Privilegeable Peripherals||||
+SDMMC2_Privilege|SDMMC2|Privilegeable Peripherals||||
+SPI4_Privilege|SPI4|Privilegeable Peripherals||||
+SPI5_Privilege|SPI5|Privilegeable Peripherals||||
+UART8_Privilege|UART8|Privilegeable Peripherals||||
+UART9_Privilege|UART9|Privilegeable Peripherals||||
+USART10_Privilege|USART10|Privilegeable Peripherals||||
+USART5_Privilege|USART5|Privilegeable Peripherals||||
+USART11_Privilege|USART11|Privilegeable Peripherals||||
+UART12_Privilege|UART12|Privilegeable Peripherals||||
+CRS_Privilege|CRS|Privilegeable Peripherals||||
+ICACHE_Privilege|ICACHE|Privilegeable Peripherals||||
+MPCWM_GTZC_LockConfig|Lock configuration|||||
+MPCWM1_Area_Choice|Configure Memory|||||Secure all the memory range in one time until sizes are modified.
+MPCWM1_Area_OCTOSPI1_BASE|Area Start OCTOSPI1_BASE|||0x90000000|0x90000000|
+MPCWM1_Area1_Desc|Area 1 Descriptor|||||
+MPCWM1_Area1_Max|Area 1 Max|||0x10000000|0x10000000|
+MPCWM1_Area1_Start_Address|Area 1 Start Address|||=(MPCWM1_Area_OCTOSPI1_BASE)|=(MPCWM1_Area1_Max + MPCWM1_Area_OCTOSPI1_BASE - MPCWM1_Area1_BlockSize)|
+MPCWM1_Area1_Start|Area 1 Start Offset|||0x0|=MPCWM1_Area1_Max|
+MPCWM1_Area1_Size|Area 1 Size|||0x0|=(MPCWM1_Area1_Max - MPCWM1_Area1_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM1_Area1_BlockSize|Area 1 Block Size|||0x20000|0x20000|
+MPCWM1_Area1_Secure|Area 1 Secure Attribute|||||
+MPCWM1_Area1_Privilege|Area 1 Privilege Attribute|||||
+MPCWM1_Area1_Attribute|Area 1 Attributes|||||
+MPCWM1_Area1_Lock|Lock the configuration of MPCWM1 Area 1 until next reset|||||
+MPCWM1_Area1_Status|Status of MPCWM1 Area 1|||||
+MPCWM1_Area2_Desc|Area 2 Descriptor|||||
+MPCWM1_Area2_Max|Area 2 Max|||0x10000000|0x10000000|
+MPCWM1_Area2_Start_Address|Area 2 Start Address|||=(MPCWM1_Area_OCTOSPI1_BASE)|=(MPCWM1_Area2_Max + MPCWM1_Area_OCTOSPI1_BASE - MPCWM1_Area2_BlockSize)|
+MPCWM1_Area2_Start|Area 2 Start Offset|||0x0|=MPCWM1_Area2_Max|
+MPCWM1_Area2_Size|Area 2 Size|||0x0|=(MPCWM1_Area2_Max - MPCWM1_Area2_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM1_Area2_BlockSize|Area 2 Block Size|||0x20000|0x20000|
+MPCWM1_Area2_Secure|Area 2 Secure Attribute|||||
+MPCWM1_Area2_Privilege|Area 2 Privilege Attribute|||||
+MPCWM1_Area2_Attribute|Area 2 Attributes|||||
+MPCWM1_Area2_Lock|Lock the configuration of MPCWM1 Area 2 until next reset|||||
+MPCWM1_Area2_Status|Status of MPCWM1 Area 2|||||
+MPCWM2_Area_Choice|Configure Memory|||||Secure all the memory range in one time until sizes are modified.
+MPCWM2_Area_FMC_BANK1|Area Start FMC_BANK1|||0x60000000|0x60000000|
+MPCWM2_Area1_Desc|Area 1 Descriptor|||||
+MPCWM2_Area1_Max|Area 1 Max|||0x10000000|0x10000000|
+MPCWM2_Area1_Start_Address|Area 1 Start Address|||=(MPCWM2_Area_FMC_BANK1)|=(MPCWM2_Area1_Max + MPCWM2_Area_FMC_BANK1 - MPCWM2_Area1_BlockSize)|
+MPCWM2_Area1_Start|Area 1 Start Offset|||0x0|=MPCWM2_Area1_Max|
+MPCWM2_Area1_Size|Area 1 Size|||0x0|=(MPCWM2_Area1_Max - MPCWM2_Area1_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM2_Area1_BlockSize|Area 1 Block Size|||0x20000|0x20000|
+MPCWM2_Area1_Secure|Area 1 Secure Attribute|||||
+MPCWM2_Area1_Privilege|Area 1 Privilege Attribute|||||
+MPCWM2_Area1_Attribute|Area 1 Attributes|||||
+MPCWM2_Area1_Lock|Lock the configuration of MPCWM2 Area 1 until next reset|||||
+MPCWM2_Area1_Status|Status of MPCWM2 Area 1|||||
+MPCWM2_Area2_Desc|Area 2 Descriptor|||||
+MPCWM2_Area2_Max|Area 2 Max|||0x10000000|0x10000000|
+MPCWM2_Area2_Start_Address|Area 2 Start Address|||=(MPCWM2_Area_FMC_BANK1)|=(MPCWM2_Area2_Max + MPCWM2_Area_FMC_BANK1 - MPCWM2_Area2_BlockSize)|
+MPCWM2_Area2_Start|Area 2 Start Offset|||0x0|=MPCWM2_Area2_Max|
+MPCWM2_Area2_Size|Area 2 Size|||0x0|=(MPCWM2_Area2_Max - MPCWM2_Area2_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM2_Area2_BlockSize|Area 2 Block Size|||0x20000|0x20000|
+MPCWM2_Area2_Secure|Area 2 Secure Attribute|||||
+MPCWM2_Area2_Privilege|Area 2 Privilege Attribute|||||
+MPCWM2_Area2_Attribute|Area 2 Attributes|||||
+MPCWM2_Area2_Lock|Lock the configuration of MPCWM2 Area 2 until next reset|||||
+MPCWM2_Area2_Status|Status of MPCWM2 Area 2|||||
+MPCWM3_Area_Choice|Configure Memory|||||Secure all the memory range in one time until sizes are modified.
+MPCWM3_Area_FMC_BANK3|Area Start FMC_BANK3|||0x80000000|0x80000000|
+MPCWM3_Area_Desc|Area 1 Descriptor|||||
+MPCWM3_Area_Max|Area 1 Max|||0x10000000|0x10000000|
+MPCWM3_Area_Start_Address|Area 1 Start Address|||=(MPCWM3_Area_FMC_BANK3)|=(MPCWM3_Area_Max + MPCWM3_Area_FMC_BANK3 - MPCWM3_Area_BlockSize)|
+MPCWM3_Area_Start|Area 1 Start Offset|||0x0|=MPCWM3_Area_Max|
+MPCWM3_Area_Size|Area 1 Size|||0x0|=(MPCWM3_Area_Max - MPCWM3_Area_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM3_Area_BlockSize|Area 1 Block Size|||0x20000|0x20000|
+MPCWM3_Area_Secure|Area 1 Secure Attribute|||||
+MPCWM3_Area_Privilege|Area 1 Privilege Attribute|||||
+MPCWM3_Area_Attribute|Area 1 Attributes|||||
+MPCWM3_Area_Lock|Lock the configuration of MPCWM3 Area 1 until next reset|||||
+MPCWM3_Area_Status|Status of MPCWM3 Area 1|||||
+MPCWM3_Area2_FMC_SDRAM_BANK1|Area Start FMC_SDRAM_BANK1|||0xC0000000|0xC0000000|
+MPCWM3_Area2_Desc|Area 2 Descriptor|||||
+MPCWM3_Area2_Max|Area 2 Max|||0x10000000|0x10000000|
+MPCWM3_Area2_Start_Address|Area 2 Start Address|||=(MPCWM3_Area2_FMC_SDRAM_BANK1)|=(MPCWM3_Area2_Max + MPCWM3_Area2_FMC_SDRAM_BANK1 - MPCWM3_Area_BlockSize)|
+MPCWM3_Area2_Start|Area 2 Start Offset|||0x0|=MPCWM3_Area2_Max|
+MPCWM3_Area2_Size|Area 2 Size|||0x0|=(MPCWM3_Area2_Max - MPCWM3_Area2_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM3_Area2_BlockSize|Area 2 Block Size|||0x20000|0x20000|
+MPCWM3_Area2_Secure|Area 2 Secure Attribute|||||
+MPCWM3_Area2_Privilege|Area 2 Privilege Attribute|||||
+MPCWM3_Area2_Attribute|Area 2 Attributes|||||
+MPCWM3_Area2_Lock|Lock the configuration of MPCWM3 Area 2 until next reset|||||
+MPCWM3_Area2_Status|Status of MPCWM3 Area 2|||||
+MPCWM4_Area_Choice|Configure Memory|||||Secure all the memory range in one time until sizes are modified.
+MPCWM4_Area_BKPSRAM_BASE|Area Start BKPSRAM|||0x40036400|0x40036400|
+MPCWM4_Area_Desc|Area 1 Descriptor|||||
+MPCWM4_Area_Max|Area 1 Max|||0x800|0x800|
+MPCWM4_Area_Start_Address|Area 1 Start Address|||=(MPCWM4_Area_BKPSRAM_BASE)|=(MPCWM4_Area_Max + MPCWM4_Area_BKPSRAM_BASE - MPCWM4_Area_BlockSize)|
+MPCWM4_Area_Start|Area 1 Start Offset|||0x0|=MPCWM4_Area_Max|
+MPCWM4_Area_Size|Area 1 Size|||0x0|=(MPCWM4_Area_Max - MPCWM4_Area_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM4_Area_BlockSize|Area 1 Block Size|||0x20|0x20|
+MPCWM4_Area_Secure|Area 1 Secure Attribute|||||
+MPCWM4_Area_Privilege|Area 1 Privilege Attribute|||||
+MPCWM4_Area_Attribute|Area 1 Attributes|||||
+MPCWM4_Area_Lock|Lock the configuration of MPCWM4 Area 1 until next reset|||||
+MPCWM4_Area_Status|Status of MPCWM4 Area 1|||||
+MPCWM4_Area2_FMC_SDRAM_BANK2|Area Start FMC_SDRAM_BANK2|||0xD0000000|0xD0000000|
+MPCWM4_Area2_Desc|Area 2 Descriptor|||||
+MPCWM4_Area2_Max|Area 2 Max|||0x10000000|0x10000000|
+MPCWM4_Area2_Start_Address|Area 2 Start Address|||=(MPCWM4_Area2_FMC_SDRAM_BANK2)|=(MPCWM4_Area2_Max + MPCWM4_Area2_FMC_SDRAM_BANK2 - MPCWM4_Area2_BlockSize)|
+MPCWM4_Area2_Start|Area 2 Start Offset|||0x0|=MPCWM4_Area2_Max|
+MPCWM4_Area2_Size|Area 2 Size|||0x0|=(MPCWM4_Area2_Max - MPCWM4_Area2_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM4_Area2_BlockSize|Area 2 Block Size|||0x20000|0x20000|
+MPCWM4_Area2_Secure|Area 2 Secure Attribute|||||
+MPCWM4_Area2_Privilege|Area 2 Privilege Attribute|||||
+MPCWM4_Area2_Attribute|Area 2 Attributes|||||
+MPCWM4_Area2_Lock|Lock the configuration of MPCWM4 Area 2 until next reset|||||
+MPCWM4_Area2_Status|Status of MPCWM4 Area 2|||||
+MPCWM5_Area_Choice|Configure Memory|||||Secure all the memory range in one time until sizes are modified.
+MPCWM5_Area_OCTOSPI2_BASE|Area Start OCTOSPI1_BASE|||0x70000000|0x70000000|
+MPCWM5_Area1_Desc|Area 1 Descriptor|||||
+MPCWM5_Area1_Max|Area 1 Max|||0x10000000|0x10000000|
+MPCWM5_Area1_Start_Address|Area 1 Start Address|||=(MPCWM5_Area_OCTOSPI2_BASE)|=(MPCWM5_Area1_Max + MPCWM5_Area_OCTOSPI2_BASE - MPCWM5_Area1_BlockSize)|
+MPCWM5_Area1_Start|Area 1 Start Offset|||0x0|=MPCWM5_Area1_Max|
+MPCWM5_Area1_Size|Area 1 Size|||0x0|=(MPCWM5_Area1_Max - MPCWM5_Area1_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM5_Area1_BlockSize|Area 1 Block Size|||0x20000|0x20000|
+MPCWM5_Area1_Secure|Area 1 Secure Attribute|||||
+MPCWM5_Area1_Privilege|Area 1 Privilege Attribute|||||
+MPCWM5_Area1_Attribute|Area 1 Attributes|||||
+MPCWM5_Area1_Lock|Lock the configuration of MPCWM5 Area 1 until next reset|||||
+MPCWM5_Area1_Status|Status of MPCWM5 Area 1|||||
+MPCWM5_Area2_Desc|Area 2 Descriptor|||||
+MPCWM5_Area2_Max|Area 2 Max|||0x10000000|0x10000000|
+MPCWM5_Area2_Start_Address|Area 2 Start Address|||=(MPCWM5_Area_OCTOSPI2_BASE)|=(MPCWM5_Area2_Max + MPCWM5_Area_OCTOSPI2_BASE - MPCWM5_Area2_BlockSize)|
+MPCWM5_Area2_Start|Area 2 Start Offset|||0x0|=MPCWM5_Area2_Max|
+MPCWM5_Area2_Size|Area 2 Size|||0x0|=(MPCWM5_Area2_Max - MPCWM5_Area2_Start)|0x0 : use the default HW configuration (secured and privileged memory)
+MPCWM5_Area2_BlockSize|Area 2 Block Size|||0x20000|0x20000|
+MPCWM5_Area2_Secure|Area 2 Secure Attribute|||||
+MPCWM5_Area2_Privilege|Area 2 Privilege Attribute|||||
+MPCWM5_Area2_Attribute|Area 2 Attributes|||||
+MPCWM5_Area2_Lock|Lock the configuration of MPCWM5 Area 2 until next reset|||||
+MPCWM5_Area2_Status|Status of MPCWM5 Area 2|||||
+MPCBB_ConfigSettings|Configuration Settings|||||
+MPCBB_SRWILADIS|Authorize Secure Read/Write on Non-secure area|||||
+MPCBB_INVSECSTATE|Default security state|||||
+MPCBB_Lock|Settings Lock|||||
+MPCBB_MemorySettings|Memory Attributes Settings|||||
+MPCBB_SecureAttributeSettings|Memory Security Attributes Settings|||||
+MPCBB_Area_Choice|Configure Memory|||||Secure/Unsecure all the memory range in one time until attributes are modified.
+MPCBB_PrivilegeAttributeSettings|Memory Privilege Attributes Settings|||||
+MPCBB_Area_Privilege_Choice|Configure Memory|||||Privilege/UnPrivilege all the memory range in one time until attributes are modified.
+MPCBB_LockConfig|Attributes Lock|||||
+MPCBB1_Area_SRAM1_BASE_NS|Area Start SRAM1_BASE_NS|||0x20000000|0x20000000|
+MPCBB1_Area_Max|Area Max|||0x40000|0x40000|
+MPCBB1_Area_Start_Address|Area Start Address|||=(MPCBB1_Area_SRAM1_BASE_NS)|=(MPCBB1_Area_Max + MPCBB1_Area_SRAM1_BASE_NS - MPCBB1_Area_BlockSize)|
+MPCBB1_Area_Start|Area Start Offset|||0x0|=MPCBB1_Area_Max|
+MPCBB1_Area_Size|Area Size|||0x0|=(MPCBB1_Area_Max - MPCBB1_Area_Start)|
+MPCBB1_Area_BlockSize|Area Block Size|||0x200|0x200|
+MPCBB1_Area_SuperBlockSize|Area Super-Block Size|||0x4000|0x4000|
+MPCBB1_Area_NbSuperBlock|Area Nb Super-Block|||=(MPCBB1_Area_Max / MPCBB1_Area_SuperBlockSize)|=(MPCBB1_Area_Max / MPCBB1_Area_SuperBlockSize)|
+MPCBB1_Area_Secure_Start_Address|Area Start Address|||=MPCBB1_Area_SRAM1_BASE_NS|=MPCBB1_Area_SRAM1_BASE_NS|
+MPCBB1_Area_Secure_Start|Area Start Offset|||0x0|=MPCBB1_Area_Max|
+MPCBB1_Area_Secure_Size|Area Size|||0x0|=(MPCBB1_Area_Max - MPCBB1_Area_Secure_Start)|0x0 : use the default HW configuration (secured memory)
+MPCBB1_Area_Secure_BlockSize|Area Block Size|||=(MPCBB1_Area_BlockSize)|=(MPCBB1_Area_BlockSize)|
+MPCBB1_Area_Secure_SuperBlockSize|Area Super-Block Size|||=(MPCBB1_Area_SuperBlockSize)|=(MPCBB1_Area_SuperBlockSize)|
+MPCBB1_Area_Secure_NbSuperBlock|Area Nb Super-Block|||=(MPCBB1_Area_Max / MPCBB1_Area_Secure_SuperBlockSize)|=(MPCBB1_Area_Max / MPCBB1_Area_Secure_SuperBlockSize)|
+MPCBB1_Area_Privilege_Start_Address|Area Start Address|||=(MPCBB1_Area_SRAM1_BASE_NS)|=(MPCBB1_Area_Max + MPCBB1_Area_SRAM1_BASE_NS - MPCBB1_Area_BlockSize)|
+MPCBB1_Area_Privilege_Start|Area Start Offset|||0x0|=MPCBB1_Area_Max|
+MPCBB1_Area_Privilege_Size|Area Size|||0x0|=(MPCBB1_Area_Max - MPCBB1_Area_Privilege_Start)|0x0 : use the default HW configuration (privileged memory)
+MPCBB1_Area_Privilege_BlockSize|Area Block Size|||=(MPCBB1_Area_BlockSize)|=(MPCBB1_Area_BlockSize)|
+MPCBB1_Area_Privilege_SuperBlockSize|Area Super-Block Size|||=(MPCBB1_Area_SuperBlockSize)|=(MPCBB1_Area_SuperBlockSize)|
+MPCBB1_Area_Privilege_NbSuperBlock|Area Nb Super-Block|||=(MPCBB1_Area_Max / MPCBB1_Area_Privilege_SuperBlockSize)|=(MPCBB1_Area_Max / MPCBB1_Area_Privilege_SuperBlockSize)|
+MPCBB1_Area_Secure|Area Attribute|||||
+MPCBB1_Area_Privilege|Area Attribute|||||
+MPCBB1_NbArea|Nb Area|||2|2|
+MPCBB1_Area2_Secure_Start_Address|Area 2 Start Address|||=(MPCBB1_Area_SRAM1_BASE_NS)|=(MPCBB1_Area_SRAM1_BASE_NS)|
+MPCBB1_Area2_Secure_Start|Area 2 Start Offset|||0x0|=MPCBB1_Area_Max|
+MPCBB1_Area2_Secure_Size|Area 2 Size|||0x0|=(MPCBB1_Area_Max - MPCBB1_Area2_Secure_Start)|0x0 : use the default HW configuration (not secured memory)
+MPCBB1_Area2_Secure_BlockSize|Area 2 Block Size|||=(MPCBB1_Area_BlockSize)|=(MPCBB1_Area_BlockSize)|
+MPCBB1_Area2_Secure_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB1_Area2_SuperBlockSize)|=(MPCBB1_Area2_SuperBlockSize)|
+MPCBB1_Area2_Secure_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB1_Area_Max / MPCBB1_Area2_Secure_SuperBlockSize)|=(MPCBB1_Area_Max / MPCBB1_Area2_Secure_SuperBlockSize)|
+MPCBB1_Area2_Privilege_Start_Address|Area 2 Start Address|||=(MPCBB1_Area_SRAM1_BASE_NS)|=(MPCBB1_Area_Max + MPCBB1_Area_SRAM1_BASE_NS - MPCBB1_Area_BlockSize)|
+MPCBB1_Area2_Privilege_Start|Area 2 Start Offset|||0x0|=MPCBB1_Area_Max|
+MPCBB1_Area2_Privilege_Size|Area 2 Size|||0x0|=(MPCBB1_Area_Max - MPCBB1_Area2_Privilege_Start)|0x0 : use the default HW configuration (not privileged memory)
+MPCBB1_Area2_Privilege_BlockSize|Area 2 Block Size|||=(MPCBB1_Area_BlockSize)|=(MPCBB1_Area_BlockSize)|
+MPCBB1_Area2_Privilege_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB1_Area2_SuperBlockSize)|=(MPCBB1_Area2_SuperBlockSize)|
+MPCBB1_Area2_Privilege_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB1_Area_Max / MPCBB1_Area2_Privilege_SuperBlockSize)|=(MPCBB1_Area_Max / MPCBB1_Area2_Privilege_SuperBlockSize)|
+MPCBB1_SecConfig_array|Secure configuration array|||||
+MPCBB1_PrivConfig_array|Privilege configuration array|||||
+MPCBB1_LockConfig_array|Lock configuration array|||00000000|0x0000FFFF|
+MPCBB2_Area_SRAM2_BASE_NS|Area Start SRAM2_BASE_NS|||0x20040000|0x20040000|
+MPCBB2_Area_Max|Area Max|||0x20000|0x20000|
+MPCBB2_Area_Start_Address|Area Start Address|||=(MPCBB2_Area_SRAM2_BASE_NS)|=(MPCBB2_Area_Max + MPCBB2_Area_SRAM2_BASE_NS - MPCBB2_Area_BlockSize)|
+MPCBB2_Area_Start|Area Start Offset|||0x0|=MPCBB2_Area_Max|
+MPCBB2_Area_Size|Area Size|||0x0|=(MPCBB2_Area_Max - MPCBB2_Area_Start)|
+MPCBB2_Area_BlockSize|Area Block Size|||0x200|0x200|
+MPCBB2_Area_NbBlock|Nb Block|||=(MPCBB2_Area_Max / MPCBB2_Area_BlockSize)|=(MPCBB2_Area_Max / MPCBB2_Area_BlockSize)|
+MPCBB2_Area_SuperBlockSize|Area Super-Block Size|||0x8000|0x8000|
+MPCBB2_Area_NbSuperBlock|Area Nb Super-Block|||=(MPCBB2_Area_Max / MPCBB2_Area_SuperBlockSize)|=(MPCBB2_Area_Max / MPCBB2_Area_SuperBlockSize)|
+MPCBB2_Area_Secure_Start_Address|Area Start Address|||=MPCBB2_Area_SRAM2_BASE_NS|=MPCBB2_Area_SRAM2_BASE_NS|
+MPCBB2_Area_Secure_Start|Area Start Offset|||0x0|=MPCBB2_Area_Max|
+MPCBB2_Area_Secure_Size|Area Size|||0x0|=(MPCBB2_Area_Max - MPCBB2_Area_Secure_Start)|0x0 : use the default HW configuration (secured memory)
+MPCBB2_Area_Secure_BlockSize|Area Block Size|||=(MPCBB2_Area_BlockSize)|=(MPCBB2_Area_BlockSize)|
+MPCBB2_Area_Secure_SuperBlockSize|Area Super-Block Size|||=(MPCBB2_Area_SuperBlockSize)|=(MPCBB2_Area_SuperBlockSize)|
+MPCBB2_Area_Secure_NbSuperBlock|Area Nb Super-Block|||=(MPCBB2_Area_Max / MPCBB2_Area_Secure_SuperBlockSize)|=(MPCBB2_Area_Max / MPCBB2_Area_Secure_SuperBlockSize)|
+MPCBB2_Area_Privilege_Start_Address|Area Start Address|||=(MPCBB2_Area_SRAM2_BASE_NS)|=(MPCBB2_Area_Max + MPCBB2_Area_SRAM2_BASE_NS - MPCBB2_Area_BlockSize)|
+MPCBB2_Area_Privilege_Start|Area Start Offset|||0x0|=MPCBB2_Area_Max|
+MPCBB2_Area_Privilege_Size|Area Size|||0x0|=(MPCBB2_Area_Max - MPCBB2_Area_Privilege_Start)|0x0 : use the default HW configuration (privileged memory)
+MPCBB2_Area_Privilege_BlockSize|Area Block Size|||=(MPCBB2_Area_BlockSize)|=(MPCBB2_Area_BlockSize)|
+MPCBB2_Area_Privilege_SuperBlockSize|Area Super-Block Size|||=(MPCBB2_Area_SuperBlockSize)|=(MPCBB2_Area_SuperBlockSize)|
+MPCBB2_Area_Privilege_NbSuperBlock|Area Nb Super-Block|||=(MPCBB2_Area_Max / MPCBB2_Area_Privilege_SuperBlockSize)|=(MPCBB2_Area_Max / MPCBB2_Area_Privilege_SuperBlockSize)|
+MPCBB2_Area_Secure|Area Attribute|||||
+MPCBB2_Area_Privilege|Area Attribute|||||
+MPCBB2_NbArea|Nb Area|||2|2|
+MPCBB2_Area2_Secure_Start_Address|Area 2 Start Address|||=(MPCBB2_Area_SRAM2_BASE_NS)|=(MPCBB2_Area_SRAM2_BASE_NS)|
+MPCBB2_Area2_Secure_Start|Area 2 Start Offset|||0x0|=MPCBB2_Area_Max|
+MPCBB2_Area2_Secure_Size|Area 2 Size|||0x0|=(MPCBB2_Area_Max - MPCBB2_Area2_Secure_Start)|0x0 : use the default HW configuration (not secured memory)
+MPCBB2_Area2_Secure_BlockSize|Area 2 Block Size|||=(MPCBB2_Area_BlockSize)|=(MPCBB2_Area_BlockSize)|
+MPCBB2_Area2_Secure_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB2_Area2_SuperBlockSize)|=(MPCBB2_Area2_SuperBlockSize)|
+MPCBB2_Area2_Secure_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB2_Area_Max / MPCBB2_Area2_Secure_SuperBlockSize)|=(MPCBB2_Area_Max / MPCBB2_Area2_Secure_SuperBlockSize)|
+MPCBB2_Area2_Privilege_Start_Address|Area 2 Start Address|||=(MPCBB2_Area_SRAM2_BASE_NS)|=(MPCBB2_Area_Max + MPCBB2_Area_SRAM2_BASE_NS - MPCBB2_Area_BlockSize)|
+MPCBB2_Area2_Privilege_Start|Area 2 Start Offset|||0x0|=MPCBB2_Area_Max|
+MPCBB2_Area2_Privilege_Size|Area 2 Size|||0x0|=(MPCBB2_Area_Max - MPCBB2_Area2_Privilege_Start)|0x0 : use the default HW configuration (not privileged memory)
+MPCBB2_Area2_Privilege_BlockSize|Area 2 Block Size|||=(MPCBB2_Area_BlockSize)|=(MPCBB2_Area_BlockSize)|
+MPCBB2_Area2_Privilege_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB2_Area2_SuperBlockSize)|=(MPCBB2_Area2_SuperBlockSize)|
+MPCBB2_Area2_Privilege_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB2_Area_Max / MPCBB2_Area2_Privilege_SuperBlockSize)|=(MPCBB2_Area_Max / MPCBB2_Area2_Privilege_SuperBlockSize)|
+MPCBB2_SecConfig_array|Secure configuration array|||||
+MPCBB2_PrivConfig_array|Privilege configuration array|||||
+MPCBB2_LockConfig_array|Lock configuration array|||00000000|0x0000000F|
+MPCBB3_Area_SRAM3_BASE_NS|Area Start SRAM3_BASE_NS|||0x20060000|0x20060000|
+MPCBB3_Area_Desc|Area Descriptor|||||
+MPCBB3_Area_Max|Area Max|||0x60000|0x60000|
+MPCBB3_Area_Start_Address|Area Start Address|||=(MPCBB3_Area_SRAM3_BASE_NS)|=(MPCBB3_Area_Max + MPCBB3_Area_SRAM3_BASE_NS - MPCBB3_Area_BlockSize)|
+MPCBB3_Area_Start|Area Start Offset|||0x0|=MPCBB3_Area_Max|
+MPCBB3_Area_Size|Area Size|||0x0|=(MPCBB3_Area_Max - MPCBB3_Area_Start)|
+MPCBB3_Area_BlockSize|Area Block Size|||0x200|0x200|
+MPCBB3_Area_NbBlock|Nb Block|||=(MPCBB3_Area_Max / MPCBB3_Area_BlockSize)|=(MPCBB3_Area_Max / MPCBB3_Area_BlockSize)|
+MPCBB3_Area_SuperBlockSize|Area Super-Block Size|||0x4000|0x4000|
+MPCBB3_Area_NbSuperBlock|Area Nb Super-Block|||=(MPCBB3_Area_Max / MPCBB3_Area_SuperBlockSize)|=(MPCBB3_Area_Max / MPCBB3_Area_SuperBlockSize)|
+MPCBB3_Area_Secure_Start_Address|Area Start Address|||=MPCBB3_Area_SRAM3_BASE_NS|=MPCBB3_Area_SRAM3_BASE_NS|
+MPCBB3_Area_Secure_Start|Area Start Offset|||0x0|=MPCBB3_Area_Max|
+MPCBB3_Area_Secure_Size|Area Size|||0x0|=(MPCBB3_Area_Max - MPCBB3_Area_Secure_Start)|0x0 : use the default HW configuration (secured memory)
+MPCBB3_Area_Secure_BlockSize|Area Block Size|||=(MPCBB3_Area_BlockSize)|=(MPCBB3_Area_BlockSize)|
+MPCBB3_Area_Secure_SuperBlockSize|Area Super-Block Size|||MPCBB3_Area_SuperBlockSize|MPCBB3_Area_SuperBlockSize|
+MPCBB3_Area_Secure_NbSuperBlock|Area Nb Super-Block|||=(MPCBB3_Area_Max / MPCBB3_Area_Secure_SuperBlockSize)|=(MPCBB3_Area_Max / MPCBB3_Area_Secure_SuperBlockSize)|
+MPCBB3_Area_Privilege_Start_Address|Area Start Address|||=(MPCBB3_Area_SRAM3_BASE_NS)|=(MPCBB3_Area_Max + MPCBB3_Area_SRAM3_BASE_NS - MPCBB3_Area_BlockSize)|
+MPCBB3_Area_Privilege_Start|Area Start Offset|||0x0|=MPCBB3_Area_Max|
+MPCBB3_Area_Privilege_Size|Area Size|||0x0|=(MPCBB3_Area_Max - MPCBB3_Area_Privilege_Start)|0x0 : use the default HW configuration (privileged memory)
+MPCBB3_Area_Privilege_BlockSize|Area Block Size|||=(MPCBB3_Area_BlockSize)|=(MPCBB3_Area_BlockSize)|
+MPCBB3_Area_Privilege_SuperBlockSize|Area Super-Block Size|||MPCBB3_Area_SuperBlockSize|MPCBB3_Area_SuperBlockSize|
+MPCBB3_Area_Privilege_NbSuperBlock|Area Nb Super-Block|||=(MPCBB3_Area_Max / MPCBB3_Area_Privilege_SuperBlockSize)|=(MPCBB3_Area_Max / MPCBB3_Area_Privilege_SuperBlockSize)|
+MPCBB3_Area_Secure|Area Attribute|||||
+MPCBB3_Area_Privilege|Area Attribute|||||
+MPCBB3_NbArea|Nb Area|||2|2|
+MPCBB3_Area2_Secure_Start_Address|Area 2 Start Address|||=(MPCBB3_Area_SRAM3_BASE_NS)|=(MPCBB3_Area_SRAM3_BASE_NS)|
+MPCBB3_Area2_Secure_Start|Area 2 Start Offset|||0x0|=MPCBB3_Area_Max|
+MPCBB3_Area2_Secure_Size|Area 2 Size|||0x0|=(MPCBB3_Area_Max - MPCBB3_Area_Secure_Start)|0x0 : use the default HW configuration (not secured memory)
+MPCBB3_Area2_Secure_BlockSize|Area 2 Block Size|||=(MPCBB3_Area_BlockSize)|=(MPCBB3_Area_BlockSize)|
+MPCBB3_Area2_Secure_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB3_Area2_SuperBlockSize)|=(MPCBB3_Area2_SuperBlockSize)|
+MPCBB3_Area2_Secure_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB3_Area_Max / MPCBB3_Area2_Secure_SuperBlockSize)|=(MPCBB3_Area_Max / MPCBB3_Area2_Secure_SuperBlockSize)|
+MPCBB3_Area2_Privilege_Start_Address|Area 2 Start Address|||=(MPCBB3_Area_SRAM3_BASE_NS)|=(MPCBB3_Area_Max + MPCBB3_Area_SRAM3_BASE_NS - MPCBB3_Area_BlockSize)|
+MPCBB3_Area2_Privilege_Start|Area 2 Start offset|||0x0|=MPCBB3_Area_Max|
+MPCBB3_Area2_Privilege_Size|Area 2 Size|||0x0|=(MPCBB3_Area_Max - MPCBB3_Area2_Privilege_Start)|0x0 : use the default HW configuration (not privileged memory)
+MPCBB3_Area2_Privilege_BlockSize|Area 2 Block Size|||=(MPCBB3_Area_BlockSize)|=(MPCBB3_Area_BlockSize)|
+MPCBB3_Area2_Privilege_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB3_Area2_SuperBlockSize)|=(MPCBB3_Area2_SuperBlockSize)|
+MPCBB3_Area2_Privilege_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB3_Area_Max / MPCBB3_Area2_Privilege_SuperBlockSize)|=(MPCBB3_Area_Max / MPCBB3_Area2_Privilege_SuperBlockSize)|
+MPCBB3_SecConfig_array|Secure configuration array|||||
+MPCBB3_PrivConfig_array|Privilege configuration array|||||
+MPCBB3_LockConfig_array|Lock configuration array|||00000000|0x000FFFFF|
+MPCBB4_Area_SRAM4_BASE_NS|Area Start SRAM4_BASE_NS|||0x200C0000|0x200C0000|
+MPCBB4_Area_Desc|Area Descriptor|||||
+MPCBB4_Area_Max|Area Max|||0x60000|0x60000|
+MPCBB4_Area_Start_Address|Area Start Address|||=(MPCBB4_Area_SRAM4_BASE_NS)|=(MPCBB4_Area_Max + MPCBB4_Area_SRAM4_BASE_NS - MPCBB4_Area_BlockSize)|
+MPCBB4_Area_Start|Area Start Offset|||0x0|=MPCBB4_Area_Max|
+MPCBB4_Area_Size|Area Size|||0x0|=(MPCBB4_Area_Max - MPCBB4_Area_Start)|
+MPCBB4_Area_BlockSize|Area Block Size|||0x200|0x200|
+MPCBB4_Area_NbBlock|Nb Block|||=(MPCBB4_Area_Max / MPCBB4_Area_BlockSize)|=(MPCBB4_Area_Max / MPCBB4_Area_BlockSize)|
+MPCBB4_Area_SuperBlockSize|Area Super-Block Size|||0x4000|0x4000|
+MPCBB4_Area_NbSuperBlock|Area Nb Super-Block|||=(MPCBB4_Area_Max / MPCBB4_Area_SuperBlockSize)|=(MPCBB4_Area_Max / MPCBB4_Area_SuperBlockSize)|
+MPCBB4_Area_Secure_Start_Address|Area Start Address|||=MPCBB4_Area_SRAM4_BASE_NS|=MPCBB4_Area_SRAM4_BASE_NS|
+MPCBB4_Area_Secure_Start|Area Start Offset|||0x0|=MPCBB4_Area_Max|
+MPCBB4_Area_Secure_Size|Area Size|||0x0|=(MPCBB4_Area_Max - MPCBB4_Area_Secure_Start)|0x0 : use the default HW configuration (secured memory)
+MPCBB4_Area_Secure_BlockSize|Area Block Size|||=(MPCBB4_Area_BlockSize)|=(MPCBB4_Area_BlockSize)|
+MPCBB4_Area_Secure_SuperBlockSize|Area Super-Block Size|||MPCBB4_Area_SuperBlockSize|MPCBB4_Area_SuperBlockSize|
+MPCBB4_Area_Secure_NbSuperBlock|Area Nb Super-Block|||=(MPCBB4_Area_Max / MPCBB4_Area_Secure_SuperBlockSize)|=(MPCBB4_Area_Max / MPCBB4_Area_Secure_SuperBlockSize)|
+MPCBB4_Area_Privilege_Start_Address|Area Start Address|||=(MPCBB4_Area_SRAM4_BASE_NS)|=(MPCBB4_Area_Max + MPCBB4_Area_SRAM4_BASE_NS - MPCBB4_Area_BlockSize)|
+MPCBB4_Area_Privilege_Start|Area Start Offset|||0x0|=MPCBB4_Area_Max|
+MPCBB4_Area_Privilege_Size|Area Size|||0x0|=(MPCBB4_Area_Max - MPCBB4_Area_Privilege_Start)|0x0 : use the default HW configuration (privileged memory)
+MPCBB4_Area_Privilege_BlockSize|Area Block Size|||=(MPCBB4_Area_BlockSize)|=(MPCBB4_Area_BlockSize)|
+MPCBB4_Area_Privilege_SuperBlockSize|Area Super-Block Size|||MPCBB4_Area_SuperBlockSize|MPCBB4_Area_SuperBlockSize|
+MPCBB4_Area_Privilege_NbSuperBlock|Area Nb Super-Block|||=(MPCBB4_Area_Max / MPCBB4_Area_Privilege_SuperBlockSize)|=(MPCBB4_Area_Max / MPCBB4_Area_Privilege_SuperBlockSize)|
+MPCBB4_Area_Secure|Area Attribute|||||
+MPCBB4_Area_Privilege|Area Attribute|||||
+MPCBB4_NbArea|Nb Area|||2|2|
+MPCBB4_Area2_Secure_Start_Address|Area 2 Start Address|||=(MPCBB4_Area_SRAM4_BASE_NS)|=(MPCBB4_Area_SRAM4_BASE_NS)|
+MPCBB4_Area2_Secure_Start|Area 2 Start Offset|||0x0|=MPCBB4_Area_Max|
+MPCBB4_Area2_Secure_Size|Area 2 Size|||0x0|=(MPCBB4_Area_Max - MPCBB4_Area_Secure_Start)|0x0 : use the default HW configuration (not secured memory)
+MPCBB4_Area2_Secure_BlockSize|Area 2 Block Size|||=(MPCBB4_Area_BlockSize)|=(MPCBB4_Area_BlockSize)|
+MPCBB4_Area2_Secure_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB4_Area2_SuperBlockSize)|=(MPCBB4_Area2_SuperBlockSize)|
+MPCBB4_Area2_Secure_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB4_Area_Max / MPCBB4_Area2_Secure_SuperBlockSize)|=(MPCBB4_Area_Max / MPCBB4_Area2_Secure_SuperBlockSize)|
+MPCBB4_Area2_Privilege_Start_Address|Area 2 Start Address|||=(MPCBB4_Area_SRAM4_BASE_NS)|=(MPCBB4_Area_Max + MPCBB4_Area_SRAM4_BASE_NS - MPCBB4_Area_BlockSize)|
+MPCBB4_Area2_Privilege_Start|Area 2 Start offset|||0x0|=MPCBB4_Area_Max|
+MPCBB4_Area2_Privilege_Size|Area 2 Size|||0x0|=(MPCBB4_Area_Max - MPCBB4_Area2_Privilege_Start)|0x0 : use the default HW configuration (not privileged memory)
+MPCBB4_Area2_Privilege_BlockSize|Area 2 Block Size|||=(MPCBB4_Area_BlockSize)|=(MPCBB4_Area_BlockSize)|
+MPCBB4_Area2_Privilege_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB4_Area2_SuperBlockSize)|=(MPCBB4_Area2_SuperBlockSize)|
+MPCBB4_Area2_Privilege_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB4_Area_Max / MPCBB4_Area2_Privilege_SuperBlockSize)|=(MPCBB4_Area_Max / MPCBB4_Area2_Privilege_SuperBlockSize)|
+MPCBB4_SecConfig_array|Secure configuration array|||||
+MPCBB4_PrivConfig_array|Privilege configuration array|||||
+MPCBB4_LockConfig_array|Lock configuration array|||00000000|0x000FFFFF|
+MPCBB5_Area_SRAM5_BASE_NS|Area Start SRAM5_BASE_NS|||0x20120000|0x20120000|
+MPCBB5_Area_Desc|Area Descriptor|||||
+MPCBB5_Area_Max|Area Max|||0x60000|0x60000|
+MPCBB5_Area_Start_Address|Area Start Address|||=(MPCBB5_Area_SRAM5_BASE_NS)|=(MPCBB5_Area_Max + MPCBB5_Area_SRAM5_BASE_NS - MPCBB5_Area_BlockSize)|
+MPCBB5_Area_Start|Area Start Offset|||0x0|=MPCBB5_Area_Max|
+MPCBB5_Area_Size|Area Size|||0x0|=(MPCBB5_Area_Max - MPCBB5_Area_Start)|
+MPCBB5_Area_BlockSize|Area Block Size|||0x200|0x200|
+MPCBB5_Area_NbBlock|Nb Block|||=(MPCBB5_Area_Max / MPCBB5_Area_BlockSize)|=(MPCBB5_Area_Max / MPCBB5_Area_BlockSize)|
+MPCBB5_Area_SuperBlockSize|Area Super-Block Size|||0x4000|0x4000|
+MPCBB5_Area_NbSuperBlock|Area Nb Super-Block|||=(MPCBB5_Area_Max / MPCBB5_Area_SuperBlockSize)|=(MPCBB5_Area_Max / MPCBB5_Area_SuperBlockSize)|
+MPCBB5_Area_Secure_Start_Address|Area Start Address|||=MPCBB5_Area_SRAM5_BASE_NS|=MPCBB5_Area_SRAM5_BASE_NS|
+MPCBB5_Area_Secure_Start|Area Start Offset|||0x0|=MPCBB5_Area_Max|
+MPCBB5_Area_Secure_Size|Area Size|||0x0|=(MPCBB5_Area_Max - MPCBB5_Area_Secure_Start)|0x0 : use the default HW configuration (secured memory)
+MPCBB5_Area_Secure_BlockSize|Area Block Size|||=(MPCBB5_Area_BlockSize)|=(MPCBB5_Area_BlockSize)|
+MPCBB5_Area_Secure_SuperBlockSize|Area Super-Block Size|||MPCBB5_Area_SuperBlockSize|MPCBB5_Area_SuperBlockSize|
+MPCBB5_Area_Secure_NbSuperBlock|Area Nb Super-Block|||=(MPCBB5_Area_Max / MPCBB5_Area_Secure_SuperBlockSize)|=(MPCBB5_Area_Max / MPCBB5_Area_Secure_SuperBlockSize)|
+MPCBB5_Area_Privilege_Start_Address|Area Start Address|||=(MPCBB5_Area_SRAM5_BASE_NS)|=(MPCBB5_Area_Max + MPCBB5_Area_SRAM5_BASE_NS - MPCBB5_Area_BlockSize)|
+MPCBB5_Area_Privilege_Start|Area Start Offset|||0x0|=MPCBB5_Area_Max|
+MPCBB5_Area_Privilege_Size|Area Size|||0x0|=(MPCBB5_Area_Max - MPCBB5_Area_Privilege_Start)|0x0 : use the default HW configuration (privileged memory)
+MPCBB5_Area_Privilege_BlockSize|Area Block Size|||=(MPCBB5_Area_BlockSize)|=(MPCBB5_Area_BlockSize)|
+MPCBB5_Area_Privilege_SuperBlockSize|Area Super-Block Size|||MPCBB5_Area_SuperBlockSize|MPCBB5_Area_SuperBlockSize|
+MPCBB5_Area_Privilege_NbSuperBlock|Area Nb Super-Block|||=(MPCBB5_Area_Max / MPCBB5_Area_Privilege_SuperBlockSize)|=(MPCBB5_Area_Max / MPCBB5_Area_Privilege_SuperBlockSize)|
+MPCBB5_Area_Secure|Area Attribute|||||
+MPCBB5_Area_Privilege|Area Attribute|||||
+MPCBB5_NbArea|Nb Area|||2|2|
+MPCBB5_Area2_Secure_Start_Address|Area 2 Start Address|||=(MPCBB5_Area_SRAM5_BASE_NS)|=(MPCBB5_Area_SRAM5_BASE_NS)|
+MPCBB5_Area2_Secure_Start|Area 2 Start Offset|||0x0|=MPCBB5_Area_Max|
+MPCBB5_Area2_Secure_Size|Area 2 Size|||0x0|=(MPCBB5_Area_Max - MPCBB5_Area_Secure_Start)|0x0 : use the default HW configuration (not secured memory)
+MPCBB5_Area2_Secure_BlockSize|Area 2 Block Size|||=(MPCBB5_Area_BlockSize)|=(MPCBB5_Area_BlockSize)|
+MPCBB5_Area2_Secure_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB5_Area2_SuperBlockSize)|=(MPCBB5_Area2_SuperBlockSize)|
+MPCBB5_Area2_Secure_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB5_Area_Max / MPCBB5_Area2_Secure_SuperBlockSize)|=(MPCBB5_Area_Max / MPCBB5_Area2_Secure_SuperBlockSize)|
+MPCBB5_Area2_Privilege_Start_Address|Area 2 Start Address|||=(MPCBB5_Area_SRAM5_BASE_NS)|=(MPCBB5_Area_Max + MPCBB5_Area_SRAM5_BASE_NS - MPCBB5_Area_BlockSize)|
+MPCBB5_Area2_Privilege_Start|Area 2 Start offset|||0x0|=MPCBB5_Area_Max|
+MPCBB5_Area2_Privilege_Size|Area 2 Size|||0x0|=(MPCBB5_Area_Max - MPCBB5_Area2_Privilege_Start)|0x0 : use the default HW configuration (not privileged memory)
+MPCBB5_Area2_Privilege_BlockSize|Area 2 Block Size|||=(MPCBB5_Area_BlockSize)|=(MPCBB5_Area_BlockSize)|
+MPCBB5_Area2_Privilege_SuperBlockSize|Area 2 Super-Block Size|||=(MPCBB5_Area2_SuperBlockSize)|=(MPCBB5_Area2_SuperBlockSize)|
+MPCBB5_Area2_Privilege_NbSuperBlock|Area 2 Nb Super-Block|||=(MPCBB5_Area_Max / MPCBB5_Area2_Privilege_SuperBlockSize)|=(MPCBB5_Area_Max / MPCBB5_Area2_Privilege_SuperBlockSize)|
+MPCBB5_SecConfig_array|Secure configuration array|||||
+MPCBB5_PrivConfig_array|Privilege configuration array|||||
+MPCBB5_LockConfig_array|Lock configuration array|||00000000|0x000FFFFF|
+TZIC_Configure_IT_Choice|Configure Illegal access IT|Illegal Access ITs for securable & TZ-Aware Peripherals||||Enable/Disable all the Interrupts in one time until individuals are modified.
+Illegal_Access_Interrupt_Peripheral|Illegal Access Interrupt Peripheral|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+AES_Illegal_Access_Interrupt|AES|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+CCB_Illegal_Access_Interrupt|CCB|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+LTDC_Illegal_Access_Interrupt|LTDC|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+COMP1_Illegal_Access_Interrupt|COMP1|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+COMP2_Illegal_Access_Interrupt|COMP2|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+PKA_Illegal_Access_Interrupt|PKA|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+OPAMP1_Illegal_Access_Interrupt|OPAMP1|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+OTFDEC1_Illegal_Access_Interrupt|OTFDEC1|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+SAES_Illegal_Access_Interrupt|SAES|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+ETH_Illegal_Access_Interrupt|ETH|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+FMC_Illegal_Access_Interrupt|FMC_REG|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+FDCAN2_Illegal_Access_Interrupt|FDCAN2|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+FDCAN3_Illegal_Access_Interrupt|FDCAN3|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+SPI4_Illegal_Access_Interrupt|SPI4|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+SPI5_Illegal_Access_Interrupt|SPI5|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+SDMMC2_Illegal_Access_Interrupt|SDMMC2|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+UART8_Illegal_Access_Interrupt|UART8|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+UART9_Illegal_Access_Interrupt|UART9|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+USART10_Illegal_Access_Interrupt|USART10|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+USART5_Illegal_Access_Interrupt|USART5|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+UART12_Illegal_Access_Interrupt|UART12|Illegal Access ITs for securable & TZ-Aware Peripherals||||
+
+[Values]
+# параметр|значение|подпись
+IP_Secure|GTZC_TZSC_PERIPH_SEC|secured
+IP_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+AES_Secure|GTZC_TZSC_PERIPH_SEC|secured
+AES_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+CCB_Secure|GTZC_TZSC_PERIPH_SEC|secured
+CCB_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+I3C2_Secure|GTZC_TZSC_PERIPH_SEC|secured
+I3C2_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+LTDC_Secure|GTZC_TZSC_PERIPH_SEC|secured
+LTDC_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+CRS_Secure|GTZC_TZSC_PERIPH_SEC|secured
+CRS_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+ICACHE_Secure|GTZC_TZSC_PERIPH_SEC|secured
+ICACHE_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+PKA_Secure|GTZC_TZSC_PERIPH_SEC|secured
+PKA_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+OPAMP1_Secure|GTZC_TZSC_PERIPH_SEC|secured
+OPAMP1_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+RNG_Secure|GTZC_TZSC_PERIPH_SEC|secured
+RNG_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+SAES_Secure|GTZC_TZSC_PERIPH_SEC|secured
+SAES_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+ETH_Secure|GTZC_TZSC_PERIPH_SEC|secured
+ETH_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+FDCAN2_Secure|GTZC_TZSC_PERIPH_SEC|secured
+FDCAN2_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+FDCAN3_Secure|GTZC_TZSC_PERIPH_SEC|secured
+FDCAN3_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+FMC_Secure|GTZC_TZSC_PERIPH_SEC|secured
+FMC_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+COMP1_Secure|GTZC_TZSC_PERIPH_SEC|secured
+COMP1_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+COMP2_Secure|GTZC_TZSC_PERIPH_SEC|secured
+COMP2_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+SDMMC2_Secure|GTZC_TZSC_PERIPH_SEC|secured
+SDMMC2_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+SPI4_Secure|GTZC_TZSC_PERIPH_SEC|secured
+SPI4_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+SPI5_Secure|GTZC_TZSC_PERIPH_SEC|secured
+SPI5_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+UART8_Secure|GTZC_TZSC_PERIPH_SEC|secured
+UART8_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+UART9_Secure|GTZC_TZSC_PERIPH_SEC|secured
+UART9_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+USART10_Secure|GTZC_TZSC_PERIPH_SEC|secured
+USART10_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+USART5_Secure|GTZC_TZSC_PERIPH_SEC|secured
+USART5_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+USART11_Secure|GTZC_TZSC_PERIPH_SEC|secured
+USART11_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+UART12_Secure|GTZC_TZSC_PERIPH_SEC|secured
+UART12_Secure|GTZC_TZSC_PERIPH_NSEC|not secured
+has_IP_Secured|GTZC_TZSC_PERIPH_SEC|there is some IP secured
+has_IP_not_Secured|GTZC_TZSC_PERIPH_NSEC|there is some IP not secured
+IP_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+IP_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+AES_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+AES_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+CCB_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+CCB_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+LTDC_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+LTDC_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+SAES_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+SAES_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+PKA_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+PKA_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+OPAMP1_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+OPAMP1_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+ETH_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+ETH_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+FDCAN2_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+FDCAN2_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+FDCAN3_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+FDCAN3_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+FMC_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+FMC_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+COMP1_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+COMP1_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+COMP2_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+COMP2_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+SDMMC2_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+SDMMC2_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+SPI4_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+SPI4_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+SPI5_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+SPI5_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+UART8_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+UART8_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+UART9_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+UART9_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+USART10_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+USART10_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+USART5_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+USART5_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+USART11_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+USART11_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+UART12_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+UART12_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+CRS_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+CRS_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+ICACHE_Privilege|GTZC_TZSC_PERIPH_PRIV|privileged
+ICACHE_Privilege|GTZC_TZSC_PERIPH_NPRIV|not privileged
+MPCWM_GTZC_LockConfig|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM settings are not locked
+MPCWM_GTZC_LockConfig|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM settings are locked until next reset
+MPCWM1_Area1_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM1_Area1_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM1_Area1_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM1_Area1_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM1_Area1_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM1 Area 1 is not locked
+MPCWM1_Area1_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM1 Area 1 is locked
+MPCWM1_Area2_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM1_Area2_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM1_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM1_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM1_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM1 Area 2 is not locked
+MPCWM1_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM1 Area 2 is locked
+MPCWM2_Area1_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM2_Area1_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM2_Area1_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM2_Area1_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM2_Area1_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM2 Area 1 is not locked
+MPCWM2_Area1_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM2 Area 1 is locked
+MPCWM2_Area2_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM2_Area2_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM2_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM2_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM2_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM2 Area 2 is not locked
+MPCWM2_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM2 Area 2 is locked
+MPCWM3_Area_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM3_Area_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM3_Area_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM3_Area_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM3_Area_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM3 Area 1 is not locked
+MPCWM3_Area_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM3 Area 1 is locked
+MPCWM3_Area2_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM3_Area2_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM3_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM3_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM3_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM3 Area 2 is not locked
+MPCWM3_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM3 Area 2 is locked
+MPCWM4_Area_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM4_Area_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM4_Area_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM4_Area_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM4_Area_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM4 Area 1 is not locked
+MPCWM4_Area_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM4 Area 1 is locked
+MPCWM4_Area2_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM4_Area2_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM4_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM4_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM4_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM4 Area 2 is not locked
+MPCWM4_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM4 Area 2 is locked
+MPCWM5_Area1_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM5_Area1_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM5_Area1_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM5_Area1_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM5_Area1_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM5 Area 1 is not locked
+MPCWM5_Area1_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM5 Area 1 is locked
+MPCWM5_Area2_Secure|GTZC_TZSC_MPCWM_REGION_SEC|secured
+MPCWM5_Area2_Secure|GTZC_TZSC_MPCWM_REGION_NSEC|not secured
+MPCWM5_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_PRIV|privileged
+MPCWM5_Area2_Privilege|GTZC_TZSC_MPCWM_REGION_NPRIV|not privileged
+MPCWM5_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_OFF|MPCWM5 Area 2 is not locked
+MPCWM5_Area2_Lock|GTZC_TZSC_MPCWM_LOCK_ON|MPCWM5 Area 2 is locked
+MPCBB_SRWILADIS|GTZC_MPCBB_SRWILADIS_ENABLE|Secure Read/Write access not allowed on non-secure SRAM block
+MPCBB_SRWILADIS|GTZC_MPCBB_SRWILADIS_DISABLE|Secure Read/Write access allowed on non-secure SRAM block
+MPCBB_INVSECSTATE|GTZC_MPCBB_INVSECSTATE_NOT_INVERTED|Default state (source clock secured if a secure area exists in the MPCBB and vice-versa)
+MPCBB_INVSECSTATE|GTZC_MPCBB_INVSECSTATE_INVERTED|Invert the state, source clock remains secure even if no secure block is set in the MPCBB
+MPCBB1_Area_Secure|GTZC_MPCBB_REGION_SEC|secured
+MPCBB1_Area_Secure|GTZC_MPCBB_REGION_NSEC|not secured
+MPCBB1_Area_Privilege|GTZC_MPCBB_REGION_NPRIV|not privileged
+MPCBB1_Area_Privilege|GTZC_MPCBB_REGION_PRIV|privileged
+MPCBB2_Area_Secure|GTZC_MPCBB_REGION_SEC|secured
+MPCBB2_Area_Secure|GTZC_MPCBB_REGION_NSEC|not secured
+MPCBB2_Area_Privilege|GTZC_MPCBB_REGION_NPRIV|not privileged
+MPCBB2_Area_Privilege|GTZC_MPCBB_REGION_PRIV|privileged
+MPCBB3_Area_Secure|GTZC_MPCBB_REGION_NSEC|not secured
+MPCBB3_Area_Secure|GTZC_MPCBB_REGION_SEC|secured
+MPCBB3_Area_Privilege|GTZC_MPCBB_REGION_NPRIV|not privileged
+MPCBB3_Area_Privilege|GTZC_MPCBB_REGION_PRIV|privileged
+MPCBB4_Area_Secure|GTZC_MPCBB_REGION_NSEC|not secured
+MPCBB4_Area_Secure|GTZC_MPCBB_REGION_SEC|secured
+MPCBB4_Area_Privilege|GTZC_MPCBB_REGION_NPRIV|not privileged
+MPCBB4_Area_Privilege|GTZC_MPCBB_REGION_PRIV|privileged
+MPCBB5_Area_Secure|GTZC_MPCBB_REGION_NSEC|not secured
+MPCBB5_Area_Secure|GTZC_MPCBB_REGION_SEC|secured
+MPCBB5_Area_Privilege|GTZC_MPCBB_REGION_NPRIV|not privileged
+MPCBB5_Area_Privilege|GTZC_MPCBB_REGION_PRIV|privileged

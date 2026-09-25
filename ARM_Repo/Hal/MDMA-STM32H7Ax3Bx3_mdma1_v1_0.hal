@@ -1,0 +1,133 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=MDMA
+Version=STM32H7Ax3Bx3_mdma1_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Request|Request number|||||
+CircularMode|Circular Mode|||||
+TransferTriggerMode|Transfer Trigger Mode|||||
+Priority|Priority|||||
+Endianness|Endianness|||||
+SourceInc|Source increment mode|||||
+DestinationInc|Destination increment mode|||||
+SourceDataSize|Source data size|||||
+DestDataSize|Destination data size|||||
+DataAlignment|Data alignment|||||
+BufferTransferLength|Buffer transfer length|||1|128|
+SourceBurst|Source burst|||||
+DestBurst|Destination burst|||||
+SourceBlockAddressOffset|Source block address offset|||-65535|65535|
+DestBlockAddressOffset|Destination block address offset|||-65535|65535|
+MaskAddress|Mask address|||0|4294967295|
+MaskData|Mask data|||0|4294967295|
+SrcAddress|Source address|||0|4294967295|
+DstAddress|Destination address|||0|4294967295|
+BlockDataLength|Block data length|||0|65536|
+BlockCount|Block count|||0|4095|
+ClockEnableMode|Clock enable mode|||||
+IpInstance|IpInstance|||||
+DMA_Handle|DMA_Handle|||||
+Rank|Rank|||||
+node|node|||||
+pNewNode|pNewNode|||||
+
+[Values]
+# параметр|значение|подпись
+Request|MDMA_REQUEST_SW|Software request
+Request|MDMA_REQUEST_DMA1_Stream0_TC|DMA1 stream 0 transfer complete
+Request|MDMA_REQUEST_DMA1_Stream1_TC|DMA1 stream 1 transfer complete
+Request|MDMA_REQUEST_DMA1_Stream2_TC|DMA1 stream 2 transfer complete
+Request|MDMA_REQUEST_DMA1_Stream3_TC|DMA1 stream 3 transfer complete
+Request|MDMA_REQUEST_DMA1_Stream4_TC|DMA1 stream 4 transfer complete
+Request|MDMA_REQUEST_DMA1_Stream5_TC|DMA1 stream 5 transfer complete
+Request|MDMA_REQUEST_DMA1_Stream6_TC|DMA1 stream 6 transfer complete
+Request|MDMA_REQUEST_DMA1_Stream7_TC|DMA1 stream 7 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream0_TC|DMA2 stream 0 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream1_TC|DMA2 stream 1 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream2_TC|DMA2 stream 2 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream3_TC|DMA2 stream 3 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream4_TC|DMA2 stream 4 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream5_TC|DMA2 stream 5 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream6_TC|DMA2 stream 6 transfer complete
+Request|MDMA_REQUEST_DMA2_Stream7_TC|DMA2 stream 7 transfer complete
+Request|MDMA_REQUEST_LTDC_LINE_IT|LTDC line interrupt
+Request|MDMA_REQUEST_JPEG_INFIFO_TH|JPEG input FIFO threshold
+Request|MDMA_REQUEST_JPEG_INFIFO_NF|JPEG input FIFO not full
+Request|MDMA_REQUEST_JPEG_OUTFIFO_TH|JPEG output FIFO threshold
+Request|MDMA_REQUEST_JPEG_OUTFIFO_NE|JPEG output FIFO not empty
+Request|MDMA_REQUEST_JPEG_END_CONVERSION|JPEG end of conversion
+Request|MDMA_REQUEST_OCTOSPI1_FIFO_TH|OCTOSPI1 FIFO Threshold
+Request|MDMA_REQUEST_OCTOSPI1_TC|OCTOSPI1 transfer complete
+Request|MDMA_REQUEST_DMA2D_CLUT_TC|DMA2D CLUT transfer complete
+Request|MDMA_REQUEST_DMA2D_TC|DMA2D transfer complete
+Request|MDMA_REQUEST_DMA2D_TW|DMA2D transfer watermark
+Request|MDMA_REQUEST_SDMMC1_END_DATA|SDMMC1 data end
+Request|MDMA_REQUEST_SDMMC1_DMA_ENDBUFFER|SDMMC1 Internal DMA Buffer End
+Request|MDMA_REQUEST_SDMMC1_COMMAND_END|SDMMC1 Command End
+Request|MDMA_REQUEST_OCTOSPI2_FIFO_TH|OCTOSPI2 FIFO Threshold
+Request|MDMA_REQUEST_OCTOSPI2_TC|OCTOSPI2 transfer complete
+CircularMode|MDMA_LINEAR_LIST|Linear list
+CircularMode|MDMA_CIRCULAR_LIST_LOOPING_ON_FIRST_ELEMENT|Circular list looping on first transfer
+CircularMode|MDMA_CIRCULAR_LIST_LOOPING_ON_SECOND_ELEMENT|Circular list looping on second transfer
+TransferTriggerMode|MDMA_BUFFER_TRANSFER|Buffer transfer
+TransferTriggerMode|MDMA_BLOCK_TRANSFER|Block transfer
+TransferTriggerMode|MDMA_REPEAT_BLOCK_TRANSFER|Repeat block transfer
+TransferTriggerMode|MDMA_FULL_TRANSFER|Full transfer
+Priority|MDMA_PRIORITY_LOW|Low
+Priority|MDMA_PRIORITY_MEDIUM|Medium
+Priority|MDMA_PRIORITY_HIGH|High
+Priority|MDMA_PRIORITY_VERY_HIGH|Very High
+Endianness|MDMA_LITTLE_ENDIANNESS_PRESERVE|Little endianness preserved
+Endianness|MDMA_LITTLE_BYTE_ENDIANNESS_EXCHANGE|Byte endianness exchanged when destination data size is > BYTE
+Endianness|MDMA_LITTLE_HALFWORD_ENDIANNESS_EXCHANGE|Half word endianness exchanged when destination data size is > HALF WORD
+Endianness|MDMA_LITTLE_WORD_ENDIANNESS_EXCHANGE|Word endianness exchanged when destination data size is > WORD
+SourceInc|MDMA_SRC_INC_DISABLE|Fixed
+SourceInc|MDMA_SRC_INC_DOUBLEWORD|Increment by a double word
+SourceInc|MDMA_SRC_DEC_DOUBLEWORD|Decrement by a double word
+SourceInc|MDMA_SRC_INC_WORD|Increment by a word
+SourceInc|MDMA_SRC_DEC_WORD|Decrement by a word
+SourceInc|MDMA_SRC_INC_HALFWORD|Increment by a half word
+SourceInc|MDMA_SRC_DEC_HALFWORD|Decrement by a half word
+SourceInc|MDMA_SRC_INC_BYTE|Increment by a byte
+SourceInc|MDMA_SRC_DEC_BYTE|Decrement by a byte
+DestinationInc|MDMA_DEST_INC_DISABLE|Fixed
+DestinationInc|MDMA_DEST_INC_DOUBLEWORD|Increment by a double word
+DestinationInc|MDMA_DEST_DEC_DOUBLEWORD|Decrement by a double word
+DestinationInc|MDMA_DEST_INC_WORD|Increment by a word
+DestinationInc|MDMA_DEST_DEC_WORD|Decrement by a word
+DestinationInc|MDMA_DEST_INC_HALFWORD|Increment by a half word
+DestinationInc|MDMA_DEST_DEC_HALFWORD|Decrement by a half word
+DestinationInc|MDMA_DEST_INC_BYTE|Increment by a byte
+DestinationInc|MDMA_DEST_DEC_BYTE|Decrement by a byte
+SourceDataSize|MDMA_SRC_DATASIZE_BYTE|Byte
+SourceDataSize|MDMA_SRC_DATASIZE_HALFWORD|Half word
+SourceDataSize|MDMA_SRC_DATASIZE_WORD|Word
+SourceDataSize|MDMA_SRC_DATASIZE_DOUBLEWORD|Double word
+DestDataSize|MDMA_DEST_DATASIZE_BYTE|Byte
+DestDataSize|MDMA_DEST_DATASIZE_HALFWORD|Half word
+DestDataSize|MDMA_DEST_DATASIZE_WORD|Word
+DestDataSize|MDMA_DEST_DATASIZE_DOUBLEWORD|Double word
+DataAlignment|MDMA_DATAALIGN_PACKENABLE|Source data packed/unpacked into destination data size
+DataAlignment|MDMA_DATAALIGN_RIGHT|Right aligned, padded with 0s
+DataAlignment|MDMA_DATAALIGN_LEFT|Left aligned, padded with 0s
+DataAlignment|MDMA_DATAALIGN_RIGHT_SIGNED|Right aligned, sign extended
+SourceBurst|MDMA_SOURCE_BURST_SINGLE|Single transfer
+SourceBurst|MDMA_SOURCE_BURST_2BEATS|Burst of 2 beats
+SourceBurst|MDMA_SOURCE_BURST_4BEATS|Burst of 4 beats
+SourceBurst|MDMA_SOURCE_BURST_8BEATS|Burst of 8 beats
+SourceBurst|MDMA_SOURCE_BURST_16BEATS|Burst of 16 beats
+SourceBurst|MDMA_SOURCE_BURST_32BEATS|Burst of 32 beats
+SourceBurst|MDMA_SOURCE_BURST_64BEATS|Burst of 64 beats
+SourceBurst|MDMA_SOURCE_BURST_128BEATS|Burst of 128 beats
+DestBurst|MDMA_DEST_BURST_SINGLE|Single transfer
+DestBurst|MDMA_DEST_BURST_2BEATS|Burst of 2 beats
+DestBurst|MDMA_DEST_BURST_4BEATS|Burst of 4 beats
+DestBurst|MDMA_DEST_BURST_8BEATS|Burst of 8 beats
+DestBurst|MDMA_DEST_BURST_16BEATS|Burst of 16 beats
+DestBurst|MDMA_DEST_BURST_32BEATS|Burst of 32 beats
+DestBurst|MDMA_DEST_BURST_64BEATS|Burst of 64 beats
+DestBurst|MDMA_DEST_BURST_128BEATS|Burst of 128 beats
+ClockEnableMode|__HAL_RCC_MDMA_CLK_ENABLE|MDMA clock enable

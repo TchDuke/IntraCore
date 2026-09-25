@@ -1,0 +1,8 @@
+#include "${HEADER_FILE}"
+
+${NAMESPACE_BEGIN}${CLASS_NAME}::${CLASS_NAME}() {
+}
+
+${CLASS_NAME}::~${CLASS_NAME}() {
+}
+${NAMESPACE_END}

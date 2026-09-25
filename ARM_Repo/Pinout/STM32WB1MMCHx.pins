@@ -1,0 +1,132 @@
+# STM32WB1MMCHx — распиновка детали.
+# Сгенерировано pinout_import из базы CubeMX. НЕ ПРАВИТЬ РУКАМИ:
+# файл перезаписывается импортом. Формат — src/Docs/Description/PinoutFormat.md.
+
+[Part]
+RefName=STM32WB1MMCHx
+Rpn=STM32WB1M
+CmsisDevice=
+Family=STM32WB
+Line=STM32WBxM Modules
+ClockTree=STM32WB1
+Package=LGA77
+Core=Arm Cortex-M4
+FrequencyMHz=0
+Ram=49152
+Flash=327680
+IoCount=26
+AfScheme=Numbered
+
+[Pins]
+# позиция|тип|имя|вариант|сигналы через пробел, каждый — имя[:номер AF]
+1|Power|VSS||
+2|Power|VSSRF||
+3|Power|VSS||
+4|Power|VSS||
+5|Power|VSSRF||
+6|I/O|ANT_IN||GPIO
+7|I/O|ANT_OUT||GPIO
+8|Power|VSSRF||
+9|I/O|PA4||ADC1_IN9 COMP1_INM LPTIM2_OUT:14 SPI1_NSS:5 GPIO
+10|I/O|PA8||ADC1_IN3 LPTIM2_OUT:14 RCC_MCO:0 TIM1_CH1:1 USART1_CK:7 GPIO
+11|I/O|PA1||ADC1_IN6 COMP1_INP I2C1_SMBA:4 SPI1_SCK:5 TIM2_CH2:1 GPIO
+12|I/O|PA6||ADC1_IN11 LPUART1_CTS:8 SPI1_MISO:5 TIM1_BKIN:1 GPIO
+13|I/O|PA2||ADC1_IN7 LPUART1_TX:8 RCC_LSCO:0 SYS_WKUP4 TIM2_CH3:1 GPIO
+14|I/O|PB8||I2C1_SCL:4 TIM1_CH2N:1 TSC_G7_IO3:9 GPIO
+15|Power|VSS||
+16|Power|VDDA||
+17|Power|VSS||
+18|Power|VBAT||
+19|Power|VSS||
+20|Power|VDDSMPS||
+21|Power|VSSSMPS||
+22|I/O|PH3-BOOT0||RCC_LSCO:0 GPIO
+23|Reset|NRST(PB11)||
+24|Power|VSS||
+25|I/O|PB7||I2C1_SDA:4 LPTIM1_IN2:1 SYS_PVD_IN TIM1_BKIN:3 TIM1_CH3:12 TSC_G2_IO4:9 USART1_RX:7 GPIO
+26|I/O|PB5||I2C1_SMBA:4 LPTIM1_IN1:1 LPUART1_TX:8 SPI1_MOSI:5 TSC_G2_IO2:9 USART1_CK:7 GPIO
+27|I/O|PB6||I2C1_SCL:4 LPTIM1_ETR:1 RCC_MCO:0 SPI1_NSS:5 TSC_G2_IO3:9 USART1_TX:7 GPIO
+28|I/O|PA3||ADC1_IN8 LPUART1_RX:8 TIM2_CH4:1 GPIO
+29|I/O|PA7||ADC1_IN2 SPI1_MOSI:5 TIM1_CH1N:1 GPIO
+30|I/O|PA12||LPUART1_RX:8 SPI1_MOSI:5 TIM1_ETR:1 USART1_DE:7 USART1_RTS:7 GPIO
+31|Power|VSS||
+32|I/O|PA11||ADC1_EXTI11 SPI1_MISO:5 TIM1_BKIN2:2 TIM1_CH4:1 USART1_CTS:7 USART1_NSS:7 GPIO
+33|I/O|PB4||SPI1_MISO:5 SYS_JTRST:0 TSC_G2_IO1:9 USART1_CTS:7 USART1_NSS:7 GPIO
+34|I/O|PA14||I2C1_SMBA:4 LPTIM1_OUT:1 SPI1_NSS:5 SYS_JTCK-SWCLK:0 GPIO
+35|I/O|PA13||SPI1_MOSI:5 SYS_JTMS-SWDIO:0 TSC_G7_IO1:9 GPIO
+36|I/O|PA10||I2C1_SDA:4 TIM1_CH3:1 TSC_G7_IO2:9 USART1_RX:7 GPIO
+37|I/O|PA0||ADC1_IN5 COMP1_INM COMP1_OUT:12 RTC_TAMP2 SYS_WKUP1 TIM2_CH1:1 TIM2_ETR:14 GPIO
+38|I/O|PA9||ADC1_IN4 COMP1_INM I2C1_SCL:4 TIM1_CH2:1 USART1_TX:7 GPIO
+39|I/O|PA5||ADC1_IN10 COMP1_INM LPTIM2_ETR:14 SPI1_MOSI:4 SPI1_SCK:5 TIM2_CH1:1 TIM2_ETR:2 GPIO
+40|I/O|PB1||LPTIM2_IN1:14 LPUART1_DE:8 LPUART1_RTS:8 GPIO
+41|I/O|PB0||COMP1_OUT:12 RF_TX_MOD_EXT_PA:6 GPIO
+42|I/O|PB2||COMP1_INP LPTIM1_OUT:1 RTC_OUT:0 SPI1_NSS:5 GPIO
+43|Power|VSS||
+44|Power|VSS||
+45|Power|VSS||
+46|Power|VSS||
+47|Power|VSS||
+48|Power|VSS||
+49|Power|VSS||
+50|Power|VSS||
+51|Power|VSS||
+52|Power|VSS||
+53|Power|VSS||
+54|Power|VSS||
+55|Power|VSS||
+56|Power|VSS||
+57|Power|VSS||
+58|Power|VSS||
+59|Power|VSS||
+60|Power|VSS||
+61|Power|VSS||
+62|Power|VSS||
+63|Power|VSS||
+64|Power|VSS||
+65|Power|VSS||
+66|Power|VSS||
+67|Power|VSS||
+68|Power|VSS||
+69|Power|VSS||
+70|Power|VSS||
+71|Power|VSS||
+72|Power|VSS||
+73|Power|VSS||
+74|Power|VSS||
+75|Power|VSS||
+76|Power|VSS||
+77|Power|VSS||
+
+[Params]
+# Что можно настроить на выводе. Значения РАЗНЫЕ по семействам
+# (у H7 скорость имеет VERY_HIGH, у F0 — нет), поэтому они данными.
+# имя|подпись|значение по умолчанию
+GPIO_Mode|GPIO mode|
+GPIO_PuPd|GPIO Pull-up/Pull-down|GPIO_NOPULL
+GPIO_Speed|Maximum output speed|GPIO_SPEED_FREQ_LOW
+PinState|GPIO output level|GPIO_PIN_RESET
+
+[ParamValues]
+# параметр|значение|подпись (подписи из базы, в них бывают пробелы)
+GPIO_Mode|GPIO_MODE_INPUT|Input mode
+GPIO_Mode|GPIO_MODE_OUTPUT_PP|Output Push Pull
+GPIO_Mode|GPIO_MODE_OUTPUT_OD|Output Open Drain
+GPIO_Mode|GPIO_MODE_AF_PP|Alternate Function Push Pull
+GPIO_Mode|GPIO_MODE_AF_OD|Alternate Function Open Drain
+GPIO_Mode|GPIO_MODE_ANALOG|Analog mode
+GPIO_Mode|GPIO_MODE_ANALOG_ADC_CONTROL|Analog mode for ADC conversion
+GPIO_Mode|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_Mode|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_Mode|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_Mode|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_Mode|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_Mode|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_PuPd|GPIO_NOPULL|No pull-up and no pull-down
+GPIO_PuPd|GPIO_PULLUP|Pull-up
+GPIO_PuPd|GPIO_PULLDOWN|Pull-down
+GPIO_Speed|GPIO_SPEED_FREQ_LOW|Low
+GPIO_Speed|GPIO_SPEED_FREQ_MEDIUM|Medium
+GPIO_Speed|GPIO_SPEED_FREQ_HIGH|High
+GPIO_Speed|GPIO_SPEED_FREQ_VERY_HIGH|Very High
+PinState|GPIO_PIN_RESET|Low
+PinState|GPIO_PIN_SET|High

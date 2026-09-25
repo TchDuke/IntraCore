@@ -1,0 +1,87 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMP
+Version=TSMC90_G4_Rockfish_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DeglitcherMode|Deglitcher Mode|Basic Parameters||||
+InvertingInput|Input Minus|Pinout Parameters||||
+NonInvertingInput|Input Plus|Pinout Parameters||||
+TriggerMode|Trigger Mode|Basic Parameters||||
+Hysteresis|Hysteresis Level|Basic Parameters||||
+BlankingSrce|Blanking Source|Output Configuration||||
+OutputPol|Output Polarity|Output Configuration||||
+
+[Values]
+# параметр|значение|подпись
+DeglitcherMode|COMP_DEGLITCHER_DISABLED|Disabled
+DeglitcherMode|COMP_DEGLITCHER_ENABLED|Enabled
+InvertingInput|COMP_INPUT_MINUS_IO1|I/O1 (PB1/PB3)
+InvertingInput|COMP_INPUT_MINUS_IO2|I/O2 (PC4/PB7)
+InvertingInput|COMP_INPUT_MINUS_DAC1_CH1|DAC1 Channel1
+InvertingInput|COMP_INPUT_MINUS_DAC1_CH2|DAC1 Channel2
+InvertingInput|COMP_INPUT_MINUS_DAC2_CH1|DAC2 Channel1
+InvertingInput|COMP_INPUT_MINUS_DAC3_CH1|DAC3 Channel1
+InvertingInput|COMP_INPUT_MINUS_DAC3_CH2|DAC3 Channel2
+InvertingInput|COMP_INPUT_MINUS_DAC4_CH1|DAC4 Channel1
+InvertingInput|COMP_INPUT_MINUS_DAC4_CH2|DAC4 Channel2
+InvertingInput|COMP_INPUT_MINUS_1_4VREFINT|1/4 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_1_2VREFINT|1/2 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_3_4VREFINT|3/4 VREFINT connected to comparator inverting input
+InvertingInput|COMP_INPUT_MINUS_VREFINT|VREFINT connected to comparator1 inverting input
+NonInvertingInput|COMP_INPUT_PLUS_IO1|
+NonInvertingInput|COMP_INPUT_PLUS_IO2|
+TriggerMode|COMP_TRIGGERMODE_NONE|None
+TriggerMode|COMP_TRIGGERMODE_IT_RISING|Rising Edge Interrupt
+TriggerMode|COMP_TRIGGERMODE_IT_FALLING|Falling Edge Interrupt
+TriggerMode|COMP_TRIGGERMODE_IT_RISING_FALLING|Rising/Falling Edge Interrupt
+TriggerMode|COMP_TRIGGERMODE_EVENT_RISING|Rising Edge Event
+TriggerMode|COMP_TRIGGERMODE_EVENT_FALLING|Falling Edge Event
+TriggerMode|COMP_TRIGGERMODE_EVENT_RISING_FALLING|Rising/Falling Edge Event
+Hysteresis|COMP_HYSTERESIS_NONE|None
+Hysteresis|COMP_HYSTERESIS_10MV|Level 10mV
+Hysteresis|COMP_HYSTERESIS_20MV|Level 20mV
+Hysteresis|COMP_HYSTERESIS_30MV|Level 30mV
+Hysteresis|COMP_HYSTERESIS_40MV|Level 40mV
+Hysteresis|COMP_HYSTERESIS_50MV|Level 50mV
+Hysteresis|COMP_HYSTERESIS_60MV|Level 60mV
+Hysteresis|COMP_HYSTERESIS_70MV|Level 70mV
+Hysteresis|COMP_HYSTERESIS_LOW|Low
+Hysteresis|COMP_HYSTERESIS_MEDIUM|Medium
+Hysteresis|COMP_HYSTERESIS_HIGH|High
+BlankingSrce|COMP_BLANKINGSRC_NONE|None
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5_COMP1|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM2_OC3_COMP1|Timer 2 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC3_COMP1|Timer 3 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5_COMP1|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM4_OC3|Timer 4 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM15_OC1|Timer 15 Output Compare 1
+BlankingSrce|COMP_BLANKINGSRC_TIM20_OC5|Timer 20 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5_COMP2|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM2_OC3_COMP2|Timer 2 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC3_COMP2|Timer 3 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5_COMP2|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5_COMP3|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM2_OC4_COMP3|Timer 2 Output Compare 4
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC3_COMP3|Timer 3 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5_COMP3|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5_COMP4|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC4_COMP4|Timer 3 Output Compare 4
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5_COMP4|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM15_OC1_COMP4|Timer 15 Output Compare 1
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5_COMP5|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM2_OC3_COMP5|Timer 2 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC3_COMP5|Timer 3 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5_COMP5|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5_COMP6|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM2_OC4_COMP6|Timer 2 Output Compare 4
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5_COMP6|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM15_OC2_COMP6|Timer 15 Output Compare 2
+BlankingSrce|COMP_BLANKINGSRC_TIM1_OC5_COMP7|Timer 1 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM3_OC3_COMP7|Timer 3 Output Compare 3
+BlankingSrce|COMP_BLANKINGSRC_TIM8_OC5_COMP7|Timer 8 Output Compare 5
+BlankingSrce|COMP_BLANKINGSRC_TIM15_OC2_COMP7|Timer 15 Output Compare 2
+OutputPol|COMP_OUTPUTPOL_NONINVERTED|COMP output on GPIO isn't inverted
+OutputPol|COMP_OUTPUTPOL_INVERTED|COMP output on GPIO is inverted

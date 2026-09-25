@@ -1,0 +1,56 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DMA
+Version=STM32F334_dma_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+ClockEnableMode|Clock Enable Mode|||||
+DMA_Handle|DMA Handle|||||
+IpInstance|IP Instance|||||
+DMA_Remap|DMA Remap|||||
+
+[Values]
+# параметр|значение|подпись
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+ClockEnableMode|__HAL_RCC_DMA1_CLK_ENABLE|DMA1 clock enable
+DMA_Remap|HAL_REMAPDMA_TIM16_DMA1_CH6|TIM16 CH1/UP DMA remap
+DMA_Remap|HAL_REMAPDMA_TIM17_DMA1_CH7|TIM17 CH1/UP DMA remap
+DMA_Remap|HAL_REMAPDMA_TIM6_DAC1_CH1_DMA1_CH3|TIM6 UP and DAC1 channel1 DMA remap
+DMA_Remap|HAL_REMAPDMA_TIM7_DAC1_CH2_DMA1_CH4|TIM7 UP and DAC1 channel2 DMA remap
+DMA_Remap|HAL_REMAPDMA_DAC2_CH1_DMA1_CH5|DAC2 channel1 DMA remap
+DMA_Remap|HAL_REMAPDMA_SPI1_RX_DMA1_CH4|SPI1 RX DMA1 CH4 remap
+DMA_Remap|HAL_REMAPDMA_SPI1_RX_DMA1_CH6|SPI1 RX DMA1 CH6 remap
+DMA_Remap|HAL_REMAPDMA_SPI1_TX_DMA1_CH5|SPI1 TX DMA1 CH5 remap
+DMA_Remap|HAL_REMAPDMA_SPI1_TX_DMA1_CH7|SPI1 TX DMA1 CH7 remap
+DMA_Remap|HAL_REMAPDMA_I2C1_RX_DMA1_CH3|I2C1 RX DMA1 CH3 remap
+DMA_Remap|HAL_REMAPDMA_I2C1_RX_DMA1_CH5|I2C1 RX DMA1 CH5 remap
+DMA_Remap|HAL_REMAPDMA_I2C1_TX_DMA1_CH2|I2C1 TX DMA1 CH2 remap
+DMA_Remap|HAL_REMAPDMA_I2C1_TX_DMA1_CH4|I2C1 TX DMA1 CH4 remap
+DMA_Remap|HAL_REMAPDMA_ADC2_DMA1_CH4|ADC2 DMA remap

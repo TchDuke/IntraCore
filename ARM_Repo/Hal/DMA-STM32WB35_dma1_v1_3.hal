@@ -1,0 +1,139 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DMA
+Version=STM32WB35_dma1_v1_3
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Request|Request number|||||
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+ClockEnableMode|Clock enable mode|||||
+DMA_Handle|DMA_Handle|||||
+IpInstance|IpInstance|||||
+SignalID|Signal ID|||||
+Polarity|Polarity|||||
+RequestNumber|Request number|||1|32|
+SyncSignalID|Synchronization signal ID|||||
+SyncPolarity|Synchronization polarity|||||
+SyncEnable|Synchronization enable|||||
+EventEnable|Event enable|||||
+SyncRequestNumber|Synchronization request number|||1|32|
+
+[Values]
+# параметр|значение|подпись
+Request|DMA_REQUEST_MEM2MEM|MEMTOMEM
+Request|DMA_REQUEST_GENERATOR0|DMA_GENERATOR0
+Request|DMA_REQUEST_GENERATOR1|DMA_GENERATOR1
+Request|DMA_REQUEST_GENERATOR2|DMA_GENERATOR2
+Request|DMA_REQUEST_GENERATOR3|DMA_GENERATOR3
+Request|DMA_REQUEST_ADC1|ADC1
+Request|DMA_REQUEST_SPI1_RX|SPI1_RX
+Request|DMA_REQUEST_SPI1_TX|SPI1_TX
+Request|DMA_REQUEST_SPI2_RX|SPI2_RX
+Request|DMA_REQUEST_SPI2_TX|SPI2_TX
+Request|DMA_REQUEST_I2C1_RX|I2C1_RX
+Request|DMA_REQUEST_I2C1_TX|I2C1_TX
+Request|DMA_REQUEST_I2C3_RX|I2C3_RX
+Request|DMA_REQUEST_I2C3_TX|I2C3_TX
+Request|DMA_REQUEST_USART1_RX|USART1_RX
+Request|DMA_REQUEST_USART1_TX|USART1_TX
+Request|DMA_REQUEST_LPUART1_RX|LPUART1_RX
+Request|DMA_REQUEST_LPUART1_TX|LPUART1_TX
+Request|DMA_REQUEST_SAI1_A|SAI1_A
+Request|DMA_REQUEST_SAI1_B|SAI1_B
+Request|DMA_REQUEST_QUADSPI|QUADSPI
+Request|DMA_REQUEST_TIM1_CH1|TIM1_CH1
+Request|DMA_REQUEST_TIM1_CH2|TIM1_CH2
+Request|DMA_REQUEST_TIM1_CH3|TIM1_CH3
+Request|DMA_REQUEST_TIM1_CH4|TIM1_CH4
+Request|DMA_REQUEST_TIM1_UP|TIM1_UP
+Request|DMA_REQUEST_TIM1_TRIG|TIM1_TRIG
+Request|DMA_REQUEST_TIM1_COM|TIM1_COM
+Request|DMA_REQUEST_TIM2_CH1|TIM2_CH1
+Request|DMA_REQUEST_TIM2_CH2|TIM2_CH2
+Request|DMA_REQUEST_TIM2_CH3|TIM2_CH3
+Request|DMA_REQUEST_TIM2_CH4|TIM2_CH4
+Request|DMA_REQUEST_TIM2_UP|TIM2_UP
+Request|DMA_REQUEST_TIM16_CH1|TIM16_CH1
+Request|DMA_REQUEST_TIM16_UP|TIM16_UP
+Request|DMA_REQUEST_TIM17_CH1|TIM17_CH1
+Request|DMA_REQUEST_TIM17_UP|TIM17_UP
+Request|DMA_REQUEST_AES1_IN|AES1_IN
+Request|DMA_REQUEST_AES1_OUT|AES1_OUT
+Request|DMA_REQUEST_AES2_IN|AES2_IN
+Request|DMA_REQUEST_AES2_OUT|AES2_OUT
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Mode|DMA_PFCTRL|Peripheral Flow Control
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+ClockEnableMode|__HAL_RCC_DMA_CLK_ENABLE|DMA clock enable
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI0|EXTI0
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI1|EXTI1
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI2|EXTI2
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI3|EXTI3
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI4|EXTI4
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI5|EXTI5
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI6|EXTI6
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI7|EXTI7
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI8|EXTI8
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI9|EXTI9
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI10|EXTI10
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI11|EXTI11
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI12|EXTI12
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI13|EXTI13
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI14|EXTI14
+SignalID|HAL_DMAMUX1_REQ_GEN_EXTI15|EXTI15
+SignalID|HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH0_EVT|DMAMUX1 Channel0 (DMA1 Channel1) event
+SignalID|HAL_DMAMUX1_REQ_GEN_DMAMUX1_CH1_EVT|DMAMUX1 Channel1 (DMA1 Channel2) event
+SignalID|HAL_DMAMUX1_REQ_GEN_LPTIM1_OUT|LPTIM1 output
+SignalID|HAL_DMAMUX1_REQ_GEN_LPTIM2_OUT|LPTIM2 output
+Polarity|HAL_DMAMUX_REQ_GEN_RISING|Generate request on rising edge events
+Polarity|HAL_DMAMUX_REQ_GEN_FALLING|Generate request on falling edge events
+Polarity|HAL_DMAMUX_REQ_GEN_RISING_FALLING|Generate request on rising and falling edge events
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI0|EXTI0
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI1|EXTI1
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI2|EXTI2
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI3|EXTI3
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI4|EXTI4
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI5|EXTI5
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI6|EXTI6
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI7|EXTI7
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI8|EXTI8
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI9|EXTI9
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI10|EXTI10
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI11|EXTI11
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI12|EXTI12
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI13|EXTI13
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI14|EXTI14
+SyncSignalID|HAL_DMAMUX1_SYNC_EXTI15|EXTI15
+SyncSignalID|HAL_DMAMUX1_SYNC_DMAMUX1_CH0_EVT|DMAMUX1 Channel0 (DMA1 Channel1) event
+SyncSignalID|HAL_DMAMUX1_SYNC_DMAMUX1_CH1_EVT|DMAMUX1 Channel1 (DMA1 Channel2) event
+SyncSignalID|HAL_DMAMUX1_SYNC_LPTIM1_OUT|LPTIM1 output
+SyncSignalID|HAL_DMAMUX1_SYNC_LPTIM2_OUT|LPTIM2 output
+SyncPolarity|HAL_DMAMUX_SYNC_NO_EVENT|Block synchronization events
+SyncPolarity|HAL_DMAMUX_SYNC_RISING|Synchronize on rising edge events
+SyncPolarity|HAL_DMAMUX_SYNC_FALLING|Synchronize on falling edge events
+SyncPolarity|HAL_DMAMUX_SYNC_RISING_FALLING|Synchronize on rising and falling edge events

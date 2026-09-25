@@ -1,0 +1,69 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPAWUR
+Version=lpawur_1_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+EnergyDetectorIcal|EnergyDetectorIcal|RF Config||||Current versus VBAT calibration
+ClockDivider|ClockDivider|RF Config||0||Calibrate the 4kHz clock
+EnergyDetectorSwitch|EnergyDetectorSwitch|RF Config||||Energy Detector as input switch (test mode) deactivated by default
+AgcResetMode|AgcResetMode|RF Config||||The AGC reset behavior when the AGC is working in ON or HOLD mode
+AgcHoldMode|AgcHoldMode|RF Config||||The behavior when the AGC is ON and is working in HOLD mode
+AgcMode|AgcMode|RF Config||||Define the working mode of the AGC
+AgcHiLvl|AgcHighLevel|RF Config||||Define the AGC level (High)
+DCCurrentSubtraction|DCCurrentSubtraction|RF Config||||DC current subtraction enabling signal
+AgcLoLvl|AgcLoLvl|RF Config||||Define the AGC level (Low)
+TRecAlgoSel|TRecAlgoSel|Frame||||Timing recovery loop algorithm selection
+SlowClkCyclePerBitCnt|SlowClkCyclePerBitCnt|Frame||0||The number of expected slow clock cycle per each manchester coded bit
+PayloadLength|PayloadLength|Frame||0||The number of data Bytes in the payload (decoded)
+SyncThr|SyncThr|Frame||||Detection threshold when receiving the Frame sync (Manchester encoded)
+SyncLength|SyncLength|Frame||||Frame sync pattern length
+PreambleThrCnt|PreambleThrCnt|Frame||0x0|0xFFFF|The number of transitions for preamble detection when receiving the Manchester encoded preamble
+PreambleEnable|PreambleEnable|Frame||||Preamble detection enable
+FrameSyncCntTimeout|FrameSyncCntTimeout|Frame||0x00|0xFFFF|The timeout in Manchester encoded bits for the Frame Sync
+FrameSyncPattenHigh|FrameSyncPattenHigh|Frame||0x0|0xFFFF|The value of the frame sync pattern, High word, Manchester encoded
+FrameSyncPatternLow|FrameSyncPatternLow|Frame||||
+KpGain|KpGain|Frame||||
+KiGain|KiGain|Frame||||
+
+[Values]
+# параметр|значение|подпись
+EnergyDetectorIcal|ED_ICAL_VBAT_1_70_TO_2_00|ED_ICAL_VBAT_1_70_TO_2_00
+EnergyDetectorIcal|ED_ICAL_VBAT_2_00_TO_2_25|ED_ICAL_VBAT_2_00_TO_2_25
+EnergyDetectorIcal|ED_ICAL_VBAT_2_25_TO_2_50|ED_ICAL_VBAT_2_25_TO_2_50
+EnergyDetectorIcal|ED_ICAL_VBAT_2_50_TO_2_75|ED_ICAL_VBAT_2_50_TO_2_75
+EnergyDetectorIcal|ED_ICAL_VBAT_2_75_TO_3_00|ED_ICAL_VBAT_2_75_TO_3_00
+EnergyDetectorIcal|ED_ICAL_VBAT_3_00_TO_3_25|ED_ICAL_VBAT_3_00_TO_3_25
+EnergyDetectorIcal|ED_ICAL_VBAT_3_25_TO_3_50|ED_ICAL_VBAT_3_25_TO_3_50
+EnergyDetectorIcal|ED_ICAL_VBAT_3_50_TO_3_75|ED_ICAL_VBAT_3_50_TO_3_75
+AgcResetMode|AGC_RESET_MODE_AFTER_FRAME|AGC_RESET_MODE_AFTER_FRAME(0x00)
+AgcResetMode|AGC_RESET_MODE_NEVER|AGC_RESET_MODE_NEVER(0x01)
+AgcHoldMode|AGC_HOLD_AFTER_PREAMBLE|AGC_HOLD_AFTER_PREAMBLE(0x00)
+AgcHoldMode|AGC_HOLD_AFTER_SYNC|AGC_HOLD_AFTER_SYNC(0x01)
+AgcMode|AGC_MODE_MAX|AGC_MODE_MAX(0x00)
+AgcMode|AGC_MODE_OFF|AGC_MODE_OFF(0x01)
+AgcMode|AGC_MODE_ON|AGC_MODE_ON(0x02)
+AgcMode|AGC_MODE_HOLD|AGC_MODE_HOLD(0x03)
+AgcHiLvl|AGC_VBAT_0500|AGC_VBAT_0500(0x00)
+AgcHiLvl|AGC_VBAT_0575|AGC_VBAT_0575(0x01)
+AgcHiLvl|AGC_VBAT_0650|AGC_VBAT_0650(0x02)
+AgcHiLvl|AGC_VBAT_0725|AGC_VBAT_0725(0x03)
+AgcHiLvl|AGC_VBAT_0800|AGC_VBAT_0800(0x04)
+AgcHiLvl|AGC_VBAT_0875|AGC_VBAT_0875(0x05)
+AgcHiLvl|AGC_VBAT_0950|AGC_VBAT_0950(0x06)
+AgcHiLvl|AGC_VBAT_1025|AGC_VBAT_1025(0x07)
+AgcHiLvl|AGC_VBAT_1100|AGC_VBAT_1100(0x08)
+AgcHiLvl|AGC_VBAT_1175|AGC_VBAT_1175(0x09)
+AgcHiLvl|AGC_VBAT_1250|AGC_VBAT_1250(0x0A)
+AgcHiLvl|AGC_VBAT_1325|AGC_VBAT_1325(0x0B)
+AgcHiLvl|AGC_VBAT_1400|AGC_VBAT_1400(0x0C)
+AgcHiLvl|AGC_VBAT_1475|AGC_VBAT_1475(0x0D)
+AgcHiLvl|AGC_VBAT_1550|AGC_VBAT_1550(0x0E)
+AgcHiLvl|AGC_VBAT_1625|AGC_VBAT_1625(0x0F)
+AgcLoLvl|AGC_LOW_0|AGC_LOW_0(0x00)
+AgcLoLvl|AGC_LOW_1|AGC_LOW_1(0x01)
+AgcLoLvl|AGC_LOW_2|AGC_LOW_2(0x02)
+AgcLoLvl|AGC_LOW_3|AGC_LOW_3(0x03)
+TRecAlgoSel|TWO_STEPS|TWO_STEPS(1)

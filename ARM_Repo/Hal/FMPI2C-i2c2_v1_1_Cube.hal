@@ -1,0 +1,92 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FMPI2C
+Version=i2c2_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FMPI2C_Speed_Mode|I2C Speed Mode|Timing configuration||||
+SMBusAnalogFilter|Analog Filter|Timing configuration||||
+Analog_Filter|Analog Filter|Timing configuration||||
+FASTMODEPLUS_SCL|FASTMODEPLUS|Timing configuration||||
+FASTMODEPLUS_SDA|FASTMODEPLUS|Timing configuration||||
+Speed|I2C Speed Frequency (KHz)|Timing configuration||1|1000|
+FMPI2C_Rise_Time|Rise Time (ns)|Timing configuration||0|120|
+FMPI2C_Fall_Time|Fall Time (ns)|Timing configuration||0|300|
+FMPI2C_Coeff_DF|Coefficient of Digital Filter|Timing configuration||0|15|
+Timing|Timing|Timing configuration||||
+AddressingMode|Primary Address Length selection|Slave Features||||
+OwnAddress|Primary slave address|Slave Features||0|1023|The generated value of the address is shifted left by 1 bit.
+OwnAddress1|Primary slave address|Slave Features||0|1023|The generated value of the address is shifted left by 1 bit.
+OwnAddress2|Secondary slave address|Slave Features||0|127|The generated value of the address is shifted left by 1 bit.
+OwnAddress22|Secondary slave address|Slave Features||0|127|
+DualAddressMode|Dual Address Acknowledged|Slave Features||||
+OwnAddress2Masks|Secondary Address Mask|Slave Features||||
+GeneralCallMode|General Call Address Detection|Slave Features||||
+NoStretchMode|Clock No Stretch Mode|Slave Features||||
+TEXTEN|Extended Clock Timeout|Timeout configuration||||
+TIDLE|Idle Clock Timeout Detection|Timeout configuration||||
+TIMEOUTB_Master|LOW:MEXT Time (ns)|Timeout configuration||0|10000000|
+TIMEOUTB_Slave|LOW:SEXT Time (ns)|Timeout configuration||0|25000000|
+TIMEOUTA_idle|Idle Time (ns)|Timeout configuration||4000|5000000|
+TIMEOUT_time|Timeout Time (ns)|Timeout configuration||25000000|35000000|
+Timeout|Timeout|Timeout configuration||||
+SMBusPacketErrorCheckMode|Packet Error Check Mode|SMBus Features||||
+SMBusPeripheralMode|Peripheral Mode|SMBus Features||||In case of switching your device form Slave ARP to Master (Peripheral mode SMBus Master) on your application, you need to set addressing mode parameters. And if you are using SMBUS device protocol and Host mode(Peripheral mode SMBus Master), please make sure that there may be at most one host in your system.
+SMBusAddressingMode|Primary Address Length selection|SMBus Slave Features||||
+SMBusOwnAddress1|Secondary slave address|SMBus Slave Features||0|1023|
+SMBusOwnAddress2|Secondary slave address|SMBus Slave Features||0|127|
+SMBusDualAddressMode|Dual Address Acknowledged|SMBus Slave Features||||
+SMBusGeneralCallMode|General Call Address Detection|SMBus Slave Features||||
+SMBusNoStretchMode|Clock No Stretch Mode|SMBus Slave Features||||
+SMBusOwnAddress2Masks|Secondary Address Mask|SMBus Slave Features||||
+
+[Values]
+# параметр|значение|подпись
+FMPI2C_Speed_Mode|FMPI2C_Standard|Standard Mode
+SMBusAnalogFilter|FMPSMBUS_ANALOGFILTER_ENABLE|Enabled
+SMBusAnalogFilter|FMPSMBUS_ANALOGFILTER_DISABLE|Disabled
+Analog_Filter|FMPI2C_ANALOGFILTER_DISABLE|Disabled
+Analog_Filter|FMPI2C_ANALOGFILTER_ENABLE|Enabled
+AddressingMode|FMPI2C_ADDRESSINGMODE_7BIT|7-bit
+AddressingMode|FMPI2C_ADDRESSINGMODE_10BIT|10-bit
+DualAddressMode|FMPI2C_DUALADDRESS_DISABLE|Disabled
+DualAddressMode|FMPI2C_DUALADDRESS_ENABLE|Enabled
+OwnAddress2Masks|FMPI2C_OA2_NOMASK|No mask
+OwnAddress2Masks|FMPI2C_OA2_MASK01|OA2[1] masked
+OwnAddress2Masks|FMPI2C_OA2_MASK02|OA2[2:1] masked
+OwnAddress2Masks|FMPI2C_OA2_MASK03|OA2[3:1] masked
+OwnAddress2Masks|FMPI2C_OA2_MASK04|OA2[4:1] masked
+OwnAddress2Masks|FMPI2C_OA2_MASK05|OA2[5:1] masked
+OwnAddress2Masks|FMPI2C_OA2_MASK06|OA2[6:1] masked
+OwnAddress2Masks|FMPI2C_OA2_MASK07|OA2[7:1] masked
+GeneralCallMode|FMPI2C_GENERALCALL_DISABLE|Disabled
+GeneralCallMode|FMPI2C_GENERALCALL_ENABLE|Enabled
+NoStretchMode|FMPI2C_NOSTRETCH_DISABLE|Clock Stretch Disabled
+NoStretchMode|FMPI2C_NOSTRETCH_ENABLE|Clock Stretch Enabled
+TEXTEN|FMPSMBUS_TEXTEN_ENABLE|Enabled
+TEXTEN|FMPSMBUS_TEXTEN_DISABLE|Disabled
+TIDLE|FMPSMBUS_TIDLE_ENABLE|Enabled
+TIDLE|FMPSMBUS_TIDLE_DISABLE|Disabled
+SMBusPacketErrorCheckMode|FMPSMBUS_PEC_DISABLE|PEC Disabled
+SMBusPacketErrorCheckMode|FMPSMBUS_PEC_ENABLE|PEC Enabled
+SMBusPeripheralMode|FMPSMBUS_PERIPHERAL_MODE_FMPSMBUS_HOST|Peripheral Mode Smbus Master
+SMBusPeripheralMode|FMPSMBUS_PERIPHERAL_MODE_FMPSMBUS_SLAVE|Peripheral Mode Smbus Slave
+SMBusPeripheralMode|FMPSMBUS_PERIPHERAL_MODE_FMPSMBUS_SLAVE_ARP|Peripheral Mode Smbus Slave ARP
+SMBusAddressingMode|FMPSMBUS_ADDRESSINGMODE_7BIT|7-bit
+SMBusAddressingMode|FMPSMBUS_ADDRESSINGMODE_10BIT|10-bit
+SMBusDualAddressMode|FMPSMBUS_DUALADDRESS_DISABLE|Disabled
+SMBusDualAddressMode|FMPSMBUS_DUALADDRESS_ENABLE|Enabled
+SMBusGeneralCallMode|FMPSMBUS_GENERALCALL_DISABLE|Disabled
+SMBusGeneralCallMode|FMPSMBUS_GENERALCALL_ENABLE|Enabled
+SMBusNoStretchMode|FMPSMBUS_NOSTRETCH_ENABLE|Clock Stretch Enabled
+SMBusNoStretchMode|FMPSMBUS_NOSTRETCH_DISABLE|Clock Stretch Disabled
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_NOMASK|No mask
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_MASK01|OA2[1] masked
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_MASK02|OA2[2:1] masked
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_MASK03|OA2[3:1] masked
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_MASK04|OA2[4:1] masked
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_MASK05|OA2[5:1] masked
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_MASK06|OA2[6:1] masked
+SMBusOwnAddress2Masks|FMPSMBUS_OA2_MASK07|OA2[7:1] masked

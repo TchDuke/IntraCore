@@ -1,0 +1,112 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPUART
+Version=sci3_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+WordLength|Word Length|Basic Parameters||||
+UartWordLength|Word Length|Basic Parameters||||
+AutoBaudRateEnable|Auto Baudrate Mode arg|Advanced Features||||
+AutoBaudRateEnableParam|Auto Baudrate Mode|Advanced Features||||
+IsAutoBaudRateMode||Advanced Features||||
+BaudRate|Baud Rate|Basic Parameters|Bits/s|110|10500000|
+StopBits|Stop Bits|Basic Parameters||||
+Parity|Parity|Basic Parameters||||
+Mode|Data Direction|Advanced Parameters||||
+HwFlowCtl|Hardware Flow Control|Basic Parameters||||
+OneBitSampling|Single Sample|Advanced Parameters||||
+UART_DEPolarity|Polarity|Advanced Parameters||||
+UART_DEAssertionTime|Assertion Time|Advanced Parameters|Sample Time Unit|0|31|
+UART_DEDeassertionTime|Deassertion Time|Advanced Parameters|Sample Time Unit|0|31|
+WakeUpMethod|Wake-Up Method|Advanced Parameters||||
+Address|Wake-Up Address|Advanced Parameters||0|15|
+AddressLength|Wake-Up Method|Advanced Parameters||||
+AdvFeatureInit|UART Advanced Features|Advanced Features||||
+TxPinLevelInvert|TX Pin Active Level Is Inverted arg|Advanced Features||||
+TxPinLevelInvertParam|TX Pin Active Level Inversion|Advanced Features||||
+IsTxPinLevelInvert||Advanced Features||||
+RxPinLevelInvert|RX Pin Active Level Is Inverted arg|Advanced Features||||
+RxPinLevelInvertParam|RX Pin Active Level Inversion|Advanced Features||||
+IsRxPinLevelInvert||Advanced Features||||
+DataInvert|Data Are Inverted arg|Advanced Features||||
+DataInvertParam|Data Inversion|Advanced Features||||
+IsDataInvert||Advanced Features||||
+Swap|TX and RX pins are swapped arg|Advanced Features||||
+SwapParam|TX and RX pins Swapping|Advanced Features||||
+IsSwap||Advanced Features||||
+OverrunDisable|Overrun State arg|Advanced Features||||
+OverrunDisableParam|Overrun|Advanced Features||||
+IsOverrunDisable||Advanced Features||||
+DMADisableonRxError|DMA State arg|Advanced Features||||
+DMADisableonRxErrorParam|DMA on RX Error|Advanced Features||||
+IsDMADisableonRxError||Advanced Features||||
+MSBFirst|MSB Is Sent First arg|Advanced Features||||
+MSBFirstParam|MSB First|Advanced Features||||
+IsMSBFirst||Advanced Features||||
+AutoBaudRateMode|Auto Baudrate Rate|Advanced Features||||
+
+[Values]
+# параметр|значение|подпись
+WordLength|UART_WORDLENGTH_7B|7 Bits (including Parity)
+WordLength|UART_WORDLENGTH_8B|8 Bits (including Parity)
+WordLength|UART_WORDLENGTH_9B|9 Bits (including Parity)
+UartWordLength|UART_WORDLENGTH_9B|9 Bits (including Parity)
+AutoBaudRateEnable|UART_ADVFEATURE_AUTOBAUDRATE_ENABLE|Enable
+AutoBaudRateEnableParam|UART_ADVFEATURE_AUTOBAUDRATE_DISABLE|Disable
+AutoBaudRateEnableParam|UART_ADVFEATURE_AUTOBAUDRATE_ENABLE|Enable
+IsAutoBaudRateMode|UART_ADVFEATURE_AUTOBAUDRATE_INIT|
+StopBits|UART_STOPBITS_1|1
+StopBits|UART_STOPBITS_2|2
+Parity|UART_PARITY_NONE|None
+Parity|UART_PARITY_EVEN|Even
+Parity|UART_PARITY_ODD|Odd
+Mode|UART_MODE_TX_RX|Receive and Transmit
+Mode|UART_MODE_RX|Receive Only
+Mode|UART_MODE_TX|Transmit Only
+HwFlowCtl|UART_HWCONTROL_RTS|RTS Only
+HwFlowCtl|UART_HWCONTROL_CTS|CTS Only
+HwFlowCtl|UART_HWCONTROL_RTS_CTS|RTS/CTS
+HwFlowCtl|UART_HWCONTROL_NONE|None
+OneBitSampling|UART_ONE_BIT_SAMPLE_DISABLE|Disable
+OneBitSampling|UART_ONE_BIT_SAMPLE_ENABLE|Enable
+UART_DEPolarity|UART_DE_POLARITY_HIGH|High
+UART_DEPolarity|UART_DE_POLARITY_LOW|Low
+WakeUpMethod|UART_WAKEUPMETHOD_IDLELINE|Idle Line
+WakeUpMethod|UART_WAKEUPMETHOD_ADDRESSMARK|Address Mark
+AddressLength|UART_ADDRESS_DETECT_4B|4 Bits
+AddressLength|UART_ADDRESS_DETECT_7B|7 Bits
+AdvFeatureInit|UART_ADVFEATURE_NO_INIT|
+TxPinLevelInvert|UART_ADVFEATURE_TXINV_ENABLE|Enable
+TxPinLevelInvertParam|UART_ADVFEATURE_TXINV_DISABLE|Disable
+TxPinLevelInvertParam|UART_ADVFEATURE_TXINV_ENABLE|Enable
+IsTxPinLevelInvert|UART_ADVFEATURE_TXINVERT_INIT|
+RxPinLevelInvert|UART_ADVFEATURE_RXINV_ENABLE|Disable
+RxPinLevelInvertParam|UART_ADVFEATURE_RXINV_DISABLE|Disable
+RxPinLevelInvertParam|UART_ADVFEATURE_RXINV_ENABLE|Enable
+IsRxPinLevelInvert|UART_ADVFEATURE_RXINVERT_INIT|
+DataInvert|UART_ADVFEATURE_DATAINV_ENABLE|Enable
+DataInvertParam|UART_ADVFEATURE_DATAINV_DISABLE|Disable
+DataInvertParam|UART_ADVFEATURE_DATAINV_ENABLE|Enable
+IsDataInvert|UART_ADVFEATURE_DATAINVERT_INIT|
+Swap|UART_ADVFEATURE_SWAP_ENABLE|Enable
+SwapParam|UART_ADVFEATURE_SWAP_DISABLE|Disable
+SwapParam|UART_ADVFEATURE_SWAP_ENABLE|Enable
+IsSwap|UART_ADVFEATURE_SWAP_INIT|
+OverrunDisable|UART_ADVFEATURE_OVERRUN_DISABLE|Disable
+OverrunDisableParam|UART_ADVFEATURE_OVERRUN_DISABLE|Disable
+OverrunDisableParam|UART_ADVFEATURE_OVERRUN_ENABLE|Enable
+IsOverrunDisable|UART_ADVFEATURE_RXOVERRUNDISABLE_INIT|
+DMADisableonRxError|UART_ADVFEATURE_DMA_DISABLEONRXERROR|Disable
+DMADisableonRxErrorParam|UART_ADVFEATURE_DMA_DISABLEONRXERROR|Disable
+DMADisableonRxErrorParam|UART_ADVFEATURE_DMA_ENABLEONRXERROR|Enable
+IsDMADisableonRxError|UART_ADVFEATURE_DMADISABLEONERROR_INIT|
+MSBFirst|UART_ADVFEATURE_MSBFIRST_ENABLE|Enable
+MSBFirstParam|UART_ADVFEATURE_MSBFIRST_DISABLE|Disable
+MSBFirstParam|UART_ADVFEATURE_MSBFIRST_ENABLE|Enable
+IsMSBFirst|UART_ADVFEATURE_MSBFIRST_INIT|
+AutoBaudRateMode|UART_ADVFEATURE_AUTOBAUDRATE_ONSTARTBIT|ON START BIT
+AutoBaudRateMode|UART_ADVFEATURE_AUTOBAUDRATE_ONFALLINGEDGE|ON FALLING EDGE
+AutoBaudRateMode|UART_ADVFEATURE_AUTOBAUDRATE_ON0X7FFRAME|ON 0X7F FRAME
+AutoBaudRateMode|UART_ADVFEATURE_AUTOBAUDRATE_ON0X55FRAME|ON 0X55 FRAME

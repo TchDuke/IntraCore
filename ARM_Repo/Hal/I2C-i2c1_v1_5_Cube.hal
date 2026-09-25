@@ -1,0 +1,88 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=I2C
+Version=i2c1_v1_5_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+I2C_Speed_Mode|I2C Speed Mode|Timing configuration||||
+I2C_Mode|I2C Speed Mode|Master Features||||
+SMBusAnalogFilter|Analog Filter|Timing configuration||||
+Analog_Filter|Analog Filter|Timing configuration||||
+I2C_Coeff_DF|Coefficient of Digital Filter|Timing configuration||0|15|
+ClockSpeed|I2C Clock Speed (Hz)|Master Features||1|100000|Fast up to 400 Khz
+SmbusClockSpeed|Clock Speed (Hz)|Timing configuration||1|100000|standard up to 100KHz
+DutyCycle|Fast Mode Duty Cycle|Master Features||||
+OwnAddress|Primary slave address|Slave Features||0|1023|The generated value of the address is shifted left by 1 bit.
+OwnAddress1|Primary slave address|Slave Features||0|1023|The generated value of the address is shifted left by 1 bit.
+AddressingMode|Primary Address Length selection|Slave Features||||
+OwnAddress2|Secondary slave address|Slave Features||0|127|The generated value of the address is shifted left by 1 bit.
+OwnAddress22|Secondary slave address|Slave Features||0|127|
+DualAddressMode|Dual Address Acknowledged|Slave Features||||
+GeneralCallMode|General Call address detection|Slave Features||||
+NoStretchMode|Clock No Stretch Mode|Slave Features||||
+OwnAddress2Masks|Secondary Address Mask|Slave Features||||
+TIDLE|Idle Clock Timeout Detection|Timeout configuration||||
+Timeout|Timeout|Timeout configuration||||
+SMBusPacketErrorCheckMode|Packet Error Check Mode|SMBus Features||||
+SMBusPeripheralMode|Peripheral Mode|SMBus Features||||In case of switching your device form Slave ARP to Master (Peripheral mode SMBus Master) on your application, you need to set addressing mode parameters. And if you are using SMBUS device protocol and Host mode(Peripheral mode SMBus Master), please make sure that there may be at most one host in your system.
+SMBusAddressingMode|Primary Address Length selection|SMBus Slave Features||||The Parameter " SMBusAddressingMode " is not supported by LL Driver
+SMBusOwnAddress|Primary slave address|SMBus Slave Features||1|1023|The generated value of the address is shifted left by 1 bit.
+SMBusOwnAddress1|Primary slave address|SMBus Slave Features||0|1023|
+SMBusOwnAddress2|Secondary slave address|SMBus Slave Features||0|127|The generated value of the address is shifted left by 1 bit.
+SMBusOwnAddress22|Secondary slave address|SMBus Slave Features||0|127|
+SMBusDualAddressMode|Dual Address Acknowledged|SMBus Slave Features||||The Parameter " SMBusDualAddressMode " is not supported by LL Driver
+SMBusGeneralCallMode|General Call Address Detection|SMBus Slave Features||||
+SMBusNoStretchMode|Clock No Stretch Mode|SMBus Slave Features||||
+SMBusOwnAddress2Masks|Secondary Address Mask|SMBus Slave Features||||
+
+[Values]
+# параметр|значение|подпись
+I2C_Speed_Mode|I2C_Standard|Standard Mode
+I2C_Mode|I2C_Standard|Standard Mode
+I2C_Mode|I2C_Fast|Fast Mode
+SMBusAnalogFilter|SMBUS_ANALOGFILTER_ENABLE|Enabled
+SMBusAnalogFilter|SMBUS_ANALOGFILTER_DISABLE|Disabled
+Analog_Filter|I2C_ANALOGFILTER_DISABLE|Disabled
+Analog_Filter|I2C_ANALOGFILTER_ENABLE|Enabled
+DutyCycle|I2C_DUTYCYCLE_2|Duty cycle Tlow/Thigh = 2
+DutyCycle|I2C_DUTYCYCLE_16_9|Duty cycle Tlow/Thigh = 16/9
+AddressingMode|I2C_ADDRESSINGMODE_7BIT|7-bit
+AddressingMode|I2C_ADDRESSINGMODE_10BIT|10-bit
+DualAddressMode|I2C_DUALADDRESS_DISABLE|Disabled
+DualAddressMode|I2C_DUALADDRESS_ENABLE|Enabled
+GeneralCallMode|I2C_GENERALCALL_DISABLE|Disabled
+GeneralCallMode|I2C_GENERALCALL_ENABLE|Enabled
+NoStretchMode|I2C_NOSTRETCH_DISABLE|Disabled
+NoStretchMode|I2C_NOSTRETCH_ENABLE|Enabled
+OwnAddress2Masks|I2C_OA2_NOMASK|No mask
+OwnAddress2Masks|I2C_OA2_MASK01|OA2[1] masked
+OwnAddress2Masks|I2C_OA2_MASK02|OA2[2:1] masked
+OwnAddress2Masks|I2C_OA2_MASK03|OA2[3:1] masked
+OwnAddress2Masks|I2C_OA2_MASK04|OA2[4:1] masked
+OwnAddress2Masks|I2C_OA2_MASK05|OA2[5:1] masked
+OwnAddress2Masks|I2C_OA2_MASK06|OA2[6:1] masked
+OwnAddress2Masks|I2C_OA2_MASK07|OA2[7:1] masked
+TIDLE|SMBUS_TIDLE_ENABLED|Enabled
+TIDLE|SMBUS_TIDLE_DISABLED|Disabled
+SMBusPacketErrorCheckMode|SMBUS_PEC_DISABLE|PEC Disabled
+SMBusPacketErrorCheckMode|SMBUS_PEC_ENABLE|PEC Enabled
+SMBusPeripheralMode|SMBUS_PERIPHERAL_MODE_SMBUS_HOST|Peripheral Mode Smbus Master
+SMBusPeripheralMode|SMBUS_PERIPHERAL_MODE_SMBUS_SLAVE|Peripheral Mode Smbus Slave
+SMBusPeripheralMode|SMBUS_PERIPHERAL_MODE_SMBUS_SLAVE_ARP|Peripheral Mode Smbus Slave ARP
+SMBusAddressingMode|SMBUS_ADDRESSINGMODE_7BIT|7-bit
+SMBusDualAddressMode|SMBUS_DUALADDRESS_DISABLE|Disabled
+SMBusDualAddressMode|SMBUS_DUALADDRESS_ENABLE|Enabled
+SMBusGeneralCallMode|SMBUS_GENERALCALL_DISABLE|Disabled
+SMBusGeneralCallMode|SMBUS_GENERALCALL_ENABLE|Enabled
+SMBusNoStretchMode|SMBUS_NOSTRETCH_DISABLE|Disabled
+SMBusNoStretchMode|SMBUS_NOSTRETCH_ENABLE|Enabled
+SMBusOwnAddress2Masks|SMBUS_OA2_NOMASK|No mask
+SMBusOwnAddress2Masks|SMBUS_OA2_MASK01|OA2[1] masked
+SMBusOwnAddress2Masks|SMBUS_OA2_MASK02|OA2[2:1] masked
+SMBusOwnAddress2Masks|SMBUS_OA2_MASK03|OA2[3:1] masked
+SMBusOwnAddress2Masks|SMBUS_OA2_MASK04|OA2[4:1] masked
+SMBusOwnAddress2Masks|SMBUS_OA2_MASK05|OA2[5:1] masked
+SMBusOwnAddress2Masks|SMBUS_OA2_MASK06|OA2[6:1] masked
+SMBusOwnAddress2Masks|SMBUS_OA2_MASK07|OA2[7:1] masked

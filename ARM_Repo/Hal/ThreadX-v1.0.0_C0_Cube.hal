@@ -1,0 +1,91 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ThreadX
+Version=v1.0.0_C0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+TX_MINIMUM_STACK|TX_MINIMUM_STACK|Core|Bytes|200|1024|Define the minimum stack for a ThreadX thread on this processor
+TX_THREAD_USER_EXTENSION|TX_THREAD_USER_EXTENSION|Core||||Define the user extension field of the thread control block
+TX_TIMER_PROCESS_IN_ISR|TX_TIMER_PROCESS_IN_ISR|Timer||||Determine if in-line timer reactivation should be used within the timer expiration processing.
+TX_REACTIVATE_INLINE|TX_REACTIVATE_INLINE|Timer||||Determine if in-line timer reactivation should be used within the timer expiration processing.
+TX_DISABLE_STACK_FILLING|TX_DISABLE_STACK_FILLING|Core||||Determine if stack filling is enabled
+TX_ENABLE_STACK_CHECKING|TX_ENABLE_STACK_CHECKING|Core||||Determine whether or not stack checking is enabled
+TX_DISABLE_PREEMPTION_THRESHOLD|TX_DISABLE_PREEMPTION_THRESHOLD|Core||||Determine if preemption-threshold should be disabled.
+TX_DISABLE_REDUNDANT_CLEARING|TX_DISABLE_REDUNDANT_CLEARING|Core||||Determine if global ThreadX variables should be cleared
+TX_DISABLE_NOTIFY_CALLBACKS|TX_DISABLE_NOTIFY_CALLBACKS|Core||||Determine if the notify callback option should be disabled
+TX_INLINE_THREAD_RESUME_SUSPEND|TX_INLINE_THREAD_RESUME_SUSPEND|Core||||Determine if the tx_thread_resume and tx_thread_suspend services should have their internal code in-line
+TX_NOT_INTERRUPTABLE|TX_NOT_INTERRUPTABLE|Core||||Determine if the internal ThreadX code is non-interruptable. This results in smaller code size and less processing overhead, but increases the interrupt lockout time.
+TX_ENABLE_EVENT_TRACE|TX_ENABLE_EVENT_TRACE|Trace||||Determine if the trace event logging code should be enabled
+TX_BLOCK_POOL_ENABLE_PERFORMANCE_INFO|TX_BLOCK_POOL_ENABLE_PERFORMANCE_INFO|Performance||||Determine if block pool performance gathering is required by the application
+TX_BYTE_POOL_ENABLE_PERFORMANCE_INFO|TX_BYTE_POOL_ENABLE_PERFORMANCE_INFO|Performance||||Determine if byte pool performance gathering is required by the application
+TX_EVENT_FLAGS_ENABLE_PERFORMANCE_INFO|TX_EVENT_FLAGS_ENABLE_PERFORMANCE_INFO|Performance||||Determine if event flags performance gathering is required by the application
+TX_MUTEX_ENABLE_PERFORMANCE_INFO|TX_MUTEX_ENABLE_PERFORMANCE_INFO|Performance||||Determine if mutex performance gathering is required by the application
+TX_QUEUE_ENABLE_PERFORMANCE_INFO|TX_QUEUE_ENABLE_PERFORMANCE_INFO|Performance||||Determine if queue performance gathering is required by the application
+TX_SEMAPHORE_ENABLE_PERFORMANCE_INFO|TX_SEMAPHORE_ENABLE_PERFORMANCE_INFO|Performance||||Determine if semaphore performance gathering is required by the application
+TX_THREAD_ENABLE_PERFORMANCE_INFO|TX_THREAD_ENABLE_PERFORMANCE_INFO|Performance||||Determine if thread performance gathering is required by the application
+TX_TIMER_ENABLE_PERFORMANCE_INFO|TX_TIMER_ENABLE_PERFORMANCE_INFO|Performance||||Determine if timer performance gathering is required by the application
+TX_MAX_PRIORITIES|TX_MAX_PRIORITIES|Core||32|=TX_MAX_PRIORITIES|Define the priority levels for ThreadX
+TX_TIMER_THREAD_STACK_SIZE|TX_TIMER_THREAD_STACK_SIZE|Timer|Bytes|=TX_MINIMUM_STACK|10240|Define the system timer thread's default stack size and priority. TX_TIMER_THREAD_STACK_SIZE (in byte) must be greater or equal to TX_MINIMUM_STACK
+TX_TIMER_THREAD_PRIORITY|TX_TIMER_THREAD_PRIORITY|Timer||0|=(TX_MAX_PRIORITIES-1)|Define the timer thread priority. TX_TIMER_THREAD_PRIORITY must be between 0 and (TX_MAX_PRIORITIES - 1).
+TX_MISRA_ENABLE|TX_MISRA_ENABLE|Core||||Define if the MISRA check is enabled
+TX_TRACE_TIME_SOURCE|TX_TRACE_TIME_SOURCE|Trace||0x00000000|0xFFFFFFFF|Define the clock source for trace event entry time stamp
+TX_TRACE_TIME_MASK|TX_TRACE_TIME_MASK|Trace||0x00000000|0xFFFFFFFF|Define the clock source for trace mask
+TX_MEMSET|TX_MEMSET|Core||||Define the TX_MEMSET macro to the standard library function
+TX_SAFETY_CRITICAL|TX_SAFETY_CRITICAL|Core||||Define if the safety critical configuration is enabled List of required condition to enable TX_SAFETY_CRITICAL : TX_MAX_PRIORITIES must be defined and a multiple of 32. TX_DISABLE_ERROR_CHECKING must not be defined. TX_TIMER_PROCESS_IN_ISR must not be defined. TX_REACTIVATE_INLINE must not be defined. TX_DISABLE_STACK_FILLING must not be defined. TX_DISABLE_PREEMPTION_THRESHOLD must not be defined. TX_DISABLE_REDUNDANT_CLEARING must not be defined. TX_DISABLE_NOTIFY_CALLBACKS must not be defined. TX_INLINE_THREAD_RESUME_SUSPEND must not be defined. TX_NOT_INTERRUPTABLE must not be defined. TX_ENABLE_EVENT_TRACE must not be defined. TX_BLOCK_POOL_ENABLE_PERFORMANCE_INFO must not be defined. TX_BYTE_POOL_ENABLE_PERFORMANCE_INFO must not be defined. TX_EVENT_FLAGS_ENABLE_PERFORMANCE_INFO must not be defined. TX_MUTEX_ENABLE_PERFORMANCE_INFO must not be defined. TX_QUEUE_ENABLE_PERFORMANCE_INFO must not be defined. TX_SEMAPHORE_ENABLE_PERFORMANCE_INFO must not be defined. TX_THREAD_ENABLE_PERFORMANCE_INFO must not be defined. TX_TIMER_ENABLE_PERFORMANCE_INFO must not be defined.
+TX_TIMER_TICKS_PER_SECOND|TX_TIMER_TICKS_PER_SECOND|Core||1|65535|Define the common timer tick reference for use by other middleware components
+TX_ENABLE_RANDOM_NUMBER_STACK_FILLING|TX_ENABLE_RANDOM_NUMBER_STACK_FILLING|Core||||Determine if random number is used for stack filling. By default, ThreadX uses a fixed pattern for stack filling. When the�following�is�defined,� ThreadX uses a random number for stack filling. This is effective only when� TX_ENABLE_STACK_CHECKING is defined.
+ThreadX_Version|ThreadX version|Version||||Current ThreadX version
+TX_LOW_POWER|Enable LowPower Support|Low Power||||When enabled ThreadX will support LowPower feature.
+TX_LOW_POWER_TIMER_SETUP|TX_LOW_POWER_TIMER_SETUP|Low Power||||a macro used to track the current time. <font color="red"> <b>This is a variable name. It should be C compliant declaration, Otherwise compilation errors will be generated in the project. </b> </font>
+TX_LOW_POWER_TICKLESS|TX_LOW_POWER_TICKLESS|Low Power||||When enabled timer tracking is disabled.
+TX_LOW_POWER_USER_ENTER|TX_LOW_POWER_USER_ENTER|Low Power||||User macro to be called before entering the LowPower Mode. <font color="red"> <b>This is a variable name. It should be C compliant declaration, Otherwise compilation errors will be generated in the project. </b> </font>
+TX_LOW_POWER_USER_EXIT|TX_LOW_POWER_USER_EXIT|Low Power||||User macro to be called after exiting the LowPower Mode. <font color="red"> <b>This is a variable name. It should be C compliant declaration, Otherwise compilation errors will be generated in the project. </b> </font>
+TX_LOW_POWER_USER_TIMER_ADJUST|TX_LOW_POWER_USER_TIMER_ADJUST|Low Power||||A macro to retrieve the number of ticks the system was in low power mode. <font color="red"> <b>This is a variable name. It should be C compliant declaration, Otherwise compilation errors will be generated in the project. </b> </font>
+TX_NO_FILEX_POINTER|TX_NO_FILEX_POINTER|Core||||Determine if there is a FileX pointer in the thread control block. By default, the pointer is there for legacy/backwards compatibility. The pointer <b>must</b> also be there for applications using <b>FileX</b>. Define this to save space in the thread control block.
+AZRTOS_APP_MEM_ALLOCATION_METHOD|Memory Pool Allocation|Memory Configuration||||<b> Use Static Allocation </b> : use predefined threadX memory pools for allocation. a static <b>TX_BYTE_POOL </b> is created using the <code> tx_byte_pool_create() </code> API and allocations are done with <code>tx_byte_allocate() </code> <b> Use Dynamic Allocation </b> : use dynamic allocation starting from the first free memory byte in the RAM Application should used that first free memory location as allocation start address, then dynamically increment the pointer after each allocation 0 + <b><i>ThreadX</i></b> needs to know the first free memory region in the RAM to pass it to the <code>tx_application_define()</code> in the <i>"first_unused_memory"</i>. This needs changes in the linker files as below. <ul> <li>EWARM <i>.icf</i> file</li> define the symbol <b>FREE_MEM</b> <code> place in RAM_region { last section FREE_MEM}; </code> <li>STM32CubeIDE <i>.ld </i>file</li> define the symbol <b>__RAM_segment_used_end__</b> <code> ._user_heap_stack : { . = ALIGN(8); ` PROVIDE ( end = . ); PROVIDE ( _end = . ); ` . = . + _Min_Heap_Size; . = . + _Min_Stack_Size; . = ALIGN(8); ` __RAM_segment_used_end__= .; } >RAM_D1 </code> </ul> the<code> "tx_initialize_low_level.s" </code> should be also modified to correctly export these symobls to application. This is automatically generated by STM32CubeMX under the <b>USE_DYNAMIC_MEMORY_ALLOCATION </b> flag.
+TX_APP_MEM_POOL_SIZE|ThreadX memory pool size|Memory Configuration||512|=($RamSize*1024)/4|Default memory pool size for the ThreadX application.
+FX_APP_MEM_POOL_SIZE|FileX memory pool size|Memory Configuration||512|262144|Default memory pool size for the FileX application.
+NX_APP_MEM_POOL_SIZE|NetXDuo memory pool size|Memory Configuration||512|262144|Default memory pool size for the FileX application.
+UX_HOST_APP_MEM_POOL_SIZE|UXHost memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBXHost application.
+UX_DEVICE_APP_MEM_POOL_SIZE|UXDevice memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBXDevice application.
+USBPD_DEVICE_APP_MEM_POOL_SIZE|USBPD memory pool size|Memory Configuration||512|262144|Default memory pool size for the USBXDevice application.
+TOUCHSENSING_APP_MEM_POOL_SIZE|TOUCHSENSING memory pool size|Memory Configuration||512|262144|Default memory pool size for the TOUCHSENSING application.
+TSC_ENABLED|TOUCHSENSING_ENABLED|Memory Configuration||||
+GUI_INTERFACE_APP_MEM_POOL_SIZE|GUI_INTERFACE memory pool size|Memory Configuration||512|262144|Default memory pool size for the GUI_INTERFACE application.
+FILEX_ENABLED|FILEX_ENABLED|Memory Configuration||||
+NETXDUO_ENABLED|NETXDUO_ENABLED|Memory Configuration||||
+USBXDEVICE_ENABLED|USBXDEVICE_ENABLED|Memory Configuration||||
+USBXHOST_ENABLED|USBXHOST_ENABLED|Memory Configuration||||
+USBPD_ENABLED|USBPD_ENABLED|Core||||
+GUI_INTERFACE_ENABLED|GUI_INTERFACE_ENABLED|Core||||
+STACK_MINIMUM|STACK_MINIMUM|||||
+STACK_MAXIMUM|STACK_MAXIMUM|||||
+TX_ENABLE_BASEPRI_SUPPORT|Enable BASEPRI support|Core||||When enabled ThreadX will use the Base Priority Mask Register
+TX_BASEPRI_VALUE|TX_BASEPRI_VALUE|Core||0|3|When the value is set to a nonzero ThreeadX will prevent the activation of exception with a same priority or lower than the TX_BASEPRI_VALUE Min : 0 no Effect (default value) Max: (2 ^ __NVIC_PRIO_BITS) -1
+TX_PORT_BASEPRI_VALUE|TX_PORT_BASEPRI_VALUE|Core||0|192|
+TX_DISABLE_ERROR_CHECKING|TX_DISABLE_ERROR_CHECKING|Core||||Defined, the basic parameter error checking is disabled.
+THREADX_MEM_POOL_VAR_NAME|ThreadX MemPool Name|Memory Configuration||||Default ThreadX memory pool var name. <font color="red"> <b>This is a variable name. It should be C compliant declaration, Otherwise compilation errors will be generated in the project. </b> </font>
+FILEX_MEM_POOL_VAR_NAME|FileX MemPool Name|Memory Configuration||||Default memory pool size for the FileX application.
+TX_APP_GENERATE_INIT_CODE|Generate App Init Code|ThreadX App Init||||Giving the access to generate the following application code: <li>Create ThreadX Application Thread.</li> <li>Create ThreadX Application Semaphore.</li> <li>Create ThreadX Application Mutex.</li> <li>Create ThreadX Application MessageQueue.</li>
+TX_APP_CREATION|Create ThreadX Application Thread|ThreadX App Init||N/A|N/A|Enable the allocation and creation of the thread.
+TX_APP_THREAD_ENTRY|ThreadX Application Thread Entry|ThreadX App Init||||Main thread entry function Name.
+TX_APP_THREAD_NAME|ThreadX Application Thread Name|ThreadX App Init||||ThreadX Application thread Name.
+TX_APP_THREAD_PRIO|ThreadX Application Thread Priority|ThreadX App Init||0|=TX_MAX_PRIORITIES|Default ThreadX Application Thread Priority value for ThreadX application. ThreadX Application Thread Priority must be between 0 and TX_MAX_PRIORITIES.
+TX_APP_STACK_SIZE|ThreadX Application Thread Stack Size|ThreadX App Init||512|=TX_APP_MEM_POOL_SIZE|Default thread stack size value for ThreadX application.
+TX_APP_SEM_CREATION|Create ThreadX Application Semaphore|ThreadX App Init||||Generate application code to initialize the ThreadX App Semaphore.
+TX_SEMAPHORE_NAME|ThreadX Application Semaphore Name|ThreadX App Init||||ThreadX Application Semaphore Name.
+TX_SEMAPHORE_COUNT|ThreadX Application Semaphore Init Count|ThreadX App Init||0|1024|Initial value for counting semaphores.
+TX_APP_MUTEX_CREATION|Create ThreadX Application Mutex|ThreadX App Init||||Generate application code to initialize the ThreadX App Mutex.
+TX_MUTEX_NAME|ThreadX Application Mutex Name|ThreadX App Init||||ThreadX Application Mutex Name.
+TX_MUTEX_INHERITANCE|ThreadX Application Mutex Inheritance Support|ThreadX App Init||||Enable priority inheritance feature: TX_NO_INHERIT / TX_INHERIT Specifies whether or not this mutex supports priority inheritance. If this value is TX_INHERIT, then priority inheritance is supported. However, if TX_NO_INHERIT is specified, priority inheritance is not supported by this mutex.
+TX_APP_MSG_QUEUE_CREATION|Create ThreadX Application MessageQueue|ThreadX App Init||||Generate application code to initialize the ThreadX App MessageQueue.
+TX_MSG_QUEUE_NAME|ThreadX Application Queue Name|ThreadX App Init||||ThreadX Application MessageQueue Name.
+TX_MSG_SIZE_WORDS|ThreadX Application Queue Message Size in words|ThreadX App Init||1|16|The size of a single message in words.
+TX_NB_MSG|ThreadX Application Number of Messages|ThreadX App Init||1|512|The total number of messages in a Queue.
+
+[Values]
+# параметр|значение|подпись
+TX_MUTEX_INHERITANCE|TX_NO_INHERIT|TX_NO_INHERIT
+TX_MUTEX_INHERITANCE|TX_INHERIT|TX_INHERIT

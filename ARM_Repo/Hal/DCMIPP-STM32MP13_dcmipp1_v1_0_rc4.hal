@@ -1,0 +1,60 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DCMIPP
+Version=STM32MP13_dcmipp1_v1_0_rc4
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ExtendedDataMode|Extended Data Mode|Invisible||||
+SynchroMode|Synchro Mode|Synchro Config||||
+FrameStartCode|Frame Start Code|Synchro Config||0|255|
+FrameEndCode|Frame End Code|Synchro Config||0|255|
+LineEndCode|Line End Code|Synchro Config||0|255|
+LineStartCode|Line Start Code|Synchro Config||0|255|
+Format|Format|Mode Config||||
+DCMIPP_VPolarity|Vertical Polarity|Interface Capture Config||||
+DCMIPP_HPolarity|Horizental Polarity|Interface Capture Config||||
+DCMIPP_PCKPOLARITY|Clock polarity|Interface Capture Config||||
+SwapBits|Swap lsb vs msb|Interface Capture Config||||
+SwapCycles|Swap Data from cycle 0 vs cycle 1|Interface Capture Config||||
+DCMIPP_PIPES|Pipe Number|Mode Config||||
+FrameRate|FrameRate|Mode Config||||
+
+[Values]
+# параметр|значение|подпись
+ExtendedDataMode|DCMIPP_INTERFACE_8BITS|Extended Data Mode
+ExtendedDataMode|DCMIPP_INTERFACE_10BITS|Extended Data Mode
+ExtendedDataMode|DCMIPP_INTERFACE_12BITS|Extended Data Mode
+ExtendedDataMode|DCMIPP_INTERFACE_14BITS|Extended Data Mode
+ExtendedDataMode|DCMIPP_INTERFACE_16BITS|Extended Data Mode
+SynchroMode|DCMIPP_SYNCHRO_EMBEDDED|Embedded Synchronization
+SynchroMode|DCMIPP_SYNCHRO_HARDWARE|Hardware Synchronization
+Format|DCMIPP_FORMAT_BYTE|DCMIPP_FORMAT_BYTE
+Format|DCMIPP_FORMAT_YUV422|DCMIPP_FORMAT_YUV422
+Format|DCMIPP_FORMAT_RGB565|DCMIPP_FORMAT_RGB565
+Format|DCMIPP_FORMAT_RGB888|DCMIPP_FORMAT_RGB888
+Format|DCMIPP_FORMAT_RAW8|DCMIPP_FORMAT_RAW8
+Format|DCMIPP_FORMAT_MONOCHROME_8B|DCMIPP_FORMAT_MONOCHROME_8B
+Format|DCMIPP_FORMAT_RAW10|DCMIPP_FORMAT_RAW10
+Format|DCMIPP_FORMAT_MONOCHROME_10B|DCMIPP_FORMAT_MONOCHROME_10B
+Format|DCMIPP_FORMAT_RAW12|DCMIPP_FORMAT_RAW12
+Format|DCMIPP_FORMAT_MONOCHROME_12B|DCMIPP_FORMAT_MONOCHROME_12B
+Format|DCMIPP_FORMAT_RAW14|DCMIPP_FORMAT_RAW14
+Format|DCMIPP_FORMAT_MONOCHROME_14B|DCMIPP_FORMAT_MONOCHROME_14B
+Format|DCMIPP_FORMAT_RAW16|DCMIPP_FORMAT_RAW16
+DCMIPP_VPolarity|DCMIPP_VSPOLARITY_LOW|Low
+DCMIPP_VPolarity|DCMIPP_VSPOLARITY_HIGH|High
+DCMIPP_HPolarity|DCMIPP_HSPOLARITY_LOW|Low
+DCMIPP_HPolarity|DCMIPP_HSPOLARITY_HIGH|High
+DCMIPP_PCKPOLARITY|DCMIPP_PCKPOLARITY_FALLING|Falling
+DCMIPP_PCKPOLARITY|DCMIPP_PCKPOLARITY_RISING|Rising
+SwapBits|DCMIPP_SWAPBITS_DISABLE|Disabled
+SwapBits|DCMIPP_SWAPBITS_ENABLE|Enabled
+SwapCycles|DCMIPP_SWAPCYCLES_DISABLE|Disabled
+SwapCycles|DCMIPP_SWAPCYCLES_ENABLE|Enabled
+DCMIPP_PIPES|DCMIPP_PIPE0|Pipe 0
+FrameRate|DCMIPP_FRAME_RATE_ALL|All frames captured
+FrameRate|DCMIPP_FRAME_RATE_1_OVER_2|1 frame over 2 captured
+FrameRate|DCMIPP_FRAME_RATE_1_OVER_4|1 frame over 4 captured
+FrameRate|DCMIPP_FRAME_RATE_1_OVER_8|1 frame over 8 captured

@@ -1,0 +1,219 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SPI
+Version=spi2s3_v2_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Mode|Mode|Basic Parameters||||
+Direction|Direction|Basic Parameters||||
+TIMode|Frame Format|Basic Parameters||||
+DataSize|Data Size|Basic Parameters||||
+FirstBit|First Bit|Basic Parameters||0|1|
+BaudRatePrescaler|Prescaler (for Baud Rate)|Clock Parameters||||
+CalculateBaudRate|Baud Rate|Clock Parameters||0|150000000|Calculated Baudrate value based on SPI Clock source and Prescaler
+CLKPolarity|Clock Polarity (CPOL)|Clock Parameters||0|1|
+CLKPhase|Clock Phase (CPHA)|Clock Parameters||0|1|1 Edge means the first clock transition is the first data capture edge (value 0) AND 2 Edge means the second clock transition is the first data capture edge (value 1)
+CRCCalculation|CRC Calculation|CRC Parameters||||
+TxCRCInitializationPattern|Tx Crc Initialization Pattern|CRC Parameters||||
+RxCRCInitializationPattern|Rx Crc Initialization Pattern|CRC Parameters||||
+CRCLength|CRC Length|CRC Parameters||||
+CRCPolynomial|CRC Polynomial [0x10:0xFFFFFFFF]|CRC Parameters||0x0|0xFFFF|
+NSSPMode|NSSP Mode|Advanced Parameters||||
+NSS|NSS Signal Type|Advanced Parameters||||
+FifoThreshold|Fifo Threshold|Advanced Parameters||||
+NSSPolarity|Nss Polarity|Advanced Parameters||||
+MasterSSIdleness|Master Ss Idleness|Advanced Parameters||||Specifies an extra delay, expressed in number of SPI clock cycle periods, inserted additionally between active edge of SS and first data transaction start in master mode.
+MasterInterDataIdleness|Master Inter Data Idleness|Advanced Parameters||||Specifies minimum time delay (expressed in SPI clock cycles periods) inserted between two consecutive data frames in master mode This parameter can be a value of SPI Master Inter-Data Ideleness.
+MasterReceiverAutoSusp|Master Receiver Auto Susp|Advanced Parameters||||Control continuous SPI transfer in master receiver mode and automatic management in order to avoid overrun condition.
+MasterKeepIOState|Master Keep Io State|Advanced Parameters||||Control of Alternate function GPIOs state This parameter can be a value of Keep IO State.
+IOSwap|IO Swap|Advanced Parameters||||Invert MISO/MOSI alternate functions.
+ReadyMasterManagement|Ready Master Management|Advanced Parameters||||RDY Master Signal management.
+ReadyPolarity|Ready Signal Polarity|Advanced Parameters||||RDY Signal polarity.
+TriggerState|State|Autonomous Mode||||Autonomous Mode activation.
+TriggerSelection|Trigger Source|Autonomous Mode||||Autonomous Mode Trigger Source.
+TriggerPolarity|Trigger Transition|Autonomous Mode||||Autonomous Mode Trigger Transition.
+
+[Values]
+# параметр|значение|подпись
+Mode|SPI_MODE_SLAVE|Slave
+Mode|SPI_MODE_MASTER|Master
+Direction|SPI_DIRECTION_2LINES|2 Lines Unidirectionnal
+Direction|SPI_DIRECTION_2LINES_RXONLY|2 Lines with Receive only
+Direction|SPI_DIRECTION_2LINES_TXONLY|2 Lines with Transmit only
+Direction|SPI_DIRECTION_1LINE|1 Line Bidirectionnal
+TIMode|SPI_TIMODE_DISABLE|Motorola
+TIMode|SPI_TIMODE_ENABLE|TI
+DataSize|SPI_DATASIZE_4BIT|4 Bits
+DataSize|SPI_DATASIZE_5BIT|5 Bits
+DataSize|SPI_DATASIZE_6BIT|6 Bits
+DataSize|SPI_DATASIZE_7BIT|7 Bits
+DataSize|SPI_DATASIZE_8BIT|8 Bits
+DataSize|SPI_DATASIZE_9BIT|9 Bits
+DataSize|SPI_DATASIZE_10BIT|10 Bits
+DataSize|SPI_DATASIZE_11BIT|11 Bits
+DataSize|SPI_DATASIZE_12BIT|12 Bits
+DataSize|SPI_DATASIZE_13BIT|13 Bits
+DataSize|SPI_DATASIZE_14BIT|14 Bits
+DataSize|SPI_DATASIZE_15BIT|15 Bits
+DataSize|SPI_DATASIZE_16BIT|16 Bits
+DataSize|SPI_DATASIZE_17BIT|17 Bits
+DataSize|SPI_DATASIZE_18BIT|18 Bits
+DataSize|SPI_DATASIZE_19BIT|19 Bits
+DataSize|SPI_DATASIZE_20BIT|20 Bits
+DataSize|SPI_DATASIZE_21BIT|21 Bits
+DataSize|SPI_DATASIZE_22BIT|22 Bits
+DataSize|SPI_DATASIZE_23BIT|23 Bits
+DataSize|SPI_DATASIZE_24BIT|24 Bits
+DataSize|SPI_DATASIZE_25BIT|25 Bits
+DataSize|SPI_DATASIZE_26BIT|26 Bits
+DataSize|SPI_DATASIZE_27BIT|27 Bits
+DataSize|SPI_DATASIZE_28BIT|28 Bits
+DataSize|SPI_DATASIZE_29BIT|29 Bits
+DataSize|SPI_DATASIZE_30BIT|30 Bits
+DataSize|SPI_DATASIZE_31BIT|31 Bits
+DataSize|SPI_DATASIZE_32BIT|32 Bits
+FirstBit|SPI_FIRSTBIT_MSB|MSB First
+FirstBit|SPI_FIRSTBIT_LSB|LSB First
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_BYPASS|1
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_2|2
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_4|4
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_8|8
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_16|16
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_32|32
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_64|64
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_128|128
+BaudRatePrescaler|SPI_BAUDRATEPRESCALER_256|256
+CLKPolarity|SPI_POLARITY_LOW|Low
+CLKPolarity|SPI_POLARITY_HIGH|High
+CLKPhase|SPI_PHASE_1EDGE|1 Edge
+CLKPhase|SPI_PHASE_2EDGE|2 Edge
+CRCCalculation|SPI_CRCCALCULATION_DISABLE|Disabled
+CRCCalculation|SPI_CRCCALCULATION_ENABLE|Enabled
+TxCRCInitializationPattern|SPI_CRC_INITIALIZATION_ALL_ZERO_PATTERN|All Zero Pattern
+TxCRCInitializationPattern|SPI_CRC_INITIALIZATION_ALL_ONE_PATTERN|All One Pattern
+RxCRCInitializationPattern|SPI_CRC_INITIALIZATION_ALL_ZERO_PATTERN|All Zero Pattern
+RxCRCInitializationPattern|SPI_CRC_INITIALIZATION_ALL_ONE_PATTERN|All One Pattern
+CRCLength|SPI_CRC_LENGTH_DATASIZE|Aligned with the data size
+CRCLength|SPI_CRC_LENGTH_32BIT|CRC 32 Bits
+CRCLength|SPI_CRC_LENGTH_31BIT|CRC 31 Bits
+CRCLength|SPI_CRC_LENGTH_30BIT|CRC 30 Bits
+CRCLength|SPI_CRC_LENGTH_29BIT|CRC 29 Bits
+CRCLength|SPI_CRC_LENGTH_28BIT|CRC 28 Bits
+CRCLength|SPI_CRC_LENGTH_27BIT|CRC 27 Bits
+CRCLength|SPI_CRC_LENGTH_26BIT|CRC 26 Bits
+CRCLength|SPI_CRC_LENGTH_25BIT|CRC 25 Bits
+CRCLength|SPI_CRC_LENGTH_24BIT|CRC 24 Bits
+CRCLength|SPI_CRC_LENGTH_23BIT|CRC 23 Bits
+CRCLength|SPI_CRC_LENGTH_22BIT|CRC 22 Bits
+CRCLength|SPI_CRC_LENGTH_21BIT|CRC 21 Bits
+CRCLength|SPI_CRC_LENGTH_20BIT|CRC 20 Bits
+CRCLength|SPI_CRC_LENGTH_19BIT|CRC 19 Bits
+CRCLength|SPI_CRC_LENGTH_18BIT|CRC 18 Bits
+CRCLength|SPI_CRC_LENGTH_17BIT|CRC 17 Bits
+CRCLength|SPI_CRC_LENGTH_16BIT|CRC 16 Bits
+CRCLength|SPI_CRC_LENGTH_15BIT|CRC 15 Bits
+CRCLength|SPI_CRC_LENGTH_14BIT|CRC 14 Bits
+CRCLength|SPI_CRC_LENGTH_13BIT|CRC 13 Bits
+CRCLength|SPI_CRC_LENGTH_12BIT|CRC 12 Bits
+CRCLength|SPI_CRC_LENGTH_11BIT|CRC 11 Bits
+CRCLength|SPI_CRC_LENGTH_10BIT|CRC 10 Bits
+CRCLength|SPI_CRC_LENGTH_9BIT|CRC 9 Bits
+CRCLength|SPI_CRC_LENGTH_8BIT|CRC 8 Bits
+CRCLength|SPI_CRC_LENGTH_7BIT|CRC 7 Bits
+CRCLength|SPI_CRC_LENGTH_6BIT|CRC 6 Bits
+CRCLength|SPI_CRC_LENGTH_5BIT|CRC 5 Bits
+NSSPMode|SPI_NSS_PULSE_ENABLE|Enabled
+NSSPMode|SPI_NSS_PULSE_DISABLE|Disabled
+NSS|SPI_NSS_HARD_OUTPUT|Output Hardware
+NSS|SPI_NSS_HARD_INPUT|Input Hardware
+NSS|SPI_NSS_SOFT|Software
+FifoThreshold|SPI_FIFO_THRESHOLD_01DATA|Fifo Threshold 01 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_02DATA|Fifo Threshold 02 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_03DATA|Fifo Threshold 03 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_04DATA|Fifo Threshold 04 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_05DATA|Fifo Threshold 05 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_06DATA|Fifo Threshold 06 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_07DATA|Fifo Threshold 07 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_08DATA|Fifo Threshold 08 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_09DATA|Fifo Threshold 09 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_10DATA|Fifo Threshold 10 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_11DATA|Fifo Threshold 11 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_12DATA|Fifo Threshold 12 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_13DATA|Fifo Threshold 13 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_14DATA|Fifo Threshold 14 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_15DATA|Fifo Threshold 15 Data
+FifoThreshold|SPI_FIFO_THRESHOLD_16DATA|Fifo Threshold 16 Data
+NSSPolarity|SPI_NSS_POLARITY_LOW|Nss Polarity Low
+NSSPolarity|SPI_NSS_POLARITY_HIGH|Nss Polarity High
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_00CYCLE|00 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_01CYCLE|01 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_02CYCLE|02 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_03CYCLE|03 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_04CYCLE|04 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_05CYCLE|05 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_06CYCLE|06 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_07CYCLE|07 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_08CYCLE|08 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_09CYCLE|09 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_10CYCLE|10 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_11CYCLE|11 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_12CYCLE|12 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_13CYCLE|13 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_14CYCLE|14 Cycle
+MasterSSIdleness|SPI_MASTER_SS_IDLENESS_15CYCLE|15 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_00CYCLE|00 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_01CYCLE|01 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_02CYCLE|02 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_03CYCLE|03 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_04CYCLE|04 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_05CYCLE|05 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_06CYCLE|06 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_07CYCLE|07 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_08CYCLE|08 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_09CYCLE|09 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_10CYCLE|10 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_11CYCLE|11 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_12CYCLE|12 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_13CYCLE|13 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_14CYCLE|14 Cycle
+MasterInterDataIdleness|SPI_MASTER_INTERDATA_IDLENESS_15CYCLE|15 Cycle
+MasterReceiverAutoSusp|SPI_MASTER_RX_AUTOSUSP_DISABLE|Disable
+MasterReceiverAutoSusp|SPI_MASTER_RX_AUTOSUSP_ENABLE|Enable
+MasterKeepIOState|SPI_MASTER_KEEP_IO_STATE_DISABLE|Master Keep Io State Disable
+MasterKeepIOState|SPI_MASTER_KEEP_IO_STATE_ENABLE|Master Keep Io State Enable
+IOSwap|SPI_IO_SWAP_DISABLE|Disabled
+IOSwap|SPI_IO_SWAP_ENABLE|Enabled
+ReadyMasterManagement|SPI_RDY_MASTER_MANAGEMENT_EXTERNALLY|External
+ReadyMasterManagement|SPI_RDY_MASTER_MANAGEMENT_INTERNALLY|Internal
+ReadyPolarity|SPI_RDY_POLARITY_HIGH|High
+ReadyPolarity|SPI_RDY_POLARITY_LOW|Low
+TriggerState|SPI_AUTO_MODE_DISABLE|Disable
+TriggerState|SPI_AUTO_MODE_ENABLE|Enable
+TriggerSelection|SPI_GRP1_GPDMA_CH0_TCF_TRG|Global Purpose DMA Channel 0
+TriggerSelection|SPI_GRP1_GPDMA_CH1_TCF_TRG|Global Purpose DMA Channel 1
+TriggerSelection|SPI_GRP1_GPDMA_CH2_TCF_TRG|Global Purpose DMA Channel 2
+TriggerSelection|SPI_GRP1_GPDMA_CH3_TCF_TRG|Global Purpose DMA Channel 3
+TriggerSelection|SPI_GRP1_EXTI4_TRG|EXTI4
+TriggerSelection|SPI_GRP1_EXTI9_TRG|EXTI9
+TriggerSelection|SPI_GRP1_LPTIM1_CH1_TRG|LPTIM1 Channel 1
+TriggerSelection|SPI_GRP1_LPTIM2_CH1_TRG|LPTIM2 Channel 1
+TriggerSelection|SPI_GRP1_COMP1_TRG|COMP1
+TriggerSelection|SPI_GRP1_COMP2_TRG|COMP2
+TriggerSelection|SPI_GRP1_RTC_ALRA_TRG|RTC Alarm
+TriggerSelection|SPI_GRP1_RTC_WUT_TRG|RTC Wakeup Timer
+TriggerSelection|SPI_GRP2_LPDMA_CH0_TCF_TRG|LowPower DMA Channel 0
+TriggerSelection|SPI_GRP2_LPDMA_CH1_TCF_TRG|LowPower DMA Channel 1
+TriggerSelection|SPI_GRP2_LPDMA_CH2_TCF_TRG|LowPower DMA Channel 2
+TriggerSelection|SPI_GRP2_LPDMA_CH3_TCF_TRG|LowPower DMA Channel 3
+TriggerSelection|SPI_GRP2_EXTI4_TRG|EXTI4
+TriggerSelection|SPI_GRP2_EXTI8_TRG|EXTI8
+TriggerSelection|SPI_GRP2_LPTIM1_CH1_TRG|LPTIM1 Channel 1
+TriggerSelection|SPI_GRP2_LPTIM3_CH1_TRG|LPTIM3 Channel 1
+TriggerSelection|SPI_GRP2_COMP1_TRG|COMP1
+TriggerSelection|SPI_GRP2_COMP2_TRG|COMP2
+TriggerSelection|SPI_GRP2_RTC_ALRA_TRG|RTC Alarm
+TriggerSelection|SPI_GRP2_RTC_WUT_TRG|RTC Wakeup Timer
+TriggerPolarity|SPI_TRIG_POLARITY_RISING|Rising Edge
+TriggerPolarity|SPI_TRIG_POLARITY_FALLING|Falling Edge

@@ -1,0 +1,972 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=STM32_WPAN
+Version=v1.2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+BLE_STACK|BLE Wireless Stack|BLE Wireless Stack||||BLE Wireless Light Stack: GAP Peripheral (Slave) and GATT Server only
+BLE_APPLICATION_TYPE|BLE Application Type|BLE Application Type||||Only Server profile is available when FreeRTOS is activated
+FREERTOS_STATUS|FreeRTOs|Transparent Mode||||
+STM32_WPAN_APP_MEM_POOL_SIZE|ThreadX STM32_WPAN_APP_MEM_POOL_SIZE|AzurRTOS configuration||512|20480|Default AzRTOS ThreadX memory pool size for the STM32_WPAN application.
+RFWKPCLKSOURCE|RFWKPCLKSOURCE|Transparent Mode||||
+BLE|BLE|Transparent Mode||||
+BLE_TRANSPARENT_MODE_UART|BLE Transparent mode UART|Transparent Mode||||
+BLE_TRANSPARENT_MODE_VCP|BLE Transparent mode VCP|Transparent Mode||||
+BLE_NO_SERVER_MODE|BLE Stack only|Server Mode||||
+BT_SIG_BEACON|BT SIG Beacon|Server Mode||||You can enable this mode only if OTA mode is disabled
+BT_SIG_BEACON_ENABLED|BT SIG Beacon|Server Mode||||
+BT_SIG_BLOOD_PRESSURE_SENSOR|BT SIG Blood Pressure Sensor|Server Mode||||You can enable this mode only if BT SIG Beacon and OTA modes are disabled
+BT_SIG_HEALTH_THERMOMETER_SENSOR|BT SIG Health Thermometer Sensor|Server Mode||||You can enable this mode only if BT SIG Beacon and OTA modes are disabled
+BT_SIG_HEART_RATE_SENSOR|BT SIG Heart Rate Sensor|Server Mode||||You can enable this mode only if BT SIG Beacon and OTA modes are disabled
+CUSTOM_P2P_SERVER|Custom P2P Server|Server Mode||||You can enable this mode only if BT SIG Beacon and OTA modes are disabled
+CUSTOM_OTA|OTA: Over The Air Firmware Update|Server Mode||||You can enable this mode only if BT SIG Beacon mode is disabled
+CUSTOM_TEMPLATE|Custom Template|Server Mode||||Custom template
+CUSTOM_P2P_CLIENT|Custom P2P Client|Client Mode||||
+CUSTOM_P2P_ROUTER|Custom P2P Router|Router Mode||||
+LOCAL_NAME|LOCAL_NAME|Local Name||||Advertising information, user defined. Max size is 7 characters
+LOCAL_NAME_FORMATTED|LOCAL_NAME_FORMATTED|Local Name||||Advertising information, user defined
+CFG_FAST_CONN_ADV_INTERVAL_MIN|CFG_FAST_CONN_ADV_INTERVAL_MIN|Application parameters||20|10240|Shall be &lt; 80ms
+CFG_FAST_CONN_ADV_INTERVAL_MIN_HEXA|CFG_FAST_CONN_ADV_INTERVAL_MIN_HEXA|Application parameters||0x00|0x80|Shall be &lt 80ms
+CFG_FAST_CONN_ADV_INTERVAL_MAX|CFG_FAST_CONN_ADV_INTERVAL_MAX|Application parameters||20|10240|Shall be &lt 100ms
+CFG_FAST_CONN_ADV_INTERVAL_MAX_HEXA|CFG_FAST_CONN_ADV_INTERVAL_MAX_HEXA|Application parameters||0x00|0xA0|Shall be &lt 100ms
+CFG_LP_CONN_ADV_INTERVAL_MIN|CFG_LP_CONN_ADV_INTERVAL_MIN|Application parameters||0|1000|Shall be &lt 1s
+CFG_LP_CONN_ADV_INTERVAL_MIN_HEXA|CFG_LP_CONN_ADV_INTERVAL_MIN_HEXA|Application parameters||0x00|0x640|Shall be &lt 1s
+CFG_LP_CONN_ADV_INTERVAL_MAX|CFG_LP_CONN_ADV_INTERVAL_MAX|Application parameters||0|2500|Shall be &lt 2.5s
+CFG_LP_CONN_ADV_INTERVAL_MAX_HEXA|CFG_LP_CONN_ADV_INTERVAL_MAX_HEXA|Application parameters||0x00|0xFA0|Shall be &lt 2.5s
+CFG_MM_POOL_SIZE|CFG_MM_POOL_SIZE|Application configuration - Memory manager||=(CFG_AMM_VIRTUAL_BUFFER_SIZE_1 + CFG_AMM_VIRTUAL_BUFFER_SIZE_2 + CFG_AMM_VIRTUAL_BUFFER_SIZE_3 + CFG_AMM_VIRTUAL_BUFFER_SIZE_4 + CFG_AMM_VIRTUAL_BUFFER_SIZE_5 + CFG_AMM_VIRTUAL_BUFFER_SIZE_6 + CFG_AMM_VIRTUAL_BUFFER_SIZE_7 + CFG_AMM_VIRTUAL_BUFFER_SIZE_8 + CFG_AMM_VIRTUAL_BUFFER_SIZE_9 + CFG_AMM_VIRTUAL_BUFFER_SIZE_10)||Memory Manager pool buffer size to avoid memory fragmentation. Minimum size must be at least sum of defined Virtual Memory Buffer size
+CFG_AMM_VIRTUAL_MEMORY_NUMBER|CFG_AMM_VIRTUAL_MEMORY_NUMBER|Application configuration - Memory manager||0|10|AMM(Advanced Memory Manager) virtual memory number.
+CFG_AMM_VIRTUAL_ID_NBR_1|CFG_AMM_VIRTUAL_MEMORY1_ID_NBR|Application configuration - Memory manager||0|255|ID number of the BLE stack Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_2|CFG_AMM_VIRTUAL_MEMORY2_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_3|CFG_AMM_VIRTUAL_MEMORY3_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_4|CFG_AMM_VIRTUAL_MEMORY4_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_5|CFG_AMM_VIRTUAL_MEMORY5_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_6|CFG_AMM_VIRTUAL_MEMORY6_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_7|CFG_AMM_VIRTUAL_MEMORY7_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_8|CFG_AMM_VIRTUAL_MEMORY8_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_9|CFG_AMM_VIRTUAL_MEM9_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NBR_10|CFG_AMM_VIRTUAL_MEMORY10_ID_NBR|Application configuration - Memory manager||0|255|ID number of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_1|CFG_AMM_VIRTUAL_MEMORY1_ID_NAME|Application configuration - Memory manager||||ID name of the Zigbee stack Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_2|CFG_AMM_VIRTUAL_MEMORY2_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_3|CFG_AMM_VIRTUAL_MEMORY3_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_4|CFG_AMM_VIRTUAL_MEMORY4_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_5|CFG_AMM_VIRTUAL_MEMORY5_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_6|CFG_AMM_VIRTUAL_MEMORY6_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_7|CFG_AMM_VIRTUAL_MEMORY7_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_8|CFG_AMM_VIRTUAL_MEMORY8_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_9|CFG_AMM_VIRTUAL_MEM9_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_ID_NAME_10|CFG_AMM_VIRTUAL_MEMORY10_ID_NAME|Application configuration - Memory manager||||ID name of the Virtual Memory
+CFG_AMM_VIRTUAL_BUFFER_SIZE_1|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY1|Application configuration - Memory manager||||Size of the Virtual Memory buffer, minimum value is 1024
+CFG_AMM_VIRTUAL_BUFFER_SIZE_2|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY2|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_3|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY3|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_4|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY4|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_5|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY5|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_6|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY6|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_7|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY7|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_8|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY8|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_9|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY9|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+CFG_AMM_VIRTUAL_BUFFER_SIZE_10|CFG_AMM_VIRTUAL_BUFFER_SIZE_MEMORY10|Application configuration - Memory manager||||Size of the Virtual Memory buffer
+PAIRING_PARAMETERS|PAIRING_PARAMETERS|Pairing parameters||||Pairing process management
+CFG_BONDING_MODE|CFG_BONDING_MODE|Pairing parameters||||Define Bonding modes Possible values: - No-bonding mode(0x00) - Bonding mode(0x01)
+CFG_ENCRYPTION_KEY_SIZE_MAX|CFG_ENCRYPTION_KEY_SIZE_MAX|Pairing parameters||=CFG_ENCRYPTION_KEY_SIZE_MIN|16|Encryption key maximum size
+CFG_ENCRYPTION_KEY_SIZE_MIN|CFG_ENCRYPTION_KEY_SIZE_MIN|Pairing parameters||7|16|Encryption key minimum size
+CFG_IDENTITY_ADDRESS_TYPE|CFG_IDENTITY_ADDRESS_TYPE|Pairing parameters||||Identity address type Possible values: - Public Identity Address(0x00) - Random Identity Address(0x01)
+CFG_IO_CAPABILITY|CFG_IO_CAPABILITY|Application parameters||||Define IO capabilities Possible values: - CFG_IO_CAPABILITY_DISPLAY_ONLY (0x00) - CFG_IO_CAPABILITY_DISPLAY_YES_NO (0x01) - CFG_IO_CAPABILITY_KEYBOARD_ONLY (0x02) - CFG_IO_CAPABILITY_NO_INPUT_NO_OUTPUT (0x03) - CFG_IO_CAPABILITY_KEYBOARD_DISPLAY (0x04)
+CFG_MITM_PROTECTION|CFG_MITM_PROTECTION|Application parameters||||Activate/deactivate Define Man In The Middle(MITM) protection mode Possible values: - MITM protection not required (0x00) - MITM protection required (0x01)
+CFG_SC_SUPPORT|CFG_SC_SUPPORT|Pairing parameters||||Define Secure Connections Support Possible values: - Secure Connections Paring not supported (0x00) - Secure Connections Paring supported but optional (0x01) - Secure Connections Paring supported and mandatory(0x02)
+CFG_KEYPRESS_NOTIFICATION_SUPPORT|CFG_KEYPRESS_NOTIFICATION_SUPPORT|Pairing parameters||||Define MITM modes Possible values: - Keypress notification not supported (0x00) - Keypress notification supported (0x01)
+CFG_BLE_IR|CFG_BLE_IR|Pairing parameters||||Identity root key used to derive IRK and DHK(Legacy)
+CFG_BLE_IR_HEX|CFG_BLE_IR_HEX|Pairing parameters||||Identity root key used to derive LTK and CSRK
+CFG_BLE_ER|CFG_BLE_ER|Pairing parameters||||Encryption root key used to derive LTK(Legacy) and CSRK
+CFG_BLE_ER_HEX|CFG_BLE_ER_HEX|BLE Pairing||||Encryption root key used to derive LTK and CSRK
+P2P_SERVER_NUMBER|P2P_SERVER_NUMBER|P2P Service||||P2P Server number
+L2CAP_REQUEST_NEW_CONN_PARAM|L2CAP_REQUEST_NEW_CONN_PARAM|Application parameters||||L2CAP Connection Update request parameters used for test only with smart Phone
+CFG_DEBUG_TRACE_UART|CFG_DEBUG_TRACE_UART|Application parameters||||Enable Debug Trace
+CFG_CLI_UART|CFG_CLI_UART|Application parameters||||<font color="red">UART shall be selected when Thread_Cli_Cmd is selected</font>
+CFG_UART_GUI|CFG_UART_GUI|Application parameters||||<font color="red">UART shall be selected as it is mandatory for Transparent Mode</font>
+CFG_CONSOLE_MENU|CFG_CONSOLE_MENU|Application parameters||||UART choice for GUI
+CFG_USB_INTERFACE_ENABLE|CFG_USB_INTERFACE_ENABLE|Application parameters||||Enable/Disable USB interface. Mandatory to be set to Enabled for Transparent Mode VCP
+CFG_RTCCLK_DIVIDER_CONF|CFG_RTCCLK_DIVIDER_CONF|Application parameters||||CFG_RTCCLK_DIVIDER_CONF: - Shall be set to either 0,2,4,8,16 - When set to 0, the user sets its own configuration - When set to either 2,4,8,16, the 1Hhz calendar is supported and values of: CFG_RTCCLK_DIV CFG_RTC_WUCKSEL_DIVIDER CFG_RTC_ASYNCH_PRESCALER CFG_RTC_SYNCH_PRESCALER are hard coded in FW
+CFG_RTCCLK_DIV|CFG_RTCCLK_DIV|Application parameters||||Accessible only when CFG_RTCCLK_DIVIDER_CONF=0, else it 's hard coded in FW Either 2,4,8,16 RTC Clock Divider
+CFG_RTC_WUCKSEL_DIVIDER|CFG_RTC_WUCKSEL_DIVIDER|Application parameters||||Accessible only when CFG_RTCCLK_DIVIDER_CONF=0, else it 's hard coded in FW = 0 when CFG_RTCCLK_DIV = 16 = 1 when CFG_RTCCLK_DIV = 8 = 2 when CFG_RTCCLK_DIV = 4 = 3 when CFG_RTCCLK_DIV = 2
+CFG_RTC_ASYNCH_PRESCALER|CFG_RTC_ASYNCH_PRESCALER|Application parameters||0x0|0xFF|Accessible only when CFG_RTCCLK_DIVIDER_CONF=0, else it 's hard coded in FW RTC asynchronous divider Recommended value = CFG_RTCCLK_DIV - 1
+CFG_RTC_SYNCH_PRESCALER|CFG_RTC_SYNCH_PRESCALER|Application parameters||0x0|0x7FFF|Accessible only when CFG_RTCCLK_DIVIDER_CONF=0, else it 's hard coded in FW RTC asynchronous divider
+OFFSET_PAYLOAD_LENGTH|OFFSET_PAYLOAD_LENGTH|Application parameters||||
+OFFSET_PAYLOAD_DATA|OFFSET_PAYLOAD_DATA|Application parameters||||
+CFG_BLE_NUM_LINK|CFG_BLE_NUM_LINK|Application parameters||1|8|Maximum number of simultaneous connections that the device will support
+CFG_BLE_NUM_GATT_SERVICES|CFG_BLE_NUM_GATT_SERVICES|Application parameters||2||Maximum number of Services that can be stored in the GATT database Maximum value depends on Gatt database size allocated on CPU2 Note that the GAP and GATT services are automatically added so this parameter should be 2 plus the number of user services
+CFG_BLE_NUM_GATT_ATTRIBUTES|CFG_BLE_NUM_GATT_ATTRIBUTES|Application parameters||9||Maximum number of Attributes (i.e. the number of characteristic + the number of characteristic values + the number of descriptors, excluding the services) that can be stored in the GATT database. Maximum value depends on Gatt database size allocated on CPU2 Note that certain characteristics and relative descriptors are added automatically during device initialization
+CFG_BLE_MAX_ATT_MTU|CFG_BLE_MAX_ATT_MTU|Application parameters||23|512|Maximum supported ATT_MTU size
+CFG_BLE_ATT_VALUE_ARRAY_SIZE|CFG_BLE_ATT_VALUE_ARRAY_SIZE|Application parameters||0|65535|Size of the storage area for Attribute values This value depends on the number of attributes used by application. In particular the sum of the following quantities (in octets) should be made for each attribute: - attribute value length - 5, if UUID is 16 bit; 19, if UUID is 128 bit - 2, if server configuration descriptor is used - 2*DTM_NUM_LINK, if client configuration descriptor is used - 2, if extended properties is used The total amount of memory needed is the sum of the above quantities for each attribute. This parameter is ignored by the CPU2 when CFG_BLE_OPTIONS is set to 1
+CFG_BLE_DATA_LENGTH_EXTENSION|CFG_BLE_DATA_LENGTH_EXTENSION|Application parameters||||Enable or disable the Extended Packet length feature. Valid values are 0 or 1
+CFG_BLE_PERIPHERAL_SCA|CFG_BLE_PERIPHERAL_SCA|Application parameters||||Sleep clock accuracy in Peripheral mode (ppm value)
+CFG_BLE_CENTRAL_SCA|CFG_BLE_CENTRAL_SCA|Application parameters||||CFG_BLE_CENTRAL_SCA: Sleep clock accuracy in Central mode 0 : 251 ppm to 500 ppm 1 : 151 ppm to 250 ppm 2 : 101 ppm to 150 ppm 3 : 76 ppm to 100 ppm 4 : 51 ppm to 75 ppm 5 : 31 ppm to 50 ppm 6 : 21 ppm to 30 ppm 7 : 0 ppm to 20 ppm
+CFG_BLE_LSE_SOURCE|CFG_BLE_LSE_SOURCE|Application parameters||||Enable or disable the Source for the low speed clock for RF wake-up 1 : external high speed crystal HSE/32/32 0 : external low speed crystal ( no calibration )
+CFG_BLE_HSE_STARTUP_TIME|CFG_BLE_HSE_STARTUP_TIME|Application parameters||0x1|0x344|Start up time of the high speed (16 or 32 MHz) crystal oscillator in units of 625/256 us (~2.44 us)
+CFG_BLE_MAX_CONN_EVENT_LENGTH|CFG_BLE_MAX_CONN_EVENT_LENGTH|Application parameters||0x0|0xFFFFFFFF|Maximum duration of the connection event when the device is in Slave mode in units of 625/256 us (~2.44 us)
+CFG_BLE_VITERBI_MODE|CFG_BLE_VITERBI_MODE|Application parameters||||Enable or disable the Viterbi mode 1 : enabled 0 : disabled
+CFG_BLE_OPTIONS|CFG_BLE_OPTIONS|Application parameters||||CFG_BLE_OPTIONS:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_LL_ONLY SHCI_C2_BLE_INIT_OPTIONS_LL_HOST SHCI_C2_BLE_INIT_OPTIONS_NO_SVC_CHANGE_DESC SHCI_C2_BLE_INIT_OPTIONS_WITH_SVC_CHANGE_DESC SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RO SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RW SHCI_C2_BLE_INIT_OPTIONS_EXT_ADV SHCI_C2_BLE_INIT_OPTIONS_NO_EXT_ADV SHCI_C2_BLE_INIT_OPTIONS_CS_ALGO2 SHCI_C2_BLE_INIT_OPTIONS_NO_CS_ALGO2 SHCI_C2_BLE_INIT_OPTIONS_REDUC_GATTDB_NVM SHCI_C2_BLE_INIT_OPTIONS_FULL_GATTDB_NVM SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_USED SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_NOTUSED SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_1 SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_2_3 SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_WRITABLE SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_SUPPORTED SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED *which are used to set following configuration bits: * (bit 0): 1: LL only, 0: LL + host * (bit 1): 1: no service change desc., 0: with service change desc. * (bit 2): 1: device name Read-Only, 0: device name R/W * (bit 3): 1: extended advertizing supported, 0: extended advertizing not supported * (bit 4): 1: CS Algo #2 supported, 0: CS Algo #2 not supported * (bit 5): 1: Reduced GATT database in NVM, 0: Full GATT database in NVM * (bit 6): 1: GATT caching is used, 0: GATT caching is not used * (bit 7): 1: LE Power Class 1, 0: LE Power Class 2-3 * (bit 8): 1: appearance Writable, 0: appearance Read-Only * (bit 9): 1: Enhanced ATT supported, 0: Enhanced ATT not supported * other bits: reserved (shall be set to 0)
+CFG_BLE_OPTIONS_LL|- CFG_BLE_OPTIONS_LL|Application parameters||||CFG_BLE_OPTIONS_LL:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_LL_ONLY SHCI_C2_BLE_INIT_OPTIONS_LL_HOST * (bit 0): 1: LL only, 0: LL + host
+CFG_BLE_OPTIONS_SVC|- CFG_BLE_OPTIONS_SVC|Application parameters||||CFG_BLE_OPTIONS_SVC:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_NO_SVC_CHANGE_DESC SHCI_C2_BLE_INIT_OPTIONS_WITH_SVC_CHANGE_DESC * (bit 1): 1: no service change desc., 0: with service change desc.
+CFG_BLE_OPTIONS_DEVICE_NAME|- CFG_BLE_OPTIONS_DEVICE_NAME|Application parameters||||CFG_BLE_OPTIONS_DEVICE_NAME:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RO SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RW * (bit 2): 1: device name Read-Only, 0: device name R/W
+CFG_BLE_OPTIONS_EXT_ADV|- CFG_BLE_OPTIONS_EXT_ADV|Application parameters||||CFG_BLE_OPTIONS_EXT_ADV:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_EXT_ADV SHCI_C2_BLE_INIT_OPTIONS_NO_EXT_ADV * (bit 3): 1: extended advertizing supported, 0: extended advertizing not supported
+CFG_BLE_OPTIONS_CS_ALGO|- CFG_BLE_OPTIONS_CS_ALGO|Application parameters||||CFG_BLE_OPTIONS_ALGO:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_CS_ALGO2 SHCI_C2_BLE_INIT_OPTIONS_NO_CS_ALGO2 * (bit 7): 1: CS Algo #2 supported, 0: CS Algo #2 not supported
+CFG_BLE_OPTIONS_GATTDB_NVM|- CFG_BLE_OPTIONS_GATTDB_NVM|Application parameters||||CFG_BLE_OPTIONS_POWER_CLASS:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_REDUC_GATTDB_NVM SHCI_C2_BLE_INIT_OPTIONS_FULL_GATTDB_NVM * (bit 5): 1: 1: Reduced GATT database in NVM, 0: Full GATT database in NVM
+CFG_BLE_OPTIONS_GATT_CACHING|- CFG_BLE_OPTIONS_GATT_CACHING|Application parameters||||CFG_BLE_OPTIONS_GATT_CACHING:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_USED SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_NOTUSED * (bit 5): 1: 1: GATT caching is used, 0: GATT caching is not used
+CFG_BLE_OPTIONS_POWER_CLASS|- CFG_BLE_OPTIONS_POWER_CLASS|Application parameters||||CFG_BLE_OPTIONS_POWER_CLASS:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_1 SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_2_3 * (bit 7): 1: LE Power Class 1, 0: LE Power Class 2-3
+CFG_BLE_OPTIONS_APPEARANCE|- CFG_BLE_OPTIONS_APPEARANCE|Application parameters||||CFG_BLE_OPTIONS_APPEARANCE:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_WRITABLE SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY * (bit 8): 1: 1: appearance Writable, 0: appearance Read-Only
+CFG_BLE_OPTIONS_ENHANCED_ATT|- CFG_BLE_OPTIONS_ENHANCED_ATT|Application parameters||||CFG_BLE_OPTIONS_ENHANCED_ATT:BLE stack Options flags to be configured with: SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_SUPPORTED SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED * (bit 9): 1: 1: Enhanced ATT supported, 0: Enhanced ATT not supported
+CFG_BLE_MAX_COC_INITIATOR_NBR|CFG_BLE_MAX_COC_INITIATOR_NBR|Application parameters||0|64|Maximum number of connection-oriented channels in initiator mode
+CFG_BLE_MIN_TX_POWER|CFG_BLE_MIN_TX_POWER|Application parameters||-127|20|Minimum transmit power in dBm supported by the Controller.
+CFG_BLE_MAX_TX_POWER|CFG_BLE_MAX_TX_POWER|Application parameters||=CFG_BLE_MIN_TX_POWER|20|Maximum transmit power in dBm supported by the Controller.
+CFG_BLE_MAX_ADD_EATT_BEARERS|CFG_BLE_MAX_ADD_EATT_BEARERS|Application parameters||0|4|BLE stack Maximum number of created Enhanced ATT bearers to be configured in addition to the number of links - Range: 0 __ 4
+CFG_BLE_EXTRA_DATA_BUFFER_SIZE|CFG_BLE_EXTRA_DATA_BUFFER_SIZE|Application parameters||0|500|Size of the RAM buffer extra_data_buffer allocated for the extension of Host commands - Range: 0..500 (at least >250)
+CFG_BLE_EXTRA_DATA_STATUS|CFG_BLE_EXTRA_DATA_STATUS|Application parameters||||
+CFG_BLE_RX_MODEL_CONFIG|CFG_BLE_RX_MODEL_CONFIG|Application parameters||||BLE Rx model configuration flags to be configured with: - SHCI_C2_BLE_INIT_RX_MODEL_AGC_RSSI_LEGACY - SHCI_C2_BLE_INIT_RX_MODEL_AGC_RSSI_BLOCKER which are used to set following configuration bits: (bit 0): 1: agc_rssi model improved vs RF blockers 0: Legacy agc_rssi model other bits: reserved (shall be set to 0)
+CFG_BLE_MAX_ADV_SET_NBR|CFG_BLE_MAX_ADV_SET_NBR|Application parameters||1|8|Maximum number of advertising sets. Range: 1 .. 8 with limitation: This parameter is linked to CFG_BLE_MAX_ADV_DATA_LEN such as both compliant with allocated Total memory computed with BLE_EXT_ADV_BUFFER_SIZE based on Max Extended advertising configuration supported. This parameter is considered by the CPU2 when CFG_BLE_OPTIONS has SHCI_C2_BLE_INIT_OPTIONS_EXT_ADV flag set
+CFG_BLE_MAX_ADV_DATA_LEN|CFG_BLE_MAX_ADV_DATA_LEN|Application parameters||31|1650|Maximum advertising data length (in bytes) Range: 31 .. 1650 with limitation: This parameter is linked to CFG_BLE_MAX_ADV_SET_NBR such as both compliant with allocated Total memory computed with BLE_EXT_ADV_BUFFER_SIZE based on Max Extended advertising configuration supported. This parameter is considered by the CPU2 when CFG_BLE_OPTIONS has SHCI_C2_BLE_INIT_OPTIONS_EXT_ADV flag set
+CFG_BLE_TX_PATH_COMPENS|CFG_BLE_TX_PATH_COMPENS|Application parameters||-1280|1280|RF TX Path Compensation Value (16-bit signed integer). Units: 0.1 dB. Range: -1280 .. 1280
+CFG_BLE_RX_PATH_COMPENS|CFG_BLE_RX_PATH_COMPENS|Application parameters||-1280|1280|RF RX Path Compensation Value (16-bit signed integer). Units: 0.1 dB. Range: -1280 .. 1280
+CFG_BLE_CORE_VERSION|CFG_BLE_CORE_VERSION|Application parameters||||BLE core version (16-bit signed integer). - SHCI_C2_BLE_INIT_BLE_CORE_5_2 - SHCI_C2_BLE_INIT_BLE_CORE_5_3 - SHCI_C2_BLE_INIT_BLE_CORE_5_4 which are used to set: 11(5.2), 12(5.3), 13(5.4).
+CFG_TLBLE_EVT_QUEUE_LENGTH|CFG_TLBLE_EVT_QUEUE_LENGTH|Application parameters||1||"Queue length of BLE Event This parameter defines the number of asynchronous events that can be stored in the HCI layer before being reported to the application. When a command is sent to the BLE core coprocessor, the HCI layer is waiting for the event with the Num_HCI_Command_Packets set to 1. The receive queue shall be large enough to store all asynchronous events received in between. When CFG_TLBLE_MOST_EVENT_PAYLOAD_SIZE is set to 27, this allow to store three 255 bytes long asynchronous events between the HCI command and its event. Maximum value depends on SRAM2 size available This parameter depends on the value given to CFG_TLBLE_MOST_EVENT_PAYLOAD_SIZE. When the queue size is to small, the system may hang if the queue is full with asynchronous events and the HCI layer is still waiting for a CC/CS event, In that case, the notification TL_BLE_HCI_ToNot() is called to indicate to the application a HCI command did not receive its command event within 30s (Default HCI Timeout)."
+CFG_TLBLE_MOST_EVENT_PAYLOAD_SIZE|CFG_TLBLE_MOST_EVENT_PAYLOAD_SIZE|Application parameters||||This parameter should be set to fit most events received by the HCI layer. It defines the buffer size of each element allocated in the queue of received events and can be used to optimize the amount of RAM allocated by the Memory Manager. It should not exceed 255 which is the maximum HCI packet payload size (a greater value is a lost of memory as it will never be used)
+DBG_TRACE_USE_CIRCULAR_QUEUE|DBG_TRACE_USE_CIRCULAR_QUEUE|Generic parameters||||When not set, the traces is looping on sending the trace over UART
+CFG_HW_RESET_BY_FW|CFG_HW_RESET_BY_FW|Generic parameters||||When set, this resets some hw resources to set the device in the same state than the power up The FW resets only register that may prevent the FW to run properly This shall be set to 0 in a final product
+CFG_USE_SMPS|CFG_USE_SMPS|Generic parameters||||When set, this set SMPS supply SMPS not used when Set to 0 SMPS used when Set to 1
+CFG_LED_SUPPORTED|CFG_LED_SUPPORTED|Generic parameters||||When set, this resets some hw resources to set the device in the same state than the power up The FW resets only register that may prevent the FW to run properly This shall be set to 0 in a final product
+CFG_BUTTON_SUPPORTED|CFG_BUTTON_SUPPORTED|Generic parameters||||When set, this resets some hw resources to set the device in the same state than the power up The FW resets only register that may prevent the FW to run properly This shall be set to 0 in a final product
+CFG_DEBUG_BLE_TRACE|CFG_DEBUG_BLE_TRACE|Generic parameters||||Enable or disable traces in the BLE services
+CFG_DEBUG_APP_TRACE|CFG_DEBUG_APP_TRACE|Generic parameters||||Enable or disable traces in application
+CFG_FULL_LOW_POWER|CFG_FULL_LOW_POWER|Generic parameters||||Enable or disable light traces in the THREAD and ZIGBEE services. CFG_HW_USART1_ENABLED and or CFG_HW_LPUART1_ENABLED must be set as well as CFG_DEBUG_TRACE_UART. In Zigbee applications, it forces the network mode to Centralized and the device role to Sleepy End Device, and a Sleepy End Device has to enable this full low power parameter.
+CFG_LPM_SUPPORTED|CFG_LPM_SUPPORTED|Generic parameters||||Low Power mode: When set to 1, the low power mode is Enable When set to 0, the device stays in RUN mode
+CFG_LPM_STANDBY_SUPPORTED|CFG_LPM_STANDBY_SUPPORTED|Generic parameters||||Low Power Standby mode: This shall be set to 1 when standby is supported while the wireless stack on CPU2 is running(i.e the CPU2 is allowed to enter standby between RF activity) * Otherwise, it should be set to 0 for marginal code and test execution saving * In this case the lowest power mode available will be Stop 1 * Note that keeping that setting to 1 when standby is not supported does not hurt
+CFG_DEBUGGER_SUPPORTED|CFG_DEBUGGER_SUPPORTED|Generic parameters||||Enable or disable debugger, default value set to 1
+CFG_DEBUG_TRACE|CFG_DEBUG_TRACE|Generic parameters||||Enable or disable traces in the THREAD and Zigbee services
+CFG_DEBUG_TRACE_LIGHT|CFG_DEBUG_TRACE_LIGHT|Generic parameters||||Enable or disable light traces
+CFG_DEBUG_TRACE_FULL|CFG_DEBUG_TRACE_FULL|Generic parameters||||Enable or disable full traces
+DBG_TRACE_MSG_QUEUE_SIZE|DBG_TRACE_MSG_QUEUE_SIZE|Generic parameters||=MAX_DBG_TRACE_MSG_SIZE||Max buffer Size to queue data traces and max data trace allowed. Only Used if DBG_TRACE_USE_CIRCULAR_QUEUE is defined Min value is MAX_DBG_TRACE_MSG_SIZE value Max value depends on SRAM size available
+MAX_DBG_TRACE_MSG_SIZE|MAX_DBG_TRACE_MSG_SIZE|Generic parameters||1||Max value depends on SRAM size available
+BLE_CFG_PERIPHERAL|The device needs to support the Peripheral Role|BLE Services Configuration||||This setting shall be set to '1' if the device needs to support the Peripheral Role. In the MS configuration, both BLE_CFG_PERIPHERAL and BLE_CFG_CENTRAL shall be set to '1
+BLE_CFG_CENTRAL|The device needs to support the Central Role|BLE Services Configuration||||This setting shall be set to '1' if the device needs to support the Central Role. In the MS configuration, both BLE_CFG_PERIPHERAL and BLE_CFG_CENTRAL shall be set to '1
+BLE_CFG_SVC_MAX_NBR_CB|BLE_CFG_SVC_MAX_NBR_CB|BLE Services Configuration||0|255|
+BLE_CFG_CLT_MAX_NBR_CB|BLE_CFG_CLT_MAX_NBR_CB|BLE Services Configuration||0|255|
+BLE_CFG_DIS_MANUFACTURER_NAME_STRING|BLE_CFG_DIS_MANUFACTURER_NAME_STRING|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_MODEL_NUMBER_STRING|BLE_CFG_DIS_MODEL_NUMBER_STRING|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_SERIAL_NUMBER_STRING|BLE_CFG_DIS_SERIAL_NUMBER_STRING|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_HARDWARE_REVISION_STRING|BLE_CFG_DIS_HARDWARE_REVISION_STRING|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_FIRMWARE_REVISION_STRING|BLE_CFG_DIS_FIRMWARE_REVISION_STRING|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_SOFTWARE_REVISION_STRING|BLE_CFG_DIS_SOFTWARE_REVISION_STRING|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_SYSTEM_ID|BLE_CFG_DIS_SYSTEM_ID|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_IEEE_CERTIFICATION|BLE_CFG_DIS_IEEE_CERTIFICATION|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_DIS_PNP_ID|BLE_CFG_DIS_PNP_ID|Device Information Service||0|1|Device information ServiceOption: Supported(1) or Not Supported(0)
+BLE_CFG_HRS_BODY_SENSOR_LOCATION_CHAR|BLE_CFG_HRS_BODY_SENSOR_LOCATION_CHAR|Heart Rate Service||0|1|BODY SENSOR LOCATION CHARACTERISTIC
+BLE_CFG_HRS_ENERGY_EXPENDED_INFO_FLAG|BLE_CFG_HRS_ENERGY_EXPENDED_INFO_FLAG|Heart Rate Service||0|1|ENERGY EXTENDED INFO FLAG
+BLE_CFG_HRS_ENERGY_RR_INTERVAL_FLAG|BLE_CFG_HRS_ENERGY_RR_INTERVAL_FLAG|Heart Rate Service||1|9|Max number of RR interval values - Shall not be greater than 9
+BLE_CFG_HTS_TEMPERATURE_TYPE_VALUE_STATIC|BLE_CFG_HTS_TEMPERATURE_TYPE_VALUE_STATIC|Health Thermometer Service||0|1|
+BLE_CFG_HTS_INTERMEDIATE_TEMPERATURE|BLE_CFG_HTS_INTERMEDIATE_TEMPERATURE|Health Thermometer Service||0|1|Intermediate Temperature characteristic
+BLE_CFG_HTS_MEASUREMENT_INTERVAL|BLE_CFG_HTS_MEASUREMENT_INTERVAL|Health Thermometer Service||0|1|Measurement Interval characteristic
+BLE_CFG_HTS_MEASUREMENT_INTERVAL_IND_PROP|BLE_CFG_HTS_MEASUREMENT_INTERVAL_IND_PROP|Health Thermometer Service||0|1|Measurement Interval characteristicIndicate property
+BLE_CFG_HTS_MEASUREMENT_INTERVAL_WR_PROP|BLE_CFG_HTS_MEASUREMENT_INTERVAL_WR_PROP|Health Thermometer Service||0|1|Measurement Interval characteristicWrite property
+BLE_CFG_HTS_TIME_STAMP_FLAG|BLE_CFG_HTS_TIME_STAMP_FLAG|Health Thermometer Service||0|1|Time Stamp Info Flag
+BLE_CFG_HTS_TEMPERATURE_INTERVAL_MIN_VALUE|BLE_CFG_HTS_TEMPERATURE_INTERVAL_MIN_VALUE|Health Thermometer Service||1|65535|Min Interval Value supported
+BLE_CFG_HTS_TEMPERATURE_INTERVAL_MAX_VALUE|BLE_CFG_HTS_TEMPERATURE_INTERVAL_MAX_VALUE|Health Thermometer Service||1|65535|Max Interval Value supported
+BLE_CFG_BLS_MEASUREMENT_STATUS_FLAG|BLE_CFG_BLS_MEASUREMENT_STATUS_FLAG|Blood Pressure Service||0|1|Measurement Status info flag
+BLE_CFG_BLS_PULSE_RATE_FLAG|BLE_CFG_BLS_PULSE_RATE_FLAG|Blood Pressure Service||0|1|Pulse Rate info flag
+BLE_CFG_BLS_USER_ID_FLAG|BLE_CFG_BLS_USER_ID_FLAG|Blood Pressure Service||0|1|User ID info flag
+BLE_CFG_BLS_TIME_STAMP_FLAG|BLE_CFG_BLS_TIME_STAMP_FLAG|Blood Pressure Service||0|1|Time Stamp Info Flag
+BLE_CFG_BLS_INTERMEDIATE_CUFF_PRESSURE|BLE_CFG_BLS_INTERMEDIATE_CUFF_PRESSURE|Blood Pressure Service||0|1|Intermediate Cuff Pressure characteristic
+BLE_CFG_BLS_SUPPORTED_FEATURES|BLE_CFG_BLS_SUPPORTED_FEATURES|Blood Pressure Service||0|1|Blood Pressure Feature characteristic
+BLE_CFG_BLS_PULSE_RATE_LOWER_LIMIT|BLE_CFG_BLS_PULSE_RATE_LOWER_LIMIT|Blood Pressure Service||||Lower Pulse Rate supported
+BLE_CFG_BLS_PULSE_RATE_UPPER_LIMIT|BLE_CFG_BLS_PULSE_RATE_UPPER_LIMIT|Blood Pressure Service||||Upper Pulse Rate supported
+BLE_CFG_OTA_REBOOT_CHAR|BLE_CFG_OTA_REBOOT_CHAR|Over The Air||0|1|Upper Pulse Rate supported
+BLE_DBG_APP_EN|BLE_DBG_APP_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_DIS_EN|BLE_DBG_DIS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_HRS_EN|BLE_DBG_HRS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_EDS_STM_EN|BLE_DBG_EDS_STM_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_LBS_STM_EN|BLE_DBG_LBS_STM_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_SVCCTL_EN|BLE_DBG_SVCCTL_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_CTS_EN|BLE_DBG_CTS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_HIDS_EN|BLE_DBG_HIDS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_PASS_EN|BLE_DBG_PASS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_BLS_EN|BLE_DBG_BLS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_HTS_EN|BLE_DBG_HTS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_ANS_EN|BLE_DBG_ANS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_ESS_EN|BLE_DBG_ESS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_GLS_EN|BLE_DBG_GLS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_BAS_EN|BLE_DBG_BAS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_RTUS_EN|BLE_DBG_RTUS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_HPS_EN|BLE_DBG_HPS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_TPS_EN|BLE_DBG_TPS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_LLS_EN|BLE_DBG_LLS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_IAS_EN|BLE_DBG_IAS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_DTS_EN|BLE_DBG_DTS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_WSS_EN|BLE_DBG_WSS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_LNS_EN|BLE_DBG_LNS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_SCPS_EN|BLE_DBG_SCPS_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_P2P_STM_EN|BLE_DBG_P2P_STM_EN|Debug options||||Enable or Disable traces from BLE
+BLE_DBG_TEMPLATE_STM_EN|BLE_DBG_TEMPLATE_STM_EN|Debug options||||Enable or Disable traces from BLE
+CFG_HW_TS_MAX_NBR_CONCURRENT_TIMER|CFG_HW_TS_MAX_NBR_CONCURRENT_TIMER|HW Timer Server||1|255|The user may define the maximum number of virtual timers supported. It shall not exceed 255
+CFG_HW_TS_NVIC_RTC_WAKEUP_IT_PREEMPTPRIO|CFG_HW_TS_NVIC_RTC_WAKEUP_IT_PREEMPTPRIO|HW Timer Server||||The user may define the priority in the NVIC of the RTC_WKUP interrupt handler that is used to manage the wakeup timer. This setting is the preemptpriority part of the NVIC.
+CFG_HW_TS_NVIC_RTC_WAKEUP_IT_SUBPRIO|CFG_HW_TS_NVIC_RTC_WAKEUP_IT_SUBPRIO|HW Timer Server||||The user may define the priority in the NVIC of the RTC_WKUP interrupt handler that is used to manage the wakeup timer. This setting is the subpriority part of the NVIC. It does not exist on all processors. When it is not supported on the CPU, the setting is ignored
+CFG_HW_TS_USE_PRIMASK_AS_CRITICAL_SECTION|CFG_HW_TS_USE_PRIMASK_AS_CRITICAL_SECTION|HW Timer Server||||Define a critical section in the Timer server The Timer server does not support the API to be nested The Application shall either: a) Ensure this will never happen b) Define the critical section The default implementations is masking all interrupts using the PRIMASK bit The TimerServer driver uses critical sections to avoid context corruption. This is achieved with the macro TIMER_ENTER_CRITICAL_SECTION and TIMER_EXIT_CRITICAL_SECTION. When CFG_HW_TS_USE_PRIMASK_AS_CRITICAL_SECTION is set to 1, all STM32 interrupts are masked with the PRIMASK bit of the CortexM CPU. It is possible to use the BASEPRI register of the CortexM CPU to keep allowed some interrupts with high priority. In that case, the user shall re-implement TIMER_ENTER_CRITICAL_SECTION and TIMER_EXIT_CRITICAL_SECTION and shall make sure that no TimerServer API are called when the TIMER critical section is entered
+CFG_HW_TS_RTC_HANDLER_MAX_DELAY|CFG_HW_TS_RTC_HANDLER_MAX_DELAY|HW Timer Server||||This value shall reflect the maximum delay there could be in the application between the time the RTC interrupt is generated by the Hardware and the time when the RTC interrupt handler is called. This time is measured in number of RTCCLK ticks. A relaxed timing would be 10ms When the value is too short, the timerserver will not be able to count properly and all timeout may be random. When the value is too long, the device may wake up more often than the most optimal configuration. However, the impact on power consumption would be marginal (unless the value selected is extremely too long). It is strongly recommended to select a value large enough to make sure it is not too short to ensure reliability of the system as this will have marginal impact on low power mode
+CFG_HW_TS_RTC_WAKEUP_HANDLER_ID|CFG_HW_TS_RTC_WAKEUP_HANDLER_ID|HW Timer Server||||Interrupt ID in the NVIC of the RTC Wakeup interrupt handler It shall be type of IRQn_Type
+CFG_HW_LPUART1_ENABLED|CFG_HW_LPUART1_ENABLED|HW UART||||Enable or Disable LPUART1 (LPUART1 Mode must be set to Asynchronous with Hardware Flow Control set to CTS only) <font color="red"> Please ensure that in ProjectManager Advanced Settings panel MX_LPUART1_UART_Init Not Generate Function call is ticked and that Visibility is unticked </font>
+CFG_HW_LPUART1_DMA_TX_SUPPORTED|CFG_HW_LPUART1_DMA_TX_SUPPORTED|HW UART||||Enable or Disable LPUART1 DMA TX
+CFG_HW_USART1_ENABLED|CFG_HW_USART1_ENABLED|HW UART||||Enable or Disable traces USART1 (USART1 Mode must be set to Asynchronous with Hardware Flow Control set to CTS only) <font color="red"> Please ensure that in ProjectManager Advanced Settings panel MX_USART1_UART_Init Not Generate Function call is ticked and that Visibility is unticked </font>
+CFG_HW_USART1_DMA_TX_SUPPORTED|CFG_HW_USART1_DMA_TX_SUPPORTED|HW UART||||Enable or Disable USART1 DMA TX
+ADV_TYPE|Advertising Type|Advertising configuration||||List of advertising types, can be: - Undirected scannable and connectable(ADV_IND 0x00) - Directed non scannable(ADV_DIRECT_IND 0x01) - Scannable but non connectable(ADV_SCAN_IND 0x02) - Non connectable and no scan response (ADV_NONCONN_IND 0x03) - Scan response(SCAN_RSP 0x03)
+CFG_ADV_INTERVAL_MIN|CFG_ADV_INTERVAL_MIN|Advertising configuration||0|80|Shall be &lt; 80ms
+CFG_ADV_INTERVAL_MIN_HEXA|CFG_ADV_INTERVAL_MIN_HEXA|Advertising configuration||0x00|0x80|Shall be &lt 80ms
+CFG_ADV_INTERVAL_MAX|CFG_ADV_INTERVAL_MAX|Advertising configuration||0|100|Shall be &lt 100ms
+CFG_ADV_INTERVAL_MAX_HEXA|CFG_ADV_INTERVAL_MAX_HEXA|Advertising configuration||0x00|0xA0|Shall be &lt 100ms
+CFG_ADV_BD_ADDRESS|CFG_ADV_BD_ADDRESS|Application parameters||0x000000000000|0xFFFFFFFFFFFF|ex: 0x7257acd87a6c
+CFG_IDENTITY_ADDRESS|CFG_IDENTITY_ADDRESS|Advertising configuration||||
+CFG_PRIVACY|CFG_PRIVACY|Advertising configuration||||
+BLE_ADDR_TYPE|Address Type|Advertising configuration||||List of advertising types, can be: --> <!-- - Public address(PUBLIC_ADDR 0) --> <!-- - Random address (RANDOM_ADDR 1); if you activate RNG then you will get the choice between STATIC and DYNAMIC Random address
+CFG_STATIC_RANDOM_ADDRESS|RANDOM_ADDRESS type|Advertising configuration||||List of random address types, can be: - Static, Random Address is fixed for lifetime of the device - Dynamic, Random Address is generated with the RNG at each bootup.
+STATIC_RANDOM_ADDRESS|STATIC_RANDOM_ADDRESS|Advertising configuration||0x000000000000|0xFFFFFFFFFFFF|ex: 0xf257acd87a6c
+CFG_STATIC_UNIQUE_RANDOM_ADDR_LSB|CFG_STATIC_UNIQUE_RANDOM_ADDR_LSB|Advertising configuration||0x0000|0xFFFF|
+CFG_RNG|RNG status|Advertising configuration||||
+ADV_FILTER|Advertising Filter|Advertising configuration||||Advertising policy for filtering (white list related), can be: - Process scan and connection requests from all devices, i.e. the White List is not in use.(NO_WHITE_LIST_USE 0x00) - Process connection requests from all devices and only scan requests from devices that are in the White List.(WHITE_LIST_FOR_ONLY_SCAN 0x01) - Process scan requests from all devices and only connection requests from devices that are in the White List (WHITE_LIST_FOR_ONLY_CONN 0x02) - Process scan and connection requests only from devices in the White List.(WHITE_LIST_FOR_ALL 0x03)
+GAP_PERIPHERAL_ROLE|Peripheral: Advertise and connectable|Advertising configuration||||
+GAP_BROADCASTER_ROLE|Broadcaster: Advertise and non-connectable|Advertising configuration||||
+GAP_CENTRAL_ROLE|Central: Scan and connect|Advertising configuration||||
+GAP_OBSERVER_ROLE|Observer: Scan|Advertising configuration||||
+CFG_GAP_DEVICE_NAME|CFG_GAP_DEVICE_NAME|Advertising configuration||||Device name; default value is TEMPLATE
+CFG_GAP_DEVICE_NAME_LENGTH|CFG_GAP_DEVICE_NAME_LENGTH|Advertising configuration||1|48|Device name lenght; max value is 48bytes, default value is 8 (TEMPLATE length)
+AD_DATA_LENGTH|ad_data[] length|Advertising elements||1|29|
+INCLUDE_AD_TYPE_TX_POWER_LEVEL|Include AD_TYPE_TX_POWER_LEVEL element|Advertising elements||||
+CFG_TX_POWER|CFG_TX_POWER|Application parameters||||
+AD_TYPE_TX_POWER_LEVEL|AD_TYPE_TX_POWER_LEVEL|Advertising elements||||
+AD_TYPE_TX_POWER_LEVEL_DBM|AD_TYPE_TX_POWER_LEVEL_DBM|Advertising elements||||
+AD_TYPE_TX_POWER_LEVEL_LENGTH|AD_TYPE_TX_POWER_LEVEL_LENGTH|Advertising elements||2|2|
+INCLUDE_AD_TYPE_COMPLETE_LOCAL_NAME|Include AD_TYPE_COMPLETE_LOCAL_NAME element|Advertising elements||||
+AD_TYPE_COMPLETE_LOCAL_NAME|AD_TYPE_COMPLETE_LOCAL_NAME|Advertising elements||||
+AD_TYPE_COMPLETE_LOCAL_NAME_LENGTH|AD_TYPE_COMPLETE_LOCAL_NAME_LENGTH|Advertising elements||1|28|
+INCLUDE_AD_TYPE_SHORTENED_LOCAL_NAME|Include AD_TYPE_SHORTENED_LOCAL_NAME element|Advertising elements||||
+AD_TYPE_SHORTENED_LOCAL_NAME|AD_TYPE_SHORTENED_LOCAL_NAME|Advertising elements||||
+AD_TYPE_SHORTENED_LOCAL_NAME_LENGTH|AD_TYPE_SHORTENED_LOCAL_NAME_LENGTH|Advertising elements||1|6|
+INCLUDE_AD_TYPE_APPEARANCE|Include AD_TYPE_APPEARANCE element|Advertising elements||||
+AD_TYPE_APPEARANCE|AD_TYPE_APPEARANCE|Advertising elements||||
+AD_TYPE_APPEARANCE_LENGTH|AD_TYPE_APPEARANCE_LENGTH|Advertising elements||3|3|
+INCLUDE_AD_TYPE_ADVERTISING_INTERVAL|Include AD_TYPE_ADVERTISING_INTERVAL element|Advertising elements||||
+AD_TYPE_ADVERTISING_INTERVAL|AD_TYPE_ADVERTISING_INTERVAL|Advertising elements||||
+AD_TYPE_ADVERTISING_INTERVAL_VALUE|AD_TYPE_ADVERTISING_INTERVAL_VALUE|Advertising elements||||
+AD_TYPE_ADVERTISING_INTERVAL_VALUE_HEX|AD_TYPE_ADVERTISING_INTERVAL_VALUE_HEX|Advertising elements||0x0020|0x4000|
+AD_TYPE_ADVERTISING_INTERVAL_LENGTH|AD_TYPE_ADVERTISING_INTERVAL_LENGTH|Advertising elements||3|3|
+INCLUDE_AD_TYPE_LE_ROLE|Include AD_TYPE_LE_ROLE element|Advertising elements||||
+AD_TYPE_LE_ROLE|AD_TYPE_LE_ROLE|Advertising elements||||
+AD_TYPE_LE_ROLE_LENGTH|AD_TYPE_LE_ROLE_LENGTH|Advertising elements||2|2|
+INCLUDE_AD_TYPE_16_BIT_SERV_UUID_CMPLT_LIST|Include AD_TYPE_16_BIT_SERV_UUID_CMPLT_LIST element|Advertising elements||||
+AD_SERVICE_CLASS_UUID_NBR|ServiceClass UUIDs number|Advertising elements||1|11|
+AD_TYPE_16_BIT_SERV_UUID_CMPLT_LIST_LENGTH|AD_TYPE_16_BIT_SERV_UUID_CMPLT_LIST_LENGTH|Advertising elements||1|25|
+AD_SERVICE_CLASS_UUID_1|UUID 1|Advertising elements||||
+AD_SERVICE_CLASS_UUID_1_INV|UUID 1 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_2|UUID 2|Advertising elements||||
+AD_SERVICE_CLASS_UUID_2_INV|UUID 2 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_3|UUID 3|Advertising elements||||
+AD_SERVICE_CLASS_UUID_3_INV|UUID 3 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_4|UUID 4|Advertising elements||||
+AD_SERVICE_CLASS_UUID_4_INV|UUID 4_INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_5|UUID 5|Advertising elements||||
+AD_SERVICE_CLASS_UUID_5_INV|UUID 5 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_6|UUID 6|Advertising elements||||
+AD_SERVICE_CLASS_UUID_6_INV|UUID 6 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_7|UUID 7|Advertising elements||||
+AD_SERVICE_CLASS_UUID_7_INV|UUID 7 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_8|UUID 8|Advertising elements||||
+AD_SERVICE_CLASS_UUID_8_INV|UUID 8 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_9|UUID 9|Advertising elements||||
+AD_SERVICE_CLASS_UUID_9_INV|UUID 9 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_10|UUID 10|Advertising elements||||
+AD_SERVICE_CLASS_UUID_10_INV|UUID 10 INV|Advertising elements||||
+AD_SERVICE_CLASS_UUID_11|UUID 11|Advertising elements||||
+AD_SERVICE_CLASS_UUID_11_INV|UUID 11 INV|Advertising elements||||
+INCLUDE_AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST|Include AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST element|Advertising elements||||
+AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST|AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST|Advertising elements||||
+AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST_INV|AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST_INV|Advertising elements||||
+AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST_LENGTH|AD_TYPE_128_BIT_SERV_UUID_CMPLT_LIST_LENGTH|Advertising elements||17|17|
+INCLUDE_AD_TYPE_SLAVE_CONN_INTERVAL|Include AD_TYPE_SLAVE_CONN_INTERVAL element|Advertising elements||||
+AD_TYPE_SLAVE_CONN_INTERVAL_MIN_MAX|Specific Connection Interval Min/Max values?|Advertising elements||||
+AD_TYPE_SLAVE_CONN_INTERVAL_MIN|Connection Interval Min value|Advertising elements||6|3200|
+AD_TYPE_SLAVE_CONN_INTERVAL_MIN_HEXA|Connection Interval Min value Hexa|Advertising elements||0x0006|0x0C80|
+AD_TYPE_SLAVE_CONN_INTERVAL_MAX|Connection Interval Max value|Advertising elements||=AD_TYPE_SLAVE_CONN_INTERVAL_MIN|3200|
+AD_TYPE_SLAVE_CONN_INTERVAL_MAX_HEXA|Connection Interval Max value Hexa|Advertising elements||0x0006|0x0C80|
+AD_TYPE_SLAVE_CONN_INTERVAL_LENGTH|AD_TYPE_SLAVE_CONN_INTERVAL_LENGTH|Advertising elements||5|5|
+INCLUDE_AD_TYPE_URI|Include AD_TYPE_URI element|Advertising elements||||
+AD_TYPE_URI_CODE_POINT|Code Point|Advertising elements||||
+AD_TYPE_URI_DATA|Data|Advertising elements||||
+AD_TYPE_URI_DATA_LENGTH|AD_TYPE_URI_DATA_LENGTH|Advertising elements||1|20|
+AD_TYPE_URI_LENGTH|AD_TYPE_URI_LENGTH|Advertising elements||1|25|
+INCLUDE_AD_TYPE_MANUFACTURER_SPECIFIC_DATA|Include AD_TYPE_MANUFACTURER_SPECIFIC_DATA element|Advertising elements||||
+AD_TYPE_MANUFACTURER_SPECIFIC_DATA_LENGTH|AD_TYPE_MANUFACTURER_SPECIFIC_DATA_LENGTH|Advertising elements||1|25|
+AD_TYPE_MANUFACTURER_SPECIFIC_DATA_COMPANY_IDENTIFIER|Company identifier|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_NBR|Number of user defined data item(s)|Advertising elements||1|21|
+AD_TYPE_MANUFACTURER_DATA_1|User defined data 1|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_1|Comment data 1|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_2|User defined data 2|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_2|Comment data 2|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_3|User defined data 3|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_3|Comment data 3|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_4|User defined data 4|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_4|Comment data 4|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_5|User defined data 5|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_5|Comment data 5|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_6|User defined data 6|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_6|Comment data 6|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_7|User defined data 7|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_7|Comment data 7|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_8|User defined data 8|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_8|Comment data 8|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_9|User defined data 9|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_9|Comment data 9|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_10|User defined data 10|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_10|Comment data 10|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_11|User defined data 11|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_11|Comment data 11|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_12|User defined data 12|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_12|Comment data 12|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_13|User defined data 13|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_13|Comment data 13|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_14|User defined data 14|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_14|Comment data 14|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_15|User defined data 15|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_15|Comment data 15|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_16|User defined data 16|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_16|Comment data 16|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_17|User defined data 17|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_17|Comment data 17|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_18|User defined data 18|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_18|Comment data 18|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_19|User defined data 19|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_19|Comment data 20|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_20|User defined data 20|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_20|Comment data 20|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_21|User defined data 21|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_21|Comment data 21|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_22|User defined data 22|Advertising elements||||
+AD_TYPE_MANUFACTURER_DATA_COMMENT_22|Comment data 22|Advertising elements||||
+NUMBER_OF_SERVICES|Number of services|||0|0|Number of services; maximum is 5
+SERVICE_LONG_NAME|Service long name|||||Please enter a Service Long Name <font color="E6007E"><b>WARNING:</b> this name must : - not start with "Please" - not be empty - contain only "a to z", "A to Z", "0 to 9" and "_" characters
+SERVICE_SHORT_NAME|Service short name|||||Please enter a Service Short Name <font color="E6007E"><b>WARNING:</b> this name must : - not start with "Please" - not be empty - contain only "a to z", "A to Z", "0 to 9" and "_" characters
+SERVICE_CHAR_LONG_NAME|Characteristic long name|||||Please enter a Service Characteristic Long Name <font color="E6007E"><b>WARNING:</b> this name must : - not start with "Please" - not be empty - contain only "a to z", "A to Z", "0 to 9" and "_" characters
+SERVICE_CHAR_SHORT_NAME|Characteristic short name|||||Please enter a Service Characteristic Short Name <font color="E6007E"><b>WARNING:</b> this name must : - not start with "Please" - not be empty - contain only "a to z", "A to Z", "0 to 9" and "_" characters
+SERVICE1|service1|||||Number of services; maximum is 5
+SERVICE2|service2|||||Number of services; maximum is 5
+SERVICE3|service3|||||Number of services; maximum is 5
+SERVICE4|service4|||||Number of services; maximum is 5
+SERVICE5|service5|||||Number of services; maximum is 5
+SERVICE_NUMBER_OF_CHARACTERISTICS|Number of characteristics|||1|5|Number of services; maximum is 5
+SERVICE1_CHARACTERISTICS1|service1_characteristics1|||||Number of services; maximum is 5
+SERVICE1_CHARACTERISTICS2|service1_characteristics1|||||Number of services; maximum is 5
+SERVICE1_CHARACTERISTICS3|service1_characteristics3|||||Number of services; maximum is 5
+SERVICE1_CHARACTERISTICS4|service1_characteristics4|||||Number of services; maximum is 5
+SERVICE1_CHARACTERISTICS5|service1_characteristics5|||||Number of services; maximum is 5
+SERVICE2_CHARACTERISTICS1|service2_characteristics1|||||Number of services; maximum is 5
+SERVICE2_CHARACTERISTICS2|service2_characteristics1|||||Number of services; maximum is 5
+SERVICE2_CHARACTERISTICS3|service2_characteristics3|||||Number of services; maximum is 5
+SERVICE2_CHARACTERISTICS4|service2_characteristics4|||||Number of services; maximum is 5
+SERVICE2_CHARACTERISTICS5|service2_characteristics5|||||Number of services; maximum is 5
+SERVICE3_CHARACTERISTICS1|service3_characteristics1|||||Number of services; maximum is 5
+SERVICE3_CHARACTERISTICS2|service3_characteristics1|||||Number of services; maximum is 5
+SERVICE3_CHARACTERISTICS3|service3_characteristics3|||||Number of services; maximum is 5
+SERVICE3_CHARACTERISTICS4|service3_characteristics4|||||Number of services; maximum is 5
+SERVICE3_CHARACTERISTICS5|service3_characteristics5|||||Number of services; maximum is 5
+SERVICE4_CHARACTERISTICS1|service4_characteristics1|||||Number of services; maximum is 5
+SERVICE4_CHARACTERISTICS2|service4_characteristics1|||||Number of services; maximum is 5
+SERVICE4_CHARACTERISTICS3|service4_characteristics3|||||Number of services; maximum is 5
+SERVICE4_CHARACTERISTICS4|service4_characteristics4|||||Number of services; maximum is 5
+SERVICE4_CHARACTERISTICS5|service4_characteristics5|||||Number of services; maximum is 5
+SERVICE5_CHARACTERISTICS1|service5_characteristics1|||||Number of services; maximum is 5
+SERVICE5_CHARACTERISTICS2|service5_characteristics1|||||Number of services; maximum is 5
+SERVICE5_CHARACTERISTICS3|service5_characteristics3|||||Number of services; maximum is 5
+SERVICE5_CHARACTERISTICS4|service5_characteristics4|||||Number of services; maximum is 5
+SERVICE5_CHARACTERISTICS5|service5_characteristics5|||||Number of services; maximum is 5
+SERVICE_TYPE|Type|||||Type of service, either Primary or Secondary
+SERVICE1_UUID_TYPE|UUID type|Service1||||Type of service UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE1_UUID_128_INPUT_TYPE|UUID 128 input type|Service1||||Service UUID input type, full or reduced
+SERVICE1_UUID|UUID|Service1||||Contains the UUID (only 2 bytes are defined by the user for 16 or 128 bits UUID)
+SERVICE2_UUID_TYPE|UUID type|Service2||||Type of service UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE2_UUID_128_INPUT_TYPE|UUID 128 input type|Service2||||Service UUID input type, full or reduced
+SERVICE2_UUID|UUID|Service2||||Contains the UUID (only 2 bytes are defined by the user for 16 or 128 bits UUID)
+SERVICE3_UUID_TYPE|UUID type|Service3||||Type of service UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE3_UUID_128_INPUT_TYPE|UUID 128 input type|Service3||||Service UUID input type, full or reduced
+SERVICE3_UUID|UUID|Service3||||Contains the UUID (only 2 bytes are defined by the user for 16 or 128 bits UUID)
+SERVICE4_UUID_TYPE|UUID type|Service4||||Type of service UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE4_UUID_128_INPUT_TYPE|UUID 128 input type|Service4||||Service UUID input type, full or reduced
+SERVICE4_UUID|UUID|Service4||||Contains the UUID (only 2 bytes are defined by the user for 16 or 128 bits UUID)
+SERVICE5_UUID_TYPE|UUID type|Service5||||Type of service UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE5_UUID_128_INPUT_TYPE|UUID 128 input type|Service5||||Service UUID input type, full or reduced
+SERVICE5_UUID|UUID|Service5||||Contains the UUID (only 2 bytes are defined by the user for 16 or 128 bits UUID)
+SERVICE1_CHAR1_UUID_TYPE|UUID type|Characteristic1 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE1_CHAR1_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic1 general||||Characteristic UUID input type, full or reduced
+SERVICE1_CHAR1_UUID|UUID|Characteristic1 general||||Contains the full UUID
+SERVICE1_CHAR2_UUID_TYPE|UUID type|Characteristic2 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE1_CHAR2_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic2 general||||Characteristic UUID input type, full or reduced
+SERVICE1_CHAR2_UUID|UUID|Characteristic2 general||||Contains the full UUID
+SERVICE1_CHAR3_UUID_TYPE|UUID type|Characteristic3 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE1_CHAR3_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic3 general||||Characteristic UUID input type, full or reduced
+SERVICE1_CHAR3_UUID|UUID|Characteristic3 general||||Contains the full UUID
+SERVICE1_CHAR4_UUID_TYPE|UUID type|Characteristic4 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE1_CHAR4_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic4 general||||Characteristic UUID input type, full or reduced
+SERVICE1_CHAR4_UUID|UUID|Characteristic4 general||||Contains the full UUID
+SERVICE1_CHAR5_UUID_TYPE|UUID type|Characteristic5 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE1_CHAR5_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic5 general||||Characteristic UUID input type, full or reduced
+SERVICE1_CHAR5_UUID|UUID|Characteristic5 general||||Contains the full UUID
+SERVICE2_CHAR1_UUID_TYPE|UUID type|Characteristic1 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE2_CHAR1_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic1 general||||Characteristic UUID input type, full or reduced
+SERVICE2_CHAR1_UUID|UUID|Characteristic1 general||||Contains the full UUID
+SERVICE2_CHAR2_UUID_TYPE|UUID type|Characteristic2 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE2_CHAR2_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic2 general||||Characteristic UUID input type, full or reduced
+SERVICE2_CHAR2_UUID|UUID|Characteristic2 general||||Contains the full UUID
+SERVICE2_CHAR3_UUID_TYPE|UUID type|Characteristic3 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE2_CHAR3_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic3 general||||Characteristic UUID input type, full or reduced
+SERVICE2_CHAR3_UUID|UUID|Characteristic3 general||||Contains the full UUID
+SERVICE2_CHAR4_UUID_TYPE|UUID type|Characteristic4 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE2_CHAR4_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic4 general||||Characteristic UUID input type, full or reduced
+SERVICE2_CHAR4_UUID|UUID|Characteristic4 general||||Contains the full UUID
+SERVICE2_CHAR5_UUID_TYPE|UUID type|Characteristic5 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE2_CHAR5_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic5 general||||Characteristic UUID input type, full or reduced
+SERVICE2_CHAR5_UUID|UUID|Characteristic5 general||||Contains the full UUID
+SERVICE3_CHAR1_UUID_TYPE|UUID type|Characteristic1 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE3_CHAR1_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic1 general||||Characteristic UUID input type, full or reduced
+SERVICE3_CHAR1_UUID|UUID|Characteristic1 general||||Contains the full UUID
+SERVICE3_CHAR2_UUID_TYPE|UUID type|Characteristic2 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE3_CHAR2_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic2 general||||Characteristic UUID input type, full or reduced
+SERVICE3_CHAR2_UUID|UUID|Characteristic2 general||||Contains the full UUID
+SERVICE3_CHAR3_UUID_TYPE|UUID type|Characteristic3 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE3_CHAR3_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic3 general||||Characteristic UUID input type, full or reduced
+SERVICE3_CHAR3_UUID|UUID|Characteristic3 general||||Contains the full UUID
+SERVICE3_CHAR4_UUID_TYPE|UUID type|Characteristic4 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE3_CHAR4_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic4 general||||Characteristic UUID input type, full or reduced
+SERVICE3_CHAR4_UUID|UUID|Characteristic4 general||||Contains the full UUID
+SERVICE3_CHAR5_UUID_TYPE|UUID type|Characteristic5 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE3_CHAR5_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic5 general||||Characteristic UUID input type, full or reduced
+SERVICE3_CHAR5_UUID|UUID|Characteristic5 general||||Contains the full UUID
+SERVICE4_CHAR1_UUID_TYPE|UUID type|Characteristic1 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE4_CHAR1_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic1 general||||Characteristic UUID input type, full or reduced
+SERVICE4_CHAR1_UUID|UUID|Characteristic1 general||||Contains the full UUID
+SERVICE4_CHAR2_UUID_TYPE|UUID type|Characteristic2 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE4_CHAR2_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic2 general||||Characteristic UUID input type, full or reduced
+SERVICE4_CHAR2_UUID|UUID|Characteristic2 general||||Contains the full UUID
+SERVICE4_CHAR3_UUID_TYPE|UUID type|Characteristic3 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE4_CHAR3_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic3 general||||Characteristic UUID input type, full or reduced
+SERVICE4_CHAR3_UUID|UUID|Characteristic3 general||||Contains the full UUID
+SERVICE4_CHAR4_UUID_TYPE|UUID type|Characteristic4 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE4_CHAR4_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic4 general||||Characteristic UUID input type, full or reduced
+SERVICE4_CHAR4_UUID|UUID|Characteristic4 general||||Contains the full UUID
+SERVICE4_CHAR5_UUID_TYPE|UUID type|Characteristic5 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE4_CHAR5_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic5 general||||Characteristic UUID input type, full or reduced
+SERVICE4_CHAR5_UUID|UUID|Characteristic5 general||||Contains the full UUID
+SERVICE5_CHAR1_UUID_TYPE|UUID type|Characteristic1 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE5_CHAR1_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic1 general||||Characteristic UUID input type, full or reduced
+SERVICE5_CHAR1_UUID|UUID|Characteristic1 general||||Contains the full UUID
+SERVICE5_CHAR2_UUID_TYPE|UUID type|Characteristic2 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE5_CHAR2_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic2 general||||Characteristic UUID input type, full or reduced
+SERVICE5_CHAR2_UUID|UUID|Characteristic2 general||||Contains the full UUID
+SERVICE5_CHAR3_UUID_TYPE|UUID type|Characteristic3 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE5_CHAR3_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic3 general||||Characteristic UUID input type, full or reduced
+SERVICE5_CHAR3_UUID|UUID|Characteristic3 general||||Contains the full UUID
+SERVICE5_CHAR4_UUID_TYPE|UUID type|Characteristic4 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE5_CHAR4_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic4 general||||Characteristic UUID input type, full or reduced
+SERVICE5_CHAR4_UUID|UUID|Characteristic4 general||||Contains the full UUID
+SERVICE5_CHAR5_UUID_TYPE|UUID type|Characteristic5 general||||Type of characteristic UUID, 0x01 = 16 bits UUID, 0x02 = 128 bits UUID
+SERVICE5_CHAR5_UUID_128_INPUT_TYPE|UUID 128 input type|Characteristic5 general||||Characteristic UUID input type, full or reduced
+SERVICE5_CHAR5_UUID|UUID|Characteristic5 general||||Contains the full UUID
+SERVICE_CHAR_VALUE_LENGTH|Value length|||1|512|Number of bytes to be written or to notify (1 to 512)
+SERVICE_CHAR_PROP_NONE|CHAR_PROP_NONE|||||
+SERVICE_CHAR_PROP_BROADCAST|CHAR_PROP_BROADCAST|||||Broadcasting of the characteristic value using a characteristic configuration descriptor.
+SERVICE_CHAR_PROP_READ|CHAR_PROP_READ|||||Reading of the characteristic value
+SERVICE_CHAR_PROP_WRITE_WITHOUT_RESP|CHAR_PROP_WRITE_WITHOUT_RESP|||||Writing of the characteristic value, without a response
+SERVICE_CHAR_PROP_WRITE|CHAR_PROP_WRITE|||||Writing of the characteristic value
+SERVICE_CHAR_PROP_NOTIFY|CHAR_PROP_NOTIFY|||||Allows notifications of the characteristic value, without a response
+SERVICE_CHAR_PROP_INDICATE|CHAR_PROP_INDICATE|||||Allows indications of the characteristic value
+SERVICE_CHAR_PROP_EXT|CHAR_PROP_EXT|||||
+SERVICE1_CHAR2_VALUE_OFFSET|Update char value offset|||0|=(SERVICE1_CHAR2_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE1_CHAR3_VALUE_OFFSET|Update char value offset|||0|=(SERVICE1_CHAR3_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE1_CHAR4_VALUE_OFFSET|Update char value offset|||0|=(SERVICE1_CHAR4_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE1_CHAR5_VALUE_OFFSET|Update char value offset|||0|=(SERVICE1_CHAR5_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE2_CHAR1_VALUE_OFFSET|Update char value offset|||0|=(SERVICE2_CHAR1_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE2_CHAR2_VALUE_OFFSET|Update char value offset|||0|=(SERVICE2_CHAR2_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE2_CHAR3_VALUE_OFFSET|Update char value offset|||0|=(SERVICE2_CHAR3_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE2_CHAR4_VALUE_OFFSET|Update char value offset|||0|=(SERVICE2_CHAR4_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE2_CHAR5_VALUE_OFFSET|Update char value offset|||0|=(SERVICE2_CHAR5_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE3_CHAR1_VALUE_OFFSET|Update char value offset|||0|=(SERVICE3_CHAR1_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE3_CHAR2_VALUE_OFFSET|Update char value offset|||0|=(SERVICE3_CHAR2_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE3_CHAR3_VALUE_OFFSET|Update char value offset|||0|=(SERVICE3_CHAR3_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE3_CHAR4_VALUE_OFFSET|Update char value offset|||0|=(SERVICE3_CHAR4_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE3_CHAR5_VALUE_OFFSET|Update char value offset|||0|=(SERVICE3_CHAR5_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE4_CHAR1_VALUE_OFFSET|Update char value offset|||0|=(SERVICE4_CHAR1_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE4_CHAR2_VALUE_OFFSET|Update char value offset|||0|=(SERVICE4_CHAR2_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE4_CHAR3_VALUE_OFFSET|Update char value offset|||0|=(SERVICE4_CHAR3_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE4_CHAR4_VALUE_OFFSET|Update char value offset|||0|=(SERVICE4_CHAR4_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE4_CHAR5_VALUE_OFFSET|Update char value offset|||0|=(SERVICE4_CHAR5_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE5_CHAR1_VALUE_OFFSET|Update char value offset|||0|=(SERVICE5_CHAR1_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE5_CHAR2_VALUE_OFFSET|Update char value offset|||0|=(SERVICE5_CHAR2_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE5_CHAR3_VALUE_OFFSET|Update char value offset|||0|=(SERVICE5_CHAR3_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE5_CHAR4_VALUE_OFFSET|Update char value offset|||0|=(SERVICE5_CHAR4_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE5_CHAR5_VALUE_OFFSET|Update char value offset|||0|=(SERVICE5_CHAR5_VALUE_LENGTH-1)|The offset from which the attribute value has to be updated. Only active when CHAR_PROP_NOTIFY or CHAR_PROP_INDICATE is selected. Used in custom_stm.c aci_gatt_update_char_value function
+SERVICE_CHAR_ATTR_PERMISSION_NONE|ATTR_PERMISSION_NONE|||||No security
+SERVICE_CHAR_ATTR_PERMISSION_AUTHEN_READ|ATTR_PERMISSION_AUTHEN_READ|||||Need authentication to read
+SERVICE_CHAR_ATTR_PERMISSION_AUTHOR_READ|ATTR_PERMISSION_AUTHOR_READ|||||Need authorization to read
+SERVICE_CHAR_ATTR_PERMISSION_ENCRY_READ|ATTR_PERMISSION_ENCRY_READ|||||Link must be encrypted to read
+SERVICE_CHAR_ATTR_PERMISSION_AUTHEN_WRITE|ATTR_PERMISSION_AUTHEN_WRITE|||||Need authentication to write
+SERVICE_CHAR_ATTR_PERMISSION_AUTHOR_WRITE|ATTR_PERMISSION_AUTHOR_WRITE|||||Need authorization to write
+SERVICE_CHAR_ATTR_PERMISSION_ENCRY_WRITE|ATTR_PERMISSION_ENCRY_WRITE|||||Link must be encrypted to write
+SERVICE_CHAR_GATT_DONT_NOTIFY_EVENTS|GATT_DONT_NOTIFY_EVENTS|||||Do not notify events
+SERVICE_CHAR_GATT_NOTIFY_ATTRIBUTE_WRITE|GATT_NOTIFY_ATTRIBUTE_WRITE|||||The application will be notified when a client writes to this attribute. An @ref EVT_BLUE_GATT_ATTRIBUTE_MODIFIED will be issued.
+SERVICE_CHAR_GATT_NOTIFY_WRITE_REQ_AND_WAIT_FOR_APPL_RESP|GATT_NOTIFY_WRITE_REQ_AND_WAIT_FOR_APPL_RESP|||||The application will be notified when a write request, a write cmd or a signed write cmd is received by the server for this attribute. An @ref EVT_BLUE_GATT_WRITE_PERMIT_REQ will be issued.
+SERVICE_CHAR_GATT_NOTIFY_READ_REQ_AND_WAIT_FOR_APPL_RESP|GATT_NOTIFY_READ_REQ_AND_WAIT_FOR_APPL_RESP|||||The application will be notified when a read request of any type is received for this attribute. An @ref EVT_BLUE_GATT_READ_PERMIT_REQ will be issued.
+SERVICE_CHAR_GATT_NOTIFY_NOTIFICATION_COMPLETION|GATT_NOTIFY_NOTIFICATION_COMPLETION|||||The application will be notified when notifications are transmitted. An ACI_GATT_NOTIFICATION_COMPLETE_EVENT will be issued.
+SERVICE_CHAR_NB_DESCRIPTOR|Service number of descriptor(s)|||||Value depends of the number of characteristics with the property Notify or Indicate
+SERVICE1_MAX_ATTRIBUTES_RECORDS|Service max attributes record(s)|Service1||||Value depends of the number of characteristics (nbOfChar) with the property Notify or Indicate(nbOfDescriptor) Max_Attributes_Records = 1 + 2*nbOfChar + nbOfDescriptor
+SERVICE2_MAX_ATTRIBUTES_RECORDS|Service max attributes record(s)|Service2||||Value depends of the number of characteristics (nbOfChar) with the property Notify or Indicate(nbOfDescriptor) Max_Attributes_Records = 1 + 2*nbOfChar + nbOfDescriptor
+SERVICE3_MAX_ATTRIBUTES_RECORDS|Service max attributes record(s)|Service3||||Value depends of the number of characteristics (nbOfChar) with the property Notify or Indicate(nbOfDescriptor) Max_Attributes_Records = 1 + 2*nbOfChar + nbOfDescriptor
+SERVICE4_MAX_ATTRIBUTES_RECORDS|Service max attributes record(s)|Service4||||Value depends of the number of characteristics (nbOfChar) with the property Notify or Indicate(nbOfDescriptor) Max_Attributes_Records = 1 + 2*nbOfChar + nbOfDescriptor
+SERVICE5_MAX_ATTRIBUTES_RECORDS|Service max attributes record(s)|Service5||||Value depends of the number of characteristics (nbOfChar) with the property Notify or Indicate(nbOfDescriptor) Max_Attributes_Records = 1 + 2*nbOfChar + nbOfDescriptor
+SERVICE_CHAR_ENC_KEY_SIZE|Encryption Key Size|||0x07|0x10|
+SERVICE_CHAR_LENGTH_CHARACTERISTIC|Length characteristic|||||Type of characteristic length in ble_defs.h. can be either CHAR_VALUE_LEN_CONSTANT(0x00) or CHAR_VALUE_LEN_VARIABLE(0x01)
+LPUART1_TX_PIN|TX for LPUART1 on PA2,AF8|||||
+LPUART1_RX_PIN|RX for LPUART1 on PA3,AF8|||||
+LPUART1_CTS_PIN|CTS for LPUART1 on PA6,AF8|||||
+LPUART1_TX_DMA_CHANNEL|DMA Request for LPUART1_TX|||||
+USART1_TX_PIN|TX for USART1 on PA9,AF7|||||
+USART1_RX_PIN|RX for USART1 on PA10,AF7|||||
+USART1_CTS_PIN|CTS for USART1 on PA11,AF7|||||
+USART1_TX_DMA_CHANNEL|DMA Request for USART1_TX|||||
+THREAD|THREAD|THREAD application type||||
+THREAD_APPLICATION|Thread Application|THREAD application type||||List of applications types, can be: - Full Thread Device with Command Line Interface(FTD_CLI) - Thread_Coap_GenericFull Thread Device with network configuration(FTD) - Minimal Thread Device with network configuration(MTD)
+PANID|PANID|Parameters||||Personal Area Network Identifier (PAN ID): an unsigned 16-bit value that specifies the PAN ID. <font color="E6007E"><b>WARNING!: </b></font>The PAN ID MUST be different from 0xFFFF value which is reserved for broadcast PAN ID <b>Value range : </b>0x0 to 0xFFFE
+CHANNEL|CHANNEL|Parameters||11|26|2.4 GHz channel as defined in Section 6.1.2.1 of [IEEE802154]
+NETWORKKEY|NETWORKKEY|Parameters||||Thread network key
+APP_DBG_EN|APP_DBG_EN|Application parameters||||Enable or Disable traces in application
+APPLI_CONFIG_LOG_LEVEL|APPLI_CONFIG_LOG_LEVEL|Application parameters||||List of Log level for Application, can be: - LOG_LEVEL_NONE (None) - LOG_LEVEL_CRIT (Critical) - LOG_LEVEL_WARN (Warning) - LOG_LEVEL_INFO (Info) - LOG_LEVEL_DEBG (Debug)
+APPLI_PRINT_FILE_FUNC_LINE|APPLI_PRINT_FILE_FUNC_LINEs|Application parameters||||
+CFG_TL_EVT_QUEUE_LENGTH|CFG_TL_EVT_QUEUE_LENGTH|Application parameters||||Queue length of BLE Event This parameter defines the number of asynchronous events that can be stored in the HCI layer before being reported to the application. When a command is sent to the BLE core coprocessor, the HCI layer is waiting for the event with the Num_HCI_Command_Packets set to 1. The receive queue shall be large enough to store all asynchronous events received in between. When CFG_TL_MOST_EVENT_PAYLOAD_SIZE is set to 27, this allow to store three 255 bytes long asynchronous events between the HCI command and its event. This parameter depends on the value given to CFG_TL_MOST_EVENT_PAYLOAD_SIZE. When the queue size is to small, the system may hang if the queue is full with asynchronous events and the HCI layer is still waiting for a CC/CS event, In that case, the notification TL_BLE_HCI_ToNot() is called to indicate to the application a HCI command did not receive its command event within 30s (Default HCI Timeout).
+CFG_TL_MOST_EVENT_PAYLOAD_SIZE|CFG_TL_MOST_EVENT_PAYLOAD_SIZE|Application parameters||4|255|This parameter should be set to fit most events received by the HCI layer. It defines the buffer size of each element allocated in the queue of received events and can be used to optimize the amount of RAM allocated by the Memory Manager. It should not exceed 255 which is the maximum HCI packet payload size (a greater value is a lost of memory as it will never be used) It shall be at least 4 to receive the command status event in one frame. The default value is set to 27 to allow receiving an event of MTU size in a single buffer. This value maybe reduced * further depending on the application.
+ZIGBEE|ZIGBEE|ZIGBEE application type||||
+ZGB_APPLICATION|Zigbee Application|ZIGBEE application type||||List of Zigbee application type, can be: - Full Function Device (FFD) - Reduced Function Device with only End Device and Sleepy End Device available for lower energy consumption(RFD)
+ZGB_NW_MODE|Zigbee Network Mode|ZIGBEE application type||||Network configuration, can be: - Centralized - Distributed - Touchlink
+ZGB_DEVICE_ROLE|Zigbee Device Role|ZIGBEE application type||||List of application type, can be: - Coordinator (for FFD application only) - Router (for FFD application only) - End Device - Sleepy End Device
+ZGB_TOUCHLINK_CAPABILITY|Touchlink capability|ZIGBEE application type||||Touchlink device can handle 2 capabilities in RFD application: - Router - End device, which allows Sleepy mode
+ZGB_SLEEPY_MODE|Sleepy mode|ZIGBEE application type||||Sleepy mode is available in RFD applications, except in Touchlink mode for router capability. It turns on the low power mode parameters.
+ZGB_NB_ENDPOINTS|Number of End Points|End Points||1|10|Number of endpoints used on one device. At least one endpoint is mandatory for a Zigbee application, and it should not exceed 10.
+ZGB_CHANNEL|Channel|Network Parameters||0|26|Network channel should be set between 0 and 26.
+ENDPOINT1_ID_ZGB|Endpoint ID|Endpoint||1|240|Endpoint <b>242</b> shall be reserved for the <b>Green Power cluster</b>, used in proxy mode with FFD application and not used with RFD application. <font color="E6007E"><b>WARNING:</b> Endpoint IDs shall be <b>unique</b> in one same device.
+ENDPOINT1_ID|Endpoint ID|Endpoint||1|240|Endpoint <b>242</b> shall be reserved for the <b>Green Power cluster</b>, used in proxy mode with FFD application and not used with RFD application. <font color="E6007E"><b>WARNING:</b> Endpoint IDs shall be <b>unique</b> in one same device.
+ZGB_ENDPOINT1_PROFILE_ID|Profile ID|Endpoint||||Profile of the endpoint, can be: - Home Automation (HA) - Smart Energy (SE) - Zigbee Light Link (ZLL)
+ENDPOINT1_DEVICE_ID|Device ID|Endpoint||||Device description gives a readable information about the application of the device
+ZCL_BASIC_ENDPOINT1|Basic|Clusters||||Basic cluster: server mode mandatory for all Zigbee endpoint.
+ZCL_IDENTIFY_ENDPOINT1|Identify|Clusters||||Identify cluster allows to be in identification mode. - Server receives commands to start and stop identification mode. - Client sends start and stop commands to the server.
+ZCL_ALARM_ENDPOINT1|Alarms|Clusters||||Alarm cluster configure alarm functionality and send alarm notifications. - Server resides with other clusters which can generate alarm conditions and it sends them to a cluster client. Time server cluster SHALL be set when Alarms server is used. - Client can send user instructions to the server.
+ZCL_TIME_ENDPOINT1|Time|Clusters||||Time cluster provides a base for real-time application. - Server acts as a time master for the network. It SHALL be set when Alarm server or DRLC client are used. - Client synchronizes itself with the server.
+ZCL_COMMISSIONING_ENDPOINT1|Commissioning|Clusters||||Commissioning cluster allows a commissioning process. - Server responds to a commissioning process and commissions itself into a network. - Client initiates the commissioning of a commissioning server.
+ZCL_GROUPS_ENDPOINT1|Groups|Clusters||||Groups cluster manages group addressing. - Server receives configuration commands regarding to the local group table. - Client sends commands to configure the group table.
+ZCL_SCENES_ENDPOINT1|Scenes|Clusters||||Scenes cluster allows to configure a set of stored values to create recalling scenes. - Server receives commands to configure scenes. - Client controls the configuration of the scenes.
+ZCL_OCCUPANCY_SENSING_ENDPOINT1|Occupancy Sensing|Clusters||||Occupancy Sensing cluster provides an interface to an occupancy sensor. - Server receives commands to configure the sensor and reports to the client. - Client sends commands to configure the sensor and receives report from the sensor.
+ZCL_DIAGNOSTICS_ENDPOINT1|Diagnostics|Clusters||||Diagnostic cluster informs about the operation of the stack over time and will be used by multiple profiles. As a result it should not be set alone. - Server provides diagnostic data. Attributes are strongly recommended to be stored in persistent memory. - Client sends requests to access diagnostic data.
+ZCL_POLL_CONTROL_ENDPOINT1|Poll Control|Clusters||||Poll Control cluster provides a mechanism for the management of a Zigbee End Device's polling mode.It defines the poll interval between (normal or fast) two MAC Data Requests from the ZED to its parent router. - Server sets the polling mode to Normal (long poll interval) or Fast (short poll interval) after periodically checking the client. - Client decides the polling mode to be selected.
+ZCL_POWER_CONFIGURATION_ENDPOINT1|Power Configuration|Clusters||||Power Configuration cluster provides information about the power source and voltage alarms to be configured. - Server receives commands to set its power configuration. - Client sends commands to set the power configuration on a remote device.
+ZCL_POWER_PROFILE_ENDPOINT1|Power Profile|Clusters||||Power Profile cluster indicates the expected power profile to a controller. - Server provides the local power profile. - Client receives the power profile.
+ZCL_RSSI_LOCATION_ENDPOINT1|RSSI Location|Clusters||||RSSI Location cluster allows exchanges of Received Signal Strength Indication information. - Server requests RSSI information and report RSSI measurement. - Client answers to the server requests and reports.
+ZCL_PRESSURE_MEASUREMENT_ENDPOINT1|Pressure Measurement|Clusters||||Pressure Measurement cluster provides an interface to configure and control pressure measurement. - Server measures the pressure. - Client configures the server and receives measurements from it.
+ZCL_DEVICE_TEMPERATURE_CONFIGURATION_ENDPOINT1|Device Temperature Configuration|Clusters||||Device Temperature Configuration cluster measures internal temperature and configures temperature alarms. - Server receives commands to access internal temperature data. - Client sends commands to access the internal temperature.
+ZCL_TEMPERATURE_MEASUREMENT_ENDPOINT1|Temperature Measurement|Clusters||||Temperature Measurement cluster provides an interface to configure and control temperature measurements. - Server measures the temperature. - Client configures the server and receives measurements from it.
+ZCL_THERMOSTAT_ENDPOINT1|Thermostat Configuration|Clusters||||Thermostat cluster provides an interface to configure and control a thermostat. - Server configures the thermostat. - Client controls the functionalities of the thermostat.
+ZCL_THERMOSTAT_UI_CONFIGURATION_ENDPOINT1|Thermostat User Interface Configuration|Clusters||||Thermostat UI Configuration cluster provides an interface to configure the user interface of a thermostat. - Server configures the thermostat UI. - Client controls the functionalities of the thermostat UI.
+ZCL_METER_IDENTIFICATION_ENDPOINT1|Meter Identification|Clusters||||Meter Identification cluster determines advanced information about utility metering device. - Server provides information. - Client sends requests to the server for information.
+ZCL_ELECTRICALMEASUREMENT_ENDPOINT1|Electrical Measurement|Clusters||||Electrical Measurement cluster provides an interface to configure and control electrical measurements. - Server makes the electrical measurements. - Client configures the server and receives measurements from it.
+ZCL_FAN_CONTROL_ENDPOINT1|Fan Control|Clusters||||Fan Control cluster controls the speed and state of a fan. - Server configures the speed or state of the fan. - Client commands the server to set the speed or state of the fan.
+ZCL_PUMP_CONFIGURATION_CONTROL_ENDPOINT1|Pump Configuration and Control|Clusters||||Pump Configuration and Control cluster provides an interface to configure and control pump devices (control of speed not included). - Server configures the pump. - Client controls the functionalities of the pump.
+ZCL_WATER_CONTENT_MEASUREMENT_ENDPOINT1|Water Content Measurement|Clusters||||Water Content Measurement cluster provides an interface to configure and control humidity measurements. - Server measures the humidity. - Client configures the server and receives measurements from it.
+ZCL_ONOFF_ENDPOINT1|On/Off|Clusters||||On/Off cluster provides functionality to switch a device between On and Off states. - Server receives commands to change the state. Server mode SHALL be set if Level Control cluster OR if Color Control are in server mode. - Client sends commands to request a change of state.
+ZCL_COLORCONTROL_ENDPOINT1|Color Control|Clusters||||Color Control cluster controls the color of a light. - Server receives commands to change the color of the light. - Client sends commands to change the color of the remote light.
+ZCL_ILLUMINANCE_LEVEL_SENSING_ENDPOINT1|Illuminance Level Sensing|Clusters||||Illuminance Level Sensing cluster provides an interface to configure and control level of illumination watch. - Server senses the level of illumination. - Client configures and gets the notifications from the server.
+ZCL_ILLUMINANCE_MEASUREMENT_ENDPOINT1|Illuminance Measurement|Clusters||||Illuminance Measurement cluster provides an interface to configure and control illuminance measurements. - Server measures the illuminance and report to the client. - Client configures the server and control receives measurements from it.
+ZCL_LEVELCONTROL_ENDPOINT1|Level Control|Clusters||||Level Control cluster controls the level of a characteristic value of a device. - Server receives commands to change the level of characteristic values. OnOff server SHALL be set when Level Control server is used. - Client sends commands to change the level of characteristic values.
+ZCL_ON_OFF_SWITCH_CONFIGURATION_ENDPOINT1|On/Off Switch Configuration|Clusters||||On/Off Switch Configuration cluster provides the switch type on a device. - Server receives commands to define a switch configuration. - Client sends commands to define a switch configuration.
+ZCL_DOOR_LOCK_ENDPOINT1|Door Lock|Clusters||||Door Lock cluster provides an interface to configure and control generic values of door locks and doors. - Server sets the values representing door security. - Client controls the door lock and the door.
+ZCL_WINDOW_COVERING_ENDPOINT1|Window Covering|Clusters||||Window Covering cluster provides an interface to configure and control window coverings. - Server sets the values of the window covering. - Client controls the window covering.
+ZCL_IAS_ACE_ENDPOINT1|IAS Ancillary Control Equipment (ACE)|Clusters||||IAS ACE cluster provides an interface to configure and control a Control and Indicating Equipment (CIE) in an Intruder Alarm System (IAS). - Server receives commands to configure the CIE. - Client sends commands to configure and control the CIE.
+ZCL_IAS_WD_ENDPOINT1|IAS Warning Device (WD)|Clusters||||IAS WD cluster provides an interface to configure and control a Warning Device (WD) in an Intruder Alarm System (IAS). - Server receives commands to configure the WD and report to the client. - Client sends commands to configure and control the WD and receives reports.
+ZCL_IAS_ZONE_ENDPOINT1|IAS Zone|Clusters||||IAS Zone cluster provides an interface to configure and control an IAS security zone device. - Server receives commands to configure the IAS Zone device and report to the client. - Client sends commands to configure and control the IAS Zone device and receives reports.
+ZCL_MESSAGING_ENDPOINT1|Messaging|Clusters||||Messaging cluster an interface to pass text messages from one device to another. - Server sends the text message. - Client receives the text message.
+ZCL_DRLC_ENDPOINT1|Demand Response and Load Control|Clusters||||DRLC cluster provides an interface to the functionality of Demand Response and Load Control. - Server sends the Load Control Events to the devices. - Client receives the Load Control Events. It is time-dependent, therefore a Time server cluster SHALL be set when DRLC client is used.
+ZCL_METERING_ENDPOINT1|Metering|Clusters||||Metering cluster provides an interface to obtain usage information from metering devices. - Server gives information. - Client asks for usage information to the server.
+ZCL_PRICE_ENDPOINT1|Price|Clusters||||Price cluster provides an interface to communicates pricing information. - Server gives price information. - Client asks for price information to the server.
+ZCL_TUNNELING_ENDPOINT1|Smart Energy Tunneling|Clusters||||Smart Energy Tunneling cluster provides an interface for tunneling protocols. - Server provides and manages tunnels. - Client requests a tunnel and close it.
+ZCL_KEY_ESTABLISHMENT_ENDPOINT1|Key Establishment|Clusters||||Key Establishment cluster is to be used for communication between devices if original network security can not be trusted. - Server initiates the secure communication transaction. - Client responds the secure communication transation.
+ZCL_DEHUMIDIFICATION_CONTROL_ENDPOINT1|Dehumidification Control|Clusters||||Dehumidification Control cluster provides an interface to configure an control dehumidification devices. - Server configures the dehumidification device. - Client controls the functionalities of the dehumidification device.
+ZCL_BALLAST_CONFIGURATION_ENDPOINT1|Ballast Configuration|Clusters||||Ballast Configuration cluster provides an interface to configure an control lighting ballasts. - Server receives command to configure the lighting ballasts. - Client sends commands to configure and control lighting ballasts.
+ZCL_NEAREST_GATEWAY_ENDPOINT1|Nearest Gateway|Clusters||||Nearest Gateway cluster provides an interface to send nearest gateway information. - Server gives the information of nearest gateway. - Client asks for the nearest gateway.
+ZCL_OTA_UPGRADE_ENDPOINT1|OTA Upgrade|Specific Clusters||||OTA Upgrade cluster allows to upgrade application software over the air. - Server distributes the software to upgrade. - Client receives the software to update.
+ZCL_VOICE_OVER_ZGB_ENDPOINT1|Voice Over Zigbee|Specific Clusters||||Voice Over Zigbee cluster allows voice transmition between Zigbee devices. - Server receives the voice message. - Client sends the voice message.
+CB_ALARM_CLIENT_ENDPOINT1|- callback client alarm|Clusters||||
+CB_COMMISSIONING_SERVER_RESTART_ENDPOINT1|- callback server restart_device|Clusters||||
+CB_COMMISSIONING_SERVER_SAVESTARTUP_ENDPOINT1|- callback server save_startup|Clusters||||
+CB_COMMISSIONING_SERVER_RESTORESTARTUP_ENDPOINT1|- callback server restore_startup|Clusters||||
+CB_COMMISSIONING_SERVER_STARTUP_ENDPOINT1|- callback server startup|Clusters||||
+CB_MESSAGING_SERVER_GETLASTMESSAGE_ENDPOINT1|- callback server get_last_message|Clusters||||
+CB_MESSAGING_SERVER_MESSAGECONFIRMATION_ENDPOINT1|- callback server message_confirmation|Clusters||||
+CB_MESSAGING_SERVER_GETMESSAGECANCELLATION_ENDPOINT1|- callback server get_message_cancellation|Clusters||||
+CB_MESSAGING_CLIENT_DISPLAYMESSAGE_ENDPOINT1|- callback client display_message|Clusters||||
+CB_MESSAGING_CLIENT_CANCELMESSAGE_ENDPOINT1|- callback client cancel_message|Clusters||||
+CB_MESSAGING_CLIENT_CANCELALLMESSAGE_ENDPOINT1|- callback client cancel_all_message|Clusters||||
+CB_MESSAGING_CLIENT_DISPLAYPROTECTEDMESSAGE_ENDPOINT1|- callback client display_protected_message|Clusters||||
+CB_ONOFF_SERVER_OFF_ENDPOINT1|- callback server OFF|Clusters||||
+CB_ONOFF_SERVER_ON_ENDPOINT1|- callback server ON|Clusters||||
+CB_ONOFF_SERVER_TOGGLE_ENDPOINT1|- callback server TOGGLE|Clusters||||
+CB_COLORCONTROL_SERVER_MOVETOHUE_ENDPOINT1|- callback server move_to_hue|Clusters||||
+CB_COLORCONTROL_SERVER_MOVEHUE_ENDPOINT1|- callback server move_hue|Clusters||||
+CB_COLORCONTROL_SERVER_STEPHUE_ENDPOINT1|- callback server step_hue|Clusters||||
+CB_COLORCONTROL_SERVER_MOVETOSAT_ENDPOINT1|- callback server move_to_sat|Clusters||||
+CB_COLORCONTROL_SERVER_MOVESAT_ENDPOINT1|- callback server move_sat|Clusters||||
+CB_COLORCONTROL_SERVER_STEPSAT_ENDPOINT1|- callback server step_sat|Clusters||||
+CB_COLORCONTROL_SERVER_MOVETOHUESAT_ENDPOINT1|- callback server move_to_hue_sat|Clusters||||
+CB_COLORCONTROL_SERVER_MOVETOCOLORXY_ENDPOINT1|- callback server move_to_color_xy|Clusters||||
+CB_COLORCONTROL_SERVER_MOVECOLORXY_ENDPOINT1|- callback server move_color_xy|Clusters||||
+CB_COLORCONTROL_SERVER_STEPCOLORXY_ENDPOINT1|- callback server step_color_xy|Clusters||||
+CB_COLORCONTROL_SERVER_MOVETOCOLORTEMP_ENDPOINT1|- callback server move_to_color_temp|Clusters||||
+CB_COLORCONTROL_SERVER_MOVETOHUEENH_ENDPOINT1|- callback server move_to_hue_enh|Clusters||||
+CB_COLORCONTROL_SERVER_MOVEHUEENH_ENDPOINT1|- callback server move_hue_enh|Clusters||||
+CB_COLORCONTROL_SERVER_STEPHUEENH_ENDPOINT1|- callback server step_hue_enh|Clusters||||
+CB_COLORCONTROL_SERVER_MOVETOHUESATENH_ENDPOINT1|- callback server move_to_hue_sat_enh|Clusters||||
+CB_COLORCONTROL_SERVER_COLORLOOPSET_ENDPOINT1|- callback server color_loop_set|Clusters||||
+CB_COLORCONTROL_SERVER_STOPMOVESTEP_ENDPOINT1|- callback server stop_move_step|Clusters||||
+CB_COLORCONTROL_SERVER_MOVECOLORTEMP_ENDPOINT1|- callback server move_color_temp|Clusters||||
+CB_COLORCONTROL_SERVER_STEPCOLORTEMP_ENDPOINT1|- callback server step_color_temp|Clusters||||
+CB_DOORLOCK_SERVER_LOCK_ENDPOINT1|- callback server lock|Clusters||||
+CB_DOORLOCK_SERVER_UNLOCK_ENDPOINT1|- callback server unlock|Clusters||||
+CB_DOORLOCK_SERVER_TOGGLE_ENDPOINT1|- callback server toggle|Clusters||||
+CB_DOORLOCK_SERVER_UNLOCKTIMEOUT_ENDPOINT1|- callback server unlock_timeout|Clusters||||
+CB_DOORLOCK_SERVER_GETLOG_ENDPOINT1|- callback server get_log|Clusters||||
+CB_DOORLOCK_SERVER_SETPIN_ENDPOINT1|- callback server set_pin|Clusters||||
+CB_DOORLOCK_SERVER_GETPIN_ENDPOINT1|- callback server get_pin|Clusters||||
+CB_DOORLOCK_SERVER_CLRPIN_ENDPOINT1|- callback server clr_pin|Clusters||||
+CB_DOORLOCK_SERVER_CLRALLPINS_ENDPOINT1|- callback server clr_all_pins|Clusters||||
+CB_DOORLOCK_SERVER_SETUSERSTATUS_ENDPOINT1|- callback server set_user_status|Clusters||||
+CB_DOORLOCK_SERVER_GETUSERSTATUS_ENDPOINT1|- callback server get_user_status|Clusters||||
+CB_DOORLOCK_SERVER_SETWDSCHED_ENDPOINT1|- callback server set_wd_sched|Clusters||||
+CB_DOORLOCK_SERVER_GETWDSCHED_ENDPOINT1|- callback server get_wd_sched|Clusters||||
+CB_DOORLOCK_SERVER_CLRWDSCHED_ENDPOINT1|- callback server clr_wd_sched|Clusters||||
+CB_DOORLOCK_SERVER_SETYDSCHED_ENDPOINT1|- callback server set_yd_sched|Clusters||||
+CB_DOORLOCK_SERVER_GETYDSCHED_ENDPOINT1|- callback server get_yd_sched|Clusters||||
+CB_DOORLOCK_SERVER_CLRYDSCHED_ENDPOINT1|- callback server clr_yd_sched|Clusters||||
+CB_DOORLOCK_SERVER_SETHDSCHED_ENDPOINT1|- callback server set_hd_sched|Clusters||||
+CB_DOORLOCK_SERVER_GETHDSCHED_ENDPOINT1|- callback server get_hd_sched|Clusters||||
+CB_DOORLOCK_SERVER_CLRHDSCHED_ENDPOINT1|- callback server clr_hd_sched|Clusters||||
+CB_DOORLOCK_SERVER_SETUSERTYPE_ENDPOINT1|- callback server set_user_type|Clusters||||
+CB_DOORLOCK_SERVER_GETUSERTYPE_ENDPOINT1|- callback server get_user_type|Clusters||||
+CB_DOORLOCK_SERVER_SETRFID_ENDPOINT1|- callback server set_rfid|Clusters||||
+CB_DOORLOCK_SERVER_GETRFID_ENDPOINT1|- callback server get_rfid|Clusters||||
+CB_DOORLOCK_SERVER_CLRRFID_ENDPOINT1|- callback server clr_rfid|Clusters||||
+CB_DOORLOCK_SERVER_CLRALLRFIDS_ENDPOINT1|- callback server clr_all_rfids|Clusters||||
+CB_ELECTRICALMEASUREMENT_SERVER_GETPROFILEINFO_ENDPOINT1|- callback server get_profile_info|Clusters||||
+CB_ELECTRICALMEASUREMENT_SERVER_GETMEASUREPROFILE_ENDPOINT1|- callback server get_meas_profile|Clusters||||
+CB_LEVELCONTROL_SERVER_MOVETOLEVEL_ENDPOINT1|- callback server move_to_level|Clusters||||
+CB_LEVELCONTROL_SERVER_MOVE_ENDPOINT1|- callback server move|Clusters||||
+CB_LEVELCONTROL_SERVER_STEP_ENDPOINT1|- callback server step|Clusters||||
+CB_LEVELCONTROL_SERVER_STOP_ENDPOINT1|- callback server stop|Clusters||||
+CB_OTAUPGRADE_CLIENT_DISCOVERCOMPLETE_ENDPOINT1|- callback client discover_complete|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_IMAGENOTIFY_ENDPOINT1|- callback client image_notify|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_QUERYNEXT_ENDPOINT1|- callback client query_next|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_UPDATERAW_ENDPOINT1|- callback client update_raw|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_WRITETAG_ENDPOINT1|- callback client write_tag|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_WRITEIMAGE_ENDPOINT1|- callback client write_image|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_IMAGEVALIDATE_ENDPOINT1|- callback client image_validate|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_UPGRADEEND_ENDPOINT1|- callback client upgrade_end|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_REBOOT_ENDPOINT1|- callback client reboot|Specific Clusters||||
+CB_OTAUPGRADE_CLIENT_ABORTDOWNLOAD_ENDPOINT1|- callback client abort_download|Specific Clusters||||
+CB_POWER_PROFILE_SERVER_PROFILEREQ_ENDPOINT1|- callback server profile_req|Clusters||||
+CB_POWER_PROFILE_SERVER_STATEREQ_ENDPOINT1|- callback server state_req|Clusters||||
+CB_POWER_PROFILE_SERVER_PHASESNOTIFY_ENDPOINT1|- callback server phases_notify|Clusters||||
+CB_POWER_PROFILE_SERVER_SCHEDCONTRAINTSREQ_ENDPOINT1|- callback server sched_contraints_req|Clusters||||
+CB_POWER_PROFILE_SERVER_PHASESSCHEDSTATEREQ_ENDPOINT1|- callback server phases_sched_state_req|Clusters||||
+CB_POWER_PROFILE_CLIENT_PROFILENOTIFY_ENDPOINT1|- callback client profile_notify|Clusters||||
+CB_POWER_PROFILE_CLIENT_GETPRICE_ENDPOINT1|- callback client get_price|Clusters||||
+CB_POWER_PROFILE_CLIENT_STATENOTIFY_ENDPOINT1|- callback client state_notify|Clusters||||
+CB_POWER_PROFILE_CLIENT_GETSCHEDPRICE_ENDPOINT1|- callback client get_sched_price|Clusters||||
+CB_POWER_PROFILE_CLIENT_PHASESREQ_ENDPOINT1|- callback client phases_req|Clusters||||
+CB_POWER_PROFILE_CLIENT_PHASESNOTIFY_ENDPOINT1|- callback client phases_notify|Clusters||||
+CB_POWER_PROFILE_CLIENT_CONSTRAINTSNOTIFY_ENDPOINT1|- callback client constraints_notify|Clusters||||
+CB_POWER_PROFILE_CLIENT_GETPRICEEXT_ENDPOINT1|- callback client get_price_ext|Clusters||||
+CB_TIME_SERVER_GETTIME_ENDPOINT1|- callback server get_time|Clusters||||
+CB_TIME_SERVER_SETTIME_ENDPOINT1|- callback server set_time|Clusters||||
+CB_POLL_CONTROL_CLIENT_CHECKINRSPCALLBACK_ENDPOINT1|- callback client checkin_rsp_callback|Clusters||||
+CB_POLL_CONTROL_SERVER_CHECKINRSP_ENDPOINT1|- callback server checkin_rsp|Clusters||||
+CB_RSSI_LOCATION_SERVER_GETDEVCONFIG_ENDPOINT1|- callback server get_dev_config|Clusters||||
+CB_RSSI_LOCATION_SERVER_GETLOCDATA_ENDPOINT1|- callback server get_loc_data|Clusters||||
+CB_RSSI_LOCATION_SERVER_SENDPINGS_ENDPOINT1|- callback server send_pings|Clusters||||
+CB_RSSI_LOCATION_SERVER_ANCHORNODEANNC_ENDPOINT1|- callback server anchor_node_annc|Clusters||||
+CB_RSSI_LOCATION_CLIENT_LOCDATANOTIF_ENDPOINT1|- callback client loc_data_notif|Clusters||||
+CB_RSSI_LOCATION_CLIENT_COMPDATANOTIF_ENDPOINT1|- callback client comp_data_notif|Clusters||||
+CB_RSSI_LOCATION_CLIENT_RSSIPING_ENDPOINT1|- callback client rssi_ping|Clusters||||
+CB_RSSI_LOCATION_CLIENT_RSSIREQ_ENDPOINT1|- callback client rssi_req|Clusters||||
+CB_RSSI_LOCATION_CLIENT_REPORTRSSI_ENDPOINT1|- callback client report_rssi|Clusters||||
+CB_RSSI_LOCATION_CLIENT_REQOWNLOC_ENDPOINT1|- callback client req_own_loc|Clusters||||
+CB_THERMOSTAT_SERVER_SETPOINTRAISELOWER_ENDPOINT1|- callback server setpoint_raise_lower|Clusters||||
+CB_THERMOSTAT_SERVER_SETWEEKLY_ENDPOINT1|- callback server set_weekly|Clusters||||
+CB_THERMOSTAT_SERVER_GETWEEKLY_ENDPOINT1|- callback server get_weekly|Clusters||||
+CB_THERMOSTAT_SERVER_CLEARWEEKLY_ENDPOINT1|- callback server clear_weekly|Clusters||||
+CB_THERMOSTAT_SERVER_GETRELAYSTATUSLOG_ENDPOINT1|- callback server get_relay_status_log|Clusters||||
+CB_WINDOW_SERVER_UPCOMMAND_ENDPOINT1|- callback server up_command|Clusters||||
+CB_WINDOW_SERVER_DOWNCOMMAND_ENDPOINT1|- callback server down_command|Clusters||||
+CB_WINDOW_SERVER_STOPCOMMAND_ENDPOINT1|- callback server stop_command|Clusters||||
+CB_WINDOW_SERVER_SETLIFTANDTILTCOMMAND_ENDPOINT1|- callback server set_lift_and_tilt_command|Clusters||||
+CB_IAS_ACE_SERVER_ARMREQ_ENDPOINT1|- callback server arm_req|Clusters||||
+CB_IAS_ACE_SERVER_BYPASSREQ_ENDPOINT1|- callback server bypass_req|Clusters||||
+CB_IAS_ACE_SERVER_EMERGREQ_ENDPOINT1|- callback server emerg_req|Clusters||||
+CB_IAS_ACE_SERVER_FIREREQ_ENDPOINT1|- callback server fire_req|Clusters||||
+CB_IAS_ACE_SERVER_PANICREQ_ENDPOINT1|- callback server panic_req|Clusters||||
+CB_IAS_WD_SERVER_STARTWARNING_ENDPOINT1|- callback server start_warning|Clusters||||
+CB_IAS_WD_SERVER_SQUAWK_ENDPOINT1|- callback server squawk|Clusters||||
+CB_IAS_ZONE_SERVER_MODECHANGE_ENDPOINT1|- callback server mode_change|Clusters||||
+CB_IAS_ZONE_CLIENT_ZONESTATUSCHANGE_ENDPOINT1|- callback client zone_status_change|Clusters||||
+CB_IAS_ZONE_CLIENT_ZONEENROLLREQ_ENDPOINT1|- callback client zone_enroll_req|Clusters||||
+CB_DRLC_SERVER_REPORTSTATUS_ENDPOINT1|- callback server report_status|Clusters||||
+CB_DRLC_SERVER_GETEVENTS_ENDPOINT1|- callback server get_events|Clusters||||
+CB_DRLC_CLIENT_START_ENDPOINT1|- callback client start|Clusters||||
+CB_DRLC_CLIENT_STOP_ENDPOINT1|- callback client stop|Clusters||||
+CB_METER_SERVER_GETPROFILE_ENDPOINT1|- callback server get_profile|Clusters||||
+CB_METER_SERVER_GETSAMPLEDDATA_ENDPOINT1|- callback server get_sampled_data|Clusters||||
+CB_METER_SERVER_LOCALCHANGESUPPLY_ENDPOINT1|- callback server local_change_supply|Clusters||||
+CB_METER_SERVER_MIRRORREPORTATTR_ENDPOINT1|- callback server mirror_report_attr_rsp|Clusters||||
+CB_METER_SERVER_OPTIONAL_ENDPOINT1|- callback server optional|Clusters||||
+CB_METER_CLIENT_REQUESTMIRROR_ENDPOINT1|- callback client request_mirror|Clusters||||
+CB_METER_CLIENT_REMOVEMIRROR_ENDPOINT1|- callback client remove_mirror|Clusters||||
+CB_METER_CLIENT_CONFIGMIRROR_ENDPOINT1|- callback client config_mirror|Clusters||||
+CB_METER_CLIENT_OPTIONAL_ENDPOINT1|- callback client optional|Clusters||||
+CB_PRICE_SERVER_GETCURRENTPRICE_ENDPOINT1|- callback server get_current_price|Clusters||||
+CB_PRICE_SERVER_PRICEACK_ENDPOINT1|- callback server price_ack|Clusters||||
+CB_PRICE_SERVER_GETTARIFFINFO_ENDPOINT1|- callback server get_tariff_info|Clusters||||
+CB_PRICE_SERVER_GETPRICEMATRIX_ENDPOINT1|- callback server get_price_matrix|Clusters||||
+CB_PRICE_SERVER_GETBLOCKTHRESHOLDS_ENDPOINT1|- callback server get_block_thresholds|Clusters||||
+CB_PRICE_SERVER_OPTIONAL_ENDPOINT1|- callback server optional|Clusters||||
+CB_PRICE_CLIENT_PUBLISHPRICE_ENDPOINT1|- callback client publish_price|Clusters||||
+CB_PRICE_CLIENT_OPTIONAL_ENDPOINT1|- callback client optional|Clusters||||
+CB_VOICE_SERVER_GETCURRENTPRICE_ENDPOINT1|- callback server estab_req|Specific Clusters||||
+CB_VOICE_SERVER_PRICEACK_ENDPOINT1|- callback server voice_tx|Specific Clusters||||
+CB_VOICE_SERVER_GETTARIFFINFO_ENDPOINT1|- callback server tx_complete|Specific Clusters||||
+CB_VOICE_CLIENT_GETPRICEMATRIX_ENDPOINT1|- callback client control|Specific Clusters||||
+ZPARAM_ALARM_LOGSIZE_ENDPOINT1|- parameter log_size|Clusters||0|0xFFFF|
+ZPARAM_SCENES_MAX_ENDPOINT1|- parameter max scenes|Clusters||0|255|
+ZPARAM_COMMISSIONING_APS_SECURED_ENDPOINT1|- parameter APS secured|Clusters||-1|-1|
+ZPARAM_COMMISSIONING_DEST_ZBEP_ENDPOINT1|- parameter Commissioning Dest Endpoint|Clusters||1|255|The default value 255 (ZB_ENDPOINT_BCAST in the generated code) is required when using Inter-PAN for communicating ZCL messages. Otherwise, set a valid Zigbee cluster endpoint.
+ZPARAM_DIAGNOSTIC_MIN_SECURITY_ENDPOINT1|- parameter min security|Clusters||-1|-1|
+ZPARAM_PRESSURE_MEASUREMENT_MIN_ENDPOINT1|- parameter pressure min|Clusters||-32767|32766|Max is the value of parameter pressure max
+ZPARAM_PRESSURE_MEASUREMENT_MAX_ENDPOINT1|- parameter pressure max|Clusters||-32767|32766|Min is the value of parameter pressure min
+ZPARAM_TEMPERATURE_MEASUREMENT_MIN_ENDPOINT1|- parameter temperature min|Clusters||-27315|32767|Max is the value of parameter temperature max
+ZPARAM_TEMPERATURE_MEASUREMENT_MAX_ENDPOINT1|- parameter temperature max|Clusters||-27315|32767|Min is the value of parameter temperature min
+ZPARAM_TEMPERATURE_MEASUREMENT_TOLERANCE_ENDPOINT1|- parameter tolerance|Clusters||0|2048|
+ZPARAM_ILLUMINANCE_MEASUREMENT_MIN_ENDPOINT1|- parameter illuminance min|Clusters||1|65533|Max is the value of Illuminance Max parameter (-1)
+ZPARAM_ILLUMINANCE_MEASUREMENT_MAX_ENDPOINT1|- parameter illuminance max|Clusters||2|65534|Min is the value of parameter illuminance min +1
+ZPARAM_ON_OFF_SWITCH_CONFIGURATION_TYPE_ENDPOINT1|- parameter switch type|Clusters||-1|-1|
+ZPARAM_BALLAST_CONFIGURATION_PHY_MIN_ENDPOINT1|- parameter ballast phy min|Clusters||1|254|Max is the value of parameter phy max
+ZPARAM_BALLAST_CONFIGURATION_PHY_MAX_ENDPOINT1|- parameter ballast phy max|Clusters||1|254|Min is the value of parameter phy min
+ZPARAM_WATER_CONTENT_MEASUREMENT_MIN_ENDPOINT1|- parameter min measurement value|Clusters||0|9999|Max is the value of parameter max measurement value - 1
+ZPARAM_WATER_CONTENT_MEASUREMENT_MAX_ENDPOINT1|- parameter max measurement value|Clusters||1|10000|Min is the value of parameter min measurement value + 1
+
+[Values]
+# параметр|значение|подпись
+BLE_APPLICATION_TYPE|BLE_SERVER_PROFILE|Server profile
+BLE_APPLICATION_TYPE|TRANSPARENT_MODE|Transparent mode
+BLE_APPLICATION_TYPE|BLE_CLIENT_PROFILE|Client profile
+BLE_APPLICATION_TYPE|BLE_ROUTER_PROFILE|Router profile
+BT_SIG_BEACON|CFG_EDDYSTONE_UID_BEACON_TYPE|EDDYSTONE_UID_BEACON
+BT_SIG_BEACON|CFG_EDDYSTONE_URL_BEACON_TYPE|EDDYSTONE_URL_BEACON
+BT_SIG_BEACON|CFG_EDDYSTONE_TLM_BEACON_TYPE|EDDYSTONE_TLM_BEACON
+BT_SIG_BEACON|CFG_IBEACON|IBEACON
+CFG_IO_CAPABILITY|CFG_IO_CAPABILITY_DISPLAY_ONLY|Display only (0x00)
+CFG_IO_CAPABILITY|CFG_IO_CAPABILITY_DISPLAY_YES_NO|Display Yes No (0x01)
+CFG_IO_CAPABILITY|CFG_IO_CAPABILITY_KEYBOARD_ONLY|Keyboard only (0x02)
+CFG_IO_CAPABILITY|CFG_IO_CAPABILITY_NO_INPUT_NO_OUTPUT|No input, no output (0x03)
+CFG_IO_CAPABILITY|CFG_IO_CAPABILITY_KEYBOARD_DISPLAY|Keyboard and display (0x04)
+CFG_MITM_PROTECTION|CFG_MITM_PROTECTION_NOT_REQUIRED|MITM protection not required (0x00)
+CFG_MITM_PROTECTION|CFG_MITM_PROTECTION_REQUIRED|MITM protection required (0x01)
+CFG_SC_SUPPORT|CFG_SECURE_NOT_SUPPORTED|Secure Connections Paring not supported (0x00)
+CFG_SC_SUPPORT|CFG_SECURE_OPTIONAL|Secure Connections Paring supported but optional (0x01)
+CFG_SC_SUPPORT|CFG_SECURE_MANDATORY|Secure Connections Paring supported and mandatory(0x02)
+CFG_KEYPRESS_NOTIFICATION_SUPPORT|CFG_KEYPRESS_NOT_SUPPORTED|Keypress notification not supported (0x00)
+CFG_KEYPRESS_NOTIFICATION_SUPPORT|CFG_KEYPRESS_SUPPORTED|Keypress notification supported (0x01)
+P2P_SERVER_NUMBER|P2P_SERVER1|P2P_SERVER1
+P2P_SERVER_NUMBER|P2P_SERVER2|P2P_SERVER2
+P2P_SERVER_NUMBER|P2P_SERVER3|P2P_SERVER3
+P2P_SERVER_NUMBER|P2P_SERVER4|P2P_SERVER4
+P2P_SERVER_NUMBER|P2P_SERVER5|P2P_SERVER5
+P2P_SERVER_NUMBER|P2P_SERVER6|P2P_SERVER6
+CFG_BLE_OPTIONS_LL|SHCI_C2_BLE_INIT_OPTIONS_LL_ONLY|SHCI_C2_BLE_INIT_OPTIONS_LL_ONLY
+CFG_BLE_OPTIONS_LL|SHCI_C2_BLE_INIT_OPTIONS_LL_HOST|SHCI_C2_BLE_INIT_OPTIONS_LL_HOST
+CFG_BLE_OPTIONS_SVC|SHCI_C2_BLE_INIT_OPTIONS_NO_SVC_CHANGE_DESC|SHCI_C2_BLE_INIT_OPTIONS_NO_SVC_CHANGE_DESC
+CFG_BLE_OPTIONS_SVC|SHCI_C2_BLE_INIT_OPTIONS_WITH_SVC_CHANGE_DESC|SHCI_C2_BLE_INIT_OPTIONS_WITH_SVC_CHANGE_DESC
+CFG_BLE_OPTIONS_DEVICE_NAME|SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RO|SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RO
+CFG_BLE_OPTIONS_DEVICE_NAME|SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RW|SHCI_C2_BLE_INIT_OPTIONS_DEVICE_NAME_RW
+CFG_BLE_OPTIONS_EXT_ADV|SHCI_C2_BLE_INIT_OPTIONS_EXT_ADV|SHCI_C2_BLE_INIT_OPTIONS_EXT_ADV
+CFG_BLE_OPTIONS_EXT_ADV|SHCI_C2_BLE_INIT_OPTIONS_NO_EXT_ADV|SHCI_C2_BLE_INIT_OPTIONS_NO_EXT_ADV
+CFG_BLE_OPTIONS_CS_ALGO|SHCI_C2_BLE_INIT_OPTIONS_CS_ALGO2|SHCI_C2_BLE_INIT_OPTIONS_CS_ALGO2
+CFG_BLE_OPTIONS_CS_ALGO|SHCI_C2_BLE_INIT_OPTIONS_NO_CS_ALGO2|SHCI_C2_BLE_INIT_OPTIONS_NO_CS_ALGO2
+CFG_BLE_OPTIONS_GATTDB_NVM|SHCI_C2_BLE_INIT_OPTIONS_REDUC_GATTDB_NVM|SHCI_C2_BLE_INIT_OPTIONS_REDUC_GATTDB_NVM
+CFG_BLE_OPTIONS_GATTDB_NVM|SHCI_C2_BLE_INIT_OPTIONS_FULL_GATTDB_NVM|SHCI_C2_BLE_INIT_OPTIONS_FULL_GATTDB_NVM
+CFG_BLE_OPTIONS_GATT_CACHING|SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_USED|SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_USED
+CFG_BLE_OPTIONS_GATT_CACHING|SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_NOTUSED|SHCI_C2_BLE_INIT_OPTIONS_GATT_CACHING_NOTUSED
+CFG_BLE_OPTIONS_POWER_CLASS|SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_1|SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_1
+CFG_BLE_OPTIONS_POWER_CLASS|SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_2_3|SHCI_C2_BLE_INIT_OPTIONS_POWER_CLASS_2_3
+CFG_BLE_OPTIONS_APPEARANCE|SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_WRITABLE|SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_WRITABLE
+CFG_BLE_OPTIONS_APPEARANCE|SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY|SHCI_C2_BLE_INIT_OPTIONS_APPEARANCE_READONLY
+CFG_BLE_OPTIONS_ENHANCED_ATT|SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_SUPPORTED|SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_SUPPORTED
+CFG_BLE_OPTIONS_ENHANCED_ATT|SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED|SHCI_C2_BLE_INIT_OPTIONS_ENHANCED_ATT_NOTSUPPORTED
+CFG_BLE_RX_MODEL_CONFIG|SHCI_C2_BLE_INIT_RX_MODEL_AGC_RSSI_LEGACY|SHCI_C2_BLE_INIT_RX_MODEL_AGC_RSSI_LEGACY
+CFG_BLE_RX_MODEL_CONFIG|SHCI_C2_BLE_INIT_RX_MODEL_AGC_RSSI_BLOCKER|SHCI_C2_BLE_INIT_RX_MODEL_AGC_RSSI_BLOCKER
+CFG_BLE_CORE_VERSION|SHCI_C2_BLE_INIT_BLE_CORE_5_4|SHCI_C2_BLE_INIT_BLE_CORE_5_4
+CFG_BLE_CORE_VERSION|SHCI_C2_BLE_INIT_BLE_CORE_5_3|SHCI_C2_BLE_INIT_BLE_CORE_5_3
+CFG_BLE_CORE_VERSION|SHCI_C2_BLE_INIT_BLE_CORE_5_2|SHCI_C2_BLE_INIT_BLE_CORE_5_2
+ADV_TYPE|ADV_IND|Undirected scannable and connectable(0x00)
+ADV_TYPE|ADV_DIRECT_IND|Directed non scannable(0x01)
+ADV_TYPE|ADV_SCAN_IND|Scannable but non connectable(0x02)
+ADV_TYPE|ADV_NONCONN_IND|Non connectable and no scan response (0x03)
+ADV_TYPE|SCAN_RSP|Scan response(0x04)
+CFG_IDENTITY_ADDRESS|GAP_PUBLIC_ADDR|GAP_PUBLIC_ADDR
+CFG_IDENTITY_ADDRESS|GAP_STATIC_RANDOM_ADDR|GAP_STATIC_RANDOM_ADDR
+CFG_PRIVACY|PRIVACY_DISABLED|Disabled
+CFG_PRIVACY|PRIVACY_ENABLED|Enabled
+BLE_ADDR_TYPE|GAP_RESOLVABLE_PRIVATE_ADDR|Resolvable private address(2)
+BLE_ADDR_TYPE|GAP_NON_RESOLVABLE_PRIVATE_ADDR|Non resolvable private address(3)
+BLE_ADDR_TYPE|PUBLIC_ADDR|Public address(0)
+BLE_ADDR_TYPE|RANDOM_ADDR|Random address(1)
+ADV_FILTER|NO_WHITE_LIST_USE|No white list(0x00)
+ADV_FILTER|WHITE_LIST_FOR_ONLY_SCAN|Scan only White List devices(0x01)
+ADV_FILTER|WHITE_LIST_FOR_ONLY_CONN|Connect only White List devices(0x02)
+ADV_FILTER|WHITE_LIST_FOR_ALL|Scan & connect only White List devices (0x03)
+SERVICE_TYPE|PRIMARY_SERVICE|Primary Service(0x01)
+SERVICE_TYPE|SECONDARY_SERVICE|Secondary Service(0x02)
+SERVICE_CHAR_PROP_NONE|CHAR_PROP_NONE|Yes
+SERVICE_CHAR_PROP_BROADCAST|CHAR_PROP_BROADCAST|Yes
+SERVICE_CHAR_PROP_READ|CHAR_PROP_READ|Yes
+SERVICE_CHAR_PROP_WRITE_WITHOUT_RESP|CHAR_PROP_WRITE_WITHOUT_RESP|Yes
+SERVICE_CHAR_PROP_WRITE|CHAR_PROP_WRITE|Yes
+SERVICE_CHAR_PROP_NOTIFY|CHAR_PROP_NOTIFY|Yes
+SERVICE_CHAR_PROP_INDICATE|CHAR_PROP_INDICATE|Yes
+SERVICE_CHAR_ATTR_PERMISSION_NONE|ATTR_PERMISSION_NONE|Yes
+SERVICE_CHAR_ATTR_PERMISSION_AUTHEN_READ|ATTR_PERMISSION_AUTHEN_READ|Yes
+SERVICE_CHAR_ATTR_PERMISSION_AUTHOR_READ|ATTR_PERMISSION_AUTHOR_READ|Yes
+SERVICE_CHAR_ATTR_PERMISSION_ENCRY_READ|ATTR_PERMISSION_ENCRY_READ|Yes
+SERVICE_CHAR_ATTR_PERMISSION_AUTHEN_WRITE|ATTR_PERMISSION_AUTHEN_WRITE|Yes
+SERVICE_CHAR_ATTR_PERMISSION_AUTHOR_WRITE|ATTR_PERMISSION_AUTHOR_WRITE|Yes
+SERVICE_CHAR_ATTR_PERMISSION_ENCRY_WRITE|ATTR_PERMISSION_ENCRY_WRITE|Yes
+SERVICE_CHAR_GATT_DONT_NOTIFY_EVENTS|GATT_DONT_NOTIFY_EVENTS|Yes
+SERVICE_CHAR_GATT_NOTIFY_ATTRIBUTE_WRITE|GATT_NOTIFY_ATTRIBUTE_WRITE|Yes
+SERVICE_CHAR_GATT_NOTIFY_WRITE_REQ_AND_WAIT_FOR_APPL_RESP|GATT_NOTIFY_WRITE_REQ_AND_WAIT_FOR_APPL_RESP|Yes
+SERVICE_CHAR_GATT_NOTIFY_READ_REQ_AND_WAIT_FOR_APPL_RESP|GATT_NOTIFY_READ_REQ_AND_WAIT_FOR_APPL_RESP|Yes
+SERVICE_CHAR_GATT_NOTIFY_NOTIFICATION_COMPLETION|GATT_NOTIFY_NOTIFICATION_COMPLETION|Yes
+SERVICE_CHAR_LENGTH_CHARACTERISTIC|CHAR_VALUE_LEN_VARIABLE|Variable
+SERVICE_CHAR_LENGTH_CHARACTERISTIC|CHAR_VALUE_LEN_CONSTANT|Constant
+THREAD_APPLICATION|FTD_CLI|Full Thread Device with Command Line Interface
+THREAD_APPLICATION|Thread_Cli_Cmd|Thread_Cli_Cmd
+THREAD_APPLICATION|Thread_Coap_Generic|Thread_Coap_Generic
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_NONE|LOG_LEVEL_NONE
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_CRIT|LOG_LEVEL_CRIT
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_WARN|LOG_LEVEL_WARN
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_INFO|LOG_LEVEL_INFO
+APPLI_CONFIG_LOG_LEVEL|LOG_LEVEL_DEBG|LOG_LEVEL_DEBG
+ZGB_DEVICE_ROLE|END_DEVICE|End Device
+ZGB_TOUCHLINK_CAPABILITY|END_DEVICE|End Device
+ZGB_ENDPOINT1_PROFILE_ID|ZCL_PROFILE_HOME_AUTOMATION|Home Automation (HA)
+ZGB_ENDPOINT1_PROFILE_ID|ZCL_PROFILE_SMART_ENERGY|Smart Energy (SE)
+ZGB_ENDPOINT1_PROFILE_ID|ZCL_PROFILE_ZLL|Zigbee Light Link (ZLL)
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_SWITCH|OnOff switch
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_LEVEL_SWITCH|Level control switch
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_OUTPUT|OnOff output
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_LEVEL_OUTPUT|Level controllable output
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_SCENE_SELECTOR|Scene selector
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_CONFIG_TOOL|Configuration tool
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_REMOTE_CONTROL|Remote control
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_COMBINED_INTERFACE|Combined interface
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_RANGE_EXTENDER|Range extender
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_MAINS_POWER_OUTLET|Mains power outlet
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_DOOR_LOCK|Door lock
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_DOOR_LOCK_CONTROLLER|Door lock controller
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_SIMPLE_SENSOR|Simple sensor
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_HOME_GATEWAY|Home gateway
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_SMART_PLUG|Smart plug
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_WHITE_GOODS|White goods
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_METER_INTERFACE|Meter interface
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_LIGHT|OnOff light
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_DIMMABLE_LIGHT|Dimmable light
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_COLOR_DIMMABLE_LIGHT|Color dimmable light
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_LIGHT_SWITCH|OnOff light switch
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_DIMMER_SWITCH|Dimmer switch
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_COLOR_DIMMER_SWITCH|Color dimmer switch
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_LIGHT_SENSOR|Light sensor
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_OCCUPANCY_SENSOR|Occupancy sensor
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_IAS_CONTROL_AND_INDICATING_EQUIPMENT|IAS Control and Indicating Equipment
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_IAS_ANCILLARY_CONTROL_EQUIPMENT|IAS Ancillary Control Equipment
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_IAS_ZONE|IAS zone
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_IAS_WARNING_DEVICE|IAS warning device
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ESP|ESP
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_METER|Metering device
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_IN_HOME_DISPLAY|In-home display
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_PCT|Programmble Communicating Thermostat (PCT)
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_LOAD_CONTROL|Load control device
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_SMART_APPLIANCE|Smart appliance
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_PREPAYMENT_TERMINAL|Prepayment terminal
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_PHYSICAL_DEVICE|Physical device
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_REMOTE_COMMUNICATIONS_DEVICE|Remote communications device
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ERL_INTERFACE|ERL interface
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_COLOR_CONTROLLER|Color controller
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_COLOR_SCENE_CONTROLLER|Color scene controller
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_NON_COLOR_CONTROLLER|Non color controller
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_NON_COLOR_SCENE_CONTROLLER|Non color scene controller
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_CONTROL_BRIDGE|Control bridge
+ENDPOINT1_DEVICE_ID|ZCL_DEVICE_ONOFF_SENSOR|OnOff sensor
+ZCL_BASIC_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_IDENTIFY_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_ALARM_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_TIME_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_COMMISSIONING_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_GROUPS_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_SCENES_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_OCCUPANCY_SENSING_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_DIAGNOSTICS_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_POLL_CONTROL_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_POWER_CONFIGURATION_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_POWER_PROFILE_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_RSSI_LOCATION_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_PRESSURE_MEASUREMENT_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_DEVICE_TEMPERATURE_CONFIGURATION_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_TEMPERATURE_MEASUREMENT_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_THERMOSTAT_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_THERMOSTAT_UI_CONFIGURATION_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_METER_IDENTIFICATION_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_ELECTRICALMEASUREMENT_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_FAN_CONTROL_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_PUMP_CONFIGURATION_CONTROL_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_WATER_CONTENT_MEASUREMENT_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_ONOFF_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_COLORCONTROL_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_ILLUMINANCE_LEVEL_SENSING_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_ILLUMINANCE_MEASUREMENT_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_LEVELCONTROL_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_ON_OFF_SWITCH_CONFIGURATION_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_DOOR_LOCK_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_WINDOW_COVERING_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_IAS_ACE_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_IAS_WD_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_IAS_ZONE_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_MESSAGING_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_DRLC_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_METERING_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_PRICE_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_TUNNELING_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_KEY_ESTABLISHMENT_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_DEHUMIDIFICATION_CONTROL_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_BALLAST_CONFIGURATION_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_NEAREST_GATEWAY_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_OTA_UPGRADE_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZCL_VOICE_OVER_ZGB_ENDPOINT1|CLIENT_SERVER|Server/Client
+ZPARAM_DIAGNOSTIC_MIN_SECURITY_ENDPOINT1|ZB_APS_STATUS_UNSECURED|ZB_APS_STATUS_UNSECURED
+ZPARAM_DIAGNOSTIC_MIN_SECURITY_ENDPOINT1|ZB_APS_STATUS_SECURED_NWK_KEY|ZB_APS_STATUS_SECURED_NWK_KEY
+ZPARAM_DIAGNOSTIC_MIN_SECURITY_ENDPOINT1|ZB_APS_STATUS_SECURED_LINK_KEY|ZB_APS_STATUS_SECURED_LINK_KEY
+ZPARAM_ON_OFF_SWITCH_CONFIGURATION_TYPE_ENDPOINT1|ZCL_ONOFF_SWCONFIG_ON_OFF|ZCL_ONOFF_SWCONFIG_ON_OFF
+ZPARAM_ON_OFF_SWITCH_CONFIGURATION_TYPE_ENDPOINT1|ZCL_ONOFF_SWCONFIG_OFF_ON|ZCL_ONOFF_SWCONFIG_OFF_ON
+ZPARAM_ON_OFF_SWITCH_CONFIGURATION_TYPE_ENDPOINT1|ZCL_ONOFF_SWCONFIG_TOGGLE_TOGGLE|ZCL_ONOFF_SWCONFIG_TOGGLE_TOGGLE

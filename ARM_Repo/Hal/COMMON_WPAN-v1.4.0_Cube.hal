@@ -1,0 +1,22 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMMON_WPAN
+Version=v1.4.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Common_WPAN_Interface|WPAN Interface for Cortex-M|Software component selection||||
+Common_WPAN_Modules|WPAN Modules|Software component selection||||
+Common_WPAN_Modules_baes|baes|Software component selection||||
+Common_WPAN_Modules_Flash|Flash|Software component selection||||
+Common_WPAN_Modules_MemoryManager|Memory Manager|Software component selection||||
+Common_WPAN_Modules_Nvm|Nvm|Software component selection||||
+Common_WPAN_Modules_RFControl|RF Control|Software component selection||||
+Common_WPAN_Modules_RTDebug|RT Debug|Software component selection||||
+Common_WPAN_Modules_SerialCmdInterpreter|Serial Cmd Interpreter|Software component selection||||
+Common_WPAN_Startup|Startup|Software component selection||||
+CONDITIONIiCortexAaMOoDevice|Condition Ii Cortex Aa M Oo Device|||||
+
+[Values]
+# параметр|значение|подпись

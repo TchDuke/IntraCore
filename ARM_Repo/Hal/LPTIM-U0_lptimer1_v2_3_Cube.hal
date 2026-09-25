@@ -1,0 +1,170 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPTIM
+Version=U0_lptimer1_v2_3_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockSource|Clock Source|||||
+ClockPrescaler|Clock Prescaler|Clock||||
+ULPClockSampleTime|ULP Clock Sample Time|Clock||||
+ULPClockPolarity|ULP Clock Polarity|Clock||||
+TriggerSource|Trigger Source|Trigger||||
+TriggerActiveEdge|Active Edge|Trigger||||
+TriggerSampleTime|Sample Time|Trigger||||
+OutputPolarity|Output Polarity|Output||||
+Period|Period|Counter||0|65535|
+UpdateMode|Update Mode|Preload||||
+CounterSource|Counter Source|||||
+RepetitionCounter|Repetition counter|Counter||0|255|
+Input1Source|Input1 Source|||||
+Input2Source|Input2 Source|||||
+ICInputSource_1|InputCapture1 Source|Channel 1||||
+ICInputSource_2|InputCapture2 Source|Channel 2||||
+ICInputSource_3|InputCapture3 Source|Channel 3||||
+ICInputSource_4|InputCapture4 Source|Channel 4||||
+ICPrescaler_1|Prescaler ch1|Channel 1||||
+ICPrescaler_2|Prescaler ch2|Channel 2||||
+ICPrescaler_3|Prescaler ch3|Channel 3||||
+ICPrescaler_4|Prescaler ch4|Channel 4||||
+ICPolarity_1|Polarity ch1|Channel 1||||
+ICPolarity_2|Polarity ch2|Channel 2||||
+ICPolarity_3|Polarity ch3|Channel 3||||
+ICPolarity_4|Polarity ch4|Channel 4||||
+ICFilter_1|Filter ch1|Channel 1||||
+ICFilter_2|Filter ch2|Channel 2||||
+ICFilter_3|Filter ch3|Channel 3||||
+ICFilter_4|Filter ch4|Channel 4||||
+Capture_Compare_Selection_1|Capture-Compare Selection|Channel 1||||
+Capture_Compare_Selection_2|Capture-Compare Selection|Channel 2||||
+Capture_Compare_Selection_3|Capture-Compare Selection|Channel 3||||
+Capture_Compare_Selection_4|Capture-Compare Selection|Channel 4||||
+OCPulse_1|Pulse value|Channel 1||0|65535|
+OCPulse_2|Pulse value|Channel 2||0|65535|
+OCPulse_3|Pulse value|Channel 3||0|65535|
+OCPulse_4|Pulse value|Channel 4||0|65535|
+OCPolarity_1|Polarity ch1|Channel 1||||
+OCPolarity_2|Polarity ch2|Channel 2||||
+OCPolarity_3|Polarity ch3|Channel 3||||
+OCPolarity_4|Polarity ch4|Channel 4||||
+
+[Values]
+# параметр|значение|подпись
+ClockSource|LPTIM_CLOCKSOURCE_APBCLOCK_LPOSC|Clocksource Apbclock Lposc
+ClockSource|LPTIM_CLOCKSOURCE_ULPTIM|Clocksource Ulptim
+ClockPrescaler|LPTIM_PRESCALER_DIV1|Prescaler Div1
+ClockPrescaler|LPTIM_PRESCALER_DIV2|Prescaler Div2
+ClockPrescaler|LPTIM_PRESCALER_DIV4|Prescaler Div4
+ClockPrescaler|LPTIM_PRESCALER_DIV8|Prescaler Div8
+ClockPrescaler|LPTIM_PRESCALER_DIV16|Prescaler Div16
+ClockPrescaler|LPTIM_PRESCALER_DIV32|Prescaler Div32
+ClockPrescaler|LPTIM_PRESCALER_DIV64|Prescaler Div64
+ClockPrescaler|LPTIM_PRESCALER_DIV128|Prescaler Div128
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_DIRECTTRANSITION|Direct Transition
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_2TRANSITIONS|2 Transitions
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_4TRANSITIONS|4 Transitions
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_8TRANSITIONS|8 Transitions
+ULPClockPolarity|LPTIM_CLOCKPOLARITY_RISING|Rising Edge
+ULPClockPolarity|LPTIM_CLOCKPOLARITY_FALLING|Falling Edge
+TriggerSource|LPTIM_TRIGSOURCE_SOFTWARE|Software Trigger
+TriggerSource|LPTIM_TRIGSOURCE_0|LPTIM1_ETR IO
+TriggerSource|LPTIM_TRIGSOURCE_1|RTC Alarm A
+TriggerSource|LPTIM_TRIGSOURCE_2|RTC Alarm B
+TriggerSource|LPTIM_TRIGSOURCE_3|RTC TAMP1 Input Detection
+TriggerSource|LPTIM_TRIGSOURCE_4|RTC TAMP2 Input Detection
+TriggerSource|LPTIM_TRIGSOURCE_5|reserved
+TriggerSource|LPTIM_TRIGSOURCE_6|COMP1 OUT
+TriggerSource|LPTIM_TRIGSOURCE_7|COMP2 OUT
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_RISING|Active Edge Rising
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_FALLING|Active Edge Falling
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_RISING_FALLING|Active Edge Rising Falling
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_DIRECTTRANSITION|Direct Transition
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_2TRANSITIONS|2 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_4TRANSITIONS|4 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_8TRANSITIONS|8 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_DIRECTTRANSISTION|Direct Transition
+OutputPolarity|LPTIM_OUTPUTPOLARITY_HIGH|Output Polarity High
+OutputPolarity|LPTIM_OUTPUTPOLARITY_LOW|Output Polarity Low
+UpdateMode|LPTIM_UPDATE_IMMEDIATE|Update Immediate
+UpdateMode|LPTIM_UPDATE_ENDOFPERIOD|Update End Of Period
+CounterSource|LPTIM_COUNTERSOURCE_INTERNAL|Countersource Internal
+CounterSource|LPTIM_COUNTERSOURCE_EXTERNAL|Countersource External
+Input1Source|LPTIM_INPUT1SOURCE_GPIO|GPIO
+Input1Source|LPTIM_INPUT1SOURCE_COMP1|COMP1
+Input1Source|LPTIM_INPUT1SOURCE_COMP2|COMP2
+Input1Source|LPTIM_INPUT1SOURCE_COMP1_COMP2|COMP1_COMP2
+Input2Source|LPTIM_INPUT2SOURCE_GPIO|GPIO
+Input2Source|LPTIM_INPUT2SOURCE_COMP2|COMP2
+ICInputSource_1|LPTIM_IC1SOURCE_GPIO|GPIO
+ICInputSource_1|LPTIM_IC1SOURCE_COMP1|COMP1
+ICInputSource_1|LPTIM_IC1SOURCE_COMP2|COMP2
+ICInputSource_2|LPTIM_IC2SOURCE_MCO1|MCO1
+ICInputSource_2|LPTIM_IC2SOURCE_MCO2|MCO2
+ICInputSource_2|LPTIM_IC2SOURCE_GPIO|GPIO
+ICInputSource_3|LPTIM_IC3SOURCE_COMP1|COMP1
+ICInputSource_3|LPTIM_IC3SOURCE_COMP2|COMP2
+ICInputSource_3|LPTIM_IC3SOURCE_GPIO|GPIO
+ICInputSource_4|LPTIM_IC4SOURCE_COMP1|COMP1
+ICInputSource_4|LPTIM_IC4SOURCE_COMP2|COMP2
+ICInputSource_4|LPTIM_IC4SOURCE_GPIO|GPIO
+ICPrescaler_1|LPTIM_ICPSC_DIV1|DIV1
+ICPrescaler_1|LPTIM_ICPSC_DIV2|DIV2
+ICPrescaler_1|LPTIM_ICPSC_DIV4|DIV4
+ICPrescaler_1|LPTIM_ICPSC_DIV8|DIV8
+ICPrescaler_2|LPTIM_ICPSC_DIV1|DIV1
+ICPrescaler_2|LPTIM_ICPSC_DIV2|DIV2
+ICPrescaler_2|LPTIM_ICPSC_DIV4|DIV4
+ICPrescaler_2|LPTIM_ICPSC_DIV8|DIV8
+ICPrescaler_3|LPTIM_ICPSC_DIV1|DIV1
+ICPrescaler_3|LPTIM_ICPSC_DIV2|DIV2
+ICPrescaler_3|LPTIM_ICPSC_DIV4|DIV4
+ICPrescaler_3|LPTIM_ICPSC_DIV8|DIV8
+ICPrescaler_4|LPTIM_ICPSC_DIV1|DIV1
+ICPrescaler_4|LPTIM_ICPSC_DIV2|DIV2
+ICPrescaler_4|LPTIM_ICPSC_DIV4|DIV4
+ICPrescaler_4|LPTIM_ICPSC_DIV8|DIV8
+ICPolarity_1|LPTIM_ICPOLARITY_RISING|rising edge
+ICPolarity_1|LPTIM_ICPOLARITY_FALLING|falling edge
+ICPolarity_1|LPTIM_ICPOLARITY_RISING_FALLING|rising and falling edge
+ICPolarity_2|LPTIM_ICPOLARITY_RISING|rising edge
+ICPolarity_2|LPTIM_ICPOLARITY_FALLING|falling edge
+ICPolarity_2|LPTIM_ICPOLARITY_RISING_FALLING|rising and falling edge
+ICPolarity_3|LPTIM_ICPOLARITY_RISING|rising edge
+ICPolarity_3|LPTIM_ICPOLARITY_FALLING|falling edge
+ICPolarity_3|LPTIM_ICPOLARITY_RISING_FALLING|rising and falling edge
+ICPolarity_4|LPTIM_ICPOLARITY_RISING|rising edge
+ICPolarity_4|LPTIM_ICPOLARITY_FALLING|falling edge
+ICPolarity_4|LPTIM_ICPOLARITY_RISING_FALLING|rising and falling edge
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV1|1 clock period
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV2|2 clock periods
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV4|4 clock periods
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV8|8 clock periods
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV1|1 clock period
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV2|2 clock periods
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV4|4 clock periods
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV8|8 clock periods
+ICFilter_3|LPTIM_ICFLT_CLOCK_DIV1|1 clock period
+ICFilter_3|LPTIM_ICFLT_CLOCK_DIV2|2 clock periods
+ICFilter_3|LPTIM_ICFLT_CLOCK_DIV4|4 clock periods
+ICFilter_3|LPTIM_ICFLT_CLOCK_DIV8|8 clock periods
+ICFilter_4|LPTIM_ICFLT_CLOCK_DIV1|1 clock period
+ICFilter_4|LPTIM_ICFLT_CLOCK_DIV2|2 clock periods
+ICFilter_4|LPTIM_ICFLT_CLOCK_DIV4|4 clock periods
+ICFilter_4|LPTIM_ICFLT_CLOCK_DIV8|8 clock periods
+Capture_Compare_Selection_1|UI_input|Capture
+Capture_Compare_Selection_1|UI_output|Compare
+Capture_Compare_Selection_2|UI_input|Capture
+Capture_Compare_Selection_2|UI_output|Compare
+Capture_Compare_Selection_3|UI_input|Capture
+Capture_Compare_Selection_3|UI_output|Compare
+Capture_Compare_Selection_4|UI_input|Capture
+Capture_Compare_Selection_4|UI_output|Compare
+OCPolarity_1|LPTIM_OCPOLARITY_HIGH|Active high
+OCPolarity_1|LPTIM_OCPOLARITY_LOW|Active low
+OCPolarity_2|LPTIM_OCPOLARITY_HIGH|Active high
+OCPolarity_2|LPTIM_OCPOLARITY_LOW|Active low
+OCPolarity_3|LPTIM_OCPOLARITY_HIGH|Active high
+OCPolarity_3|LPTIM_OCPOLARITY_LOW|Active low
+OCPolarity_4|LPTIM_OCPOLARITY_HIGH|Active high
+OCPolarity_4|LPTIM_OCPOLARITY_LOW|Active low

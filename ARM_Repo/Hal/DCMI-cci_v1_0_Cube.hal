@@ -1,0 +1,39 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DCMI
+Version=cci_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+SynchroMode|Synchronization Mode|||||
+PCKPolarity|Pixel clock polarity|Mode Config||||
+VSPolarity|Vertical synchronization polarity|Mode Config||||
+HSPolarity|Horizontal synchronization polarity|Mode Config||||
+CaptureRate|Frequency of frame capture|Mode Config||||
+ExtendedDataMode|Data width 14-bit.|||||
+FrameStartCode|Frame Start Code|Synchro Config||0|255|
+FrameEndCode|Frame End Code|Synchro Config||0|255|
+LineEndCode|Line End Code|Synchro Config||0|255|
+LineStartCode|Line Start Code|Synchro Config||0|255|
+JPEGMode|JPEG mode|Mode Config||||
+
+[Values]
+# параметр|значение|подпись
+SynchroMode|DCMI_SYNCHRO_EMBEDDED|Embedded synchronization data capture is synchronized with synchronization codes embedded in the data flow
+SynchroMode|DCMI_SYNCHRO_HARDWARE|Hardware synchronization data capture (frame/line start/stop) is synchronized with the HSYNC/VSYNC signals
+PCKPolarity|DCMI_PCKPOLARITY_FALLING|Active on Falling edge
+PCKPolarity|DCMI_PCKPOLARITY_RISING|Active on Rising edge
+VSPolarity|DCMI_VSPOLARITY_HIGH|Active High
+VSPolarity|DCMI_VSPOLARITY_LOW|Active Low
+HSPolarity|DCMI_HSPOLARITY_HIGH|Active High
+HSPolarity|DCMI_HSPOLARITY_LOW|Active Low
+CaptureRate|DCMI_CR_ALTERNATE_4_FRAME|One frame in 4 frames captured
+CaptureRate|DCMI_CR_ALTERNATE_2_FRAME|Every alternate frame captured
+CaptureRate|DCMI_CR_ALL_FRAME|All frames are captured
+ExtendedDataMode|DCMI_EXTEND_DATA_14B|14-bit data on every pixel clock
+ExtendedDataMode|DCMI_EXTEND_DATA_12B|12-bit data on every pixel clock
+ExtendedDataMode|DCMI_EXTEND_DATA_10B|10-bit data on every pixel clock
+ExtendedDataMode|DCMI_EXTEND_DATA_8B|8-bit data on every pixel clock
+JPEGMode|DCMI_JPEG_ENABLE|Enabled
+JPEGMode|DCMI_JPEG_DISABLE|Disabled

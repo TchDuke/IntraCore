@@ -1,0 +1,88 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=I2S
+Version=spi2s3_v2_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+VirtualMode|Mode|Generic Parameters||||
+Mode|Transmission Mode|Generic Parameters||||
+FullDuplexMode|Full-Duplex Mode|Generic Parameters||||
+Standard|Communication Standard|Generic Parameters||||
+DataFormat|Data and Frame Format|Generic Parameters||||
+AudioFreq|Selected Audio Frequency|Generic Parameters||||
+AudioFreqCustom|Custom I2S Frequency (Hz)|Generic Parameters|Hz|8000|192000|Value must be enterred as a 1000 multiple
+RealAudioFreq|Real Audio Frequency|Generic Parameters||||
+ErrorAudioFreq|Error between Selected and Real|Generic Parameters||||
+MCLKOutput|Master Clock Output|Clock Parameters||||
+CPOL|Clock Polarity|Clock Parameters||||
+FirstBit|First Bit|Advanced Parameters||||Specifies whether data transfers start from MSB or LSB bit.
+WSInversion|Ws Inversion|Advanced Parameters||||Control the Word Select Inversion.
+IOSwap|Io Swap|Advanced Parameters||||Invert MISO/MOSI alternate functions This parameter can be a value of Control I2S IO Swap
+Data24BitAlignment|Data24 Bit Alignment|Advanced Parameters||||Specifies the Data Padding for 24 bits data lenght This parameter can be a value of Data Padding 24Bit
+FifoThreshold|Fifo Threshold|Advanced Parameters||||Specifies the FIFO threshold level.
+MasterKeepIOState|Master Keep Io State|Advanced Parameters||||Control of Alternate function GPIOs state This parameter can be a value of Keep IO State
+SlaveExtendFREDetection|Slave Extend Fre Detection|Advanced Parameters||||Control the channel length in SLAVE.
+
+[Values]
+# параметр|значение|подпись
+VirtualMode|I2S_MODE_MASTER|Master
+VirtualMode|I2S_MODE_SLAVE|Slave
+Mode|I2S_MODE_MASTER_TX|Mode Master Transmit
+Mode|I2S_MODE_MASTER_RX|Mode Master Receive
+Mode|I2S_MODE_SLAVE_TX|Mode Slave Transmit
+Mode|I2S_MODE_SLAVE_RX|Mode Slave Receive
+FullDuplexMode|I2S_MODE_MASTER_FD|Full Duplex Master
+FullDuplexMode|I2S_MODE_SLAVE_FD|Full Duplex Slave
+Standard|I2S_STANDARD_PHILIPS|I2S Philips
+Standard|I2S_STANDARD_MSB|MSB First (Left Justified)
+Standard|I2S_STANDARD_LSB|LSB First (Right Justified)
+Standard|I2S_STANDARD_PCM_SHORT|PCM with Short Synchro Frame
+Standard|I2S_STANDARD_PCM_LONG|PCM with Long Synchro Frame
+DataFormat|I2S_DATAFORMAT_16B|16 Bits Data on 16 Bits Frame
+DataFormat|I2S_DATAFORMAT_16B_EXTENDED|16 Bits Data on 32 Bits Frame
+DataFormat|I2S_DATAFORMAT_24B|24 Bits Data on 32 Bits Frame
+DataFormat|I2S_DATAFORMAT_32B|32 Bits Data on 32 Bits Frame
+AudioFreq|I2S_AUDIOFREQ_192K|192 KHz
+AudioFreq|I2S_AUDIOFREQ_96K|96 KHz
+AudioFreq|I2S_AUDIOFREQ_48K|48 KHz
+AudioFreq|I2S_AUDIOFREQ_44K|44 KHz
+AudioFreq|I2S_AUDIOFREQ_32K|32 KHz
+AudioFreq|I2S_AUDIOFREQ_22K|22 KHz
+AudioFreq|I2S_AUDIOFREQ_16K|16 KHz
+AudioFreq|I2S_AUDIOFREQ_11K|11 KHz
+AudioFreq|I2S_AUDIOFREQ_8K|8 KHz
+AudioFreq|I2S_AUDIOFREQ_DEFAULT|Default
+MCLKOutput|I2S_MCLKOUTPUT_ENABLE|Enable
+MCLKOutput|I2S_MCLKOUTPUT_DISABLE|Disable
+CPOL|I2S_CPOL_LOW|Low
+CPOL|I2S_CPOL_HIGH|High
+FirstBit|I2S_FIRSTBIT_MSB|Firstbit Msb
+FirstBit|I2S_FIRSTBIT_LSB|Firstbit Lsb
+WSInversion|I2S_WS_INVERSION_DISABLE|Ws Inversion Disable
+WSInversion|I2S_WS_INVERSION_ENABLE|Ws Inversion Enable
+IOSwap|I2S_IO_SWAP_DISABLE|Io Swap Disable
+IOSwap|I2S_IO_SWAP_ENABLE|Io Swap Enable
+Data24BitAlignment|I2S_DATA_24BIT_ALIGNMENT_RIGHT|Data 24 Bit Alignment Right
+Data24BitAlignment|I2S_DATA_24BIT_ALIGNMENT_LEFT|Data 24 Bit Alignment Left
+FifoThreshold|I2S_FIFO_THRESHOLD_01DATA|Fifo Threshold 01 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_02DATA|Fifo Threshold 02 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_03DATA|Fifo Threshold 03 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_04DATA|Fifo Threshold 04 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_05DATA|Fifo Threshold 05 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_06DATA|Fifo Threshold 06 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_07DATA|Fifo Threshold 07 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_08DATA|Fifo Threshold 08 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_09DATA|Fifo Threshold 09 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_10DATA|Fifo Threshold 10 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_11DATA|Fifo Threshold 11 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_12DATA|Fifo Threshold 12 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_13DATA|Fifo Threshold 13 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_14DATA|Fifo Threshold 14 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_15DATA|Fifo Threshold 15 Data
+FifoThreshold|I2S_FIFO_THRESHOLD_16DATA|Fifo Threshold 16 Data
+MasterKeepIOState|I2S_MASTER_KEEP_IO_STATE_DISABLE|Master Keep Io State Disable
+MasterKeepIOState|I2S_MASTER_KEEP_IO_STATE_ENABLE|Master Keep Io State Enable
+SlaveExtendFREDetection|I2S_SLAVE_EXTEND_FRE_DETECTION_DISABLE|Slave Extend Fre Detection Disable
+SlaveExtendFREDetection|I2S_SLAVE_EXTEND_FRE_DETECTION_ENABLE|Slave Extend Fre Detection Enable

@@ -1,0 +1,203 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SDADC
+Version=sdaditf1_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+IdleLowPowerMode|Low Power Mode|||||
+FastConversionMode|Fast Conversion Mode|||||To enable Fast Conversion Mode you must have only one regular channel with continuous mode enabled for regular conversion, or only one injected channel with continuous mode enabled for injected conversion, or both one regular channel and one injected channel with continuous mode enabled for injected and regular conversions.
+SlowClockMode|Slow Clock Mode|||||
+ReferenceVoltage|Reference Voltage|ADCsgroup||||
+UseConfig0|Configuration 0|||||
+ConfIndex0|Configuration Index|||||
+InputMode0|Input Mode|||||
+Gain0|Gain|||||
+CommonMode0|Common Mode|||||
+Offset0|Offset|||0|4095|
+UseConfig1|Configuration 1|||||
+ConfIndex1|Configuration Index|||||
+InputMode1|Input Mode|||||
+Gain1|Gain|||||
+CommonMode1|Common Mode|||||
+Offset1|Offset|||0|4095|
+UseConfig2|Configuration 2|||||
+ConfIndex2|Configuration Index|||||
+InputMode2|Input Mode|||||
+Gain2|Gain|||||
+CommonMode2|Common Mode|||||
+Offset2|Offset|||0|4095|
+EnableRegularconversion|Enable Regular Conversion|||||
+MultimodeType|Multimode type|ADCgroup||||Multimode Type
+NbrOfConversionFlag|Number Of Conversion Flag|ADCgroup||0|1|
+NbrOfConversion|Number Of Conversion|ADCgroup||1|9|Number of regular channels to be converted
+Trigger|Trigger type|||||
+Rank|Channel Configuration|||1|1|The Configuration of the selected channel
+Channel|Channel|||||
+ConfIndex|Configuration Index|||||The "Input Mode" parameter value of the selected Configuration must be equal to the selected channel mode in the Pinout Tree
+ContinuousMode|Continuous Mode|||||
+EnableInjectedConversion|Enable Injected Conversion|||||
+InjNumberOfConversion|Number of Channels To be converted|ADCgroup||1|9|Number of injected channels to be converted
+InjectedTrigger|Trigger type|||||
+ExtTriggerEdge|External Trigger Edge|||||
+InjectedExtTrigger|External Trigger source|||||
+InjDelay|Injected Delay|||||
+InjectedDelay|Injected Delay|||||
+InjectedMultimodeType|Injected Multimode type|ADCgroup||||Multimode Type
+InjectedRank|Channel Configuration|||1|9|The Configuration of the selected channel
+InjectedChannel|Channel|||||
+InjectedChannelsSelection|InjectedChannelsSelection|||||
+InjectedConfIndex|Configuration Index|||||The "Input Mode" parameter value of the selected Configuration must be equal to the selected channel mode in the Pinout Tree
+InjectedContinuousMode|Continuous Mode|||||
+master|Master Flag|||0|1|
+AllChannels|Channel|||||
+AnalogWDChannel|Analog WatchDog Channel|ADCChannel||||SDADC channel for the analog watchdog
+WatchdogChannel|Analog WatchDog Channel|ADCChannel||||SDADC channel for the analog watchdog
+
+[Values]
+# параметр|значение|подпись
+IdleLowPowerMode|SDADC_LOWPOWER_NONE|None
+IdleLowPowerMode|SDADC_LOWPOWER_POWERDOWN|Power down
+IdleLowPowerMode|SDADC_LOWPOWER_STANDBY|Standby
+FastConversionMode|SDADC_FAST_CONV_DISABLE|Disable
+FastConversionMode|SDADC_FAST_CONV_ENABLE|Enable
+SlowClockMode|SDADC_SLOW_CLOCK_DISABLE|Disable
+SlowClockMode|SDADC_SLOW_CLOCK_ENABLE|Enable
+ReferenceVoltage|SDADC_VREF_EXT|Forced externally using VREF pin
+ReferenceVoltage|SDADC_VREF_VREFINT1|Forced internally to 1.22V VREFINT
+ReferenceVoltage|SDADC_VREF_VREFINT2|Forced internally to 1.8V VREFINT
+ReferenceVoltage|SDADC_VREF_VDDA|Forced internally to VDDA
+ConfIndex0|SDADC_CONF_INDEX_0|Configuration 0 selected
+InputMode0|SDADC_INPUT_MODE_DIFF|Differential mode
+InputMode0|SDADC_INPUT_MODE_SE_OFFSET|Single-ended offset mode
+InputMode0|SDADC_INPUT_MODE_SE_ZERO_REFERENCE|Single-ended zero-volt reference mode
+Gain0|SDADC_GAIN_1_2|equal to 1/2
+Gain0|SDADC_GAIN_1|equal to 1
+Gain0|SDADC_GAIN_2|equal to 2
+Gain0|SDADC_GAIN_4|equal to 4
+Gain0|SDADC_GAIN_8|equal to 8
+Gain0|SDADC_GAIN_16|equal to 16
+Gain0|SDADC_GAIN_32|equal to 32
+CommonMode0|SDADC_COMMON_MODE_VSSA|SDADC VSSA
+CommonMode0|SDADC_COMMON_MODE_VDDA_2|SDADC VDDA/2
+CommonMode0|SDADC_COMMON_MODE_VDDA|SDADC VDDA
+ConfIndex1|SDADC_CONF_INDEX_1|Configuration 1 selected
+InputMode1|SDADC_INPUT_MODE_DIFF|Differential mode
+InputMode1|SDADC_INPUT_MODE_SE_OFFSET|Single-ended offset mode
+InputMode1|SDADC_INPUT_MODE_SE_ZERO_REFERENCE|Single-ended zero-volt reference mode
+Gain1|SDADC_GAIN_1_2|equal to 1/2
+Gain1|SDADC_GAIN_1|equal to 1
+Gain1|SDADC_GAIN_2|equal to 2
+Gain1|SDADC_GAIN_4|equal to 4
+Gain1|SDADC_GAIN_8|equal to 8
+Gain1|SDADC_GAIN_16|equal to 16
+Gain1|SDADC_GAIN_32|equal to 32
+CommonMode1|SDADC_COMMON_MODE_VSSA|SDADC VSSA
+CommonMode1|SDADC_COMMON_MODE_VDDA_2|SDADC VDDA/2
+CommonMode1|SDADC_COMMON_MODE_VDDA|SDADC VDDA
+ConfIndex2|SDADC_CONF_INDEX_2|Configuration 2 selected
+InputMode2|SDADC_INPUT_MODE_DIFF|Differential mode
+InputMode2|SDADC_INPUT_MODE_SE_OFFSET|Single-ended offset mode
+InputMode2|SDADC_INPUT_MODE_SE_ZERO_REFERENCE|Single-ended zero-volt reference mode
+Gain2|SDADC_GAIN_1_2|equal to 1/2
+Gain2|SDADC_GAIN_1|equal to 1
+Gain2|SDADC_GAIN_2|equal to 2
+Gain2|SDADC_GAIN_4|equal to 4
+Gain2|SDADC_GAIN_8|equal to 8
+Gain2|SDADC_GAIN_16|equal to 16
+Gain2|SDADC_GAIN_32|equal to 32
+CommonMode2|SDADC_COMMON_MODE_VSSA|SDADC VSSA
+CommonMode2|SDADC_COMMON_MODE_VDDA_2|SDADC VDDA/2
+CommonMode2|SDADC_COMMON_MODE_VDDA|SDADC VDDA
+MultimodeType|__NULL|Disable
+MultimodeType|SDADC_MULTIMODE_SDADC1_SDADC2|Get conversion values for SDADC1 and SDADC2
+MultimodeType|SDADC_MULTIMODE_SDADC1_SDADC3|Get conversion values for SDADC1 and SDADC3
+Trigger|SDADC_SOFTWARE_TRIGGER|Software trigger
+Trigger|SDADC_SYNCHRONOUS_TRIGGER|Synchronous trigger
+Channel|SDADC_CHANNEL_0|Channel 0
+Channel|SDADC_CHANNEL_1|Channel 1
+Channel|SDADC_CHANNEL_2|Channel 2
+Channel|SDADC_CHANNEL_3|Channel 3
+Channel|SDADC_CHANNEL_4|Channel 4
+Channel|SDADC_CHANNEL_5|Channel 5
+Channel|SDADC_CHANNEL_6|Channel 6
+Channel|SDADC_CHANNEL_7|Channel 7
+Channel|SDADC_CHANNEL_8|Channel 8
+ConfIndex|SDADC_CONF_INDEX_0|Configuration 0
+ConfIndex|SDADC_CONF_INDEX_1|Configuration 1
+ConfIndex|SDADC_CONF_INDEX_2|Configuration 2
+ContinuousMode|SDADC_CONTINUOUS_CONV_OFF|Disabled
+ContinuousMode|SDADC_CONTINUOUS_CONV_ON|Enabled
+InjectedTrigger|SDADC_SOFTWARE_TRIGGER|Software trigger
+InjectedTrigger|SDADC_SYNCHRONOUS_TRIGGER|Synchronous trigger
+InjectedTrigger|SDADC_EXTERNAL_TRIGGER|External trigger
+ExtTriggerEdge|SDADC_EXT_TRIG_RISING_EDGE|Rising edge
+ExtTriggerEdge|SDADC_EXT_TRIG_FALLING_EDGE|Falling edge
+ExtTriggerEdge|SDADC_EXT_TRIG_BOTH_EDGES|Rising and falling edges
+InjectedExtTrigger|SDADC_EXT_TRIG_EXTI11|EXTI 11
+InjectedExtTrigger|SDADC_EXT_TRIG_EXTI15|EXTI 15
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM13_CC1|Timer 13 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM14_CC1|Timer 14 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM15_CC2|Timer 15 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM3_CC1|Timer 3 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM4_CC1|Timer 4 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM19_CC2|Timer 19 Capture Compare 2
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM17_CC1|Timer 17 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM12_CC1|Timer 12 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM2_CC3|Timer 2 Capture Compare 3
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM3_CC2|Timer 3 Capture Compare 2
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM4_CC2|Timer 4 Capture Compare 2
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM19_CC3|Timer 19 Capture Compare 3
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM16_CC1|Timer 16 Capture Compare 1
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM12_CC2|Timer 12 Capture Compare 2
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM2_CC4|Timer 2 Capture Compare 4
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM3_CC3|Timer 3 Capture Compare 3
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM4_CC3|Timer 4 Capture Compare 3
+InjectedExtTrigger|SDADC_EXT_TRIG_TIM19_CC4|Timer 19 Capture Compare 4
+InjectedDelay|SDADC_INJECTED_DELAY_NONE|Disable
+InjectedDelay|SDADC_INJECTED_DELAY|Enable
+InjectedMultimodeType|__NULL|Disable
+InjectedMultimodeType|SDADC_MULTIMODE_SDADC1_SDADC2|Get conversion values for SDADC1 and SDADC2
+InjectedMultimodeType|SDADC_MULTIMODE_SDADC1_SDADC3|Get conversion values for SDADC1 and SDADC3
+InjectedChannel|SDADC_CHANNEL_0|Channel 0
+InjectedChannel|SDADC_CHANNEL_1|Channel 1
+InjectedChannel|SDADC_CHANNEL_2|Channel 2
+InjectedChannel|SDADC_CHANNEL_3|Channel 3
+InjectedChannel|SDADC_CHANNEL_4|Channel 4
+InjectedChannel|SDADC_CHANNEL_5|Channel 5
+InjectedChannel|SDADC_CHANNEL_6|Channel 6
+InjectedChannel|SDADC_CHANNEL_7|Channel 7
+InjectedChannel|SDADC_CHANNEL_8|Channel 8
+InjectedConfIndex|SDADC_CONF_INDEX_0|Configuration 0
+InjectedConfIndex|SDADC_CONF_INDEX_1|Configuration 1
+InjectedConfIndex|SDADC_CONF_INDEX_2|Configuration 2
+InjectedContinuousMode|SDADC_CONTINUOUS_CONV_OFF|Disabled
+InjectedContinuousMode|SDADC_CONTINUOUS_CONV_ON|Enabled
+AllChannels|SDADC_CHANNEL_0|Channel 0
+AllChannels|SDADC_CHANNEL_1|Channel 1
+AllChannels|SDADC_CHANNEL_2|Channel 2
+AllChannels|SDADC_CHANNEL_3|Channel 3
+AllChannels|SDADC_CHANNEL_4|Channel 4
+AllChannels|SDADC_CHANNEL_5|Channel 5
+AllChannels|SDADC_CHANNEL_6|Channel 6
+AllChannels|SDADC_CHANNEL_7|Channel 7
+AllChannels|SDADC_CHANNEL_8|Channel 8
+AnalogWDChannel|SDADC_CHANNEL_0|Channel 0
+AnalogWDChannel|SDADC_CHANNEL_1|Channel 1
+AnalogWDChannel|SDADC_CHANNEL_2|Channel 2
+AnalogWDChannel|SDADC_CHANNEL_3|Channel 3
+AnalogWDChannel|SDADC_CHANNEL_4|Channel 4
+AnalogWDChannel|SDADC_CHANNEL_5|Channel 5
+AnalogWDChannel|SDADC_CHANNEL_6|Channel 6
+AnalogWDChannel|SDADC_CHANNEL_7|Channel 7
+AnalogWDChannel|SDADC_CHANNEL_8|Channel 8
+WatchdogChannel|SDADC_CHANNEL_0|Channel 0
+WatchdogChannel|SDADC_CHANNEL_1|Channel 1
+WatchdogChannel|SDADC_CHANNEL_2|Channel 2
+WatchdogChannel|SDADC_CHANNEL_3|Channel 3
+WatchdogChannel|SDADC_CHANNEL_4|Channel 4
+WatchdogChannel|SDADC_CHANNEL_5|Channel 5
+WatchdogChannel|SDADC_CHANNEL_6|Channel 6
+WatchdogChannel|SDADC_CHANNEL_7|Channel 7
+WatchdogChannel|SDADC_CHANNEL_8|Channel 8

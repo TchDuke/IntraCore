@@ -1,0 +1,27 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=OPENAMP
+Version=STM32H7xx_v1.0.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+OPENAMP_Version|OPENAMP version|Version||||
+METAL_MAX_DEVICE_REGIONS_NUMBER|METAL_MAX_DEVICE_REGIONS|Configuration||1|32|MAX IO regions created by libmetal.
+RPMSG_BUFFER_SIZE|RPMSG_BUFFER_SIZE|Configuration||1|8192|Messaging buffer size.
+MODE|Mode|Communication Mode||||Configure the OPENAMP application to run as Master or Slave on Cortex-M4.
+SHM_START_ADDRESS|SHM_START_ADDRESS|Configuration||0x0|0xFFFFFFFF|
+SHM_SIZE|SHM_SIZE|Configuration||0x0|0xFFFFFFFF|
+VRING_RX_ADDRESS|VRING_RX_ADDRESS|Configuration||=SHM_START_ADDRESS|0xFFFFFFFF|
+VRING_TX_ADDRESS|VRING_TX_ADDRESS|Configuration||0x0|0xFFFFFFFF|
+VRING_BUFF_ADDRESS|VRING_BUFF_ADDRESS|Configuration||0x0|0xFFFFFFFF|
+VRING_ALIGNMENT|VRING_ALIGNMENT|Configuration||0|512|
+VRING_NUM_BUFFS|VRING_NUM_BUFFS|Configuration||0|512|
+NUM_RESOURCE_ENTRIES|NUM_RESOURCE_ENTRIES|Configuration||||Number of Resources. Fixed value = 2.
+VRING_COUNT|VRING_COUNT|Configuration||||Number of Vrings. Fixed value = 2.
+VDEV_ID|VDEV_ID|Configuration||||Virtio Device ID. Fixed value = 0xFF.
+VRING0_ID|VRING0_ID|Configuration||||VRING0 ID (master to remote). Fixed value = 0.
+VRING1_ID|VRING1_ID|Configuration||||VRING1 ID (remote to master). Fixed value = 1.
+
+[Values]
+# параметр|значение|подпись

@@ -1,0 +1,95 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DAC
+Version=dacif_v5_0_Cube_H5_512k
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+DAC_Channel|Channel|||||
+DAC_HighFrequency|DAC High Frequency Mode|Common DAC Settings||||High frequency interface mode is used to add extra delay when DAC clock is faster than 80 or 160 MHz Warning "Mode Automatic" is not available on Low Layer code generation option (only on HAL)
+DAC_DMADoubleDataMode|DMA double data mode|||||Specifies if DMA double data mode should be enabled or not
+DAC_SignedFormat|Signed Format|||||Specifies if signed format should be used or not
+DAC_Trigger|Trigger|||||Specifies the external trigger for the selected DAC channel. A selection of a Trigger allows the activation of a Triangle or Noise Wave generation mode
+DAC_OutputBuffer_OUT1|Output Buffer|||||The activation/deactivation of the buffer is linked to the combination the mode selected and the out connection. Buffer could be enabled only if "OUT mode" is at least connected to the external pin (with or without the on chip peripheral connection) Buffer could be disabled is not possible in two case : - "OUT mode" connected to external pin only with Sample and Hold selected mode - "OUT mode" connected to external pin and internal on chip peripheral with the Normal selected mode
+DAC_OutputBuffer_OUT2|Output Buffer|||||The activation/deactivation of the buffer is linked to the combination the mode selected and the out connection. Buffer could be enabled only if "OUT mode" is at least connected to the external pin (with or without the on chip peripheral connection) Buffer could be disabled is not possible in two case : - "OUT mode" connected to external pin only with Sample and Hold selected mode - "OUT mode" connected to external pin and internal on chip peripheral with the Normal selected mode
+DAC2_OutputBuffer|Output Buffer|||||The activation/deactivation of the buffer is linked to the combination the mode selected and the out connection. Buffer could be enabled only if out is at least connected to the external pin (with or without the on chip peripheral connection) Buffer could be disabled is not possible in two case : - out connected to external pin only with Sample and Hold selected mode - out connected to external pin and internal on chip peripheral with the Normal selected mode
+WaveGeneration|Wave generation mode|||||Selection of the wave generation : Triangle or Noise
+TriangleAmplitude|Maximum Triangle Amplitude|||||This small-amplitude triangular waveform is adde to the output. The triangle counter is incremented three as long as it is less than the maximum amplitude Once the configured amplitude is reached, the counter is decremented down to 0, then incremented again and so on.
+NoiseAmplitude|Noise Amplitude|||||In order to generate a variable-amplitude pseudonoise, an LFSR (linear feedback shift register) is available.
+DAC1_ConnectOnChipPeripheral|Connect On Chip Peripheral1|||||
+DAC2_ConnectOnChipPeripheral|Connect On Chip Peripheral2|||||Specifies whether the DAC output is connected or not to on chip peripheral .
+DAC_UserTrimming|User Trimming|||||Specifies the trimming mode This parameter must be a value of DAC User Trimming DAC_UserTrimming is either factory or user trimming
+DAC_TrimmingValue|Trimming Value|||1|31|Specifies the offset trimming value.
+DAC_SampleAndHold|Mode selected|||||Specifies the DAC mode. In case of Sample and Hold Mode then specifies values in additionnal parameters : - Sample Time - Hold Time - Refresh Time
+DAC_SampleTime|Sample Time|||0|1023|On Sample and Hold Mode : Specifies the Sample time
+DAC_HoldTime|Hold Time|||0|1023|On Sample and Hold Mode : Specifies the hold time
+DAC_RefreshTime|Refresh Time|||0|255|On Sample and Hold Mode : Specifies the refresh time
+Interrupt1|DMA underrun error for DAC1_CH1|IP Internal Interrupt||||description
+Interrupt2|DMA underrun error for DAC1_CH2|IP Internal Interrupt||||description
+ORingInterrupt|Interrupt parameter for code generation __HAL_DAC_ENABLE_IT|||||
+
+[Values]
+# параметр|значение|подпись
+DAC_Channel|DAC_CHANNEL_1|DAC_CHANNEL_1
+DAC_Channel|DAC_CHANNEL_2|DAC_CHANNEL_2
+DAC_HighFrequency|DAC_HIGH_FREQUENCY_INTERFACE_MODE_DISABLE|Disable
+DAC_HighFrequency|DAC_HIGH_FREQUENCY_INTERFACE_MODE_ABOVE_80MHZ|AHB frequency above 80MHz
+DAC_HighFrequency|DAC_HIGH_FREQUENCY_INTERFACE_MODE_ABOVE_160MHZ|AHB frequency above 160MHz
+DAC_HighFrequency|DAC_HIGH_FREQUENCY_INTERFACE_MODE_AUTOMATIC|Automatic
+DAC_Trigger|DAC_TRIGGER_NONE|None
+DAC_Trigger|DAC_TRIGGER_T1_TRGO|Timer 1 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T2_TRGO|Timer 2 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T3_TRGO|Timer 3 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T4_TRGO|Timer 4 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T5_TRGO|Timer 5 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T6_TRGO|Timer 6 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T7_TRGO|Timer 7 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T8_TRGO|Timer 8 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_T15_TRGO|Timer 15 Trigger Out event
+DAC_Trigger|DAC_TRIGGER_LPTIM1_CH1|LPTimer1 Channel 1
+DAC_Trigger|DAC_TRIGGER_LPTIM2_CH1|LPTimer2 Channel 1
+DAC_Trigger|DAC_TRIGGER_SOFTWARE|Software trigger
+DAC_Trigger|DAC_TRIGGER_EXT_IT9|External Line 9
+DAC_OutputBuffer_OUT1|DAC_OUTPUTBUFFER_ENABLE|Enable
+DAC_OutputBuffer_OUT1|DAC_OUTPUTBUFFER_DISABLE|Disable
+DAC_OutputBuffer_OUT2|DAC_OUTPUTBUFFER_ENABLE|Enable
+DAC_OutputBuffer_OUT2|DAC_OUTPUTBUFFER_DISABLE|Disable
+DAC2_OutputBuffer|DAC_OUTPUTBUFFER_ENABLE|Enable
+DAC2_OutputBuffer|DAC_OUTPUTBUFFER_DISABLE|Disable
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_1|1
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_3|3
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_7|7
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_15|15
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_31|31
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_63|63
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_127|127
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_255|255
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_511|511
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_1023|1023
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_2047|2047
+TriangleAmplitude|DAC_TRIANGLEAMPLITUDE_4095|4095
+NoiseAmplitude|DAC_LFSRUNMASK_BIT0|Unmask DAC channel LFSR bit0
+NoiseAmplitude|DAC_LFSRUNMASK_BITS1_0|Unmask DAC channel LFSR bits[1:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS2_0|Unmask DAC channel LFSR bits[2:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS3_0|Unmask DAC channel LFSR bits[3:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS4_0|Unmask DAC channel LFSR bits[4:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS5_0|Unmask DAC channel LFSR bits[5:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS6_0|Unmask DAC channel LFSR bits[6:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS7_0|Unmask DAC channel LFSR bits[7:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS8_0|Unmask DAC channel LFSR bits[8:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS9_0|Unmask DAC channel LFSR bits[9:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS10_0|Unmask DAC channel LFSR bits[10:0]
+NoiseAmplitude|DAC_LFSRUNMASK_BITS11_0|Unmask DAC channel LFSR bits[11:0]
+DAC1_ConnectOnChipPeripheral|DAC_CHIPCONNECT_INTERNAL|DAC_CHIPCONNECT_INTERNAL
+DAC1_ConnectOnChipPeripheral|DAC_CHIPCONNECT_BOTH|DAC_CHIPCONNECT_BOTH
+DAC1_ConnectOnChipPeripheral|DAC_CHIPCONNECT_EXTERNAL|DAC_CHIPCONNECT_EXTERNAL
+DAC2_ConnectOnChipPeripheral|DAC_CHIPCONNECT_INTERNAL|DAC_CHIPCONNECT_INTERNAL
+DAC2_ConnectOnChipPeripheral|DAC_CHIPCONNECT_BOTH|DAC_CHIPCONNECT_BOTH
+DAC2_ConnectOnChipPeripheral|DAC_CHIPCONNECT_EXTERNAL|DAC_CHIPCONNECT_EXTERNAL
+DAC_UserTrimming|DAC_TRIMMING_FACTORY|Factory trimming
+DAC_UserTrimming|DAC_TRIMMING_USER|User trimming
+DAC_SampleAndHold|DAC_SAMPLEANDHOLD_DISABLE|Normal Mode
+DAC_SampleAndHold|DAC_SAMPLEANDHOLD_ENABLE|Sample and Hold Mode
+Interrupt1|DAC_IT_DMAUDR1|Enable
+Interrupt2|DAC_IT_DMAUDR2|Enable

@@ -1,0 +1,403 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=TIM6_7L1
+Version=gptimer2_v2_x_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Prescaler|Prescaler (PSC - 16 bits value)|Counter Settings||0|65535|
+CounterMode|Counter Mode|Counter Settings||||
+Period|Counter Period (AutoReload Register - 16 bits value )|Counter Settings||0|4294967295|
+ClockDivision|Internal Clock Division (CKD)|Counter Settings||||
+RepetitionCounter|Repetition Counter (RCR - 8 bits value)|Counter Settings||0|255|
+AutoReloadPreload|auto-reload preload|Counter Settings||||
+Channel|Channel|||||
+Output_Channel|Output Channel|||||
+Input_Channel|Input Channel|||||
+TIM_OnePulse_Mode|One Pulse Mode|Counter Settings||||
+ClockSource|ClockSource|||||
+ClockPrescaler|Clock Prescaler|Clock||||
+ClockPolarity|Clock Polarity|Clock||||
+ClockFilter|Clock Filter (4 bits value)|Clock||0|15|
+Slave_TriggerPrescaler|Trigger Prescaler|Trigger||||
+Slave_TriggerPolarity|Trigger Polarity|Trigger||||
+Slave_TriggerFilter|Trigger Filter|Trigger||0|15|
+ICPolarity|Polarity Selection|||||
+ICPolarity_CH3|Polarity Selection|||||
+ICPolarity_CH4|Polarity Selection|||||
+ICPolarity_CH1|Polarity Selection|||||
+ICPolarity_CH2|Polarity Selection|||||
+ICPolarity_TRC|Polarity Selection|||||
+ICSelection|IC Selection|||||
+ICSelection_TRC|IC Selection|||||
+ICPrescaler|Prescaler Division Ratio|||||
+ICFilter|Input Filter (4 bits value)|||0|15|
+ICFilter_CH1|Input Filter (4 bits value)|||0|15|
+ICFilter_CH2|Input Filter (4 bits value)|||0|15|
+ICFilter_CH3|Input Filter (4 bits value)|||0|15|
+ICFilter_CH4|Input Filter (4 bits value)|||0|15|
+ICFilter_TRC_TI1|Input Filter (4 bits value)|||=Slave_TriggerFilter$TriggerSource_TI1ED|=Slave_TriggerFilter$TriggerSource_TI1ED|
+ICFilter_TRC_TI2|Input Filter (4 bits value)|||0|15|
+ICFilter_TRC_TI3|Input Filter (4 bits value)|||0|15|
+ICFilter_TRC_TI4|Input Filter (4 bits value)|||0|15|
+TIM_InputTrigger_List|Input Trigger|||||
+TIM_InputTrigger|TIM_InputTrigger|||||
+TIM_SlaveMode_List|Slave Mode Controller|Counter Settings||||
+TIM_SlaveMode|Slave Mode Controller|Counter Settings||||
+TIM_CommutationSource|Commutation source|Counter Settings||||
+ICPolarity_1|Polarity Selection|||||
+ICPolarity_2|Polarity Selection (opposite CH1)|||||
+ICSelection_1|IC Selection|||||
+ICSelection_2|IC Selection|||||
+ICPrescaler_1|Prescaler Division Ratio|||||
+ICPrescaler_2|Prescaler Division Ratio|||||
+ICFilter_1|Input Filter (4 bits value)|||0|15|
+ICFilter_2|Input Filter (4 bits value)|||0|15|
+Channel_1|Channel|||||
+Channel_2|Channel|||||
+Channel_3|Channel|||||
+Pulse|Pulse (32 bits value)|||0|65535|
+OCMode_PWM|Mode|||||
+OCFastMode_PWM|Fast Mode|||||
+DefaultOCFastMode|Fast Mode|||||
+OCMode_forced|Mode|||||
+Separateur-channel1-nonParameter|____ Parameters for Channel 1 ____|||||
+Separateur-channel2-nonParameter|____ Parameters for Channel 2 ____|||||
+Separateur-channel3-nonParameter|____ Parameters for Channel 3 ____|||||
+OCMode_1|Mode|||||
+OCMode_2|Mode|||||
+OCMode_3|Mode|||||
+OCMode_4|Mode|||||
+Pulse_1|Pulse (16 bits value)|||0|4294967295|
+Pulse_2|Pulse (16 bits value)|||0|4294967295|
+Pulse_3|Pulse (16 bits value)|||0|4294967295|
+OCPolarity_1|CH Polarity|||||
+OCPolarity_2|CH Polarity|||||
+OCPolarity_3|CH Polarity|||||
+OCPolarity_4|CH Polarity|||||
+OCNPolarity_1|CHN Polarity|||||
+OCNPolarity_2|CHN Polarity|||||
+OCNPolarity_3|CHN Polarity|||||
+OCIdleState_1|CH Idle State|||||
+OCIdleState_2|CH Idle State|||||
+OCIdleState_3|CH Idle State|||||
+OCIdleState_4|CH Idle State|||||
+OCNIdleState_1|CHN Idle State|||||
+OCNIdleState_2|CHN Idle State|||||
+OCNIdleState_3|CHN Idle State|||||
+OCNIdleState_4|CHN Idle State|||||
+OC1Preload|Output compare preload|||||
+OC2Preload|Output compare preload|||||
+OC3Preload|Output compare preload|||||
+OC4Preload|Output compare preload|||||
+OC5Preload|Output compare preload|||||
+OC6Preload|Output compare preload|||||
+OC1Preload_PWM|Output compare preload|||||
+OC2Preload_PWM|Output compare preload|||||
+OC3Preload_PWM|Output compare preload|||||
+OC4Preload_PWM|Output compare preload|||||
+OC5Preload_PWM|Output compare preload|||||
+OC6Preload_PWM|Output compare preload|||||
+EncoderMode|Encoder Mode|||||
+IC1Polarity|Polarity|||||
+IC1Selection|IC Selection|||||
+IC1Prescaler|Prescaler Division Ratio|||||
+IC1Filter|Input Filter|||0|15|
+IC2Polarity|Polarity|||||
+IC2Selection|IC Selection|||||
+IC2Prescaler|Prescaler Division Ratio|||||
+IC2Filter|Input Filter|||0|15|
+TIM_MasterOutputTrigger|Trigger Event Selection|Trigger Output (TRGO) Parameters||||
+TIM_MasterSlaveMode|Master/Slave Mode (MSM bit)|Trigger Output (TRGO) Parameters||||
+DeadTime|Dead Time|Break And Dead Time management - Output Configuration||0|255|
+OffStateRunMode|Off State Selection for Run Mode (OSSR)|Break And Dead Time management - Output Configuration||||
+OffStateIDLEMode|Off State Selection for Idle Mode (OSSI)|Break And Dead Time management - Output Configuration||||
+LockLevel|Lock Configuration|Break And Dead Time management - Output Configuration||||
+BreakState|BRK State|Break And Dead Time management - BRK Configuration||||
+BreakPolarity|BRK Polarity|Break And Dead Time management - BRK Configuration||||
+AutomaticOutput|Automatic Output State|Break And Dead Time management - Output Configuration||||
+ClearInputState|Clear Input State|Clear Input||||
+ClearInputSource|Clear Input Source|Clear Input||||
+ClearInputPolarity|Clear Input Polarity|Clear Input||||
+ClearInputPrescaler|Clear Input Prescaler|Clear Input||||
+ClearInputFilter|Clear Input Filter|Clear Input||0|15|
+ClearChannel__1|Clear Channel 1|Clear Input||||
+ClearChannel1|Clear Channel 1|Clear Input||||
+ClearChannel__2|Clear Channel 2|Clear Input||||
+ClearChannel2|Clear Channel 2|Clear Input||||
+ClearChannel__3|Clear Channel 3|Clear Input||||
+ClearChannel3|Clear Channel 3|Clear Input||||
+ClearChannel__4|Clear Channel 4|Clear Input||||
+ClearChannel4|Clear Channel 4|Clear Input||||
+Commutation_Delay|Commutation Delay|||0|65535|
+TI1_Selection|TI1_Selection|||||
+TIM9_TI1_REMAP|TI1 remap capabilities for TIM9|TI1 remap capabilities for TIM9||||
+TIM10_TI1_REMAP|TI1 remap capabilities for TIM10|TI1 remap capabilities for TIM10||||
+TIM11_TI1_REMAP|TI1 remap capabilities for TIM11|TI1 remap capabilities for TIM11||||
+TIM9_GLOBAL_REMAP|TIM9 global|rien||||
+TIM10_GLOBAL_REMAP|TIM10 global|rien||||
+TIM11_GLOBAL_REMAP|TIM11 global|rien||||
+
+[Values]
+# параметр|значение|подпись
+CounterMode|TIM_COUNTERMODE_UP|Up
+CounterMode|TIM_COUNTERMODE_DOWN|Down
+CounterMode|TIM_COUNTERMODE_CENTERALIGNED1|Center Aligned mode1
+CounterMode|TIM_COUNTERMODE_CENTERALIGNED2|Center Aligned mode2
+CounterMode|TIM_COUNTERMODE_CENTERALIGNED3|Center Aligned mode3
+ClockDivision|TIM_CLOCKDIVISION_DIV1|No Division
+ClockDivision|TIM_CLOCKDIVISION_DIV2|Division by 2
+ClockDivision|TIM_CLOCKDIVISION_DIV4|Division by 4
+AutoReloadPreload|TIM_AUTORELOAD_PRELOAD_DISABLE|Disable
+AutoReloadPreload|TIM_AUTORELOAD_PRELOAD_ENABLE|Enable
+Channel|TIM_CHANNEL_1|Channel 1
+Channel|TIM_CHANNEL_2|Channel 2
+Channel|TIM_CHANNEL_3|Channel 3
+Channel|TIM_CHANNEL_4|Channel 4
+Output_Channel|TIM_CHANNEL_1|Channel 1
+Output_Channel|TIM_CHANNEL_2|Channel 2
+Output_Channel|TIM_CHANNEL_3|Channel 3
+Output_Channel|TIM_CHANNEL_4|Channel 4
+Output_Channel|TIM_CHANNEL_ALL|All
+Input_Channel|TIM_CHANNEL_1|Channel 1
+Input_Channel|TIM_CHANNEL_2|Channel 2
+Input_Channel|TIM_CHANNEL_3|Channel 3
+Input_Channel|TIM_CHANNEL_4|Channel 4
+Input_Channel|TIM_CHANNEL_ALL|All
+TIM_OnePulse_Mode|TIM_OPMODE_SINGLE|Single Mode
+ClockSource|TIM_CLOCKSOURCE_INTERNAL|clock_internal
+ClockSource|TIM_CLOCKSOURCE_ITR0|clock_ITR0
+ClockSource|TIM_CLOCKSOURCE_ITR1|clock_ITR1
+ClockSource|TIM_CLOCKSOURCE_ITR2|clock_ITR2
+ClockSource|TIM_CLOCKSOURCE_ITR3|clock_ITR3
+ClockSource|TIM_CLOCKSOURCE_ETRMODE1|clock_ETR1
+ClockSource|TIM_CLOCKSOURCE_ETRMODE2|clock_ETR2
+ClockSource|TIM_CLOCKSOURCE_TI1ED|clock_TI1ED
+ClockSource|TIM_CLOCKSOURCE_TI1|clock_TI1FP1
+ClockSource|TIM_CLOCKSOURCE_TI2|clock_TI2FP2
+ClockPrescaler|TIM_CLOCKPRESCALER_DIV1|Prescaler not used
+ClockPrescaler|TIM_CLOCKPRESCALER_DIV2|Capture performed once every 2 events
+ClockPrescaler|TIM_CLOCKPRESCALER_DIV4|Capture performed once every 4 events
+ClockPrescaler|TIM_CLOCKPRESCALER_DIV8|Capture performed once every 8 events
+ClockPolarity|TIM_CLOCKPOLARITY_RISING|Rising Edge
+ClockPolarity|TIM_CLOCKPOLARITY_FALLING|Falling Edge
+ClockPolarity|TIM_CLOCKPOLARITY_BOTHEDGE|Both Edges
+ClockPolarity|TIM_CLOCKPOLARITY_INVERTED|Inverted
+ClockPolarity|TIM_CLOCKPOLARITY_NONINVERTED|non inverted
+Slave_TriggerPrescaler|TIM_TRIGGERPRESCALER_DIV1|Prescaler not used
+Slave_TriggerPrescaler|TIM_TRIGGERPRESCALER_DIV2|Capture performed once every 2 events
+Slave_TriggerPrescaler|TIM_TRIGGERPRESCALER_DIV4|Capture performed once every 4 events
+Slave_TriggerPrescaler|TIM_TRIGGERPRESCALER_DIV8|Capture performed once every 8 events
+Slave_TriggerPolarity|TIM_TRIGGERPOLARITY_RISING|Rising Edge
+Slave_TriggerPolarity|TIM_TRIGGERPOLARITY_FALLING|Falling Edge
+Slave_TriggerPolarity|TIM_TRIGGERPOLARITY_BOTHEDGE|Both Edges
+Slave_TriggerPolarity|TIM_TRIGGERPOLARITY_INVERTED|Inverted
+Slave_TriggerPolarity|TIM_TRIGGERPOLARITY_NONINVERTED|non inverted
+ICPolarity|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICPolarity|TIM_INPUTCHANNELPOLARITY_FALLING|Falling Edge
+ICPolarity|TIM_INPUTCHANNELPOLARITY_BOTHEDGE|Both Edges
+ICPolarity_CH3|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICPolarity_CH3|TIM_INPUTCHANNELPOLARITY_FALLING|Falling Edge
+ICPolarity_CH3|TIM_INPUTCHANNELPOLARITY_BOTHEDGE|Both Edges
+ICPolarity_CH4|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICPolarity_CH4|TIM_INPUTCHANNELPOLARITY_FALLING|Falling Edge
+ICPolarity_CH4|TIM_INPUTCHANNELPOLARITY_BOTHEDGE|Both Edges
+ICPolarity_CH1|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICPolarity_CH1|TIM_INPUTCHANNELPOLARITY_FALLING|Falling Edge
+ICPolarity_CH1|TIM_INPUTCHANNELPOLARITY_BOTHEDGE|Both Edges
+ICPolarity_CH2|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICPolarity_CH2|TIM_INPUTCHANNELPOLARITY_FALLING|Falling Edge
+ICPolarity_CH2|TIM_INPUTCHANNELPOLARITY_BOTHEDGE|Both Edges
+ICPolarity_TRC|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICSelection|TIM_ICSELECTION_DIRECTTI|Direct
+ICSelection|TIM_ICSELECTION_INDIRECTTI|Indirect
+ICSelection|TIM_ICSELECTION_TRC|TRC
+ICSelection_TRC|TIM_ICSELECTION_TRC|TRC
+ICPrescaler|TIM_ICPSC_DIV1|No division
+ICPrescaler|TIM_ICPSC_DIV2|Division by 2
+ICPrescaler|TIM_ICPSC_DIV4|Division by 4
+ICPrescaler|TIM_ICPSC_DIV8|Division by 8
+TIM_InputTrigger_List|TIM_TS_ITR0|ITR0
+TIM_InputTrigger_List|TIM_TS_ITR1|ITR1
+TIM_InputTrigger_List|TIM_TS_ITR2|ITR2
+TIM_InputTrigger_List|TIM_TS_ITR3|ITR3
+TIM_InputTrigger_List|TIM_TS_TI1F_ED|TI1F_ED
+TIM_InputTrigger_List|TIM_TS_TI1FP1|TI1FP1
+TIM_InputTrigger_List|TIM_TS_TI2FP2|TI2FP2
+TIM_InputTrigger_List|TIM_TS_ETRF|ETR
+TIM_InputTrigger|TIM_TS_ITR0|from ITR0
+TIM_InputTrigger|TIM_TS_ITR1|from ITR1
+TIM_InputTrigger|TIM_TS_ITR2|from ITR2
+TIM_InputTrigger|TIM_TS_ITR3|from ITR3
+TIM_InputTrigger|TIM_TS_ITR4|from ITR4
+TIM_InputTrigger|TIM_TS_ITR5|from ITR5
+TIM_InputTrigger|TIM_TS_ITR6|from ITR6
+TIM_InputTrigger|TIM_TS_ITR7|from ITR7
+TIM_InputTrigger|TIM_TS_ITR8|from ITR8
+TIM_InputTrigger|TIM_TS_ITR9|from ITR9
+TIM_InputTrigger|TIM_TS_ITR10|from ITR10
+TIM_InputTrigger|TIM_TS_ITR11|from ITR11
+TIM_InputTrigger|TIM_TS_ITR12|from ITR12
+TIM_InputTrigger|TIM_TS_ITR13|from ITR13
+TIM_InputTrigger|TIM_TS_TI1F_ED|from TI1F_ED
+TIM_InputTrigger|TIM_TS_TI1FP1|from TI1FP1
+TIM_InputTrigger|TIM_TS_TI2FP2|from TI2FP2
+TIM_InputTrigger|TIM_TS_ETRF|from ETR
+TIM_SlaveMode_List|TIM_SLAVEMODE_DISABLE|Disable Mode
+TIM_SlaveMode_List|TIM_SLAVEMODE_RESET|Reset Mode
+TIM_SlaveMode_List|TIM_SLAVEMODE_GATED|Gated Mode
+TIM_SlaveMode_List|TIM_SLAVEMODE_TRIGGER|Trigger Mode
+TIM_SlaveMode_List|TIM_SLAVEMODE_EXTERNAL1|External Clock Mode 1
+TIM_SlaveMode|TIM_SLAVEMODE_RESET|Reset Mode
+TIM_SlaveMode|TIM_SLAVEMODE_GATED|Gated Mode
+TIM_SlaveMode|TIM_SLAVEMODE_TRIGGER|Trigger Mode
+TIM_SlaveMode|TIM_SLAVEMODE_EXTERNAL1|ETR mode 1
+TIM_SlaveMode|TIM_SLAVEMODE_COMBINED_RESETTRIGGER|Combined Reset Trigger mode
+TIM_SlaveMode|TIM_SLAVEMODE_DISABLE|Slave mode disable
+TIM_CommutationSource|TIM_COMMUTATION_TRGI|TRGI Event
+TIM_CommutationSource|TIM_COMMUTATION_SOFTWARE|Software Event
+ICPolarity_1|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICPolarity_1|TIM_INPUTCHANNELPOLARITY_FALLING|Falling Edge
+ICPolarity_2|TIM_INPUTCHANNELPOLARITY_FALLING|Falling Edge
+ICPolarity_2|TIM_INPUTCHANNELPOLARITY_RISING|Rising Edge
+ICSelection_1|TIM_ICSELECTION_DIRECTTI|Direct
+ICSelection_1|TIM_ICSELECTION_INDIRECTTI|Indirect
+ICSelection_2|TIM_ICSELECTION_INDIRECTTI|Indirect
+ICSelection_2|TIM_ICSELECTION_DIRECTTI|Direct
+ICPrescaler_1|TIM_ICPSC_DIV1|No division
+ICPrescaler_2|TIM_ICPSC_DIV1|No division
+Channel_1|TIM_CHANNEL_1|Channel 1
+Channel_2|TIM_CHANNEL_2|Channel 2
+Channel_3|TIM_CHANNEL_3|Channel 3
+OCMode_PWM|TIM_OCMODE_PWM1|PWM mode 1
+OCMode_PWM|TIM_OCMODE_PWM2|PWM mode 2
+OCFastMode_PWM|TIM_OCFAST_DISABLE|Disable
+OCFastMode_PWM|TIM_OCFAST_ENABLE|Enable
+DefaultOCFastMode|TIM_OCFAST_DISABLE|Disable
+OCMode_forced|TIM_OCMODE_FORCED_ACTIVE|Forced Active
+OCMode_forced|TIM_OCMODE_FORCED_INACTIVE|Forced Inactive
+OCMode_1|TIM_OCMODE_TIMING|Frozen (used for Timing base)
+OCMode_1|TIM_OCMODE_ACTIVE|Active Level on match
+OCMode_1|TIM_OCMODE_INACTIVE|Inactive Level on match
+OCMode_1|TIM_OCMODE_TOGGLE|Toggle on match
+OCMode_1|TIM_OCMODE_FORCED_ACTIVE|Forced Active
+OCMode_1|TIM_OCMODE_FORCED_INACTIVE|Forced Inactive
+OCMode_2|TIM_OCMODE_TIMING|Frozen (used for Timing base)
+OCMode_2|TIM_OCMODE_ACTIVE|Active Level on match
+OCMode_2|TIM_OCMODE_INACTIVE|Inactive Level on match
+OCMode_2|TIM_OCMODE_TOGGLE|Toggle on match
+OCMode_2|TIM_OCMODE_FORCED_ACTIVE|Forced Active
+OCMode_2|TIM_OCMODE_FORCED_INACTIVE|Forced Inactive
+OCMode_3|TIM_OCMODE_TIMING|Frozen (used for Timing base)
+OCMode_3|TIM_OCMODE_ACTIVE|Active Level on match
+OCMode_3|TIM_OCMODE_INACTIVE|Inactive Level on match
+OCMode_3|TIM_OCMODE_TOGGLE|Toggle on match
+OCMode_3|TIM_OCMODE_FORCED_ACTIVE|Forced Active
+OCMode_3|TIM_OCMODE_FORCED_INACTIVE|Forced Inactive
+OCMode_4|TIM_OCMODE_TIMING|Frozen (used for Timing base)
+OCMode_4|TIM_OCMODE_ACTIVE|Active Level on match
+OCMode_4|TIM_OCMODE_INACTIVE|Inactive Level on match
+OCMode_4|TIM_OCMODE_TOGGLE|Toggle on match
+OCMode_4|TIM_OCMODE_FORCED_ACTIVE|Forced Active
+OCMode_4|TIM_OCMODE_FORCED_INACTIVE|Forced Inactive
+OCPolarity_1|TIM_OCPOLARITY_HIGH|High
+OCPolarity_1|TIM_OCPOLARITY_LOW|Low
+OCPolarity_2|TIM_OCPOLARITY_HIGH|High
+OCPolarity_2|TIM_OCPOLARITY_LOW|Low
+OCPolarity_3|TIM_OCPOLARITY_HIGH|High
+OCPolarity_3|TIM_OCPOLARITY_LOW|Low
+OCPolarity_4|TIM_OCPOLARITY_HIGH|High
+OCPolarity_4|TIM_OCPOLARITY_LOW|Low
+OCNPolarity_1|TIM_OCNPOLARITY_HIGH|High
+OCNPolarity_1|TIM_OCNPOLARITY_LOW|Low
+OCNPolarity_2|TIM_OCNPOLARITY_HIGH|High
+OCNPolarity_2|TIM_OCNPOLARITY_LOW|Low
+OCNPolarity_3|TIM_OCNPOLARITY_HIGH|High
+OCNPolarity_3|TIM_OCNPOLARITY_LOW|Low
+OCIdleState_1|TIM_OCIDLESTATE_SET|Set
+OCIdleState_1|TIM_OCIDLESTATE_RESET|Reset
+OCIdleState_2|TIM_OCIDLESTATE_SET|Set
+OCIdleState_2|TIM_OCIDLESTATE_RESET|Reset
+OCIdleState_3|TIM_OCIDLESTATE_SET|Set
+OCIdleState_3|TIM_OCIDLESTATE_RESET|Reset
+OCIdleState_4|TIM_OCIDLESTATE_SET|Set
+OCIdleState_4|TIM_OCIDLESTATE_RESET|Reset
+OCNIdleState_1|TIM_OCNIDLESTATE_SET|Set
+OCNIdleState_1|TIM_OCNIDLESTATE_RESET|Reset
+OCNIdleState_2|TIM_OCNIDLESTATE_SET|Set
+OCNIdleState_2|TIM_OCNIDLESTATE_RESET|Reset
+OCNIdleState_3|TIM_OCNIDLESTATE_SET|Set
+OCNIdleState_3|TIM_OCNIDLESTATE_RESET|Reset
+OCNIdleState_4|TIM_OCNIDLESTATE_SET|Set
+OCNIdleState_4|TIM_OCNIDLESTATE_RESET|Reset
+EncoderMode|TIM_ENCODERMODE_TI1|Encoder Mode TI1
+EncoderMode|TIM_ENCODERMODE_TI2|Encoder Mode TI2
+EncoderMode|TIM_ENCODERMODE_TI12|Encoder Mode TI1 and TI2
+IC1Polarity|TIM_ICPOLARITY_RISING|Rising Edge
+IC1Polarity|TIM_ICPOLARITY_FALLING|Falling Edge
+IC1Polarity|TIM_ICPOLARITY_BOTHEDGE|Both Edges
+IC1Selection|TIM_ICSELECTION_DIRECTTI|Direct
+IC1Prescaler|TIM_ICPSC_DIV1|No division
+IC1Prescaler|TIM_ICPSC_DIV2|Division by 2
+IC1Prescaler|TIM_ICPSC_DIV4|Division by 4
+IC1Prescaler|TIM_ICPSC_DIV8|Division by 8
+IC2Polarity|TIM_ICPOLARITY_RISING|Rising Edge
+IC2Polarity|TIM_ICPOLARITY_FALLING|Falling Edge
+IC2Polarity|TIM_ICPOLARITY_BOTHEDGE|Both Edges
+IC2Selection|TIM_ICSELECTION_DIRECTTI|Direct
+IC2Prescaler|TIM_ICPSC_DIV1|No division
+IC2Prescaler|TIM_ICPSC_DIV2|Division by 2
+IC2Prescaler|TIM_ICPSC_DIV4|Division by 4
+IC2Prescaler|TIM_ICPSC_DIV8|Division by 8
+TIM_MasterOutputTrigger|TIM_TRGO_RESET|Reset (UG bit from TIMx_EGR)
+TIM_MasterOutputTrigger|TIM_TRGO_ENABLE|Enable (CNT_EN)
+TIM_MasterOutputTrigger|TIM_TRGO_UPDATE|Update Event
+TIM_MasterOutputTrigger|TIM_TRGO_OC1|Compare Pulse (OC1)
+TIM_MasterOutputTrigger|TIM_TRGO_OC1REF|Output Compare (OC1REF)
+TIM_MasterOutputTrigger|TIM_TRGO_OC2REF|Output Compare (OC2REF)
+TIM_MasterOutputTrigger|TIM_TRGO_OC3REF|Output Compare (OC3REF)
+TIM_MasterOutputTrigger|TIM_TRGO_OC4REF|Output Compare (OC4REF)
+TIM_MasterSlaveMode|TIM_MASTERSLAVEMODE_DISABLE|Disable (Trigger input effect not delayed)
+TIM_MasterSlaveMode|TIM_MASTERSLAVEMODE_ENABLE|Enable (Trigger delayed for master/slaves simultaneous start)
+OffStateRunMode|TIM_OSSR_DISABLE|Disable
+OffStateRunMode|TIM_OSSR_ENABLE|Enable
+OffStateIDLEMode|TIM_OSSI_DISABLE|Disable
+OffStateIDLEMode|TIM_OSSI_ENABLE|Enable
+LockLevel|TIM_LOCKLEVEL_OFF|Off
+LockLevel|TIM_LOCKLEVEL_1|Lock Level 1
+LockLevel|TIM_LOCKLEVEL_2|Lock Level 2
+LockLevel|TIM_LOCKLEVEL_3|Lock Level 3
+BreakState|TIM_BREAK_DISABLE|Disable
+BreakState|TIM_BREAK_ENABLE|Enable
+BreakPolarity|TIM_BREAKPOLARITY_HIGH|High
+BreakPolarity|TIM_BREAKPOLARITY_LOW|Low
+AutomaticOutput|TIM_AUTOMATICOUTPUT_DISABLE|Disable
+AutomaticOutput|TIM_AUTOMATICOUTPUT_ENABLE|Enable
+ClearInputSource|TIM_CLEARINPUTSOURCE_NONE|Disable
+ClearInputSource|TIM_CLEARINPUTSOURCE_ETR|Enable
+ClearInputPolarity|TIM_CLEARINPUTPOLARITY_NONINVERTED|Non inverted
+ClearInputPolarity|TIM_CLEARINPUTPOLARITY_INVERTED|Inverted
+ClearInputPrescaler|TIM_CLEARINPUTPRESCALER_DIV1|No division
+ClearInputPrescaler|TIM_CLEARINPUTPRESCALER_DIV2|Division by 2
+ClearInputPrescaler|TIM_CLEARINPUTPRESCALER_DIV4|Division by 4
+ClearInputPrescaler|TIM_CLEARINPUTPRESCALER_DIV8|Division by 8
+ClearChannel__1|TIM_CHANNEL_1|Enable
+ClearChannel1|TIM_CHANNEL_1|Enable
+ClearChannel__2|TIM_CHANNEL_2|Enable
+ClearChannel2|TIM_CHANNEL_2|Enable
+ClearChannel__3|TIM_CHANNEL_3|Enable
+ClearChannel3|TIM_CHANNEL_3|Enable
+ClearChannel__4|TIM_CHANNEL_4|Enable
+ClearChannel4|TIM_CHANNEL_4|Enable
+TI1_Selection|TIM_TI1SELECTION_XORCOMBINATION|XOR enabled
+TI1_Selection|TIM_TI1SELECTION_CH1|XOR disabled
+TIM9_TI1_REMAP|TIM_TIM9_GPIO|TIM9 Channel1 is connected to GPIO
+TIM9_TI1_REMAP|TIM_TIM9_LSE|TIM9 Channel1 is connected to LSE internal clock
+TIM10_TI1_REMAP|TIM_TIM10_GPIO|TIM10 Channel1 is connected to GPIO
+TIM10_TI1_REMAP|TIM_TIM10_LSI|TIM10 Channel1 is connected to LSI internal clock
+TIM10_TI1_REMAP|TIM_TIM10_LSE|TIM10 Channel1 is connected to LSE internal clock
+TIM10_TI1_REMAP|TIM_TIM10_RTC|TIM10 Channel1 is connected to RTC wakeup interrupt
+TIM11_TI1_REMAP|TIM_TIM11_GPIO|TIM11 Channel1 is connected to GPIO
+TIM11_TI1_REMAP|TIM_TIM11_MSI|TIM11 Channel1 is connected to MSI internal clock
+TIM11_TI1_REMAP|TIM_TIM11_HSE_RTC|TIM11 Channel1 is connected to HSE_RTC clock

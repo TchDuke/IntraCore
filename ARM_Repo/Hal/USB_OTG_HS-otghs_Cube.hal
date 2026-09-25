@@ -1,0 +1,53 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USB_OTG_HS
+Version=otghs_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+dev_endpoints|Device endpoints number|||1|8|
+Host_channels|Host Channels|USB_OTG_Host_Configuration||1|16|
+RefClockSelection|Ref Clock Selection|OTG PHY reference clock selection||||
+VirtualMode||||||
+speed|Speed_Host|USB_OTG_Host_Configuration||||
+DeviceSpeed|Speed|USB_OTG_Device_Configuration||||
+dma_enable_host|Enable internal IP DMA Host|USB_OTG_Host_Configuration||||
+dma_enable|Enable internal IP DMA Device|USB_OTG_Device_Configuration||||
+ep0_mps|Endpoint 0 Max Packet size|||||
+phy_itface|Physical interface|USB_OTG_Device_Configuration||||
+Sof_enable|Signal start of frame|USB_OTG_Device_Configuration||||
+lpm_enable|Link Power Management|||||
+low_power_enable|Low power|USB_OTG_Device_Configuration||||
+battery_charging_enable|Battery charging|USB_OTG_Device_Configuration||||
+vbus_sensing_enable|VBUS sensing|USB_OTG_Device_Configuration||||
+use_dedicated_ep1|Use dedicated endpoint 1 interrupt|USB_OTG_Device_Configuration||||
+use_external_vbus_host|Use external vbus|USB_OTG_Host_Configuration||||
+use_external_vbus|Use external vbus|||||
+
+[Values]
+# параметр|значение|подпись
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_1|16 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_2|19.2 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_3|20 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_4|24 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_5|26 Mhz
+RefClockSelection|SYSCFG_OTG_HS_PHY_CLK_SELECT_6|32 Mhz
+VirtualMode|Host_HS|
+VirtualMode|Device_HS|
+VirtualMode|Host_FS|
+VirtualMode|Device_Only_FS|
+VirtualMode|Device_DP_DM_FS|
+speed|HCD_SPEED_HIGH|Host High Speed 480MBit/s
+speed|HCD_SPEED_FULL|Host Full Speed 12MBit/s
+speed|HCD_SPEED_LOW|Host Low Speed 1.5MBit/s
+DeviceSpeed|PCD_SPEED_HIGH|Device High Speed 480MBit/s
+DeviceSpeed|PCD_SPEED_FULL|Device Full Speed 12MBit/s
+DeviceSpeed|PCD_SPEED_LOW|Low Speed 1.5MBit/s
+ep0_mps|DEP0CTL_MPS_64|64 Bytes
+ep0_mps|DEP0CTL_MPS_32|32 Bytes
+ep0_mps|DEP0CTL_MPS_16|16 Bytes
+ep0_mps|DEP0CTL_MPS_8|8 Bytes
+phy_itface|USB_OTG_ULPI_PHY|External Phy
+phy_itface|USB_OTG_EMBEDDED_PHY|Internal Phy
+phy_itface|USB_OTG_HS_EMBEDDED_PHY|Internal HS Phy

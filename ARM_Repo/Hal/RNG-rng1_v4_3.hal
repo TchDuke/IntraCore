@@ -1,0 +1,14 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RNG
+Version=rng1_v4_3
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockErrorDetection|Clock Error Detection|||||
+
+[Values]
+# параметр|значение|подпись
+ClockErrorDetection|RNG_CED_DISABLE|Disable
+ClockErrorDetection|RNG_CED_ENABLE|Enable

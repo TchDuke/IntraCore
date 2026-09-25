@@ -1,0 +1,298 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=PWR
+Version=STM32U5_pwr_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PVDLevel|PVD detection Level|||||
+Mode|PWR PVD Mode|||||Mode: Specifies the PVD trigger mode.
+pwrPrivilegeSecure|Privilege of PWR Secure Items|Privilege PWR||||
+pwrPrivilegeNSecure|Privilege of PWR Non-Secure Items|Privilege PWR||||
+pwrPrivilege|PWR Privilege|Privilege PWR||||
+pwrSecureFull|PWR full secure|Secure PWR||||
+PWR_WKUP1|Wake-Up 1 secure protection|Secure PWR||||
+PWR_WKUP2|Wake-Up 2 secure protection|Secure PWR||||
+PWR_WKUP3|Wake-Up 3 secure protection|Secure PWR||||
+PWR_WKUP4|Wake-Up 4 secure protection|Secure PWR||||
+PWR_WKUP5|Wake-Up 5 secure protection|Secure PWR||||
+PWR_WKUP6|Wake-Up 6 secure protection|Secure PWR||||
+PWR_WKUP7|Wake-Up 7 secure protection|Secure PWR||||
+PWR_WKUP8|Wake-Up 8 secure protection|Secure PWR||||
+PWR_VDM|Voltage detection and monitoring secure protection|Secure PWR||||
+PWR_LPM|Low power modes secure protection|Secure PWR||||
+PWR_VB|Backup domain secure protection|Secure PWR||||
+PWR_APC|Pull-up/pull-down secure protection|Secure PWR||||
+HighImpedanceMode|High impedance mode|||||
+VoltageScaling|Internal Voltage reference scale|||||
+TrimmingMode|Trimming Mode|||||
+TrimmingValue|Trimming Value|||0|63|
+DisableDeadBatterySignalsConfig|UCPD Disable Dead Battery Signals|||||
+smpsCodegenSys|System power supply Call in MX_SystemPower_Config()|System||||
+pwrCodegenSys|Dead battery signals Call in MX_SystemPower_Config()|System||||
+sramCodegenSys|SRAM power down in Stop mode Call in MX_SystemPower_Config()|RAM||||
+wakeCodegenSys|SRAM fast wakeup Call in MX_SystemPower_Config()|RAM||||
+smartCodegenSys|Smart run domain in Run mode Call in MX_SystemPower_Config()|RAM||||
+SRAM1PowerDownInRunMode|SRAM1 power down in Run mode|SRAM power down in Run mode||||
+SRAM2PowerDownInRunMode|SRAM2 power down in Run mode|SRAM power down in Run mode||||
+SRAM3PowerDownInRunMode|SRAM3 power down in Run mode|SRAM power down in Run mode||||
+SRAM4PowerDownInRunMode|SRAM4 power down in Run mode|SRAM power down in Run mode||||
+SRAM5PowerDownInRunMode|SRAM5 power down in Run mode|SRAM power down in Run mode||||
+SRAM6PowerDownInRunMode|SRAM6 power down in Run mode|SRAM power down in Run mode||||
+SRAM1PowerDownInStopMode|SRAM1 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page1PowerDownInStopMode|SRAM1 Page1 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page2PowerDownInStopMode|SRAM1 Page2 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page3PowerDownInStopMode|SRAM1 Page3 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page4PowerDownInStopMode|SRAM1 Page4 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page5PowerDownInStopMode|SRAM1 Page5 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page6PowerDownInStopMode|SRAM1 Page6 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page7PowerDownInStopMode|SRAM1 Page7 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page8PowerDownInStopMode|SRAM1 Page8 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page9PowerDownInStopMode|SRAM1 Page9 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page10PowerDownInStopMode|SRAM1 Page10 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page11PowerDownInStopMode|SRAM1 Page11 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM1Page12PowerDownInStopMode|SRAM1 Page12 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+SRAM2PowerDownInStopMode|SRAM2 power down in Stop (0, 1, 2) mode|SRAM power down in Stop mode||||
+RAM2Page1PowerDownInStopMode|SRAM2 Page1 power down in Stop (0, 1, 2) mode|SRAM power down in Stop mode||||
+RAM2Page2PowerDownInStopMode|SRAM2 Page2 power down in Stop (0, 1, 2) mode|SRAM power down in Stop mode||||
+SRAM3PowerDownInStopMode|SRAM3 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page1PowerDownInStopMode|SRAM3 Page1 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page2PowerDownInStopMode|SRAM3 Page2 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page3PowerDownInStopMode|SRAM3 Page3 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page4PowerDownInStopMode|SRAM3 Page4 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page5PowerDownInStopMode|SRAM3 Page5 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page6PowerDownInStopMode|SRAM3 Page6 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page7PowerDownInStopMode|SRAM3 Page7 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page8PowerDownInStopMode|SRAM3 Page8 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page9PowerDownInStopMode|SRAM3 Page9 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page10PowerDownInStopMode|SRAM3 Page10 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page11PowerDownInStopMode|SRAM3 Page11 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page12PowerDownInStopMode|SRAM3 Page12 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM3Page13PowerDownInStopMode|SRAM3 Page13 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+SRAM4PowerDownInStopMode|SRAM4 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page1PowerDownInStopMode|SRAM5 Page1 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page2PowerDownInStopMode|SRAM5 Page2 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page3PowerDownInStopMode|SRAM5 Page3 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page4PowerDownInStopMode|SRAM5 Page4 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page5PowerDownInStopMode|SRAM5 Page5 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page6PowerDownInStopMode|SRAM5 Page6 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page7PowerDownInStopMode|SRAM5 Page7 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page8PowerDownInStopMode|SRAM5 Page8 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page9PowerDownInStopMode|SRAM5 Page9 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page10PowerDownInStopMode|SRAM5 Page10 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page11PowerDownInStopMode|SRAM5 Page11 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page12PowerDownInStopMode|SRAM5 Page12 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM5Page13PowerDownInStopMode|SRAM5 Page13 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page1PowerDownInStopMode|SRAM6 Page1 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page2PowerDownInStopMode|SRAM6 Page2 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page3PowerDownInStopMode|SRAM6 Page3 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page4PowerDownInStopMode|SRAM6 Page4 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page5PowerDownInStopMode|SRAM6 Page5 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page6PowerDownInStopMode|SRAM6 Page6 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page7PowerDownInStopMode|SRAM6 Page7 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+RAM6Page8PowerDownInStopMode|SRAM6 Page8 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+IcachePowerDownInStopMode|ICACHE power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+Dcache1PowerDownInStopMode|DCACHE1 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+Dcache2PowerDownInStopMode|DCACHE2 power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+DMA2DPowerDownInStopMode|DMA2D RAM power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+JPEGPowerDownInStopMode|JPEG RAM power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+PKA32RAMPowerDownInStopMode|PKA32 RAM power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+PeriphPowerDownInStopMode|PERIPH RAM power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+GRAPHICPRAMPowerDownInStopMode|GRAPHIC PRAM power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+DSIRAMPowerDownInStopMode|DSI RAM power down in Stop (0, 1, 2, 3) mode|SRAM power down in Stop mode||||
+SRAM4FastDownInRunMode|SRAM4 fast wakeup from Stop (0, 1, 2, 3) modes|SRAM fast wakeup||||
+PowerMode|Power Regulator|System power supply||||
+SmartRun|Keep Smart Run Domain Running|SmartRun domain in Run mode||||
+
+[Values]
+# параметр|значение|подпись
+PVDLevel|PWR_PVDLEVEL_7|PWR PVD LEVEL 7
+PVDLevel|PWR_PVDLEVEL_0|PWR PVD LEVEL 0 (2.0 V)
+PVDLevel|PWR_PVDLEVEL_1|PWR PVD LEVEL 1 (2.2 V)
+PVDLevel|PWR_PVDLEVEL_2|PWR PVD LEVEL 2 (2.4 V)
+PVDLevel|PWR_PVDLEVEL_3|PWR PVD LEVEL 3 (2.5 V)
+PVDLevel|PWR_PVDLEVEL_4|PWR PVD LEVEL 4 (2.6 V)
+PVDLevel|PWR_PVDLEVEL_5|PWR PVD LEVEL 5 (2.8 V)
+PVDLevel|PWR_PVDLEVEL_6|PWR PVD LEVEL 6 (2.9 V)
+Mode|PWR_PVD_MODE_NORMAL|basic mode is used
+Mode|PWR_PVD_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING|Event Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_FALLING|Event Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING_FALLING|Event Mode with Rising/Falling edge trigger detection
+pwrPrivilegeSecure|PWR_PRIVILEGE_SECURE_YES|Enable
+pwrPrivilegeSecure|PWR_PRIVILEGE_SECURE_NO|Disable
+pwrPrivilegeNSecure|PWR_PRIVILEGE_NSECURE_YES|Enable
+pwrPrivilegeNSecure|PWR_PRIVILEGE_NSECURE_NO|Disable
+pwrPrivilege|PWR_PRIVILEGE_YES|Enable
+pwrPrivilege|PWR_PRIVILEGE_NO|Disable
+pwrSecureFull|PWR_SECURE_FULL_YES|Enable
+pwrSecureFull|PWR_SECURE_FULL_NO|Disable
+PWR_WKUP1|WKUP1_SECURE_YES|Enable
+PWR_WKUP1|WKUP1_SECURE_NO|Disable
+PWR_WKUP2|WKUP2_SECURE_YES|Enable
+PWR_WKUP2|WKUP2_SECURE_NO|Disable
+PWR_WKUP3|WKUP3_SECURE_YES|Enable
+PWR_WKUP3|WKUP3_SECURE_NO|Disable
+PWR_WKUP4|WKUP4_SECURE_YES|Enable
+PWR_WKUP4|WKUP4_SECURE_NO|Disable
+PWR_WKUP5|WKUP5_SECURE_YES|Enable
+PWR_WKUP5|WKUP5_SECURE_NO|Disable
+PWR_WKUP6|WKUP6_SECURE_YES|Enable
+PWR_WKUP6|WKUP6_SECURE_NO|Disable
+PWR_WKUP7|WKUP7_SECURE_YES|Enable
+PWR_WKUP7|WKUP7_SECURE_NO|Disable
+PWR_WKUP8|WKUP8_SECURE_YES|Enable
+PWR_WKUP8|WKUP8_SECURE_NO|Disable
+PWR_VDM|VDM_SECURE_YES|Enable
+PWR_VDM|VDM_SECURE_NO|Disable
+PWR_LPM|LPM_SECURE_YES|Enable
+PWR_LPM|LPM_SECURE_NO|Disable
+PWR_VB|VB_SECURE_YES|Enable
+PWR_VB|VB_SECURE_NO|Disable
+PWR_APC|APC_SECURE_YES|Enable
+PWR_APC|APC_SECURE_NO|Disable
+TrimmingMode|__NULL|Factory Trimming
+TrimmingMode|USER_TRIMMING|User Trimming
+SRAM1PowerDownInRunMode|PWR_SRAM1_FULL_RUN_RETENTION|Enable
+SRAM1PowerDownInRunMode|__NULL|Disable
+SRAM2PowerDownInRunMode|PWR_SRAM2_FULL_RUN_RETENTION|Enable
+SRAM2PowerDownInRunMode|__NULL|Disable
+SRAM3PowerDownInRunMode|PWR_SRAM3_FULL_RUN_RETENTION|Enable
+SRAM3PowerDownInRunMode|__NULL|Disable
+SRAM4PowerDownInRunMode|PWR_SRAM4_FULL_RUN_RETENTION|Enable
+SRAM4PowerDownInRunMode|__NULL|Disable
+SRAM5PowerDownInRunMode|PWR_SRAM5_FULL_RUN_RETENTION|Enable
+SRAM5PowerDownInRunMode|__NULL|Disable
+SRAM6PowerDownInRunMode|PWR_SRAM6_FULL_RUN_RETENTION|Enable
+SRAM6PowerDownInRunMode|__NULL|Disable
+SRAM1PowerDownInStopMode|PWR_SRAM1_FULL_STOP_RETENTION|Enable
+SRAM1PowerDownInStopMode|__NULL|Disable
+RAM1Page1PowerDownInStopMode|PWR_SRAM1_PAGE1_STOP_RETENTION|Enable
+RAM1Page1PowerDownInStopMode|__NULL|Disable
+RAM1Page2PowerDownInStopMode|PWR_SRAM1_PAGE2_STOP_RETENTION|Enable
+RAM1Page2PowerDownInStopMode|__NULL|Disable
+RAM1Page3PowerDownInStopMode|PWR_SRAM1_PAGE3_STOP_RETENTION|Enable
+RAM1Page3PowerDownInStopMode|__NULL|Disable
+RAM1Page4PowerDownInStopMode|PWR_SRAM1_PAGE4_STOP_RETENTION|Enable
+RAM1Page4PowerDownInStopMode|__NULL|Disable
+RAM1Page5PowerDownInStopMode|PWR_SRAM1_PAGE5_STOP_RETENTION|Enable
+RAM1Page5PowerDownInStopMode|__NULL|Disable
+RAM1Page6PowerDownInStopMode|PWR_SRAM1_PAGE6_STOP_RETENTION|Enable
+RAM1Page6PowerDownInStopMode|__NULL|Disable
+RAM1Page7PowerDownInStopMode|PWR_SRAM1_PAGE7_STOP_RETENTION|Enable
+RAM1Page7PowerDownInStopMode|__NULL|Disable
+RAM1Page8PowerDownInStopMode|PWR_SRAM1_PAGE8_STOP_RETENTION|Enable
+RAM1Page8PowerDownInStopMode|__NULL|Disable
+RAM1Page9PowerDownInStopMode|PWR_SRAM1_PAGE9_STOP_RETENTION|Enable
+RAM1Page9PowerDownInStopMode|__NULL|Disable
+RAM1Page10PowerDownInStopMode|PWR_SRAM1_PAGE10_STOP_RETENTION|Enable
+RAM1Page10PowerDownInStopMode|__NULL|Disable
+RAM1Page11PowerDownInStopMode|PWR_SRAM1_PAGE11_STOP_RETENTION|Enable
+RAM1Page11PowerDownInStopMode|__NULL|Disable
+RAM1Page12PowerDownInStopMode|PWR_SRAM1_PAGE12_STOP_RETENTION|Enable
+RAM1Page12PowerDownInStopMode|__NULL|Disable
+SRAM2PowerDownInStopMode|PWR_SRAM2_FULL_STOP_RETENTION|Enable
+SRAM2PowerDownInStopMode|__NULL|Disable
+RAM2Page1PowerDownInStopMode|PWR_SRAM2_PAGE1_STOP_RETENTION|Enable
+RAM2Page1PowerDownInStopMode|__NULL|Disable
+RAM2Page2PowerDownInStopMode|PWR_SRAM2_PAGE2_STOP_RETENTION|Enable
+RAM2Page2PowerDownInStopMode|__NULL|Disable
+SRAM3PowerDownInStopMode|PWR_SRAM3_FULL_STOP_RETENTION|Enable
+SRAM3PowerDownInStopMode|__NULL|Disable
+RAM3Page1PowerDownInStopMode|PWR_SRAM3_PAGE1_STOP_RETENTION|Enable
+RAM3Page1PowerDownInStopMode|__NULL|Disable
+RAM3Page2PowerDownInStopMode|PWR_SRAM3_PAGE2_STOP_RETENTION|Enable
+RAM3Page2PowerDownInStopMode|__NULL|Disable
+RAM3Page3PowerDownInStopMode|PWR_SRAM3_PAGE3_STOP_RETENTION|Enable
+RAM3Page3PowerDownInStopMode|__NULL|Disable
+RAM3Page4PowerDownInStopMode|PWR_SRAM3_PAGE4_STOP_RETENTION|Enable
+RAM3Page4PowerDownInStopMode|__NULL|Disable
+RAM3Page5PowerDownInStopMode|PWR_SRAM3_PAGE5_STOP_RETENTION|Enable
+RAM3Page5PowerDownInStopMode|__NULL|Disable
+RAM3Page6PowerDownInStopMode|PWR_SRAM3_PAGE6_STOP_RETENTION|Enable
+RAM3Page6PowerDownInStopMode|__NULL|Disable
+RAM3Page7PowerDownInStopMode|PWR_SRAM3_PAGE7_STOP_RETENTION|Enable
+RAM3Page7PowerDownInStopMode|__NULL|Disable
+RAM3Page8PowerDownInStopMode|PWR_SRAM3_PAGE8_STOP_RETENTION|Enable
+RAM3Page8PowerDownInStopMode|__NULL|Disable
+RAM3Page9PowerDownInStopMode|PWR_SRAM3_PAGE9_STOP_RETENTION|Enable
+RAM3Page9PowerDownInStopMode|__NULL|Disable
+RAM3Page10PowerDownInStopMode|PWR_SRAM3_PAGE10_STOP_RETENTION|Enable
+RAM3Page10PowerDownInStopMode|__NULL|Disable
+RAM3Page11PowerDownInStopMode|PWR_SRAM3_PAGE11_STOP_RETENTION|Enable
+RAM3Page11PowerDownInStopMode|__NULL|Disable
+RAM3Page12PowerDownInStopMode|PWR_SRAM3_PAGE12_STOP_RETENTION|Enable
+RAM3Page12PowerDownInStopMode|__NULL|Disable
+RAM3Page13PowerDownInStopMode|PWR_SRAM3_PAGE13_STOP_RETENTION|Enable
+RAM3Page13PowerDownInStopMode|__NULL|Disable
+SRAM4PowerDownInStopMode|PWR_SRAM4_FULL_STOP_RETENTION|Enable
+SRAM4PowerDownInStopMode|__NULL|Disable
+RAM5Page1PowerDownInStopMode|PWR_SRAM5_PAGE1_STOP_RETENTION|Enable
+RAM5Page1PowerDownInStopMode|__NULL|Disable
+RAM5Page2PowerDownInStopMode|PWR_SRAM5_PAGE2_STOP_RETENTION|Enable
+RAM5Page2PowerDownInStopMode|__NULL|Disable
+RAM5Page3PowerDownInStopMode|PWR_SRAM5_PAGE3_STOP_RETENTION|Enable
+RAM5Page3PowerDownInStopMode|__NULL|Disable
+RAM5Page4PowerDownInStopMode|PWR_SRAM5_PAGE4_STOP_RETENTION|Enable
+RAM5Page4PowerDownInStopMode|__NULL|Disable
+RAM5Page5PowerDownInStopMode|PWR_SRAM5_PAGE5_STOP_RETENTION|Enable
+RAM5Page5PowerDownInStopMode|__NULL|Disable
+RAM5Page6PowerDownInStopMode|PWR_SRAM5_PAGE6_STOP_RETENTION|Enable
+RAM5Page6PowerDownInStopMode|__NULL|Disable
+RAM5Page7PowerDownInStopMode|PWR_SRAM5_PAGE7_STOP_RETENTION|Enable
+RAM5Page7PowerDownInStopMode|__NULL|Disable
+RAM5Page8PowerDownInStopMode|PWR_SRAM5_PAGE8_STOP_RETENTION|Enable
+RAM5Page8PowerDownInStopMode|__NULL|Disable
+RAM5Page9PowerDownInStopMode|PWR_SRAM5_PAGE9_STOP_RETENTION|Enable
+RAM5Page9PowerDownInStopMode|__NULL|Disable
+RAM5Page10PowerDownInStopMode|PWR_SRAM5_PAGE10_STOP_RETENTION|Enable
+RAM5Page10PowerDownInStopMode|__NULL|Disable
+RAM5Page11PowerDownInStopMode|PWR_SRAM5_PAGE11_STOP_RETENTION|Enable
+RAM5Page11PowerDownInStopMode|__NULL|Disable
+RAM5Page12PowerDownInStopMode|PWR_SRAM5_PAGE12_STOP_RETENTION|Enable
+RAM5Page12PowerDownInStopMode|__NULL|Disable
+RAM5Page13PowerDownInStopMode|PWR_SRAM5_PAGE13_STOP_RETENTION|Enable
+RAM5Page13PowerDownInStopMode|__NULL|Disable
+RAM6Page1PowerDownInStopMode|PWR_SRAM6_PAGE1_STOP_RETENTION|Enable
+RAM6Page1PowerDownInStopMode|__NULL|Disable
+RAM6Page2PowerDownInStopMode|PWR_SRAM6_PAGE2_STOP_RETENTION|Enable
+RAM6Page2PowerDownInStopMode|__NULL|Disable
+RAM6Page3PowerDownInStopMode|PWR_SRAM6_PAGE3_STOP_RETENTION|Enable
+RAM6Page3PowerDownInStopMode|__NULL|Disable
+RAM6Page4PowerDownInStopMode|PWR_SRAM6_PAGE4_STOP_RETENTION|Enable
+RAM6Page4PowerDownInStopMode|__NULL|Disable
+RAM6Page5PowerDownInStopMode|PWR_SRAM6_PAGE5_STOP_RETENTION|Enable
+RAM6Page5PowerDownInStopMode|__NULL|Disable
+RAM6Page6PowerDownInStopMode|PWR_SRAM6_PAGE6_STOP_RETENTION|Enable
+RAM6Page6PowerDownInStopMode|__NULL|Disable
+RAM6Page7PowerDownInStopMode|PWR_SRAM6_PAGE7_STOP_RETENTION|Enable
+RAM6Page7PowerDownInStopMode|__NULL|Disable
+RAM6Page8PowerDownInStopMode|PWR_SRAM6_PAGE8_STOP_RETENTION|Enable
+RAM6Page8PowerDownInStopMode|__NULL|Disable
+IcachePowerDownInStopMode|PWR_ICACHE_FULL_STOP_RETENTION|Enable
+IcachePowerDownInStopMode|__NULL|Disable
+Dcache1PowerDownInStopMode|PWR_DCACHE1_FULL_STOP_RETENTION|Enable
+Dcache1PowerDownInStopMode|__NULL|Disable
+Dcache2PowerDownInStopMode|PWR_DCACHE2_FULL_STOP_RETENTION|Enable
+Dcache2PowerDownInStopMode|__NULL|Disable
+DMA2DPowerDownInStopMode|PWR_DMA2DRAM_FULL_STOP_RETENTION|Enable
+DMA2DPowerDownInStopMode|__NULL|Disable
+JPEGPowerDownInStopMode|PWR_JPEGRAM_FULL_STOP_RETENTION|Enable
+JPEGPowerDownInStopMode|__NULL|Disable
+PKA32RAMPowerDownInStopMode|PWR_PKA32RAM_FULL_STOP_RETENTION|Enable
+PKA32RAMPowerDownInStopMode|__NULL|Disable
+PeriphPowerDownInStopMode|PWR_PERIPHRAM_FULL_STOP_RETENTION|Enable
+PeriphPowerDownInStopMode|__NULL|Disable
+GRAPHICPRAMPowerDownInStopMode|PWR_GRAPHICPRAM_FULL_STOP_RETENTION|Enable
+GRAPHICPRAMPowerDownInStopMode|__NULL|Disable
+DSIRAMPowerDownInStopMode|PWR_DSIRAM_FULL_STOP_RETENTION|Enable
+DSIRAMPowerDownInStopMode|__NULL|Disable
+SRAM4FastDownInRunMode|PWR_SRAM4_FULL_RUN_RETENTION|Enable
+SRAM4FastDownInRunMode|__NULL|Disable
+PowerMode|PWR_LDO_SUPPLY|LDO
+PowerMode|PWR_SMPS_SUPPLY|SMPS
+SmartRun|PWR_SRD_DOMAIN_STOP|OFF: Increases Power Saving
+SmartRun|PWR_SRD_DOMAIN_RUN|ON: Increases Speed Performance

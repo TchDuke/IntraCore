@@ -1,0 +1,146 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=flash
+Version=v1.0.0_C0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+advanced_settings|Activate|Advanced settings||||<font color="green"><b>By enabling this feature, you have access to risky settings that could be harmful for your device.</b></font>
+OB_Read_Out_Protection_active|Activate|Read Out Protection||||By activating the feature <b>Advanced settings</b>, the RDP value 2 will be available to be set.
+RDPLevel|RDP|Read Out Protection||||<font color="green">Bits 7:0 </font> <b>RDP[7:0]:</b> Readout protection level. OB_RDP_LEVEL_0: Level 0 (readout protection not active). OB_RDP_LEVEL_1: Level 1 (memories readout protection active). <font color="green"><b>OB_RDP_LEVEL_2:</b>Level 2 (chip read protection active) </font> In this level, the protection level 1 is guaranteed. In addition, the CPU debug port, the boot from RAM (boot RAM mode) and the boot from system memory (bootloader mode) are no more available. In user execution mode (boot FLASH mode), all operations are allowed on the main flash memory. The CPU debug port is also disabled under reset. STMicroelectronics is not able to perform analysis on defective parts on which the level 2 protection has been set
+OB_BOR_Level_active|Activate|BOR Level||||
+OB_BOR_EN|BOR_EN|BOR Level||||<font color="green">Bit 8 </font> <b>BOR_EN:</b> Brown out reset enable. 0: Configurable brown out reset disabled, power-on reset defined by POR/PDR levels 1: Configurable brown out reset enabled, values of BORR_LEV and BORF_LEV taken into account
+OB_BORR_level|BOR Rising Level|BOR Level||||<font color="green">Bits 10:9 </font> <b>BORR_LEV[1:0]:</b> BOR threshold at rising VDD supply. Rising VDD crossings this threshold releases the reset signal. 00: BOR rising level 1 with threshold around 2.1 V 01: BOR rising level 2 with threshold around 2.3 V 10: BOR rising level 3 with threshold around 2.6 V 11: BOR rising level 4 with threshold around 2.9 V
+OB_BORF_level|BOR Falling Level|BOR Level||||<font color="green">Bits 12:11 </font> <b>BORF_LEV[1:0]:</b> BOR threshold at falling VDD supply. Falling VDD crossings this threshold activates the reset signal. 00: BOR falling level 1 with threshold around 2.0 V 01: BOR falling level 2 with threshold around 2.2 V 10: BOR falling level 3 with threshold around 2.5 V 11: BOR falling level 4 with threshold around 2.8 V
+USERConfig|USERConfig|||||
+OB_User_Configuration_active|Activate|User Configuration||||
+OB_NRST_STOP_UI|NRST_STOP|User Configuration||||<font color="green">Bit 13 </font> <b>NRST_STOP:</b> Reset generated when entering Stop mode. 0:Reset generated when entering the Stop mode. 1: No reset generated when entering the Stop mode.
+OB_NRST_STOP|NRST_STOP|User Configuration||||
+OB_NRST_STDBY_UI|NRST_STDBY|User Configuration||||<font color="green">Bit 14 </font> <b>NRST_STDBY:</b> Reset generated when entering Standby mode. 0:Reset generated when entering the Standby mode. 1: No reset generate when entering the Standby mode.
+OB_NRST_STDBY|NRST_STDBY|User Configuration||||
+OB_NRST_SHDW_UI|NRST_SHDW|User Configuration||||<font color="green">Bit 15 </font> <b>NRST_SHDW:</b> Reset generation in Shutdown mode. 0:Reset generated when entering the Shutdown mode. 1: No reset generated when entering the Shutdown mode.
+OB_NRST_SHDW|NRST_SHDW|User Configuration||||
+OB_IWDG_SW_UI|IWDG_SW|User Configuration||||<font color="green">Bit 16 </font> <b>IWDG_SW: </b>Independent watchdog selection. 0:Hardware independent watchdog selected. 1: Software independent watchdog selected.
+OB_IWDGSW|IWDG_SW|User Configuration||||
+OB_IWDG_STOP_UI|IWDG_STOP|User Configuration||||<font color="green">Bit 17 </font> <b>IWDG_STOP:</b> Independent watchdog counter freeze in Stop mode. 0:Independent watchdog counter frozen in Stop mode. 1: Independent watchdog counter running in Stop mode.
+OB_IWDG_STOP|IWDG_STOP|User Configuration||||
+OB_IWDG_STDBY_UI|IWDG_STDBY|User Configuration||||<font color="green">Bit 18 </font> <b>IWDG_STDBY:</b> Independent watchdog counter freeze in Standby mode. 0:Independent watchdog counter frozen in Standby mode. 1: Independent watchdog counter running in Standby mode.
+OB_IWDG_STDBY|IWDG_STDBY|User Configuration||||
+OB_WWDG_SW_UI|WWDG_SW|User Configuration||||<font color="green">Bit 19 </font> <b>WWDG_SW:</b> Window watchdog selection. 0:Hardware window watchdog selected. 1: Software window watchdog selected.
+OB_WWDGSW|WWDG_SW|User Configuration||||
+OB_RAM_PARITY_CHECK_UI|RAM_PARITY_CHECK|User Configuration||||<font color="green">Bit 22</font> <b> RAM_PARITY_CHECK:</b> SRAM parity check control enable/disable. 0:Enable. 1: Disable.
+OB_RAM_PARITY_CHECK|RAM_PARITY_CHECK|User Configuration||||
+OB_nBOOT_SEL_UI|NBOOT_SEL|User Configuration||||<font color="green">Bit 24</font> <b> NBOOT0_SEL: </b> BOOT0 signal source selection. This option bit defines the source of the BOOT0 signal. 0:BOOT0 pin (legacy mode) 1: NBOOT0 option bit
+OB_nBOOT_SEL|NBOOT_SEL|User Configuration||||
+OB_NBOOT1_UI|NBOOT1|User Configuration||||<font color="green">Bit 25</font> <b> NBOOT1: </b>Boot configuration Together with the BOOT0 pin or option bit NBOOT0 (depending on NBOOT_SEL option bit configuration), this bit selects boot mode from the main flash memory, SRAM or the system memory.
+OB_NBOOT1|NBOOT1|User Configuration||||
+OB_NBOOT0_UI|NBOOT0|User Configuration||||<font color="green">Bit 26</font> <b> nBOOT0: </b>NBOOT0 option bit. 0:NBOOT0 = 0. 1: NBOOT0 = 1.
+OB_NBOOT0|NBOOT0|User Configuration||||
+OB_NRST_MODE_UI|NRST_MODE|User Configuration||||<font color="green">Bit 28:27</font> <b> NRST_MODE[1:0]:</b> NRST pin configuration. 1: Reset input only: a low level on the NRST pin generates system reset; internal RESET is not propagated to the NRST pin. 2: Standard GPIO: only internal RESET is possible. 3: Bidirectional reset: the NRST pin is configured in reset input/output (legacy) mode.
+OB_NRST_MODE|NRST_MODE|User Configuration||||
+OB_INPUT_RESET_HOLDER_UI|IRHEN|User Configuration||||<font color="green">Bit 29 </font> <b>IRHEN:</b> Internal reset holder enable bit. 0:Internal resets are propagated as simple pulse on NRST pin 1: Internal resets drives NRST pin low until it is seen as low level
+OB_INPUT_RESET_HOLDER|IRHEN|User Configuration||||
+OB_PCROP1A_active|Activate PCROP 1A|PCROP Protection||||
+baseAdress|flash memory base address|||||
+OB_PCROP1A_Strt|Start Value|PCROP Protection||0x00|0x7F|
+OB_PCROP1A_End|End Value|PCROP Protection||0x00|0x7F|
+OB_PCROP1AStartAddr|Start address|PCROP Protection||||Bank 1 PCROP first area A start page <font color="red"><b>It represents first address of start block to protect. Make sure this parameter is multiple of PCROP granularity: 512 Bytes.</b></font>
+OB_PCROP1AEndAddr|End address|PCROP Protection||||Bank 1 PCROP first area A end page <font color="red"><b>It represents first address of end block to protect. Make sure this parameter is multiple of PCROP granularity: 512 Bytes.</b></font>
+OB_PCROP_RDP|PCROP area erase|PCROP Protection||||
+OB_PCROP1B_active|Activate PCROP 1B|PCROP Protection||||
+OB_PCROP1B_Strt|Start Value|PCROP Protection||0x00|0x7F|
+OB_PCROP1B_End|End Value|PCROP Protection||0x00|0x7F|
+OB_PCROP1BStartAddr|Start address|PCROP Protection||||Bank 1 PCROP first area B start page <font color="red"><b>It represents first address of start block to protect. Make sure this parameter is multiple of PCROP granularity: 0x200.</b></font>
+OB_PCROP1BEndAddr|End address|PCROP Protection||||Bank 1 PCROP first area B end page <font color="red"><b>It represents first address of end block to protect. Make sure this parameter is multiple of PCROP granularity: 0x200.</b></font>
+OB_Write_Protection1A_active|Activate WRP 1A|Write Protection||||
+OB_WRP1A_PSTR|Start Value|Write Protection||0x00|0x1F|
+OB_WRP1A_PEND|End Value|Write Protection||0x00|0x1F|
+OB_WRP1A_PSTR_Value|Start Adress|Write Protection||||Bank 1 WPR first area A start page
+OB_WRP1A_PEND_Value|End Adress|Write Protection||||Bank 1 WPR first area A end page
+OB_Write_Protection1B_active|Activate WRP 1B|Write Protection||||
+OB_WRP1B_PSTR|Start Value|Write Protection||0x00|0x1F|
+OB_WRP1B_PEND|End Value|Write Protection||0x00|0x1F|
+OB_WRP1B_PSTR_Value|Start Adress|Write Protection||||Bank 1 WPR first area B start page
+OB_WRP1B_PEND_Value|End Adress|Write Protection||||Bank 1 WPR first area B end page
+OB_Flash_Security_active|Activate|FLASH security||||
+SecSize|SecSize|FLASH security||0|=numberOfPages-1|Contains the number of securable flash memory pages.
+BootEntryPoint|BOOT_LOCK|FLASH security||||used to force boot from user area 0: Boot based on the pad/option bit configuration. 1: Boot forced from main flash memory.
+OptionType|Option Type|||||
+USERType|Option Type|||||
+OB_USER_NRST_STOP|NRST_STOP|||||
+OB_USER_NRST_STDBY|nRST_STDBY|||||
+OB_USER_NRST_SHDW|nRST_SHDW|||||
+OB_USER_IWDG_SW|IWDG_SW|||||
+OB_USER_IWDG_STOP|IWDG_STOP|||||
+OB_USER_IWDG_STDBY|IWDG_STDBY|||||
+OB_USER_WWDG_SW|WWDG_SW|||||
+OB_USER_RAM_PARITY_CHECK|RAM_PARITY_CHECK|||||
+OB_USER_NBOOT_SEL|NBOOT_SEL|||||
+OB_USER_NBOOT1|NBOOT1|||||
+OB_USER_NBOOT0|NBOOT0|||||
+OB_USER_NRST_MODE|NRST_MODE|||||
+OB_USER_INPUT_RESET_HOLDER|IRHEN|||||
+numberOfPages|numberOfPages|REGISTERS||||
+numberOfRegisters|numberOfRegisters|REGISTERS||||
+FlashSize|FlashSize|REGISTERS||||
+
+[Values]
+# параметр|значение|подпись
+RDPLevel|OB_RDP_LEVEL_0|Level 0
+RDPLevel|OB_RDP_LEVEL_1|Level 1
+RDPLevel|OB_RDP_LEVEL_2|Level 2 (NO DEBUG)
+OB_BOR_EN|OB_BOR_DISABLE|Disable
+OB_BOR_EN|OB_BOR_ENABLE|Enable
+OB_BORR_level|OB_BOR_LEVEL_RISING_0|Level 1
+OB_BORR_level|OB_BOR_LEVEL_RISING_1|Level 2
+OB_BORR_level|OB_BOR_LEVEL_RISING_2|Level 3
+OB_BORR_level|OB_BOR_LEVEL_RISING_3|Level 4
+OB_BORF_level|OB_BOR_LEVEL_FALLING_0|Level 1
+OB_BORF_level|OB_BOR_LEVEL_FALLING_1|Level 2
+OB_BORF_level|OB_BOR_LEVEL_FALLING_2|Level 3
+OB_BORF_level|OB_BOR_LEVEL_FALLING_3|Level 4
+OB_NRST_STOP_UI|OB_STOP_NOUPD|no update
+OB_NRST_STOP_UI|OB_STOP_NORST|enable
+OB_NRST_STOP_UI|OB_STOP_RST|disable
+OB_NRST_STDBY_UI|OB_STANDBY_NOUPD|no update
+OB_NRST_STDBY_UI|OB_STANDBY_NORST|enable
+OB_NRST_STDBY_UI|OB_STANDBY_RST|disable
+OB_NRST_SHDW_UI|OB_SHUTDOWN_NOUPD|no update
+OB_NRST_SHDW_UI|OB_SHUTDOWN_NORST|enable
+OB_NRST_SHDW_UI|OB_SHUTDOWN_RST|disable
+OB_IWDG_SW_UI|OB_IWDG_NOUPD|no update
+OB_IWDG_SW_UI|OB_IWDG_SW|enable
+OB_IWDG_SW_UI|OB_IWDG_HW|disable
+OB_IWDG_STOP_UI|OB_IWDG_STOP_NOUPD|no update
+OB_IWDG_STOP_UI|OB_IWDG_STOP_RUN|enable
+OB_IWDG_STOP_UI|OB_IWDG_STOP_FREEZE|disable
+OB_IWDG_STDBY_UI|OB_IWDG_STDBY_NOUPD|no update
+OB_IWDG_STDBY_UI|OB_IWDG_STDBY_RUN|enable
+OB_IWDG_STDBY_UI|OB_IWDG_STDBY_FREEZE|disable
+OB_WWDG_SW_UI|OB_WWDG_NOUPD|no update
+OB_WWDG_SW_UI|OB_WWDG_SW|enable
+OB_WWDG_SW_UI|OB_WWDG_HW|disable
+OB_RAM_PARITY_CHECK_UI|OB_SRAM_PARITY_NOUPD|no update
+OB_RAM_PARITY_CHECK_UI|OB_SRAM_PARITY_ENABLE|enable
+OB_RAM_PARITY_CHECK_UI|OB_SRAM_PARITY_DISABLE|disable
+OB_nBOOT_SEL_UI|OB_BOOT0_FROM_NOUPD|no update
+OB_nBOOT_SEL_UI|OB_BOOT0_FROM_OB|enable
+OB_nBOOT_SEL_UI|OB_BOOT0_FROM_PIN|disable
+OB_NBOOT1_UI|OB_BOOT1__NOUPD|no update
+OB_NBOOT1_UI|OB_BOOT1_SRAM|enable
+OB_NBOOT1_UI|OB_BOOT1_SYSTEM|disable
+OB_NBOOT0_UI|OB_nBOOT0_NOUPD|no update
+OB_NBOOT0_UI|OB_NBOOT0_SET|enable
+OB_NBOOT0_UI|OB_NBOOT0_RESET|disable
+OB_NRST_MODE_UI|OB_RESET__NOUPD|no update
+OB_NRST_MODE_UI|OB_RESET_MODE_INPUT_ONLY|1
+OB_NRST_MODE_UI|OB_RESET_MODE_GPIO|2
+OB_NRST_MODE_UI|OB_RESET_MODE_INPUT_OUTPUT|3
+OB_INPUT_RESET_HOLDER_UI|OB_IRH_NOUPD|no update
+OB_INPUT_RESET_HOLDER_UI|OB_IRH_ENABLE|enable
+OB_INPUT_RESET_HOLDER_UI|OB_IRH_DISABLE|disable
+OB_PCROP_RDP|OB_PCROP_RDP_NOT_ERASE|Not erased
+OB_PCROP_RDP|OB_PCROP_RDP_ERASE|Erased
+BootEntryPoint|OB_BOOT_LOCK_ENABLE|enable
+BootEntryPoint|OB_BOOT_LOCK_DISABLE|disable

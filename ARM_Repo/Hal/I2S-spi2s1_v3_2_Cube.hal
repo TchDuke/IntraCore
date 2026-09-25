@@ -1,0 +1,56 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=I2S
+Version=spi2s1_v3_2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+VirtualMode|Mode|Generic Parameters||||
+Mode|Transmission Mode|Generic Parameters||||
+FullDuplexMode|Full-Duplex Mode|Generic Parameters||||
+Standard|Communication Standard|Generic Parameters||||
+DataFormat|Data and Frame Format|Generic Parameters||||
+AudioFreq|Selected Audio Frequency|Generic Parameters||||
+AudioFreqCustom|Custom I2S Frequency (Hz)|Generic Parameters|Hz|8000|192000|Value must be enterred as a 1000 multiple
+RealAudioFreq|Real Audio Frequency|Generic Parameters||||
+ErrorAudioFreq|Error between Selected and Real|Generic Parameters||||
+MCLKOutput|Master Clock Output|Clock Parameters||||
+ClockSource|Clock Source|Clock Parameters||||
+CPOL|Clock Polarity|Clock Parameters||||
+
+[Values]
+# параметр|значение|подпись
+VirtualMode|I2S_MODE_MASTER|Master
+VirtualMode|I2S_MODE_SLAVE|Slave
+Mode|I2S_MODE_MASTER_TX|Mode Master Transmit
+Mode|I2S_MODE_MASTER_RX|Mode Master Receive
+Mode|I2S_MODE_SLAVE_TX|Mode Slave Transmit
+Mode|I2S_MODE_SLAVE_RX|Mode Slave Receive
+FullDuplexMode|I2S_FULLDUPLEXMODE_DISABLE|Disable
+FullDuplexMode|I2S_FULLDUPLEXMODE_ENABLE|Enable
+Standard|I2S_STANDARD_PHILIPS|I2S Philips
+Standard|I2S_STANDARD_MSB|MSB First (Left Justified)
+Standard|I2S_STANDARD_LSB|LSB First (Right Justified)
+Standard|I2S_STANDARD_PCM_SHORT|PCM with Short Synchro Frame
+Standard|I2S_STANDARD_PCM_LONG|PCM with Long Synchro Frame
+DataFormat|I2S_DATAFORMAT_16B|16 Bits Data on 16 Bits Frame
+DataFormat|I2S_DATAFORMAT_16B_EXTENDED|16 Bits Data on 32 Bits Frame
+DataFormat|I2S_DATAFORMAT_24B|24 Bits Data on 32 Bits Frame
+DataFormat|I2S_DATAFORMAT_32B|32 Bits Data on 32 Bits Frame
+AudioFreq|I2S_AUDIOFREQ_192K|192 KHz
+AudioFreq|I2S_AUDIOFREQ_96K|96 KHz
+AudioFreq|I2S_AUDIOFREQ_48K|48 KHz
+AudioFreq|I2S_AUDIOFREQ_44K|44 KHz
+AudioFreq|I2S_AUDIOFREQ_32K|32 KHz
+AudioFreq|I2S_AUDIOFREQ_22K|22 KHz
+AudioFreq|I2S_AUDIOFREQ_16K|16 KHz
+AudioFreq|I2S_AUDIOFREQ_11K|11 KHz
+AudioFreq|I2S_AUDIOFREQ_8K|8 KHz
+AudioFreq|I2S_AUDIOFREQ_DEFAULT|Default
+MCLKOutput|I2S_MCLKOUTPUT_ENABLE|Enable
+MCLKOutput|I2S_MCLKOUTPUT_DISABLE|Disable
+ClockSource|I2S_CLOCK_EXTERNAL|External Audio Clock
+ClockSource|I2S_CLOCK_PLL|PLL I2SR Clock
+CPOL|I2S_CPOL_LOW|Low
+CPOL|I2S_CPOL_HIGH|High

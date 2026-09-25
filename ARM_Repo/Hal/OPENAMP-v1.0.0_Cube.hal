@@ -1,0 +1,32 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=OPENAMP
+Version=v1.0.0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+OPENAMP_Version|OPENAMP version|Version||||
+Mode|Mode|Communication Mode||||
+SHM_START_ADDRESS|SHM_START_ADDRESS|Configuration||||
+SHM_SIZE|SHM_SIZE|Configuration||||
+VRING_RX_ADDRESS|VRING_RX_ADDRESS|Configuration||||
+VRING_TX_ADDRESS|VRING_TX_ADDRESS|Configuration||||
+VRING_BUFF_ADDRESS|VRING_BUFF_ADDRESS|Configuration||||
+VRING_ALIGNMENT|VRING_ALIGNMENT|Configuration||||
+VRING_NUM_BUFFS|VRING_NUM_BUFFS|Configuration||||
+NUM_RESOURCE_ENTRIES|NUM_RESOURCE_ENTRIES|Configuration||||
+VRING_COUNT|VRING_COUNT|Configuration||||
+VDEV_ID|VDEV_ID|Configuration||||
+VRING0_ID|VRING0_ID|Configuration||||
+VRING1_ID|VRING1_ID|Configuration||||
+MASTER_CPU_ID|MASTER_CPU_ID|Configuration||||
+REMOTE_CPU_ID|REMOTE_CPU_ID|Configuration||||
+IPCC_CPU_A7|IPCC_CPU_A7|Configuration||||
+IPCC_CPU_M4|IPCC_CPU_M4|Configuration||||
+MBOX_NO_MSG|MBOX_NO_MSG|Configuration||||
+MBOX_NEW_MSG|MBOX_NEW_MSG|Configuration||||
+MBOX_BUF_FREE|MBOX_BUF_FREE|Configuration||||
+
+[Values]
+# параметр|значение|подпись

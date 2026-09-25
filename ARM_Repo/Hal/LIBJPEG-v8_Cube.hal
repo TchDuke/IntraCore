@@ -1,0 +1,42 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LIBJPEG
+Version=v8_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+LIBJPEG_version|LIBJPEG version|Version||||
+LIBJPEG_FS_type|Data Stream management type|MW configuration||||Default Value : FatFS This parameter specifies the type of data manager used for compressed data storage (source and destination) when the "stream" data management Api is used : -FatFS : FatFS File system -Stdio : standard "stdio" stream manager -None : No file system interfacing
+FREERTOS|FREERTOS|MW configuration||||This parameter indicates if FreeRtos is Disabled or Enabled : -when FreeRtos is Disabled, the LibJpeg memory allocator is the C standard allocator (not configurable). -when FreeRtos is Enabled, the LibJpeg memory allocator type can be configured in "General Settings" menu.
+HAVE_BOOLEAN|HAVE_BOOLEAN|MW configuration||||Default Value : Undefined Defines/Undefines the HAVE_BOOLEAN C condition allowing to change the boolean type. When conflicting with application specific header files the boolean type can be redefined by defining the HAVE_BOOLEAN condition. In this case the boolean type takes the value of the field 'boolean type'.
+BooleanType|boolean type|MW configuration||||Set the boolean type to the specified value.
+LIBJPEG_with_FREERTOS|Use FREERTOS Memory Allocator|General Settings||||FreeRtos is Enabled : this parameter allows to select FreeRtos Memory Allocator (value Enabled) or the C standard memory allocator (value Disabled) for LibJpeg memory allocations.
+BITS_IN_JSAMPLE|BITS_IN_JSAMPLE|JPEG basic settings||||Default Value : 8 bits Define BITS_IN_JSAMPLE as either: - 8 for 8-bit sample values (the usual setting) - 12 for 12-bit sample values Only 8 and 12 are legal data precisions for lossy JPEG according to the JPEG standard, and the IJG code does not support anything else. <font color="orange"><b>Warning:</b> -when selecting 12 bits data precision (BITS_IN_JSAMPLE = 12), it is recommended to enable "ENTROPY_OPT_SUPPORTED" when encoder is used (cf "jmorecfg.h" for details).</font>
+MAX_COMPONENTS|MAX_COMPONENTS|JPEG basic settings||1|255|Default Value : 10 Define maximum number of components (color channels) allowed in JPEG image To meet the letter of the JPEG spec, set this to 255. However, darn few applications need more than 4 channels (maybe 5 for CMYK + alpha mask). We recommend 10 as a reasonable compromise; use 4 if you are really short on memory. (Each allowed component costs a hundred or so bytes of storage, whether actually used in an image or not.)
+JCOEF|JCOEF|JPEG basic settings||||Default Value : short Define representation of a DCT frequency coefficient. This should be a signed value of at least 16 bits; "short" is usually OK. Again, we allocate large arrays of these, but you can change to int if you have memory to burn and "short" is really slow.
+DCT_ISLOW_SUPPORTED|DCT_ISLOW_SUPPORTED|JPEG encoder and decoder common capabilities options||||Default Value : Enabled Slow but accurate integer algorithm
+DCT_IFAST_SUPPORTED|DCT_IFAST_SUPPORTED|JPEG encoder and decoder common capabilities options||||Default Value : Enabled Faster, less accurate integer method
+DCT_FLOAT_SUPPORTED|DCT_FLOAT_SUPPORTED|JPEG encoder and decoder common capabilities options||||Default Value : Enabled Floating-point: accurate, fast on fast HW
+C_ARITH_CODING_SUPPORTED|C_ARITH_CODING_SUPPORTED|JPEG encoder options||||Default Value : Enabled Arithmetic coding back end
+C_MULTISCAN_FILES_SUPPORTED|C_MULTISCAN_FILES_SUPPORTED|JPEG encoder options||||Default Value : Enabled Multiple-scan JPEG files
+C_PROGRESSIVE_SUPPORTED|C_PROGRESSIVE_SUPPORTED|JPEG encoder options||||Default Value : Enabled Progressive JPEG (Requires MULTISCAN) <b>Warnings:</b> <font color="red">-"Progressive encoding" requires to enable "C_MULTISCAN_FILES_SUPPORTED" (cf "jmorecfg.h" for details) </font><font color="orange">-when "Progressive encoding" is enabled, it is recommended to enable "ENTROPY_OPT_SUPPORTED" (cf "jmorecfg.h" for details)</font>
+DCT_SCALING_SUPPORTED|DCT_SCALING_SUPPORTED|JPEG encoder options||||Default Value : Enabled Input rescaling via DCT (Requires DCT_ISLOW) <font color="red"><b>Warning:</b> "DCT scaling" requires to enable "DCT_ISLOW_SUPPORTED" (cf "jmorecfg.h" for details).</font>
+ENTROPY_OPT_SUPPORTED|ENTROPY_OPT_SUPPORTED|JPEG encoder options||||Default Value : Enabled Optimization of entropy coding parms <font color="orange"><b>Warning:</b> -when "ENTROPY_OPT_SUPPORTED" is disabled it is recommended to set data precision to 8-bit (BITS_IN_JSAMPLE = 8) and to disable "C_PROGRESSIVE_SUPPORTED" - (cf "jmorecfg.h" for details).</font>
+INPUT_SMOOTHING_SUPPORTED|INPUT_SMOOTHING_SUPPORTED|JPEG encoder options||||Default Value : Enabled Input image smoothing option
+D_ARITH_CODING_SUPPORTED|D_ARITH_CODING_SUPPORTED|JPEG decoder options||||Default Value : Enabled Arithmetic coding back end
+D_MULTISCAN_FILES_SUPPORTED|D_MULTISCAN_FILES_SUPPORTED|JPEG decoder options||||Default Value : Enabled Multiple-scan JPEG files
+D_PROGRESSIVE_SUPPORTED|D_PROGRESSIVE_SUPPORTED|JPEG decoder options||||Default Value : Enabled Progressive JPEG (Requires MULTISCAN) <font color="red"><b>Warning:</b> -"Progressive decoding" requires to enable "D_MULTISCAN_FILES_SUPPORTED" (cf "jmorecfg.h" for details).</font>
+IDCT_SCALING_SUPPORTED|IDCT_SCALING_SUPPORTED|JPEG decoder options||||Default Value : Enabled Output rescaling via IDCT
+SAVE_MARKERS_SUPPORTED|SAVE_MARKERS_SUPPORTED|JPEG decoder options||||Default Value : Enabled jpeg_save_markers() needed
+BLOCK_SMOOTHING_SUPPORTED|BLOCK_SMOOTHING_SUPPORTED|JPEG decoder options||||Default Value : Enabled Block smoothing (Progressive only) <font color="red"><b>Warning:</b> -"Block smoothing" requires to enable "D_PROGRESSIVE_SUPPORTED" (cf "jmorecfg.h" for details).</font>
+UPSAMPLE_SCALING_SUPPORTED|UPSAMPLE_SCALING_SUPPORTED|JPEG decoder options||||Default Value : Disabled Output rescaling at upsample stage
+UPSAMPLE_MERGING_SUPPORTED|UPSAMPLE_MERGING_SUPPORTED|JPEG decoder options||||Default Value : Enabled Fast path for sloppy upsampling
+QUANT_1PASS_SUPPORTED|QUANT_1PASS_SUPPORTED|JPEG decoder options||||Default Value : Enabled 1-pass color quantization
+QUANT_2PASS_SUPPORTED|QUANT_2PASS_SUPPORTED|JPEG decoder options||||Default Value : Enabled 2-pass color quantization
+RGB_ORDERING|RGB_ORDERING|RGB scanline format||||Default Value : RGB Ordering of RGB data in scanlines passed to or from the application Only R/G/B and B/G/R orders are possible Refer to "LibJPEG/jquant2.c" for details
+RGB_PIXELSIZE|RGB_PIXELSIZE|RGB scanline format||3|4|Default Value : 3 JSAMPLEs per RGB scanline element. To deal with formats such as R,G,B,X one extra byte per pixel) by changing RGB_PIXELSIZE. Note that changing the offsets will also change the order in which colormap data is organized. RESTRICTIONS: 1. The sample applications cjpeg,djpeg do NOT support modified RGB formats. 2. The color quantizer modules will not behave desirably if RGB_PIXELSIZE is not 3 (they don't understand about dummy color components!). So you can't use color quantization if you change that value.
+
+[Values]
+# параметр|значение|подпись
+LIBJPEG_FS_type|FatFS_Ronly|FatFS Ronly

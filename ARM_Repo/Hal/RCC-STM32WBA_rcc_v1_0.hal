@@ -1,0 +1,483 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RCC
+Version=STM32WBA_rcc_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+OscillatorType|Oscillator Type|||||
+HSE_Timout|HSE Startup Timeout Value (ms)|RCC Parameters||1|4294967295|
+LSE_Timout|LSE Startup Timeout Value (ms)|RCC Parameters||1|4294967295|
+APB1TimCLKDivider|APB1 Timer Clock Divider|||1|1|
+HSEDefVal|HSE Default Trimming Value|||1|1|
+HSE_Trimming|HSE Trimming Value|RCC Parameters||0|63|This parameter specifies the HSE trimming value, it should be below 0x3F.
+LSE_Trimming|LSE Trimming Value|RCC Parameters||||This parameter specifies the Low Speed clock source to output.
+APB2TimCLKDivider|APB2 Timer Clock Divider|||1|1|
+PLLN|PLLN|||4|512|
+HseDiv|HseDiv|||||
+pllqDivToRNG|pllqDivToRNG|||2|2|
+LSIDIV|LSIDIV|||||
+Cortex_Div|Cortex Div|||8|8|
+CortexCLockSelectionVirtual|Cortex Clock Selection|||||
+CortexCLockSelectionVirtualString|Cortex Clock Selection|||||
+CortexCLockSelection|Cortex Clock Selection|||||
+CortexCLockSelectionARG|Systick Clock Selection|||||
+RCC_RTC_Clock_Source_FROM_HSE|RCC_RTC_Clock_Source_FROM_HSE|||32|32|
+RCC_RST_Clock_Source_FROM_HSE|HSE DIv 1000|||1000|1000|
+PLLM|PLLM|||1|8|
+CRCEnable|CRC|||||
+PLL1R|PLL1R|||1|128|
+PLL1P|PLL1P|||||
+PLL1Q|PLL1Q|||1|128|
+AHBCLKDivider|AHBCLK Divider|||||
+AHB5CLKDivider|AHB5CLK Divider|||||
+RCC_MCODiv|MCO Prescaler|||||
+APB1CLKDivider|APB1 Clock Divider|||||
+APB2CLKDivider|APB2 Clock Divider|||||
+APB7CLKDivider|APB7 Clock Divider|||||
+LSISource1|LSI Source|||||
+PLLSourceVirtual|PLL Source|||||
+PLLSourceVirtualString|PLL Source|||||
+PLLSource|PLL Source|||||
+SYSCLKSourceVirtual|SYSCLK Clock Source|||||
+SYSCLKSourceVirtualString|SYSCLK Clock Source|||||
+SYSCLKSource|SYSCLK Clock Source|||||
+RCC_MCO1SourceVirtual|MCO Clock Source|||||
+RCC_MCO1SourceVirtualString|MCO Clock Source|||||
+RCC_MCO1Source|MCO Clock Source|||||
+PLLClkOut|MCO Clock Source|||||
+LSCOSource1Virtual|LSCOS Clock Source|||||
+LSCOSource1VirtualString|PLL Source|||||
+LSCOSource1|MCO Clock Source|||||
+SPI1CLockSelection|SPI1 Clock Selection|||||
+SPI3CLockSelection|SPI3 Clock Selection|||||
+RTCClockSelection|RTC Clock Selection|||||
+RSTClockSelectionVirtual|Radio sleep timer|||||
+RSTClockSelectionVirtualString|Radio sleep timer|||||
+RSTClockSelection|Radio sleep timer|||||
+USART1CLockSelectionVirtual|USART1 Clock Selection|||||
+USART1CLockSelectionVirtualString|PLL Source|||||
+USART1CLockSelection|MCO Clock Source|||||
+USART2CLockSelectionVirtual|USART2 Clock Selection|||||
+USART2CLockSelectionVirtualString|PLL Source|||||
+USART2CLockSelection|MCO Clock Source|||||
+FamilyName|FamilyName|||||
+LPUART1CLockSelectionVirtual|LPUART1 Clock Selection|||||
+LPUART1CLockSelectionVirtualString|LPUART1 Clock Selection|||||
+LPUART1CLockSelection|MCO Clock Source|||||
+I2C1CLockSelection|I2C1 Clock Selection|||||
+I2C3CLockSelection|I2C3 Clock Selection|||||
+LPTIM1CLockSelectionVirtual|LPTIM1 Clock Selection|||||
+LPTIM1CLockSelectionVirtualString|LPTIM1 Clock Selection|||||
+LPTIM1CLockSelection|MCO Clock Source|||||
+LPTIM2CLockSelectionVirtual|LPTIM2 Clock Selection|||||
+LPTIM2CLockSelectionVirtualString|LPTIM2 Clock Selection|||||
+LPTIM2CLockSelection|LPTIM2 Clock Selection|||||
+ASClockSelection|Audio Clock Selection|||||
+SAI1CLockSelectionVirtual|SAI1 Clock Selection|||||
+SAI1CLockSelectionVirtualString|SAI1 Clock Selection|||||
+SAI1CLockSelection|SAI1 Clock Source|||||
+ADCCLockSelectionVirtual|ADC Clock Selection|||||
+ADCCLockSelectionVirtualString|ADC Source|||||
+ADCCLockSelection|ADC Clock Source|||||
+RNGCLockSelectionVirtual|RNG Clock Selection|||||
+RNGCLockSelectionVirtualString|RNG Clock Selection|||||
+RNGCLockSelection|RNG Clock Selection|||||
+EnableHSERFDevisor|RF and HSE Oscillator|||||
+RFEnable|2.4 Ghz Radio Sleep Timer|||||
+RFTZEnable|RTC and HSE Oscillator|||||
+EnbaleCSS|Clock Security System: available only when HSE is used directly or undirectly as System Clock|||||
+EnableCSSLSE|LSE Clock Security System: available only when LSE is used as Clock Source for RTC|||||
+HSE_VALUE|HSE OSC||MHz|32000000|32000000|
+LSE_VALUE|LSE OSC||KHz|32768|32768|
+LSI_VALUE|LSI Source||KHz|31400|32600|
+LSI1_VALUE|LSI1 Source||KHz|31400|32600|
+LSI2_VALUE|LSI2 Source||KHz|31400|32600|
+HSI_VALUE|HSI Source||MHz|||
+RSTFreq_Value|RST Clock Source||MHz||100000000|
+RSTRFFreq_Value|RST Clock Source||MHz||32000000|
+FCLKCortexFreq_Value|FCLK Cortex||MHz||100000000|
+AHBFreq_Value|AHB clock||MHz||100000000|
+AHB4Freq_Value|AHB4 clock||MHz||100000000|
+WatchDogFreq_Value|IWDG clock||KHz|||
+CortexFreq_Value|Cortex System Timer||MHz||100000000|
+SAESFreq_Value|SAES clock||MHz||100000000|
+SPI1Freq_Value|SPI1 clock||MHz||100000000|
+SPI3Freq_Value|SPI3 clock||MHz||100000000|
+SYSCLKFreq_VALUE|System Clock||MHz||100000000|
+HSESYSFreq_VALUE|System Clock||MHz||100000000|
+MCO1PinFreq_Value|MCO1 clock||MHz||100000000|
+LSCOPinFreq_Value|LSCO Output||MHz|||
+HCLKFreq_Value|HCLK clock||MHz||100000000|
+AHB5Freq_Value|HCLK5 clock||MHz||32000000|
+SAI1Freq_Value|SAI1 clock Source||MHz||100000000|
+I2C3Freq_Value|I2C3 clock||MHz||100000000|
+I2C1Freq_Value|I2C1 clock||MHz||100000000|
+USART2Freq_Value|USART2 clock||MHz||100000000|
+USART1Freq_Value|USART1 clock||MHz||100000000|
+LPUART1Freq_Value|LPUART1 clock||MHz||100000000|
+LPTIM1Freq_Value|LPTIM1 clock||MHz||100000000|
+LPTIM2Freq_Value|LPTIM2 clock||MHz||100000000|
+ASFreq_Value|Audio clock||MHz||100000000|
+RNGFreq_Value|RNG clock||MHz||48000000|
+ADCFreq_Value|ADC clock||MHz||100000000|
+synchADCFreq_Value|ADC synchr||MHz|||
+asynchADCFreq_Value|ADC asynchr||MHz|||
+SWPMI1Freq_Value|SWPMI clock Source||MHz|||
+RTCFreq_Value|RTC Clock Source||KHz||1562500|
+APB2TimFreq_Value|APB2 Timer clock||MHz||100000000|
+APB1TimFreq_Value|APB1 Timer clock||MHz||100000000|
+APB2Freq_Value|APB2 Peripheral Clock||MHz||100000000|
+APB1Freq_Value|APB1 Peripheral Clock||MHz||100000000|
+APB7Freq_Value|APB7 Peripheral Clock||MHz||100000000|
+EXTERNALSAI1_CLOCK_VALUE|SAI1 Extern CLock||MHz|||
+PLLQoutputFreq_Value|PLL1Q||MHz||100000000|
+PLLPoutputFreq_Value|PLL1P||MHz||100000000|
+VCOInputFreq_Value|VCOInput||MHz|4000000|16000000|
+VCOOutputFreq_Value|VCOOutput||MHz|128000000|544000000|
+PLLRCLKFreq_Value|PLLCLK||MHz||100000000|
+EnableHSE|HSE OSC|||||
+RTCEnable|RTC|||||
+RTCTZEnable|RTC|||||
+EnableLSERTC|EnableLSERTC|||||
+EnableHSERTCDevisor|RTC and HSE Oscillator|||||
+LSEEnable|LSE should be enabled from RCC config|||||
+SystickEnable|SysTick Source Selection should be External in CORTEX_M33|||||
+ADCEnable|ADC in Asynchronous mode|||||
+ADCTZEnable|ADC in Asynchronous mode|||||
+ASEnable|Audio synchro|||||
+EnableLSE|Enable LSE|||||
+IWDGEnable|IWDG|||||
+LSCOEnable|LSCO clock output|||||
+MCOEnable|Master clock output|||||
+MCOTZEnable|Master clock output|||||
+SPI1Enable|SPI1|||||
+SPI1TZEnable|SPI1|||||
+SPI3Enable|SPI3|||||
+SPI3TZEnable|SPI3|||||
+SAESEnable|SAES|||||
+RNGEnable|RNG|||||
+RNGTZEnable|RNG|||||
+USART1Enable|USART1|||||
+USART1TZEnable|USART1|||||
+APB1TrustZoneEnable|APB1 pres|||||
+USART2Enable|USART2|||||
+USART2TZEnable|USART2|||||
+LPUART1Enable|LPUART1|||||
+LPUART1TZEnable|LPUART1|||||
+LPTIM1Enable|LPTIM1|||||
+LPTIM1TZEnable|LPTIM1|||||
+LPTIM2Enable|LPTIM2|||||
+LPTIM2TZEnable|LPTIM2|||||
+I2C1Enable|I2C1|||||
+I2C1TZEnable|I2C1|||||
+I2C3Enable|I2C3|||||
+I2C3TZEnable|I2C3|||||
+SAI1Enable|SAI1|||||
+SAI1TZEnable|SAI1|||||
+SWPMIEnable|SWPMI|||||
+EnableExtClockForSAI1|EnableExtClockForSAI1|||||
+OscillatorTypeHSE|Clock Type HSE|||||
+HSEUsed|HSE used flag|||1|1|
+HSEState|Hse State|||||
+OscillatorTypeLSE|Clock Type LSE|||||
+LSEUsed|LSE Is Used|||1|1|
+LSEState|Lse State|||||
+OscillatorTypeLSI|Clock Type LSI|||||
+LSIUsed|LSI used flag|||1|1|
+OscillatorTypeHSI|Clock Type HSI|||||
+HSIUsed|HSI Is Used|||1||
+HSIState|Hsi State|||||
+PLL1PUsed|PLL1PUsed|||1|1|
+PLL1QUsed|PLL1QUsed|||1|1|
+PLL1RUsed|PLL1RUsed|||1|1|
+PLLUsed|MainPLL Is Used|||1|1|
+PLLState|Pll State|||||
+ClockType|Clock Type|||||
+ClockTypeSysClk|Clock Type SysClk|||||
+ClockTypeHCLK|Clock Type AHB|||||
+ClockTypePCLK1|Clock Type HCLK1|||||
+ClockTypePCLK2|Clock Type HCLK2|||||
+ClockTypePCLK7|Clock Type HCLK3|||||
+ClockTypeHCLK5|Clock Type AHB5|||||
+PeriphClockSelectionARG|RCC_PERIPHCLK_TIMVar|||||
+C_PeriphClockSelectionARG|common Periph Clock Selection|||||
+TimIcClockSelectionARG|TimIcClockSelectionARG|||||
+RCC_PERIPHCLK_RTSVar|RCC_PERIPHCLK_RTSVar|||||
+RadioSlpTimClockSelectionARG|Radio Slp Tim ClockSelection|||||
+SystickClockSelectionARG|Systick ClockSelection|||||
+RTCClockSelectionARG|RTCClockSelectionARG|||||
+USART1lockSelectionARG|USART1lockSelectionARG|||||
+Spi1ClockSelectionARG|Spi1ClockSelectionARG|||||
+Spi3ClockSelectionARG|Spi3ClockSelectionARG|||||
+USART2lockSelectionARG|USART2lockSelectionARG|||||
+LPUART1lockSelectionARG|LPUART1lockSelectionARG|||||
+LPTIM1lockSelectionARG|LPTIM1lockSelectionARG|||||
+LPTIM2lockSelectionARG|LPTIM2lockSelectionARG|||||
+SAI1lockSelectionARG|SAI1lockSelectionARG|||||
+I2C1lockSelectionARG|I2C1lockSelectionARG|||||
+I2c3ClockSelectionARG|I2C3lockSelectionARG|||||
+RNGClockSelectionARG|RNGClockSelectionARG|||||
+AdcClockSelectionARG|ADCClockSelectionARG|||||
+HSEStateARG|Lse StateARG|||||
+LSEStateARG|Lse StateARG|||||
+HSIStateARG|HSI StateARG|||||
+LSIStateARG|LSI StateARG|||||
+LSIDivARG|LSIDivARG|||||
+PLLStateARG|PLLStateARG|||||
+PLLSourceARG|PLLSourceARG|||||
+PLLMARG|PLLMARG|||||
+PLLNARG|PLLNARG|||||
+PLLPARG|PLLPARG|||||
+PLLQARG|PLLQARG|||||
+PLLRARG|PLLRARG|||||
+HSICalibrationValue|HSI Calibration Value|RCC Parameters||0|127|
+HCLKsup80|HCLK sup80|||1||
+ClockTypeARG|Clock TypeARG|||||
+SYSCLKSourceARG|SysClock SourceARG|||||
+AHBCLKDividerARG|AHBCLKDividerARG|||||
+APB1CLKDividerARG|APB1CLKDividerARG|||||
+APB2CLKDividerARG|APB2CLKDividerARG|||||
+APB7CLKDividerARG|APB7CLKDividerARG|||||
+AHB5_PLL1_CLKDividerARG|AHB5_PLL1_CLKDivider|||||
+AHB5_HSEHSI_CLKDividerARG|AHB5_HSEHSI_CLKDivider|||||
+RCC_MCO|Clock Output|||||
+HSICalibrationValueARG|HSICalValue|||||
+LSCOSource1ARG|LSCOSource1ARG|||||
+HseDivARG|HseDiv|||||
+VDD_VALUE|VDD voltage (V)|System Parameters|V|1.71|3.6|
+PREFETCH_ENABLE|Prefetch Buffer|System Parameters||||
+SupplySource|SupplySource|Power Parameters||||
+PWR_Regulator_Voltage_Scale|Power Regulator Voltage Scale|Power Parameters||||VOS range 2 is not allowed with PLL
+FLatency|Flash Latency(WS)|System Parameters||||
+RCC_MCO1SourceARG|SysClock SourceARG|||||
+LSI2Config|LSI2 Configuration|RCC Parameters||||
+LSI2_FreqTempSens|LSI2 frequency temperature sensitivity|RCC Parameters||||
+LSI2OpMode|LSI2 Operating mode of power consumption versus accuracy|RCC Parameters||||
+LSE_Drive_Capability|LSE Drive Capability|RCC Parameters||||
+PLLIsSecureLocked|PLL is secure|||||
+PLLFRACN|PLL Fractional Part|PLL1/2/3 Parameters||0|8191|
+PLLFRACNARG|PLLFRACNARG|||||
+PLL1_VCI_Range|PLL1 input frequency range|PLL1/2/3 Parameters||||
+LSIRCisInternal|LSIRC is Internal osc|||||
+LSI2RCisInternal|LSI2RC is Internal osc|||||
+LSIEnable|LSIEnable|||||
+rccSecurity|Security of the reset flag|Security RCC||||
+rccPrivilegeNSecure|Privilege of RCC Non-Secure Items|Privilege RCC||||
+rccPrivilegeSecure|Privilege of RCC Secure Items|Privilege RCC||||
+
+[Values]
+# параметр|значение|подпись
+LSE_Trimming|RCC_LSETRIMMING_R|Current Source Resistance R
+LSE_Trimming|RCC_LSETRIMMING_1_2_R|Current Source Resistance 1/2*R
+LSE_Trimming|RCC_LSETRIMMING_2_3_R|Current Source Resistance 2/3*R
+LSE_Trimming|RCC_LSETRIMMING_3_4_R|Current Source Resistance 3/4*R
+HseDiv|RCC_HSE_DIV1|1
+HseDiv|RCC_HSE_DIV2|2
+LSIDIV|RCC_LSI_DIV1|1
+LSIDIV|RCC_LSI_DIV128|128
+Cortex_Div|SYSTICK_CLKSOURCE_HCLK|1
+Cortex_Div|SYSTICK_CLKSOURCE_HCLK_DIV8|8
+CortexCLockSelectionVirtual|RCC_SYSTICKCLKSOURCE_HCLK_DIV8|SYSTICK Clksource HCLK
+CortexCLockSelectionVirtual|RCC_SYSTICKCLKSOURCE_LSI|SYSTICK Clksource LSI
+CortexCLockSelectionVirtual|RCC_SYSTICKCLKSOURCE_LSE|SYSTICK Clksource LSE
+CortexCLockSelection|RCC_SYSTICKCLKSOURCE_HCLK_DIV8|SYSTICK Clksource HCLK
+CortexCLockSelection|RCC_SYSTICKCLKSOURCE_LSE|SYSTICK Clksource LSE
+CortexCLockSelection|RCC_SYSTICKCLKSOURCE_LSI|SYSTICK Clksource LSI
+AHBCLKDivider|RCC_SYSCLK_DIV1|1
+AHBCLKDivider|RCC_SYSCLK_DIV2|2
+AHBCLKDivider|RCC_SYSCLK_DIV4|4
+AHBCLKDivider|RCC_SYSCLK_DIV8|8
+AHBCLKDivider|RCC_SYSCLK_DIV16|16
+RCC_MCODiv|RCC_MCODIV_1|1
+RCC_MCODiv|RCC_MCODIV_2|2
+RCC_MCODiv|RCC_MCODIV_4|4
+RCC_MCODiv|RCC_MCODIV_8|8
+RCC_MCODiv|RCC_MCODIV_16|16
+APB1CLKDivider|RCC_HCLK_DIV1|1
+APB1CLKDivider|RCC_HCLK_DIV2|2
+APB1CLKDivider|RCC_HCLK_DIV4|4
+APB1CLKDivider|RCC_HCLK_DIV8|8
+APB1CLKDivider|RCC_HCLK_DIV16|16
+APB2CLKDivider|RCC_HCLK_DIV1|1
+APB2CLKDivider|RCC_HCLK_DIV2|2
+APB2CLKDivider|RCC_HCLK_DIV4|4
+APB2CLKDivider|RCC_HCLK_DIV8|8
+APB2CLKDivider|RCC_HCLK_DIV16|16
+APB7CLKDivider|RCC_HCLK_DIV1|1
+APB7CLKDivider|RCC_HCLK_DIV2|2
+APB7CLKDivider|RCC_HCLK_DIV4|4
+APB7CLKDivider|RCC_HCLK_DIV8|8
+APB7CLKDivider|RCC_HCLK_DIV16|16
+LSISource1|RCC_LSCOSOURCE_LSI1|LSI1
+LSISource1|RCC_LSCOSOURCE_LSI2|LSI2
+PLLSourceVirtual|RCC_PLLSOURCE_HSI|Pllsource Hsi
+PLLSourceVirtual|RCC_PLLSOURCE_HSE|Pllsource Hse
+PLLSource|RCC_PLLSOURCE_HSI|Pllsource Hsi
+PLLSource|RCC_PLLSOURCE_HSE|Pllsource Hse
+SYSCLKSourceVirtual|RCC_SYSCLKSOURCE_HSI|Sysclksource Hsi
+SYSCLKSourceVirtual|RCC_SYSCLKSOURCE_HSE|Sysclksource Hse
+SYSCLKSourceVirtual|RCC_SYSCLKSOURCE_PLLCLK|Sysclksource Pllclk
+SYSCLKSource|RCC_SYSCLKSOURCE_HSI|Sysclksource Hsi
+SYSCLKSource|RCC_SYSCLKSOURCE_HSE|Sysclksource Hse
+SYSCLKSource|RCC_SYSCLKSOURCE_PLLCLK|Sysclksource Pllclk
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_SYSCLK|MCO1SRC SYSCLK
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_HSI|MCO1SRC HSI
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_HSE|MCO1SRC HSE
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_LSI|MCO1SRC LSI
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_HCLK5|MCO1SRC HCLK5
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_PLL1RCLK|MCO1SRC PLLCLK
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_PLL1PCLK|MCO1SRC PLL1P
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_PLL1QCLK|MCO1SRC PLL1Q
+RCC_MCO1SourceVirtual|RCC_MCO1SOURCE_LSE|MCO1SRC LSE
+RCC_MCO1Source|RCC_MCO1SOURCE_SYSCLK|MCO1SRC SYSCLK
+RCC_MCO1Source|RCC_MCO1SOURCE_HSI|MCO1SRC HSI
+RCC_MCO1Source|RCC_MCO1SOURCE_HSE|MCO1SRC HSE
+RCC_MCO1Source|RCC_MCO1SOURCE_PLL1RCLK|MCO1SRC PLLCLK
+RCC_MCO1Source|RCC_MCO1SOURCE_LSE|MCO1SRC LSE
+RCC_MCO1Source|RCC_MCO1SOURCE_LSI|MCO1SRC LSI
+RCC_MCO1Source|RCC_MCO1SOURCE_PLL1PCLK|MCO1SRC PLL1P
+RCC_MCO1Source|RCC_MCO1SOURCE_PLL1QCLK|MCO1SRC PLL1Q
+RCC_MCO1Source|RCC_MCO1SOURCE_HCLK5|MCO1SRC HCLK5
+LSCOSource1Virtual|RCC_LSCOSOURCE_LSI|LSI
+LSCOSource1Virtual|RCC_LSCOSOURCE_LSE|LSE
+LSCOSource1|RCC_LSCOSOURCE_LSI|LSI
+LSCOSource1|RCC_LSCOSOURCE_LSE|LSE
+SPI1CLockSelection|RCC_SPI1CLKSOURCE_PCLK2|SPI1 Clksource PCLK1
+SPI1CLockSelection|RCC_SPI1CLKSOURCE_SYSCLK|SPI1 Clksource SYSCLK
+SPI1CLockSelection|RCC_SPI1CLKSOURCE_HSI|SPI1 Clksource HSI
+SPI3CLockSelection|RCC_SPI3CLKSOURCE_PCLK7|SPI1 Clksource PCLK7
+SPI3CLockSelection|RCC_SPI3CLKSOURCE_SYSCLK|SPI1 Clksource SYSCLK
+SPI3CLockSelection|RCC_SPI3CLKSOURCE_HSI|SPI1 Clksource HSI
+RTCClockSelection|RCC_RTCCLKSOURCE_HSE_DIV32|Rtcclksource Hse div32
+RTCClockSelection|RCC_RTCCLKSOURCE_LSE|Rtcclksource Lse
+RTCClockSelection|RCC_RTCCLKSOURCE_LSI|Rtcclksource Lsi
+RSTClockSelectionVirtual|RCC_RADIOSTCLKSOURCE_HSE_DIV1000|Hse div1000
+RSTClockSelectionVirtual|RCC_RADIOSTCLKSOURCE_LSI|Lsi
+RSTClockSelectionVirtual|RCC_RADIOSTCLKSOURCE_LSE|LSE
+RSTClockSelection|RCC_RADIOSTCLKSOURCE_HSE_DIV1000|Hse div1000
+RSTClockSelection|RCC_RADIOSTCLKSOURCE_LSE|LSE
+RSTClockSelection|RCC_RADIOSTCLKSOURCE_LSI|Lsi
+USART1CLockSelectionVirtual|RCC_USART1CLKSOURCE_PCLK2|Usart1 Clksource Pclk2
+USART1CLockSelectionVirtual|RCC_USART1CLKSOURCE_SYSCLK|Usart1 Clksource Sysclk
+USART1CLockSelectionVirtual|RCC_USART1CLKSOURCE_HSI|Usart1 Clksource Hsi
+USART1CLockSelectionVirtual|RCC_USART1CLKSOURCE_LSE|Usart1 Clksource Lse
+USART1CLockSelection|RCC_USART1CLKSOURCE_PCLK2|Usart1 Clksource Pclk2
+USART1CLockSelection|RCC_USART1CLKSOURCE_SYSCLK|Usart1 Clksource Sysclk
+USART1CLockSelection|RCC_USART1CLKSOURCE_HSI|Usart1 Clksource Hsi
+USART1CLockSelection|RCC_USART1CLKSOURCE_LSE|Usart1 Clksource Lse
+USART2CLockSelectionVirtual|RCC_USART2CLKSOURCE_PCLK1|Usart2 Clksource Pclk1
+USART2CLockSelectionVirtual|RCC_USART2CLKSOURCE_SYSCLK|Usart2 Clksource Sysclk
+USART2CLockSelectionVirtual|RCC_USART2CLKSOURCE_HSI|Usart2 Clksource Hsi
+USART2CLockSelectionVirtual|RCC_USART2CLKSOURCE_LSE|Usart2 Clksource Lse
+USART2CLockSelection|RCC_USART2CLKSOURCE_PCLK1|Usart2 Clksource Pclk1
+USART2CLockSelection|RCC_USART2CLKSOURCE_SYSCLK|Usart2 Clksource Sysclk
+USART2CLockSelection|RCC_USART2CLKSOURCE_HSI|Usart2 Clksource Hsi
+USART2CLockSelection|RCC_USART2CLKSOURCE_LSE|Usart2 Clksource Lse
+LPUART1CLockSelectionVirtual|RCC_LPUART1CLKSOURCE_PCLK7|LPUART1 Clksource Pclk3
+LPUART1CLockSelectionVirtual|RCC_LPUART1CLKSOURCE_SYSCLK|LPUART1 Clksource Sysclk
+LPUART1CLockSelectionVirtual|RCC_LPUART1CLKSOURCE_HSI|LPUART1 Clksource Hsi
+LPUART1CLockSelectionVirtual|RCC_LPUART1CLKSOURCE_LSE|LPUART1 Clksource Lse
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_PCLK7|LPUART1 Clksource Pclk3
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_SYSCLK|LPUART1 Clksource Sysclk
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_HSI|LPUART1 Clksource Hsi
+LPUART1CLockSelection|RCC_LPUART1CLKSOURCE_LSE|LPUART1 Clksource Lse
+I2C1CLockSelection|RCC_I2C1CLKSOURCE_PCLK1|I2C1 Clksource PCLK1
+I2C1CLockSelection|RCC_I2C1CLKSOURCE_SYSCLK|I2C1 Clksource Sysclk
+I2C1CLockSelection|RCC_I2C1CLKSOURCE_HSI|I2C1 Clksource Hsi
+I2C3CLockSelection|RCC_I2C3CLKSOURCE_PCLK7|I2C3 Clksource PCLK7
+I2C3CLockSelection|RCC_I2C3CLKSOURCE_SYSCLK|I2C3 Clksource Sysclk
+I2C3CLockSelection|RCC_I2C3CLKSOURCE_HSI|I2C3 Clksource Hsi
+LPTIM1CLockSelectionVirtual|RCC_LPTIM1CLKSOURCE_LSI|Lptim1 Clksource Lsi
+LPTIM1CLockSelectionVirtual|RCC_LPTIM1CLKSOURCE_HSI|Lptim1 Clksource Hsi
+LPTIM1CLockSelectionVirtual|RCC_LPTIM1CLKSOURCE_PCLK7|Lptim1 Clksource PCLK7
+LPTIM1CLockSelectionVirtual|RCC_LPTIM1CLKSOURCE_LSE|Lptim1 Clksource Lse
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_LSI|Lptim1 Clksource Lsi
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_HSI|Lptim1 Clksource Hsi
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_LSE|Lptim1 Clksource Lse
+LPTIM1CLockSelection|RCC_LPTIM1CLKSOURCE_PCLK7|Lptim1 Clksource PCLK7
+LPTIM2CLockSelectionVirtual|RCC_LPTIM2CLKSOURCE_PCLK1|LPTIM2 Clksource Pclk
+LPTIM2CLockSelectionVirtual|RCC_LPTIM2CLKSOURCE_LSI|LPTIM2 Clksource Lsi
+LPTIM2CLockSelectionVirtual|RCC_LPTIM2CLKSOURCE_HSI|LPTIM2 Clksource Hsi
+LPTIM2CLockSelectionVirtual|RCC_LPTIM2CLKSOURCE_LSE|LPTIM2 Clksource Lse
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_PCLK1|LPTIM2 Clksource Pclk
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_LSI|LPTIM2 Clksource Lsi
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_HSI|LPTIM2 Clksource Hsi
+LPTIM2CLockSelection|RCC_LPTIM2CLKSOURCE_LSE|LPTIM2 Clksource Lse
+ASClockSelection|RCC_ASCLKSOURCE_PLL1P|Audio Clksource Pll1p
+ASClockSelection|RCC_ASCLKSOURCE_PLL1Q|Audio Clksource Pll1q
+SAI1CLockSelectionVirtual|RCC_SAI1CLKSOURCE_PIN|SAI1_EXT
+SAI1CLockSelectionVirtual|RCC_SAI1CLKSOURCE_HSI|HSI
+SAI1CLockSelectionVirtual|RCC_SAI1CLKSOURCE_SYSCLK|SYSCLK
+SAI1CLockSelectionVirtual|RCC_SAI1CLKSOURCE_PLL1P|PLL1P
+SAI1CLockSelectionVirtual|RCC_SAI1CLKSOURCE_PLL1Q|PLL1Q
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_PLL1P|PLL1P
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_PIN|SAI1_EXT
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_HSI|HSI
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_PLL1Q|PLL1Q
+SAI1CLockSelection|RCC_SAI1CLKSOURCE_SYSCLK|SYSCLK
+ADCCLockSelectionVirtual|RCC_ADCCLKSOURCE_HCLK|HCLK
+ADCCLockSelectionVirtual|RCC_ADCCLKSOURCE_SYSCLK|SYSCLK
+ADCCLockSelectionVirtual|RCC_ADCCLKSOURCE_HSE|HSE
+ADCCLockSelectionVirtual|RCC_ADCCLKSOURCE_HSI|HSI
+ADCCLockSelectionVirtual|RCC_ADCCLKSOURCE_PLL1P|PLL1P
+ADCCLockSelection|RCC_ADCCLKSOURCE_HCLK|HCLK
+ADCCLockSelection|RCC_ADCCLKSOURCE_SYSCLK|SYSCLK
+ADCCLockSelection|RCC_ADCCLKSOURCE_HSE|HSE
+ADCCLockSelection|RCC_ADCCLKSOURCE_HSI|HSI
+ADCCLockSelection|RCC_ADCCLKSOURCE_PLL1P|PLL1P
+RNGCLockSelectionVirtual|RCC_RNGCLKSOURCE_PLL1Q|PLL1Q DIV2
+RNGCLockSelectionVirtual|RCC_RNGCLKSOURCE_HSI|HSI
+RNGCLockSelectionVirtual|RCC_RNGCLKSOURCE_LSI|LSI
+RNGCLockSelectionVirtual|RCC_RNGCLKSOURCE_LSE|LSE
+RNGCLockSelection|RCC_RNGCLKSOURCE_LSE|LSE
+RNGCLockSelection|RCC_RNGCLKSOURCE_PLL1Q|PLL1Q DIV2
+RNGCLockSelection|RCC_RNGCLKSOURCE_HSI|HSI
+RNGCLockSelection|RCC_RNGCLKSOURCE_LSI|LSI
+OscillatorTypeHSE|RCC_OSCILLATORTYPE_HSE|HSE
+HSEState|RCC_HSE_ON|Hse Bypass
+HSEState|RCC_HSE_OFF|Hse Off
+OscillatorTypeLSE|RCC_OSCILLATORTYPE_LSE|LSE
+LSEState|RCC_LSE_BYPASS_RTC_ONLY|Lse Bypass for RTC only
+LSEState|RCC_LSE_ON_RTC_ONLY|Lse on for RTC only
+LSEState|RCC_LSE_BYPASS|Lse Bypass
+LSEState|RCC_LSE_ON|Lse ON
+LSEState|RCC_LSE_OFF|Lse Off
+OscillatorTypeLSI|RCC_OSCILLATORTYPE_LSI|LSI
+OscillatorTypeHSI|RCC_OSCILLATORTYPE_HSI|HSI
+HSIState|RCC_HSI_ON|Hsi On
+PLLState|RCC_PLL_OFF|Pll Off
+PLLState|RCC_PLL_ON|Pll ON
+ClockTypeSysClk|RCC_CLOCKTYPE_SYSCLK|Sysclk
+ClockTypeHCLK|RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_HCLK
+ClockTypePCLK1|RCC_CLOCKTYPE_PCLK1|PCLK1
+ClockTypePCLK2|RCC_CLOCKTYPE_PCLK2|PCLK2
+ClockTypePCLK7|RCC_CLOCKTYPE_PCLK7|PCLK7
+RCC_PERIPHCLK_RTSVar|RCC_PERIPHCLK_RADIOST|RCC_PERIPHCLK_RADIOST
+RCC_MCO|RCC_MCO1|Clock Output
+SupplySource|PWR_LDO_SUPPLY|PWR_LDO_SUPPLY
+SupplySource|PWR_SMPS_SUPPLY|PWR_SMPS_SUPPLY
+PWR_Regulator_Voltage_Scale|PWR_REGULATOR_VOLTAGE_SCALE1|Power Regulator Voltage Scale 1
+PWR_Regulator_Voltage_Scale|PWR_REGULATOR_VOLTAGE_SCALE2|Power Regulator Voltage Scale 2
+FLatency|FLASH_LATENCY_1|1 WS (2 CPU cycle)
+FLatency|FLASH_LATENCY_0|0 WS (1 CPU cycle)
+FLatency|FLASH_LATENCY_3|3 WS (4 CPU cycle)
+FLatency|FLASH_LATENCY_2|2 WS (3 CPU cycle)
+LSI2_FreqTempSens|RCC_LSI2_FREQTEMPSENS_80|Close to zero at +80°
+LSI2_FreqTempSens|RCC_LSI2_FREQTEMPSENS_50|Close to zero at +50°
+LSI2_FreqTempSens|RCC_LSI2_FREQTEMPSENS_20|Close to zero at +20°
+LSI2OpMode|RCC_LSI2_MODE_NOMINAL|Nominal-power, high accuracy
+LSI2OpMode|RCC_LSI2_MODE_LP|Low-power, medium accuracy
+LSI2OpMode|RCC_LSI2_MODE_ULP|Ultra-low-power, low accuracy
+LSE_Drive_Capability|RCC_LSEDRIVE_MEDIUMLOW|LSE oscillator medium low drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_MEDIUMHIGH|LSE oscillator medium high drive capability
+LSE_Drive_Capability|RCC_LSEDRIVE_HIGH|LSE oscillator high drive capability
+PLL1_VCI_Range|RCC_PLL_VCOINPUT_RANGE0|Between 4 and 8 MHz
+PLL1_VCI_Range|RCC_PLL_VCOINPUT_RANGE1|Between 8 and 16 MHz
+rccSecurity|RMVF_SEC|Enable
+rccSecurity|RMVF_NSEC|Disable
+rccPrivilegeNSecure|RCC_NSEC_PRIV|Enable
+rccPrivilegeNSecure|RCC_NSEC_NPRIV|Disable
+rccPrivilegeSecure|RCC_SEC_PRIV|Enable
+rccPrivilegeSecure|RCC_SEC_NPRIV|Disable

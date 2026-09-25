@@ -1,0 +1,19 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USB_OTG_FS1
+Version=otgfs1_v2_4_h7_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Host_channels|Host Channels|||1|16|
+speed|Speed|Host||||
+dma_enable|Enable internal IP DMA|Host||||
+Sof_enable|Signal start of frame|||||
+phy_itface|Physical interface|Host||||
+
+[Values]
+# параметр|значение|подпись
+speed|HCD_SPEED_FULL|Full Speed 12MBit/s
+speed|HCD_SPEED_LOW|Low Speed 1.5MBit/s
+phy_itface|HCD_PHY_EMBEDDED|Internal Phy

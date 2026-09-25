@@ -1,0 +1,39 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=SYS
+Version=STM32L051_sys_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+PVDLevel|PVD detection Level|||||
+Mode|PWR PVD Mode|||||
+PWR_LPM|Low power modes secure protection|Secure PWR||||
+SYSCFG_Vrefint_OUTPUT|SYSCFG Vrefint OUTPUT|||||
+DisableDeadBatterySignalsConfig|UCPD Disable Dead Battery Signals|||||
+PowerMode|Power Regulator|System power supply||||
+SmartRun|Keep Smart Run Domain Running|SmartRun domain in Run mode||||
+
+[Values]
+# параметр|значение|подпись
+PVDLevel|PWR_PVDLEVEL_7|PWR PVD LEVEL 7
+PVDLevel|PWR_PVDLEVEL_0|PWR PVD LEVEL 0 (1.9 V)
+PVDLevel|PWR_PVDLEVEL_1|PWR PVD LEVEL 1 (2.1 V)
+PVDLevel|PWR_PVDLEVEL_2|PWR PVD LEVEL 2 (2.3 V)
+PVDLevel|PWR_PVDLEVEL_3|PWR PVD LEVEL 3 (2.5 V)
+PVDLevel|PWR_PVDLEVEL_4|PWR PVD LEVEL 4 (2.7 V)
+PVDLevel|PWR_PVDLEVEL_5|PWR PVD LEVEL 5 (2.9 V)
+PVDLevel|PWR_PVDLEVEL_6|PWR PVD LEVEL 6 (3.1 V)
+Mode|PWR_PVD_MODE_NORMAL|Basic mode
+Mode|PWR_PVD_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING|Event Mode with Rising edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_FALLING|Event Mode with Falling edge trigger detection
+Mode|PWR_PVD_MODE_EVENT_RISING_FALLING|Event Mode with Rising/Falling edge trigger detection
+PWR_LPM|LPM_SECURE_YES|Enable
+PWR_LPM|LPM_SECURE_NO|Disable
+PowerMode|PWR_LDO_SUPPLY|LDO
+PowerMode|PWR_SMPS_SUPPLY|SMPS
+SmartRun|PWR_SRD_DOMAIN_STOP|OFF: Increases Power Saving
+SmartRun|PWR_SRD_DOMAIN_RUN|ON: Increases Speed Performance

@@ -1,0 +1,106 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DMA2D
+Version=STM32H5_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InputOffsetForeground|Input Offset|Foreground layer Configuration||0|16383|
+InputColorModeForeground|DMA2D Input Color Mode|Foreground layer Configuration||||
+AlphaModeForeground|DMA2D ALPHA MODE|Foreground layer Configuration||||
+InputAlphaForeground|Input Alpha|Foreground layer Configuration||0|255|
+AlphaInvertedForeground|DMA2D ALPHA Inversion|Foreground layer Configuration||||
+RedBlueSwapForeground|DMA2D Red and Blue swap|Foreground layer Configuration||||
+ChromaSubSamplingForeground|DMA2D Chroma Sub-Sampling Mode|Foreground layer Configuration||||
+InputOffsetBackground|Input Offset|Background layer Configuration||0|16383|
+InputColorModeBackground|DMA2D Input Color Mode|Background layer Configuration||||
+AlphaModeBackground|DMA2D ALPHA MODE|Background layer Configuration||||
+InputAlphaBackground|Input Alpha|Background layer Configuration||0|255|
+AlphaInvertedBackground|DMA2D ALPHA Inversion|Background layer Configuration||||
+RedBlueSwapBackground|DMA2D Red and Blue swap|Background layer Configuration||||
+Mode|Transfer Mode|Basic Parameters||||
+Ring Buffer Address|Ring Buffer Address|Ring Buffer Configuration||0x0|0xffffffff|
+Ring Buffer Address Casted|Ring Buffer Address Casted|Ring Buffer Configuration||||
+Ring Buffer Size|Ring Buffer Size|Ring Buffer Configuration||||Ring Buffer Size must be between 64 Bytes and 8K Bytes
+ColorMode|Color Mode|Basic Parameters||||
+OutputOffset|Output Offset|Basic Parameters||0|16383|
+BytesSwap|DMA2D Bytes Swap|Basic Parameters||||
+LineOffsetMode|DMA2D Line Offset Mode|Basic Parameters||||
+LayerIdxForeground|Output Offsetsdv|Basic Parameters||1|1|
+LayerIdxBackground|Output Offsetsdv|Basic Parameters||0|0|
+DMA2Dx|DMA2DString for LL|Basic Parameters||||
+
+[Values]
+# параметр|значение|подпись
+InputColorModeForeground|DMA2D_INPUT_ARGB8888|ARGB8888
+InputColorModeForeground|DMA2D_INPUT_RGB888|RGB888
+InputColorModeForeground|DMA2D_INPUT_RGB565|RGB565
+InputColorModeForeground|DMA2D_INPUT_ARGB1555|ARGB1555
+InputColorModeForeground|DMA2D_INPUT_ARGB4444|ARGB4444
+InputColorModeForeground|DMA2D_INPUT_L8|L8
+InputColorModeForeground|DMA2D_INPUT_AL44|AL44
+InputColorModeForeground|DMA2D_INPUT_AL88|AL88
+InputColorModeForeground|DMA2D_INPUT_L4|L4
+InputColorModeForeground|DMA2D_INPUT_A8|A8
+InputColorModeForeground|DMA2D_INPUT_A4|A4
+InputColorModeForeground|DMA2D_INPUT_YCBCR|YCBCR
+InputColorModeForeground|DMA2D_INPUT_A2|A2
+InputColorModeForeground|DMA2D_INPUT_A1|A1
+InputColorModeForeground|DMA2D_INPUT_ARGB2222|ARGB2222
+AlphaModeForeground|DMA2D_NO_MODIF_ALPHA|No modification of the alpha channel value
+AlphaModeForeground|DMA2D_REPLACE_ALPHA|Replace original alpha channel
+AlphaModeForeground|DMA2D_COMBINE_ALPHA|Combine original alpha channel
+AlphaInvertedForeground|DMA2D_REGULAR_ALPHA|Regular Alpha
+AlphaInvertedForeground|DMA2D_INVERTED_ALPHA|Inverted Alpha
+RedBlueSwapForeground|DMA2D_RB_REGULAR|Regular mode (RGB or ARGB)
+RedBlueSwapForeground|DMA2D_RB_SWAP|Swap mode (BGR or ABGR)
+ChromaSubSamplingForeground|DMA2D_NO_CSS|No chroma sub-sampling 4:4:4
+ChromaSubSamplingForeground|DMA2D_CSS_422|Chroma sub-sampling 4:2:2
+ChromaSubSamplingForeground|DMA2D_CSS_420|Chroma sub-sampling 4:2:0
+InputColorModeBackground|DMA2D_INPUT_ARGB8888|ARGB8888
+InputColorModeBackground|DMA2D_INPUT_RGB888|RGB888
+InputColorModeBackground|DMA2D_INPUT_RGB565|RGB565
+InputColorModeBackground|DMA2D_INPUT_ARGB1555|ARGB1555
+InputColorModeBackground|DMA2D_INPUT_ARGB4444|ARGB4444
+InputColorModeBackground|DMA2D_INPUT_L8|L8
+InputColorModeBackground|DMA2D_INPUT_AL44|AL44
+InputColorModeBackground|DMA2D_INPUT_AL88|AL88
+InputColorModeBackground|DMA2D_INPUT_L4|L4
+InputColorModeBackground|DMA2D_INPUT_A8|A8
+InputColorModeBackground|DMA2D_INPUT_A4|A4
+InputColorModeBackground|DMA2D_INPUT_YCBCR|YCBCR
+InputColorModeBackground|DMA2D_INPUT_A2|A2
+InputColorModeBackground|DMA2D_INPUT_A1|A1
+InputColorModeBackground|DMA2D_INPUT_ARGB2222|ARGB2222
+AlphaModeBackground|DMA2D_NO_MODIF_ALPHA|No modification of the alpha channel value
+AlphaModeBackground|DMA2D_REPLACE_ALPHA|Replace original alpha channel
+AlphaModeBackground|DMA2D_COMBINE_ALPHA|Combine original alpha channel
+AlphaInvertedBackground|DMA2D_REGULAR_ALPHA|Regular Alpha
+AlphaInvertedBackground|DMA2D_INVERTED_ALPHA|Inverted Alpha
+RedBlueSwapBackground|DMA2D_RB_REGULAR|Regular mode (RGB or ARGB)
+RedBlueSwapBackground|DMA2D_RB_SWAP|Swap mode (BGR or ABGR)
+Mode|DMA2D_M2M|Memory to Memory
+Mode|DMA2D_M2M_PFC|Memory to Memory with 'Pixel Format Conversion'
+Mode|DMA2D_M2M_BLEND|Memory to Memory with Blending
+Mode|DMA2D_R2M|Register to Memory
+Mode|DMA2D_M2M_BLEND_FG|memory to memory with blending transfer mode and fixed color FG
+Mode|DMA2D_M2M_BLEND_BG|memory to memory with blending transfer mode and fixed color BG
+Ring Buffer Size|DMA2D_RB_SIZE_64B|64B
+Ring Buffer Size|DMA2D_RB_SIZE_128B|128B
+Ring Buffer Size|DMA2D_RB_SIZE_256B|256B
+Ring Buffer Size|DMA2D_RB_SIZE_512B|512B
+Ring Buffer Size|DMA2D_RB_SIZE_1KB|1KB
+Ring Buffer Size|DMA2D_RB_SIZE_2KB|2KB
+Ring Buffer Size|DMA2D_RB_SIZE_4KB|4KB
+Ring Buffer Size|DMA2D_RB_SIZE_8KB|8KB
+ColorMode|DMA2D_OUTPUT_ARGB8888|ARGB8888
+ColorMode|DMA2D_OUTPUT_RGB888|RGB888
+ColorMode|DMA2D_OUTPUT_RGB565|RGB565
+ColorMode|DMA2D_OUTPUT_ARGB1555|ARGB1555
+ColorMode|DMA2D_OUTPUT_ARGB4444|ARGB4444
+ColorMode|DMA2D_OUTPUT_ARGB2222|ARGB2222
+BytesSwap|DMA2D_BYTES_REGULAR|Bytes in regular order in output FIFO
+BytesSwap|DMA2D_BYTES_SWAP|Bytes are swapped two by two in output FIFO
+LineOffsetMode|DMA2D_LOM_PIXELS|Line offsets expressed in pixels
+LineOffsetMode|DMA2D_LOM_BYTES|Line offsets expressed in bytes

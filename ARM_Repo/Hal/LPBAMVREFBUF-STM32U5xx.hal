@@ -1,0 +1,54 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPBAMVREFBUF
+Version=STM32U5xx
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InstanceHAL|HAL IP Instance|||||
+QUEUE_NAME|Define the name of your Queue|||||
+DESCRIPTOR_NAME|name of the descriptor|||||
+DESCRIPTOR_NAME_BUFFERMODE|name of the descriptor for BUFFERMODE|||||
+CircularNode_BUFFERMODE|Circular Node for BUFFERMODE|BUFFERMODE||||description
+TriggerPolarity|The Function execution is|Trigger Configuration||||description
+TriggerSelection|Trigger Hardware Signal is|Trigger Configuration||||description
+TriggerMode_CONFIG|Trigger Mode|Trigger Configuration||||description
+NodeLevel|Node on which the trigger is applied (not visible)|Trigger Configuration||||description
+BufferMode|Buffer Mode|Buffer Mode||||
+
+[Values]
+# параметр|значение|подпись
+CircularNode_BUFFERMODE|__NULL|DISABLE
+CircularNode_BUFFERMODE|LPBAM_VREFBUF_BUFMODE_CONFIGQ_CONFIG_NODE|Configuration Node
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_MASKED|not conditionned by a Trigger
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_RISING|trigged on the Rising Edge of the Hardware Signal
+TriggerPolarity|LPBAM_DMA_TRIG_POLARITY_FALLING|trigged on the Falling Edge of the Hardware Signal
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE0|EXTI Line 0
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE1|EXTI Line 1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE2|EXTI Line 2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE3|EXTI Line 3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_EXTI_LINE4|EXTI Line 4
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG1|TAMP TRG1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG2|TAMP TRG2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_TAMP_TRG3|TAMP TRG3
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH1|LPTIM1 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM1_CH2|LPTIM1 CH2
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM3_CH1|LPTIM3 CH1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPTIM4_OUT|LPTIM4 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP1_OUT|COMP1 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_COMP2_OUT|COMP2 OUT
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRA_TRG|RTC ALRA TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_ALRB_TRG|RTC ALRB TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_RTC_WUT_TRG|RTC WUT TRG
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_ADC4_AWD1|ADC4 AWD1
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH0_TCF|LPDMA1 CH0 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH1_TCF|LPDMA1 CH1 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH2_TCF|LPDMA1 CH2 TCF
+TriggerSelection|LPBAM_LPDMA1_TRIGGER_LPDMA1_CH3_TCF|LPDMA1 CH3 TCF
+TriggerMode_CONFIG|LPBAM_DMA_TRIGM_BLOCK_TRANSFER|A block transfer is conditioned by (at least) one hit trigger
+NodeLevel|LPBAM_VREFBUF_BUFMODE_CONFIGQ_CONFIG_NODE|Config Node
+BufferMode|LPBAM_VREFBUF_BUFFER_OFF_MODE|Off
+BufferMode|LPBAM_VREFBUF_INTERNAL_VOLTAGE_MODE|Internal Voltage
+BufferMode|LPBAM_VREFBUF_EXTERNAL_VOLTAGE_MODE|External Voltage
+BufferMode|LPBAM_VREFBUF_HOLD_MODE|Hold

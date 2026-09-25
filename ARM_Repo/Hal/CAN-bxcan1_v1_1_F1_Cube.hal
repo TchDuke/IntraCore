@@ -1,0 +1,75 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=CAN
+Version=bxcan1_v1_1_F1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Prescaler|Prescaler (for Time Quantum)|Bit Timings Parameters||1|1024|
+SJW|ReSynchronization Jump Width|Bit Timings Parameters||||
+BS1|Time Quanta in Bit Segment 1|Bit Timings Parameters||||
+BS2|Time Quanta in Bit Segment 2|Bit Timings Parameters||||
+CalculateTimeQuantum|Time Quantum|Bit Timings Parameters|ns|||
+CalculateTimeBit|Time for one Bit|Bit Timings Parameters|ns|||
+CalculateBaudRate|Baud Rate|Bit Timings Parameters|bit/s|||
+TTCM|Time Triggered Communication Mode|Basic Parameters||||
+ABOM|Automatic Bus-Off Management|Basic Parameters||||
+AWUM|Automatic Wake-Up Mode|Basic Parameters||||
+NART|Automatic Retransmission|Basic Parameters||||
+RFLM|Receive Fifo Locked Mode|Basic Parameters||||
+TXFP|Transmit Fifo Priority|Basic Parameters||||
+BankNumber|Start Slave Bank Filter Number|Filter Parameters||1|27|
+FilterNumber|Filter Number|Filter Parameters||0|27|
+FilterActivation|Filter Activation|Filter Parameters||||
+FilterScale|Filter Scale|Filter Parameters||||
+FilterMode|Filter Mode|Filter Parameters||||
+FilterId32b|Filter Identification|Filter Parameters||0|4294967295|
+FilterIdHigh|1° Filter Identification|Filter Parameters||0|65535|
+FilterIdLow|2° Filter Identification|Filter Parameters||0|65535|
+FilterMaskId32b|Identification Filter Mask|Filter Parameters||0|4294967295|
+FilterMaskIdHigh|1° Identification Filter Mask|Filter Parameters||0|65535|
+FilterMaskIdLow|2° Identification Filter Mask|Filter Parameters||0|65535|
+FilterFIFOAssignment|Filter Fifo Assignment|Filter Parameters||||
+Mode|Test Mode|Advanced Parameters||||
+
+[Values]
+# параметр|значение|подпись
+SJW|CAN_SJW_1TQ|1 Time
+SJW|CAN_SJW_2TQ|2 Times
+SJW|CAN_SJW_3TQ|3 Times
+SJW|CAN_SJW_4TQ|4 Times
+BS1|CAN_BS1_1TQ|1 Time
+BS1|CAN_BS1_2TQ|2 Times
+BS1|CAN_BS1_3TQ|3 Times
+BS1|CAN_BS1_4TQ|4 Times
+BS1|CAN_BS1_5TQ|5 Times
+BS1|CAN_BS1_6TQ|6 Times
+BS1|CAN_BS1_7TQ|7 Times
+BS1|CAN_BS1_8TQ|8 Times
+BS1|CAN_BS1_9TQ|9 Times
+BS1|CAN_BS1_10TQ|10 Times
+BS1|CAN_BS1_11TQ|11 Times
+BS1|CAN_BS1_12TQ|12 Times
+BS1|CAN_BS1_13TQ|13 Times
+BS1|CAN_BS1_14TQ|14 Times
+BS1|CAN_BS1_15TQ|15 Times
+BS1|CAN_BS1_16TQ|16 Times
+BS2|CAN_BS2_1TQ|1 Time
+BS2|CAN_BS2_2TQ|2 Times
+BS2|CAN_BS2_3TQ|3 Times
+BS2|CAN_BS2_4TQ|4 Times
+BS2|CAN_BS2_5TQ|5 Times
+BS2|CAN_BS2_6TQ|6 Times
+BS2|CAN_BS2_7TQ|7 Times
+BS2|CAN_BS2_8TQ|8 Times
+FilterScale|CAN_FILTERSCALE_16BIT|Two 16-bit Filters
+FilterScale|CAN_FILTERSCALE_32BIT|One 32-bit Filter
+FilterMode|CAN_FILTERMODE_IDMASK|Mask
+FilterMode|CAN_FILTERMODE_IDLIST|Identifier List
+FilterFIFOAssignment|CAN_FILTER_FIFO0|Filter Fifo 0
+FilterFIFOAssignment|CAN_FILTER_FIFO1|Filter Fifo 1
+Mode|CAN_MODE_NORMAL|Normal
+Mode|CAN_MODE_LOOPBACK|Loopback
+Mode|CAN_MODE_SILENT|Silent
+Mode|CAN_MODE_SILENT_LOOPBACK|Loopback combined with Silent

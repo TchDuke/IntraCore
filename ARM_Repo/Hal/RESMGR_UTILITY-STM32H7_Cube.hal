@@ -1,0 +1,326 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RESMGR_UTILITY
+Version=STM32H7_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+RESMGR_UTILITY_Version|RESMGR_UTILITY version|Version||||
+RESMGR_UTILITY_SendFunct|initialisation function of RESMGR|Initialisation||||
+RESMGR_UTILITY_Callback|callback function of RESMGR|Initialisation||||
+RESMGR_UTILITY_Void|deinitialisation function of RESMGR|DeInitialisation||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel0|request resource assignment for BDMA_Channel0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel1|request resource assignment for BDMA_Channel1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel2|request resource assignment for BDMA_Channel2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel3|request resource assignment for BDMA_Channel3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel4|request resource assignment for BDMA_Channel4 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel5|request resource assignment for BDMA_Channel5 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel6|request resource assignment for BDMA_Channel6 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_BDMA_Channel7|request resource assignment for BDMA_Channel7 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel0|request resource assignment for DFSDM1_Channel0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel1|request resource assignment for DFSDM1_Channel1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel2|request resource assignment for DFSDM1_Channel2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel3|request resource assignment for DFSDM1_Channel3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel4|request resource assignment for DFSDM1_Channel4 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel5|request resource assignment for DFSDM1_Channel5 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel6|request resource assignment for DFSDM1_Channel6 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Channel7|request resource assignment for DFSDM1_Channel7 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Filter0|request resource assignment for DFSDM1_Filter0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Filter1|request resource assignment for DFSDM1_Filter1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Filter2|request resource assignment for DFSDM1_Filter2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DFSDM1_Filter3|request resource assignment for DFSDM1_Filter3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream0|request resource assignment for DMA1_Stream0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream1|request resource assignment for DMA1_Stream1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream2|request resource assignment for DMA1_Stream2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream3|request resource assignment for DMA1_Stream3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream4|request resource assignment for DMA1_Stream4 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream5|request resource assignment for DMA1_Stream5 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream6|request resource assignment for DMA1_Stream6 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA1_Stream7|request resource assignment for DMA1_Stream7 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream0|request resource assignment for DMA2_Stream0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream1|request resource assignment for DMA2_Stream1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream2|request resource assignment for DMA2_Stream2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream3|request resource assignment for DMA2_Stream3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream4|request resource assignment for DMA2_Stream4 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream5|request resource assignment for DMA2_Stream5 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream6|request resource assignment for DMA2_Stream6 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMA2_Stream7|request resource assignment for DMA2_Stream7 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator0|request resource assignment for DMAMUX1_RequestGenerator0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator1|request resource assignment for DMAMUX1_RequestGenerator1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator2|request resource assignment for DMAMUX1_RequestGenerator2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator3|request resource assignment for DMAMUX1_RequestGenerator3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator4|request resource assignment for DMAMUX1_RequestGenerator4 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator5|request resource assignment for DMAMUX1_RequestGenerator5 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator6|request resource assignment for DMAMUX1_RequestGenerator6 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_RequestGenerator7|request resource assignment for DMAMUX1_RequestGenerator7 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator0|request resource assignment for DMAMUX2_RequestGenerator0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator1|request resource assignment for DMAMUX2_RequestGenerator1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator2|request resource assignment for DMAMUX2_RequestGenerator2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator3|request resource assignment for DMAMUX2_RequestGenerator3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator4|request resource assignment for DMAMUX2_RequestGenerator4 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator5|request resource assignment for DMAMUX2_RequestGenerator5 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator6|request resource assignment for DMAMUX2_RequestGenerator6 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_RequestGenerator7|request resource assignment for DMAMUX2_RequestGenerator7 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_FDCAN_CCU|request resource assignment for FDCAN_CCU in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_FDCAN1_CCU|request resource assignment for FDCAN_CCU for FDCAN1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_FDCAN2_CCU|request resource assignment for FDCAN_CCU for FDCAN2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_GPIO|request resource assignment for GPIO in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOA|request resource assignment for GPIOA in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOB|request resource assignment for GPIOB in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOC|request resource assignment for GPIOC in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOD|request resource assignment for GPIOD in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOE|request resource assignment for GPIOE in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOF|request resource assignment for GPIOF in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOG|request resource assignment for GPIOG in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOH|request resource assignment for GPIOH in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOI|request resource assignment for GPIOI in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOJ|request resource assignment for GPIOJ in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_GPIOK|request resource assignment for GPIOK in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_HSEM|request resource assignment for HSEM in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel0|request resource assignment for MDMA_Channel0 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel1|request resource assignment for MDMA_Channel1 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel2|request resource assignment for MDMA_Channel2 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel3|request resource assignment for MDMA_Channel3 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel4|request resource assignment for MDMA_Channel4 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel5|request resource assignment for MDMA_Channel5 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel6|request resource assignment for MDMA_Channel6 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel7|request resource assignment for MDMA_Channel7 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel8|request resource assignment for MDMA_Channel8 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel9|request resource assignment for MDMA_Channel9 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel10|request resource assignment for MDMA_Channel10 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel11|request resource assignment for MDMA_Channel11 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel12|request resource assignment for MDMA_Channel12 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel13|request resource assignment for MDMA_Channel13 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel14|request resource assignment for MDMA_Channel14 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_RESOURCE_REQUEST_MDMA_Channel15|request resource assignment for MDMA_Channel15 in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_PWR|request resource assignment for PWR in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_VREFBUF|request resource assignment for VREFBUF in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_ADC1|request resource assignment for ADC1 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_ADC12_COMMON|request resource assignment for ADC12_COMMON in resource table|Resource configured by context||||
+RESMGR_REQUEST_ADC2|request resource assignment for ADC2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_ADC3|request resource assignment for ADC3 in resource table|Resource configured by context||||
+RESMGR_REQUEST_BDMA|request resource assignment for BDMA in resource table|Resource configured by context||||
+RESMGR_REQUEST_COMP1|request resource assignment for COMP1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_COMP2|request resource assignment for COMP2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_CRC|request resource assignment for CRC in resource table|Resource configured by context||||
+RESMGR_REQUEST_CRS|request resource assignment for CRS in resource table|Resource configured by context||||
+RESMGR_REQUEST_DAC1|request resource assignment for DAC1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DEBUG|request resource assignment for DBGMCU in resource table|Resource configured by context||||
+RESMGR_REQUEST_DCMI|request resource assignment for DCMI in resource table|Resource configured by context||||
+RESMGR_REQUEST_DFSDM1|request resource assignment for DFSDM1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DLYB_QUADSPI|request resource assignment for DLYB_QUADSPI in resource table|Resource configured by context||||
+RESMGR_REQUEST_DLYB_SDMMC1|request resource assignment for DLYB_SDMMC1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DLYB_SDMMC2|request resource assignment for DLYB_SDMMC2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DMA|request resource assignment for DMA in resource table|Configurable & Context pre-configured resources||||
+RESMGR_REQUEST_DMA1|request resource assignment for DMA1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DMA2|request resource assignment for DMA2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DMA2D|request resource assignment for DMA2D in resource table|Resource configured by context||||
+RESMGR_REQUEST_DMAMUX1|request resource assignment for DMAMUX1 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel0|request resource assignment for DMAMUX1_Channel0 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel1|request resource assignment for DMAMUX1_Channel1 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel2|request resource assignment for DMAMUX1_Channel2 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel3|request resource assignment for DMAMUX1_Channel3 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel4|request resource assignment for DMAMUX1_Channel4 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel5|request resource assignment for DMAMUX1_Channel5 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel6|request resource assignment for DMAMUX1_Channel6 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel7|request resource assignment for DMAMUX1_Channel7 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel8|request resource assignment for DMAMUX1_Channel8 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel9|request resource assignment for DMAMUX1_Channel9 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel10|request resource assignment for DMAMUX1_Channel10 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel11|request resource assignment for DMAMUX1_Channel11 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel12|request resource assignment for DMAMUX1_Channel12 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel13|request resource assignment for DMAMUX1_Channel13 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel14|request resource assignment for DMAMUX1_Channel14 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX1_Channel15|request resource assignment for DMAMUX1_Channel15 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DMAMUX2|request resource assignment for DMAMUX2 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel0|request resource assignment for DMAMUX2_Channel0 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel1|request resource assignment for DMAMUX2_Channel1 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel2|request resource assignment for DMAMUX2_Channel2 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel3|request resource assignment for DMAMUX2_Channel3 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel4|request resource assignment for DMAMUX2_Channel4 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel5|request resource assignment for DMAMUX2_Channel5 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel6|request resource assignment for DMAMUX2_Channel6 in resource table|Resource configured by context||||
+RESMGR_RESOURCE_REQUEST_DMAMUX2_Channel7|request resource assignment for DMAMUX2_Channel7 in resource table|Resource configured by context||||
+RESMGR_REQUEST_DSIHOST|request resource assignment for DSIHOST in resource table|Resource configured by context||||
+RESMGR_REQUEST_ETH|request resource assignment for ETH in resource table|Resource configured by context||||
+RESMGR_REQUEST_EXTI|request resource assignment for EXTI in resource table|Resource configured by context||||
+RESMGR_REQUEST_EXTI_D1|request resource assignment for EXTI_D1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_EXTI_D2|request resource assignment for EXTI_D2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_FDCAN1|request resource assignment for FDCAN1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_FDCAN2|request resource assignment for FDCAN2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_FLASH|request resource assignment for FLASH in resource table|Resource configured by context||||
+RESMGR_REQUEST_FMC|request resource assignment for FMC in resource table|Resource configured by context||||
+RESMGR_REQUEST_HDMI_CEC|request resource assignment for HDMI_CEC in resource table|Resource configured by context||||
+RESMGR_REQUEST_HRTIM|request resource assignment for HRTIM in resource table|Resource configured by context||||
+RESMGR_REQUEST_I2C1|request resource assignment for I2C1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_I2C2|request resource assignment for I2C2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_I2C3|request resource assignment for I2C3 in resource table|Resource configured by context||||
+RESMGR_REQUEST_I2C4|request resource assignment for I2C4 in resource table|Resource configured by context||||
+RESMGR_REQUEST_IWDG1|request resource assignment for IWDG1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_IWDG2|request resource assignment for IWDG2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_JPEG|request resource assignment for JPEG in resource table|Resource configured by context||||
+RESMGR_REQUEST_LPTIM1|request resource assignment for LPTIM1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_LPTIM2|request resource assignment for LPTIM2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_LPTIM3|request resource assignment for LPTIM3 in resource table|Resource configured by context||||
+RESMGR_REQUEST_LPTIM4|request resource assignment for LPTIM4 in resource table|Resource configured by context||||
+RESMGR_REQUEST_LPTIM5|request resource assignment for LPTIM5 in resource table|Resource configured by context||||
+RESMGR_REQUEST_LPUART1|request resource assignment for LPUART1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_LTDC|request resource assignment for LTDC in resource table|Resource configured by context||||
+RESMGR_REQUEST_MDIOS|request resource assignment for MDIOS in resource table|Resource configured by context||||
+RESMGR_REQUEST_MDMA|request resource assignment for MDMA in resource table|Resource configured by context||||
+RESMGR_REQUEST_OPAMP|request resource assignment for OPAMP in resource table|Resource configured by context||||
+RESMGR_REQUEST_OPAMP1|request resource assignment for OPAMP1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_OPAMP2|request resource assignment for OPAMP2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_QUADSPI|request resource assignment for QUADSPI in resource table|Resource configured by context||||
+RESMGR_REQUEST_RCC|request resource assignment for RCC in resource table|Resource configured by context||||
+RESMGR_REQUEST_RCC_C1|request resource assignment for RCC_C1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_RCC_C2|request resource assignment for RCC_C2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_RNG|request resource assignment for RNG in resource table|Resource configured by context||||
+RESMGR_REQUEST_RTC|request resource assignment for RTC in resource table|Resource configured by context||||
+RESMGR_REQUEST_SAI1|request resource assignment for SAI1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SAI2|request resource assignment for SAI2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SAI3|request resource assignment for SAI3 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SAI4|request resource assignment for SAI4 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SDMMC1|request resource assignment for SDMMC1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SDMMC2|request resource assignment for SDMMC2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SPDIFRX1|request resource assignment for SPDIFRX1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SPI1|request resource assignment for SPI1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SPI2|request resource assignment for SPI2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SPI3|request resource assignment for SPI3 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SPI4|request resource assignment for SPI4 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SPI5|request resource assignment for SPI5 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SPI6|request resource assignment for SPI6 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SWPMI1|request resource assignment for SWPMI1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_SYS|request resource assignment for SYS in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM1|request resource assignment for TIM1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM12|request resource assignment for TIM12 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM13|request resource assignment for TIM13 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM14|request resource assignment for TIM14 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM15|request resource assignment for TIM15 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM16|request resource assignment for TIM16 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM17|request resource assignment for TIM17 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM2|request resource assignment for TIM2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM3|request resource assignment for TIM3 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM4|request resource assignment for TIM4 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM5|request resource assignment for TIM5 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM6|request resource assignment for TIM6 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM7|request resource assignment for TIM7 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TIM8|request resource assignment for TIM8 in resource table|Resource configured by context||||
+RESMGR_REQUEST_TMPSENS|request resource assignment for TMPSENS in resource table|Resource configured by context||||
+RESMGR_REQUEST_UART4|request resource assignment for UART4 in resource table|Resource configured by context||||
+RESMGR_REQUEST_UART5|request resource assignment for UART5 in resource table|Resource configured by context||||
+RESMGR_REQUEST_UART7|request resource assignment for UART7 in resource table|Resource configured by context||||
+RESMGR_REQUEST_UART8|request resource assignment for UART8 in resource table|Resource configured by context||||
+RESMGR_REQUEST_USART1|request resource assignment for USART1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_USART2|request resource assignment for USART2 in resource table|Resource configured by context||||
+RESMGR_REQUEST_USART3|request resource assignment for USART3 in resource table|Resource configured by context||||
+RESMGR_REQUEST_USART6|request resource assignment for USART6 in resource table|Resource configured by context||||
+RESMGR_REQUEST_USB_OTG_HS|request resource assignment for USB_OTG_HS in resource table|Resource configured by context||||
+RESMGR_REQUEST_USB_OTG_FS|request resource assignment for USB_OTG_FS in resource table|Resource configured by context||||
+RESMGR_REQUEST_WWDG1|request resource assignment for WWDG1 in resource table|Resource configured by context||||
+RESMGR_REQUEST_WWDG2|request resource assignment for WWDG2 in resource table|Resource configured by context||||
+RESMGR_ID_ADC1|ID for ADC1 in resource table|||||
+RESMGR_ID_ADC2|ID for ADC2 in resource table|||||
+RESMGR_ID_ADC3|ID for ADC3 in resource table|||||
+RESMGR_ID_BDMA|ID for BDMA in resource table|||||
+RESMGR_ID_HDMI_CEC|ID for HDMI_CEC in resource table|||||
+RESMGR_ID_COMP1|ID for COMP1 in resource table|||||
+RESMGR_ID_COMP2|ID for COMP2 in resource table|||||
+RESMGR_ID_CRC|ID for CRC in resource table|||||
+RESMGR_ID_CRS|ID for CRS in resource table|||||
+RESMGR_ID_DAC1|ID for DAC1 in resource table|||||
+RESMGR_ID_DEBUG|ID for DEBUG in resource table|||||
+RESMGR_ID_DCMI|ID for DCMI in resource table|||||
+RESMGR_ID_DFSDM1|ID for DFSDM1 in resource table|||||
+RESMGR_ID_DLYB_QUADSPI|ID for DLYB_QUADSPI in resource table|||||
+RESMGR_ID_DLYB_SDMMC1|ID for DLYB_SDMMC1 in resource table|||||
+RESMGR_ID_DLYB_SDMMC2|ID for DLYB_SDMMC2 in resource table|||||
+RESMGR_ID_DMA|ID for DMA in resource table|||||
+RESMGR_ID_DMA1|ID for DMA1 in resource table|||||
+RESMGR_ID_DMA2|ID for DMA2 in resource table|||||
+RESMGR_ID_DMA2D|ID for DMA2D in resource table|||||
+RESMGR_ID_DSIHOST|ID for DSIHOST in resource table|||||
+RESMGR_ID_ETH|ID for ETH in resource table|||||
+RESMGR_ID_EXTI|ID for EXTI in resource table|||||
+RESMGR_ID_EXTI_D1|ID for EXTI_D1 in resource table|||||
+RESMGR_ID_EXTI_D2|ID for EXTI_D2 in resource table|||||
+RESMGR_ID_FDCAN_CCU|ID for FDCAN_CCU in resource table|||||
+RESMGR_ID_FDCAN1|ID for FDCAN1 in resource table|||||
+RESMGR_ID_FDCAN2|ID for FDCAN2 in resource table|||||
+RESMGR_ID_FLASH|ID for FLASH in resource table|||||
+RESMGR_ID_FMC|ID for FMC in resource table|||||
+RESMGR_ID_GPIO|ID for GPIO in resource table|||||
+RESMGR_ID_HRTIM|ID for HRTIM in resource table|||||
+RESMGR_ID_HSEM|ID for HSEM in resource table|||||
+RESMGR_ID_I2C1|ID for I2C1 in resource table|||||
+RESMGR_ID_I2C2|ID for I2C2 in resource table|||||
+RESMGR_ID_I2C3|ID for I2C3 in resource table|||||
+RESMGR_ID_I2C4|ID for I2C4 in resource table|||||
+RESMGR_ID_IWDG1|ID for IWDG1 in resource table|||||
+RESMGR_ID_IWDG2|ID for IWDG2 in resource table|||||
+RESMGR_ID_JPEG|ID for JPEG in resource table|||||
+RESMGR_ID_LPTIM1|ID for LPTIM1 in resource table|||||
+RESMGR_ID_LPTIM2|ID for LPTIM2 in resource table|||||
+RESMGR_ID_LPTIM3|ID for LPTIM3 in resource table|||||
+RESMGR_ID_LPTIM4|ID for LPTIM4 in resource table|||||
+RESMGR_ID_LPTIM5|ID for LPTIM5 in resource table|||||
+RESMGR_ID_LPUART1|ID for LPUART1 in resource table|||||
+RESMGR_ID_LTDC|ID for LTDC in resource table|||||
+RESMGR_ID_MDIOS|ID for MDIOS in resource table|||||
+RESMGR_ID_MDMA|ID for MDMA in resource table|||||
+RESMGR_ID_OPAMP1|ID for OPAMP1 in resource table|||||
+RESMGR_ID_OPAMP2|ID for OPAMP2 in resource table|||||
+RESMGR_ID_PWR|ID for PWR in resource table|||||
+RESMGR_ID_QUADSPI|ID for QUADSPI in resource table|||||
+RESMGR_ID_RCC|ID for RCC in resource table|||||
+RESMGR_ID_RCC_C1|ID for RCC_C1 in resource table|||||
+RESMGR_ID_RCC_C2|ID for RCC_C2 in resource table|||||
+RESMGR_ID_RNG|ID for RNG in resource table|||||
+RESMGR_ID_RTC|ID for RTC in resource table|||||
+RESMGR_ID_SAI1|ID for SAI1 in resource table|||||
+RESMGR_ID_SAI2|ID for SAI2 in resource table|||||
+RESMGR_ID_SAI3|ID for SAI3 in resource table|||||
+RESMGR_ID_SAI4|ID for SAI4 in resource table|||||
+RESMGR_ID_SDMMC1|ID for SDMMC1 in resource table|||||
+RESMGR_ID_SDMMC2|ID for SDMMC2 in resource table|||||
+RESMGR_ID_SPDIFRX1|ID for SPDIFRX in resource table|||||
+RESMGR_ID_SPI1|ID for SPI1 in resource table|||||
+RESMGR_ID_SPI2|ID for SPI2 in resource table|||||
+RESMGR_ID_SPI3|ID for SPI3 in resource table|||||
+RESMGR_ID_SPI4|ID for SPI4 in resource table|||||
+RESMGR_ID_SPI5|ID for SPI5 in resource table|||||
+RESMGR_ID_SPI6|ID for SPI6 in resource table|||||
+RESMGR_ID_SWPMI1|ID for SWPMI1 in resource table|||||
+RESMGR_ID_SYS|ID for SYS in resource table|||||
+RESMGR_ID_TIM1|ID for TIM1 in resource table|||||
+RESMGR_ID_TIM12|ID for TIM12 in resource table|||||
+RESMGR_ID_TIM13|ID for TIM13 in resource table|||||
+RESMGR_ID_TIM14|ID for TIM14 in resource table|||||
+RESMGR_ID_TIM15|ID for TIM15 in resource table|||||
+RESMGR_ID_TIM16|ID for TIM16 in resource table|||||
+RESMGR_ID_TIM17|ID for TIM17 in resource table|||||
+RESMGR_ID_TIM2|ID for TIM2 in resource table|||||
+RESMGR_ID_TIM3|ID for TIM3 in resource table|||||
+RESMGR_ID_TIM4|ID for TIM4 in resource table|||||
+RESMGR_ID_TIM5|ID for TIM5 in resource table|||||
+RESMGR_ID_TIM6|ID for TIM6 in resource table|||||
+RESMGR_ID_TIM7|ID for TIM7 in resource table|||||
+RESMGR_ID_TIM8|ID for TIM8 in resource table|||||
+RESMGR_ID_TMPSENS|ID for TMPSENS in resource table|||||
+RESMGR_ID_UART4|ID for UART4 in resource table|||||
+RESMGR_ID_UART5|ID for UART5 in resource table|||||
+RESMGR_ID_UART7|ID for UART7 in resource table|||||
+RESMGR_ID_UART8|ID for UART8 in resource table|||||
+RESMGR_ID_USART1|ID for USART1 in resource table|||||
+RESMGR_ID_USART2|ID for USART2 in resource table|||||
+RESMGR_ID_USART3|ID for USART3 in resource table|||||
+RESMGR_ID_USART6|ID for USART6 in resource table|||||
+RESMGR_ID_USB_OTG_HS|ID for USB_OTG_HS in resource table|||||
+RESMGR_ID_USB_OTG_FS|ID for USB_OTG_FS in resource table|||||
+RESMGR_ID_VREFBUF|ID for VREFBUF in resource table|||||
+RESMGR_ID_WWDG1|ID for WWDG1 in resource table|||||
+RESMGR_ID_WWDG2|ID for WWDG2 in resource table|||||
+
+[Values]
+# параметр|значение|подпись

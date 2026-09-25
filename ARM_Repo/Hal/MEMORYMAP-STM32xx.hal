@@ -1,0 +1,52 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=MEMORYMAP
+Version=STM32xx
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Name|Name|Current application region attributes||||
+CoreName|Core Name|Current application region attributes||||
+ContextName|Context Name|Current application region attributes||||
+StartAddress|Start address|Current application region attributes||0x0|0xAFFFFFFF|
+Size|Size|Current application region attributes||0|0xFFFFFFFF|
+SizeUnit|Size unit|Current application region attributes||||
+Security|Security|Current application region attributes||||
+MemType|Memory Type|Current application region attributes||||
+MemSource|Memory Source|Current application region attributes||||
+DefaultDataRegion|Default Data Region|Current application region attributes||||This region will contain default linker sections (eg: heap and stack)
+DefaultCodeRegion|Default Code Region|Current application region attributes||||This region will contain default linker sections for code
+ISRRegion|ISR vector|Current application region attributes||||Define if ISR vector is present on this region
+RootBootRegion|Root Boot|Current application region attributes||||Define if this application is the first one to run after reset
+NSBOOTADD|Boot Address|Current application region attributes||||The boot address will be set by this tool into the option bytes. You need to set appropriately "NSWBOOT0" bit (in option bytes) as well as the "NBOOT0" bit (in option bytes) or "GPIO PH3 pin".
+SecuredByWatermark|Secured by Watermark|Current application region attributes||||Define if this region should be secured by FLASH watermark in option bytes
+OTATagsRegion|OTA tags|Current application region attributes||||Define if this region contains OTA start tag and OTA end tag
+BootInfoRegion|Generate boot info section|Current application region attributes||||<html>Define if this region contains the boot info section. Not needed for MDK-ARM and EWARM project. </html>
+ThreadXHeapRegion|ThreadX Heap section|Current application region attributes||||<html>Define if this region is used as ThreadX Heap section. Grayed if already set in another Application Region. Not needed for MDK-ARM project </html>
+ReservedRegion|The region is reserved|Current application region attributes||||
+InvalidRegion|The region is invalid|Current application region attributes||||
+LockedRegion|The region is locked|Current application region attributes||||
+IgnoreAlignmentCheck|This region must be checked vs alignment|Current application region attributes||||
+SecureAccess|Secure Read/Write|Current application region attributes||||Define if read/write access by the secure application is allowed to this non-secure region
+AP|Access Permission|Current application region attributes||||Define if this region is accessible by privileged or unprivileged mode
+XN|Code execution|Current application region attributes||||Define if instruction fetch is permitted at this region
+Shareability|Shareability|Current application region attributes||||Define if this region is shared by different masters (cores, DMAs)
+ExcludedContext|ExcludedContext|Current application region attributes||||
+ContextLink|ContextLink|Current application region attributes||||
+Cacheability|Cacheability|Current application region attributes||||Configure the cacheability of this region
+WritePolicy|Write policy|Current application region attributes||||
+ReadAllocate|Read allocate|Current application region attributes||||
+WriteAllocate|Write allocate|Current application region attributes||||
+Transient|Transient|Current application region attributes||||
+Shared|Context sharing|Current application region attributes||||Configure the shared mode of this region
+
+[Values]
+# параметр|значение|подпись
+AP|RW_priv_only|RW by privileged code only
+AP|RW_all|RW by any privilege level
+AP|RO_priv_only|RO by privileged code only
+AP|RO_all|RO by any privilege level
+AP|RW_priv_RO_unpriv|RW by privileged code and RO by unprivileged code
+AP|All_Not_perm|All access not permitted
+Cacheability|Device_NGNRE|Device memory

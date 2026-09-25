@@ -1,0 +1,119 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPTIM
+Version=MP2_lptimer1_v2_3_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockSource|Clock Source|||||
+ClockPrescaler|Clock Prescaler|Clock||||
+ULPClockSampleTime|ULP Clock Sample Time|Clock||||
+ULPClockPolarity|ULP Clock Polarity|Clock||||
+TriggerSource|Trigger Source|Trigger||||
+TriggerActiveEdge|Active Edge|Trigger||||
+TriggerSampleTime|Sample Time|Trigger||||
+OutputPolarity|Output Polarity|Output||||
+Period|Period|Counter||0|65535|
+UpdateMode|Update Mode|Preload||||
+CounterSource|Counter Source|||||
+RepetitionCounter|Repetition counter|Counter||0|255|
+Input1Source|Input1 Source|||||
+Input2Source|Input2 Source|||||
+ICInputSource_1|InputCapture1 Source|Channel 1||||
+ICInputSource_2|InputCapture2 Source|Channel 2||||
+ICPrescaler_1|Prescaler ch1|Channel 1||||
+ICPrescaler_2|Prescaler ch2|Channel 2||||
+ICPolarity_1|Polarity ch1|Channel 1||||
+ICPolarity_2|Polarity ch2|Channel 2||||
+ICFilter_1|Filter ch1|Channel 1||||
+ICFilter_2|Filter ch2|Channel 2||||
+Capture_Compare_Selection_1|Capture-Compare Selection|Channel 1||||
+Capture_Compare_Selection_2|Capture-Compare Selection|Channel 2||||
+OCPulse_1|Pulse value|Channel 1||0|65535|
+OCPulse_2|Pulse value|Channel 2||0|65535|
+OCPolarity_1|Polarity ch1|Channel 1||||
+OCPolarity_2|Polarity ch2|Channel 2||||
+
+[Values]
+# параметр|значение|подпись
+ClockSource|LPTIM_CLOCKSOURCE_APBCLOCK_LPOSC|Clocksource Apbclock Lposc
+ClockSource|LPTIM_CLOCKSOURCE_ULPTIM|Clocksource Ulptim
+ClockPrescaler|LPTIM_PRESCALER_DIV1|Prescaler Div1
+ClockPrescaler|LPTIM_PRESCALER_DIV2|Prescaler Div2
+ClockPrescaler|LPTIM_PRESCALER_DIV4|Prescaler Div4
+ClockPrescaler|LPTIM_PRESCALER_DIV8|Prescaler Div8
+ClockPrescaler|LPTIM_PRESCALER_DIV16|Prescaler Div16
+ClockPrescaler|LPTIM_PRESCALER_DIV32|Prescaler Div32
+ClockPrescaler|LPTIM_PRESCALER_DIV64|Prescaler Div64
+ClockPrescaler|LPTIM_PRESCALER_DIV128|Prescaler Div128
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_DIRECTTRANSITION|Direct Transition
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_2TRANSITIONS|2 Transitions
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_4TRANSITIONS|4 Transitions
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_8TRANSITIONS|8 Transitions
+ULPClockPolarity|LPTIM_CLOCKPOLARITY_RISING|Rising Edge
+ULPClockPolarity|LPTIM_CLOCKPOLARITY_FALLING|Falling Edge
+TriggerSource|LPTIM_TRIGSOURCE_SOFTWARE|Software Trigger
+TriggerSource|LPTIM_TRIGSOURCE_0|LPTIM1_ETR IO
+TriggerSource|LPTIM_TRIGSOURCE_1|RTC Alarm A
+TriggerSource|LPTIM_TRIGSOURCE_2|RTC Alarm B
+TriggerSource|LPTIM_TRIGSOURCE_3|RTC TAMP1 Input Detection
+TriggerSource|LPTIM_TRIGSOURCE_4|RTC TAMP2 Input Detection
+TriggerSource|LPTIM_TRIGSOURCE_5|RTC TAMP3 Input Detection
+TriggerSource|LPTIM_TRIGSOURCE_6|SAI2 FS_A
+TriggerSource|LPTIM_TRIGSOURCE_7|SAI2 FS_B
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_RISING|Active Edge Rising
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_FALLING|Active Edge Falling
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_RISING_FALLING|Active Edge Rising Falling
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_DIRECTTRANSITION|Direct Transition
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_2TRANSITIONS|2 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_4TRANSITIONS|4 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_8TRANSITIONS|8 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_DIRECTTRANSISTION|Direct Transition
+OutputPolarity|LPTIM_OUTPUTPOLARITY_HIGH|Output Polarity High
+OutputPolarity|LPTIM_OUTPUTPOLARITY_LOW|Output Polarity Low
+UpdateMode|LPTIM_UPDATE_IMMEDIATE|Update Immediate
+UpdateMode|LPTIM_UPDATE_ENDOFPERIOD|Update End Of Period
+CounterSource|LPTIM_COUNTERSOURCE_INTERNAL|Countersource Internal
+CounterSource|LPTIM_COUNTERSOURCE_EXTERNAL|Countersource External
+Input1Source|LPTIM_IC1SOURCE_GPIO|GPIO
+Input1Source|__NULL|No connection
+Input2Source|LPTIM_IC2SOURCE_GPIO|GPIO
+Input2Source|__NULL|No connection
+ICInputSource_1|LPTIM_IC1SOURCE_GPIO|GPIO
+ICInputSource_1|LPTIM_IC1SOURCE_MSI|MSI
+ICInputSource_1|LPTIM_IC1SOURCE_LSI|LSI
+ICInputSource_1|LPTIM_IC1SOURCE_LSE|LSE
+ICInputSource_2|LPTIM_IC2SOURCE_HSI_1024|HSI/1024
+ICInputSource_2|LPTIM_IC2SOURCE_MSI|MSI
+ICInputSource_2|LPTIM_IC2SOURCE_GPIO|GPIO
+ICPrescaler_1|LPTIM_ICPSC_DIV1|DIV1
+ICPrescaler_1|LPTIM_ICPSC_DIV2|DIV2
+ICPrescaler_1|LPTIM_ICPSC_DIV4|DIV4
+ICPrescaler_1|LPTIM_ICPSC_DIV8|DIV8
+ICPrescaler_2|LPTIM_ICPSC_DIV1|DIV1
+ICPrescaler_2|LPTIM_ICPSC_DIV2|DIV2
+ICPrescaler_2|LPTIM_ICPSC_DIV4|DIV4
+ICPrescaler_2|LPTIM_ICPSC_DIV8|DIV8
+ICPolarity_1|LPTIM_ICPOLARITY_RISING|rising edge
+ICPolarity_1|LPTIM_ICPOLARITY_FALLING|falling edge
+ICPolarity_1|LPTIM_ICPOLARITY_RISING_FALLING|rising and falling edge
+ICPolarity_2|LPTIM_ICPOLARITY_RISING|rising edge
+ICPolarity_2|LPTIM_ICPOLARITY_FALLING|falling edge
+ICPolarity_2|LPTIM_ICPOLARITY_RISING_FALLING|rising and falling edge
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV1|1 clock period
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV2|2 clock periods
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV4|4 clock periods
+ICFilter_1|LPTIM_ICFLT_CLOCK_DIV8|8 clock periods
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV1|1 clock period
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV2|2 clock periods
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV4|4 clock periods
+ICFilter_2|LPTIM_ICFLT_CLOCK_DIV8|8 clock periods
+Capture_Compare_Selection_1|UI_input|Capture
+Capture_Compare_Selection_1|UI_output|Compare
+Capture_Compare_Selection_2|UI_input|Capture
+Capture_Compare_Selection_2|UI_output|Compare
+OCPolarity_1|LPTIM_OCPOLARITY_HIGH|Active high
+OCPolarity_1|LPTIM_OCPOLARITY_LOW|Active low
+OCPolarity_2|LPTIM_OCPOLARITY_HIGH|Active high
+OCPolarity_2|LPTIM_OCPOLARITY_LOW|Active low

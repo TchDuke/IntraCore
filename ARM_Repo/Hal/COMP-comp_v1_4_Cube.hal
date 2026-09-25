@@ -1,0 +1,52 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=COMP
+Version=comp_v1_4_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+InvertingInput|Inverting Input|Pinout Parameters||||
+NonInvertingInput|Non Inverting Input|Pinout Parameters||||
+WindowMode|Window Mode|Pinout Parameters||||
+Mode|Speed / Power Mode|Basic Parameters||||
+TriggerMode|Interrupt Trigger Mode|Basic Parameters||||
+Hysteresis|Hysteresis Level|Basic Parameters||||
+OutputPol|Output Polarity|Output Parameters||||
+Output|Output Internal Selection|Output Parameters||||
+
+[Values]
+# параметр|значение|подпись
+InvertingInput|COMP_INVERTINGINPUT_IO1|I/O1 (PA0/PA2)
+InvertingInput|COMP_INVERTINGINPUT_DAC1|DAC_OUT1 (PA4)
+InvertingInput|COMP_INVERTINGINPUT_DAC2|DAC_OUT2 (PA5)
+InvertingInput|COMP_INVERTINGINPUT_VREFINT|VREFINT
+InvertingInput|COMP_INVERTINGINPUT_1_4VREFINT|1/4 VREFINT
+InvertingInput|COMP_INVERTINGINPUT_1_2VREFINT|1/2 VREFINT
+InvertingInput|COMP_INVERTINGINPUT_3_4VREFINT|3/4 VREFINT
+NonInvertingInput|COMP_NONINVERTINGINPUT_DAC1SWITCHCLOSED|Switch DAC - PA1
+NonInvertingInput|COMP_NONINVERTINGINPUT_IO1|I/O1 (PA1/PA3)
+WindowMode|COMP_WINDOWMODE_DISABLE|Disabled
+WindowMode|COMP_WINDOWMODE_ENABLE|Enabled
+Mode|COMP_MODE_HIGHSPEED|High Speed / Full Power
+Mode|COMP_MODE_MEDIUMSPEED|Medium Speed / Medium Power
+Mode|COMP_MODE_LOWPOWER|Low Speed / Low Power
+Mode|COMP_MODE_ULTRALOWPOWER|Very-Low Speed / Ultra-Low Power
+TriggerMode|COMP_TRIGGERMODE_NONE|None
+TriggerMode|COMP_TRIGGERMODE_IT_RISING|Rising Edge
+TriggerMode|COMP_TRIGGERMODE_IT_FALLING|Falling Edge
+TriggerMode|COMP_TRIGGERMODE_IT_RISING_FALLING|Rising/Falling Edge
+Hysteresis|COMP_HYSTERESIS_NONE|None
+Hysteresis|COMP_HYSTERESIS_LOW|Low
+Hysteresis|COMP_HYSTERESIS_MEDIUM|Medium
+Hysteresis|COMP_HYSTERESIS_HIGH|High
+OutputPol|COMP_OUTPUTPOL_NONINVERTED|Not Inverted
+OutputPol|COMP_OUTPUTPOL_INVERTED|Inverted
+Output|COMP_OUTPUT_NONE|None
+Output|COMP_OUTPUT_TIM1BKIN|Timer 1 Break Input (BKIN)
+Output|COMP_OUTPUT_TIM1IC1|Timer 1 Input Capture 1
+Output|COMP_OUTPUT_TIM1OCREFCLR|Timer 1 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM2IC4|Timer 2 Input Capture 4
+Output|COMP_OUTPUT_TIM2OCREFCLR|Timer 2 Output Compare Reference Clear
+Output|COMP_OUTPUT_TIM3IC1|Timer 3 Input Capture 1
+Output|COMP_OUTPUT_TIM3OCREFCLR|Timer 3 Output Compare Reference Clear

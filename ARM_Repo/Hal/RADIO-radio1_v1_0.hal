@@ -1,0 +1,12 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=RADIO
+Version=radio1_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+CFG_NUM_RADIO_TASKS|CFG_NUM_RADIO_TASKS|||1|128|Number of radio tasks
+
+[Values]
+# параметр|значение|подпись

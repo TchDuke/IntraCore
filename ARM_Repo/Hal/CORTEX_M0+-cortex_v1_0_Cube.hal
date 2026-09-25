@@ -1,0 +1,87 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=CORTEX_M0+
+Version=cortex_v1_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FlashInterface|Flash Interface|Cortex_Interface_Settings||||Specifies witch Flash interface will be used for code execution
+ART_ACCELERATOR_ENABLE|ART ACCELERATOR|Cortex_Interface_Settings||||Configure Flash Instruction cache through ART accelerator (Only for TCM)
+PREFETCH_ENABLE|Instruction Prefetch|Cortex_Interface_Settings||||Configure Flash Prefetch (Only for TCM)
+CPU_ICache|CPU ICache|Cortex_Interface_Settings||||Enable\Disable CPU Instruction Cache
+CPU_DCache|CPU DCache|Cortex_Interface_Settings||||Enable\Disable CPU Data Cache
+MPU_Control|MPU Control Mode|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the control mode of the MPU (in case MPU USED) during hard fault, NMI, FAULTMASK and privileged access to the default memory
+Enable|MPU Region|Cortex_Memory_Protection_Unit_Region_Settings||||Enable/Disable MPU Region Configurations
+Number|MPU Region Number|Cortex_Memory_Protection_Unit_Region_Settings||||
+BaseAddress|MPU Region Base Address|Cortex_Memory_Protection_Unit_Region_Settings||0x0|0xFFFFFFE0|Specifies the base address of the region to protect: <html> <font color="red"><b>*</b> The 5 LSB of the base address will be ignored. The base address is aligned to the size of the region. For example, a 64 KB region must be aligned on a multiple of 64 KB, for example, at 0x00010000 or 0x00020000. </font></br></html>
+Size|MPU Region Size|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the size of the region to protect:<html> <font color="red"><b>*</b> For Region size 32B, 64B and 128B SubRegion Disable in not available</font></br></html>
+SubRegionDisable|MPU SubRegion Disable|Cortex_Memory_Protection_Unit_Region_Settings||0x0|0xFF|Specifies the number of the subregion protection to disable
+TypeExtField|MPU TEX field level|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the TEX field level
+AccessPermission|MPU Access Permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the region access permission type
+DisableExec|MPU Instruction Access|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the instruction access status
+IsShareable|MPU Shareability Permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the shareability status of the protected region
+IsCacheable|MPU Cacheable Permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the cacheable status of the region protected
+IsBufferable|MPU Bufferable Permission|Cortex_Memory_Protection_Unit_Region_Settings||||Specifies the bufferable status of the protected region
+
+[Values]
+# параметр|значение|подпись
+FlashInterface|TCM_Enabled|TCM Interface
+FlashInterface|AXI_Enabled|AXI Interface
+MPU_Control|__NULL|MPU NOT USED
+MPU_Control|MPU_HFNMI_PRIVDEF_NONE|Background Region Access Not Allowed + MPU Disabled during hard fault, NMI and FAULTMASK handlers
+MPU_Control|MPU_HARDFAULT_NMI|Background Region Access Not Allowed + MPU Enabled during hard fault, NMI and FAULTMASK handlers
+MPU_Control|MPU_PRIVILEGED_DEFAULT|Background Region Privileged accesses only + MPU Disabled during hard fault, NMI and FAULTMASK handlers
+MPU_Control|MPU_HFNMI_PRIVDEF|Background Region Privileged accesses only + MPU Enabled during hard fault, NMI and FAULTMASK handlers
+Enable|MPU_REGION_ENABLE|Enabled
+Enable|__NULL|Disabled
+Number|MPU_REGION_NUMBER0|Region 0
+Number|MPU_REGION_NUMBER1|Region 1
+Number|MPU_REGION_NUMBER2|Region 2
+Number|MPU_REGION_NUMBER3|Region 3
+Number|MPU_REGION_NUMBER4|Region 4
+Number|MPU_REGION_NUMBER5|Region 5
+Number|MPU_REGION_NUMBER6|Region 6
+Number|MPU_REGION_NUMBER7|Region 7
+Size|MPU_REGION_SIZE_256B|256B
+Size|MPU_REGION_SIZE_512B|512B
+Size|MPU_REGION_SIZE_1KB|1KB
+Size|MPU_REGION_SIZE_2KB|2KB
+Size|MPU_REGION_SIZE_4KB|4KB
+Size|MPU_REGION_SIZE_8KB|8KB
+Size|MPU_REGION_SIZE_16KB|16KB
+Size|MPU_REGION_SIZE_32KB|32KB
+Size|MPU_REGION_SIZE_64KB|64KB
+Size|MPU_REGION_SIZE_128KB|128KB
+Size|MPU_REGION_SIZE_256KB|256KB
+Size|MPU_REGION_SIZE_512KB|512KB
+Size|MPU_REGION_SIZE_1MB|1MB
+Size|MPU_REGION_SIZE_2MB|2MB
+Size|MPU_REGION_SIZE_4MB|4MB
+Size|MPU_REGION_SIZE_8MB|8MB
+Size|MPU_REGION_SIZE_16MB|16MB
+Size|MPU_REGION_SIZE_32MB|32MB
+Size|MPU_REGION_SIZE_64MB|64MB
+Size|MPU_REGION_SIZE_128MB|128MB
+Size|MPU_REGION_SIZE_256MB|256MB
+Size|MPU_REGION_SIZE_512MB|512MB
+Size|MPU_REGION_SIZE_1GB|1GB
+Size|MPU_REGION_SIZE_2GB|2GB
+Size|MPU_REGION_SIZE_4GB|4GB
+TypeExtField|MPU_TEX_LEVEL0|level 0
+TypeExtField|MPU_TEX_LEVEL1|level 1
+TypeExtField|MPU_TEX_LEVEL2|level 2
+AccessPermission|MPU_REGION_NO_ACCESS|ALL ACCESS NOT PERMITTED
+AccessPermission|MPU_REGION_PRIV_RW|Privileged READS\WRITES Permissions
+AccessPermission|MPU_REGION_PRIV_RW_URO|Privileged READS\WRITES Permissions + Unprivileged READS Permissions
+AccessPermission|MPU_REGION_FULL_ACCESS|ALL ACCESS PERMITTED
+AccessPermission|MPU_REGION_PRIV_RO|Privileged READS Permissions
+AccessPermission|MPU_REGION_PRIV_RO_URO|Privileged READS Permissions + Unprivileged READS Permissions
+DisableExec|MPU_INSTRUCTION_ACCESS_ENABLE|ENABLE
+DisableExec|MPU_INSTRUCTION_ACCESS_DISABLE|DISABLE
+IsShareable|MPU_ACCESS_NOT_SHAREABLE|DISABLE
+IsShareable|MPU_ACCESS_SHAREABLE|ENABLE
+IsCacheable|MPU_ACCESS_NOT_CACHEABLE|DISABLE
+IsCacheable|MPU_ACCESS_CACHEABLE|ENABLE
+IsBufferable|MPU_ACCESS_NOT_BUFFERABLE|DISABLE
+IsBufferable|MPU_ACCESS_BUFFERABLE|ENABLE

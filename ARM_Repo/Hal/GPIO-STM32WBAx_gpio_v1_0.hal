@@ -1,0 +1,136 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=GPIO
+Version=STM32WBAx_gpio_v1_0
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+GPIO_AF|GPIO Alternate Function|||||
+GPIOx|GPIO address|||||
+PinAttribute|Pin Context Assignement|||||
+Privilege|Pin Privilege access|||||
+GPIO_Pin|GPIO pin mask|||||
+EXTI_Line|ExTI line|||||
+PinState|GPIO output level|||||
+GPIO_ModeDefaultPP|GPIO mode|||||
+GPIO_ModeDefaultOD|GPIO mode|||||
+GPIO_ModeDefaultOutputPP|GPIO mode|||||
+GPIO_ModeDefaultEXTI_IT_RF|GPIO mode|||||
+GPIO_ModeDefaultEXTI|GPIO mode|||||
+GPIO_Mode|GPIO mode|||||
+GPIO_Mode_For_EXTI_LL|GPIO mode|||||
+GPIO_PuPd|GPIO Pull-up/Pull-down|||||
+GPIO_Pd|GPIO Pull-up/Pull-down|||||
+GPIO_Pu|GPIO Pull-up/Pull-down|||||
+GPIO_PuPdOD|GPIO Pull-up/Pull-down|||||
+GPIO_Speed|Maximum output speed|||||
+GPIO_Speed_High_Default|Maximum output speed|||||
+GPIO_Speed_High_Only|Maximum output speed|||||
+GPIO_Speed_HighF_Default|Maximum output speed|||||
+GPIO_FM6|Fast Mode|||||
+GPIO_FM7|Fast Mode|||||
+GPIO_FM15|Fast Mode|||||
+GPIO_FM3|Fast Mode|||||
+
+[Values]
+# параметр|значение|подпись
+Privilege|EXTI_LINE_NPRIV|Non-privileged access
+Privilege|EXTI_LINE_PRIV|Privileged-only access
+PinState|GPIO_PIN_RESET|Low
+PinState|GPIO_PIN_SET|High
+GPIO_ModeDefaultPP|GPIO_MODE_INPUT|Input mode
+GPIO_ModeDefaultPP|GPIO_MODE_OUTPUT_PP|Output Push Pull
+GPIO_ModeDefaultPP|GPIO_MODE_OUTPUT_OD|Output Open Drain
+GPIO_ModeDefaultPP|GPIO_MODE_AF_PP|Alternate Function Push Pull
+GPIO_ModeDefaultPP|GPIO_MODE_AF_OD|Alternate Function Open Drain
+GPIO_ModeDefaultPP|GPIO_MODE_ANALOG|Analog mode
+GPIO_ModeDefaultPP|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_ModeDefaultPP|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_ModeDefaultPP|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultPP|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_ModeDefaultPP|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_ModeDefaultPP|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultOD|GPIO_MODE_INPUT|Input mode
+GPIO_ModeDefaultOD|GPIO_MODE_OUTPUT_PP|Output Push Pull
+GPIO_ModeDefaultOD|GPIO_MODE_OUTPUT_OD|Output Open Drain
+GPIO_ModeDefaultOD|GPIO_MODE_AF_PP|Alternate Function Push Pull
+GPIO_ModeDefaultOD|GPIO_MODE_AF_OD|Alternate Function Open Drain
+GPIO_ModeDefaultOD|GPIO_MODE_ANALOG|Analog mode
+GPIO_ModeDefaultOD|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_ModeDefaultOD|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_ModeDefaultOD|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultOD|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_ModeDefaultOD|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_ModeDefaultOD|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultOutputPP|GPIO_MODE_INPUT|Input mode
+GPIO_ModeDefaultOutputPP|GPIO_MODE_OUTPUT_PP|Output Push Pull
+GPIO_ModeDefaultOutputPP|GPIO_MODE_OUTPUT_OD|Output Open Drain
+GPIO_ModeDefaultOutputPP|GPIO_MODE_AF_PP|Alternate Function Push Pull
+GPIO_ModeDefaultOutputPP|GPIO_MODE_AF_OD|Alternate Function Open Drain
+GPIO_ModeDefaultOutputPP|GPIO_MODE_ANALOG|Analog mode
+GPIO_ModeDefaultOutputPP|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_ModeDefaultOutputPP|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_ModeDefaultOutputPP|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultOutputPP|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_ModeDefaultOutputPP|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_ModeDefaultOutputPP|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultEXTI_IT_RF|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_ModeDefaultEXTI_IT_RF|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_ModeDefaultEXTI_IT_RF|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultEXTI_IT_RF|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_ModeDefaultEXTI_IT_RF|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_ModeDefaultEXTI_IT_RF|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultEXTI|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_ModeDefaultEXTI|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_ModeDefaultEXTI|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_ModeDefaultEXTI|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_ModeDefaultEXTI|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_ModeDefaultEXTI|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_Mode|GPIO_MODE_INPUT|Input mode
+GPIO_Mode|GPIO_MODE_OUTPUT_PP|Output Push Pull
+GPIO_Mode|GPIO_MODE_OUTPUT_OD|Output Open Drain
+GPIO_Mode|GPIO_MODE_AF_PP|Alternate Function Push Pull
+GPIO_Mode|GPIO_MODE_AF_OD|Alternate Function Open Drain
+GPIO_Mode|GPIO_MODE_ANALOG|Analog mode
+GPIO_Mode|GPIO_MODE_ANALOG_ADC_CONTROL|Analog mode for ADC conversion
+GPIO_Mode|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_Mode|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_Mode|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_Mode|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_Mode|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_Mode|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_Mode_For_EXTI_LL|GPIO_MODE_INPUT|Input mode
+GPIO_Mode_For_EXTI_LL|GPIO_MODE_IT_RISING|External Interrupt Mode with Rising edge trigger detection
+GPIO_Mode_For_EXTI_LL|GPIO_MODE_IT_FALLING|External Interrupt Mode with Falling edge trigger detection
+GPIO_Mode_For_EXTI_LL|GPIO_MODE_IT_RISING_FALLING|External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_Mode_For_EXTI_LL|GPIO_MODE_EVT_RISING|External Event Mode with Rising edge trigger detection
+GPIO_Mode_For_EXTI_LL|GPIO_MODE_EVT_FALLING|External Event Mode with Falling edge trigger detection
+GPIO_Mode_For_EXTI_LL|GPIO_MODE_EVT_RISING_FALLING|External Event Mode with Rising/Falling edge trigger detection
+GPIO_PuPd|GPIO_NOPULL|No pull-up and no pull-down
+GPIO_PuPd|GPIO_PULLUP|Pull-up
+GPIO_PuPd|GPIO_PULLDOWN|Pull-down
+GPIO_Pd|GPIO_NOPULL|No pull-up and no pull-down
+GPIO_Pd|GPIO_PULLDOWN|Pull-down
+GPIO_Pu|GPIO_NOPULL|No pull-up and no pull-down
+GPIO_Pu|GPIO_PULLUP|Pull-up
+GPIO_PuPdOD|GPIO_NOPULL|No pull-up and no pull-down
+GPIO_PuPdOD|GPIO_PULLUP|Pull-up
+GPIO_Speed|GPIO_SPEED_FREQ_LOW|Low
+GPIO_Speed|GPIO_SPEED_FREQ_MEDIUM|Medium
+GPIO_Speed|GPIO_SPEED_FREQ_HIGH|High
+GPIO_Speed_High_Default|GPIO_SPEED_FREQ_LOW|Low
+GPIO_Speed_High_Default|GPIO_SPEED_FREQ_MEDIUM|Medium
+GPIO_Speed_High_Default|GPIO_SPEED_FREQ_HIGH|High
+GPIO_Speed_High_Only|GPIO_SPEED_FREQ_HIGH|High
+GPIO_Speed_HighF_Default|GPIO_SPEED_FREQ_LOW|Low
+GPIO_Speed_HighF_Default|GPIO_SPEED_FREQ_MEDIUM|Medium
+GPIO_Speed_HighF_Default|GPIO_SPEED_FREQ_HIGH|High
+GPIO_FM6|__NULL|Disable
+GPIO_FM6|SYSCFG_FASTMODEPLUS_PA6|Enable
+GPIO_FM7|__NULL|Disable
+GPIO_FM7|SYSCFG_FASTMODEPLUS_PA7|Enable
+GPIO_FM15|__NULL|Disable
+GPIO_FM15|SYSCFG_FASTMODEPLUS_PA15|Enable
+GPIO_FM3|__NULL|Disable
+GPIO_FM3|SYSCFG_FASTMODEPLUS_PB3|Enable

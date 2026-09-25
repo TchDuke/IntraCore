@@ -1,0 +1,122 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=BDMA
+Version=STM32H72_dma1_v1_2
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Request|Request number|||||
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+ClockEnableMode|Clock enable mode|||||
+DMA_Handle|DMA_Handle|||||
+IpInstance|IpInstance|||||
+SignalID|Signal ID|||||
+Polarity|Polarity|||||
+RequestNumber|Request number|||1|32|
+SyncSignalID|Synchronization signal ID|||||
+SyncPolarity|Synchronization polarity|||||
+SyncEnable|Synchronization enable|||||
+EventEnable|Event enable|||||
+SyncRequestNumber|Synchronization request number|||1|32|
+
+[Values]
+# параметр|значение|подпись
+Request|BDMA_REQUEST_MEM2MEM|MEMTOMEM
+Request|BDMA_REQUEST_GENERATOR0|BDMA_GENERATOR0
+Request|BDMA_REQUEST_GENERATOR1|BDMA_GENERATOR1
+Request|BDMA_REQUEST_GENERATOR2|BDMA_GENERATOR2
+Request|BDMA_REQUEST_GENERATOR3|BDMA_GENERATOR3
+Request|BDMA_REQUEST_GENERATOR4|BDMA_GENERATOR4
+Request|BDMA_REQUEST_GENERATOR5|BDMA_GENERATOR5
+Request|BDMA_REQUEST_GENERATOR6|BDMA_GENERATOR6
+Request|BDMA_REQUEST_GENERATOR7|BDMA_GENERATOR7
+Request|BDMA_REQUEST_LPUART1_RX|LPUART1_RX
+Request|BDMA_REQUEST_LPUART1_TX|LPUART1_TX
+Request|BDMA_REQUEST_SPI6_RX|SPI6_RX
+Request|BDMA_REQUEST_SPI6_TX|SPI6_TX
+Request|BDMA_REQUEST_I2C4_RX|I2C4_RX
+Request|BDMA_REQUEST_I2C4_TX|I2C4_TX
+Request|BDMA_REQUEST_SAI4_A|SAI4_A
+Request|BDMA_REQUEST_SAI4_B|SAI4_B
+Request|BDMA_REQUEST_ADC3|ADC3
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Mode|DMA_PFCTRL|Peripheral Flow Control
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+ClockEnableMode|__HAL_RCC_BDMA_CLK_ENABLE|BDMA clock enable
+SignalID|HAL_DMAMUX2_REQ_GEN_DMAMUX2_CH0_EVT|DMAMUX2 Channel0 (BDMA channel0) event
+SignalID|HAL_DMAMUX2_REQ_GEN_DMAMUX2_CH1_EVT|DMAMUX2 Channel1 (BDMA channel1) event
+SignalID|HAL_DMAMUX2_REQ_GEN_DMAMUX2_CH2_EVT|DMAMUX2 Channel2 (BDMA channel2) event
+SignalID|HAL_DMAMUX2_REQ_GEN_DMAMUX2_CH3_EVT|DMAMUX2 Channel3 (BDMA channel3) event
+SignalID|HAL_DMAMUX2_REQ_GEN_DMAMUX2_CH4_EVT|DMAMUX2 Channel4 (BDMA channel4) event
+SignalID|HAL_DMAMUX2_REQ_GEN_DMAMUX2_CH5_EVT|DMAMUX2 Channel5 (BDMA channel5) event
+SignalID|HAL_DMAMUX2_REQ_GEN_DMAMUX2_CH6_EVT|DMAMUX2 Channel6 (BDMA channel6) event
+SignalID|HAL_DMAMUX2_REQ_GEN_LPUART1_RX_WKUP|LPUART1 RX wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_LPUART1_TX_WKUP|LPUART1 TX wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_LPTIM2_WKUP|LPTIM2 wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_LPTIM2_OUT|LPTIM2 output
+SignalID|HAL_DMAMUX2_REQ_GEN_LPTIM3_WKUP|LPTIM3 wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_LPTIM3_OUT|LPTIM3 output
+SignalID|HAL_DMAMUX2_REQ_GEN_LPTIM4_WKUP|LPTIM4 wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_LPTIM5_WKUP|LPTIM5 wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_I2C4_WKUP|I2C4 wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_SPI6_WKUP|SPI6 wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_COMP1_OUT|COMP1 output
+SignalID|HAL_DMAMUX2_REQ_GEN_COMP2_OUT|COMP2 output
+SignalID|HAL_DMAMUX2_REQ_GEN_RTC_WKUP|RTC wake-up
+SignalID|HAL_DMAMUX2_REQ_GEN_EXTI0|EXTI0
+SignalID|HAL_DMAMUX2_REQ_GEN_EXTI2|EXTI2
+SignalID|HAL_DMAMUX2_REQ_GEN_I2C4_IT_EVT|I2C4 interrupt event
+SignalID|HAL_DMAMUX2_REQ_GEN_SPI6_IT|SPI6 interrupt
+SignalID|HAL_DMAMUX2_REQ_GEN_LPUART1_TX_IT|LPUART1 TX interrupt
+SignalID|HAL_DMAMUX2_REQ_GEN_LPUART1_RX_IT|LPUART1 RX interrupt
+SignalID|HAL_DMAMUX2_REQ_GEN_ADC3_IT|ADC3 interrupt
+SignalID|HAL_DMAMUX2_REQ_GEN_ADC3_AWD1_OUT|ADC3 Analog Watchdog 1 output
+SignalID|HAL_DMAMUX2_REQ_GEN_BDMA_CH0_IT|BDMA Channel 0 interrupt
+SignalID|HAL_DMAMUX2_REQ_GEN_BDMA_CH1_IT|BDMA Channel 1 interrupt
+Polarity|HAL_DMAMUX_REQ_GEN_RISING|Generate request on rising edge events
+Polarity|HAL_DMAMUX_REQ_GEN_FALLING|Generate request on falling edge events
+Polarity|HAL_DMAMUX_REQ_GEN_RISING_FALLING|Generate request on rising and falling edge events
+SyncSignalID|HAL_DMAMUX2_SYNC_DMAMUX2_CH0_EVT|DMAMUX2 Channel0 (BDMA channel0) event
+SyncSignalID|HAL_DMAMUX2_SYNC_DMAMUX2_CH1_EVT|DMAMUX2 Channel1 (BDMA channel1) event
+SyncSignalID|HAL_DMAMUX2_SYNC_DMAMUX2_CH2_EVT|DMAMUX2 Channel2 (BDMA channel2) event
+SyncSignalID|HAL_DMAMUX2_SYNC_DMAMUX2_CH3_EVT|DMAMUX2 Channel3 (BDMA channel3) event
+SyncSignalID|HAL_DMAMUX2_SYNC_DMAMUX2_CH4_EVT|DMAMUX2 Channel4 (BDMA channel4) event
+SyncSignalID|HAL_DMAMUX2_SYNC_DMAMUX2_CH5_EVT|DMAMUX2 Channel5 (BDMA channel5) event
+SyncSignalID|HAL_DMAMUX2_SYNC_LPUART1_RX_WKUP|LPUART1 RX wake-up
+SyncSignalID|HAL_DMAMUX2_SYNC_LPUART1_TX_WKUP|LPUART1 TX wake-up
+SyncSignalID|HAL_DMAMUX2_SYNC_LPTIM2_OUT|LPTIM2 output
+SyncSignalID|HAL_DMAMUX2_SYNC_LPTIM3_OUT|LPTIM3 output
+SyncSignalID|HAL_DMAMUX2_SYNC_I2C4_WKUP|I2C4 wake-up
+SyncSignalID|HAL_DMAMUX2_SYNC_SPI6_WKUP|SPI6 wake-up
+SyncSignalID|HAL_DMAMUX2_SYNC_COMP1_OUT|COMP1 output
+SyncSignalID|HAL_DMAMUX2_SYNC_RTC_WKUP|RTC wake-up
+SyncSignalID|HAL_DMAMUX2_SYNC_EXTI0|EXTI0
+SyncSignalID|HAL_DMAMUX2_SYNC_EXTI2|EXTI2
+SyncPolarity|HAL_DMAMUX_SYNC_NO_EVENT|Block synchronization events
+SyncPolarity|HAL_DMAMUX_SYNC_RISING|Synchronize on rising edge events
+SyncPolarity|HAL_DMAMUX_SYNC_FALLING|Synchronize on falling edge events
+SyncPolarity|HAL_DMAMUX_SYNC_RISING_FALLING|Synchronize on rising and falling edge events

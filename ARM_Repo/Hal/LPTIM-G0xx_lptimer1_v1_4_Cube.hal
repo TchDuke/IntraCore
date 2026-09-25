@@ -1,0 +1,69 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=LPTIM
+Version=G0xx_lptimer1_v1_4_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ClockSource|Clock Source|||||
+ClockPrescaler|Clock Prescaler|Clock||||
+ULPClockSampleTime|ULP Clock Sample Time|Clock||||
+ULPClockPolarity|ULP Clock Polarity|Clock||||
+TriggerSource|Trigger Source|Trigger||||
+TriggerActiveEdge|Active Edge|Trigger||||
+TriggerSampleTime|Sample Time|Trigger||||
+OutputPolarity|Output Polarity|Output||||
+UpdateMode|Update Mode|Preload||||
+CounterSource|Counter Source|||||
+Input1Source|Input1 Source|||||
+Input2Source|Input2 Source|||||
+
+[Values]
+# параметр|значение|подпись
+ClockSource|LPTIM_CLOCKSOURCE_APBCLOCK_LPOSC|Clocksource Apbclock Lposc
+ClockSource|LPTIM_CLOCKSOURCE_ULPTIM|Clocksource Ulptim
+ClockPrescaler|LPTIM_PRESCALER_DIV1|Prescaler Div1
+ClockPrescaler|LPTIM_PRESCALER_DIV2|Prescaler Div2
+ClockPrescaler|LPTIM_PRESCALER_DIV4|Prescaler Div4
+ClockPrescaler|LPTIM_PRESCALER_DIV8|Prescaler Div8
+ClockPrescaler|LPTIM_PRESCALER_DIV16|Prescaler Div16
+ClockPrescaler|LPTIM_PRESCALER_DIV32|Prescaler Div32
+ClockPrescaler|LPTIM_PRESCALER_DIV64|Prescaler Div64
+ClockPrescaler|LPTIM_PRESCALER_DIV128|Prescaler Div128
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_DIRECTTRANSITION|Direct Transition
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_2TRANSITIONS|2 Transitions
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_4TRANSITIONS|4 Transitions
+ULPClockSampleTime|LPTIM_CLOCKSAMPLETIME_8TRANSITIONS|8 Transitions
+ULPClockPolarity|LPTIM_CLOCKPOLARITY_RISING|Rising Edge
+ULPClockPolarity|LPTIM_CLOCKPOLARITY_FALLING|Falling Edge
+TriggerSource|LPTIM_TRIGSOURCE_SOFTWARE|Software Trigger
+TriggerSource|LPTIM_TRIGSOURCE_0|LPTIM1_ETR IO
+TriggerSource|LPTIM_TRIGSOURCE_1|RTC Alarm A
+TriggerSource|LPTIM_TRIGSOURCE_2|RTC Alarm B
+TriggerSource|LPTIM_TRIGSOURCE_3|RTC TAMP1 Input Detection
+TriggerSource|LPTIM_TRIGSOURCE_4|RTC TAMP2 Input Detection
+TriggerSource|LPTIM_TRIGSOURCE_5|COMP3 OUT
+TriggerSource|LPTIM_TRIGSOURCE_6|COMP1 OUT
+TriggerSource|LPTIM_TRIGSOURCE_7|COMP2 OUT
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_RISING|Active Edge Rising
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_FALLING|Active Edge Falling
+TriggerActiveEdge|LPTIM_ACTIVEEDGE_RISING_FALLING|Active Edge Rising Falling
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_DIRECTTRANSITION|Direct Transition
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_2TRANSITIONS|2 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_4TRANSITIONS|4 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_8TRANSITIONS|8 Transitions
+TriggerSampleTime|LPTIM_TRIGSAMPLETIME_DIRECTTRANSISTION|Direct Transition
+OutputPolarity|LPTIM_OUTPUTPOLARITY_HIGH|Output Polarity High
+OutputPolarity|LPTIM_OUTPUTPOLARITY_LOW|Output Polarity Low
+UpdateMode|LPTIM_UPDATE_IMMEDIATE|Update Immediate
+UpdateMode|LPTIM_UPDATE_ENDOFPERIOD|Update End Of Period
+CounterSource|LPTIM_COUNTERSOURCE_INTERNAL|Countersource Internal
+CounterSource|LPTIM_COUNTERSOURCE_EXTERNAL|Countersource External
+Input1Source|LPTIM_INPUT1SOURCE_GPIO|GPIO
+Input1Source|LPTIM_INPUT1SOURCE_COMP1|COMP1
+Input1Source|LPTIM_INPUT1SOURCE_COMP2|COMP2
+Input1Source|LPTIM_INPUT1SOURCE_COMP1_COMP2|COMP1 OR COMP2
+Input2Source|LPTIM_INPUT2SOURCE_GPIO|GPIO
+Input2Source|LPTIM_INPUT2SOURCE_COMP2|COMP2
+Input2Source|__NULL|no input2 source for LPTIM2

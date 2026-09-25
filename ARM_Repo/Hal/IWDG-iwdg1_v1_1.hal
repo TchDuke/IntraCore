@@ -1,0 +1,20 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=IWDG
+Version=iwdg1_v1_1
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Prescaler|IWDG counter clock prescaler|Watchdog Clocking||||
+Reload|IWDG down-counter reload value|Watchdog Clocking||0|4095|
+
+[Values]
+# параметр|значение|подпись
+Prescaler|IWDG_PRESCALER_4|4
+Prescaler|IWDG_PRESCALER_8|8
+Prescaler|IWDG_PRESCALER_16|16
+Prescaler|IWDG_PRESCALER_32|32
+Prescaler|IWDG_PRESCALER_64|64
+Prescaler|IWDG_PRESCALER_128|128
+Prescaler|IWDG_PRESCALER_256|256

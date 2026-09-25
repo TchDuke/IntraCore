@@ -1,0 +1,219 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=XSPI
+Version=xspi_v2_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FifoThresholdByte|Fifo Threshold|Generic||1|64|
+MemoryMode|Memory Mode|Generic||||
+MemoryType|Memory Type|Generic||||
+MemorySize|Memory Size|Generic||||
+ChipSelectHighTimeCycle|Chip Select High Time Cycle|Generic||1|64|
+FreeRunningClock|Free Running Clock|Generic||||
+ClockMode|Clock Mode|Generic||||
+WrapSize|Wrap Size|Generic||||
+ClockPrescaler|Clock Prescaler|Generic||0|255|
+DeviceType|Device Type|Generic||||
+SampleShifting|Sample Shifting|Generic||||
+DelayHoldQuarterCycle|Delay Hold Quarter Cycle|Generic||||
+ChipSelectBoundary|Chip Select Boundary|Generic||||
+DelayBlockBypass|Delay Block|Generic||||
+MaxTran|Maximum Transfer|Generic||0|255|
+Refresh|Refresh Rate|Generic||0|0xFFFFFFFF|
+MemorySelect|Memory Select|Generic||||
+RWRecoveryTimeCycle|RW Recovery Time Cycle|HyperBus(TM)||0|255|
+AccessTimeCycle|Access Time Cycle|HyperBus(TM)||0|255|
+WriteZeroLatency|Write Access Latency|HyperBus(TM)||||
+LatencyMode|Latency Mode|HyperBus(TM)||||
+Req2AckTime|Switching Duration Clock Number|Generic||1|256|
+nCSOverride|Memory Select Override|||||
+IOPort|XSPI IO Manager IO Port|||||
+OperationType|Type|Operating Mode||||
+TimeOutActivation|Time Out Activation|Operating Mode||||
+TimeoutPeriodClock|Time Out Period Clock|Operating Mode||1|0xFFFF|
+MatchValue|Match Value|Operating Mode||0|0xFFFFFFFF|
+MatchMask|Mask Value|Operating Mode||0|0xFFFFFFFF|
+MatchMode|Match Mode|Operating Mode||||
+AutomaticStop|Automatic Stop|Operating Mode||||
+IntervalTime|Interval Time Value|Operating Mode||0|0xFFFF|
+IOSelect|IO Select|Regular Command||||
+Instruction|Instruction|Regular Command||0|0xFFFFFFFF|
+InstructionMode|Instruction Mode|Regular Command||||
+InstructionWidth|Instruction Size|Regular Command||||
+InstructionDTRMode|Instruction Dtr Mode|Regular Command||||
+Address|Address|Regular Command||0|0xFFFFFFFF|
+AddressMode|Address Mode|Regular Command||||
+AddressWidth|Address Size|Regular Command||||
+AddressDTRMode|Address Dtr Mode|Regular Command||||
+AlternateBytes|Alternate Bytes|Regular Command||0|0xFFFFFFFF|
+AlternateBytesMode|Alternate Bytes Mode|Regular Command||||
+AlternateBytesWidth|Alternate Bytes Size|Regular Command||||
+AlternateBytesDTRMode|Alternate Bytes Dtr Mode|Regular Command||||
+DataMode|Data Mode|Regular Command||||
+DataLength|Data Length|Regular Command||1|0xFFFFFFFF|
+DataDTRMode|Data Dtr Mode|Regular Command||||
+DummyCycles|Dummy Cycles|Regular Command||0|31|
+DQSMode|DQS Mode|Regular Command||||
+AddressSpace|Address Space|Regular Command||||
+Timeout|Timeout|||||
+
+[Values]
+# параметр|значение|подпись
+MemoryMode|HAL_XSPI_SINGLE_MEM|Disable
+MemoryMode|HAL_XSPI_DUAL_MEM|Enable
+MemoryType|HAL_XSPI_MEMTYPE_MICRON|Micron
+MemoryType|HAL_XSPI_MEMTYPE_MACRONIX|Macronix
+MemoryType|HAL_XSPI_MEMTYPE_APMEM|AP Memory
+MemoryType|HAL_XSPI_MEMTYPE_MACRONIX_RAM|Macronix RAM
+MemoryType|HAL_XSPI_MEMTYPE_APMEM_16BITS|16BITS AP Memory
+MemoryType|HAL_XSPI_MEMTYPE_HYPERBUS|HyperBus(TM)
+MemorySize|HAL_XSPI_SIZE_16B|16 Bits
+MemorySize|HAL_XSPI_SIZE_32B|32 Bits
+MemorySize|HAL_XSPI_SIZE_64B|64 Bits
+MemorySize|HAL_XSPI_SIZE_128B|128 Bits
+MemorySize|HAL_XSPI_SIZE_256B|256 Bits
+MemorySize|HAL_XSPI_SIZE_512B|512 Bits
+MemorySize|HAL_XSPI_SIZE_1KB|1 KBits
+MemorySize|HAL_XSPI_SIZE_2KB|2 KBits
+MemorySize|HAL_XSPI_SIZE_4KB|4 KBits
+MemorySize|HAL_XSPI_SIZE_8KB|8 KBits
+MemorySize|HAL_XSPI_SIZE_16KB|16 KBits
+MemorySize|HAL_XSPI_SIZE_32KB|32 KBits
+MemorySize|HAL_XSPI_SIZE_64KB|64 KBits
+MemorySize|HAL_XSPI_SIZE_128KB|128 KBits
+MemorySize|HAL_XSPI_SIZE_256KB|256 KBits
+MemorySize|HAL_XSPI_SIZE_512KB|512 KBits
+MemorySize|HAL_XSPI_SIZE_1MB|1 MBits
+MemorySize|HAL_XSPI_SIZE_2MB|2 MBits
+MemorySize|HAL_XSPI_SIZE_4MB|4 MBits
+MemorySize|HAL_XSPI_SIZE_8MB|8 MBits
+MemorySize|HAL_XSPI_SIZE_16MB|16 MBits
+MemorySize|HAL_XSPI_SIZE_32MB|32 MBits
+MemorySize|HAL_XSPI_SIZE_64MB|64 MBits
+MemorySize|HAL_XSPI_SIZE_128MB|128 MBits
+MemorySize|HAL_XSPI_SIZE_256MB|256 MBits
+MemorySize|HAL_XSPI_SIZE_512MB|512 MBits
+MemorySize|HAL_XSPI_SIZE_1GB|1 GBits
+MemorySize|HAL_XSPI_SIZE_2GB|2 GBits
+MemorySize|HAL_XSPI_SIZE_4GB|4 GBits
+MemorySize|HAL_XSPI_SIZE_8GB|8 GBits
+MemorySize|HAL_XSPI_SIZE_16GB|16 GBits
+MemorySize|HAL_XSPI_SIZE_32GB|32 GBits
+FreeRunningClock|HAL_XSPI_FREERUNCLK_DISABLE|Disable
+FreeRunningClock|HAL_XSPI_FREERUNCLK_ENABLE|Enable
+ClockMode|HAL_XSPI_CLOCK_MODE_0|Low
+ClockMode|HAL_XSPI_CLOCK_MODE_3|High
+WrapSize|HAL_XSPI_WRAP_NOT_SUPPORTED|Not Supported
+WrapSize|HAL_XSPI_WRAP_16_BYTES|16 Bytes
+WrapSize|HAL_XSPI_WRAP_32_BYTES|32 Bytes
+WrapSize|HAL_XSPI_WRAP_64_BYTES|64 Bytes
+WrapSize|HAL_XSPI_WRAP_128_BYTES|128 Bytes
+DeviceType|SPI_DEVICE_FLASH|Flash
+DeviceType|SPI_DEVICE_RAM|RAM
+DeviceType|SPI_DEVICE_0|Not defined
+SampleShifting|HAL_XSPI_SAMPLE_SHIFT_NONE|None
+SampleShifting|HAL_XSPI_SAMPLE_SHIFT_HALFCYCLE|Half Cycle
+DelayHoldQuarterCycle|HAL_XSPI_DHQC_DISABLE|Disable
+DelayHoldQuarterCycle|HAL_XSPI_DHQC_ENABLE|Enable
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_NONE|Disabled
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16B|16 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_32B|32 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_64B|64 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_128B|128 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_256B|256 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_512B|512 Bytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_1KB|1 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_2KB|2 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_4KB|4 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_8KB|8 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16KB|16 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_32KB|32 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_64KB|64 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_128KB|128 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_256KB|256 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_512KB|512 KBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_1MB|1 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_2MB|2 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_4MB|4 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_8MB|8 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16MB|16 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_32MB|32 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_64MB|64 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_128MB|128 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_256MB|256 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_512MB|512 MBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_1GB|1 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_2GB|2 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_4GB|4 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_8GB|8 GBytes
+ChipSelectBoundary|HAL_XSPI_BONDARYOF_16GB|16 GBytes
+DelayBlockBypass|HAL_OSPI_DELAY_BLOCK_BYPASSED|Disable
+DelayBlockBypass|HAL_OSPI_DELAY_BLOCK_USED|Enable
+MemorySelect|HAL_XSPI_CSSEL_NCS1|NCS1
+MemorySelect|HAL_XSPI_CSSEL_NCS2|NCS2
+WriteZeroLatency|HAL_XSPI_NO_LATENCY_ON_WRITE|Disable
+WriteZeroLatency|HAL_XSPI_LATENCY_ON_WRITE|Enable
+LatencyMode|HAL_XSPI_VARIABLE_LATENCY|Variable
+LatencyMode|HAL_XSPI_FIXED_LATENCY|Fixed
+OperationType|HAL_XSPI_OPTYPE_COMMON_CFG|Automatic-polling
+OperationType|HAL_XSPI_OPTYPE_READ_CFG|Memory-mapped (Read)
+OperationType|HAL_XSPI_OPTYPE_WRITE_CFG|Memory-mapped (Write)
+OperationType|HAL_XSPI_OPTYPE_WRAP_CFG|Memory-mapped (Wrap)
+TimeOutActivation|HAL_XSPI_TIMEOUT_COUNTER_DISABLE|Disable
+TimeOutActivation|HAL_XSPI_TIMEOUT_COUNTER_ENABLE|Enable
+MatchMode|HAL_XSPI_MATCH_MODE_AND|AND
+MatchMode|HAL_XSPI_MATCH_MODE_OR|OR
+AutomaticStop|HAL_XSPI_AUTOMATIC_STOP_DISABLE|Disable
+AutomaticStop|HAL_XSPI_AUTOMATIC_STOP_ENABLE|Enable
+IOSelect|HAL_XSPI_SELECT_IO_3_0|Data exchanged over IO[3:0]
+IOSelect|HAL_XSPI_SELECT_IO_7_4|Data exchanged over IO[7:4]
+IOSelect|HAL_XSPI_SELECT_IO_11_8|Data exchanged over IO[11:8]
+IOSelect|HAL_XSPI_SELECT_IO_15_12|Data exchanged over IO[15:12]
+IOSelect|HAL_XSPI_SELECT_IO_7_0|Data exchanged over IO[7:0]
+IOSelect|HAL_XSPI_SELECT_IO_15_8|Data exchanged over IO[15:8]
+InstructionMode|HAL_XSPI_INSTRUCTION_NONE|Instruction None
+InstructionMode|HAL_XSPI_INSTRUCTION_1_LINE|Instruction 1 line
+InstructionMode|HAL_XSPI_INSTRUCTION_2_LINES|Instruction 2 line
+InstructionMode|HAL_XSPI_INSTRUCTION_4_LINES|Instruction 4 line
+InstructionMode|HAL_XSPI_INSTRUCTION_8_LINES|Instruction 8 line
+InstructionWidth|HAL_XSPI_INSTRUCTION_8_BITS|Instruction 8 bits
+InstructionWidth|HAL_XSPI_INSTRUCTION_16_BITS|Instruction 16 bits
+InstructionWidth|HAL_XSPI_INSTRUCTION_24_BITS|Instruction 24 bits
+InstructionWidth|HAL_XSPI_INSTRUCTION_32_BITS|Instruction 32 bits
+InstructionDTRMode|HAL_XSPI_INSTRUCTION_DTR_DISABLE|Disable
+InstructionDTRMode|HAL_XSPI_INSTRUCTION_DTR_ENABLE|Enable
+AddressMode|HAL_XSPI_ADDRESS_NONE|Address None
+AddressMode|HAL_XSPI_ADDRESS_1_LINE|Address 1 Line
+AddressMode|HAL_XSPI_ADDRESS_2_LINES|Address 2 Line
+AddressMode|HAL_XSPI_ADDRESS_4_LINES|Address 4 Line
+AddressMode|HAL_XSPI_ADDRESS_8_LINES|Address 8 Line
+AddressWidth|HAL_XSPI_ADDRESS_8_BITS|Address 8 bits
+AddressWidth|HAL_XSPI_ADDRESS_16_BITS|Address 16 bits
+AddressWidth|HAL_XSPI_ADDRESS_24_BITS|Address 24 bits
+AddressWidth|HAL_XSPI_ADDRESS_32_BITS|Address 32 bits
+AddressDTRMode|HAL_XSPI_ADDRESS_DTR_DISABLE|Disable
+AddressDTRMode|HAL_XSPI_ADDRESS_DTR_ENABLE|Enable
+AlternateBytesMode|HAL_XSPI_ALT_BYTES_NONE|Alternate Byte None
+AlternateBytesMode|HAL_XSPI_ALT_BYTES_1_LINE|Alternate Byte 1 Line
+AlternateBytesMode|HAL_XSPI_ALT_BYTES_2_LINES|Alternate Byte 2 Line
+AlternateBytesMode|HAL_XSPI_ALT_BYTES_4_LINES|Alternate Byte 4 Line
+AlternateBytesMode|HAL_XSPI_ALT_BYTES_8_LINES|Alternate Byte 8 Line
+AlternateBytesWidth|HAL_XSPI_ALT_BYTES_8_BITS|Alternate Byte 8 bits
+AlternateBytesWidth|HAL_XSPI_ALT_BYTES_16_BITS|Alternate Byte 16 bits
+AlternateBytesWidth|HAL_XSPI_ALT_BYTES_24_BITS|Alternate Byte 24 bits
+AlternateBytesWidth|HAL_XSPI_ALT_BYTES_32_BITS|Alternate Byte 32 bits
+AlternateBytesDTRMode|HAL_XSPI_ALT_BYTES_DTR_DISABLE|Disable
+AlternateBytesDTRMode|HAL_XSPI_ALT_BYTES_DTR_ENABLE|Enable
+DataMode|HAL_XSPI_DATA_NONE|Data None
+DataMode|HAL_XSPI_DATA_1_LINE|Data1 Line
+DataMode|HAL_XSPI_DATA_2_LINES|Data 2 Line
+DataMode|HAL_XSPI_DATA_4_LINES|Data 4 Line
+DataMode|HAL_XSPI_DATA_8_LINES|Data 8 Line
+DataDTRMode|HAL_XSPI_DATA_DTR_DISABLE|Disable
+DataDTRMode|HAL_XSPI_DATA_DTR_ENABLE|Enable
+DQSMode|HAL_XSPI_DQS_DISABLE|Disable
+DQSMode|HAL_XSPI_DQS_ENABLE|Enable
+AddressSpace|HAL_XSPI_MEMORY_ADDRESS_SPACE|Memory Register Space
+AddressSpace|HAL_XSPI_REGISTER_ADDRESS_SPACE|Register Address Space

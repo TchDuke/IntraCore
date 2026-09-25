@@ -1,0 +1,62 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=OCTOSPIM
+Version=octospi_v5_2_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+IOSemaphoreAssignement|IO Semaphore Assignement|||||
+ClockPrescaler|Clock Prescaler|General Parameters||1|256|
+FifoThreshold|Fifo Threshold|General Parameters||1|32|
+DualQuad|Dual Quad mode|General Parameters||||
+MemoryType|Memory Type|General Parameters||||
+DeviceSize|Device Size|General Parameters||1|32|
+SampleShifting|Sample Shifting|General Parameters||||
+ChipSelectHighTime|Chip Select High Time|General Parameters||1|8|
+FreeRunningClock|Free Running Clock|General Parameters||||
+ClockMode|Clock Mode|General Parameters||||
+WrapSize|Wrap Size|General Parameters||||
+DelayHoldQuarterCycle|Delay Hold Quarter Cycle|General Parameters||||
+ChipSelectBoundary|Flash Size|General Parameters||0|31|
+DelayBlockBypass|Delay Block|General Parameters||||
+MaxTran|Maximum Transfer|General Parameters||0|255|
+Refresh|Refresh Rate|General Parameters||0|0xFFFFFFFF|
+TimeOutActivation|Time Out Activation|Memory Mapped Parameters||||
+TimeOutPeriod|Time Out Period|Memory Mapped Parameters||1|0xFFFF|
+Match|Match Value|Status Polling Parameters||0|0xFFFFFFFF|
+Mask|Mask Value|Status Polling Parameters||0|0xFFFFFFFF|
+MatchMode|MatchMode Parameter|Status Polling Parameters||||
+AutomaticStop|Automatic Stop Value|Status Polling Parameters||||
+Interval|Interval Value|Status Polling Parameters||0|0xFFFF|
+
+[Values]
+# параметр|значение|подпись
+DualQuad|HAL_OSPI_DUALQUAD_DISABLE|Disable
+DualQuad|HAL_OSPI_DUALQUAD_ENABLE|Enable
+MemoryType|HAL_OSPI_MEMTYPE_MICRON|Micron mode
+MemoryType|HAL_OSPI_MEMTYPE_MACRONIX|Macronix mode
+MemoryType|HAL_OSPI_MEMTYPE_APMEMORY|AP Memory
+MemoryType|HAL_OSPI_MEMTYPE_HYPERBUS|Hyperbus mode
+MemoryType|HAL_OSPI_MEMTYPE_MACRONIX_RAM|Macronix RAM mode
+SampleShifting|HAL_OSPI_SAMPLE_SHIFTING_NONE|No Sample Shifting
+SampleShifting|HAL_OSPI_SAMPLE_SHIFTING_HALFCYCLE|Sample Shifting Half Cycle
+FreeRunningClock|HAL_OSPI_FREERUNCLK_DISABLE|Disable
+FreeRunningClock|HAL_OSPI_FREERUNCLK_ENABLE|Enable
+ClockMode|HAL_OSPI_CLOCK_MODE_0|Low
+ClockMode|HAL_OSPI_CLOCK_MODE_3|High
+WrapSize|HAL_OSPI_WRAP_NOT_SUPPORTED|Not Supported
+WrapSize|HAL_OSPI_WRAP_16_BYTES|16 Bytes
+WrapSize|HAL_OSPI_WRAP_32_BYTES|32 Bytes
+WrapSize|HAL_OSPI_WRAP_64_BYTES|64 Bytes
+WrapSize|HAL_OSPI_WRAP_128_BYTES|128 Bytes
+DelayHoldQuarterCycle|HAL_OSPI_DHQC_DISABLE|Disable
+DelayHoldQuarterCycle|HAL_OSPI_DHQC_ENABLE|Enable
+DelayBlockBypass|HAL_OSPI_DELAY_BLOCK_BYPASSED|Disable
+DelayBlockBypass|HAL_OSPI_DELAY_BLOCK_USED|Enable
+TimeOutActivation|HAL_OSPI_TIMEOUT_COUNTER_DISABLE|Disable
+TimeOutActivation|HAL_OSPI_TIMEOUT_COUNTER_ENABLE|Enable
+MatchMode|HAL_OSPI_MATCH_MODE_AND|Disable
+MatchMode|HAL_OSPI_MATCH_MODE_OR|Enable
+AutomaticStop|HAL_OSPI_AUTOMATIC_STOP_DISABLE|Disable
+AutomaticStop|HAL_OSPI_AUTOMATIC_STOP_ENABLE|Enable

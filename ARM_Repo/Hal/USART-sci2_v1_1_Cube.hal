@@ -1,0 +1,100 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=USART
+Version=sci2_v1_1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+BaudRate|Baud Rate|Basic Parameters|Bits/s|110|10500000|
+WordLength|Word Length|Basic Parameters||||
+UsartWordLength|Word Length|Basic Parameters||||
+IrdaWordLength|Word Length|Basic Parameters||||
+SmartCardWordLength|Word Length|Basic Parameters||||
+UartWordLength|Word Length|Basic Parameters||||
+StopBits|Stop Bits|Basic Parameters||||Number of Stop Bits. For SmartCard Mode, it's recommended to choose 1.5 Stop Bits (or 0.5 Stop Bit if receiving only).
+UsartStopBits|Stop Bits|Basic Parameters||||
+UartStopBits|Stop Bits|Basic Parameters||||
+SmartCardStopBits|Stop Bits|Basic Parameters||||
+Parity|Parity|Basic Parameters||||
+UsartParity|Parity|Basic Parameters||||
+IrdaParity|Parity|Basic Parameters||||
+SmartCardParity|Parity|Basic Parameters||||
+UartParity|Parity|Basic Parameters||||
+Mode|Data Direction|Advanced Parameters||||
+UsartMode|Data Direction|Advanced Parameters||||
+SmartCardMode|Data Direction|Advanced Parameters||||
+IrdaMode|Data Direction|Advanced Parameters||||
+UartMode|Data Direction|Advanced Parameters||||
+HwFlowCtl|Hardware Flow Control|Basic Parameters||||
+OverSampling|Over Sampling|Advanced Parameters||||
+CLKPolarity|Clock Polarity|Clock Parameters||||
+CLKPhase|Clock Phase|Clock Parameters||||
+CLKLastBit|Clock Last Bit|Clock Parameters||||
+IrDAMode|IrDa Mode|Advanced Parameters||||
+Prescaler|Prescaler|Advanced Parameters||1|255|The value given in the register is multiplied by 2 to give the division factor of the source clock frequency.
+CalculateSpeed|SmartCard Clock Frequency|Clock Parameters||||
+NACKState|NAck if Parity Error|Advanced Parameters||||
+GuardTime|Guard Time|Advanced Parameters||0|255|
+WakeUpMethode|Wake-Up Method|Advanced Parameters||||
+Address|Wake-Up Address|Advanced Parameters||0|15|
+BreakDetectLength|Break Detect Length|Advanced Parameters||||
+
+[Values]
+# параметр|значение|подпись
+WordLength|WORDLENGTH_8B|8 Bits (including Parity)
+WordLength|WORDLENGTH_9B|9 Bits (including Parity)
+UsartWordLength|USART_WORDLENGTH_8B|8 Bits (including Parity)
+UsartWordLength|USART_WORDLENGTH_9B|9 Bits (including Parity)
+IrdaWordLength|IRDA_WORDLENGTH_8B|8 Bits (including Parity)
+IrdaWordLength|IRDA_WORDLENGTH_9B|9 Bits (including Parity)
+SmartCardWordLength|SMARTCARD_WORDLENGTH_9B|9 Bits (including Parity)
+UartWordLength|UART_WORDLENGTH_8B|8 Bits (including Parity)
+UartWordLength|UART_WORDLENGTH_9B|9 Bits (including Parity)
+StopBits|STOPBITS_1|1
+StopBits|STOPBITS_2|2
+StopBits|STOPBITS_0_5|0.5
+StopBits|STOPBITS_1_5|1.5
+UsartStopBits|USART_STOPBITS_2|2
+UsartStopBits|USART_STOPBITS_1|1
+UsartStopBits|USART_STOPBITS_1_5|1.5
+UsartStopBits|USART_STOPBITS_0_5|0.5
+UartStopBits|UART_STOPBITS_1|1
+UartStopBits|UART_STOPBITS_2|2
+UartStopBits|UART_STOPBITS_1_5|1.5
+SmartCardStopBits|SMARTCARD_STOPBITS_1_5|1.5
+SmartCardStopBits|SMARTCARD_STOPBITS_0_5|0.5
+Parity|PARITY_EVEN|Even
+Parity|PARITY_ODD|Odd
+Parity|PARITY_NONE|None
+Mode|MODE_TX_RX|Receive and Transmit
+Mode|MODE_RX|Receive Only
+Mode|MODE_TX|Transmit Only
+UartMode|UART_MODE_TX_RX|Receive and Transmit
+UartMode|UART_MODE_TX|Transmit Only
+UartMode|UART_MODE_RX|Receive Only
+HwFlowCtl|UART_HWCONTROL_RTS|RTS Only
+HwFlowCtl|UART_HWCONTROL_CTS|CTS Only
+HwFlowCtl|UART_HWCONTROL_RTS_CTS|RTS/CTS
+HwFlowCtl|UART_HWCONTROL_NONE|None
+OverSampling|UART_OVERSAMPLING_16|16 Samples
+CLKPolarity|SMARTCARD_POLARITY_LOW|Low
+CLKPolarity|SMARTCARD_POLARITY_HIGH|High
+CLKPolarity|USART_POLARITY_LOW|Low
+CLKPolarity|USART_POLARITY_HIGH|High
+CLKPhase|SMARTCARD_PHASE_1EDGE|One Edge
+CLKPhase|SMARTCARD_PHASE_2EDGE|Two Edge
+CLKPhase|USART_PHASE_1EDGE|One Edge
+CLKPhase|USART_PHASE_2EDGE|Two Edge
+CLKLastBit|SMARTCARD_LASTBIT_DISABLE|Disable
+CLKLastBit|SMARTCARD_LASTBIT_ENABLE|Enable
+CLKLastBit|USART_LASTBIT_DISABLE|Disable
+CLKLastBit|USART_LASTBIT_ENABLE|Enable
+IrDAMode|IRDA_POWERMODE_LOWPOWER|Low Power
+IrDAMode|IRDA_POWERMODE_NORMAL|Normal Power
+NACKState|SMARTCARD_NACK_DISABLE|Disable
+NACKState|SMARTCARD_NACK_ENABLE|Enable
+WakeUpMethode|UART_WAKEUPMETHOD_IDLELINE|Idle Line
+WakeUpMethode|UART_WAKEUPMETHOD_ADDRESSMARK|Address Mark
+BreakDetectLength|UART_LINBREAKDETECTLENGTH_10B|10 Bits
+BreakDetectLength|UART_LINBREAKDETECTLENGTH_11B|11 Bits

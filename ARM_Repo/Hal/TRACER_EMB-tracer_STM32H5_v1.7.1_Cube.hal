@@ -1,0 +1,25 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=TRACER_EMB
+Version=tracer_STM32H5_v1.7.1_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Version|Version|||||
+TRACER_EMB_APP_MEM_POOL_SIZE|TRACER_EMB memory pool size|Memory Configuration||512|262144|Default memory pool size for the TRACER_EMB application.
+TRACER_EMB_DMA_Request|TRACER_EMB request LPUART1 TX DMA|||1|1|
+TRACER_EMB_NVIC_Interrupt|TRACER_EMB request LPUART1 NVIC|||1|1|
+LPUART1_TX_DMA_CHANNEL|DMA Request for LPUART1_TX|||||
+USART1_TX_DMA_CHANNEL|DMA Request for USART1_TX|||||
+USART2_TX_DMA_CHANNEL|DMA Request for USART2_TX|||||
+USART3_TX_DMA_CHANNEL|DMA Request for USART3_TX|||||
+UART4_TX_DMA_CHANNEL|DMA Request for UART4_TX|||||
+UART5_TX_DMA_CHANNEL|DMA Request for UART5_TX|||||
+UART_TX_DMA_CHANNEL|DMA Request TX for UART|||||
+UART_TX_DMA_interrupt|External Interrupt number for UART TX|||||
+UART_RX_PIN|RX for LPUART1 on PB7,AF8|||||
+UART_TX_PIN|TX for LPUART1 on PB6,AF8|||||
+
+[Values]
+# параметр|значение|подпись

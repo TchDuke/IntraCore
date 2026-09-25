@@ -1,0 +1,85 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=DMA
+Version=STM32WB09_dma1_v1_3
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+Request|Request number|||||
+Direction|Direction|||||
+PeriphInc|Peripheral Increment|||||
+MemInc|Memory Increment|||||
+PeriphDataAlignment|Peripheral Data Alignment|||||
+MemDataAlignment|Memomry Data Alignment|||||
+Mode|Mode|||||
+Priority|Priority|||||
+ClockEnableMode|Clock enable mode|||||
+FIFOMode|FIFO Mode|||||
+FIFOThreshold|FIFO Threshold|||||
+MemBurst|Memory Burst|||||
+PeriphBurst|Peripheral Burst|||||
+DMA_Handle|DMA_Handle|||||
+IpInstance|IpInstance|||||
+SignalID|Signal ID|||||
+SyncEnable|Synchronization enable|||||
+EventEnable|Event enable|||||
+SyncRequestNumber|Synchronization request number|||1|32|
+MDMA_Chaining|MDMA chaining|||||
+Mandatory|Mandatory request|||||
+DisplayMemToMemTab|Display MemToMem tab|||||
+NbRequestsDMA_M0Plus|Number of M0Plus requests|||0|16|
+
+[Values]
+# параметр|значение|подпись
+Request|DMA_REQUEST_MEM2MEM|MEMTOMEM
+Request|DMA_REQUEST_ADC1_DS|ADC1_DS
+Request|DMA_REQUEST_SPI1_RX|SPI1_RX
+Request|DMA_REQUEST_SPI1_TX|SPI1_TX
+Request|DMA_REQUEST_SPI2_RX|SPI2_RX
+Request|DMA_REQUEST_SPI2_TX|SPI2_TX
+Request|DMA_REQUEST_SPI3_RX|SPI3_RX
+Request|DMA_REQUEST_SPI3_TX|SPI3_TX
+Request|DMA_REQUEST_I2C1_RX|I2C1_RX
+Request|DMA_REQUEST_I2C1_TX|I2C1_TX
+Request|DMA_REQUEST_I2C2_RX|I2C2_RX
+Request|DMA_REQUEST_I2C2_TX|I2C2_TX
+Request|DMA_REQUEST_USART1_RX|USART1_RX
+Request|DMA_REQUEST_USART1_TX|USART1_TX
+Request|DMA_REQUEST_LPUART1_RX|LPUART1_RX
+Request|DMA_REQUEST_LPUART1_TX|LPUART1_TX
+Direction|DMA_PERIPH_TO_MEMORY|Peripheral To Memory
+Direction|DMA_MEMORY_TO_PERIPH|Memory To Peripheral
+Direction|DMA_MEMORY_TO_MEMORY|Memory To Memory
+PeriphInc|DMA_PINC_ENABLE|Peripheral Inc Enable
+PeriphInc|DMA_PINC_DISABLE|Peripheral Inc Disable
+MemInc|DMA_MINC_ENABLE|Memory Inc Enable
+MemInc|DMA_MINC_DISABLE|Memory Inc Disable
+PeriphDataAlignment|DMA_PDATAALIGN_BYTE|Byte
+PeriphDataAlignment|DMA_PDATAALIGN_HALFWORD|Half Word
+PeriphDataAlignment|DMA_PDATAALIGN_WORD|Word
+MemDataAlignment|DMA_MDATAALIGN_BYTE|Byte
+MemDataAlignment|DMA_MDATAALIGN_HALFWORD|Half Word
+MemDataAlignment|DMA_MDATAALIGN_WORD|Word
+Mode|DMA_NORMAL|Normal
+Mode|DMA_CIRCULAR|Circular
+Mode|DMA_PFCTRL|Peripheral Flow Control
+Priority|DMA_PRIORITY_LOW|Low
+Priority|DMA_PRIORITY_MEDIUM|Medium
+Priority|DMA_PRIORITY_HIGH|High
+Priority|DMA_PRIORITY_VERY_HIGH|Very High
+ClockEnableMode|__HAL_RCC_DMA_CLK_ENABLE|DMA clock enable
+FIFOMode|DMA_FIFOMODE_DISABLE|Disable
+FIFOMode|DMA_FIFOMODE_ENABLE|Enable
+FIFOThreshold|DMA_FIFO_THRESHOLD_FULL|Full
+FIFOThreshold|DMA_FIFO_THRESHOLD_HALFFULL|Half Full
+FIFOThreshold|DMA_FIFO_THRESHOLD_1QUARTERFULL|One Quarter Full
+FIFOThreshold|DMA_FIFO_THRESHOLD_3QUARTERSFULL|Three Quarters Full
+MemBurst|DMA_MBURST_SINGLE|Single
+MemBurst|DMA_MBURST_INC4|4 Increment
+MemBurst|DMA_MBURST_INC8|8 Increment
+MemBurst|DMA_MBURST_INC16|16 Increment
+PeriphBurst|DMA_PBURST_SINGLE|Single
+PeriphBurst|DMA_PBURST_INC4|4 Increment
+PeriphBurst|DMA_PBURST_INC8|8 Increment
+PeriphBurst|DMA_PBURST_INC16|16 Increment

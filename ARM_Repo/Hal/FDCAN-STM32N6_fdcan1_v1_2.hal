@@ -1,0 +1,451 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=FDCAN
+Version=STM32N6_fdcan1_v1_2
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+FrameFormat|Frame Format|Basic Parameters||||Specifies the FDCAN frame format.
+Mode|Mode|Basic Parameters||||Specifies the FDCAN operating mode.
+AutoRetransmission|Auto Retransmission|Basic Parameters||||Enable or disable the automatic retransmission mode.
+ClockDivider|Clock Divider|Clock Divider||||Specifies the FDCAN kernel clock divider when the clock calibration is bypassed.
+TxDelayCompensation|Tx Delay Compensation|Basic Parameters||||Enable or disable the transmitter delay compensation.
+NominalPrescaler|Nominal Prescaler|Bit Timings Parameters||1|512|Specifies the value by which the oscillator frequency is divided for generating the nominal bit time quanta.
+NominalSyncJumpWidth|Nominal Sync Jump Width|Basic Parameters||1|128|Specifies the maximum number of time quanta the FDCAN hardware is allowed to lengthen or shorten a bit to perform resynchronization.
+NominalTimeSeg1|Nominal Time Seg1|Bit Timings Parameters||2|256|Specifies the number of time quanta in Bit Segment 1.
+NominalTimeSeg2|Nominal Time Seg2|Bit Timings Parameters||2|128|Specifies the number of time quanta in Bit Segment 2.
+DataPrescaler|Data Prescaler|Basic Parameters||1|32|Specifies the value by which the oscillator frequency is divided for generating the data bit time quanta.
+DataSyncJumpWidth|Data Sync Jump Width|Basic Parameters||1|16|Specifies the maximum number of time quanta the FDCAN hardware is allowed to lengthen or shorten a data bit to perform resynchronization.
+DataTimeSeg1|Data Time Seg1|Basic Parameters||1|32|Specifies the number of time quanta in Data Bit Segment 1.
+DataTimeSeg2|Data Time Seg2|Basic Parameters||1|16|Specifies the number of time quanta in Data Bit Segment 2.
+StdFiltersNbr|Std Filters Nbr|Basic Parameters||0|128|Specifies the number of standard Message ID filter.
+ExtFiltersNbr|Ext Filters Nbr|Basic Parameters||0|64|Specifies the number of extended Message ID filters.
+RxFifo0ElmtsNbr|Rx Fifo0 Elmts Nbr|Basic Parameters||0|64|Specifies the number of Rx FIFO0 Elements.
+RxFifo0ElmtSize|Rx Fifo0 Elmt Size|Basic Parameters||||Specifies the Data Field Size in an Rx FIFO0 element.
+RxFifo1ElmtsNbr|Rx Fifo1 Elmts Nbr|Basic Parameters||0|64|Specifies the number of Rx FIFO 1 Elements.
+RxFifo1ElmtSize|Rx Fifo1 Elmt Size|Basic Parameters||||Specifies the Rx FIFO 1 Data Field Size.
+RxBuffersNbr|Rx Buffers Nbr|Basic Parameters||0|64|Specifies the number of Dedicated Rx Buffer elements.
+RxBufferSize|Rx Buffer Size|Basic Parameters||||Specifies the Rx Buffer Data Field Size.
+TxEventsNbr|Tx Events Nbr|Basic Parameters||0|32|Specifies the number of Tx Event FIFO elements.
+TxBuffersNbr|Tx Buffers Nbr|Basic Parameters||0|32|Specifies the number of Dedicated Tx Buffers.
+TxFifoQueueElmtsNbr|Tx Fifo Queue Elmts Nbr|Basic Parameters||0|4294967295|Specifies the number of Tx Buffers used for Tx FIFO/Queue.
+TxFifoQueueMode|Tx Fifo Queue Mode|Basic Parameters||||Tx FIFO/Queue Mode selection.
+TxElmtSize|Tx Elmt Size|Basic Parameters||||Specifies the Tx Element Data Field Size.
+StandardFilterSA|Standard Filter Sa|msgRam||0|4294967295|Specifies the Filter List Standard Start Address.
+ExtendedFilterSA|Extended Filter Sa|msgRam||0|4294967295|Specifies the Filter List Extended Start Address.
+RxFIFO0SA|Rx Fifo0 Sa|msgRam||0|4294967295|Specifies the Rx FIFO 0 Start Address.
+RxFIFO1SA|Rx Fifo1 Sa|msgRam||0|4294967295|Specifies the Rx FIFO 1 Start Address.
+RxBufferSA|Rx Buffer Sa|msgRam||0|4294967295|Specifies the Rx Buffer Start Address.
+TxEventFIFOSA|Tx Event Fifosa|msgRam||0|4294967295|Specifies the Event FIFO Start Address.
+TxBufferSA|Tx Buffer Sa|msgRam||0|4294967295|Specifies the Tx Buffers Start Address.
+TxFIFOQSA|Tx Fifoqsa|msgRam||0|4294967295|Specifies the Tx FIFO/Queue Start Address.
+ErrorCode|Error Code|Error_Code||0|0|FDCAN Error code
+Filter_IdType|Id Type|||||Specifies the identifier type.
+Filter_FilterIndex|Filter Index|||0|4294967295|0 and 63, if IdType is FDCAN_EXTENDED_ID
+FilterType|Filter Type|||||Specifies the filter type.
+FilterConfig|Filter Config|||||Specifies the filter configuration.
+FilterID1|Filter Id1|||0|4294967295|0 and 0x1FFFFFFF, if IdType is FDCAN_EXTENDED_ID
+FilterID2|Filter Id2|||0|4294967295|0 and 0x1FFFFFFF, if IdType is FDCAN_EXTENDED_ID This parameter is ignored if FilterConfig is set to FDCAN_FILTER_TO_RXBUFFER
+RxBufferIndex|Rx Buffer Index|||0|63|Contains the index of the Rx buffer in which the matching message will be stored.
+TxHeader_Identifier|Identifier|||0|4294967295|0 and 0x1FFFFFFF, if IdType is FDCAN_EXTENDED_ID
+TxHeader_IdType|Id Type|||||Specifies the identifier type for the message that will be transmitted.
+TxFrameType|Tx Frame Type|||||Specifies the frame type of the message that will be transmitted.
+TxHeader_DataLength|Data Length|||||Specifies the length of the frame that will be transmitted.
+TxHeader_ErrorStateIndicator|Error State Indicator|||||Specifies the error state indicator.
+TxHeader_BitRateSwitch|Bit Rate Switch|||||Specifies whether the Tx frame will be transmitted with or without bit rate switching.
+TxHeader_FDFormat|Fd Format|||||Specifies whether the Tx frame will be transmitted in classic or FD format.
+TxEventFIFO|Tx Event Fifo|||||Specifies the event FIFO control.
+MessageMarker|Message Marker|||0|0xFF|Specifies the message marker to be copied into Tx Event FIFO element for identification of Tx message status.
+TxLocation|Tx Location|||||Contains the location of the element to be transmitted.
+pTxData|P Tx Data|||0|0|
+RxLocation|Rx Location|||0|4294967295|
+RxHeader_Identifier|Identifier|||0|4294967295|0 and 0x1FFFFFFF, if IdType is FDCAN_EXTENDED_ID
+RxHeader_IdType|Id Type|||||Specifies the identifier type of the received message.
+RxFrameType|Rx Frame Type|||||Specifies the the received message frame type.
+RxHeader_DataLength|Data Length|||||Specifies the received frame length.
+RxHeader_ErrorStateIndicator|Error State Indicator|||||Specifies the error state indicator.
+RxHeader_BitRateSwitch|Bit Rate Switch|||||Specifies whether the Rx frame is received with or without bit rate switching.
+RxHeader_FDFormat|Fd Format|||||Specifies whether the Rx frame is received in classic or FD format.
+RxTimestamp|Rx Timestamp|||0|0xFFFF|Specifies the timestamp counter value captured on start of frame reception.
+RxHeader_FilterIndex|Filter Index|||0|4294967295|0 and 64, if IdType is FDCAN_EXTENDED_ID
+NonMatchingFrame|Non Matching Frame|||||Specifies whether the accepted frame did not match any Rx filter.
+pRxData|P Rx Data|||0|0|
+MessageRAMOffset|Message Ram Offset|Basic Parameters||0|2560|Specifies the message RAM start address.
+OperationMode|Operation Mode|Basic Parameters||||Specifies the FDCAN Operation Mode.
+TimeMaster|Time Master|TT Pararams||||Specifies whether the instance is a slave or a potential master.
+SyncDevLimit|Sync Dev Limit|TT Pararams||0|7|Specifies the Synchronization Deviation Limit SDL of the TUR numerator : TUR = (Numerator ± SDL) / Denominator.
+InitRefTrigOffset|Init Ref Trig Offset|TT Pararams||0|127|Specifies the Initial Reference Trigger Offset.
+ExternalClkSync|External Clk Sync|TT Pararams||||Enable or disable External Clock Synchronization.
+AppWdgLimit|App Wdg Limit|TT Pararams||0|255|Specifies the Application Watchdog Limit : maximum time after which the application has to serve the application watchdog.
+GlobalTimeFilter|Global Time Filter|TT Pararams||||Enable or disable Global Time Filtering.
+TTConfig_ClockCalibration|Clock Calibration|||||Enable or disable Automatic Clock Calibration.
+EvtTrigPolarity|Evt Trig Polarity|TT Pararams||||Specifies the Event Trigger Polarity.
+TxEnableWindow|Tx Enable Window|TT Pararams||1|16|Specifies the length of Tx enable window in NTUs.
+ExpTxTrigNbr|Exp Tx Trig Nbr|TT Pararams||0|4095|Specifies the number of expected Tx_Triggers in the system matrix.
+TURNumerator|Tur Numerator|TT Pararams||0x10000|0x1FFFF|Specifies the TUR (Time Unit Ratio) numerator.
+TURDenominator|Tur Denominator|TT Pararams||0x0001|0x3FFF|Specifies the TUR (Time Unit Ratio) denominator.
+TriggerMemoryNbr|Trigger Memory Nbr|TT Pararams||0|64|Specifies the number of trigger memory elements.
+StopWatchTrigSel|Stop Watch Trig Sel|TT Pararams||||Specifies the input to be used as stop watch trigger.
+EventTrigSel|Event Trig Sel|TT Pararams||||Specifies the input to be used as event trigger.
+TTMemorySA|Tt Memory Sa|msgRam||0|4294967295|Specifies the Trigger Memory Start Address.
+ClkCalUnit_ClockCalibration|Clock Calibration|||||Enable or disable the clock calibration.
+MinOscClkPeriods|Min Osc Clk Periods|||0x00|0xFF|Configures the minimum number of periods in two CAN bit times.
+CalFieldLength|Cal Field Length|||||Specifies the calibration field length.
+TimeQuantaPerBitTime|Time Quanta Per Bit Time|||4|25|Configures the number of time quanta per bit time.
+WatchdogStartValue|Watchdog Start Value|||0x0000|0xFFFF|Start value of the Calibration Watchdog Counter.
+NonMatchingStd|Non Matching Std|||0|4294967295|
+NonMatchingExt|Non Matching Ext|||0|4294967295|
+RejectRemoteStd|Reject Remote Std|||0|4294967295|
+RejectRemoteExt|Reject Remote Ext|||0|4294967295|
+Mask|Mask|||0|4294967295|
+FIFO|Fifo|||0|4294967295|
+Watermark|Watermark|||0|4294967295|
+CounterStartValue|Counter Start Value|||0|4294967295|
+TimestampPrescaler|Timestamp Prescaler|||0|4294967295|
+TimestampOperation|Timestamp Operation|||0|4294967295|
+TimeoutOperation|Timeout Operation|||0|4294967295|
+TimeoutPeriod|Timeout Period|||0|4294967295|
+TdcOffset|Tdc Offset|||0|4294967295|
+TdcFilter|Tdc Filter|||0|4294967295|
+TxEventFifo_Identifier|Identifier|||0|4294967295|0 and 0x1FFFFFFF, if IdType is FDCAN_EXTENDED_ID
+TxEventFifo_IdType|Id Type|||||Specifies the identifier type for the message that will be transmitted.
+TxEventFifo_TxFrameType|Tx Frame Type|||||Specifies the frame type of the message that will be transmitted.
+TxEventFifo_DataLength|Data Length|||||Specifies the length of the frame that will be transmitted.
+TxEventFifo_ErrorStateIndicator|Error State Indicator|||||Specifies the error state indicator.
+TxEventFifo_BitRateSwitch|Bit Rate Switch|||||Specifies whether the Tx frame will be transmitted with or without bit rate switching.
+TxEventFifo_FDFormat|Fd Format|||||Specifies whether the Tx frame will be transmitted in classic or FD format.
+TxTimestamp|Tx Timestamp|||0|0xFFFF|Specifies the timestamp counter value captured on start of frame transmission.
+TxEventFifo_MessageMarker|Message Marker|||0|0xFF|Specifies the message marker to be copied into Tx Event FIFO element for identification of Tx message status.
+EventType|Event Type|||||Specifies the event type.
+_IdType|Id Type|||0|4294967295|
+_Identifier|Identifier|||0|4294967295|
+Payload|Payload|||0|4294967295|
+TriggerIndex|Trigger Index|||0|63|Specifies the trigger which will be configured.
+TimeMark|Time Mark|||0|0xFFFF|Specifies the cycle time for which the trigger becomes active.
+Trigger_RepeatFactor|Repeat Factor|||||Specifies the trigger repeat factor.
+Trigger_StartCycle|Start Cycle|||0|RepeatFactor|Specifies the index of the first cycle in which the trigger becomes active.
+TmEventInt|Tm Event Int|||||Enable or disable the internal time mark event.
+TmEventExt|Tm Event Ext|||||Enable or disable the external time mark event.
+TriggerType|Trigger Type|||||Specifies the trigger type.
+Trigger_FilterType|Filter Type|||||Specifies the filter identifier type.
+TxBufferIndex|Tx Buffer Index|||||Specifies the index of the Tx buffer for which the trigger is valid.
+Trigger_FilterIndex|Filter Index|||0|4294967295|0 and 63, if FilterType is FDCAN_EXTENDED_ID This parameter is taken in consideration only if the trigger is configured for reception.
+TimePreset|Time Preset|||0|4294967295|
+NewTURNumerator|New Tur Numerator|||0|4294967295|
+Source|Source|||0|4294967295|
+Polarity|Polarity|||0|4294967295|
+TimeMarkSource|Time Mark Source|||0|4294967295|
+TimeMarkValue|Time Mark Value|||0|4294967295|
+_RepeatFactor|Repeat Factor|||0|4294967295|
+_StartCycle|Start Cycle|||0|4294967295|
+TargetPhase|Target Phase|||0|4294967295|
+ITList|It List|||0|4294967295|
+InterruptLine|Interrupt Line|||0|4294967295|
+ActiveITs|Active I Ts|||0|4294967295|
+BufferIndexes|Buffer Indexes|||0|4294967295|
+ClkCalibrationITs|Clk Calibration I Ts|||0|4294967295|
+TxEventFifoITs|Tx Event Fifo I Ts|||0|4294967295|
+RxFifo0ITs|Rx Fifo0 I Ts|||0|4294967295|
+RxFifo1ITs|Rx Fifo1 I Ts|||0|4294967295|
+TTSchedSyncITs|Tt Sched Sync I Ts|||0|4294967295|
+TTTimeMarkITs|Tt Time Mark I Ts|||0|4294967295|
+SWTime|Sw Time|||0|4294967295|
+SWCycleCount|Sw Cycle Count|||0|4294967295|
+TTGlobTimeITs|Tt Glob Time I Ts|||0|4294967295|
+TTDistErrors|Tt Dist Errors|||0|4294967295|
+TTFatalErrors|Tt Fatal Errors|||0|4294967295|
+TransmitPause|Transmit Pause|Basic Parameters||||Enable or disable the Transmit Pause feature.
+ProtocolException|Protocol Exception|Basic Parameters||||Enable or disable the Protocol Exception Handling.
+EndAddress|End Address|msgRam||0|4294967295|Specifies the End Address of the allocated RAM.
+ClockCalibration|Clock Calibration|TT Pararams||||Enable or disable the ClockCalibration.
+GapEnable|Gap Enable|TT Pararams||||Specifies the FDCAN TT Operation.
+BasicCyclesNbr|Basic Cycles Nbr|TT Pararams||||Specifies the nubmer of basic cycles in the system matrix.
+CycleStartSync|Cycle Start Sync|TT Pararams||||Enable or disable synchronization pulse output at pin fdcan1_soc.
+CalculateTimeQuantumNominal|Nominal Time Quantum|Bit Timings Parameters|ns|||
+CalculateTimeBitNominal|Nominal Time for one Bit|Bit Timings Parameters|ns|||
+CalculateBaudRateNominal|Nominal Baud Rate|Bit Timings Parameters|bit/s|||
+
+[Values]
+# параметр|значение|подпись
+FrameFormat|FDCAN_FRAME_CLASSIC|Classic mode
+FrameFormat|FDCAN_FRAME_FD_NO_BRS|FD mode without BitRate Switching
+FrameFormat|FDCAN_FRAME_FD_BRS|FD mode with BitRate Switching
+Mode|FDCAN_MODE_NORMAL|Normal mode
+Mode|FDCAN_MODE_RESTRICTED_OPERATION|Restricted Operation
+Mode|FDCAN_MODE_BUS_MONITORING|Bus Monitoring mode
+Mode|FDCAN_MODE_INTERNAL_LOOPBACK|Internal LoopBack mode
+Mode|FDCAN_MODE_EXTERNAL_LOOPBACK|External LoopBack mode
+ClockDivider|FDCAN_CLOCK_DIV1|Divide kernel clock by 1
+ClockDivider|FDCAN_CLOCK_DIV2|Divide kernel clock by 2
+ClockDivider|FDCAN_CLOCK_DIV4|Divide kernel clock by 4
+ClockDivider|FDCAN_CLOCK_DIV6|Divide kernel clock by 6
+ClockDivider|FDCAN_CLOCK_DIV8|Divide kernel clock by 8
+ClockDivider|FDCAN_CLOCK_DIV10|Divide kernel clock by 10
+ClockDivider|FDCAN_CLOCK_DIV12|Divide kernel clock by 12
+ClockDivider|FDCAN_CLOCK_DIV14|Divide kernel clock by 14
+ClockDivider|FDCAN_CLOCK_DIV16|Divide kernel clock by 16
+ClockDivider|FDCAN_CLOCK_DIV18|Divide kernel clock by 18
+ClockDivider|FDCAN_CLOCK_DIV20|Divide kernel clock by 20
+ClockDivider|FDCAN_CLOCK_DIV22|Divide kernel clock by 22
+ClockDivider|FDCAN_CLOCK_DIV24|Divide kernel clock by 24
+ClockDivider|FDCAN_CLOCK_DIV26|Divide kernel clock by 26
+ClockDivider|FDCAN_CLOCK_DIV28|Divide kernel clock by 28
+ClockDivider|FDCAN_CLOCK_DIV30|Divide kernel clock by 30
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_8|8 bytes data field
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_12|12 bytes data field
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_16|16 bytes data field
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_20|20 bytes data field
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_24|24 bytes data field
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_32|32 bytes data field
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_48|48 bytes data field
+RxFifo0ElmtSize|FDCAN_DATA_BYTES_64|64 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_8|8 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_12|12 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_16|16 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_20|20 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_24|24 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_32|32 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_48|48 bytes data field
+RxFifo1ElmtSize|FDCAN_DATA_BYTES_64|64 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_8|8 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_12|12 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_16|16 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_20|20 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_24|24 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_32|32 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_48|48 bytes data field
+RxBufferSize|FDCAN_DATA_BYTES_64|64 bytes data field
+TxFifoQueueMode|FDCAN_TX_FIFO_OPERATION|FIFO mode
+TxFifoQueueMode|FDCAN_TX_QUEUE_OPERATION|Queue mode
+TxElmtSize|FDCAN_DATA_BYTES_8|8 bytes data field
+TxElmtSize|FDCAN_DATA_BYTES_12|12 bytes data field
+TxElmtSize|FDCAN_DATA_BYTES_16|16 bytes data field
+TxElmtSize|FDCAN_DATA_BYTES_20|20 bytes data field
+TxElmtSize|FDCAN_DATA_BYTES_24|24 bytes data field
+TxElmtSize|FDCAN_DATA_BYTES_32|32 bytes data field
+TxElmtSize|FDCAN_DATA_BYTES_48|48 bytes data field
+TxElmtSize|FDCAN_DATA_BYTES_64|64 bytes data field
+Filter_IdType|FDCAN_STANDARD_ID|Standard ID element
+Filter_IdType|FDCAN_EXTENDED_ID|Extended ID element
+FilterType|FDCAN_FILTER_RANGE|Range filter from FilterID1 to FilterID2
+FilterType|FDCAN_FILTER_DUAL|Dual ID filter for FilterID1 or FilterID2
+FilterType|FDCAN_FILTER_MASK|Classic filter: FilterID1 = filter, FilterID2 = mask
+FilterType|FDCAN_FILTER_RANGE_NO_EIDM|Range filter from FilterID1 to FilterID2, EIDM mask not applied
+FilterConfig|FDCAN_FILTER_DISABLE|Disable filter element
+FilterConfig|FDCAN_FILTER_TO_RXFIFO0|Store in Rx FIFO 0 if filter matches
+FilterConfig|FDCAN_FILTER_TO_RXFIFO1|Store in Rx FIFO 1 if filter matches
+FilterConfig|FDCAN_FILTER_REJECT|Reject ID if filter matches
+FilterConfig|FDCAN_FILTER_HP|Set high priority if filter matches
+FilterConfig|FDCAN_FILTER_TO_RXFIFO0_HP|Set high priority and store in FIFO 0 if filter matches
+FilterConfig|FDCAN_FILTER_TO_RXFIFO1_HP|Set high priority and store in FIFO 1 if filter matches
+FilterConfig|FDCAN_FILTER_TO_RXBUFFER|Store into Rx Buffer, configuration of FilterMode ignored
+TxHeader_IdType|FDCAN_STANDARD_ID|Standard ID element
+TxHeader_IdType|FDCAN_EXTENDED_ID|Extended ID element
+TxFrameType|FDCAN_DATA_FRAME|Data frame
+TxFrameType|FDCAN_REMOTE_FRAME|Remote frame
+TxHeader_DataLength|FDCAN_DLC_0_BYTES|0 bytes data field
+TxHeader_DataLength|FDCAN_DLC_1_BYTES|1 bytes data field
+TxHeader_DataLength|FDCAN_DLC_2_BYTES|2 bytes data field
+TxHeader_DataLength|FDCAN_DLC_3_BYTES|3 bytes data field
+TxHeader_DataLength|FDCAN_DLC_4_BYTES|4 bytes data field
+TxHeader_DataLength|FDCAN_DLC_5_BYTES|5 bytes data field
+TxHeader_DataLength|FDCAN_DLC_6_BYTES|6 bytes data field
+TxHeader_DataLength|FDCAN_DLC_7_BYTES|7 bytes data field
+TxHeader_DataLength|FDCAN_DLC_8_BYTES|8 bytes data field
+TxHeader_DataLength|FDCAN_DLC_12_BYTES|12 bytes data field
+TxHeader_DataLength|FDCAN_DLC_16_BYTES|16 bytes data field
+TxHeader_DataLength|FDCAN_DLC_20_BYTES|20 bytes data field
+TxHeader_DataLength|FDCAN_DLC_24_BYTES|24 bytes data field
+TxHeader_DataLength|FDCAN_DLC_32_BYTES|32 bytes data field
+TxHeader_DataLength|FDCAN_DLC_48_BYTES|48 bytes data field
+TxHeader_DataLength|FDCAN_DLC_64_BYTES|64 bytes data field
+TxHeader_ErrorStateIndicator|FDCAN_ESI_ACTIVE|Transmitting node is error active
+TxHeader_ErrorStateIndicator|FDCAN_ESI_PASSIVE|Transmitting node is error passive
+TxHeader_BitRateSwitch|FDCAN_BRS_OFF|FDCAN frames transmitted/received without bit rate switching
+TxHeader_BitRateSwitch|FDCAN_BRS_ON|FDCAN frames transmitted/received with bit rate switching
+TxHeader_FDFormat|FDCAN_CLASSIC_CAN|Frame transmitted/received in Classic CAN format
+TxHeader_FDFormat|FDCAN_FD_CAN|Frame transmitted/received in FDCAN format
+TxEventFIFO|FDCAN_NO_TX_EVENTS|Do not store Tx events
+TxEventFIFO|FDCAN_STORE_TX_EVENTS|Store Tx events
+TxLocation|FDCAN_TX_FIFO|Store message to Tx FIFO
+TxLocation|FDCAN_TX_BUFFER0|Store message to Tx Buffer 0
+TxLocation|FDCAN_TX_BUFFER1|Store message to Tx Buffer 1
+TxLocation|FDCAN_TX_BUFFER2|Store message to Tx Buffer 2
+TxLocation|FDCAN_TX_BUFFER3|Store message to Tx Buffer 3
+TxLocation|FDCAN_TX_BUFFER4|Store message to Tx Buffer 4
+TxLocation|FDCAN_TX_BUFFER5|Store message to Tx Buffer 5
+TxLocation|FDCAN_TX_BUFFER6|Store message to Tx Buffer 6
+TxLocation|FDCAN_TX_BUFFER7|Store message to Tx Buffer 7
+TxLocation|FDCAN_TX_BUFFER8|Store message to Tx Buffer 8
+TxLocation|FDCAN_TX_BUFFER9|Store message to Tx Buffer 9
+TxLocation|FDCAN_TX_BUFFER10|Store message to Tx Buffer 10
+TxLocation|FDCAN_TX_BUFFER11|Store message to Tx Buffer 11
+TxLocation|FDCAN_TX_BUFFER12|Store message to Tx Buffer 12
+TxLocation|FDCAN_TX_BUFFER13|Store message to Tx Buffer 13
+TxLocation|FDCAN_TX_BUFFER14|Store message to Tx Buffer 14
+TxLocation|FDCAN_TX_BUFFER15|Store message to Tx Buffer 15
+TxLocation|FDCAN_TX_BUFFER16|Store message to Tx Buffer 16
+TxLocation|FDCAN_TX_BUFFER17|Store message to Tx Buffer 17
+TxLocation|FDCAN_TX_BUFFER18|Store message to Tx Buffer 18
+TxLocation|FDCAN_TX_BUFFER19|Store message to Tx Buffer 19
+TxLocation|FDCAN_TX_BUFFER20|Store message to Tx Buffer 20
+TxLocation|FDCAN_TX_BUFFER21|Store message to Tx Buffer 21
+TxLocation|FDCAN_TX_BUFFER22|Store message to Tx Buffer 22
+TxLocation|FDCAN_TX_BUFFER23|Store message to Tx Buffer 23
+TxLocation|FDCAN_TX_BUFFER24|Store message to Tx Buffer 24
+TxLocation|FDCAN_TX_BUFFER25|Store message to Tx Buffer 25
+TxLocation|FDCAN_TX_BUFFER26|Store message to Tx Buffer 26
+TxLocation|FDCAN_TX_BUFFER27|Store message to Tx Buffer 27
+TxLocation|FDCAN_TX_BUFFER28|Store message to Tx Buffer 28
+TxLocation|FDCAN_TX_BUFFER29|Store message to Tx Buffer 29
+TxLocation|FDCAN_TX_BUFFER30|Store message to Tx Buffer 30
+TxLocation|FDCAN_TX_BUFFER31|Store message to Tx Buffer 31
+RxHeader_IdType|FDCAN_STANDARD_ID|Standard ID element
+RxHeader_IdType|FDCAN_EXTENDED_ID|Extended ID element
+RxFrameType|FDCAN_DATA_FRAME|Data frame
+RxFrameType|FDCAN_REMOTE_FRAME|Remote frame
+RxHeader_DataLength|FDCAN_DLC_0_BYTES|0 bytes data field
+RxHeader_DataLength|FDCAN_DLC_1_BYTES|1 bytes data field
+RxHeader_DataLength|FDCAN_DLC_2_BYTES|2 bytes data field
+RxHeader_DataLength|FDCAN_DLC_3_BYTES|3 bytes data field
+RxHeader_DataLength|FDCAN_DLC_4_BYTES|4 bytes data field
+RxHeader_DataLength|FDCAN_DLC_5_BYTES|5 bytes data field
+RxHeader_DataLength|FDCAN_DLC_6_BYTES|6 bytes data field
+RxHeader_DataLength|FDCAN_DLC_7_BYTES|7 bytes data field
+RxHeader_DataLength|FDCAN_DLC_8_BYTES|8 bytes data field
+RxHeader_DataLength|FDCAN_DLC_12_BYTES|12 bytes data field
+RxHeader_DataLength|FDCAN_DLC_16_BYTES|16 bytes data field
+RxHeader_DataLength|FDCAN_DLC_20_BYTES|20 bytes data field
+RxHeader_DataLength|FDCAN_DLC_24_BYTES|24 bytes data field
+RxHeader_DataLength|FDCAN_DLC_32_BYTES|32 bytes data field
+RxHeader_DataLength|FDCAN_DLC_48_BYTES|48 bytes data field
+RxHeader_DataLength|FDCAN_DLC_64_BYTES|64 bytes data field
+RxHeader_ErrorStateIndicator|FDCAN_ESI_ACTIVE|Transmitting node is error active
+RxHeader_ErrorStateIndicator|FDCAN_ESI_PASSIVE|Transmitting node is error passive
+RxHeader_BitRateSwitch|FDCAN_BRS_OFF|FDCAN frames transmitted/received without bit rate switching
+RxHeader_BitRateSwitch|FDCAN_BRS_ON|FDCAN frames transmitted/received with bit rate switching
+RxHeader_FDFormat|FDCAN_CLASSIC_CAN|Frame transmitted/received in Classic CAN format
+RxHeader_FDFormat|FDCAN_FD_CAN|Frame transmitted/received in FDCAN format
+NonMatchingFrame|FDCAN_MATCHING_FRAME|Received frame matched an Rx filter element
+NonMatchingFrame|FDCAN_NON_MATCHING_FRAME|Received frame did not match any Rx filter element
+OperationMode|FDCAN_EVENT_DRIVEN_COMMUNICATION|Event-driven FDCAN communication
+OperationMode|FDCAN_TT_COMMUNICATION_LEVEL1|Time triggered communication, level 1
+OperationMode|FDCAN_TT_COMMUNICATION_LEVEL2|Time triggered communication, level 2
+OperationMode|FDCAN_TT_COMMUNICATION_LEVEL0|Time triggered communication, level 0
+TimeMaster|FDCAN_TT_SLAVE|Time slave
+TimeMaster|FDCAN_TT_POTENTIAL_MASTER|Potential time master
+ExternalClkSync|FDCAN_TT_EXT_CLK_SYNC_DISABLE|External clock synchronization in Level 0,2 disabled
+ExternalClkSync|FDCAN_TT_EXT_CLK_SYNC_ENABLE|External clock synchronization in Level 0,2 enabled
+GlobalTimeFilter|FDCAN_TT_GLOBAL_TIME_FILTERING_DISABLE|Global time filtering in Level 0,2 disabled
+GlobalTimeFilter|FDCAN_TT_GLOBAL_TIME_FILTERING_ENABLE|Global time filtering in Level 0,2 enabled
+TTConfig_ClockCalibration|FDCAN_TT_AUTO_CLK_CALIBRATION_DISABLE|Automatic clock calibration in Level 0,2 disabled
+TTConfig_ClockCalibration|FDCAN_TT_AUTO_CLK_CALIBRATION_ENABLE|Automatic clock calibration in Level 0,2 enabled
+EvtTrigPolarity|FDCAN_TT_EVENT_TRIGGER_POLARITY_RISING|Rising edge trigger
+EvtTrigPolarity|FDCAN_TT_EVENT_TRIGGER_POLARITY_FALLING|Falling edge trigger
+StopWatchTrigSel|FDCAN_TT_STOP_WATCH_TRIGGER_0|fdcan1_swt0 selected as stop watch trigger
+StopWatchTrigSel|FDCAN_TT_STOP_WATCH_TRIGGER_1|fdcan1_swt1 selected as stop watch trigger
+StopWatchTrigSel|FDCAN_TT_STOP_WATCH_TRIGGER_2|fdcan1_swt2 selected as stop watch trigger
+StopWatchTrigSel|FDCAN_TT_STOP_WATCH_TRIGGER_3|fdcan1_swt3 selected as stop watch trigger
+EventTrigSel|FDCAN_TT_EVENT_TRIGGER_0|fdcan1_evt0 selected as event trigger
+EventTrigSel|FDCAN_TT_EVENT_TRIGGER_1|fdcan1_evt1 selected as event trigger
+EventTrigSel|FDCAN_TT_EVENT_TRIGGER_2|fdcan1_evt2 selected as event trigger
+EventTrigSel|FDCAN_TT_EVENT_TRIGGER_3|fdcan1_evt3 selected as event trigger
+CalFieldLength|FDCAN_CALIBRATION_FIELD_LENGTH_32BITS|Calibration field length is 32 bits
+CalFieldLength|FDCAN_CALIBRATION_FIELD_LENGTH_64BITS|Calibration field length is 64 bits
+TxEventFifo_IdType|FDCAN_STANDARD_ID|Standard ID element
+TxEventFifo_IdType|FDCAN_EXTENDED_ID|Extended ID element
+TxEventFifo_TxFrameType|FDCAN_DATA_FRAME|Data frame
+TxEventFifo_TxFrameType|FDCAN_REMOTE_FRAME|Remote frame
+TxEventFifo_DataLength|FDCAN_DLC_0_BYTES|0 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_1_BYTES|1 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_2_BYTES|2 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_3_BYTES|3 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_4_BYTES|4 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_5_BYTES|5 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_6_BYTES|6 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_7_BYTES|7 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_8_BYTES|8 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_12_BYTES|12 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_16_BYTES|16 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_20_BYTES|20 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_24_BYTES|24 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_32_BYTES|32 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_48_BYTES|48 bytes data field
+TxEventFifo_DataLength|FDCAN_DLC_64_BYTES|64 bytes data field
+TxEventFifo_ErrorStateIndicator|FDCAN_ESI_ACTIVE|Transmitting node is error active
+TxEventFifo_ErrorStateIndicator|FDCAN_ESI_PASSIVE|Transmitting node is error passive
+TxEventFifo_BitRateSwitch|FDCAN_BRS_OFF|FDCAN frames transmitted/received without bit rate switching
+TxEventFifo_BitRateSwitch|FDCAN_BRS_ON|FDCAN frames transmitted/received with bit rate switching
+TxEventFifo_FDFormat|FDCAN_CLASSIC_CAN|Frame transmitted/received in Classic CAN format
+TxEventFifo_FDFormat|FDCAN_FD_CAN|Frame transmitted/received in FDCAN format
+EventType|FDCAN_TX_EVENT|Tx event
+EventType|FDCAN_TX_IN_SPITE_OF_CANCELLATION|Transmission in spite of cancellation
+Trigger_RepeatFactor|FDCAN_TT_REPEAT_EVERY_CYCLE|Trigger valid for all cycles
+Trigger_RepeatFactor|FDCAN_TT_REPEAT_EVERY_2ND_CYCLE|Trigger valid every 2dn cycle
+Trigger_RepeatFactor|FDCAN_TT_REPEAT_EVERY_4TH_CYCLE|Trigger valid every 4th cycle
+Trigger_RepeatFactor|FDCAN_TT_REPEAT_EVERY_8TH_CYCLE|Trigger valid every 8th cycle
+Trigger_RepeatFactor|FDCAN_TT_REPEAT_EVERY_16TH_CYCLE|Trigger valid every 16th cycle
+Trigger_RepeatFactor|FDCAN_TT_REPEAT_EVERY_32ND_CYCLE|Trigger valid every 32nd cycle
+Trigger_RepeatFactor|FDCAN_TT_REPEAT_EVERY_64TH_CYCLE|Trigger valid every 64th cycle
+TmEventInt|FDCAN_TT_TM_NO_INTERNAL_EVENT|No action
+TmEventInt|FDCAN_TT_TM_GENERATE_INTERNAL_EVENT|Internal event is generated when trigger becomes active
+TmEventExt|FDCAN_TT_TM_NO_EXTERNAL_EVENT|No action
+TmEventExt|FDCAN_TT_TM_GENERATE_EXTERNAL_EVENT|External event (pulse) is generated when trigger becomes active
+TriggerType|FDCAN_TT_TX_REF_TRIGGER|Transmit reference message in strictly time-triggered operation
+TriggerType|FDCAN_TT_TX_REF_TRIGGER_GAP|Transmit reference message in external event-synchronized time-triggered operation
+TriggerType|FDCAN_TT_TX_TRIGGER_SINGLE|Start a single transmission in an exclusive time window
+TriggerType|FDCAN_TT_TX_TRIGGER_CONTINUOUS|Start a continuous transmission in an exclusive time window
+TriggerType|FDCAN_TT_TX_TRIGGER_ARBITRATION|Start a transmission in an arbitration time window
+TriggerType|FDCAN_TT_TX_TRIGGER_MERGED|Start a merged arbitration window
+TriggerType|FDCAN_TT_WATCH_TRIGGER|Check for missing reference messages in strictly time-triggered operation
+TriggerType|FDCAN_TT_WATCH_TRIGGER_GAP|Check for missing reference messages in external event-synchronized time-triggered operation
+TriggerType|FDCAN_TT_RX_TRIGGER|Check for the reception of periodic messages in exclusive time windows
+TriggerType|FDCAN_TT_TIME_BASE_TRIGGER|Generate internal/external events depending on TmEventInt/TmEventExt configuration
+TriggerType|FDCAN_TT_END_OF_LIST|Illegal trigger, to be assigned to the unused triggers after a FDCAN_TT_WATCH_TRIGGER(_GAP)
+Trigger_FilterType|FDCAN_STANDARD_ID|Standard ID element
+Trigger_FilterType|FDCAN_EXTENDED_ID|Extended ID element
+TxBufferIndex|FDCAN_TX_BUFFER0|Add message to Tx Buffer 0
+TxBufferIndex|FDCAN_TX_BUFFER1|Add message to Tx Buffer 1
+TxBufferIndex|FDCAN_TX_BUFFER2|Add message to Tx Buffer 2
+TxBufferIndex|FDCAN_TX_BUFFER3|Add message to Tx Buffer 3
+TxBufferIndex|FDCAN_TX_BUFFER4|Add message to Tx Buffer 4
+TxBufferIndex|FDCAN_TX_BUFFER5|Add message to Tx Buffer 5
+TxBufferIndex|FDCAN_TX_BUFFER6|Add message to Tx Buffer 6
+TxBufferIndex|FDCAN_TX_BUFFER7|Add message to Tx Buffer 7
+TxBufferIndex|FDCAN_TX_BUFFER8|Add message to Tx Buffer 8
+TxBufferIndex|FDCAN_TX_BUFFER9|Add message to Tx Buffer 9
+TxBufferIndex|FDCAN_TX_BUFFER10|Add message to Tx Buffer 10
+TxBufferIndex|FDCAN_TX_BUFFER11|Add message to Tx Buffer 11
+TxBufferIndex|FDCAN_TX_BUFFER12|Add message to Tx Buffer 12
+TxBufferIndex|FDCAN_TX_BUFFER13|Add message to Tx Buffer 13
+TxBufferIndex|FDCAN_TX_BUFFER14|Add message to Tx Buffer 14
+TxBufferIndex|FDCAN_TX_BUFFER15|Add message to Tx Buffer 15
+TxBufferIndex|FDCAN_TX_BUFFER16|Add message to Tx Buffer 16
+TxBufferIndex|FDCAN_TX_BUFFER17|Add message to Tx Buffer 17
+TxBufferIndex|FDCAN_TX_BUFFER18|Add message to Tx Buffer 18
+TxBufferIndex|FDCAN_TX_BUFFER19|Add message to Tx Buffer 19
+TxBufferIndex|FDCAN_TX_BUFFER20|Add message to Tx Buffer 20
+TxBufferIndex|FDCAN_TX_BUFFER21|Add message to Tx Buffer 21
+TxBufferIndex|FDCAN_TX_BUFFER22|Add message to Tx Buffer 22
+TxBufferIndex|FDCAN_TX_BUFFER23|Add message to Tx Buffer 23
+TxBufferIndex|FDCAN_TX_BUFFER24|Add message to Tx Buffer 24
+TxBufferIndex|FDCAN_TX_BUFFER25|Add message to Tx Buffer 25
+TxBufferIndex|FDCAN_TX_BUFFER26|Add message to Tx Buffer 26
+TxBufferIndex|FDCAN_TX_BUFFER27|Add message to Tx Buffer 27
+TxBufferIndex|FDCAN_TX_BUFFER28|Add message to Tx Buffer 28
+TxBufferIndex|FDCAN_TX_BUFFER29|Add message to Tx Buffer 29
+TxBufferIndex|FDCAN_TX_BUFFER30|Add message to Tx Buffer 30
+TxBufferIndex|FDCAN_TX_BUFFER31|Add message to Tx Buffer 31
+GapEnable|FDCAN_STRICTLY_TT_OPERATION|Strictly time-triggered operation
+GapEnable|FDCAN_EXT_EVENT_SYNC_TT_OPERATION|External event-synchronized time-triggered operation
+BasicCyclesNbr|FDCAN_TT_1_BASIC_CYCLE_PER_MARTIX|1 Basic Cycle per Matrix
+BasicCyclesNbr|FDCAN_TT_2_BASIC_CYCLES_PER_MARTIX|2 Basic Cycles per Matrix
+BasicCyclesNbr|FDCAN_TT_4_BASIC_CYCLES_PER_MARTIX|4 Basic Cycles per Matrix
+BasicCyclesNbr|FDCAN_TT_8_BASIC_CYCLES_PER_MARTIX|8 Basic Cycles per Matrix
+BasicCyclesNbr|FDCAN_TT_16_BASIC_CYCLES_PER_MARTIX|16 Basic Cycles per Matrix
+BasicCyclesNbr|FDCAN_TT_32_BASIC_CYCLES_PER_MARTIX|32 Basic Cycles per Matrix
+BasicCyclesNbr|FDCAN_TT_64_BASIC_CYCLES_PER_MARTIX|64 Basic Cycles per Matrix
+CycleStartSync|FDCAN_TT_NO_SYNC_PULSE|No sync pulse
+CycleStartSync|FDCAN_TT_SYNC_PULSE_AT_START_OF_BASIC_CYCLE|Sync pulse at start of basic cycle
+CycleStartSync|FDCAN_TT_SYNC_PULSE_AT_START_OF_MATRIX|Sync pulse at start of matrix

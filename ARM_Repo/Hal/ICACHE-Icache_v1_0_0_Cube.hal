@@ -1,0 +1,98 @@
+# IntraCore: параметры HAL блока из базы STM32CubeMX (db/mcu/IP/*_Modes.xml).
+# Порождено tools/hal_import — руками не править. Формат: src/Docs/Description/HalCatalogFormat.md
+[Ip]
+Name=ICACHE
+Version=Icache_v1_0_0_Cube
+
+[Parameters]
+# имя|подпись|группа|единица|мин|макс|описание
+ICACHE_1WAY|ICACHE 1WAY|||||
+LL_ICACHE_1WAY|ICACHE 1WAY|||||
+LL_PWR_ICACHERAM_STOP_FULL_RETENTION|LL_PWR_ICACHERAM_STOP_FULL_RETENTION|||||
+Size_R0|Size2MB|||||
+Size_R1|Size2MB|||||
+Size_R2|Size2MB|||||
+Size_R3|Size2MB|||||
+Size|Size|Region 0||||Specifies the size of memory region size.
+Size1|Size|Region 1||||Specifies the size of memory region size.
+Size2|Size|Region 2||||Specifies the size of memory region size.
+Size3|Size|Region 3||||Specifies the size of memory region size.
+BAR|Base Address Range|Region 0||||Specifies the memory range of base address.
+BAR1|Base Address Range|Region 1||||Specifies the memory range of base address.
+BAR2|Base Address Range|Region 2||||Specifies the memory range of base address.
+BAR3|Base Address Range|Region 3||||Specifies the memory range of base address.
+RemapAddress|Remap Address|Region 0||0x60000000|0xDFFFFFFF|Only bits [31:21] are used, the other bits are ignored.
+BaseAddress|Base Address|Region 0||0x10000000|0x1FFFFFFF|Only bits [28:21] are used, the other bits are ignored.
+RemapAddress1|Remap Address|Region 1||0x60000000|0xDFFFFFFF|Only bits [31:21] are used, the other bits are ignored.
+BaseAddress1|Base Address|Region 1||0x10000000|0x1FFFFFFF|Only bits [28:21] are used, the other bits are ignored.
+RemapAddress2|Remap Address|Region 2||0x60000000|0xDFFFFFFF|Only bits [31:21] are used, the other bits are ignored.
+BaseAddress2|Base Address|Region 2||0x10000000|0x1FFFFFFF|Only bits [28:21] are used, the other bits are ignored.
+RemapAddress3|Remap Address|Region 3||0x60000000|0xDFFFFFFF|Only bits [31:21] are used, the other bits are ignored.
+BaseAddress3|Base Address|Region 3||0x10000000|0x1FFFFFFF|Only bits [28:21] are used, the other bits are ignored.
+OutputBurstType|Output Burst Type|Region 0||||Specifies the value of memory region size.
+OutputBurstType1|Output Burst Type|Region 1||||Specifies the value of memory region size.
+OutputBurstType2|Output Burst Type|Region 2||||Specifies the value of memory region size.
+OutputBurstType3|Output Burst Type|Region 3||||Specifies the value of memory region size.
+TrafficRoute|Traffic Route|Region 0||||Specifies the value of memory region size.
+TrafficRoute1|Traffic Route|Region 1||||Specifies the value of memory region size.
+TrafficRoute2|Traffic Route|Region 2||||Specifies the value of memory region size.
+TrafficRoute3|Traffic Route|Region 3||||Specifies the value of memory region size.
+Region|Region|Region 0||||Specifies the value of memory region size.
+Region1|Region|Region 1||||Specifies the value of memory region size.
+Region2|Region|Region 2||||Specifies the value of memory region size.
+Region3|Region|Region 3||||Specifies the value of memory region size.
+
+[Values]
+# параметр|значение|подпись
+Size|ICACHE_REGIONSIZE_2MB|2MB
+Size|ICACHE_REGIONSIZE_4MB|4MB
+Size|ICACHE_REGIONSIZE_8MB|8MB
+Size|ICACHE_REGIONSIZE_16MB|16MB
+Size|ICACHE_REGIONSIZE_32MB|32MB
+Size|ICACHE_REGIONSIZE_64MB|64MB
+Size|ICACHE_REGIONSIZE_128MB|128MB
+Size1|ICACHE_REGIONSIZE_2MB|2MB
+Size1|ICACHE_REGIONSIZE_4MB|4MB
+Size1|ICACHE_REGIONSIZE_8MB|8MB
+Size1|ICACHE_REGIONSIZE_16MB|16MB
+Size1|ICACHE_REGIONSIZE_32MB|32MB
+Size1|ICACHE_REGIONSIZE_64MB|64MB
+Size1|ICACHE_REGIONSIZE_128MB|128MB
+Size2|ICACHE_REGIONSIZE_2MB|2MB
+Size2|ICACHE_REGIONSIZE_4MB|4MB
+Size2|ICACHE_REGIONSIZE_8MB|8MB
+Size2|ICACHE_REGIONSIZE_16MB|16MB
+Size2|ICACHE_REGIONSIZE_32MB|32MB
+Size2|ICACHE_REGIONSIZE_64MB|64MB
+Size2|ICACHE_REGIONSIZE_128MB|128MB
+Size3|ICACHE_REGIONSIZE_2MB|2MB
+Size3|ICACHE_REGIONSIZE_4MB|4MB
+Size3|ICACHE_REGIONSIZE_8MB|8MB
+Size3|ICACHE_REGIONSIZE_16MB|16MB
+Size3|ICACHE_REGIONSIZE_32MB|32MB
+Size3|ICACHE_REGIONSIZE_64MB|64MB
+Size3|ICACHE_REGIONSIZE_128MB|128MB
+OutputBurstType|ICACHE_OUTPUT_BURST_WRAP|WRAP
+OutputBurstType|ICACHE_OUTPUT_BURST_INCR|INCR
+OutputBurstType1|ICACHE_OUTPUT_BURST_WRAP|WRAP
+OutputBurstType1|ICACHE_OUTPUT_BURST_INCR|INCR
+OutputBurstType2|ICACHE_OUTPUT_BURST_WRAP|WRAP
+OutputBurstType2|ICACHE_OUTPUT_BURST_INCR|INCR
+OutputBurstType3|ICACHE_OUTPUT_BURST_WRAP|WRAP
+OutputBurstType3|ICACHE_OUTPUT_BURST_INCR|INCR
+TrafficRoute|ICACHE_MASTER1_PORT|Master1 port
+TrafficRoute|ICACHE_MASTER2_PORT|Master2 port
+TrafficRoute1|ICACHE_MASTER1_PORT|Master1 port
+TrafficRoute1|ICACHE_MASTER2_PORT|Master2 port
+TrafficRoute2|ICACHE_MASTER1_PORT|Master1 port
+TrafficRoute2|ICACHE_MASTER2_PORT|Master2 port
+TrafficRoute3|ICACHE_MASTER1_PORT|Master1 port
+TrafficRoute3|ICACHE_MASTER2_PORT|Master2 port
+Region|ICACHE_REGION_0|Enable
+Region|_NULL|Disable
+Region1|ICACHE_REGION_1|Enable
+Region1|_NULL|Disable
+Region2|ICACHE_REGION_2|Enable
+Region2|_NULL|Disable
+Region3|ICACHE_REGION_3|Enable
+Region3|_NULL|Disable
