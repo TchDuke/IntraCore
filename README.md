@@ -7,6 +7,10 @@ on-chip debugging.
 
 ![IntraCore](Screenshots/intracore.png)
 
+**Pin configurator** — STM32F407VG in LQFP100, SPI1 routed to PA5/PA6/PA7; the pin data comes from `ARM_Repo/Pinout` shipped here.
+
+![Pin configurator](Screenshots/pinout.png)
+
 ## Running it
 
 ```sh
